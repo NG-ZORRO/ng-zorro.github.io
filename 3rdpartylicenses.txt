@@ -23,8 +23,8 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 
-core-js@2.5.0 MIT
-Copyright (c) 2014-2016 Denis Pushkarev
+core-js@2.5.1 MIT
+Copyright (c) 2014-2017 Denis Pushkarev
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -72,13 +72,11 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-@angular/core@4.3.3 MIT
+@angular/core@4.3.6 MIT
 
-@angular/router@4.3.3 MIT
+@angular/router@4.3.6 MIT
 
-@angular/http@4.3.3 MIT
-
-@angular/animations@4.3.3 MIT
+@angular/animations@4.3.6 MIT
 
 intl@1.2.5 MIT
 The MIT License (MIT)
@@ -149,6 +147,8 @@ the property of their respective owners.
 
 
 
+@angular/common@4.3.6 MIT
+
 webpack@3.4.1 MIT
 Copyright JS Foundation and other contributors
 
@@ -172,9 +172,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-@angular/forms@4.3.3 MIT
+@angular/forms@4.3.6 MIT
 
-zone.js@0.8.16 MIT
+zone.js@0.8.17 MIT
 The MIT License
 
 Copyright (c) 2016 Google, Inc.
@@ -198,7 +198,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/platform-browser@4.3.3 MIT
+@angular/platform-browser@4.3.6 MIT
 
 @angular/cdk@2.0.0-beta.8 MIT
 The MIT License
@@ -223,8 +223,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-@angular/common@4.3.3 MIT
 
 marked@0.3.6 MIT
 Copyright (c) 2011-2014, Christopher Jeffrey (https://github.com/chjj/)
