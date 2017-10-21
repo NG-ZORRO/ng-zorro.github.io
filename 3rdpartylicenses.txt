@@ -1,4 +1,4 @@
-moment@2.18.1 MIT
+moment@2.19.1 MIT
 Copyright (c) JS Foundation and other contributors
 
 Permission is hereby granted, free of charge, to any person
@@ -72,11 +72,11 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-@angular/core@4.4.3 MIT
+@angular/core@4.4.6 MIT
 
-@angular/router@4.4.3 MIT
+@angular/router@4.4.6 MIT
 
-@angular/animations@4.4.3 MIT
+@angular/animations@4.4.6 MIT
 
 intl@1.2.5 MIT
 The MIT License (MIT)
@@ -147,7 +147,7 @@ the property of their respective owners.
 
 
 
-@angular/common@4.4.3 MIT
+@angular/common@4.4.6 MIT
 
 webpack@3.4.1 MIT
 Copyright JS Foundation and other contributors
@@ -172,9 +172,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-@angular/forms@4.4.3 MIT
+@angular/forms@4.4.6 MIT
 
-zone.js@0.8.17 MIT
+zone.js@0.8.18 MIT
 The MIT License
 
 Copyright (c) 2016 Google, Inc.
@@ -198,7 +198,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-@angular/platform-browser@4.4.3 MIT
+@angular/platform-browser@4.4.6 MIT
 
 @angular/cdk@2.0.0-beta.8 MIT
 The MIT License
