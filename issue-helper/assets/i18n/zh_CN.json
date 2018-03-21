@@ -24,7 +24,7 @@
   "issue.versionHelp": "请检查问题是否存在于最新版本中。",
   "previewModal.title": "Issue 预览",
   "repro.about": "关于重现",
-  "issue.reproductionHelp": "请提供一个 GitHub 仓库的链接，或是尽可能精简的复现链接",
+  "issue.reproductionHelp": "请提供一个尽可能精简的复现链接",
   "issue.stepsHelp": "简洁清晰的重现步骤能够帮助我们更迅速地定位问题所在。支持使用 Markdown 来格式化列表或是代码片段。",
   "button.cancel": "取消",
   "button.ok": "确定",
