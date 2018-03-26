@@ -193,7 +193,7 @@ MIT
 MIT
 MIT
 
-ng-zorro-antd@0.7.0-beta.2
+ng-zorro-antd@0.7.0-beta.3
 MIT
 MIT
 
