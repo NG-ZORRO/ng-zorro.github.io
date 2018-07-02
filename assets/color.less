@@ -1554,7 +1554,7 @@ this.tinycolor = tinycolor;
 @text-color             : fade(#000, 65%);
 @text-color-secondary   : fade(#000, 45%);
 @heading-color-dark     : fade(#fff, 100%);
-@text-color-dark        : fade(#fff,85%);
+@text-color-dark        : fade(#fff, 85%);
 @text-color-secondary-dark: fade(#fff, 65%);
 @font-size-base         : 14px;
 @font-size-lg           : @font-size-base + 2px;
@@ -1891,7 +1891,7 @@ this.tinycolor = tinycolor;
 // Card
 // ---
 @card-head-color: @heading-color;
-@card-head-background: @component-background;
+@card-head-background: transparent;
 @card-head-padding: 16px;
 @card-inner-head-padding: 12px;
 @card-padding-base: 24px;
@@ -3005,7 +3005,7 @@ mark {
   border: 1px solid #e8e8e8;
 }
 .ant-card-head {
-  background: #fff;
+  background: transparent;
   border-bottom: 1px solid #e8e8e8;
   border-radius: 2px 2px 0 0;
 }
@@ -3589,10 +3589,10 @@ mark {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-calendar-range-left .ant-calendar-time-picker-inner {
-  border-right: 1.5px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
 }
 .ant-calendar-range-right .ant-calendar-time-picker-inner {
-  border-left: 1.5px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
 }
 .ant-calendar-range-middle {
   color: rgba(0, 0, 0, 0.45);
