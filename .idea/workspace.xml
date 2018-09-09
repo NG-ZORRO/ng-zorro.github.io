@@ -1,478 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list id="52c04581-a274-4908-84e5-d623387a7edd" name="Revert &quot;0.6.8&quot;" comment="Revert &quot;0.6.8&quot;&#10;&#10;This reverts commit 01e93fa" />
     <list default="true" id="4ba12016-0f0f-40dc-97b0-269f2e2af745" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ng-zorro.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ng-zorro.github.io.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0.02fdb26978e5c7a4908b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.6832b092ed9f78ffb8cd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0.7ce7e9dae8275db3604e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/0.ba98aa7763e67dec2ad2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.3be2ec5cc8c36e61b012.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.447f9b2a3b48df98efd3.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/10.cca56e7ba9fbf563c834.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/11.55620247c882034942ab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.df3098164db9e1396e72.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.2ab48b45c9690739a5f7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11.f2bba08df8ad1990160d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.875db849eea7a887485f.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/12.b3fa3f36f95c5697f260.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/13.9b2b0254cb79525e7684.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/13.d963d1437be282deb0f6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/14.777c8be57cd1f1afb1ab.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/14.904dc11b4b99be968a67.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.b4be31682de6dcb1ae96.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/15.de91b4c0de8e2a3a3678.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/16.9919016384d539f1f7c4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/16.be165b51d467b7e925ed.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/17.17a9234eeaf69cf9b0d5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/18.490478cc1bbbbe9159e3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/17.60bb6ca9b95d8265c098.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/18.cee74997dbb9f77b7c35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/18.f0aad42209585e840c3e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/19.856bce88c72499fbbd4c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/19.f7fdd4bfaf3504d752a8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.401e83dba1a91cc4787d.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/2.a17ee340ee785ec388cc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/20.5586c3637cbebd3f86b0.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/20.be9b58767a9b98d6b8e6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/21.03e3e7ac201f903e461e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/21.d63d63dc6210d099f326.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/22.d962ac7f62d0f06c32ee.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/22.fedc0fe1db4d24ff18e3.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/23.411ce149eca9290f65f8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/23.43757fc49ed0785ac693.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/24.28f998fdc6e7e8428aaf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/24.a518273e5140ee5612df.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/25.43f21a7c50dfaa3c445d.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/25.876e15c0763e81bc84ad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/26.1e2008cf7a2077b2affe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/26.ac930977fc2b4cb75048.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/26.f4f907f78e89b1797ffc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/27.5f3b1ca392ea0fd5ba24.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/27.cbf938747ffa48706988.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/28.43659bdf011f04a3d02c.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/28.6de60524cc460a6dd7b2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/29.61bd964067f8e51dbe1e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/29.eaed0037308c25b615ad.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/3.8e0e9840fb9b81ff39d9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.e68d843e220161ad85f5.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/30.67f25a8490a5e6406793.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/30.7f134870d5b40aa607da.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/31.68eeb44cb402e72c961b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/32.a4ef82a12b1aaffdb87c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/31.b31bb21f55d6b899a3c2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/32.e7be28ac726838ca570b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/32.f902ca3122720b3e10c6.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/33.8fcb0530a306399f9efd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/33.b3d1aff1630dc10bc9ae.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/34.da1d4c6010c861143e0a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/34.deef1d0bc875da182f46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/35.37e06b5fcf206e35d392.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/35.818c86383d9d39ebad18.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/36.61cb5574dd9053d5fcaa.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/36.93c90e22fbf5ffc6ae21.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/37.7005a319fd07db289076.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/37.b5409617521e40109c32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/38.18b7850165196aef8ade.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/38.399d4942734d02042936.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/39.21e1dca5ad23a2c27f50.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/39.a227aed160d80cd07258.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.55a1b2331916705a5622.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/4.d3a888b0e45b2b2fc759.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/40.836d8f65481679772c88.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/41.a6317dc22d6f0a5a8f61.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/40.86be0b16813f4bf0c691.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/41.0bf9a1f95ab7287323a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/41.4dc905385cfe8988981c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/42.058fd472170df1524d23.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/42.18d0b67a4d9a34d0926c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/43.3e2f0de0267d33f10951.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/43.d846c6af1f1f619b75b3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/44.15bef143827efe743314.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/44.274a8c6eae8c48947395.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/45.108e9c5fbc8bc1defc4c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/45.741974aa38aabbe777a6.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/46.928184e1cfd448b6eb19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/46.d882a245f70aa31b209a.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/47.0b743e569c4adf379e46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/47.96be78dcbc4cf9aa8152.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/48.1a028ad7b5b5c1718aed.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/48.5eeacc2e965744b42c78.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/49.293eee6586d2428247f2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/49.632fb1414b0a83c5d1f1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.005496c2ea1c382b7daf.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/5.46fec3b46e29c643f69c.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/50.671ed7aab1f3711331e8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/50.c15bdff6946d919b2db1.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/51.31e469efdf480d91cbd2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/51.edceec3fd636eee404b5.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/52.83d0b2e0fcedfd4a992e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/52.aa13c15ff61774847a9f.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/53.2ac823c38cc226e0e95c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/53.e823de4ad956aaf76d1c.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/6.047c293c5452da18f2c3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.3013ce0f74817527c934.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.7b9326523fe47e5e644d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.045fdc7e01eafc66bfde.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.88b26a39b7b567a5d490.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.75d97caba368297dcebb.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/8.b0259f4afca741efd414.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/9.6eb600a0b32d26b0325d.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/9.e92cb9bb1c46b53c28ac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/color.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Lato/Lato-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Raleway/Raleway.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/angular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/zorro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/assets/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/main.af67d8a2a06bc2a4a600.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/polyfills.e3633a42d1123afc5fc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/runtime.a66f828dca56eeb90e02.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/scripts.420c798fbb31ac9abe0b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue-helper/styles.6f7b08c6889600282a92.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.9ad12f74ccc84f888c4c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/polyfills.972894ed752435a22ec0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime.a33586e3bf1892301400.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts.03e042f1f102bf0e2ed8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/color.less" beforeDir="false" afterPath="$PROJECT_DIR$/assets/color.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.67301eb4416c407857ab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.a78a1b2b798421d6b777.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polyfills.fb27b3cb40f26869afc9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.0b9621fb5eeab9db63f9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.9c2696ec400b0edbb19e.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.7819d201502a25c5ffa4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/0.098f4dcc89ea24b49edc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/1.cba52b834c6642ebfe6e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/10.8b35f4bc9bafc18deb38.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/11.7943071ebb6de9a64161.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/12.825fa0de62266b9d2879.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/13.f1421c0c8ac8f81064da.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/14.be2682819f1d46d3d3b5.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/15.0ddeda5c6e6993409bbc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/16.da626a14a7a9ef9a451f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/17.b9f4f93d66f93b3658bc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/18.34d754218e702b0836a0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/19.dca6f78d031e7f1d3c44.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/2.8e2918d97b4194e97df2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/20.1807080badad25485ab6.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/21.57e18e08ef1f2333bd40.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/22.86e3d76efe43f23393e0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/23.47f68f9c86825eccf500.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/24.fa12ab405eeb96e60047.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/25.be1a0d4d5e78e0d753b9.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/26.690be33f8d5b903c55da.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/27.0573d4bf82d174910499.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/28.9ca4bafa71cb48e3b770.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/29.8cd1073291a79c734ae3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/3.245fff7e2e6128393672.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/30.520ad3cf69db2d6737ae.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/31.d0cfd61d85c04776f70e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/32.b2dbcf1790d8ffd6530c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/33.0bab5213e09c1a11d014.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/34.9f0e20749ed2ffcb2d3a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/35.df49faa93abde7ee7aff.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/36.bdcc1214af60ab86d15a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/37.81ccc4967c614723dd54.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/38.486114e1897c254b48d3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/39.38e340fbb8c8ce6b2ad0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/4.0bfeba42699d6b11a9c9.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/40.03a4ecc280913b4f9237.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/41.b49f809c06fa2198686a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/42.5c75c5d677f52fc706de.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/43.ffc31f79da0bf1f909bf.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/44.a729ce97cb1f5109a676.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/45.b37f67b303ad7fb34e7d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/46.af890c958f5eea8b2718.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/5.bcea7f9be9a241a6fe26.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/6.dd86257f1a96e72eb5b6.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/7.ce171c8e3adeda180374.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/8.a68187bec70d0b8cfdc9.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/9.7f079d64e54757570bf0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Black.1cf8611397f653bac616.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Black.26db76044f04fc97167a.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Black.5a784e379cd21199113b.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Light.292c48e736625fd4db16.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Light.82bc31aa2041bcd67aaa.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Light.ad9909109f3cbedc36b9.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Regular.062cfaf32a82458d490f.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Regular.3ceb09f6ee7efcb119cc.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Regular.453ee82f6c3281d0dd79.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Regular.9087e4a6aceecc9b2914.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Lato-Regular.d0adc93d1be5bcdb1d64.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Black.3eb86e793b971400c4a2.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Black.49f6f10a22b300151099.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Black.e2194c10d7aed1343b2e.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Light.041d98b686f76d723fe9.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Light.78dd5abd38ebf8f2bb8f.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-Light.e746e0314b9870cd3f06.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-SemiBold.a4b6f1747b999bba76b9.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-SemiBold.b429aaa604b2479ab9ab.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway-SemiBold.cd9039266b8dbd97bd14.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway.290ee38e3393e0064027.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway.480bff6d5b503162dc82.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway.9106435a7a18b6d90d24.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway.e1a6acc0b7c8534a39f5.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/Raleway.f6c57152f6515e2407ec.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/download/fonts.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Lato/Lato-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/Raleway/Raleway.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/img/angular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/img/antd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/img/zorro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/assets/img/zorro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/inline.478efe25fc087a83d267.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/main.14d8869c6c0c6f7676cc.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/polyfills.0f4d8d82688e36ad6454.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.5.x/vendor.e57098bbe9d58f67c383.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/0.afb43a09c1812e7a4ad1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/1.925e417b5ee692cb7c3b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/10.adbc7da8ce9abfb0e4a0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/11.11cae4bc9e16a59f1b2a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/12.d1769e3bc10c0b103367.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/13.86e254d98aa88dcd8926.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/14.ff560738f6f243dc9873.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/15.a34e0ce2e85161223dd8.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/16.d221f870751561cedd0b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/17.5a2c817c58c59d53d836.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/18.156c1a5881073a449325.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/19.d9807d928b7b8ce750fc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/2.3da5e91763cd890998dc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/20.cb8edf1f3990bdd56a36.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/21.7ea50ec99556aac2edef.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/22.0434ae4a2d096b0ee6f3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/23.8f2574bebe8b13a6333f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/24.c9f92ad3340bb841eea2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/25.c8e02ee7ec495ef89964.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/26.9ed761663efa04f6b816.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/27.bae30e135f7778d9ba02.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/28.aa6bc02ab7a8ffc9a33e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/29.a74e39a320ec1824ef04.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/3.046449d6c49d0a9d0709.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/30.dc1d53498b197d1222b9.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/31.37365aeaf4d7bfa1f00f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/32.8c93b262c7535d9c8749.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/33.ce74c9c7d110a1c5c4b1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/34.41d01f171b58e1830f28.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/35.6b6fa77e4b6e295be93b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/36.461b485fcde57ee49d1d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/37.fa26999c15e0b27d4e79.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/38.f6f243e62cc92760cd29.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/39.20cee9efcae6154c25b7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/4.cbb0114220cf9fcdae7e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/40.c0719b013d25e906e745.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/41.8a0ec2cac23b3abdd51e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/42.3fd0a2db6debc7720e83.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/43.3b143fbc3d2f06ed9a15.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/44.ec7a3de0ddc4c162d329.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/45.471467531741e9f9469d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/46.d8ac5bb1eb22cf14f00b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/47.11f0cb0242db1fe3ac17.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/48.1910df738ee439e465d2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/49.5c1a2dc11919e776cd10.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/5.6d30ddc53c120a710e7b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/50.7d6e838c5e7139e0753c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/6.ec98bdd2bd8d48ab4260.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/7.44f99aa67ec60dedc802.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/8.6b82327c74b62a7c0e26.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/9.0563cb57e18ef5b05aed.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/download/fonts.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Lato/Lato-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/Raleway/Raleway.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/img/angular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/img/antd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/img/zorro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/assets/img/zorro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/inline.4f90e67ef30f853293a0.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/main.faa0daddd40b408f5339.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.6.x/polyfills.47569abbc0998cecb711.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/0.162cb259089d11061319.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/1.7e2efa8268ae4155c2dd.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/10.361694fcea353976b15a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/11.bc793098bd0a6a94217b.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/12.052c1b9eee3238eaf2ac.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/13.2fea7500baff7c663df7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/14.6b73d632bcefd13cde76.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/15.747a1f82eaadd7ad6870.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/16.3f8b3a31b431223ab9ca.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/17.5390b3778c6e3bd1145e.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/18.144c773ffa63b9760af7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/19.696eec002fae9142bfce.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/2.c331f692ed9f0a0a43f7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/20.c104ebbf32149f59a7dc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/21.906bac52d98dd8adaf49.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/22.02db1c3e4d97cd76b287.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/23.436d08b2fca76e973ccc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/24.ce7509bf3564c91d9366.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/25.0aa10573a7471f2859b8.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/26.47c32b821f7d9e7a4e3f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/27.16d5e9a63114a8732cf8.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/28.55695dc0fb3484373581.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/29.da8d9fcf2ea2c95e4db4.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/3.31d03573bb2e3e055f26.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/30.45c067fb3ea4a92f92b1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/31.2d8af718dfb0576d8f99.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/32.5c646eec5f39524c1a1c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/33.048624958f390087a739.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/34.9f7417648c067675390a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/35.b003c6ae0b1155f478fc.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/36.ff75a68fc8128963b62c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/37.c129a5adbbd1faaa5c51.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/38.8f7fc30fcabf01a9de31.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/39.abde58ad2fd770e979ef.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/4.25fdc405b4281adc8071.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/40.d70eb9160611a95b6567.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/41.e20d4f951b6aaafcc8c3.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/42.cef39eb49b3435c36cb7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/43.3d9953892553167dd2d7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/44.dfb987b270931428384a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/45.2472d66ad4a325a91fc6.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/46.a506f223ffc321424627.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/47.8c9b196e9205e403ded2.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/48.5b35edf88fb3e2da6487.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/49.937ee16505d3a0e7cf53.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/5.79a05d47f24143bb97a0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/50.cf35427f9187e9c3798c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/51.f133ad4db1d42e331629.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/6.25ad116a35854e84bc4d.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/7.9269ff03af904f4bb237.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/8.ee10d7d211e387003bbb.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/9.382532c6b5a86db6a569.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/color.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/download/fonts.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Lato/Lato-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-SemiBold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/Raleway/Raleway.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/iconfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/iconfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/img/angular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/img/antd.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/img/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/assets/img/zorro.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/inline.b32d262890f99da47cc7.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/main.7e5170dd69ec3ec2fba1.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/polyfills.8a912e6460eedb83d08c.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/version/0.7.x/styles.d7a1995851e187619db1.bundle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.a0b204c0b7ee3e9c2811.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.a0b204c0b7ee3e9c2811.css" afterDir="false" />
     </list>
-    <list id="52c04581-a274-4908-84e5-d623387a7edd" name="Revert &quot;0.6.8&quot;" comment="Revert &quot;0.6.8&quot;&#10;&#10;This reverts commit 01e93fa" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -484,11 +138,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -499,10 +170,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="983" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -510,14 +184,25 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ng-zorro.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ng-zorro.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -548,23 +233,26 @@
       <updated>1514880702624</updated>
       <workItem from="1514880704070" duration="117000" />
       <workItem from="1534684527380" duration="212000" />
+      <workItem from="1536481947549" duration="70000" />
+      <workItem from="1536482025311" duration="683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329000" />
+    <option name="totallyTimeSpent" value="1082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="983" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24876674" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32904884" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34311512" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2921212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -622,6 +310,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/img/logo.svg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/version/0.5.x/assets/img/antd.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
