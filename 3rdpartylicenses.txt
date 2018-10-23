@@ -286,6 +286,10 @@ Apache License
 MIT
 MIT
 
+@angular/core@6.1.10
+MIT
+MIT
+
 @angular/platform-browser@6.1.10
 MIT
 MIT
@@ -431,15 +435,11 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@ant-design/icons-angular@0.0.2
+@ant-design/icons-angular@0.0.3
 MIT
 MIT
 
 ant-design-palettes@1.1.3
-MIT
-MIT
-
-@angular/core@6.1.10
 MIT
 MIT
 
