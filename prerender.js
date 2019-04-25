@@ -27,12 +27,14 @@ static_paths_1.ROUTES.forEach(function (route) {
     // Make sure the directory structure is there
     fs_extra_1.ensureDirSync(fullPath);
     // Writes rendered HTML to index.html, replacing the file if it already exists.
-    previousRender = previousRender.then(function (_) { return platform_server_1.renderModuleFactory(AppServerModuleNgFactory, {
-        document: index,
-        url: route,
-        extraProviders: [
-            module_map_ngfactory_loader_1.provideModuleMap(LAZY_MODULE_MAP)
-        ]
-    }); }).then(function (html) { return fs_extra_1.writeFileSync(path_1.join(fullPath, 'index.html'), html); });
+    previousRender = previousRender
+        .then(function (_) {
+        return platform_server_1.renderModuleFactory(AppServerModuleNgFactory, {
+            document: index,
+            url: route,
+            extraProviders: [module_map_ngfactory_loader_1.provideModuleMap(LAZY_MODULE_MAP)]
+        });
+    })
+        .then(function (html) { return fs_extra_1.writeFileSync(path_1.join(fullPath, 'index.html'), html); });
 });
 //# sourceMappingURL=prerender.js.map
