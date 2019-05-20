@@ -8265,14 +8265,10 @@ li.ant-tree-treenode-disabled > .ant-tree-node-content-wrapper:hover {
 .ant-tree.ant-tree-show-line li:not(:last-child)::before {
   border-left: 1px solid #d9d9d9;
 }
-.ant-tree.ant-tree-show-line > nz-tree-node:not(:last-child) > li:before,
-.ant-tree.ant-tree-show-line .ant-tree-child-tree > nz-tree-node:not(:last-child) > li:before {
+.ant-tree.ant-tree-show-line nz-tree-node:not(:last-child) > li::before {
   border-left: 1px solid #d9d9d9;
 }
-.ant-tree.ant-tree-show-line .ant-tree-child-tree > nz-tree-node:last-child > li:before {
-  border-left: 0px solid #d9d9d9;
-}
-.ant-tree .font-highlight {
+.font-highlight {
   color: #f5222d;
 }
 .ant-select-tree-checkbox {
@@ -8383,6 +8379,9 @@ li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper:hov
 }
 .ant-select-tree-dropdown .ant-select-not-found {
   color: rgba(0, 0, 0, 0.25);
+}
+.ant-tree.ant-select-tree.ant-tree-show-line nz-tree-node:not(:last-child) > li::before {
+  border-left: 1px solid #d9d9d9;
 }
 .ant-fullcalendar {
   color: rgba(0, 0, 0, 0.65);
@@ -14724,15 +14723,14 @@ nz-table .ant-table table {
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > .cdk-virtual-scroll-content-wrapper > table > .ant-table-thead > tr > th.ant-table-th-right-sticky {
   background: #fff;
 }
-.ant-tree.ant-tree-show-line > nz-tree-node:not(:last-child) > li:before,
-.ant-tree.ant-tree-show-line .ant-tree-child-tree > nz-tree-node:not(:last-child) > li:before {
+.ant-tree.ant-tree-show-line nz-tree-node:not(:last-child) > li::before {
   border-left: 1px solid #d9d9d9;
 }
-.ant-tree.ant-tree-show-line .ant-tree-child-tree > nz-tree-node:last-child > li:before {
-  border-left: 0px solid #d9d9d9;
-}
-.ant-tree .font-highlight {
+.font-highlight {
   color: #f5222d;
+}
+.ant-tree.ant-select-tree.ant-tree-show-line nz-tree-node:not(:last-child) > li::before {
+  border-left: 1px solid #d9d9d9;
 }
 body {
   color: #314659;

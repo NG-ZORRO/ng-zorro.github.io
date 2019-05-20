@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1556189578180,
+  "timestamp": 1558316744014,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -10,10 +10,10 @@
       "urls": [
         "./es2015-polyfills.c5dd28b362270c767b34.js",
         "./index.html",
-        "./main.b1f7d4bc271bfe4c1195.js",
+        "./main.eb4b1d644ed1f5c9f7ee.js",
         "./polyfills.9bad06aa2b4c327a15b4.js",
         "./runtime.26209474bfa8dc87a77c.js",
-        "./styles.7828fe170916fd13fc9d.css"
+        "./styles.be9c3596d2bf42517b7f.css"
       ],
       "patterns": []
     },
@@ -456,6 +456,7 @@
         "./assets/outline/mobile.svg",
         "./assets/outline/money-collect.svg",
         "./assets/outline/monitor.svg",
+        "./assets/outline/more.svg",
         "./assets/outline/mr.svg",
         "./assets/outline/notification.svg",
         "./assets/outline/number.svg",
@@ -924,8 +925,8 @@
     "./assets/fill/sketch-square.svg": "979fbbce2963b09cb2034bb757a42dfe557b2835",
     "./assets/fill/skin.svg": "ac8a27afe8b37530d7fee735be03af2ce4b5b8c6",
     "./assets/fill/skype.svg": "ad849c19cd3856b6a7049f5cfe1751fe36abddfe",
-    "./assets/fill/slack-circle.svg": "e0ab2a1786ef509a6f09e76d780304741b946530",
-    "./assets/fill/slack-square.svg": "9d513c187bedde15da9bc54a58c78c3b51230a8d",
+    "./assets/fill/slack-circle.svg": "fc7b092065750228562f8541339f90ada04edc7c",
+    "./assets/fill/slack-square.svg": "09a78100dcbfbac3b2e05d8c6ae43654f45ad02e",
     "./assets/fill/sliders.svg": "b8d7a6452ea716278908a2600f95d6d238f384eb",
     "./assets/fill/smile.svg": "db87028998c2a366e537709802b9e2a6987b5176",
     "./assets/fill/snippets.svg": "69142074ea20242404b6e147f1769acbcdc6fc24",
@@ -1183,6 +1184,7 @@
     "./assets/outline/mobile.svg": "c959f0c3e12462321df0041bd5adea0036022ff3",
     "./assets/outline/money-collect.svg": "e95a9d1b25d8ad51a448909a5dc3a6f4f9d53d2f",
     "./assets/outline/monitor.svg": "5ed29f497c0b0b788d309ec91b1ec35769ceb314",
+    "./assets/outline/more.svg": "ea13ee45fd8123672bd3ccdc6a46caac39666651",
     "./assets/outline/mr.svg": "33e8dd4f29d40ddb934033b7434c4a38e2cbb4f9",
     "./assets/outline/notification.svg": "c994496685e34538f1c19b3bb941b16ec2a2f50d",
     "./assets/outline/number.svg": "bf5728ff6795a112c804a9bef3fa948194455df5",
@@ -1202,7 +1204,7 @@
     "./assets/outline/play-square.svg": "71d48c3740427392bf3484eca3721e9850595c9b",
     "./assets/outline/plus-circle.svg": "e81f39782a57bf232a0a0803bba1dd3f28faaada",
     "./assets/outline/plus-square.svg": "4ff2aa9f0a08ba414b6ccb0716925534aa458213",
-    "./assets/outline/plus.svg": "9cac5b520f88327d30c3eda3a5eb2c2f96c35e94",
+    "./assets/outline/plus.svg": "b5056880a14bb313b40597673ed6c6d39b147b1d",
     "./assets/outline/pound.svg": "0025c5af6bf7640b95d67713911781501ca45628",
     "./assets/outline/poweroff.svg": "f9d15f36e107dfa8a31d572cd395ef2b39482938",
     "./assets/outline/printer.svg": "2811749f5bd9686fd16eb75ce1504a332596b1df",
@@ -1255,8 +1257,8 @@
     "./assets/outline/sketch.svg": "17b308fce9f2cdb12a28f616cd79db22f6c0a8a3",
     "./assets/outline/skin.svg": "70ae5d492a2acdeb8cf5c323f3d12580a6239509",
     "./assets/outline/skype.svg": "24d3046b8d2007fd8148d4f8bfab4ee193808fad",
-    "./assets/outline/slack-square.svg": "9d513c187bedde15da9bc54a58c78c3b51230a8d",
-    "./assets/outline/slack.svg": "79cd807e1f2f4ec7c4ba5b03338a157ff1385742",
+    "./assets/outline/slack-square.svg": "09a78100dcbfbac3b2e05d8c6ae43654f45ad02e",
+    "./assets/outline/slack.svg": "5605c7ad09d4cdab773470ff9026c4b9231a857d",
     "./assets/outline/sliders.svg": "e51bb0f0fddf3319514d49ddc505b837ee1c0283",
     "./assets/outline/small-dash.svg": "7e135eb28c7f869c3d5da6b337738fdcfb0be20c",
     "./assets/outline/smile.svg": "e01762cc096404678ad97c977867a69247b8494d",
@@ -1471,11 +1473,11 @@
     "./assets/twotone/wallet.svg": "450239fff59398e7314a5d7b1201a0ce1699ec9f",
     "./assets/twotone/warning.svg": "ee982b671787446c8b9fc65d3d23b88943dc52ac",
     "./es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
-    "./index.html": "7543a26d9667cb678c5535541221d4fd53f2b3d0",
-    "./main.b1f7d4bc271bfe4c1195.js": "a6ba07fdbdc64d576a39cb6d9506db4f8df3e88e",
+    "./index.html": "b7f39c7f597526df0222636b5e295810b3f8e90b",
+    "./main.eb4b1d644ed1f5c9f7ee.js": "31fbc5cd25fc052a12b8d5a575514ee9f95fa57b",
     "./polyfills.9bad06aa2b4c327a15b4.js": "d2bbdc195d7d4bcaf5c398dc3bd25dd6e5fc5c2c",
     "./runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "./styles.7828fe170916fd13fc9d.css": "ffaffd821bef4474fade518ee2fc5c2dccda5339"
+    "./styles.be9c3596d2bf42517b7f.css": "a6b5f1a88b5c1fef5bb5e3a59923e62aade4344c"
   },
   "navigationUrls": [
     {
