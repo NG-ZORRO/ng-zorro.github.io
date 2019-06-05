@@ -36,6 +36,8 @@ exports.ROUTES = [
     '/components/comment/zh',
     '/components/date-picker/en',
     '/components/date-picker/zh',
+    '/components/descriptions/en',
+    '/components/descriptions/zh',
     '/components/divider/en',
     '/components/divider/zh',
     '/components/drawer/en',
