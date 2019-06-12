@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1559739958283,
+  "timestamp": 1560304778704,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -10,7 +10,7 @@
       "urls": [
         "./es2015-polyfills.bda95d5896422d031328.js",
         "./index.html",
-        "./main.2803066114e8308cae46.js",
+        "./main.96c1ffd0238a1188291e.js",
         "./polyfills.9bad06aa2b4c327a15b4.js",
         "./runtime.26209474bfa8dc87a77c.js",
         "./styles.d321931ab0df012cf273.css"
@@ -1481,8 +1481,8 @@
     "./assets/twotone/wallet.svg": "450239fff59398e7314a5d7b1201a0ce1699ec9f",
     "./assets/twotone/warning.svg": "ee982b671787446c8b9fc65d3d23b88943dc52ac",
     "./es2015-polyfills.bda95d5896422d031328.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
-    "./index.html": "ae6d28bda009727c6b0b02584792c2b07e810d8a",
-    "./main.2803066114e8308cae46.js": "099585e418e5dbf0ceef6c4693d7ba383f28ba72",
+    "./index.html": "c1f70d6011ccb835dbcb2aa6209b351073227f10",
+    "./main.96c1ffd0238a1188291e.js": "099585e418e5dbf0ceef6c4693d7ba383f28ba72",
     "./polyfills.9bad06aa2b4c327a15b4.js": "d2bbdc195d7d4bcaf5c398dc3bd25dd6e5fc5c2c",
     "./runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "./styles.d321931ab0df012cf273.css": "4e2b2cff8f7915c71798c6e05ee1812a930cbd14"
@@ -1506,7 +1506,7 @@
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?(version|issue-helper|iframe)\\/.*$"
+      "regex": "^\\/(?:.+\\/)?(version|issue-helper|iframe|blog)\\/.*$"
     }
   ]
 }
