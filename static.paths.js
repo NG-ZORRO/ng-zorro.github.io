@@ -116,6 +116,8 @@ exports.ROUTES = [
     '/components/tree-select/zh',
     '/components/tree/en',
     '/components/tree/zh',
+    '/components/typography/en',
+    '/components/typography/zh',
     '/components/upload/en',
     '/components/upload/zh',
     '/doc/introduce/en',

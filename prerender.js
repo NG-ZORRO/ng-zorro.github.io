@@ -23,6 +23,7 @@ var index = fs_extra_1.readFileSync(path_1.join('./', 'index.html'), 'utf8');
 var previousRender = Promise.resolve();
 // Iterate each route path
 static_paths_1.ROUTES.forEach(function (route) {
+    console.log("Rendering\t" + route);
     var fullPath = path_1.join(BROWSER_FOLDER, route);
     // Make sure the directory structure is there
     fs_extra_1.ensureDirSync(fullPath);

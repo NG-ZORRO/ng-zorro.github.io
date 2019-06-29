@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1560582450569,
+  "timestamp": 1561794737370,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -8,12 +8,14 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "./es2015-polyfills.c5dd28b362270c767b34.js",
         "./index.html",
-        "./main.530960b46fd16e81d59f.js",
-        "./polyfills.9bad06aa2b4c327a15b4.js",
-        "./runtime.26209474bfa8dc87a77c.js",
-        "./styles.d321931ab0df012cf273.css"
+        "./main-es2015.d70704a004d05a0ff99f.js",
+        "./main-es5.4f86d072e6a4dfd36d0e.js",
+        "./polyfills-es2015.dc14038627c41a6632e4.js",
+        "./polyfills-es5.d3b1d8ceb49dbc2ece0c.js",
+        "./runtime-es2015.858f8dd898b75fe86926.js",
+        "./runtime-es5.741402d1d47331ce975c.js",
+        "./styles.7f8439e86d54f09bdecf.css"
       ],
       "patterns": []
     },
@@ -42,6 +44,7 @@
         "./assets/fill/bell.svg",
         "./assets/fill/book.svg",
         "./assets/fill/box-plot.svg",
+        "./assets/fill/bug.svg",
         "./assets/fill/build.svg",
         "./assets/fill/bulb.svg",
         "./assets/fill/calculator.svg",
@@ -285,6 +288,7 @@
         "./assets/outline/border.svg",
         "./assets/outline/box-plot.svg",
         "./assets/outline/branches.svg",
+        "./assets/outline/bug.svg",
         "./assets/outline/build.svg",
         "./assets/outline/bulb.svg",
         "./assets/outline/calculator.svg",
@@ -610,6 +614,7 @@
         "./assets/twotone/bell.svg",
         "./assets/twotone/book.svg",
         "./assets/twotone/box-plot.svg",
+        "./assets/twotone/bug.svg",
         "./assets/twotone/build.svg",
         "./assets/twotone/bulb.svg",
         "./assets/twotone/calculator.svg",
@@ -774,6 +779,7 @@
     "./assets/fill/bell.svg": "205245154f0b850595185096138e131b69e6b444",
     "./assets/fill/book.svg": "12b3bdcc9bca88267abe5285225232be44084d85",
     "./assets/fill/box-plot.svg": "4884c741f3b001fe6e998b4311421a99911f3216",
+    "./assets/fill/bug.svg": "a57601b9001526dde734b484e452ad017240a70e",
     "./assets/fill/build.svg": "a29e2d1e31ff0f8573f61d5834e62adb8cb937fc",
     "./assets/fill/bulb.svg": "4cbba077d9f2991b501d55a4e4e5468727c68723",
     "./assets/fill/calculator.svg": "a19745d25af0021116c8d5ad5460cb5ed33bec21",
@@ -1017,6 +1023,7 @@
     "./assets/outline/border.svg": "10635e1fb4125ed8fef19665f4275da78f129636",
     "./assets/outline/box-plot.svg": "f39d345302ba95bd090a017df95ee0e75f83def8",
     "./assets/outline/branches.svg": "991be215b51ef77b047e7680e662d3f69c6b7321",
+    "./assets/outline/bug.svg": "13e37492c86c096bec899e858421b6c2b8ef2ffb",
     "./assets/outline/build.svg": "7cfe771f55a7a8d8b79bec2f8338b5141fb42a3b",
     "./assets/outline/bulb.svg": "9d5eb5bdca0705a5d208f1daa177b8100b034253",
     "./assets/outline/calculator.svg": "156e132081787dff893d35688f1b320069ac69ff",
@@ -1342,6 +1349,7 @@
     "./assets/twotone/bell.svg": "c3c4f5e8b94778374445603b53a77b3131486a12",
     "./assets/twotone/book.svg": "85affe47377db9d8e8692edcac6b46fe9bcc77eb",
     "./assets/twotone/box-plot.svg": "e7d92b9fae10b1af95f6ce726153eafb0d64e970",
+    "./assets/twotone/bug.svg": "f7b301042d34d3348ea5375a7b9086ad592bc7be",
     "./assets/twotone/build.svg": "a7e0ca38ad06e77dd570c812d59d982c399dba66",
     "./assets/twotone/bulb.svg": "6b6259c2c83d63cd42b6c88aae0ada026108afcd",
     "./assets/twotone/calculator.svg": "7c21d20bf4f3d555d5d9f7e9280bdf1136343b36",
@@ -1480,12 +1488,14 @@
     "./assets/twotone/video-camera.svg": "fd00c8e77e12f14af9a837c0e64027ea6f26bc04",
     "./assets/twotone/wallet.svg": "450239fff59398e7314a5d7b1201a0ce1699ec9f",
     "./assets/twotone/warning.svg": "ee982b671787446c8b9fc65d3d23b88943dc52ac",
-    "./es2015-polyfills.c5dd28b362270c767b34.js": "b7a81c61d32b0b12737f0c13f45973ba391cd7f9",
-    "./index.html": "405079cb25ecf2bc028fa0e78be52cdd42639f2b",
-    "./main.530960b46fd16e81d59f.js": "d5f6c1e0a6e4b6ed470ca1fe121d64e7ae78e9e2",
-    "./polyfills.9bad06aa2b4c327a15b4.js": "d2bbdc195d7d4bcaf5c398dc3bd25dd6e5fc5c2c",
-    "./runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "./styles.d321931ab0df012cf273.css": "4e2b2cff8f7915c71798c6e05ee1812a930cbd14"
+    "./index.html": "b9f712b26a088678122a738d6d3e38abe30a0643",
+    "./main-es2015.d70704a004d05a0ff99f.js": "a9aa52626a555323ed72004fe8d42d185d80260f",
+    "./main-es5.4f86d072e6a4dfd36d0e.js": "467fa1db4b159e84936745baa21bb277aadff440",
+    "./polyfills-es2015.dc14038627c41a6632e4.js": "bd1b23edceadef4816be941da295d3124087370c",
+    "./polyfills-es5.d3b1d8ceb49dbc2ece0c.js": "64b6c3ac7ad1e27b58781a667d556e14da944c2c",
+    "./runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "./runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "./styles.7f8439e86d54f09bdecf.css": "20385ac8e2ef0689e4b503c6efb2c1819e8bead5"
   },
   "navigationUrls": [
     {
@@ -1506,7 +1516,7 @@
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?(version|issue-helper|iframe)\\/.*$"
+      "regex": "^\\/(?:.+\\/)?(version|issue-helper|iframe|blog)\\/.*$"
     }
   ]
 }
