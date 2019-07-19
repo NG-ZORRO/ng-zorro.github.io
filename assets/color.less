@@ -1795,6 +1795,14 @@ this.tinycolor = tinycolor;
 @animation-duration-base: 0.2s;
 @animation-duration-fast: 0.1s; // Tooltip
 
+//CollapsePanel
+@collapse-panel-border-radius: @border-radius-base;
+
+//Dropdown
+@dropdown-vertical-padding: 5px;
+@dropdown-font-size: @font-size-base;
+@dropdown-line-height: 22px;
+
 // Form
 // ---
 @label-required-color: @highlight-color;
@@ -1915,6 +1923,8 @@ this.tinycolor = tinycolor;
 @table-row-hover-bg: @primary-1;
 @table-selected-row-color: inherit;
 @table-selected-row-bg: #fafafa;
+@table-body-selected-sort-bg: @table-selected-row-bg;
+@table-selected-row-hover-bg: @table-selected-row-bg;
 @table-expanded-row-bg: #fbfbfb;
 @table-padding-vertical: 16px;
 @table-padding-horizontal: 16px;
@@ -4319,6 +4329,10 @@ html {
   border-color: #e8e8e8;
   border-bottom: 1px solid #fff;
 }
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-disabled {
+  color: @primary-color;
+  color: rgba(0, 0, 0, 0.25);
+}
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x {
   color: rgba(0, 0, 0, 0.45);
 }
@@ -4387,12 +4401,12 @@ html {
 .ant-tabs-nav .ant-tabs-tab:active {
   color: color(~`colorPalette("@{primary-color}", 7)`);
 }
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: @primary-color;
+}
 .ant-tabs-nav .ant-tabs-tab-disabled,
 .ant-tabs-nav .ant-tabs-tab-disabled:hover {
   color: rgba(0, 0, 0, 0.25);
-}
-.ant-tabs-nav .ant-tabs-tab-active {
-  color: @primary-color;
 }
 .ant-tabs .ant-tabs-left-bar,
 .ant-tabs .ant-tabs-right-bar {
@@ -4645,6 +4659,62 @@ html {
 .ant-calendar-header .ant-calendar-prev-year-btn,
 .ant-calendar-header .ant-calendar-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-header .ant-calendar-prev-century-btn::before,
+.ant-calendar-header .ant-calendar-prev-decade-btn::before,
+.ant-calendar-header .ant-calendar-prev-year-btn::before,
+.ant-calendar-header .ant-calendar-prev-century-btn::after,
+.ant-calendar-header .ant-calendar-prev-decade-btn::after,
+.ant-calendar-header .ant-calendar-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-prev-century-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-decade-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-year-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-century-btn:hover::after,
+.ant-calendar-header .ant-calendar-prev-decade-btn:hover::after,
+.ant-calendar-header .ant-calendar-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-next-century-btn::before,
+.ant-calendar-header .ant-calendar-next-decade-btn::before,
+.ant-calendar-header .ant-calendar-next-year-btn::before,
+.ant-calendar-header .ant-calendar-next-century-btn::after,
+.ant-calendar-header .ant-calendar-next-decade-btn::after,
+.ant-calendar-header .ant-calendar-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-next-century-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-decade-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-year-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-century-btn:hover::after,
+.ant-calendar-header .ant-calendar-next-decade-btn:hover::after,
+.ant-calendar-header .ant-calendar-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-prev-month-btn::before,
+.ant-calendar-header .ant-calendar-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-prev-month-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-next-month-btn::before,
+.ant-calendar-header .ant-calendar-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-next-month-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar table {
   background-color: transparent;
@@ -5025,6 +5095,9 @@ html {
 .ant-calendar-time-picker-select li:hover {
   background: color(~`colorPalette("@{primary-color}", 1)`);
 }
+.ant-calendar-time-picker-select li:focus {
+  color: @primary-color;
+}
 li.ant-calendar-time-picker-select-option-selected {
   background: #f5f5f5;
 }
@@ -5065,6 +5138,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn,
 .ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar-month-panel-footer {
   border-top: 1px solid #e8e8e8;
@@ -5119,6 +5248,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
 }
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
 .ant-calendar-year-panel-footer {
   border-top: 1px solid #e8e8e8;
 }
@@ -5170,6 +5355,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn,
 .ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar-decade-panel-footer {
   border-top: 1px solid #e8e8e8;
@@ -5435,6 +5676,9 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 }
 .ant-time-picker-panel-select:last-child {
   border-right: 0;
+}
+.ant-time-picker-panel-select li:focus {
+  color: @primary-color;
 }
 .ant-time-picker-panel-select li:hover {
   background: color(~`colorPalette("@{primary-color}", 1)`);
@@ -5709,25 +5953,25 @@ li.ant-time-picker-panel-select-option-disabled:hover {
 .ant-descriptions-item-content {
   color: rgba(0, 0, 0, 0.65);
 }
-.ant-descriptions.bordered .ant-descriptions-view {
+.ant-descriptions-bordered .ant-descriptions-view {
   border: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label,
-.ant-descriptions.bordered .ant-descriptions-item-content {
+.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions-bordered .ant-descriptions-item-content {
   border-right: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label:last-child,
-.ant-descriptions.bordered .ant-descriptions-item-content:last-child {
+.ant-descriptions-bordered .ant-descriptions-item-label:last-child,
+.ant-descriptions-bordered .ant-descriptions-item-content:last-child {
   border-right: none;
 }
-.ant-descriptions.bordered .ant-descriptions-row {
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #fafafa;
+}
+.ant-descriptions-bordered .ant-descriptions-row {
   border-bottom: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-row:last-child {
+.ant-descriptions-bordered .ant-descriptions-row:last-child {
   border-bottom: none;
-}
-.ant-descriptions.bordered .ant-descriptions-item-label {
-  background-color: #fafafa;
 }
 .ant-divider {
   color: rgba(0, 0, 0, 0.65);
@@ -6061,20 +6305,6 @@ li.ant-time-picker-panel-select-option-disabled:hover {
 form .ant-upload {
   background: transparent;
 }
-.ant-input-group-wrap .ant-select-selection {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.ant-input-group-wrap .ant-select-selection:hover {
-  border-color: #d9d9d9;
-}
-.ant-input-group-wrap .ant-select-selection--single {
-  background-color: rgba(0, 0, 0, 0.07);
-}
-.ant-input-group-wrap .ant-select-open .ant-select-selection {
-  border-color: #d9d9d9;
-  box-shadow: none;
-}
 .has-success.has-feedback .ant-form-item-children-icon {
   color: #52c41a;
 }
@@ -6084,6 +6314,7 @@ form .ant-upload {
 }
 .has-warning .ant-input,
 .has-warning .ant-input:hover {
+  background-color: #fff;
   border-color: #faad14;
 }
 .has-warning .ant-input:focus {
@@ -6172,6 +6403,7 @@ form .ant-upload {
 }
 .has-error .ant-input,
 .has-error .ant-input:hover {
+  background-color: #fff;
   border-color: #f5222d;
 }
 .has-error .ant-input:focus {
@@ -6847,32 +7079,45 @@ form .ant-upload {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .ant-tooltip-arrow {
-  border-color: transparent;
+  background: transparent;
   border-style: solid;
+  border-width: 3.53553391px;
 }
 .ant-tooltip-placement-top .ant-tooltip-arrow,
 .ant-tooltip-placement-topLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-topRight .ant-tooltip-arrow {
-  border-width: 5px 5px 0;
-  border-top-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  border-left-color: transparent;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-right .ant-tooltip-arrow,
 .ant-tooltip-placement-rightTop .ant-tooltip-arrow,
 .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
-  border-width: 5px 5px 5px 0;
-  border-right-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #404040;
+  border-left-color: #404040;
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-left .ant-tooltip-arrow,
 .ant-tooltip-placement-leftTop .ant-tooltip-arrow,
 .ant-tooltip-placement-leftBottom .ant-tooltip-arrow {
-  border-width: 5px 0 5px 5px;
-  border-left-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: #404040;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-bottom .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
-  border-width: 0 5px 5px;
-  border-bottom-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #404040;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
 }
 .ant-mention-wrapper {
   color: rgba(0, 0, 0, 0.65);
@@ -7094,10 +7339,10 @@ form .ant-upload {
 .ant-page-header-back-button:active {
   color: color(~`colorPalette("@{primary-color}", 7)`);
 }
-.ant-page-header-title-view-title {
+.ant-page-header-heading-title {
   color: rgba(0, 0, 0, 0.85);
 }
-.ant-page-header-title-view-sub-title {
+.ant-page-header-heading-sub-title {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-page-header-footer .ant-tabs-bar {
@@ -7875,6 +8120,18 @@ form .ant-upload {
 .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
   background: color(~`colorPalette("@{primary-color}", 1)`);
 }
+.ant-table-thead > tr.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort {
+  background: #fafafa;
+}
+.ant-table-thead > tr:hover.ant-table-row-selected > td,
+.ant-table-tbody > tr:hover.ant-table-row-selected > td {
+  background: #fafafa;
+}
+.ant-table-thead > tr:hover.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-tbody > tr:hover.ant-table-row-selected > td.ant-table-column-sort {
+  background: #fafafa;
+}
 .ant-table-thead > tr:hover {
   background: none;
 }
@@ -8100,6 +8357,24 @@ tr.ant-table-expanded-row:hover {
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table {
   border: 0;
 }
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+  background-color: transparent;
+}
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr,
@@ -8108,7 +8383,6 @@ tr.ant-table-expanded-row:hover {
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr {
-  background-color: transparent;
   border-bottom: 1px solid #e8e8e8;
 }
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th.ant-table-column-sort,
@@ -8239,6 +8513,9 @@ nz-table .ant-table table {
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-th-right-sticky,
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > .cdk-virtual-scroll-content-wrapper > table > .ant-table-thead > tr > th.ant-table-th-right-sticky {
   background: #fff;
+}
+a[nz-tab-link]::before {
+  background-color: transparent;
 }
 .ant-timeline {
   color: rgba(0, 0, 0, 0.65);
@@ -8601,7 +8878,7 @@ h4.ant-typography,
   background-color: #fafafa;
 }
 .ant-cascader-menu-item-expand .ant-cascader-menu-item-expand-icon,
-.ant-cascader-menu-item-expand .ant-cascader-menu-item-loading-icon {
+.ant-cascader-menu-item-loading-icon {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-cascader-menu-item .ant-cascader-menu-item-keyword {
@@ -8986,6 +9263,30 @@ li.ant-select-tree-treenode-disabled > .ant-select-tree-node-content-wrapper:hov
 .ant-fullcalendar-disabled-cell .ant-fullcalendar-value {
   color: rgba(0, 0, 0, 0.25);
   border-radius: 0;
+}
+.ant-result {
+  background-color: #fff;
+}
+.ant-result-success .anticon {
+  color: #52c41a;
+}
+.ant-result-error .anticon {
+  color: #f5222d;
+}
+.ant-result-info .anticon {
+  color: @primary-color;
+}
+.ant-result-warning .anticon {
+  color: #faad14;
+}
+.ant-result-title {
+  color: rgba(0, 0, 0, 0.85);
+}
+.ant-result-subtitle {
+  color: rgba(0, 0, 0, 0.45);
+}
+.ant-result-content {
+  background-color: #fafafa;
 }
 body {
   color: #314659;
@@ -11271,7 +11572,7 @@ html {
   background-color: #fafafa;
 }
 .ant-cascader-menu-item-expand .ant-cascader-menu-item-expand-icon,
-.ant-cascader-menu-item-expand .ant-cascader-menu-item-loading-icon {
+.ant-cascader-menu-item-loading-icon {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-cascader-menu-item .ant-cascader-menu-item-keyword {
@@ -11481,6 +11782,62 @@ html {
 .ant-calendar-header .ant-calendar-prev-year-btn,
 .ant-calendar-header .ant-calendar-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-header .ant-calendar-prev-century-btn::before,
+.ant-calendar-header .ant-calendar-prev-decade-btn::before,
+.ant-calendar-header .ant-calendar-prev-year-btn::before,
+.ant-calendar-header .ant-calendar-prev-century-btn::after,
+.ant-calendar-header .ant-calendar-prev-decade-btn::after,
+.ant-calendar-header .ant-calendar-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-prev-century-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-decade-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-year-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-century-btn:hover::after,
+.ant-calendar-header .ant-calendar-prev-decade-btn:hover::after,
+.ant-calendar-header .ant-calendar-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-next-century-btn::before,
+.ant-calendar-header .ant-calendar-next-decade-btn::before,
+.ant-calendar-header .ant-calendar-next-year-btn::before,
+.ant-calendar-header .ant-calendar-next-century-btn::after,
+.ant-calendar-header .ant-calendar-next-decade-btn::after,
+.ant-calendar-header .ant-calendar-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-next-century-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-decade-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-year-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-century-btn:hover::after,
+.ant-calendar-header .ant-calendar-next-decade-btn:hover::after,
+.ant-calendar-header .ant-calendar-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-prev-month-btn::before,
+.ant-calendar-header .ant-calendar-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-prev-month-btn:hover::before,
+.ant-calendar-header .ant-calendar-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-header .ant-calendar-next-month-btn::before,
+.ant-calendar-header .ant-calendar-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-header .ant-calendar-next-month-btn:hover::before,
+.ant-calendar-header .ant-calendar-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar table {
   background-color: transparent;
@@ -11861,6 +12218,9 @@ html {
 .ant-calendar-time-picker-select li:hover {
   background: color(~`colorPalette("@{primary-color}", 1)`);
 }
+.ant-calendar-time-picker-select li:focus {
+  color: @primary-color;
+}
 li.ant-calendar-time-picker-select-option-selected {
   background: #f5f5f5;
 }
@@ -11901,6 +12261,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn,
 .ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-century-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-decade-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-century-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-decade-btn:hover::after,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn:hover::before,
+.ant-calendar-month-panel-header .ant-calendar-month-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar-month-panel-footer {
   border-top: 1px solid #e8e8e8;
@@ -11955,6 +12371,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
 }
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-century-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-decade-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-century-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-decade-btn:hover::after,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn:hover::before,
+.ant-calendar-year-panel-header .ant-calendar-year-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
 .ant-calendar-year-panel-footer {
   border-top: 1px solid #e8e8e8;
 }
@@ -12006,6 +12478,62 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn,
 .ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn {
   color: rgba(0, 0, 0, 0.45);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-century-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-decade-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-century-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-decade-btn:hover::after,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-year-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-prev-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn::after {
+  border: 0 solid #aaa;
+  border-width: 1.5px 0 0 1.5px;
+  border-radius: 1px;
+}
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn:hover::before,
+.ant-calendar-decade-panel-header .ant-calendar-decade-panel-next-month-btn:hover::after {
+  border-color: rgba(0, 0, 0, 0.65);
 }
 .ant-calendar-decade-panel-footer {
   border-top: 1px solid #e8e8e8;
@@ -12059,25 +12587,25 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 .ant-descriptions-item-content {
   color: rgba(0, 0, 0, 0.65);
 }
-.ant-descriptions.bordered .ant-descriptions-view {
+.ant-descriptions-bordered .ant-descriptions-view {
   border: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label,
-.ant-descriptions.bordered .ant-descriptions-item-content {
+.ant-descriptions-bordered .ant-descriptions-item-label,
+.ant-descriptions-bordered .ant-descriptions-item-content {
   border-right: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-item-label:last-child,
-.ant-descriptions.bordered .ant-descriptions-item-content:last-child {
+.ant-descriptions-bordered .ant-descriptions-item-label:last-child,
+.ant-descriptions-bordered .ant-descriptions-item-content:last-child {
   border-right: none;
 }
-.ant-descriptions.bordered .ant-descriptions-row {
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #fafafa;
+}
+.ant-descriptions-bordered .ant-descriptions-row {
   border-bottom: 1px solid #e8e8e8;
 }
-.ant-descriptions.bordered .ant-descriptions-row:last-child {
+.ant-descriptions-bordered .ant-descriptions-row:last-child {
   border-bottom: none;
-}
-.ant-descriptions.bordered .ant-descriptions-item-label {
-  background-color: #fafafa;
 }
 .ant-divider {
   color: rgba(0, 0, 0, 0.65);
@@ -12276,20 +12804,6 @@ li.ant-calendar-time-picker-select-option-disabled:hover {
 form .ant-upload {
   background: transparent;
 }
-.ant-input-group-wrap .ant-select-selection {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.ant-input-group-wrap .ant-select-selection:hover {
-  border-color: #d9d9d9;
-}
-.ant-input-group-wrap .ant-select-selection--single {
-  background-color: rgba(0, 0, 0, 0.07);
-}
-.ant-input-group-wrap .ant-select-open .ant-select-selection {
-  border-color: #d9d9d9;
-  box-shadow: none;
-}
 .has-success.has-feedback .ant-form-item-children-icon {
   color: #52c41a;
 }
@@ -12299,6 +12813,7 @@ form .ant-upload {
 }
 .has-warning .ant-input,
 .has-warning .ant-input:hover {
+  background-color: #fff;
   border-color: #faad14;
 }
 .has-warning .ant-input:focus {
@@ -12387,6 +12902,7 @@ form .ant-upload {
 }
 .has-error .ant-input,
 .has-error .ant-input:hover {
+  background-color: #fff;
   border-color: #f5222d;
 }
 .has-error .ant-input:focus {
@@ -13421,10 +13937,10 @@ form .ant-upload {
 .ant-page-header-back-button:active {
   color: color(~`colorPalette("@{primary-color}", 7)`);
 }
-.ant-page-header-title-view-title {
+.ant-page-header-heading-title {
   color: rgba(0, 0, 0, 0.85);
 }
-.ant-page-header-title-view-sub-title {
+.ant-page-header-heading-sub-title {
   color: rgba(0, 0, 0, 0.45);
 }
 .ant-page-header-footer .ant-tabs-bar {
@@ -13851,6 +14367,30 @@ form .ant-upload {
 .ant-rate-star-half .ant-rate-star-first,
 .ant-rate-star-full .ant-rate-star-second {
   color: inherit;
+}
+.ant-result {
+  background-color: #fff;
+}
+.ant-result-success .anticon {
+  color: #52c41a;
+}
+.ant-result-error .anticon {
+  color: #f5222d;
+}
+.ant-result-info .anticon {
+  color: @primary-color;
+}
+.ant-result-warning .anticon {
+  color: #faad14;
+}
+.ant-result-title {
+  color: rgba(0, 0, 0, 0.85);
+}
+.ant-result-subtitle {
+  color: rgba(0, 0, 0, 0.45);
+}
+.ant-result-content {
+  background-color: #fafafa;
 }
 .ant-select {
   color: rgba(0, 0, 0, 0.65);
@@ -14380,6 +14920,18 @@ form .ant-upload {
 .ant-table-tbody > tr:hover:not(.ant-table-expanded-row) > td {
   background: color(~`colorPalette("@{primary-color}", 1)`);
 }
+.ant-table-thead > tr.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort {
+  background: #fafafa;
+}
+.ant-table-thead > tr:hover.ant-table-row-selected > td,
+.ant-table-tbody > tr:hover.ant-table-row-selected > td {
+  background: #fafafa;
+}
+.ant-table-thead > tr:hover.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-tbody > tr:hover.ant-table-row-selected > td.ant-table-column-sort {
+  background: #fafafa;
+}
 .ant-table-thead > tr:hover {
   background: none;
 }
@@ -14605,6 +15157,24 @@ tr.ant-table-expanded-row:hover {
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table {
   border: 0;
 }
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th,
+.ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td,
+.ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td {
+  background-color: transparent;
+}
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr,
@@ -14613,7 +15183,6 @@ tr.ant-table-expanded-row:hover {
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr,
 .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr {
-  background-color: transparent;
   border-bottom: 1px solid #e8e8e8;
 }
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th.ant-table-column-sort,
@@ -14676,6 +15245,10 @@ tr.ant-table-expanded-row:hover {
   background: #fff;
   border-color: #e8e8e8;
   border-bottom: 1px solid #fff;
+}
+.ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-disabled {
+  color: @primary-color;
+  color: rgba(0, 0, 0, 0.25);
 }
 .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab .ant-tabs-close-x {
   color: rgba(0, 0, 0, 0.45);
@@ -14745,12 +15318,12 @@ tr.ant-table-expanded-row:hover {
 .ant-tabs-nav .ant-tabs-tab:active {
   color: color(~`colorPalette("@{primary-color}", 7)`);
 }
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: @primary-color;
+}
 .ant-tabs-nav .ant-tabs-tab-disabled,
 .ant-tabs-nav .ant-tabs-tab-disabled:hover {
   color: rgba(0, 0, 0, 0.25);
-}
-.ant-tabs-nav .ant-tabs-tab-active {
-  color: @primary-color;
 }
 .ant-tabs .ant-tabs-left-bar,
 .ant-tabs .ant-tabs-right-bar {
@@ -14978,6 +15551,9 @@ tr.ant-table-expanded-row:hover {
 .ant-time-picker-panel-select:last-child {
   border-right: 0;
 }
+.ant-time-picker-panel-select li:focus {
+  color: @primary-color;
+}
 .ant-time-picker-panel-select li:hover {
   background: color(~`colorPalette("@{primary-color}", 1)`);
 }
@@ -15105,32 +15681,45 @@ li.ant-time-picker-panel-select-option-disabled:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .ant-tooltip-arrow {
-  border-color: transparent;
+  background: transparent;
   border-style: solid;
+  border-width: 3.53553391px;
 }
 .ant-tooltip-placement-top .ant-tooltip-arrow,
 .ant-tooltip-placement-topLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-topRight .ant-tooltip-arrow {
-  border-width: 5px 5px 0;
-  border-top-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: #404040;
+  border-bottom-color: #404040;
+  border-left-color: transparent;
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-right .ant-tooltip-arrow,
 .ant-tooltip-placement-rightTop .ant-tooltip-arrow,
 .ant-tooltip-placement-rightBottom .ant-tooltip-arrow {
-  border-width: 5px 5px 5px 0;
-  border-right-color: rgba(0, 0, 0, 0.75);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #404040;
+  border-left-color: #404040;
+  box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-left .ant-tooltip-arrow,
 .ant-tooltip-placement-leftTop .ant-tooltip-arrow,
 .ant-tooltip-placement-leftBottom .ant-tooltip-arrow {
-  border-width: 5px 0 5px 5px;
-  border-left-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: #404040;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  box-shadow: 3px -3px 7px rgba(0, 0, 0, 0.07);
 }
 .ant-tooltip-placement-bottom .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
 .ant-tooltip-placement-bottomRight .ant-tooltip-arrow {
-  border-width: 0 5px 5px;
-  border-bottom-color: rgba(0, 0, 0, 0.75);
+  border-top-color: #404040;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #404040;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.06);
 }
 .ant-transfer-customize-list .ant-table-wrapper .ant-table-small {
   border: 0;
@@ -15712,6 +16301,9 @@ nz-table .ant-table table {
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th.ant-table-th-right-sticky,
 .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > .cdk-virtual-scroll-content-wrapper > table > .ant-table-thead > tr > th.ant-table-th-right-sticky {
   background: #fff;
+}
+a[nz-tab-link]::before {
+  background-color: transparent;
 }
 .ant-tree.ant-tree-show-line nz-tree-node:not(:last-child) > li::before {
   border-left: 1px solid #d9d9d9;

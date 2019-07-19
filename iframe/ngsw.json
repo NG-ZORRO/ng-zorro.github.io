@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1563077921663,
+  "timestamp": 1563527317704,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -9,13 +9,13 @@
       "updateMode": "prefetch",
       "urls": [
         "./index.html",
-        "./main-es2015.5554fc94815493caded6.js",
-        "./main-es5.506d77f7011a7877d13e.js",
+        "./main-es2015.33b9bfac43d4714f047d.js",
+        "./main-es5.8c58c32da6c74d2a646d.js",
         "./polyfills-es2015.dc14038627c41a6632e4.js",
-        "./polyfills-es5.542050c196edc09ca7d0.js",
+        "./polyfills-es5.bd1f2e4bb5a256cd0bf9.js",
         "./runtime-es2015.858f8dd898b75fe86926.js",
         "./runtime-es5.741402d1d47331ce975c.js",
-        "./styles.7f8439e86d54f09bdecf.css"
+        "./styles.967a689d855614c32cc6.css"
       ],
       "patterns": []
     },
@@ -321,6 +321,7 @@
         "./assets/outline/codepen.svg",
         "./assets/outline/coffee.svg",
         "./assets/outline/colum-height.svg",
+        "./assets/outline/column-height.svg",
         "./assets/outline/column-width.svg",
         "./assets/outline/compass.svg",
         "./assets/outline/contacts.svg",
@@ -1056,6 +1057,7 @@
     "./assets/outline/codepen.svg": "20a43ce02a3d4f0ed857abb6f3f0257df426e2f2",
     "./assets/outline/coffee.svg": "47487c7ac38489070feba37bff084d51881973ee",
     "./assets/outline/colum-height.svg": "bb4ec8c489c53eda7d659de5d15fa5c12dab473f",
+    "./assets/outline/column-height.svg": "bb4ec8c489c53eda7d659de5d15fa5c12dab473f",
     "./assets/outline/column-width.svg": "13e8ee497281a1498e1c3881717c603ea816becb",
     "./assets/outline/compass.svg": "9faa4db5ca942d6328b6e6c3d174d4282303251b",
     "./assets/outline/contacts.svg": "5c75eeff46aa74f6b075434d14faf69f910b8529",
@@ -1488,14 +1490,14 @@
     "./assets/twotone/video-camera.svg": "fd00c8e77e12f14af9a837c0e64027ea6f26bc04",
     "./assets/twotone/wallet.svg": "450239fff59398e7314a5d7b1201a0ce1699ec9f",
     "./assets/twotone/warning.svg": "ee982b671787446c8b9fc65d3d23b88943dc52ac",
-    "./index.html": "f9e32a1d743be2274be47e74fc034751e7ae657c",
-    "./main-es2015.5554fc94815493caded6.js": "ff0775377774ba331b6b54ded263dd938ef140de",
-    "./main-es5.506d77f7011a7877d13e.js": "eb6d9f050fa8aee3b4fa4d3e1bc5cdb4cb0ecd99",
+    "./index.html": "a804f119fa9856cd38eb3a0ea76c36667f60c40d",
+    "./main-es2015.33b9bfac43d4714f047d.js": "ac2c7a83e01eee708b03d615998aa0b4f8663d4c",
+    "./main-es5.8c58c32da6c74d2a646d.js": "6569330f9a8095fc4bd921c4f50245906b61d321",
     "./polyfills-es2015.dc14038627c41a6632e4.js": "bd1b23edceadef4816be941da295d3124087370c",
-    "./polyfills-es5.542050c196edc09ca7d0.js": "64b6c3ac7ad1e27b58781a667d556e14da944c2c",
+    "./polyfills-es5.bd1f2e4bb5a256cd0bf9.js": "0115334a7958c5d7755f816b541787ad242f76e1",
     "./runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "./runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "./styles.7f8439e86d54f09bdecf.css": "20385ac8e2ef0689e4b503c6efb2c1819e8bead5"
+    "./styles.967a689d855614c32cc6.css": "f2faf0de7be2639fa6fd1f38d72ea9ba43e72733"
   },
   "navigationUrls": [
     {
