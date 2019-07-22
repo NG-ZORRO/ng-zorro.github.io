@@ -42,7 +42,7 @@
 /******/
 /******/ 		// "0" is the signal for "already loaded"
 /******/ 		if(installedChunks[chunkId] !== 0) {
-/******/ 			var chunk = require("./" + ({"affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117":"affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117","affix-index-module-ngfactory":"affix-index-module-ngfactory","alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory":"alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory","alert-index-module-ngfactory":"alert-index-module-ngfactory","calendar-index-module-ngfactory":"calendar-index-module-ngfactory","spin-index-module-ngfactory":"spin-index-module-ngfactory","anchor-index-module-ngfactory":"anchor-index-module-ngfactory","auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7":"auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7","auto-complete-index-module-ngfactory":"auto-complete-index-module-ngfactory","comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c":"comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c","date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af":"date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af","comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692":"comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692","date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a":"date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a","drawer-index-module-ngfactory":"drawer-index-module-ngfactory","checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08":"checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08","form-index-module-ngfactory":"form-index-module-ngfactory","cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory":"cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory","input-index-module-ngfactory":"input-index-module-ngfactory","icon-index-module-ngfactory":"icon-index-module-ngfactory","avatar-index-module-ngfactory":"avatar-index-module-ngfactory","back-top-index-module-ngfactory":"back-top-index-module-ngfactory","badge-index-module-ngfactory":"badge-index-module-ngfactory","breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a":"breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a","empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3":"empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3","tree-index-module-ngfactory":"tree-index-module-ngfactory","breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory":"breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory","breadcrumb-index-module-ngfactory":"breadcrumb-index-module-ngfactory","layout-index-module-ngfactory":"layout-index-module-ngfactory","button-index-module-ngfactory":"button-index-module-ngfactory","card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625":"card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625","page-header-index-module-ngfactory":"page-header-index-module-ngfactory","empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d":"empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d","empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory":"empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory","empty-index-module-ngfactory~transfer-index-module-ngfactory":"empty-index-module-ngfactory~transfer-index-module-ngfactory","empty-index-module-ngfactory~tree-select-index-module-ngfactory":"empty-index-module-ngfactory~tree-select-index-module-ngfactory","empty-index-module-ngfactory":"empty-index-module-ngfactory","dropdown-index-module-ngfactory":"dropdown-index-module-ngfactory","transfer-index-module-ngfactory":"transfer-index-module-ngfactory","table-index-module-ngfactory":"table-index-module-ngfactory","card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory":"card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory","statistic-index-module-ngfactory":"statistic-index-module-ngfactory","card-index-module-ngfactory":"card-index-module-ngfactory","tabs-index-module-ngfactory":"tabs-index-module-ngfactory","carousel-index-module-ngfactory":"carousel-index-module-ngfactory","cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory":"cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory","cascader-index-module-ngfactory":"cascader-index-module-ngfactory","modal-index-module-ngfactory":"modal-index-module-ngfactory","upload-index-module-ngfactory":"upload-index-module-ngfactory","checkbox-index-module-ngfactory":"checkbox-index-module-ngfactory","collapse-index-module-ngfactory":"collapse-index-module-ngfactory","comment-index-module-ngfactory":"comment-index-module-ngfactory","list-index-module-ngfactory":"list-index-module-ngfactory","skeleton-index-module-ngfactory":"skeleton-index-module-ngfactory","mention-index-module-ngfactory":"mention-index-module-ngfactory","date-picker-index-module-ngfactory":"date-picker-index-module-ngfactory","time-picker-index-module-ngfactory":"time-picker-index-module-ngfactory","descriptions-index-module-ngfactory":"descriptions-index-module-ngfactory","divider-index-module-ngfactory":"divider-index-module-ngfactory","pagination-index-module-ngfactory":"pagination-index-module-ngfactory","tree-select-index-module-ngfactory":"tree-select-index-module-ngfactory","grid-index-module-ngfactory~slider-index-module-ngfactory":"grid-index-module-ngfactory~slider-index-module-ngfactory","grid-index-module-ngfactory":"grid-index-module-ngfactory","slider-index-module-ngfactory":"slider-index-module-ngfactory","input-number-index-module-ngfactory":"input-number-index-module-ngfactory","menu-index-module-ngfactory":"menu-index-module-ngfactory","message-index-module-ngfactory":"message-index-module-ngfactory","notification-index-module-ngfactory":"notification-index-module-ngfactory","popconfirm-index-module-ngfactory":"popconfirm-index-module-ngfactory","popover-index-module-ngfactory":"popover-index-module-ngfactory","progress-index-module-ngfactory":"progress-index-module-ngfactory","radio-index-module-ngfactory":"radio-index-module-ngfactory","rate-index-module-ngfactory":"rate-index-module-ngfactory","select-index-module-ngfactory":"select-index-module-ngfactory","steps-index-module-ngfactory":"steps-index-module-ngfactory","switch-index-module-ngfactory":"switch-index-module-ngfactory","tag-index-module-ngfactory":"tag-index-module-ngfactory","timeline-index-module-ngfactory":"timeline-index-module-ngfactory","tooltip-index-module-ngfactory":"tooltip-index-module-ngfactory","typography-index-module-ngfactory":"typography-index-module-ngfactory","docs-index-module-ngfactory":"docs-index-module-ngfactory"}[chunkId]||chunkId) + ".js");
+/******/ 			var chunk = require("./" + ({"affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04":"affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04","affix-index-module-ngfactory":"affix-index-module-ngfactory","alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory":"alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory","alert-index-module-ngfactory":"alert-index-module-ngfactory","calendar-index-module-ngfactory":"calendar-index-module-ngfactory","spin-index-module-ngfactory":"spin-index-module-ngfactory","anchor-index-module-ngfactory":"anchor-index-module-ngfactory","auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7":"auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7","auto-complete-index-module-ngfactory":"auto-complete-index-module-ngfactory","comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c":"comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c","date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af":"date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af","comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692":"comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692","date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a":"date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a","drawer-index-module-ngfactory":"drawer-index-module-ngfactory","checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08":"checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08","form-index-module-ngfactory":"form-index-module-ngfactory","cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory":"cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory","input-index-module-ngfactory":"input-index-module-ngfactory","icon-index-module-ngfactory":"icon-index-module-ngfactory","avatar-index-module-ngfactory":"avatar-index-module-ngfactory","back-top-index-module-ngfactory":"back-top-index-module-ngfactory","badge-index-module-ngfactory":"badge-index-module-ngfactory","breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a":"breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a","empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3":"empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3","tree-index-module-ngfactory":"tree-index-module-ngfactory","breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory":"breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory","breadcrumb-index-module-ngfactory":"breadcrumb-index-module-ngfactory","layout-index-module-ngfactory":"layout-index-module-ngfactory","button-index-module-ngfactory":"button-index-module-ngfactory","card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625":"card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625","page-header-index-module-ngfactory":"page-header-index-module-ngfactory","empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d":"empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d","empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory":"empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory","empty-index-module-ngfactory~transfer-index-module-ngfactory":"empty-index-module-ngfactory~transfer-index-module-ngfactory","empty-index-module-ngfactory~tree-select-index-module-ngfactory":"empty-index-module-ngfactory~tree-select-index-module-ngfactory","empty-index-module-ngfactory":"empty-index-module-ngfactory","dropdown-index-module-ngfactory":"dropdown-index-module-ngfactory","transfer-index-module-ngfactory":"transfer-index-module-ngfactory","table-index-module-ngfactory":"table-index-module-ngfactory","card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory":"card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory","statistic-index-module-ngfactory":"statistic-index-module-ngfactory","card-index-module-ngfactory":"card-index-module-ngfactory","tabs-index-module-ngfactory":"tabs-index-module-ngfactory","carousel-index-module-ngfactory":"carousel-index-module-ngfactory","cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory":"cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory","cascader-index-module-ngfactory":"cascader-index-module-ngfactory","modal-index-module-ngfactory":"modal-index-module-ngfactory","upload-index-module-ngfactory":"upload-index-module-ngfactory","checkbox-index-module-ngfactory":"checkbox-index-module-ngfactory","collapse-index-module-ngfactory":"collapse-index-module-ngfactory","comment-index-module-ngfactory":"comment-index-module-ngfactory","list-index-module-ngfactory":"list-index-module-ngfactory","skeleton-index-module-ngfactory":"skeleton-index-module-ngfactory","mention-index-module-ngfactory":"mention-index-module-ngfactory","date-picker-index-module-ngfactory":"date-picker-index-module-ngfactory","time-picker-index-module-ngfactory":"time-picker-index-module-ngfactory","descriptions-index-module-ngfactory":"descriptions-index-module-ngfactory","divider-index-module-ngfactory":"divider-index-module-ngfactory","pagination-index-module-ngfactory":"pagination-index-module-ngfactory","tree-select-index-module-ngfactory":"tree-select-index-module-ngfactory","grid-index-module-ngfactory~slider-index-module-ngfactory":"grid-index-module-ngfactory~slider-index-module-ngfactory","grid-index-module-ngfactory":"grid-index-module-ngfactory","slider-index-module-ngfactory":"slider-index-module-ngfactory","input-number-index-module-ngfactory":"input-number-index-module-ngfactory","menu-index-module-ngfactory":"menu-index-module-ngfactory","message-index-module-ngfactory":"message-index-module-ngfactory","notification-index-module-ngfactory":"notification-index-module-ngfactory","popconfirm-index-module-ngfactory":"popconfirm-index-module-ngfactory","popover-index-module-ngfactory":"popover-index-module-ngfactory","progress-index-module-ngfactory":"progress-index-module-ngfactory","radio-index-module-ngfactory":"radio-index-module-ngfactory","rate-index-module-ngfactory":"rate-index-module-ngfactory","result-index-module-ngfactory~typography-index-module-ngfactory":"result-index-module-ngfactory~typography-index-module-ngfactory","result-index-module-ngfactory":"result-index-module-ngfactory","typography-index-module-ngfactory":"typography-index-module-ngfactory","select-index-module-ngfactory":"select-index-module-ngfactory","steps-index-module-ngfactory":"steps-index-module-ngfactory","switch-index-module-ngfactory":"switch-index-module-ngfactory","tag-index-module-ngfactory":"tag-index-module-ngfactory","timeline-index-module-ngfactory":"timeline-index-module-ngfactory","tooltip-index-module-ngfactory":"tooltip-index-module-ngfactory","docs-index-module-ngfactory":"docs-index-module-ngfactory"}[chunkId]||chunkId) + ".js");
 /******/ 			var moreModules = chunk.modules, chunkIds = chunk.ids;
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				modules[moduleId] = moreModules[moduleId];
@@ -721,7 +721,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAffixComponent {
     /**
@@ -1087,7 +1087,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAffixModule {
 }
@@ -1133,7 +1133,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAlertComponent {
     constructor() {
@@ -1249,7 +1249,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAlertModule {
 }
@@ -1304,7 +1304,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const sharpMatcherRegx = /#([^#]+)$/;
@@ -1590,7 +1590,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAnchorLinkComponent {
     /**
@@ -1687,7 +1687,7 @@ NzAnchorLinkComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAnchorModule {
 }
@@ -1755,7 +1755,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAutocompleteOptgroupComponent {
     constructor() { }
@@ -1782,7 +1782,7 @@ NzAutocompleteOptgroupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionSelectionChange {
     /**
@@ -1920,7 +1920,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_5__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAutocompleteComponent {
     /**
@@ -2165,7 +2165,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_5__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_AUTOCOMPLETE_VALUE_ACCESSOR = {
@@ -2590,7 +2590,7 @@ NzAutocompleteTriggerDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAutocompleteModule {
 }
@@ -2645,7 +2645,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAvatarComponent {
     /**
@@ -2809,7 +2809,7 @@ NzAvatarComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAvatarModule {
 }
@@ -2858,7 +2858,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBackTopComponent {
     /**
@@ -2992,7 +2992,7 @@ NzBackTopComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBackTopModule {
 }
@@ -3045,7 +3045,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBadgeComponent {
     /**
@@ -3205,7 +3205,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBadgeModule {
 }
@@ -3266,7 +3266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_ROUTE_DATA_BREADCRUMB = 'breadcrumb';
@@ -3426,7 +3426,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBreadCrumbItemComponent {
     /**
@@ -3465,7 +3465,7 @@ NzBreadCrumbItemComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBreadCrumbModule {
 }
@@ -3523,7 +3523,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzButtonComponent {
     /**
@@ -3741,7 +3741,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzButtonGroupComponent {
     /**
@@ -3809,7 +3809,7 @@ NzButtonGroupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzButtonModule {
 }
@@ -3909,7 +3909,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDateCellDirective {
 }
@@ -3946,7 +3946,7 @@ NzMonthFullCellDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarHeaderComponent {
     /**
@@ -4083,7 +4083,7 @@ NzCalendarHeaderComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarComponent {
     /**
@@ -4499,7 +4499,7 @@ NzCalendarComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarModule {
 }
@@ -4559,7 +4559,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardGridDirective {
     /**
@@ -4584,7 +4584,7 @@ NzCardGridDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardTabComponent {
 }
@@ -4603,7 +4603,7 @@ NzCardTabComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardComponent {
     /**
@@ -4677,7 +4677,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardLoadingComponent {
     /**
@@ -4711,7 +4711,7 @@ NzCardLoadingComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardMetaComponent {
     /**
@@ -4750,7 +4750,7 @@ NzCardMetaComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardModule {
 }
@@ -4808,7 +4808,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselContentDirective {
     /**
@@ -4856,14 +4856,14 @@ NzCarouselContentDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('nz-carousel-custom-strategies');
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -4952,7 +4952,7 @@ class NzCarouselBaseStrategy {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
     /**
@@ -5020,7 +5020,7 @@ class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
     constructor() {
@@ -5221,24 +5221,24 @@ class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselComponent {
     /**
      * @param {?} elementRef
      * @param {?} renderer
      * @param {?} cdr
-     * @param {?} ngZone
      * @param {?} platform
+     * @param {?} nzDomEventService
      * @param {?} document
      * @param {?} customStrategies
      */
-    constructor(elementRef, renderer, cdr, ngZone, platform, document, // tslint:disable-line:no-any
+    constructor(elementRef, renderer, cdr, platform, nzDomEventService, document, // tslint:disable-line:no-any
     customStrategies) {
         this.renderer = renderer;
         this.cdr = cdr;
-        this.ngZone = ngZone;
         this.platform = platform;
+        this.nzDomEventService = nzDomEventService;
         this.customStrategies = customStrategies;
         this.nzEffect = 'scrollx';
         this.nzEnableSwipe = true;
@@ -5324,9 +5324,7 @@ class NzCarouselComponent {
      * @return {?}
      */
     set nzVertical(value) {
-        if (Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])()) {
-            console.warn(`'nzVertical' is deprecated and will be removed in 9.0.0. Please use 'nzDotPosition' instead.`);
-        }
+        Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["warnDeprecation"])(`'nzVertical' is deprecated and will be removed in 9.0.0. Please use 'nzDotPosition' instead.`);
         this.vertical = value;
     }
     /**
@@ -5370,18 +5368,17 @@ class NzCarouselComponent {
             this.markContentActive(0);
             this.syncStrategy();
         }));
-        this.ngZone.runOutsideAngular((/**
+        this.nzDomEventService
+            .registerResizeListener()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["finalize"])((/**
+         * @return {?}
+         */
+        () => this.nzDomEventService.unregisterResizeListener())))
+            .subscribe((/**
          * @return {?}
          */
         () => {
-            Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(window, 'resize')
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["throttleTime"])(16))
-                .subscribe((/**
-             * @return {?}
-             */
-            () => {
-                this.syncStrategy();
-            }));
+            this.syncStrategy();
         }));
         this.switchStrategy();
         this.markContentActive(0);
@@ -5606,8 +5603,8 @@ NzCarouselComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
     { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzDomEventService"] },
     { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"],] }] },
     { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [NZ_CAROUSEL_CUSTOM_STRATEGIES,] }] }
 ];
@@ -5655,7 +5652,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselModule {
 }
@@ -5727,7 +5724,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} options
@@ -5739,7 +5736,7 @@ function isShowSearchObject(options) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -5765,7 +5762,7 @@ function isParentOption(o) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCascaderOptionComponent {
     /**
@@ -5834,7 +5831,7 @@ NzCascaderOptionComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * All data is stored and parsed in NzCascaderService.
@@ -6373,7 +6370,7 @@ NzCascaderService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const defaultDisplayRender = (/**
@@ -7187,7 +7184,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCascaderModule {
 }
@@ -7250,7 +7247,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCheckboxWrapperComponent {
     /**
@@ -7320,7 +7317,7 @@ NzCheckboxWrapperComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCheckboxComponent {
     /**
@@ -7546,7 +7543,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCheckboxGroupComponent {
     /**
@@ -7677,7 +7674,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCheckboxModule {
 }
@@ -7723,7 +7720,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCollapseComponent {
     constructor() {
@@ -7802,7 +7799,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCollapsePanelComponent {
     /**
@@ -7898,7 +7895,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCollapseModule {
 }
@@ -7945,7 +7942,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCommentAvatarDirective {
 }
@@ -8045,7 +8042,7 @@ NzCommentActionComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCommentComponent {
     constructor() { }
@@ -8081,7 +8078,7 @@ NzCommentComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_COMMENT_CELLS = [
@@ -8110,7 +8107,7 @@ NzCommentModule.decorators = [
 /*!************************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd-core.js ***!
   \************************************************/
-/*! exports provided: AnimationCurves, AnimationDuration, Breakpoint, DEFAULT_CASCADER_POSITIONS, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzClassListAddDirective, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDropdownHigherOrderServiceToken, NzMeasureScrollbarService, NzMeasureScrollbarServiceModule, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzScrollService, NzStringTemplateOutletDirective, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, helpMotion, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, moveUpMotion, notificationMotion, padEnd, padStart, properties, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, throttleByAnimationFrameDecorator, timeUnits, toArray, toBoolean, toCssPixel, toNumber, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion */
+/*! exports provided: AnimationCurves, AnimationDuration, Breakpoint, DEFAULT_CASCADER_POSITIONS, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzClassListAddDirective, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzDropdownHigherOrderServiceToken, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzScrollService, NzStringTemplateOutletDirective, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, helpMotion, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, measureScrollbar, moveUpMotion, notificationMotion, padEnd, padStart, properties, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, throttleByAnimationFrameDecorator, timeUnits, toArray, toBoolean, toCssPixel, toNumber, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8136,9 +8133,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzConnectedOverlayDirective", function() { return NzConnectedOverlayDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCopyToClipboardService", function() { return NzCopyToClipboardService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCopyToClipboardServiceModule", function() { return NzCopyToClipboardServiceModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDomEventService", function() { return NzDomEventService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDropdownHigherOrderServiceToken", function() { return NzDropdownHigherOrderServiceToken; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMeasureScrollbarService", function() { return NzMeasureScrollbarService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMeasureScrollbarServiceModule", function() { return NzMeasureScrollbarServiceModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMenuBaseService", function() { return NzMenuBaseService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNoAnimationDirective", function() { return NzNoAnimationDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNoAnimationModule", function() { return NzNoAnimationModule; });
@@ -8198,6 +8194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isTouchEvent", function() { return isTouchEvent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "log", function() { return log; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "measure", function() { return measure; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "measureScrollbar", function() { return measureScrollbar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moveUpMotion", function() { return moveUpMotion; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notificationMotion", function() { return notificationMotion; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "padEnd", function() { return padEnd; });
@@ -8242,8 +8239,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "rxjs");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(rxjs__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/platform */ "@angular/cdk/platform");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/platform */ "@angular/cdk/platform");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -8256,7 +8256,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzClassListAddDirective {
     /**
@@ -8307,7 +8307,7 @@ NzClassListAddDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStringTemplateOutletDirective {
     /**
@@ -8471,7 +8471,7 @@ NzStringTemplateOutletDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAddOnModule {
 }
@@ -8485,7 +8485,7 @@ NzAddOnModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -8519,7 +8519,7 @@ AnimationCurves.EASE_IN_OUT_QUINT = 'cubic-bezier(0.86, 0, 0.07, 1)';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const collapseMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('collapseMotion', [
@@ -8534,7 +8534,7 @@ const collapseMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const fadeMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('fadeMotion', [
@@ -8544,7 +8544,7 @@ const fadeMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trig
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const helpMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('helpMotion', [
@@ -8572,7 +8572,7 @@ const helpMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trig
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const moveUpMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('moveUpMotion', [
@@ -8604,7 +8604,7 @@ const moveUpMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["tr
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const notificationMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('notificationMotion', [
@@ -8629,7 +8629,7 @@ const notificationMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const ANIMATION_TRANSITION_IN = `${AnimationDuration.BASE} ${AnimationCurves.EASE_OUT_QUINT}`;
@@ -8692,7 +8692,7 @@ const slideAlertMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const zoomMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('zoomMotion', [
@@ -8748,7 +8748,7 @@ const zoomBadgeMotion = Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__[
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const record = {};
@@ -8819,7 +8819,7 @@ const log = (/**
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} value
@@ -8935,7 +8935,7 @@ function InputNumber() {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const DISABLED_CLASSNAME = 'nz-animate-disabled';
@@ -9006,7 +9006,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNoAnimationModule {
 }
@@ -9020,7 +9020,7 @@ NzNoAnimationModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzConnectedOverlayDirective {
     /**
@@ -9044,7 +9044,7 @@ NzConnectedOverlayDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOverlayModule {
 }
@@ -9057,7 +9057,7 @@ NzOverlayModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const POSITION_MAP = {
@@ -9138,7 +9138,7 @@ function getPlacementName(position) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -9226,7 +9226,7 @@ const reqAnimFrame = getRequestAnimationFrame();
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} t
@@ -9384,195 +9384,7 @@ const SCROLL_SERVICE_PROVIDER = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-// tslint:disable-next-line:no-any
-/**
- * @param {?} value
- * @return {?}
- */
-function isNotNil(value) {
-    return typeof value !== 'undefined' && value !== null;
-}
-// tslint:disable-next-line:no-any
-/**
- * @param {?} value
- * @return {?}
- */
-function isNil(value) {
-    return typeof value === 'undefined' || value === null;
-}
-/**
- * Examine if two objects are shallowly equaled.
- * @param {?=} objA
- * @param {?=} objB
- * @return {?}
- */
-function shallowEqual(objA, objB) {
-    if (objA === objB) {
-        return true;
-    }
-    if (typeof objA !== 'object' || !objA || typeof objB !== 'object' || !objB) {
-        return false;
-    }
-    /** @type {?} */
-    const keysA = Object.keys(objA);
-    /** @type {?} */
-    const keysB = Object.keys(objB);
-    if (keysA.length !== keysB.length) {
-        return false;
-    }
-    /** @type {?} */
-    const bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
-    // tslint:disable-next-line:prefer-for-of
-    for (let idx = 0; idx < keysA.length; idx++) {
-        /** @type {?} */
-        const key = keysA[idx];
-        if (!bHasOwnProperty(key)) {
-            return false;
-        }
-        if (objA[key] !== objB[key]) {
-            return false;
-        }
-    }
-    return true;
-}
-/**
- * @param {?} value
- * @return {?}
- */
-function isInteger(value) {
-    return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
-}
-/**
- * @param {?} element
- * @return {?}
- */
-function isEmpty(element) {
-    /** @type {?} */
-    const nodes = element.childNodes;
-    for (let i = 0; i < nodes.length; i++) {
-        if (filterNotEmptyNode(nodes.item(i))) {
-            return false;
-        }
-    }
-    return true;
-}
-/**
- * @param {?} node
- * @return {?}
- */
-function filterNotEmptyNode(node) {
-    if (node) {
-        if (node.nodeType === 1 && ((/** @type {?} */ (node))).outerHTML.toString().trim().length !== 0) {
-            // ELEMENT_NODE
-            return node;
-        }
-        else if (node.nodeType === 3 && (/** @type {?} */ (node.textContent)).toString().trim().length !== 0) {
-            // TEXT_NODE
-            return node;
-        }
-        return null;
-    }
-    return null;
-}
-// tslint:disable-next-line:no-any
-/**
- * @param {?} value
- * @return {?}
- */
-function isNonEmptyString(value) {
-    return typeof value === 'string' && value !== '';
-}
-// tslint:disable-next-line:no-any
-/**
- * @param {?} value
- * @return {?}
- */
-function isTemplateRef(value) {
-    return value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"];
-}
-// tslint:disable-next-line:no-any
-/**
- * @param {?} value
- * @return {?}
- */
-function isComponent(value) {
-    return value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["Type"];
-}
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzMeasureScrollbarServiceModule {
-}
-NzMeasureScrollbarServiceModule.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"] }
-];
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzMeasureScrollbarService {
-    // tslint:disable-next-line:no-any
-    /**
-     * @param {?} document
-     */
-    constructor(document) {
-        this.document = document;
-        this.scrollbarMeasure = {
-            position: 'absolute',
-            top: '-9999px',
-            width: '50px',
-            height: '50px',
-            overflow: 'scroll'
-        };
-        this.initScrollBarWidth();
-    }
-    /**
-     * @return {?}
-     */
-    get scrollBarWidth() {
-        if (isNotNil(this._scrollbarWidth)) {
-            return this._scrollbarWidth;
-        }
-        this.initScrollBarWidth();
-        return this._scrollbarWidth;
-    }
-    /**
-     * @return {?}
-     */
-    initScrollBarWidth() {
-        /** @type {?} */
-        const scrollDiv = this.document.createElement('div');
-        for (const scrollProp in this.scrollbarMeasure) {
-            if (this.scrollbarMeasure.hasOwnProperty(scrollProp)) {
-                scrollDiv.style[scrollProp] = this.scrollbarMeasure[scrollProp];
-            }
-        }
-        this.document.body.appendChild(scrollDiv);
-        /** @type {?} */
-        const width = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-        this.document.body.removeChild(scrollDiv);
-        this._scrollbarWidth = width;
-    }
-}
-NzMeasureScrollbarService.decorators = [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
-                providedIn: NzMeasureScrollbarServiceModule
-            },] }
-];
-/** @nocollapse */
-NzMeasureScrollbarService.ctorParameters = () => [
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"],] }] }
-];
-/** @nocollapse */ NzMeasureScrollbarService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function NzMeasureScrollbarService_Factory() { return new NzMeasureScrollbarService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"])); }, token: NzMeasureScrollbarService, providedIn: NzMeasureScrollbarServiceModule });
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUpdateHostClassService {
     /**
@@ -9631,7 +9443,7 @@ NzUpdateHostClassService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCopyToClipboardServiceModule {
 }
@@ -9641,7 +9453,7 @@ NzCopyToClipboardServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCopyToClipboardService {
     // tslint:disable-next-line:no-any
@@ -9707,7 +9519,96 @@ NzCopyToClipboardService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzDomEventService {
+    /**
+     * @param {?} ngZone
+     * @param {?} rendererFactory2
+     */
+    constructor(ngZone, rendererFactory2) {
+        this.ngZone = ngZone;
+        this.rendererFactory2 = rendererFactory2;
+        this.resizeSource = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
+        this.domEventListeners = new Map();
+        this.renderer = this.rendererFactory2.createRenderer(null, null);
+    }
+    /**
+     * @return {?}
+     */
+    registerResizeListener() {
+        if (!this.domEventListeners.has('resize')) {
+            this.domEventListeners.set('resize', {
+                handler: (/**
+                 * @return {?}
+                 */
+                () => {
+                    this.resizeSource.next();
+                }),
+                countOfListeners: 0
+            });
+        }
+        /** @type {?} */
+        const listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
+        this.tryToStartListener(listener, 'resize');
+        return this.resizeSource.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["auditTime"])(16));
+    }
+    /**
+     * @return {?}
+     */
+    unregisterResizeListener() {
+        if (!this.domEventListeners.has('resize')) {
+            return;
+        }
+        /** @type {?} */
+        const listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
+        this.tryToStopListener(listener);
+    }
+    /**
+     * @private
+     * @param {?} l
+     * @param {?} name
+     * @return {?}
+     */
+    tryToStartListener(l, name) {
+        l.countOfListeners += 1;
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        () => {
+            if (l.countOfListeners === 1) {
+                l.unsubscribe = this.renderer.listen('window', name, l.handler);
+            }
+        }));
+    }
+    /**
+     * @private
+     * @param {?} l
+     * @return {?}
+     */
+    tryToStopListener(l) {
+        l.countOfListeners -= 1;
+        if (l.countOfListeners === 0) {
+            (/** @type {?} */ (l.unsubscribe))();
+            l.unsubscribe = undefined;
+        }
+    }
+}
+NzDomEventService.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
+                providedIn: 'root'
+            },] }
+];
+/** @nocollapse */
+NzDomEventService.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["RendererFactory2"] }
+];
+/** @nocollapse */ NzDomEventService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function NzDomEventService_Factory() { return new NzDomEventService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["RendererFactory2"])); }, token: NzDomEventService, providedIn: "root" });
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -9828,7 +9729,7 @@ function createFakeEvent(type, canBubble = true, cancelable = true) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Utility to dispatch any event on a Node.
@@ -9887,7 +9788,7 @@ function dispatchTouchEvent(node, type, x = 0, y = 0) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Focuses an input, sets its value and dispatches
@@ -9904,7 +9805,7 @@ function typeInElement(value, element) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -9927,7 +9828,7 @@ function wrappedErrorMessage(e) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -9969,7 +9870,7 @@ class FakeViewportRuler {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Mock synchronous NgZone implementation that can be used
@@ -10012,7 +9913,7 @@ MockNgZone.ctorParameters = () => [];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeNode {
     /**
@@ -10453,7 +10354,7 @@ class NzTreeNode {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10511,7 +10412,126 @@ function shallowCopyArray(source) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isNotNil(value) {
+    return typeof value !== 'undefined' && value !== null;
+}
+// tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isNil(value) {
+    return typeof value === 'undefined' || value === null;
+}
+/**
+ * Examine if two objects are shallowly equaled.
+ * @param {?=} objA
+ * @param {?=} objB
+ * @return {?}
+ */
+function shallowEqual(objA, objB) {
+    if (objA === objB) {
+        return true;
+    }
+    if (typeof objA !== 'object' || !objA || typeof objB !== 'object' || !objB) {
+        return false;
+    }
+    /** @type {?} */
+    const keysA = Object.keys(objA);
+    /** @type {?} */
+    const keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) {
+        return false;
+    }
+    /** @type {?} */
+    const bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
+    // tslint:disable-next-line:prefer-for-of
+    for (let idx = 0; idx < keysA.length; idx++) {
+        /** @type {?} */
+        const key = keysA[idx];
+        if (!bHasOwnProperty(key)) {
+            return false;
+        }
+        if (objA[key] !== objB[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isInteger(value) {
+    return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
+}
+/**
+ * @param {?} element
+ * @return {?}
+ */
+function isEmpty(element) {
+    /** @type {?} */
+    const nodes = element.childNodes;
+    for (let i = 0; i < nodes.length; i++) {
+        if (filterNotEmptyNode(nodes.item(i))) {
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * @param {?} node
+ * @return {?}
+ */
+function filterNotEmptyNode(node) {
+    if (node) {
+        if (node.nodeType === 1 && ((/** @type {?} */ (node))).outerHTML.toString().trim().length !== 0) {
+            // ELEMENT_NODE
+            return node;
+        }
+        else if (node.nodeType === 3 && (/** @type {?} */ (node.textContent)).toString().trim().length !== 0) {
+            // TEXT_NODE
+            return node;
+        }
+        return null;
+    }
+    return null;
+}
+// tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isNonEmptyString(value) {
+    return typeof value === 'string' && value !== '';
+}
+// tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isTemplateRef(value) {
+    return value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"];
+}
+// tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isComponent(value) {
+    return value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["Type"];
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Silent an event by stopping and preventing it.
@@ -10605,7 +10625,7 @@ function isTouchEvent(event) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10650,7 +10670,7 @@ function getMentions(value, prefix = '@') {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10698,7 +10718,7 @@ function getRepeatedElement(length, element) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10718,7 +10738,7 @@ function isPromise(obj) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10767,7 +10787,7 @@ function ensureNumberInRange(num, min, max) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10796,7 +10816,7 @@ function scrollIntoView(node) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -10980,7 +11000,7 @@ function createDebugEle(element, coordinates) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} fn
@@ -11059,7 +11079,7 @@ function throttleByAnimationFrameDecorator() {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -11081,7 +11101,7 @@ const timeUnits = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -11110,7 +11130,7 @@ function isStyleSupport(styleName) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // We only handle element & text node.
 /** @type {?} */
@@ -11402,7 +11422,81 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @type {?}
+ */
+let scrollbarVerticalSize;
+/** @type {?} */
+let scrollbarHorizontalSize;
+// Measure scrollbar width for padding body during modal show/hide
+/** @type {?} */
+const scrollbarMeasure = {
+    position: 'absolute',
+    top: '-9999px',
+    width: '50px',
+    height: '50px'
+};
+/**
+ * @param {?=} direction
+ * @param {?=} prefix
+ * @return {?}
+ */
+function measureScrollbar(direction = 'vertical', prefix = 'ant') {
+    if (typeof document === 'undefined' || typeof window === 'undefined') {
+        return 0;
+    }
+    /** @type {?} */
+    const isVertical = direction === 'vertical';
+    if (isVertical && scrollbarVerticalSize) {
+        return scrollbarVerticalSize;
+    }
+    else if (!isVertical && scrollbarHorizontalSize) {
+        return scrollbarHorizontalSize;
+    }
+    /** @type {?} */
+    const scrollDiv = document.createElement('div');
+    Object.keys(scrollbarMeasure).forEach((/**
+     * @param {?} scrollProp
+     * @return {?}
+     */
+    scrollProp => {
+        // @ts-ignore
+        scrollDiv.style[scrollProp] = scrollbarMeasure[scrollProp];
+    }));
+    // apply hide scrollbar className ahead
+    scrollDiv.className = `${prefix}-hide-scrollbar scroll-div-append-to-body`;
+    // Append related overflow style
+    if (isVertical) {
+        scrollDiv.style.overflowY = 'scroll';
+    }
+    else {
+        scrollDiv.style.overflowX = 'scroll';
+    }
+    document.body.appendChild(scrollDiv);
+    /** @type {?} */
+    let size = 0;
+    if (isVertical) {
+        size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+        scrollbarVerticalSize = size;
+    }
+    else {
+        size = scrollDiv.offsetHeight - scrollDiv.clientHeight;
+        scrollbarHorizontalSize = size;
+    }
+    document.body.removeChild(scrollDiv);
+    return size;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -11431,7 +11525,7 @@ function isInArray(needle, haystack) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeBaseService {
     constructor() {
@@ -12231,14 +12325,14 @@ NzTreeBaseService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NzTreeHigherOrderServiceToken = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NzTreeHigherOrder');
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeBase {
     /**
@@ -12360,7 +12454,7 @@ class NzTreeBase {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWaveRenderer {
     /**
@@ -12374,7 +12468,7 @@ class NzWaveRenderer {
         this.insertExtraNode = insertExtraNode;
         this.waveTransitionDuration = 400;
         this.lastTime = 0;
-        this.platform = new _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_8__["Platform"]();
+        this.platform = new _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__["Platform"]();
         this.onClick = (/**
          * @param {?} event
          * @return {?}
@@ -12531,7 +12625,7 @@ class NzWaveRenderer {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_WAVE_GLOBAL_DEFAULT_CONFIG = {
@@ -12652,13 +12746,13 @@ NzWaveDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWaveModule {
 }
 NzWaveModule.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
-                imports: [_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_8__["PlatformModule"]],
+                imports: [_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_9__["PlatformModule"]],
                 exports: [NzWaveDirective],
                 declarations: [NzWaveDirective]
             },] }
@@ -12666,7 +12760,7 @@ NzWaveModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuBaseService {
     constructor() {
@@ -12719,14 +12813,14 @@ NzMenuBaseService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NzDropdownHigherOrderServiceToken = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NzMenuHigherOrder');
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -12756,7 +12850,7 @@ const responsiveMap = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransButtonDirective {
 }
@@ -12774,7 +12868,7 @@ NzTransButtonDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransButtonModule {
 }
@@ -12873,7 +12967,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Wrapping kind APIs for date operating and unify
@@ -13279,7 +13373,7 @@ class CandyDate {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarFooterComponent {
     constructor() {
@@ -13325,7 +13419,7 @@ CalendarFooterComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarHeaderComponent {
     // Indicate whether should change to month panel when current is year panel (if referer=month, it should show month panel when choosed a year)
@@ -13569,7 +13663,7 @@ CalendarHeaderComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarInputComponent {
     /**
@@ -13652,7 +13746,7 @@ CalendarInputComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class OkButtonComponent {
     constructor() {
@@ -13679,7 +13773,7 @@ OkButtonComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TimePickerButtonComponent {
     constructor() {
@@ -13715,7 +13809,7 @@ TimePickerButtonComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TodayButtonComponent {
     /**
@@ -13781,7 +13875,7 @@ TodayButtonComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const DATE_ROW_NUM = 6;
@@ -14098,7 +14192,7 @@ DateTableComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const MAX_ROW = 4;
@@ -14265,7 +14359,7 @@ DecadePanelComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class MonthPanelComponent {
     constructor() {
@@ -14316,7 +14410,7 @@ MonthPanelComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const MAX_ROW$1 = 4;
@@ -14439,7 +14533,7 @@ MonthTableComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -14547,7 +14641,7 @@ function isAllowedDate(value, disabledDate, disabledTime) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class DateRangePopupComponent {
     constructor() {
@@ -15118,7 +15212,7 @@ DateRangePopupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class InnerPopupComponent {
     constructor() {
@@ -15170,7 +15264,7 @@ InnerPopupComponent.decorators = [
                 // tslint:disable-next-line:component-selector
                 selector: 'inner-popup',
                 exportAs: 'innerPopup',
-                template: "<calendar-header\n  [(panelMode)]=\"panelMode\"\n  (panelModeChange)=\"panelModeChange.emit($event)\"\n  [(value)]=\"value\"\n  (valueChange)=\"headerChange.emit($event)\"\n  [locale]=\"locale\"\n  [showTimePicker]=\"showTimePicker\"\n  [enablePrev]=\"enablePrev\"\n  [enableNext]=\"enableNext\"\n></calendar-header>\n\n<ng-container *ngIf=\"showTimePicker && timeOptions\">\n  <nz-time-picker-panel\n    [nzInDatePicker]=\"true\"\n    [ngModel]=\"value.nativeDate\"\n    (ngModelChange)=\"onSelectTime($event)\"\n    [format]=\"timeOptions.nzFormat\"\n    [nzHourStep]=\"timeOptions.nzHourStep\"\n    [nzMinuteStep]=\"timeOptions.nzMinuteStep\"\n    [nzSecondStep]=\"timeOptions.nzSecondStep\"\n    [nzDisabledHours]=\"timeOptions.nzDisabledHours\"\n    [nzDisabledMinutes]=\"timeOptions.nzDisabledMinutes\"\n    [nzDisabledSeconds]=\"timeOptions.nzDisabledSeconds\"\n    [nzHideDisabledOptions]=\"timeOptions.nzHideDisabledOptions\"\n    [nzDefaultOpenValue]=\"timeOptions.nzDefaultOpenValue\"\n    [nzAddOn]=\"timeOptions.nzAddOn\"\n  ></nz-time-picker-panel>\n</ng-container>\n\n<div class=\"{{ prefixCls }}-body\">\n  <date-table\n    [locale]=\"locale\"\n    [showWeek]=\"showWeek\"\n    [value]=\"value\"\n    (valueChange)=\"onSelectDate($event)\"\n    showWeekNumber=\"false\"\n    [disabledDate]=\"disabledDate\"\n    [dateRender]=\"dateRender\"\n    [selectedValue]=\"selectedValue\"\n    [hoverValue]=\"hoverValue\"\n    (dayHover)=\"dayHover.emit($event)\"\n  ></date-table>\n</div>"
+                template: "<calendar-header\n  [(panelMode)]=\"panelMode\"\n  (panelModeChange)=\"panelModeChange.emit($event)\"\n  [(value)]=\"value\"\n  (valueChange)=\"headerChange.emit($event)\"\n  [locale]=\"locale\"\n  [showTimePicker]=\"showTimePicker\"\n  [enablePrev]=\"enablePrev\"\n  [enableNext]=\"enableNext\"\n></calendar-header>\n\n<ng-container *ngIf=\"showTimePicker && timeOptions\">\n  <nz-time-picker-panel\n    [nzInDatePicker]=\"true\"\n    [ngModel]=\"value.nativeDate\"\n    (ngModelChange)=\"onSelectTime($event)\"\n    [format]=\"timeOptions.nzFormat\"\n    [nzHourStep]=\"timeOptions.nzHourStep\"\n    [nzMinuteStep]=\"timeOptions.nzMinuteStep\"\n    [nzSecondStep]=\"timeOptions.nzSecondStep\"\n    [nzDisabledHours]=\"timeOptions.nzDisabledHours\"\n    [nzDisabledMinutes]=\"timeOptions.nzDisabledMinutes\"\n    [nzDisabledSeconds]=\"timeOptions.nzDisabledSeconds\"\n    [nzHideDisabledOptions]=\"timeOptions.nzHideDisabledOptions\"\n    [nzDefaultOpenValue]=\"timeOptions.nzDefaultOpenValue\"\n    [nzUse12Hours]=\"timeOptions.nzUse12Hours\"\n    [nzAddOn]=\"timeOptions.nzAddOn\"\n  ></nz-time-picker-panel>\n</ng-container>\n\n<div class=\"{{ prefixCls }}-body\">\n  <date-table\n    [locale]=\"locale\"\n    [showWeek]=\"showWeek\"\n    [value]=\"value\"\n    (valueChange)=\"onSelectDate($event)\"\n    showWeekNumber=\"false\"\n    [disabledDate]=\"disabledDate\"\n    [dateRender]=\"dateRender\"\n    [selectedValue]=\"selectedValue\"\n    [hoverValue]=\"hoverValue\"\n    (dayHover)=\"dayHover.emit($event)\"\n  ></date-table>\n</div>"
             }] }
 ];
 /** @nocollapse */
@@ -15197,7 +15291,7 @@ InnerPopupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const MAX_ROW$2 = 4;
@@ -15387,7 +15481,7 @@ YearPanelComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class LibPackerModule {
 }
@@ -15429,7 +15523,7 @@ LibPackerModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPickerComponent {
     /**
@@ -15686,7 +15780,7 @@ NzPickerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const POPUP_STYLE_PATCH = { position: 'relative' };
@@ -15933,7 +16027,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class DateRangePickerComponent extends AbstractPickerComponent {
     /**
@@ -16107,7 +16201,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDatePickerComponent extends DateRangePickerComponent {
     /**
@@ -16156,7 +16250,7 @@ NzDatePickerComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * The base picker for header panels, current support: Year/Month
@@ -16255,7 +16349,7 @@ HeaderPickerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMonthPickerComponent extends HeaderPickerComponent {
     /**
@@ -16308,7 +16402,7 @@ NzMonthPickerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRangePickerComponent extends DateRangePickerComponent {
     /**
@@ -16357,7 +16451,7 @@ NzRangePickerComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWeekPickerComponent extends DateRangePickerComponent {
     /**
@@ -16406,7 +16500,7 @@ NzWeekPickerComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzYearPickerComponent extends HeaderPickerComponent {
     /**
@@ -16459,7 +16553,7 @@ NzYearPickerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDatePickerModule {
 }
@@ -16511,12 +16605,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core */ "./publish/fesm2015/ng-zorro-antd-core.js");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "tslib");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/layout */ "@angular/cdk/layout");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/platform */ "@angular/cdk/platform");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "rxjs");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(rxjs__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "rxjs");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(rxjs__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/layout */ "@angular/cdk/layout");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/cdk/platform */ "@angular/cdk/platform");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__);
 
@@ -16530,12 +16624,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDescriptionsItemComponent {
     constructor() {
         this.nzSpan = 1;
         this.nzTitle = '';
+        this.inputChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
+    }
+    /**
+     * @return {?}
+     */
+    ngOnChanges() {
+        this.inputChange$.next();
+    }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this.inputChange$.complete();
     }
 }
 NzDescriptionsItemComponent.decorators = [
@@ -16560,7 +16667,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const defaultColumnMap = {
@@ -16574,23 +16681,24 @@ const defaultColumnMap = {
 class NzDescriptionsComponent {
     /**
      * @param {?} cdr
-     * @param {?} ngZone
      * @param {?} mediaMatcher
      * @param {?} platform
+     * @param {?} nzDomEventService
      */
-    constructor(cdr, ngZone, mediaMatcher, platform) {
+    constructor(cdr, mediaMatcher, platform, nzDomEventService) {
         this.cdr = cdr;
-        this.ngZone = ngZone;
         this.mediaMatcher = mediaMatcher;
         this.platform = platform;
+        this.nzDomEventService = nzDomEventService;
         this.nzBordered = false;
+        this.nzLayout = 'horizontal';
         this.nzColumn = defaultColumnMap;
         this.nzSize = 'default';
         this.nzTitle = '';
         this.itemMatrix = [];
         this.realColumn = 3;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
-        this.resize$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
+        this.resize$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
     }
     /**
      * @param {?} changes
@@ -16605,7 +16713,16 @@ class NzDescriptionsComponent {
      * @return {?}
      */
     ngAfterContentInit() {
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(this.items.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["startWith"])(this.items), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$)), this.resize$)
+        /** @type {?} */
+        const contentChange$ = this.items.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["startWith"])(this.items), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$));
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["merge"])(contentChange$, contentChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["switchMap"])((/**
+         * @return {?}
+         */
+        () => Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["merge"])(...this.items.map((/**
+         * @param {?} i
+         * @return {?}
+         */
+        i => i.inputChange$))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["auditTime"])(16))))), this.resize$)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$))
             .subscribe((/**
          * @return {?}
@@ -16615,24 +16732,16 @@ class NzDescriptionsComponent {
             this.cdr.markForCheck();
         }));
         if (this.platform.isBrowser) {
-            this.ngZone.runOutsideAngular((/**
+            this.nzDomEventService
+                .registerResizeListener()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["finalize"])((/**
              * @return {?}
              */
-            () => {
-                Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["fromEvent"])(window, 'resize')
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["auditTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$))
-                    .subscribe((/**
-                 * @return {?}
-                 */
-                () => {
-                    this.ngZone.run((/**
-                     * @return {?}
-                     */
-                    () => {
-                        this.resize$.next();
-                    }));
-                }));
-            }));
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.resize$.next()));
         }
     }
     /**
@@ -16658,6 +16767,8 @@ class NzDescriptionsComponent {
         /** @type {?} */
         const items = this.items.toArray();
         /** @type {?} */
+        const length = items.length;
+        /** @type {?} */
         const matrix = [];
         /** @type {?} */
         const flushRow = (/**
@@ -16668,26 +16779,28 @@ class NzDescriptionsComponent {
             currentRow = [];
             width = 0;
         });
-        items.forEach((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => {
+        for (let i = 0; i < length; i++) {
+            /** @type {?} */
+            const item = items[i];
             const { nzTitle: title, content, nzSpan: span } = item;
-            currentRow.push({ title, content, span });
             width += span;
             // If the last item make the row's length exceeds `nzColumn`, the last
             // item should take all the space left. This logic is implemented in the template.
             // Warn user about that.
             if (width >= column) {
-                if (width > column && Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["isDevMode"])()) {
+                if (width > column) {
                     Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["warn"])(`"nzColumn" is ${column} but we have row length ${width}`);
                 }
+                currentRow.push({ title, content, span: column - (width - span) });
                 flushRow();
             }
-        }));
-        if (currentRow.length) {
-            flushRow();
+            else if (i === length - 1) {
+                currentRow.push({ title, content, span: column - (width - span) });
+                flushRow();
+            }
+            else {
+                currentRow.push({ title, content, span });
+            }
         }
         this.itemMatrix = matrix;
     }
@@ -16729,14 +16842,14 @@ NzDescriptionsComponent.decorators = [
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
                 selector: 'nz-descriptions',
-                template: "<div *ngIf=\"nzTitle\"\n     class=\"ant-descriptions-title\">\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n</div>\n<div class=\"ant-descriptions-view\">\n  <table>\n    <tbody>\n      <tr class=\"ant-descriptions-row\"\n          *ngFor=\"let row of itemMatrix; let i = index\">\n        <ng-container *ngFor=\"let item of row; let isLast = last\">\n          <ng-container *ngIf=\"!nzBordered\">\n            <td class=\"ant-descriptions-item\"\n                [colSpan]=\"isLast ? (realColumn - (row.length - 1)) * 2 - 1 : item.span\">\n              <span class=\"ant-descriptions-item-label\">{{ item.title }}</span>\n              <span class=\"ant-descriptions-item-content\">\n                <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n              </span>\n            </td>\n          </ng-container>\n          <ng-container *ngIf=\"nzBordered\">\n            <td class=\"ant-descriptions-item-label\"\n                *nzStringTemplateOutlet=\"item.title\">{{ item.title }}</td>\n            <td class=\"ant-descriptions-item-content\"\n                [colSpan]=\"isLast ? (realColumn - (row.length - 1)) * 2 - 1 : item.span\">\n              <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n            </td>\n          </ng-container>\n        </ng-container>\n      </tr>\n    </tbody>\n\n  </table>\n</div>\n",
+                template: "<div *ngIf=\"nzTitle\"\n     class=\"ant-descriptions-title\">\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n</div>\n<div class=\"ant-descriptions-view\">\n  <table>\n    <tbody>\n      <ng-container *ngIf=\"nzLayout === 'horizontal'\">\n        <tr class=\"ant-descriptions-row\" *ngFor=\"let row of itemMatrix; let i = index\">\n          <ng-container *ngFor=\"let item of row; let isLast = last\">\n            <!-- Horizontal & NOT Bordered -->\n            <ng-container *ngIf=\"!nzBordered\">\n              <td class=\"ant-descriptions-item\" [colSpan]=\"item.span\">\n                <span class=\"ant-descriptions-item-label\">{{ item.title }}</span>\n                <span class=\"ant-descriptions-item-content\">\n                  <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                </span>\n              </td>\n            </ng-container>\n            <!-- Horizontal & Bordered -->\n            <ng-container *ngIf=\"nzBordered\">\n              <td class=\"ant-descriptions-item-label\" *nzStringTemplateOutlet=\"item.title\">{{ item.title }}</td>\n              <td class=\"ant-descriptions-item-content\" [colSpan]=\"isLast ? item.span * 2 - 1 : item.span\">\n                <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n              </td>\n            </ng-container>\n          </ng-container>\n        </tr>\n      </ng-container>\n\n      <ng-container *ngIf=\"nzLayout === 'vertical'\">\n        <!-- Vertical & NOT Bordered -->\n        <ng-container *ngIf=\"!nzBordered\">\n          <ng-container *ngFor=\"let row of itemMatrix; let i = index\">\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item\" [colSpan]=\"item.span\">\n                  <span class=\"ant-descriptions-item-label\">{{ item.title }}</span>\n                </td>\n              </ng-container>\n            </tr>\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item\" [colSpan]=\"item.span\">\n                  <span class=\"ant-descriptions-item-content\">\n                    <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                  </span>\n                </td>\n              </ng-container>\n            </tr>\n          </ng-container>\n        </ng-container>\n        <!-- Vertical & Bordered -->\n        <ng-container *ngIf=\"nzBordered\">\n          <ng-container *ngFor=\"let row of itemMatrix; let i = index\">\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item-label\" [colSpan]=\"item.span\">\n                  {{ item.title }}\n                </td>\n              </ng-container>\n            </tr>\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item-content\" [colSpan]=\"item.span\">\n                  <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                </td>\n              </ng-container>\n            </tr>\n          </ng-container>\n        </ng-container>\n      </ng-container>\n    </tbody>\n  </table>\n</div>\n",
                 exportAs: 'nzDescriptions',
                 preserveWhitespaces: false,
                 host: {
                     class: 'ant-descriptions',
-                    '[class.bordered]': 'nzBordered',
-                    '[class.middle]': 'nzSize === "middle"',
-                    '[class.small]': 'nzSize === "small"'
+                    '[class.ant-descriptions-bordered]': 'nzBordered',
+                    '[class.ant-descriptions-middle]': 'nzSize === "middle"',
+                    '[class.ant-descriptions-small]': 'nzSize === "small"'
                 },
                 styles: [`
       nz-descriptions {
@@ -16748,13 +16861,14 @@ NzDescriptionsComponent.decorators = [
 /** @nocollapse */
 NzDescriptionsComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
-    { type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__["MediaMatcher"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"] }
+    { type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_5__["MediaMatcher"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__["Platform"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzDomEventService"] }
 ];
 NzDescriptionsComponent.propDecorators = {
     items: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChildren"], args: [NzDescriptionsItemComponent,] }],
     nzBordered: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzLayout: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzColumn: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzSize: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
@@ -16766,7 +16880,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDescriptionsModule {
 }
@@ -16809,7 +16923,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDividerComponent {
     /**
@@ -16877,7 +16991,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDividerModule {
 }
@@ -16945,7 +17059,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -16964,7 +17078,7 @@ class NzDrawerRef {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const DRAWER_ANIMATE_DURATION = 300;
@@ -17387,7 +17501,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDrawerServiceModule {
 }
@@ -17397,7 +17511,7 @@ NzDrawerServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDrawerModule {
 }
@@ -17420,7 +17534,7 @@ NzDrawerModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @template R
@@ -17591,7 +17705,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuDropdownService extends ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_1__["NzMenuBaseService"] {
     constructor() {
@@ -17605,7 +17719,7 @@ NzMenuDropdownService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @deprecated Use `NzDropdownMenuComponent` instead, will remove in 9.0.0.
@@ -17698,7 +17812,7 @@ NzDropdownContextComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} injector
@@ -17804,7 +17918,7 @@ NzDropdownMenuComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDropDownDirective {
     /**
@@ -17835,6 +17949,7 @@ class NzDropDownDirective {
          */
         e => e.stopPropagation())), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["mapTo"])(true));
         this.nzTrigger = 'hover';
+        this.nzBackdrop = true;
         this.nzClickHide = true;
         this.nzDisabled = false;
         this.nzVisible = false;
@@ -17873,7 +17988,7 @@ class NzDropDownDirective {
                 .flexibleConnectedTo(this.el)
                 .withLockedPosition(),
             minWidth: this.triggerWidth,
-            hasBackdrop: this.nzTrigger === 'click',
+            hasBackdrop: this.nzBackdrop && this.nzTrigger === 'click',
             scrollStrategy: this.overlay.scrollStrategies.reposition()
         });
     }
@@ -18147,6 +18262,7 @@ NzDropDownDirective.propDecorators = {
     nzDropdownMenu: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzTrigger: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzMatchWidthElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    nzBackdrop: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzClickHide: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
@@ -18156,6 +18272,10 @@ NzDropDownDirective.propDecorators = {
     nzPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzVisibleChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
 };
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_1__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
+], NzDropDownDirective.prototype, "nzBackdrop", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
     Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_1__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
@@ -18175,7 +18295,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} injector
@@ -18362,7 +18482,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDropdownServiceModule {
 }
@@ -18372,7 +18492,7 @@ NzDropdownServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @deprecated Use `NzContextMenuService` instead.
@@ -18450,7 +18570,7 @@ NzDropdownService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 const ɵ0 = menuServiceFactory;
 /**
@@ -18529,7 +18649,7 @@ NzDropDownButtonComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzContextMenuServiceModule {
 }
@@ -18539,7 +18659,7 @@ NzContextMenuServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDropDownADirective {
     /**
@@ -18565,7 +18685,7 @@ NzDropDownADirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDropDownModule {
 }
@@ -18607,7 +18727,7 @@ NzDropDownModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzContextMenuService {
     /**
@@ -18828,7 +18948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // tslint:disable-next-line:no-any
 /** @type {?} */
@@ -18842,7 +18962,7 @@ const simpleEmptyImage = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBl
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @template T
@@ -18895,7 +19015,7 @@ NzEmptyService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmbedEmptyComponent {
     /**
@@ -19025,7 +19145,7 @@ NzEmbedEmptyComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmptyComponent {
     /**
@@ -19112,7 +19232,7 @@ NzEmptyComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmptyModule {
 }
@@ -19181,7 +19301,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @deprecated Use `[nzSuccessTip] | [nzWarningTip] | [nzErrorTip] | [nzValidatingTip]` in `NzFormControlComponent` instead, will remove in 9.0.0.
@@ -19222,7 +19342,7 @@ NzFormExplainComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 *
@@ -19235,10 +19355,11 @@ class NzFormItemComponent extends ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4_
      * @param {?} mediaMatcher
      * @param {?} ngZone
      * @param {?} platform
+     * @param {?} nzDomEventService
      * @param {?} cdr
      */
-    constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, cdr) {
-        super(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform);
+    constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService, cdr) {
+        super(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService);
         this.cdr = cdr;
         this.nzFlex = false;
         this.withHelpClass = false;
@@ -19320,6 +19441,7 @@ NzFormItemComponent.ctorParameters = () => [
     { type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_0__["MediaMatcher"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgZone"] },
     { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzDomEventService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }
 ];
 NzFormItemComponent.propDecorators = {
@@ -19333,7 +19455,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_10__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormControlComponent extends ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzColDirective"] {
     /**
@@ -19569,7 +19691,7 @@ NzFormControlComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @deprecated Use `[nzExtra]` in `NzFormControlComponent` instead, will remove in 9.0.0.
@@ -19609,7 +19731,7 @@ NzFormExtraComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormLabelComponent extends ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzColDirective"] {
     /**
@@ -19694,7 +19816,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_10__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormSplitComponent {
     /**
@@ -19725,7 +19847,7 @@ NzFormSplitComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormTextComponent {
     /**
@@ -19756,7 +19878,7 @@ NzFormTextComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormDirective {
     /**
@@ -19855,7 +19977,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_10__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormModule {
 }
@@ -19926,7 +20048,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRowDirective {
     /**
@@ -19936,14 +20058,16 @@ class NzRowDirective {
      * @param {?} mediaMatcher
      * @param {?} ngZone
      * @param {?} platform
+     * @param {?} nzDomEventService
      */
-    constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform) {
+    constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.nzUpdateHostClassService = nzUpdateHostClassService;
         this.mediaMatcher = mediaMatcher;
         this.ngZone = ngZone;
         this.platform = platform;
+        this.nzDomEventService = nzDomEventService;
         this.nzAlign = 'top';
         this.nzJustify = 'start';
         this.el = this.elementRef.nativeElement;
@@ -20035,17 +20159,16 @@ class NzRowDirective {
      */
     ngAfterViewInit() {
         if (this.platform.isBrowser) {
-            this.ngZone.runOutsideAngular((/**
+            this.nzDomEventService
+                .registerResizeListener()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["finalize"])((/**
              * @return {?}
              */
-            () => {
-                Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["fromEvent"])(window, 'resize')
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["auditTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$))
-                    .subscribe((/**
-                 * @return {?}
-                 */
-                () => this.watchMedia()));
-            }));
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.watchMedia()));
         }
     }
     /**
@@ -20070,7 +20193,8 @@ NzRowDirective.ctorParameters = () => [
     { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_3__["NzUpdateHostClassService"] },
     { type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_1__["MediaMatcher"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] }
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_3__["NzDomEventService"] }
 ];
 NzRowDirective.propDecorators = {
     nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
@@ -20081,7 +20205,7 @@ NzRowDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzColDirective {
     /**
@@ -20214,7 +20338,7 @@ NzColDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzGridModule {
 }
@@ -20308,7 +20432,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20324,6 +20448,7 @@ var Calendar = {
     ok: '确定',
     timeSelect: '选择时间',
     dateSelect: '选择日期',
+    weekSelect: '选择周',
     clear: '清除',
     month: '月',
     year: '年',
@@ -20346,7 +20471,7 @@ var Calendar = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20362,7 +20487,7 @@ const locale = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$1 = {
@@ -20374,7 +20499,7 @@ locale$1.lang.ok = '确 定';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20400,7 +20525,7 @@ var Pagination = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var zh_CN = {
     locale: 'zh-cn',
@@ -20443,6 +20568,9 @@ var zh_CN = {
     Empty: {
         description: '暂无数据'
     },
+    Icon: {
+        icon: '图标'
+    },
     Text: {
         edit: '编辑',
         copy: '复制',
@@ -20456,7 +20584,7 @@ var zh_CN = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_I18N = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('nz-i18n');
@@ -20468,7 +20596,7 @@ const NZ_DATE_LOCALE = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injection
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nService {
     /**
@@ -20596,7 +20724,7 @@ NzI18nService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nPipe {
     /**
@@ -20626,7 +20754,7 @@ NzI18nPipe.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nModule {
 }
@@ -20639,7 +20767,7 @@ NzI18nModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_DATE_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('date-config');
@@ -20657,7 +20785,7 @@ function mergeDateConfig(config) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} injector
@@ -20817,7 +20945,7 @@ DateHelperByDatePipe.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20856,7 +20984,7 @@ var Calendar$1 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20872,18 +21000,22 @@ const locale$2 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$3 = {
     lang: Object.assign({ placeholder: 'اختيار التاريخ', rangePlaceholder: ['البداية', 'النهاية'] }, Calendar$1),
-    timePickerLocale: Object.assign({}, locale$2)
+    timePickerLocale: Object.assign({}, locale$2),
+    dateFormat: 'DD-MM-YYYY',
+    monthFormat: 'MM-YYYY',
+    dateTimeFormat: 'DD-MM-YYYY HH:mm:ss',
+    weekFormat: 'wo-YYYY'
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20909,7 +21041,7 @@ var Pagination$1 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ar_EG = {
     locale: 'ar',
@@ -20951,7 +21083,7 @@ var ar_EG = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -20990,7 +21122,7 @@ var Calendar$2 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21006,7 +21138,7 @@ const locale$4 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21017,7 +21149,7 @@ const locale$5 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21043,7 +21175,7 @@ var Pagination$2 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var bg_BG = {
     locale: 'bg',
@@ -21085,7 +21217,7 @@ var bg_BG = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21124,7 +21256,7 @@ var Calendar$3 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21140,7 +21272,7 @@ const locale$6 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21151,7 +21283,7 @@ const locale$7 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21177,7 +21309,7 @@ var Pagination$3 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ca_ES = {
     locale: 'ca',
@@ -21204,7 +21336,7 @@ var ca_ES = {
     Transfer: {
         searchPlaceholder: 'Cercar aquí',
         itemUnit: 'element',
-        itemsUnit: 'elements'
+        itemsUnit: 'element'
     },
     Upload: {
         uploading: 'Pujant...',
@@ -21219,7 +21351,7 @@ var ca_ES = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21258,7 +21390,7 @@ var Calendar$4 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21274,7 +21406,7 @@ const locale$8 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21285,7 +21417,7 @@ const locale$9 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21311,7 +21443,7 @@ var Pagination$4 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var cs_CZ = {
     locale: 'cs',
@@ -21351,7 +21483,7 @@ var cs_CZ = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21390,7 +21522,7 @@ var Calendar$5 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21406,7 +21538,7 @@ const locale$a = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21417,7 +21549,7 @@ const locale$b = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21443,7 +21575,7 @@ var Pagination$5 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var da_DK = {
     locale: 'da',
@@ -21485,7 +21617,7 @@ var da_DK = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21524,7 +21656,7 @@ var Calendar$6 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21540,7 +21672,7 @@ const locale$c = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21551,7 +21683,7 @@ const locale$d = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21577,7 +21709,7 @@ var Pagination$6 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var de_DE = {
     locale: 'de',
@@ -21619,7 +21751,7 @@ var de_DE = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21658,7 +21790,7 @@ var Calendar$7 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21674,7 +21806,7 @@ const locale$e = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21685,7 +21817,7 @@ const locale$f = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21711,7 +21843,7 @@ var Pagination$7 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var el_GR = {
     locale: 'el',
@@ -21753,7 +21885,7 @@ var el_GR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21792,7 +21924,7 @@ var Calendar$8 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21808,7 +21940,7 @@ const locale$g = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
@@ -21819,7 +21951,7 @@ const locale$h = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21845,7 +21977,7 @@ var Pagination$8 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var en_GB = {
     locale: 'en-gb',
@@ -21887,7 +22019,7 @@ var en_GB = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21896,7 +22028,7 @@ var en_GB = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var CalendarLocale = {
+var Calendar$9 = {
     today: 'Today',
     now: 'Now',
     backToToday: 'Back to today',
@@ -21904,8 +22036,9 @@ var CalendarLocale = {
     clear: 'Clear',
     month: 'Month',
     year: 'Year',
-    timeSelect: 'Select time',
-    dateSelect: 'Select date',
+    timeSelect: 'select time',
+    dateSelect: 'select date',
+    weekSelect: 'Choose a week',
     monthSelect: 'Choose a month',
     yearSelect: 'Choose a year',
     decadeSelect: 'Choose a decade',
@@ -21926,7 +22059,7 @@ var CalendarLocale = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21942,18 +22075,18 @@ const locale$i = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$j = {
-    lang: Object.assign({ placeholder: 'Select date', rangePlaceholder: ['Start date', 'End date'] }, CalendarLocale),
+    lang: Object.assign({ placeholder: 'Select date', rangePlaceholder: ['Start date', 'End date'] }, Calendar$9),
     timePickerLocale: Object.assign({}, locale$i)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -21979,14 +22112,14 @@ var Pagination$9 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var en_US = {
     locale: 'en',
     Pagination: Pagination$9,
     DatePicker: locale$j,
     TimePicker: locale$i,
-    Calendar: CalendarLocale,
+    Calendar: Calendar$9,
     global: {
         placeholder: 'Please select'
     },
@@ -22022,6 +22155,9 @@ var en_US = {
     Empty: {
         description: 'No Data'
     },
+    Icon: {
+        icon: 'icon'
+    },
     Text: {
         edit: 'edit',
         copy: 'copy',
@@ -22035,7 +22171,7 @@ var en_US = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22044,7 +22180,7 @@ var en_US = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$9 = {
+var Calendar$a = {
     today: 'Hoy',
     now: 'Ahora',
     backToToday: 'Volver a hoy',
@@ -22074,7 +22210,7 @@ var Calendar$9 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22090,18 +22226,18 @@ const locale$k = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$l = {
-    lang: Object.assign({ placeholder: 'Seleccionar fecha', rangePlaceholder: ['Fecha inicial', 'Fecha final'] }, Calendar$9),
+    lang: Object.assign({ placeholder: 'Seleccionar fecha', rangePlaceholder: ['Fecha inicial', 'Fecha final'] }, Calendar$a),
     timePickerLocale: Object.assign({}, locale$k)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22127,20 +22263,24 @@ var Pagination$a = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var es_ES = {
     locale: 'es',
     Pagination: Pagination$a,
     DatePicker: locale$l,
     TimePicker: locale$k,
-    Calendar: Calendar$9,
+    Calendar: Calendar$a,
+    global: {
+        placeholder: 'Seleccione'
+    },
     Table: {
         filterTitle: 'Filtrar menú',
         filterConfirm: 'Aceptar',
         filterReset: 'Reiniciar',
         selectAll: 'Seleccionar todo',
-        selectInvert: 'Invertir selección'
+        selectInvert: 'Invertir selección',
+        sortTitle: 'Ordenar'
     },
     Modal: {
         okText: 'Aceptar',
@@ -22165,6 +22305,9 @@ var es_ES = {
     Empty: {
         description: 'No hay datos'
     },
+    Icon: {
+        icon: 'ícono'
+    },
     Text: {
         edit: 'editar',
         copy: 'copiar',
@@ -22178,7 +22321,7 @@ var es_ES = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22187,7 +22330,7 @@ var es_ES = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$a = {
+var Calendar$b = {
     today: 'Täna',
     now: 'Praegu',
     backToToday: 'Tagasi tänase juurde',
@@ -22217,7 +22360,7 @@ var Calendar$a = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22233,17 +22376,18 @@ const locale$m = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+// 统一合并为完整的 Locale
 /** @type {?} */
 const locale$n = {
-    lang: Object.assign({ placeholder: 'Vali kuupäev', rangePlaceholder: ['Algus kuupäev', 'Lõpu kuupäev'] }, Calendar$a),
+    lang: Object.assign({ placeholder: 'Vali kuupäev', rangePlaceholder: ['Algus kuupäev', 'Lõpu kuupäev'] }, Calendar$b),
     timePickerLocale: Object.assign({}, locale$m)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22269,14 +22413,14 @@ var Pagination$b = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var et_EE = {
     locale: 'et',
     Pagination: Pagination$b,
     DatePicker: locale$n,
     TimePicker: locale$m,
-    Calendar: Calendar$a,
+    Calendar: Calendar$b,
     Table: {
         filterTitle: 'Filtri menüü',
         filterConfirm: 'OK',
@@ -22311,7 +22455,7 @@ var et_EE = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22320,7 +22464,7 @@ var et_EE = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$b = {
+var Calendar$c = {
     today: 'امروز',
     now: 'اکنون',
     backToToday: 'بازگشت به روز',
@@ -22350,7 +22494,7 @@ var Calendar$b = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22366,18 +22510,18 @@ const locale$o = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$p = {
-    lang: Object.assign({ placeholder: 'انتخاب تاریخ', rangePlaceholder: ['تاریخ شروع', 'تاریخ پایان'] }, Calendar$b),
+    lang: Object.assign({ placeholder: 'انتخاب تاریخ', rangePlaceholder: ['تاریخ شروع', 'تاریخ پایان'] }, Calendar$c),
     timePickerLocale: Object.assign({}, locale$o)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22403,14 +22547,14 @@ var Pagination$c = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fa_IR = {
     locale: 'fa',
     Pagination: Pagination$c,
     DatePicker: locale$p,
     TimePicker: locale$o,
-    Calendar: Calendar$b,
+    Calendar: Calendar$c,
     Table: {
         filterTitle: 'منوی فیلتر',
         filterConfirm: 'تایید',
@@ -22445,7 +22589,7 @@ var fa_IR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22454,7 +22598,7 @@ var fa_IR = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$c = {
+var Calendar$d = {
     today: 'Tänään',
     now: 'Nyt',
     backToToday: 'Tämä päivä',
@@ -22484,7 +22628,7 @@ var Calendar$c = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22500,18 +22644,18 @@ const locale$q = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$r = {
-    lang: Object.assign({ placeholder: 'Valitse päivä', rangePlaceholder: ['Alku päivä', 'Loppu päivä'] }, Calendar$c),
+    lang: Object.assign({ placeholder: 'Valitse päivä', rangePlaceholder: ['Alku päivä', 'Loppu päivä'] }, Calendar$d),
     timePickerLocale: Object.assign({}, locale$q)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22537,14 +22681,14 @@ var Pagination$d = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fi_FI = {
     locale: 'fi',
     Pagination: Pagination$d,
     DatePicker: locale$r,
     TimePicker: locale$q,
-    Calendar: Calendar$c,
+    Calendar: Calendar$d,
     Table: {
         filterTitle: 'Suodatus valikko',
         filterConfirm: 'OK',
@@ -22580,7 +22724,7 @@ var fi_FI = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22589,7 +22733,7 @@ var fi_FI = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$d = {
+var Calendar$e = {
     today: 'Aujourd\'hui',
     now: 'Maintenant',
     backToToday: 'Aujourd\'hui',
@@ -22619,7 +22763,7 @@ var Calendar$d = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22630,23 +22774,23 @@ var Calendar$d = {
  */
 /** @type {?} */
 const locale$s = {
-    placeholder: 'Sélectionner l\'heure'
+    placeholder: "Sélectionner l'heure"
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$t = {
-    lang: Object.assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$d),
+    lang: Object.assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$e),
     timePickerLocale: Object.assign({}, locale$s)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22672,14 +22816,14 @@ var Pagination$e = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fr_BE = {
     locale: 'fr',
     Pagination: Pagination$e,
     DatePicker: locale$t,
     TimePicker: locale$s,
-    Calendar: Calendar$d,
+    Calendar: Calendar$e,
     Table: {
         filterTitle: 'Filtrer',
         filterConfirm: 'OK',
@@ -22706,7 +22850,7 @@ var fr_BE = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22715,16 +22859,16 @@ var fr_BE = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$e = {
-    today: 'Aujourd\'hui',
+var Calendar$f = {
+    today: "Aujourd'hui",
     now: 'Maintenant',
-    backToToday: 'Aujourd\'hui',
+    backToToday: "Aujourd'hui",
     ok: 'Ok',
     clear: 'Rétablir',
     month: 'Mois',
     year: 'Année',
-    timeSelect: 'Sélectionner l\'heure',
-    dateSelect: 'Sélectionner l\'heure',
+    timeSelect: "Sélectionner l'heure",
+    dateSelect: 'Sélectionner la date',
     monthSelect: 'Choisissez un mois',
     yearSelect: 'Choisissez une année',
     decadeSelect: 'Choisissez une décennie',
@@ -22745,7 +22889,7 @@ var Calendar$e = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22756,23 +22900,23 @@ var Calendar$e = {
  */
 /** @type {?} */
 const locale$u = {
-    placeholder: 'Sélectionner l\'heure'
+    placeholder: "Sélectionner l'heure"
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$v = {
-    lang: Object.assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$e),
+    lang: Object.assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$f),
     timePickerLocale: Object.assign({}, locale$u)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22798,14 +22942,14 @@ var Pagination$f = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fr_FR = {
     locale: 'fr',
     Pagination: Pagination$f,
     DatePicker: locale$v,
     TimePicker: locale$u,
-    Calendar: Calendar$e,
+    Calendar: Calendar$f,
     Table: {
         filterTitle: 'Filtrer',
         filterConfirm: 'OK',
@@ -22831,7 +22975,7 @@ var fr_FR = {
         uploading: 'Téléversement en cours...',
         removeFile: 'Supprimer',
         uploadError: 'Erreur de téléversement',
-        previewFile: 'Afficher l\'aperçu du fichier'
+        previewFile: "Afficher l'aperçu du fichier"
     },
     Empty: {
         description: 'Aucune donnée'
@@ -22840,7 +22984,7 @@ var fr_FR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22849,7 +22993,7 @@ var fr_FR = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$f = {
+var Calendar$g = {
     today: 'Í dag',
     now: 'Núna',
     backToToday: 'Til baka til dagsins í dag',
@@ -22879,7 +23023,7 @@ var Calendar$f = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22895,18 +23039,18 @@ const locale$w = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$x = {
-    lang: Object.assign({ placeholder: 'Veldu dag', rangePlaceholder: ['Upphafsdagur', 'Lokadagur'] }, Calendar$f),
+    lang: Object.assign({ placeholder: 'Veldu dag', rangePlaceholder: ['Upphafsdagur', 'Lokadagur'] }, Calendar$g),
     timePickerLocale: Object.assign({}, locale$w)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22932,14 +23076,14 @@ var Pagination$g = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var is_IS = {
     locale: 'is',
     Pagination: Pagination$g,
     DatePicker: locale$x,
     TimePicker: locale$w,
-    Calendar: Calendar$f,
+    Calendar: Calendar$g,
     Table: {
         filterTitle: 'Afmarkanir',
         filterConfirm: 'Staðfesta',
@@ -22974,7 +23118,7 @@ var is_IS = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -22983,19 +23127,19 @@ var is_IS = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$g = {
+var Calendar$h = {
     today: 'Oggi',
-    now: 'adesso',
+    now: 'Adesso',
     backToToday: 'Torna ad oggi',
     ok: 'Ok',
-    clear: 'Chiaro',
+    clear: 'Cancella',
     month: 'Mese',
     year: 'Anno',
-    timeSelect: 'Seleziona il tempo',
-    dateSelect: 'Select date',
-    monthSelect: 'Seleziona la data',
-    yearSelect: 'Scegli un anno',
-    decadeSelect: 'Scegli un decennio',
+    timeSelect: "Seleziona l'ora",
+    dateSelect: 'Seleziona la data',
+    monthSelect: 'Seleziona il mese',
+    yearSelect: "Seleziona l'anno",
+    decadeSelect: 'Seleziona il decennio',
     yearFormat: 'YYYY',
     dateFormat: 'D/M/YYYY',
     dayFormat: 'D',
@@ -23003,8 +23147,8 @@ var Calendar$g = {
     monthBeforeYear: true,
     previousMonth: 'Il mese scorso (PageUp)',
     nextMonth: 'Il prossimo mese (PageDown)',
-    previousYear: 'L\'anno scorso (Control + sinistra)',
-    nextYear: 'L\'anno prossimo (Control + destra)',
+    previousYear: "L'anno scorso (Control + sinistra)",
+    nextYear: "L'anno prossimo (Control + destra)",
     previousDecade: 'Ultimo decennio',
     nextDecade: 'Prossimo decennio',
     previousCentury: 'Secolo precedente',
@@ -23013,7 +23157,7 @@ var Calendar$g = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23024,23 +23168,23 @@ var Calendar$g = {
  */
 /** @type {?} */
 const locale$y = {
-    placeholder: 'Selezionare il tempo'
+    placeholder: "Selezionare l'orario"
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$z = {
-    lang: Object.assign({ placeholder: 'Selezionare la data', rangePlaceholder: ['Data d\'inizio', 'Data di fine'] }, Calendar$g),
+    lang: Object.assign({ placeholder: 'Selezionare la data', rangePlaceholder: ["Data d'inizio", 'Data di fine'] }, Calendar$h),
     timePickerLocale: Object.assign({}, locale$y)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23066,14 +23210,17 @@ var Pagination$h = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var it_IT = {
     locale: 'it',
     Pagination: Pagination$h,
     DatePicker: locale$z,
     TimePicker: locale$y,
-    Calendar: Calendar$g,
+    Calendar: Calendar$h,
+    global: {
+        placeholder: 'Selezionare'
+    },
     Table: {
         filterTitle: 'Menù Filtro',
         filterConfirm: 'OK',
@@ -23093,7 +23240,7 @@ var it_IT = {
     },
     Transfer: {
         searchPlaceholder: 'Cerca qui',
-        itemUnit: 'articolo',
+        itemUnit: 'elemento',
         itemsUnit: 'elementi'
     },
     Upload: {
@@ -23105,6 +23252,9 @@ var it_IT = {
     Empty: {
         description: 'Nessun dato'
     },
+    Icon: {
+        icon: 'icona'
+    },
     Text: {
         edit: 'modifica',
         copy: 'copia',
@@ -23115,7 +23265,7 @@ var it_IT = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23124,7 +23274,7 @@ var it_IT = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$h = {
+var Calendar$i = {
     today: '今日',
     now: '現在時刻',
     backToToday: '今日に戻る',
@@ -23153,7 +23303,7 @@ var Calendar$h = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23169,17 +23319,17 @@ const locale$A = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$B = {
-    lang: Object.assign({ placeholder: '日付を選択', rangePlaceholder: ['開始日付', '終了日付'] }, Calendar$h),
+    lang: Object.assign({ placeholder: '日付を選択', rangePlaceholder: ['開始日付', '終了日付'] }, Calendar$i),
     timePickerLocale: Object.assign({}, locale$A)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23205,14 +23355,14 @@ var Pagination$i = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ja_JP = {
     locale: 'ja',
     Pagination: Pagination$i,
     DatePicker: locale$B,
     TimePicker: locale$A,
-    Calendar: Calendar$h,
+    Calendar: Calendar$i,
     Table: {
         filterTitle: 'メニューをフィルター',
         filterConfirm: 'OK',
@@ -23247,7 +23397,7 @@ var ja_JP = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23256,7 +23406,7 @@ var ja_JP = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$i = {
+var Calendar$j = {
     today: '오늘',
     now: '현재 시각',
     backToToday: '오늘로 돌아가기',
@@ -23286,7 +23436,7 @@ var Calendar$i = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23302,18 +23452,18 @@ const locale$C = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$D = {
-    lang: Object.assign({ placeholder: '날짜 선택', rangePlaceholder: ['시작일', '종료일'] }, Calendar$i),
+    lang: Object.assign({ placeholder: '날짜 선택', rangePlaceholder: ['시작일', '종료일'] }, Calendar$j),
     timePickerLocale: Object.assign({}, locale$C)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23339,14 +23489,14 @@ var Pagination$j = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ko_KR = {
     locale: 'ko',
     Pagination: Pagination$j,
     DatePicker: locale$D,
     TimePicker: locale$C,
-    Calendar: Calendar$i,
+    Calendar: Calendar$j,
     Table: {
         filterTitle: '필터 메뉴',
         filterConfirm: '확인',
@@ -23381,7 +23531,7 @@ var ko_KR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23390,7 +23540,7 @@ var ko_KR = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$j = {
+var Calendar$k = {
     today: 'I dag',
     now: 'Nå',
     backToToday: 'Gå til i dag',
@@ -23420,7 +23570,7 @@ var Calendar$j = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23436,18 +23586,18 @@ const locale$E = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$F = {
-    lang: Object.assign({ placeholder: 'Velg dato', rangePlaceholder: ['Startdato', 'Sluttdato'] }, Calendar$j),
+    lang: Object.assign({ placeholder: 'Velg dato', rangePlaceholder: ['Startdato', 'Sluttdato'] }, Calendar$k),
     timePickerLocale: Object.assign({}, locale$E)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23472,13 +23622,13 @@ var Pagination$k = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var nb_NO = {
     locale: 'nb',
     DatePicker: locale$F,
     TimePicker: locale$E,
-    Calendar: Calendar$j,
+    Calendar: Calendar$k,
     Pagination: Pagination$k,
     Table: {
         filterTitle: 'Filtermeny',
@@ -23514,141 +23664,7 @@ var nb_NO = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-var Calendar$k = {
-    today: 'Vandaag',
-    now: 'Nu',
-    backToToday: 'Terug naar vandaag',
-    ok: 'Ok',
-    clear: 'Reset',
-    month: 'Maand',
-    year: 'Jaar',
-    timeSelect: 'Selecteer tijd',
-    dateSelect: 'Selecteer datum',
-    monthSelect: 'Kies een maand',
-    yearSelect: 'Kies een jaar',
-    decadeSelect: 'Kies een decennium',
-    yearFormat: 'YYYY',
-    dateFormat: 'D-M-YYYY',
-    dayFormat: 'D',
-    dateTimeFormat: 'D-M-YYYY HH:mm:ss',
-    monthBeforeYear: true,
-    previousMonth: 'Vorige maand (PageUp)',
-    nextMonth: 'Volgende maand (PageDown)',
-    previousYear: 'Vorig jaar (Control + left)',
-    nextYear: 'Volgend jaar (Control + right)',
-    previousDecade: 'Vorig decennium',
-    nextDecade: 'Volgend decennium',
-    previousCentury: 'Vorige eeuw',
-    nextCentury: 'Volgende eeuw'
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-/** @type {?} */
-const locale$G = {
-    placeholder: 'Selecteer tijd'
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-// Merge into a locale object
-/** @type {?} */
-const locale$H = {
-    lang: Object.assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$k),
-    timePickerLocale: Object.assign({}, locale$G)
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-var Pagination$l = {
-    // Options.jsx
-    items_per_page: '/ pagina',
-    jump_to: 'Ga naar',
-    jump_to_confirm: 'bevestigen',
-    page: '',
-    // Pagination.jsx
-    prev_page: 'Vorige pagina',
-    next_page: 'Volgende pagina',
-    prev_5: 'Vorige 5 pagina\'s',
-    next_5: 'Volgende 5 pagina\'s',
-    prev_3: 'Vorige 3 pagina\'s',
-    next_3: 'Volgende 3 pagina\'s'
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-var nl_BE = {
-    locale: 'nl-be',
-    Pagination: Pagination$l,
-    DatePicker: locale$H,
-    TimePicker: locale$G,
-    Calendar: Calendar$k,
-    Table: {
-        filterTitle: 'FilterMenu',
-        filterConfirm: 'OK',
-        filterReset: 'Reset',
-        selectAll: 'Selecteer huidige pagina',
-        selectInvert: 'Selecteer huidige pagina'
-    },
-    Modal: {
-        okText: 'OK',
-        cancelText: 'Annuleer',
-        justOkText: 'OK'
-    },
-    Popconfirm: {
-        okText: 'OK',
-        cancelText: 'Annuleer'
-    },
-    Transfer: {
-        searchPlaceholder: 'Zoek hier',
-        itemUnit: 'item',
-        itemsUnit: 'items'
-    },
-    Upload: {
-        uploading: 'Uploaden...',
-        removeFile: 'Bestand verwijderen',
-        uploadError: 'Upload fout',
-        previewFile: 'Preview bestand'
-    },
-    Empty: {
-        description: 'Geen gegevens'
-    }
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23687,7 +23703,141 @@ var Calendar$l = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/** @type {?} */
+const locale$G = {
+    placeholder: 'Selecteer tijd'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// Merge into a locale object
+/** @type {?} */
+const locale$H = {
+    lang: Object.assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$l),
+    timePickerLocale: Object.assign({}, locale$G)
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+var Pagination$l = {
+    // Options.jsx
+    items_per_page: '/ pagina',
+    jump_to: 'Ga naar',
+    jump_to_confirm: 'bevestigen',
+    page: '',
+    // Pagination.jsx
+    prev_page: 'Vorige pagina',
+    next_page: 'Volgende pagina',
+    prev_5: 'Vorige 5 pagina\'s',
+    next_5: 'Volgende 5 pagina\'s',
+    prev_3: 'Vorige 3 pagina\'s',
+    next_3: 'Volgende 3 pagina\'s'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var nl_BE = {
+    locale: 'nl-be',
+    Pagination: Pagination$l,
+    DatePicker: locale$H,
+    TimePicker: locale$G,
+    Calendar: Calendar$l,
+    Table: {
+        filterTitle: 'FilterMenu',
+        filterConfirm: 'OK',
+        filterReset: 'Reset',
+        selectAll: 'Selecteer huidige pagina',
+        selectInvert: 'Selecteer huidige pagina'
+    },
+    Modal: {
+        okText: 'OK',
+        cancelText: 'Annuleer',
+        justOkText: 'OK'
+    },
+    Popconfirm: {
+        okText: 'OK',
+        cancelText: 'Annuleer'
+    },
+    Transfer: {
+        searchPlaceholder: 'Zoek hier',
+        itemUnit: 'item',
+        itemsUnit: 'items'
+    },
+    Upload: {
+        uploading: 'Uploaden...',
+        removeFile: 'Bestand verwijderen',
+        uploadError: 'Upload fout',
+        previewFile: 'Preview bestand'
+    },
+    Empty: {
+        description: 'Geen gegevens'
+    }
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+var Calendar$m = {
+    today: 'Vandaag',
+    now: 'Nu',
+    backToToday: 'Terug naar vandaag',
+    ok: 'Ok',
+    clear: 'Reset',
+    month: 'Maand',
+    year: 'Jaar',
+    timeSelect: 'Selecteer tijd',
+    dateSelect: 'Selecteer datum',
+    monthSelect: 'Kies een maand',
+    yearSelect: 'Kies een jaar',
+    decadeSelect: 'Kies een decennium',
+    yearFormat: 'YYYY',
+    dateFormat: 'D-M-YYYY',
+    dayFormat: 'D',
+    dateTimeFormat: 'D-M-YYYY HH:mm:ss',
+    monthBeforeYear: true,
+    previousMonth: 'Vorige maand (PageUp)',
+    nextMonth: 'Volgende maand (PageDown)',
+    previousYear: 'Vorig jaar (Control + left)',
+    nextYear: 'Volgend jaar (Control + right)',
+    previousDecade: 'Vorig decennium',
+    nextDecade: 'Volgend decennium',
+    previousCentury: 'Vorige eeuw',
+    nextCentury: 'Volgende eeuw'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23703,18 +23853,18 @@ const locale$I = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$J = {
-    lang: Object.assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$l),
+    lang: Object.assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$m),
     timePickerLocale: Object.assign({}, locale$I)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23740,14 +23890,14 @@ var Pagination$m = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var nl_NL = {
     locale: 'nl',
     Pagination: Pagination$m,
     DatePicker: locale$J,
     TimePicker: locale$I,
-    Calendar: Calendar$l,
+    Calendar: Calendar$m,
     Table: {
         filterTitle: 'Filteren',
         filterConfirm: 'OK',
@@ -23782,7 +23932,7 @@ var nl_NL = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23791,7 +23941,7 @@ var nl_NL = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$m = {
+var Calendar$n = {
     today: 'Dzisiaj',
     now: 'Teraz',
     backToToday: 'Ustaw dzisiaj',
@@ -23821,7 +23971,7 @@ var Calendar$m = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23837,18 +23987,18 @@ const locale$K = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$L = {
-    lang: Object.assign({ placeholder: 'Wybierz datę', rangePlaceholder: ['Data początkowa', 'Data końcowa'] }, Calendar$m),
+    lang: Object.assign({ placeholder: 'Wybierz datę', rangePlaceholder: ['Data początkowa', 'Data końcowa'] }, Calendar$n),
     timePickerLocale: Object.assign({}, locale$K)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23874,14 +24024,14 @@ var Pagination$n = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pl_PL = {
     locale: 'pl',
     Pagination: Pagination$n,
     DatePicker: locale$L,
     TimePicker: locale$K,
-    Calendar: Calendar$m,
+    Calendar: Calendar$n,
     Table: {
         filterTitle: 'Menu filtra',
         filterConfirm: 'OK',
@@ -23916,7 +24066,7 @@ var pl_PL = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23925,7 +24075,7 @@ var pl_PL = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$n = {
+var Calendar$o = {
     today: 'Hoje',
     now: 'Agora',
     backToToday: 'Voltar para hoje',
@@ -23955,7 +24105,7 @@ var Calendar$n = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23971,18 +24121,18 @@ const locale$M = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$N = {
-    lang: Object.assign({ placeholder: 'Selecionar data', rangePlaceholder: ['Data de início', 'Data de fim'] }, Calendar$n),
+    lang: Object.assign({ placeholder: 'Selecionar data', rangePlaceholder: ['Data de início', 'Data de fim'] }, Calendar$o),
     timePickerLocale: Object.assign({}, locale$M)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -23993,7 +24143,7 @@ const locale$N = {
  */
 var Pagination$o = {
     // Options.jsx
-    items_per_page: '/ páginas',
+    items_per_page: '/ página',
     jump_to: 'Vá até',
     jump_to_confirm: 'confirme',
     page: '',
@@ -24008,14 +24158,14 @@ var Pagination$o = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pt_BR = {
     locale: 'pt-br',
     Pagination: Pagination$o,
     DatePicker: locale$N,
     TimePicker: locale$M,
-    Calendar: Calendar$n,
+    Calendar: Calendar$o,
     Table: {
         filterTitle: 'Filtro',
         filterConfirm: 'OK',
@@ -24050,7 +24200,7 @@ var pt_BR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24059,7 +24209,7 @@ var pt_BR = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$o = {
+var Calendar$p = {
     today: 'Hoje',
     now: 'Agora',
     backToToday: 'Hoje',
@@ -24089,7 +24239,7 @@ var Calendar$o = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24105,18 +24255,18 @@ const locale$O = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$P = {
-    lang: Object.assign({}, Calendar$o, { placeholder: 'Data', rangePlaceholder: ['Data inicial', 'Data final'], today: 'Hoje', now: 'Agora', backToToday: 'Hoje', ok: 'Ok', clear: 'Limpar', month: 'Mês', year: 'Ano', timeSelect: 'Hora', dateSelect: 'Selecionar data', monthSelect: 'Selecionar mês', yearSelect: 'Selecionar ano', decadeSelect: 'Selecionar década', yearFormat: 'YYYY', dateFormat: 'D/M/YYYY', dayFormat: 'D', dateTimeFormat: 'D/M/YYYY HH:mm:ss', monthFormat: 'MMMM', monthBeforeYear: false, previousMonth: 'Mês anterior (PageUp)', nextMonth: 'Mês seguinte (PageDown)', previousYear: 'Ano anterior (Control + left)', nextYear: 'Ano seguinte (Control + right)', previousDecade: 'Última década', nextDecade: 'Próxima década', previousCentury: 'Último século', nextCentury: 'Próximo século' }),
+    lang: Object.assign({}, Calendar$p, { placeholder: 'Data', rangePlaceholder: ['Data inicial', 'Data final'], today: 'Hoje', now: 'Agora', backToToday: 'Hoje', ok: 'Ok', clear: 'Limpar', month: 'Mês', year: 'Ano', timeSelect: 'Hora', dateSelect: 'Selecionar data', monthSelect: 'Selecionar mês', yearSelect: 'Selecionar ano', decadeSelect: 'Selecionar década', yearFormat: 'YYYY', dateFormat: 'D/M/YYYY', dayFormat: 'D', dateTimeFormat: 'D/M/YYYY HH:mm:ss', monthFormat: 'MMMM', monthBeforeYear: false, previousMonth: 'Mês anterior (PageUp)', nextMonth: 'Mês seguinte (PageDown)', previousYear: 'Ano anterior (Control + left)', nextYear: 'Ano seguinte (Control + right)', previousDecade: 'Última década', nextDecade: 'Próxima década', previousCentury: 'Último século', nextCentury: 'Próximo século' }),
     timePickerLocale: Object.assign({}, locale$O, { placeholder: 'Hora' })
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24142,20 +24292,21 @@ var Pagination$p = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pt_PT = {
     locale: 'pt',
     Pagination: Pagination$p,
     DatePicker: locale$P,
     TimePicker: locale$O,
-    Calendar: Calendar$o,
+    Calendar: Calendar$p,
     Table: {
         filterTitle: 'Filtro',
         filterConfirm: 'Aplicar',
         filterReset: 'Reiniciar',
         selectAll: 'Selecionar página atual',
-        selectInvert: 'Inverter seleção'
+        selectInvert: 'Inverter seleção',
+        sortTitle: 'Ordenação'
     },
     Modal: {
         okText: 'OK',
@@ -24184,7 +24335,7 @@ var pt_PT = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24193,7 +24344,7 @@ var pt_PT = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$p = {
+var Calendar$q = {
     today: 'Сегодня',
     now: 'Сейчас',
     backToToday: 'Текущая дата',
@@ -24223,7 +24374,7 @@ var Calendar$p = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24242,17 +24393,17 @@ const locale$Q = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$R = {
-    lang: Object.assign({ placeholder: 'Выберите дату', rangePlaceholder: ['Начальная дата', 'Конечная дата'] }, Calendar$p),
+    lang: Object.assign({ placeholder: 'Выберите дату', rangePlaceholder: ['Начальная дата', 'Конечная дата'] }, Calendar$q),
     timePickerLocale: Object.assign({}, locale$Q)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24263,7 +24414,7 @@ const locale$R = {
  */
 var Pagination$q = {
     // Options.jsx
-    items_per_page: '/странице',
+    items_per_page: '/ стр.',
     jump_to: 'Перейти',
     jump_to_confirm: 'подтвердить',
     page: '',
@@ -24278,20 +24429,21 @@ var Pagination$q = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ru_RU = {
     locale: 'ru',
     Pagination: Pagination$q,
     DatePicker: locale$R,
     TimePicker: locale$Q,
-    Calendar: Calendar$p,
+    Calendar: Calendar$q,
     Table: {
         filterTitle: 'Фильтр',
         filterConfirm: 'OK',
         filterReset: 'Сбросить',
         selectAll: 'Выбрать всё',
-        selectInvert: 'Инвертировать выбор'
+        selectInvert: 'Инвертировать выбор',
+        sortTitle: 'Сортировка'
     },
     Modal: {
         okText: 'OK',
@@ -24329,7 +24481,7 @@ var ru_RU = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24338,7 +24490,7 @@ var ru_RU = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$q = {
+var Calendar$r = {
     today: 'Dnes',
     now: 'Teraz',
     backToToday: 'Späť na dnes',
@@ -24368,7 +24520,7 @@ var Calendar$q = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24384,17 +24536,18 @@ const locale$S = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+// 统一合并为完整的 Locale
 /** @type {?} */
 const locale$T = {
-    lang: Object.assign({ placeholder: 'Vybrať dátum', rangePlaceholder: ['Od', 'Do'] }, Calendar$q),
+    lang: Object.assign({ placeholder: 'Vybrať dátum', rangePlaceholder: ['Od', 'Do'] }, Calendar$r),
     timePickerLocale: Object.assign({}, locale$S)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24420,14 +24573,14 @@ var Pagination$r = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sk_SK = {
     locale: 'sk',
     Pagination: Pagination$r,
     DatePicker: locale$T,
     TimePicker: locale$S,
-    Calendar: Calendar$q,
+    Calendar: Calendar$r,
     Table: {
         filterTitle: 'Filter',
         filterConfirm: 'OK',
@@ -24462,7 +24615,7 @@ var sk_SK = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24471,25 +24624,25 @@ var sk_SK = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$r = {
+var Calendar$s = {
     today: 'Danes',
-    now: 'Zdaj',
+    now: 'Trenutno',
     backToToday: 'Nazaj na danes',
     ok: 'V redu',
     clear: 'Počisti',
     month: 'Mesec',
     year: 'Leto',
-    timeSelect: 'Izberi čas',
-    dateSelect: 'Izberi datum',
-    monthSelect: 'Izberi mesec',
-    yearSelect: 'Izberi leto',
-    decadeSelect: 'Izberi desetletje',
+    timeSelect: 'Izberite čas',
+    dateSelect: 'Izberite datum',
+    monthSelect: 'Izberite mesec',
+    yearSelect: 'Izberite leto',
+    decadeSelect: 'Izberite desetletje',
     yearFormat: 'YYYY',
     dateFormat: 'DD.MM.YYYY',
     dayFormat: 'D',
     dateTimeFormat: 'DD.MM.YYYY HH:mm:ss',
     monthBeforeYear: true,
-    previousMonth: 'Predhodnji mesec (PageUp)',
+    previousMonth: 'Prejšnji mesec (PageUp)',
     nextMonth: 'Naslednji mesec (PageDown)',
     previousYear: 'Prejšnje leto (Control + left)',
     nextYear: 'Naslednje leto (Control + right)',
@@ -24501,7 +24654,7 @@ var Calendar$r = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24517,18 +24670,47 @@ const locale$U = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$V = {
-    lang: Object.assign({ placeholder: 'Izberite datum', rangePlaceholder: ['Začetni datum', 'Končni datum'] }, Calendar$r),
+    lang: {
+        placeholder: 'Izberite datum',
+        rangePlaceholder: ['Začetni datum', 'Končni datum'],
+        today: 'Danes',
+        now: 'Trenutno',
+        backToToday: 'Nazaj na trenutni datum',
+        ok: 'Ok',
+        clear: 'Počisti',
+        month: 'Mesec',
+        year: 'Leto',
+        timeSelect: 'Izberi čas',
+        dateSelect: 'Izberi datum',
+        monthSelect: 'Izberite mesec',
+        yearSelect: 'Izberite leto',
+        decadeSelect: 'Izberite desetletje',
+        yearFormat: 'YYYY',
+        dateFormat: 'D.M.YYYY',
+        dayFormat: 'D',
+        dateTimeFormat: 'D.M.YYYY HH:mm:ss',
+        monthFormat: 'MMMM',
+        monthBeforeYear: true,
+        previousMonth: 'Prejšnji mesec (PageUp)',
+        nextMonth: 'Naslednji mesec (PageDown)',
+        previousYear: 'Lansko leto (Control + left)',
+        nextYear: 'Naslednje leto (Control + right)',
+        previousDecade: 'Prejšnje desetletje',
+        nextDecade: 'Naslednje desetletje',
+        previousCentury: 'Zadnje stoletje',
+        nextCentury: 'Naslednje stoletje'
+    },
     timePickerLocale: Object.assign({}, locale$U)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24539,29 +24721,29 @@ const locale$V = {
  */
 var Pagination$s = {
     // Options.jsx
-    items_per_page: '/ stran',
+    items_per_page: '/ strani',
     jump_to: 'Pojdi na',
     jump_to_confirm: 'potrdi',
     page: '',
     // Pagination.jsx
     prev_page: 'Prejšnja stran',
     next_page: 'Naslednja stran',
-    prev_5: 'Prejšnjih 5 Strani',
-    next_5: 'Naslednjih 5 Strani',
-    prev_3: 'Prejšnje 3 Strani',
-    next_3: 'Naslednje 3 Strani'
+    prev_5: 'Prejšnjih 5 strani',
+    next_5: 'Naslednjih 5 strani',
+    prev_3: 'Prejšnje 3 strani',
+    next_3: 'Naslednje 3 strani'
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sl_SI = {
     locale: 'sl',
     Pagination: Pagination$s,
     DatePicker: locale$V,
     TimePicker: locale$U,
-    Calendar: Calendar$r,
+    Calendar: Calendar$s,
     Table: {
         filterTitle: 'Filter',
         filterConfirm: 'Filtriraj',
@@ -24596,7 +24778,7 @@ var sl_SI = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24605,7 +24787,7 @@ var sl_SI = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$s = {
+var Calendar$t = {
     today: 'Danas',
     now: 'Sada',
     backToToday: 'Vrati se na danas',
@@ -24635,7 +24817,7 @@ var Calendar$s = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24651,18 +24833,18 @@ const locale$W = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$X = {
-    lang: Object.assign({ placeholder: 'Izaberite datum', rangePlaceholder: ['Početni datum', 'Krajnji datum'] }, Calendar$s),
+    lang: Object.assign({ placeholder: 'Izaberite datum', rangePlaceholder: ['Početni datum', 'Krajnji datum'] }, Calendar$t),
     timePickerLocale: Object.assign({}, locale$W)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24687,14 +24869,14 @@ var Pagination$t = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sr_RS = {
     locale: 'sr',
     Pagination: Pagination$t,
     DatePicker: locale$X,
     TimePicker: locale$W,
-    Calendar: Calendar$s,
+    Calendar: Calendar$t,
     Table: {
         filterTitle: 'Filter',
         filterConfirm: 'Primeni filter',
@@ -24729,7 +24911,7 @@ var sr_RS = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24738,7 +24920,7 @@ var sr_RS = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$t = {
+var Calendar$u = {
     today: 'I dag',
     now: 'Nu',
     backToToday: 'Till idag',
@@ -24768,7 +24950,7 @@ var Calendar$t = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24784,17 +24966,17 @@ const locale$Y = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$Z = {
-    lang: Object.assign({ placeholder: 'Välj datum', rangePlaceholder: ['Startdatum', 'Slutdatum'] }, Calendar$t),
+    lang: Object.assign({ placeholder: 'Välj datum', rangePlaceholder: ['Startdatum', 'Slutdatum'] }, Calendar$u),
     timePickerLocale: Object.assign({}, locale$Y)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24820,14 +25002,14 @@ var Pagination$u = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sv_SE = {
     locale: 'sv',
     Pagination: Pagination$u,
     DatePicker: locale$Z,
     TimePicker: locale$Y,
-    Calendar: Calendar$t,
+    Calendar: Calendar$u,
     Table: {
         filterTitle: 'Filtermeny',
         filterConfirm: 'OK',
@@ -24854,7 +25036,7 @@ var sv_SE = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24863,7 +25045,7 @@ var sv_SE = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$u = {
+var Calendar$v = {
     today: 'วันนี้',
     now: 'ตอนนี้',
     backToToday: 'กลับไปยังวันนี้',
@@ -24893,7 +25075,7 @@ var Calendar$u = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24909,18 +25091,18 @@ const locale$_ = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$$ = {
-    lang: Object.assign({ placeholder: 'เลือกวันที่', rangePlaceholder: ['วันเริ่มต้น', 'วันสิ้นสุด'] }, Calendar$u),
+    lang: Object.assign({ placeholder: 'เลือกวันที่', rangePlaceholder: ['วันเริ่มต้น', 'วันสิ้นสุด'] }, Calendar$v),
     timePickerLocale: Object.assign({}, locale$_)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -24946,14 +25128,14 @@ var Pagination$v = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var th_TH = {
     locale: 'th',
     Pagination: Pagination$v,
     DatePicker: locale$$,
     TimePicker: locale$_,
-    Calendar: Calendar$u,
+    Calendar: Calendar$v,
     Table: {
         filterTitle: 'ตัวกรอง',
         filterConfirm: 'ยืนยัน',
@@ -24988,7 +25170,46 @@ var th_TH = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+var Calendar$w = {
+    today: 'Bugün',
+    now: 'Şimdi',
+    backToToday: 'Bugüne Geri Dön',
+    ok: 'tamam',
+    clear: 'Temizle',
+    month: 'Ay',
+    year: 'Yıl',
+    timeSelect: 'Zaman Seç',
+    dateSelect: 'Tarih Seç',
+    monthSelect: 'Ay Seç',
+    yearSelect: 'Yıl Seç',
+    decadeSelect: 'On Yıl Seç',
+    yearFormat: 'YYYY',
+    dateFormat: 'M/D/YYYY',
+    dayFormat: 'D',
+    dateTimeFormat: 'M/D/YYYY HH:mm:ss',
+    monthBeforeYear: true,
+    previousMonth: 'Önceki Ay (PageUp)',
+    nextMonth: 'Sonraki Ay (PageDown)',
+    previousYear: 'Önceki Yıl (Control + Sol)',
+    nextYear: 'Sonraki Yıl (Control + Sağ)',
+    previousDecade: 'Önceki On Yıl',
+    nextDecade: 'Sonraki On Yıl',
+    previousCentury: 'Önceki Yüzyıl',
+    nextCentury: 'Sonraki Yüzyıl'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25004,31 +25225,61 @@ const locale$10 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
 /** @type {?} */
 const locale$11 = {
-    lang: Object.assign({ placeholder: 'Tarih Seç', rangePlaceholder: ['Başlangıç Tarihi', 'Bitiş Tarihi'] }, CalendarLocale),
+    lang: Object.assign({ placeholder: 'Tarih Seç', rangePlaceholder: ['Başlangıç Tarihi', 'Bitiş Tarihi'] }, Calendar$w),
     timePickerLocale: Object.assign({}, locale$10)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+var Pagination$w = {
+    // Options.jsx
+    items_per_page: '/ sayfa',
+    jump_to: 'Git',
+    jump_to_confirm: 'onayla',
+    page: '',
+    // Pagination.jsx
+    prev_page: 'Önceki Sayfa',
+    next_page: 'Sonraki Sayfa',
+    prev_5: 'Önceki 5 Sayfa',
+    next_5: 'Sonraki 5 Sayfa',
+    prev_3: 'Önceki 3 Sayfa',
+    next_3: 'Sonraki 3 Sayfa'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var tr_TR = {
     locale: 'tr',
-    Pagination: Pagination$9,
+    Pagination: Pagination$w,
     DatePicker: locale$11,
     TimePicker: locale$10,
-    Calendar: CalendarLocale,
+    Calendar: Calendar$w,
+    global: {
+        placeholder: 'Lütfen seçiniz'
+    },
     Table: {
         filterTitle: 'Menü Filtrele',
         filterConfirm: 'Tamam',
         filterReset: 'Sıfırla',
         selectAll: 'Hepsini Seç',
-        selectInvert: 'Tersini Seç'
+        selectInvert: 'Tersini Seç',
+        sortTitle: 'Sırala'
     },
     Modal: {
         okText: 'Tamam',
@@ -25040,6 +25291,7 @@ var tr_TR = {
         cancelText: 'İptal'
     },
     Transfer: {
+        titles: ['', ''],
         searchPlaceholder: 'Arama',
         itemUnit: 'Öğe',
         itemsUnit: 'Öğeler'
@@ -25053,6 +25305,9 @@ var tr_TR = {
     Empty: {
         description: 'Veri Yok'
     },
+    Icon: {
+        icon: 'icon'
+    },
     Text: {
         edit: 'düzenle',
         copy: 'kopyala',
@@ -25063,7 +25318,7 @@ var tr_TR = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25072,7 +25327,7 @@ var tr_TR = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$v = {
+var Calendar$x = {
     today: 'Сьогодні',
     now: 'Зараз',
     backToToday: 'Поточна дата',
@@ -25102,7 +25357,7 @@ var Calendar$v = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25118,17 +25373,17 @@ const locale$12 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$13 = {
-    lang: Object.assign({ placeholder: 'Оберіть дату', rangePlaceholder: ['Початкова дата', 'Кінцева дата'] }, Calendar$v),
+    lang: Object.assign({ placeholder: 'Оберіть дату', rangePlaceholder: ['Початкова дата', 'Кінцева дата'] }, Calendar$x),
     timePickerLocale: Object.assign({}, locale$12)
 };
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25137,7 +25392,7 @@ const locale$13 = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Pagination$w = {
+var Pagination$x = {
     // Options.jsx
     items_per_page: '/ сторінці',
     jump_to: 'Перейти',
@@ -25154,14 +25409,14 @@ var Pagination$w = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var uk_UA = {
     locale: 'uk',
-    Pagination: Pagination$w,
+    Pagination: Pagination$x,
     DatePicker: locale$13,
     TimePicker: locale$12,
-    Calendar: Calendar$v,
+    Calendar: Calendar$x,
     Table: {
         filterTitle: 'Фільтрувати',
         filterConfirm: 'OK',
@@ -25196,23 +25451,7 @@ var uk_UA = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-// Merge into a locale object
-/** @type {?} */
-const locale$14 = {
-    lang: Object.assign({ placeholder: 'Chọn thời điểm', rangePlaceholder: ['Ngày bắt đầu', 'Ngày kết thúc'] }, CalendarLocale),
-    timePickerLocale: Object.assign({}, locale$i)
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25221,7 +25460,74 @@ const locale$14 = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Pagination$x = {
+var Calendar$y = {
+    today: 'Hôm nay',
+    now: 'Bây giờ',
+    backToToday: 'Trở về hôm nay',
+    ok: 'Ok',
+    clear: 'Xóa',
+    month: 'Tháng',
+    year: 'Năm',
+    timeSelect: 'Chọn thời gian',
+    dateSelect: 'Chọn ngày',
+    weekSelect: 'Chọn tuần',
+    monthSelect: 'Chọn tháng',
+    yearSelect: 'Chọn năm',
+    decadeSelect: 'Chọn thập kỷ',
+    yearFormat: 'YYYY',
+    dateFormat: 'D/M/YYYY',
+    dayFormat: 'D',
+    dateTimeFormat: 'D/M/YYYY HH:mm:ss',
+    monthBeforeYear: true,
+    previousMonth: 'Tháng trước (PageUp)',
+    nextMonth: 'Tháng sau (PageDown)',
+    previousYear: 'Năm trước (Control + left)',
+    nextYear: 'Năm sau (Control + right)',
+    previousDecade: 'Thập kỷ trước',
+    nextDecade: 'Thập kỷ sau',
+    previousCentury: 'Thế kỷ trước',
+    nextCentury: 'Thế kỷ sau'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/** @type {?} */
+const locale$14 = {
+    placeholder: 'Chọn thời gian'
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+// Merge into a locale object
+/** @type {?} */
+const locale$15 = {
+    lang: Object.assign({ placeholder: 'Chọn thời điểm', rangePlaceholder: ['Ngày bắt đầu', 'Ngày kết thúc'] }, Calendar$y),
+    timePickerLocale: Object.assign({}, locale$14)
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+var Pagination$y = {
     // Options.jsx
     items_per_page: '/ trang',
     jump_to: 'Đến',
@@ -25238,30 +25544,14 @@ var Pagination$x = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-/** @type {?} */
-const locale$15 = {
-    placeholder: 'Chọn thời gian'
-};
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var vi_VN = {
     locale: 'vi',
-    Pagination: Pagination$x,
-    DatePicker: locale$14,
-    TimePicker: locale$15,
-    Calendar: locale$14,
+    Pagination: Pagination$y,
+    DatePicker: locale$15,
+    TimePicker: locale$14,
+    Calendar: Calendar$y,
     Table: {
         filterTitle: 'Bộ ',
         filterConfirm: 'OK',
@@ -25296,7 +25586,7 @@ var vi_VN = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25305,7 +25595,7 @@ var vi_VN = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Calendar$w = {
+var Calendar$z = {
     today: '今天',
     now: '此刻',
     backToToday: '返回今天',
@@ -25334,7 +25624,7 @@ var Calendar$w = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25350,18 +25640,18 @@ const locale$16 = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const locale$17 = {
-    lang: Object.assign({ placeholder: '請選擇日期', rangePlaceholder: ['開始日期', '結束日期'] }, Calendar$w),
+    lang: Object.assign({ placeholder: '請選擇日期', rangePlaceholder: ['開始日期', '結束日期'] }, Calendar$z),
     timePickerLocale: Object.assign({}, locale$16)
 };
 locale$17.lang.ok = '確 定';
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -25370,7 +25660,7 @@ locale$17.lang.ok = '確 定';
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var Pagination$y = {
+var Pagination$z = {
     // Options.jsx
     items_per_page: '條/頁',
     jump_to: '跳至',
@@ -25387,14 +25677,14 @@ var Pagination$y = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var zh_TW = {
     locale: 'zh-tw',
-    Pagination: Pagination$y,
+    Pagination: Pagination$z,
     DatePicker: locale$17,
     TimePicker: locale$16,
-    Calendar: Calendar$w,
+    Calendar: Calendar$z,
     Table: {
         filterTitle: '篩選器',
         filterConfirm: '確 定',
@@ -25481,7 +25771,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_ICONS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('nz_icons');
@@ -25633,7 +25923,7 @@ NzIconService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const iconTypeRE = /^anticon\-\w/;
@@ -25981,7 +26271,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzIconModule {
 }
@@ -26034,7 +26324,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzInputNumberComponent {
     /**
@@ -26571,7 +26861,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzInputNumberModule {
 }
@@ -26628,7 +26918,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzInputDirective {
     /**
@@ -26668,7 +26958,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzInputGroupComponent {
     constructor() {
@@ -26844,7 +27134,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} value
@@ -26858,11 +27148,13 @@ class NzAutosizeDirective {
      * @param {?} elementRef
      * @param {?} ngZone
      * @param {?} platform
+     * @param {?} nzDomEventService
      */
-    constructor(elementRef, ngZone, platform) {
+    constructor(elementRef, ngZone, platform, nzDomEventService) {
         this.elementRef = elementRef;
         this.ngZone = ngZone;
         this.platform = platform;
+        this.nzDomEventService = nzDomEventService;
         this.autosize = false;
         this.el = this.elementRef.nativeElement;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
@@ -27017,17 +27309,16 @@ class NzAutosizeDirective {
     ngAfterViewInit() {
         if (this.nzAutosize && this.platform.isBrowser) {
             this.resizeToFitContent();
-            this.ngZone.runOutsideAngular((/**
+            this.nzDomEventService
+                .registerResizeListener()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["finalize"])((/**
              * @return {?}
              */
-            () => {
-                Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["fromEvent"])(window, 'resize')
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["auditTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$))
-                    .subscribe((/**
-                 * @return {?}
-                 */
-                () => this.resizeToFitContent(true)));
-            }));
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.resizeToFitContent(true)));
         }
     }
     /**
@@ -27062,7 +27353,8 @@ NzAutosizeDirective.decorators = [
 NzAutosizeDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"] }
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzDomEventService"] }
 ];
 NzAutosizeDirective.propDecorators = {
     nzAutosize: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
@@ -27070,7 +27362,7 @@ NzAutosizeDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzInputModule {
 }
@@ -27131,7 +27423,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzContentComponent {
     /**
@@ -27167,7 +27459,7 @@ NzContentComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFooterComponent {
     /**
@@ -27203,7 +27495,7 @@ NzFooterComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzHeaderComponent {
     /**
@@ -27239,7 +27531,7 @@ NzHeaderComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzLayoutComponent {
     /**
@@ -27282,7 +27574,7 @@ NzLayoutComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSiderComponent {
     /**
@@ -27291,15 +27583,17 @@ class NzSiderComponent {
      * @param {?} ngZone
      * @param {?} platform
      * @param {?} cdr
+     * @param {?} nzDomEventService
      * @param {?} renderer
      * @param {?} elementRef
      */
-    constructor(nzLayoutComponent, mediaMatcher, ngZone, platform, cdr, renderer, elementRef) {
+    constructor(nzLayoutComponent, mediaMatcher, ngZone, platform, cdr, nzDomEventService, renderer, elementRef) {
         this.nzLayoutComponent = nzLayoutComponent;
         this.mediaMatcher = mediaMatcher;
         this.ngZone = ngZone;
         this.platform = platform;
         this.cdr = cdr;
+        this.nzDomEventService = nzDomEventService;
         this.below = false;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
         this.dimensionMap = {
@@ -27393,17 +27687,16 @@ class NzSiderComponent {
              * @return {?}
              */
             () => this.watchMatchMedia()));
-            this.ngZone.runOutsideAngular((/**
+            this.nzDomEventService
+                .registerResizeListener()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["finalize"])((/**
              * @return {?}
              */
-            () => {
-                Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["fromEvent"])(window, 'resize')
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["auditTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$))
-                    .subscribe((/**
-                 * @return {?}
-                 */
-                () => this.watchMatchMedia()));
-            }));
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.watchMatchMedia()));
         }
     }
     /**
@@ -27443,6 +27736,7 @@ NzSiderComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
     { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzDomEventService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
 ];
@@ -27473,7 +27767,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzLayoutModule {
 }
@@ -27529,7 +27823,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListItemMetaComponent {
     /**
@@ -27579,7 +27873,7 @@ NzListItemMetaComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListComponent {
     /**
@@ -27700,7 +27994,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListItemComponent {
     /**
@@ -27775,7 +28069,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListModule {
 }
@@ -27839,7 +28133,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMentionSuggestionDirective {
 }
@@ -27852,7 +28146,7 @@ NzMentionSuggestionDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMentionService {
     constructor() {
@@ -27887,7 +28181,7 @@ NzMentionService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_MENTION_TRIGGER_ACCESSOR = {
@@ -28013,7 +28307,7 @@ NzMentionTriggerDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMentionComponent {
     /**
@@ -28452,7 +28746,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_6__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const COMPONENTS = [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective];
@@ -28526,7 +28820,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuService extends ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_4__["NzMenuBaseService"] {
     constructor() {
@@ -28540,7 +28834,7 @@ NzMenuService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSubmenuService {
     /**
@@ -28636,7 +28930,7 @@ NzSubmenuService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuItemDirective {
     /**
@@ -28889,7 +29183,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -28909,7 +29203,7 @@ function NzMenuServiceFactory(higherOrderService, menuService) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSubMenuComponent {
     /**
@@ -29157,7 +29451,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 const ɵ0 = NzMenuServiceFactory;
 class NzMenuDirective {
@@ -29337,7 +29631,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuGroupComponent {
     /**
@@ -29371,7 +29665,7 @@ NzMenuGroupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuDividerDirective {
     /**
@@ -29398,7 +29692,7 @@ NzMenuDividerDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuModule {
 }
@@ -29426,7 +29720,7 @@ NzMenuModule.decorators = [
 /*!***************************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd-message.js ***!
   \***************************************************/
-/*! exports provided: NZ_MESSAGE_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER, NzMessageBaseService, NzMessageComponent, NzMessageContainerComponent, NzMessageModule, NzMessageService */
+/*! exports provided: NZ_MESSAGE_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER, NzMessageBaseService, NzMessageComponent, NzMessageContainerComponent, NzMessageModule, NzMessageService, NzMessageServiceModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29439,6 +29733,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageContainerComponent", function() { return NzMessageContainerComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageModule", function() { return NzMessageModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageService", function() { return NzMessageService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageServiceModule", function() { return NzMessageServiceModule; });
 /* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/overlay */ "@angular/cdk/overlay");
 /* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "@angular/core");
@@ -29458,7 +29753,110 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/** @type {?} */
+let globalCounter = 0;
+/** @type {?} */
+const containerMap = new Map();
+/**
+ * @template ContainerClass, MessageData, MessageConfig
+ */
+class NzMessageBaseService {
+    /**
+     * @param {?} overlay
+     * @param {?} containerClass
+     * @param {?} injector
+     * @param {?} cfr
+     * @param {?} appRef
+     * @param {?=} name
+     */
+    constructor(overlay, containerClass, injector, cfr, appRef, name = '') {
+        this.overlay = overlay;
+        this.containerClass = containerClass;
+        this.injector = injector;
+        this.cfr = cfr;
+        this.appRef = appRef;
+        this.name = name;
+        this._container = this.createContainer();
+        containerMap.set(this.name, this._container);
+    }
+    /**
+     * @param {?=} messageId
+     * @return {?}
+     */
+    remove(messageId) {
+        if (messageId) {
+            this._container.removeMessage(messageId);
+        }
+        else {
+            this._container.removeMessageAll();
+        }
+    }
+    /**
+     * @param {?} message
+     * @param {?=} options
+     * @return {?}
+     */
+    createMessage(message, options) {
+        /** @type {?} */
+        const resultMessage = Object.assign({}, ((/** @type {?} */ (message))), {
+            createdAt: new Date(),
+            messageId: this._generateMessageId(),
+            options
+        });
+        this._container.createMessage(resultMessage);
+        return resultMessage;
+    }
+    /**
+     * @param {?} config
+     * @return {?}
+     */
+    config(config) {
+        this._container.setConfig(config);
+    }
+    /**
+     * @protected
+     * @return {?}
+     */
+    _generateMessageId() {
+        return `${this.name}-${globalCounter++}`;
+    }
+    // Manually creating container for overlay to avoid multi-checking error, see: https://github.com/NG-ZORRO/ng-zorro-antd/issues/391
+    // NOTE: we never clean up the container component and it's overlay resources, if we should, we need to do it by our own codes.
+    /**
+     * @private
+     * @return {?}
+     */
+    createContainer() {
+        if (containerMap.has(this.name)) {
+            return (/** @type {?} */ (containerMap.get(this.name)));
+        }
+        /** @type {?} */
+        const factory = this.cfr.resolveComponentFactory(this.containerClass);
+        /** @type {?} */
+        const componentRef = factory.create(this.injector);
+        componentRef.changeDetectorRef.detectChanges(); // Immediately change detection to avoid multi-checking error
+        this.appRef.attachView(componentRef.hostView); // Load view into app root
+        // Load view into app root
+        /** @type {?} */
+        const overlayPane = this.overlay.create().overlayElement;
+        overlayPane.style.zIndex = '1010'; // Patching: assign the same zIndex of ant-message to it's parent overlay panel, to the ant-message's zindex work.
+        overlayPane.appendChild((/** @type {?} */ (((/** @type {?} */ (componentRef.hostView))).rootNodes[0])));
+        return componentRef.instance;
+    }
+}
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_MESSAGE_DEFAULT_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('NZ_MESSAGE_DEFAULT_CONFIG');
@@ -29479,7 +29877,7 @@ const NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageContainerComponent {
     /**
@@ -29581,93 +29979,18 @@ NzMessageContainerComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** @type {?} */
-let globalCounter = 0;
-/**
- * @template ContainerClass, MessageData, MessageConfig
- */
-class NzMessageBaseService {
-    /**
-     * @param {?} overlay
-     * @param {?} containerClass
-     * @param {?} injector
-     * @param {?} cfr
-     * @param {?} appRef
-     * @param {?=} _idPrefix
-     */
-    constructor(overlay, containerClass, injector, cfr, appRef, _idPrefix = '') {
-        this.overlay = overlay;
-        this.containerClass = containerClass;
-        this.injector = injector;
-        this.cfr = cfr;
-        this.appRef = appRef;
-        this._idPrefix = _idPrefix;
-        this._container = this.createContainer();
-    }
-    /**
-     * @param {?=} messageId
-     * @return {?}
-     */
-    remove(messageId) {
-        if (messageId) {
-            this._container.removeMessage(messageId);
-        }
-        else {
-            this._container.removeMessageAll();
-        }
-    }
-    /**
-     * @param {?} message
-     * @param {?=} options
-     * @return {?}
-     */
-    createMessage(message, options) {
-        /** @type {?} */
-        const resultMessage = Object.assign({}, ((/** @type {?} */ (message))), {
-            createdAt: new Date(),
-            messageId: this._generateMessageId(),
-            options
-        });
-        this._container.createMessage(resultMessage);
-        return resultMessage;
-    }
-    /**
-     * @param {?} config
-     * @return {?}
-     */
-    config(config) {
-        this._container.setConfig(config);
-    }
-    /**
-     * @protected
-     * @return {?}
-     */
-    _generateMessageId() {
-        return this._idPrefix + globalCounter++;
-    }
-    // Manually creating container for overlay to avoid multi-checking error, see: https://github.com/NG-ZORRO/ng-zorro-antd/issues/391
-    // NOTE: we never clean up the container component and it's overlay resources, if we should, we need to do it by our own codes.
-    /**
-     * @private
-     * @return {?}
-     */
-    createContainer() {
-        /** @type {?} */
-        const factory = this.cfr.resolveComponentFactory(this.containerClass);
-        /** @type {?} */
-        const componentRef = factory.create(this.injector);
-        componentRef.changeDetectorRef.detectChanges(); // Immediately change detection to avoid multi-checking error
-        this.appRef.attachView(componentRef.hostView); // Load view into app root
-        // Load view into app root
-        /** @type {?} */
-        const overlayPane = this.overlay.create().overlayElement;
-        overlayPane.style.zIndex = '1010'; // Patching: assign the same zIndex of ant-message to it's parent overlay panel, to the ant-message's zindex work.
-        overlayPane.appendChild((/** @type {?} */ (((/** @type {?} */ (componentRef.hostView))).rootNodes[0])));
-        return componentRef.instance;
-    }
+class NzMessageServiceModule {
 }
+NzMessageServiceModule.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzMessageService extends NzMessageBaseService {
     /**
      * @param {?} overlay
@@ -29676,7 +29999,7 @@ class NzMessageService extends NzMessageBaseService {
      * @param {?} appRef
      */
     constructor(overlay, injector, cfr, appRef) {
-        super(overlay, NzMessageContainerComponent, injector, cfr, appRef, 'message-');
+        super(overlay, NzMessageContainerComponent, injector, cfr, appRef, 'message');
     }
     // Shortcut methods
     /**
@@ -29731,7 +30054,7 @@ class NzMessageService extends NzMessageBaseService {
 }
 NzMessageService.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"], args: [{
-                providedIn: 'root'
+                providedIn: NzMessageServiceModule
             },] }
 ];
 /** @nocollapse */
@@ -29741,11 +30064,11 @@ NzMessageService.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"] }
 ];
-/** @nocollapse */ NzMessageService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function NzMessageService_Factory() { return new NzMessageService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["INJECTOR"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"])); }, token: NzMessageService, providedIn: "root" });
+/** @nocollapse */ NzMessageService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"])({ factory: function NzMessageService_Factory() { return new NzMessageService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["INJECTOR"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ComponentFactoryResolver"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ApplicationRef"])); }, token: NzMessageService, providedIn: NzMessageServiceModule });
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageComponent {
     // Time to live.
@@ -29886,13 +30209,13 @@ NzMessageComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageModule {
 }
 NzMessageModule.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_3__["NzAddOnModule"]],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_3__["NzAddOnModule"], NzMessageServiceModule],
                 declarations: [NzMessageContainerComponent, NzMessageComponent],
                 providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER],
                 entryComponents: [NzMessageContainerComponent]
@@ -29909,7 +30232,7 @@ NzMessageModule.decorators = [
 /*!*************************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd-modal.js ***!
   \*************************************************/
-/*! exports provided: CssUnitPipe, NZ_MODAL_CONFIG, NzModalComponent, NzModalControlService, NzModalControlServiceModule, NzModalModule, NzModalRef, NzModalService, NzModalServiceModule */
+/*! exports provided: CssUnitPipe, NZ_MODAL_CONFIG, NzModalComponent, NzModalControlService, NzModalControlServiceModule, NzModalFooterDirective, NzModalModule, NzModalRef, NzModalService, NzModalServiceModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29919,6 +30242,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalComponent", function() { return NzModalComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalControlService", function() { return NzModalControlService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalControlServiceModule", function() { return NzModalControlServiceModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalFooterDirective", function() { return NzModalFooterDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalModule", function() { return NzModalModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalRef", function() { return NzModalRef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalService", function() { return NzModalService; });
@@ -29961,14 +30285,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_MODAL_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_5__["InjectionToken"]('NZ_MODAL_CONFIG');
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzModalControlServiceModule {
 }
@@ -29978,7 +30302,7 @@ NzModalControlServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzModalControlService {
     /**
@@ -30095,7 +30419,7 @@ NzModalControlService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -30116,7 +30440,35 @@ class NzModalRef {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzModalFooterDirective {
+    /**
+     * @param {?} nzModalRef
+     * @param {?} templateRef
+     */
+    constructor(nzModalRef, templateRef) {
+        this.nzModalRef = nzModalRef;
+        this.templateRef = templateRef;
+        if (this.nzModalRef) {
+            this.nzModalRef.getInstance().setFooterWithTemplate(this.templateRef);
+        }
+    }
+}
+NzModalFooterDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["Directive"], args: [{
+                selector: '[nzModalFooter]'
+            },] }
+];
+/** @nocollapse */
+NzModalFooterDirective.ctorParameters = () => [
+    { type: NzModalRef, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["Optional"] }] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["TemplateRef"] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const MODAL_ANIMATE_DURATION = 200;
@@ -30189,6 +30541,15 @@ class NzModalComponent extends NzModalRef {
         this.scrollStrategy = this.overlay.scrollStrategies.block();
     }
     // Only aim to focus the ok button that needs to be auto focused
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    set modalFooter(value) {
+        if (value && value.templateRef) {
+            this.setFooterWithTemplate(value.templateRef);
+        }
+    }
     /**
      * @return {?}
      */
@@ -30349,6 +30710,14 @@ class NzModalComponent extends NzModalRef {
             this.unsubscribe$.complete();
         }));
         clearTimeout(this.timeoutId);
+    }
+    /**
+     * @param {?} templateRef
+     * @return {?}
+     */
+    setFooterWithTemplate(templateRef) {
+        this.nzFooter = templateRef;
+        this.cdr.markForCheck();
     }
     /**
      * @param {?} overlayRef
@@ -30775,7 +31144,7 @@ NzModalComponent.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["Component"], args: [{
                 selector: 'nz-modal',
                 exportAs: 'nzModal',
-                template: "<ng-template #tplOriginContent><ng-content></ng-content></ng-template> <!-- Compatible: the <ng-content> can appear only once -->\n\n<div [nzNoAnimation]=\"nzNoAnimation\">\n  <div *ngIf=\"mask\"\n    class=\"ant-modal-mask\"\n    [ngClass]=\"maskAnimationClassMap\"\n    [class.ant-modal-mask-hidden]=\"hidden\"\n    [ngStyle]=\"nzMaskStyle\"\n    [style.zIndex]=\"nzZIndex\"\n  ></div>\n  <div\n    (click)=\"onClickMask($event)\"\n    (mouseup)=\"onDialogUp()\"\n    class=\"ant-modal-wrap {{ nzWrapClassName }}\"\n    [style.zIndex]=\"nzZIndex\"\n    [style.visibility]=\"hidden ? 'hidden' : null\"\n    tabindex=\"-1\"\n    role=\"dialog\"\n  >\n    <div #modalContainer\n      class=\"ant-modal {{ nzClassName }}\"\n      (mousedown)=\"onMaskDialogDown()\"\n      [ngClass]=\"modalAnimationClassMap\"\n      [ngStyle]=\"nzStyle\"\n      [style.width]=\"nzWidth | toCssUnit\"\n      [style.transform-origin]=\"transformOrigin\"\n      role=\"document\"\n    >\n      <div class=\"ant-modal-content\">\n        <button *ngIf=\"nzClosable\" (click)=\"onClickCloseBtn()\" class=\"ant-modal-close\" aria-label=\"Close\">\n          <span class=\"ant-modal-close-x\">\n            <i nz-icon nzType=\"close\" class=\"ant-modal-close-icon\"></i>\n          </span>\n        </button>\n        <ng-container *ngIf=\"!hidden\" [ngSwitch]=\"true\">\n          <ng-container *ngSwitchCase=\"isModalType('default')\" [ngTemplateOutlet]=\"tplContentDefault\"></ng-container>\n          <ng-container *ngSwitchCase=\"isModalType('confirm')\" [ngTemplateOutlet]=\"tplContentConfirm\"></ng-container>\n        </ng-container>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- [Predefined] Default Modal Content -->\n<ng-template #tplContentDefault>\n  <div *ngIf=\"nzTitle\" class=\"ant-modal-header\">\n    <div class=\"ant-modal-title\">\n      <ng-container [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><div [innerHTML]=\"nzTitle\"></div></ng-container>\n      </ng-container>\n    </div>\n  </div>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <ng-container #bodyContainer>\n      <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n        <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n      </ng-container>\n    </ng-container>\n  </div>\n  <div *ngIf=\"nzFooter !== null\" class=\"ant-modal-footer\">\n    <ng-container [ngSwitch]=\"true\">\n      <ng-container *ngSwitchCase=\"isTemplateRef(nzFooter)\" [ngTemplateOutlet]=\"nzFooter\"></ng-container>\n      <ng-container *ngSwitchCase=\"isNonEmptyString(nzFooter)\"><div [innerHTML]=\"nzFooter\"></div></ng-container>\n      <ng-container *ngSwitchCase=\"isModalButtons(nzFooter)\">\n        <button *ngFor=\"let button of nzFooter\" nz-button\n          (click)=\"onButtonClick(button)\"\n          [hidden]=\"!getButtonCallableProp(button, 'show')\"\n          [nzLoading]=\"getButtonCallableProp(button, 'loading')\"\n          [disabled]=\"getButtonCallableProp(button, 'disabled')\"\n          [nzType]=\"button.type\"\n          [nzShape]=\"button.shape\"\n          [nzSize]=\"button.size\"\n          [nzGhost]=\"button.ghost\"\n        >{{ button.label }}</button>\n      </ng-container>\n      <ng-container *ngSwitchDefault>\n        <button *ngIf=\"nzCancelText!==null\" nz-button (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\" [disabled]=\"nzCancelDisabled\">\n          {{ cancelText }}\n        </button>\n        <button *ngIf=\"nzOkText!==null\" nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\" [disabled]=\"nzOkDisabled\">\n          {{ okText }}\n        </button>\n      </ng-container>\n    </ng-container>\n  </div>\n</ng-template>\n<!-- /[Predefined] Default Modal Content -->\n\n<!-- [Predefined] Confirm Modal Content -->\n<ng-template #tplContentConfirm>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <div class=\"ant-modal-confirm-body-wrapper\">\n      <div class=\"ant-modal-confirm-body\">\n        <i nz-icon [nzType]=\"nzIconType\"></i>\n        <span class=\"ant-modal-confirm-title\">\n          <ng-container [ngSwitch]=\"true\">\n            <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n            <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><span [innerHTML]=\"nzTitle\"></span></ng-container>\n          </ng-container>\n        </span>\n        <div class=\"ant-modal-confirm-content\">\n          <ng-container #bodyContainer>\n            <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n              <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n            </ng-container>\n          </ng-container>\n        </div>\n      </div>\n      <div class=\"ant-modal-confirm-btns\">\n        <button nz-button *ngIf=\"nzCancelText!==null\" (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\">\n          {{ cancelText }}\n        </button>\n        <button *ngIf=\"nzOkText!==null\" #autoFocusButtonOk nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\">\n          {{ okText }}\n        </button>\n      </div>\n    </div> <!-- /.ant-modal-confirm-body-wrapper -->\n  </div>\n</ng-template>\n<!-- /[Predefined] Confirm Modal Content -->\n",
+                template: "<ng-template #tplOriginContent><ng-content></ng-content></ng-template> <!-- Compatible: the <ng-content> can appear only once -->\n\n<div [nzNoAnimation]=\"nzNoAnimation\">\n  <div *ngIf=\"mask\"\n    class=\"ant-modal-mask\"\n    [ngClass]=\"maskAnimationClassMap\"\n    [class.ant-modal-mask-hidden]=\"hidden\"\n    [ngStyle]=\"nzMaskStyle\"\n    [style.zIndex]=\"nzZIndex\"\n  ></div>\n  <div\n    (click)=\"onClickMask($event)\"\n    (mouseup)=\"onDialogUp()\"\n    class=\"ant-modal-wrap {{ nzWrapClassName }}\"\n    [style.zIndex]=\"nzZIndex\"\n    [style.visibility]=\"hidden ? 'hidden' : null\"\n    tabindex=\"-1\"\n    role=\"dialog\"\n  >\n    <div #modalContainer\n      class=\"ant-modal {{ nzClassName }}\"\n      (mousedown)=\"onMaskDialogDown()\"\n      [ngClass]=\"modalAnimationClassMap\"\n      [ngStyle]=\"nzStyle\"\n      [style.width]=\"nzWidth | toCssUnit\"\n      [style.transform-origin]=\"transformOrigin\"\n      role=\"document\"\n    >\n      <div class=\"ant-modal-content\">\n        <button *ngIf=\"nzClosable\" (click)=\"onClickCloseBtn()\" class=\"ant-modal-close\" aria-label=\"Close\">\n          <span class=\"ant-modal-close-x\">\n            <i nz-icon nzType=\"close\" class=\"ant-modal-close-icon\"></i>\n          </span>\n        </button>\n        <ng-container *ngIf=\"!hidden\" [ngSwitch]=\"true\">\n          <ng-container *ngSwitchCase=\"isModalType('default')\" [ngTemplateOutlet]=\"tplContentDefault\"></ng-container>\n          <ng-container *ngSwitchCase=\"isModalType('confirm')\" [ngTemplateOutlet]=\"tplContentConfirm\"></ng-container>\n        </ng-container>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- [Predefined] Default Modal Content -->\n<ng-template #tplContentDefault>\n  <div *ngIf=\"nzTitle\" class=\"ant-modal-header\">\n    <div class=\"ant-modal-title\">\n      <ng-container [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><div [innerHTML]=\"nzTitle\"></div></ng-container>\n      </ng-container>\n    </div>\n  </div>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <ng-container #bodyContainer>\n      <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n        <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n      </ng-container>\n    </ng-container>\n  </div>\n  <div *ngIf=\"nzFooter !== null\" class=\"ant-modal-footer\">\n    <ng-container [ngSwitch]=\"true\">\n      <ng-container *ngSwitchCase=\"isTemplateRef(nzFooter)\" [ngTemplateOutlet]=\"nzFooter\"></ng-container>\n      <ng-container *ngSwitchCase=\"isNonEmptyString(nzFooter)\"><div [innerHTML]=\"nzFooter\"></div></ng-container>\n      <ng-container *ngSwitchCase=\"isModalButtons(nzFooter)\">\n        <button *ngFor=\"let button of nzFooter\" nz-button\n          (click)=\"onButtonClick(button)\"\n          [hidden]=\"!getButtonCallableProp(button, 'show')\"\n          [nzLoading]=\"getButtonCallableProp(button, 'loading')\"\n          [disabled]=\"getButtonCallableProp(button, 'disabled')\"\n          [nzType]=\"button.type\"\n          [nzShape]=\"button.shape\"\n          [nzSize]=\"button.size\"\n          [nzGhost]=\"button.ghost\"\n        >{{ button.label }}</button>\n      </ng-container>\n      <ng-container *ngSwitchDefault>\n        <button *ngIf=\"nzCancelText!==null\" nz-button (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\" [disabled]=\"nzCancelDisabled\">\n          {{ cancelText }}\n        </button>\n        <button *ngIf=\"nzOkText!==null\" nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\" [disabled]=\"nzOkDisabled\">\n          {{ okText }}\n        </button>\n      </ng-container>\n    </ng-container>\n  </div>\n</ng-template>\n<!-- /[Predefined] Default Modal Content -->\n\n<!-- [Predefined] Confirm Modal Content -->\n<ng-template #tplContentConfirm>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <div class=\"ant-modal-confirm-body-wrapper\">\n      <div class=\"ant-modal-confirm-body\">\n        <i nz-icon [nzType]=\"nzIconType\"></i>\n        <span class=\"ant-modal-confirm-title\">\n          <ng-container [ngSwitch]=\"true\">\n            <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n            <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><span [innerHTML]=\"nzTitle\"></span></ng-container>\n          </ng-container>\n        </span>\n        <div class=\"ant-modal-confirm-content\">\n          <ng-container #bodyContainer>\n            <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n              <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n            </ng-container>\n          </ng-container>\n        </div>\n      </div>\n      <div class=\"ant-modal-confirm-btns\">\n        <button *ngIf=\"nzCancelText!==null\"\n          nz-button\n          (click)=\"onClickOkCancel('cancel')\"\n          [nzLoading]=\"nzCancelLoading\"\n          [disabled]=\"nzCancelDisabled\">\n          {{ cancelText }}\n        </button>\n        <button #autoFocusButtonOk\n          *ngIf=\"nzOkText!==null\"\n          nz-button\n          (click)=\"onClickOkCancel('ok')\"\n          [nzType]=\"nzOkType\"\n          [nzLoading]=\"nzOkLoading\"\n          [disabled]=\"nzOkDisabled\">\n          {{ okText }}\n        </button>\n      </div>\n    </div> <!-- /.ant-modal-confirm-body-wrapper -->\n  </div>\n</ng-template>\n<!-- /[Predefined] Confirm Modal Content -->\n",
                 // Using OnPush for modal caused footer can not to detect changes. we can fix it when 8.x.
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ChangeDetectionStrategy"].Default
             }] }
@@ -30829,7 +31198,8 @@ NzModalComponent.propDecorators = {
     nzVisibleChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["Output"] }],
     modalContainer: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ViewChild"], args: ['modalContainer', { static: true },] }],
     bodyContainer: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ViewChild"], args: ['bodyContainer', { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ViewContainerRef"] },] }],
-    autoFocusButtonOk: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ViewChild"], args: ['autoFocusButtonOk', { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ElementRef"] },] }]
+    autoFocusButtonOk: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ViewChild"], args: ['autoFocusButtonOk', { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ElementRef"] },] }],
+    modalFooter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_5__["ContentChild"], args: [NzModalFooterDirective, { static: false },] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
@@ -30874,7 +31244,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CssUnitPipe {
     /**
@@ -30896,7 +31266,7 @@ CssUnitPipe.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzModalServiceModule {
 }
@@ -30906,7 +31276,7 @@ NzModalServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzModalModule {
 }
@@ -30922,15 +31292,15 @@ NzModalModule.decorators = [
                     NzModalServiceModule,
                     NzModalControlServiceModule
                 ],
-                exports: [NzModalComponent],
-                declarations: [NzModalComponent, CssUnitPipe],
+                exports: [NzModalComponent, NzModalFooterDirective],
+                declarations: [NzModalComponent, NzModalFooterDirective, CssUnitPipe],
                 entryComponents: [NzModalComponent]
             },] }
 ];
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // A builder used for managing service creating modals
 class ModalBuilderForService {
@@ -31138,7 +31508,7 @@ NzModalService.ctorParameters = () => [
 /*!********************************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd-notification.js ***!
   \********************************************************/
-/*! exports provided: NZ_NOTIFICATION_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER, NzNotificationComponent, NzNotificationContainerComponent, NzNotificationModule, NzNotificationService */
+/*! exports provided: NZ_NOTIFICATION_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER, NzNotificationComponent, NzNotificationContainerComponent, NzNotificationModule, NzNotificationService, NzNotificationServiceModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31150,6 +31520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNotificationContainerComponent", function() { return NzNotificationContainerComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNotificationModule", function() { return NzNotificationModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNotificationService", function() { return NzNotificationService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzNotificationServiceModule", function() { return NzNotificationServiceModule; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "@angular/core");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_core__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/core */ "./publish/fesm2015/ng-zorro-antd-core.js");
@@ -31171,7 +31542,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NZ_NOTIFICATION_DEFAULT_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["InjectionToken"]('NZ_NOTIFICATION_DEFAULT_CONFIG');
@@ -31194,7 +31565,7 @@ const NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationContainerComponent extends ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageContainerComponent"] {
     /**
@@ -31285,7 +31656,7 @@ NzNotificationContainerComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationComponent extends ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageComponent"] {
     /**
@@ -31341,13 +31712,23 @@ NzNotificationComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzNotificationServiceModule {
+}
+NzNotificationServiceModule.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationModule {
 }
 NzNotificationModule.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"], args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"]],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], NzNotificationServiceModule],
                 declarations: [NzNotificationComponent, NzNotificationContainerComponent],
                 providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER],
                 entryComponents: [NzNotificationContainerComponent]
@@ -31356,7 +31737,7 @@ NzNotificationModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationService extends ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageBaseService"] {
     /**
@@ -31436,7 +31817,7 @@ class NzNotificationService extends ng_zorro_antd_message__WEBPACK_IMPORTED_MODU
 }
 NzNotificationService.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"], args: [{
-                providedIn: 'root'
+                providedIn: NzNotificationServiceModule
             },] }
 ];
 /** @nocollapse */
@@ -31446,7 +31827,7 @@ NzNotificationService.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"] }
 ];
-/** @nocollapse */ NzNotificationService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzNotificationService_Factory() { return new NzNotificationService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["INJECTOR"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"])); }, token: NzNotificationService, providedIn: "root" });
+/** @nocollapse */ NzNotificationService.ngInjectableDef = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzNotificationService_Factory() { return new NzNotificationService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["INJECTOR"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"])); }, token: NzNotificationService, providedIn: NzNotificationServiceModule });
 
 
 //# sourceMappingURL=ng-zorro-antd-notification.js.map
@@ -31487,7 +31868,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPageHeaderTitleDirective {
 }
@@ -31496,7 +31877,7 @@ NzPageHeaderTitleDirective.decorators = [
                 selector: 'nz-page-header-title, [nz-page-header-title]',
                 exportAs: 'nzPageHeaderTitle',
                 host: {
-                    class: 'ant-page-header-title-view-title'
+                    class: 'ant-page-header-heading-title'
                 }
             },] }
 ];
@@ -31507,7 +31888,7 @@ NzPageHeaderSubtitleDirective.decorators = [
                 selector: 'nz-page-header-subtitle, [nz-page-header-subtitle]',
                 exportAs: 'nzPageHeaderSubtitle',
                 host: {
-                    class: 'ant-page-header-title-view-sub-title'
+                    class: 'ant-page-header-heading-sub-title'
                 }
             },] }
 ];
@@ -31518,7 +31899,7 @@ NzPageHeaderContentDirective.decorators = [
                 selector: 'nz-page-header-content, [nz-page-header-content]',
                 exportAs: 'nzPageHeaderContent',
                 host: {
-                    class: 'ant-page-header-content-view'
+                    class: 'ant-page-header-content'
                 }
             },] }
 ];
@@ -31529,7 +31910,7 @@ NzPageHeaderTagDirective.decorators = [
                 selector: 'nz-page-header-tags, [nz-page-header-tags]',
                 exportAs: 'nzPageHeaderTags',
                 host: {
-                    class: 'ant-page-header-title-view-tags'
+                    class: 'ant-page-header-heading-tags'
                 }
             },] }
 ];
@@ -31540,7 +31921,7 @@ NzPageHeaderExtraDirective.decorators = [
                 selector: 'nz-page-header-extra, [nz-page-header-extra]',
                 exportAs: 'nzPageHeaderExtra',
                 host: {
-                    class: 'ant-page-header-title-view-extra'
+                    class: 'ant-page-header-heading-extra'
                 }
             },] }
 ];
@@ -31566,7 +31947,7 @@ NzPageHeaderBreadcrumbDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPageHeaderComponent {
     constructor() {
@@ -31600,7 +31981,7 @@ NzPageHeaderComponent.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
                 selector: 'nz-page-header',
                 exportAs: 'nzPageHeader',
-                template: "<ng-content select=\"nz-breadcrumb[nz-page-header-breadcrumb]\"></ng-content>\n\n<div *ngIf=\"nzBackIcon !== null\" (click)=\"onBack()\" class=\"ant-page-header-back\">\n  <div role=\"button\" tabindex=\"0\" class=\"ant-page-header-back-button\">\n    <i *ngIf=\"isStringBackIcon\" nz-icon [nzType]=\"nzBackIcon ? nzBackIcon : 'arrow-left'\" nzTheme=\"outline\"></i>\n    <ng-container *ngIf=\"isTemplateRefBackIcon\" [ngTemplateOutlet]=\"nzBackIcon\"></ng-container>\n  </div>\n  <nz-divider nzType=\"vertical\"></nz-divider>\n</div>\n\n<div class=\"ant-page-header-title-view\">\n  <span class=\"ant-page-header-title-view-title\" *ngIf=\"nzTitle\">\n    <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n  </span>\n  <ng-content *ngIf=\"!nzTitle\" select=\"nz-page-header-title, [nz-page-header-title]\"></ng-content>\n  <span class=\"ant-page-header-title-view-sub-title\" *ngIf=\"nzSubtitle\">\n    <ng-container *nzStringTemplateOutlet=\"nzSubtitle\">{{ nzSubtitle }}</ng-container>\n  </span>\n  <ng-content *ngIf=\"!nzSubtitle\" select=\"nz-page-header-subtitle, [nz-page-header-subtitle]\"></ng-content>\n  <ng-content select=\"nz-page-header-tags, [nz-page-header-tags]\"></ng-content>\n  <ng-content select=\"nz-page-header-extra, [nz-page-header-extra]\"></ng-content>\n</div>\n\n<ng-content select=\"nz-page-header-content, [nz-page-header-content]\"></ng-content>\n<ng-content select=\"nz-page-header-footer, [nz-page-header-footer]\"></ng-content>\n",
+                template: "<ng-content select=\"nz-breadcrumb[nz-page-header-breadcrumb]\"></ng-content>\n\n<div *ngIf=\"nzBackIcon !== null\" (click)=\"onBack()\" class=\"ant-page-header-back\">\n  <div role=\"button\" tabindex=\"0\" class=\"ant-page-header-back-button\">\n    <i *ngIf=\"isStringBackIcon\" nz-icon [nzType]=\"nzBackIcon ? nzBackIcon : 'arrow-left'\" nzTheme=\"outline\"></i>\n    <ng-container *ngIf=\"isTemplateRefBackIcon\" [ngTemplateOutlet]=\"nzBackIcon\"></ng-container>\n  </div>\n  <nz-divider nzType=\"vertical\"></nz-divider>\n</div>\n\n<div class=\"ant-page-header-heading\">\n  <span class=\"ant-page-header-heading-title\" *ngIf=\"nzTitle\">\n    <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n  </span>\n  <ng-content *ngIf=\"!nzTitle\" select=\"nz-page-header-title, [nz-page-header-title]\"></ng-content>\n  <span class=\"ant-page-header-heading-sub-title\" *ngIf=\"nzSubtitle\">\n    <ng-container *nzStringTemplateOutlet=\"nzSubtitle\">{{ nzSubtitle }}</ng-container>\n  </span>\n  <ng-content *ngIf=\"!nzSubtitle\" select=\"nz-page-header-subtitle, [nz-page-header-subtitle]\"></ng-content>\n  <ng-content select=\"nz-page-header-tags, [nz-page-header-tags]\"></ng-content>\n  <ng-content select=\"nz-page-header-extra, [nz-page-header-extra]\"></ng-content>\n</div>\n\n<ng-content select=\"nz-page-header-content, [nz-page-header-content]\"></ng-content>\n<ng-content select=\"nz-page-header-footer, [nz-page-header-footer]\"></ng-content>\n",
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
                 host: {
@@ -31630,7 +32011,7 @@ NzPageHeaderComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const NzPageHeaderCells = [
@@ -31698,7 +32079,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPaginationComponent {
     /**
@@ -31969,7 +32350,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPaginationModule {
 }
@@ -32027,7 +32408,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmComponent extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_3__["NzToolTipComponent"] {
     /**
@@ -32108,7 +32489,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmDirective extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_3__["NzTooltipDirective"] {
     /**
@@ -32223,7 +32604,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmModule {
 }
@@ -32280,7 +32661,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverComponent extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_2__["NzToolTipComponent"] {
     /**
@@ -32332,7 +32713,7 @@ NzPopoverComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverDirective extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_2__["NzTooltipDirective"] {
     /**
@@ -32370,7 +32751,7 @@ NzPopoverDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverModule {
 }
@@ -32416,7 +32797,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzProgressComponent {
     constructor() {
@@ -32622,7 +33003,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzProgressModule {
 }
@@ -32679,7 +33060,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioComponent {
     /* tslint:disable-next-line:no-any */
@@ -32872,7 +33253,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioButtonComponent extends NzRadioComponent {
     /* tslint:disable-next-line:no-any */
@@ -32929,7 +33310,7 @@ NzRadioButtonComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioGroupComponent {
     /**
@@ -33126,7 +33507,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioModule {
 }
@@ -33180,7 +33561,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRateComponent {
     /**
@@ -33484,7 +33865,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRateItemComponent {
     constructor() {
@@ -33529,7 +33910,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRateModule {
 }
@@ -33543,6 +33924,1091 @@ NzRateModule.decorators = [
 
 
 //# sourceMappingURL=ng-zorro-antd-rate.js.map
+
+
+/***/ }),
+
+/***/ "./publish/fesm2015/ng-zorro-antd-result.js":
+/*!**************************************************!*\
+  !*** ./publish/fesm2015/ng-zorro-antd-result.js ***!
+  \**************************************************/
+/*! exports provided: NzResultComponent, NzResultContentDirective, NzResultExtraDirective, NzResultIconDirective, NzResultModule, NzResultSubtitleDirective, NzResultTitleDirective, θNzResultNotFoundComponent, θNzResultServerErrorComponent, θNzResultUnauthorizedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultComponent", function() { return NzResultComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultContentDirective", function() { return NzResultContentDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultExtraDirective", function() { return NzResultExtraDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultIconDirective", function() { return NzResultIconDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultModule", function() { return NzResultModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultSubtitleDirective", function() { return NzResultSubtitleDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResultTitleDirective", function() { return NzResultTitleDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "θNzResultNotFoundComponent", function() { return NzResultNotFoundComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "θNzResultServerErrorComponent", function() { return NzResultServerErrorComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "θNzResultUnauthorizedComponent", function() { return NzResultUnauthorizedComponent; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "@angular/common");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_common__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "@angular/core");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_angular_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core */ "./publish/fesm2015/ng-zorro-antd-core.js");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/fesm2015/ng-zorro-antd-icon.js");
+
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzResultNotFoundComponent {
+}
+NzResultNotFoundComponent.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                selector: 'nz-result-not-found',
+                template: `
+    <svg width="252" height="294">
+      <defs>
+        <path d="M0 .387h251.772v251.772H0z" />
+      </defs>
+      <g fill="none" fillRule="evenodd">
+        <g transform="translate(0 .012)">
+          <mask fill="#fff" />
+          <path
+            d="M0 127.32v-2.095C0 56.279 55.892.387 124.838.387h2.096c68.946 0 124.838 55.892 124.838 124.838v2.096c0 68.946-55.892 124.838-124.838 124.838h-2.096C55.892 252.16 0 196.267 0 127.321"
+            fill="#E4EBF7"
+            mask="url(#b)"
+          />
+        </g>
+        <path d="M39.755 130.84a8.276 8.276 0 1 1-16.468-1.66 8.276 8.276 0 0 1 16.468 1.66" fill="#FFF" />
+        <path d="M36.975 134.297l10.482 5.943M48.373 146.508l-12.648 10.788" stroke="#FFF" strokeWidth="2" />
+        <path
+          d="M39.875 159.352a5.667 5.667 0 1 1-11.277-1.136 5.667 5.667 0 0 1 11.277 1.136M57.588 143.247a5.708 5.708 0 1 1-11.358-1.145 5.708 5.708 0 0 1 11.358 1.145M99.018 26.875l29.82-.014a4.587 4.587 0 1 0-.003-9.175l-29.82.013a4.587 4.587 0 1 0 .003 9.176M110.424 45.211l29.82-.013a4.588 4.588 0 0 0-.004-9.175l-29.82.013a4.587 4.587 0 1 0 .004 9.175"
+          fill="#FFF"
+        />
+        <path
+          d="M112.798 26.861v-.002l15.784-.006a4.588 4.588 0 1 0 .003 9.175l-15.783.007v-.002a4.586 4.586 0 0 0-.004-9.172M184.523 135.668c-.553 5.485-5.447 9.483-10.931 8.93-5.485-.553-9.483-5.448-8.93-10.932.552-5.485 5.447-9.483 10.932-8.93 5.485.553 9.483 5.447 8.93 10.932"
+          fill="#FFF"
+        />
+        <path d="M179.26 141.75l12.64 7.167M193.006 156.477l-15.255 13.011" par stroke="#FFF" strokeWidth="2" />
+        <path
+          d="M184.668 170.057a6.835 6.835 0 1 1-13.6-1.372 6.835 6.835 0 0 1 13.6 1.372M203.34 153.325a6.885 6.885 0 1 1-13.7-1.382 6.885 6.885 0 0 1 13.7 1.382"
+          fill="#FFF"
+        />
+        <path
+          d="M151.931 192.324a2.222 2.222 0 1 1-4.444 0 2.222 2.222 0 0 1 4.444 0zM225.27 116.056a2.222 2.222 0 1 1-4.445 0 2.222 2.222 0 0 1 4.444 0zM216.38 151.08a2.223 2.223 0 1 1-4.446-.001 2.223 2.223 0 0 1 4.446 0zM176.917 107.636a2.223 2.223 0 1 1-4.445 0 2.223 2.223 0 0 1 4.445 0zM195.291 92.165a2.223 2.223 0 1 1-4.445 0 2.223 2.223 0 0 1 4.445 0zM202.058 180.711a2.223 2.223 0 1 1-4.446 0 2.223 2.223 0 0 1 4.446 0z"
+          stroke="#FFF"
+          strokeWidth="2"
+        />
+        <path
+          stroke="#FFF"
+          strokeWidth="2"
+          d="M214.404 153.302l-1.912 20.184-10.928 5.99M173.661 174.792l-6.356 9.814h-11.36l-4.508 6.484M174.941 125.168v-15.804M220.824 117.25l-12.84 7.901-15.31-7.902V94.39"
+        />
+        <path
+          d="M166.588 65.936h-3.951a4.756 4.756 0 0 1-4.743-4.742 4.756 4.756 0 0 1 4.743-4.743h3.951a4.756 4.756 0 0 1 4.743 4.743 4.756 4.756 0 0 1-4.743 4.742"
+          fill="#FFF"
+        />
+        <path
+          d="M174.823 30.03c0-16.281 13.198-29.48 29.48-29.48 16.28 0 29.48 13.199 29.48 29.48 0 16.28-13.2 29.48-29.48 29.48-16.282 0-29.48-13.2-29.48-29.48"
+          fill="#1890FF"
+        />
+        <path
+          d="M205.952 38.387c.5.5.785 1.142.785 1.928s-.286 1.465-.785 1.964c-.572.5-1.214.75-2 .75-.785 0-1.429-.285-1.929-.785-.572-.5-.82-1.143-.82-1.929s.248-1.428.82-1.928c.5-.5 1.144-.75 1.93-.75.785 0 1.462.25 1.999.75m4.285-19.463c1.428 1.249 2.143 2.963 2.143 5.142 0 1.712-.427 3.13-1.219 4.25-.067.096-.137.18-.218.265-.416.429-1.41 1.346-2.956 2.699a5.07 5.07 0 0 0-1.428 1.75 5.207 5.207 0 0 0-.536 2.357v.5h-4.107v-.5c0-1.357.215-2.536.714-3.5.464-.964 1.857-2.464 4.178-4.536l.43-.5c.643-.785.964-1.643.964-2.535 0-1.18-.358-2.108-1-2.785-.678-.68-1.643-1.001-2.858-1.001-1.536 0-2.642.464-3.357 1.43-.37.5-.621 1.135-.76 1.904a1.999 1.999 0 0 1-1.971 1.63h-.004c-1.277 0-2.257-1.183-1.98-2.43.337-1.518 1.02-2.78 2.073-3.784 1.536-1.5 3.607-2.25 6.25-2.25 2.32 0 4.214.607 5.642 1.894"
+          fill="#FFF"
+        />
+        <path
+          d="M52.04 76.131s21.81 5.36 27.307 15.945c5.575 10.74-6.352 9.26-15.73 4.935-10.86-5.008-24.7-11.822-11.577-20.88"
+          fill="#FFB594"
+        />
+        <path
+          d="M90.483 67.504l-.449 2.893c-.753.49-4.748-2.663-4.748-2.663l-1.645.748-1.346-5.684s6.815-4.589 8.917-5.018c2.452-.501 9.884.94 10.7 2.278 0 0 1.32.486-2.227.69-3.548.203-5.043.447-6.79 3.132-1.747 2.686-2.412 3.624-2.412 3.624"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M128.055 111.367c-2.627-7.724-6.15-13.18-8.917-15.478-3.5-2.906-9.34-2.225-11.366-4.187-1.27-1.231-3.215-1.197-3.215-1.197s-14.98-3.158-16.828-3.479c-2.37-.41-2.124-.714-6.054-1.405-1.57-1.907-2.917-1.122-2.917-1.122l-7.11-1.383c-.853-1.472-2.423-1.023-2.423-1.023l-2.468-.897c-1.645 9.976-7.74 13.796-7.74 13.796 1.795 1.122 15.703 8.3 15.703 8.3l5.107 37.11s-3.321 5.694 1.346 9.109c0 0 19.883-3.743 34.921-.329 0 0 3.047-2.546.972-8.806.523-3.01 1.394-8.263 1.736-11.622.385.772 2.019 1.918 3.14 3.477 0 0 9.407-7.365 11.052-14.012-.832-.723-1.598-1.585-2.267-2.453-.567-.736-.358-2.056-.765-2.717-.669-1.084-1.804-1.378-1.907-1.682"
+          fill="#FFF"
+        />
+        <path
+          d="M101.09 289.998s4.295 2.041 7.354 1.021c2.821-.94 4.53.668 7.08 1.178 2.55.51 6.874 1.1 11.686-1.26-.103-5.51-6.889-3.98-11.96-6.713-2.563-1.38-3.784-4.722-3.598-8.799h-9.402s-1.392 10.52-1.16 14.573"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M101.067 289.826s2.428 1.271 6.759.653c3.058-.437 3.712.481 7.423 1.031 3.712.55 10.724-.069 11.823-.894.413 1.1-.343 2.063-.343 2.063s-1.512.603-4.812.824c-2.03.136-5.8.291-7.607-.503-1.787-1.375-5.247-1.903-5.728-.241-3.918.95-7.355-.286-7.355-.286l-.16-2.647z"
+          fill="#2B0849"
+        />
+        <path d="M108.341 276.044h3.094s-.103 6.702 4.536 8.558c-4.64.618-8.558-2.303-7.63-8.558" fill="#A4AABA" />
+        <path
+          d="M57.542 272.401s-2.107 7.416-4.485 12.306c-1.798 3.695-4.225 7.492 5.465 7.492 6.648 0 8.953-.48 7.423-6.599-1.53-6.12.266-13.199.266-13.199h-8.669z"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M51.476 289.793s2.097 1.169 6.633 1.169c6.083 0 8.249-1.65 8.249-1.65s.602 1.114-.619 2.165c-.993.855-3.597 1.591-7.39 1.546-4.145-.048-5.832-.566-6.736-1.168-.825-.55-.687-1.58-.137-2.062"
+          fill="#2B0849"
+        />
+        <path
+          d="M58.419 274.304s.033 1.519-.314 2.93c-.349 1.42-1.078 3.104-1.13 4.139-.058 1.151 4.537 1.58 5.155.034.62-1.547 1.294-6.427 1.913-7.252.619-.825-4.903-2.119-5.624.15"
+          fill="#A4AABA"
+        />
+        <path
+          d="M99.66 278.514l13.378.092s1.298-54.52 1.853-64.403c.554-9.882 3.776-43.364 1.002-63.128l-12.547-.644-22.849.78s-.434 3.966-1.195 9.976c-.063.496-.682.843-.749 1.365-.075.585.423 1.354.32 1.966-2.364 14.08-6.377 33.104-8.744 46.677-.116.666-1.234 1.009-1.458 2.691-.04.302.211 1.525.112 1.795-6.873 18.744-10.949 47.842-14.277 61.885l14.607-.014s2.197-8.57 4.03-16.97c2.811-12.886 23.111-85.01 23.111-85.01l3.016-.521 1.043 46.35s-.224 1.234.337 2.02c.56.785-.56 1.123-.392 2.244l.392 1.794s-.449 7.178-.898 11.89c-.448 4.71-.092 39.165-.092 39.165"
+          fill="#7BB2F9"
+        />
+        <path
+          d="M76.085 221.626c1.153.094 4.038-2.019 6.955-4.935M106.36 225.142s2.774-1.11 6.103-3.883"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="M107.275 222.1s2.773-1.11 6.102-3.884" stroke="#648BD8" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M74.74 224.767s2.622-.591 6.505-3.365M86.03 151.634c-.27 3.106.3 8.525-4.336 9.123M103.625 149.88s.11 14.012-1.293 15.065c-2.219 1.664-2.99 1.944-2.99 1.944M99.79 150.438s.035 12.88-1.196 24.377M93.673 175.911s7.212-1.664 9.431-1.664M74.31 205.861a212.013 212.013 0 0 1-.979 4.56s-1.458 1.832-1.009 3.776c.449 1.944-.947 2.045-4.985 15.355-1.696 5.59-4.49 18.591-6.348 27.597l-.231 1.12M75.689 197.807a320.934 320.934 0 0 1-.882 4.754M82.591 152.233L81.395 162.7s-1.097.15-.5 2.244c.113 1.346-2.674 15.775-5.18 30.43M56.12 274.418h13.31"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M116.241 148.22s-17.047-3.104-35.893.2c.158 2.514-.003 4.15-.003 4.15s14.687-2.818 35.67-.312c.252-2.355.226-4.038.226-4.038"
+          fill="#192064"
+        />
+        <path
+          d="M106.322 151.165l.003-4.911a.81.81 0 0 0-.778-.815c-2.44-.091-5.066-.108-7.836-.014a.818.818 0 0 0-.789.815l-.003 4.906a.81.81 0 0 0 .831.813c2.385-.06 4.973-.064 7.73.017a.815.815 0 0 0 .842-.81"
+          fill="#FFF"
+        />
+        <path
+          d="M105.207 150.233l.002-3.076a.642.642 0 0 0-.619-.646 94.321 94.321 0 0 0-5.866-.01.65.65 0 0 0-.63.647v3.072a.64.64 0 0 0 .654.644 121.12 121.12 0 0 1 5.794.011c.362.01.665-.28.665-.642"
+          fill="#192064"
+        />
+        <path
+          d="M100.263 275.415h12.338M101.436 270.53c.006 3.387.042 5.79.111 6.506M101.451 264.548a915.75 915.75 0 0 0-.015 4.337M100.986 174.965l.898 44.642s.673 1.57-.225 2.692c-.897 1.122 2.468.673.898 2.243-1.57 1.57.897 1.122 0 3.365-.596 1.489-.994 21.1-1.096 35.146"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M46.876 83.427s-.516 6.045 7.223 5.552c11.2-.712 9.218-9.345 31.54-21.655-.786-2.708-2.447-4.744-2.447-4.744s-11.068 3.11-22.584 8.046c-6.766 2.9-13.395 6.352-13.732 12.801M104.46 91.057l.941-5.372-8.884-11.43-5.037 5.372-1.74 7.834a.321.321 0 0 0 .108.32c.965.8 6.5 5.013 14.347 3.544a.332.332 0 0 0 .264-.268"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M93.942 79.387s-4.533-2.853-2.432-6.855c1.623-3.09 4.513 1.133 4.513 1.133s.52-3.642 3.121-3.642c.52-1.04 1.561-4.162 1.561-4.162s11.445 2.601 13.526 3.121c0 5.203-2.304 19.424-7.84 19.861-8.892.703-12.449-9.456-12.449-9.456"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M113.874 73.446c2.601-2.081 3.47-9.722 3.47-9.722s-2.479-.49-6.64-2.05c-4.683-2.081-12.798-4.747-17.48.976-9.668 3.223-2.05 19.823-2.05 19.823l2.713-3.021s-3.935-3.287-2.08-6.243c2.17-3.462 3.92 1.073 3.92 1.073s.637-2.387 3.581-3.342c.355-.71 1.036-2.674 1.432-3.85a1.073 1.073 0 0 1 1.263-.704c2.4.558 8.677 2.019 11.356 2.662.522.125.871.615.82 1.15l-.305 3.248z"
+          fill="#520038"
+        />
+        <path
+          d="M104.977 76.064c-.103.61-.582 1.038-1.07.956-.489-.083-.801-.644-.698-1.254.103-.61.582-1.038 1.07-.956.488.082.8.644.698 1.254M112.132 77.694c-.103.61-.582 1.038-1.07.956-.488-.083-.8-.644-.698-1.254.103-.61.582-1.038 1.07-.956.488.082.8.643.698 1.254"
+          fill="#552950"
+        />
+        <path
+          stroke="#DB836E"
+          strokeWidth="1.118"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M110.13 74.84l-.896 1.61-.298 4.357h-2.228"
+        />
+        <path
+          d="M110.846 74.481s1.79-.716 2.506.537"
+          stroke="#5C2552"
+          strokeWidth="1.118"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M92.386 74.282s.477-1.114 1.113-.716c.637.398 1.274 1.433.558 1.99-.717.556.159 1.67.159 1.67"
+          stroke="#DB836E"
+          strokeWidth="1.118"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M103.287 72.93s1.83 1.113 4.137.954"
+          stroke="#5C2552"
+          strokeWidth="1.118"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M103.685 81.762s2.227 1.193 4.376 1.193M104.64 84.308s.954.398 1.511.318M94.693 81.205s2.308 7.4 10.424 7.639"
+          stroke="#DB836E"
+          strokeWidth="1.118"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M81.45 89.384s.45 5.647-4.935 12.787M69 82.654s-.726 9.282-8.204 14.206"
+          stroke="#E4EBF7"
+          strokeWidth="1.101"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M129.405 122.865s-5.272 7.403-9.422 10.768"
+          stroke="#E4EBF7"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M119.306 107.329s.452 4.366-2.127 32.062"
+          stroke="#E4EBF7"
+          strokeWidth="1.101"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M150.028 151.232h-49.837a1.01 1.01 0 0 1-1.01-1.01v-31.688c0-.557.452-1.01 1.01-1.01h49.837c.558 0 1.01.453 1.01 1.01v31.688a1.01 1.01 0 0 1-1.01 1.01"
+          fill="#F2D7AD"
+        />
+        <path d="M150.29 151.232h-19.863v-33.707h20.784v32.786a.92.92 0 0 1-.92.92" fill="#F4D19D" />
+        <path
+          d="M123.554 127.896H92.917a.518.518 0 0 1-.425-.816l6.38-9.113c.193-.277.51-.442.85-.442h31.092l-7.26 10.371z"
+          fill="#F2D7AD"
+        />
+        <path fill="#CC9B6E" d="M123.689 128.447H99.25v-.519h24.169l7.183-10.26.424.298z" />
+        <path
+          d="M158.298 127.896h-18.669a2.073 2.073 0 0 1-1.659-.83l-7.156-9.541h19.965c.49 0 .95.23 1.244.622l6.69 8.92a.519.519 0 0 1-.415.83"
+          fill="#F4D19D"
+        />
+        <path
+          fill="#CC9B6E"
+          d="M157.847 128.479h-19.384l-7.857-10.475.415-.31 7.7 10.266h19.126zM130.554 150.685l-.032-8.177.519-.002.032 8.177z"
+        />
+        <path
+          fill="#CC9B6E"
+          d="M130.511 139.783l-.08-21.414.519-.002.08 21.414zM111.876 140.932l-.498-.143 1.479-5.167.498.143zM108.437 141.06l-2.679-2.935 2.665-3.434.41.318-2.397 3.089 2.384 2.612zM116.607 141.06l-.383-.35 2.383-2.612-2.397-3.089.41-.318 2.665 3.434z"
+        />
+        <path
+          d="M154.316 131.892l-3.114-1.96.038 3.514-1.043.092c-1.682.115-3.634.23-4.789.23-1.902 0-2.693 2.258 2.23 2.648l-2.645-.596s-2.168 1.317.504 2.3c0 0-1.58 1.217.561 2.58-.584 3.504 5.247 4.058 7.122 3.59 1.876-.47 4.233-2.359 4.487-5.16.28-3.085-.89-5.432-3.35-7.238"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M153.686 133.577s-6.522.47-8.36.372c-1.836-.098-1.904 2.19 2.359 2.264 3.739.15 5.451-.044 5.451-.044"
+          stroke="#DB836E"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M145.16 135.877c-1.85 1.346.561 2.355.561 2.355s3.478.898 6.73.617"
+          stroke="#DB836E"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M151.89 141.71s-6.28.111-6.73-2.132c-.223-1.346.45-1.402.45-1.402M146.114 140.868s-1.103 3.16 5.44 3.533M151.202 129.932v3.477M52.838 89.286c3.533-.337 8.423-1.248 13.582-7.754"
+          stroke="#DB836E"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M168.567 248.318a6.647 6.647 0 0 1-6.647-6.647v-66.466a6.647 6.647 0 1 1 13.294 0v66.466a6.647 6.647 0 0 1-6.647 6.647"
+          fill="#5BA02E"
+        />
+        <path
+          d="M176.543 247.653a6.647 6.647 0 0 1-6.646-6.647v-33.232a6.647 6.647 0 1 1 13.293 0v33.232a6.647 6.647 0 0 1-6.647 6.647"
+          fill="#92C110"
+        />
+        <path
+          d="M186.443 293.613H158.92a3.187 3.187 0 0 1-3.187-3.187v-46.134a3.187 3.187 0 0 1 3.187-3.187h27.524a3.187 3.187 0 0 1 3.187 3.187v46.134a3.187 3.187 0 0 1-3.187 3.187"
+          fill="#F2D7AD"
+        />
+        <path
+          d="M88.979 89.48s7.776 5.384 16.6 2.842"
+          stroke="#E4EBF7"
+          strokeWidth="1.101"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  `
+            }] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzResultServerErrorComponent {
+}
+NzResultServerErrorComponent.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                selector: 'nz-result-server-error',
+                template: `
+    <svg width="254" height="294">
+      <defs>
+        <path d="M0 .335h253.49v253.49H0z" />
+        <path d="M0 293.665h253.49V.401H0z" />
+      </defs>
+      <g fill="none" fillRule="evenodd">
+        <g transform="translate(0 .067)">
+          <mask fill="#fff" />
+          <path
+            d="M0 128.134v-2.11C0 56.608 56.273.334 125.69.334h2.11c69.416 0 125.69 56.274 125.69 125.69v2.11c0 69.417-56.274 125.69-125.69 125.69h-2.11C56.273 253.824 0 197.551 0 128.134"
+            fill="#E4EBF7"
+            mask="url(#b)"
+          />
+        </g>
+        <path d="M39.989 132.108a8.332 8.332 0 1 1-16.581-1.671 8.332 8.332 0 0 1 16.58 1.671" fill="#FFF" />
+        <path d="M37.19 135.59l10.553 5.983M48.665 147.884l-12.734 10.861" stroke="#FFF" strokeWidth="2" />
+        <path
+          d="M40.11 160.816a5.706 5.706 0 1 1-11.354-1.145 5.706 5.706 0 0 1 11.354 1.145M57.943 144.6a5.747 5.747 0 1 1-11.436-1.152 5.747 5.747 0 0 1 11.436 1.153M99.656 27.434l30.024-.013a4.619 4.619 0 1 0-.004-9.238l-30.024.013a4.62 4.62 0 0 0 .004 9.238M111.14 45.896l30.023-.013a4.62 4.62 0 1 0-.004-9.238l-30.024.013a4.619 4.619 0 1 0 .004 9.238"
+          fill="#FFF"
+        />
+        <path
+          d="M113.53 27.421v-.002l15.89-.007a4.619 4.619 0 1 0 .005 9.238l-15.892.007v-.002a4.618 4.618 0 0 0-.004-9.234M150.167 70.091h-3.979a4.789 4.789 0 0 1-4.774-4.775 4.788 4.788 0 0 1 4.774-4.774h3.979a4.789 4.789 0 0 1 4.775 4.774 4.789 4.789 0 0 1-4.775 4.775"
+          fill="#FFF"
+        />
+        <path
+          d="M171.687 30.234c0-16.392 13.289-29.68 29.681-29.68 16.392 0 29.68 13.288 29.68 29.68 0 16.393-13.288 29.681-29.68 29.681s-29.68-13.288-29.68-29.68"
+          fill="#FF603B"
+        />
+        <path
+          d="M203.557 19.435l-.676 15.035a1.514 1.514 0 0 1-3.026 0l-.675-15.035a2.19 2.19 0 1 1 4.377 0m-.264 19.378c.513.477.77 1.1.77 1.87s-.257 1.393-.77 1.907c-.55.476-1.21.733-1.943.733a2.545 2.545 0 0 1-1.87-.77c-.55-.514-.806-1.136-.806-1.87 0-.77.256-1.393.806-1.87.513-.513 1.137-.733 1.87-.733.77 0 1.43.22 1.943.733"
+          fill="#FFF"
+        />
+        <path
+          d="M119.3 133.275c4.426-.598 3.612-1.204 4.079-4.778.675-5.18-3.108-16.935-8.262-25.118-1.088-10.72-12.598-11.24-12.598-11.24s4.312 4.895 4.196 16.199c1.398 5.243.804 14.45.804 14.45s5.255 11.369 11.78 10.487"
+          fill="#FFB594"
+        />
+        <path
+          d="M100.944 91.61s1.463-.583 3.211.582c8.08 1.398 10.368 6.706 11.3 11.368 1.864 1.282 1.864 2.33 1.864 3.496.365.777 1.515 3.03 1.515 3.03s-7.225 1.748-10.954 6.758c-1.399-6.41-6.936-25.235-6.936-25.235"
+          fill="#FFF"
+        />
+        <path d="M94.008 90.5l1.019-5.815-9.23-11.874-5.233 5.581-2.593 9.863s8.39 5.128 16.037 2.246" fill="#FFB594" />
+        <path
+          d="M82.931 78.216s-4.557-2.868-2.445-6.892c1.632-3.107 4.537 1.139 4.537 1.139s.524-3.662 3.139-3.662c.523-1.046 1.569-4.184 1.569-4.184s11.507 2.615 13.6 3.138c-.001 5.23-2.317 19.529-7.884 19.969-8.94.706-12.516-9.508-12.516-9.508"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M102.971 72.243c2.616-2.093 3.489-9.775 3.489-9.775s-2.492-.492-6.676-2.062c-4.708-2.092-12.867-4.771-17.575.982-9.54 4.41-2.062 19.93-2.062 19.93l2.729-3.037s-3.956-3.304-2.092-6.277c2.183-3.48 3.943 1.08 3.943 1.08s.64-2.4 3.6-3.36c.356-.714 1.04-2.69 1.44-3.872a1.08 1.08 0 0 1 1.27-.707c2.41.56 8.723 2.03 11.417 2.676.524.126.876.619.825 1.156l-.308 3.266z"
+          fill="#520038"
+        />
+        <path
+          d="M101.22 76.514c-.104.613-.585 1.044-1.076.96-.49-.082-.805-.646-.702-1.26.104-.613.585-1.044 1.076-.961.491.083.805.647.702 1.26M94.26 75.074c-.104.613-.585 1.044-1.076.96-.49-.082-.805-.646-.702-1.26.104-.613.585-1.044 1.076-.96.491.082.805.646.702 1.26"
+          fill="#552950"
+        />
+        <path
+          stroke="#DB836E"
+          strokeWidth="1.063"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M99.206 73.644l-.9 1.62-.3 4.38h-2.24"
+        />
+        <path
+          d="M99.926 73.284s1.8-.72 2.52.54"
+          stroke="#5C2552"
+          strokeWidth="1.117"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M81.367 73.084s.48-1.12 1.12-.72c.64.4 1.28 1.44.56 2s.16 1.68.16 1.68"
+          stroke="#DB836E"
+          strokeWidth="1.117"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M92.326 71.724s1.84 1.12 4.16.96"
+          stroke="#5C2552"
+          strokeWidth="1.117"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M92.726 80.604s2.24 1.2 4.4 1.2M93.686 83.164s.96.4 1.52.32M83.687 80.044s1.786 6.547 9.262 7.954"
+          stroke="#DB836E"
+          strokeWidth="1.063"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M95.548 91.663s-1.068 2.821-8.298 2.105c-7.23-.717-10.29-5.044-10.29-5.044"
+          stroke="#E4EBF7"
+          strokeWidth="1.136"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M78.126 87.478s6.526 4.972 16.47 2.486c0 0 9.577 1.02 11.536 5.322 5.36 11.77.543 36.835 0 39.962 3.496 4.055-.466 8.483-.466 8.483-15.624-3.548-35.81-.6-35.81-.6-4.849-3.546-1.223-9.044-1.223-9.044L62.38 110.32c-2.485-15.227.833-19.803 3.549-20.743 3.03-1.049 8.04-1.282 8.04-1.282.496-.058 1.08-.076 1.37-.233 2.36-1.282 2.787-.583 2.787-.583"
+          fill="#FFF"
+        />
+        <path
+          d="M65.828 89.81s-6.875.465-7.59 8.156c-.466 8.857 3.03 10.954 3.03 10.954s6.075 22.102 16.796 22.957c8.39-2.176 4.758-6.702 4.661-11.42-.233-11.304-7.108-16.897-7.108-16.897s-4.212-13.75-9.789-13.75"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M71.716 124.225s.855 11.264 9.828 6.486c4.765-2.536 7.581-13.828 9.789-22.568 1.456-5.768 2.58-12.197 2.58-12.197l-4.973-1.709s-2.408 5.516-7.769 12.275c-4.335 5.467-9.144 11.11-9.455 17.713"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M108.463 105.191s1.747 2.724-2.331 30.535c2.376 2.216 1.053 6.012-.233 7.51"
+          stroke="#E4EBF7"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M123.262 131.527s-.427 2.732-11.77 1.981c-15.187-1.006-25.326-3.25-25.326-3.25l.933-5.8s.723.215 9.71-.068c11.887-.373 18.714-6.07 24.964-1.022 4.039 3.263 1.489 8.16 1.489 8.16"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M70.24 90.974s-5.593-4.739-11.054 2.68c-3.318 7.223.517 15.284 2.664 19.578-.31 3.729 2.33 4.311 2.33 4.311s.108.895 1.516 2.68c4.078-7.03 6.72-9.166 13.711-12.546-.328-.656-1.877-3.265-1.825-3.767.175-1.69-1.282-2.623-1.282-2.623s-.286-.156-1.165-2.738c-.788-2.313-2.036-5.177-4.895-7.575"
+          fill="#FFF"
+        />
+        <path
+          d="M90.232 288.027s4.855 2.308 8.313 1.155c3.188-1.063 5.12.755 8.002 1.331 2.881.577 7.769 1.243 13.207-1.424-.117-6.228-7.786-4.499-13.518-7.588-2.895-1.56-4.276-5.336-4.066-9.944H91.544s-1.573 11.89-1.312 16.47"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M90.207 287.833s2.745 1.437 7.639.738c3.456-.494 3.223.66 7.418 1.282 4.195.621 13.092-.194 14.334-1.126.466 1.242-.388 2.33-.388 2.33s-1.709.682-5.438.932c-2.295.154-8.098.276-10.14-.621-2.02-1.554-4.894-1.515-6.06-.234-4.427 1.075-7.184-.31-7.184-.31l-.181-2.991z"
+          fill="#2B0849"
+        />
+        <path d="M98.429 272.257h3.496s-.117 7.574 5.127 9.671c-5.244.7-9.672-2.602-8.623-9.671" fill="#A4AABA" />
+        <path
+          d="M44.425 272.046s-2.208 7.774-4.702 12.899c-1.884 3.874-4.428 7.854 5.729 7.854 6.97 0 9.385-.503 7.782-6.917-1.604-6.415.279-13.836.279-13.836h-9.088z"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M38.066 290.277s2.198 1.225 6.954 1.225c6.376 0 8.646-1.73 8.646-1.73s.63 1.168-.649 2.27c-1.04.897-3.77 1.668-7.745 1.621-4.347-.05-6.115-.593-7.062-1.224-.864-.577-.72-1.657-.144-2.162"
+          fill="#2B0849"
+        />
+        <path
+          d="M45.344 274.041s.035 1.592-.329 3.07c-.365 1.49-1.13 3.255-1.184 4.34-.061 1.206 4.755 1.657 5.403.036.65-1.622 1.357-6.737 2.006-7.602.648-.865-5.14-2.222-5.896.156"
+          fill="#A4AABA"
+        />
+        <path
+          d="M89.476 277.57l13.899.095s1.349-56.643 1.925-66.909c.576-10.267 3.923-45.052 1.042-65.585l-13.037-.669-23.737.81s-.452 4.12-1.243 10.365c-.065.515-.708.874-.777 1.417-.078.608.439 1.407.332 2.044-2.455 14.627-5.797 32.736-8.256 46.837-.121.693-1.282 1.048-1.515 2.796-.042.314.22 1.584.116 1.865-7.14 19.473-12.202 52.601-15.66 67.19l15.176-.015s2.282-10.145 4.185-18.871c2.922-13.389 24.012-88.32 24.012-88.32l3.133-.954-.158 48.568s-.233 1.282.35 2.098c.583.815-.581 1.167-.408 2.331l.408 1.864s-.466 7.458-.932 12.352c-.467 4.895 1.145 40.69 1.145 40.69"
+          fill="#7BB2F9"
+        />
+        <path
+          d="M64.57 218.881c1.197.099 4.195-2.097 7.225-5.127M96.024 222.534s2.881-1.152 6.34-4.034"
+          stroke="#648BD8"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M96.973 219.373s2.882-1.153 6.34-4.034"
+          stroke="#648BD8"
+          strokeWidth="1.032"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M63.172 222.144s2.724-.614 6.759-3.496M74.903 146.166c-.281 3.226.31 8.856-4.506 9.478M93.182 144.344s.115 14.557-1.344 15.65c-2.305 1.73-3.107 2.02-3.107 2.02M89.197 144.923s.269 13.144-1.01 25.088M83.525 170.71s6.81-1.051 9.116-1.051M46.026 270.045l-.892 4.538M46.937 263.289l-.815 4.157M62.725 202.503c-.33 1.618-.102 1.904-.449 3.438 0 0-2.756 1.903-2.29 3.923.466 2.02-.31 3.424-4.505 17.252-1.762 5.807-4.233 18.922-6.165 28.278-.03.144-.521 2.646-1.14 5.8M64.158 194.136c-.295 1.658-.6 3.31-.917 4.938M71.33 146.787l-1.244 10.877s-1.14.155-.519 2.33c.117 1.399-2.778 16.39-5.382 31.615M44.242 273.727H58.07"
+          stroke="#648BD8"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M106.18 142.117c-3.028-.489-18.825-2.744-36.219.2a.625.625 0 0 0-.518.644c.063 1.307.044 2.343.015 2.995a.617.617 0 0 0 .716.636c3.303-.534 17.037-2.412 35.664-.266.347.04.66-.214.692-.56.124-1.347.16-2.425.17-3.029a.616.616 0 0 0-.52-.62"
+          fill="#192064"
+        />
+        <path
+          d="M96.398 145.264l.003-5.102a.843.843 0 0 0-.809-.847 114.104 114.104 0 0 0-8.141-.014.85.85 0 0 0-.82.847l-.003 5.097c0 .476.388.857.864.845 2.478-.064 5.166-.067 8.03.017a.848.848 0 0 0 .876-.843"
+          fill="#FFF"
+        />
+        <path
+          d="M95.239 144.296l.002-3.195a.667.667 0 0 0-.643-.672c-1.9-.061-3.941-.073-6.094-.01a.675.675 0 0 0-.654.672l-.002 3.192c0 .376.305.677.68.669 1.859-.042 3.874-.043 6.02.012.376.01.69-.291.691-.668"
+          fill="#192064"
+        />
+        <path
+          d="M90.102 273.522h12.819M91.216 269.761c.006 3.519-.072 5.55 0 6.292M90.923 263.474c-.009 1.599-.016 2.558-.016 4.505M90.44 170.404l.932 46.38s.7 1.631-.233 2.796c-.932 1.166 2.564.7.932 2.33-1.63 1.633.933 1.166 0 3.497-.618 1.546-1.031 21.921-1.138 36.513"
+          stroke="#648BD8"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M73.736 98.665l2.214 4.312s2.098.816 1.865 2.68l.816 2.214M64.297 116.611c.233-.932 2.176-7.147 12.585-10.488M77.598 90.042s7.691 6.137 16.547 2.72"
+          stroke="#E4EBF7"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M91.974 86.954s5.476-.816 7.574-4.545c1.297-.345.72 2.212-.33 3.671-.7.971-1.01 1.554-1.01 1.554s.194.31.155.816c-.053.697-.175.653-.272 1.048-.081.335.108.657 0 1.049-.046.17-.198.5-.382.878-.12.249-.072.687-.2.948-.231.469-1.562 1.87-2.622 2.855-3.826 3.554-5.018 1.644-6.001-.408-.894-1.865-.661-5.127-.874-6.875-.35-2.914-2.622-3.03-1.923-4.429.343-.685 2.87.69 3.263 1.748.757 2.04 2.952 1.807 2.622 1.69"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M99.8 82.429c-.465.077-.35.272-.97 1.243-.622.971-4.817 2.932-6.39 3.224-2.589.48-2.278-1.56-4.254-2.855-1.69-1.107-3.562-.638-1.398 1.398.99.932.932 1.107 1.398 3.205.335 1.506-.64 3.67.7 5.593"
+          stroke="#DB836E"
+          strokeWidth=".774"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M79.543 108.673c-2.1 2.926-4.266 6.175-5.557 8.762"
+          stroke="#E59788"
+          strokeWidth=".774"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M87.72 124.768s-2.098-1.942-5.127-2.719c-3.03-.777-3.574-.155-5.516.078-1.942.233-3.885-.932-3.652.7.233 1.63 5.05 1.01 5.206 2.097.155 1.087-6.37 2.796-8.313 2.175-.777.777.466 1.864 2.02 2.175.233 1.554 2.253 1.554 2.253 1.554s.699 1.01 2.641 1.088c2.486 1.32 8.934-.7 10.954-1.554 2.02-.855-.466-5.594-.466-5.594"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M73.425 122.826s.66 1.127 3.167 1.418c2.315.27 2.563.583 2.563.583s-2.545 2.894-9.07 2.272M72.416 129.274s3.826.097 4.933-.718M74.98 130.75s1.961.136 3.36-.505M77.232 131.916s1.748.019 2.914-.505M73.328 122.321s-.595-1.032 1.262-.427c1.671.544 2.833.055 5.128.155 1.389.061 3.067-.297 3.982.15 1.606.784 3.632 2.181 3.632 2.181s10.526 1.204 19.033-1.127M78.864 108.104s-8.39 2.758-13.168 12.12"
+          stroke="#E59788"
+          strokeWidth=".774"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M109.278 112.533s3.38-3.613 7.575-4.662"
+          stroke="#E4EBF7"
+          strokeWidth="1.085"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M107.375 123.006s9.697-2.745 11.445-.88"
+          stroke="#E59788"
+          strokeWidth=".774"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M194.605 83.656l3.971-3.886M187.166 90.933l3.736-3.655M191.752 84.207l-4.462-4.56M198.453 91.057l-4.133-4.225M129.256 163.074l3.718-3.718M122.291 170.039l3.498-3.498M126.561 163.626l-4.27-4.27M132.975 170.039l-3.955-3.955"
+          stroke="#BFCDDD"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M190.156 211.779h-1.604a4.023 4.023 0 0 1-4.011-4.011V175.68a4.023 4.023 0 0 1 4.01-4.01h1.605a4.023 4.023 0 0 1 4.011 4.01v32.088a4.023 4.023 0 0 1-4.01 4.01"
+          fill="#A3B4C6"
+        />
+        <path
+          d="M237.824 212.977a4.813 4.813 0 0 1-4.813 4.813h-86.636a4.813 4.813 0 0 1 0-9.626h86.636a4.813 4.813 0 0 1 4.813 4.813"
+          fill="#A3B4C6"
+        />
+        <mask fill="#fff" />
+        <path fill="#A3B4C6" mask="url(#d)" d="M154.098 190.096h70.513v-84.617h-70.513z" />
+        <path
+          d="M224.928 190.096H153.78a3.219 3.219 0 0 1-3.208-3.209V167.92a3.219 3.219 0 0 1 3.208-3.21h71.148a3.219 3.219 0 0 1 3.209 3.21v18.967a3.219 3.219 0 0 1-3.21 3.209M224.928 130.832H153.78a3.218 3.218 0 0 1-3.208-3.208v-18.968a3.219 3.219 0 0 1 3.208-3.209h71.148a3.219 3.219 0 0 1 3.209 3.21v18.967a3.218 3.218 0 0 1-3.21 3.208"
+          fill="#BFCDDD"
+          mask="url(#d)"
+        />
+        <path
+          d="M159.563 120.546a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M166.98 120.546a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M174.397 120.546a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M222.539 120.546h-22.461a.802.802 0 0 1-.802-.802v-3.208c0-.443.359-.803.802-.803h22.46c.444 0 .803.36.803.803v3.208c0 .443-.36.802-.802.802"
+          fill="#FFF"
+          mask="url(#d)"
+        />
+        <path
+          d="M224.928 160.464H153.78a3.218 3.218 0 0 1-3.208-3.209v-18.967a3.219 3.219 0 0 1 3.208-3.209h71.148a3.219 3.219 0 0 1 3.209 3.209v18.967a3.218 3.218 0 0 1-3.21 3.209"
+          fill="#BFCDDD"
+          mask="url(#d)"
+        />
+        <path
+          d="M173.455 130.832h49.301M164.984 130.832h6.089M155.952 130.832h6.75M173.837 160.613h49.3M165.365 160.613h6.089M155.57 160.613h6.751"
+          stroke="#7C90A5"
+          strokeWidth="1.124"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          mask="url(#d)"
+        />
+        <path
+          d="M159.563 151.038a2.407 2.407 0 1 1 0-4.814 2.407 2.407 0 0 1 0 4.814M166.98 151.038a2.407 2.407 0 1 1 0-4.814 2.407 2.407 0 0 1 0 4.814M174.397 151.038a2.407 2.407 0 1 1 .001-4.814 2.407 2.407 0 0 1 0 4.814M222.539 151.038h-22.461a.802.802 0 0 1-.802-.802v-3.209c0-.443.359-.802.802-.802h22.46c.444 0 .803.36.803.802v3.209c0 .443-.36.802-.802.802M159.563 179.987a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M166.98 179.987a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M174.397 179.987a2.407 2.407 0 1 1 0-4.813 2.407 2.407 0 0 1 0 4.813M222.539 179.987h-22.461a.802.802 0 0 1-.802-.802v-3.209c0-.443.359-.802.802-.802h22.46c.444 0 .803.36.803.802v3.209c0 .443-.36.802-.802.802"
+          fill="#FFF"
+          mask="url(#d)"
+        />
+        <path
+          d="M203.04 221.108h-27.372a2.413 2.413 0 0 1-2.406-2.407v-11.448a2.414 2.414 0 0 1 2.406-2.407h27.372a2.414 2.414 0 0 1 2.407 2.407V218.7a2.413 2.413 0 0 1-2.407 2.407"
+          fill="#BFCDDD"
+          mask="url(#d)"
+        />
+        <path
+          d="M177.259 207.217v11.52M201.05 207.217v11.52"
+          stroke="#A3B4C6"
+          strokeWidth="1.124"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          mask="url(#d)"
+        />
+        <path
+          d="M162.873 267.894a9.422 9.422 0 0 1-9.422-9.422v-14.82a9.423 9.423 0 0 1 18.845 0v14.82a9.423 9.423 0 0 1-9.423 9.422"
+          fill="#5BA02E"
+          mask="url(#d)"
+        />
+        <path
+          d="M171.22 267.83a9.422 9.422 0 0 1-9.422-9.423v-3.438a9.423 9.423 0 0 1 18.845 0v3.438a9.423 9.423 0 0 1-9.422 9.423"
+          fill="#92C110"
+          mask="url(#d)"
+        />
+        <path
+          d="M181.31 293.666h-27.712a3.209 3.209 0 0 1-3.209-3.21V269.79a3.209 3.209 0 0 1 3.209-3.21h27.711a3.209 3.209 0 0 1 3.209 3.21v20.668a3.209 3.209 0 0 1-3.209 3.209"
+          fill="#F2D7AD"
+          mask="url(#d)"
+        />
+      </g>
+    </svg>
+  `
+            }] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzResultUnauthorizedComponent {
+}
+NzResultUnauthorizedComponent.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                selector: 'nz-result-unauthorized',
+                template: `
+    <svg width="251" height="294">
+      <g fill="none" fillRule="evenodd">
+        <path
+          d="M0 129.023v-2.084C0 58.364 55.591 2.774 124.165 2.774h2.085c68.574 0 124.165 55.59 124.165 124.165v2.084c0 68.575-55.59 124.166-124.165 124.166h-2.085C55.591 253.189 0 197.598 0 129.023"
+          fill="#E4EBF7"
+        />
+        <path d="M41.417 132.92a8.231 8.231 0 1 1-16.38-1.65 8.231 8.231 0 0 1 16.38 1.65" fill="#FFF" />
+        <path d="M38.652 136.36l10.425 5.91M49.989 148.505l-12.58 10.73" stroke="#FFF" strokeWidth="2" />
+        <path
+          d="M41.536 161.28a5.636 5.636 0 1 1-11.216-1.13 5.636 5.636 0 0 1 11.216 1.13M59.154 145.261a5.677 5.677 0 1 1-11.297-1.138 5.677 5.677 0 0 1 11.297 1.138M100.36 29.516l29.66-.013a4.562 4.562 0 1 0-.004-9.126l-29.66.013a4.563 4.563 0 0 0 .005 9.126M111.705 47.754l29.659-.013a4.563 4.563 0 1 0-.004-9.126l-29.66.013a4.563 4.563 0 1 0 .005 9.126"
+          fill="#FFF"
+        />
+        <path
+          d="M114.066 29.503V29.5l15.698-.007a4.563 4.563 0 1 0 .004 9.126l-15.698.007v-.002a4.562 4.562 0 0 0-.004-9.122M185.405 137.723c-.55 5.455-5.418 9.432-10.873 8.882-5.456-.55-9.432-5.418-8.882-10.873.55-5.455 5.418-9.432 10.873-8.882 5.455.55 9.432 5.418 8.882 10.873"
+          fill="#FFF"
+        />
+        <path d="M180.17 143.772l12.572 7.129M193.841 158.42L178.67 171.36" stroke="#FFF" strokeWidth="2" />
+        <path
+          d="M185.55 171.926a6.798 6.798 0 1 1-13.528-1.363 6.798 6.798 0 0 1 13.527 1.363M204.12 155.285a6.848 6.848 0 1 1-13.627-1.375 6.848 6.848 0 0 1 13.626 1.375"
+          fill="#FFF"
+        />
+        <path
+          d="M152.988 194.074a2.21 2.21 0 1 1-4.42 0 2.21 2.21 0 0 1 4.42 0zM225.931 118.217a2.21 2.21 0 1 1-4.421 0 2.21 2.21 0 0 1 4.421 0zM217.09 153.051a2.21 2.21 0 1 1-4.421 0 2.21 2.21 0 0 1 4.42 0zM177.84 109.842a2.21 2.21 0 1 1-4.422 0 2.21 2.21 0 0 1 4.421 0zM196.114 94.454a2.21 2.21 0 1 1-4.421 0 2.21 2.21 0 0 1 4.421 0zM202.844 182.523a2.21 2.21 0 1 1-4.42 0 2.21 2.21 0 0 1 4.42 0z"
+          stroke="#FFF"
+          strokeWidth="2"
+        />
+        <path
+          stroke="#FFF"
+          strokeWidth="2"
+          d="M215.125 155.262l-1.902 20.075-10.87 5.958M174.601 176.636l-6.322 9.761H156.98l-4.484 6.449M175.874 127.28V111.56M221.51 119.404l-12.77 7.859-15.228-7.86V96.668"
+        />
+        <path
+          d="M180.68 29.32C180.68 13.128 193.806 0 210 0c16.193 0 29.32 13.127 29.32 29.32 0 16.194-13.127 29.322-29.32 29.322-16.193 0-29.32-13.128-29.32-29.321"
+          fill="#A26EF4"
+        />
+        <path
+          d="M221.45 41.706l-21.563-.125a1.744 1.744 0 0 1-1.734-1.754l.071-12.23a1.744 1.744 0 0 1 1.754-1.734l21.562.125c.964.006 1.74.791 1.735 1.755l-.071 12.229a1.744 1.744 0 0 1-1.754 1.734"
+          fill="#FFF"
+        />
+        <path
+          d="M215.106 29.192c-.015 2.577-2.049 4.654-4.543 4.64-2.494-.014-4.504-2.115-4.489-4.693l.04-6.925c.016-2.577 2.05-4.654 4.543-4.64 2.494.015 4.504 2.116 4.49 4.693l-.04 6.925zm-4.53-14.074a6.877 6.877 0 0 0-6.916 6.837l-.043 7.368a6.877 6.877 0 0 0 13.754.08l.042-7.368a6.878 6.878 0 0 0-6.837-6.917zM167.566 68.367h-3.93a4.73 4.73 0 0 1-4.717-4.717 4.73 4.73 0 0 1 4.717-4.717h3.93a4.73 4.73 0 0 1 4.717 4.717 4.73 4.73 0 0 1-4.717 4.717"
+          fill="#FFF"
+        />
+        <path
+          d="M168.214 248.838a6.611 6.611 0 0 1-6.61-6.611v-66.108a6.611 6.611 0 0 1 13.221 0v66.108a6.611 6.611 0 0 1-6.61 6.61"
+          fill="#5BA02E"
+        />
+        <path
+          d="M176.147 248.176a6.611 6.611 0 0 1-6.61-6.61v-33.054a6.611 6.611 0 1 1 13.221 0v33.053a6.611 6.611 0 0 1-6.61 6.611"
+          fill="#92C110"
+        />
+        <path
+          d="M185.994 293.89h-27.376a3.17 3.17 0 0 1-3.17-3.17v-45.887a3.17 3.17 0 0 1 3.17-3.17h27.376a3.17 3.17 0 0 1 3.17 3.17v45.886a3.17 3.17 0 0 1-3.17 3.17"
+          fill="#F2D7AD"
+        />
+        <path
+          d="M81.972 147.673s6.377-.927 17.566-1.28c11.729-.371 17.57 1.086 17.57 1.086s3.697-3.855.968-8.424c1.278-12.077 5.982-32.827.335-48.273-1.116-1.339-3.743-1.512-7.536-.62-1.337.315-7.147-.149-7.983-.1l-15.311-.347s-3.487-.17-8.035-.508c-1.512-.113-4.227-1.683-5.458-.338-.406.443-2.425 5.669-1.97 16.077l8.635 35.642s-3.141 3.61 1.219 7.085"
+          fill="#FFF"
+        />
+        <path
+          d="M75.768 73.325l-.9-6.397 11.982-6.52s7.302-.118 8.038 1.205c.737 1.324-5.616.993-5.616.993s-1.836 1.388-2.615 2.5c-1.654 2.363-.986 6.471-8.318 5.986-1.708.284-2.57 2.233-2.57 2.233"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M52.44 77.672s14.217 9.406 24.973 14.444c1.061.497-2.094 16.183-11.892 11.811-7.436-3.318-20.162-8.44-21.482-14.496-.71-3.258 2.543-7.643 8.401-11.76M141.862 80.113s-6.693 2.999-13.844 6.876c-3.894 2.11-10.137 4.704-12.33 7.988-6.224 9.314 3.536 11.22 12.947 7.503 6.71-2.651 28.999-12.127 13.227-22.367"
+          fill="#FFB594"
+        />
+        <path
+          d="M76.166 66.36l3.06 3.881s-2.783 2.67-6.31 5.747c-7.103 6.195-12.803 14.296-15.995 16.44-3.966 2.662-9.754 3.314-12.177-.118-3.553-5.032.464-14.628 31.422-25.95"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M64.674 85.116s-2.34 8.413-8.912 14.447c.652.548 18.586 10.51 22.144 10.056 5.238-.669 6.417-18.968 1.145-20.531-.702-.208-5.901-1.286-8.853-2.167-.87-.26-1.611-1.71-3.545-.936l-1.98-.869zM128.362 85.826s5.318 1.956 7.325 13.734c-.546.274-17.55 12.35-21.829 7.805-6.534-6.94-.766-17.393 4.275-18.61 4.646-1.121 5.03-1.37 10.23-2.929"
+          fill="#FFF"
+        />
+        <path
+          d="M78.18 94.656s.911 7.41-4.914 13.078"
+          stroke="#E4EBF7"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M87.397 94.68s3.124 2.572 10.263 2.572c7.14 0 9.074-3.437 9.074-3.437"
+          stroke="#E4EBF7"
+          strokeWidth=".932"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M117.184 68.639l-6.781-6.177s-5.355-4.314-9.223-.893c-3.867 3.422 4.463 2.083 5.653 4.165 1.19 2.082.848 1.143-2.083.446-5.603-1.331-2.082.893 2.975 5.355 2.091 1.845 6.992.955 6.992.955l2.467-3.851z"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M105.282 91.315l-.297-10.937-15.918-.027-.53 10.45c-.026.403.17.788.515.999 2.049 1.251 9.387 5.093 15.799.424.287-.21.443-.554.431-.91"
+          fill="#FFB594"
+        />
+        <path
+          d="M107.573 74.24c.817-1.147.982-9.118 1.015-11.928a1.046 1.046 0 0 0-.965-1.055l-4.62-.365c-7.71-1.044-17.071.624-18.253 6.346-5.482 5.813-.421 13.244-.421 13.244s1.963 3.566 4.305 6.791c.756 1.041.398-3.731 3.04-5.929 5.524-4.594 15.899-7.103 15.899-7.103"
+          fill="#5C2552"
+        />
+        <path
+          d="M88.426 83.206s2.685 6.202 11.602 6.522c7.82.28 8.973-7.008 7.434-17.505l-.909-5.483c-6.118-2.897-15.478.54-15.478.54s-.576 2.044-.19 5.504c-2.276 2.066-1.824 5.618-1.824 5.618s-.905-1.922-1.98-2.321c-.86-.32-1.897.089-2.322 1.98-1.04 4.632 3.667 5.145 3.667 5.145"
+          fill="#FFC6A0"
+        />
+        <path
+          stroke="#DB836E"
+          strokeWidth="1.145"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M100.843 77.099l1.701-.928-1.015-4.324.674-1.406"
+        />
+        <path
+          d="M105.546 74.092c-.022.713-.452 1.279-.96 1.263-.51-.016-.904-.607-.882-1.32.021-.713.452-1.278.96-1.263.51.016.904.607.882 1.32M97.592 74.349c-.022.713-.452 1.278-.961 1.263-.509-.016-.904-.607-.882-1.32.022-.713.452-1.279.961-1.263.51.016.904.606.882 1.32"
+          fill="#552950"
+        />
+        <path
+          d="M91.132 86.786s5.269 4.957 12.679 2.327"
+          stroke="#DB836E"
+          strokeWidth="1.145"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M99.776 81.903s-3.592.232-1.44-2.79c1.59-1.496 4.897-.46 4.897-.46s1.156 3.906-3.457 3.25"
+          fill="#DB836E"
+        />
+        <path
+          d="M102.88 70.6s2.483.84 3.402.715M93.883 71.975s2.492-1.144 4.778-1.073"
+          stroke="#5C2552"
+          strokeWidth="1.526"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M86.32 77.374s.961.879 1.458 2.106c-.377.48-1.033 1.152-.236 1.809M99.337 83.719s1.911.151 2.509-.254"
+          stroke="#DB836E"
+          strokeWidth="1.145"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M87.782 115.821l15.73-3.012M100.165 115.821l10.04-2.008"
+          stroke="#E4EBF7"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M66.508 86.763s-1.598 8.83-6.697 14.078"
+          stroke="#E4EBF7"
+          strokeWidth="1.114"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M128.31 87.934s3.013 4.121 4.06 11.785"
+          stroke="#E4EBF7"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M64.09 84.816s-6.03 9.912-13.607 9.903"
+          stroke="#DB836E"
+          strokeWidth=".795"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M112.366 65.909l-.142 5.32s5.993 4.472 11.945 9.202c4.482 3.562 8.888 7.455 10.985 8.662 4.804 2.766 8.9 3.355 11.076 1.808 4.071-2.894 4.373-9.878-8.136-15.263-4.271-1.838-16.144-6.36-25.728-9.73"
+          fill="#FFC6A0"
+        />
+        <path
+          d="M130.532 85.488s4.588 5.757 11.619 6.214"
+          stroke="#DB836E"
+          strokeWidth=".75"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M121.708 105.73s-.393 8.564-1.34 13.612"
+          stroke="#E4EBF7"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M115.784 161.512s-3.57-1.488-2.678-7.14"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M101.52 290.246s4.326 2.057 7.408 1.03c2.842-.948 4.564.673 7.132 1.186 2.57.514 6.925 1.108 11.772-1.269-.104-5.551-6.939-4.01-12.048-6.763-2.582-1.39-3.812-4.757-3.625-8.863h-9.471s-1.402 10.596-1.169 14.68"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M101.496 290.073s2.447 1.281 6.809.658c3.081-.44 3.74.485 7.479 1.039 3.739.554 10.802-.07 11.91-.9.415 1.108-.347 2.077-.347 2.077s-1.523.608-4.847.831c-2.045.137-5.843.293-7.663-.507-1.8-1.385-5.286-1.917-5.77-.243-3.947.958-7.41-.288-7.41-.288l-.16-2.667z"
+          fill="#2B0849"
+        />
+        <path d="M108.824 276.19h3.116s-.103 6.751 4.57 8.62c-4.673.624-8.62-2.32-7.686-8.62" fill="#A4AABA" />
+        <path
+          d="M57.65 272.52s-2.122 7.47-4.518 12.396c-1.811 3.724-4.255 7.548 5.505 7.548 6.698 0 9.02-.483 7.479-6.648-1.541-6.164.268-13.296.268-13.296H57.65z"
+          fill="#CBD1D1"
+        />
+        <path
+          d="M51.54 290.04s2.111 1.178 6.682 1.178c6.128 0 8.31-1.662 8.31-1.662s.605 1.122-.624 2.18c-1 .862-3.624 1.603-7.444 1.559-4.177-.049-5.876-.57-6.786-1.177-.831-.554-.692-1.593-.138-2.078"
+          fill="#2B0849"
+        />
+        <path
+          d="M58.533 274.438s.034 1.529-.315 2.95c-.352 1.431-1.087 3.127-1.139 4.17-.058 1.16 4.57 1.592 5.194.035.623-1.559 1.303-6.475 1.927-7.306.622-.831-4.94-2.135-5.667.15"
+          fill="#A4AABA"
+        />
+        <path
+          d="M100.885 277.015l13.306.092s1.291-54.228 1.843-64.056c.552-9.828 3.756-43.13.997-62.788l-12.48-.64-22.725.776s-.433 3.944-1.19 9.921c-.062.493-.677.838-.744 1.358-.075.582.42 1.347.318 1.956-2.35 14.003-6.343 32.926-8.697 46.425-.116.663-1.227 1.004-1.45 2.677-.04.3.21 1.516.112 1.785-6.836 18.643-10.89 47.584-14.2 61.551l14.528-.014s2.185-8.524 4.008-16.878c2.796-12.817 22.987-84.553 22.987-84.553l3-.517 1.037 46.1s-.223 1.228.334 2.008c.558.782-.556 1.117-.39 2.233l.39 1.784s-.446 7.14-.892 11.826c-.446 4.685-.092 38.954-.092 38.954"
+          fill="#7BB2F9"
+        />
+        <path
+          d="M77.438 220.434c1.146.094 4.016-2.008 6.916-4.91M107.55 223.931s2.758-1.103 6.069-3.862"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M108.459 220.905s2.759-1.104 6.07-3.863"
+          stroke="#648BD8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M76.099 223.557s2.608-.587 6.47-3.346M87.33 150.82c-.27 3.088.297 8.478-4.315 9.073M104.829 149.075s.11 13.936-1.286 14.983c-2.207 1.655-2.975 1.934-2.975 1.934M101.014 149.63s.035 12.81-1.19 24.245M94.93 174.965s7.174-1.655 9.38-1.655M75.671 204.754c-.316 1.55-.64 3.067-.973 4.535 0 0-1.45 1.822-1.003 3.756.446 1.934-.943 2.034-4.96 15.273-1.686 5.559-4.464 18.49-6.313 27.447-.078.38-4.018 18.06-4.093 18.423M77.043 196.743a313.269 313.269 0 0 1-.877 4.729M83.908 151.414l-1.19 10.413s-1.091.148-.496 2.23c.111 1.34-2.66 15.692-5.153 30.267M57.58 272.94h13.238"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M117.377 147.423s-16.955-3.087-35.7.199c.157 2.501-.002 4.128-.002 4.128s14.607-2.802 35.476-.31c.251-2.342.226-4.017.226-4.017"
+          fill="#192064"
+        />
+        <path
+          d="M107.511 150.353l.004-4.885a.807.807 0 0 0-.774-.81c-2.428-.092-5.04-.108-7.795-.014a.814.814 0 0 0-.784.81l-.003 4.88c0 .456.371.82.827.808a140.76 140.76 0 0 1 7.688.017.81.81 0 0 0 .837-.806"
+          fill="#FFF"
+        />
+        <path
+          d="M106.402 149.426l.002-3.06a.64.64 0 0 0-.616-.643 94.135 94.135 0 0 0-5.834-.009.647.647 0 0 0-.626.643l-.001 3.056c0 .36.291.648.651.64 1.78-.04 3.708-.041 5.762.012.36.009.662-.279.662-.64"
+          fill="#192064"
+        />
+        <path
+          d="M101.485 273.933h12.272M102.652 269.075c.006 3.368.04 5.759.11 6.47M102.667 263.125c-.009 1.53-.015 2.98-.016 4.313M102.204 174.024l.893 44.402s.669 1.561-.224 2.677c-.892 1.116 2.455.67.893 2.231-1.562 1.562.893 1.116 0 3.347-.592 1.48-.988 20.987-1.09 34.956"
+          stroke="#648BD8"
+          strokeWidth="1.051"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+    </svg>
+  `
+            }] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzResultTitleDirective {
+}
+NzResultTitleDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: 'div[nz-result-title]',
+                exportAs: 'nzResultTitle',
+                host: {
+                    class: 'ant-result-title'
+                }
+            },] }
+];
+class NzResultSubtitleDirective {
+}
+NzResultSubtitleDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: 'div[nz-result-subtitle]',
+                exportAs: 'nzResultSubtitle',
+                host: {
+                    class: 'ant-result-subtitle'
+                }
+            },] }
+];
+class NzResultIconDirective {
+}
+NzResultIconDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: 'i[nz-result-icon], div[nz-result-icon]',
+                exportAs: 'nzResultIcon'
+            },] }
+];
+class NzResultContentDirective {
+}
+NzResultContentDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: 'div[nz-result-content]',
+                exportAs: 'nzResultContent',
+                host: {
+                    class: 'ant-result-content'
+                }
+            },] }
+];
+class NzResultExtraDirective {
+}
+NzResultExtraDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"], args: [{
+                selector: 'div[nz-result-extra]',
+                exportAs: 'nzResultExtra',
+                host: {
+                    class: 'ant-result-extra'
+                }
+            },] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const IconMap = {
+    success: 'check-circle',
+    error: 'close-circle',
+    info: 'exclamation-circle',
+    warning: 'warning'
+};
+/** @type {?} */
+const ExceptionStatus = ['404', '500', '403'];
+class NzResultComponent {
+    /**
+     * @param {?} nzUpdateHostClassService
+     * @param {?} elementRef
+     */
+    constructor(nzUpdateHostClassService, elementRef) {
+        this.nzUpdateHostClassService = nzUpdateHostClassService;
+        this.elementRef = elementRef;
+        this.nzStatus = 'info';
+        this.isException = false;
+    }
+    /**
+     * @return {?}
+     */
+    ngOnChanges() {
+        this.setStatusIcon();
+        this.setClassMap();
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    setStatusIcon() {
+        /** @type {?} */
+        const icon = this.nzIcon;
+        this.isException = ExceptionStatus.indexOf(this.nzStatus) !== -1;
+        this.icon = icon
+            ? typeof icon === 'string'
+                ? IconMap[(/** @type {?} */ (icon))] || icon
+                : icon
+            : this.isException
+                ? undefined
+                : IconMap[(/** @type {?} */ (this.nzStatus))];
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    setClassMap() {
+        /** @type {?} */
+        const prefix = 'ant-result';
+        this.nzUpdateHostClassService.updateHostClass(this.elementRef.nativeElement, {
+            [prefix]: true,
+            [`${prefix}-${this.nzStatus}`]: true
+        });
+    }
+}
+NzResultComponent.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"], args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                selector: 'nz-result',
+                template: "<!-- Icon -->\n<div class=\"ant-result-icon\">\n  <ng-container *ngIf=\"!isException; else exceptionTpl\">\n    <ng-container *ngIf=\"icon\">\n      <ng-container *nzStringTemplateOutlet=\"icon\">\n        <i nz-icon [nzType]=\"icon\" nzTheme=\"fill\"></i>\n      </ng-container>\n    </ng-container>\n    <ng-content *ngIf=\"!icon\" select=\"[nz-result-icon]\"></ng-content>\n  </ng-container>\n\n  <ng-template #exceptionTpl>\n    <ng-container [ngSwitch]=\"nzStatus\">\n      <nz-result-not-found *ngSwitchCase=\"'404'\"></nz-result-not-found>\n      <nz-result-server-error *ngSwitchCase=\"'500'\"></nz-result-server-error>\n      <nz-result-unauthorized *ngSwitchCase=\"'403'\"></nz-result-unauthorized>\n    </ng-container>\n  </ng-template>\n</div>\n\n<!-- Title and subTitle -->\n<ng-container *ngIf=\"nzTitle\">\n  <div class=\"ant-result-title\" *nzStringTemplateOutlet=\"nzTitle\">\n    {{ nzTitle }}\n  </div>\n</ng-container>\n<ng-content *ngIf=\"!nzTitle\" select=\"div[nz-result-title]\"></ng-content>\n\n<ng-container *ngIf=\"nzSubTitle\">\n  <div class=\"ant-result-subtitle\" *nzStringTemplateOutlet=\"nzSubTitle\">\n    {{ nzSubTitle }}\n  </div>\n</ng-container>\n<ng-content *ngIf=\"!nzSubTitle\" select=\"div[nz-result-subtitle]\"></ng-content>\n\n<!-- Content -->\n<ng-content select=\"nz-result-content, [nz-result-content]\"></ng-content>\n\n<!-- Extra -->\n<div class=\"ant-result-extra\" *ngIf=\"nzExtra\">\n  <ng-container *nzStringTemplateOutlet=\"nzExtra\">\n    {{ nzExtra }}\n  </ng-container>\n</div>\n<ng-content *ngIf=\"!nzExtra\" select=\"div[nz-result-extra]\"></ng-content>\n",
+                providers: [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzUpdateHostClassService"]],
+                styles: [`
+      nz-result {
+        display: block;
+      }
+    `]
+            }] }
+];
+/** @nocollapse */
+NzResultComponent.ctorParameters = () => [
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzUpdateHostClassService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+];
+NzResultComponent.propDecorators = {
+    nzIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzStatus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzSubTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzExtra: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+};
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const partial = [NzResultNotFoundComponent, NzResultServerErrorComponent, NzResultUnauthorizedComponent];
+/** @type {?} */
+const cellDirectives = [
+    NzResultContentDirective,
+    NzResultExtraDirective,
+    NzResultIconDirective,
+    NzResultSubtitleDirective,
+    NzResultTitleDirective
+];
+class NzResultModule {
+}
+NzResultModule.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"], args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzAddOnModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconModule"]],
+                declarations: [NzResultComponent, ...cellDirectives, ...partial],
+                exports: [NzResultComponent, ...cellDirectives]
+            },] }
+];
+
+
+//# sourceMappingURL=ng-zorro-antd-result.js.map
 
 
 /***/ }),
@@ -33609,7 +35075,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionComponent {
     constructor() {
@@ -33651,7 +35117,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionGroupComponent {
     constructor() {
@@ -33688,7 +35154,7 @@ NzOptionGroupComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFilterOptionPipe {
     /**
@@ -33760,7 +35226,7 @@ function defaultFilterOption(searchValue, option) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSelectService {
     constructor() {
@@ -34325,7 +35791,7 @@ NzSelectService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionLiComponent {
     /**
@@ -34420,7 +35886,7 @@ NzOptionLiComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionContainerComponent {
     /**
@@ -34556,7 +36022,7 @@ NzOptionContainerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSelectTopControlComponent {
     /**
@@ -34706,7 +36172,7 @@ NzSelectTopControlComponent.decorators = [
                 animations: [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["zoomMotion"]],
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: "<ng-template #inputTemplate>\n  <input #inputElement\n    autocomplete=\"something-new\"\n    class=\"ant-select-search__field\"\n    (compositionstart)=\"isComposing = true\"\n    (compositionend)=\"isComposing = false\"\n    (input)=\"updateWidth()\"\n    [ngModel]=\"inputValue\"\n    (ngModelChange)=\"setInputValue($event)\"\n    [disabled]=\"nzSelectService.disabled\">\n</ng-template>\n<div class=\"ant-select-selection__rendered\">\n  <div *ngIf=\"nzPlaceHolder\"\n    nz-select-unselectable\n    [style.display]=\"placeHolderDisplay\"\n    class=\"ant-select-selection__placeholder\">{{ nzPlaceHolder }}</div>\n  <!--single mode-->\n  <ng-container *ngIf=\"nzSelectService.isSingleMode\">\n    <!--selected label-->\n    <div *ngIf=\"nzSelectService.listOfCachedSelectedOption.length && nzSelectService.listOfSelectedValue.length\"\n      class=\"ant-select-selection-selected-value\"\n      [attr.title]=\"nzSelectService.listOfCachedSelectedOption[0]?.nzLabel\"\n      [ngStyle]=\"selectedValueStyle\">\n      <ng-container *nzStringTemplateOutlet=\"nzCustomTemplate; context: { $implicit: nzSelectService.listOfCachedSelectedOption[0] }\">\n        <div class=\"ant-select-selection__choice__content\">{{ nzSelectService.listOfCachedSelectedOption[0]?.nzLabel }}</div>\n      </ng-container>\n    </div>\n    <!--show search-->\n    <div *ngIf=\"nzShowSearch\"\n      class=\"ant-select-search ant-select-search--inline\" [style.display]=\"nzOpen ? 'block' : 'none'\">\n      <div class=\"ant-select-search__field__wrap\">\n        <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n        <span class=\"ant-select-search__field__mirror\">{{inputValue}}&nbsp;</span>\n      </div>\n    </div>\n  </ng-container>\n  <!--multiple or tags mode-->\n  <ul *ngIf=\"nzSelectService.isMultipleOrTags\">\n    <ng-container *ngFor=\"let option of nzSelectService.listOfCachedSelectedOption | slice: 0 : nzMaxTagCount;trackBy:trackValue; let index = index\">\n      <li [@zoomMotion]\n        [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n        [attr.title]=\"option.nzLabel\"\n        [class.ant-select-selection__choice__disabled]=\"option.nzDisabled\"\n        class=\"ant-select-selection__choice\">\n        <ng-container *nzStringTemplateOutlet=\"nzCustomTemplate; context:{ $implicit: nzSelectService.listOfCachedSelectedOption[index] }\">\n          <div class=\"ant-select-selection__choice__content\">{{ option.nzLabel }}</div>\n        </ng-container>\n        <span *ngIf=\"!option.nzDisabled\"\n          class=\"ant-select-selection__choice__remove\"\n          (mousedown)=\"$event.preventDefault()\"\n          (click)=\"removeSelectedValue(option, $event)\">\n          <i nz-icon nzType=\"close\" class=\"ant-select-remove-icon\" *ngIf=\"!nzRemoveIcon; else nzRemoveIcon\"></i>\n        </span>\n      </li>\n    </ng-container>\n    <li *ngIf=\"nzSelectService.listOfCachedSelectedOption.length > nzMaxTagCount\"\n      [@zoomMotion]\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n      class=\"ant-select-selection__choice\">\n      <div class=\"ant-select-selection__choice__content\">\n        <ng-container *ngIf=\"nzMaxTagPlaceholder\">\n          <ng-template\n            [ngTemplateOutlet]=\"nzMaxTagPlaceholder\"\n            [ngTemplateOutletContext]=\"{ $implicit: nzSelectService.listOfSelectedValue | slice: nzMaxTagCount}\">\n          </ng-template>\n        </ng-container>\n        <ng-container *ngIf=\"!nzMaxTagPlaceholder\">\n          + {{ nzSelectService.listOfCachedSelectedOption.length - nzMaxTagCount }} ...\n        </ng-container>\n      </div>\n    </li>\n    <li class=\"ant-select-search ant-select-search--inline\">\n      <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n    </li>\n  </ul>\n</div>\n<span *ngIf=\"nzAllowClear && nzSelectService.listOfSelectedValue.length\"\n  class=\"ant-select-selection__clear\"\n  nz-select-unselectable\n  (mousedown)=\"$event.preventDefault()\"\n  (click)=\"onClearSelection($event)\">\n    <i nz-icon nzType=\"close-circle\" nzTheme=\"fill\" *ngIf=\"!nzClearIcon; else nzClearIcon\" class=\"ant-select-close-icon\"></i>\n  </span>\n<span class=\"ant-select-arrow\" nz-select-unselectable *ngIf=\"nzShowArrow\">\n  <i nz-icon nzType=\"loading\" *ngIf=\"nzLoading; else defaultArrow\"></i>\n  <ng-template #defaultArrow>\n    <i nz-icon nzType=\"down\" class=\"ant-select-arrow-icon\" *ngIf=\"!nzSuffixIcon; else nzSuffixIcon\"></i>\n  </ng-template>\n</span>"
+                template: "<ng-template #inputTemplate>\n  <input #inputElement\n    autocomplete=\"something-new\"\n    class=\"ant-select-search__field\"\n    (compositionstart)=\"isComposing = true\"\n    (compositionend)=\"isComposing = false\"\n    (input)=\"updateWidth()\"\n    [ngModel]=\"inputValue\"\n    (ngModelChange)=\"setInputValue($event)\"\n    [disabled]=\"nzSelectService.disabled\">\n</ng-template>\n<div class=\"ant-select-selection__rendered\">\n  <div *ngIf=\"nzPlaceHolder\"\n    nz-select-unselectable\n    [style.display]=\"placeHolderDisplay\"\n    class=\"ant-select-selection__placeholder\">{{ nzPlaceHolder }}</div>\n  <!--single mode-->\n  <ng-container *ngIf=\"nzSelectService.isSingleMode\">\n    <!--selected label-->\n    <div *ngIf=\"nzSelectService.listOfCachedSelectedOption.length && nzSelectService.listOfSelectedValue.length\"\n      class=\"ant-select-selection-selected-value\"\n      [attr.title]=\"nzSelectService.listOfCachedSelectedOption[0]?.nzLabel\"\n      [ngStyle]=\"selectedValueStyle\">\n      <ng-container *nzStringTemplateOutlet=\"nzCustomTemplate; context: { $implicit: nzSelectService.listOfCachedSelectedOption[0] }\">\n        <ng-container>{{ nzSelectService.listOfCachedSelectedOption[0]?.nzLabel }}</ng-container>\n      </ng-container>\n    </div>\n    <!--show search-->\n    <div *ngIf=\"nzShowSearch\"\n      class=\"ant-select-search ant-select-search--inline\" [style.display]=\"nzOpen ? 'block' : 'none'\">\n      <div class=\"ant-select-search__field__wrap\">\n        <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n        <span class=\"ant-select-search__field__mirror\">{{inputValue}}&nbsp;</span>\n      </div>\n    </div>\n  </ng-container>\n  <!--multiple or tags mode-->\n  <ul *ngIf=\"nzSelectService.isMultipleOrTags\">\n    <ng-container *ngFor=\"let option of nzSelectService.listOfCachedSelectedOption | slice: 0 : nzMaxTagCount;trackBy:trackValue; let index = index\">\n      <li [@zoomMotion]\n        [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n        [attr.title]=\"option.nzLabel\"\n        [class.ant-select-selection__choice__disabled]=\"option.nzDisabled\"\n        class=\"ant-select-selection__choice\">\n        <ng-container *nzStringTemplateOutlet=\"nzCustomTemplate; context:{ $implicit: nzSelectService.listOfCachedSelectedOption[index] }\">\n          <div class=\"ant-select-selection__choice__content\">{{ option.nzLabel }}</div>\n        </ng-container>\n        <span *ngIf=\"!option.nzDisabled\"\n          class=\"ant-select-selection__choice__remove\"\n          (mousedown)=\"$event.preventDefault()\"\n          (click)=\"removeSelectedValue(option, $event)\">\n          <i nz-icon nzType=\"close\" class=\"ant-select-remove-icon\" *ngIf=\"!nzRemoveIcon; else nzRemoveIcon\"></i>\n        </span>\n      </li>\n    </ng-container>\n    <li *ngIf=\"nzSelectService.listOfCachedSelectedOption.length > nzMaxTagCount\"\n      [@zoomMotion]\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n      class=\"ant-select-selection__choice\">\n      <div class=\"ant-select-selection__choice__content\">\n        <ng-container *ngIf=\"nzMaxTagPlaceholder\">\n          <ng-template\n            [ngTemplateOutlet]=\"nzMaxTagPlaceholder\"\n            [ngTemplateOutletContext]=\"{ $implicit: nzSelectService.listOfSelectedValue | slice: nzMaxTagCount}\">\n          </ng-template>\n        </ng-container>\n        <ng-container *ngIf=\"!nzMaxTagPlaceholder\">\n          + {{ nzSelectService.listOfCachedSelectedOption.length - nzMaxTagCount }} ...\n        </ng-container>\n      </div>\n    </li>\n    <li class=\"ant-select-search ant-select-search--inline\">\n      <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n    </li>\n  </ul>\n</div>\n<span *ngIf=\"nzAllowClear && nzSelectService.listOfSelectedValue.length\"\n  class=\"ant-select-selection__clear\"\n  nz-select-unselectable\n  (mousedown)=\"$event.preventDefault()\"\n  (click)=\"onClearSelection($event)\">\n    <i nz-icon nzType=\"close-circle\" nzTheme=\"fill\" *ngIf=\"!nzClearIcon; else nzClearIcon\" class=\"ant-select-close-icon\"></i>\n  </span>\n<span class=\"ant-select-arrow\" nz-select-unselectable *ngIf=\"nzShowArrow\">\n  <i nz-icon nzType=\"loading\" *ngIf=\"nzLoading; else defaultArrow\"></i>\n  <ng-template #defaultArrow>\n    <i nz-icon nzType=\"down\" class=\"ant-select-arrow-icon\" *ngIf=\"!nzSuffixIcon; else nzSuffixIcon\"></i>\n  </ng-template>\n</span>"
             }] }
 ];
 /** @nocollapse */
@@ -34735,7 +36201,7 @@ NzSelectTopControlComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSelectComponent {
     /**
@@ -35183,7 +36649,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSelectUnselectableDirective {
 }
@@ -35200,7 +36666,7 @@ NzSelectUnselectableDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSelectModule {
 }
@@ -35266,7 +36732,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSkeletonComponent {
     /**
@@ -35429,7 +36895,7 @@ NzSkeletonComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSkeletonModule {
 }
@@ -35493,7 +36959,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class Marks {
 }
@@ -35519,7 +36985,7 @@ function isConfigAObject(config) {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -35537,7 +37003,7 @@ function getValueTypeNotMatchError() {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderComponent {
     /**
@@ -36189,7 +37655,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderHandleComponent {
     /**
@@ -36336,7 +37802,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderMarksComponent {
     constructor() {
@@ -36477,7 +37943,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderStepComponent {
     constructor() {
@@ -36579,7 +38045,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderTrackComponent {
     constructor() {
@@ -36646,7 +38112,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderModule {
 }
@@ -36710,7 +38176,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSpinComponent {
     /**
@@ -36823,7 +38289,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSpinModule {
 }
@@ -36872,7 +38338,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @license
@@ -36886,7 +38352,7 @@ const REFRESH_INTERVAL = 1000 / 30;
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStatisticComponent {
     constructor() {
@@ -36917,7 +38383,7 @@ NzStatisticComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCountdownComponent extends NzStatisticComponent {
     /**
@@ -37033,7 +38499,7 @@ NzCountdownComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStatisticNumberComponent {
     /**
@@ -37089,7 +38555,7 @@ NzStatisticNumberComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimeRangePipe {
     /**
@@ -37131,7 +38597,7 @@ NzTimeRangePipe.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStatisticModule {
 }
@@ -37180,7 +38646,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepComponent {
     /**
@@ -37294,7 +38760,7 @@ NzStepComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepsComponent {
     constructor() {
@@ -37430,7 +38896,7 @@ NzStepsComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepsModule {
 }
@@ -37484,7 +38950,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSwitchComponent {
     /**
@@ -37675,7 +39141,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSwitchModule {
 }
@@ -37757,7 +39223,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzThComponent {
     /**
@@ -38082,7 +39548,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzVirtualScrollDirective {
     /* tslint:disable-next-line:no-any */
@@ -38106,7 +39572,7 @@ NzVirtualScrollDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @template T
@@ -38117,16 +39583,14 @@ class NzTableComponent {
      * @param {?} renderer
      * @param {?} ngZone
      * @param {?} cdr
-     * @param {?} nzMeasureScrollbarService
      * @param {?} i18n
      * @param {?} platform
      * @param {?} elementRef
      */
-    constructor(renderer, ngZone, cdr, nzMeasureScrollbarService, i18n, platform, elementRef) {
+    constructor(renderer, ngZone, cdr, i18n, platform, elementRef) {
         this.renderer = renderer;
         this.ngZone = ngZone;
         this.cdr = cdr;
-        this.nzMeasureScrollbarService = nzMeasureScrollbarService;
         this.i18n = i18n;
         this.platform = platform;
         /**
@@ -38273,14 +39737,21 @@ class NzTableComponent {
      * @return {?}
      */
     fitScrollBar() {
-        /** @type {?} */
-        const scrollbarWidth = this.nzMeasureScrollbarService.scrollBarWidth;
-        if (scrollbarWidth) {
-            this.headerBottomStyle = {
-                marginBottom: `-${scrollbarWidth}px`,
-                paddingBottom: `0px`
-            };
-            this.cdr.markForCheck();
+        if (this.nzScroll.y) {
+            /** @type {?} */
+            const scrollbarWidth = Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["measureScrollbar"])('vertical');
+            /** @type {?} */
+            const scrollbarWidthOfHeader = Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["measureScrollbar"])('horizontal', 'ant-table');
+            // Add negative margin bottom for scroll bar overflow bug
+            if (scrollbarWidthOfHeader > 0) {
+                this.headerBottomStyle = {
+                    marginBottom: `-${scrollbarWidthOfHeader}px`,
+                    paddingBottom: '0px',
+                    overflowX: 'scroll',
+                    overflowY: `${scrollbarWidth === 0 ? 'hidden' : 'scroll'}`
+                };
+                this.cdr.markForCheck();
+            }
         }
     }
     /**
@@ -38334,6 +39805,7 @@ class NzTableComponent {
             else {
                 this.nzScroll = { x: null, y: null };
             }
+            this.fitScrollBar();
             this.setScrollPositionClassName();
         }
         if (changes.nzPageIndex || changes.nzPageSize || changes.nzFrontPagination || changes.nzData) {
@@ -38430,7 +39902,6 @@ NzTableComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgZone"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
-    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzMeasureScrollbarService"] },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_7__["NzI18nService"] },
     { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }
@@ -38532,7 +40003,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTbodyDirective {
     /**
@@ -38558,7 +40029,7 @@ NzTbodyDirective.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTdComponent {
     /**
@@ -38657,7 +40128,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTheadComponent {
     // tslint:disable-next-line:no-any
@@ -38752,7 +40223,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTrDirective {
     /**
@@ -38801,7 +40272,7 @@ NzTrDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTableModule {
 }
@@ -38826,7 +40297,6 @@ NzTableModule.decorators = [
                     NzVirtualScrollDirective
                 ],
                 imports: [
-                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzMeasureScrollbarServiceModule"],
                     ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_14__["NzMenuModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_10__["FormsModule"],
                     ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_6__["NzAddOnModule"],
@@ -38854,7 +40324,7 @@ NzTableModule.decorators = [
 /*!************************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd-tabs.js ***!
   \************************************************/
-/*! exports provided: NzTabBodyComponent, NzTabChangeEvent, NzTabComponent, NzTabDirective, NzTabLabelDirective, NzTabSetComponent, NzTabsInkBarDirective, NzTabsModule, NzTabsNavComponent */
+/*! exports provided: NzTabBodyComponent, NzTabChangeEvent, NzTabComponent, NzTabDirective, NzTabLabelDirective, NzTabLinkDirective, NzTabSetComponent, NzTabsInkBarDirective, NzTabsModule, NzTabsNavComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38864,6 +40334,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabComponent", function() { return NzTabComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabDirective", function() { return NzTabDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabLabelDirective", function() { return NzTabLabelDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabLinkDirective", function() { return NzTabLinkDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabSetComponent", function() { return NzTabSetComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabsInkBarDirective", function() { return NzTabsInkBarDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTabsModule", function() { return NzTabsModule; });
@@ -38875,15 +40346,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core */ "./publish/fesm2015/ng-zorro-antd-core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "rxjs");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rxjs__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/observers */ "@angular/cdk/observers");
-/* harmony import */ var _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_observers__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "@angular/common");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_angular_common__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/bidi */ "@angular/cdk/bidi");
-/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "@angular/router");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_angular_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/observers */ "@angular/cdk/observers");
+/* harmony import */ var _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_observers__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "@angular/common");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_angular_common__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/bidi */ "@angular/cdk/bidi");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "rxjs/operators");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__);
+
 
 
 
@@ -38896,7 +40370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabBodyComponent {
     constructor() {
@@ -38926,7 +40400,7 @@ NzTabBodyComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabLabelDirective {
     /**
@@ -38987,7 +40461,36 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * This component is for catching `routerLink` directive.
+ */
+class NzTabLinkDirective {
+    /**
+     * @param {?=} routerLink
+     * @param {?=} routerLinkWithHref
+     */
+    constructor(routerLink, routerLinkWithHref) {
+        this.routerLink = routerLink;
+        this.routerLinkWithHref = routerLinkWithHref;
+    }
+}
+NzTabLinkDirective.decorators = [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Directive"], args: [{
+                selector: 'a[nz-tab-link]',
+                exportAs: 'nzTabLink'
+            },] }
+];
+/** @nocollapse */
+NzTabLinkDirective.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterLink"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterLinkWithHref"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }] }
+];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Decorates the `ng-template` tags and reads out the template from it.
@@ -39003,7 +40506,7 @@ NzTabDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabComponent {
     /**
@@ -39047,7 +40550,7 @@ NzTabComponent.decorators = [
                 preserveWhitespaces: false,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: "<ng-template>\n  <ng-content></ng-content>\n</ng-template>"
+                template: "<ng-template #titleTpl>\n  <ng-content select=\"[nz-tab-link]\"></ng-content>\n</ng-template>\n<ng-template #bodyTpl>\n  <ng-content></ng-content>\n</ng-template>"
             }] }
 ];
 /** @nocollapse */
@@ -39056,9 +40559,12 @@ NzTabComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }
 ];
 NzTabComponent.propDecorators = {
-    content: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], { static: true },] }],
+    content: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['bodyTpl', { static: true },] }],
+    title: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['titleTpl', { static: true },] }],
     template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [NzTabDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"] },] }],
+    linkDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [NzTabLinkDirective, { static: false },] }],
     nzTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    nzRouterIdentifier: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzForceRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
@@ -39076,7 +40582,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabsInkBarDirective {
     /**
@@ -39186,7 +40692,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
 const EXAGGERATED_OVERSCROLL = 64;
@@ -39196,17 +40702,20 @@ class NzTabsNavComponent {
      * @param {?} ngZone
      * @param {?} renderer
      * @param {?} cdr
+     * @param {?} nzDomEventService
      * @param {?} dir
      */
-    constructor(elementRef, ngZone, renderer, cdr, dir) {
+    constructor(elementRef, ngZone, renderer, cdr, nzDomEventService, dir) {
         this.elementRef = elementRef;
         this.ngZone = ngZone;
         this.renderer = renderer;
         this.cdr = cdr;
+        this.nzDomEventService = nzDomEventService;
         this.dir = dir;
         this._tabPositionMode = 'horizontal';
         this._scrollDistance = 0;
         this._selectedIndex = 0;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.showPaginationControls = false;
         this.disableScrollAfter = true;
         this.disableScrollBefore = true;
@@ -39330,9 +40839,14 @@ class NzTabsNavComponent {
             /** @type {?} */
             const dirChange = this.dir ? this.dir.change : Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
             /** @type {?} */
-            const resize = typeof window !== 'undefined' ? Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["fromEvent"])(window, 'resize').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["auditTime"])(10)) : Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
+            const resize = typeof window !== 'undefined'
+                ? this.nzDomEventService.registerResizeListener().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["finalize"])((/**
+                 * @return {?}
+                 */
+                () => this.nzDomEventService.unregisterResizeListener())))
+                : Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["merge"])(dirChange, resize)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["startWith"])(null))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["startWith"])(null))
                 .subscribe((/**
              * @return {?}
              */
@@ -39348,6 +40862,8 @@ class NzTabsNavComponent {
      * @return {?}
      */
     ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
         if (this.realignInkBar) {
             this.realignInkBar.unsubscribe();
         }
@@ -39543,7 +41059,8 @@ NzTabsNavComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
-    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzDomEventService"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_8__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
 ];
 NzTabsNavComponent.propDecorators = {
     listOfNzTabLabelDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzTabLabelDirective,] }],
@@ -39576,7 +41093,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabChangeEvent {
 }
@@ -39586,12 +41103,14 @@ class NzTabSetComponent {
      * @param {?} nzUpdateHostClassService
      * @param {?} elementRef
      * @param {?} cdr
+     * @param {?} router
      */
-    constructor(renderer, nzUpdateHostClassService, elementRef, cdr) {
+    constructor(renderer, nzUpdateHostClassService, elementRef, cdr, router) {
         this.renderer = renderer;
         this.nzUpdateHostClassService = nzUpdateHostClassService;
         this.elementRef = elementRef;
         this.cdr = cdr;
+        this.router = router;
         this.indexToSelect = 0;
         this.el = this.elementRef.nativeElement;
         this._selectedIndex = null;
@@ -39603,6 +41122,7 @@ class NzTabSetComponent {
          * Subscription to changes in the tab labels.
          */
         this.tabLabelSubscription = rxjs__WEBPACK_IMPORTED_MODULE_3__["Subscription"].EMPTY;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.tabPositionMode = 'horizontal';
         this.nzShowPagination = true;
         this.nzAnimated = true;
@@ -39610,6 +41130,7 @@ class NzTabSetComponent {
         this.nzTabPosition = 'top';
         this.nzSize = 'default';
         this.nzType = 'line';
+        this.nzLinkRouter = false;
         this.nzOnNextClick = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.nzOnPrevClick = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.nzSelectChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"](true);
@@ -39675,8 +41196,10 @@ class NzTabSetComponent {
      */
     clickLabel(index, disabled) {
         if (!disabled) {
+            /** @type {?} */
+            const tabs = this.listOfNzTabComponent.toArray();
             this.nzSelectedIndex = index;
-            this.listOfNzTabComponent.toArray()[index].nzClick.emit();
+            tabs[index].nzClick.emit();
         }
     }
     /**
@@ -39859,6 +41382,68 @@ class NzTabSetComponent {
      */
     ngAfterViewInit() {
         this.setPosition(this.nzTabPosition);
+        if (this.nzLinkRouter) {
+            if (!this.router) {
+                throw new Error(`${ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["PREFIX"]} you should import 'RouterModule' if you want to use 'nzLinkRouter'!`);
+            }
+            this.router.events
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["filter"])((/**
+             * @param {?} e
+             * @return {?}
+             */
+            e => e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__["NavigationEnd"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["startWith"])(true))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => {
+                this.updateRouterActive();
+            }));
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    updateRouterActive() {
+        if (this.router.navigated) {
+            /** @type {?} */
+            const index = this.findShouldActiveTabIndex();
+            if (index !== this._selectedIndex && index !== -1) {
+                this.nzSelectedIndex = index;
+                this.nzSelectedIndexChange.next(index);
+            }
+        }
+    }
+    /**
+     * @private
+     * @return {?}
+     */
+    findShouldActiveTabIndex() {
+        /** @type {?} */
+        const tabs = this.listOfNzTabComponent.toArray();
+        /** @type {?} */
+        const isActive = this.isLinkActive(this.router);
+        return tabs.findIndex((/**
+         * @param {?} tab
+         * @return {?}
+         */
+        tab => {
+            /** @type {?} */
+            const c = tab.linkDirective;
+            return c ? isActive(c.routerLink) || isActive(c.routerLinkWithHref) : false;
+        }));
+    }
+    /**
+     * @private
+     * @param {?} router
+     * @return {?}
+     */
+    isLinkActive(router) {
+        return (/**
+         * @param {?=} link
+         * @return {?}
+         */
+        (link) => (link ? router.isActive(link.urlTree, true) : false));
     }
 }
 NzTabSetComponent.decorators = [
@@ -39869,7 +41454,7 @@ NzTabSetComponent.decorators = [
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
                 providers: [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzUpdateHostClassService"]],
-                template: "<ng-container *ngIf=\"listOfNzTabComponent\">\n  <div nz-tabs-nav\n    role=\"tablist\"\n    tabindex=\"0\"\n    class=\"ant-tabs-bar\"\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\n    [nzType]=\"nzType\"\n    [nzShowPagination]=\"nzShowPagination\"\n    [nzPositionMode]=\"tabPositionMode\"\n    [nzAnimated]=\"inkBarAnimated\"\n    [ngStyle]=\"nzTabBarStyle\"\n    [nzHideBar]=\"nzHideAll\"\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\n    [selectedIndex]=\"nzSelectedIndex\"\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\n    <div nz-tab-label\n      role=\"tab\"\n      [style.margin-right.px]=\"nzTabBarGutter\"\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\n      [disabled]=\"tab.nzDisabled\"\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\">\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle\">{{ tab.nzTitle }}</ng-container>\n    </div>\n  </div>\n  <div #tabContent\n    class=\"ant-tabs-content\"\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\n    <div nz-tab-body\n      class=\"ant-tabs-tabpane\"\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\n      [forceRender]=\"tab.nzForceRender\"\n      [content]=\"tab.template || tab.content\">\n    </div>\n  </div>\n</ng-container>",
+                template: "<ng-container *ngIf=\"listOfNzTabComponent\">\n  <div nz-tabs-nav\n    role=\"tablist\"\n    tabindex=\"0\"\n    class=\"ant-tabs-bar\"\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\n    [nzType]=\"nzType\"\n    [nzShowPagination]=\"nzShowPagination\"\n    [nzPositionMode]=\"tabPositionMode\"\n    [nzAnimated]=\"inkBarAnimated\"\n    [ngStyle]=\"nzTabBarStyle\"\n    [nzHideBar]=\"nzHideAll\"\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\n    [selectedIndex]=\"nzSelectedIndex\"\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\n    <div nz-tab-label\n      role=\"tab\"\n      [style.margin-right.px]=\"nzTabBarGutter\"\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\n      [disabled]=\"tab.nzDisabled\"\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\">\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle || tab.title\">{{ tab.nzTitle }}</ng-container>\n    </div>\n  </div>\n  <div #tabContent\n    class=\"ant-tabs-content\"\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\n    <div nz-tab-body\n      class=\"ant-tabs-tabpane\"\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\n      [forceRender]=\"tab.nzForceRender\"\n      [content]=\"tab.template || tab.content\">\n    </div>\n  </div>\n</ng-container>",
                 styles: [`
       nz-tabset {
         display: block;
@@ -39882,7 +41467,8 @@ NzTabSetComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] },
     { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzUpdateHostClassService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
 ];
 NzTabSetComponent.propDecorators = {
     listOfNzTabComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzTabComponent,] }],
@@ -39897,16 +41483,22 @@ NzTabSetComponent.propDecorators = {
     nzTabBarGutter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzTabBarStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    nzLinkRouter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
+    nzQueryParam: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzOnNextClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     nzOnPrevClick: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     nzSelectChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     nzSelectedIndexChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     nzSelectedIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
 };
+Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
+    Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
+], NzTabSetComponent.prototype, "nzLinkRouter", void 0);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabsModule {
 }
@@ -39919,7 +41511,8 @@ NzTabsModule.decorators = [
                     NzTabsNavComponent,
                     NzTabLabelDirective,
                     NzTabsInkBarDirective,
-                    NzTabBodyComponent
+                    NzTabBodyComponent,
+                    NzTabLinkDirective
                 ],
                 exports: [
                     NzTabComponent,
@@ -39928,9 +41521,10 @@ NzTabsModule.decorators = [
                     NzTabsNavComponent,
                     NzTabLabelDirective,
                     NzTabsInkBarDirective,
-                    NzTabBodyComponent
+                    NzTabBodyComponent,
+                    NzTabLinkDirective
                 ],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_4__["ObserversModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzAddOnModule"]]
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_5__["ObserversModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzAddOnModule"]]
             },] }
 ];
 
@@ -39970,7 +41564,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTagComponent {
     /**
@@ -40103,7 +41697,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTagModule {
 }
@@ -40164,7 +41758,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimePickerComponent {
     /**
@@ -40448,7 +42042,7 @@ NzTimePickerComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimeValueAccessorDirective {
     /**
@@ -40538,7 +42132,7 @@ NzTimeValueAccessorDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TimeHolder {
     constructor() {
@@ -40924,7 +42518,7 @@ class TimeHolder {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} length
@@ -41642,7 +43236,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimePickerModule {
 }
@@ -41694,7 +43288,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimelineItemComponent {
     /**
@@ -41768,7 +43362,7 @@ NzTimelineItemComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimelineComponent {
     /**
@@ -41892,7 +43486,7 @@ NzTimelineComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimelineModule {
 }
@@ -41942,7 +43536,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzToolTipComponent {
     // tslint:disable-line:no-any
@@ -42132,7 +43726,7 @@ NzToolTipComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTooltipDirective {
     // tslint:disable-line:no-any
@@ -42418,7 +44012,7 @@ NzTooltipDirective.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzToolTipModule {
 }
@@ -42485,7 +44079,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferListComponent {
     // #endregion
@@ -42689,7 +44283,7 @@ NzTransferListComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferSearchComponent {
     // endregion
@@ -42748,7 +44342,7 @@ NzTransferSearchComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferComponent {
     // #endregion
@@ -43078,7 +44672,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferModule {
 }
@@ -43153,7 +44747,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeSelectService extends ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["NzTreeBaseService"] {
 }
@@ -43163,7 +44757,7 @@ NzTreeSelectService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} injector
@@ -43191,6 +44785,7 @@ class NzTreeSelectComponent extends ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_
         this.nzShowLine = false;
         this.nzDropdownMatchSelectWidth = true;
         this.nzCheckable = false;
+        this.nzHideUnMatched = false;
         this.nzShowIcon = false;
         this.nzShowSearch = false;
         this.nzDisabled = false;
@@ -43606,7 +45201,7 @@ NzTreeSelectComponent.decorators = [
                 selector: 'nz-tree-select',
                 exportAs: 'nzTreeSelect',
                 animations: [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["slideMotion"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["zoomMotion"]],
-                template: "<ng-template #inputTemplate>\n  <input\n    #inputElement\n    autocomplete=\"off\"\n    class=\"ant-select-search__field\"\n    (compositionstart)=\"isComposing = true\"\n    (compositionend)=\"isComposing = false\"\n    (keydown)=\"onKeyDownInput($event)\"\n    [ngModel]=\"inputValue\"\n    (ngModelChange)=\"setInputValue($event)\"\n    [disabled]=\"nzDisabled\">\n</ng-template>\n\n<ng-template\n  cdkConnectedOverlay\n  nzConnectedOverlay\n  [cdkConnectedOverlayOrigin]=\"cdkOverlayOrigin\"\n  [cdkConnectedOverlayOpen]=\"nzOpen\"\n  [cdkConnectedOverlayHasBackdrop]=\"true\"\n  [cdkConnectedOverlayMinWidth]=\"nzDropdownMatchSelectWidth? null : triggerWidth\"\n  [cdkConnectedOverlayWidth]=\"nzDropdownMatchSelectWidth? triggerWidth : null\"\n  (backdropClick)=\"closeDropDown()\"\n  (detach)=\"closeDropDown()\"\n  (positionChange)=\"onPositionChange($event)\">\n  <div class=\"ant-select-dropdown ant-select-tree-dropdown\"\n    [@slideMotion]=\"nzOpen ? dropDownPosition : 'void'\"\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n    [class.ant-select-dropdown--single]=\"!nzMultiple\"\n    [class.ant-select-dropdown--multiple]=\"nzMultiple\"\n    [class.ant-select-dropdown-placement-bottomLeft]=\"dropDownPosition === 'bottom'\"\n    [class.ant-select-dropdown-placement-topLeft]=\"dropDownPosition === 'top'\"\n    [ngStyle]=\"nzDropdownStyle\">\n    <nz-tree\n      #treeRef\n      [hidden]=\"isNotFound\"\n      nzNoAnimation\n      nzSelectMode\n      [nzData]=\"nzNodes\"\n      [nzMultiple]=\"nzMultiple\"\n      [nzSearchValue]=\"inputValue\"\n      [nzShowIcon]=\"nzShowIcon\"\n      [nzCheckable]=\"nzCheckable\"\n      [nzAsyncData]=\"nzAsyncData\"\n      [nzShowExpand]=\"nzShowExpand\"\n      [nzShowLine]=\"nzShowLine\"\n      [nzExpandedIcon]=\"nzExpandedIcon\"\n      [nzExpandAll]=\"nzDefaultExpandAll\"\n      [nzExpandedKeys]=\"nzDefaultExpandedKeys\"\n      [nzCheckedKeys]=\"nzCheckable ? value : []\"\n      [nzSelectedKeys]=\"!nzCheckable ? value : []\"\n      [nzTreeTemplate]=\"nzTreeTemplate\"\n      (nzExpandChange)=\"onExpandedKeysChange($event)\"\n      (nzClick)=\"nzTreeClick.emit($event)\"\n      (nzCheckedKeysChange)=\"updateSelectedNodes()\"\n      (nzSelectedKeysChange)=\"updateSelectedNodes()\"\n      (nzCheckBoxChange)=\"nzTreeCheckBoxChange.emit($event)\"\n      (nzSearchValueChange)=\"setSearchValues($event)\">\n    </nz-tree>\n    <span *ngIf=\"nzNodes.length === 0 || isNotFound\" class=\"ant-select-not-found\">\n      <nz-embed-empty [nzComponentName]=\"'tree-select'\" [specificContent]=\"nzNotFoundContent\"></nz-embed-empty>\n    </span>\n  </div>\n</ng-template>\n\n<div\n  cdkOverlayOrigin\n  class=\"ant-select-selection\"\n  [class.ant-select-selection--single]=\"!isMultiple\"\n  [class.ant-select-selection--multiple]=\"isMultiple\"\n  tabindex=\"0\">\n  <ng-container *ngIf=\"!isMultiple\">\n    <div class=\"ant-select-selection__rendered\">\n      <div\n        *ngIf=\"nzPlaceHolder && selectedNodes.length === 0\"\n        [style.display]=\"placeHolderDisplay\"\n        class=\"ant-select-selection__placeholder\">\n        {{ nzPlaceHolder }}\n      </div>\n\n      <div\n        *ngIf=\"selectedNodes.length === 1\"\n        class=\"ant-select-selection-selected-value\"\n        [attr.title]=\"nzDisplayWith(selectedNodes[0])\"\n        [ngStyle]=\"selectedValueDisplay\">\n        {{ nzDisplayWith(selectedNodes[0]) }}\n      </div>\n\n      <div\n        *ngIf=\"nzShowSearch\"\n        [style.display]=\"searchDisplay\"\n        class=\"ant-select-search ant-select-search--inline\">\n        <div class=\"ant-select-search__field__wrap\">\n          <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n          <span class=\"ant-select-search__field__mirror\">{{inputValue}}&nbsp;</span>\n        </div>\n      </div>\n\n    </div>\n  </ng-container>\n  <ng-container *ngIf=\"isMultiple\">\n    <ul class=\"ant-select-selection__rendered\">\n      <div\n        *ngIf=\"nzPlaceHolder && selectedNodes.length === 0\"\n        [style.display]=\"placeHolderDisplay\"\n        class=\"ant-select-selection__placeholder\">\n        {{ nzPlaceHolder }}\n      </div>\n      <ng-container *ngFor=\"let node of selectedNodes | slice: 0 : nzMaxTagCount; trackBy:trackValue\">\n        <li\n          [@zoomMotion]\n          [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n          [attr.title]=\"nzDisplayWith(node)\"\n          [class.ant-select-selection__choice__disabled]=\"node.isDisabled\"\n          class=\"ant-select-selection__choice\">\n               <span *ngIf=\"!node.isDisabled\" class=\"ant-select-selection__choice__remove\"\n                 (mousedown)=\"$event.preventDefault()\"\n                 (click)=\"removeSelected(node, true, $event)\">\n                 <i nz-icon nzType=\"close\" class=\"ant-select-remove-icon\"></i>\n               </span>\n          <span class=\"ant-select-selection__choice__content\">{{ nzDisplayWith(node) }}</span>\n        </li>\n      </ng-container>\n      <li [@zoomMotion]\n        *ngIf=\"selectedNodes.length > nzMaxTagCount\"\n        class=\"ant-select-selection__choice\">\n        <div class=\"ant-select-selection__choice__content\">\n          <ng-container *ngIf=\"nzMaxTagPlaceholder\">\n            <ng-template\n              [ngTemplateOutlet]=\"nzMaxTagPlaceholder\"\n              [ngTemplateOutletContext]=\"{ $implicit: selectedNodes | slice: nzMaxTagCount}\">\n            </ng-template>\n          </ng-container>\n          <ng-container *ngIf=\"!nzMaxTagPlaceholder\">\n            + {{ selectedNodes.length - nzMaxTagCount }} ...\n          </ng-container>\n        </div>\n      </li>\n      <li class=\"ant-select-search ant-select-search--inline\">\n        <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n      </li>\n    </ul>\n  </ng-container>\n  <span *ngIf=\"nzAllowClear\" class=\"ant-select-selection__clear\"\n    (mousedown)=\"$event.preventDefault()\"\n    (click)=\"onClearSelection($event)\">\n    <i nz-icon nzType=\"close-circle\" class=\"ant-select-clear-icon\" nzTheme=\"fill\"></i>\n  </span>\n  <span *ngIf=\"!isMultiple\" class=\"ant-select-arrow\">\n    <i nz-icon nzType=\"down\" class=\"ant-select-arrow-icon\"></i>\n  </span>\n</div>",
+                template: "<ng-template #inputTemplate>\n  <input\n    #inputElement\n    autocomplete=\"off\"\n    class=\"ant-select-search__field\"\n    (compositionstart)=\"isComposing = true\"\n    (compositionend)=\"isComposing = false\"\n    (keydown)=\"onKeyDownInput($event)\"\n    [ngModel]=\"inputValue\"\n    (ngModelChange)=\"setInputValue($event)\"\n    [disabled]=\"nzDisabled\">\n</ng-template>\n\n<ng-template\n  cdkConnectedOverlay\n  nzConnectedOverlay\n  [cdkConnectedOverlayOrigin]=\"cdkOverlayOrigin\"\n  [cdkConnectedOverlayOpen]=\"nzOpen\"\n  [cdkConnectedOverlayHasBackdrop]=\"true\"\n  [cdkConnectedOverlayMinWidth]=\"nzDropdownMatchSelectWidth? null : triggerWidth\"\n  [cdkConnectedOverlayWidth]=\"nzDropdownMatchSelectWidth? triggerWidth : null\"\n  (backdropClick)=\"closeDropDown()\"\n  (detach)=\"closeDropDown()\"\n  (positionChange)=\"onPositionChange($event)\">\n  <div class=\"ant-select-dropdown ant-select-tree-dropdown\"\n    [@slideMotion]=\"nzOpen ? dropDownPosition : 'void'\"\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n    [class.ant-select-dropdown--single]=\"!nzMultiple\"\n    [class.ant-select-dropdown--multiple]=\"nzMultiple\"\n    [class.ant-select-dropdown-placement-bottomLeft]=\"dropDownPosition === 'bottom'\"\n    [class.ant-select-dropdown-placement-topLeft]=\"dropDownPosition === 'top'\"\n    [ngStyle]=\"nzDropdownStyle\">\n    <nz-tree\n      #treeRef\n      [hidden]=\"isNotFound\"\n      nzNoAnimation\n      nzSelectMode\n      [nzData]=\"nzNodes\"\n      [nzMultiple]=\"nzMultiple\"\n      [nzSearchValue]=\"inputValue\"\n      [nzHideUnMatched]=\"nzHideUnMatched\"\n      [nzShowIcon]=\"nzShowIcon\"\n      [nzCheckable]=\"nzCheckable\"\n      [nzAsyncData]=\"nzAsyncData\"\n      [nzShowExpand]=\"nzShowExpand\"\n      [nzShowLine]=\"nzShowLine\"\n      [nzExpandedIcon]=\"nzExpandedIcon\"\n      [nzExpandAll]=\"nzDefaultExpandAll\"\n      [nzExpandedKeys]=\"nzDefaultExpandedKeys\"\n      [nzCheckedKeys]=\"nzCheckable ? value : []\"\n      [nzSelectedKeys]=\"!nzCheckable ? value : []\"\n      [nzTreeTemplate]=\"nzTreeTemplate\"\n      (nzExpandChange)=\"onExpandedKeysChange($event)\"\n      (nzClick)=\"nzTreeClick.emit($event)\"\n      (nzCheckedKeysChange)=\"updateSelectedNodes()\"\n      (nzSelectedKeysChange)=\"updateSelectedNodes()\"\n      (nzCheckBoxChange)=\"nzTreeCheckBoxChange.emit($event)\"\n      (nzSearchValueChange)=\"setSearchValues($event)\">\n    </nz-tree>\n    <span *ngIf=\"nzNodes.length === 0 || isNotFound\" class=\"ant-select-not-found\">\n      <nz-embed-empty [nzComponentName]=\"'tree-select'\" [specificContent]=\"nzNotFoundContent\"></nz-embed-empty>\n    </span>\n  </div>\n</ng-template>\n\n<div\n  cdkOverlayOrigin\n  class=\"ant-select-selection\"\n  [class.ant-select-selection--single]=\"!isMultiple\"\n  [class.ant-select-selection--multiple]=\"isMultiple\"\n  tabindex=\"0\">\n  <ng-container *ngIf=\"!isMultiple\">\n    <div class=\"ant-select-selection__rendered\">\n      <div\n        *ngIf=\"nzPlaceHolder && selectedNodes.length === 0\"\n        [style.display]=\"placeHolderDisplay\"\n        class=\"ant-select-selection__placeholder\">\n        {{ nzPlaceHolder }}\n      </div>\n\n      <div\n        *ngIf=\"selectedNodes.length === 1\"\n        class=\"ant-select-selection-selected-value\"\n        [attr.title]=\"nzDisplayWith(selectedNodes[0])\"\n        [ngStyle]=\"selectedValueDisplay\">\n        {{ nzDisplayWith(selectedNodes[0]) }}\n      </div>\n\n      <div\n        *ngIf=\"nzShowSearch\"\n        [style.display]=\"searchDisplay\"\n        class=\"ant-select-search ant-select-search--inline\">\n        <div class=\"ant-select-search__field__wrap\">\n          <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n          <span class=\"ant-select-search__field__mirror\">{{inputValue}}&nbsp;</span>\n        </div>\n      </div>\n\n    </div>\n  </ng-container>\n  <ng-container *ngIf=\"isMultiple\">\n    <ul class=\"ant-select-selection__rendered\">\n      <div\n        *ngIf=\"nzPlaceHolder && selectedNodes.length === 0\"\n        [style.display]=\"placeHolderDisplay\"\n        class=\"ant-select-selection__placeholder\">\n        {{ nzPlaceHolder }}\n      </div>\n      <ng-container *ngFor=\"let node of selectedNodes | slice: 0 : nzMaxTagCount; trackBy:trackValue\">\n        <li\n          [@zoomMotion]\n          [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n          [attr.title]=\"nzDisplayWith(node)\"\n          [class.ant-select-selection__choice__disabled]=\"node.isDisabled\"\n          class=\"ant-select-selection__choice\">\n               <span *ngIf=\"!node.isDisabled\" class=\"ant-select-selection__choice__remove\"\n                 (mousedown)=\"$event.preventDefault()\"\n                 (click)=\"removeSelected(node, true, $event)\">\n                 <i nz-icon nzType=\"close\" class=\"ant-select-remove-icon\"></i>\n               </span>\n          <span class=\"ant-select-selection__choice__content\">{{ nzDisplayWith(node) }}</span>\n        </li>\n      </ng-container>\n      <li [@zoomMotion]\n        *ngIf=\"selectedNodes.length > nzMaxTagCount\"\n        class=\"ant-select-selection__choice\">\n        <div class=\"ant-select-selection__choice__content\">\n          <ng-container *ngIf=\"nzMaxTagPlaceholder\">\n            <ng-template\n              [ngTemplateOutlet]=\"nzMaxTagPlaceholder\"\n              [ngTemplateOutletContext]=\"{ $implicit: selectedNodes | slice: nzMaxTagCount}\">\n            </ng-template>\n          </ng-container>\n          <ng-container *ngIf=\"!nzMaxTagPlaceholder\">\n            + {{ selectedNodes.length - nzMaxTagCount }} ...\n          </ng-container>\n        </div>\n      </li>\n      <li class=\"ant-select-search ant-select-search--inline\">\n        <ng-template [ngTemplateOutlet]=\"inputTemplate\"></ng-template>\n      </li>\n    </ul>\n  </ng-container>\n  <span *ngIf=\"nzAllowClear\" class=\"ant-select-selection__clear\"\n    (mousedown)=\"$event.preventDefault()\"\n    (click)=\"onClearSelection($event)\">\n    <i nz-icon nzType=\"close-circle\" class=\"ant-select-clear-icon\" nzTheme=\"fill\"></i>\n  </span>\n  <span *ngIf=\"!isMultiple\" class=\"ant-select-arrow\">\n    <i nz-icon nzType=\"down\" class=\"ant-select-arrow-icon\"></i>\n  </span>\n</div>",
                 providers: [
                     NzTreeSelectService,
                     {
@@ -43659,6 +45254,7 @@ NzTreeSelectComponent.propDecorators = {
     nzShowLine: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzDropdownMatchSelectWidth: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzCheckable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzHideUnMatched: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzShowIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzShowSearch: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
@@ -43711,6 +45307,10 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], NzTreeSelectComponent.prototype, "nzHideUnMatched", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzTreeSelectComponent.prototype, "nzShowIcon", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
@@ -43735,7 +45335,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeSelectModule {
 }
@@ -43801,7 +45401,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeNodeComponent {
     /**
@@ -43962,7 +45562,11 @@ class NzTreeNodeComponent {
      */
     get displayStyle() {
         // to hide unmatched nodes
-        return this.nzSearchValue && this.nzHideUnMatched && !this.nzTreeNode.isMatched && !this.nzTreeNode.isExpanded
+        return this.nzSearchValue &&
+            this.nzHideUnMatched &&
+            !this.nzTreeNode.isMatched &&
+            !this.nzTreeNode.isExpanded &&
+            this.nzTreeNode.canHide
             ? 'none'
             : '';
     }
@@ -44067,9 +45671,46 @@ class NzTreeNodeComponent {
                 this.nzTreeNode.isLoading = true;
             }
             this.nzTreeNode.isExpanded = !this.nzTreeNode.isExpanded;
+            if (this.nzTreeNode.isMatched) {
+                this.setDisplayForParentNodes(this.nzTreeNode);
+            }
+            this.setDisplayForChildNodes(this.nzTreeNode);
             /** @type {?} */
             const eventNext = this.nzTreeService.formatEvent('expand', this.nzTreeNode, event);
             (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
+        }
+    }
+    /**
+     * @private
+     * @param {?} parentNode
+     * @return {?}
+     */
+    setDisplayForChildNodes(parentNode) {
+        const { children } = parentNode;
+        if (children.length > 0) {
+            children.map((/**
+             * @param {?} node
+             * @return {?}
+             */
+            node => {
+                /** @type {?} */
+                const canHide = !node.isMatched;
+                node.canHide = canHide;
+                this.setDisplayForChildNodes(node);
+            }));
+        }
+    }
+    /**
+     * @private
+     * @param {?} targetNode
+     * @return {?}
+     */
+    setDisplayForParentNodes(targetNode) {
+        /** @type {?} */
+        const parentNode = targetNode.getParentNode();
+        if (parentNode) {
+            parentNode.canHide = false;
+            this.setDisplayForParentNodes(parentNode);
         }
     }
     /**
@@ -44447,7 +46088,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeService extends ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzTreeBaseService"] {
 }
@@ -44457,7 +46098,7 @@ NzTreeService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * @param {?} higherOrderService
@@ -44906,7 +46547,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeModule {
 }
@@ -44968,7 +46609,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTextCopyComponent {
     /**
@@ -45067,7 +46708,7 @@ NzTextCopyComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTextEditComponent {
     /**
@@ -45189,7 +46830,7 @@ NzTextEditComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTypographyComponent {
     /**
@@ -45197,18 +46838,18 @@ class NzTypographyComponent {
      * @param {?} cdr
      * @param {?} viewContainerRef
      * @param {?} renderer
-     * @param {?} ngZone
      * @param {?} platform
      * @param {?} i18n
+     * @param {?} nzDomEventService
      */
-    constructor(host, cdr, viewContainerRef, renderer, ngZone, platform, i18n) {
+    constructor(host, cdr, viewContainerRef, renderer, platform, i18n, nzDomEventService) {
         this.host = host;
         this.cdr = cdr;
         this.viewContainerRef = viewContainerRef;
         this.renderer = renderer;
-        this.ngZone = ngZone;
         this.platform = platform;
         this.i18n = i18n;
+        this.nzDomEventService = nzDomEventService;
         this.nzCopyable = false;
         this.nzEditable = false;
         this.nzDisabled = false;
@@ -45368,17 +47009,16 @@ class NzTypographyComponent {
             this.windowResizeSubscription.unsubscribe();
             this.cssEllipsis = this.canUseCSSEllipsis();
             this.renderOnNextFrame();
-            this.ngZone.runOutsideAngular((/**
+            this.windowResizeSubscription = this.nzDomEventService
+                .registerResizeListener()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["finalize"])((/**
              * @return {?}
              */
-            () => {
-                this.windowResizeSubscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["fromEvent"])(window, 'resize')
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["auditTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$))
-                    .subscribe((/**
-                 * @return {?}
-                 */
-                () => this.renderOnNextFrame()));
-            }));
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.renderOnNextFrame()));
         }
     }
     /**
@@ -45459,9 +47099,9 @@ NzTypographyComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
     { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_10__["Platform"] },
-    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nService"] }
+    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nService"] },
+    { type: ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_2__["NzDomEventService"] }
 ];
 NzTypographyComponent.propDecorators = {
     nzCopyable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -45505,7 +47145,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTypographyModule {
 }
@@ -45587,7 +47227,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadBtnComponent {
     // #endregion
@@ -46066,7 +47706,7 @@ NzUploadBtnComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadListComponent {
     // #endregion
@@ -46317,7 +47957,7 @@ NzUploadListComponent.propDecorators = {
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadComponent {
     // #endregion
@@ -46783,7 +48423,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadModule {
 }
@@ -46801,17 +48441,43 @@ NzUploadModule.decorators = [
 
 /***/ }),
 
+/***/ "./publish/fesm2015/ng-zorro-antd-version.js":
+/*!***************************************************!*\
+  !*** ./publish/fesm2015/ng-zorro-antd-version.js ***!
+  \***************************************************/
+/*! exports provided: VERSION */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "@angular/core");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_core__WEBPACK_IMPORTED_MODULE_0__);
+
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('8.1.0');
+
+
+//# sourceMappingURL=ng-zorro-antd-version.js.map
+
+
+/***/ }),
+
 /***/ "./publish/fesm2015/ng-zorro-antd.js":
 /*!*******************************************!*\
   !*** ./publish/fesm2015/ng-zorro-antd.js ***!
   \*******************************************/
-/*! exports provided: NzAffixComponent, NzAffixModule, NzAlertComponent, NzAlertModule, NzAnchorComponent, NzAnchorLinkComponent, NzAnchorModule, NZ_AUTOCOMPLETE_VALUE_ACCESSOR, NzAutocompleteComponent, NzAutocompleteModule, NzAutocompleteOptgroupComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzOptionSelectionChange, getNzAutocompleteMissingPanelError, NzAvatarComponent, NzAvatarModule, NzBackTopComponent, NzBackTopModule, NzBadgeComponent, NzBadgeModule, NZ_ROUTE_DATA_BREADCRUMB, NzBreadCrumbComponent, NzBreadCrumbItemComponent, NzBreadCrumbModule, NzButtonComponent, NzButtonGroupComponent, NzButtonModule, NzCalendarComponent, NzCalendarHeaderComponent, NzCalendarModule, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective, NzCardComponent, NzCardGridDirective, NzCardLoadingComponent, NzCardMetaComponent, NzCardModule, NzCardTabComponent, NZ_CAROUSEL_CUSTOM_STRATEGIES, NzCarouselBaseStrategy, NzCarouselComponent, NzCarouselContentDirective, NzCarouselModule, NzCascaderComponent, NzCascaderModule, NzCascaderOptionComponent, NzCascaderService, isChildOption, isParentOption, isShowSearchObject, NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxModule, NzCheckboxWrapperComponent, NzCollapseComponent, NzCollapseModule, NzCollapsePanelComponent, NzCommentActionComponent, NzCommentActionHostDirective, NzCommentAvatarDirective, NzCommentComponent, NzCommentContentDirective, NzCommentModule, AnimationCurves, AnimationDuration, Breakpoint, DEFAULT_CASCADER_POSITIONS, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzClassListAddDirective, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDropdownHigherOrderServiceToken, NzMeasureScrollbarService, NzMeasureScrollbarServiceModule, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzScrollService, NzStringTemplateOutletDirective, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, helpMotion, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, moveUpMotion, notificationMotion, padEnd, padStart, properties, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, throttleByAnimationFrameDecorator, timeUnits, toArray, toBoolean, toCssPixel, toNumber, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion, CandyDate, NzDatePickerComponent, NzDatePickerModule, NzMonthPickerComponent, NzRangePickerComponent, NzWeekPickerComponent, NzYearPickerComponent, ɵa, ɵb, ɵc, ɵd, ɵe, ɵf, ɵg, ɵh, ɵi, ɵj, ɵk, ɵl, ɵm, ɵn, ɵo, ɵp, ɵq, ɵr, NzDescriptionsComponent, NzDescriptionsItemComponent, NzDescriptionsModule, NzDividerComponent, NzDividerModule, DRAWER_ANIMATE_DURATION, DrawerBuilderForService, NzDrawerComponent, NzDrawerModule, NzDrawerRef, NzDrawerService, NzDrawerServiceModule, NzContextMenuService, NzContextMenuServiceModule, NzDropDownADirective, NzDropDownButtonComponent, NzDropDownComponent, NzDropDownDirective, NzDropDownModule, NzDropdownContextComponent, NzDropdownMenuComponent, NzDropdownService, NzDropdownServiceModule, NzMenuDropdownService, dropdownMenuServiceFactory, menuServiceFactory, NZ_DEFAULT_EMPTY_CONTENT, NZ_EMPTY_COMPONENT_NAME, NzEmbedEmptyComponent, NzEmptyComponent, NzEmptyModule, NzEmptyService, emptyImage, simpleEmptyImage, NzFormControlComponent, NzFormDirective, NzFormExplainComponent, NzFormExtraComponent, NzFormItemComponent, NzFormLabelComponent, NzFormModule, NzFormSplitComponent, NzFormTextComponent, NzColDirective, NzGridModule, NzRowDirective, DATE_HELPER_SERVICE_FACTORY, DateHelperByDateFns, DateHelperByDatePipe, DateHelperService, NZ_DATE_CONFIG, NZ_DATE_LOCALE, NZ_I18N, NzI18nModule, NzI18nPipe, NzI18nService, ar_EG, bg_BG, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_GB, en_US, es_ES, et_EE, fa_IR, fi_FI, fr_BE, fr_FR, is_IS, it_IT, ja_JP, ko_KR, nb_NO, nl_BE, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, sk_SK, sl_SI, sr_RS, sv_SE, th_TH, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, DEFAULT_TWOTONE_COLOR, NZ_ICONS, NZ_ICONS_USED_BY_ZORRO, NZ_ICON_DEFAULT_TWOTONE_COLOR, NzIconDirective, NzIconModule, NzIconService, NzAutosizeDirective, NzInputDirective, NzInputGroupComponent, NzInputModule, isAutoSizeType, NzInputNumberComponent, NzInputNumberModule, NzContentComponent, NzFooterComponent, NzHeaderComponent, NzLayoutComponent, NzLayoutModule, NzSiderComponent, NzListComponent, NzListItemComponent, NzListItemMetaComponent, NzListModule, NZ_MENTION_TRIGGER_ACCESSOR, NzMentionComponent, NzMentionModule, NzMentionService, NzMentionSuggestionDirective, NzMentionTriggerDirective, NzMenuDirective, NzMenuDividerDirective, NzMenuGroupComponent, NzMenuItemDirective, NzMenuModule, NzMenuService, NzMenuServiceFactory, NzSubMenuComponent, NzSubmenuService, NZ_MESSAGE_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER, NzMessageBaseService, NzMessageComponent, NzMessageContainerComponent, NzMessageModule, NzMessageService, CssUnitPipe, NZ_MODAL_CONFIG, NzModalComponent, NzModalControlService, NzModalControlServiceModule, NzModalModule, NzModalRef, NzModalService, NzModalServiceModule, NZ_NOTIFICATION_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER, NzNotificationComponent, NzNotificationContainerComponent, NzNotificationModule, NzNotificationService, NzPageHeaderBreadcrumbDirective, NzPageHeaderComponent, NzPageHeaderContentDirective, NzPageHeaderExtraDirective, NzPageHeaderFooterDirective, NzPageHeaderModule, NzPageHeaderSubtitleDirective, NzPageHeaderTagDirective, NzPageHeaderTitleDirective, NzPaginationComponent, NzPaginationModule, NzPopconfirmComponent, NzPopconfirmDirective, NzPopconfirmModule, NzPopoverComponent, NzPopoverDirective, NzPopoverModule, NzProgressComponent, NzProgressModule, NzRadioButtonComponent, NzRadioComponent, NzRadioGroupComponent, NzRadioModule, NzRateComponent, NzRateItemComponent, NzRateModule, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzOptionComponent, NzOptionContainerComponent, NzOptionGroupComponent, NzOptionLiComponent, NzSelectComponent, NzSelectModule, NzSelectService, NzSelectTopControlComponent, NzSelectUnselectableDirective, defaultFilterOption, NzSkeletonComponent, NzSkeletonModule, Marks, NzSliderComponent, NzSliderHandleComponent, NzSliderMarksComponent, NzSliderModule, NzSliderStepComponent, NzSliderTrackComponent, isConfigAObject, isValueARange, NzSpinComponent, NzSpinModule, NzCountdownComponent, NzStatisticComponent, NzStatisticModule, NzStatisticNumberComponent, NzTimeRangePipe, NzStepComponent, NzStepsComponent, NzStepsModule, NzSwitchComponent, NzSwitchModule, NzTableComponent, NzTableModule, NzTbodyDirective, NzTdComponent, NzThComponent, NzTheadComponent, NzTrDirective, NzVirtualScrollDirective, NzTabBodyComponent, NzTabChangeEvent, NzTabComponent, NzTabDirective, NzTabLabelDirective, NzTabSetComponent, NzTabsInkBarDirective, NzTabsModule, NzTabsNavComponent, NzTagComponent, NzTagModule, NzTimePickerComponent, NzTimePickerModule, NzTimePickerPanelComponent, NzTimeValueAccessorDirective, NzTimelineComponent, NzTimelineItemComponent, NzTimelineModule, NzToolTipComponent, NzToolTipModule, NzTooltipDirective, NzTransferComponent, NzTransferListComponent, NzTransferModule, NzTransferSearchComponent, NzTreeComponent, NzTreeModule, NzTreeNodeComponent, NzTreeService, NzTreeServiceFactory, NzTreeSelectComponent, NzTreeSelectModule, NzTreeSelectService, higherOrderServiceFactory, NzTextCopyComponent, NzTextEditComponent, NzTypographyComponent, NzTypographyModule, NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule, NgZorroAntdModule, VERSION */
+/*! exports provided: NzAffixComponent, NzAffixModule, NzAlertComponent, NzAlertModule, NzAnchorComponent, NzAnchorLinkComponent, NzAnchorModule, NZ_AUTOCOMPLETE_VALUE_ACCESSOR, NzAutocompleteComponent, NzAutocompleteModule, NzAutocompleteOptgroupComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzOptionSelectionChange, getNzAutocompleteMissingPanelError, NzAvatarComponent, NzAvatarModule, NzBackTopComponent, NzBackTopModule, NzBadgeComponent, NzBadgeModule, NZ_ROUTE_DATA_BREADCRUMB, NzBreadCrumbComponent, NzBreadCrumbItemComponent, NzBreadCrumbModule, NzButtonComponent, NzButtonGroupComponent, NzButtonModule, NzCalendarComponent, NzCalendarHeaderComponent, NzCalendarModule, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective, NzCardComponent, NzCardGridDirective, NzCardLoadingComponent, NzCardMetaComponent, NzCardModule, NzCardTabComponent, NZ_CAROUSEL_CUSTOM_STRATEGIES, NzCarouselBaseStrategy, NzCarouselComponent, NzCarouselContentDirective, NzCarouselModule, NzCascaderComponent, NzCascaderModule, NzCascaderOptionComponent, NzCascaderService, isChildOption, isParentOption, isShowSearchObject, NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxModule, NzCheckboxWrapperComponent, NzCollapseComponent, NzCollapseModule, NzCollapsePanelComponent, NzCommentActionComponent, NzCommentActionHostDirective, NzCommentAvatarDirective, NzCommentComponent, NzCommentContentDirective, NzCommentModule, AnimationCurves, AnimationDuration, Breakpoint, DEFAULT_CASCADER_POSITIONS, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzClassListAddDirective, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzDropdownHigherOrderServiceToken, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzScrollService, NzStringTemplateOutletDirective, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, helpMotion, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, measureScrollbar, moveUpMotion, notificationMotion, padEnd, padStart, properties, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, throttleByAnimationFrameDecorator, timeUnits, toArray, toBoolean, toCssPixel, toNumber, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion, CandyDate, NzDatePickerComponent, NzDatePickerModule, NzMonthPickerComponent, NzRangePickerComponent, NzWeekPickerComponent, NzYearPickerComponent, ɵa, ɵb, ɵc, ɵd, ɵe, ɵf, ɵg, ɵh, ɵi, ɵj, ɵk, ɵl, ɵm, ɵn, ɵo, ɵp, ɵq, ɵr, NzDescriptionsComponent, NzDescriptionsItemComponent, NzDescriptionsModule, NzDividerComponent, NzDividerModule, DRAWER_ANIMATE_DURATION, DrawerBuilderForService, NzDrawerComponent, NzDrawerModule, NzDrawerRef, NzDrawerService, NzDrawerServiceModule, NzContextMenuService, NzContextMenuServiceModule, NzDropDownADirective, NzDropDownButtonComponent, NzDropDownComponent, NzDropDownDirective, NzDropDownModule, NzDropdownContextComponent, NzDropdownMenuComponent, NzDropdownService, NzDropdownServiceModule, NzMenuDropdownService, dropdownMenuServiceFactory, menuServiceFactory, NZ_DEFAULT_EMPTY_CONTENT, NZ_EMPTY_COMPONENT_NAME, NzEmbedEmptyComponent, NzEmptyComponent, NzEmptyModule, NzEmptyService, emptyImage, simpleEmptyImage, NzFormControlComponent, NzFormDirective, NzFormExplainComponent, NzFormExtraComponent, NzFormItemComponent, NzFormLabelComponent, NzFormModule, NzFormSplitComponent, NzFormTextComponent, NzColDirective, NzGridModule, NzRowDirective, DATE_HELPER_SERVICE_FACTORY, DateHelperByDateFns, DateHelperByDatePipe, DateHelperService, NZ_DATE_CONFIG, NZ_DATE_LOCALE, NZ_I18N, NzI18nModule, NzI18nPipe, NzI18nService, ar_EG, bg_BG, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_GB, en_US, es_ES, et_EE, fa_IR, fi_FI, fr_BE, fr_FR, is_IS, it_IT, ja_JP, ko_KR, nb_NO, nl_BE, nl_NL, pl_PL, pt_BR, pt_PT, ru_RU, sk_SK, sl_SI, sr_RS, sv_SE, th_TH, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW, DEFAULT_TWOTONE_COLOR, NZ_ICONS, NZ_ICONS_USED_BY_ZORRO, NZ_ICON_DEFAULT_TWOTONE_COLOR, NzIconDirective, NzIconModule, NzIconService, NzAutosizeDirective, NzInputDirective, NzInputGroupComponent, NzInputModule, isAutoSizeType, NzInputNumberComponent, NzInputNumberModule, NzContentComponent, NzFooterComponent, NzHeaderComponent, NzLayoutComponent, NzLayoutModule, NzSiderComponent, NzListComponent, NzListItemComponent, NzListItemMetaComponent, NzListModule, NZ_MENTION_TRIGGER_ACCESSOR, NzMentionComponent, NzMentionModule, NzMentionService, NzMentionSuggestionDirective, NzMentionTriggerDirective, NzMenuDirective, NzMenuDividerDirective, NzMenuGroupComponent, NzMenuItemDirective, NzMenuModule, NzMenuService, NzMenuServiceFactory, NzSubMenuComponent, NzSubmenuService, NZ_MESSAGE_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER, NzMessageBaseService, NzMessageComponent, NzMessageContainerComponent, NzMessageModule, NzMessageService, NzMessageServiceModule, CssUnitPipe, NZ_MODAL_CONFIG, NzModalComponent, NzModalControlService, NzModalControlServiceModule, NzModalFooterDirective, NzModalModule, NzModalRef, NzModalService, NzModalServiceModule, NZ_NOTIFICATION_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER, NzNotificationComponent, NzNotificationContainerComponent, NzNotificationModule, NzNotificationService, NzNotificationServiceModule, NzPageHeaderBreadcrumbDirective, NzPageHeaderComponent, NzPageHeaderContentDirective, NzPageHeaderExtraDirective, NzPageHeaderFooterDirective, NzPageHeaderModule, NzPageHeaderSubtitleDirective, NzPageHeaderTagDirective, NzPageHeaderTitleDirective, NzPaginationComponent, NzPaginationModule, NzPopconfirmComponent, NzPopconfirmDirective, NzPopconfirmModule, NzPopoverComponent, NzPopoverDirective, NzPopoverModule, NzProgressComponent, NzProgressModule, NzRadioButtonComponent, NzRadioComponent, NzRadioGroupComponent, NzRadioModule, NzRateComponent, NzRateItemComponent, NzRateModule, NzResultComponent, NzResultContentDirective, NzResultExtraDirective, NzResultIconDirective, NzResultModule, NzResultSubtitleDirective, NzResultTitleDirective, θNzResultNotFoundComponent, θNzResultServerErrorComponent, θNzResultUnauthorizedComponent, NzFilterGroupOptionPipe, NzFilterOptionPipe, NzOptionComponent, NzOptionContainerComponent, NzOptionGroupComponent, NzOptionLiComponent, NzSelectComponent, NzSelectModule, NzSelectService, NzSelectTopControlComponent, NzSelectUnselectableDirective, defaultFilterOption, NzSkeletonComponent, NzSkeletonModule, Marks, NzSliderComponent, NzSliderHandleComponent, NzSliderMarksComponent, NzSliderModule, NzSliderStepComponent, NzSliderTrackComponent, isConfigAObject, isValueARange, NzSpinComponent, NzSpinModule, NzCountdownComponent, NzStatisticComponent, NzStatisticModule, NzStatisticNumberComponent, NzTimeRangePipe, NzStepComponent, NzStepsComponent, NzStepsModule, NzSwitchComponent, NzSwitchModule, NzTableComponent, NzTableModule, NzTbodyDirective, NzTdComponent, NzThComponent, NzTheadComponent, NzTrDirective, NzVirtualScrollDirective, NzTabBodyComponent, NzTabChangeEvent, NzTabComponent, NzTabDirective, NzTabLabelDirective, NzTabLinkDirective, NzTabSetComponent, NzTabsInkBarDirective, NzTabsModule, NzTabsNavComponent, NzTagComponent, NzTagModule, NzTimePickerComponent, NzTimePickerModule, NzTimePickerPanelComponent, NzTimeValueAccessorDirective, NzTimelineComponent, NzTimelineItemComponent, NzTimelineModule, NzToolTipComponent, NzToolTipModule, NzTooltipDirective, NzTransferComponent, NzTransferListComponent, NzTransferModule, NzTransferSearchComponent, NzTreeComponent, NzTreeModule, NzTreeNodeComponent, NzTreeService, NzTreeServiceFactory, NzTreeSelectComponent, NzTreeSelectModule, NzTreeSelectService, higherOrderServiceFactory, NzTextCopyComponent, NzTextEditComponent, NzTypographyComponent, NzTypographyModule, NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule, VERSION, NgZorroAntdModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgZorroAntdModule", function() { return NgZorroAntdModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "@angular/core");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_angular_core__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/fesm2015/ng-zorro-antd-affix.js");
@@ -47005,11 +48671,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzCopyToClipboardServiceModule", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzCopyToClipboardServiceModule"]; });
 
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzDomEventService", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzDomEventService"]; });
+
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzDropdownHigherOrderServiceToken", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzDropdownHigherOrderServiceToken"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzMeasureScrollbarService", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzMeasureScrollbarService"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzMeasureScrollbarServiceModule", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzMeasureScrollbarServiceModule"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzMenuBaseService", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzMenuBaseService"]; });
 
@@ -47128,6 +48792,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "log", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["log"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "measure", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["measure"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "measureScrollbar", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["measureScrollbar"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "moveUpMotion", function() { return ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["moveUpMotion"]; });
 
@@ -47530,6 +49196,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzMessageService", function() { return ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_34__["NzMessageService"]; });
 
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzMessageServiceModule", function() { return ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_34__["NzMessageServiceModule"]; });
+
 /* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ng-zorro-antd/modal */ "./publish/fesm2015/ng-zorro-antd-modal.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CssUnitPipe", function() { return ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["CssUnitPipe"]; });
 
@@ -47540,6 +49208,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzModalControlService", function() { return ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalControlService"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzModalControlServiceModule", function() { return ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalControlServiceModule"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzModalFooterDirective", function() { return ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalFooterDirective"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzModalModule", function() { return ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalModule"]; });
 
@@ -47563,6 +49233,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzNotificationModule", function() { return ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_36__["NzNotificationModule"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzNotificationService", function() { return ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_36__["NzNotificationService"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzNotificationServiceModule", function() { return ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_36__["NzNotificationServiceModule"]; });
 
 /* harmony import */ var ng_zorro_antd_page_header__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ng-zorro-antd/page-header */ "./publish/fesm2015/ng-zorro-antd-page-header.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzPageHeaderBreadcrumbDirective", function() { return ng_zorro_antd_page_header__WEBPACK_IMPORTED_MODULE_37__["NzPageHeaderBreadcrumbDirective"]; });
@@ -47623,193 +49295,222 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzRateModule", function() { return ng_zorro_antd_rate__WEBPACK_IMPORTED_MODULE_43__["NzRateModule"]; });
 
-/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ng-zorro-antd/select */ "./publish/fesm2015/ng-zorro-antd-select.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzFilterGroupOptionPipe", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzFilterGroupOptionPipe"]; });
+/* harmony import */ var ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ng-zorro-antd/result */ "./publish/fesm2015/ng-zorro-antd-result.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultComponent", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzFilterOptionPipe", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzFilterOptionPipe"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultContentDirective", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultContentDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzOptionComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultExtraDirective", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultExtraDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionContainerComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzOptionContainerComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultIconDirective", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultIconDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionGroupComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzOptionGroupComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultModule", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionLiComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzOptionLiComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultSubtitleDirective", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultSubtitleDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzResultTitleDirective", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultTitleDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectModule", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "θNzResultNotFoundComponent", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["θNzResultNotFoundComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectService", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectService"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "θNzResultServerErrorComponent", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["θNzResultServerErrorComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectTopControlComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectTopControlComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "θNzResultUnauthorizedComponent", function() { return ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["θNzResultUnauthorizedComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectUnselectableDirective", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectUnselectableDirective"]; });
+/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ng-zorro-antd/select */ "./publish/fesm2015/ng-zorro-antd-select.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzFilterGroupOptionPipe", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzFilterGroupOptionPipe"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defaultFilterOption", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["defaultFilterOption"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzFilterOptionPipe", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzFilterOptionPipe"]; });
 
-/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/fesm2015/ng-zorro-antd-skeleton.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSkeletonComponent", function() { return ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_45__["NzSkeletonComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzOptionComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSkeletonModule", function() { return ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_45__["NzSkeletonModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionContainerComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzOptionContainerComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/fesm2015/ng-zorro-antd-slider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Marks", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["Marks"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionGroupComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzOptionGroupComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzOptionLiComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzOptionLiComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderHandleComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderHandleComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderMarksComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderMarksComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectModule", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderModule", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectService", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectService"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderStepComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderStepComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectTopControlComponent", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectTopControlComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderTrackComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderTrackComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSelectUnselectableDirective", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectUnselectableDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isConfigAObject", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["isConfigAObject"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defaultFilterOption", function() { return ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["defaultFilterOption"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isValueARange", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["isValueARange"]; });
+/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/fesm2015/ng-zorro-antd-skeleton.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSkeletonComponent", function() { return ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_46__["NzSkeletonComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/fesm2015/ng-zorro-antd-spin.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSpinComponent", function() { return ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_47__["NzSpinComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSkeletonModule", function() { return ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_46__["NzSkeletonModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSpinModule", function() { return ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_47__["NzSpinModule"]; });
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/fesm2015/ng-zorro-antd-slider.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Marks", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["Marks"]; });
 
-/* harmony import */ var ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ng-zorro-antd/statistic */ "./publish/fesm2015/ng-zorro-antd-statistic.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzCountdownComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzCountdownComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzStatisticComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderHandleComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderHandleComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticModule", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzStatisticModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderMarksComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderMarksComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticNumberComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzStatisticNumberComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderModule", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimeRangePipe", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzTimeRangePipe"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderStepComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderStepComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/fesm2015/ng-zorro-antd-steps.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepComponent", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_49__["NzStepComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSliderTrackComponent", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderTrackComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepsComponent", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_49__["NzStepsComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isConfigAObject", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["isConfigAObject"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepsModule", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_49__["NzStepsModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isValueARange", function() { return ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["isValueARange"]; });
 
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/fesm2015/ng-zorro-antd-switch.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSwitchComponent", function() { return ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_50__["NzSwitchComponent"]; });
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/fesm2015/ng-zorro-antd-spin.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSpinComponent", function() { return ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_48__["NzSpinComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSwitchModule", function() { return ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_50__["NzSwitchModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSpinModule", function() { return ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_48__["NzSpinModule"]; });
 
-/* harmony import */ var ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ng-zorro-antd/table */ "./publish/fesm2015/ng-zorro-antd-table.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTableComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTableComponent"]; });
+/* harmony import */ var ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ng-zorro-antd/statistic */ "./publish/fesm2015/ng-zorro-antd-statistic.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzCountdownComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzCountdownComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTableModule", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTableModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzStatisticComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTbodyDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTbodyDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticModule", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzStatisticModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTdComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTdComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStatisticNumberComponent", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzStatisticNumberComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzThComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzThComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimeRangePipe", function() { return ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzTimeRangePipe"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTheadComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTheadComponent"]; });
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/fesm2015/ng-zorro-antd-steps.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepComponent", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_50__["NzStepComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTrDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTrDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepsComponent", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_50__["NzStepsComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzVirtualScrollDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzVirtualScrollDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzStepsModule", function() { return ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_50__["NzStepsModule"]; });
 
-/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "./publish/fesm2015/ng-zorro-antd-tabs.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabBodyComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabBodyComponent"]; });
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/fesm2015/ng-zorro-antd-switch.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSwitchComponent", function() { return ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_51__["NzSwitchComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabChangeEvent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabChangeEvent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzSwitchModule", function() { return ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_51__["NzSwitchModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabComponent"]; });
+/* harmony import */ var ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ng-zorro-antd/table */ "./publish/fesm2015/ng-zorro-antd-table.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTableComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTableComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTableModule", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTableModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabLabelDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabLabelDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTbodyDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTbodyDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabSetComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabSetComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTdComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTdComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsInkBarDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabsInkBarDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzThComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzThComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsModule", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabsModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTheadComponent", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTheadComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsNavComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabsNavComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTrDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTrDirective"]; });
 
-/* harmony import */ var ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ng-zorro-antd/tag */ "./publish/fesm2015/ng-zorro-antd-tag.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTagComponent", function() { return ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_53__["NzTagComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzVirtualScrollDirective", function() { return ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzVirtualScrollDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTagModule", function() { return ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_53__["NzTagModule"]; });
+/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "./publish/fesm2015/ng-zorro-antd-tabs.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabBodyComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabBodyComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ng-zorro-antd/time-picker */ "./publish/fesm2015/ng-zorro-antd-time-picker.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerComponent", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__["NzTimePickerComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabChangeEvent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabChangeEvent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerModule", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__["NzTimePickerModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerPanelComponent", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__["NzTimePickerPanelComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimeValueAccessorDirective", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__["NzTimeValueAccessorDirective"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabLabelDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabLabelDirective"]; });
 
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineComponent", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_55__["NzTimelineComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabLinkDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabLinkDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineItemComponent", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_55__["NzTimelineItemComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabSetComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabSetComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineModule", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_55__["NzTimelineModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsInkBarDirective", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabsInkBarDirective"]; });
 
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzToolTipComponent", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_56__["NzToolTipComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsModule", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabsModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzToolTipModule", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_56__["NzToolTipModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTabsNavComponent", function() { return ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabsNavComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTooltipDirective", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_56__["NzTooltipDirective"]; });
+/* harmony import */ var ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ng-zorro-antd/tag */ "./publish/fesm2015/ng-zorro-antd-tag.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTagComponent", function() { return ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_54__["NzTagComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ng-zorro-antd/transfer */ "./publish/fesm2015/ng-zorro-antd-transfer.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__["NzTransferComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTagModule", function() { return ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_54__["NzTagModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferListComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__["NzTransferListComponent"]; });
+/* harmony import */ var ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ng-zorro-antd/time-picker */ "./publish/fesm2015/ng-zorro-antd-time-picker.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerComponent", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__["NzTimePickerComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferModule", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__["NzTransferModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerModule", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__["NzTimePickerModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferSearchComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__["NzTransferSearchComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimePickerPanelComponent", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__["NzTimePickerPanelComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ng-zorro-antd/tree */ "./publish/fesm2015/ng-zorro-antd-tree.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeComponent", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimeValueAccessorDirective", function() { return ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__["NzTimeValueAccessorDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeModule", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeModule"]; });
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/fesm2015/ng-zorro-antd-timeline.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineComponent", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_56__["NzTimelineComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeNodeComponent", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeNodeComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineItemComponent", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_56__["NzTimelineItemComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeService", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeService"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTimelineModule", function() { return ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_56__["NzTimelineModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeServiceFactory", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeServiceFactory"]; });
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/fesm2015/ng-zorro-antd-tooltip.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzToolTipComponent", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_57__["NzToolTipComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ng-zorro-antd/tree-select */ "./publish/fesm2015/ng-zorro-antd-tree-select.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectComponent", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__["NzTreeSelectComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzToolTipModule", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_57__["NzToolTipModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectModule", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__["NzTreeSelectModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTooltipDirective", function() { return ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_57__["NzTooltipDirective"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectService", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__["NzTreeSelectService"]; });
+/* harmony import */ var ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ng-zorro-antd/transfer */ "./publish/fesm2015/ng-zorro-antd-transfer.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__["NzTransferComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "higherOrderServiceFactory", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__["higherOrderServiceFactory"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferListComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__["NzTransferListComponent"]; });
 
-/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ng-zorro-antd/typography */ "./publish/fesm2015/ng-zorro-antd-typography.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTextCopyComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__["NzTextCopyComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferModule", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__["NzTransferModule"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTextEditComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__["NzTextEditComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTransferSearchComponent", function() { return ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__["NzTransferSearchComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTypographyComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__["NzTypographyComponent"]; });
+/* harmony import */ var ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ng-zorro-antd/tree */ "./publish/fesm2015/ng-zorro-antd-tree.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeComponent", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTypographyModule", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__["NzTypographyModule"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeModule", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeModule"]; });
 
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/fesm2015/ng-zorro-antd-upload.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadBtnComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__["NzUploadBtnComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeNodeComponent", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeNodeComponent"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__["NzUploadComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeService", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeService"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadListComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__["NzUploadListComponent"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeServiceFactory", function() { return ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeServiceFactory"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadModule", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__["NzUploadModule"]; });
+/* harmony import */ var ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ng-zorro-antd/tree-select */ "./publish/fesm2015/ng-zorro-antd-tree-select.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectComponent", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__["NzTreeSelectComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectModule", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__["NzTreeSelectModule"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTreeSelectService", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__["NzTreeSelectService"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "higherOrderServiceFactory", function() { return ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__["higherOrderServiceFactory"]; });
+
+/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ng-zorro-antd/typography */ "./publish/fesm2015/ng-zorro-antd-typography.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTextCopyComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__["NzTextCopyComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTextEditComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__["NzTextEditComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTypographyComponent", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__["NzTypographyComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzTypographyModule", function() { return ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__["NzTypographyModule"]; });
+
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/fesm2015/ng-zorro-antd-upload.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadBtnComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__["NzUploadBtnComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__["NzUploadComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadListComponent", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__["NzUploadListComponent"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "NzUploadModule", function() { return ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__["NzUploadModule"]; });
+
+/* harmony import */ var ng_zorro_antd_version__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ng-zorro-antd/version */ "./publish/fesm2015/ng-zorro-antd-version.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return ng_zorro_antd_version__WEBPACK_IMPORTED_MODULE_63__["VERSION"]; });
+
+
+
 
 
 
@@ -47937,14 +49638,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const VERSION = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["Version"]('8.0.3');
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NgZorroAntdModule {
     /**
@@ -47961,69 +49655,70 @@ class NgZorroAntdModule {
 NgZorroAntdModule.decorators = [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"], args: [{
                 exports: [
-                    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_9__["NzButtonModule"],
-                    ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__["NzCalendarModule"],
-                    ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_25__["NzGridModule"],
-                    ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_50__["NzSwitchModule"],
-                    ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_44__["NzSelectModule"],
-                    ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_33__["NzMenuModule"],
-                    ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_32__["NzMentionModule"],
-                    ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorModule"],
                     ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_1__["NzAffixModule"],
-                    ng_zorro_antd_dropdown__WEBPACK_IMPORTED_MODULE_22__["NzDropDownModule"],
-                    ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_30__["NzLayoutModule"],
-                    ng_zorro_antd_breadcrumb__WEBPACK_IMPORTED_MODULE_8__["NzBreadCrumbModule"],
-                    ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_38__["NzPaginationModule"],
-                    ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_49__["NzStepsModule"],
-                    ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_28__["NzInputModule"],
-                    ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_14__["NzCheckboxModule"],
-                    ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_29__["NzInputNumberModule"],
-                    ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_46__["NzSliderModule"],
-                    ng_zorro_antd_rate__WEBPACK_IMPORTED_MODULE_43__["NzRateModule"],
-                    ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_7__["NzBadgeModule"],
-                    ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_42__["NzRadioModule"],
                     ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertModule"],
-                    ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_47__["NzSpinModule"],
-                    ng_zorro_antd_page_header__WEBPACK_IMPORTED_MODULE_37__["NzPageHeaderModule"],
-                    ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_41__["NzProgressModule"],
-                    ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_52__["NzTabsModule"],
-                    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_27__["NzIconModule"],
-                    ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_11__["NzCardModule"],
+                    ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorModule"],
+                    ng_zorro_antd_auto_complete__WEBPACK_IMPORTED_MODULE_4__["NzAutocompleteModule"],
                     ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_5__["NzAvatarModule"],
-                    ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_55__["NzTimelineModule"],
-                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzTransButtonModule"],
-                    ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_57__["NzTransferModule"],
+                    ng_zorro_antd_back_top__WEBPACK_IMPORTED_MODULE_6__["NzBackTopModule"],
+                    ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_7__["NzBadgeModule"],
+                    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_9__["NzButtonModule"],
+                    ng_zorro_antd_breadcrumb__WEBPACK_IMPORTED_MODULE_8__["NzBreadCrumbModule"],
+                    ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__["NzCalendarModule"],
+                    ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_11__["NzCardModule"],
                     ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_12__["NzCarouselModule"],
+                    ng_zorro_antd_cascader__WEBPACK_IMPORTED_MODULE_13__["NzCascaderModule"],
+                    ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_14__["NzCheckboxModule"],
                     ng_zorro_antd_collapse__WEBPACK_IMPORTED_MODULE_15__["NzCollapseModule"],
                     ng_zorro_antd_comment__WEBPACK_IMPORTED_MODULE_16__["NzCommentModule"],
-                    ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_51__["NzTableModule"],
                     ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_18__["NzDatePickerModule"],
+                    ng_zorro_antd_descriptions__WEBPACK_IMPORTED_MODULE_19__["NzDescriptionsModule"],
                     ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_20__["NzDividerModule"],
                     ng_zorro_antd_drawer__WEBPACK_IMPORTED_MODULE_21__["NzDrawerModule"],
-                    ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_24__["NzFormModule"],
-                    ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_31__["NzListModule"],
-                    ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_26__["NzI18nModule"],
-                    ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_61__["NzUploadModule"],
-                    ng_zorro_antd_auto_complete__WEBPACK_IMPORTED_MODULE_4__["NzAutocompleteModule"],
-                    ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_53__["NzTagModule"],
-                    ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_34__["NzMessageModule"],
-                    ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_36__["NzNotificationModule"],
-                    ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_40__["NzPopoverModule"],
-                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_56__["NzToolTipModule"],
-                    ng_zorro_antd_popconfirm__WEBPACK_IMPORTED_MODULE_39__["NzPopconfirmModule"],
-                    ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalModule"],
-                    ng_zorro_antd_back_top__WEBPACK_IMPORTED_MODULE_6__["NzBackTopModule"],
-                    ng_zorro_antd_cascader__WEBPACK_IMPORTED_MODULE_13__["NzCascaderModule"],
-                    ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_58__["NzTreeModule"],
-                    ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_59__["NzTreeSelectModule"],
-                    ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_54__["NzTimePickerModule"],
-                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzWaveModule"],
-                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzNoAnimationModule"],
-                    ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_45__["NzSkeletonModule"],
-                    ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_48__["NzStatisticModule"],
+                    ng_zorro_antd_dropdown__WEBPACK_IMPORTED_MODULE_22__["NzDropDownModule"],
                     ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_23__["NzEmptyModule"],
-                    ng_zorro_antd_descriptions__WEBPACK_IMPORTED_MODULE_19__["NzDescriptionsModule"],
-                    ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_60__["NzTypographyModule"]
+                    ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_24__["NzFormModule"],
+                    ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_25__["NzGridModule"],
+                    ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_26__["NzI18nModule"],
+                    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_27__["NzIconModule"],
+                    ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_28__["NzInputModule"],
+                    ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_29__["NzInputNumberModule"],
+                    ng_zorro_antd_layout__WEBPACK_IMPORTED_MODULE_30__["NzLayoutModule"],
+                    ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_31__["NzListModule"],
+                    ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_32__["NzMentionModule"],
+                    ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_33__["NzMenuModule"],
+                    ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_34__["NzMessageModule"],
+                    ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_35__["NzModalModule"],
+                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzNoAnimationModule"],
+                    ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_36__["NzNotificationModule"],
+                    ng_zorro_antd_page_header__WEBPACK_IMPORTED_MODULE_37__["NzPageHeaderModule"],
+                    ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_38__["NzPaginationModule"],
+                    ng_zorro_antd_popconfirm__WEBPACK_IMPORTED_MODULE_39__["NzPopconfirmModule"],
+                    ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_40__["NzPopoverModule"],
+                    ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_41__["NzProgressModule"],
+                    ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_42__["NzRadioModule"],
+                    ng_zorro_antd_rate__WEBPACK_IMPORTED_MODULE_43__["NzRateModule"],
+                    ng_zorro_antd_result__WEBPACK_IMPORTED_MODULE_44__["NzResultModule"],
+                    ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_45__["NzSelectModule"],
+                    ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_46__["NzSkeletonModule"],
+                    ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_47__["NzSliderModule"],
+                    ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_48__["NzSpinModule"],
+                    ng_zorro_antd_statistic__WEBPACK_IMPORTED_MODULE_49__["NzStatisticModule"],
+                    ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_50__["NzStepsModule"],
+                    ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_51__["NzSwitchModule"],
+                    ng_zorro_antd_table__WEBPACK_IMPORTED_MODULE_52__["NzTableModule"],
+                    ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_53__["NzTabsModule"],
+                    ng_zorro_antd_tag__WEBPACK_IMPORTED_MODULE_54__["NzTagModule"],
+                    ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_55__["NzTimePickerModule"],
+                    ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_56__["NzTimelineModule"],
+                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_57__["NzToolTipModule"],
+                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzTransButtonModule"],
+                    ng_zorro_antd_transfer__WEBPACK_IMPORTED_MODULE_58__["NzTransferModule"],
+                    ng_zorro_antd_tree__WEBPACK_IMPORTED_MODULE_59__["NzTreeModule"],
+                    ng_zorro_antd_tree_select__WEBPACK_IMPORTED_MODULE_60__["NzTreeSelectModule"],
+                    ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_61__["NzTypographyModule"],
+                    ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_62__["NzUploadModule"],
+                    ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_17__["NzWaveModule"]
                 ]
             },] }
 ];
@@ -48150,11 +49845,12 @@ var NzSubMenuComponentNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
 /*!************************************************************!*\
   !*** ./publish/message/ng-zorro-antd-message.ngfactory.js ***!
   \************************************************************/
-/*! exports provided: NzMessageModuleNgFactory, RenderType_NzMessageComponent, View_NzMessageComponent_0, View_NzMessageComponent_Host_0, NzMessageComponentNgFactory, RenderType_NzMessageContainerComponent, View_NzMessageContainerComponent_0, View_NzMessageContainerComponent_Host_0, NzMessageContainerComponentNgFactory */
+/*! exports provided: NzMessageServiceModuleNgFactory, NzMessageModuleNgFactory, RenderType_NzMessageComponent, View_NzMessageComponent_0, View_NzMessageComponent_Host_0, NzMessageComponentNgFactory, RenderType_NzMessageContainerComponent, View_NzMessageContainerComponent_0, View_NzMessageContainerComponent_Host_0, NzMessageContainerComponentNgFactory */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageServiceModuleNgFactory", function() { return NzMessageServiceModuleNgFactory; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMessageModuleNgFactory", function() { return NzMessageModuleNgFactory; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RenderType_NzMessageComponent", function() { return RenderType_NzMessageComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View_NzMessageComponent_0", function() { return View_NzMessageComponent_0; });
@@ -48197,7 +49893,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var NzMessageModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], [], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [NzMessageContainerComponentNgFactory]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ScrollStrategyOptions"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayContainer"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayPositionBuilder"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["Directionality"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ɵc"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ɵd"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["BidiModule"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["BidiModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["PortalModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["PortalModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__["PlatformModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__["PlatformModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_7__["ScrollingModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_7__["ScrollingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_9__["NzAddOnModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_9__["NzAddOnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NZ_MESSAGE_DEFAULT_CONFIG"], { nzAnimate: true, nzDuration: 3000, nzMaxStack: 7, nzPauseOnHover: true, nzTop: 24 }, [])]); });
+var NzMessageServiceModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageServiceModule"], [], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, []], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageServiceModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageServiceModule"], [])]); });
+
+var NzMessageModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], [], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [NzMessageContainerComponentNgFactory]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_2__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ScrollStrategyOptions"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayContainer"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayPositionBuilder"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["Directionality"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_2__["Location"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ɵc"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["ɵd"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["BidiModule"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["BidiModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["PortalModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["PortalModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__["PlatformModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_6__["PlatformModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_7__["ScrollingModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_7__["ScrollingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_9__["NzAddOnModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_9__["NzAddOnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageServiceModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageServiceModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NZ_MESSAGE_DEFAULT_CONFIG"], { nzAnimate: true, nzDuration: 3000, nzMaxStack: 7, nzPauseOnHover: true, nzTop: 24 }, [])]); });
 
 var styles_NzMessageComponent = [];
 var RenderType_NzMessageComponent = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcrt"]({ encapsulation: 2, styles: styles_NzMessageComponent, data: { "animation": [{ type: 7, name: "moveUpMotion", definitions: [{ type: 1, expr: "* => enter", animation: [{ type: 6, styles: { transformOrigin: "0 0", transform: "translateY(-100%)", opacity: 0 }, offset: null }, { type: 4, styles: { type: 6, styles: { transformOrigin: "0 0", transform: "translateY(0%)", opacity: 1 }, offset: null }, timings: "0.2s" }], options: null }, { type: 1, expr: "* => leave", animation: [{ type: 6, styles: { transformOrigin: "0 0", transform: "translateY(0%)", opacity: 1 }, offset: null }, { type: 4, styles: { type: 6, styles: { transformOrigin: "0 0", transform: "translateY(-100%)", opacity: 0 }, offset: null }, timings: "0.2s" }], options: null }], options: {} }] } });
@@ -48527,7 +50225,7 @@ function View_NzSelectTopControlComponent_1(_l) { return _angular_core__WEBPACK_
         ad = (pd_7 && ad);
     } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["COMPOSITION_BUFFER_MODE"]]], null, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](1024, null, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"], function (p0_0) { return [p0_0]; }, [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 671744, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], [[8, null], [8, null], [8, null], [6, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"]]], { isDisabled: [0, "isDisabled"], model: [1, "model"] }, { update: "ngModelChange" }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](2048, null, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControl"], null, [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 16384, null, 0, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], [[4, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControl"]]], null, null)], function (_ck, _v) { var _co = _v.component; var currVal_7 = _co.nzSelectService.disabled; var currVal_8 = _co.inputValue; _ck(_v, 3, 0, currVal_7, currVal_8); }, function (_ck, _v) { var currVal_0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassUntouched; var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassTouched; var currVal_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassPristine; var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassDirty; var currVal_4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassValid; var currVal_5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassInvalid; var currVal_6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).ngClassPending; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2, currVal_3, currVal_4, currVal_5, currVal_6); }); }
 function View_NzSelectTopControlComponent_2(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, "div", [["class", "ant-select-selection__placeholder"], ["nz-select-unselectable", ""]], [[4, "display", null], [1, "unselectable", 0], [4, "user-select", null]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 16384, null, 0, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_1__["NzSelectUnselectableDirective"], [], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.placeHolderDisplay; var currVal_1 = "unselectable"; var currVal_2 = "none"; _ck(_v, 0, 0, currVal_0, currVal_1, currVal_2); var currVal_3 = _co.nzPlaceHolder; _ck(_v, 2, 0, currVal_3); }); }
-function View_NzSelectTopControlComponent_5(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, null, null, null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, "div", [["class", "ant-select-selection__choice__content"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = ((_co.nzSelectService.listOfCachedSelectedOption[0] == null) ? null : _co.nzSelectService.listOfCachedSelectedOption[0].nzLabel); _ck(_v, 2, 0, currVal_0); }); }
+function View_NzSelectTopControlComponent_5(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 2, null, null, null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 1, null, null, null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](2, null, ["", ""]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = ((_co.nzSelectService.listOfCachedSelectedOption[0] == null) ? null : _co.nzSelectService.listOfCachedSelectedOption[0].nzLabel); _ck(_v, 2, 0, currVal_0); }); }
 function View_NzSelectTopControlComponent_4(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 5, "div", [["class", "ant-select-selection-selected-value"]], [[1, "title", 0]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, _angular_common__WEBPACK_IMPORTED_MODULE_2__["ɵNgStyleImpl"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["ɵNgStyleR2Impl"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](2, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], [_angular_common__WEBPACK_IMPORTED_MODULE_2__["ɵNgStyleImpl"]], { ngStyle: [0, "ngStyle"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 2, null, View_NzSelectTopControlComponent_5)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 540672, null, 0, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_11__["NzStringTemplateOutletDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { nzStringTemplateOutletContext: [0, "nzStringTemplateOutletContext"], nzStringTemplateOutlet: [1, "nzStringTemplateOutlet"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](5, { $implicit: 0 })], function (_ck, _v) { var _co = _v.component; var currVal_1 = _co.selectedValueStyle; _ck(_v, 2, 0, currVal_1); var currVal_2 = _ck(_v, 5, 0, _co.nzSelectService.listOfCachedSelectedOption[0]); var currVal_3 = _co.nzCustomTemplate; _ck(_v, 4, 0, currVal_2, currVal_3); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = ((_co.nzSelectService.listOfCachedSelectedOption[0] == null) ? null : _co.nzSelectService.listOfCachedSelectedOption[0].nzLabel); _ck(_v, 0, 0, currVal_0); }); }
 function View_NzSelectTopControlComponent_7(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, null, null, 0))], null, null); }
 function View_NzSelectTopControlComponent_6(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 5, "div", [["class", "ant-select-search ant-select-search--inline"]], [[4, "display", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 4, "div", [["class", "ant-select-search__field__wrap"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_NzSelectTopControlComponent_7)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](3, 540672, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]], { ngTemplateOutlet: [0, "ngTemplateOutlet"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 0, null, null, 1, "span", [["class", "ant-select-search__field__mirror"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](5, null, ["", "\u00A0"]))], function (_ck, _v) { var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v.parent.parent, 1); _ck(_v, 3, 0, currVal_1); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.nzOpen ? "block" : "none"); _ck(_v, 0, 0, currVal_0); var currVal_2 = _co.inputValue; _ck(_v, 5, 0, currVal_2); }); }
@@ -48850,7 +50548,7 @@ function View_AppComponent_22(_l) { return _angular_core__WEBPACK_IMPORTED_MODUL
     } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](6, 671744, [[23, 4]], 0, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLinkWithHref"], [_angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_20__["ActivatedRoute"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["LocationStrategy"]], { routerLink: [0, "routerLink"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](7, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](8, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](9, 0, null, null, 1, "span", [["class", "chinese"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](10, null, ["", ""]))], function (_ck, _v) { var currVal_0 = ""; _ck(_v, 2, 0, currVal_0); var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵinlineInterpolate"](1, "", _v.context.$implicit.path, ""); _ck(_v, 6, 0, currVal_3); }, function (_ck, _v) { var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 6).target; var currVal_2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 6).href; _ck(_v, 5, 0, currVal_1, currVal_2); var currVal_4 = _v.context.$implicit.label; _ck(_v, 8, 0, currVal_4); var currVal_5 = _v.context.$implicit.zh; _ck(_v, 10, 0, currVal_5); }); }
 function View_AppComponent_21(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 4, "li", [["nz-menu-group", ""]], [[8, "hidden", 0]], null, null, _publish_menu_ng_zorro_antd_menu_ngfactory__WEBPACK_IMPORTED_MODULE_21__["View_NzMenuGroupComponent_0"], _publish_menu_ng_zorro_antd_menu_ngfactory__WEBPACK_IMPORTED_MODULE_21__["RenderType_NzMenuGroupComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](1, 49152, null, 0, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuGroupComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzTitle: [0, "nzTitle"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, 1, 2, "ul", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_22)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var currVal_1 = _v.context.$implicit.name; _ck(_v, 1, 0, currVal_1); var currVal_2 = _v.context.$implicit.children; _ck(_v, 4, 0, currVal_2); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_v.context.$implicit.language !== _co.language); _ck(_v, 0, 0, currVal_0); }); }
 function View_AppComponent_19(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 20, "ul", [["class", "aside-container menu-site"], ["nz-menu", ""], ["nzInlineIndent", "40"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuService"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuService"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](1024, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuServiceFactory"], [[3, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzDropdownHigherOrderServiceToken"]], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](4, 1785856, null, 2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"]], { nzInlineIndent: [0, "nzInlineIndent"], nzMode: [1, "nzMode"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 16, { listOfNzMenuItemDirective: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 17, { listOfNzSubMenuComponent: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_20)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](8, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](9, 0, null, null, 11, "li", [["nz-submenu", ""], ["nzOpen", ""]], null, null, null, _publish_menu_ng_zorro_antd_menu_ngfactory__WEBPACK_IMPORTED_MODULE_21__["View_NzSubMenuComponent_0"], _publish_menu_ng_zorro_antd_menu_ngfactory__WEBPACK_IMPORTED_MODULE_21__["RenderType_NzSubMenuComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"], [[3, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"]], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuService"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](12, 1818624, [[20, 4], [17, 4]], 2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubMenuComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"], [8, null]], { nzOpen: [0, "nzOpen"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 20, { listOfNzSubMenuComponent: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 21, { listOfNzMenuItemDirective: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](15, 0, null, 0, 2, "span", [["title", ""]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](16, 0, null, null, 1, "h4", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Components"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](18, 0, null, 1, 2, "ul", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_21)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](20, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"]], { ngForOf: [0, "ngForOf"] }, null)], function (_ck, _v) { var _co = _v.component; var currVal_0 = "40"; var currVal_1 = "inline"; _ck(_v, 4, 0, currVal_0, currVal_1); var currVal_2 = _co.routerList.intro; _ck(_v, 8, 0, currVal_2); var currVal_3 = ""; _ck(_v, 12, 0, currVal_3); var currVal_4 = _co.routerList.components; _ck(_v, 20, 0, currVal_4); }, null); }
-function View_AppComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, { searchInput: 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 254, "div", [["class", "page-wrapper"]], [[4, "transform", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 66, "header", [["class", "clearfix"], ["id", "header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["languageAndVersionTpl", 2]], null, 0, null, View_AppComponent_1)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 16777216, null, null, 2, "i", [["class", "nav-phone-icon"], ["nz-icon", ""], ["nz-popover", ""], ["nzPlacement", "bottomRight"], ["type", "menu"]], [[2, "ant-popover-open", null]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 4931584, null, 0, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], [2, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverComponent"]], [8, null]], { setTitle: [0, "setTitle"], nzContent: [1, "nzContent"], nzTrigger: [2, "nzTrigger"], nzPlacement: [3, "nzPlacement"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](6, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](7, 0, null, null, 61, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](9, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](10, 0, null, null, 5, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](12, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](13, 0, null, null, 2, "a", [["href", ""], ["id", "logo"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](14, 0, null, null, 0, "img", [["alt", "logo"], ["src", "./assets/img/logo.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](15, 0, null, null, 0, "img", [["alt", "NG-ZORRO"], ["src", "./assets/img/zorro.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](16, 0, null, null, 52, "div", [["class", "nav nav-hide"], ["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](18, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](19, 0, null, null, 6, "div", [["id", "search-box"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](20, 0, null, null, 1, "i", [["nz-icon", ""], ["type", "search"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](21, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](23, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](25, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](26, 0, null, null, 4, "button", [["class", "header-lang-button"], ["nz-button", ""], ["nzGhost", ""], ["nzSize", "small"]], [[1, "nz-wave", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
+function View_AppComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](671088640, 1, { searchInput: 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](1, 0, null, null, 254, "div", [["class", "page-wrapper"]], [[4, "transform", null]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](2, 0, null, null, 66, "header", [["class", "clearfix"], ["id", "header"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["languageAndVersionTpl", 2]], null, 0, null, View_AppComponent_1)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](4, 16777216, null, null, 2, "i", [["class", "nav-phone-icon"], ["nz-icon", ""], ["nz-popover", ""], ["nzPlacement", "bottomRight"], ["type", "menu"]], [[2, "ant-popover-open", null]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](5, 4931584, null, 0, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], [2, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverComponent"]], [8, null]], { setTitle: [0, "setTitle"], nzContent: [1, "nzContent"], nzTrigger: [2, "nzTrigger"], nzPlacement: [3, "nzPlacement"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](6, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](7, 0, null, null, 61, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](9, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzDomEventService"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](10, 0, null, null, 5, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](12, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](13, 0, null, null, 2, "a", [["href", ""], ["id", "logo"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](14, 0, null, null, 0, "img", [["alt", "logo"], ["src", "./assets/img/logo.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](15, 0, null, null, 0, "img", [["alt", "NG-ZORRO"], ["src", "./assets/img/zorro.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](16, 0, null, null, 52, "div", [["class", "nav nav-hide"], ["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](18, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](19, 0, null, null, 6, "div", [["id", "search-box"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](20, 0, null, null, 1, "i", [["nz-icon", ""], ["type", "search"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](21, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_3)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](23, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_4)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](25, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](26, 0, null, null, 4, "button", [["class", "header-lang-button"], ["nz-button", ""], ["nzGhost", ""], ["nzSize", "small"]], [[1, "nz-wave", 0]], [[null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
         var pd_0 = (_co.switchLanguage(((_co.language === "zh") ? "en" : "zh")) !== false);
         ad = (pd_0 && ad);
     } return ad; }, _publish_button_ng_zorro_antd_button_ngfactory__WEBPACK_IMPORTED_MODULE_7__["View_NzButtonComponent_0"], _publish_button_ng_zorro_antd_button_ngfactory__WEBPACK_IMPORTED_MODULE_7__["RenderType_NzButtonComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](28, 1818624, null, 1, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_9__["NzButtonComponent"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_10__["ContentObserver"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], [2, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NZ_WAVE_GLOBAL_CONFIG"]], [2, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_11__["ANIMATION_MODULE_TYPE"]]], { nzGhost: [0, "nzGhost"], nzSize: [1, "nzSize"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 7, { listOfIconElement: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](30, 0, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](31, 0, null, null, 12, "nz-select", [["class", "version"], ["nzSize", "small"], ["style", "max-width: 126px;"]], [[2, "ant-select-lg", null], [2, "ant-select-sm", null], [2, "ant-select-enabled", null], [2, "ant-select-no-arrow", null], [2, "ant-select-disabled", null], [2, "ant-select-allow-clear", null], [2, "ant-select-open", null], [2, "ng-untouched", null], [2, "ng-touched", null], [2, "ng-pristine", null], [2, "ng-dirty", null], [2, "ng-valid", null], [2, "ng-invalid", null], [2, "ng-pending", null]], [[null, "ngModelChange"], [null, "click"]], function (_v, en, $event) { var ad = true; var _co = _v.component; if (("click" === en)) {
@@ -48865,7 +50563,7 @@ function View_AppComponent_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE
     } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](53, 1785856, [[10, 4]], 2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuItemDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], [2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLink"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLinkWithHref"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"]]], { nzSelected: [0, "nzSelected"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 12, { listOfRouterLink: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 13, { listOfRouterLinkWithHref: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_8)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](57, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_9)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](59, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](60, 0, null, null, 8, "li", [["nz-menu-item", ""]], null, [[null, "click"]], function (_v, en, $event) { var ad = true; if (("click" === en)) {
         var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 62).clickMenuItem($event) !== false);
         ad = (pd_0 && ad);
-    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](62, 1785856, [[10, 4]], 2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuItemDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], [2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLink"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLinkWithHref"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"]]], { nzSelected: [0, "nzSelected"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 14, { listOfRouterLink: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 15, { listOfRouterLinkWithHref: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_10)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](66, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_11)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](68, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](69, 0, null, null, 186, "div", [["class", "main-wrapper"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](70, 0, null, null, 9, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](72, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_12)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](74, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](75, 0, null, null, 4, "div", [["class", "main-container main-container-component"], ["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](77, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](78, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](79, 212992, null, 0, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterOutlet"], [_angular_router__WEBPACK_IMPORTED_MODULE_20__["ChildrenOutletContexts"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], [8, null], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](80, 0, null, null, 175, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](82, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](83, 0, null, null, 172, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](85, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](86, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](87, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](88, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](89, { span: 0, offset: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](90, { span: 0, offset: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](91, { span: 0, offset: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](92, 0, null, null, 1, "nz-nav-bottom", [], null, null, null, _share_nz_nav_bottom_nz_nav_bottom_component_ngfactory__WEBPACK_IMPORTED_MODULE_24__["View_NzNavBottomComponent_0"], _share_nz_nav_bottom_nz_nav_bottom_component_ngfactory__WEBPACK_IMPORTED_MODULE_24__["RenderType_NzNavBottomComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](93, 114688, null, 0, _share_nz_nav_bottom_nz_nav_bottom_component__WEBPACK_IMPORTED_MODULE_25__["NzNavBottomComponent"], [_angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](94, 0, null, null, 161, "footer", [["class", "dark"], ["id", "footer"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](95, 0, null, null, 155, "div", [["class", "footer-wrap"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](96, 0, null, null, 154, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](98, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](99, 0, null, null, 32, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](101, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](102, 0, null, null, 29, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](103, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](104, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](105, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](106, 0, null, null, 1, "a", [["href", "http://ng.mobile.ant.design"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["NG-ZORRO-MOBILE"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](108, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](110, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](112, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](113, 0, null, null, 1, "a", [["href", "https://ant.design/docs/react/introduce-cn"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Ant Design "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](115, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](117, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["React"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](119, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](120, 0, null, null, 1, "a", [["href", "http://vue.ant.design"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Ant Design"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](122, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](124, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Vue"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](126, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](127, 0, null, null, 1, "a", [["href", "https://angular.cn"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](129, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](130, 0, null, null, 1, "a", [["href", "https://cli.angular.io/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular CLI"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](132, 0, null, null, 29, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](134, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](135, 0, null, null, 26, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](136, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](137, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](138, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](139, 0, null, null, 4, "a", [["href", "https://github.com/websemantics/awesome-ant-design"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](140, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](141, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "ant-design"], ["style", "margin-right: 4px;"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](142, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Awesome Ant Design"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](144, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_14)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](146, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](147, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](148, 0, null, null, 4, "a", [["href", "https://twitter.com/NG_ZORRO"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](149, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](150, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "twitter"], ["style", "margin-right: 4px; color: rgb(29, 161, 242);"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](151, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Twitter "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](153, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_15)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](155, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](156, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](157, 0, null, null, 4, "a", [["href", "https://medium.com/ng-zorro"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](158, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](159, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "medium"], ["style", "margin-right: 4px;"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](160, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Medium"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](162, 0, null, null, 36, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](164, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](165, 0, null, null, 33, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](166, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](167, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](168, 0, null, null, 8, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](169, 0, null, null, 2, "a", [["href", "https://github.com/NG-ZORRO/ng-zorro-antd"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](170, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["GitHub"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](172, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](174, 0, null, null, 2, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](175, 0, null, null, 1, "i", [["nz-icon", ""], ["type", "github"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](176, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](177, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](178, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](179, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](180, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_16)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](182, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](183, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](184, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](185, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](186, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](187, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](188, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](189, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](190, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](191, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](192, 0, null, null, 2, "a", [["href", "http://github.com/NG-ZORRO/ng-zorro-antd/issues"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](193, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](194, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](195, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](196, 0, null, null, 2, "a", [["href", "https://stackoverflow.com/questions/tagged/ng-zorro-antd"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](197, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["StackOverflow"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](199, 0, null, null, 51, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](201, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](202, 0, null, null, 48, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](203, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](204, 0, null, null, 0, "img", [["alt", ""], ["class", "title-icon"], ["src", "https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](205, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](206, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](207, 0, null, null, 9, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](208, 0, null, null, 4, "a", [["href", "https://yuque.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](209, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](210, 0, null, null, 1, "i", [["nz-icon", ""], ["nzTheme", "fill"], ["nzType", "yuque"], ["style", "margin-right: 4px; color: rgb(37, 184, 100);"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](211, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"], nzTheme: [1, "nzTheme"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](212, null, [" ", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](213, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](215, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](216, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](217, 0, null, null, 7, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](218, 0, null, null, 2, "a", [["href", "https://yunfengdie.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](219, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](220, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](221, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](223, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](224, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](225, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](226, 0, null, null, 1, "a", [["href", "https://antv.alipay.com/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["AntV"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](228, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](230, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](231, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](232, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](233, 0, null, null, 1, "a", [["href", "https://eggjs.org/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Egg"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](235, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](237, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](238, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](239, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](240, 0, null, null, 2, "a", [["href", "http://xtech.antfin.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](241, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](242, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](243, 0, null, null, 7, "div", [["style", "margin-top: 20px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](244, 16777216, null, null, 5, "div", [["class", "theme-color"], ["nz-popover", ""], ["nzOverlayClassName", "theme-color-content"]], [[2, "ant-popover-open", null]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](245, 4931584, null, 0, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], [2, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverComponent"]], [8, null]], { nzContent: [0, "nzContent"], nzOverlayClassName: [1, "nzOverlayClassName"], nzTrigger: [2, "nzTrigger"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](246, 0, null, null, 3, "div", [["class", "theme-color-value"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleImpl"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleR2Impl"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](248, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgStyle"], [_angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleImpl"]], { ngStyle: [0, "ngStyle"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](249, { "background": 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["colorTpl", 2]], null, 0, null, View_AppComponent_17)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](251, 0, null, null, 4, "div", [["class", "bottom-bar"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" Made with "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](253, 0, null, null, 1, "span", [["class", "heart"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["\u2764"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" by NG-ZORRO team "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_18)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](257, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["sideOrDrawerTpl", 2]], null, 0, null, View_AppComponent_19))], function (_ck, _v) { var _co = _v.component; var currVal_2 = "Change language or version"; var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 3); var currVal_4 = "click"; var currVal_5 = "bottomRight"; _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4, currVal_5); var currVal_6 = "menu"; _ck(_v, 6, 0, currVal_6); _ck(_v, 9, 0); var currVal_7 = 24; var currVal_8 = 24; var currVal_9 = 8; var currVal_10 = 5; var currVal_11 = 5; var currVal_12 = 4; _ck(_v, 12, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12); var currVal_13 = 0; var currVal_14 = 0; var currVal_15 = 16; var currVal_16 = 19; var currVal_17 = 19; var currVal_18 = 20; _ck(_v, 18, 0, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18); var currVal_19 = "search"; _ck(_v, 21, 0, currVal_19); var currVal_20 = _co.useDocsearch; _ck(_v, 23, 0, currVal_20); var currVal_21 = !_co.useDocsearch; _ck(_v, 25, 0, currVal_21); var currVal_23 = ""; var currVal_24 = "small"; _ck(_v, 28, 0, currVal_23, currVal_24); var currVal_40 = "small"; _ck(_v, 33, 0, currVal_40); var currVal_41 = _co.currentVersion; _ck(_v, 37, 0, currVal_41); var currVal_42 = _co.oldVersionList; _ck(_v, 41, 0, currVal_42); var currVal_43 = _co.currentVersion; var currVal_44 = _co.currentVersion; _ck(_v, 43, 0, currVal_43, currVal_44); var currVal_45 = "horizontal"; var currVal_46 = false; _ck(_v, 48, 0, currVal_45, currVal_46); var currVal_47 = ""; _ck(_v, 53, 0, currVal_47); var currVal_48 = (_co.language == "zh"); _ck(_v, 57, 0, currVal_48); var currVal_49 = (_co.language == "en"); _ck(_v, 59, 0, currVal_49); var currVal_50 = false; _ck(_v, 62, 0, currVal_50); var currVal_51 = (_co.language == "zh"); _ck(_v, 66, 0, currVal_51); var currVal_52 = (_co.language == "en"); _ck(_v, 68, 0, currVal_52); _ck(_v, 72, 0); var currVal_53 = !_co.showDrawer; _ck(_v, 74, 0, currVal_53); var currVal_54 = 24; var currVal_55 = 24; var currVal_56 = 24; var currVal_57 = 18; var currVal_58 = 19; var currVal_59 = 20; _ck(_v, 77, 0, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58, currVal_59); _ck(_v, 79, 0); _ck(_v, 82, 0); var currVal_60 = _ck(_v, 86, 0, 24); var currVal_61 = _ck(_v, 87, 0, 24); var currVal_62 = _ck(_v, 88, 0, 24); var currVal_63 = _ck(_v, 89, 0, 18, 6); var currVal_64 = _ck(_v, 90, 0, 19, 5); var currVal_65 = _ck(_v, 91, 0, 20, 4); _ck(_v, 85, 0, currVal_60, currVal_61, currVal_62, currVal_63, currVal_64, currVal_65); _ck(_v, 93, 0); _ck(_v, 98, 0); var currVal_66 = 24; var currVal_67 = 24; var currVal_68 = 6; _ck(_v, 101, 0, currVal_66, currVal_67, currVal_68); var currVal_70 = 24; var currVal_71 = 24; var currVal_72 = 6; _ck(_v, 134, 0, currVal_70, currVal_71, currVal_72); var currVal_74 = "ant-design"; _ck(_v, 142, 0, currVal_74); var currVal_75 = (_co.language === "zh"); _ck(_v, 146, 0, currVal_75); var currVal_76 = "twitter"; _ck(_v, 151, 0, currVal_76); var currVal_77 = (_co.language === "zh"); _ck(_v, 155, 0, currVal_77); var currVal_78 = "medium"; _ck(_v, 160, 0, currVal_78); var currVal_79 = 24; var currVal_80 = 24; var currVal_81 = 6; _ck(_v, 164, 0, currVal_79, currVal_80, currVal_81); var currVal_83 = "github"; _ck(_v, 176, 0, currVal_83); var currVal_86 = (_co.language === "zh"); _ck(_v, 182, 0, currVal_86); var currVal_92 = 24; var currVal_93 = 24; var currVal_94 = 6; _ck(_v, 201, 0, currVal_92, currVal_93, currVal_94); var currVal_96 = "yuque"; var currVal_97 = "fill"; _ck(_v, 211, 0, currVal_96, currVal_97); var currVal_106 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 250); var currVal_107 = "theme-color-content"; var currVal_108 = "click"; _ck(_v, 245, 0, currVal_106, currVal_107, currVal_108); var currVal_109 = _ck(_v, 249, 0, _co.color); _ck(_v, 248, 0, currVal_109); var currVal_110 = _co.showDrawer; _ck(_v, 257, 0, currVal_110); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.isDrawerOpen ? "translateX(245px)" : null); _ck(_v, 1, 0, currVal_0); var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).isTooltipOpen; _ck(_v, 4, 0, currVal_1); var currVal_22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 28).nzWave; _ck(_v, 26, 0, currVal_22); var currVal_25 = ((_co.language == "zh") ? "English" : "\u4E2D\u6587"); _ck(_v, 30, 0, currVal_25); var currVal_26 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzSize === "large"); var currVal_27 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzSize === "small"); var currVal_28 = !_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzDisabled; var currVal_29 = !_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzShowArrow; var currVal_30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzDisabled; var currVal_31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzAllowClear; var currVal_32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).open; var currVal_33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassUntouched; var currVal_34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassTouched; var currVal_35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassPristine; var currVal_36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassDirty; var currVal_37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassValid; var currVal_38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassInvalid; var currVal_39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassPending; _ck(_v, 31, 1, [currVal_26, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39]); var currVal_69 = ((_co.language === "zh") ? "\u76F8\u5173\u8D44\u6E90" : "Resources"); _ck(_v, 104, 0, currVal_69); var currVal_73 = ((_co.language === "zh") ? "\u793E\u533A" : "Community"); _ck(_v, 137, 0, currVal_73); var currVal_82 = ((_co.language === "zh") ? "\u5E2E\u52A9" : "Help"); _ck(_v, 167, 0, currVal_82); var currVal_84 = ((_co.language === "zh") ? "http://ng.ant.design/docs/changelog/zh" : "http://ng.ant.design/docs/changelog/en"); _ck(_v, 178, 0, currVal_84); var currVal_85 = ((_co.language === "zh") ? "\u66F4\u65B0\u65E5\u5FD7" : "Changelog"); _ck(_v, 180, 0, currVal_85); var currVal_87 = ((_co.language === "zh") ? "http://ng.ant.design/docs/faq/zh" : "http://ng.ant.design/docs/faq/en"); _ck(_v, 184, 0, currVal_87); var currVal_88 = ((_co.language === "zh") ? "\u5E38\u89C1\u95EE\u9898" : "FAQ"); _ck(_v, 186, 0, currVal_88); var currVal_89 = ((_co.language === "zh") ? "https://ng.ant.design/issue-helper/#/zh" : "https://ng.ant.design/issue-helper/#/en"); _ck(_v, 188, 0, currVal_89); var currVal_90 = ((_co.language === "zh") ? "\u62A5\u544A Bug" : "Bug Report"); _ck(_v, 190, 0, currVal_90); var currVal_91 = ((_co.language === "zh") ? "\u8BA8\u8BBA\u5217\u8868" : "Issue"); _ck(_v, 194, 0, currVal_91); var currVal_95 = ((_co.language === "zh") ? "\u66F4\u591A\u4EA7\u54C1" : "More Products"); _ck(_v, 206, 0, currVal_95); var currVal_98 = ((_co.language === "zh") ? "\u8BED\u96C0" : "YuQue"); _ck(_v, 212, 0, currVal_98); var currVal_99 = ((_co.language === "zh") ? "\u77E5\u8BC6\u521B\u4F5C\u4E0E\u5206\u4EAB\u5DE5\u5177" : "Write your document as a team"); _ck(_v, 216, 0, currVal_99); var currVal_100 = ((_co.language === "zh") ? "\u4E91\u51E4\u8776" : "FengDie"); _ck(_v, 220, 0, currVal_100); var currVal_101 = ((_co.language === "zh") ? "\u79FB\u52A8\u5EFA\u7AD9\u5E73\u53F0" : "Mobile web app builder"); _ck(_v, 224, 0, currVal_101); var currVal_102 = ((_co.language === "zh") ? "\u6570\u636E\u53EF\u89C6\u5316" : "Data Visualization"); _ck(_v, 231, 0, currVal_102); var currVal_103 = ((_co.language === "zh") ? "\u4F01\u4E1A\u7EA7 Node \u5F00\u53D1\u6846\u67B6" : "Enterprise Node Framework"); _ck(_v, 238, 0, currVal_103); var currVal_104 = ((_co.language === "zh") ? "\u8682\u8681\u4F53\u9A8C\u79D1\u6280" : "Ant Financial Experience Tech"); _ck(_v, 242, 0, currVal_104); var currVal_105 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 245).isTooltipOpen; _ck(_v, 244, 0, currVal_105); }); }
+    } return ad; }, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](62, 1785856, [[10, 4]], 2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzMenuItemDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzMenuBaseService"], [2, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_19__["NzSubmenuService"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLink"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterLinkWithHref"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"]]], { nzSelected: [0, "nzSelected"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 14, { listOfRouterLink: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵqud"](603979776, 15, { listOfRouterLinkWithHref: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_10)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](66, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_11)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](68, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](69, 0, null, null, 186, "div", [["class", "main-wrapper"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](70, 0, null, null, 9, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](72, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzDomEventService"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_12)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](74, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](75, 0, null, null, 4, "div", [["class", "main-container main-container-component"], ["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](77, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](78, 16777216, null, null, 1, "router-outlet", [], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](79, 212992, null, 0, _angular_router__WEBPACK_IMPORTED_MODULE_20__["RouterOutlet"], [_angular_router__WEBPACK_IMPORTED_MODULE_20__["ChildrenOutletContexts"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], [8, null], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](80, 0, null, null, 175, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](82, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzDomEventService"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](83, 0, null, null, 172, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](85, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"], nzLg: [3, "nzLg"], nzXl: [4, "nzXl"], nzXXl: [5, "nzXXl"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](86, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](87, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](88, { span: 0 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](89, { span: 0, offset: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](90, { span: 0, offset: 1 }), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](91, { span: 0, offset: 1 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](92, 0, null, null, 1, "nz-nav-bottom", [], null, null, null, _share_nz_nav_bottom_nz_nav_bottom_component_ngfactory__WEBPACK_IMPORTED_MODULE_24__["View_NzNavBottomComponent_0"], _share_nz_nav_bottom_nz_nav_bottom_component_ngfactory__WEBPACK_IMPORTED_MODULE_24__["RenderType_NzNavBottomComponent"])), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](93, 114688, null, 0, _share_nz_nav_bottom_nz_nav_bottom_component__WEBPACK_IMPORTED_MODULE_25__["NzNavBottomComponent"], [_angular_router__WEBPACK_IMPORTED_MODULE_20__["Router"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](94, 0, null, null, 161, "footer", [["class", "dark"], ["id", "footer"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](95, 0, null, null, 155, "div", [["class", "footer-wrap"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](96, 0, null, null, 154, "div", [["nz-row", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](98, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_23__["MediaMatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzDomEventService"]], null, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](99, 0, null, null, 32, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](101, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](102, 0, null, null, 29, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](103, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](104, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](105, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](106, 0, null, null, 1, "a", [["href", "http://ng.mobile.ant.design"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["NG-ZORRO-MOBILE"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](108, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](110, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](112, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](113, 0, null, null, 1, "a", [["href", "https://ant.design/docs/react/introduce-cn"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Ant Design "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](115, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](117, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["React"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](119, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](120, 0, null, null, 1, "a", [["href", "http://vue.ant.design"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Ant Design"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](122, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](124, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Vue"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](126, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](127, 0, null, null, 1, "a", [["href", "https://angular.cn"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](129, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](130, 0, null, null, 1, "a", [["href", "https://cli.angular.io/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Angular CLI"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](132, 0, null, null, 29, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](134, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](135, 0, null, null, 26, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](136, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](137, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](138, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](139, 0, null, null, 4, "a", [["href", "https://github.com/websemantics/awesome-ant-design"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](140, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](141, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "ant-design"], ["style", "margin-right: 4px;"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](142, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Awesome Ant Design"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](144, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_14)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](146, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](147, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](148, 0, null, null, 4, "a", [["href", "https://twitter.com/NG_ZORRO"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](149, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](150, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "twitter"], ["style", "margin-right: 4px; color: rgb(29, 161, 242);"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](151, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Twitter "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](153, 0, null, null, 2, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_15)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](155, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](156, 0, null, null, 5, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](157, 0, null, null, 4, "a", [["href", "https://medium.com/ng-zorro"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](158, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](159, 0, null, null, 1, "i", [["nz-icon", ""], ["nzType", "medium"], ["style", "margin-right: 4px;"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](160, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Medium"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](162, 0, null, null, 36, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](164, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](165, 0, null, null, 33, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](166, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](167, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](168, 0, null, null, 8, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](169, 0, null, null, 2, "a", [["href", "https://github.com/NG-ZORRO/ng-zorro-antd"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](170, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["GitHub"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](172, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](174, 0, null, null, 2, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](175, 0, null, null, 1, "i", [["nz-icon", ""], ["type", "github"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](176, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { type: [0, "type"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](177, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](178, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](179, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](180, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_16)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](182, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](183, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](184, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](185, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](186, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](187, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](188, 0, null, null, 2, "a", [["target", "_blank "]], [[8, "href", 4]], null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](189, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](190, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](191, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](192, 0, null, null, 2, "a", [["href", "http://github.com/NG-ZORRO/ng-zorro-antd/issues"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](193, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](194, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](195, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](196, 0, null, null, 2, "a", [["href", "https://stackoverflow.com/questions/tagged/ng-zorro-antd"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](197, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["StackOverflow"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](199, 0, null, null, 51, "div", [["nz-col", ""]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](201, 4931584, null, 0, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzColDirective"], [ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_8__["NzUpdateHostClassService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], [2, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_13__["NzRowDirective"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]], { nzXs: [0, "nzXs"], nzSm: [1, "nzSm"], nzMd: [2, "nzMd"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](202, 0, null, null, 48, "div", [["class", "footer-center"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](203, 0, null, null, 3, "h2", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](204, 0, null, null, 0, "img", [["alt", ""], ["class", "title-icon"], ["src", "https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](205, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](206, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](207, 0, null, null, 9, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](208, 0, null, null, 4, "a", [["href", "https://yuque.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](209, 0, null, null, 3, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](210, 0, null, null, 1, "i", [["nz-icon", ""], ["nzTheme", "fill"], ["nzType", "yuque"], ["style", "margin-right: 4px; color: rgb(37, 184, 100);"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](211, 2834432, null, 0, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconDirective"], [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_16__["NzIconService"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["Platform"]], { nzType: [0, "nzType"], nzTheme: [1, "nzTheme"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](212, null, [" ", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](213, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](215, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](216, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](217, 0, null, null, 7, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](218, 0, null, null, 2, "a", [["href", "https://yunfengdie.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](219, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](220, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](221, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](223, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](224, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](225, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](226, 0, null, null, 1, "a", [["href", "https://antv.alipay.com/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["AntV"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](228, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](230, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](231, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](232, 0, null, null, 6, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](233, 0, null, null, 1, "a", [["href", "https://eggjs.org/"], ["rel", "noopener noreferrer"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["Egg"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](235, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" - "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](237, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](238, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](239, 0, null, null, 3, "div", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](240, 0, null, null, 2, "a", [["href", "http://xtech.antfin.com/"], ["target", "_blank "]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](241, 0, null, null, 1, "span", [], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](242, null, ["", ""])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](243, 0, null, null, 7, "div", [["style", "margin-top: 20px;"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](244, 16777216, null, null, 5, "div", [["class", "theme-color"], ["nz-popover", ""], ["nzOverlayClassName", "theme-color-content"]], [[2, "ant-popover-open", null]], null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](245, 4931584, null, 0, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverDirective"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"], [2, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_22__["NzPopoverComponent"]], [8, null]], { nzContent: [0, "nzContent"], nzOverlayClassName: [1, "nzOverlayClassName"], nzTrigger: [2, "nzTrigger"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](246, 0, null, null, 3, "div", [["class", "theme-color-value"]], null, null, null, null, null)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵprd"](512, null, _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleImpl"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleR2Impl"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](248, 278528, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgStyle"], [_angular_common__WEBPACK_IMPORTED_MODULE_6__["ɵNgStyleImpl"]], { ngStyle: [0, "ngStyle"] }, null), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵpod"](249, { "background": 0 }), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["colorTpl", 2]], null, 0, null, View_AppComponent_17)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](251, 0, null, null, 4, "div", [["class", "bottom-bar"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" Made with "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](253, 0, null, null, 1, "span", [["class", "heart"]], null, null, null, null, null)), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, ["\u2764"])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵted"](-1, null, [" by NG-ZORRO team "])), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](16777216, null, null, 1, null, View_AppComponent_18)), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵdid"](257, 16384, null, 0, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]], { ngIf: [0, "ngIf"] }, null), (_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵand"](0, [["sideOrDrawerTpl", 2]], null, 0, null, View_AppComponent_19))], function (_ck, _v) { var _co = _v.component; var currVal_2 = "Change language or version"; var currVal_3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 3); var currVal_4 = "click"; var currVal_5 = "bottomRight"; _ck(_v, 5, 0, currVal_2, currVal_3, currVal_4, currVal_5); var currVal_6 = "menu"; _ck(_v, 6, 0, currVal_6); _ck(_v, 9, 0); var currVal_7 = 24; var currVal_8 = 24; var currVal_9 = 8; var currVal_10 = 5; var currVal_11 = 5; var currVal_12 = 4; _ck(_v, 12, 0, currVal_7, currVal_8, currVal_9, currVal_10, currVal_11, currVal_12); var currVal_13 = 0; var currVal_14 = 0; var currVal_15 = 16; var currVal_16 = 19; var currVal_17 = 19; var currVal_18 = 20; _ck(_v, 18, 0, currVal_13, currVal_14, currVal_15, currVal_16, currVal_17, currVal_18); var currVal_19 = "search"; _ck(_v, 21, 0, currVal_19); var currVal_20 = _co.useDocsearch; _ck(_v, 23, 0, currVal_20); var currVal_21 = !_co.useDocsearch; _ck(_v, 25, 0, currVal_21); var currVal_23 = ""; var currVal_24 = "small"; _ck(_v, 28, 0, currVal_23, currVal_24); var currVal_40 = "small"; _ck(_v, 33, 0, currVal_40); var currVal_41 = _co.currentVersion; _ck(_v, 37, 0, currVal_41); var currVal_42 = _co.oldVersionList; _ck(_v, 41, 0, currVal_42); var currVal_43 = _co.currentVersion; var currVal_44 = _co.currentVersion; _ck(_v, 43, 0, currVal_43, currVal_44); var currVal_45 = "horizontal"; var currVal_46 = false; _ck(_v, 48, 0, currVal_45, currVal_46); var currVal_47 = ""; _ck(_v, 53, 0, currVal_47); var currVal_48 = (_co.language == "zh"); _ck(_v, 57, 0, currVal_48); var currVal_49 = (_co.language == "en"); _ck(_v, 59, 0, currVal_49); var currVal_50 = false; _ck(_v, 62, 0, currVal_50); var currVal_51 = (_co.language == "zh"); _ck(_v, 66, 0, currVal_51); var currVal_52 = (_co.language == "en"); _ck(_v, 68, 0, currVal_52); _ck(_v, 72, 0); var currVal_53 = !_co.showDrawer; _ck(_v, 74, 0, currVal_53); var currVal_54 = 24; var currVal_55 = 24; var currVal_56 = 24; var currVal_57 = 18; var currVal_58 = 19; var currVal_59 = 20; _ck(_v, 77, 0, currVal_54, currVal_55, currVal_56, currVal_57, currVal_58, currVal_59); _ck(_v, 79, 0); _ck(_v, 82, 0); var currVal_60 = _ck(_v, 86, 0, 24); var currVal_61 = _ck(_v, 87, 0, 24); var currVal_62 = _ck(_v, 88, 0, 24); var currVal_63 = _ck(_v, 89, 0, 18, 6); var currVal_64 = _ck(_v, 90, 0, 19, 5); var currVal_65 = _ck(_v, 91, 0, 20, 4); _ck(_v, 85, 0, currVal_60, currVal_61, currVal_62, currVal_63, currVal_64, currVal_65); _ck(_v, 93, 0); _ck(_v, 98, 0); var currVal_66 = 24; var currVal_67 = 24; var currVal_68 = 6; _ck(_v, 101, 0, currVal_66, currVal_67, currVal_68); var currVal_70 = 24; var currVal_71 = 24; var currVal_72 = 6; _ck(_v, 134, 0, currVal_70, currVal_71, currVal_72); var currVal_74 = "ant-design"; _ck(_v, 142, 0, currVal_74); var currVal_75 = (_co.language === "zh"); _ck(_v, 146, 0, currVal_75); var currVal_76 = "twitter"; _ck(_v, 151, 0, currVal_76); var currVal_77 = (_co.language === "zh"); _ck(_v, 155, 0, currVal_77); var currVal_78 = "medium"; _ck(_v, 160, 0, currVal_78); var currVal_79 = 24; var currVal_80 = 24; var currVal_81 = 6; _ck(_v, 164, 0, currVal_79, currVal_80, currVal_81); var currVal_83 = "github"; _ck(_v, 176, 0, currVal_83); var currVal_86 = (_co.language === "zh"); _ck(_v, 182, 0, currVal_86); var currVal_92 = 24; var currVal_93 = 24; var currVal_94 = 6; _ck(_v, 201, 0, currVal_92, currVal_93, currVal_94); var currVal_96 = "yuque"; var currVal_97 = "fill"; _ck(_v, 211, 0, currVal_96, currVal_97); var currVal_106 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 250); var currVal_107 = "theme-color-content"; var currVal_108 = "click"; _ck(_v, 245, 0, currVal_106, currVal_107, currVal_108); var currVal_109 = _ck(_v, 249, 0, _co.color); _ck(_v, 248, 0, currVal_109); var currVal_110 = _co.showDrawer; _ck(_v, 257, 0, currVal_110); }, function (_ck, _v) { var _co = _v.component; var currVal_0 = (_co.isDrawerOpen ? "translateX(245px)" : null); _ck(_v, 1, 0, currVal_0); var currVal_1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 5).isTooltipOpen; _ck(_v, 4, 0, currVal_1); var currVal_22 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 28).nzWave; _ck(_v, 26, 0, currVal_22); var currVal_25 = ((_co.language == "zh") ? "English" : "\u4E2D\u6587"); _ck(_v, 30, 0, currVal_25); var currVal_26 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzSize === "large"); var currVal_27 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzSize === "small"); var currVal_28 = !_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzDisabled; var currVal_29 = !_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzShowArrow; var currVal_30 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzDisabled; var currVal_31 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).nzAllowClear; var currVal_32 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 33).open; var currVal_33 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassUntouched; var currVal_34 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassTouched; var currVal_35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassPristine; var currVal_36 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassDirty; var currVal_37 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassValid; var currVal_38 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassInvalid; var currVal_39 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 39).ngClassPending; _ck(_v, 31, 1, [currVal_26, currVal_27, currVal_28, currVal_29, currVal_30, currVal_31, currVal_32, currVal_33, currVal_34, currVal_35, currVal_36, currVal_37, currVal_38, currVal_39]); var currVal_69 = ((_co.language === "zh") ? "\u76F8\u5173\u8D44\u6E90" : "Resources"); _ck(_v, 104, 0, currVal_69); var currVal_73 = ((_co.language === "zh") ? "\u793E\u533A" : "Community"); _ck(_v, 137, 0, currVal_73); var currVal_82 = ((_co.language === "zh") ? "\u5E2E\u52A9" : "Help"); _ck(_v, 167, 0, currVal_82); var currVal_84 = ((_co.language === "zh") ? "http://ng.ant.design/docs/changelog/zh" : "http://ng.ant.design/docs/changelog/en"); _ck(_v, 178, 0, currVal_84); var currVal_85 = ((_co.language === "zh") ? "\u66F4\u65B0\u65E5\u5FD7" : "Changelog"); _ck(_v, 180, 0, currVal_85); var currVal_87 = ((_co.language === "zh") ? "http://ng.ant.design/docs/faq/zh" : "http://ng.ant.design/docs/faq/en"); _ck(_v, 184, 0, currVal_87); var currVal_88 = ((_co.language === "zh") ? "\u5E38\u89C1\u95EE\u9898" : "FAQ"); _ck(_v, 186, 0, currVal_88); var currVal_89 = ((_co.language === "zh") ? "https://ng.ant.design/issue-helper/#/zh" : "https://ng.ant.design/issue-helper/#/en"); _ck(_v, 188, 0, currVal_89); var currVal_90 = ((_co.language === "zh") ? "\u62A5\u544A Bug" : "Bug Report"); _ck(_v, 190, 0, currVal_90); var currVal_91 = ((_co.language === "zh") ? "\u8BA8\u8BBA\u5217\u8868" : "Issue"); _ck(_v, 194, 0, currVal_91); var currVal_95 = ((_co.language === "zh") ? "\u66F4\u591A\u4EA7\u54C1" : "More Products"); _ck(_v, 206, 0, currVal_95); var currVal_98 = ((_co.language === "zh") ? "\u8BED\u96C0" : "YuQue"); _ck(_v, 212, 0, currVal_98); var currVal_99 = ((_co.language === "zh") ? "\u77E5\u8BC6\u521B\u4F5C\u4E0E\u5206\u4EAB\u5DE5\u5177" : "Write your document as a team"); _ck(_v, 216, 0, currVal_99); var currVal_100 = ((_co.language === "zh") ? "\u4E91\u51E4\u8776" : "FengDie"); _ck(_v, 220, 0, currVal_100); var currVal_101 = ((_co.language === "zh") ? "\u79FB\u52A8\u5EFA\u7AD9\u5E73\u53F0" : "Mobile web app builder"); _ck(_v, 224, 0, currVal_101); var currVal_102 = ((_co.language === "zh") ? "\u6570\u636E\u53EF\u89C6\u5316" : "Data Visualization"); _ck(_v, 231, 0, currVal_102); var currVal_103 = ((_co.language === "zh") ? "\u4F01\u4E1A\u7EA7 Node \u5F00\u53D1\u6846\u67B6" : "Enterprise Node Framework"); _ck(_v, 238, 0, currVal_103); var currVal_104 = ((_co.language === "zh") ? "\u8682\u8681\u4F53\u9A8C\u79D1\u6280" : "Ant Financial Experience Tech"); _ck(_v, 242, 0, currVal_104); var currVal_105 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 245).isTooltipOpen; _ck(_v, 244, 0, currVal_105); }); }
 function View_AppComponent_Host_0(_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵvid"](0, [(_l()(), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵeld"](0, 0, null, null, 1, "app-root", [], null, [["document", "keyup.s"]], function (_v, en, $event) { var ad = true; if (("document:keyup.s" === en)) {
         var pd_0 = (_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵnov"](_v, 1).onKeyUp($event) !== false);
         ad = (pd_0 && ad);
@@ -48934,7 +50632,7 @@ class AppComponent {
         this.docsearch = null;
         this.language = 'zh';
         this.oldVersionList = ['0.5.x', '0.6.x', '0.7.x', '1.8.x', '7.5.x'];
-        this.currentVersion = '8.0.3';
+        this.currentVersion = ng_zorro_antd__WEBPACK_IMPORTED_MODULE_4__["VERSION"].full;
         // region: color
         this.color = `#1890ff`;
         this.lessLoaded = false;
@@ -48985,7 +50683,10 @@ class AppComponent {
                 if (this.router.url !== '/' + this.searchComponent) {
                     this.searchComponent = null;
                 }
-                this.language = this.router.url.split('/')[this.router.url.split('/').length - 1].split('#')[0];
+                this.language = this.router.url
+                    .split('/')[this.router.url.split('/').length - 1]
+                    .split('#')[0]
+                    .split('?')[0];
                 this.appService.language$.next(this.language);
                 this.nzI18nService.setLocale(this.language === 'en' ? ng_zorro_antd__WEBPACK_IMPORTED_MODULE_4__["en_US"] : ng_zorro_antd__WEBPACK_IMPORTED_MODULE_4__["zh_CN"]);
                 if (this.docsearch) {
@@ -49316,7 +51017,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AppServerModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [_publish_message_ng_zorro_antd_message_ngfactory__WEBPACK_IMPORTED_MODULE_3__["NzMessageContainerComponentNgFactory"], _publish_tooltip_ng_zorro_antd_tooltip_ngfactory__WEBPACK_IMPORTED_MODULE_4__["NzToolTipComponentNgFactory"], _publish_popover_ng_zorro_antd_popover_ngfactory__WEBPACK_IMPORTED_MODULE_5__["NzPopoverComponentNgFactory"], _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_6__["ɵangular_packages_router_router_lNgFactory"], _demo_demo_component_ngfactory__WEBPACK_IMPORTED_MODULE_7__["DEMOComponentNgFactory"], _app_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["AppComponentNgFactory"]]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_q"], [[3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_bb"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_s"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_o"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_p"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["DomSanitizer"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSanitizerImpl"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Sanitizer"], null, [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["DomSanitizer"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_GESTURE_CONFIG"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HammerGestureConfig"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EVENT_MANAGER_PLUGINS"], function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomEventsPlugin"](p0_0, p0_1, p0_2), new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵKeyEventsPlugin"](p1_0), new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵHammerGesturesPlugin"](p2_0, p2_1, p2_2, p2_3), new _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_d"](p3_0)]; }, [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_GESTURE_CONFIG"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵConsole"], [2, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_LOADER"]], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EVENT_MANAGER_PLUGINS"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](135680, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomRendererFactory2"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomRendererFactory2"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], [2, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵSharedStylesHost"], null, [_angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵSharedStylesHost"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["AnimationDriver"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵNoopAnimationDriver"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationStyleNormalizer"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵangular_packages_platform_browser_animations_animations_b"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationEngine"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵInjectableAnimationEngine"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["AnimationDriver"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationStyleNormalizer"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_a"], [_angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationEngine"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4352, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Testability"], null, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations__WEBPACK_IMPORTED_MODULE_14__["AnimationBuilder"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵBrowserAnimationBuilder"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_o"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_o"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXsrfTokenExtractor"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_g"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_e"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXsrfTokenExtractor"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_f"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_b"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_c"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_b"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HTTP_INTERCEPTORS"], function (p0_0, p1_0) { return [p0_0, new _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpInterceptor"](p1_0)]; }, [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["XhrFactory"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_e"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["XhrFactory"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpBackend"], null, [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpHandler"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_f"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpBackend"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClient"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClient"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpHandler"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_d"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_d"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["MutationObserverFactory"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["MutationObserverFactory"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ScrollStrategyOptions"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayContainer"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayPositionBuilder"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayKeyboardDispatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["Directionality"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ɵc"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ɵd"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormBuilder"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormBuilder"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzScrollService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["SCROLL_SERVICE_PROVIDER_FACTORY"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], [3, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzScrollService"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDrop"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDrop"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ViewportRuler"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropRegistry"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_d"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwPush"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwPush"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwUpdate"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwUpdate"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_g"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadingStrategy"], null, [_angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](135680, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterPreloader"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterPreloader"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadingStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_24__["NoPreloading"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["NoPreloading"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_9__["ViewportScroller"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["ɵNullViewportScroller"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_o"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_c"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["ViewportScroller"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_INITIALIZER"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_j"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_BOOTSTRAP_LISTENER"], function (p0_0) { return [p0_0]; }, [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_INITIALIZER"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["Title"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["Title"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_a"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgProbeToken"], function () { return [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_b"]()]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"], "docs", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](2048, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"], null, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_b"], "ngsw-worker.js", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], { enabled: true }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"], function (p0_0, p1_0, p1_1, p1_2, p2_0, p3_0, p3_1, p3_2, p3_3) { return [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_j"](p0_0), _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_h"](p1_0, p1_1, p1_2), _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_i"](p2_0), _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_c"](p3_0, p3_1, p3_2, p3_3)]; }, [[2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgProbeToken"]], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_b"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], [[2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](131584, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵConsole"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"], [[3, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_d"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_d"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientXsrfModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientXsrfModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["ObserversModule"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["ObserversModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_25__["PlatformModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_25__["PlatformModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzWaveModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzWaveModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NzIconModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NzIconModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_27__["NzButtonModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_27__["NzButtonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["BidiModule"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["BidiModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_28__["PortalModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_28__["PortalModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ScrollingModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ScrollingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzNoAnimationModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzNoAnimationModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzAddOnModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzAddOnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_29__["NzMenuModule"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_29__["NzMenuModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NzI18nModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NzI18nModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_31__["NzEmptyModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_31__["NzEmptyModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzOverlayModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzOverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_32__["NzSelectModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_32__["NzSelectModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_34__["NzToolTipModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_34__["NzToolTipModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_35__["NzPopoverModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_35__["NzPopoverModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__["NzInputModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__["NzInputModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_a"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_e"], [[3, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["DefaultUrlSerializer"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"], { preloadingStrategy: _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"] }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_d"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["PlatformLocation"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["APP_BASE_HREF"]], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["PlatformLocation"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapNgFactoryLoader"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["MODULE_MAP"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTES"], function () { return [[{ path: "", pathMatch: "full", redirectTo: "/docs/introduce/en" }, { "path": "components/affix", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ0"] }, { "path": "components/alert", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ1"] }, { "path": "components/anchor", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ2"] }, { "path": "components/auto-complete", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ3"] }, { "path": "components/avatar", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ4"] }, { "path": "components/back-top", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ5"] }, { "path": "components/badge", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ6"] }, { "path": "components/breadcrumb", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ7"] }, { "path": "components/button", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ8"] }, { "path": "components/calendar", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ9"] }, { "path": "components/card", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ10"] }, { "path": "components/carousel", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ11"] }, { "path": "components/cascader", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ12"] }, { "path": "components/checkbox", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ13"] }, { "path": "components/collapse", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ14"] }, { "path": "components/comment", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ15"] }, { "path": "components/date-picker", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ16"] }, { "path": "components/descriptions", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ17"] }, { "path": "components/divider", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ18"] }, { "path": "components/drawer", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ19"] }, { "path": "components/dropdown", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ20"] }, { "path": "components/empty", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ21"] }, { "path": "components/form", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ22"] }, { "path": "components/grid", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ23"] }, { "path": "components/icon", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ24"] }, { "path": "components/input", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ25"] }, { "path": "components/input-number", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ26"] }, { "path": "components/layout", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ27"] }, { "path": "components/list", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ28"] }, { "path": "components/mention", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ29"] }, { "path": "components/menu", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ30"] }, { "path": "components/message", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ31"] }, { "path": "components/modal", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ32"] }, { "path": "components/notification", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ33"] }, { "path": "components/page-header", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ34"] }, { "path": "components/pagination", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ35"] }, { "path": "components/popconfirm", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ36"] }, { "path": "components/popover", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ37"] }, { "path": "components/progress", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ38"] }, { "path": "components/radio", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ39"] }, { "path": "components/rate", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ40"] }, { "path": "components/select", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ41"] }, { "path": "components/skeleton", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ42"] }, { "path": "components/slider", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ43"] }, { "path": "components/spin", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ44"] }, { "path": "components/statistic", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ45"] }, { "path": "components/steps", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ46"] }, { "path": "components/switch", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ47"] }, { "path": "components/table", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ48"] }, { "path": "components/tabs", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ49"] }, { "path": "components/tag", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ50"] }, { "path": "components/time-picker", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ51"] }, { "path": "components/timeline", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ52"] }, { "path": "components/tooltip", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ53"] }, { "path": "components/transfer", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ54"] }, { "path": "components/tree", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ55"] }, { "path": "components/tree-select", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ56"] }, { "path": "components/typography", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ57"] }, { "path": "components/upload", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ58"] }, { path: "docs", loadChildren: _app_routing_module__WEBPACK_IMPORTED_MODULE_39__["ɵ0"] }, { path: "demo", component: _demo_demo_component__WEBPACK_IMPORTED_MODULE_40__["DEMOComponent"] }, { path: "**", redirectTo: "/docs/introduce/zh", pathMatch: "full" }]]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_f"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTES"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlHandlingStrategy"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouteReuseStrategy"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"], [[2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_a"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_highlight_nz_highlight_module__WEBPACK_IMPORTED_MODULE_41__["NzHighlightModule"], _share_nz_highlight_nz_highlight_module__WEBPACK_IMPORTED_MODULE_41__["NzHighlightModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_codebox_nz_codebox_module__WEBPACK_IMPORTED_MODULE_42__["NzCodeBoxModule"], _share_nz_codebox_nz_codebox_module__WEBPACK_IMPORTED_MODULE_42__["NzCodeBoxModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_nav_bottom_nz_nav_bottom_module__WEBPACK_IMPORTED_MODULE_43__["NzNavBottomModule"], _share_nz_nav_bottom_nz_nav_bottom_module__WEBPACK_IMPORTED_MODULE_43__["NzNavBottomModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_github_btn_nz_github_btn_module__WEBPACK_IMPORTED_MODULE_44__["NzGithubBtnModule"], _share_nz_github_btn_nz_github_btn_module__WEBPACK_IMPORTED_MODULE_44__["NzGithubBtnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_45__["NzAffixModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_45__["NzAffixModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_46__["NzAnchorModule"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_46__["NzAnchorModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_47__["LayoutModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_47__["LayoutModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_48__["NzGridModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_48__["NzGridModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["CheckboardModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["CheckboardModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["CoordinatesModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["CoordinatesModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["AlphaModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["AlphaModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["EditableInputModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["EditableInputModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["HueModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["HueModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["SaturationModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["SaturationModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["SwatchModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["SwatchModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color_sketch__WEBPACK_IMPORTED_MODULE_50__["ColorSketchModule"], ngx_color_sketch__WEBPACK_IMPORTED_MODULE_50__["ColorSketchModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_share_module__WEBPACK_IMPORTED_MODULE_51__["ShareModule"], _share_share_module__WEBPACK_IMPORTED_MODULE_51__["ShareModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientJsonpModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientJsonpModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ServiceWorkerModule"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ServiceWorkerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_module__WEBPACK_IMPORTED_MODULE_52__["AppModule"], _app_module__WEBPACK_IMPORTED_MODULE_52__["AppModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["NoopAnimationsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["NoopAnimationsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ServerModule"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ServerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapLoaderModule"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapLoaderModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵAPP_ROOT"], true, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ANIMATION_MODULE_TYPE"], "NoopAnimations", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_e"], "XSRF-TOKEN", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_f"], "X-XSRF-TOKEN", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NZ_MESSAGE_DEFAULT_CONFIG"], { nzAnimate: true, nzDuration: 3000, nzMaxStack: 7, nzPauseOnHover: true, nzTop: 24 }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NZ_ICONS"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["ɵ2"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NZ_ICON_DEFAULT_TWOTONE_COLOR"], "#1890ff", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NZ_I18N"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["ɵ1"], [])]); });
+var AppServerModuleNgFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵcmf"](_app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]], function (_l) { return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmod"]([_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵCodegenComponentFactoryResolver"], [[8, [_publish_message_ng_zorro_antd_message_ngfactory__WEBPACK_IMPORTED_MODULE_3__["NzMessageContainerComponentNgFactory"], _publish_tooltip_ng_zorro_antd_tooltip_ngfactory__WEBPACK_IMPORTED_MODULE_4__["NzToolTipComponentNgFactory"], _publish_popover_ng_zorro_antd_popover_ngfactory__WEBPACK_IMPORTED_MODULE_5__["NzPopoverComponentNgFactory"], _node_modules_angular_router_router_ngfactory__WEBPACK_IMPORTED_MODULE_6__["ɵangular_packages_router_router_lNgFactory"], _demo_demo_component_ngfactory__WEBPACK_IMPORTED_MODULE_7__["DEMOComponentNgFactory"], _app_component_ngfactory__WEBPACK_IMPORTED_MODULE_8__["AppComponentNgFactory"]]], [3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"]], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_q"], [[3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgLocalization"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgLocaleLocalization"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["LOCALE_ID"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["ɵangular_packages_common_common_a"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_bb"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_s"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["IterableDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_o"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["KeyValueDiffers"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵangular_packages_core_core_p"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["DomSanitizer"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSanitizerImpl"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Sanitizer"], null, [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["DomSanitizer"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_GESTURE_CONFIG"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HammerGestureConfig"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EVENT_MANAGER_PLUGINS"], function (p0_0, p0_1, p0_2, p1_0, p2_0, p2_1, p2_2, p2_3, p3_0) { return [new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomEventsPlugin"](p0_0, p0_1, p0_2), new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵKeyEventsPlugin"](p1_0), new _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵHammerGesturesPlugin"](p2_0, p2_1, p2_2, p2_3), new _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_d"](p3_0)]; }, [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_GESTURE_CONFIG"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵConsole"], [2, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["HAMMER_LOADER"]], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EVENT_MANAGER_PLUGINS"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](135680, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomRendererFactory2"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomRendererFactory2"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵDomSharedStylesHost"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], [2, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵSharedStylesHost"], null, [_angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_c"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["EventManager"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵSharedStylesHost"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["AnimationDriver"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵNoopAnimationDriver"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationStyleNormalizer"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵangular_packages_platform_browser_animations_animations_b"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationEngine"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵInjectableAnimationEngine"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["AnimationDriver"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationStyleNormalizer"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_a"], [_angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵServerRendererFactory2"], _angular_animations_browser__WEBPACK_IMPORTED_MODULE_12__["ɵAnimationEngine"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4352, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Testability"], null, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_animations__WEBPACK_IMPORTED_MODULE_14__["AnimationBuilder"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ɵBrowserAnimationBuilder"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["RendererFactory2"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_o"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_o"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXsrfTokenExtractor"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_g"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_e"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXsrfTokenExtractor"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_f"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_b"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_c"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_b"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HTTP_INTERCEPTORS"], function (p0_0, p1_0) { return [p0_0, new _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpInterceptor"](p1_0)]; }, [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_h"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["JsonpClientBackend"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["XhrFactory"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_e"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["XhrFactory"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpBackend"], null, [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpXhrBackend"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpHandler"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ɵangular_packages_platform_server_platform_server_f"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpBackend"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClient"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClient"], [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpHandler"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_d"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_d"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["MutationObserverFactory"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["MutationObserverFactory"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ScrollStrategyOptions"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayContainer"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayPositionBuilder"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayKeyboardDispatcher"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["Directionality"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ɵc"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["ɵd"], [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["Overlay"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormBuilder"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormBuilder"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzScrollService"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["SCROLL_SERVICE_PROVIDER_FACTORY"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], [3, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzScrollService"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDrop"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDrop"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ViewportRuler"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropRegistry"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_d"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwPush"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwPush"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwUpdate"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwUpdate"], [_angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_a"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_g"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](6144, _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadingStrategy"], null, [_angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](135680, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterPreloader"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterPreloader"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadingStrategy"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_router__WEBPACK_IMPORTED_MODULE_24__["NoPreloading"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["NoPreloading"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_common__WEBPACK_IMPORTED_MODULE_9__["ViewportScroller"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["ɵNullViewportScroller"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_o"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_c"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["ViewportScroller"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_INITIALIZER"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_j"], [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](5120, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_BOOTSTRAP_LISTENER"], function (p0_0) { return [p0_0]; }, [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_INITIALIZER"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](4608, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["Title"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["Title"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_a"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgProbeToken"], function () { return [_angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_b"]()]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"], "docs", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](2048, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"], null, [_angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_b"], "ngsw-worker.js", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], { enabled: true }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"], function (p0_0, p1_0, p1_1, p1_2, p2_0, p3_0, p3_1, p3_2, p3_3) { return [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_j"](p0_0), _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵangular_packages_platform_browser_platform_browser_h"](p1_0, p1_1, p1_2), _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_i"](p2_0), _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_c"](p3_0, p3_1, p3_2, p3_3)]; }, [[2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgProbeToken"]], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["ɵTRANSITION_ID"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["DOCUMENT"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_h"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ɵangular_packages_service_worker_service_worker_b"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["SwRegistrationOptions"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["PLATFORM_ID"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"], [[2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["APP_INITIALIZER"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](131584, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵConsole"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ErrorHandler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ComponentFactoryResolver"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationInitStatus"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationModule"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"], [[3, _angular_platform_browser__WEBPACK_IMPORTED_MODULE_10__["BrowserModule"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["BrowserAnimationsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_d"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ɵangular_packages_forms_forms_d"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["FormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientXsrfModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientXsrfModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["ObserversModule"], _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_17__["ObserversModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_25__["PlatformModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_25__["PlatformModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzWaveModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzWaveModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NzIconModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NzIconModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_27__["NzButtonModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_27__["NzButtonModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["BidiModule"], _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_19__["BidiModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_28__["PortalModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_28__["PortalModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ScrollingModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__["ScrollingModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_18__["OverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzNoAnimationModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzNoAnimationModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzAddOnModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzAddOnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_29__["NzMenuModule"], ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_29__["NzMenuModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NzI18nModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NzI18nModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_31__["NzEmptyModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_31__["NzEmptyModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzOverlayModule"], ng_zorro_antd_core__WEBPACK_IMPORTED_MODULE_20__["NzOverlayModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_32__["NzSelectModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_32__["NzSelectModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageServiceModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageServiceModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageModule"], ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NzMessageModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_34__["NzToolTipModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_34__["NzToolTipModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_35__["NzPopoverModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_35__["NzPopoverModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__["NzInputModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_36__["NzInputModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_a"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_e"], [[3, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["DefaultUrlSerializer"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"], { preloadingStrategy: _angular_router__WEBPACK_IMPORTED_MODULE_24__["PreloadAllModules"], scrollPositionRestoration: "enabled" }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_d"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["PlatformLocation"], [2, _angular_common__WEBPACK_IMPORTED_MODULE_9__["APP_BASE_HREF"]], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], [_angular_common__WEBPACK_IMPORTED_MODULE_9__["LocationStrategy"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["PlatformLocation"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](512, _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapNgFactoryLoader"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["MODULE_MAP"]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTES"], function () { return [[{ path: "", pathMatch: "full", redirectTo: "/docs/introduce/en" }, { "path": "components/affix", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ0"] }, { "path": "components/alert", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ1"] }, { "path": "components/anchor", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ2"] }, { "path": "components/auto-complete", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ3"] }, { "path": "components/avatar", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ4"] }, { "path": "components/back-top", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ5"] }, { "path": "components/badge", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ6"] }, { "path": "components/breadcrumb", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ7"] }, { "path": "components/button", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ8"] }, { "path": "components/calendar", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ9"] }, { "path": "components/card", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ10"] }, { "path": "components/carousel", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ11"] }, { "path": "components/cascader", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ12"] }, { "path": "components/checkbox", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ13"] }, { "path": "components/collapse", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ14"] }, { "path": "components/comment", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ15"] }, { "path": "components/date-picker", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ16"] }, { "path": "components/descriptions", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ17"] }, { "path": "components/divider", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ18"] }, { "path": "components/drawer", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ19"] }, { "path": "components/dropdown", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ20"] }, { "path": "components/empty", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ21"] }, { "path": "components/form", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ22"] }, { "path": "components/grid", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ23"] }, { "path": "components/icon", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ24"] }, { "path": "components/input", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ25"] }, { "path": "components/input-number", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ26"] }, { "path": "components/layout", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ27"] }, { "path": "components/list", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ28"] }, { "path": "components/mention", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ29"] }, { "path": "components/menu", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ30"] }, { "path": "components/message", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ31"] }, { "path": "components/modal", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ32"] }, { "path": "components/notification", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ33"] }, { "path": "components/page-header", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ34"] }, { "path": "components/pagination", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ35"] }, { "path": "components/popconfirm", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ36"] }, { "path": "components/popover", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ37"] }, { "path": "components/progress", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ38"] }, { "path": "components/radio", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ39"] }, { "path": "components/rate", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ40"] }, { "path": "components/result", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ41"] }, { "path": "components/select", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ42"] }, { "path": "components/skeleton", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ43"] }, { "path": "components/slider", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ44"] }, { "path": "components/spin", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ45"] }, { "path": "components/statistic", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ46"] }, { "path": "components/steps", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ47"] }, { "path": "components/switch", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ48"] }, { "path": "components/table", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ49"] }, { "path": "components/tabs", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ50"] }, { "path": "components/tag", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ51"] }, { "path": "components/time-picker", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ52"] }, { "path": "components/timeline", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ53"] }, { "path": "components/tooltip", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ54"] }, { "path": "components/transfer", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ55"] }, { "path": "components/tree", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ56"] }, { "path": "components/tree-select", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ57"] }, { "path": "components/typography", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ58"] }, { "path": "components/upload", "loadChildren": _router__WEBPACK_IMPORTED_MODULE_38__["ɵ59"] }, { path: "docs", loadChildren: _app_routing_module__WEBPACK_IMPORTED_MODULE_39__["ɵ0"] }, { path: "demo", component: _demo_demo_component__WEBPACK_IMPORTED_MODULE_40__["DEMOComponent"] }, { path: "**", redirectTo: "/docs/introduce/zh", pathMatch: "full" }]]; }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1024, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_f"], [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ApplicationRef"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlSerializer"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ChildrenOutletContexts"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModuleFactoryLoader"], _angular_core__WEBPACK_IMPORTED_MODULE_0__["Compiler"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTES"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["ROUTER_CONFIGURATION"], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["UrlHandlingStrategy"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouteReuseStrategy"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"], _angular_router__WEBPACK_IMPORTED_MODULE_24__["RouterModule"], [[2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["ɵangular_packages_router_router_a"]], [2, _angular_router__WEBPACK_IMPORTED_MODULE_24__["Router"]]]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_15__["ReactiveFormsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_highlight_nz_highlight_module__WEBPACK_IMPORTED_MODULE_41__["NzHighlightModule"], _share_nz_highlight_nz_highlight_module__WEBPACK_IMPORTED_MODULE_41__["NzHighlightModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_codebox_nz_codebox_module__WEBPACK_IMPORTED_MODULE_42__["NzCodeBoxModule"], _share_nz_codebox_nz_codebox_module__WEBPACK_IMPORTED_MODULE_42__["NzCodeBoxModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_nav_bottom_nz_nav_bottom_module__WEBPACK_IMPORTED_MODULE_43__["NzNavBottomModule"], _share_nz_nav_bottom_nz_nav_bottom_module__WEBPACK_IMPORTED_MODULE_43__["NzNavBottomModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_nz_github_btn_nz_github_btn_module__WEBPACK_IMPORTED_MODULE_44__["NzGithubBtnModule"], _share_nz_github_btn_nz_github_btn_module__WEBPACK_IMPORTED_MODULE_44__["NzGithubBtnModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_45__["NzAffixModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_45__["NzAffixModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_46__["NzAnchorModule"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_46__["NzAnchorModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_47__["LayoutModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_47__["LayoutModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_48__["NzGridModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_48__["NzGridModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["CheckboardModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["CheckboardModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["CoordinatesModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["CoordinatesModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["AlphaModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["AlphaModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["EditableInputModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["EditableInputModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["HueModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["HueModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["SaturationModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["SaturationModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color__WEBPACK_IMPORTED_MODULE_49__["SwatchModule"], ngx_color__WEBPACK_IMPORTED_MODULE_49__["SwatchModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, ngx_color_sketch__WEBPACK_IMPORTED_MODULE_50__["ColorSketchModule"], ngx_color_sketch__WEBPACK_IMPORTED_MODULE_50__["ColorSketchModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_21__["DragDropModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _share_share_module__WEBPACK_IMPORTED_MODULE_51__["ShareModule"], _share_share_module__WEBPACK_IMPORTED_MODULE_51__["ShareModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientJsonpModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["HttpClientJsonpModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ServiceWorkerModule"], _angular_service_worker__WEBPACK_IMPORTED_MODULE_23__["ServiceWorkerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_module__WEBPACK_IMPORTED_MODULE_52__["AppModule"], _app_module__WEBPACK_IMPORTED_MODULE_52__["AppModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["NoopAnimationsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["NoopAnimationsModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ServerModule"], _angular_platform_server__WEBPACK_IMPORTED_MODULE_11__["ServerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapLoaderModule"], _nguniversal_module_map_ngfactory_loader__WEBPACK_IMPORTED_MODULE_37__["ModuleMapLoaderModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](1073742336, _app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["AppServerModule"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵAPP_ROOT"], true, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_13__["ANIMATION_MODULE_TYPE"], "NoopAnimations", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_e"], "XSRF-TOKEN", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, _angular_common_http__WEBPACK_IMPORTED_MODULE_16__["ɵangular_packages_common_http_http_f"], "X-XSRF-TOKEN", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_33__["NZ_MESSAGE_DEFAULT_CONFIG"], { nzAnimate: true, nzDuration: 3000, nzMaxStack: 7, nzPauseOnHover: true, nzTop: 24 }, []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NZ_ICONS"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["ɵ2"], []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_26__["NZ_ICON_DEFAULT_TWOTONE_COLOR"], "#1890ff", []), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵmpd"](256, ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_30__["NZ_I18N"], _app_server_module__WEBPACK_IMPORTED_MODULE_1__["ɵ1"], [])]); });
 
 
 
@@ -49393,7 +51094,7 @@ class AppService {
 /*!********************************!*\
   !*** ./site/doc/app/router.ts ***!
   \********************************/
-/*! exports provided: ROUTER_LIST, DEMO_ROUTES, ɵ0, ɵ1, ɵ2, ɵ3, ɵ4, ɵ5, ɵ6, ɵ7, ɵ8, ɵ9, ɵ10, ɵ11, ɵ12, ɵ13, ɵ14, ɵ15, ɵ16, ɵ17, ɵ18, ɵ19, ɵ20, ɵ21, ɵ22, ɵ23, ɵ24, ɵ25, ɵ26, ɵ27, ɵ28, ɵ29, ɵ30, ɵ31, ɵ32, ɵ33, ɵ34, ɵ35, ɵ36, ɵ37, ɵ38, ɵ39, ɵ40, ɵ41, ɵ42, ɵ43, ɵ44, ɵ45, ɵ46, ɵ47, ɵ48, ɵ49, ɵ50, ɵ51, ɵ52, ɵ53, ɵ54, ɵ55, ɵ56, ɵ57, ɵ58 */
+/*! exports provided: ROUTER_LIST, DEMO_ROUTES, ɵ0, ɵ1, ɵ2, ɵ3, ɵ4, ɵ5, ɵ6, ɵ7, ɵ8, ɵ9, ɵ10, ɵ11, ɵ12, ɵ13, ɵ14, ɵ15, ɵ16, ɵ17, ɵ18, ɵ19, ɵ20, ɵ21, ɵ22, ɵ23, ɵ24, ɵ25, ɵ26, ɵ27, ɵ28, ɵ29, ɵ30, ɵ31, ɵ32, ɵ33, ɵ34, ɵ35, ɵ36, ɵ37, ɵ38, ɵ39, ɵ40, ɵ41, ɵ42, ɵ43, ɵ44, ɵ45, ɵ46, ɵ47, ɵ48, ɵ49, ɵ50, ɵ51, ɵ52, ɵ53, ɵ54, ɵ55, ɵ56, ɵ57, ɵ58, ɵ59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -49459,6 +51160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ56", function() { return ɵ56; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ57", function() { return ɵ57; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ58", function() { return ɵ58; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ59", function() { return ɵ59; });
 const ROUTER_LIST = {
     'intro': [
         {
@@ -50165,6 +51867,11 @@ const ROUTER_LIST = {
                     "zh": ""
                 },
                 {
+                    "label": "Result",
+                    "path": "components/result/en",
+                    "zh": ""
+                },
+                {
                     "label": "Skeleton",
                     "path": "components/skeleton/en",
                     "zh": ""
@@ -50214,6 +51921,11 @@ const ROUTER_LIST = {
                     "label": "Progress",
                     "path": "components/progress/zh",
                     "zh": "进度条"
+                },
+                {
+                    "label": "Result",
+                    "path": "components/result/zh",
+                    "zh": "结果"
                 },
                 {
                     "label": "Skeleton",
@@ -50271,7 +51983,7 @@ const ROUTER_LIST = {
         }
     ]
 };
-const ɵ0 = () => Promise.all(/*! import() | affix-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("affix-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./affix/index.module.ngfactory */ "./site/doc/app/affix/index.module.ngfactory.js")).then(m => m.NzDemoAffixModuleNgFactory), ɵ1 = () => Promise.all(/*! import() | alert-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("alert-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./alert/index.module.ngfactory */ "./site/doc/app/alert/index.module.ngfactory.js")).then(m => m.NzDemoAlertModuleNgFactory), ɵ2 = () => Promise.all(/*! import() | anchor-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("anchor-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./anchor/index.module.ngfactory */ "./site/doc/app/anchor/index.module.ngfactory.js")).then(m => m.NzDemoAnchorModuleNgFactory), ɵ3 = () => Promise.all(/*! import() | auto-complete-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("auto-complete-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./auto-complete/index.module.ngfactory */ "./site/doc/app/auto-complete/index.module.ngfactory.js")).then(m => m.NzDemoAutoCompleteModuleNgFactory), ɵ4 = () => Promise.all(/*! import() | avatar-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("avatar-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./avatar/index.module.ngfactory */ "./site/doc/app/avatar/index.module.ngfactory.js")).then(m => m.NzDemoAvatarModuleNgFactory), ɵ5 = () => Promise.all(/*! import() | back-top-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("back-top-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./back-top/index.module.ngfactory */ "./site/doc/app/back-top/index.module.ngfactory.js")).then(m => m.NzDemoBackTopModuleNgFactory), ɵ6 = () => Promise.all(/*! import() | badge-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("badge-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./badge/index.module.ngfactory */ "./site/doc/app/badge/index.module.ngfactory.js")).then(m => m.NzDemoBadgeModuleNgFactory), ɵ7 = () => Promise.all(/*! import() | breadcrumb-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("breadcrumb-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./breadcrumb/index.module.ngfactory */ "./site/doc/app/breadcrumb/index.module.ngfactory.js")).then(m => m.NzDemoBreadcrumbModuleNgFactory), ɵ8 = () => Promise.all(/*! import() | button-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("button-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./button/index.module.ngfactory */ "./site/doc/app/button/index.module.ngfactory.js")).then(m => m.NzDemoButtonModuleNgFactory), ɵ9 = () => Promise.all(/*! import() | calendar-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("calendar-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./calendar/index.module.ngfactory */ "./site/doc/app/calendar/index.module.ngfactory.js")).then(m => m.NzDemoCalendarModuleNgFactory), ɵ10 = () => Promise.all(/*! import() | card-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("card-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./card/index.module.ngfactory */ "./site/doc/app/card/index.module.ngfactory.js")).then(m => m.NzDemoCardModuleNgFactory), ɵ11 = () => Promise.all(/*! import() | carousel-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("carousel-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./carousel/index.module.ngfactory */ "./site/doc/app/carousel/index.module.ngfactory.js")).then(m => m.NzDemoCarouselModuleNgFactory), ɵ12 = () => Promise.all(/*! import() | cascader-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./cascader/index.module.ngfactory */ "./site/doc/app/cascader/index.module.ngfactory.js")).then(m => m.NzDemoCascaderModuleNgFactory), ɵ13 = () => Promise.all(/*! import() | checkbox-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("checkbox-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./checkbox/index.module.ngfactory */ "./site/doc/app/checkbox/index.module.ngfactory.js")).then(m => m.NzDemoCheckboxModuleNgFactory), ɵ14 = () => Promise.all(/*! import() | collapse-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("collapse-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./collapse/index.module.ngfactory */ "./site/doc/app/collapse/index.module.ngfactory.js")).then(m => m.NzDemoCollapseModuleNgFactory), ɵ15 = () => Promise.all(/*! import() | comment-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("comment-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./comment/index.module.ngfactory */ "./site/doc/app/comment/index.module.ngfactory.js")).then(m => m.NzDemoCommentModuleNgFactory), ɵ16 = () => Promise.all(/*! import() | date-picker-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("date-picker-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./date-picker/index.module.ngfactory */ "./site/doc/app/date-picker/index.module.ngfactory.js")).then(m => m.NzDemoDatePickerModuleNgFactory), ɵ17 = () => Promise.all(/*! import() | descriptions-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("descriptions-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./descriptions/index.module.ngfactory */ "./site/doc/app/descriptions/index.module.ngfactory.js")).then(m => m.NzDemoDescriptionsModuleNgFactory), ɵ18 = () => Promise.all(/*! import() | divider-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("divider-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./divider/index.module.ngfactory */ "./site/doc/app/divider/index.module.ngfactory.js")).then(m => m.NzDemoDividerModuleNgFactory), ɵ19 = () => Promise.all(/*! import() | drawer-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("drawer-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./drawer/index.module.ngfactory */ "./site/doc/app/drawer/index.module.ngfactory.js")).then(m => m.NzDemoDrawerModuleNgFactory), ɵ20 = () => Promise.all(/*! import() | dropdown-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("dropdown-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./dropdown/index.module.ngfactory */ "./site/doc/app/dropdown/index.module.ngfactory.js")).then(m => m.NzDemoDropdownModuleNgFactory), ɵ21 = () => Promise.all(/*! import() | empty-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~tree-select-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./empty/index.module.ngfactory */ "./site/doc/app/empty/index.module.ngfactory.js")).then(m => m.NzDemoEmptyModuleNgFactory), ɵ22 = () => Promise.all(/*! import() | form-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("form-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./form/index.module.ngfactory */ "./site/doc/app/form/index.module.ngfactory.js")).then(m => m.NzDemoFormModuleNgFactory), ɵ23 = () => Promise.all(/*! import() | grid-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("grid-index-module-ngfactory~slider-index-module-ngfactory"), __webpack_require__.e("grid-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./grid/index.module.ngfactory */ "./site/doc/app/grid/index.module.ngfactory.js")).then(m => m.NzDemoGridModuleNgFactory), ɵ24 = () => Promise.all(/*! import() | icon-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("icon-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./icon/index.module.ngfactory */ "./site/doc/app/icon/index.module.ngfactory.js")).then(m => m.NzDemoIconModuleNgFactory), ɵ25 = () => Promise.all(/*! import() | input-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("input-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./input/index.module.ngfactory */ "./site/doc/app/input/index.module.ngfactory.js")).then(m => m.NzDemoInputModuleNgFactory), ɵ26 = () => Promise.all(/*! import() | input-number-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("input-number-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./input-number/index.module.ngfactory */ "./site/doc/app/input-number/index.module.ngfactory.js")).then(m => m.NzDemoInputNumberModuleNgFactory), ɵ27 = () => Promise.all(/*! import() | layout-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("layout-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./layout/index.module.ngfactory */ "./site/doc/app/layout/index.module.ngfactory.js")).then(m => m.NzDemoLayoutModuleNgFactory), ɵ28 = () => Promise.all(/*! import() | list-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("list-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./list/index.module.ngfactory */ "./site/doc/app/list/index.module.ngfactory.js")).then(m => m.NzDemoListModuleNgFactory), ɵ29 = () => Promise.all(/*! import() | mention-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("mention-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./mention/index.module.ngfactory */ "./site/doc/app/mention/index.module.ngfactory.js")).then(m => m.NzDemoMentionModuleNgFactory), ɵ30 = () => Promise.all(/*! import() | menu-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("menu-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./menu/index.module.ngfactory */ "./site/doc/app/menu/index.module.ngfactory.js")).then(m => m.NzDemoMenuModuleNgFactory), ɵ31 = () => Promise.all(/*! import() | message-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("message-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./message/index.module.ngfactory */ "./site/doc/app/message/index.module.ngfactory.js")).then(m => m.NzDemoMessageModuleNgFactory), ɵ32 = () => Promise.all(/*! import() | modal-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("modal-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./modal/index.module.ngfactory */ "./site/doc/app/modal/index.module.ngfactory.js")).then(m => m.NzDemoModalModuleNgFactory), ɵ33 = () => Promise.all(/*! import() | notification-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("notification-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./notification/index.module.ngfactory */ "./site/doc/app/notification/index.module.ngfactory.js")).then(m => m.NzDemoNotificationModuleNgFactory), ɵ34 = () => Promise.all(/*! import() | page-header-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("page-header-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./page-header/index.module.ngfactory */ "./site/doc/app/page-header/index.module.ngfactory.js")).then(m => m.NzDemoPageHeaderModuleNgFactory), ɵ35 = () => Promise.all(/*! import() | pagination-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("pagination-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./pagination/index.module.ngfactory */ "./site/doc/app/pagination/index.module.ngfactory.js")).then(m => m.NzDemoPaginationModuleNgFactory), ɵ36 = () => Promise.all(/*! import() | popconfirm-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("popconfirm-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./popconfirm/index.module.ngfactory */ "./site/doc/app/popconfirm/index.module.ngfactory.js")).then(m => m.NzDemoPopconfirmModuleNgFactory), ɵ37 = () => Promise.all(/*! import() | popover-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("popover-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./popover/index.module.ngfactory */ "./site/doc/app/popover/index.module.ngfactory.js")).then(m => m.NzDemoPopoverModuleNgFactory), ɵ38 = () => Promise.all(/*! import() | progress-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("progress-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./progress/index.module.ngfactory */ "./site/doc/app/progress/index.module.ngfactory.js")).then(m => m.NzDemoProgressModuleNgFactory), ɵ39 = () => Promise.all(/*! import() | radio-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("radio-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./radio/index.module.ngfactory */ "./site/doc/app/radio/index.module.ngfactory.js")).then(m => m.NzDemoRadioModuleNgFactory), ɵ40 = () => Promise.all(/*! import() | rate-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("rate-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./rate/index.module.ngfactory */ "./site/doc/app/rate/index.module.ngfactory.js")).then(m => m.NzDemoRateModuleNgFactory), ɵ41 = () => Promise.all(/*! import() | select-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("select-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./select/index.module.ngfactory */ "./site/doc/app/select/index.module.ngfactory.js")).then(m => m.NzDemoSelectModuleNgFactory), ɵ42 = () => Promise.all(/*! import() | skeleton-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("skeleton-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./skeleton/index.module.ngfactory */ "./site/doc/app/skeleton/index.module.ngfactory.js")).then(m => m.NzDemoSkeletonModuleNgFactory), ɵ43 = () => Promise.all(/*! import() | slider-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("grid-index-module-ngfactory~slider-index-module-ngfactory"), __webpack_require__.e("slider-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./slider/index.module.ngfactory */ "./site/doc/app/slider/index.module.ngfactory.js")).then(m => m.NzDemoSliderModuleNgFactory), ɵ44 = () => Promise.all(/*! import() | spin-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("spin-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./spin/index.module.ngfactory */ "./site/doc/app/spin/index.module.ngfactory.js")).then(m => m.NzDemoSpinModuleNgFactory), ɵ45 = () => Promise.all(/*! import() | statistic-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("statistic-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./statistic/index.module.ngfactory */ "./site/doc/app/statistic/index.module.ngfactory.js")).then(m => m.NzDemoStatisticModuleNgFactory), ɵ46 = () => Promise.all(/*! import() | steps-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("steps-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./steps/index.module.ngfactory */ "./site/doc/app/steps/index.module.ngfactory.js")).then(m => m.NzDemoStepsModuleNgFactory), ɵ47 = () => Promise.all(/*! import() | switch-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("switch-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./switch/index.module.ngfactory */ "./site/doc/app/switch/index.module.ngfactory.js")).then(m => m.NzDemoSwitchModuleNgFactory), ɵ48 = () => Promise.all(/*! import() | table-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("table-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./table/index.module.ngfactory */ "./site/doc/app/table/index.module.ngfactory.js")).then(m => m.NzDemoTableModuleNgFactory), ɵ49 = () => Promise.all(/*! import() | tabs-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("tabs-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tabs/index.module.ngfactory */ "./site/doc/app/tabs/index.module.ngfactory.js")).then(m => m.NzDemoTabsModuleNgFactory), ɵ50 = () => Promise.all(/*! import() | tag-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("tag-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tag/index.module.ngfactory */ "./site/doc/app/tag/index.module.ngfactory.js")).then(m => m.NzDemoTagModuleNgFactory), ɵ51 = () => Promise.all(/*! import() | time-picker-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("time-picker-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./time-picker/index.module.ngfactory */ "./site/doc/app/time-picker/index.module.ngfactory.js")).then(m => m.NzDemoTimePickerModuleNgFactory), ɵ52 = () => Promise.all(/*! import() | timeline-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("timeline-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./timeline/index.module.ngfactory */ "./site/doc/app/timeline/index.module.ngfactory.js")).then(m => m.NzDemoTimelineModuleNgFactory), ɵ53 = () => Promise.all(/*! import() | tooltip-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("tooltip-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tooltip/index.module.ngfactory */ "./site/doc/app/tooltip/index.module.ngfactory.js")).then(m => m.NzDemoTooltipModuleNgFactory), ɵ54 = () => Promise.all(/*! import() | transfer-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("transfer-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./transfer/index.module.ngfactory */ "./site/doc/app/transfer/index.module.ngfactory.js")).then(m => m.NzDemoTransferModuleNgFactory), ɵ55 = () => Promise.all(/*! import() | tree-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("tree-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tree/index.module.ngfactory */ "./site/doc/app/tree/index.module.ngfactory.js")).then(m => m.NzDemoTreeModuleNgFactory), ɵ56 = () => Promise.all(/*! import() | tree-select-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~tree-select-index-module-ngfactory"), __webpack_require__.e("tree-select-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tree-select/index.module.ngfactory */ "./site/doc/app/tree-select/index.module.ngfactory.js")).then(m => m.NzDemoTreeSelectModuleNgFactory), ɵ57 = () => Promise.all(/*! import() | typography-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("typography-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./typography/index.module.ngfactory */ "./site/doc/app/typography/index.module.ngfactory.js")).then(m => m.NzDemoTypographyModuleNgFactory), ɵ58 = () => Promise.all(/*! import() | upload-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~47ade117"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("upload-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./upload/index.module.ngfactory */ "./site/doc/app/upload/index.module.ngfactory.js")).then(m => m.NzDemoUploadModuleNgFactory);
+const ɵ0 = () => Promise.all(/*! import() | affix-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("affix-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./affix/index.module.ngfactory */ "./site/doc/app/affix/index.module.ngfactory.js")).then(m => m.NzDemoAffixModuleNgFactory), ɵ1 = () => Promise.all(/*! import() | alert-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("alert-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./alert/index.module.ngfactory */ "./site/doc/app/alert/index.module.ngfactory.js")).then(m => m.NzDemoAlertModuleNgFactory), ɵ2 = () => Promise.all(/*! import() | anchor-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("anchor-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./anchor/index.module.ngfactory */ "./site/doc/app/anchor/index.module.ngfactory.js")).then(m => m.NzDemoAnchorModuleNgFactory), ɵ3 = () => Promise.all(/*! import() | auto-complete-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("auto-complete-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./auto-complete/index.module.ngfactory */ "./site/doc/app/auto-complete/index.module.ngfactory.js")).then(m => m.NzDemoAutoCompleteModuleNgFactory), ɵ4 = () => Promise.all(/*! import() | avatar-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("avatar-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./avatar/index.module.ngfactory */ "./site/doc/app/avatar/index.module.ngfactory.js")).then(m => m.NzDemoAvatarModuleNgFactory), ɵ5 = () => Promise.all(/*! import() | back-top-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("back-top-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./back-top/index.module.ngfactory */ "./site/doc/app/back-top/index.module.ngfactory.js")).then(m => m.NzDemoBackTopModuleNgFactory), ɵ6 = () => Promise.all(/*! import() | badge-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("badge-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./badge/index.module.ngfactory */ "./site/doc/app/badge/index.module.ngfactory.js")).then(m => m.NzDemoBadgeModuleNgFactory), ɵ7 = () => Promise.all(/*! import() | breadcrumb-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("breadcrumb-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./breadcrumb/index.module.ngfactory */ "./site/doc/app/breadcrumb/index.module.ngfactory.js")).then(m => m.NzDemoBreadcrumbModuleNgFactory), ɵ8 = () => Promise.all(/*! import() | button-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("button-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./button/index.module.ngfactory */ "./site/doc/app/button/index.module.ngfactory.js")).then(m => m.NzDemoButtonModuleNgFactory), ɵ9 = () => Promise.all(/*! import() | calendar-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("calendar-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./calendar/index.module.ngfactory */ "./site/doc/app/calendar/index.module.ngfactory.js")).then(m => m.NzDemoCalendarModuleNgFactory), ɵ10 = () => Promise.all(/*! import() | card-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("card-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./card/index.module.ngfactory */ "./site/doc/app/card/index.module.ngfactory.js")).then(m => m.NzDemoCardModuleNgFactory), ɵ11 = () => Promise.all(/*! import() | carousel-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("carousel-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./carousel/index.module.ngfactory */ "./site/doc/app/carousel/index.module.ngfactory.js")).then(m => m.NzDemoCarouselModuleNgFactory), ɵ12 = () => Promise.all(/*! import() | cascader-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./cascader/index.module.ngfactory */ "./site/doc/app/cascader/index.module.ngfactory.js")).then(m => m.NzDemoCascaderModuleNgFactory), ɵ13 = () => Promise.all(/*! import() | checkbox-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("checkbox-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./checkbox/index.module.ngfactory */ "./site/doc/app/checkbox/index.module.ngfactory.js")).then(m => m.NzDemoCheckboxModuleNgFactory), ɵ14 = () => Promise.all(/*! import() | collapse-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("collapse-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./collapse/index.module.ngfactory */ "./site/doc/app/collapse/index.module.ngfactory.js")).then(m => m.NzDemoCollapseModuleNgFactory), ɵ15 = () => Promise.all(/*! import() | comment-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("comment-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./comment/index.module.ngfactory */ "./site/doc/app/comment/index.module.ngfactory.js")).then(m => m.NzDemoCommentModuleNgFactory), ɵ16 = () => Promise.all(/*! import() | date-picker-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("date-picker-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./date-picker/index.module.ngfactory */ "./site/doc/app/date-picker/index.module.ngfactory.js")).then(m => m.NzDemoDatePickerModuleNgFactory), ɵ17 = () => Promise.all(/*! import() | descriptions-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("descriptions-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./descriptions/index.module.ngfactory */ "./site/doc/app/descriptions/index.module.ngfactory.js")).then(m => m.NzDemoDescriptionsModuleNgFactory), ɵ18 = () => Promise.all(/*! import() | divider-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("divider-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./divider/index.module.ngfactory */ "./site/doc/app/divider/index.module.ngfactory.js")).then(m => m.NzDemoDividerModuleNgFactory), ɵ19 = () => Promise.all(/*! import() | drawer-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("drawer-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./drawer/index.module.ngfactory */ "./site/doc/app/drawer/index.module.ngfactory.js")).then(m => m.NzDemoDrawerModuleNgFactory), ɵ20 = () => Promise.all(/*! import() | dropdown-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("dropdown-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./dropdown/index.module.ngfactory */ "./site/doc/app/dropdown/index.module.ngfactory.js")).then(m => m.NzDemoDropdownModuleNgFactory), ɵ21 = () => Promise.all(/*! import() | empty-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~tree-select-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./empty/index.module.ngfactory */ "./site/doc/app/empty/index.module.ngfactory.js")).then(m => m.NzDemoEmptyModuleNgFactory), ɵ22 = () => Promise.all(/*! import() | form-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("form-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./form/index.module.ngfactory */ "./site/doc/app/form/index.module.ngfactory.js")).then(m => m.NzDemoFormModuleNgFactory), ɵ23 = () => Promise.all(/*! import() | grid-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("grid-index-module-ngfactory~slider-index-module-ngfactory"), __webpack_require__.e("grid-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./grid/index.module.ngfactory */ "./site/doc/app/grid/index.module.ngfactory.js")).then(m => m.NzDemoGridModuleNgFactory), ɵ24 = () => Promise.all(/*! import() | icon-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("icon-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./icon/index.module.ngfactory */ "./site/doc/app/icon/index.module.ngfactory.js")).then(m => m.NzDemoIconModuleNgFactory), ɵ25 = () => Promise.all(/*! import() | input-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~b73bd76a"), __webpack_require__.e("cascader-index-module-ngfactory~empty-index-module-ngfactory~input-index-module-ngfactory"), __webpack_require__.e("input-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./input/index.module.ngfactory */ "./site/doc/app/input/index.module.ngfactory.js")).then(m => m.NzDemoInputModuleNgFactory), ɵ26 = () => Promise.all(/*! import() | input-number-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("input-number-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./input-number/index.module.ngfactory */ "./site/doc/app/input-number/index.module.ngfactory.js")).then(m => m.NzDemoInputNumberModuleNgFactory), ɵ27 = () => Promise.all(/*! import() | layout-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("layout-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./layout/index.module.ngfactory */ "./site/doc/app/layout/index.module.ngfactory.js")).then(m => m.NzDemoLayoutModuleNgFactory), ɵ28 = () => Promise.all(/*! import() | list-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("list-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./list/index.module.ngfactory */ "./site/doc/app/list/index.module.ngfactory.js")).then(m => m.NzDemoListModuleNgFactory), ɵ29 = () => Promise.all(/*! import() | mention-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("mention-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./mention/index.module.ngfactory */ "./site/doc/app/mention/index.module.ngfactory.js")).then(m => m.NzDemoMentionModuleNgFactory), ɵ30 = () => Promise.all(/*! import() | menu-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("menu-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./menu/index.module.ngfactory */ "./site/doc/app/menu/index.module.ngfactory.js")).then(m => m.NzDemoMenuModuleNgFactory), ɵ31 = () => Promise.all(/*! import() | message-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("message-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./message/index.module.ngfactory */ "./site/doc/app/message/index.module.ngfactory.js")).then(m => m.NzDemoMessageModuleNgFactory), ɵ32 = () => Promise.all(/*! import() | modal-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("modal-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./modal/index.module.ngfactory */ "./site/doc/app/modal/index.module.ngfactory.js")).then(m => m.NzDemoModalModuleNgFactory), ɵ33 = () => Promise.all(/*! import() | notification-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("notification-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./notification/index.module.ngfactory */ "./site/doc/app/notification/index.module.ngfactory.js")).then(m => m.NzDemoNotificationModuleNgFactory), ɵ34 = () => Promise.all(/*! import() | page-header-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("breadcrumb-index-module-ngfactory~layout-index-module-ngfactory~page-header-index-module-ngfactory"), __webpack_require__.e("page-header-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./page-header/index.module.ngfactory */ "./site/doc/app/page-header/index.module.ngfactory.js")).then(m => m.NzDemoPageHeaderModuleNgFactory), ɵ35 = () => Promise.all(/*! import() | pagination-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("pagination-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./pagination/index.module.ngfactory */ "./site/doc/app/pagination/index.module.ngfactory.js")).then(m => m.NzDemoPaginationModuleNgFactory), ɵ36 = () => Promise.all(/*! import() | popconfirm-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("popconfirm-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./popconfirm/index.module.ngfactory */ "./site/doc/app/popconfirm/index.module.ngfactory.js")).then(m => m.NzDemoPopconfirmModuleNgFactory), ɵ37 = () => Promise.all(/*! import() | popover-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("popover-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./popover/index.module.ngfactory */ "./site/doc/app/popover/index.module.ngfactory.js")).then(m => m.NzDemoPopoverModuleNgFactory), ɵ38 = () => Promise.all(/*! import() | progress-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("progress-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./progress/index.module.ngfactory */ "./site/doc/app/progress/index.module.ngfactory.js")).then(m => m.NzDemoProgressModuleNgFactory), ɵ39 = () => Promise.all(/*! import() | radio-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("radio-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./radio/index.module.ngfactory */ "./site/doc/app/radio/index.module.ngfactory.js")).then(m => m.NzDemoRadioModuleNgFactory), ɵ40 = () => Promise.all(/*! import() | rate-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("rate-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./rate/index.module.ngfactory */ "./site/doc/app/rate/index.module.ngfactory.js")).then(m => m.NzDemoRateModuleNgFactory), ɵ41 = () => Promise.all(/*! import() | result-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("result-index-module-ngfactory~typography-index-module-ngfactory"), __webpack_require__.e("result-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./result/index.module.ngfactory */ "./site/doc/app/result/index.module.ngfactory.js")).then(m => m.NzDemoResultModuleNgFactory), ɵ42 = () => Promise.all(/*! import() | select-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("select-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./select/index.module.ngfactory */ "./site/doc/app/select/index.module.ngfactory.js")).then(m => m.NzDemoSelectModuleNgFactory), ɵ43 = () => Promise.all(/*! import() | skeleton-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~empty-index-module-ngfactory~list-index~4f597d5c"), __webpack_require__.e("skeleton-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./skeleton/index.module.ngfactory */ "./site/doc/app/skeleton/index.module.ngfactory.js")).then(m => m.NzDemoSkeletonModuleNgFactory), ɵ44 = () => Promise.all(/*! import() | slider-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("grid-index-module-ngfactory~slider-index-module-ngfactory"), __webpack_require__.e("slider-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./slider/index.module.ngfactory */ "./site/doc/app/slider/index.module.ngfactory.js")).then(m => m.NzDemoSliderModuleNgFactory), ɵ45 = () => Promise.all(/*! import() | spin-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("alert-index-module-ngfactory~calendar-index-module-ngfactory~spin-index-module-ngfactory"), __webpack_require__.e("spin-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./spin/index.module.ngfactory */ "./site/doc/app/spin/index.module.ngfactory.js")).then(m => m.NzDemoSpinModuleNgFactory), ɵ46 = () => Promise.all(/*! import() | statistic-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("card-index-module-ngfactory~list-index-module-ngfactory~statistic-index-module-ngfactory"), __webpack_require__.e("statistic-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./statistic/index.module.ngfactory */ "./site/doc/app/statistic/index.module.ngfactory.js")).then(m => m.NzDemoStatisticModuleNgFactory), ɵ47 = () => Promise.all(/*! import() | steps-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("steps-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./steps/index.module.ngfactory */ "./site/doc/app/steps/index.module.ngfactory.js")).then(m => m.NzDemoStepsModuleNgFactory), ɵ48 = () => Promise.all(/*! import() | switch-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("switch-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./switch/index.module.ngfactory */ "./site/doc/app/switch/index.module.ngfactory.js")).then(m => m.NzDemoSwitchModuleNgFactory), ɵ49 = () => Promise.all(/*! import() | table-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("comment-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~mention-ind~303a9692"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("table-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./table/index.module.ngfactory */ "./site/doc/app/table/index.module.ngfactory.js")).then(m => m.NzDemoTableModuleNgFactory), ɵ50 = () => Promise.all(/*! import() | tabs-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("card-index-module-ngfactory~mention-index-module-ngfactory~page-header-index-module-ngfactory~tabs-i~cad3b625"), __webpack_require__.e("tabs-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tabs/index.module.ngfactory */ "./site/doc/app/tabs/index.module.ngfactory.js")).then(m => m.NzDemoTabsModuleNgFactory), ɵ51 = () => Promise.all(/*! import() | tag-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("tag-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tag/index.module.ngfactory */ "./site/doc/app/tag/index.module.ngfactory.js")).then(m => m.NzDemoTagModuleNgFactory), ɵ52 = () => Promise.all(/*! import() | time-picker-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("date-picker-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~input-i~958149af"), __webpack_require__.e("time-picker-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./time-picker/index.module.ngfactory */ "./site/doc/app/time-picker/index.module.ngfactory.js")).then(m => m.NzDemoTimePickerModuleNgFactory), ɵ53 = () => Promise.all(/*! import() | timeline-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("timeline-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./timeline/index.module.ngfactory */ "./site/doc/app/timeline/index.module.ngfactory.js")).then(m => m.NzDemoTimelineModuleNgFactory), ɵ54 = () => Promise.all(/*! import() | tooltip-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("tooltip-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tooltip/index.module.ngfactory */ "./site/doc/app/tooltip/index.module.ngfactory.js")).then(m => m.NzDemoTooltipModuleNgFactory), ɵ55 = () => Promise.all(/*! import() | transfer-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("empty-index-module-ngfactory~list-index-module-ngfactory~pagination-index-module-ngfactory~table-ind~10cf8b3d"), __webpack_require__.e("checkbox-index-module-ngfactory~empty-index-module-ngfactory~form-index-module-ngfactory~table-index~37bd9e08"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~table-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory"), __webpack_require__.e("transfer-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./transfer/index.module.ngfactory */ "./site/doc/app/transfer/index.module.ngfactory.js")).then(m => m.NzDemoTransferModuleNgFactory), ɵ56 = () => Promise.all(/*! import() | tree-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("breadcrumb-index-module-ngfactory~button-index-module-ngfactory~dropdown-index-module-ngfactory~empt~af91989a"), __webpack_require__.e("auto-complete-index-module-ngfactory~drawer-index-module-ngfactory~form-index-module-ngfactory~icon-~3865fff7"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("tree-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tree/index.module.ngfactory */ "./site/doc/app/tree/index.module.ngfactory.js")).then(m => m.NzDemoTreeModuleNgFactory), ɵ57 = () => Promise.all(/*! import() | tree-select-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("empty-index-module-ngfactory~transfer-index-module-ngfactory~tree-index-module-ngfactory~tree-select~c8023ba3"), __webpack_require__.e("empty-index-module-ngfactory~tree-select-index-module-ngfactory"), __webpack_require__.e("tree-select-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./tree-select/index.module.ngfactory */ "./site/doc/app/tree-select/index.module.ngfactory.js")).then(m => m.NzDemoTreeSelectModuleNgFactory), ɵ58 = () => Promise.all(/*! import() | typography-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("result-index-module-ngfactory~typography-index-module-ngfactory"), __webpack_require__.e("typography-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./typography/index.module.ngfactory */ "./site/doc/app/typography/index.module.ngfactory.js")).then(m => m.NzDemoTypographyModuleNgFactory), ɵ59 = () => Promise.all(/*! import() | upload-index-module-ngfactory */[__webpack_require__.e("affix-index-module-ngfactory~alert-index-module-ngfactory~anchor-index-module-ngfactory~auto-complet~111d7c04"), __webpack_require__.e("cascader-index-module-ngfactory~modal-index-module-ngfactory~upload-index-module-ngfactory"), __webpack_require__.e("upload-index-module-ngfactory")]).then(__webpack_require__.bind(null, /*! ./upload/index.module.ngfactory */ "./site/doc/app/upload/index.module.ngfactory.js")).then(m => m.NzDemoUploadModuleNgFactory);
 const DEMO_ROUTES = [
     { 'path': 'components/affix', 'loadChildren': ɵ0 },
     { 'path': 'components/alert', 'loadChildren': ɵ1 },
@@ -50314,24 +52026,25 @@ const DEMO_ROUTES = [
     { 'path': 'components/progress', 'loadChildren': ɵ38 },
     { 'path': 'components/radio', 'loadChildren': ɵ39 },
     { 'path': 'components/rate', 'loadChildren': ɵ40 },
-    { 'path': 'components/select', 'loadChildren': ɵ41 },
-    { 'path': 'components/skeleton', 'loadChildren': ɵ42 },
-    { 'path': 'components/slider', 'loadChildren': ɵ43 },
-    { 'path': 'components/spin', 'loadChildren': ɵ44 },
-    { 'path': 'components/statistic', 'loadChildren': ɵ45 },
-    { 'path': 'components/steps', 'loadChildren': ɵ46 },
-    { 'path': 'components/switch', 'loadChildren': ɵ47 },
-    { 'path': 'components/table', 'loadChildren': ɵ48 },
-    { 'path': 'components/tabs', 'loadChildren': ɵ49 },
-    { 'path': 'components/tag', 'loadChildren': ɵ50 },
-    { 'path': 'components/time-picker', 'loadChildren': ɵ51 },
-    { 'path': 'components/timeline', 'loadChildren': ɵ52 },
-    { 'path': 'components/tooltip', 'loadChildren': ɵ53 },
-    { 'path': 'components/transfer', 'loadChildren': ɵ54 },
-    { 'path': 'components/tree', 'loadChildren': ɵ55 },
-    { 'path': 'components/tree-select', 'loadChildren': ɵ56 },
-    { 'path': 'components/typography', 'loadChildren': ɵ57 },
-    { 'path': 'components/upload', 'loadChildren': ɵ58 },
+    { 'path': 'components/result', 'loadChildren': ɵ41 },
+    { 'path': 'components/select', 'loadChildren': ɵ42 },
+    { 'path': 'components/skeleton', 'loadChildren': ɵ43 },
+    { 'path': 'components/slider', 'loadChildren': ɵ44 },
+    { 'path': 'components/spin', 'loadChildren': ɵ45 },
+    { 'path': 'components/statistic', 'loadChildren': ɵ46 },
+    { 'path': 'components/steps', 'loadChildren': ɵ47 },
+    { 'path': 'components/switch', 'loadChildren': ɵ48 },
+    { 'path': 'components/table', 'loadChildren': ɵ49 },
+    { 'path': 'components/tabs', 'loadChildren': ɵ50 },
+    { 'path': 'components/tag', 'loadChildren': ɵ51 },
+    { 'path': 'components/time-picker', 'loadChildren': ɵ52 },
+    { 'path': 'components/timeline', 'loadChildren': ɵ53 },
+    { 'path': 'components/tooltip', 'loadChildren': ɵ54 },
+    { 'path': 'components/transfer', 'loadChildren': ɵ55 },
+    { 'path': 'components/tree', 'loadChildren': ɵ56 },
+    { 'path': 'components/tree-select', 'loadChildren': ɵ57 },
+    { 'path': 'components/typography', 'loadChildren': ɵ58 },
+    { 'path': 'components/upload', 'loadChildren': ɵ59 },
 ];
 
 
