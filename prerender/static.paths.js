@@ -130,6 +130,8 @@ exports.ROUTES = [
     '/docs/contributing/zh',
     '/docs/customize-theme/en',
     '/docs/customize-theme/zh',
+    '/docs/experimental/zh',
+    '/docs/experimental/en',
     '/docs/faq/en',
     '/docs/faq/zh',
     '/docs/getting-started/en',
@@ -143,6 +145,8 @@ exports.ROUTES = [
     '/docs/schematics/en',
     '/docs/schematics/zh',
     '/docs/universal/en',
-    '/docs/universal/zh'
+    '/docs/universal/zh',
+    '/experimental/resizable/zh',
+    '/experimental/resizable/en'
 ];
 //# sourceMappingURL=static.paths.js.map
