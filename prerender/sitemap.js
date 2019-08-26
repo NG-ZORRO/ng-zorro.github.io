@@ -12,7 +12,9 @@ var urls = Array.from(new Set(static_paths_1.ROUTES.filter(function (r) { return
         priority: r.includes('docs') ? 0.5 : 0.8,
         links: [{ lang: 'en', url: r + "/en" }, { lang: 'zh', url: r + "/zh" }]
     };
-});
+}
+// tslint:disable-next-line:no-any
+);
 var sitemapInstance = sitemap.createSitemap({
     hostname: 'https://ng.ant.design',
     cacheTime: 600000,
