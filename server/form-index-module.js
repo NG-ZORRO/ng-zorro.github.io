@@ -246,8 +246,8 @@ function NzDemoFormAutoTipsComponent_ng_template_26_Template(rf, ctx) { if (rf &
 class NzDemoFormAutoTipsComponent {
     constructor(fb) {
         this.fb = fb;
-        // current locale is key of the nzTipOptions
-        this.tipOptions = {
+        // current locale is key of the nzAutoTips
+        this.autoTips = {
             'zh-cn': {
                 required: '必填项',
                 email: '邮箱格式不正确'
@@ -301,7 +301,7 @@ class NzDemoFormAutoTipsComponent {
     }
 }
 /** @nocollapse */ NzDemoFormAutoTipsComponent.ɵfac = function NzDemoFormAutoTipsComponent_Factory(t) { return new (t || NzDemoFormAutoTipsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
-/** @nocollapse */ NzDemoFormAutoTipsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoFormAutoTipsComponent, selectors: [["nz-demo-form-auto-tips"]], decls: 32, vars: 17, consts: [["nz-form", "", 3, "nzTipOptions", "formGroup", "ngSubmit"], ["nzRequired", "", 3, "nzSpan"], ["nzValidatingTip", "Validating...", 3, "nzSpan"], ["nz-input", "", "formControlName", "userName", "placeholder", "async validate try to write JasonWood"], [3, "nzSpan"], ["nz-input", "", "formControlName", "mobile", "placeholder", "mobile"], ["nz-input", "", "formControlName", "email", "placeholder", "email", "type", "email"], ["nzErrorTip", "Please input your password!", 3, "nzSpan", "nzDisableAutoTips"], ["nz-input", "", "type", "password", "formControlName", "password", 3, "ngModelChange"], [3, "nzSpan", "nzDisableAutoTips", "nzErrorTip"], ["nz-input", "", "type", "password", "formControlName", "confirm", "placeholder", "confirm your password"], ["passwordErrorTpl", ""], [3, "nzOffset", "nzSpan"], ["nz-button", "", "nzType", "primary"], [4, "ngIf"]], template: function NzDemoFormAutoTipsComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoFormAutoTipsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoFormAutoTipsComponent, selectors: [["nz-demo-form-auto-tips"]], decls: 32, vars: 17, consts: [["nz-form", "", 3, "nzAutoTips", "formGroup", "ngSubmit"], ["nzRequired", "", 3, "nzSpan"], ["nzValidatingTip", "Validating...", 3, "nzSpan"], ["nz-input", "", "formControlName", "userName", "placeholder", "async validate try to write JasonWood"], [3, "nzSpan"], ["nz-input", "", "formControlName", "mobile", "placeholder", "mobile"], ["nz-input", "", "formControlName", "email", "placeholder", "email", "type", "email"], ["nzErrorTip", "Please input your password!", 3, "nzSpan", "nzDisableAutoTips"], ["nz-input", "", "type", "password", "formControlName", "password", 3, "ngModelChange"], [3, "nzSpan", "nzDisableAutoTips", "nzErrorTip"], ["nz-input", "", "type", "password", "formControlName", "confirm", "placeholder", "confirm your password"], ["passwordErrorTpl", ""], [3, "nzOffset", "nzSpan"], ["nz-button", "", "nzType", "primary"], [4, "ngIf"]], template: function NzDemoFormAutoTipsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NzDemoFormAutoTipsComponent_Template_form_ngSubmit_0_listener() { return ctx.submitForm(ctx.validateForm.value); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-form-item");
@@ -357,7 +357,7 @@ class NzDemoFormAutoTipsComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         const _r215 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTipOptions", ctx.tipOptions)("formGroup", ctx.validateForm);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAutoTips", ctx.autoTips)("formGroup", ctx.validateForm);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
@@ -386,7 +386,7 @@ class NzDemoFormAutoTipsComponent {
         args: [{
                 selector: 'nz-demo-form-auto-tips',
                 template: `
-    <form nz-form [nzTipOptions]="tipOptions" [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
+    <form nz-form [nzAutoTips]="autoTips" [formGroup]="validateForm" (ngSubmit)="submitForm(validateForm.value)">
       <nz-form-item>
         <nz-form-label [nzSpan]="7" nzRequired>Username</nz-form-label>
         <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
@@ -1709,7 +1709,7 @@ class NzDemoFormEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](435, " and provide ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](436, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](437, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](437, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](438, " in advance, the priority is as follows:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1720,7 +1720,7 @@ class NzDemoFormEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](443, " > ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "li");
@@ -1730,13 +1730,13 @@ class NzDemoFormEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](450, " set ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](451, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](452, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](452, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](453, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](454, "Via global config set ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](455, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](456, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](456, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1941,13 +1941,13 @@ class NzDemoFormEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](578, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](579, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](580, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](581, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](581, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](582, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](583, "Set default props ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](584, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](585, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](585, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](586, " value of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](587, "code");
@@ -2390,7 +2390,7 @@ class NzDemoFormEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](869, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](870, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](871, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](872, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](872, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](873, "td");
@@ -5229,7 +5229,7 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](417, " \u548C\u63D0\u4F9B ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](418, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](419, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](419, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](420, "\uFF0C\u5B83\u4EEC\u4F18\u5148\u7EA7\u5982\u4E0B\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -5240,7 +5240,7 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](425, " > ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](426, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](427, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](427, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](428, "li");
@@ -5250,13 +5250,13 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](432, " \u8BBE\u7F6E ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](433, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](434, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](434, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](435, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](436, "\u901A\u8FC7\u5168\u5C40\u914D\u7F6E\u8BBE\u7F6E ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](437, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](438, "nzTipOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](438, "nzAutoTips");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -5450,7 +5450,7 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](552, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](553, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](554, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](555, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](555, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](556, "td");
@@ -5460,7 +5460,7 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](560, " \u7684 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](561, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](563, " \u7684\u9ED8\u8BA4\u503C, \u5177\u4F53\u7528\u6CD5\u8BF7\u53C2\u8003\u793A\u4F8B\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](564, "strong");
@@ -5884,7 +5884,7 @@ class NzDemoFormZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](832, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](833, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](834, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](835, "[nzTipOptions]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](835, "[nzAutoTips]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](836, "td");

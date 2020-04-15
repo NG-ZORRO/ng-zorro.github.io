@@ -273,7 +273,7 @@ __webpack_require__.r(__webpack_exports__);
 class NzDemoSpaceBasicComponent {
 }
 /** @nocollapse */ NzDemoSpaceBasicComponent.ɵfac = function NzDemoSpaceBasicComponent_Factory(t) { return new (t || NzDemoSpaceBasicComponent)(); };
-/** @nocollapse */ NzDemoSpaceBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpaceBasicComponent, selectors: [["nz-demo-space-basic"]], decls: 13, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", "nz-popconfirm", "", "nzOkText", "Yes", "nzCancelText", "No", "nzPopconfirmTitle", "Are you sure delete this task?"]], template: function NzDemoSpaceBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoSpaceBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpaceBasicComponent, selectors: [["nz-demo-space-basic"]], decls: 12, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", "nz-popconfirm", "", "nzOkText", "Yes", "nzCancelText", "No", "nzPopconfirmTitle", "Are you sure delete this task?"]], template: function NzDemoSpaceBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-space");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-space-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 0);
@@ -284,15 +284,13 @@ class NzDemoSpaceBasicComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Click to Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Click to Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "nz-space-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "button", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Confirm");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-space-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Confirm");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -308,7 +306,7 @@ class NzDemoSpaceBasicComponent {
       </nz-space-item>
       <nz-space-item>
         <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76">
-          <button nz-button><i nz-icon nzType="upload"></i><span>Click to Upload</span></button>
+          <button nz-button><i nz-icon nzType="upload"></i>Click to Upload</button>
         </nz-upload>
       </nz-space-item>
       <nz-space-item>

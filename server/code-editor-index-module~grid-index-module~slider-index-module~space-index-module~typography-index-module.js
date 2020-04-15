@@ -55,35 +55,35 @@ const _c1 = ["slider"];
 function NzSliderComponent_nz_slider_step_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-step", 7);
 } if (rf & 2) {
-    const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r20.nzVertical)("lowerBound", ctx_r20.bounds.lower)("upperBound", ctx_r20.bounds.upper)("marksArray", ctx_r20.marksArray)("included", ctx_r20.nzIncluded);
+    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r19.nzVertical)("lowerBound", ctx_r19.bounds.lower)("upperBound", ctx_r19.bounds.upper)("marksArray", ctx_r19.marksArray)("included", ctx_r19.nzIncluded);
 } }
 function NzSliderComponent_nz_slider_handle_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-handle", 8);
 } if (rf & 2) {
-    const handle_r23 = ctx.$implicit;
-    const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r21.nzVertical)("offset", handle_r23.offset)("value", handle_r23.value)("active", handle_r23.active)("tooltipFormatter", ctx_r21.nzTipFormatter)("tooltipVisible", ctx_r21.nzTooltipVisible)("tooltipPlacement", ctx_r21.nzTooltipPlacement);
+    const handle_r22 = ctx.$implicit;
+    const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r20.nzVertical)("offset", handle_r22.offset)("value", handle_r22.value)("active", handle_r22.active)("tooltipFormatter", ctx_r20.nzTipFormatter)("tooltipVisible", ctx_r20.nzTooltipVisible)("tooltipPlacement", ctx_r20.nzTooltipPlacement);
 } }
 function NzSliderComponent_nz_slider_marks_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-marks", 9);
 } if (rf & 2) {
-    const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r22.nzVertical)("min", ctx_r22.nzMin)("max", ctx_r22.nzMax)("lowerBound", ctx_r22.bounds.lower)("upperBound", ctx_r22.bounds.upper)("marksArray", ctx_r22.marksArray)("included", ctx_r22.nzIncluded);
+    const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r21.nzVertical)("min", ctx_r21.nzMin)("max", ctx_r21.nzMax)("lowerBound", ctx_r21.bounds.lower)("upperBound", ctx_r21.bounds.upper)("marksArray", ctx_r21.marksArray)("included", ctx_r21.nzIncluded);
 } }
 function NzSliderMarksComponent_span_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 2);
 } if (rf & 2) {
-    const attr_r25 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-mark-active", attr_r25.active);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", attr_r25.style)("innerHTML", attr_r25.label, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsanitizeHtml"]);
+    const attr_r24 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-mark-active", attr_r24.active);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", attr_r24.style)("innerHTML", attr_r24.label, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsanitizeHtml"]);
 } }
 function NzSliderStepComponent_span_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 2);
 } if (rf & 2) {
-    const mark_r27 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-dot-active", mark_r27.active);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", mark_r27.style);
+    const mark_r26 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-dot-active", mark_r26.active);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", mark_r26.style);
 } }
 class NzSliderService {
     constructor() {

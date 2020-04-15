@@ -70,17 +70,17 @@ const _c0 = ["*"];
 function NzFormControlComponent_i_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "i", 6);
 } if (rf & 2) {
-    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzType", ctx_r16.iconType);
+    const ctx_r81 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzType", ctx_r81.iconType);
 } }
 function NzFormControlComponent_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
+    const ctx_r84 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r19.innerTip);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r84.innerTip);
 } }
 const _c1 = function (a0) { return { $implicit: a0 }; };
 function NzFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
@@ -90,29 +90,29 @@ function NzFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    const ctx_r82 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("@helpMotion", undefined);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r17.innerTip)("nzStringTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](3, _c1, ctx_r17.validateControl));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r82.innerTip)("nzStringTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](3, _c1, ctx_r82.validateControl));
 } }
 function NzFormControlComponent_div_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
+    const ctx_r85 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r20.nzExtra);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r85.nzExtra);
 } }
 function NzFormControlComponent_div_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzFormControlComponent_div_6_ng_container_1_Template, 2, 1, "ng-container", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    const ctx_r83 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r18.nzExtra);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r83.nzExtra);
 } }
 class NzFormItemComponent {
     /**
@@ -400,8 +400,8 @@ class NzFormControlComponent {
                     autoErrorTip = errors[key][this.localeId];
                     if (!autoErrorTip) {
                         /** @type {?} */
-                        const tipOptions = this.nzTipOptions || this.defaultTipOptions || {};
-                        autoErrorTip = (tipOptions[this.localeId] || {})[key];
+                        const autoTips = this.nzAutoTips || this.defaultAutoTips || {};
+                        autoErrorTip = (autoTips[this.localeId] || {})[key];
                     }
                 }
                 if (!!autoErrorTip) {
@@ -412,12 +412,12 @@ class NzFormControlComponent {
         }
     }
     /**
-     * @param {?} tipOptions
+     * @param {?} autoTips
      * @param {?} disableAutoTip
      * @return {?}
      */
-    setDefaultAutoTipConf(tipOptions, disableAutoTip) {
-        this.defaultTipOptions = tipOptions;
+    setDefaultAutoTipConf(autoTips, disableAutoTip) {
+        this.defaultAutoTips = autoTips;
         this.defaultDisableAutoTips = disableAutoTip;
         if (!this.disableAutoTips) {
             this.updateAutoTip();
@@ -455,7 +455,7 @@ NzFormControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵd
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.defaultValidateControl = _t.first);
-    } }, inputs: { nzDisableAutoTips: "nzDisableAutoTips", nzHasFeedback: "nzHasFeedback", nzValidateStatus: "nzValidateStatus", nzSuccessTip: "nzSuccessTip", nzWarningTip: "nzWarningTip", nzErrorTip: "nzErrorTip", nzValidatingTip: "nzValidatingTip", nzExtra: "nzExtra", nzTipOptions: "nzTipOptions" }, exportAs: ["nzFormControl"], ngContentSelectors: _c0, decls: 7, vars: 3, consts: [[1, "ant-form-item-control-input"], [1, "ant-form-item-control-input-content"], [1, "ant-form-item-children-icon"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["class", "ant-form-item-explain", 4, "ngIf"], ["class", "ant-form-item-extra", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], [1, "ant-form-item-explain"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], [1, "ant-form-item-extra"], [4, "nzStringTemplateOutlet"]], template: function NzFormControlComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzDisableAutoTips: "nzDisableAutoTips", nzHasFeedback: "nzHasFeedback", nzValidateStatus: "nzValidateStatus", nzSuccessTip: "nzSuccessTip", nzWarningTip: "nzWarningTip", nzErrorTip: "nzErrorTip", nzValidatingTip: "nzValidatingTip", nzExtra: "nzExtra", nzAutoTips: "nzAutoTips" }, exportAs: ["nzFormControl"], ngContentSelectors: _c0, decls: 7, vars: 3, consts: [[1, "ant-form-item-control-input"], [1, "ant-form-item-control-input-content"], [1, "ant-form-item-children-icon"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["class", "ant-form-item-explain", 4, "ngIf"], ["class", "ant-form-item-extra", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], [1, "ant-form-item-explain"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], [1, "ant-form-item-extra"], [4, "nzStringTemplateOutlet"]], template: function NzFormControlComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 1);
@@ -490,7 +490,7 @@ NzFormControlComponent.propDecorators = {
     nzErrorTip: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzValidatingTip: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzExtra: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzTipOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzAutoTips: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzDisableAutoTips: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzHasFeedback: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzValidateStatus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
@@ -671,7 +671,7 @@ class NzFormDirective {
              * @param {?} item
              * @return {?}
              */
-            item => item.setDefaultAutoTipConf(this.nzTipOptions, this.nzDisableAutoTips)));
+            item => item.setDefaultAutoTipConf(this.nzAutoTips, this.nzDisableAutoTips)));
         }
     }
     /**
@@ -685,14 +685,14 @@ class NzFormDirective {
      * @return {?}
      */
     ngOnChanges(changes) {
-        const { nzLayout, nzNoColon, nzTipOptions, nzDisableAutoTips } = changes;
+        const { nzLayout, nzNoColon, nzAutoTips, nzDisableAutoTips } = changes;
         if (nzLayout) {
             this.setClassMap();
         }
         if (nzNoColon) {
             this.updateItemsDefaultColon();
         }
-        if (nzTipOptions || nzDisableAutoTips) {
+        if (nzAutoTips || nzDisableAutoTips) {
             this.updateItemsDefaultAutoTipConf();
         }
     }
@@ -731,7 +731,7 @@ NzFormDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDi
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.nzFormControlComponent = _t);
     } }, hostVars: 2, hostBindings: function NzFormDirective_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMap"](ctx.hostClassMap);
-    } }, inputs: { nzLayout: "nzLayout", nzDisableAutoTips: "nzDisableAutoTips", nzNoColon: "nzNoColon", nzTipOptions: "nzTipOptions" }, exportAs: ["nzForm"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
+    } }, inputs: { nzLayout: "nzLayout", nzDisableAutoTips: "nzDisableAutoTips", nzNoColon: "nzNoColon", nzAutoTips: "nzAutoTips" }, exportAs: ["nzForm"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
 /** @nocollapse */
 NzFormDirective.ctorParameters = () => [
     { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_15__["NzConfigService"] },
@@ -741,7 +741,7 @@ NzFormDirective.ctorParameters = () => [
 NzFormDirective.propDecorators = {
     nzLayout: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzNoColon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzTipOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzAutoTips: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzDisableAutoTips: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzFormLabelComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzFormLabelComponent, { descendants: true },] }],
     nzFormControlComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzFormControlComponent, { descendants: true },] }]
@@ -753,7 +753,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_15__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, {}),
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Object)
-], NzFormDirective.prototype, "nzTipOptions", void 0);
+], NzFormDirective.prototype, "nzAutoTips", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Object)
@@ -832,7 +832,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzExtra: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzTipOptions: [{
+        }], nzAutoTips: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzFormLabelComponent, [{
@@ -899,7 +899,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzNoColon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzTipOptions: [{
+        }], nzAutoTips: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzFormLabelComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"],

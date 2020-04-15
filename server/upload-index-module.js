@@ -185,14 +185,12 @@ class NzDemoUploadBasicComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadBasicComponent.ɵfac = function NzDemoUploadBasicComponent_Factory(t) { return new (t || NzDemoUploadBasicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 5, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 4, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadBasicComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Click to Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Click to Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -208,7 +206,7 @@ class NzDemoUploadBasicComponent {
       [nzHeaders]="{ authorization: 'authorization-text' }"
       (nzChange)="handleChange($event)"
     >
-      <button nz-button><i nz-icon nzType="upload"></i><span>Click to Upload</span></button>
+      <button nz-button><i nz-icon nzType="upload"></i>Click to Upload</button>
     </nz-upload>
   `
             }]
@@ -267,13 +265,11 @@ class NzDemoUploadDefaultFileListComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵfac = function NzDemoUploadDefaultFileListComponent_Factory(t) { return new (t || NzDemoUploadDefaultFileListComponent)(); };
-/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 5, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -285,7 +281,7 @@ class NzDemoUploadDefaultFileListComponent {
                 selector: 'nz-demo-upload-default-file-list',
                 template: `
     <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzFileList]="fileList">
-      <button nz-button><i nz-icon nzType="upload"></i><span>Upload</span></button>
+      <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
     </nz-upload>
   `
             }]
@@ -1793,14 +1789,12 @@ class NzDemoUploadFileListComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadFileListComponent.ɵfac = function NzDemoUploadFileListComponent_Factory(t) { return new (t || NzDemoUploadFileListComponent)(); };
-/** @nocollapse */ NzDemoUploadFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadFileListComponent, selectors: [["nz-demo-upload-file-list"]], decls: 5, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadFileListComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadFileListComponent, selectors: [["nz-demo-upload-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadFileListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadFileListComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
@@ -1812,7 +1806,7 @@ class NzDemoUploadFileListComponent {
                 selector: 'nz-demo-upload-file-list',
                 template: `
     <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzFileList]="fileList" (nzChange)="handleChange($event)">
-      <button nz-button><i nz-icon nzType="upload"></i><span>Upload</span></button>
+      <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
     </nz-upload>
   `
             }]
@@ -2150,27 +2144,25 @@ class NzDemoUploadPictureStyleComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵfac = function NzDemoUploadPictureStyleComponent_Factory(t) { return new (t || NzDemoUploadPictureStyleComponent)(); };
-/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 14, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 13, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_1_listener($event) { return ctx.fileList1 = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-upload", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_9_listener($event) { return ctx.fileList2 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-upload", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_8_listener($event) { return ctx.fileList2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2178,7 +2170,7 @@ class NzDemoUploadPictureStyleComponent {
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList2);
     } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], styles: ["[_nghost-%COMP%]     .upload-list-inline .ant-upload-list-item {\n        float: left;\n        width: 200px;\n        margin-right: 8px;\n      }\n      [_nghost-%COMP%]     .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {\n        float: right;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-enter {\n        animation-name: uploadAnimateInlineIn;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-leave {\n        animation-name: uploadAnimateInlineOut;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadPictureStyleComponent, [{
@@ -2188,7 +2180,7 @@ class NzDemoUploadPictureStyleComponent {
                 template: `
     <div class="clearfix">
       <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [(nzFileList)]="fileList1">
-        <button nz-button><i nz-icon nzType="upload"></i><span>Upload</span></button>
+        <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
       </nz-upload>
     </div>
     <br /><br />
@@ -2272,14 +2264,12 @@ class NzDemoUploadPreviewFileComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵfac = function NzDemoUploadPreviewFileComponent_Factory(t) { return new (t || NzDemoUploadPreviewFileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
-/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 6, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 5, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](4, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, " Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " Upload");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -2294,9 +2284,7 @@ class NzDemoUploadPreviewFileComponent {
                 template: `
     <div class="clearfix">
       <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [nzPreviewFile]="previewFile">
-        <button nz-button>
-          <span><i nz-icon nzType="upload"></i> Upload</span>
-        </button>
+        <button nz-button><i nz-icon nzType="upload"></i> Upload</button>
       </nz-upload>
     </div>
   `
@@ -2451,23 +2439,21 @@ class NzDemoUploadUploadManuallyComponent {
     }
 }
 /** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵfac = function NzDemoUploadUploadManuallyComponent_Factory(t) { return new (t || NzDemoUploadUploadManuallyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 7, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 6, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadManuallyComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.fileList = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, "Select File");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Select File");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "button", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoUploadUploadManuallyComponent_Template_button_click_5_listener() { return ctx.handleUpload(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoUploadUploadManuallyComponent_Template_button_click_4_listener() { return ctx.handleUpload(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzFileList", ctx.fileList)("nzBeforeUpload", ctx.beforeUpload);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", "primary")("nzLoading", ctx.uploading)("disabled", ctx.fileList.length == 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.uploading ? "Uploading" : "Start Upload", " ");
@@ -2478,7 +2464,7 @@ class NzDemoUploadUploadManuallyComponent {
                 selector: 'nz-demo-upload-upload-manually',
                 template: `
     <nz-upload [(nzFileList)]="fileList" [nzBeforeUpload]="beforeUpload">
-      <button nz-button><i nz-icon nzType="upload"></i><span>Select File</span></button>
+      <button nz-button><i nz-icon nzType="upload"></i>Select File</button>
     </nz-upload>
     <button
       nz-button

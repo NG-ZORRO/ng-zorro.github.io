@@ -51,8 +51,8 @@ const _c0 = ["*"];
 function NzResizeHandlesComponent_nz_resize_handle_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-resize-handle", 1);
 } if (rf & 2) {
-    const dir_r252 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzDirection", dir_r252);
+    const dir_r144 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzDirection", dir_r144);
 } }
 function getEventWithPoint(event) {
     return Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["isTouchEvent"])(event) ? event.touches[0] || event.changedTouches[0] : ((/** @type {?} */ (event)));
