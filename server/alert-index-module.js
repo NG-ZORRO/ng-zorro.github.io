@@ -911,7 +911,8 @@ class NzDemoAlertModule {
                     _style__WEBPACK_IMPORTED_MODULE_10__["NzDemoAlertStyleComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

@@ -694,7 +694,8 @@ class NzDemoAvatarModule {
                     _type__WEBPACK_IMPORTED_MODULE_7__["NzDemoAvatarTypeComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoAvatarZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoAvatarEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

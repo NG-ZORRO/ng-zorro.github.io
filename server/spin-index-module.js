@@ -62,9 +62,9 @@ class NzDemoSpinCustomIndicatorComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoSpinCustomIndicatorComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 1);
     } if (rf & 2) {
-        const _r544 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIndicator", _r544);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIndicator", _r0);
     } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"]], styles: ["i[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinCustomIndicatorComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -821,7 +821,8 @@ class NzDemoSpinModule {
                     _tip__WEBPACK_IMPORTED_MODULE_10__["NzDemoSpinTipComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

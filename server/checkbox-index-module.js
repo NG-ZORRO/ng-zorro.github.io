@@ -1048,7 +1048,8 @@ class NzDemoCheckboxModule {
                     _layout__WEBPACK_IMPORTED_MODULE_9__["NzDemoCheckboxLayoutComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoCheckboxZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoCheckboxEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

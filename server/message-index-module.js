@@ -819,7 +819,8 @@ class NzDemoMessageModule {
                     _other__WEBPACK_IMPORTED_MODULE_8__["NzDemoMessageOtherComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoMessageZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoMessageEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

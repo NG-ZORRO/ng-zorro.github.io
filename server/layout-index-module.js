@@ -1944,7 +1944,8 @@ class NzDemoLayoutModule {
                     _top__WEBPACK_IMPORTED_MODULE_12__["NzDemoLayoutTopComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoLayoutZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoLayoutEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

@@ -853,7 +853,8 @@ class NzDemoDescriptionsModule {
                     _vertical__WEBPACK_IMPORTED_MODULE_9__["NzDemoDescriptionsVerticalComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoDescriptionsZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoDescriptionsEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

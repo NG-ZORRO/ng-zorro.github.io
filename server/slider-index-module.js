@@ -1063,7 +1063,8 @@ class NzDemoSliderModule {
                     _vertical__WEBPACK_IMPORTED_MODULE_11__["NzDemoSliderVerticalComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSliderZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

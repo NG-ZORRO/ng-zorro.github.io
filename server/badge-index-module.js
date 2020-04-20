@@ -38,12 +38,12 @@ class NzDemoBadgeBasicComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, NzDemoBadgeBasicComponent_ng_template_6_Template, 1, 0, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
-        const _r35 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](7);
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCount", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCount", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCount", _r35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCount", _r0);
     } }, directives: [ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_1__["NzBadgeComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"]], styles: ["nz-badge[_ngcontent-%COMP%] {\n        margin-right: 20px;\n      }\n\n      .head-example[_ngcontent-%COMP%] {\n        width: 42px;\n        height: 42px;\n        border-radius: 4px;\n        background: #eee;\n        display: inline-block;\n        vertical-align: middle;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoBadgeBasicComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -226,9 +226,9 @@ function NzDemoBadgeColorfulComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const color_r38 = ctx.$implicit;
+    const color_r1 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzColor", color_r38)("nzText", color_r38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzColor", color_r1)("nzText", color_r1);
 } }
 class NzDemoBadgeColorfulComponent {
     constructor() {
@@ -1147,7 +1147,8 @@ class NzDemoBadgeModule {
                     _status__WEBPACK_IMPORTED_MODULE_11__["NzDemoBadgeStatusComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoBadgeZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoBadgeEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

@@ -1036,7 +1036,8 @@ class NzDemoTypographyModule {
                     _title__WEBPACK_IMPORTED_MODULE_9__["NzDemoTypographyTitleComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoTypographyZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTypographyEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

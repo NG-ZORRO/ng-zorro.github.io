@@ -554,7 +554,8 @@ class NzDemoAnchorModule {
                     _static__WEBPACK_IMPORTED_MODULE_5__["NzDemoAnchorStaticComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_6__["NzDemoAnchorZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_7__["NzDemoAnchorEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

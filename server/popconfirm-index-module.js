@@ -88,8 +88,8 @@ class NzDemoPopconfirmCustomIconComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPopconfirmCustomIconComponent_ng_template_2_Template, 1, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
-        const _r429 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIcon", _r429);
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIcon", _r0);
     } }, directives: [ng_zorro_antd_popconfirm__WEBPACK_IMPORTED_MODULE_1__["NzPopconfirmDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopconfirmCustomIconComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -834,7 +834,8 @@ class NzDemoPopconfirmModule {
                     _placement__WEBPACK_IMPORTED_MODULE_8__["NzDemoPopconfirmPlacementComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoPopconfirmZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopconfirmEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

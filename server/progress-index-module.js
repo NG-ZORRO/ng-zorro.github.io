@@ -1363,7 +1363,8 @@ class NzDemoProgressModule {
                     _step__WEBPACK_IMPORTED_MODULE_15__["NzDemoProgressStepComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoProgressZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoProgressEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

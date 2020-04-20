@@ -980,7 +980,8 @@ class NzDemoInputNumberModule {
                     _size__WEBPACK_IMPORTED_MODULE_9__["NzDemoInputNumberSizeComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoInputNumberZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoInputNumberEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 

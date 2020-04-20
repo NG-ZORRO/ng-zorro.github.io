@@ -592,7 +592,8 @@ class NzDemoAffixModule {
                     _target__WEBPACK_IMPORTED_MODULE_6__["NzDemoAffixTargetComponent"],
                     _zh_component__WEBPACK_IMPORTED_MODULE_7__["NzDemoAffixZhComponent"],
                     _en_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoAffixEnComponent"],
-                ]
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 
@@ -713,9 +714,9 @@ class NzDemoAffixTargetComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTarget", _r8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTarget", _r0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "primary");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_1__["NzAffixComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"]], styles: [".scrollable-container[_ngcontent-%COMP%] {\n        height: 100px;\n        overflow-y: scroll;\n      }\n\n      .background[_ngcontent-%COMP%] {\n        padding-top: 60px;\n        height: 300px;\n        background-image: url(//zos.alipayobjects.com/rmsportal/RmjwQiJorKyobvI.jpg);\n      }"] });
