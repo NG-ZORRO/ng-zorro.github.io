@@ -693,9 +693,9 @@ class NzDemoPopconfirmEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](273, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, "Please ensure that the child node of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, "Please ensure that the node of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "nz-popconfirm");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "[nz-popconfirm]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](277, " accepts ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "code");
@@ -1672,9 +1672,9 @@ class NzDemoPopconfirmZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](271, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](272, "\u8BF7\u786E\u4FDD ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](273, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, "nz-popconfirm");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, "[nz-popconfirm]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, " \u7684\u5B50\u5143\u7D20\u80FD\u63A5\u53D7 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, " \u5143\u7D20\u80FD\u63A5\u53D7 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](277, "onMouseEnter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

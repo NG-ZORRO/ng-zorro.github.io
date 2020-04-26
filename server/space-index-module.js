@@ -91,7 +91,7 @@ if (false) {}
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
-const NZ_CONFIG_COMPONENT_NAME = 'avatar';
+const NZ_CONFIG_COMPONENT_NAME = 'space';
 class NzSpaceComponent {
     /**
      * @param {?} nzConfigService

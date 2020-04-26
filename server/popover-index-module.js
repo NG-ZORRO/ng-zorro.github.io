@@ -571,9 +571,9 @@ class NzDemoPopoverEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202, "Please ensure that the child node of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202, "Please ensure that the node of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](204, "nz-popover");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](204, "[nz-popover]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](205, " accepts ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](206, "code");
@@ -1466,9 +1466,9 @@ class NzDemoPopoverZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](197, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](198, "\u8BF7\u786E\u4FDD ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "nz-popover");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "[nz-popover]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](201, " \u7684\u5B50\u5143\u7D20\u80FD\u63A5\u53D7 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](201, " \u5143\u7D20\u80FD\u63A5\u53D7 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](202, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](203, "onMouseEnter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

@@ -138,12 +138,14 @@ NzPipesModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInje
 /*!**************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-modal.js ***!
   \**************************************************************/
-/*! exports provided: BaseModalContainer, ModalOptions, NZ_MODAL_CONFIG, NzModalCloseComponent, NzModalComponent, NzModalConfirmContainerComponent, NzModalContainerComponent, NzModalFooterComponent, NzModalFooterDirective, NzModalLegacyAPI, NzModalModule, NzModalRef, NzModalService, NzModalTitleComponent, applyConfigDefaults, getConfigFromComponent, nzModalAnimations, setContentInstanceParams, throwNzModalContentAlreadyAttachedError */
+/*! exports provided: BaseModalContainer, FADE_CLASS_NAME_MAP, MODAL_MASK_CLASS_NAME, ModalOptions, NZ_MODAL_CONFIG, NzModalCloseComponent, NzModalComponent, NzModalConfirmContainerComponent, NzModalContainerComponent, NzModalFooterComponent, NzModalFooterDirective, NzModalLegacyAPI, NzModalModule, NzModalRef, NzModalService, NzModalTitleComponent, ZOOM_CLASS_NAME_MAP, applyConfigDefaults, getConfigFromComponent, nzModalAnimations, setContentInstanceParams, throwNzModalContentAlreadyAttachedError */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BaseModalContainer", function() { return BaseModalContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FADE_CLASS_NAME_MAP", function() { return FADE_CLASS_NAME_MAP; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MODAL_MASK_CLASS_NAME", function() { return MODAL_MASK_CLASS_NAME; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalOptions", function() { return ModalOptions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NZ_MODAL_CONFIG", function() { return NZ_MODAL_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalCloseComponent", function() { return NzModalCloseComponent; });
@@ -157,6 +159,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalRef", function() { return NzModalRef; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalService", function() { return NzModalService; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalTitleComponent", function() { return NzModalTitleComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZOOM_CLASS_NAME_MAP", function() { return ZOOM_CLASS_NAME_MAP; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "applyConfigDefaults", function() { return applyConfigDefaults; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getConfigFromComponent", function() { return getConfigFromComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nzModalAnimations", function() { return nzModalAnimations; });
@@ -462,6 +465,35 @@ if (false) {}
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: modal-config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function NzModalConfig() { }
+if (false) {}
+/** @type {?} */
+const NZ_MODAL_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('NZ_MODAL_CONFIG');
+/** @type {?} */
+const ZOOM_CLASS_NAME_MAP = {
+    enter: 'zoom-enter',
+    enterActive: 'zoom-enter-active',
+    leave: 'zoom-leave',
+    leaveActive: 'zoom-leave-active'
+};
+/** @type {?} */
+const FADE_CLASS_NAME_MAP = {
+    enter: 'fade-enter',
+    enterActive: 'fade-enter-active',
+    leave: 'fade-leave',
+    leaveActive: 'fade-leave-active'
+};
+/** @type {?} */
+const MODAL_MASK_CLASS_NAME = 'ant-modal-mask';
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: modal-animations.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -486,20 +518,6 @@ const nzModalAnimations = {
 function throwNzModalContentAlreadyAttachedError() {
     throw Error('Attempting to attach modal content after content is already attached');
 }
-/** @type {?} */
-const ZOOM_CLASS_NAME_MAP = {
-    enter: 'zoom-enter',
-    enterActive: 'zoom-enter-active',
-    leave: 'zoom-leave',
-    leaveActive: 'zoom-leave-active'
-};
-/** @type {?} */
-const FADE_CLASS_NAME_MAP = {
-    enter: 'fade-enter',
-    enterActive: 'fade-enter-active',
-    leave: 'fade-leave',
-    leaveActive: 'fade-leave-active'
-};
 class BaseModalContainer extends _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1__["BasePortalOutlet"] {
     /**
      * @param {?} elementRef
@@ -709,9 +727,6 @@ class BaseModalContainer extends _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1_
      * @return {?}
      */
     setExitAnimationClass() {
-        if (this.animationDisabled()) {
-            return;
-        }
         this.zone.runOutsideAngular((/**
          * @return {?}
          */
@@ -720,6 +735,11 @@ class BaseModalContainer extends _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1_
             const modalElement = this.modalElementRef.nativeElement;
             /** @type {?} */
             const backdropElement = this.overlayRef.backdropElement;
+            if (this.animationDisabled()) {
+                // https://github.com/angular/components/issues/18645
+                this.render.removeClass(backdropElement, MODAL_MASK_CLASS_NAME);
+                return;
+            }
             this.render.addClass(modalElement, ZOOM_CLASS_NAME_MAP.leave);
             this.render.addClass(modalElement, ZOOM_CLASS_NAME_MAP.leaveActive);
             this.render.addClass(backdropElement, FADE_CLASS_NAME_MAP.leave);
@@ -832,6 +852,9 @@ class BaseModalContainer extends _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1_
      * @return {?}
      */
     onAnimationDone(event) {
+        if (event.toState === 'void') {
+            return;
+        }
         if (event.toState === 'enter') {
             this.setContainer();
             this.trapFocus();
@@ -936,12 +959,12 @@ NzModalConfirmContainerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.portalOutlet = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.modalElementRef = _t.first);
-    } }, hostAttrs: ["tabindex", "-1", "role", "dialog", 1, "ant-modal-wrap"], hostVars: 6, hostBindings: function NzModalConfirmContainerComponent_HostBindings(rf, ctx) { if (rf & 1) {
+    } }, hostAttrs: ["tabindex", "-1", "role", "dialog"], hostVars: 6, hostBindings: function NzModalConfirmContainerComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcomponentHostSyntheticListener"]("@modalContainer.start", function NzModalConfirmContainerComponent_animation_modalContainer_start_HostBindingHandler($event) { return ctx.onAnimationStart($event); })("@modalContainer.done", function NzModalConfirmContainerComponent_animation_modalContainer_done_HostBindingHandler($event) { return ctx.onAnimationDone($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("mousedown", function NzModalConfirmContainerComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); })("mouseup", function NzModalConfirmContainerComponent_mouseup_HostBindingHandler($event) { return ctx.onMouseup($event); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵupdateSyntheticHostBinding"]("@.disabled", ctx.config.nzNoAnimation)("@modalContainer", ctx.state);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.config.nzWrapClassName);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.config.nzWrapClassName ? "ant-modal-wrap " + ctx.config.nzWrapClassName : "ant-modal-wrap");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("z-index", ctx.config.nzZIndex);
     } }, outputs: { cancelTriggered: "cancelTriggered", okTriggered: "okTriggered" }, exportAs: ["nzModalConfirmContainer"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInheritDefinitionFeature"]], decls: 17, vars: 13, consts: [["role", "document", 1, "ant-modal", 3, "ngClass", "ngStyle"], ["modalElement", ""], [1, "ant-modal-content"], ["nz-modal-close", "", 3, "click", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "nzType"], [1, "ant-modal-confirm-title"], [4, "nzStringTemplateOutlet"], [1, "ant-modal-confirm-content"], ["cdkPortalOutlet", ""], [3, "innerHTML", 4, "ngIf"], [1, "ant-modal-confirm-btns"], ["nz-button", "", 3, "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-modal-close", "", 3, "click"], [3, "innerHTML"], ["nz-button", "", 3, "nzLoading", "disabled", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzModalConfirmContainerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0, 1);
@@ -1037,12 +1060,12 @@ NzModalContainerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵ
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.portalOutlet = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.modalElementRef = _t.first);
-    } }, hostAttrs: ["tabindex", "-1", "role", "dialog", 1, "ant-modal-wrap"], hostVars: 6, hostBindings: function NzModalContainerComponent_HostBindings(rf, ctx) { if (rf & 1) {
+    } }, hostAttrs: ["tabindex", "-1", "role", "dialog"], hostVars: 6, hostBindings: function NzModalContainerComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcomponentHostSyntheticListener"]("@modalContainer.start", function NzModalContainerComponent_animation_modalContainer_start_HostBindingHandler($event) { return ctx.onAnimationStart($event); })("@modalContainer.done", function NzModalContainerComponent_animation_modalContainer_done_HostBindingHandler($event) { return ctx.onAnimationDone($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("mousedown", function NzModalContainerComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); })("mouseup", function NzModalContainerComponent_mouseup_HostBindingHandler($event) { return ctx.onMouseup($event); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵupdateSyntheticHostBinding"]("@.disabled", ctx.config.nzNoAnimation)("@modalContainer", ctx.state);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.config.nzWrapClassName);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.config.nzWrapClassName ? "ant-modal-wrap " + ctx.config.nzWrapClassName : "ant-modal-wrap");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("z-index", ctx.config.nzZIndex);
     } }, exportAs: ["nzModalContainer"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInheritDefinitionFeature"]], decls: 10, vars: 11, consts: [["role", "document", 1, "ant-modal", 3, "ngClass", "ngStyle"], ["modalElement", ""], [1, "ant-modal-content"], ["nz-modal-close", "", 3, "click", 4, "ngIf"], ["nz-modal-title", "", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["cdkPortalOutlet", ""], [3, "innerHTML", 4, "ngIf"], ["nz-modal-footer", "", 3, "modalRef", "cancelTriggered", "okTriggered", 4, "ngIf"], ["nz-modal-close", "", 3, "click"], ["nz-modal-title", ""], [3, "innerHTML"], ["nz-modal-footer", "", 3, "modalRef", "cancelTriggered", "okTriggered"]], template: function NzModalContainerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0, 1);
@@ -1435,8 +1458,6 @@ function getConfigFromComponent(component) {
  * Generated from: modal.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** @type {?} */
-const MODAL_MASK_CLASS_NAME = 'ant-modal-mask';
 class NzModalService {
     /**
      * @param {?} overlay
@@ -1712,19 +1733,6 @@ NzModalService.ctorParameters = () => [
     { type: NzModalService, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["SkipSelf"] }] }
 ];
 if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: modal-config.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @record
- */
-function NzModalConfig() { }
-if (false) {}
-/** @type {?} */
-const NZ_MODAL_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('NZ_MODAL_CONFIG');
 
 /**
  * @fileoverview added by tsickle
@@ -2106,8 +2114,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
                 host: {
                     tabindex: '-1',
                     role: 'dialog',
-                    class: 'ant-modal-wrap',
-                    '[class]': 'config.nzWrapClassName',
+                    '[class]': 'config.nzWrapClassName ? "ant-modal-wrap " + config.nzWrapClassName : "ant-modal-wrap"',
                     '[style.zIndex]': 'config.nzZIndex',
                     '[@.disabled]': 'config.nzNoAnimation',
                     '[@modalContainer]': 'state',
@@ -2175,8 +2182,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
                 host: {
                     tabindex: '-1',
                     role: 'dialog',
-                    class: 'ant-modal-wrap',
-                    '[class]': 'config.nzWrapClassName',
+                    '[class]': 'config.nzWrapClassName ? "ant-modal-wrap " + config.nzWrapClassName : "ant-modal-wrap"',
                     '[style.zIndex]': 'config.nzZIndex',
                     '[@.disabled]': 'config.nzNoAnimation',
                     '[@modalContainer]': 'state',
@@ -2632,7 +2638,7 @@ NzModalModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInje
                 ],
                 exports: [NzModalComponent, NzModalFooterDirective],
                 providers: [NzModalService],
-                entryComponents: [NzModalComponent],
+                entryComponents: [NzModalContainerComponent, NzModalConfirmContainerComponent],
                 declarations: [
                     NzModalComponent,
                     NzModalFooterDirective,

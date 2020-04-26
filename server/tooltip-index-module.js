@@ -735,9 +735,9 @@ class NzDemoTooltipEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "Please ensure that the child node of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "Please ensure that the node of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](302, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](303, "nz-tooltip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](303, "[nz-tooltip]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, " accepts ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "code");
@@ -1692,9 +1692,9 @@ class NzDemoTooltipZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](304, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](305, "\u8BF7\u786E\u4FDD ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](306, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, "nz-tooltip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, "[nz-tooltip]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, " \u7684\u5B50\u5143\u7D20\u80FD\u63A5\u53D7 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, " \u5143\u7D20\u80FD\u63A5\u53D7 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](309, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, "onMouseEnter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

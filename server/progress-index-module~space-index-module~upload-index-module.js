@@ -88,7 +88,7 @@ function NzProgressComponent_ng_template_0_span_0_Template(rf, ctx) { if (rf & 1
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](3);
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r4.status === "exception" || ctx_r4.status === "success" && !ctx_r4.nzFormat)("ngIfElse", _r6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", (ctx_r4.status === "exception" || ctx_r4.status === "success") && !ctx_r4.nzFormat)("ngIfElse", _r6);
 } }
 function NzProgressComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzProgressComponent_ng_template_0_span_0_Template, 4, 2, "span", 4);
@@ -656,7 +656,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
                 template: `
     <ng-template #progressInfoTemplate>
       <span class="ant-progress-text" *ngIf="nzShowInfo">
-        <ng-container *ngIf="status === 'exception' || (status === 'success' && !nzFormat); else formatTemplate">
+        <ng-container *ngIf="(status === 'exception' || status === 'success') && !nzFormat; else formatTemplate">
           <i nz-icon [nzType]="icon"></i>
         </ng-container>
         <ng-template #formatTemplate>

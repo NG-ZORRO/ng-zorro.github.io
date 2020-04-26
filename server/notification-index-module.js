@@ -169,10 +169,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
 /* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
 /* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-services.js");
+/* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-logger.js");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-services.js");
+
 
 
 
@@ -538,8 +540,8 @@ class NzNotificationContainerComponent extends ng_zorro_antd_message__WEBPACK_IM
      */
     onCreate(instance) {
         instance.options = this.mergeOptions(instance.options);
-        instance.onClose = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
-        instance.onClick = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
+        instance.onClose = new rxjs__WEBPACK_IMPORTED_MODULE_10__["Subject"]();
+        instance.onClick = new rxjs__WEBPACK_IMPORTED_MODULE_10__["Subject"]();
         return (/** @type {?} */ (instance));
     }
     /**
@@ -549,7 +551,7 @@ class NzNotificationContainerComponent extends ng_zorro_antd_message__WEBPACK_IM
     subscribeConfigChange() {
         this.nzConfigService
             .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$))
             .subscribe((/**
          * @return {?}
          */
@@ -561,8 +563,8 @@ class NzNotificationContainerComponent extends ng_zorro_antd_message__WEBPACK_IM
      */
     updateConfig() {
         this.config = Object.assign(Object.assign(Object.assign({}, NZ_NOTIFICATION_DEFAULT_CONFIG), this.config), this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME));
-        this.top = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["toCssPixel"])((/** @type {?} */ (this.config.nzTop)));
-        this.bottom = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["toCssPixel"])((/** @type {?} */ (this.config.nzBottom)));
+        this.top = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["toCssPixel"])((/** @type {?} */ (this.config.nzTop)));
+        this.bottom = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["toCssPixel"])((/** @type {?} */ (this.config.nzBottom)));
         this.cdr.markForCheck();
     }
     /**
@@ -586,23 +588,36 @@ class NzNotificationContainerComponent extends ng_zorro_antd_message__WEBPACK_IM
          * @param {?} m
          * @return {?}
          */
-        m => m.options.nzPosition === 'topLeft'));
+        m => m.options.nzPlacement === 'topLeft'));
         this.topRightInstances = this.instances.filter((/**
          * @param {?} m
          * @return {?}
          */
-        m => m.options.nzPosition === 'topRight' || !m.options.nzPosition));
+        m => m.options.nzPlacement === 'topRight' || !m.options.nzPlacement));
         this.bottomLeftInstances = this.instances.filter((/**
          * @param {?} m
          * @return {?}
          */
-        m => m.options.nzPosition === 'bottomLeft'));
+        m => m.options.nzPlacement === 'bottomLeft'));
         this.bottomRightInstances = this.instances.filter((/**
          * @param {?} m
          * @return {?}
          */
-        m => m.options.nzPosition === 'bottomRight'));
+        m => m.options.nzPlacement === 'bottomRight'));
         this.cdr.detectChanges();
+    }
+    /**
+     * @protected
+     * @param {?=} options
+     * @return {?}
+     */
+    mergeOptions(options) {
+        const { nzPosition } = options !== null && options !== void 0 ? options : {};
+        if (nzPosition) {
+            Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_8__["warnDeprecation"])('`nzPosition` of NzNotificationDataOptions is deprecated and would be removed in 10.0.0. Use `nzPlacement` instead.');
+        }
+        const { nzDuration, nzAnimate, nzPauseOnHover, nzPlacement } = this.config;
+        return Object.assign({ nzDuration, nzAnimate, nzPauseOnHover, nzPlacement: nzPlacement || nzPosition }, options);
     }
 }
 NzNotificationContainerComponent.ɵfac = function NzNotificationContainerComponent_Factory(t) { return new (t || NzNotificationContainerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"])); };
@@ -847,20 +862,20 @@ class NzNotificationService extends ng_zorro_antd_message__WEBPACK_IMPORTED_MODU
         }));
     }
 }
-NzNotificationService.ɵfac = function NzNotificationService_Factory(t) { return new (t || NzNotificationService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_11__["NzSingletonService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"])); };
+NzNotificationService.ɵfac = function NzNotificationService_Factory(t) { return new (t || NzNotificationService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_12__["NzSingletonService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"])); };
 /** @nocollapse */
 NzNotificationService.ctorParameters = () => [
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_11__["NzSingletonService"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_12__["NzSingletonService"] },
     { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] }
 ];
-/** @nocollapse */ NzNotificationService.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzNotificationService_Factory() { return new NzNotificationService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_11__["NzSingletonService"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["INJECTOR"])); }, token: NzNotificationService, providedIn: NzNotificationServiceModule });
+/** @nocollapse */ NzNotificationService.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzNotificationService_Factory() { return new NzNotificationService(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_12__["NzSingletonService"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(_angular_core__WEBPACK_IMPORTED_MODULE_0__["INJECTOR"])); }, token: NzNotificationService, providedIn: NzNotificationServiceModule });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzNotificationService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: NzNotificationServiceModule
             }]
-    }], function () { return [{ type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_11__["NzSingletonService"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] }]; }, null); })();
+    }], function () { return [{ type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_12__["NzSingletonService"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] }]; }, null); })();
 if (false) {}
 
 /**
@@ -2142,7 +2157,7 @@ class NzDemoNotificationPlacementComponent {
         this.placement = 'topRight';
     }
     createBasicNotification(position) {
-        this.notification.blank('Notification Title', 'This is the content of the notification. This is the content of the notification. This is the content of the notification.', { nzPosition: position });
+        this.notification.blank('Notification Title', 'This is the content of the notification. This is the content of the notification. This is the content of the notification.', { nzPlacement: position });
     }
 }
 /** @nocollapse */ NzDemoNotificationPlacementComponent.ɵfac = function NzDemoNotificationPlacementComponent_Factory(t) { return new (t || NzDemoNotificationPlacementComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_notification__WEBPACK_IMPORTED_MODULE_1__["NzNotificationService"])); };

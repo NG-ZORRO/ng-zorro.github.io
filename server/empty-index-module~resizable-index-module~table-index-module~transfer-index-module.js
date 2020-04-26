@@ -2329,7 +2329,7 @@ class NzTableDataService {
             this.pageIndexDistinct$,
             this.pageSizeDistinct$,
             this.listOfCalcOperator$
-        ]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["debounceTime"])(300), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["skip"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["map"])((/**
+        ]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["debounceTime"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["skip"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["map"])((/**
          * @param {?} __0
          * @return {?}
          */
