@@ -221,11 +221,18 @@ class NzBreadCrumbComponent {
                 // Only parse components in primary router-outlet (in another word, router-outlet without a specific name).
                 // Parse this layer and generate a breadcrumb item.
                 /** @type {?} */
-                const routeURL = child.snapshot.url.map((/**
+                const routeURL = child.snapshot.url
+                    .map((/**
                  * @param {?} segment
                  * @return {?}
                  */
-                segment => segment.path)).join('/');
+                segment => segment.path))
+                    .filter((/**
+                 * @param {?} path
+                 * @return {?}
+                 */
+                path => path))
+                    .join('/');
                 /** @type {?} */
                 const nextUrl = url + `/${routeURL}`;
                 /** @type {?} */

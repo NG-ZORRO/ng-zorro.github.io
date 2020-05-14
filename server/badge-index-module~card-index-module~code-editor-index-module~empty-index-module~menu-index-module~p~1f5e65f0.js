@@ -112,6 +112,7 @@ class NzSwitchComponent {
         this.nzControl = false;
         this.nzCheckedChildren = null;
         this.nzUnCheckedChildren = null;
+        this.nzSize = 'default';
     }
     /**
      * @param {?} e
@@ -157,19 +158,21 @@ class NzSwitchComponent {
      * @return {?}
      */
     focus() {
-        this.focusMonitor.focusVia(this.switchElement.nativeElement, 'keyboard');
+        var _a;
+        this.focusMonitor.focusVia((_a = this.switchElement) === null || _a === void 0 ? void 0 : _a.nativeElement, 'keyboard');
     }
     /**
      * @return {?}
      */
     blur() {
-        this.switchElement.nativeElement.blur();
+        var _a;
+        (_a = this.switchElement) === null || _a === void 0 ? void 0 : _a.nativeElement.blur();
     }
     /**
      * @return {?}
      */
     ngAfterViewInit() {
-        this.focusMonitor.monitor(this.switchElement.nativeElement, true).subscribe((/**
+        this.focusMonitor.monitor((/** @type {?} */ (this.switchElement)).nativeElement, true).subscribe((/**
          * @param {?} focusOrigin
          * @return {?}
          */
@@ -187,7 +190,7 @@ class NzSwitchComponent {
      * @return {?}
      */
     ngOnDestroy() {
-        this.focusMonitor.stopMonitoring(this.switchElement.nativeElement);
+        this.focusMonitor.stopMonitoring((/** @type {?} */ (this.switchElement)).nativeElement);
     }
     /**
      * @param {?} value
@@ -283,7 +286,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSwitchComponent.prototype, "nzControl", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'default'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
 ], NzSwitchComponent.prototype, "nzSize", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSwitchComponent, [{
@@ -343,11 +346,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzUnCheckedChildren: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzSize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], switchElement: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
             args: ['switchElement', { static: true }]
-        }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 if (false) {}
 

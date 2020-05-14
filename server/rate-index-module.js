@@ -60,7 +60,7 @@ function NzRateComponent_li_2_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const i_r3 = ctx.index;
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx_r1.starStyleArray[i_r3])("nzTooltipTitle", ctx_r1.nzTooltips[i_r3]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx_r1.starStyleArray[i_r3] || "")("nzTooltipTitle", ctx_r1.nzTooltips[i_r3]);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("allowHalf", ctx_r1.nzAllowHalf)("character", ctx_r1.nzCharacter);
 } }
@@ -81,6 +81,8 @@ class NzRateComponent {
         this.nzConfigService = nzConfigService;
         this.renderer = renderer;
         this.cdr = cdr;
+        this.nzAllowClear = true;
+        this.nzAllowHalf = false;
         this.nzDisabled = false;
         this.nzAutoFocus = false;
         this.nzCount = 5;
@@ -132,7 +134,7 @@ class NzRateComponent {
         const { nzAutoFocus, nzCount, nzValue } = changes;
         if (nzAutoFocus && !nzAutoFocus.isFirstChange()) {
             /** @type {?} */
-            const el = this.ulElement.nativeElement;
+            const el = (/** @type {?} */ (this.ulElement)).nativeElement;
             if (this.nzAutoFocus && !this.nzDisabled) {
                 this.renderer.setAttribute(el, 'autofocus', 'autofocus');
             }
@@ -232,13 +234,13 @@ class NzRateComponent {
      * @return {?}
      */
     focus() {
-        this.ulElement.nativeElement.focus();
+        (/** @type {?} */ (this.ulElement)).nativeElement.focus();
     }
     /**
      * @return {?}
      */
     blur() {
-        this.ulElement.nativeElement.blur();
+        (/** @type {?} */ (this.ulElement)).nativeElement.blur();
     }
     /**
      * @param {?} e
@@ -335,7 +337,7 @@ NzRateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineCo
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.ulElement = _t.first);
-    } }, inputs: { nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzCount: "nzCount", nzTooltips: "nzTooltips", nzAllowClear: "nzAllowClear", nzAllowHalf: "nzAllowHalf", nzCharacter: "nzCharacter" }, outputs: { nzOnBlur: "nzOnBlur", nzOnFocus: "nzOnFocus", nzOnHoverChange: "nzOnHoverChange", nzOnKeyDown: "nzOnKeyDown" }, exportAs: ["nzRate"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
+    } }, inputs: { nzAllowClear: "nzAllowClear", nzAllowHalf: "nzAllowHalf", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzCount: "nzCount", nzTooltips: "nzTooltips", nzCharacter: "nzCharacter" }, outputs: { nzOnBlur: "nzOnBlur", nzOnFocus: "nzOnFocus", nzOnHoverChange: "nzOnHoverChange", nzOnKeyDown: "nzOnKeyDown" }, exportAs: ["nzRate"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
                 useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])(( /**
@@ -375,11 +377,11 @@ NzRateComponent.propDecorators = {
     nzOnKeyDown: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzRateComponent.prototype, "nzAllowClear", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzRateComponent.prototype, "nzAllowHalf", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -473,7 +475,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
       <li
         *ngFor="let star of starArray; let i = index"
         class="ant-rate-star"
-        [ngClass]="starStyleArray[i]"
+        [ngClass]="starStyleArray[i] || ''"
         nz-tooltip
         [nzTooltipTitle]="nzTooltips[i]"
       >
@@ -497,7 +499,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                     }
                 ]
             }]
-    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }]; }, { nzDisabled: [{
+    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_4__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }]; }, { nzAllowClear: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzAllowHalf: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzDisabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzAutoFocus: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -516,10 +522,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         }], ulElement: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
             args: ['ulElement', { static: false }]
-        }], nzAllowClear: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzAllowHalf: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzCharacter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
@@ -866,7 +868,7 @@ class NzDemoRateEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 300, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-rate-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-rate-demo-half", "nzTitle", "Half star"], ["nzHref", "#components-rate-demo-text", "nzTitle", "Show copywriting"], ["nzHref", "#components-rate-demo-disabled", "nzTitle", "Read only"], ["nzHref", "#components-rate-demo-clear", "nzTitle", "Clear star"], ["nzHref", "#components-rate-demo-character", "nzTitle", "Other Character"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-rate-basic", "nzGenerateCommand", "ng g ng-zorro-antd:rate-basic <name>", "nzComponentName", "NzDemoRateBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Show copywriting", "nzSelector", "nz-demo-rate-text", "nzGenerateCommand", "ng g ng-zorro-antd:rate-text <name>", "nzComponentName", "NzDemoRateTextComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Clear star", "nzSelector", "nz-demo-rate-clear", "nzGenerateCommand", "ng g ng-zorro-antd:rate-clear <name>", "nzComponentName", "NzDemoRateClearComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Half star", "nzSelector", "nz-demo-rate-half", "nzGenerateCommand", "ng g ng-zorro-antd:rate-half <name>", "nzComponentName", "NzDemoRateHalfComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Read only", "nzSelector", "nz-demo-rate-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:rate-disabled <name>", "nzComponentName", "NzDemoRateDisabledComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Other Character", "nzSelector", "nz-demo-rate-character", "nzGenerateCommand", "ng g ng-zorro-antd:rate-character <name>", "nzComponentName", "NzDemoRateCharacterComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-rate"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-rate'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoRateEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 300, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-rate-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-rate-demo-half", "nzTitle", "Half star"], ["nzHref", "#components-rate-demo-text", "nzTitle", "Show copywriting"], ["nzHref", "#components-rate-demo-disabled", "nzTitle", "Read only"], ["nzHref", "#components-rate-demo-clear", "nzTitle", "Clear star"], ["nzHref", "#components-rate-demo-character", "nzTitle", "Other Character"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-rate-basic", "nzGenerateCommand", "ng g ng-zorro-antd:rate-basic <name>", "nzComponentName", "NzDemoRateBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Show copywriting", "nzSelector", "nz-demo-rate-text", "nzGenerateCommand", "ng g ng-zorro-antd:rate-text <name>", "nzComponentName", "NzDemoRateTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Clear star", "nzSelector", "nz-demo-rate-clear", "nzGenerateCommand", "ng g ng-zorro-antd:rate-clear <name>", "nzComponentName", "NzDemoRateClearComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Half star", "nzSelector", "nz-demo-rate-half", "nzGenerateCommand", "ng g ng-zorro-antd:rate-half <name>", "nzComponentName", "NzDemoRateHalfComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Read only", "nzSelector", "nz-demo-rate-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:rate-disabled <name>", "nzComponentName", "NzDemoRateDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Other Character", "nzSelector", "nz-demo-rate-character", "nzGenerateCommand", "ng g ng-zorro-antd:rate-character <name>", "nzComponentName", "NzDemoRateCharacterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-rate"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-rate'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoRateEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1373,19 +1375,19 @@ class NzDemoRateEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-basic")("nzLink", "components-rate-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-basic")("nzLink", "components-rate-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-text")("nzLink", "components-rate-demo-text")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/text.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-text")("nzLink", "components-rate-demo-text")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/text.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-clear")("nzLink", "components-rate-demo-clear")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/clear.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-clear")("nzLink", "components-rate-demo-clear")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/clear.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-half")("nzLink", "components-rate-demo-half")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/half.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-half")("nzLink", "components-rate-demo-half")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/half.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-disabled")("nzLink", "components-rate-demo-disabled")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/disabled.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-disabled")("nzLink", "components-rate-demo-disabled")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/disabled.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-character")("nzLink", "components-rate-demo-character")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/character.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-character")("nzLink", "components-rate-demo-character")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/character.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_7__["NzDemoRateBasicComponent"], _text__WEBPACK_IMPORTED_MODULE_8__["NzDemoRateTextComponent"], _clear__WEBPACK_IMPORTED_MODULE_9__["NzDemoRateClearComponent"], _half__WEBPACK_IMPORTED_MODULE_10__["NzDemoRateHalfComponent"], _disabled__WEBPACK_IMPORTED_MODULE_11__["NzDemoRateDisabledComponent"], _character__WEBPACK_IMPORTED_MODULE_12__["NzDemoRateCharacterComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoRateEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -1667,7 +1669,7 @@ class NzDemoRateZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 302, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-rate-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-rate-demo-half", "nzTitle", "\u534A\u661F"], ["nzHref", "#components-rate-demo-text", "nzTitle", "\u6587\u6848\u5C55\u73B0"], ["nzHref", "#components-rate-demo-disabled", "nzTitle", "\u53EA\u8BFB"], ["nzHref", "#components-rate-demo-clear", "nzTitle", "\u6E05\u9664"], ["nzHref", "#components-rate-demo-character", "nzTitle", "\u5176\u4ED6\u5B57\u7B26"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-rate-basic", "nzGenerateCommand", "ng g ng-zorro-antd:rate-basic <name>", "nzComponentName", "NzDemoRateBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6587\u6848\u5C55\u73B0", "nzSelector", "nz-demo-rate-text", "nzGenerateCommand", "ng g ng-zorro-antd:rate-text <name>", "nzComponentName", "NzDemoRateTextComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u6E05\u9664", "nzSelector", "nz-demo-rate-clear", "nzGenerateCommand", "ng g ng-zorro-antd:rate-clear <name>", "nzComponentName", "NzDemoRateClearComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u534A\u661F", "nzSelector", "nz-demo-rate-half", "nzGenerateCommand", "ng g ng-zorro-antd:rate-half <name>", "nzComponentName", "NzDemoRateHalfComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u53EA\u8BFB", "nzSelector", "nz-demo-rate-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:rate-disabled <name>", "nzComponentName", "NzDemoRateDisabledComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u5176\u4ED6\u5B57\u7B26", "nzSelector", "nz-demo-rate-character", "nzGenerateCommand", "ng g ng-zorro-antd:rate-character <name>", "nzComponentName", "NzDemoRateCharacterComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-rate"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-rate'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoRateZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 302, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-rate-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-rate-demo-half", "nzTitle", "\u534A\u661F"], ["nzHref", "#components-rate-demo-text", "nzTitle", "\u6587\u6848\u5C55\u73B0"], ["nzHref", "#components-rate-demo-disabled", "nzTitle", "\u53EA\u8BFB"], ["nzHref", "#components-rate-demo-clear", "nzTitle", "\u6E05\u9664"], ["nzHref", "#components-rate-demo-character", "nzTitle", "\u5176\u4ED6\u5B57\u7B26"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-rate-basic", "nzGenerateCommand", "ng g ng-zorro-antd:rate-basic <name>", "nzComponentName", "NzDemoRateBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6587\u6848\u5C55\u73B0", "nzSelector", "nz-demo-rate-text", "nzGenerateCommand", "ng g ng-zorro-antd:rate-text <name>", "nzComponentName", "NzDemoRateTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6E05\u9664", "nzSelector", "nz-demo-rate-clear", "nzGenerateCommand", "ng g ng-zorro-antd:rate-clear <name>", "nzComponentName", "NzDemoRateClearComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u534A\u661F", "nzSelector", "nz-demo-rate-half", "nzGenerateCommand", "ng g ng-zorro-antd:rate-half <name>", "nzComponentName", "NzDemoRateHalfComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53EA\u8BFB", "nzSelector", "nz-demo-rate-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:rate-disabled <name>", "nzComponentName", "NzDemoRateDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5176\u4ED6\u5B57\u7B26", "nzSelector", "nz-demo-rate-character", "nzGenerateCommand", "ng g ng-zorro-antd:rate-character <name>", "nzComponentName", "NzDemoRateCharacterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-rate"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-rate'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoRateZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2178,19 +2180,19 @@ class NzDemoRateZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-basic")("nzLink", "components-rate-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-basic")("nzLink", "components-rate-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-text")("nzLink", "components-rate-demo-text")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/text.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-text")("nzLink", "components-rate-demo-text")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/text.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-clear")("nzLink", "components-rate-demo-clear")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/clear.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-clear")("nzLink", "components-rate-demo-clear")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/clear.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-half")("nzLink", "components-rate-demo-half")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/half.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-half")("nzLink", "components-rate-demo-half")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/half.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-disabled")("nzLink", "components-rate-demo-disabled")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/disabled.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-disabled")("nzLink", "components-rate-demo-disabled")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/disabled.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-character")("nzLink", "components-rate-demo-character")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/character.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-rate-demo-character")("nzLink", "components-rate-demo-character")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/rate/demo/character.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_7__["NzDemoRateBasicComponent"], _text__WEBPACK_IMPORTED_MODULE_8__["NzDemoRateTextComponent"], _clear__WEBPACK_IMPORTED_MODULE_9__["NzDemoRateClearComponent"], _half__WEBPACK_IMPORTED_MODULE_10__["NzDemoRateHalfComponent"], _disabled__WEBPACK_IMPORTED_MODULE_11__["NzDemoRateDisabledComponent"], _character__WEBPACK_IMPORTED_MODULE_12__["NzDemoRateCharacterComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoRateZhComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],

@@ -162,6 +162,7 @@ function NzTabSetComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
 } }
 class NzTabBodyComponent {
     constructor() {
+        this.content = null;
         this.active = false;
         this.forceRender = false;
     }
@@ -169,7 +170,7 @@ class NzTabBodyComponent {
 NzTabBodyComponent.ɵfac = function NzTabBodyComponent_Factory(t) { return new (t || NzTabBodyComponent)(); };
 NzTabBodyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTabBodyComponent, selectors: [["", "nz-tab-body", ""]], hostVars: 4, hostBindings: function NzTabBodyComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-tabs-tabpane-active", ctx.active)("ant-tabs-tabpane-inactive", !ctx.active);
-    } }, inputs: { active: "active", forceRender: "forceRender", content: "content" }, exportAs: ["nzTabBody"], attrs: _c0, decls: 1, vars: 1, consts: [[4, "ngIf"], [3, "ngTemplateOutlet"]], template: function NzTabBodyComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { content: "content", active: "active", forceRender: "forceRender" }, exportAs: ["nzTabBody"], attrs: _c0, decls: 1, vars: 1, consts: [[4, "ngIf"], [3, "ngTemplateOutlet"]], template: function NzTabBodyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzTabBodyComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.active || ctx.forceRender);
@@ -1002,8 +1003,14 @@ class NzTabSetComponent {
         this.tabLabelSubscription = rxjs__WEBPACK_IMPORTED_MODULE_3__["Subscription"].EMPTY;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.tabPositionMode = 'horizontal';
+        this.nzShowPagination = true;
+        this.nzAnimated = true;
         this.nzHideAll = false;
         this.nzTabPosition = 'top';
+        this.nzSize = 'default';
+        this.nzTabBarGutter = undefined;
+        this.nzTabBarStyle = null;
+        this.nzType = 'line';
         this.nzLinkRouter = false;
         this.nzLinkExact = true;
         this.nzCanDeactivate = null;
@@ -1050,10 +1057,10 @@ class NzTabSetComponent {
     setPosition(value) {
         if (this.tabContent) {
             if (value === 'bottom') {
-                this.renderer.insertBefore(this.el, this.tabContent.nativeElement, this.nzTabsNavComponent.elementRef.nativeElement);
+                this.renderer.insertBefore(this.el, this.tabContent.nativeElement, (/** @type {?} */ (this.nzTabsNavComponent)).elementRef.nativeElement);
             }
             else {
-                this.renderer.insertBefore(this.el, this.nzTabsNavComponent.elementRef.nativeElement, this.tabContent.nativeElement);
+                this.renderer.insertBefore(this.el, (/** @type {?} */ (this.nzTabsNavComponent)).elementRef.nativeElement, this.tabContent.nativeElement);
             }
         }
     }
@@ -1340,7 +1347,7 @@ NzTabSetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.tabContent = _t.first);
     } }, hostVars: 22, hostBindings: function NzTabSetComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-tabs", true)("ant-tabs-no-animation", ctx.isAnimationDisabled)("ant-tabs-line", ctx.nzType === "line")("ant-tabs-card", ctx.nzType === "card")("ant-tabs-top", ctx.nzTabPosition === "top")("ant-tabs-bottom", ctx.nzTabPosition === "bottom")("ant-tabs-left", ctx.nzTabPosition === "left")("ant-tabs-right", ctx.nzTabPosition === "right")("ant-tabs-vertical", ctx.nzTabPosition === "left" || ctx.nzTabPosition === "right")("ant-tabs-large", ctx.nzSize === "large")("ant-tabs-small", ctx.nzSize === "small");
-    } }, inputs: { nzHideAll: "nzHideAll", nzTabPosition: "nzTabPosition", nzLinkRouter: "nzLinkRouter", nzLinkExact: "nzLinkExact", nzCanDeactivate: "nzCanDeactivate", nzSelectedIndex: "nzSelectedIndex", nzAnimated: "nzAnimated", nzTabBarExtraContent: "nzTabBarExtraContent", nzShowPagination: "nzShowPagination", nzSize: "nzSize", nzTabBarGutter: "nzTabBarGutter", nzTabBarStyle: "nzTabBarStyle", nzType: "nzType" }, outputs: { nzOnNextClick: "nzOnNextClick", nzOnPrevClick: "nzOnPrevClick", nzSelectChange: "nzSelectChange", nzSelectedIndexChange: "nzSelectedIndexChange" }, exportAs: ["nzTabset"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [[4, "ngIf"], ["role", "tablist", "tabindex", "0", 3, "nzSize", "nzTabPosition", "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "ngStyle", "nzHideBar", "nzTabBarExtraContent", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["nz-tab-label", "", "role", "tab", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", 4, "ngFor", "ngForOf"], [1, "ant-tabs-content"], ["tabContent", ""], ["nz-tab-body", "", "class", "ant-tabs-tabpane", 3, "active", "forceRender", "content", 4, "ngFor", "ngForOf"], ["nz-tab-label", "", "role", "tab", 3, "disabled", "click"], [4, "nzStringTemplateOutlet"], ["nz-tab-body", "", 1, "ant-tabs-tabpane", 3, "active", "forceRender", "content"]], template: function NzTabSetComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzShowPagination: "nzShowPagination", nzAnimated: "nzAnimated", nzHideAll: "nzHideAll", nzTabPosition: "nzTabPosition", nzSize: "nzSize", nzTabBarGutter: "nzTabBarGutter", nzTabBarStyle: "nzTabBarStyle", nzType: "nzType", nzLinkRouter: "nzLinkRouter", nzLinkExact: "nzLinkExact", nzCanDeactivate: "nzCanDeactivate", nzSelectedIndex: "nzSelectedIndex", nzTabBarExtraContent: "nzTabBarExtraContent" }, outputs: { nzOnNextClick: "nzOnNextClick", nzOnPrevClick: "nzOnPrevClick", nzSelectChange: "nzSelectChange", nzSelectedIndexChange: "nzSelectedIndexChange" }, exportAs: ["nzTabset"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [[4, "ngIf"], ["role", "tablist", "tabindex", "0", 3, "nzSize", "nzTabPosition", "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "ngStyle", "nzHideBar", "nzTabBarExtraContent", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["nz-tab-label", "", "role", "tab", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", 4, "ngFor", "ngForOf"], [1, "ant-tabs-content"], ["tabContent", ""], ["nz-tab-body", "", "class", "ant-tabs-tabpane", 3, "active", "forceRender", "content", 4, "ngFor", "ngForOf"], ["nz-tab-label", "", "role", "tab", 3, "disabled", "click"], [4, "nzStringTemplateOutlet"], ["nz-tab-body", "", 1, "ant-tabs-tabpane", 3, "active", "forceRender", "content"]], template: function NzTabSetComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzTabSetComponent_ng_container_0_Template, 6, 28, "ng-container", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.listOfNzTabComponent);
@@ -1376,15 +1383,15 @@ NzTabSetComponent.propDecorators = {
     nzSelectedIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Boolean)
 ], NzTabSetComponent.prototype, "nzShowPagination", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
 ], NzTabSetComponent.prototype, "nzAnimated", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'default'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", String)
 ], NzTabSetComponent.prototype, "nzSize", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
@@ -1392,7 +1399,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Number)
 ], NzTabSetComponent.prototype, "nzTabBarGutter", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'line'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", String)
 ], NzTabSetComponent.prototype, "nzType", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
@@ -1421,11 +1428,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                     '[class.ant-tabs-tabpane-inactive]': '!active'
                 }
             }]
-    }], function () { return []; }, { active: [{
+    }], function () { return []; }, { content: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], active: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], forceRender: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], content: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzTabLabelDirective, [{
@@ -1646,7 +1653,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
         [ngStyle]="nzTabBarStyle"
         [nzHideBar]="nzHideAll"
         [nzTabBarExtraContent]="nzTabBarExtraContent"
-        [selectedIndex]="nzSelectedIndex"
+        [selectedIndex]="nzSelectedIndex!"
         (nzOnNextClick)="nzOnNextClick.emit()"
         (nzOnPrevClick)="nzOnPrevClick.emit()"
       >
@@ -1701,9 +1708,21 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             }]
     }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_13__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
-            }] }]; }, { nzHideAll: [{
+            }] }]; }, { nzShowPagination: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzAnimated: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzHideAll: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzTabPosition: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzSize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzTabBarGutter: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzTabBarStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzType: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzLinkRouter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -1721,8 +1740,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }], nzSelectedIndex: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzAnimated: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], listOfNzTabComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
             args: [NzTabComponent]
@@ -1733,16 +1750,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
             args: ['tabContent', { static: false }]
         }], nzTabBarExtraContent: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzShowPagination: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzTabBarGutter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzTabBarStyle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzType: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 if (false) {}

@@ -322,6 +322,10 @@ NzSkeletonElementDirective.propDecorators = {
         }] }); })();
 if (false) {}
 class NzSkeletonElementButtonComponent {
+    constructor() {
+        this.nzShape = 'default';
+        this.nzSize = 'default';
+    }
 }
 NzSkeletonElementButtonComponent.ɵfac = function NzSkeletonElementButtonComponent_Factory(t) { return new (t || NzSkeletonElementButtonComponent)(); };
 NzSkeletonElementButtonComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzSkeletonElementButtonComponent, selectors: [["nz-skeleton-element", "nzType", "button"]], inputs: { nzShape: "nzShape", nzSize: "nzSize" }, attrs: _c1, decls: 1, vars: 10, template: function NzSkeletonElementButtonComponent_Template(rf, ctx) { if (rf & 1) {
@@ -349,7 +353,7 @@ NzSkeletonElementButtonComponent.propDecorators = {
     </span>
   `
             }]
-    }], null, { nzShape: [{
+    }], function () { return []; }, { nzShape: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzSize: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -357,6 +361,8 @@ NzSkeletonElementButtonComponent.propDecorators = {
 if (false) {}
 class NzSkeletonElementAvatarComponent {
     constructor() {
+        this.nzShape = 'circle';
+        this.nzSize = 'default';
         this.styleMap = {};
     }
     /**
@@ -409,6 +415,9 @@ NzSkeletonElementAvatarComponent.propDecorators = {
         }] }); })();
 if (false) {}
 class NzSkeletonElementInputComponent {
+    constructor() {
+        this.nzSize = 'default';
+    }
 }
 NzSkeletonElementInputComponent.ɵfac = function NzSkeletonElementInputComponent_Factory(t) { return new (t || NzSkeletonElementInputComponent)(); };
 NzSkeletonElementInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzSkeletonElementInputComponent, selectors: [["nz-skeleton-element", "nzType", "input"]], inputs: { nzSize: "nzSize" }, attrs: _c3, decls: 1, vars: 6, template: function NzSkeletonElementInputComponent_Template(rf, ctx) { if (rf & 1) {
@@ -433,7 +442,7 @@ NzSkeletonElementInputComponent.propDecorators = {
     </span>
   `
             }]
-    }], null, { nzSize: [{
+    }], function () { return []; }, { nzSize: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 if (false) {}

@@ -290,13 +290,13 @@ class NzRadioComponent {
      * @return {?}
      */
     focus() {
-        this.focusMonitor.focusVia(this.inputElement, 'keyboard');
+        this.focusMonitor.focusVia((/** @type {?} */ (this.inputElement)), 'keyboard');
     }
     /**
      * @return {?}
      */
     blur() {
-        this.inputElement.nativeElement.blur();
+        (/** @type {?} */ (this.inputElement)).nativeElement.blur();
     }
     /**
      * @param {?} disabled

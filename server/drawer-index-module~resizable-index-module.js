@@ -215,6 +215,9 @@ class NzDrawerComponent extends NzDrawerRef {
         this.viewContainerRef = viewContainerRef;
         this.overlayKeyboardDispatcher = overlayKeyboardDispatcher;
         this.nzClosable = true;
+        this.nzMaskClosable = true;
+        this.nzMask = true;
+        this.nzCloseOnNavigation = true;
         this.nzNoAnimation = false;
         this.nzKeyboard = true;
         this.nzPlacement = 'right';
@@ -424,6 +427,7 @@ class NzDrawerComponent extends NzDrawerRef {
      * @return {?}
      */
     open() {
+        this.attachOverlay();
         this.isOpen = true;
         this.overlayKeyboardDispatcher.add((/** @type {?} */ (this.overlayRef)));
         this.updateOverlayStyle();
@@ -457,14 +461,14 @@ class NzDrawerComponent extends NzDrawerRef {
      * @return {?}
      */
     attachBodyContent() {
-        this.bodyPortalOutlet.dispose();
+        (/** @type {?} */ (this.bodyPortalOutlet)).dispose();
         if (this.nzContent instanceof _angular_core__WEBPACK_IMPORTED_MODULE_6__["Type"]) {
             /** @type {?} */
             const childInjector = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["PortalInjector"](this.injector, new WeakMap([[NzDrawerRef, this]]));
             /** @type {?} */
             const componentPortal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](this.nzContent, null, childInjector);
             /** @type {?} */
-            const componentRef = this.bodyPortalOutlet.attachComponentPortal(componentPortal);
+            const componentRef = (/** @type {?} */ (this.bodyPortalOutlet)).attachComponentPortal(componentPortal);
             Object.assign(componentRef.instance, this.nzContentParams);
             componentRef.changeDetectorRef.detectChanges();
         }
@@ -491,6 +495,15 @@ class NzDrawerComponent extends NzDrawerRef {
                     this.nzOnClose.emit();
                 }
             }));
+            this.overlayRef
+                .detachments()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => {
+                this.disposeOverlay();
+            }));
         }
     }
     /**
@@ -498,9 +511,8 @@ class NzDrawerComponent extends NzDrawerRef {
      * @return {?}
      */
     disposeOverlay() {
-        if (this.overlayRef) {
-            this.overlayRef.dispose();
-        }
+        var _a;
+        (_a = this.overlayRef) === null || _a === void 0 ? void 0 : _a.dispose();
         this.overlayRef = null;
     }
     /**
@@ -509,7 +521,7 @@ class NzDrawerComponent extends NzDrawerRef {
      */
     getOverlayConfig() {
         return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayConfig"]({
-            disposeOnNavigation: true,
+            disposeOnNavigation: this.nzCloseOnNavigation,
             positionStrategy: this.overlay.position().global(),
             scrollStrategy: this.overlay.scrollStrategies.block()
         });
@@ -573,7 +585,7 @@ class NzDrawerComponent extends NzDrawerRef {
         }
     }
 }
-NzDrawerComponent.ɵfac = function NzDrawerComponent_Factory(t) { return new (t || NzDrawerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_5__["DOCUMENT"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["Injector"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusTrapFactory"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"])); };
+NzDrawerComponent.ɵfac = function NzDrawerComponent_Factory(t) { return new (t || NzDrawerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_5__["DOCUMENT"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["Injector"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["ConfigurableFocusTrapFactory"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_6__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"])); };
 NzDrawerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({ type: NzDrawerComponent, selectors: [["nz-drawer"]], viewQuery: function NzDrawerComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵstaticViewQuery"](_c0, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵviewQuery"](_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["CdkPortalOutlet"], true);
@@ -581,7 +593,7 @@ NzDrawerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefine
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵloadQuery"]()) && (ctx.drawerTemplate = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵloadQuery"]()) && (ctx.bodyPortalOutlet = _t.first);
-    } }, inputs: { nzClosable: "nzClosable", nzNoAnimation: "nzNoAnimation", nzKeyboard: "nzKeyboard", nzPlacement: "nzPlacement", nzMaskStyle: "nzMaskStyle", nzBodyStyle: "nzBodyStyle", nzWidth: "nzWidth", nzHeight: "nzHeight", nzZIndex: "nzZIndex", nzOffsetX: "nzOffsetX", nzOffsetY: "nzOffsetY", nzVisible: "nzVisible", nzContent: "nzContent", nzMaskClosable: "nzMaskClosable", nzMask: "nzMask", nzTitle: "nzTitle", nzWrapClassName: "nzWrapClassName" }, outputs: { nzOnViewInit: "nzOnViewInit", nzOnClose: "nzOnClose" }, exportAs: ["nzDrawer"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 2, vars: 0, consts: [["drawerTemplate", ""], [1, "ant-drawer", 3, "nzNoAnimation"], ["class", "ant-drawer-mask", 3, "ngStyle", "click", 4, "ngIf"], [1, "ant-drawer-content"], [1, "ant-drawer-wrapper-body"], [3, "ant-drawer-header", "ant-drawer-header-no-title", 4, "ngIf"], [1, "ant-drawer-body", 3, "ngStyle"], ["cdkPortalOutlet", ""], [4, "ngIf"], [1, "ant-drawer-mask", 3, "ngStyle", "click"], ["class", "ant-drawer-title", 4, "ngIf"], ["aria-label", "Close", "class", "ant-drawer-close", "style", "--scroll-bar: 0px;", 3, "click", 4, "ngIf"], [1, "ant-drawer-title"], [4, "nzStringTemplateOutlet"], [3, "innerHTML"], ["aria-label", "Close", 1, "ant-drawer-close", 2, "--scroll-bar", "0px", 3, "click"], ["nz-icon", "", "nzType", "close"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzDrawerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzClosable: "nzClosable", nzMaskClosable: "nzMaskClosable", nzMask: "nzMask", nzCloseOnNavigation: "nzCloseOnNavigation", nzNoAnimation: "nzNoAnimation", nzKeyboard: "nzKeyboard", nzPlacement: "nzPlacement", nzMaskStyle: "nzMaskStyle", nzBodyStyle: "nzBodyStyle", nzWidth: "nzWidth", nzHeight: "nzHeight", nzZIndex: "nzZIndex", nzOffsetX: "nzOffsetX", nzOffsetY: "nzOffsetY", nzVisible: "nzVisible", nzContent: "nzContent", nzTitle: "nzTitle", nzWrapClassName: "nzWrapClassName" }, outputs: { nzOnViewInit: "nzOnViewInit", nzOnClose: "nzOnClose" }, exportAs: ["nzDrawer"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 2, vars: 0, consts: [["drawerTemplate", ""], [1, "ant-drawer", 3, "nzNoAnimation"], ["class", "ant-drawer-mask", 3, "ngStyle", "click", 4, "ngIf"], [1, "ant-drawer-content"], [1, "ant-drawer-wrapper-body"], [3, "ant-drawer-header", "ant-drawer-header-no-title", 4, "ngIf"], [1, "ant-drawer-body", 3, "ngStyle"], ["cdkPortalOutlet", ""], [4, "ngIf"], [1, "ant-drawer-mask", 3, "ngStyle", "click"], ["class", "ant-drawer-title", 4, "ngIf"], ["aria-label", "Close", "class", "ant-drawer-close", "style", "--scroll-bar: 0px;", 3, "click", 4, "ngIf"], [1, "ant-drawer-title"], [4, "nzStringTemplateOutlet"], [3, "innerHTML"], ["aria-label", "Close", 1, "ant-drawer-close", 2, "--scroll-bar", "0px", 3, "click"], ["nz-icon", "", "nzType", "close"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzDrawerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplate"](0, NzDrawerComponent_ng_template_0_Template, 10, 35, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtemplateRefExtractor"]);
     } }, directives: [ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_11__["NzNoAnimationDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgStyle"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["CdkPortalOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_12__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
@@ -593,7 +605,7 @@ NzDrawerComponent.ctorParameters = () => [
     { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Injector"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ChangeDetectorRef"] },
-    { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusTrapFactory"] },
+    { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["ConfigurableFocusTrapFactory"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ViewContainerRef"] },
     { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"] }
 ];
@@ -602,6 +614,7 @@ NzDrawerComponent.propDecorators = {
     nzClosable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
     nzMaskClosable: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
     nzMask: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
+    nzCloseOnNavigation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
     nzNoAnimation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
     nzKeyboard: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
     nzTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"] }],
@@ -625,13 +638,17 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzDrawerComponent.prototype, "nzClosable", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzDrawerComponent.prototype, "nzMaskClosable", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzDrawerComponent.prototype, "nzMask", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
+], NzDrawerComponent.prototype, "nzCloseOnNavigation", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
@@ -680,7 +697,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
               <div class="ant-drawer-body" [ngStyle]="nzBodyStyle">
                 <ng-template cdkPortalOutlet></ng-template>
                 <ng-container *ngIf="isTemplateRef(nzContent)">
-                  <ng-container *ngTemplateOutlet="nzContent; context: templateContext"></ng-container>
+                  <ng-container *ngTemplateOutlet="$any(nzContent); context: templateContext"></ng-container>
                 </ng-container>
                 <ng-content *ngIf="!nzContent"></ng-content>
               </div>
@@ -698,7 +715,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Inject"],
                 args: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["DOCUMENT"]]
-            }] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Renderer2"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Injector"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ChangeDetectorRef"] }, { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusTrapFactory"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ViewContainerRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"] }]; }, { nzClosable: [{
+            }] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Renderer2"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Injector"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ChangeDetectorRef"] }, { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["ConfigurableFocusTrapFactory"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["ViewContainerRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_3__["OverlayKeyboardDispatcher"] }]; }, { nzClosable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
+        }], nzMaskClosable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
+        }], nzMask: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
+        }], nzCloseOnNavigation: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
         }], nzNoAnimation: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
@@ -727,10 +750,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         }], nzVisible: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
         }], nzContent: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
-        }], nzMaskClosable: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
-        }], nzMask: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
         }], nzTitle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_6__["Input"]
@@ -800,7 +819,8 @@ class DrawerBuilderForService {
          * pick {\@link NzDrawerOptions.nzOnCancel} and omit this option
          */
         const _a = this.options, { nzOnCancel } = _a, componentOption = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["nzOnCancel"]);
-        this.createDrawer();
+        this.overlayRef = this.overlay.create();
+        this.drawerRef = this.overlayRef.attach(new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](NzDrawerComponent));
         this.updateOptions(componentOption);
         // Prevent repeatedly open drawer when tap focus element.
         (/** @type {?} */ (this.drawerRef)).instance.savePreviouslyFocusedElement();
@@ -844,13 +864,6 @@ class DrawerBuilderForService {
      */
     getInstance() {
         return (/** @type {?} */ (this.drawerRef)) && (/** @type {?} */ (this.drawerRef)).instance;
-    }
-    /**
-     * @return {?}
-     */
-    createDrawer() {
-        this.overlayRef = this.overlay.create();
-        this.drawerRef = this.overlayRef.attach(new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](NzDrawerComponent));
     }
     /**
      * @param {?} options

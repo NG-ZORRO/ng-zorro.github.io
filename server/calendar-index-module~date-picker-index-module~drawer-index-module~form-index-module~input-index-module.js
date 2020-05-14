@@ -439,13 +439,13 @@ function NzPickerComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
 function NzPickerComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
     const _r25 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "input", 13, 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzPickerComponent_ng_template_2_Template_input_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r24.onClickInputBox($event, partType_r22); })("blur", function NzPickerComponent_ng_template_2_Template_input_blur_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r26.onBlur(); })("input", function NzPickerComponent_ng_template_2_Template_input_input_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r27.onInputKeyup($event, false); })("focus", function NzPickerComponent_ng_template_2_Template_input_focus_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r28.onFocus(partType_r22); })("keyup.enter", function NzPickerComponent_ng_template_2_Template_input_keyup_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r29.onInputKeyup($event, true); })("ngModelChange", function NzPickerComponent_ng_template_2_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return (ctx_r30.inputValue[ctx_r30.datePickerService == null ? null : ctx_r30.datePickerService.getActiveIndex(partType_r22)] = $event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzPickerComponent_ng_template_2_Template_input_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r24.onClickInputBox($event, partType_r22); })("blur", function NzPickerComponent_ng_template_2_Template_input_blur_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r26.onBlur(); })("input", function NzPickerComponent_ng_template_2_Template_input_input_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r27.onInputKeyup($event, false); })("focus", function NzPickerComponent_ng_template_2_Template_input_focus_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r28 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r28.onFocus(partType_r22); })("keyup.enter", function NzPickerComponent_ng_template_2_Template_input_keyup_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r29.onInputKeyup($event, true); })("ngModelChange", function NzPickerComponent_ng_template_2_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r25); const partType_r22 = ctx.partType; const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return (ctx_r30.inputValue[ctx_r30.datePickerService.getActiveIndex(partType_r22)] = $event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const partType_r22 = ctx.partType;
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpropertyInterpolate"]("placeholder", ctx_r3.getPlaceholder(partType_r22));
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", ctx_r3.disabled)("size", ctx_r3.inputSize)("ngModel", ctx_r3.inputValue[ctx_r3.datePickerService == null ? null : ctx_r3.datePickerService.getActiveIndex(partType_r22)]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("disabled", ctx_r3.disabled)("size", ctx_r3.inputSize)("ngModel", ctx_r3.inputValue[ctx_r3.datePickerService.getActiveIndex(partType_r22)]);
 } }
 function NzPickerComponent_ng_template_4_span_1_Template(rf, ctx) { if (rf & 1) {
     const _r34 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
@@ -462,9 +462,9 @@ function NzPickerComponent_ng_template_4_ng_container_3_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "i", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    const suffixIcon_r35 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzType", ctx_r32.suffixIcon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzType", suffixIcon_r35);
 } }
 function NzPickerComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "div", 15);
@@ -484,9 +484,9 @@ function NzPickerComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r5.suffixIcon);
 } }
 function NzPickerComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-    const _r36 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    const _r37 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("@slideMotion.done", function NzPickerComponent_ng_template_6_Template_div_animation_slideMotion_done_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r36); const ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r35.animationDone(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("@slideMotion.done", function NzPickerComponent_ng_template_6_Template_div_animation_slideMotion_done_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r37); const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r36.animationDone(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -560,7 +560,7 @@ function InnerPopupComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "month-table", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("dayHover", function InnerPopupComponent_ng_container_5_Template_month_table_dayHover_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r19.dayHover.emit($event); })("valueChange", function InnerPopupComponent_ng_container_5_Template_month_table_valueChange_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r20.onChooseMonth($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("valueChange", function InnerPopupComponent_ng_container_5_Template_month_table_valueChange_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r16); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r19.onChooseMonth($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
@@ -574,14 +574,14 @@ function InnerPopupComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("showWeek", ctx_r2.showWeek)("value", ctx_r2.value)("activeDate", ctx_r2.activeDate)("disabledDate", ctx_r2.disabledDate)("cellRender", ctx_r2.dateRender);
 } }
 function InnerPopupComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-    const _r22 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "date-header", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("valueChange", function InnerPopupComponent_ng_container_6_Template_date_header_valueChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22); const ctx_r21 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r21.activeDate = $event; })("panelModeChange", function InnerPopupComponent_ng_container_6_Template_date_header_panelModeChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r23.panelModeChange.emit($event); })("valueChange", function InnerPopupComponent_ng_container_6_Template_date_header_valueChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22); const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r24.headerChange.emit($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("valueChange", function InnerPopupComponent_ng_container_6_Template_date_header_valueChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r20.activeDate = $event; })("panelModeChange", function InnerPopupComponent_ng_container_6_Template_date_header_panelModeChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r22.panelModeChange.emit($event); })("valueChange", function InnerPopupComponent_ng_container_6_Template_date_header_valueChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const ctx_r23 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r23.headerChange.emit($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "date-table", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("valueChange", function InnerPopupComponent_ng_container_6_Template_date_table_valueChange_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22); const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r25.onSelectDate($event); })("dayHover", function InnerPopupComponent_ng_container_6_Template_date_table_dayHover_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r22); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r26.dayHover.emit($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("valueChange", function InnerPopupComponent_ng_container_6_Template_date_table_valueChange_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r24.onSelectDate($event); })("dayHover", function InnerPopupComponent_ng_container_6_Template_date_table_dayHover_3_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r21); const ctx_r25 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r25.dayHover.emit($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
@@ -595,16 +595,16 @@ function InnerPopupComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("locale", ctx_r3.locale)("showWeek", ctx_r3.showWeek)("value", ctx_r3.value)("activeDate", ctx_r3.activeDate)("disabledDate", ctx_r3.disabledDate)("cellRender", ctx_r3.dateRender)("selectedValue", ctx_r3.selectedValue)("hoverValue", ctx_r3.hoverValue);
 } }
 function InnerPopupComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-    const _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    const _r27 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "nz-time-picker-panel", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function InnerPopupComponent_ng_container_7_Template_nz_time_picker_panel_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r28); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r27.onSelectTime($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("ngModelChange", function InnerPopupComponent_ng_container_7_Template_nz_time_picker_panel_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r27); const ctx_r26 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r26.onSelectTime($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzInDatePicker", true)("ngModel", ctx_r4.value == null ? null : ctx_r4.value.nativeDate)("format", ctx_r4.timeOptions.nzFormat)("nzHourStep", ctx_r4.timeOptions.nzHourStep)("nzMinuteStep", ctx_r4.timeOptions.nzMinuteStep)("nzSecondStep", ctx_r4.timeOptions.nzSecondStep)("nzDisabledHours", ctx_r4.timeOptions.nzDisabledHours)("nzDisabledMinutes", ctx_r4.timeOptions.nzDisabledMinutes)("nzDisabledSeconds", ctx_r4.timeOptions.nzDisabledSeconds)("nzHideDisabledOptions", ctx_r4.timeOptions.nzHideDisabledOptions)("nzDefaultOpenValue", ctx_r4.timeOptions.nzDefaultOpenValue)("nzUse12Hours", ctx_r4.timeOptions.nzUse12Hours)("nzAddOn", ctx_r4.timeOptions.nzAddOn);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzInDatePicker", true)("ngModel", ctx_r4.value == null ? null : ctx_r4.value.nativeDate)("format", ctx_r4.timeOptions.nzFormat)("nzHourStep", ctx_r4.timeOptions.nzHourStep)("nzMinuteStep", ctx_r4.timeOptions.nzMinuteStep)("nzSecondStep", ctx_r4.timeOptions.nzSecondStep)("nzDisabledHours", ctx_r4.timeOptions.nzDisabledHours)("nzDisabledMinutes", ctx_r4.timeOptions.nzDisabledMinutes)("nzDisabledSeconds", ctx_r4.timeOptions.nzDisabledSeconds)("nzHideDisabledOptions", !!ctx_r4.timeOptions.nzHideDisabledOptions)("nzDefaultOpenValue", ctx_r4.timeOptions.nzDefaultOpenValue)("nzUse12Hours", !!ctx_r4.timeOptions.nzUse12Hours)("nzAddOn", ctx_r4.timeOptions.nzAddOn);
 } }
 function DateHeaderComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
@@ -766,7 +766,7 @@ function DateTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf 
 } }
 function DateTableComponent_tr_3_td_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function DateTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function DateTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisablcellRendered ? null : cell_r9.onMouseEnter(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function DateTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function DateTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.onMouseEnter(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](1, 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, DateTableComponent_tr_3_td_2_ng_container_2_Template, 5, 3, "ng-container", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, DateTableComponent_tr_3_td_2_ng_container_3_Template, 5, 7, "ng-container", 14);
@@ -957,7 +957,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (r
 } }
 function DecadeTableComponent_tr_3_td_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function DecadeTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function DecadeTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisablcellRendered ? null : cell_r9.onMouseEnter(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function DecadeTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function DecadeTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.onMouseEnter(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](1, 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, DecadeTableComponent_tr_3_td_2_ng_container_2_Template, 5, 3, "ng-container", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, DecadeTableComponent_tr_3_td_2_ng_container_3_Template, 5, 7, "ng-container", 14);
@@ -1148,7 +1148,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf
 } }
 function MonthTableComponent_tr_3_td_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MonthTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function MonthTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisablcellRendered ? null : cell_r9.onMouseEnter(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MonthTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function MonthTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.onMouseEnter(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](1, 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, MonthTableComponent_tr_3_td_2_ng_container_2_Template, 5, 3, "ng-container", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, MonthTableComponent_tr_3_td_2_ng_container_3_Template, 5, 7, "ng-container", 14);
@@ -1339,7 +1339,7 @@ function YearTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf 
 } }
 function YearTableComponent_tr_3_td_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "td", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function YearTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function YearTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisablcellRendered ? null : cell_r9.onMouseEnter(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function YearTableComponent_tr_3_td_2_Template_td_click_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.isDisabled ? null : cell_r9.onClick(); })("mouseenter", function YearTableComponent_tr_3_td_2_Template_td_mouseenter_0_listener() { const cell_r9 = ctx.$implicit; return cell_r9.onMouseEnter(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](1, 13);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, YearTableComponent_tr_3_td_2_ng_container_2_Template, 5, 3, "ng-container", 14);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, YearTableComponent_tr_3_td_2_ng_container_3_Template, 5, 7, "ng-container", 14);
@@ -1371,16 +1371,6 @@ function YearTableComponent_tr_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", row_r5.dateCells)("ngForTrackBy", ctx_r1.trackByBodyColumn);
 } }
-function PickerResultSingle() { }
-if (false) {}
-/**
- * @record
- */
-function PickerResultRange() { }
-if (false) {}
-/**
- * @record
- */
 function DisabledTimeConfig() { }
 if (false) {}
 /**
@@ -1430,7 +1420,7 @@ const defaultDisabledTime = {
 };
 /**
  * @param {?} value
- * @param {?} disabledTime
+ * @param {?=} disabledTime
  * @return {?}
  */
 function getTimeConfig(value, disabledTime) {
@@ -1551,11 +1541,14 @@ class CalendarFooterComponent {
         this.hasTimePicker = false;
         this.isRange = false;
         this.okDisabled = false;
+        this.rangeQuickSelector = null;
         this.clickOk = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.clickToday = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.prefixCls = PREFIX_CLASS;
         this.isTemplateRef = ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["isTemplateRef"];
         this.isNonEmptyString = ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["isNonEmptyString"];
+        this.isTodayDisabled = false;
+        this.todayTitle = '';
         this.now = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_10__["CandyDate"]();
     }
     /**
@@ -1564,7 +1557,7 @@ class CalendarFooterComponent {
      */
     ngOnChanges(changes) {
         if (changes.disabledDate) {
-            this.isTodayDisabled = this.disabledDate && this.disabledDate(this.now.nativeDate);
+            this.isTodayDisabled = !!(this.disabledDate && this.disabledDate(this.now.nativeDate));
         }
         if (changes.locale) {
             // NOTE: Compat for DatePipe formatting rules
@@ -1581,7 +1574,7 @@ class CalendarFooterComponent {
     }
 }
 CalendarFooterComponent.ɵfac = function CalendarFooterComponent_Factory(t) { return new (t || CalendarFooterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"])); };
-CalendarFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: CalendarFooterComponent, selectors: [["calendar-footer"]], inputs: { showToday: "showToday", hasTimePicker: "hasTimePicker", isRange: "isRange", okDisabled: "okDisabled", locale: "locale", disabledDate: "disabledDate", extraFooter: "extraFooter", rangeQuickSelector: "rangeQuickSelector" }, outputs: { clickOk: "clickOk", clickToday: "clickToday" }, exportAs: ["calendarFooter"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 6, consts: [[3, "class", 4, "ngIf"], ["role", "button", 3, "class", "title", "click", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngTemplateOutlet"], [3, "innerHTML"], ["role", "button", 3, "title", "click"], [3, "click"], ["nz-button", "", "type", "button", "nzType", "primary", "nzSize", "small", 3, "disabled", "click"]], template: function CalendarFooterComponent_Template(rf, ctx) { if (rf & 1) {
+CalendarFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: CalendarFooterComponent, selectors: [["calendar-footer"]], inputs: { showToday: "showToday", hasTimePicker: "hasTimePicker", isRange: "isRange", okDisabled: "okDisabled", rangeQuickSelector: "rangeQuickSelector", locale: "locale", disabledDate: "disabledDate", extraFooter: "extraFooter" }, outputs: { clickOk: "clickOk", clickToday: "clickToday" }, exportAs: ["calendarFooter"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 6, consts: [[3, "class", 4, "ngIf"], ["role", "button", 3, "class", "title", "click", 4, "ngIf"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngTemplateOutlet"], [3, "innerHTML"], ["role", "button", 3, "title", "click"], [3, "click"], ["nz-button", "", "type", "button", "nzType", "primary", "nzSize", "small", 3, "disabled", "click"]], template: function CalendarFooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, CalendarFooterComponent_div_1_Template, 4, 6, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, CalendarFooterComponent_a_2_Template, 2, 6, "a", 1);
@@ -1653,7 +1646,7 @@ class DatePickerService {
         }
     }
     /**
-     * @param {?} value
+     * @param {?=} value
      * @return {?}
      */
     makeValue(value) {
@@ -1728,6 +1721,7 @@ class DateRangePopupComponent {
         // Emitted when done with date selecting
         this.prefixCls = PREFIX_CLASS;
         this.endPanelMode = 'date';
+        this.timeOptions = null;
         this.hoverValue = []; // Range ONLY
         // Range ONLY
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
@@ -1799,7 +1793,7 @@ class DateRangePopupComponent {
         /** @type {?} */
         const activeDate = this.datePickerService.hasValue()
             ? this.datePickerService.value
-            : this.datePickerService.makeValue(this.defaultPickerValue);
+            : this.datePickerService.makeValue((/** @type {?} */ (this.defaultPickerValue)));
         this.datePickerService.setActiveDate(activeDate, !this.showTime);
     }
     /**
@@ -2072,7 +2066,7 @@ class DateRangePopupComponent {
         }
     }
     /**
-     * @param {?} obj
+     * @param {?=} obj
      * @return {?}
      */
     getObjectKeys(obj) {
@@ -2207,6 +2201,8 @@ class NzPickerComponent {
         this.noAnimation = false;
         this.isRange = false;
         this.open = undefined;
+        this.disabled = false;
+        this.popupStyle = null;
         this.focusChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.openChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"](); // Emitted when overlay's open state change
@@ -2341,7 +2337,7 @@ class NzPickerComponent {
             ? partType === 'left'
                 ? this.rangePickerInputs.first.nativeElement
                 : this.rangePickerInputs.last.nativeElement
-            : this.pickerInput.nativeElement;
+            : (/** @type {?} */ (this.pickerInput)).nativeElement;
     }
     /**
      * @return {?}
@@ -2399,7 +2395,7 @@ class NzPickerComponent {
      * @return {?}
      */
     showClear() {
-        return !this.disabled && !this.isEmptyValue(this.datePickerService.value) && this.allowClear;
+        return !this.disabled && !this.isEmptyValue(this.datePickerService.value) && !!this.allowClear;
     }
     /**
      * @param {?} event
@@ -2422,7 +2418,7 @@ class NzPickerComponent {
             this.datePickerService.emitValue$.next();
         }
         else {
-            this.datePickerService.setValue(this.datePickerService.initialValue);
+            this.datePickerService.setValue((/** @type {?} */ (this.datePickerService.initialValue)));
             this.hideOverlay();
         }
     }
@@ -2438,7 +2434,7 @@ class NzPickerComponent {
      */
     onOverlayKeydown(event) {
         if (event.key === 'Escape') {
-            this.datePickerService.setValue(this.datePickerService.initialValue);
+            this.datePickerService.setValue((/** @type {?} */ (this.datePickerService.initialValue)));
         }
     }
     // NOTE: A issue here, the first time position change, the animation will not be triggered.
@@ -2587,7 +2583,7 @@ NzPickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.separatorElement = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.pickerInput = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.rangePickerInputs = _t);
-    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", popupStyle: "popupStyle", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["nzPicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], attrs: _c6, ngContentSelectors: _c7, decls: 7, vars: 6, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "positionChange", "backdropClick", "detach", "overlayKeydown"], [3, "disabled", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "input", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "size", "ngModel", "placeholder", "click", "blur", "input", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [2, "position", "relative", 3, "nzNoAnimation"]], template: function NzPickerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", popupStyle: "popupStyle", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["nzPicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], attrs: _c6, ngContentSelectors: _c7, decls: 7, vars: 6, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "positionChange", "backdropClick", "detach", "overlayKeydown"], [3, "disabled", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "input", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "size", "ngModel", "placeholder", "click", "blur", "input", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [2, "position", "relative", 3, "nzNoAnimation"]], template: function NzPickerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzPickerComponent_div_0_Template, 4, 10, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzPickerComponent_ng_container_1_Template, 12, 21, "ng-container", 1);
@@ -2673,16 +2669,31 @@ class NzDatePickerComponent {
         this.showWeek = false; // Should show as week picker
         // Should show as week picker
         this.focused = false;
+        this.hostClassMap = {};
         this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
         this.isCustomPlaceHolder = false;
+        this.showTime = false;
         // --- Common API
         this.nzAllowClear = true;
         this.nzAutoFocus = false;
         this.nzDisabled = false;
+        /**
+         * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+         */
+        this.nzClassName = '';
+        this.nzPlaceHolder = '';
         this.nzPopupStyle = POPUP_STYLE_PATCH;
+        this.nzSize = 'default';
+        /**
+         * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+         */
+        this.nzStyle = null;
         this.nzShowToday = true;
         this.nzMode = 'date';
         this.nzDefaultPickerValue = null;
+        this.nzSeparator = undefined;
+        this.nzSuffixIcon = 'calendar';
+        // TODO(@wenqi73) The PanelMode need named for each pickers and export
         this.nzOnPanelChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzOnCalendarChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzOnOk = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
@@ -2791,7 +2802,7 @@ class NzDatePickerComponent {
             this.setDefaultPlaceHolder();
         }
         if (changes.nzRenderExtraFooter) {
-            this.extraFooter = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.nzRenderExtraFooter);
+            this.extraFooter = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.nzRenderExtraFooter)));
         }
         if (changes.nzStyle) {
             Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_14__["warnDeprecation"])(`'nzStyle' in DatePicker is going to be removed in 10.0.0. Please use CSS style attribute like <nz-date-picker style="..."></nz-date-picker> instead.`);
@@ -2875,7 +2886,7 @@ class NzDatePickerComponent {
      */
     setDefaultPlaceHolder() {
         if (!this.isCustomPlaceHolder && this.nzLocale) {
-            this.nzPlaceHolder = this.isRange ? this.nzLocale.lang.rangePlaceholder : this.nzLocale.lang.placeholder;
+            this.nzPlaceHolder = this.isRange ? ((/** @type {?} */ (this.nzLocale.lang.rangePlaceholder))) : this.nzLocale.lang.placeholder;
         }
     }
     // Safe way of setting value with default
@@ -2925,7 +2936,7 @@ class NzDatePickerComponent {
      * @return {?}
      */
     onCalendarChange(value) {
-        if (this.isRange) {
+        if (this.isRange && Array.isArray(value)) {
             /** @type {?} */
             const rangeValue = value.filter((/**
              * @param {?} x
@@ -2935,7 +2946,7 @@ class NzDatePickerComponent {
              * @param {?} x
              * @return {?}
              */
-            x => x.nativeDate));
+            x => (/** @type {?} */ (x)).nativeDate));
             this.nzOnCalendarChange.emit(rangeValue);
         }
     }
@@ -2975,7 +2986,7 @@ NzDatePickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzDatePickerComponent_click_HostBindingHandler($event) { return ctx.picker.onClickInputBox($event); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-picker", true)("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.nzSize === "large")("ant-picker-small", ctx.nzSize === "small")("ant-picker-disabled", ctx.nzDisabled);
-    } }, inputs: { nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzPopupStyle: "nzPopupStyle", nzShowToday: "nzShowToday", nzMode: "nzMode", nzDefaultPickerValue: "nzDefaultPickerValue", nzShowTime: "nzShowTime", nzFormat: "nzFormat", nzLocale: "nzLocale", nzPlaceHolder: "nzPlaceHolder", nzOpen: "nzOpen", nzClassName: "nzClassName", nzDisabledDate: "nzDisabledDate", nzDropdownClassName: "nzDropdownClassName", nzSize: "nzSize", nzStyle: "nzStyle", nzDateRender: "nzDateRender", nzDisabledTime: "nzDisabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", nzRanges: "nzRanges", nzSeparator: "nzSeparator", nzSuffixIcon: "nzSuffixIcon" }, outputs: { nzOnPanelChange: "nzOnPanelChange", nzOnCalendarChange: "nzOnCalendarChange", nzOnOk: "nzOnOk", nzOnOpenChange: "nzOnOpenChange" }, exportAs: ["nzDatePicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
+    } }, inputs: { nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzClassName: "nzClassName", nzPlaceHolder: "nzPlaceHolder", nzPopupStyle: "nzPopupStyle", nzSize: "nzSize", nzStyle: "nzStyle", nzShowToday: "nzShowToday", nzMode: "nzMode", nzDefaultPickerValue: "nzDefaultPickerValue", nzSeparator: "nzSeparator", nzSuffixIcon: "nzSuffixIcon", nzShowTime: "nzShowTime", nzFormat: "nzFormat", nzLocale: "nzLocale", nzOpen: "nzOpen", nzDisabledDate: "nzDisabledDate", nzDropdownClassName: "nzDropdownClassName", nzDateRender: "nzDateRender", nzDisabledTime: "nzDisabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", nzRanges: "nzRanges" }, outputs: { nzOnPanelChange: "nzOnPanelChange", nzOnCalendarChange: "nzOnCalendarChange", nzOnOk: "nzOnOk", nzOnOpenChange: "nzOnOpenChange" }, exportAs: ["nzDatePicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
             DatePickerService,
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
@@ -2990,7 +3001,7 @@ NzDatePickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzDatePickerComponent_date_range_popup_1_Template, 1, 14, "date-range-popup", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("isRange", ctx.isRange)("open", ctx.nzOpen)("separator", ctx.nzSeparator)("disabled", ctx.nzDisabled)("format", ctx.nzFormat)("allowClear", ctx.nzAllowClear)("autoFocus", ctx.nzAutoFocus)("placeholder", ctx.nzPlaceHolder)("ngClass", ctx.nzClassName)("ngStyle", ctx.nzStyle)("dropdownClassName", ctx.nzDropdownClassName)("popupStyle", ctx.nzPopupStyle)("noAnimation", ctx.noAnimation == null ? null : ctx.noAnimation.nzNoAnimation)("suffixIcon", ctx.nzSuffixIcon);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("isRange", ctx.isRange)("open", ctx.nzOpen)("separator", ctx.nzSeparator)("disabled", ctx.nzDisabled)("format", ctx.nzFormat)("allowClear", ctx.nzAllowClear)("autoFocus", ctx.nzAutoFocus)("placeholder", ctx.nzPlaceHolder)("ngClass", ctx.nzClassName)("ngStyle", ctx.nzStyle)("dropdownClassName", ctx.nzDropdownClassName)("popupStyle", ctx.nzPopupStyle)("noAnimation", !!(ctx.noAnimation == null ? null : ctx.noAnimation.nzNoAnimation))("suffixIcon", ctx.nzSuffixIcon);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.realOpenState);
     } }, directives: [NzPickerComponent, _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], DateRangePopupComponent], encapsulation: 2, changeDetection: 0 });
@@ -3060,7 +3071,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", String)
 ], NzDatePickerComponent.prototype, "nzSeparator", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'calendar'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Object)
 ], NzDatePickerComponent.prototype, "nzSuffixIcon", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](CalendarFooterComponent, [{
@@ -3076,7 +3087,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
       <div *ngIf="extraFooter" class="{{ prefixCls }}-footer-extra">
         <ng-container [ngSwitch]="true">
           <ng-container *ngSwitchCase="isTemplateRef(extraFooter)">
-            <ng-container *ngTemplateOutlet="extraFooter"></ng-container>
+            <ng-container *ngTemplateOutlet="$any(extraFooter)"></ng-container>
           </ng-container>
           <ng-container *ngSwitchCase="isNonEmptyString(extraFooter)">
             <span [innerHTML]="extraFooter"></span>
@@ -3123,6 +3134,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], okDisabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], rangeQuickSelector: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], clickOk: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], clickToday: [{
@@ -3132,8 +3145,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         }], disabledDate: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], extraFooter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], rangeQuickSelector: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](DatePickerService, [{
@@ -3150,7 +3161,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
                 template: `
     <ng-container *ngIf="isRange; else singlePanel">
       <div class="{{ prefixCls }}-range-wrapper {{ prefixCls }}-date-range-wrapper">
-        <div class="{{ prefixCls }}-range-arrow" [ngStyle]="datePickerService?.arrowPositionStyle"></div>
+        <div class="{{ prefixCls }}-range-arrow" [ngStyle]="datePickerService?.arrowPositionStyle!"></div>
         <div class="{{ prefixCls }}-panel-container">
           <div class="{{ prefixCls }}-panels">
             <ng-container *ngTemplateOutlet="tplRangePart; context: { partType: 'left' }"></ng-container>
@@ -3175,12 +3186,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     </ng-template>
 
     <ng-template #tplInnerPopup let-partType="partType">
+      <!-- TODO(@wenqi73) [selectedValue] [hoverValue] types-->
       <inner-popup
         *ngIf="show(partType)"
         [showWeek]="showWeek"
         [endPanelMode]="getPanelMode(endPanelMode, partType)"
         [partType]="partType"
-        [locale]="locale"
+        [locale]="locale!"
         [showTimePicker]="hasTimePicker"
         [timeOptions]="getTimeOptions(partType)"
         [panelMode]="getPanelMode(panelMode, partType)"
@@ -3189,8 +3201,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         [value]="getValue(partType)"
         [disabledDate]="disabledDate"
         [dateRender]="dateRender"
-        [selectedValue]="datePickerService?.value"
-        [hoverValue]="hoverValue"
+        [selectedValue]="$any(datePickerService?.value)"
+        [hoverValue]="$any(hoverValue)"
         (dayHover)="onDayHover($event)"
         (selectDate)="changeValueFromSelect($event, !showTime)"
         (selectTime)="onSelectTime($event, partType)"
@@ -3201,11 +3213,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     <ng-template #tplFooter>
       <calendar-footer
         *ngIf="hasFooter"
-        [locale]="locale"
+        [locale]="locale!"
         [isRange]="isRange"
         [showToday]="showToday"
         [hasTimePicker]="hasTimePicker"
-        [okDisabled]="!isAllowed(datePickerService?.value)"
+        [okDisabled]="!isAllowed($any(datePickerService?.value))"
         [extraFooter]="extraFooter"
         [rangeQuickSelector]="ranges ? tplRangeQuickSelector : null"
         (clickOk)="onClickOk()"
@@ -3224,8 +3236,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
       <li
         *ngFor="let name of getObjectKeys(ranges)"
         class="{{ prefixCls }}-preset"
-        (click)="onClickPresetRange(ranges[name])"
-        (mouseenter)="onHoverPresetRange(ranges[name])"
+        (click)="onClickPresetRange(ranges![name])"
+        (mouseenter)="onHoverPresetRange(ranges![name])"
         (mouseleave)="onPresetRangeMouseLeave()"
       >
         <span class="ant-tag ant-tag-blue">{{ name }}</span>
@@ -3321,7 +3333,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         (input)="onInputKeyup($event, false)"
         (focus)="onFocus(partType)"
         (keyup.enter)="onInputKeyup($event, true)"
-        [(ngModel)]="inputValue[datePickerService?.getActiveIndex(partType)]"
+        [(ngModel)]="inputValue[datePickerService.getActiveIndex(partType)]"
         placeholder="{{ getPlaceholder(partType) }}"
       />
     </ng-template>
@@ -3333,7 +3345,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         <i nz-icon nzType="close-circle" nzTheme="fill"></i>
       </span>
       <span class="{{ prefixCls }}-suffix">
-        <ng-container *nzStringTemplateOutlet="suffixIcon">
+        <ng-container *nzStringTemplateOutlet="suffixIcon; let suffixIcon">
           <i nz-icon [nzType]="suffixIcon"></i>
         </ng-container>
       </span>
@@ -3387,14 +3399,16 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], open: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], popupStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], focusChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], valueChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], openChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], disabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], placeholder: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], allowClear: [{
@@ -3404,8 +3418,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         }], format: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], separator: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], popupStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], dropdownClassName: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -3450,7 +3462,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
       [ngStyle]="nzStyle"
       [dropdownClassName]="nzDropdownClassName"
       [popupStyle]="nzPopupStyle"
-      [noAnimation]="noAnimation?.nzNoAnimation"
+      [noAnimation]="!!noAnimation?.nzNoAnimation"
       [suffixIcon]="nzSuffixIcon"
       (openChange)="onOpenChange($event)"
       (focusChange)="onFocusChange($event)"
@@ -3463,7 +3475,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         [panelMode]="nzMode"
         (panelModeChange)="onPanelModeChange($event)"
         (calendarChange)="onCalendarChange($event)"
-        [locale]="nzLocale?.lang"
+        [locale]="nzLocale?.lang!"
         [showToday]="realShowToday"
         [showTime]="nzShowTime"
         [format]="nzFormat"
@@ -3506,13 +3518,25 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzDisabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzClassName: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzPlaceHolder: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzPopupStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzSize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzShowToday: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzMode: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzDefaultPickerValue: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzSeparator: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzSuffixIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzOnPanelChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
@@ -3528,19 +3552,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzLocale: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzPlaceHolder: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzOpen: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzClassName: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzDisabledDate: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzDropdownClassName: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzDateRender: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -3549,10 +3565,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         }], nzRenderExtraFooter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzRanges: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzSeparator: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzSuffixIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], picker: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
@@ -3677,7 +3689,7 @@ class InnerPopupComponent {
     }
 }
 InnerPopupComponent.ɵfac = function InnerPopupComponent_Factory(t) { return new (t || InnerPopupComponent)(); };
-InnerPopupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: InnerPopupComponent, selectors: [["inner-popup"]], inputs: { activeDate: "activeDate", value: "value", panelMode: "panelMode", endPanelMode: "endPanelMode", showWeek: "showWeek", locale: "locale", showTimePicker: "showTimePicker", timeOptions: "timeOptions", disabledDate: "disabledDate", dateRender: "dateRender", selectedValue: "selectedValue", hoverValue: "hoverValue", partType: "partType" }, outputs: { panelModeChange: "panelModeChange", headerChange: "headerChange", selectDate: "selectDate", selectTime: "selectTime", dayHover: "dayHover" }, exportAs: ["innerPopup"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 8, vars: 11, consts: [[3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [4, "ngIf"], [3, "value", "locale", "showSuperPreBtn", "showSuperNextBtn", "showNextBtn", "showPreBtn", "valueChange", "panelModeChange"], [3, "showWeek", "activeDate", "value", "disabledDate", "cellRender", "valueChange"], [3, "value", "locale", "showNextBtn", "showPreBtn", "valueChange", "panelModeChange"], [3, "showWeek", "value", "activeDate", "disabledDate", "cellRender", "dayHover", "valueChange"], [3, "value", "locale", "showSuperPreBtn", "showSuperNextBtn", "showPreBtn", "showNextBtn", "valueChange", "panelModeChange"], [3, "locale", "showWeek", "value", "activeDate", "disabledDate", "cellRender", "selectedValue", "hoverValue", "valueChange", "dayHover"], [3, "nzInDatePicker", "ngModel", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzHideDisabledOptions", "nzDefaultOpenValue", "nzUse12Hours", "nzAddOn", "ngModelChange"]], template: function InnerPopupComponent_Template(rf, ctx) { if (rf & 1) {
+InnerPopupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: InnerPopupComponent, selectors: [["inner-popup"]], inputs: { activeDate: "activeDate", value: "value", panelMode: "panelMode", endPanelMode: "endPanelMode", showWeek: "showWeek", locale: "locale", showTimePicker: "showTimePicker", timeOptions: "timeOptions", disabledDate: "disabledDate", dateRender: "dateRender", selectedValue: "selectedValue", hoverValue: "hoverValue", partType: "partType" }, outputs: { panelModeChange: "panelModeChange", headerChange: "headerChange", selectDate: "selectDate", selectTime: "selectTime", dayHover: "dayHover" }, exportAs: ["innerPopup"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 8, vars: 11, consts: [[3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [4, "ngIf"], [3, "value", "locale", "showSuperPreBtn", "showSuperNextBtn", "showNextBtn", "showPreBtn", "valueChange", "panelModeChange"], [3, "showWeek", "activeDate", "value", "disabledDate", "cellRender", "valueChange"], [3, "value", "locale", "showNextBtn", "showPreBtn", "valueChange", "panelModeChange"], [3, "showWeek", "value", "activeDate", "disabledDate", "cellRender", "valueChange"], [3, "value", "locale", "showSuperPreBtn", "showSuperNextBtn", "showPreBtn", "showNextBtn", "valueChange", "panelModeChange"], [3, "locale", "showWeek", "value", "activeDate", "disabledDate", "cellRender", "selectedValue", "hoverValue", "valueChange", "dayHover"], [3, "nzInDatePicker", "ngModel", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzHideDisabledOptions", "nzDefaultOpenValue", "nzUse12Hours", "nzAddOn", "ngModelChange"]], template: function InnerPopupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](2, 0);
@@ -3746,7 +3758,7 @@ InnerPopupComponent.propDecorators = {
           <ng-container *ngSwitchCase="'decade'">
             <decade-header
               [(value)]="activeDate"
-              [locale]="locale"
+              [locale]="locale!"
               [showSuperPreBtn]="enablePrevNext('prev', 'decade')"
               [showSuperNextBtn]="enablePrevNext('next', 'decade')"
               [showNextBtn]="false"
@@ -3769,7 +3781,7 @@ InnerPopupComponent.propDecorators = {
           <ng-container *ngSwitchCase="'year'">
             <year-header
               [(value)]="activeDate"
-              [locale]="locale"
+              [locale]="locale!"
               [showSuperPreBtn]="enablePrevNext('prev', 'year')"
               [showSuperNextBtn]="enablePrevNext('next', 'year')"
               [showNextBtn]="false"
@@ -3792,7 +3804,7 @@ InnerPopupComponent.propDecorators = {
           <ng-container *ngSwitchCase="'month'">
             <month-header
               [(value)]="activeDate"
-              [locale]="locale"
+              [locale]="locale!"
               [showNextBtn]="false"
               [showPreBtn]="false"
               (panelModeChange)="panelModeChange.emit($event)"
@@ -3806,7 +3818,6 @@ InnerPopupComponent.propDecorators = {
                 [activeDate]="activeDate"
                 [disabledDate]="disabledDate"
                 [cellRender]="dateRender"
-                (dayHover)="dayHover.emit($event)"
                 (valueChange)="onChooseMonth($event)"
               ></month-table>
             </div>
@@ -3815,7 +3826,7 @@ InnerPopupComponent.propDecorators = {
           <ng-container *ngSwitchDefault>
             <date-header
               [(value)]="activeDate"
-              [locale]="locale"
+              [locale]="locale!"
               [showSuperPreBtn]="enablePrevNext('prev', 'date')"
               [showSuperNextBtn]="enablePrevNext('next', 'date')"
               [showPreBtn]="enablePrevNext('prev', 'date')"
@@ -3826,7 +3837,7 @@ InnerPopupComponent.propDecorators = {
             </date-header>
             <div class="{{ prefixCls }}-body">
               <date-table
-                [locale]="locale"
+                [locale]="locale!"
                 [showWeek]="showWeek"
                 [value]="value"
                 [activeDate]="activeDate"
@@ -3846,17 +3857,17 @@ InnerPopupComponent.propDecorators = {
           [nzInDatePicker]="true"
           [ngModel]="value?.nativeDate"
           (ngModelChange)="onSelectTime($event)"
-          [format]="timeOptions.nzFormat"
-          [nzHourStep]="timeOptions.nzHourStep"
-          [nzMinuteStep]="timeOptions.nzMinuteStep"
-          [nzSecondStep]="timeOptions.nzSecondStep"
-          [nzDisabledHours]="timeOptions.nzDisabledHours"
-          [nzDisabledMinutes]="timeOptions.nzDisabledMinutes"
-          [nzDisabledSeconds]="timeOptions.nzDisabledSeconds"
-          [nzHideDisabledOptions]="timeOptions.nzHideDisabledOptions"
-          [nzDefaultOpenValue]="timeOptions.nzDefaultOpenValue"
-          [nzUse12Hours]="timeOptions.nzUse12Hours"
-          [nzAddOn]="timeOptions.nzAddOn"
+          [format]="$any(timeOptions.nzFormat)"
+          [nzHourStep]="$any(timeOptions.nzHourStep)"
+          [nzMinuteStep]="$any(timeOptions.nzMinuteStep)"
+          [nzSecondStep]="$any(timeOptions.nzSecondStep)"
+          [nzDisabledHours]="$any(timeOptions.nzDisabledHours)"
+          [nzDisabledMinutes]="$any(timeOptions.nzDisabledMinutes)"
+          [nzDisabledSeconds]="$any(timeOptions.nzDisabledSeconds)"
+          [nzHideDisabledOptions]="!!timeOptions.nzHideDisabledOptions"
+          [nzDefaultOpenValue]="$any(timeOptions.nzDefaultOpenValue)"
+          [nzUse12Hours]="!!timeOptions.nzUse12Hours"
+          [nzAddOn]="$any(timeOptions.nzAddOn)"
         ></nz-time-picker-panel>
         <!-- use [opened] to trigger time panel \`initPosition()\` -->
       </ng-container>
@@ -4226,6 +4237,9 @@ class DateTableComponent extends AbstractTable {
         super();
         this.i18n = i18n;
         this.dateHelper = dateHelper;
+        this.selectedValue = []; // Range ONLY
+        // Range ONLY
+        this.hoverValue = []; // Range ONLY
         // Range ONLY
         this.dayHover = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"](); // Emitted when hover on a day by mouse enter
     }
@@ -4369,9 +4383,9 @@ class DateTableComponent extends AbstractTable {
                     isDisabled: false,
                     isToday: false,
                     title: title,
-                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.cellRender, date),
+                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.cellRender)), date),
                     // Customized content
-                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.fullCellRender, date),
+                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.fullCellRender)), date),
                     content: `${date.getDate()}`,
                     onClick: (/**
                      * @return {?}
@@ -4493,7 +4507,7 @@ class DateTableComponent extends AbstractTable {
     }
 }
 DateTableComponent.ɵfac = function DateTableComponent_Factory(t) { return new (t || DateTableComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"])); };
-DateTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: DateTableComponent, selectors: [["date-table"]], inputs: { locale: "locale", selectedValue: "selectedValue", hoverValue: "hoverValue" }, outputs: { dayHover: "dayHover" }, exportAs: ["dateTable"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 3, consts: [["cellspacing", "0", "role", "grid", 1, "ant-picker-content"], [4, "ngIf"], ["role", "row", 3, "ngClass", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "row"], ["role", "columnheader", 4, "ngIf"], ["role", "columnheader", 3, "title", 4, "ngFor", "ngForOf"], ["role", "columnheader"], ["role", "columnheader", 3, "title"], ["role", "row", 3, "ngClass"], ["role", "gridcell", 3, "class", 4, "ngIf"], ["role", "gridcell", 3, "title", "ngClass", "click", "mouseenter", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "gridcell"], ["role", "gridcell", 3, "title", "ngClass", "click", "mouseenter"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "innerHTML"], [4, "ngIf", "ngIfElse"], ["defaultCell", ""]], template: function DateTableComponent_Template(rf, ctx) { if (rf & 1) {
+DateTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: DateTableComponent, selectors: [["date-table"]], inputs: { selectedValue: "selectedValue", hoverValue: "hoverValue", locale: "locale" }, outputs: { dayHover: "dayHover" }, exportAs: ["dateTable"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 3, consts: [["cellspacing", "0", "role", "grid", 1, "ant-picker-content"], [4, "ngIf"], ["role", "row", 3, "ngClass", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "row"], ["role", "columnheader", 4, "ngIf"], ["role", "columnheader", 3, "title", 4, "ngFor", "ngForOf"], ["role", "columnheader"], ["role", "columnheader", 3, "title"], ["role", "row", 3, "ngClass"], ["role", "gridcell", 3, "class", 4, "ngIf"], ["role", "gridcell", 3, "title", "ngClass", "click", "mouseenter", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "gridcell"], ["role", "gridcell", 3, "title", "ngClass", "click", "mouseenter"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "innerHTML"], [4, "ngIf", "ngIfElse"], ["defaultCell", ""]], template: function DateTableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "table", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, DateTableComponent_thead_1_Template, 4, 2, "thead", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "tbody");
@@ -4525,15 +4539,15 @@ DateTableComponent.propDecorators = {
                 // tslint:disable-next-line:component-selector
                 selector: 'date-table',
                 exportAs: 'dateTable',
-                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.isDisablcellRendered ? null : cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.fullCellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                  ></ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
+                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap!\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap!\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <!--           *ngSwitchCase not has type assertion support, the cellRender type here is TemplateRef -->\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.fullCellRender); context: { $implicit: cell.value }\"\n                >\n                </ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                  >\n                  </ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
             }]
-    }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nService"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"] }]; }, { dayHover: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], locale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], selectedValue: [{
+    }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nService"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"] }]; }, { selectedValue: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], hoverValue: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], dayHover: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+        }], locale: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
 if (false) {}
@@ -4793,7 +4807,7 @@ const ɵDecadeTableComponent_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODUL
                 // tslint:disable-next-line:component-selector
                 selector: 'decade-table',
                 exportAs: 'decadeTable',
-                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.isDisablcellRendered ? null : cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.fullCellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                  ></ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
+                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap!\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap!\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <!--           *ngSwitchCase not has type assertion support, the cellRender type here is TemplateRef -->\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.fullCellRender); context: { $implicit: cell.value }\"\n                >\n                </ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                  >\n                  </ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
             }]
     }], null, null); })();
 
@@ -4949,9 +4963,9 @@ class MonthTableComponent extends AbstractTable {
                     content,
                     title: content,
                     classMap: {},
-                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.cellRender, month),
+                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.cellRender)), month),
                     // Customized content
-                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.fullCellRender, month),
+                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.fullCellRender)), month),
                     onClick: (/**
                      * @return {?}
                      */
@@ -5018,7 +5032,7 @@ MonthTableComponent.ctorParameters = () => [
                 // tslint:disable-next-line:component-selector
                 selector: 'month-table',
                 exportAs: 'monthTable',
-                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.isDisablcellRendered ? null : cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.fullCellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                  ></ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
+                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap!\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap!\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <!--           *ngSwitchCase not has type assertion support, the cellRender type here is TemplateRef -->\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.fullCellRender); context: { $implicit: cell.value }\"\n                >\n                </ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                  >\n                  </ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
             }]
     }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"] }]; }, null); })();
 if (false) {}
@@ -5197,9 +5211,9 @@ class YearTableComponent extends AbstractTable {
                     content,
                     title: content,
                     classMap: {},
-                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.cellRender, year),
+                    cellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.cellRender)), year),
                     // Customized content
-                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])(this.fullCellRender, year),
+                    fullCellRender: Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_11__["valueFunctionProp"])((/** @type {?} */ (this.fullCellRender)), year),
                     onClick: (/**
                      * @return {?}
                      */
@@ -5267,7 +5281,7 @@ YearTableComponent.ctorParameters = () => [
                 // tslint:disable-next-line:component-selector
                 selector: 'year-table',
                 exportAs: 'yearTable',
-                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.isDisablcellRendered ? null : cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"cell.fullCellRender; context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"cell.cellRender; context: { $implicit: cell.value }\"\n                  ></ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
+                template: "<table class=\"ant-picker-content\" cellspacing=\"0\" role=\"grid\">\n  <thead *ngIf=\"headRow && headRow.length > 0\">\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\"></th>\n      <th *ngFor=\"let cell of headRow\" role=\"columnheader\" title=\"{{ cell.title }}\">\n        {{ cell.content }}\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor=\"let row of bodyRows; trackBy: trackByBodyRow\" [ngClass]=\"row.classMap!\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-cell-week\">\n        {{ row.weekNum }}\n      </td>\n      <td\n        *ngFor=\"let cell of row.dateCells; trackBy: trackByBodyColumn\"\n        title=\"{{ cell.title }}\"\n        role=\"gridcell\"\n        [ngClass]=\"cell.classMap!\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\"\n        (mouseenter)=\"cell.onMouseEnter()\"\n      >\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-picker'\">\n            <ng-container [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(cell.cellRender)\">\n                <!--           *ngSwitchCase not has type assertion support, the cellRender type here is TemplateRef -->\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                ></ng-container>\n              </ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(cell.cellRender)\">\n                <span [innerHTML]=\"cell.cellRender\"></span>\n              </ng-container>\n              <ng-container *ngSwitchDefault>\n                <div\n                  class=\"{{ prefixCls }}-cell-inner\"\n                  [attr.aria-selected]=\"cell.isSelected\"\n                  [attr.aria-disabled]=\"cell.isDisabled\"\n                >\n                  {{ cell.content }}\n                </div>\n              </ng-container>\n            </ng-container>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-picker-calendar'\">\n            <div\n              class=\"{{ prefixCls }}-date ant-picker-cell-inner\"\n              [class.ant-picker-calendar-date-today]=\"cell.isToday\"\n            >\n              <ng-container *ngIf=\"cell.fullCellRender; else defaultCell\">\n                <ng-container\n                  *ngTemplateOutlet=\"$any(cell.fullCellRender); context: { $implicit: cell.value }\"\n                >\n                </ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{ prefixCls }}-date-value\">{{ cell.content }}</div>\n                <div class=\"{{ prefixCls }}-date-content\">\n                  <ng-container\n                    *ngTemplateOutlet=\"$any(cell.cellRender); context: { $implicit: cell.value }\"\n                  >\n                  </ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>\n"
             }]
     }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["DateHelperService"] }]; }, null); })();
 if (false) {}
@@ -5280,7 +5294,7 @@ if (false) {}
 class LibPackerModule {
 }
 LibPackerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: LibPackerModule });
-LibPackerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function LibPackerModule_Factory(t) { return new (t || LibPackerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"]]] });
+LibPackerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function LibPackerModule_Factory(t) { return new (t || LibPackerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](LibPackerModule, { declarations: function () { return [DateHeaderComponent,
         DateTableComponent,
         DecadeHeaderComponent,
@@ -5288,7 +5302,7 @@ LibPackerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineIn
         MonthHeaderComponent,
         MonthTableComponent,
         YearHeaderComponent,
-        YearTableComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"]]; }, exports: function () { return [DateHeaderComponent,
+        YearTableComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]; }, exports: function () { return [DateHeaderComponent,
         DateTableComponent,
         DecadeHeaderComponent,
         DecadeTableComponent,
@@ -5299,7 +5313,7 @@ LibPackerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineIn
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](LibPackerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"]],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nModule"], ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_9__["NzTimePickerModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]],
                 exports: [
                     DateHeaderComponent,
                     DateTableComponent,

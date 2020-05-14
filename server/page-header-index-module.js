@@ -47,33 +47,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function NzPageHeaderComponent_div_3_i_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "i", 10);
+function NzPageHeaderComponent_div_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "i", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", ctx_r5.nzBackIcon ? ctx_r5.nzBackIcon : "arrow-left");
-} }
-function NzPageHeaderComponent_div_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainer"](0, 11);
-} if (rf & 2) {
-    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngTemplateOutlet", ctx_r6.nzBackIcon);
+    const backIcon_r6 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", backIcon_r6 || "arrow-left");
 } }
 function NzPageHeaderComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzPageHeaderComponent_div_3_Template_div_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r8); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r7.onBack(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzPageHeaderComponent_div_3_i_2_Template, 1, 1, "i", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageHeaderComponent_div_3_ng_container_3_Template, 1, 1, "ng-container", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzPageHeaderComponent_div_3_ng_container_2_Template, 2, 1, "ng-container", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.isStringBackIcon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r0.isTemplateRefBackIcon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r0.nzBackIcon);
 } }
 function NzPageHeaderComponent_span_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
@@ -85,8 +79,8 @@ function NzPageHeaderComponent_span_5_ng_container_1_Template(rf, ctx) { if (rf 
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r9.nzTitle);
 } }
 function NzPageHeaderComponent_span_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzPageHeaderComponent_span_5_ng_container_1_Template, 2, 1, "ng-container", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzPageHeaderComponent_span_5_ng_container_1_Template, 2, 1, "ng-container", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
@@ -106,8 +100,8 @@ function NzPageHeaderComponent_span_7_ng_container_1_Template(rf, ctx) { if (rf 
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r10.nzSubtitle);
 } }
 function NzPageHeaderComponent_span_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzPageHeaderComponent_span_7_ng_container_1_Template, 2, 1, "ng-container", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzPageHeaderComponent_span_7_ng_container_1_Template, 2, 1, "ng-container", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
@@ -167,20 +161,9 @@ class NzPageHeaderComponent {
     constructor(location, nzConfigService) {
         this.location = location;
         this.nzConfigService = nzConfigService;
-        this.isTemplateRefBackIcon = false;
-        this.isStringBackIcon = false;
         this.nzBackIcon = null;
+        this.nzGhost = true;
         this.nzBack = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    ngOnChanges(changes) {
-        if (changes.hasOwnProperty('nzBackIcon')) {
-            this.isTemplateRefBackIcon = changes.nzBackIcon.currentValue instanceof _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"];
-            this.isStringBackIcon = typeof changes.nzBackIcon.currentValue === 'string';
-        }
     }
     /**
      * @return {?}
@@ -207,12 +190,12 @@ NzPageHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzPageHeaderBreadcrumb = _t.first);
     } }, hostAttrs: [1, "ant-page-header"], hostVars: 6, hostBindings: function NzPageHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("has-footer", ctx.nzPageHeaderFooter)("ant-page-header-ghost", ctx.nzGhost)("has-breadcrumb", ctx.nzPageHeaderBreadcrumb);
-    } }, inputs: { nzBackIcon: "nzBackIcon", nzTitle: "nzTitle", nzSubtitle: "nzSubtitle", nzGhost: "nzGhost" }, outputs: { nzBack: "nzBack" }, exportAs: ["nzPageHeader"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 13, vars: 5, consts: [[1, "ant-page-header-heading"], [1, "ant-page-header-heading-left"], ["class", "ant-page-header-back", 3, "click", 4, "ngIf"], ["class", "ant-page-header-heading-title", 4, "ngIf"], [4, "ngIf"], ["class", "ant-page-header-heading-sub-title", 4, "ngIf"], [1, "ant-page-header-back", 3, "click"], ["role", "button", "tabindex", "0", 1, "ant-page-header-back-button"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType", 4, "ngIf"], [3, "ngTemplateOutlet", 4, "ngIf"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType"], [3, "ngTemplateOutlet"], [1, "ant-page-header-heading-title"], [4, "nzStringTemplateOutlet"], [1, "ant-page-header-heading-sub-title"]], template: function NzPageHeaderComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzBackIcon: "nzBackIcon", nzGhost: "nzGhost", nzTitle: "nzTitle", nzSubtitle: "nzSubtitle" }, outputs: { nzBack: "nzBack" }, exportAs: ["nzPageHeader"], ngContentSelectors: _c1, decls: 13, vars: 5, consts: [[1, "ant-page-header-heading"], [1, "ant-page-header-heading-left"], ["class", "ant-page-header-back", 3, "click", 4, "ngIf"], ["class", "ant-page-header-heading-title", 4, "ngIf"], [4, "ngIf"], ["class", "ant-page-header-heading-sub-title", 4, "ngIf"], [1, "ant-page-header-back", 3, "click"], ["role", "button", "tabindex", "0", 1, "ant-page-header-back-button"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType"], [1, "ant-page-header-heading-title"], [1, "ant-page-header-heading-sub-title"]], template: function NzPageHeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"](_c0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageHeaderComponent_div_3_Template, 4, 2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageHeaderComponent_div_3_Template, 3, 1, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](4, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, NzPageHeaderComponent_span_5_Template, 2, 1, "span", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, NzPageHeaderComponent_6_Template, 1, 0, undefined, 4);
@@ -235,7 +218,7 @@ NzPageHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzSubtitle);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.nzSubtitle);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgTemplateOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzPageHeaderComponent.ctorParameters = () => [
     { type: _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }] },
@@ -251,7 +234,7 @@ NzPageHeaderComponent.propDecorators = {
     nzPageHeaderBreadcrumb: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzPageHeaderBreadcrumbDirective, { static: false },] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzPageHeaderComponent.prototype, "nzGhost", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPageHeaderTitleDirective, [{
@@ -341,8 +324,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
         <!--back-->
         <div *ngIf="nzBackIcon !== null" (click)="onBack()" class="ant-page-header-back">
           <div role="button" tabindex="0" class="ant-page-header-back-button">
-            <i *ngIf="isStringBackIcon" nz-icon [nzType]="nzBackIcon ? nzBackIcon : 'arrow-left'" nzTheme="outline"></i>
-            <ng-container *ngIf="isTemplateRefBackIcon" [ngTemplateOutlet]="nzBackIcon"></ng-container>
+            <ng-container *nzStringTemplateOutlet="nzBackIcon; let backIcon">
+              <i nz-icon [nzType]="backIcon || 'arrow-left'" nzTheme="outline"></i>
+            </ng-container>
           </div>
         </div>
         <!--avatar-->
@@ -379,13 +363,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
             }] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }]; }, { nzBackIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzGhost: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzBack: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], nzTitle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzSubtitle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzGhost: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzPageHeaderFooter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
@@ -1040,7 +1024,7 @@ class NzDemoPageHeaderEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 277, vars: 22, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-page-header-demo-basic", "nzTitle", "Basic Page Header"], ["nzHref", "#components-page-header-demo-ghost", "nzTitle", "white background mode"], ["nzHref", "#components-page-header-demo-breadcrumb", "nzTitle", "Use with breadcrumbs"], ["nzHref", "#components-page-header-demo-content", "nzTitle", "Complete example"], ["nzHref", "#components-page-header-demo-actions", "nzTitle", "Various forms of PageHeader"], ["nzHref", "#components-page-header-demo-responsive", "nzTitle", "responsive"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Page Header", "nzSelector", "nz-demo-page-header-basic", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-basic <name>", "nzComponentName", "NzDemoPageHeaderBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "white background mode", "nzSelector", "nz-demo-page-header-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-ghost <name>", "nzComponentName", "NzDemoPageHeaderGhostComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Use with breadcrumbs", "nzSelector", "nz-demo-page-header-breadcrumb", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-breadcrumb <name>", "nzComponentName", "NzDemoPageHeaderBreadcrumbComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Complete example", "nzSelector", "nz-demo-page-header-content", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-content <name>", "nzComponentName", "NzDemoPageHeaderContentComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Various forms of PageHeader", "nzSelector", "nz-demo-page-header-actions", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-actions <name>", "nzComponentName", "NzDemoPageHeaderActionsComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "responsive", "nzSelector", "nz-demo-page-header-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-responsive <name>", "nzComponentName", "NzDemoPageHeaderResponsiveComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-page-header"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-page-header'", 1, "anchor"], ["href", "https://angular.io/api/common/Location#back"], ["href", "https://angular.io/api/router/RouterModule"], ["href", "https://angular.io/api/common/Location"], ["id", "page-header-sections"], ["onclick", "window.location.hash = 'page-header-sections'", 1, "anchor"]], template: function NzDemoPageHeaderEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 277, vars: 28, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-page-header-demo-basic", "nzTitle", "Basic Page Header"], ["nzHref", "#components-page-header-demo-ghost", "nzTitle", "white background mode"], ["nzHref", "#components-page-header-demo-breadcrumb", "nzTitle", "Use with breadcrumbs"], ["nzHref", "#components-page-header-demo-content", "nzTitle", "Complete example"], ["nzHref", "#components-page-header-demo-actions", "nzTitle", "Various forms of PageHeader"], ["nzHref", "#components-page-header-demo-responsive", "nzTitle", "responsive"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Page Header", "nzSelector", "nz-demo-page-header-basic", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-basic <name>", "nzComponentName", "NzDemoPageHeaderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "white background mode", "nzSelector", "nz-demo-page-header-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-ghost <name>", "nzComponentName", "NzDemoPageHeaderGhostComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Use with breadcrumbs", "nzSelector", "nz-demo-page-header-breadcrumb", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-breadcrumb <name>", "nzComponentName", "NzDemoPageHeaderBreadcrumbComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Complete example", "nzSelector", "nz-demo-page-header-content", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-content <name>", "nzComponentName", "NzDemoPageHeaderContentComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Various forms of PageHeader", "nzSelector", "nz-demo-page-header-actions", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-actions <name>", "nzComponentName", "NzDemoPageHeaderActionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "responsive", "nzSelector", "nz-demo-page-header-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-responsive <name>", "nzComponentName", "NzDemoPageHeaderResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-page-header"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-page-header'", 1, "anchor"], ["href", "https://angular.io/api/common/Location#back"], ["href", "https://angular.io/api/router/RouterModule"], ["href", "https://angular.io/api/common/Location"], ["id", "page-header-sections"], ["onclick", "window.location.hash = 'page-header-sections'", 1, "anchor"]], template: function NzDemoPageHeaderEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1508,17 +1492,17 @@ class NzDemoPageHeaderEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-basic")("nzLink", "components-page-header-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-basic")("nzLink", "components-page-header-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-ghost")("nzLink", "components-page-header-demo-ghost")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/ghost.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-ghost")("nzLink", "components-page-header-demo-ghost")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/ghost.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-breadcrumb")("nzLink", "components-page-header-demo-breadcrumb")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/breadcrumb.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-breadcrumb")("nzLink", "components-page-header-demo-breadcrumb")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/breadcrumb.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-content")("nzLink", "components-page-header-demo-content")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/content.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-content")("nzLink", "components-page-header-demo-content")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/content.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-actions")("nzLink", "components-page-header-demo-actions")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/actions.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-actions")("nzLink", "components-page-header-demo-actions")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/actions.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-responsive")("nzLink", "components-page-header-demo-responsive")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/responsive.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-responsive")("nzLink", "components-page-header-demo-responsive")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/responsive.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_8__["NzDemoPageHeaderBasicComponent"], _ghost__WEBPACK_IMPORTED_MODULE_9__["NzDemoPageHeaderGhostComponent"], _breadcrumb__WEBPACK_IMPORTED_MODULE_10__["NzDemoPageHeaderBreadcrumbComponent"], _content__WEBPACK_IMPORTED_MODULE_11__["NzDemoPageHeaderContentComponent"], _actions__WEBPACK_IMPORTED_MODULE_12__["NzDemoPageHeaderActionsComponent"], _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoPageHeaderResponsiveComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPageHeaderEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -2058,7 +2042,7 @@ class NzDemoPageHeaderZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 278, vars: 22, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-page-header-demo-basic", "nzTitle", "\u6807\u51C6\u6837\u5F0F"], ["nzHref", "#components-page-header-demo-ghost", "nzTitle", "\u767D\u5E95\u6A21\u5F0F"], ["nzHref", "#components-page-header-demo-breadcrumb", "nzTitle", "\u5E26\u9762\u5305\u5C51\u9875\u5934"], ["nzHref", "#components-page-header-demo-content", "nzTitle", "\u7EC4\u5408\u793A\u4F8B"], ["nzHref", "#components-page-header-demo-actions", "nzTitle", "\u591A\u79CD\u5F62\u6001\u7684 PageHeader"], ["nzHref", "#components-page-header-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u6807\u51C6\u6837\u5F0F", "nzSelector", "nz-demo-page-header-basic", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-basic <name>", "nzComponentName", "NzDemoPageHeaderBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u767D\u5E95\u6A21\u5F0F", "nzSelector", "nz-demo-page-header-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-ghost <name>", "nzComponentName", "NzDemoPageHeaderGhostComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u5E26\u9762\u5305\u5C51\u9875\u5934", "nzSelector", "nz-demo-page-header-breadcrumb", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-breadcrumb <name>", "nzComponentName", "NzDemoPageHeaderBreadcrumbComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u7EC4\u5408\u793A\u4F8B", "nzSelector", "nz-demo-page-header-content", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-content <name>", "nzComponentName", "NzDemoPageHeaderContentComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u591A\u79CD\u5F62\u6001\u7684 PageHeader", "nzSelector", "nz-demo-page-header-actions", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-actions <name>", "nzComponentName", "NzDemoPageHeaderActionsComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F", "nzSelector", "nz-demo-page-header-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-responsive <name>", "nzComponentName", "NzDemoPageHeaderResponsiveComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-page-header"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-page-header'", 1, "anchor"], ["href", "https://angular.cn/api/common/Location#back"], ["href", "https://angular.io/api/router/RouterModule"], ["href", "https://angular.io/api/common/Location"], ["id", "page-header-\u7EC4\u6210\u90E8\u5206"], ["onclick", "window.location.hash = 'page-header-\u7EC4\u6210\u90E8\u5206'", 1, "anchor"]], template: function NzDemoPageHeaderZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 278, vars: 28, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-page-header-demo-basic", "nzTitle", "\u6807\u51C6\u6837\u5F0F"], ["nzHref", "#components-page-header-demo-ghost", "nzTitle", "\u767D\u5E95\u6A21\u5F0F"], ["nzHref", "#components-page-header-demo-breadcrumb", "nzTitle", "\u5E26\u9762\u5305\u5C51\u9875\u5934"], ["nzHref", "#components-page-header-demo-content", "nzTitle", "\u7EC4\u5408\u793A\u4F8B"], ["nzHref", "#components-page-header-demo-actions", "nzTitle", "\u591A\u79CD\u5F62\u6001\u7684 PageHeader"], ["nzHref", "#components-page-header-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u6807\u51C6\u6837\u5F0F", "nzSelector", "nz-demo-page-header-basic", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-basic <name>", "nzComponentName", "NzDemoPageHeaderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u767D\u5E95\u6A21\u5F0F", "nzSelector", "nz-demo-page-header-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-ghost <name>", "nzComponentName", "NzDemoPageHeaderGhostComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u9762\u5305\u5C51\u9875\u5934", "nzSelector", "nz-demo-page-header-breadcrumb", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-breadcrumb <name>", "nzComponentName", "NzDemoPageHeaderBreadcrumbComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7EC4\u5408\u793A\u4F8B", "nzSelector", "nz-demo-page-header-content", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-content <name>", "nzComponentName", "NzDemoPageHeaderContentComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u79CD\u5F62\u6001\u7684 PageHeader", "nzSelector", "nz-demo-page-header-actions", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-actions <name>", "nzComponentName", "NzDemoPageHeaderActionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F", "nzSelector", "nz-demo-page-header-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:page-header-responsive <name>", "nzComponentName", "NzDemoPageHeaderResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-page-header"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-page-header'", 1, "anchor"], ["href", "https://angular.cn/api/common/Location#back"], ["href", "https://angular.io/api/router/RouterModule"], ["href", "https://angular.io/api/common/Location"], ["id", "page-header-\u7EC4\u6210\u90E8\u5206"], ["onclick", "window.location.hash = 'page-header-\u7EC4\u6210\u90E8\u5206'", 1, "anchor"]], template: function NzDemoPageHeaderZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2528,17 +2512,17 @@ class NzDemoPageHeaderZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-basic")("nzLink", "components-page-header-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-basic")("nzLink", "components-page-header-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-ghost")("nzLink", "components-page-header-demo-ghost")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/ghost.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-ghost")("nzLink", "components-page-header-demo-ghost")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/ghost.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-breadcrumb")("nzLink", "components-page-header-demo-breadcrumb")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/breadcrumb.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-breadcrumb")("nzLink", "components-page-header-demo-breadcrumb")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/breadcrumb.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-content")("nzLink", "components-page-header-demo-content")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/content.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-content")("nzLink", "components-page-header-demo-content")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/content.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-actions")("nzLink", "components-page-header-demo-actions")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/actions.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-actions")("nzLink", "components-page-header-demo-actions")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/actions.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-responsive")("nzLink", "components-page-header-demo-responsive")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/responsive.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-page-header-demo-responsive")("nzLink", "components-page-header-demo-responsive")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/page-header/demo/responsive.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_8__["NzDemoPageHeaderBasicComponent"], _ghost__WEBPACK_IMPORTED_MODULE_9__["NzDemoPageHeaderGhostComponent"], _breadcrumb__WEBPACK_IMPORTED_MODULE_10__["NzDemoPageHeaderBreadcrumbComponent"], _content__WEBPACK_IMPORTED_MODULE_11__["NzDemoPageHeaderContentComponent"], _actions__WEBPACK_IMPORTED_MODULE_12__["NzDemoPageHeaderActionsComponent"], _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoPageHeaderResponsiveComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPageHeaderZhComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],

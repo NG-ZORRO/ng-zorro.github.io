@@ -250,6 +250,118 @@ function isPointerNearClientRect(rect, threshold, pointerX, pointerY) {
 
 /**
  * @fileoverview added by tsickle
+ * Generated from: src/cdk/drag-drop/parent-position-tracker.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Object holding the scroll position of something.
+ * @record
+ */
+function ScrollPosition() { }
+if (false) {}
+/**
+ * Keeps track of the scroll position and dimensions of the parents of an element.
+ */
+class ParentPositionTracker {
+    /**
+     * @param {?} _document
+     * @param {?} _viewportRuler
+     */
+    constructor(_document, _viewportRuler) {
+        this._document = _document;
+        this._viewportRuler = _viewportRuler;
+        /**
+         * Cached positions of the scrollable parent elements.
+         */
+        this.positions = new Map();
+    }
+    /**
+     * Clears the cached positions.
+     * @return {?}
+     */
+    clear() {
+        this.positions.clear();
+    }
+    /**
+     * Caches the positions. Should be called at the beginning of a drag sequence.
+     * @param {?} elements
+     * @return {?}
+     */
+    cache(elements) {
+        this.clear();
+        this.positions.set(this._document, {
+            scrollPosition: this._viewportRuler.getViewportScrollPosition(),
+        });
+        elements.forEach((/**
+         * @param {?} element
+         * @return {?}
+         */
+        element => {
+            this.positions.set(element, {
+                scrollPosition: { top: element.scrollTop, left: element.scrollLeft },
+                clientRect: getMutableClientRect(element)
+            });
+        }));
+    }
+    /**
+     * Handles scrolling while a drag is taking place.
+     * @param {?} event
+     * @return {?}
+     */
+    handleScroll(event) {
+        /** @type {?} */
+        const target = (/** @type {?} */ (event.target));
+        /** @type {?} */
+        const cachedPosition = this.positions.get(target);
+        if (!cachedPosition) {
+            return null;
+        }
+        // Used when figuring out whether an element is inside the scroll parent. If the scrolled
+        // parent is the `document`, we use the `documentElement`, because IE doesn't support
+        // `contains` on the `document`.
+        /** @type {?} */
+        const scrolledParentNode = target === this._document ? target.documentElement : target;
+        /** @type {?} */
+        const scrollPosition = cachedPosition.scrollPosition;
+        /** @type {?} */
+        let newTop;
+        /** @type {?} */
+        let newLeft;
+        if (target === this._document) {
+            /** @type {?} */
+            const viewportScrollPosition = (/** @type {?} */ (this._viewportRuler)).getViewportScrollPosition();
+            newTop = viewportScrollPosition.top;
+            newLeft = viewportScrollPosition.left;
+        }
+        else {
+            newTop = ((/** @type {?} */ (target))).scrollTop;
+            newLeft = ((/** @type {?} */ (target))).scrollLeft;
+        }
+        /** @type {?} */
+        const topDifference = scrollPosition.top - newTop;
+        /** @type {?} */
+        const leftDifference = scrollPosition.left - newLeft;
+        // Go through and update the cached positions of the scroll
+        // parents that are inside the element that was scrolled.
+        this.positions.forEach((/**
+         * @param {?} position
+         * @param {?} node
+         * @return {?}
+         */
+        (position, node) => {
+            if (position.clientRect && target !== node && scrolledParentNode.contains(node)) {
+                adjustClientRect(position.clientRect, topDifference, leftDifference);
+            }
+        }));
+        scrollPosition.top = newTop;
+        scrollPosition.left = newLeft;
+        return { top: topDifference, left: leftDifference };
+    }
+}
+if (false) {}
+
+/**
+ * @fileoverview added by tsickle
  * Generated from: src/cdk/drag-drop/drag-ref.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
@@ -545,6 +657,7 @@ class DragRef {
             this._endDragSequence(event);
         });
         this.withRootElement(element);
+        this._parentPositions = new ParentPositionTracker(_document, _viewportRuler);
         _dragDropRegistry.registerDragItem(this);
     }
     /**
@@ -710,6 +823,7 @@ class DragRef {
         this._disabledHandles.clear();
         this._dropContainer = undefined;
         this._resizeSubscription.unsubscribe();
+        this._parentPositions.clear();
         this._boundaryElement = this._rootElement = this._placeholderTemplate =
             this._previewTemplate = this._anchor = (/** @type {?} */ (null));
     }
@@ -908,7 +1022,9 @@ class DragRef {
             this._lastTouchEventTime = Date.now();
         }
         this._toggleNativeDragInteractions();
-        if (this._dropContainer) {
+        /** @type {?} */
+        const dropContainer = this._dropContainer;
+        if (dropContainer) {
             /** @type {?} */
             const element = this._rootElement;
             /** @type {?} */
@@ -927,13 +1043,16 @@ class DragRef {
             element.style.display = 'none';
             this._document.body.appendChild(parent.replaceChild(placeholder, element));
             getPreviewInsertionPoint(this._document).appendChild(preview);
-            this._dropContainer.start();
-            this._initialContainer = this._dropContainer;
-            this._initialIndex = this._dropContainer.getItemIndex(this);
+            dropContainer.start();
+            this._initialContainer = dropContainer;
+            this._initialIndex = dropContainer.getItemIndex(this);
         }
         else {
             this._initialContainer = this._initialIndex = (/** @type {?} */ (undefined));
         }
+        // Important to run after we've called `start` on the parent container
+        // so that it has had time to resolve its scrollable parents.
+        this._parentPositions.cache(dropContainer ? dropContainer.getScrollableParents() : []);
     }
     /**
      * Sets up the different variables and subscriptions
@@ -985,11 +1104,12 @@ class DragRef {
         this._removeSubscriptions();
         this._pointerMoveSubscription = this._dragDropRegistry.pointerMove.subscribe(this._pointerMove);
         this._pointerUpSubscription = this._dragDropRegistry.pointerUp.subscribe(this._pointerUp);
-        this._scrollSubscription = this._dragDropRegistry.scroll.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["startWith"])(null)).subscribe((/**
+        this._scrollSubscription = this._dragDropRegistry.scroll.subscribe((/**
+         * @param {?} scrollEvent
          * @return {?}
          */
-        () => {
-            this._updateOnScroll();
+        scrollEvent => {
+            this._updateOnScroll(scrollEvent);
         }));
         if (this._boundaryElement) {
             this._boundaryRect = getMutableClientRect(this._boundaryElement);
@@ -1114,14 +1234,18 @@ class DragRef {
         const previewTemplate = previewConfig ? previewConfig.template : null;
         /** @type {?} */
         let preview;
-        if (previewTemplate) {
+        if (previewTemplate && previewConfig) {
+            // Measure the element before we've inserted the preview
+            // since the insertion could throw off the measurement.
             /** @type {?} */
-            const viewRef = (/** @type {?} */ (previewConfig)).viewContainer.createEmbeddedView(previewTemplate, (/** @type {?} */ (previewConfig)).context);
+            const rootRect = previewConfig.matchSize ? this._rootElement.getBoundingClientRect() : null;
+            /** @type {?} */
+            const viewRef = previewConfig.viewContainer.createEmbeddedView(previewTemplate, previewConfig.context);
             viewRef.detectChanges();
             preview = getRootNode(viewRef, this._document);
             this._previewRef = viewRef;
-            if ((/** @type {?} */ (previewConfig)).matchSize) {
-                matchElementSize(preview, this._rootElement);
+            if (previewConfig.matchSize) {
+                matchElementSize(preview, (/** @type {?} */ (rootRect)));
             }
             else {
                 preview.style.transform =
@@ -1132,7 +1256,7 @@ class DragRef {
             /** @type {?} */
             const element = this._rootElement;
             preview = deepCloneNode(element);
-            matchElementSize(preview, element);
+            matchElementSize(preview, element.getBoundingClientRect());
         }
         extendStyles(preview.style, {
             // It's important that we disable the pointer events on the preview, because
@@ -1257,9 +1381,11 @@ class DragRef {
         /** @type {?} */
         const point = isTouchEvent(event) ? event.targetTouches[0] : event;
         /** @type {?} */
-        const x = point.pageX - referenceRect.left - this._scrollPosition.left;
+        const scrollPosition = this._getViewportScrollPosition();
         /** @type {?} */
-        const y = point.pageY - referenceRect.top - this._scrollPosition.top;
+        const x = point.pageX - referenceRect.left - scrollPosition.left;
+        /** @type {?} */
+        const y = point.pageY - referenceRect.top - scrollPosition.top;
         return {
             x: referenceRect.left - elementRect.left + x,
             y: referenceRect.top - elementRect.top + y
@@ -1275,9 +1401,11 @@ class DragRef {
         // `touches` will be empty for start/end events so we have to fall back to `changedTouches`.
         /** @type {?} */
         const point = isTouchEvent(event) ? (event.touches[0] || event.changedTouches[0]) : event;
+        /** @type {?} */
+        const scrollPosition = this._getViewportScrollPosition();
         return {
-            x: point.pageX - this._scrollPosition.left,
-            y: point.pageY - this._scrollPosition.top
+            x: point.pageX - scrollPosition.left,
+            y: point.pageY - scrollPosition.top
         };
     }
     /**
@@ -1415,6 +1543,7 @@ class DragRef {
      */
     _cleanupCachedDimensions() {
         this._boundaryRect = this._previewRect = undefined;
+        this._parentPositions.clear();
     }
     /**
      * Checks whether the element is still inside its boundary after the viewport has been resized.
@@ -1495,23 +1624,28 @@ class DragRef {
     /**
      * Updates the internal state of the draggable element when scrolling has occurred.
      * @private
+     * @param {?} event
      * @return {?}
      */
-    _updateOnScroll() {
+    _updateOnScroll(event) {
         /** @type {?} */
-        const oldScrollPosition = this._scrollPosition;
-        /** @type {?} */
-        const currentScrollPosition = this._viewportRuler.getViewportScrollPosition();
+        const scrollDifference = this._parentPositions.handleScroll(event);
         // ClientRect dimensions are based on the page's scroll position so
         // we have to update the cached boundary ClientRect if the user has scrolled.
-        if (oldScrollPosition && this._boundaryRect) {
-            /** @type {?} */
-            const topDifference = oldScrollPosition.top - currentScrollPosition.top;
-            /** @type {?} */
-            const leftDifference = oldScrollPosition.left - currentScrollPosition.left;
-            adjustClientRect(this._boundaryRect, topDifference, leftDifference);
+        if (this._boundaryRect && scrollDifference) {
+            adjustClientRect(this._boundaryRect, scrollDifference.top, scrollDifference.left);
         }
-        this._scrollPosition = currentScrollPosition;
+    }
+    /**
+     * Gets the scroll position of the viewport.
+     * @private
+     * @return {?}
+     */
+    _getViewportScrollPosition() {
+        /** @type {?} */
+        const cachedPosition = this._parentPositions.positions.get(this._document);
+        return cachedPosition ? cachedPosition.scrollPosition :
+            this._viewportRuler.getViewportScrollPosition();
     }
 }
 if (false) {}
@@ -1629,12 +1763,10 @@ function getRootNode(viewRef, _document) {
 /**
  * Matches the target element's size to the source's size.
  * @param {?} target Element that needs to be resized.
- * @param {?} source Element whose size needs to be matched.
+ * @param {?} sourceRect Dimensions of the source element.
  * @return {?}
  */
-function matchElementSize(target, source) {
-    /** @type {?} */
-    const sourceRect = source.getBoundingClientRect();
+function matchElementSize(target, sourceRect) {
     target.style.width = `${sourceRect.width}px`;
     target.style.height = `${sourceRect.height}px`;
     target.style.transform = getTransform(sourceRect.left, sourceRect.top);
@@ -1753,12 +1885,6 @@ const AUTO_SCROLL_STEP = 2;
  */
 function CachedItemPosition() { }
 if (false) {}
-/**
- * Object holding the scroll position of something.
- * @record
- */
-function ScrollPosition() { }
-if (false) {}
 /** @enum {number} */
 const AutoScrollVerticalDirection = {
     NONE: 0, UP: 1, DOWN: 2,
@@ -1841,10 +1967,6 @@ class DropListRef {
          */
         this._itemPositions = [];
         /**
-         * Cached positions of the scrollable parent elements.
-         */
-        this._parentPositions = new Map();
-        /**
          * Keeps track of the item that was last swapped with the dragged item, as
          * well as what direction the pointer was moving in when the swap occured.
          */
@@ -1919,6 +2041,7 @@ class DropListRef {
         this._document = _document;
         this.withScrollableParents([this.element]);
         _dragDropRegistry.registerDropContainer(this);
+        this._parentPositions = new ParentPositionTracker(_document, _viewportRuler);
     }
     /**
      * Removes the drop list functionality from the DOM element.
@@ -2022,14 +2145,23 @@ class DropListRef {
             activeDraggables.splice(newIndex, 0, item);
         }
         else {
-            Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_4__["coerceElement"])(this.element).appendChild(placeholder);
-            activeDraggables.push(item);
+            /** @type {?} */
+            const element = Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_4__["coerceElement"])(this.element);
+            if (this._shouldEnterAsFirstChild(pointerX, pointerY)) {
+                element.insertBefore(placeholder, activeDraggables[0].getRootElement());
+                activeDraggables.unshift(item);
+            }
+            else {
+                element.appendChild(placeholder);
+                activeDraggables.push(item);
+            }
         }
         // The transform needs to be cleared so it doesn't throw off the measurements.
         placeholder.style.transform = '';
         // Note that the positions were already cached when we called `start` above,
-        // but we need to refresh them since the amount of items has changed.
+        // but we need to refresh them since the amount of items has changed and also parent rects.
         this._cacheItemPositions();
+        this._cacheParentPositions();
         this.entered.next({ item, container: this, currentIndex: this.getItemIndex(item) });
     }
     /**
@@ -2077,6 +2209,8 @@ class DropListRef {
      * @return {THIS}
      */
     withItems(items) {
+        /** @type {?} */
+        const previousItems = (/** @type {?} */ (this))._draggables;
         (/** @type {?} */ (this))._draggables = items;
         items.forEach((/**
          * @param {?} item
@@ -2084,7 +2218,24 @@ class DropListRef {
          */
         item => item._withDropContainer((/** @type {?} */ (this)))));
         if ((/** @type {?} */ (this)).isDragging()) {
-            (/** @type {?} */ (this))._cacheItems();
+            /** @type {?} */
+            const draggedItems = previousItems.filter((/**
+             * @param {?} item
+             * @return {?}
+             */
+            item => item.isDragging()));
+            // If all of the items being dragged were removed
+            // from the list, abort the current drag sequence.
+            if (draggedItems.every((/**
+             * @param {?} item
+             * @return {?}
+             */
+            item => items.indexOf(item) === -1))) {
+                (/** @type {?} */ (this))._reset();
+            }
+            else {
+                (/** @type {?} */ (this))._cacheItems();
+            }
         }
         return (/** @type {?} */ (this));
     }
@@ -2137,6 +2288,13 @@ class DropListRef {
         (/** @type {?} */ (this))._scrollableElements =
             elements.indexOf(element) === -1 ? [element, ...elements] : elements.slice();
         return (/** @type {?} */ (this));
+    }
+    /**
+     * Gets the scrollable parents that are registered with this drop container.
+     * @return {?}
+     */
+    getScrollableParents() {
+        return this._scrollableElements;
     }
     /**
      * Figures out the index of an item in the container.
@@ -2277,7 +2435,7 @@ class DropListRef {
         /** @type {?} */
         let horizontalScrollDirection = 0 /* NONE */;
         // Check whether we should start scrolling any of the parent containers.
-        this._parentPositions.forEach((/**
+        this._parentPositions.positions.forEach((/**
          * @param {?} position
          * @param {?} element
          * @return {?}
@@ -2331,28 +2489,12 @@ class DropListRef {
      * @return {?}
      */
     _cacheParentPositions() {
-        this._parentPositions.clear();
-        this._parentPositions.set(this._document, {
-            scrollPosition: (/** @type {?} */ (this._viewportRuler)).getViewportScrollPosition(),
-        });
-        this._scrollableElements.forEach((/**
-         * @param {?} element
-         * @return {?}
-         */
-        element => {
-            /** @type {?} */
-            const clientRect = getMutableClientRect(element);
-            // We keep the ClientRect cached in two properties, because it's referenced in a lot of
-            // performance-sensitive places and we want to avoid the extra lookups. The `element` is
-            // guaranteed to always be in the `_scrollableElements` so this should always match.
-            if (element === this.element) {
-                this._clientRect = clientRect;
-            }
-            this._parentPositions.set(element, {
-                scrollPosition: { top: element.scrollTop, left: element.scrollLeft },
-                clientRect
-            });
-        }));
+        /** @type {?} */
+        const element = Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_4__["coerceElement"])(this.element);
+        this._parentPositions.cache(this._scrollableElements);
+        // The list element is always in the `scrollableElements`
+        // so we can take advantage of the cached `ClientRect`.
+        this._clientRect = (/** @type {?} */ ((/** @type {?} */ (this._parentPositions.positions.get(element))).clientRect));
     }
     /**
      * Refreshes the position cache of the items and sibling containers.
@@ -2395,7 +2537,13 @@ class DropListRef {
          * @param {?} item
          * @return {?}
          */
-        item => item.getRootElement().style.transform = ''));
+        item => {
+            /** @type {?} */
+            const rootElement = item.getRootElement();
+            if (rootElement) {
+                rootElement.style.transform = '';
+            }
+        }));
         this._siblings.forEach((/**
          * @param {?} sibling
          * @return {?}
@@ -2466,6 +2614,36 @@ class DropListRef {
         return itemOffset;
     }
     /**
+     * Checks if pointer is entering in the first position
+     * @private
+     * @param {?} pointerX Position of the user's pointer along the X axis.
+     * @param {?} pointerY Position of the user's pointer along the Y axis.
+     * @return {?}
+     */
+    _shouldEnterAsFirstChild(pointerX, pointerY) {
+        if (!this._activeDraggables.length) {
+            return false;
+        }
+        /** @type {?} */
+        const itemPositions = this._itemPositions;
+        /** @type {?} */
+        const isHorizontal = this._orientation === 'horizontal';
+        // `itemPositions` are sorted by position while `activeDraggables` are sorted by child index
+        // check if container is using some sort of "reverse" ordering (eg: flex-direction: row-reverse)
+        /** @type {?} */
+        const reversed = itemPositions[0].drag !== this._activeDraggables[0];
+        if (reversed) {
+            /** @type {?} */
+            const lastItemRect = itemPositions[itemPositions.length - 1].clientRect;
+            return isHorizontal ? pointerX >= lastItemRect.right : pointerY >= lastItemRect.bottom;
+        }
+        else {
+            /** @type {?} */
+            const firstItemRect = itemPositions[0].clientRect;
+            return isHorizontal ? pointerX <= firstItemRect.left : pointerY <= firstItemRect.top;
+        }
+    }
+    /**
      * Gets the index of an item in the drop container, based on the position of the user's pointer.
      * @private
      * @param {?} item Item that is being sorted.
@@ -2501,8 +2679,8 @@ class DropListRef {
             return isHorizontal ?
                 // Round these down since most browsers report client rects with
                 // sub-pixel precision, whereas the pointer coordinates are rounded to pixels.
-                pointerX >= Math.floor(clientRect.left) && pointerX <= Math.floor(clientRect.right) :
-                pointerY >= Math.floor(clientRect.top) && pointerY <= Math.floor(clientRect.bottom);
+                pointerX >= Math.floor(clientRect.left) && pointerX < Math.floor(clientRect.right) :
+                pointerY >= Math.floor(clientRect.top) && pointerY < Math.floor(clientRect.bottom);
         }));
     }
     /**
@@ -2514,64 +2692,6 @@ class DropListRef {
         this._activeDraggables = this._draggables.slice();
         this._cacheItemPositions();
         this._cacheParentPositions();
-    }
-    /**
-     * Updates the internal state of the container after a scroll event has happened.
-     * @private
-     * @param {?} scrolledParent Element that was scrolled.
-     * @param {?} newTop New top scroll position.
-     * @param {?} newLeft New left scroll position.
-     * @return {?}
-     */
-    _updateAfterScroll(scrolledParent, newTop, newLeft) {
-        // Used when figuring out whether an element is inside the scroll parent. If the scrolled
-        // parent is the `document`, we use the `documentElement`, because IE doesn't support `contains`
-        // on the `document`.
-        /** @type {?} */
-        const scrolledParentNode = scrolledParent === this._document ? scrolledParent.documentElement : scrolledParent;
-        /** @type {?} */
-        const scrollPosition = (/** @type {?} */ (this._parentPositions.get(scrolledParent))).scrollPosition;
-        /** @type {?} */
-        const topDifference = scrollPosition.top - newTop;
-        /** @type {?} */
-        const leftDifference = scrollPosition.left - newLeft;
-        // Go through and update the cached positions of the scroll
-        // parents that are inside the element that was scrolled.
-        this._parentPositions.forEach((/**
-         * @param {?} position
-         * @param {?} node
-         * @return {?}
-         */
-        (position, node) => {
-            if (position.clientRect && scrolledParent !== node && scrolledParentNode.contains(node)) {
-                adjustClientRect(position.clientRect, topDifference, leftDifference);
-            }
-        }));
-        // Since we know the amount that the user has scrolled we can shift all of the client rectangles
-        // ourselves. This is cheaper than re-measuring everything and we can avoid inconsistent
-        // behavior where we might be measuring the element before its position has changed.
-        this._itemPositions.forEach((/**
-         * @param {?} __0
-         * @return {?}
-         */
-        ({ clientRect }) => {
-            adjustClientRect(clientRect, topDifference, leftDifference);
-        }));
-        // We need two loops for this, because we want all of the cached
-        // positions to be up-to-date before we re-sort the item.
-        this._itemPositions.forEach((/**
-         * @param {?} __0
-         * @return {?}
-         */
-        ({ drag }) => {
-            if (this._dragDropRegistry.isDragging(drag)) {
-                // We need to re-sort the item manually, because the pointer move
-                // events won't be dispatched while the user is scrolling.
-                drag._sortFromLastPointerPosition();
-            }
-        }));
-        scrollPosition.top = newTop;
-        scrollPosition.left = newLeft;
     }
     /**
      * Checks whether the user's pointer is positioned over the container.
@@ -2662,25 +2782,32 @@ class DropListRef {
         event => {
             if (this.isDragging()) {
                 /** @type {?} */
-                const target = (/** @type {?} */ (event.target));
-                /** @type {?} */
-                const position = this._parentPositions.get(target);
-                if (position) {
-                    /** @type {?} */
-                    let newTop;
-                    /** @type {?} */
-                    let newLeft;
-                    if (target === this._document) {
-                        /** @type {?} */
-                        const scrollPosition = (/** @type {?} */ (this._viewportRuler)).getViewportScrollPosition();
-                        newTop = scrollPosition.top;
-                        newLeft = scrollPosition.left;
-                    }
-                    else {
-                        newTop = ((/** @type {?} */ (target))).scrollTop;
-                        newLeft = ((/** @type {?} */ (target))).scrollLeft;
-                    }
-                    this._updateAfterScroll(target, newTop, newLeft);
+                const scrollDifference = this._parentPositions.handleScroll(event);
+                if (scrollDifference) {
+                    // Since we know the amount that the user has scrolled we can shift all of the
+                    // client rectangles ourselves. This is cheaper than re-measuring everything and
+                    // we can avoid inconsistent behavior where we might be measuring the element before
+                    // its position has changed.
+                    this._itemPositions.forEach((/**
+                     * @param {?} __0
+                     * @return {?}
+                     */
+                    ({ clientRect }) => {
+                        adjustClientRect(clientRect, scrollDifference.top, scrollDifference.left);
+                    }));
+                    // We need two loops for this, because we want all of the cached
+                    // positions to be up-to-date before we re-sort the item.
+                    this._itemPositions.forEach((/**
+                     * @param {?} __0
+                     * @return {?}
+                     */
+                    ({ drag }) => {
+                        if (this._dragDropRegistry.isDragging(drag)) {
+                            // We need to re-sort the item manually, because the pointer move
+                            // events won't be dispatched while the user is scrolling.
+                            drag._sortFromLastPointerPosition();
+                        }
+                    }));
                 }
             }
             else if (this.isReceiving()) {
@@ -4616,18 +4743,19 @@ class DragDropModule {
 DragDropModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: DragDropModule });
 DragDropModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function DragDropModule_Factory(t) { return new (t || DragDropModule)(); }, providers: [
         DragDrop,
-    ] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](DragDropModule, { declarations: [CdkDropList,
+    ], imports: [_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkScrollableModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](DragDropModule, { declarations: function () { return [CdkDropList,
         CdkDropListGroup,
         CdkDrag,
         CdkDragHandle,
         CdkDragPreview,
-        CdkDragPlaceholder], exports: [CdkDropList,
+        CdkDragPlaceholder]; }, exports: function () { return [_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkScrollableModule"],
+        CdkDropList,
         CdkDropListGroup,
         CdkDrag,
         CdkDragHandle,
         CdkDragPreview,
-        CdkDragPlaceholder] }); })();
+        CdkDragPlaceholder]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DragDropModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -4640,6 +4768,7 @@ DragDropModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInj
                     CdkDragPlaceholder,
                 ],
                 exports: [
+                    _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_2__["CdkScrollableModule"],
                     CdkDropList,
                     CdkDropListGroup,
                     CdkDrag,
@@ -4676,7 +4805,7 @@ DragDropModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInj
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var e="300";function t(){return Math.random().toString(36).substring(7)}function n(e){var t="";return e?(e.forceEmbedLayout&&(t+="embed=1"),e.clickToLoad&&(t+=(t.length?"&":"")+"ctl=1"),e.openFile&&(t+=(t.length?"&":"")+"file="+e.openFile),!e.view||"preview"!==e.view&&"editor"!==e.view||(t+=(t.length?"&":"")+"view="+e.view),e.hideExplorer&&(t+=(t.length?"&":"")+"hideExplorer=1"),e.hideNavigation&&(t+=(t.length?"&":"")+"hideNavigation=1;"),e.hideDevTools&&(t+=(t.length?"&":"")+"hidedevtools=1"),"number"==typeof e.devToolsHeight&&e.devToolsHeight>0&&e.devToolsHeight<100&&(t+=(t.length?"&":"")+"devtoolsheight="+e.devToolsHeight),t.length?"?"+t:t):t}function i(e,t,n){if(null===e.parentNode)throw new Error("Invalid Element");t.id=e.id,a(t,n),e.parentNode.replaceChild(t,e)}function o(e){if("string"==typeof e){var t=document.getElementById(e);if(null!==t)return t}else if(e instanceof HTMLElement)return e;throw new Error("Invalid Element")}function r(e){return e&&!1===e.newWindow?"_self":"_blank"}function a(t,n){n&&(n.hasOwnProperty("height")&&(t.height=""+n.height),n.hasOwnProperty("width")&&(t.width=""+n.width)),t.height||(t.height=e),t.width||t.setAttribute("style","width:100%;")}var d=function(e){var t=this;this.pending={},this.port=e,this.port.onmessage=function(e){if(e.data.payload.__reqid){var n=e.data.payload.__reqid,i=e.data.payload.__success;if(t.pending[n]){if(delete e.data.payload.__reqid,delete e.data.payload.__success,i){var o=0===Object.keys(e.data.payload).length&&e.data.payload.constructor===Object?null:e.data.payload;t.pending[n].resolve(o)}else{var r=e.data.payload.error?e.data.type+": "+e.data.payload.error:e.data.type;t.pending[n].reject(r)}delete t.pending[n]}}}};d.prototype.request=function(e){var n=this,i=t();return new Promise(function(t,o){n.pending[i]={resolve:t,reject:o},e.payload.__reqid=i,n.port.postMessage(e)})};var c=function(e,t){var n=this;this.rdc=new d(e),this.preview={},Object.defineProperty(this.preview,"origin",{value:t.previewOrigin,writable:!1}),this.editor={openFile:function(e){return n.rdc.request({type:"SDK_OPEN_FILE",payload:{path:e}})}}};c.prototype.applyFsDiff=function(e){return this.rdc.request({type:"SDK_APPLY_FS_DIFF",payload:e})},c.prototype.getFsSnapshot=function(){return this.rdc.request({type:"SDK_GET_FS_SNAPSHOT",payload:{}})},c.prototype.getDependencies=function(){return this.rdc.request({type:"SDK_GET_DEPS_SNAPSHOT",payload:{}})};var s=[],p=function(e){var n=this;this.id=t(),this.element=e,this.pending=new Promise(function(e,t){var i=function(t){t.data.action&&"SDK_INIT_SUCCESS"===t.data.action&&t.data.id===n.id&&(n.vm=new c(t.ports[0],t.data.payload),e(n.vm),r())},o=function(){n.element.contentWindow&&n.element.contentWindow.postMessage({action:"SDK_INIT",id:n.id},"*")};function r(){window.clearInterval(d),window.removeEventListener("message",i)}window.addEventListener("message",i),o();var a=0,d=window.setInterval(function(){if(n.vm)r();else{if(a>=20)return r(),t("Timeout: Unable to establish a connection with the StackBlitz VM"),void s.forEach(function(e,t){e.id===n.id&&s.splice(t,1)});a++,o()}},500)}),s.push(this)},l=function(e){var t=e instanceof Element?"element":"id",n=s.find(function(n){return n[t]===e});return n||null},u=["typescript","create-react-app","angular-cli","javascript","polymer"],h="https://stackblitz.com/run";function f(e,t){var n=document.createElement("input");return n.type="hidden",n.name=e,n.value=t,n}function m(e){-1===u.indexOf(e.template)&&console.warn("Unsupported project template, must be one of: "+u.join(", "));var t=document.createElement("form");return t.method="POST",t.setAttribute("style","display:none;"),t.appendChild(f("project[title]",e.title)),t.appendChild(f("project[description]",e.description)),t.appendChild(f("project[template]",e.template)),e.tags&&e.tags.forEach(function(e){t.appendChild(f("project[tags][]",e))}),e.dependencies&&t.appendChild(f("project[dependencies]",JSON.stringify(e.dependencies))),e.settings&&t.appendChild(f("project[settings]",JSON.stringify(e.settings))),Object.keys(e.files).forEach(function(n){t.appendChild(f("project[files]["+n+"]",e.files[n]))}),t}function v(e,t){var i=m(e);return i.action=h+n(t),i.id="sb","<html><head><title></title></head><body>"+i.outerHTML+"<script>document.getElementById('sb').submit();<\/script></body></html>"}function g(e,t){var i=m(e);i.action=h+n(t),i.target=r(t),document.body.appendChild(i),i.submit(),document.body.removeChild(i)}var y={connect:function(e){if(!e||!e.contentWindow)return Promise.reject("Provided element is not an iframe.");var t=l(e);return t?t.pending:new p(e).pending},openGithubProject:function(e,t){window.open("https://stackblitz.com/github/"+e+n(t),r(t))},openProject:function(e,t){g(e,t)},openProjectId:function(e,t){window.open("https://stackblitz.com/edit/"+e+n(t),r(t))},embedGithubProject:function(e,t,r){var a=o(e),d=document.createElement("iframe");return d.src="https://stackblitz.com/github/"+t+n(r),i(a,d,r),y.connect(d)},embedProject:function(e,t,n){var r=o(e),a=v(t,n),d=document.createElement("iframe");return i(r,d,n),d.contentDocument&&d.contentDocument.write(a),y.connect(d)},embedProjectId:function(e,t,r){var a=o(e),d=document.createElement("iframe");return d.src="https://stackblitz.com/edit/"+t+n(r),i(a,d,r),y.connect(d)}};module.exports=y;
+function e(e){return e&&e.origin?e.origin:"https://stackblitz.com"}var t="300";function n(){return Math.random().toString(36).substring(7)}function i(e){var t="";return e?(e.forceEmbedLayout&&(t+="embed=1"),e.clickToLoad&&(t+=(t.length?"&":"")+"ctl=1"),e.openFile&&(t+=(t.length?"&":"")+"file="+e.openFile),!e.view||"preview"!==e.view&&"editor"!==e.view||(t+=(t.length?"&":"")+"view="+e.view),e.hideExplorer&&(t+=(t.length?"&":"")+"hideExplorer=1"),e.hideNavigation&&(t+=(t.length?"&":"")+"hideNavigation=1;"),e.hideDevTools&&(t+=(t.length?"&":"")+"hidedevtools=1"),"number"==typeof e.devToolsHeight&&e.devToolsHeight>0&&e.devToolsHeight<100&&(t+=(t.length?"&":"")+"devtoolsheight="+e.devToolsHeight),t.length?"?"+t:t):t}function o(e,t,n){if(null===e.parentNode)throw new Error("Invalid Element");t.id=e.id,d(t,n),e.parentNode.replaceChild(t,e)}function r(e){if("string"==typeof e){var t=document.getElementById(e);if(null!==t)return t}else if(e instanceof HTMLElement)return e;throw new Error("Invalid Element")}function a(e){return e&&!1===e.newWindow?"_self":"_blank"}function d(e,n){n&&(n.hasOwnProperty("height")&&(e.height=""+n.height),n.hasOwnProperty("width")&&(e.width=""+n.width)),e.height||(e.height=t),e.width||e.setAttribute("style","width:100%;")}var c=function(e){var t=this;this.pending={},this.port=e,this.port.onmessage=function(e){if(e.data.payload.__reqid){var n=e.data.payload.__reqid,i=e.data.payload.__success;if(t.pending[n]){if(delete e.data.payload.__reqid,delete e.data.payload.__success,i){var o=0===Object.keys(e.data.payload).length&&e.data.payload.constructor===Object?null:e.data.payload;t.pending[n].resolve(o)}else{var r=e.data.payload.error?e.data.type+": "+e.data.payload.error:e.data.type;t.pending[n].reject(r)}delete t.pending[n]}}}};c.prototype.request=function(e){var t=this,i=n();return new Promise(function(n,o){t.pending[i]={resolve:n,reject:o},e.payload.__reqid=i,t.port.postMessage(e)})};var p=function(e,t){var n=this;this.rdc=new c(e),this.preview={},Object.defineProperty(this.preview,"origin",{value:t.previewOrigin,writable:!1}),this.editor={openFile:function(e){return n.rdc.request({type:"SDK_OPEN_FILE",payload:{path:e}})}}};p.prototype.applyFsDiff=function(e){return this.rdc.request({type:"SDK_APPLY_FS_DIFF",payload:e})},p.prototype.getFsSnapshot=function(){return this.rdc.request({type:"SDK_GET_FS_SNAPSHOT",payload:{}})},p.prototype.getDependencies=function(){return this.rdc.request({type:"SDK_GET_DEPS_SNAPSHOT",payload:{}})};var l=[],s=function(e){var t=this;this.id=n(),this.element=e,this.pending=new Promise(function(e,n){var i=function(n){n.data.action&&"SDK_INIT_SUCCESS"===n.data.action&&n.data.id===t.id&&(t.vm=new p(n.ports[0],n.data.payload),e(t.vm),r())},o=function(){t.element.contentWindow&&t.element.contentWindow.postMessage({action:"SDK_INIT",id:t.id},"*")};function r(){window.clearInterval(d),window.removeEventListener("message",i)}window.addEventListener("message",i),o();var a=0,d=window.setInterval(function(){if(t.vm)r();else{if(a>=20)return r(),n("Timeout: Unable to establish a connection with the StackBlitz VM"),void l.forEach(function(e,n){e.id===t.id&&l.splice(n,1)});a++,o()}},500)}),l.push(this)},u=function(e){var t=e instanceof Element?"element":"id",n=l.find(function(n){return n[t]===e});return n||null},h=["typescript","create-react-app","angular-cli","javascript","polymer"];function f(e,t){var n=document.createElement("input");return n.type="hidden",n.name=e,n.value=t,n}function m(e){-1===h.indexOf(e.template)&&console.warn("Unsupported project template, must be one of: "+h.join(", "));var t=document.createElement("form");return t.method="POST",t.setAttribute("style","display:none;"),t.appendChild(f("project[title]",e.title)),t.appendChild(f("project[description]",e.description)),t.appendChild(f("project[template]",e.template)),e.tags&&e.tags.forEach(function(e){t.appendChild(f("project[tags][]",e))}),e.dependencies&&t.appendChild(f("project[dependencies]",JSON.stringify(e.dependencies))),e.settings&&t.appendChild(f("project[settings]",JSON.stringify(e.settings))),Object.keys(e.files).forEach(function(n){t.appendChild(f("project[files]["+n+"]",e.files[n]))}),t}function v(t,n){var o=m(t);return o.action=e(n)+"/run"+i(n),o.id="sb","<html><head><title></title></head><body>"+o.outerHTML+"<script>document.getElementById('sb').submit();<\/script></body></html>"}function g(t,n){var o=m(t);o.action=e(n)+"/run"+i(n),o.target=a(n),document.body.appendChild(o),o.submit(),document.body.removeChild(o)}var y={connect:function(e){if(!e||!e.contentWindow)return Promise.reject("Provided element is not an iframe.");var t=u(e);return t?t.pending:new s(e).pending},openGithubProject:function(t,n){window.open(e(n)+"/github/"+t+i(n),a(n))},openProject:function(e,t){g(e,t)},openProjectId:function(t,n){window.open(e(n)+"/edit/"+t+i(n),a(n))},embedGithubProject:function(t,n,a){var d=r(t),c=document.createElement("iframe");return c.src=e(a)+"/github/"+n+i(a),o(d,c,a),y.connect(c)},embedProject:function(e,t,n){var i=r(e),a=v(t,n),d=document.createElement("iframe");return o(i,d,n),d.contentDocument&&d.contentDocument.write(a),y.connect(d)},embedProjectId:function(t,n,a){var d=r(t),c=document.createElement("iframe");return c.src=e(a)+"/edit/"+n+i(a),o(d,c,a),y.connect(c)}};module.exports=y;
 //# sourceMappingURL=sdk.js.map
 
 

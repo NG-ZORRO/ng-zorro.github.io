@@ -44,7 +44,7 @@ const _c2 = ["nz-checkbox", ""];
 function NzCheckboxGroupComponent_label_0_Template(rf, ctx) { if (rf & 1) {
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "label", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("nzCheckedChange", function NzCheckboxGroupComponent_label_0_Template_label_nzCheckedChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const o_r1 = ctx.$implicit; return o_r1.checked = $event; })("nzCheckedChange", function NzCheckboxGroupComponent_label_0_Template_label_nzCheckedChange_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r4.onChange(ctx_r4.options); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("nzCheckedChange", function NzCheckboxGroupComponent_label_0_Template_label_nzCheckedChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r3); const o_r1 = ctx.$implicit; const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r2.onCheckedChange(o_r1, $event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
@@ -356,6 +356,15 @@ class NzCheckboxGroupComponent {
         return option.value;
     }
     /**
+     * @param {?} option
+     * @param {?} checked
+     * @return {?}
+     */
+    onCheckedChange(option, checked) {
+        option.checked = checked;
+        this.onChange(this.options);
+    }
+    /**
      * @return {?}
      */
     ngOnInit() {
@@ -529,8 +538,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
       class="ant-checkbox-group-item"
       *ngFor="let o of options; trackBy: trackByOption"
       [nzDisabled]="o.disabled || nzDisabled"
-      [(nzChecked)]="o.checked"
-      (nzCheckedChange)="onChange(options)"
+      [nzChecked]="o.checked!"
+      (nzCheckedChange)="onCheckedChange(o, $event)"
     >
       <span>{{ o.label }}</span>
     </label>

@@ -53,9 +53,10 @@ function NzCollapsePanelComponent_ng_container_1_ng_container_1_Template(rf, ctx
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "i", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
+    const expandedIcon_r4 = ctx.$implicit;
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", ctx_r3.nzExpandedIcon || "right")("nzRotate", ctx_r3.nzActive ? 90 : 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", expandedIcon_r4 || "right")("nzRotate", ctx_r3.nzActive ? 90 : 0);
 } }
 function NzCollapsePanelComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
@@ -80,9 +81,9 @@ function NzCollapsePanelComponent_div_3_ng_container_1_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r4.nzExtra);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r5.nzExtra);
 } }
 function NzCollapsePanelComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 7);
@@ -102,6 +103,8 @@ class NzCollapseComponent {
     constructor(nzConfigService, cdr) {
         this.nzConfigService = nzConfigService;
         this.cdr = cdr;
+        this.nzAccordion = false;
+        this.nzBordered = true;
         this.nzExpandIconPosition = 'left';
         this.listOfNzCollapsePanelComponent = [];
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
@@ -167,7 +170,7 @@ class NzCollapseComponent {
 NzCollapseComponent.ɵfac = function NzCollapseComponent_Factory(t) { return new (t || NzCollapseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"])); };
 NzCollapseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCollapseComponent, selectors: [["nz-collapse"]], hostVars: 8, hostBindings: function NzCollapseComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-collapse", true)("ant-collapse-icon-position-left", ctx.nzExpandIconPosition === "left")("ant-collapse-icon-position-right", ctx.nzExpandIconPosition === "right")("ant-collapse-borderless", !ctx.nzBordered);
-    } }, inputs: { nzExpandIconPosition: "nzExpandIconPosition", nzAccordion: "nzAccordion", nzBordered: "nzBordered" }, exportAs: ["nzCollapse"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzCollapseComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzAccordion: "nzAccordion", nzBordered: "nzBordered", nzExpandIconPosition: "nzExpandIconPosition" }, exportAs: ["nzCollapse"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzCollapseComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
@@ -182,11 +185,11 @@ NzCollapseComponent.propDecorators = {
     nzExpandIconPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzCollapseComponent.prototype, "nzAccordion", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzCollapseComponent.prototype, "nzBordered", void 0);
 if (false) {}
@@ -210,6 +213,7 @@ class NzCollapsePanelComponent {
         this.nzCollapseComponent = nzCollapseComponent;
         this.nzActive = false;
         this.nzDisabled = false;
+        this.nzShowArrow = true;
         this.nzActiveChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
         this.nzConfigService
@@ -303,7 +307,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzCollapsePanelComponent.prototype, "nzDisabled", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME$1, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME$1), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzCollapsePanelComponent.prototype, "nzShowArrow", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCollapseComponent, [{
@@ -321,11 +325,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                     '[class.ant-collapse-borderless]': '!nzBordered'
                 }
             }]
-    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzExpandIconPosition: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzAccordion: [{
+    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_3__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzAccordion: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzBordered: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzExpandIconPosition: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCollapsePanelComponent, [{
@@ -339,8 +343,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 template: `
     <div role="tab" [attr.aria-expanded]="nzActive" class="ant-collapse-header" (click)="clickHeader()">
       <ng-container *ngIf="nzShowArrow">
-        <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
-          <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
+        <ng-container *nzStringTemplateOutlet="nzExpandedIcon; let expandedIcon">
+          <i nz-icon [nzType]="expandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
         </ng-container>
       </ng-container>
       <ng-container *nzStringTemplateOutlet="nzHeader">{{ nzHeader }}</ng-container>
@@ -367,10 +371,10 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzDisabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzActiveChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], nzShowArrow: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzActiveChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], nzExtra: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzHeader: [{
@@ -700,7 +704,7 @@ function NzDemoCollapseCustomComponent_nz_collapse_panel_1_Template(rf, ctx) { i
     const panel_r1 = ctx.$implicit;
     const isFirst_r2 = ctx.first;
     const _r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeader", panel_r1.name)("nzActive", panel_r1.active)("ngStyle", panel_r1.customStyle)("nzExpandedIcon", !isFirst_r2 && (panel_r1.icon || _r4));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeader", panel_r1.name)("nzActive", panel_r1.active)("ngStyle", panel_r1.customStyle)("nzExpandedIcon", !isFirst_r2 ? panel_r1.icon || _r4 : undefined);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", panel_r1.name, " content");
 } }
@@ -766,7 +770,7 @@ class NzDemoCollapseCustomComponent {
         [nzHeader]="panel.name"
         [nzActive]="panel.active"
         [ngStyle]="panel.customStyle"
-        [nzExpandedIcon]="!isFirst && (panel.icon || expandedIcon)"
+        [nzExpandedIcon]="!isFirst ? panel.icon || expandedIcon : undefined"
       >
         <p>{{ panel.name }} content</p>
         <ng-template #expandedIcon let-active>
@@ -846,7 +850,7 @@ class NzDemoCollapseEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 288, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-collapse-demo-basic", "nzTitle", "Collapse"], ["nzHref", "#components-collapse-demo-accordion", "nzTitle", "Accordion"], ["nzHref", "#components-collapse-demo-mix", "nzTitle", "Nested panel"], ["nzHref", "#components-collapse-demo-borderless", "nzTitle", "Borderless"], ["nzHref", "#components-collapse-demo-custom", "nzTitle", "Custom Panel"], ["nzHref", "#components-collapse-demo-noarrow", "nzTitle", "No arrow"], ["nzHref", "#components-collapse-demo-extra", "nzTitle", "Extra Node"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Collapse", "nzSelector", "nz-demo-collapse-basic", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-basic <name>", "nzComponentName", "NzDemoCollapseBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Accordion", "nzSelector", "nz-demo-collapse-accordion", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-accordion <name>", "nzComponentName", "NzDemoCollapseAccordionComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Nested panel", "nzSelector", "nz-demo-collapse-mix", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-mix <name>", "nzComponentName", "NzDemoCollapseMixComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Borderless", "nzSelector", "nz-demo-collapse-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-borderless <name>", "nzComponentName", "NzDemoCollapseBorderlessComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Custom Panel", "nzSelector", "nz-demo-collapse-custom", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-custom <name>", "nzComponentName", "NzDemoCollapseCustomComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "No arrow", "nzSelector", "nz-demo-collapse-noarrow", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-noarrow <name>", "nzComponentName", "NzDemoCollapseNoarrowComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Extra Node", "nzSelector", "nz-demo-collapse-extra", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-extra <name>", "nzComponentName", "NzDemoCollapseExtraComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-collapse"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-collapse'", 1, "anchor"], ["id", "nz-collapse-panel"], ["onclick", "window.location.hash = 'nz-collapse-panel'", 1, "anchor"]], template: function NzDemoCollapseEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 288, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-collapse-demo-basic", "nzTitle", "Collapse"], ["nzHref", "#components-collapse-demo-accordion", "nzTitle", "Accordion"], ["nzHref", "#components-collapse-demo-mix", "nzTitle", "Nested panel"], ["nzHref", "#components-collapse-demo-borderless", "nzTitle", "Borderless"], ["nzHref", "#components-collapse-demo-custom", "nzTitle", "Custom Panel"], ["nzHref", "#components-collapse-demo-noarrow", "nzTitle", "No arrow"], ["nzHref", "#components-collapse-demo-extra", "nzTitle", "Extra Node"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Collapse", "nzSelector", "nz-demo-collapse-basic", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-basic <name>", "nzComponentName", "NzDemoCollapseBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Accordion", "nzSelector", "nz-demo-collapse-accordion", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-accordion <name>", "nzComponentName", "NzDemoCollapseAccordionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Nested panel", "nzSelector", "nz-demo-collapse-mix", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-mix <name>", "nzComponentName", "NzDemoCollapseMixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Borderless", "nzSelector", "nz-demo-collapse-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-borderless <name>", "nzComponentName", "NzDemoCollapseBorderlessComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom Panel", "nzSelector", "nz-demo-collapse-custom", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-custom <name>", "nzComponentName", "NzDemoCollapseCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "No arrow", "nzSelector", "nz-demo-collapse-noarrow", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-noarrow <name>", "nzComponentName", "NzDemoCollapseNoarrowComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Extra Node", "nzSelector", "nz-demo-collapse-extra", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-extra <name>", "nzComponentName", "NzDemoCollapseExtraComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-collapse"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-collapse'", 1, "anchor"], ["id", "nz-collapse-panel"], ["onclick", "window.location.hash = 'nz-collapse-panel'", 1, "anchor"]], template: function NzDemoCollapseEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1329,19 +1333,19 @@ class NzDemoCollapseEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-basic")("nzLink", "components-collapse-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-basic")("nzLink", "components-collapse-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-accordion")("nzLink", "components-collapse-demo-accordion")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/accordion.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-accordion")("nzLink", "components-collapse-demo-accordion")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/accordion.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-mix")("nzLink", "components-collapse-demo-mix")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/mix.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-mix")("nzLink", "components-collapse-demo-mix")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/mix.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-borderless")("nzLink", "components-collapse-demo-borderless")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/borderless.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-borderless")("nzLink", "components-collapse-demo-borderless")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/borderless.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-custom")("nzLink", "components-collapse-demo-custom")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/custom.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-custom")("nzLink", "components-collapse-demo-custom")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/custom.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-noarrow")("nzLink", "components-collapse-demo-noarrow")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/noarrow.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-noarrow")("nzLink", "components-collapse-demo-noarrow")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/noarrow.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-extra")("nzLink", "components-collapse-demo-extra")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/extra.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-extra")("nzLink", "components-collapse-demo-extra")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/extra.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_7__["NzDemoCollapseBasicComponent"], _accordion__WEBPACK_IMPORTED_MODULE_8__["NzDemoCollapseAccordionComponent"], _mix__WEBPACK_IMPORTED_MODULE_9__["NzDemoCollapseMixComponent"], _borderless__WEBPACK_IMPORTED_MODULE_10__["NzDemoCollapseBorderlessComponent"], _custom__WEBPACK_IMPORTED_MODULE_11__["NzDemoCollapseCustomComponent"], _noarrow__WEBPACK_IMPORTED_MODULE_12__["NzDemoCollapseNoarrowComponent"], _extra__WEBPACK_IMPORTED_MODULE_13__["NzDemoCollapseExtraComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCollapseEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -1711,7 +1715,7 @@ function NzDemoCollapseNoarrowComponent_nz_collapse_panel_1_Template(rf, ctx) { 
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const panel_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeader", panel_r1.name)("nzActive", panel_r1.active)("nzDisabled", panel_r1.disabled)("nzShowArrow", panel_r1.arrow);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeader", panel_r1.name)("nzActive", panel_r1.active)("nzShowArrow", panel_r1.arrow);
 } }
 class NzDemoCollapseNoarrowComponent {
     constructor() {
@@ -1730,9 +1734,9 @@ class NzDemoCollapseNoarrowComponent {
     }
 }
 /** @nocollapse */ NzDemoCollapseNoarrowComponent.ɵfac = function NzDemoCollapseNoarrowComponent_Factory(t) { return new (t || NzDemoCollapseNoarrowComponent)(); };
-/** @nocollapse */ NzDemoCollapseNoarrowComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCollapseNoarrowComponent, selectors: [["nz-demo-collapse-noarrow"]], decls: 2, vars: 1, consts: [[3, "nzHeader", "nzActive", "nzDisabled", "nzShowArrow", 4, "ngFor", "ngForOf"], [3, "nzHeader", "nzActive", "nzDisabled", "nzShowArrow"], [2, "margin", "0"]], template: function NzDemoCollapseNoarrowComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoCollapseNoarrowComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCollapseNoarrowComponent, selectors: [["nz-demo-collapse-noarrow"]], decls: 2, vars: 1, consts: [[3, "nzHeader", "nzActive", "nzShowArrow", 4, "ngFor", "ngForOf"], [3, "nzHeader", "nzActive", "nzShowArrow"], [2, "margin", "0"]], template: function NzDemoCollapseNoarrowComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-collapse");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCollapseNoarrowComponent_nz_collapse_panel_1_Template, 3, 4, "nz-collapse-panel", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCollapseNoarrowComponent_nz_collapse_panel_1_Template, 3, 3, "nz-collapse-panel", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -1744,13 +1748,7 @@ class NzDemoCollapseNoarrowComponent {
                 selector: 'nz-demo-collapse-noarrow',
                 template: `
     <nz-collapse>
-      <nz-collapse-panel
-        *ngFor="let panel of panels"
-        [nzHeader]="panel.name"
-        [nzActive]="panel.active"
-        [nzDisabled]="panel.disabled"
-        [nzShowArrow]="panel.arrow"
-      >
+      <nz-collapse-panel *ngFor="let panel of panels" [nzHeader]="panel.name" [nzActive]="panel.active" [nzShowArrow]="panel.arrow">
         <p style="margin:0;">
           A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many
           households across the world.
@@ -1828,7 +1826,7 @@ class NzDemoCollapseZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 278, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-collapse-demo-basic", "nzTitle", "\u6298\u53E0\u9762\u677F"], ["nzHref", "#components-collapse-demo-accordion", "nzTitle", "\u624B\u98CE\u7434"], ["nzHref", "#components-collapse-demo-mix", "nzTitle", "\u9762\u677F\u5D4C\u5957"], ["nzHref", "#components-collapse-demo-borderless", "nzTitle", "\u7B80\u6D01\u98CE\u683C"], ["nzHref", "#components-collapse-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u9762\u677F"], ["nzHref", "#components-collapse-demo-noarrow", "nzTitle", "\u9690\u85CF\u7BAD\u5934"], ["nzHref", "#components-collapse-demo-extra", "nzTitle", "\u989D\u5916\u8282\u70B9"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u6298\u53E0\u9762\u677F", "nzSelector", "nz-demo-collapse-basic", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-basic <name>", "nzComponentName", "NzDemoCollapseBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u624B\u98CE\u7434", "nzSelector", "nz-demo-collapse-accordion", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-accordion <name>", "nzComponentName", "NzDemoCollapseAccordionComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u9762\u677F\u5D4C\u5957", "nzSelector", "nz-demo-collapse-mix", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-mix <name>", "nzComponentName", "NzDemoCollapseMixComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u7B80\u6D01\u98CE\u683C", "nzSelector", "nz-demo-collapse-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-borderless <name>", "nzComponentName", "NzDemoCollapseBorderlessComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9762\u677F", "nzSelector", "nz-demo-collapse-custom", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-custom <name>", "nzComponentName", "NzDemoCollapseCustomComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u9690\u85CF\u7BAD\u5934", "nzSelector", "nz-demo-collapse-noarrow", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-noarrow <name>", "nzComponentName", "NzDemoCollapseNoarrowComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u989D\u5916\u8282\u70B9", "nzSelector", "nz-demo-collapse-extra", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-extra <name>", "nzComponentName", "NzDemoCollapseExtraComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-collapse"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-collapse'", 1, "anchor"], ["id", "nz-collapse-panel"], ["onclick", "window.location.hash = 'nz-collapse-panel'", 1, "anchor"]], template: function NzDemoCollapseZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 278, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-collapse-demo-basic", "nzTitle", "\u6298\u53E0\u9762\u677F"], ["nzHref", "#components-collapse-demo-accordion", "nzTitle", "\u624B\u98CE\u7434"], ["nzHref", "#components-collapse-demo-mix", "nzTitle", "\u9762\u677F\u5D4C\u5957"], ["nzHref", "#components-collapse-demo-borderless", "nzTitle", "\u7B80\u6D01\u98CE\u683C"], ["nzHref", "#components-collapse-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u9762\u677F"], ["nzHref", "#components-collapse-demo-noarrow", "nzTitle", "\u9690\u85CF\u7BAD\u5934"], ["nzHref", "#components-collapse-demo-extra", "nzTitle", "\u989D\u5916\u8282\u70B9"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u6298\u53E0\u9762\u677F", "nzSelector", "nz-demo-collapse-basic", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-basic <name>", "nzComponentName", "NzDemoCollapseBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u624B\u98CE\u7434", "nzSelector", "nz-demo-collapse-accordion", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-accordion <name>", "nzComponentName", "NzDemoCollapseAccordionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9762\u677F\u5D4C\u5957", "nzSelector", "nz-demo-collapse-mix", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-mix <name>", "nzComponentName", "NzDemoCollapseMixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7B80\u6D01\u98CE\u683C", "nzSelector", "nz-demo-collapse-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-borderless <name>", "nzComponentName", "NzDemoCollapseBorderlessComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9762\u677F", "nzSelector", "nz-demo-collapse-custom", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-custom <name>", "nzComponentName", "NzDemoCollapseCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9690\u85CF\u7BAD\u5934", "nzSelector", "nz-demo-collapse-noarrow", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-noarrow <name>", "nzComponentName", "NzDemoCollapseNoarrowComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u989D\u5916\u8282\u70B9", "nzSelector", "nz-demo-collapse-extra", "nzGenerateCommand", "ng g ng-zorro-antd:collapse-extra <name>", "nzComponentName", "NzDemoCollapseExtraComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-collapse"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-collapse'", 1, "anchor"], ["id", "nz-collapse-panel"], ["onclick", "window.location.hash = 'nz-collapse-panel'", 1, "anchor"]], template: function NzDemoCollapseZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2298,19 +2296,19 @@ class NzDemoCollapseZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-basic")("nzLink", "components-collapse-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-basic")("nzLink", "components-collapse-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-accordion")("nzLink", "components-collapse-demo-accordion")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/accordion.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-accordion")("nzLink", "components-collapse-demo-accordion")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/accordion.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-mix")("nzLink", "components-collapse-demo-mix")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/mix.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-mix")("nzLink", "components-collapse-demo-mix")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/mix.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-borderless")("nzLink", "components-collapse-demo-borderless")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/borderless.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-borderless")("nzLink", "components-collapse-demo-borderless")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/borderless.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-custom")("nzLink", "components-collapse-demo-custom")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/custom.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-custom")("nzLink", "components-collapse-demo-custom")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/custom.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-noarrow")("nzLink", "components-collapse-demo-noarrow")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/noarrow.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-noarrow")("nzLink", "components-collapse-demo-noarrow")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/noarrow.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-extra")("nzLink", "components-collapse-demo-extra")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/extra.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-collapse-demo-extra")("nzLink", "components-collapse-demo-extra")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/collapse/demo/extra.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_7__["NzDemoCollapseBasicComponent"], _accordion__WEBPACK_IMPORTED_MODULE_8__["NzDemoCollapseAccordionComponent"], _mix__WEBPACK_IMPORTED_MODULE_9__["NzDemoCollapseMixComponent"], _borderless__WEBPACK_IMPORTED_MODULE_10__["NzDemoCollapseBorderlessComponent"], _custom__WEBPACK_IMPORTED_MODULE_11__["NzDemoCollapseCustomComponent"], _noarrow__WEBPACK_IMPORTED_MODULE_12__["NzDemoCollapseNoarrowComponent"], _extra__WEBPACK_IMPORTED_MODULE_13__["NzDemoCollapseExtraComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCollapseZhComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],

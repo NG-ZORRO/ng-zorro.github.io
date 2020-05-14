@@ -226,7 +226,7 @@ function NzListComponent_div_7_div_1_Template(rf, ctx) { if (rf & 1) {
     const item_r15 = ctx.$implicit;
     const index_r16 = ctx.index;
     const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", ctx_r14.nzGrid.span)("nzXs", ctx_r14.nzGrid.xs)("nzSm", ctx_r14.nzGrid.sm)("nzMd", ctx_r14.nzGrid.md)("nzLg", ctx_r14.nzGrid.lg)("nzXl", ctx_r14.nzGrid.xl)("nzXXl", ctx_r14.nzGrid.xxl);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", ctx_r14.nzGrid.span || null)("nzXs", ctx_r14.nzGrid.xs || null)("nzSm", ctx_r14.nzGrid.sm || null)("nzMd", ctx_r14.nzGrid.md || null)("nzLg", ctx_r14.nzGrid.lg || null)("nzXl", ctx_r14.nzGrid.xl || null)("nzXXl", ctx_r14.nzGrid.xxl || null);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx_r14.nzRenderItem)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](9, _c4, item_r15, index_r16));
 } }
@@ -236,7 +236,7 @@ function NzListComponent_div_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", ctx_r4.nzGrid.gutter);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", ctx_r4.nzGrid.gutter || null);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.nzDataSource);
 } }
@@ -288,7 +288,7 @@ function NzListItemComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](1);
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", (ctx_r1.nzActions == null ? null : ctx_r1.nzActions.length) > 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.nzActions && ctx_r1.nzActions.length > 0);
 } }
 function NzListItemComponent_ng_template_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
@@ -563,7 +563,7 @@ class NzListItemActionsComponent {
                  * @param {?} action
                  * @return {?}
                  */
-                action => action.templateRef));
+                action => (/** @type {?} */ (action.templateRef))));
             }
             this.cdr.markForCheck();
         }));
@@ -660,7 +660,9 @@ class NzListComponent {
     constructor() {
         this.nzBordered = false;
         this.nzItemLayout = 'horizontal';
+        this.nzRenderItem = null;
         this.nzLoading = false;
+        this.nzLoadMore = null;
         this.nzSize = 'default';
         this.nzSplit = true;
         this.hasSomethingAfterLastItem = false;
@@ -717,7 +719,7 @@ NzListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.nzListLoadMoreDirective = _t.first);
     } }, hostVars: 16, hostBindings: function NzListComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-list", true)("ant-list-vertical", ctx.nzItemLayout === "vertical")("ant-list-lg", ctx.nzSize === "large")("ant-list-sm", ctx.nzSize === "small")("ant-list-split", ctx.nzSplit)("ant-list-bordered", ctx.nzBordered)("ant-list-loading", ctx.nzLoading)("ant-list-something-after-last-item", ctx.hasSomethingAfterLastItem);
-    } }, inputs: { nzBordered: "nzBordered", nzItemLayout: "nzItemLayout", nzLoading: "nzLoading", nzSize: "nzSize", nzSplit: "nzSplit", nzDataSource: "nzDataSource", nzGrid: "nzGrid", nzHeader: "nzHeader", nzFooter: "nzFooter", nzRenderItem: "nzRenderItem", nzLoadMore: "nzLoadMore", nzPagination: "nzPagination", nzNoResult: "nzNoResult" }, exportAs: ["nzList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 16, vars: 9, consts: [["itemsTpl", ""], [4, "ngIf"], [3, "nzSpinning"], [3, "min-height", 4, "ngIf"], ["nz-row", "", 3, "nzGutter", 4, "ngIf", "ngIfElse"], [3, "nzNoResult", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-list-items"], [4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "nzStringTemplateOutlet"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl"], [3, "nzNoResult"]], template: function NzListComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzBordered: "nzBordered", nzItemLayout: "nzItemLayout", nzRenderItem: "nzRenderItem", nzLoading: "nzLoading", nzLoadMore: "nzLoadMore", nzSize: "nzSize", nzSplit: "nzSplit", nzDataSource: "nzDataSource", nzGrid: "nzGrid", nzHeader: "nzHeader", nzFooter: "nzFooter", nzPagination: "nzPagination", nzNoResult: "nzNoResult" }, exportAs: ["nzList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 16, vars: 9, consts: [["itemsTpl", ""], [4, "ngIf"], [3, "nzSpinning"], [3, "min-height", 4, "ngIf"], ["nz-row", "", 3, "nzGutter", 4, "ngIf", "ngIfElse"], [3, "nzNoResult", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-list-items"], [4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "nzStringTemplateOutlet"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl"], [3, "nzNoResult"]], template: function NzListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzListComponent_ng_template_0_Template, 3, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzListComponent_nz_list_header_2_Template, 2, 1, "nz-list-header", 1);
@@ -807,6 +809,7 @@ class NzListItemComponent {
         this.parentComp = parentComp;
         this.cdr = cdr;
         this.nzActions = [];
+        this.nzExtra = null;
         this.nzNoFlex = false;
         renderer.addClass(elementRef.nativeElement, 'ant-list-item');
     }
@@ -846,7 +849,7 @@ NzListItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.listItemExtraDirective = _t.first);
     } }, hostVars: 2, hostBindings: function NzListItemComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-list-item-no-flex", ctx.nzNoFlex);
-    } }, inputs: { nzActions: "nzActions", nzNoFlex: "nzNoFlex", nzContent: "nzContent", nzExtra: "nzExtra" }, exportAs: ["nzListItem"], ngContentSelectors: _c8, decls: 9, vars: 2, consts: [["actionsTpl", ""], ["contentTpl", ""], ["extraTpl", ""], ["simpleTpl", ""], [4, "ngIf", "ngIfElse"], ["nz-list-item-actions", "", 3, "nzActions", 4, "ngIf"], ["nz-list-item-actions", "", 3, "nzActions"], [4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "ngTemplateOutlet"], [1, "ant-list-item-main"]], template: function NzListItemComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzActions: "nzActions", nzExtra: "nzExtra", nzNoFlex: "nzNoFlex", nzContent: "nzContent" }, exportAs: ["nzListItem"], ngContentSelectors: _c8, decls: 9, vars: 2, consts: [["actionsTpl", ""], ["contentTpl", ""], ["extraTpl", ""], ["simpleTpl", ""], [4, "ngIf", "ngIfElse"], ["nz-list-item-actions", "", 3, "nzActions", 4, "ngIf"], ["nz-list-item-actions", "", 3, "nzActions"], [4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "ngTemplateOutlet"], [1, "ant-list-item-main"]], template: function NzListItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzListItemComponent_ng_template_0_Template, 2, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzListItemComponent_ng_template_2_Template, 3, 1, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
@@ -1111,16 +1114,16 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
     <nz-spin [nzSpinning]="nzLoading">
       <ng-container>
         <div *ngIf="nzLoading && nzDataSource && nzDataSource.length === 0" [style.min-height.px]="53"></div>
-        <div *ngIf="nzGrid && nzDataSource; else itemsTpl" nz-row [nzGutter]="nzGrid.gutter">
+        <div *ngIf="nzGrid && nzDataSource; else itemsTpl" nz-row [nzGutter]="nzGrid.gutter || null">
           <div
             nz-col
-            [nzSpan]="nzGrid.span"
-            [nzXs]="nzGrid.xs"
-            [nzSm]="nzGrid.sm"
-            [nzMd]="nzGrid.md"
-            [nzLg]="nzGrid.lg"
-            [nzXl]="nzGrid.xl"
-            [nzXXl]="nzGrid.xxl"
+            [nzSpan]="nzGrid.span || null"
+            [nzXs]="nzGrid.xs || null"
+            [nzSm]="nzGrid.sm || null"
+            [nzMd]="nzGrid.md || null"
+            [nzLg]="nzGrid.lg || null"
+            [nzXl]="nzGrid.xl || null"
+            [nzXXl]="nzGrid.xxl || null"
             *ngFor="let item of nzDataSource; let index = index"
           >
             <ng-template [ngTemplateOutlet]="nzRenderItem" [ngTemplateOutletContext]="{ $implicit: item, index: index }"></ng-template>
@@ -1162,7 +1165,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzItemLayout: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzRenderItem: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzLoading: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzLoadMore: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzSize: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -1175,10 +1182,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
         }], nzHeader: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzFooter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzRenderItem: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzLoadMore: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzPagination: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -1201,7 +1204,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 exportAs: 'nzListItem',
                 template: `
     <ng-template #actionsTpl>
-      <ul nz-list-item-actions *ngIf="nzActions?.length > 0" [nzActions]="nzActions"></ul>
+      <ul nz-list-item-actions *ngIf="nzActions && nzActions.length > 0" [nzActions]="nzActions"></ul>
       <ng-content select="nz-list-item-actions, [nz-list-item-actions]"></ng-content>
     </ng-template>
     <ng-template #contentTpl>
@@ -1238,14 +1241,14 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }, { type: NzListComponent }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { nzActions: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzExtra: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzNoFlex: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }, {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["HostBinding"],
             args: ['class.ant-list-item-no-flex']
         }], nzContent: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzExtra: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], listItemExtraDirective: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"],

@@ -112,7 +112,7 @@ class NzInputNumberComponent {
             val = `${this.getValidValue(val)}`;
         }
         else {
-            val = this.value;
+            val = (/** @type {?} */ (this.value));
         }
         return this.toNumber(val);
     }
@@ -310,7 +310,7 @@ class NzInputNumberComponent {
             return;
         }
         /** @type {?} */
-        const value = this.getCurrentValidValue(this.parsedValue) || 0;
+        const value = this.getCurrentValidValue((/** @type {?} */ (this.parsedValue))) || 0;
         /** @type {?} */
         let val = 0;
         if (type === 'up') {
@@ -398,7 +398,7 @@ class NzInputNumberComponent {
             this.stop();
         }
         else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"]) {
-            this.updateDisplayValue(this.value);
+            this.updateDisplayValue((/** @type {?} */ (this.value)));
         }
     }
     /**
@@ -456,7 +456,7 @@ class NzInputNumberComponent {
         focusOrigin => {
             if (!focusOrigin) {
                 this.isFocused = false;
-                this.updateDisplayValue(this.value);
+                this.updateDisplayValue((/** @type {?} */ (this.value)));
                 this.nzBlur.emit();
                 Promise.resolve().then((/**
                  * @return {?}
@@ -476,7 +476,7 @@ class NzInputNumberComponent {
     ngOnChanges(changes) {
         if (changes.nzFormatter && !changes.nzFormatter.isFirstChange()) {
             /** @type {?} */
-            const validValue = this.getCurrentValidValue(this.parsedValue);
+            const validValue = this.getCurrentValidValue((/** @type {?} */ (this.parsedValue)));
             this.setValue(validValue);
             this.updateDisplayValue(validValue);
         }

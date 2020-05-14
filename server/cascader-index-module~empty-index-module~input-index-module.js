@@ -930,7 +930,12 @@ class NzCascaderComponent {
         this.nzDisabled = false;
         this.nzExpandTrigger = 'click';
         this.nzValueProperty = 'value';
+        this.nzLabelRender = null;
         this.nzLabelProperty = 'label';
+        this.nzSize = 'default';
+        this.nzShowSearch = false;
+        this.nzPlaceHolder = '';
+        this.nzMenuStyle = null;
         this.nzMouseEnterDelay = 150; // ms
         // ms
         this.nzMouseLeaveDelay = 150; // ms
@@ -957,6 +962,8 @@ class NzCascaderComponent {
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_10__["Subject"]();
         this.inputString = '';
         this.isOpening = false;
+        this.delayMenuTimer = null;
+        this.delaySelectTimer = null;
         this.el = elementRef.nativeElement;
         this.cascaderService.withComponent(this);
         renderer.addClass(elementRef.nativeElement, 'ant-cascader');
@@ -1651,7 +1658,7 @@ NzCascaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("tabIndex", "0");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-cascader-lg", ctx.nzSize === "large")("ant-cascader-sm", ctx.nzSize === "small")("ant-cascader-picker-disabled", ctx.nzDisabled)("ant-cascader-picker-open", ctx.menuVisible)("ant-cascader-picker-with-value", !!ctx.inputValue)("ant-cascader-focused", ctx.isFocused);
-    } }, inputs: { nzOptionRender: "nzOptionRender", nzShowInput: "nzShowInput", nzShowArrow: "nzShowArrow", nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzChangeOnSelect: "nzChangeOnSelect", nzDisabled: "nzDisabled", nzExpandTrigger: "nzExpandTrigger", nzValueProperty: "nzValueProperty", nzLabelProperty: "nzLabelProperty", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzTriggerAction: "nzTriggerAction", nzOptions: "nzOptions", nzColumnClassName: "nzColumnClassName", nzLabelRender: "nzLabelRender", nzNotFoundContent: "nzNotFoundContent", nzSize: "nzSize", nzShowSearch: "nzShowSearch", nzPlaceHolder: "nzPlaceHolder", nzMenuClassName: "nzMenuClassName", nzMenuStyle: "nzMenuStyle", nzChangeOn: "nzChangeOn", nzLoadData: "nzLoadData" }, outputs: { nzVisibleChange: "nzVisibleChange", nzSelectionChange: "nzSelectionChange", nzSelect: "nzSelect", nzClear: "nzClear" }, exportAs: ["nzCascader"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
+    } }, inputs: { nzOptionRender: "nzOptionRender", nzShowInput: "nzShowInput", nzShowArrow: "nzShowArrow", nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzChangeOnSelect: "nzChangeOnSelect", nzDisabled: "nzDisabled", nzExpandTrigger: "nzExpandTrigger", nzValueProperty: "nzValueProperty", nzLabelRender: "nzLabelRender", nzLabelProperty: "nzLabelProperty", nzSize: "nzSize", nzShowSearch: "nzShowSearch", nzPlaceHolder: "nzPlaceHolder", nzMenuStyle: "nzMenuStyle", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzTriggerAction: "nzTriggerAction", nzOptions: "nzOptions", nzColumnClassName: "nzColumnClassName", nzNotFoundContent: "nzNotFoundContent", nzMenuClassName: "nzMenuClassName", nzChangeOn: "nzChangeOn", nzLoadData: "nzLoadData" }, outputs: { nzVisibleChange: "nzVisibleChange", nzSelectionChange: "nzSelectionChange", nzSelect: "nzSelect", nzClear: "nzClear" }, exportAs: ["nzCascader"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
                 useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(( /**
@@ -1748,7 +1755,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzCascaderComponent.prototype, "nzDisabled", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'default'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
 ], NzCascaderComponent.prototype, "nzSize", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzCascaderOptionComponent, [{
@@ -1952,7 +1959,17 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzValueProperty: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzLabelRender: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzLabelProperty: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzSize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzShowSearch: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzPlaceHolder: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzMenuStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzMouseEnterDelay: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
@@ -1996,19 +2013,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             args: [NzCascaderOptionComponent]
         }], nzColumnClassName: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzLabelRender: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzNotFoundContent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzShowSearch: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzPlaceHolder: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzMenuClassName: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzMenuStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzChangeOn: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]

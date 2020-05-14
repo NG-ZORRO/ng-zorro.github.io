@@ -180,7 +180,28 @@ class NzTreeNode {
      * @param {?=} service
      */
     constructor(option, parent = null, service = null) {
+        this._title = '';
         this.level = 0;
+        // Parent Node
+        this.parentNode = null;
+        this._icon = '';
+        this._children = [];
+        this._isLeaf = false;
+        this._isChecked = false;
+        /**
+         * @deprecated Maybe removed in next major version, use isChecked instead
+         */
+        this._isAllChecked = false;
+        this._isSelectable = false;
+        this._isDisabled = false;
+        this._isDisableCheckbox = false;
+        this._isExpanded = false;
+        this._isHalfChecked = false;
+        this._isSelected = false;
+        this._isLoading = false;
+        this.canHide = false;
+        this.isMatched = false;
+        this.service = null;
         if (option instanceof NzTreeNode) {
             return option;
         }
@@ -601,7 +622,7 @@ class NzTreeNode {
                      * @param {?} v
                      * @return {?}
                      */
-                    v => v.key)));
+                    v => (/** @type {?} */ (v.key)))));
                     break;
             }
         }
@@ -1933,11 +1954,11 @@ class NzTreeIndentComponent {
     unitMapOfClass(index) {
         return {
             [`ant-tree-indent-unit`]: !this.nzSelectMode,
-            [`ant-tree-indent-unit-start`]: !this.nzSelectMode && this.nzIsStart[index + 1],
-            [`ant-tree-indent-unit-end`]: !this.nzSelectMode && this.nzIsEnd[index + 1],
+            [`ant-tree-indent-unit-start`]: !this.nzSelectMode && (/** @type {?} */ (this.nzIsStart))[index + 1],
+            [`ant-tree-indent-unit-end`]: !this.nzSelectMode && (/** @type {?} */ (this.nzIsEnd))[index + 1],
             [`ant-select-tree-indent-unit`]: this.nzSelectMode,
-            [`ant-select-tree-indent-unit-start`]: this.nzSelectMode && this.nzIsStart[index + 1],
-            [`ant-select-tree-indent-unit-end`]: this.nzSelectMode && this.nzIsEnd[index + 1]
+            [`ant-select-tree-indent-unit-start`]: this.nzSelectMode && (/** @type {?} */ (this.nzIsStart))[index + 1],
+            [`ant-select-tree-indent-unit-end`]: this.nzSelectMode && (/** @type {?} */ (this.nzIsEnd))[index + 1]
         };
     }
     /**
@@ -2012,7 +2033,7 @@ class NzTreeNodeSwitcherComponent {
      * @return {?}
      */
     get isShowLineIcon() {
-        return !this.isLeaf && this.nzShowLine;
+        return !this.isLeaf && !!this.nzShowLine;
     }
     /**
      * @return {?}
@@ -2024,7 +2045,7 @@ class NzTreeNodeSwitcherComponent {
      * @return {?}
      */
     get isSwitcherOpen() {
-        return this.isExpanded && !this.isLeaf;
+        return !!this.isExpanded && !this.isLeaf;
     }
     /**
      * @return {?}
@@ -2064,6 +2085,7 @@ if (false) {}
  */
 class NzTreeNodeTitleComponent {
     constructor() {
+        this.treeTemplate = null;
         this.selectMode = false;
     }
     /**
@@ -2095,7 +2117,7 @@ NzTreeNodeTitleComponent.ɵfac = function NzTreeNodeTitleComponent_Factory(t) { 
 NzTreeNodeTitleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzTreeNodeTitleComponent, selectors: [["nz-tree-node-title"]], hostVars: 21, hostBindings: function NzTreeNodeTitleComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵattribute"]("title", ctx.title)("draggable", ctx.canDraggable)("aria-grabbed", ctx.canDraggable);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("draggable", ctx.canDraggable)("ant-select-tree-node-content-wrapper", ctx.selectMode)("ant-select-tree-node-content-wrapper-open", ctx.selectMode && ctx.isSwitcherOpen)("ant-select-tree-node-content-wrapper-close", ctx.selectMode && ctx.isSwitcherClose)("ant-select-tree-node-selected", ctx.selectMode && ctx.isSelected)("ant-tree-node-content-wrapper", !ctx.selectMode)("ant-tree-node-content-wrapper-open", !ctx.selectMode && ctx.isSwitcherOpen)("ant-tree-node-content-wrapper-close", !ctx.selectMode && ctx.isSwitcherClose)("ant-tree-node-selected", !ctx.selectMode && ctx.isSelected);
-    } }, inputs: { selectMode: "selectMode", searchValue: "searchValue", treeTemplate: "treeTemplate", draggable: "draggable", showIcon: "showIcon", context: "context", icon: "icon", title: "title", isLoading: "isLoading", isSelected: "isSelected", isDisabled: "isDisabled", isMatched: "isMatched", isExpanded: "isExpanded", isLeaf: "isLeaf" }, decls: 2, vars: 6, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngIf"], [3, "ant-tree-icon__open", "ant-tree-icon__close", "ant-tree-icon_loading", "ant-select-tree-iconEle", "ant-tree-iconEle", 4, "ngIf"], [1, "ant-tree-title", 3, "innerHTML"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["nz-icon", "", 3, "nzType"]], template: function NzTreeNodeTitleComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { treeTemplate: "treeTemplate", selectMode: "selectMode", searchValue: "searchValue", draggable: "draggable", showIcon: "showIcon", context: "context", icon: "icon", title: "title", isLoading: "isLoading", isSelected: "isSelected", isDisabled: "isDisabled", isMatched: "isMatched", isExpanded: "isExpanded", isLeaf: "isLeaf" }, decls: 2, vars: 6, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "ngIf"], [3, "ant-tree-icon__open", "ant-tree-icon__close", "ant-tree-icon_loading", "ant-select-tree-iconEle", "ant-tree-iconEle", 4, "ngIf"], [1, "ant-tree-title", 3, "innerHTML"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["nz-icon", "", 3, "nzType"]], template: function NzTreeNodeTitleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzTreeNodeTitleComponent_ng_template_0_Template, 0, 0, "ng-template", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzTreeNodeTitleComponent_ng_container_1_Template, 4, 7, "ng-container", 1);
     } if (rf & 2) {
@@ -2142,11 +2164,22 @@ class NzTreeNodeComponent {
         this.elementRef = elementRef;
         this.cdr = cdr;
         this.noAnimation = noAnimation;
+        /**
+         * for global property
+         */
+        this.icon = '';
+        this.title = '';
+        this.isLoading = false;
+        this.isSelected = false;
+        this.isDisabled = false;
+        this.isMatched = false;
         this.nzHideUnMatched = false;
         this.nzNoAnimation = false;
         this.nzSelectMode = false;
         this.nzShowIcon = false;
+        this.nzTreeTemplate = null;
         this.nzSearchValue = '';
+        this.nzDraggable = false;
         this.nzClick = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzDblClick = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzContextMenu = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
@@ -2509,7 +2542,7 @@ NzTreeNodeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefi
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("display", ctx.displayStyle);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-select-tree-treenode", ctx.nzSelectMode)("ant-select-tree-treenode-disabled", ctx.nzSelectMode && ctx.isDisabled)("ant-select-tree-treenode-switcher-open", ctx.nzSelectMode && ctx.isSwitcherOpen)("ant-select-tree-treenode-switcher-close", ctx.nzSelectMode && ctx.isSwitcherClose)("ant-select-tree-treenode-checkbox-checked", ctx.nzSelectMode && ctx.isChecked)("ant-select-tree-treenode-checkbox-indeterminate", ctx.nzSelectMode && ctx.isHalfChecked)("ant-select-tree-treenode-selected", ctx.nzSelectMode && ctx.isSelected)("ant-select-tree-treenode-loading", ctx.nzSelectMode && ctx.isLoading)("ant-tree-treenode", !ctx.nzSelectMode)("ant-tree-treenode-disabled", !ctx.nzSelectMode && ctx.isDisabled)("ant-tree-treenode-switcher-open", !ctx.nzSelectMode && ctx.isSwitcherOpen)("ant-tree-treenode-switcher-close", !ctx.nzSelectMode && ctx.isSwitcherClose)("ant-tree-treenode-checkbox-checked", !ctx.nzSelectMode && ctx.isChecked)("ant-tree-treenode-checkbox-indeterminate", !ctx.nzSelectMode && ctx.isHalfChecked)("ant-tree-treenode-selected", !ctx.nzSelectMode && ctx.isSelected)("ant-tree-treenode-loading", !ctx.nzSelectMode && ctx.isLoading);
-    } }, inputs: { nzHideUnMatched: "nzHideUnMatched", nzNoAnimation: "nzNoAnimation", nzSelectMode: "nzSelectMode", nzShowIcon: "nzShowIcon", nzSearchValue: "nzSearchValue", icon: "icon", title: "title", isLoading: "isLoading", isSelected: "isSelected", isDisabled: "isDisabled", isMatched: "isMatched", isExpanded: "isExpanded", isLeaf: "isLeaf", isChecked: "isChecked", isHalfChecked: "isHalfChecked", isDisableCheckbox: "isDisableCheckbox", isSelectable: "isSelectable", canHide: "canHide", isStart: "isStart", isEnd: "isEnd", nzTreeNode: "nzTreeNode", nzShowLine: "nzShowLine", nzShowExpand: "nzShowExpand", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzExpandedIcon: "nzExpandedIcon", nzTreeTemplate: "nzTreeTemplate", nzBeforeDrop: "nzBeforeDrop", nzDraggable: "nzDraggable" }, outputs: { nzClick: "nzClick", nzDblClick: "nzDblClick", nzContextMenu: "nzContextMenu", nzCheckBoxChange: "nzCheckBoxChange", nzExpandChange: "nzExpandChange", nzOnDragStart: "nzOnDragStart", nzOnDragEnter: "nzOnDragEnter", nzOnDragOver: "nzOnDragOver", nzOnDragLeave: "nzOnDragLeave", nzOnDrop: "nzOnDrop", nzOnDragEnd: "nzOnDragEnd" }, exportAs: ["nzTreeNode"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 20, consts: [[3, "nzTreeLevel", "nzSelectMode", "nzIsStart", "nzIsEnd"], [3, "nzShowExpand", "nzShowLine", "nzExpandedIcon", "nzSelectMode", "context", "isLeaf", "isExpanded", "isLoading", "click", 4, "ngIf"], [3, "nzSelectMode", "isChecked", "isHalfChecked", "isDisabled", "isDisableCheckbox", "click", 4, "ngIf"], [3, "icon", "title", "isLoading", "isSelected", "isDisabled", "isMatched", "isExpanded", "isLeaf", "searchValue", "treeTemplate", "draggable", "showIcon", "selectMode", "context", "dblclick", "click", "contextmenu"], [3, "nzShowExpand", "nzShowLine", "nzExpandedIcon", "nzSelectMode", "context", "isLeaf", "isExpanded", "isLoading", "click"], [3, "nzSelectMode", "isChecked", "isHalfChecked", "isDisabled", "isDisableCheckbox", "click"]], template: function NzTreeNodeComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { icon: "icon", title: "title", isLoading: "isLoading", isSelected: "isSelected", isDisabled: "isDisabled", isMatched: "isMatched", nzHideUnMatched: "nzHideUnMatched", nzNoAnimation: "nzNoAnimation", nzSelectMode: "nzSelectMode", nzShowIcon: "nzShowIcon", nzTreeTemplate: "nzTreeTemplate", nzSearchValue: "nzSearchValue", nzDraggable: "nzDraggable", isExpanded: "isExpanded", isLeaf: "isLeaf", isChecked: "isChecked", isHalfChecked: "isHalfChecked", isDisableCheckbox: "isDisableCheckbox", isSelectable: "isSelectable", canHide: "canHide", isStart: "isStart", isEnd: "isEnd", nzTreeNode: "nzTreeNode", nzShowLine: "nzShowLine", nzShowExpand: "nzShowExpand", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzExpandedIcon: "nzExpandedIcon", nzBeforeDrop: "nzBeforeDrop" }, outputs: { nzClick: "nzClick", nzDblClick: "nzDblClick", nzContextMenu: "nzContextMenu", nzCheckBoxChange: "nzCheckBoxChange", nzExpandChange: "nzExpandChange", nzOnDragStart: "nzOnDragStart", nzOnDragEnter: "nzOnDragEnter", nzOnDragOver: "nzOnDragOver", nzOnDragLeave: "nzOnDragLeave", nzOnDrop: "nzOnDrop", nzOnDragEnd: "nzOnDragEnd" }, exportAs: ["nzTreeNode"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 4, vars: 20, consts: [[3, "nzTreeLevel", "nzSelectMode", "nzIsStart", "nzIsEnd"], [3, "nzShowExpand", "nzShowLine", "nzExpandedIcon", "nzSelectMode", "context", "isLeaf", "isExpanded", "isLoading", "click", 4, "ngIf"], [3, "nzSelectMode", "isChecked", "isHalfChecked", "isDisabled", "isDisableCheckbox", "click", 4, "ngIf"], [3, "icon", "title", "isLoading", "isSelected", "isDisabled", "isMatched", "isExpanded", "isLeaf", "searchValue", "treeTemplate", "draggable", "showIcon", "selectMode", "context", "dblclick", "click", "contextmenu"], [3, "nzShowExpand", "nzShowLine", "nzExpandedIcon", "nzSelectMode", "context", "isLeaf", "isExpanded", "isLoading", "click"], [3, "nzSelectMode", "isChecked", "isHalfChecked", "isDisabled", "isDisableCheckbox", "click"]], template: function NzTreeNodeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "nz-tree-indent", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzTreeNodeComponent_nz_tree_node_switcher_1_Template, 1, 8, "nz-tree-node-switcher", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzTreeNodeComponent_nz_tree_node_checkbox_2_Template, 1, 5, "nz-tree-node-checkbox", 2);
@@ -2655,6 +2688,9 @@ class NzTreeComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_7
         this.nzConfigService = nzConfigService;
         this.cdr = cdr;
         this.noAnimation = noAnimation;
+        this.nzShowIcon = false;
+        this.nzHideUnMatched = false;
+        this.nzBlockNode = false;
         this.nzExpandAll = false;
         this.nzSelectMode = false;
         this.nzCheckStrictly = false;
@@ -2667,7 +2703,7 @@ class NzTreeComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_7
         this.nzVirtualItemSize = 28;
         this.nzVirtualMaxBufferPx = 500;
         this.nzVirtualMinBufferPx = 28;
-        this.nzVirtualHeight = false;
+        this.nzVirtualHeight = null;
         this.nzData = [];
         this.nzExpandedKeys = [];
         this.nzSelectedKeys = [];
@@ -2767,7 +2803,7 @@ class NzTreeComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_7
         if (nzSearchValue) {
             if (!(nzSearchValue.firstChange && !this.nzSearchValue)) {
                 useDefaultExpandedKeys = false;
-                this.handleSearchValue(this.nzSearchValue, this.nzSearchFunc);
+                this.handleSearchValue(nzSearchValue.currentValue, this.nzSearchFunc);
                 this.nzSearchValueChange.emit(this.nzTreeService.formatEvent('search', null, null));
             }
         }
@@ -2999,7 +3035,7 @@ NzTreeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.cdkVirtualScrollViewport = _t.first);
     } }, hostVars: 18, hostBindings: function NzTreeComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-select-tree", ctx.nzSelectMode)("ant-select-tree-show-line", ctx.nzSelectMode && ctx.nzShowLine)("ant-select-tree-icon-hide", ctx.nzSelectMode && !ctx.nzShowIcon)("ant-select-tree-block-node", ctx.nzSelectMode && ctx.nzBlockNode)("ant-tree", !ctx.nzSelectMode)("ant-tree-show-line", !ctx.nzSelectMode && ctx.nzShowLine)("ant-tree-icon-hide", !ctx.nzSelectMode && !ctx.nzShowIcon)("ant-tree-block-node", !ctx.nzSelectMode && ctx.nzBlockNode)("draggable-tree", ctx.nzDraggable);
-    } }, inputs: { nzExpandAll: "nzExpandAll", nzSelectMode: "nzSelectMode", nzCheckStrictly: "nzCheckStrictly", nzShowExpand: "nzShowExpand", nzShowLine: "nzShowLine", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzDraggable: "nzDraggable", nzMultiple: "nzMultiple", nzVirtualItemSize: "nzVirtualItemSize", nzVirtualMaxBufferPx: "nzVirtualMaxBufferPx", nzVirtualMinBufferPx: "nzVirtualMinBufferPx", nzVirtualHeight: "nzVirtualHeight", nzData: "nzData", nzExpandedKeys: "nzExpandedKeys", nzSelectedKeys: "nzSelectedKeys", nzCheckedKeys: "nzCheckedKeys", nzShowIcon: "nzShowIcon", nzHideUnMatched: "nzHideUnMatched", nzBlockNode: "nzBlockNode", nzExpandedIcon: "nzExpandedIcon", nzTreeTemplate: "nzTreeTemplate", nzBeforeDrop: "nzBeforeDrop", nzSearchValue: "nzSearchValue", nzSearchFunc: "nzSearchFunc" }, outputs: { nzExpandedKeysChange: "nzExpandedKeysChange", nzSelectedKeysChange: "nzSelectedKeysChange", nzCheckedKeysChange: "nzCheckedKeysChange", nzSearchValueChange: "nzSearchValueChange", nzClick: "nzClick", nzDblClick: "nzDblClick", nzContextMenu: "nzContextMenu", nzCheckBoxChange: "nzCheckBoxChange", nzExpandChange: "nzExpandChange", nzOnDragStart: "nzOnDragStart", nzOnDragEnter: "nzOnDragEnter", nzOnDragOver: "nzOnDragOver", nzOnDragLeave: "nzOnDragLeave", nzOnDrop: "nzOnDrop", nzOnDragEnd: "nzOnDragEnd" }, exportAs: ["nzTree"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
+    } }, inputs: { nzShowIcon: "nzShowIcon", nzHideUnMatched: "nzHideUnMatched", nzBlockNode: "nzBlockNode", nzExpandAll: "nzExpandAll", nzSelectMode: "nzSelectMode", nzCheckStrictly: "nzCheckStrictly", nzShowExpand: "nzShowExpand", nzShowLine: "nzShowLine", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzDraggable: "nzDraggable", nzMultiple: "nzMultiple", nzVirtualItemSize: "nzVirtualItemSize", nzVirtualMaxBufferPx: "nzVirtualMaxBufferPx", nzVirtualMinBufferPx: "nzVirtualMinBufferPx", nzVirtualHeight: "nzVirtualHeight", nzData: "nzData", nzExpandedKeys: "nzExpandedKeys", nzSelectedKeys: "nzSelectedKeys", nzCheckedKeys: "nzCheckedKeys", nzExpandedIcon: "nzExpandedIcon", nzTreeTemplate: "nzTreeTemplate", nzBeforeDrop: "nzBeforeDrop", nzSearchValue: "nzSearchValue", nzSearchFunc: "nzSearchFunc" }, outputs: { nzExpandedKeysChange: "nzExpandedKeysChange", nzSelectedKeysChange: "nzSelectedKeysChange", nzCheckedKeysChange: "nzCheckedKeysChange", nzSearchValueChange: "nzSearchValueChange", nzClick: "nzClick", nzDblClick: "nzDblClick", nzContextMenu: "nzContextMenu", nzCheckBoxChange: "nzCheckBoxChange", nzExpandChange: "nzExpandChange", nzOnDragStart: "nzOnDragStart", nzOnDragEnter: "nzOnDragEnter", nzOnDragOver: "nzOnDragOver", nzOnDragLeave: "nzOnDragLeave", nzOnDrop: "nzOnDrop", nzOnDragEnd: "nzOnDragEnd" }, exportAs: ["nzTree"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
             NzTreeService,
             {
                 provide: ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_7__["NzTreeBaseService"],
@@ -3086,15 +3122,15 @@ NzTreeComponent.propDecorators = {
     nzOnDragEnd: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__metadata"])("design:type", Boolean)
 ], NzTreeComponent.prototype, "nzShowIcon", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__metadata"])("design:type", Boolean)
 ], NzTreeComponent.prototype, "nzHideUnMatched", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_8__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__metadata"])("design:type", Boolean)
 ], NzTreeComponent.prototype, "nzBlockNode", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
@@ -3292,11 +3328,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
                     '[class.ant-tree-node-selected]': `!selectMode && isSelected`
                 }
             }]
-    }], function () { return []; }, { selectMode: [{
+    }], function () { return []; }, { treeTemplate: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], selectMode: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], searchValue: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], treeTemplate: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], draggable: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -3396,7 +3432,19 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Host"]
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
-            }] }]; }, { nzHideUnMatched: [{
+            }] }]; }, { icon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], title: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], isLoading: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], isSelected: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], isDisabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], isMatched: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzHideUnMatched: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzNoAnimation: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -3404,7 +3452,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzShowIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzTreeTemplate: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzSearchValue: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzDraggable: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzClick: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
@@ -3428,18 +3480,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], nzOnDragEnd: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], icon: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], title: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], isLoading: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], isSelected: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], isDisabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], isMatched: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], isExpanded: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], isLeaf: [{
@@ -3470,11 +3510,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzExpandedIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzTreeTemplate: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzBeforeDrop: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzDraggable: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzTreeService, [{
@@ -3597,7 +3633,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Host"]
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
-            }] }]; }, { nzExpandAll: [{
+            }] }]; }, { nzShowIcon: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzHideUnMatched: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzBlockNode: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzExpandAll: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzSelectMode: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
@@ -3661,12 +3703,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], nzOnDragEnd: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], nzShowIcon: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzHideUnMatched: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzBlockNode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzExpandedIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzTreeTemplate: [{

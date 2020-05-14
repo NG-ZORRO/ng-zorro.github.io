@@ -544,11 +544,18 @@ class NzCarouselComponent {
         this.resizeService = resizeService;
         this.nzDragService = nzDragService;
         this.customStrategies = customStrategies;
+        this.nzEffect = 'scrollx';
+        this.nzEnableSwipe = true;
+        this.nzDots = true;
+        this.nzAutoPlay = false;
+        this.nzAutoPlaySpeed = 3000;
         this.nzTransitionSpeed = 500;
+        this._dotPosition = 'bottom';
         this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.activeIndex = 0;
         this.vertical = false;
+        this.transitionInProgress = null;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
         this.gestureRect = null;
         this.pointerDelta = null;
@@ -570,9 +577,10 @@ class NzCarouselComponent {
                  * @return {?}
                  */
                 delta => {
+                    var _a;
                     this.pointerDelta = delta;
                     this.isDragging = true;
-                    this.strategy.dragging(this.pointerDelta);
+                    (_a = this.strategy) === null || _a === void 0 ? void 0 : _a.dragging(this.pointerDelta);
                 }), (/**
                  * @return {?}
                  */
@@ -597,6 +605,7 @@ class NzCarouselComponent {
                 }));
             }
         });
+        this.nzDotPosition = 'bottom';
         this.renderer.addClass(elementRef.nativeElement, 'ant-carousel');
         this.el = elementRef.nativeElement;
     }
@@ -632,8 +641,8 @@ class NzCarouselComponent {
         if (!this.platform.isBrowser) {
             return;
         }
-        this.slickListEl = this.slickList.nativeElement;
-        this.slickTrackEl = this.slickTrack.nativeElement;
+        this.slickListEl = (/** @type {?} */ (this.slickList)).nativeElement;
+        this.slickTrackEl = (/** @type {?} */ (this.slickTrack)).nativeElement;
         this.carouselContents.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$)).subscribe((/**
          * @return {?}
          */
@@ -736,7 +745,7 @@ class NzCarouselComponent {
             const to = (index + length) % length;
             this.isTransiting = true;
             this.nzBeforeChange.emit({ from, to });
-            this.strategy.switch(this.activeIndex, index).subscribe((/**
+            (/** @type {?} */ (this.strategy)).switch(this.activeIndex, index).subscribe((/**
              * @return {?}
              */
             () => {
@@ -841,7 +850,7 @@ NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
     } }, hostVars: 2, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical);
-    } }, inputs: { nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender", nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1, 2);
@@ -885,23 +894,23 @@ NzCarouselComponent.propDecorators = {
     nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'scrollx'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String)
 ], NzCarouselComponent.prototype, "nzEffect", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzEnableSwipe", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzDots", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzAutoPlay", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 3000), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Number)
 ], NzCarouselComponent.prototype, "nzAutoPlaySpeed", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
@@ -909,7 +918,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Object)
 ], NzCarouselComponent.prototype, "nzTransitionSpeed", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'bottom'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String),
     Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:paramtypes", [String])
 ], NzCarouselComponent.prototype, "nzDotPosition", null);
@@ -971,7 +980,17 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
                 args: [NZ_CAROUSEL_CUSTOM_STRATEGIES]
-            }] }]; }, { nzTransitionSpeed: [{
+            }] }]; }, { nzEffect: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzEnableSwipe: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzDots: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzAutoPlay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzAutoPlaySpeed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzTransitionSpeed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzBeforeChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
@@ -989,16 +1008,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
             args: ['slickTrack', { static: false }]
         }], nzDotRender: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzEffect: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzEnableSwipe: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzDots: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzAutoPlay: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzAutoPlaySpeed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
 if (false) {}
@@ -1252,7 +1261,7 @@ class NzDemoCarouselEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 299, vars: 19, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "Position"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "Fade in"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "Scroll automatically"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Fade in", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Position", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Scroll automatically", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "customizing-transition-effects"], ["onclick", "window.location.hash = 'customizing-transition-effects'", 1, "anchor"]], template: function NzDemoCarouselEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 299, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "Position"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "Fade in"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "Scroll automatically"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Fade in", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Position", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Scroll automatically", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "customizing-transition-effects"], ["onclick", "window.location.hash = 'customizing-transition-effects'", 1, "anchor"]], template: function NzDemoCarouselEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1757,15 +1766,15 @@ class NzDemoCarouselEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-basic")("nzLink", "components-carousel-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-basic")("nzLink", "components-carousel-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-fade")("nzLink", "components-carousel-demo-fade")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/fade.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-fade")("nzLink", "components-carousel-demo-fade")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/fade.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-position")("nzLink", "components-carousel-demo-position")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/position.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-position")("nzLink", "components-carousel-demo-position")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/position.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-autoplay")("nzLink", "components-carousel-demo-autoplay")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/autoplay.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-autoplay")("nzLink", "components-carousel-demo-autoplay")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/autoplay.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselBasicComponent"], _fade__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselFadeComponent"], _position__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselPositionComponent"], _autoplay__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselAutoplayComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -2122,7 +2131,7 @@ class NzDemoCarouselZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 305, vars: 19, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "\u6E10\u663E"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "\u81EA\u52A8\u5207\u6362"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6E10\u663E", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u81EA\u52A8\u5207\u6362", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C"], ["onclick", "window.location.hash = '\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C'", 1, "anchor"]], template: function NzDemoCarouselZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 305, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "\u6E10\u663E"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "\u81EA\u52A8\u5207\u6362"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6E10\u663E", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u52A8\u5207\u6362", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C"], ["onclick", "window.location.hash = '\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C'", 1, "anchor"]], template: function NzDemoCarouselZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2636,15 +2645,15 @@ class NzDemoCarouselZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-basic")("nzLink", "components-carousel-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-basic")("nzLink", "components-carousel-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-fade")("nzLink", "components-carousel-demo-fade")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/fade.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-fade")("nzLink", "components-carousel-demo-fade")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/fade.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-position")("nzLink", "components-carousel-demo-position")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/position.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-position")("nzLink", "components-carousel-demo-position")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/position.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-autoplay")("nzLink", "components-carousel-demo-autoplay")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/autoplay.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-carousel-demo-autoplay")("nzLink", "components-carousel-demo-autoplay")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/demo/autoplay.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselBasicComponent"], _fade__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselFadeComponent"], _position__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselPositionComponent"], _autoplay__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselAutoplayComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselZhComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],

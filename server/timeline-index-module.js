@@ -5,7 +5,7 @@ exports.modules = {
 /*!*****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js ***!
   \*****************************************************************/
-/*! exports provided: NzTimelineComponent, NzTimelineItemComponent, NzTimelineModule */
+/*! exports provided: NzTimelineComponent, NzTimelineItemComponent, NzTimelineModule, TimelineService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13,6 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTimelineComponent", function() { return NzTimelineComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTimelineItemComponent", function() { return NzTimelineItemComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTimelineModule", function() { return NzTimelineModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimelineService", function() { return TimelineService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
@@ -30,10 +31,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * @fileoverview added by tsickle
- * Generated from: timeline-item.component.ts
+ * Generated from: timeline.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** @type {?} */
 
 
 
@@ -140,6 +140,25 @@ function NzTimelineComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r4.nzPending);
 } }
+class TimelineService {
+    constructor() {
+        this.check$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["ReplaySubject"](1);
+    }
+    /**
+     * @return {?}
+     */
+    markForCheck() {
+        this.check$.next();
+    }
+}
+if (false) {}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: timeline-item.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 const TimelineTimeDefaultColors = (/** @type {?} */ (['red', 'blue', 'green', 'grey', 'gray']));
 /**
  * @param {?=} color
@@ -155,9 +174,11 @@ function isDefaultColor(color) {
 class NzTimelineItemComponent {
     /**
      * @param {?} cdr
+     * @param {?} timelineService
      */
-    constructor(cdr) {
+    constructor(cdr, timelineService) {
         this.cdr = cdr;
+        this.timelineService = timelineService;
         this.nzColor = 'blue';
         this.isLast = false;
         this.borderColor = null;
@@ -167,6 +188,7 @@ class NzTimelineItemComponent {
      * @return {?}
      */
     ngOnChanges(changes) {
+        this.timelineService.markForCheck();
         if (changes.nzColor) {
             this.updateCustomColor();
         }
@@ -185,7 +207,7 @@ class NzTimelineItemComponent {
         this.borderColor = isDefaultColor(this.nzColor) ? null : this.nzColor;
     }
 }
-NzTimelineItemComponent.ɵfac = function NzTimelineItemComponent_Factory(t) { return new (t || NzTimelineItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+NzTimelineItemComponent.ɵfac = function NzTimelineItemComponent_Factory(t) { return new (t || NzTimelineItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
 NzTimelineItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineItemComponent, selectors: [["nz-timeline-item"], ["", "nz-timeline-item", ""]], viewQuery: function NzTimelineItemComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
@@ -197,7 +219,8 @@ NzTimelineItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
     } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzTimelineItemComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
+    { type: TimelineService }
 ];
 NzTimelineItemComponent.propDecorators = {
     template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: ['template', { static: false },] }],
@@ -239,7 +262,7 @@ NzTimelineItemComponent.propDecorators = {
     </ng-template>
   `
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { nzColor: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: TimelineService }]; }, { nzColor: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], template: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
@@ -259,9 +282,11 @@ const TimelineModes = (/** @type {?} */ (['left', 'alternate', 'right']));
 class NzTimelineComponent {
     /**
      * @param {?} cdr
+     * @param {?} timelineService
      */
-    constructor(cdr) {
+    constructor(cdr, timelineService) {
         this.cdr = cdr;
+        this.timelineService = timelineService;
         this.nzReverse = false;
         this.isPendingBoolean = false;
         this.timelineItems = [];
@@ -279,6 +304,17 @@ class NzTimelineComponent {
         if (nzPending) {
             this.isPendingBoolean = nzPending.currentValue === true;
         }
+    }
+    /**
+     * @return {?}
+     */
+    ngOnInit() {
+        this.timelineService.check$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe((/**
+         * @return {?}
+         */
+        () => {
+            this.cdr.markForCheck();
+        }));
     }
     /**
      * @return {?}
@@ -329,13 +365,13 @@ class NzTimelineComponent {
         this.cdr.markForCheck();
     }
 }
-NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
 NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineComponent, selectors: [["nz-timeline"]], contentQueries: function NzTimelineComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzTimelineItemComponent, false);
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.listOfItems = _t);
-    } }, inputs: { nzReverse: "nzReverse", nzMode: "nzMode", nzPending: "nzPending", nzPendingDot: "nzPendingDot" }, exportAs: ["nzTimeline"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 7, vars: 11, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzTimelineComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzReverse: "nzReverse", nzMode: "nzMode", nzPending: "nzPending", nzPendingDot: "nzPendingDot" }, exportAs: ["nzTimeline"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([TimelineService]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 7, vars: 11, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzTimelineComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzTimelineComponent_ng_container_1_Template, 1, 1, "ng-container", 1);
@@ -355,7 +391,8 @@ NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgTemplateOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzTimelineComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
+    { type: TimelineService }
 ];
 NzTimelineComponent.propDecorators = {
     listOfItems: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzTimelineItemComponent,] }],
@@ -371,6 +408,7 @@ NzTimelineComponent.propDecorators = {
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 preserveWhitespaces: false,
                 selector: 'nz-timeline',
+                providers: [TimelineService],
                 exportAs: 'nzTimeline',
                 template: `
     <ul
@@ -407,7 +445,7 @@ NzTimelineComponent.propDecorators = {
     <ng-content></ng-content>
   `
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { nzReverse: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: TimelineService }]; }, { nzReverse: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], listOfItems: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
@@ -838,7 +876,7 @@ class NzDemoTimelineEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 308, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "Color"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "Last node"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "Alternate"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "Custom"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "Right alternate"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Last node", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Custom", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Color", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Alternate", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "Right alternate", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 308, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "Color"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "Last node"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "Alternate"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "Custom"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "Right alternate"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Last node", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Color", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Alternate", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Right alternate", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1347,19 +1385,19 @@ class NzDemoTimelineEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-basic")("nzLink", "components-timeline-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-basic")("nzLink", "components-timeline-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-pending")("nzLink", "components-timeline-demo-pending")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/pending.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-pending")("nzLink", "components-timeline-demo-pending")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/pending.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-custom")("nzLink", "components-timeline-demo-custom")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/custom.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-custom")("nzLink", "components-timeline-demo-custom")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/custom.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-color")("nzLink", "components-timeline-demo-color")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/color.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-color")("nzLink", "components-timeline-demo-color")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/color.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-alternate")("nzLink", "components-timeline-demo-alternate")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/alternate.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-alternate")("nzLink", "components-timeline-demo-alternate")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/alternate.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-right")("nzLink", "components-timeline-demo-right")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/right.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-right")("nzLink", "components-timeline-demo-right")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/right.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelineBasicComponent"], _pending__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePendingComponent"], _custom__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineCustomComponent"], _color__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineColorComponent"], _alternate__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineAlternateComponent"], _right__WEBPACK_IMPORTED_MODULE_13__["NzDemoTimelineRightComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -1684,7 +1722,7 @@ class NzDemoTimelineZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 305, vars: 25, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "\u5706\u5708\u989C\u8272"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "\u4EA4\u66FF\u5C55\u73B0"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u5706\u5708\u989C\u8272", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u4EA4\u66FF\u5C55\u73B0", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], ["nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", "nzIframeHeight", "null", 3, "nzId", "nzLink", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 305, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "\u5706\u5708\u989C\u8272"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "\u4EA4\u66FF\u5C55\u73B0"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5706\u5708\u989C\u8272", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4EA4\u66FF\u5C55\u73B0", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2189,19 +2227,19 @@ class NzDemoTimelineZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-basic")("nzLink", "components-timeline-demo-basic")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/basic.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-basic")("nzLink", "components-timeline-demo-basic")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/basic.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-pending")("nzLink", "components-timeline-demo-pending")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/pending.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-pending")("nzLink", "components-timeline-demo-pending")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/pending.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-custom")("nzLink", "components-timeline-demo-custom")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/custom.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-custom")("nzLink", "components-timeline-demo-custom")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/custom.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXl", 12)("nzSpan", 24);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-color")("nzLink", "components-timeline-demo-color")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/color.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-color")("nzLink", "components-timeline-demo-color")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/color.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-alternate")("nzLink", "components-timeline-demo-alternate")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/alternate.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-alternate")("nzLink", "components-timeline-demo-alternate")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/alternate.md");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-right")("nzLink", "components-timeline-demo-right")("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/right.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-timeline-demo-right")("nzLink", "components-timeline-demo-right")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/demo/right.md");
     } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _basic__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelineBasicComponent"], _pending__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePendingComponent"], _custom__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineCustomComponent"], _color__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineColorComponent"], _alternate__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineAlternateComponent"], _right__WEBPACK_IMPORTED_MODULE_13__["NzDemoTimelineRightComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineZhComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],

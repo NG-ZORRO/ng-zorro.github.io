@@ -200,7 +200,10 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
         this.nzAllowClear = true;
         this.nzShowExpand = true;
         this.nzShowLine = false;
+        this.nzDropdownMatchSelectWidth = true;
         this.nzCheckable = false;
+        this.nzHideUnMatched = false;
+        this.nzShowIcon = false;
         this.nzShowSearch = false;
         this.nzDisabled = false;
         this.nzAsyncData = false;
@@ -209,12 +212,15 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
         this.nzCheckStrictly = false;
         this.nzNodes = [];
         this.nzOpen = false;
+        this.nzSize = 'default';
         this.nzPlaceHolder = '';
+        this.nzDropdownStyle = null;
         this.nzDisplayWith = (/**
          * @param {?} node
          * @return {?}
          */
         (node) => node.title);
+        this.nzMaxTagPlaceholder = null;
         this.nzOpenChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzCleared = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzRemoved = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
@@ -230,10 +236,15 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
         this.selectedNodes = [];
         this.expandedKeys = [];
         this.value = [];
+        this.onChange = (/**
+         * @param {?} _value
+         * @return {?}
+         */
+        _value => { });
         this.onTouched = (/**
          * @return {?}
          */
-        () => null);
+        () => { });
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-select');
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-tree-select');
     }
@@ -599,7 +610,7 @@ NzTreeSelectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzTreeSelectComponent_click_HostBindingHandler() { return ctx.trigger(); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-select-lg", ctx.nzSize === "large")("ant-select-sm", ctx.nzSize === "small")("ant-select-enabled", !ctx.nzDisabled)("ant-select-disabled", ctx.nzDisabled)("ant-select-single", !ctx.isMultiple)("ant-select-show-arrow", !ctx.isMultiple)("ant-select-show-search", !ctx.isMultiple)("ant-select-multiple", ctx.isMultiple)("ant-select-allow-clear", ctx.nzAllowClear)("ant-select-open", ctx.nzOpen);
-    } }, inputs: { nzAllowClear: "nzAllowClear", nzShowExpand: "nzShowExpand", nzShowLine: "nzShowLine", nzCheckable: "nzCheckable", nzShowSearch: "nzShowSearch", nzDisabled: "nzDisabled", nzAsyncData: "nzAsyncData", nzMultiple: "nzMultiple", nzDefaultExpandAll: "nzDefaultExpandAll", nzCheckStrictly: "nzCheckStrictly", nzNodes: "nzNodes", nzOpen: "nzOpen", nzPlaceHolder: "nzPlaceHolder", nzDisplayWith: "nzDisplayWith", nzExpandedKeys: "nzExpandedKeys", nzDropdownMatchSelectWidth: "nzDropdownMatchSelectWidth", nzHideUnMatched: "nzHideUnMatched", nzShowIcon: "nzShowIcon", nzExpandedIcon: "nzExpandedIcon", nzNotFoundContent: "nzNotFoundContent", nzSize: "nzSize", nzDropdownStyle: "nzDropdownStyle", nzDropdownClassName: "nzDropdownClassName", nzMaxTagCount: "nzMaxTagCount", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzTreeTemplate: "nzTreeTemplate" }, outputs: { nzOpenChange: "nzOpenChange", nzCleared: "nzCleared", nzRemoved: "nzRemoved", nzExpandChange: "nzExpandChange", nzTreeClick: "nzTreeClick", nzTreeCheckBoxChange: "nzTreeCheckBoxChange" }, exportAs: ["nzTreeSelect"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
+    } }, inputs: { nzAllowClear: "nzAllowClear", nzShowExpand: "nzShowExpand", nzShowLine: "nzShowLine", nzDropdownMatchSelectWidth: "nzDropdownMatchSelectWidth", nzCheckable: "nzCheckable", nzHideUnMatched: "nzHideUnMatched", nzShowIcon: "nzShowIcon", nzShowSearch: "nzShowSearch", nzDisabled: "nzDisabled", nzAsyncData: "nzAsyncData", nzMultiple: "nzMultiple", nzDefaultExpandAll: "nzDefaultExpandAll", nzCheckStrictly: "nzCheckStrictly", nzNodes: "nzNodes", nzOpen: "nzOpen", nzSize: "nzSize", nzPlaceHolder: "nzPlaceHolder", nzDropdownStyle: "nzDropdownStyle", nzDisplayWith: "nzDisplayWith", nzMaxTagPlaceholder: "nzMaxTagPlaceholder", nzExpandedKeys: "nzExpandedKeys", nzExpandedIcon: "nzExpandedIcon", nzNotFoundContent: "nzNotFoundContent", nzDropdownClassName: "nzDropdownClassName", nzMaxTagCount: "nzMaxTagCount", nzTreeTemplate: "nzTreeTemplate" }, outputs: { nzOpenChange: "nzOpenChange", nzCleared: "nzCleared", nzRemoved: "nzRemoved", nzExpandChange: "nzExpandChange", nzTreeClick: "nzTreeClick", nzTreeCheckBoxChange: "nzTreeCheckBoxChange" }, exportAs: ["nzTreeSelect"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
             NzTreeSelectService,
             {
                 provide: ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_8__["NzTreeHigherOrderServiceToken"],
@@ -700,7 +711,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzTreeSelectComponent.prototype, "nzShowLine", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, true),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzTreeSelectComponent.prototype, "nzDropdownMatchSelectWidth", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -708,11 +719,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzTreeSelectComponent.prototype, "nzCheckable", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzTreeSelectComponent.prototype, "nzHideUnMatched", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzTreeSelectComponent.prototype, "nzShowIcon", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
@@ -740,7 +751,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzTreeSelectComponent.prototype, "nzCheckStrictly", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'default'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
 ], NzTreeSelectComponent.prototype, "nzSize", void 0);
 const ɵNzTreeSelectService_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetInheritedFactory"](NzTreeSelectService);
@@ -760,8 +771,8 @@ const ɵNzTreeSelectService_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE
       [cdkConnectedOverlayOrigin]="cdkOverlayOrigin"
       [cdkConnectedOverlayOpen]="nzOpen"
       [cdkConnectedOverlayHasBackdrop]="true"
-      [cdkConnectedOverlayMinWidth]="nzDropdownMatchSelectWidth ? null : triggerWidth"
-      [cdkConnectedOverlayWidth]="nzDropdownMatchSelectWidth ? triggerWidth : null"
+      [cdkConnectedOverlayMinWidth]="$any(nzDropdownMatchSelectWidth ? null : triggerWidth)"
+      [cdkConnectedOverlayWidth]="$any(nzDropdownMatchSelectWidth ? triggerWidth : null)"
       (backdropClick)="closeDropDown()"
       (detach)="closeDropDown()"
       (positionChange)="onPositionChange($event)"
@@ -908,7 +919,13 @@ const ɵNzTreeSelectService_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzShowLine: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzDropdownMatchSelectWidth: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzCheckable: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzHideUnMatched: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzShowIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzShowSearch: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
@@ -926,9 +943,15 @@ const ɵNzTreeSelectService_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzOpen: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzSize: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzPlaceHolder: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzDropdownStyle: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzDisplayWith: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzMaxTagPlaceholder: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzOpenChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
@@ -944,25 +967,13 @@ const ɵNzTreeSelectService_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzExpandedKeys: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzDropdownMatchSelectWidth: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzHideUnMatched: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzShowIcon: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzExpandedIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzNotFoundContent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzDropdownStyle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzDropdownClassName: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzMaxTagCount: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzMaxTagPlaceholder: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzSelectSearchComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],

@@ -356,6 +356,7 @@ class NzCountdownComponent extends NzStatisticComponent {
         this.platform = platform;
         this.nzFormat = 'HH:mm:ss';
         this.nzCountdownFinish = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.target = 0;
     }
     /**
      * @param {?} changes

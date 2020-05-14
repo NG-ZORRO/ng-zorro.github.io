@@ -626,7 +626,7 @@ function NzTableComponent_nz_table_inner_scroll_5_Template(rf, ctx) { if (rf & 1
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](13);
     const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("data", ctx_r3.data)("scrollX", ctx_r3.scrollX)("scrollY", ctx_r3.scrollY)("contentTemplate", _r10)("listOfColWidth", ctx_r3.listOfColWidth)("theadTemplate", ctx_r3.theadTemplate)("verticalScrollBarWidth", ctx_r3.verticalScrollBarWidth)("virtualTemplate", ctx_r3.nzVirtualScrollDirective == null ? null : ctx_r3.nzVirtualScrollDirective.templateRef)("virtualItemSize", ctx_r3.nzVirtualItemSize)("virtualMaxBufferPx", ctx_r3.nzVirtualMaxBufferPx)("virtualMinBufferPx", ctx_r3.nzVirtualMinBufferPx)("tableMainElement", _r1)("virtualForTrackBy", ctx_r3.nzVirtualForTrackBy);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("data", ctx_r3.data)("scrollX", ctx_r3.scrollX)("scrollY", ctx_r3.scrollY)("contentTemplate", _r10)("listOfColWidth", ctx_r3.listOfColWidth)("theadTemplate", ctx_r3.theadTemplate)("verticalScrollBarWidth", ctx_r3.verticalScrollBarWidth)("virtualTemplate", ctx_r3.nzVirtualScrollDirective ? ctx_r3.nzVirtualScrollDirective.templateRef : null)("virtualItemSize", ctx_r3.nzVirtualItemSize)("virtualMaxBufferPx", ctx_r3.nzVirtualMaxBufferPx)("virtualMinBufferPx", ctx_r3.nzVirtualMinBufferPx)("tableMainElement", _r1)("virtualForTrackBy", ctx_r3.nzVirtualForTrackBy);
 } }
 function NzTableComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-table-inner-default", 13);
@@ -670,19 +670,28 @@ function NzTableComponent_ng_template_10_Template(rf, ctx) { if (rf & 1) {
 function NzTableComponent_ng_template_12_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](0);
 } }
-function NzTbodyComponent_tr_0_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("listOfAutoWidth", function NzTbodyComponent_tr_0_Template_tr_listOfAutoWidth_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r2.onListOfAutoWidthChange($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](1, "async");
+function NzTbodyComponent_ng_container_0_tr_1_Template(rf, ctx) { if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("listOfAutoWidth", function NzTbodyComponent_ng_container_0_tr_1_Template_tr_listOfAutoWidth_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r5); const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r4.onListOfAutoWidthChange($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
+    const listOfMeasureColumn_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]().ngIf;
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("listOfMeasureColumn", listOfMeasureColumn_r2);
+} }
+function NzTbodyComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzTbodyComponent_ng_container_0_tr_1_Template, 1, 1, "tr", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const listOfMeasureColumn_r2 = ctx.ngIf;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("listOfMeasureColumn", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](1, 1, ctx_r0.listOfMeasureColumn$));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r0.isInsideTable && listOfMeasureColumn_r2.length);
 } }
 function NzTbodyComponent_tr_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "nz-embed-empty", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "tr", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "nz-embed-empty", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](2, "async");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -1343,7 +1352,7 @@ class NzTableStyleService {
          * @return {?}
          */
         th => {
-            columnCount += th.colspan || 1;
+            columnCount += (th.colspan && +th.colspan) || 1;
         }));
         /** @type {?} */
         const listOfThPx = listOfTh.map((/**
@@ -1367,7 +1376,7 @@ class NzTableStyleService {
          */
         th => {
             /** @type {?} */
-            const length = th.colspan || 1;
+            const length = (th.colspan && +th.colspan) || 1;
             for (let i = 0; i < length; i++) {
                 listOfKeys.push(`measure_key_${i}`);
             }
@@ -2554,6 +2563,12 @@ class NzTableComponent {
         this.nzTemplateMode = false;
         this.nzShowPagination = true;
         this.nzLoading = false;
+        this.nzBordered = false;
+        this.nzSize = 'default';
+        this.nzShowSizeChanger = false;
+        this.nzHideOnSinglePage = false;
+        this.nzShowQuickJumper = false;
+        this.nzSimple = false;
         this.nzPageSizeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzPageIndexChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzQueryParams = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
@@ -2869,27 +2884,27 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzLoading", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzBordered", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, 'default'),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", String)
 ], NzTableComponent.prototype, "nzSize", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzShowSizeChanger", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzHideOnSinglePage", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzShowQuickJumper", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME, false), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzSimple", void 0);
 if (false) {}
@@ -2928,15 +2943,15 @@ class NzTbodyComponent {
 NzTbodyComponent.ɵfac = function NzTbodyComponent_Factory(t) { return new (t || NzTbodyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTableStyleService, 8)); };
 NzTbodyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzTbodyComponent, selectors: [["tbody"]], hostVars: 2, hostBindings: function NzTbodyComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-table-tbody", ctx.isInsideTable);
-    } }, ngContentSelectors: _c0, decls: 5, vars: 6, consts: [["nz-table-measure-row", "", 3, "listOfMeasureColumn", "listOfAutoWidth", 4, "ngIf"], ["class", "ant-table-placeholder", "nz-table-fixed-row", "", 4, "ngIf"], ["nz-table-measure-row", "", 3, "listOfMeasureColumn", "listOfAutoWidth"], ["nz-table-fixed-row", "", 1, "ant-table-placeholder"], ["nzComponentName", "table", 3, "specificContent"]], template: function NzTbodyComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, ngContentSelectors: _c0, decls: 5, vars: 6, consts: [[4, "ngIf"], ["class", "ant-table-placeholder", "nz-table-fixed-row", "", 4, "ngIf"], ["nz-table-measure-row", "", 3, "listOfMeasureColumn", "listOfAutoWidth", 4, "ngIf"], ["nz-table-measure-row", "", 3, "listOfMeasureColumn", "listOfAutoWidth"], ["nz-table-fixed-row", "", 1, "ant-table-placeholder"], ["nzComponentName", "table", 3, "specificContent"]], template: function NzTbodyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzTbodyComponent_tr_0_Template, 2, 3, "tr", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzTbodyComponent_ng_container_0_Template, 2, 1, "ng-container", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](1, "async");
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzTbodyComponent_tr_3_Template, 3, 3, "tr", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipe"](4, "async");
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.isInsideTable && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](1, 2, ctx.listOfMeasureColumn$).length);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](1, 2, ctx.listOfMeasureColumn$));
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpipeBind1"](4, 4, ctx.showEmpty$));
     } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], NzTrMeasureComponent,
@@ -4040,7 +4055,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
           [listOfColWidth]="listOfColWidth"
           [theadTemplate]="theadTemplate"
           [verticalScrollBarWidth]="verticalScrollBarWidth"
-          [virtualTemplate]="nzVirtualScrollDirective?.templateRef"
+          [virtualTemplate]="nzVirtualScrollDirective ? nzVirtualScrollDirective.templateRef : null"
           [virtualItemSize]="nzVirtualItemSize"
           [virtualMaxBufferPx]="nzVirtualMaxBufferPx"
           [virtualMinBufferPx]="nzVirtualMinBufferPx"
@@ -4067,7 +4082,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
         class="ant-table-pagination ant-table-pagination-right"
         [nzShowSizeChanger]="nzShowSizeChanger"
         [nzPageSizeOptions]="nzPageSizeOptions"
-        [nzItemRender]="nzItemRender"
+        [nzItemRender]="nzItemRender!"
         [nzShowQuickJumper]="nzShowQuickJumper"
         [nzHideOnSinglePage]="nzHideOnSinglePage"
         [nzShowTotal]="nzShowTotal"
@@ -4135,14 +4150,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzLoading: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzPageSizeChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], nzPageIndexChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], nzQueryParams: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], nzCurrentPageDataChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzBordered: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzSize: [{
@@ -4155,6 +4162,14 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzSimple: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzPageSizeChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+        }], nzPageIndexChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+        }], nzQueryParams: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+        }], nzCurrentPageDataChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzVirtualScrollDirective: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChild"],
             args: [NzTableVirtualScrollDirective, { static: false }]
@@ -4170,15 +4185,17 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 template: `
-    <tr
-      nz-table-measure-row
-      *ngIf="isInsideTable && (listOfMeasureColumn$ | async)!.length"
-      [listOfMeasureColumn]="listOfMeasureColumn$ | async"
-      (listOfAutoWidth)="onListOfAutoWidthChange($event)"
-    ></tr>
+    <ng-container *ngIf="listOfMeasureColumn$ | async as listOfMeasureColumn">
+      <tr
+        nz-table-measure-row
+        *ngIf="isInsideTable && listOfMeasureColumn.length"
+        [listOfMeasureColumn]="listOfMeasureColumn"
+        (listOfAutoWidth)="onListOfAutoWidthChange($event)"
+      ></tr>
+    </ng-container>
     <ng-content></ng-content>
     <tr class="ant-table-placeholder" nz-table-fixed-row *ngIf="showEmpty$ | async">
-      <nz-embed-empty nzComponentName="table" [specificContent]="noResult$ | async"></nz-embed-empty>
+      <nz-embed-empty nzComponentName="table" [specificContent]="(noResult$ | async)!"></nz-embed-empty>
     </tr>
   `,
                 host: {
