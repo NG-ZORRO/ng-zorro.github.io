@@ -1082,7 +1082,7 @@ class OnlineIdeService {
             template: this.template,
             dependencies: this.dependencies,
             files: {
-                'angular.json': `${JSON.stringify(_files_angular_json__WEBPACK_IMPORTED_MODULE_5__["default"])}`,
+                'angular.json': `${JSON.stringify(_files_angular_json__WEBPACK_IMPORTED_MODULE_5__["default"], null, 2)}`,
                 'src/index.html': `<${selector}>loading</${selector}>`,
                 'src/main.ts': _files_main__WEBPACK_IMPORTED_MODULE_9__["default"],
                 'src/app/app.component.ts': appComponentCode,
@@ -1108,7 +1108,13 @@ class OnlineIdeService {
                     isBinary: false
                 },
                 'src/index.html': {
-                    content: `<${selector}>loading</${selector}>`,
+                    content: `
+<!DOCTYPE html>
+<html>
+  <body>
+    <${selector}>loading</${selector}>
+   </body>
+</html>`,
                     isBinary: false
                 },
                 'src/app/app.module.ts': {
