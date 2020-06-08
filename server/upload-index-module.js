@@ -856,7 +856,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](217, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](218, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](219, "string | ((file: UploadFile) => string | Observable<string>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](219, "string | ((file: NzUploadFile) => string | Observable<string>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](220, "td");
@@ -910,7 +910,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](252, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](253, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](254, "(file: UploadFile, fileList: UploadFile[]) => boolean | Observable<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](254, "(file: NzUploadFile, fileList: NzUploadFile[]) => boolean | Observable<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](255, "td");
@@ -954,7 +954,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](280, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "Object | ((file: UploadFile) => Object | Observable<{}>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "Object | ((file: NzUploadFile) => Object | Observable<{}>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](283, "td");
@@ -992,7 +992,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](304, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](305, "UploadFile[]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](305, "NzUploadFile[]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](306, "td");
@@ -1105,7 +1105,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](374, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](375, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](376, "Object | ((file: UploadFile) => Object | Observable<{}>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](376, "Object | ((file: NzUploadFile) => Object | Observable<{}>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](377, "td");
@@ -1294,7 +1294,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](492, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](493, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](494, "(file: UploadFile) => void");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](494, "(file: NzUploadFile) => void");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](495, "td");
@@ -1316,7 +1316,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](506, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](507, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](508, "(file: UploadFile) => Observable<dataURL: string>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](508, "(file: NzUploadFile) => Observable<dataURL: string>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](509, "td");
@@ -1342,7 +1342,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](523, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](524, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](525, "(file: UploadFile) => boolean | Observable<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](525, "(file: NzUploadFile) => boolean | Observable<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](526, "td");
@@ -1360,7 +1360,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](534, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](535, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](536, "EventEmitter<UploadChangeParam>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](536, "EventEmitter<NzUploadChangeParam>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](537, "td");
@@ -1378,7 +1378,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](545, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](546, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](547, "(file: UploadFile) => void");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](547, "(file: NzUploadFile) => void");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](548, "td");
@@ -1396,7 +1396,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](556, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](557, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](558, "(file: UploadFile) => UploadTransformFileType");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](558, "(file: NzUploadFile) => NzUploadTransformFileType");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](559, "td");
@@ -2325,7 +2325,7 @@ class NzDemoUploadTransformFileComponent {
         this.transformFile = (file) => {
             return new rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"]((observer) => {
                 const reader = new FileReader();
-                // tslint:disable-next-line: no-any
+                // tslint:disable-next-line:no-any
                 reader.readAsDataURL(file);
                 reader.onload = () => {
                     const canvas = document.createElement('canvas');
@@ -3016,7 +3016,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](222, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](223, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, "string | ((file: UploadFile) => string | Observable<string>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, "string | ((file: NzUploadFile) => string | Observable<string>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](225, "td");
@@ -3070,7 +3070,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](257, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "(file: UploadFile, fileList: UploadFile[]) => boolean | Observable<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "(file: NzUploadFile, fileList: NzUploadFile[]) => boolean | Observable<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](260, "td");
@@ -3114,7 +3114,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](285, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](286, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "Object | ((file: UploadFile) => Object | Observable<{}>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "Object | ((file: NzUploadFile) => Object | Observable<{}>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "td");
@@ -3152,7 +3152,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](308, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](309, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, "UploadFile[]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, "NzUploadFile[]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](311, "td");
@@ -3265,7 +3265,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](379, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](380, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](381, "Object | ((file: UploadFile) => Object | Observable<{}>)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](381, "Object | ((file: NzUploadFile) => Object | Observable<{}>)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](382, "td");
@@ -3453,7 +3453,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](496, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](497, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](498, "(file: UploadFile) => void");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](498, "(file: NzUploadFile) => void");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](499, "td");
@@ -3475,7 +3475,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](510, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](511, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](512, "(file: UploadFile) => Observable<dataURL: string>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](512, "(file: NzUploadFile) => Observable<dataURL: string>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](513, "td");
@@ -3501,7 +3501,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](527, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](528, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](529, "(file: UploadFile) => boolean | Observable<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](529, "(file: NzUploadFile) => boolean | Observable<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](530, "td");
@@ -3519,7 +3519,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](538, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](539, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](540, "EventEmitter<UploadChangeParam>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](540, "EventEmitter<NzUploadChangeParam>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](541, "td");
@@ -3537,7 +3537,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](549, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](550, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](551, "(file: UploadFile) => void");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](551, "(file: NzUploadFile) => void");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](552, "td");
@@ -3555,7 +3555,7 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](560, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](561, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "(file: UploadFile) => UploadTransformFileType");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "(file: NzUploadFile) => NzUploadTransformFileType");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](563, "td");

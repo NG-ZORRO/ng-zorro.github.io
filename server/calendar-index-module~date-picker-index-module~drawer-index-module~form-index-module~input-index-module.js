@@ -86,9 +86,6 @@ __webpack_require__.r(__webpack_exports__);
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -1389,9 +1386,6 @@ function PresetRanges() { }
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -1503,9 +1497,6 @@ function isAllowedDate(value, disabledDate, disabledTime) {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -2274,7 +2265,6 @@ class NzPickerComponent {
             this.focus();
         }
         if (this.isRange) {
-            this.resetInputWidthAndArrowLeft();
             Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["fromEvent"])(window, 'resize')
                 .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
                 .subscribe((/**
@@ -2324,9 +2314,9 @@ class NzPickerComponent {
      * @return {?}
      */
     resetInputWidthAndArrowLeft() {
-        var _a, _b;
-        this.inputWidth = ((_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first.nativeElement.offsetWidth) || 0;
-        this.arrowLeft = this.inputWidth + ((_b = this.separatorElement) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
+        var _a, _b, _c;
+        this.inputWidth = ((_b = (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
+        this.arrowLeft = this.inputWidth + ((_c = this.separatorElement) === null || _c === void 0 ? void 0 : _c.nativeElement.offsetWidth) || 0;
     }
     /**
      * @param {?=} partType
@@ -2367,6 +2357,7 @@ class NzPickerComponent {
      */
     showOverlay() {
         if (!this.realOpenState) {
+            this.resetInputWidthAndArrowLeft();
             this.overlayOpen = true;
             this.animationStart();
             this.focus();

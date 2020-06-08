@@ -5,11 +5,12 @@ exports.modules = {
 /*!***************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js ***!
   \***************************************************************/
-/*! exports provided: NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule */
+/*! exports provided: NzShowUploadListInterface, NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzShowUploadListInterface", function() { return NzShowUploadListInterface; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadBtnComponent", function() { return NzUploadBtnComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadComponent", function() { return NzUploadComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadListComponent", function() { return NzUploadListComponent; });
@@ -54,14 +55,10 @@ __webpack_require__.r(__webpack_exports__);
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 /**
- * File object.
  * @record
  */
 
@@ -503,17 +500,17 @@ function NzUploadComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", _r0);
 } }
-function UploadFile() { }
+function NzUploadFile() { }
 if (false) {}
 /**
  * @record
  */
-function UploadChangeParam() { }
+function NzUploadChangeParam() { }
 if (false) {}
 /**
  * @record
  */
-function ShowUploadListInterface() { }
+function NzShowUploadList() { }
 if (false) {}
 /**
  * @record
@@ -528,8 +525,10 @@ if (false) {}
 /**
  * @record
  */
-function UploadXHRArgs() { }
+function NzUploadXHRArgs() { }
 if (false) {}
+class NzShowUploadListInterface {
+}
 
 /**
  * @fileoverview added by tsickle

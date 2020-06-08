@@ -172,9 +172,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
         args: [{
                 selector: 'nz-space-item, [nz-space-item]',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     class: 'ant-space-item'
                 }
