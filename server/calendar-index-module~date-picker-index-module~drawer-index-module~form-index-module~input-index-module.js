@@ -2873,7 +2873,7 @@ class NzDatePickerComponent {
      */
     setDefaultPlaceHolder() {
         if (!this.isCustomPlaceHolder && this.nzLocale) {
-            this.nzPlaceHolder = this.isRange ? ((/** @type {?} */ (this.nzLocale.lang.rangePlaceholder))) : this.nzLocale.lang.placeholder;
+            this.nzPlaceHolder = this.isRange ? ((/** @type {?} */ (this.nzLocale.lang.rangePlaceholder))) : (/** @type {?} */ (this.nzLocale.lang.placeholder));
         }
     }
     // Safe way of setting value with default
