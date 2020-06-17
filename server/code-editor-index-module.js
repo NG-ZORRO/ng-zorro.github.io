@@ -1571,11 +1571,11 @@ class NzDemoCodeEditorEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "IEditor");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "IStandaloneCodeEditor");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](302, " | ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "IDiffEditor");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "IStandaloneDiffEditor");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "td");
@@ -2515,11 +2515,11 @@ class NzDemoCodeEditorZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](293, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](294, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, "IEditor");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, "IStandaloneCodeEditor");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](296, " | ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](297, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, "IDiffEditor");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, "IStandaloneDiffEditor");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "td");

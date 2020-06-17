@@ -56,9 +56,6 @@ __webpack_require__.r(__webpack_exports__);
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -659,6 +656,7 @@ NzListGridDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 class NzListComponent {
     constructor() {
         this.nzBordered = false;
+        this.nzGrid = '';
         this.nzItemLayout = 'horizontal';
         this.nzRenderItem = null;
         this.nzLoading = false;
@@ -719,7 +717,7 @@ NzListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.nzListLoadMoreDirective = _t.first);
     } }, hostVars: 16, hostBindings: function NzListComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-list", true)("ant-list-vertical", ctx.nzItemLayout === "vertical")("ant-list-lg", ctx.nzSize === "large")("ant-list-sm", ctx.nzSize === "small")("ant-list-split", ctx.nzSplit)("ant-list-bordered", ctx.nzBordered)("ant-list-loading", ctx.nzLoading)("ant-list-something-after-last-item", ctx.hasSomethingAfterLastItem);
-    } }, inputs: { nzBordered: "nzBordered", nzItemLayout: "nzItemLayout", nzRenderItem: "nzRenderItem", nzLoading: "nzLoading", nzLoadMore: "nzLoadMore", nzSize: "nzSize", nzSplit: "nzSplit", nzDataSource: "nzDataSource", nzGrid: "nzGrid", nzHeader: "nzHeader", nzFooter: "nzFooter", nzPagination: "nzPagination", nzNoResult: "nzNoResult" }, exportAs: ["nzList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 16, vars: 9, consts: [["itemsTpl", ""], [4, "ngIf"], [3, "nzSpinning"], [3, "min-height", 4, "ngIf"], ["nz-row", "", 3, "nzGutter", 4, "ngIf", "ngIfElse"], [3, "nzNoResult", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-list-items"], [4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "nzStringTemplateOutlet"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl"], [3, "nzNoResult"]], template: function NzListComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzBordered: "nzBordered", nzGrid: "nzGrid", nzItemLayout: "nzItemLayout", nzRenderItem: "nzRenderItem", nzLoading: "nzLoading", nzLoadMore: "nzLoadMore", nzSize: "nzSize", nzSplit: "nzSplit", nzDataSource: "nzDataSource", nzHeader: "nzHeader", nzFooter: "nzFooter", nzPagination: "nzPagination", nzNoResult: "nzNoResult" }, exportAs: ["nzList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 16, vars: 9, consts: [["itemsTpl", ""], [4, "ngIf"], [3, "nzSpinning"], [3, "min-height", 4, "ngIf"], ["nz-row", "", 3, "nzGutter", 4, "ngIf", "ngIfElse"], [3, "nzNoResult", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-list-items"], [4, "ngFor", "ngForOf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [4, "nzStringTemplateOutlet"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan", "nzXs", "nzSm", "nzMd", "nzLg", "nzXl", "nzXXl"], [3, "nzNoResult"]], template: function NzListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzListComponent_ng_template_0_Template, 3, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzListComponent_nz_list_header_2_Template, 2, 1, "nz-list-header", 1);
@@ -973,9 +971,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-item-extra, [nz-list-item-extra]',
                 exportAs: 'nzListItemExtra',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     class: 'ant-list-item-extra'
                 }
@@ -987,9 +983,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-item-action',
                 exportAs: 'nzListItemAction',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-template><ng-content></ng-content></ng-template>
-  `
+                template: ` <ng-template><ng-content></ng-content></ng-template> `
             }]
     }], function () { return []; }, { templateRef: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
@@ -1023,9 +1017,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-empty',
                 exportAs: 'nzListHeader',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <nz-embed-empty [nzComponentName]="'list'" [specificContent]="nzNoResult"></nz-embed-empty>
-  `,
+                template: ` <nz-embed-empty [nzComponentName]="'list'" [specificContent]="nzNoResult"></nz-embed-empty> `,
                 host: {
                     class: 'ant-list-empty-text'
                 }
@@ -1039,9 +1031,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-header',
                 exportAs: 'nzListHeader',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     class: 'ant-list-header'
                 }
@@ -1053,9 +1043,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-footer',
                 exportAs: 'nzListFooter',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     class: 'ant-list-footer'
                 }
@@ -1067,9 +1055,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 selector: 'nz-list-pagination',
                 exportAs: 'nzListPagination',
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     class: 'ant-list-pagination'
                 }
@@ -1163,6 +1149,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             }]
     }], function () { return []; }, { nzBordered: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], nzGrid: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzItemLayout: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzRenderItem: [{
@@ -1176,8 +1164,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
         }], nzSplit: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzDataSource: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], nzGrid: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzHeader: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]

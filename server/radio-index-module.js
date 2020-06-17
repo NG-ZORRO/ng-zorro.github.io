@@ -1067,15 +1067,10 @@ function NzDemoRadioRadiogroupMoreComponent_input_9_Template(rf, ctx) { if (rf &
 class NzDemoRadioRadiogroupMoreComponent {
     constructor() {
         this.radioValue = 'A';
-        this.style = {
-            display: 'block',
-            height: '30px',
-            lineHeight: '30px'
-        };
     }
 }
 /** @nocollapse */ NzDemoRadioRadiogroupMoreComponent.ɵfac = function NzDemoRadioRadiogroupMoreComponent_Factory(t) { return new (t || NzDemoRadioRadiogroupMoreComponent)(); };
-/** @nocollapse */ NzDemoRadioRadiogroupMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoRadioRadiogroupMoreComponent, selectors: [["nz-demo-radio-radiogroup-more"]], decls: 10, vars: 6, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio", "", "nzValue", "A", 3, "ngStyle"], ["nz-radio", "", "nzValue", "B", 3, "ngStyle"], ["nz-radio", "", "nzValue", "C", 3, "ngStyle"], ["nz-radio", "", "nzValue", "M", 3, "ngStyle"], ["type", "text", "nz-input", "", 4, "ngIf"], ["type", "text", "nz-input", ""]], template: function NzDemoRadioRadiogroupMoreComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoRadioRadiogroupMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoRadioRadiogroupMoreComponent, selectors: [["nz-demo-radio-radiogroup-more"]], decls: 10, vars: 2, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio", "", "nzValue", "A"], ["nz-radio", "", "nzValue", "B"], ["nz-radio", "", "nzValue", "C"], ["nz-radio", "", "nzValue", "M"], ["type", "text", "nz-input", "", 4, "ngIf"], ["type", "text", "nz-input", ""]], template: function NzDemoRadioRadiogroupMoreComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-radio-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoRadioRadiogroupMoreComponent_Template_nz_radio_group_ngModelChange_0_listener($event) { return ctx.radioValue = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
@@ -1088,42 +1083,33 @@ class NzDemoRadioRadiogroupMoreComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Option C");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "label", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " More... ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "More... ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoRadioRadiogroupMoreComponent_input_9_Template, 1, 0, "input", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.radioValue);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.radioValue === "M");
-    } }, directives: [ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioGroupComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzInputDirective"]], styles: ["[nz-radio][_ngcontent-%COMP%] {\n        display: block;\n      }\n      input[_ngcontent-%COMP%] {\n        width: 100px;\n        margin-left: 10px;\n      }"] });
+    } }, directives: [ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioGroupComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzInputDirective"]], styles: ["[nz-radio][_ngcontent-%COMP%] {\n        display: block;\n        height: 32px;\n        line-height: 32px;\n      }\n      input[_ngcontent-%COMP%] {\n        width: 100px;\n        margin-left: 10px;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoRadioRadiogroupMoreComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'nz-demo-radio-radiogroup-more',
                 template: `
     <nz-radio-group [(ngModel)]="radioValue">
-      <label nz-radio [ngStyle]="style" nzValue="A">Option A</label>
-      <label nz-radio [ngStyle]="style" nzValue="B">Option B</label>
-      <label nz-radio [ngStyle]="style" nzValue="C">Option C</label>
-      <label nz-radio [ngStyle]="style" nzValue="M">
-        More...
-        <input type="text" nz-input *ngIf="radioValue === 'M'" />
-      </label>
+      <label nz-radio nzValue="A">Option A</label>
+      <label nz-radio nzValue="B">Option B</label>
+      <label nz-radio nzValue="C">Option C</label>
+      <label nz-radio nzValue="M">More... <input type="text" nz-input *ngIf="radioValue === 'M'" /></label>
     </nz-radio-group>
   `,
                 styles: [
                     `
       [nz-radio] {
         display: block;
+        height: 32px;
+        line-height: 32px;
       }
       input {
         width: 100px;

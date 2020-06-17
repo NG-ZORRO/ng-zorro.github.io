@@ -702,9 +702,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
                     '[class.ant-form-item-has-feedback]': 'hasFeedback && status',
                     '[class.ant-form-item-with-help]': 'withHelpClass'
                 },
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }]; }, { nzFlex: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
@@ -828,9 +826,7 @@ NzFormSplitComponent.ctorParameters = () => [
                 preserveWhitespaces: false,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }]; }, null); })();
 if (false) {}
@@ -869,9 +865,7 @@ NzFormTextComponent.ctorParameters = () => [
                 preserveWhitespaces: false,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }]; }, null); })();
 if (false) {}

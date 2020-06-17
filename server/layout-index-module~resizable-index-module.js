@@ -362,9 +362,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 preserveWhitespaces: false,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }]; }, null); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzFooterComponent, [{
@@ -375,9 +373,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 preserveWhitespaces: false,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }]; }, null); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzHeaderComponent, [{
@@ -388,9 +384,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 preserveWhitespaces: false,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }]; }, null); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzSiderComponent, [{
@@ -487,9 +481,7 @@ NzLayoutComponent.propDecorators = {
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush,
                 preserveWhitespaces: false,
-                template: `
-    <ng-content></ng-content>
-  `,
+                template: ` <ng-content></ng-content> `,
                 host: {
                     '[class.ant-layout-has-sider]': 'listOfNzSiderComponent.length > 0',
                     '[class.ant-layout]': 'true'

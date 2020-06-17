@@ -726,9 +726,7 @@ NzResizeHandlesComponent.propDecorators = {
         args: [{
                 selector: 'nz-resize-handles',
                 exportAs: 'nzResizeHandles',
-                template: `
-    <nz-resize-handle *ngFor="let dir of directions" [nzDirection]="dir"></nz-resize-handle>
-  `,
+                template: ` <nz-resize-handle *ngFor="let dir of directions" [nzDirection]="dir"></nz-resize-handle> `,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush
             }]
     }], function () { return []; }, { nzDirections: [{

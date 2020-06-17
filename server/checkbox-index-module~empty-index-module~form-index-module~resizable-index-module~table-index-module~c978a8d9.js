@@ -455,9 +455,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 preserveWhitespaces: false,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
-                template: `
-    <ng-content></ng-content>
-  `
+                template: ` <ng-content></ng-content> `
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }]; }, { nzOnChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
