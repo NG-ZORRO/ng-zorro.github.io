@@ -275,7 +275,6 @@ class NzRadioComponent {
         /** prevent label click triggered twice. **/
         event.stopPropagation();
         event.preventDefault();
-        this.focus();
         if (!this.nzDisabled && !this.isChecked) {
             if (this.nzRadioService) {
                 this.nzRadioService.select(this.nzValue);

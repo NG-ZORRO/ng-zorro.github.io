@@ -645,9 +645,6 @@ if (false) {}
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -673,9 +670,6 @@ if (false) {}
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -1064,18 +1058,19 @@ class NzTreeBaseService {
          * @return {?}
          */
         node => {
-            this.conduct(node);
+            this.conduct(node, isCheckStrictly);
         }));
     }
     // reset other node checked state based current node
     /**
      * @param {?} node
+     * @param {?=} isCheckStrictly
      * @return {?}
      */
-    conduct(node) {
+    conduct(node, isCheckStrictly = false) {
         /** @type {?} */
         const isChecked = node.isChecked;
-        if (node) {
+        if (node && !isCheckStrictly) {
             this.conductUp(node);
             this.conductDown(node, isChecked);
         }
@@ -1401,6 +1396,7 @@ class NzTreeBaseService {
     }
     /**
      * Render by nzCheckedKeys
+     * When keys equals null, just render with checkStrictly
      * @param {?} keys
      * @param {?} checkStrictly
      * @return {?}
@@ -1419,13 +1415,19 @@ class NzTreeBaseService {
              * @return {?}
              */
             node => {
-                if (isInArray(node.key, keys)) {
-                    node.isChecked = true;
-                    node.isHalfChecked = false;
+                if (keys === null) {
+                    // render tree if no default checked keys found
+                    node.isChecked = !!node.origin.checked;
                 }
                 else {
-                    node.isChecked = false;
-                    node.isHalfChecked = false;
+                    if (isInArray(node.key, keys || [])) {
+                        node.isChecked = true;
+                        node.isHalfChecked = false;
+                    }
+                    else {
+                        node.isChecked = false;
+                        node.isHalfChecked = false;
+                    }
                 }
                 if (node.children.length > 0) {
                     calc(node.children);
@@ -1471,6 +1473,11 @@ class NzTreeBaseService {
      * @return {?}
      */
     conductSelectedKeys(keys, isMulti) {
+        this.selectedNodeList.forEach((/**
+         * @param {?} node
+         * @return {?}
+         */
+        node => (node.isSelected = false)));
         this.selectedNodeList = [];
         /** @type {?} */
         const calc = (/**
@@ -2790,8 +2797,11 @@ class NzTreeComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MODULE_7
         if (nzData) {
             this.handleNzData(this.nzData);
         }
-        if (nzCheckedKeys || nzCheckStrictly) {
+        if (nzCheckedKeys) {
             this.handleCheckedKeys(this.nzCheckedKeys);
+        }
+        if (nzCheckStrictly) {
+            this.handleCheckedKeys(null);
         }
         if (nzExpandedKeys || nzExpandAll) {
             useDefaultExpandedKeys = true;

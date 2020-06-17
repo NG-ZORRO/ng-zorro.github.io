@@ -1,6 +1,207 @@
 exports.ids = ["page-header-index-module"];
 exports.modules = {
 
+/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-resize-observers.js":
+/*!******************************************************************************!*\
+  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-resize-observers.js ***!
+  \******************************************************************************/
+/*! exports provided: NzResizeObserver, NzResizeObserversModule, ɵa */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResizeObserver", function() { return NzResizeObserver; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzResizeObserversModule", function() { return NzResizeObserversModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return NzResizeObserverFactory; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/coercion */ "./node_modules/@angular/cdk/fesm2015/coercion.js");
+/* harmony import */ var resize_observer_polyfill__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! resize-observer-polyfill */ "./node_modules/resize-observer-polyfill/dist/ResizeObserver.js");
+/* harmony import */ var resize_observer_polyfill__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(resize_observer_polyfill__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: resize-observers.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * Factory that creates a new ResizeObserver and allows us to stub it out in unit tests.
+ */
+
+class NzResizeObserverFactory {
+    /**
+     * @param {?} callback
+     * @return {?}
+     */
+    create(callback) {
+        return typeof resize_observer_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a === 'undefined' ? null : new resize_observer_polyfill__WEBPACK_IMPORTED_MODULE_2___default.a(callback);
+    }
+}
+NzResizeObserverFactory.ɵfac = function NzResizeObserverFactory_Factory(t) { return new (t || NzResizeObserverFactory)(); };
+/** @nocollapse */ NzResizeObserverFactory.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzResizeObserverFactory_Factory() { return new NzResizeObserverFactory(); }, token: NzResizeObserverFactory, providedIn: "root" });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzResizeObserverFactory, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], null, null); })();
+/**
+ * An injectable service that allows watching elements for changes to their content.
+ */
+class NzResizeObserver {
+    /**
+     * @param {?} nzResizeObserverFactory
+     */
+    constructor(nzResizeObserverFactory) {
+        this.nzResizeObserverFactory = nzResizeObserverFactory;
+        /**
+         * Keeps track of the existing ResizeObservers so they can be reused.
+         */
+        this.observedElements = new Map();
+    }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this.observedElements.forEach((/**
+         * @param {?} _
+         * @param {?} element
+         * @return {?}
+         */
+        (_, element) => this.cleanupObserver(element)));
+    }
+    /**
+     * @param {?} elementOrRef
+     * @return {?}
+     */
+    observe(elementOrRef) {
+        /** @type {?} */
+        const element = Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_1__["coerceElement"])(elementOrRef);
+        return new rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"]((/**
+         * @param {?} observer
+         * @return {?}
+         */
+        (observer) => {
+            /** @type {?} */
+            const stream = this.observeElement(element);
+            /** @type {?} */
+            const subscription = stream.subscribe(observer);
+            return (/**
+             * @return {?}
+             */
+            () => {
+                subscription.unsubscribe();
+                this.unobserveElement(element);
+            });
+        }));
+    }
+    /**
+     * Observes the given element by using the existing ResizeObserver if available, or creating a
+     * new one if not.
+     * @private
+     * @param {?} element
+     * @return {?}
+     */
+    observeElement(element) {
+        if (!this.observedElements.has(element)) {
+            /** @type {?} */
+            const stream = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
+            /** @type {?} */
+            const observer = this.nzResizeObserverFactory.create((/**
+             * @param {?} mutations
+             * @return {?}
+             */
+            mutations => stream.next(mutations)));
+            if (observer) {
+                observer.observe(element);
+            }
+            this.observedElements.set(element, { observer, stream, count: 1 });
+        }
+        else {
+            (/** @type {?} */ (this.observedElements.get(element))).count++;
+        }
+        return (/** @type {?} */ (this.observedElements.get(element))).stream;
+    }
+    /**
+     * Un-observes the given element and cleans up the underlying ResizeObserver if nobody else is
+     * observing this element.
+     * @private
+     * @param {?} element
+     * @return {?}
+     */
+    unobserveElement(element) {
+        if (this.observedElements.has(element)) {
+            (/** @type {?} */ (this.observedElements.get(element))).count--;
+            if (!(/** @type {?} */ (this.observedElements.get(element))).count) {
+                this.cleanupObserver(element);
+            }
+        }
+    }
+    /**
+     * Clean up the underlying ResizeObserver for the specified element.
+     * @private
+     * @param {?} element
+     * @return {?}
+     */
+    cleanupObserver(element) {
+        if (this.observedElements.has(element)) {
+            const { observer, stream } = (/** @type {?} */ (this.observedElements.get(element)));
+            if (observer) {
+                observer.disconnect();
+            }
+            stream.complete();
+            this.observedElements.delete(element);
+        }
+    }
+}
+NzResizeObserver.ɵfac = function NzResizeObserver_Factory(t) { return new (t || NzResizeObserver)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](NzResizeObserverFactory)); };
+/** @nocollapse */
+NzResizeObserver.ctorParameters = () => [
+    { type: NzResizeObserverFactory }
+];
+/** @nocollapse */ NzResizeObserver.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"])({ factory: function NzResizeObserver_Factory() { return new NzResizeObserver(Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"])(NzResizeObserverFactory)); }, token: NzResizeObserver, providedIn: "root" });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzResizeObserver, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{ providedIn: 'root' }]
+    }], function () { return [{ type: NzResizeObserverFactory }]; }, null); })();
+if (false) {}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: resize-observers.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzResizeObserversModule {
+}
+NzResizeObserversModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzResizeObserversModule });
+NzResizeObserversModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzResizeObserversModule_Factory(t) { return new (t || NzResizeObserversModule)(); }, providers: [NzResizeObserverFactory] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzResizeObserversModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                providers: [NzResizeObserverFactory]
+            }]
+    }], null, null); })();
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-core-resize-observers.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+
+
+//# sourceMappingURL=ng-zorro-antd-core-resize-observers.js.map
+
+/***/ }),
+
 /***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-page-header.js":
 /*!********************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-page-header.js ***!
@@ -28,6 +229,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
 /* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-logger.js");
+/* harmony import */ var ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/resize-observers */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-resize-observers.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
+
+
 
 
 
@@ -41,6 +248,7 @@ __webpack_require__.r(__webpack_exports__);
  * Generated from: page-header-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+
 
 
 
@@ -157,13 +365,41 @@ class NzPageHeaderComponent {
     /**
      * @param {?} location
      * @param {?} nzConfigService
+     * @param {?} elementRef
+     * @param {?} nzResizeObserver
+     * @param {?} cdr
      */
-    constructor(location, nzConfigService) {
+    constructor(location, nzConfigService, elementRef, nzResizeObserver, cdr) {
         this.location = location;
         this.nzConfigService = nzConfigService;
+        this.elementRef = elementRef;
+        this.nzResizeObserver = nzResizeObserver;
+        this.cdr = cdr;
         this.nzBackIcon = null;
         this.nzGhost = true;
         this.nzBack = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.compact = false;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+    }
+    /**
+     * @return {?}
+     */
+    ngAfterViewInit() {
+        this.nzResizeObserver
+            .observe(this.elementRef)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["map"])((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        ([entry]) => entry.contentRect.width)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$))
+            .subscribe((/**
+         * @param {?} width
+         * @return {?}
+         */
+        (width) => {
+            this.compact = width < 768;
+            this.cdr.markForCheck();
+        }));
     }
     /**
      * @return {?}
@@ -179,8 +415,15 @@ class NzPageHeaderComponent {
             this.location.back();
         }
     }
+    /**
+     * @return {?}
+     */
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
 }
-NzPageHeaderComponent.ɵfac = function NzPageHeaderComponent_Factory(t) { return new (t || NzPageHeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"])); };
+NzPageHeaderComponent.ɵfac = function NzPageHeaderComponent_Factory(t) { return new (t || NzPageHeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_7__["NzResizeObserver"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"])); };
 NzPageHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPageHeaderComponent, selectors: [["nz-page-header"]], contentQueries: function NzPageHeaderComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzPageHeaderFooterDirective, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzPageHeaderBreadcrumbDirective, true);
@@ -188,8 +431,8 @@ NzPageHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵde
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzPageHeaderFooter = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzPageHeaderBreadcrumb = _t.first);
-    } }, hostAttrs: [1, "ant-page-header"], hostVars: 6, hostBindings: function NzPageHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("has-footer", ctx.nzPageHeaderFooter)("ant-page-header-ghost", ctx.nzGhost)("has-breadcrumb", ctx.nzPageHeaderBreadcrumb);
+    } }, hostAttrs: [1, "ant-page-header"], hostVars: 8, hostBindings: function NzPageHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("has-footer", ctx.nzPageHeaderFooter)("ant-page-header-ghost", ctx.nzGhost)("has-breadcrumb", ctx.nzPageHeaderBreadcrumb)("ant-page-header-compact", ctx.compact);
     } }, inputs: { nzBackIcon: "nzBackIcon", nzGhost: "nzGhost", nzTitle: "nzTitle", nzSubtitle: "nzSubtitle" }, outputs: { nzBack: "nzBack" }, exportAs: ["nzPageHeader"], ngContentSelectors: _c1, decls: 13, vars: 5, consts: [[1, "ant-page-header-heading"], [1, "ant-page-header-heading-left"], ["class", "ant-page-header-back", 3, "click", 4, "ngIf"], ["class", "ant-page-header-heading-title", 4, "ngIf"], [4, "ngIf"], ["class", "ant-page-header-heading-sub-title", 4, "ngIf"], [1, "ant-page-header-back", 3, "click"], ["role", "button", "tabindex", "0", 1, "ant-page-header-back-button"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType"], [1, "ant-page-header-heading-title"], [1, "ant-page-header-heading-sub-title"]], template: function NzPageHeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"](_c0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
@@ -222,7 +465,10 @@ NzPageHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵde
 /** @nocollapse */
 NzPageHeaderComponent.ctorParameters = () => [
     { type: _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }] },
-    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }
+    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
+    { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_7__["NzResizeObserver"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
 ];
 NzPageHeaderComponent.propDecorators = {
     nzBackIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -356,12 +602,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
                     class: 'ant-page-header',
                     '[class.has-footer]': 'nzPageHeaderFooter',
                     '[class.ant-page-header-ghost]': 'nzGhost',
-                    '[class.has-breadcrumb]': 'nzPageHeaderBreadcrumb'
+                    '[class.has-breadcrumb]': 'nzPageHeaderBreadcrumb',
+                    '[class.ant-page-header-compact]': 'compact'
                 }
             }]
     }], function () { return [{ type: _angular_common__WEBPACK_IMPORTED_MODULE_0__["Location"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
-            }] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }]; }, { nzBackIcon: [{
+            }] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }, { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_7__["NzResizeObserver"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzBackIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzGhost: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]

@@ -444,7 +444,7 @@ class NzDemoCardEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "span", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "\"");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](141, "\u5361\u7247\u6807\u9898");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](141, "card title");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "span", 22);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](143, "\"");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -453,7 +453,7 @@ class NzDemoCardEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](145, ">");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "\u5361\u7247\u5185\u5BB9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "card content");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "span", 43);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](148, "span", 43);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "span", 22);

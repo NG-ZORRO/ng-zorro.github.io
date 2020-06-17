@@ -254,7 +254,7 @@ function NzPaginationSimpleComponent_ng_template_0_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx_r1.lastIndex, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("disabled", ctx_r1.isLastIndex)("itemRender", ctx_r1.itemRender);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("title", ctx_r1.locale.next_page);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("title", ctx_r1.locale == null ? null : ctx_r1.locale.next_page);
 } }
 class NzPaginationComponent {
     /**
@@ -282,7 +282,6 @@ class NzPaginationComponent {
         this.nzPageIndex = 1;
         this.nzPageSize = 10;
         this.showPagination = true;
-        this.locale = {};
         this.size = 'default';
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
         this.total$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["ReplaySubject"](1);
@@ -582,7 +581,6 @@ class NzPaginationDefaultComponent {
         this.itemRender = null;
         this.showTotal = null;
         this.disabled = false;
-        this.locale = {};
         this.showSizeChanger = false;
         this.showQuickJumper = false;
         this.total = 0;
@@ -745,7 +743,7 @@ NzPaginationDefaultComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__[
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.template = _t.first);
-    } }, inputs: { nzSize: "nzSize", itemRender: "itemRender", showTotal: "showTotal", disabled: "disabled", locale: "locale", showSizeChanger: "showSizeChanger", showQuickJumper: "showQuickJumper", total: "total", pageIndex: "pageIndex", pageSize: "pageSize", pageSizeOptions: "pageSizeOptions" }, outputs: { pageIndexChange: "pageIndexChange", pageSizeChange: "pageSizeChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 0, consts: [["containerTemplate", ""], ["class", "ant-pagination-total-text", 4, "ngIf"], ["nz-pagination-item", "", 3, "locale", "type", "index", "disabled", "itemRender", "active", "gotoIndex", "diffIndex", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["nz-pagination-options", "", 3, "total", "locale", "disabled", "nzSize", "showSizeChanger", "showQuickJumper", "pageIndex", "pageSize", "pageSizeOptions", "pageIndexChange", "pageSizeChange", 4, "ngIf"], [1, "ant-pagination-total-text"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-pagination-item", "", 3, "locale", "type", "index", "disabled", "itemRender", "active", "gotoIndex", "diffIndex"], ["nz-pagination-options", "", 3, "total", "locale", "disabled", "nzSize", "showSizeChanger", "showQuickJumper", "pageIndex", "pageSize", "pageSizeOptions", "pageIndexChange", "pageSizeChange"]], template: function NzPaginationDefaultComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzSize: "nzSize", itemRender: "itemRender", showTotal: "showTotal", disabled: "disabled", showSizeChanger: "showSizeChanger", showQuickJumper: "showQuickJumper", total: "total", pageIndex: "pageIndex", pageSize: "pageSize", pageSizeOptions: "pageSizeOptions", locale: "locale" }, outputs: { pageIndexChange: "pageIndexChange", pageSizeChange: "pageSizeChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 0, consts: [["containerTemplate", ""], ["class", "ant-pagination-total-text", 4, "ngIf"], ["nz-pagination-item", "", 3, "locale", "type", "index", "disabled", "itemRender", "active", "gotoIndex", "diffIndex", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["nz-pagination-options", "", 3, "total", "locale", "disabled", "nzSize", "showSizeChanger", "showQuickJumper", "pageIndex", "pageSize", "pageSizeOptions", "pageIndexChange", "pageSizeChange", 4, "ngIf"], [1, "ant-pagination-total-text"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["nz-pagination-item", "", 3, "locale", "type", "index", "disabled", "itemRender", "active", "gotoIndex", "diffIndex"], ["nz-pagination-options", "", 3, "total", "locale", "disabled", "nzSize", "showSizeChanger", "showQuickJumper", "pageIndex", "pageSize", "pageSizeOptions", "pageIndexChange", "pageSizeChange"]], template: function NzPaginationDefaultComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzPaginationDefaultComponent_ng_template_0_Template, 3, 4, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgTemplateOutlet"], NzPaginationItemComponent,
         NzPaginationOptionsComponent]; }, encapsulation: 2, changeDetection: 0 });
@@ -820,8 +818,6 @@ NzPaginationDefaultComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], disabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], locale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], showSizeChanger: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], showQuickJumper: [{
@@ -841,6 +837,8 @@ NzPaginationDefaultComponent.propDecorators = {
         }], template: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"],
             args: ['containerTemplate', { static: true }]
+        }], locale: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
 if (false) {}
 
@@ -852,7 +850,6 @@ if (false) {}
 class NzPaginationItemComponent {
     constructor() {
         this.active = false;
-        this.locale = {};
         this.index = null;
         this.disabled = false;
         this.type = null;
@@ -884,14 +881,15 @@ class NzPaginationItemComponent {
      * @return {?}
      */
     ngOnChanges(changes) {
+        var _a, _b, _c, _d;
         const { locale, index, type } = changes;
         if (locale || index || type) {
             this.title = ((/** @type {?} */ ({
                 page: `${this.index}`,
-                next: this.locale.next_page,
-                prev: this.locale.prev_page,
-                prev_5: this.locale.prev_5,
-                next_5: this.locale.next_5
+                next: (_a = this.locale) === null || _a === void 0 ? void 0 : _a.next_page,
+                prev: (_b = this.locale) === null || _b === void 0 ? void 0 : _b.prev_page,
+                prev_5: (_c = this.locale) === null || _c === void 0 ? void 0 : _c.prev_5,
+                next_5: (_d = this.locale) === null || _d === void 0 ? void 0 : _d.next_5
             })))[(/** @type {?} */ (this.type))];
         }
     }
@@ -902,7 +900,7 @@ NzPaginationItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵ
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵattribute"]("title", ctx.title);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-pagination-prev", ctx.type === "prev")("ant-pagination-next", ctx.type === "next")("ant-pagination-item", ctx.type === "page")("ant-pagination-jump-prev", ctx.type === "prev_5")("ant-pagination-jump-prev-custom-icon", ctx.type === "prev_5")("ant-pagination-jump-next", ctx.type === "next_5")("ant-pagination-jump-next-custom-icon", ctx.type === "next_5")("ant-pagination-disabled", ctx.disabled)("ant-pagination-item-active", ctx.active);
-    } }, inputs: { active: "active", locale: "locale", index: "index", disabled: "disabled", type: "type", itemRender: "itemRender" }, outputs: { diffIndex: "diffIndex", gotoIndex: "gotoIndex" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], attrs: _c2, decls: 3, vars: 5, consts: [["renderItemTemplate", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [1, "ant-pagination-item-link", 3, "ngSwitch"], ["nz-icon", "", "nzType", "left", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "right", 4, "ngSwitchCase"], ["class", "ant-pagination-item-container", 4, "ngSwitchDefault"], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"], [1, "ant-pagination-item-container"], ["nz-icon", "", "nzType", "double-left", "class", "ant-pagination-item-link-icon", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "double-right", "class", "ant-pagination-item-link-icon", 4, "ngSwitchCase"], [1, "ant-pagination-item-ellipsis"], ["nz-icon", "", "nzType", "double-left", 1, "ant-pagination-item-link-icon"], ["nz-icon", "", "nzType", "double-right", 1, "ant-pagination-item-link-icon"]], template: function NzPaginationItemComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { active: "active", index: "index", disabled: "disabled", type: "type", itemRender: "itemRender", locale: "locale" }, outputs: { diffIndex: "diffIndex", gotoIndex: "gotoIndex" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], attrs: _c2, decls: 3, vars: 5, consts: [["renderItemTemplate", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [1, "ant-pagination-item-link", 3, "ngSwitch"], ["nz-icon", "", "nzType", "left", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "right", 4, "ngSwitchCase"], ["class", "ant-pagination-item-container", 4, "ngSwitchDefault"], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"], [1, "ant-pagination-item-container"], ["nz-icon", "", "nzType", "double-left", "class", "ant-pagination-item-link-icon", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "double-right", "class", "ant-pagination-item-link-icon", 4, "ngSwitchCase"], [1, "ant-pagination-item-ellipsis"], ["nz-icon", "", "nzType", "double-left", 1, "ant-pagination-item-link-icon"], ["nz-icon", "", "nzType", "double-right", 1, "ant-pagination-item-link-icon"]], template: function NzPaginationItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzPaginationItemComponent_ng_template_0_Template, 3, 2, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzPaginationItemComponent_ng_template_2_Template, 0, 0, "ng-template", 1);
     } if (rf & 2) {
@@ -967,8 +965,6 @@ NzPaginationItemComponent.propDecorators = {
             }]
     }], function () { return []; }, { active: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], locale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], index: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], disabled: [{
@@ -981,6 +977,8 @@ NzPaginationItemComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], gotoIndex: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], locale: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
 if (false) {}
 
@@ -995,7 +993,6 @@ class NzPaginationOptionsComponent {
         this.disabled = false;
         this.showSizeChanger = false;
         this.showQuickJumper = false;
-        this.locale = {};
         this.total = 0;
         this.pageIndex = 1;
         this.pageSize = 10;
@@ -1056,7 +1053,7 @@ class NzPaginationOptionsComponent {
 NzPaginationOptionsComponent.ɵfac = function NzPaginationOptionsComponent_Factory(t) { return new (t || NzPaginationOptionsComponent)(); };
 NzPaginationOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPaginationOptionsComponent, selectors: [["div", "nz-pagination-options", ""]], hostVars: 2, hostBindings: function NzPaginationOptionsComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-pagination-options", true);
-    } }, inputs: { nzSize: "nzSize", disabled: "disabled", showSizeChanger: "showSizeChanger", showQuickJumper: "showQuickJumper", locale: "locale", total: "total", pageIndex: "pageIndex", pageSize: "pageSize", pageSizeOptions: "pageSizeOptions" }, outputs: { pageIndexChange: "pageIndexChange", pageSizeChange: "pageSizeChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], attrs: _c4, decls: 2, vars: 2, consts: [["class", "ant-pagination-options-size-changer", 3, "nzDisabled", "nzSize", "ngModel", "ngModelChange", 4, "ngIf"], ["class", "ant-pagination-options-quick-jumper", 4, "ngIf"], [1, "ant-pagination-options-size-changer", 3, "nzDisabled", "nzSize", "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "nzLabel", "nzValue"], [1, "ant-pagination-options-quick-jumper"], [3, "disabled", "keydown.enter"]], template: function NzPaginationOptionsComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzSize: "nzSize", disabled: "disabled", showSizeChanger: "showSizeChanger", showQuickJumper: "showQuickJumper", total: "total", pageIndex: "pageIndex", pageSize: "pageSize", pageSizeOptions: "pageSizeOptions", locale: "locale" }, outputs: { pageIndexChange: "pageIndexChange", pageSizeChange: "pageSizeChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], attrs: _c4, decls: 2, vars: 2, consts: [["class", "ant-pagination-options-size-changer", 3, "nzDisabled", "nzSize", "ngModel", "ngModelChange", 4, "ngIf"], ["class", "ant-pagination-options-quick-jumper", 4, "ngIf"], [1, "ant-pagination-options-size-changer", 3, "nzDisabled", "nzSize", "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "nzLabel", "nzValue"], [1, "ant-pagination-options-quick-jumper"], [3, "disabled", "keydown.enter"]], template: function NzPaginationOptionsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzPaginationOptionsComponent_nz_select_0_Template, 2, 5, "nz-select", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzPaginationOptionsComponent_div_1_Template, 4, 3, "div", 1);
     } if (rf & 2) {
@@ -1117,8 +1114,6 @@ NzPaginationOptionsComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], showQuickJumper: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], locale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], total: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], pageIndex: [{
@@ -1131,6 +1126,8 @@ NzPaginationOptionsComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], pageSizeChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], locale: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
 if (false) {}
 
@@ -1147,7 +1144,6 @@ class NzPaginationSimpleComponent {
     constructor(renderer, elementRef) {
         this.itemRender = null;
         this.disabled = false;
-        this.locale = {};
         this.total = 0;
         this.pageIndex = 1;
         this.pageSize = 10;
@@ -1213,7 +1209,7 @@ NzPaginationSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.template = _t.first);
-    } }, inputs: { itemRender: "itemRender", disabled: "disabled", locale: "locale", total: "total", pageIndex: "pageIndex", pageSize: "pageSize" }, outputs: { pageIndexChange: "pageIndexChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 0, consts: [["containerTemplate", ""], ["nz-pagination-item", "", "type", "prev", 3, "disabled", "itemRender", "click"], [1, "ant-pagination-simple-pager"], ["size", "3", 3, "disabled", "value", "keydown.enter"], [1, "ant-pagination-slash"], ["nz-pagination-item", "", "type", "next", 3, "disabled", "itemRender", "click"]], template: function NzPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { itemRender: "itemRender", disabled: "disabled", total: "total", pageIndex: "pageIndex", pageSize: "pageSize", locale: "locale" }, outputs: { pageIndexChange: "pageIndexChange" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 0, consts: [["containerTemplate", ""], ["nz-pagination-item", "", "type", "prev", 3, "disabled", "itemRender", "click"], [1, "ant-pagination-simple-pager"], ["size", "3", 3, "disabled", "value", "keydown.enter"], [1, "ant-pagination-slash"], ["nz-pagination-item", "", "type", "next", 3, "disabled", "itemRender", "click"]], template: function NzPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzPaginationSimpleComponent_ng_template_0_Template, 7, 10, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     } }, directives: [NzPaginationItemComponent], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
@@ -1255,7 +1251,7 @@ NzPaginationSimpleComponent.propDecorators = {
       </li>
       <li
         nz-pagination-item
-        [attr.title]="locale.next_page"
+        [attr.title]="locale?.next_page"
         [disabled]="isLastIndex"
         (click)="nextPage()"
         type="next"
@@ -1268,8 +1264,6 @@ NzPaginationSimpleComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], disabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], locale: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], total: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], pageIndex: [{
@@ -1281,6 +1275,8 @@ NzPaginationSimpleComponent.propDecorators = {
         }], template: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"],
             args: ['containerTemplate', { static: true }]
+        }], locale: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
 if (false) {}
 
@@ -1319,9 +1315,6 @@ NzPaginationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefin
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */

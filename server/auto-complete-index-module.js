@@ -112,7 +112,7 @@ function NzAutocompleteComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](8);
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-select-dropdown-hidden", !ctx_r0.showPanel);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", ctx_r0.dropDownPosition)("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", "enter")("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r0.nzDataSource ? _r5 : _r3);
 } }
@@ -316,7 +316,6 @@ class NzAutocompleteComponent {
         this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.showPanel = true;
         this.isOpen = false;
-        this.dropDownPosition = 'bottom';
         this.activeItemIndex = -1;
         this.selectionChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_11__["Subscription"].EMPTY;
         this.optionMouseEnterSubscription = rxjs__WEBPACK_IMPORTED_MODULE_11__["Subscription"].EMPTY;
@@ -457,14 +456,6 @@ class NzAutocompleteComponent {
          * @return {?}
          */
         item => this.compareWith(value, item.nzValue))) || null;
-    }
-    /**
-     * @param {?} position
-     * @return {?}
-     */
-    updatePosition(position) {
-        this.dropDownPosition = position;
-        this.changeDetectorRef.markForCheck();
     }
     /**
      * @private
@@ -672,7 +663,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
         [ngClass]="nzOverlayClassName"
         [ngStyle]="nzOverlayStyle"
         [nzNoAnimation]="noAnimation?.nzNoAnimation"
-        [@slideMotion]="dropDownPosition"
+        [@slideMotion]="'enter'"
         [@.disabled]="noAnimation?.nzNoAnimation"
       >
         <div style="max-height: 256px; overflow-y: auto; overflow-anchor: none;">
@@ -762,15 +753,13 @@ class NzAutocompleteTriggerDirective {
      * @param {?} elementRef
      * @param {?} overlay
      * @param {?} viewContainerRef
-     * @param {?} ngZone
      * @param {?} nzInputGroupWhitSuffixOrPrefixDirective
      * @param {?} document
      */
-    constructor(elementRef, overlay, viewContainerRef, ngZone, nzInputGroupWhitSuffixOrPrefixDirective, document) {
+    constructor(elementRef, overlay, viewContainerRef, nzInputGroupWhitSuffixOrPrefixDirective, document) {
         this.elementRef = elementRef;
         this.overlay = overlay;
         this.viewContainerRef = viewContainerRef;
-        this.ngZone = ngZone;
         this.nzInputGroupWhitSuffixOrPrefixDirective = nzInputGroupWhitSuffixOrPrefixDirective;
         this.document = document;
         this.onChange = (/**
@@ -853,7 +842,6 @@ class NzAutocompleteTriggerDirective {
             if (this.overlayRef && this.overlayRef.hasAttached()) {
                 this.selectionChangeSubscription.unsubscribe();
                 this.overlayBackdropClickSubscription.unsubscribe();
-                this.overlayPositionChangeSubscription.unsubscribe();
                 this.optionsChangeSubscription.unsubscribe();
                 this.overlayRef.dispose();
                 this.overlayRef = null;
@@ -944,13 +932,11 @@ class NzAutocompleteTriggerDirective {
      */
     subscribeOptionsChange() {
         /** @type {?} */
-        const firstStable = this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["take"])(1));
-        /** @type {?} */
         const optionChanges = this.nzAutocomplete.options.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["tap"])((/**
          * @return {?}
          */
         () => this.positionStrategy.reapplyLastPosition())), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["delay"])(0));
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["merge"])(firstStable, optionChanges).subscribe((/**
+        return optionChanges.subscribe((/**
          * @return {?}
          */
         () => {
@@ -994,26 +980,6 @@ class NzAutocompleteTriggerDirective {
         }));
     }
     /**
-     * Subscription overlay position changes and reset dropdown position
-     * @private
-     * @return {?}
-     */
-    subscribeOverlayPositionChange() {
-        return this.positionStrategy.positionChanges
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["map"])((/**
-         * @param {?} position
-         * @return {?}
-         */
-        (position) => position.connectionPair.originY)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["distinct"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["delay"])(0))
-            .subscribe((/**
-         * @param {?} position
-         * @return {?}
-         */
-        (position) => {
-            this.nzAutocomplete.updatePosition(position);
-        }));
-    }
-    /**
      * @private
      * @return {?}
      */
@@ -1029,7 +995,6 @@ class NzAutocompleteTriggerDirective {
         }
         if (this.overlayRef && !this.overlayRef.hasAttached()) {
             this.overlayRef.attach(this.portal);
-            this.overlayPositionChangeSubscription = this.subscribeOverlayPositionChange();
             this.selectionChangeSubscription = this.subscribeSelectionChange();
             this.overlayBackdropClickSubscription = this.subscribeOverlayBackdropClick();
             this.optionsChangeSubscription = this.subscribeOptionsChange();
@@ -1110,7 +1075,8 @@ class NzAutocompleteTriggerDirective {
             .flexibleConnectedTo(this.getConnectedElement())
             .withFlexibleDimensions(false)
             .withPush(false)
-            .withPositions(positions);
+            .withPositions(positions)
+            .withTransformOriginOn('.ant-select-dropdown');
         return this.positionStrategy;
     }
     /**
@@ -1176,7 +1142,7 @@ class NzAutocompleteTriggerDirective {
         return !element.readOnly && !element.disabled;
     }
 }
-NzAutocompleteTriggerDirective.ɵfac = function NzAutocompleteTriggerDirective_Factory(t) { return new (t || NzAutocompleteTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"], 8)); };
+NzAutocompleteTriggerDirective.ɵfac = function NzAutocompleteTriggerDirective_Factory(t) { return new (t || NzAutocompleteTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"], 8)); };
 NzAutocompleteTriggerDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzAutocompleteTriggerDirective, selectors: [["input", "nzAutocomplete", ""], ["textarea", "nzAutocomplete", ""]], hostAttrs: ["autocomplete", "off", "aria-autocomplete", "list"], hostBindings: function NzAutocompleteTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("focusin", function NzAutocompleteTriggerDirective_focusin_HostBindingHandler() { return ctx.handleFocus(); })("blur", function NzAutocompleteTriggerDirective_blur_HostBindingHandler() { return ctx.handleBlur(); })("input", function NzAutocompleteTriggerDirective_input_HostBindingHandler($event) { return ctx.handleInput($event); })("keydown", function NzAutocompleteTriggerDirective_keydown_HostBindingHandler($event) { return ctx.handleKeydown($event); });
     } }, inputs: { nzAutocomplete: "nzAutocomplete" }, exportAs: ["nzAutocompleteTrigger"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NZ_AUTOCOMPLETE_VALUE_ACCESSOR])] });
@@ -1185,7 +1151,6 @@ NzAutocompleteTriggerDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
     { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"] },
     { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] },
     { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"],] }] }
 ];
@@ -1207,7 +1172,7 @@ NzAutocompleteTriggerDirective.propDecorators = {
                     '(keydown)': 'handleKeydown($event)'
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"] }, { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] }, { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
             }] }, { type: undefined, decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]

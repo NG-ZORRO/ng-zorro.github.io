@@ -1193,7 +1193,7 @@ class NzDemoTabsEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](372, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](373, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](374, "EventEmitter<{nzSelectedIndex: number,tab: NzTabComponent}>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](374, "EventEmitter<{index: number,tab: NzTabComponent}>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](375, "td");
@@ -3137,7 +3137,7 @@ class NzDemoTabsZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](398, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](399, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](400, "EventEmitter<{nzSelectedIndex: number,tab: NzTabComponent}>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](400, "EventEmitter<{index: number,tab: NzTabComponent}>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](401, "td");

@@ -86,9 +86,6 @@ __webpack_require__.r(__webpack_exports__);
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -493,8 +490,7 @@ function NzPickerComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("left", ctx_r6.currentPositionX === "start" ? "-12px" : "12px")("top", ctx_r6.currentPositionY === "top" ? "-8px" : "8px");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzNoAnimation", ctx_r6.noAnimation)("@slideMotion", ctx_r6.currentPositionY);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzNoAnimation", ctx_r6.noAnimation)("@slideMotion", "enter");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMapInterpolate2"]("", ctx_r6.prefixCls, "-dropdown ", ctx_r6.dropdownClassName, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-picker-dropdown-placement-bottomLeft", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-topLeft", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-bottomRight", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-placement-topRight", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-range", ctx_r6.isRange);
@@ -1389,9 +1385,6 @@ function PresetRanges() { }
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -1503,9 +1496,6 @@ function isAllowedDate(value, disabledDate, disabledTime) {
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
@@ -2214,26 +2204,32 @@ class NzPickerComponent {
         // Available when "open"=undefined
         this.overlayPositions = (/** @type {?} */ ([
             {
-                // offsetX: -10, // TODO: What a pity, cdk/overlay current not support offset configs even though it already provide these properties
-                // offsetY: -10,
+                offsetX: -12,
+                offsetY: 8,
                 originX: 'start',
                 originY: 'bottom',
                 overlayX: 'start',
                 overlayY: 'top'
             },
             {
+                offsetX: -12,
+                offsetY: -8,
                 originX: 'start',
                 originY: 'top',
                 overlayX: 'start',
                 overlayY: 'bottom'
             },
             {
+                offsetX: 12,
+                offsetY: 8,
                 originX: 'end',
                 originY: 'bottom',
                 overlayX: 'end',
                 overlayY: 'top'
             },
             {
+                offsetX: 12,
+                offsetY: -8,
                 originX: 'end',
                 originY: 'top',
                 overlayX: 'end',
@@ -2274,7 +2270,6 @@ class NzPickerComponent {
             this.focus();
         }
         if (this.isRange) {
-            this.resetInputWidthAndArrowLeft();
             Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["fromEvent"])(window, 'resize')
                 .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
                 .subscribe((/**
@@ -2324,9 +2319,9 @@ class NzPickerComponent {
      * @return {?}
      */
     resetInputWidthAndArrowLeft() {
-        var _a, _b;
-        this.inputWidth = ((_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first.nativeElement.offsetWidth) || 0;
-        this.arrowLeft = this.inputWidth + ((_b = this.separatorElement) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
+        var _a, _b, _c;
+        this.inputWidth = ((_b = (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
+        this.arrowLeft = this.inputWidth + ((_c = this.separatorElement) === null || _c === void 0 ? void 0 : _c.nativeElement.offsetWidth) || 0;
     }
     /**
      * @param {?=} partType
@@ -2367,18 +2362,11 @@ class NzPickerComponent {
      */
     showOverlay() {
         if (!this.realOpenState) {
+            this.resetInputWidthAndArrowLeft();
             this.overlayOpen = true;
             this.animationStart();
             this.focus();
             this.openChange.emit(true);
-            setTimeout((/**
-             * @return {?}
-             */
-            () => {
-                if (this.cdkConnectedOverlay && this.cdkConnectedOverlay.overlayRef) {
-                    this.cdkConnectedOverlay.overlayRef.updatePosition();
-                }
-            }));
         }
     }
     /**
@@ -2583,20 +2571,20 @@ NzPickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.separatorElement = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.pickerInput = _t.first);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.rangePickerInputs = _t);
-    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", popupStyle: "popupStyle", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["nzPicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], attrs: _c6, ngContentSelectors: _c7, decls: 7, vars: 6, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "positionChange", "backdropClick", "detach", "overlayKeydown"], [3, "disabled", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "input", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "size", "ngModel", "placeholder", "click", "blur", "input", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [2, "position", "relative", 3, "nzNoAnimation"]], template: function NzPickerComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", popupStyle: "popupStyle", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["nzPicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], attrs: _c6, ngContentSelectors: _c7, decls: 7, vars: 7, consts: [[3, "class", 4, "ngIf"], [4, "ngIf"], ["tplRangeInput", ""], ["tplRightRest", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayTransformOriginOn", "positionChange", "backdropClick", "detach", "overlayKeydown"], [3, "disabled", "ngModel", "placeholder", "size", "ngModelChange", "focus", "blur", "input", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], [4, "ngIf", "ngIfElse"], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "size", "ngModel", "placeholder", "click", "blur", "input", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-wrapper", 2, "position", "relative", 3, "nzNoAnimation"]], template: function NzPickerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzPickerComponent_div_0_Template, 4, 10, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzPickerComponent_ng_container_1_Template, 12, 21, "ng-container", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzPickerComponent_ng_template_2_Template, 2, 4, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](4, NzPickerComponent_ng_template_4_Template, 4, 9, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, NzPickerComponent_ng_template_6_Template, 3, 21, "ng-template", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, NzPickerComponent_ng_template_6_Template, 3, 17, "ng-template", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("positionChange", function NzPickerComponent_Template_ng_template_positionChange_6_listener($event) { return ctx.onPositionChange($event); })("backdropClick", function NzPickerComponent_Template_ng_template_backdropClick_6_listener() { return ctx.onClickBackdrop(); })("detach", function NzPickerComponent_Template_ng_template_detach_6_listener() { return ctx.onOverlayDetach(); })("overlayKeydown", function NzPickerComponent_Template_ng_template_overlayKeydown_6_listener($event) { return ctx.onOverlayKeydown($event); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx.isRange);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.isRange);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayHasBackdrop", !ctx.isOpenHandledByUser())("cdkConnectedOverlayPositions", ctx.overlayPositions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayHasBackdrop", !ctx.isOpenHandledByUser())("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["CdkConnectedOverlay"], ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_7__["NzConnectedOverlayDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_20__["ɵNzTransitionPatchDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationDirective"]], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_18__["slideMotion"]] }, changeDetection: 0 });
 /** @nocollapse */
 NzPickerComponent.ctorParameters = () => [
@@ -2669,7 +2657,6 @@ class NzDatePickerComponent {
         this.showWeek = false; // Should show as week picker
         // Should show as week picker
         this.focused = false;
-        this.hostClassMap = {};
         this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
         this.isCustomPlaceHolder = false;
         this.showTime = false;
@@ -3359,18 +3346,18 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
       [cdkConnectedOverlayOpen]="realOpenState"
       [cdkConnectedOverlayHasBackdrop]="!isOpenHandledByUser()"
       [cdkConnectedOverlayPositions]="overlayPositions"
+      [cdkConnectedOverlayTransformOriginOn]="'.ant-picker-wrapper'"
       (positionChange)="onPositionChange($event)"
       (backdropClick)="onClickBackdrop()"
       (detach)="onOverlayDetach()"
       (overlayKeydown)="onOverlayKeydown($event)"
     >
       <div
+        class="ant-picker-wrapper"
         [nzNoAnimation]="noAnimation"
-        [@slideMotion]="currentPositionY"
+        [@slideMotion]="'enter'"
         (@slideMotion.done)="animationDone()"
         style="position: relative;"
-        [style.left]="currentPositionX === 'start' ? '-12px' : '12px'"
-        [style.top]="currentPositionY === 'top' ? '-8px' : '8px'"
       >
         <div
           class="{{ prefixCls }}-dropdown {{ dropdownClassName }}"
