@@ -723,6 +723,12 @@ class BaseModalContainer extends _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1_
     /**
      * @return {?}
      */
+    attachStringContent() {
+        this.savePreviouslyFocusedElement();
+    }
+    /**
+     * @return {?}
+     */
     getNativeElement() {
         return this.elementRef.nativeElement;
     }
@@ -1727,6 +1733,9 @@ class NzModalService {
             const contentRef = modalContainer.attachComponentPortal(new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1__["ComponentPortal"](componentOrTemplateRef, config.nzViewContainerRef, injector));
             setContentInstanceParams(contentRef.instance, config.nzComponentParams);
             modalRef.componentInstance = contentRef.instance;
+        }
+        else {
+            modalContainer.attachStringContent();
         }
         return modalRef;
     }
