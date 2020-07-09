@@ -621,7 +621,7 @@ if (false) {}
 class NzAnchorModule {
 }
 NzAnchorModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzAnchorModule });
-NzAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzAnchorModule_Factory(t) { return new (t || NzAnchorModule)(); }, providers: [ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["SCROLL_SERVICE_PROVIDER"]], imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
+NzAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzAnchorModule_Factory(t) { return new (t || NzAnchorModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzAnchorModule, { declarations: function () { return [NzAnchorComponent,
         NzAnchorLinkComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzAnchorComponent,
         NzAnchorLinkComponent]; } }); })();
@@ -630,8 +630,7 @@ NzAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInj
         args: [{
                 declarations: [NzAnchorComponent, NzAnchorLinkComponent],
                 exports: [NzAnchorComponent, NzAnchorLinkComponent],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]],
-                providers: [ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["SCROLL_SERVICE_PROVIDER"]]
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]
             }]
     }], null, null); })();
 

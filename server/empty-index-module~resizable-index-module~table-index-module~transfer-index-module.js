@@ -917,7 +917,7 @@ class NzTableFilterComponent {
                 this.filterChange.emit(listOfChecked);
             }
             else {
-                this.filterChange.emit(listOfChecked[0] || null);
+                this.filterChange.emit(listOfChecked.length > 0 ? listOfChecked[0] : null);
             }
             this.isChanged = false;
         }
@@ -1181,6 +1181,7 @@ class NzCellFixedDirective {
         this.nzRight = false;
         this.nzLeft = false;
         this.colspan = null;
+        this.colSpan = null;
         this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
         this.isAutoLeft = false;
         this.isAutoRight = false;
@@ -1262,7 +1263,7 @@ NzCellFixedDirective.ɵfac = function NzCellFixedDirective_Factory(t) { return n
 NzCellFixedDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzCellFixedDirective, selectors: [["td", "nzRight", ""], ["th", "nzRight", ""], ["td", "nzLeft", ""], ["th", "nzLeft", ""]], hostVars: 6, hostBindings: function NzCellFixedDirective_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵstyleProp"]("position", ctx.isFixed ? "sticky" : null);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-table-cell-fix-right", ctx.isFixedRight)("ant-table-cell-fix-left", ctx.isFixedLeft);
-    } }, inputs: { nzRight: "nzRight", nzLeft: "nzLeft", colspan: "colspan" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
+    } }, inputs: { nzRight: "nzRight", nzLeft: "nzLeft", colspan: "colspan", colSpan: "colSpan" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
 /** @nocollapse */
 NzCellFixedDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] },
@@ -1271,7 +1272,8 @@ NzCellFixedDirective.ctorParameters = () => [
 NzCellFixedDirective.propDecorators = {
     nzRight: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzLeft: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    colspan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    colspan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    colSpan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
 if (false) {}
 
@@ -1376,7 +1378,7 @@ class NzTableStyleService {
          * @return {?}
          */
         th => {
-            columnCount += (th.colspan && +th.colspan) || 1;
+            columnCount += (th.colspan && +th.colspan) || (th.colSpan && +th.colSpan) || 1;
         }));
         /** @type {?} */
         const listOfThPx = listOfTh.map((/**
@@ -1400,7 +1402,7 @@ class NzTableStyleService {
          */
         th => {
             /** @type {?} */
-            const length = (th.colspan && +th.colspan) || 1;
+            const length = (th.colspan && +th.colspan) || (th.colSpan && +th.colSpan) || 1;
             for (let i = 0; i < length; i++) {
                 listOfKeys.push(`measure_key_${i}`);
             }
@@ -1829,25 +1831,31 @@ class NzThMeasureDirective {
         this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
         this.nzWidth = null;
         this.colspan = null;
+        this.colSpan = null;
         this.rowspan = null;
+        this.rowSpan = null;
     }
     /**
      * @param {?} changes
      * @return {?}
      */
     ngOnChanges(changes) {
-        const { nzWidth, colspan, rowspan } = changes;
-        if (colspan) {
-            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["isNil"])(this.colspan)) {
-                this.renderer.setAttribute(this.elementRef.nativeElement, 'colspan', `${this.colspan}`);
+        const { nzWidth, colspan, rowspan, colSpan, rowSpan } = changes;
+        if (colspan || colSpan) {
+            /** @type {?} */
+            const col = this.colspan || this.colSpan;
+            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["isNil"])(col)) {
+                this.renderer.setAttribute(this.elementRef.nativeElement, 'colspan', `${col}`);
             }
             else {
                 this.renderer.removeAttribute(this.elementRef.nativeElement, 'colspan');
             }
         }
-        if (rowspan) {
-            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["isNil"])(this.rowspan)) {
-                this.renderer.setAttribute(this.elementRef.nativeElement, 'rowspan', `${this.rowspan}`);
+        if (rowspan || rowSpan) {
+            /** @type {?} */
+            const row = this.rowspan || this.rowSpan;
+            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_20__["isNil"])(row)) {
+                this.renderer.setAttribute(this.elementRef.nativeElement, 'rowspan', `${row}`);
             }
             else {
                 this.renderer.removeAttribute(this.elementRef.nativeElement, 'rowspan');
@@ -1859,7 +1867,7 @@ class NzThMeasureDirective {
     }
 }
 NzThMeasureDirective.ɵfac = function NzThMeasureDirective_Factory(t) { return new (t || NzThMeasureDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"])); };
-NzThMeasureDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzThMeasureDirective, selectors: [["th"]], inputs: { nzWidth: "nzWidth", colspan: "colspan", rowspan: "rowspan" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
+NzThMeasureDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzThMeasureDirective, selectors: [["th"]], inputs: { nzWidth: "nzWidth", colspan: "colspan", colSpan: "colSpan", rowspan: "rowspan", rowSpan: "rowSpan" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]] });
 /** @nocollapse */
 NzThMeasureDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] },
@@ -1868,7 +1876,9 @@ NzThMeasureDirective.ctorParameters = () => [
 NzThMeasureDirective.propDecorators = {
     nzWidth: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     colspan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    rowspan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    colSpan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    rowspan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    rowSpan: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
 if (false) {}
 
@@ -3155,7 +3165,7 @@ class NzTrDirective {
                          * @param {?} cur
                          * @return {?}
                          */
-                        (pre, cur) => pre + (cur.colspan || 1)), 0);
+                        (pre, cur) => pre + (cur.colspan || cur.colSpan || 1)), 0);
                         /** @type {?} */
                         const width = listOfAutoWidth.slice(0, count).reduce((/**
                          * @param {?} pre
@@ -3189,7 +3199,7 @@ class NzTrDirective {
                          * @param {?} cur
                          * @return {?}
                          */
-                        (pre, cur) => pre + (cur.colspan || 1)), 0);
+                        (pre, cur) => pre + (cur.colspan || cur.colSpan || 1)), 0);
                         /** @type {?} */
                         const width = listOfAutoWidth
                             .slice(listOfAutoWidth.length - count, listOfAutoWidth.length)
@@ -3443,7 +3453,7 @@ class NzTheadComponent {
 }
 NzTheadComponent.ɵfac = function NzTheadComponent_Factory(t) { return new (t || NzTheadComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTableStyleService, 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTableDataService, 8)); };
 NzTheadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzTheadComponent, selectors: [["thead", 9, "ant-table-thead"]], contentQueries: function NzTheadComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, NzTrDirective, false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, NzTrDirective, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, NzThAddOnComponent, true);
     } if (rf & 2) {
         var _t;
@@ -3471,7 +3481,7 @@ NzTheadComponent.ctorParameters = () => [
 ];
 NzTheadComponent.propDecorators = {
     templateRef: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['contentTemplate', { static: true },] }],
-    listOfNzTrDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzTrDirective,] }],
+    listOfNzTrDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzTrDirective, { descendants: true },] }],
     listOfNzThAddOnComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzThAddOnComponent, { descendants: true },] }],
     nzSingleSort: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzSortChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
@@ -3699,6 +3709,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], colspan: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], colSpan: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzTableStyleService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"]
@@ -3842,7 +3854,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], colspan: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], colSpan: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], rowspan: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], rowSpan: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzThSelectionComponent, [{
@@ -4335,7 +4351,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
             args: ['contentTemplate', { static: true }]
         }], listOfNzTrDirective: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"],
-            args: [NzTrDirective]
+            args: [NzTrDirective, { descendants: true }]
         }], listOfNzThAddOnComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"],
             args: [NzThAddOnComponent, { descendants: true }]

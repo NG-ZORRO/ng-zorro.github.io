@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 /**
  * @abstract
- * @template R
+ * @template T, R
  */
 
 
@@ -225,6 +225,7 @@ class NzDrawerComponent extends NzDrawerRef {
         this.nzZIndex = 1000;
         this.nzOffsetX = 0;
         this.nzOffsetY = 0;
+        this.componentInstance = null;
         this.nzOnViewInit = new _angular_core__WEBPACK_IMPORTED_MODULE_6__["EventEmitter"]();
         this.nzOnClose = new _angular_core__WEBPACK_IMPORTED_MODULE_6__["EventEmitter"]();
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
@@ -418,6 +419,7 @@ class NzDrawerComponent extends NzDrawerRef {
             this.restoreFocus();
             this.nzAfterClose.next(result);
             this.nzAfterClose.complete();
+            this.componentInstance = null;
         }), this.getAnimationDuration());
     }
     /**
@@ -438,6 +440,12 @@ class NzDrawerComponent extends NzDrawerRef {
         () => {
             this.nzAfterOpen.next();
         }), this.getAnimationDuration());
+    }
+    /**
+     * @return {?}
+     */
+    getContentComponent() {
+        return this.componentInstance;
     }
     /**
      * @return {?}
@@ -466,6 +474,7 @@ class NzDrawerComponent extends NzDrawerRef {
             const componentPortal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](this.nzContent, null, childInjector);
             /** @type {?} */
             const componentRef = (/** @type {?} */ (this.bodyPortalOutlet)).attachComponentPortal(componentPortal);
+            this.componentInstance = componentRef.instance;
             Object.assign(componentRef.instance, this.nzContentParams);
             componentRef.changeDetectorRef.detectChanges();
         }
@@ -802,7 +811,7 @@ NzDrawerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInj
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
- * @template R
+ * @template T, R
  */
 class DrawerBuilderForService {
     /**
@@ -818,17 +827,17 @@ class DrawerBuilderForService {
          */
         const _a = this.options, { nzOnCancel } = _a, componentOption = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__rest"])(_a, ["nzOnCancel"]);
         this.overlayRef = this.overlay.create();
-        this.drawerRef = this.overlayRef.attach(new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](NzDrawerComponent));
+        this.drawerRef = this.overlayRef.attach(new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_4__["ComponentPortal"](NzDrawerComponent)).instance;
         this.updateOptions(componentOption);
         // Prevent repeatedly open drawer when tap focus element.
-        (/** @type {?} */ (this.drawerRef)).instance.savePreviouslyFocusedElement();
-        (/** @type {?} */ (this.drawerRef)).instance.nzOnViewInit.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.unsubscribe$)).subscribe((/**
+        this.drawerRef.savePreviouslyFocusedElement();
+        this.drawerRef.nzOnViewInit.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.unsubscribe$)).subscribe((/**
          * @return {?}
          */
         () => {
-            (/** @type {?} */ (this.drawerRef)).instance.open();
+            (/** @type {?} */ (this.drawerRef)).open();
         }));
-        (/** @type {?} */ (this.drawerRef)).instance.nzOnClose.subscribe((/**
+        this.drawerRef.nzOnClose.subscribe((/**
          * @return {?}
          */
         () => {
@@ -839,15 +848,15 @@ class DrawerBuilderForService {
                  */
                 canClose => {
                     if (canClose !== false) {
-                        (/** @type {?} */ (this.drawerRef)).instance.close();
+                        (/** @type {?} */ (this.drawerRef)).close();
                     }
                 }));
             }
             else {
-                (/** @type {?} */ (this.drawerRef)).instance.close();
+                (/** @type {?} */ (this.drawerRef)).close();
             }
         }));
-        (/** @type {?} */ (this.drawerRef)).instance.afterClose.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.unsubscribe$)).subscribe((/**
+        this.drawerRef.afterClose.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.unsubscribe$)).subscribe((/**
          * @return {?}
          */
         () => {
@@ -861,14 +870,14 @@ class DrawerBuilderForService {
      * @return {?}
      */
     getInstance() {
-        return (/** @type {?} */ (this.drawerRef)) && (/** @type {?} */ (this.drawerRef)).instance;
+        return (/** @type {?} */ (this.drawerRef));
     }
     /**
      * @param {?} options
      * @return {?}
      */
     updateOptions(options) {
-        Object.assign((/** @type {?} */ (this.drawerRef)).instance, options);
+        Object.assign((/** @type {?} */ (this.drawerRef)), options);
     }
 }
 if (false) {}

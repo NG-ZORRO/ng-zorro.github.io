@@ -5286,7 +5286,7 @@ class NzDemoTableEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1809, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1810, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1811, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1812, "[colspan]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1812, "[colSpan]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1813, "td");
@@ -5306,7 +5306,7 @@ class NzDemoTableEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1821, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1822, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1823, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1824, "[rowspan]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1824, "[rowSpan]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1825, "td");
@@ -12014,7 +12014,7 @@ class NzDemoTableZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1710, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1711, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1712, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1713, "[colspan]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1713, "[colSpan]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1714, "td");
@@ -12034,7 +12034,7 @@ class NzDemoTableZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1722, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1723, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1724, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1725, "[rowspan]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1725, "[rowSpan]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1726, "td");
