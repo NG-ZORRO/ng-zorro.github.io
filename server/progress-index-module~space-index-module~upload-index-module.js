@@ -1,7 +1,7 @@
 exports.ids = ["progress-index-module~space-index-module~upload-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-progress.js":
+/***/ "cpkz":
 /*!*****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-progress.js ***!
   \*****************************************************************/
@@ -12,16 +12,16 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzProgressComponent", function() { return NzProgressComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzProgressModule", function() { return NzProgressModule; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 
 
 
@@ -32,18 +32,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * @fileoverview added by tsickle
- * Generated from: utils.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-/**
- * @param {?} percent
- * @return {?}
  */
 
 
@@ -110,7 +101,7 @@ function NzProgressComponent_div_3_ng_container_1_div_1_Template(rf, ctx) { if (
 } if (rf & 2) {
     const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r12.nzPercent, "%")("border-radius", ctx_r12.nzStrokeLinecap === "round" ? "100px" : "0")("background", !ctx_r12.isGradient ? ctx_r12.nzStrokeColor : null, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefaultStyleSanitizer"])("background-image", ctx_r12.isGradient ? ctx_r12.lineGradient : null, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefaultStyleSanitizer"])("height", ctx_r12.strokeWidth, "px");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("width", ctx_r12.nzPercent, "%")("border-radius", ctx_r12.nzStrokeLinecap === "round" ? "100px" : "0")("background", !ctx_r12.isGradient ? ctx_r12.nzStrokeColor : null)("background-image", ctx_r12.isGradient ? ctx_r12.lineGradient : null)("height", ctx_r12.strokeWidth, "px");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r12.nzSuccessPercent || ctx_r12.nzSuccessPercent === 0);
 } }
@@ -221,22 +212,10 @@ function NzProgressComponent_div_4_Template(rf, ctx) { if (rf & 1) {
 function stripPercentToNumber(percent) {
     return +percent.replace('%', '');
 }
-/** @type {?} */
-const sortGradient = (/**
- * @param {?} gradients
- * @return {?}
- */
-(gradients) => {
-    /** @type {?} */
+const sortGradient = (gradients) => {
     let tempArr = [];
-    Object.keys(gradients).forEach((/**
-     * @param {?} key
-     * @return {?}
-     */
-    key => {
-        /** @type {?} */
+    Object.keys(gradients).forEach(key => {
         const value = gradients[key];
-        /** @type {?} */
         const formatKey = stripPercentToNumber(key);
         if (!isNaN(formatKey)) {
             tempArr.push({
@@ -244,81 +223,45 @@ const sortGradient = (/**
                 value
             });
         }
-    }));
-    tempArr = tempArr.sort((/**
-     * @param {?} a
-     * @param {?} b
-     * @return {?}
-     */
-    (a, b) => a.key - b.key));
+    });
+    tempArr = tempArr.sort((a, b) => a.key - b.key);
     return tempArr;
-});
-/** @type {?} */
-const handleCircleGradient = (/**
- * @param {?} strokeColor
- * @return {?}
- */
-(strokeColor) => {
-    return sortGradient(strokeColor).map((/**
-     * @param {?} __0
-     * @return {?}
-     */
-    ({ key, value }) => ({ offset: `${key}%`, color: value })));
-});
-/** @type {?} */
-const handleLinearGradient = (/**
- * @param {?} strokeColor
- * @return {?}
- */
-(strokeColor) => {
+};
+const handleCircleGradient = (strokeColor) => {
+    return sortGradient(strokeColor).map(({ key, value }) => ({ offset: `${key}%`, color: value }));
+};
+const handleLinearGradient = (strokeColor) => {
     const { from = '#1890ff', to = '#1890ff', direction = 'to right' } = strokeColor, rest = Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__rest"])(strokeColor, ["from", "to", "direction"]);
     if (Object.keys(rest).length !== 0) {
-        /** @type {?} */
-        const sortedGradients = sortGradient((/** @type {?} */ (rest)))
-            .map((/**
-         * @param {?} __0
-         * @return {?}
-         */
-        ({ key, value }) => `${value} ${key}%`))
+        const sortedGradients = sortGradient(rest)
+            .map(({ key, value }) => `${value} ${key}%`)
             .join(', ');
         return `linear-gradient(${direction}, ${sortedGradients})`;
     }
     return `linear-gradient(${direction}, ${from}, ${to})`;
-});
+};
 
 /**
- * @fileoverview added by tsickle
- * Generated from: progress.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
 let gradientIdSeed = 0;
-/** @type {?} */
-const NZ_CONFIG_COMPONENT_NAME = 'progress';
-/** @type {?} */
+const NZ_CONFIG_MODULE_NAME = 'progress';
 const statusIconNameMap = new Map([
     ['success', 'check'],
     ['exception', 'close']
 ]);
-/** @type {?} */
 const statusColorMap = new Map([
     ['normal', '#108ee9'],
     ['exception', '#ff5500'],
     ['success', '#87d068']
 ]);
-/** @type {?} */
-const defaultFormatter = (/**
- * @param {?} p
- * @return {?}
- */
-(p) => `${p}%`);
+const defaultFormatter = (p) => `${p}%`;
 const ɵ0 = defaultFormatter;
 class NzProgressComponent {
-    /**
-     * @param {?} nzConfigService
-     */
     constructor(nzConfigService) {
         this.nzConfigService = nzConfigService;
+        this._nzModuleName = NZ_CONFIG_MODULE_NAME;
         this.nzShowInfo = true;
         this.nzWidth = 132;
         this.nzStrokeColor = undefined;
@@ -329,76 +272,48 @@ class NzProgressComponent {
         this.nzType = 'line';
         this.nzGapPosition = 'top';
         this.nzStrokeLinecap = 'round';
+        this.nzSteps = 0;
         this.steps = [];
-        /**
-         * Gradient style when `nzType` is `line`.
-         */
+        /** Gradient style when `nzType` is `line`. */
         this.lineGradient = null;
-        /**
-         * If user uses gradient color.
-         */
+        /** If user uses gradient color. */
         this.isGradient = false;
-        /**
-         * If the linear progress is a step progress.
-         */
+        /** If the linear progress is a step progress. */
         this.isSteps = false;
         /**
          * Each progress whose `nzType` is circle or dashboard should have unique id to
          * define `<linearGradient>`.
          */
         this.gradientId = gradientIdSeed++;
-        /**
-         * Paths to rendered in the template.
-         */
+        /** Paths to rendered in the template. */
         this.progressCirclePath = [];
         this.trailPathStyle = null;
-        this.trackByFn = (/**
-         * @param {?} index
-         * @return {?}
-         */
-        (index) => `${index}`);
+        this.trackByFn = (index) => `${index}`;
         this.cachedStatus = 'normal';
         this.inferredStatus = 'normal';
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
     }
-    /**
-     * @return {?}
-     */
     get formatter() {
         return this.nzFormat || defaultFormatter;
     }
-    /**
-     * @return {?}
-     */
     get status() {
         return this.nzStatus || this.inferredStatus;
     }
-    /**
-     * @return {?}
-     */
     get strokeWidth() {
         return this.nzStrokeWidth || (this.nzType === 'line' && this.nzSize !== 'small' ? 8 : 6);
     }
-    /**
-     * @return {?}
-     */
     get isCircleStyle() {
         return this.nzType === 'circle' || this.nzType === 'dashboard';
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
-        const { nzSteps, nzGapPosition, nzStrokeLinecap, nzStrokeColor, nzGapDegree, nzType, nzStatus, nzPercent, nzSuccessPercent } = changes;
+        const { nzSteps, nzGapPosition, nzStrokeLinecap, nzStrokeColor, nzGapDegree, nzType, nzStatus, nzPercent, nzSuccessPercent, nzStrokeWidth } = changes;
         if (nzStatus) {
             this.cachedStatus = this.nzStatus || this.cachedStatus;
         }
         if (nzPercent || nzSuccessPercent) {
-            /** @type {?} */
             const fillAll = parseInt(this.nzPercent.toString(), 10) >= 100;
             if (fillAll) {
-                if ((Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzSuccessPercent) && (/** @type {?} */ (this.nzSuccessPercent)) >= 100) || this.nzSuccessPercent === undefined) {
+                if ((Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzSuccessPercent) && this.nzSuccessPercent >= 100) || this.nzSuccessPercent === undefined) {
                     this.inferredStatus = 'success';
                 }
             }
@@ -406,104 +321,77 @@ class NzProgressComponent {
                 this.inferredStatus = this.cachedStatus;
             }
         }
-        if (nzStatus || nzPercent || nzSuccessPercent) {
+        if (nzStatus || nzPercent || nzSuccessPercent || nzStrokeColor) {
             this.updateIcon();
         }
         if (nzStrokeColor) {
             this.setStrokeColor();
         }
-        if (nzGapPosition || nzStrokeLinecap || nzGapDegree || nzType || nzPercent || nzStrokeColor) {
+        if (nzGapPosition || nzStrokeLinecap || nzGapDegree || nzType || nzPercent || nzStrokeColor || nzStrokeColor) {
             this.getCirclePaths();
         }
-        if (nzSteps) {
-            this.isSteps = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(nzSteps.currentValue);
-            this.getSteps();
+        if (nzPercent || nzSteps || nzStrokeWidth) {
+            this.isSteps = this.nzSteps > 0;
+            if (this.isSteps) {
+                this.getSteps();
+            }
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
         this.nzConfigService
-            .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
+            .getConfigChangeEventForComponent(NZ_CONFIG_MODULE_NAME)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$))
-            .subscribe((/**
-         * @return {?}
-         */
-        () => {
+            .subscribe(() => {
             this.updateIcon();
             this.setStrokeColor();
             this.getCirclePaths();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     updateIcon() {
-        /** @type {?} */
         const ret = statusIconNameMap.get(this.status);
         this.icon = ret ? ret + (this.isCircleStyle ? '-o' : '-circle-fill') : '';
     }
     /**
      * Calculate step render configs.
-     * @private
-     * @return {?}
      */
     getSteps() {
-        /** @type {?} */
-        const current = Math.floor((/** @type {?} */ (this.nzSteps)) * (this.nzPercent / 100));
-        /** @type {?} */
+        const current = Math.floor(this.nzSteps * (this.nzPercent / 100));
         const stepWidth = this.nzSize === 'small' ? 2 : 14;
-        for (let i = 0; i < (/** @type {?} */ (this.nzSteps)); i++) {
-            /** @type {?} */
+        const steps = [];
+        for (let i = 0; i < this.nzSteps; i++) {
             let color;
             if (i <= current - 1) {
                 color = this.nzStrokeColor;
             }
-            /** @type {?} */
             const stepStyle = {
                 backgroundColor: `${color}`,
                 width: `${stepWidth}px`,
                 height: `${this.strokeWidth}px`
             };
-            this.steps.push(stepStyle);
+            steps.push(stepStyle);
         }
+        this.steps = steps;
     }
     /**
      * Calculate paths when the type is circle or dashboard.
-     * @private
-     * @return {?}
      */
     getCirclePaths() {
         if (!this.isCircleStyle) {
             return;
         }
-        /** @type {?} */
-        const values = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzSuccessPercent) ? [(/** @type {?} */ (this.nzSuccessPercent)), this.nzPercent] : [this.nzPercent];
+        const values = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzSuccessPercent) ? [this.nzSuccessPercent, this.nzPercent] : [this.nzPercent];
         // Calculate shared styles.
-        /** @type {?} */
         const radius = 50 - this.strokeWidth / 2;
-        /** @type {?} */
         const gapPosition = this.nzGapPosition || (this.nzType === 'circle' ? 'top' : 'bottom');
-        /** @type {?} */
         const len = Math.PI * 2 * radius;
-        /** @type {?} */
         const gapDegree = this.nzGapDegree || (this.nzType === 'circle' ? 0 : 75);
-        /** @type {?} */
         let beginPositionX = 0;
-        /** @type {?} */
         let beginPositionY = -radius;
-        /** @type {?} */
         let endPositionX = 0;
-        /** @type {?} */
         let endPositionY = radius * -2;
         switch (gapPosition) {
             case 'left':
@@ -534,40 +422,28 @@ class NzProgressComponent {
         };
         // Calculate styles for each path.
         this.progressCirclePath = values
-            .map((/**
-         * @param {?} value
-         * @param {?} index
-         * @return {?}
-         */
-        (value, index) => {
-            /** @type {?} */
+            .map((value, index) => {
             const isSuccessPercent = values.length === 2 && index === 0;
             return {
                 stroke: this.isGradient && !isSuccessPercent ? `url(#gradient-${this.gradientId})` : null,
                 strokePathStyle: {
-                    stroke: !this.isGradient ? (isSuccessPercent ? statusColorMap.get('success') : ((/** @type {?} */ (this.nzStrokeColor)))) : null,
+                    stroke: !this.isGradient ? (isSuccessPercent ? statusColorMap.get('success') : this.nzStrokeColor) : null,
                     transition: 'stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s, stroke-width .06s ease .3s',
                     strokeDasharray: `${((value || 0) / 100) * (len - gapDegree)}px ${len}px`,
                     strokeDashoffset: `-${gapDegree / 2}px`
                 }
             };
-        }))
+        })
             .reverse();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setStrokeColor() {
-        /** @type {?} */
         const color = this.nzStrokeColor;
-        /** @type {?} */
         const isGradient = (this.isGradient = !!color && typeof color !== 'string');
         if (isGradient && !this.isCircleStyle) {
-            this.lineGradient = handleLinearGradient((/** @type {?} */ (color)));
+            this.lineGradient = handleLinearGradient(color);
         }
         else if (isGradient && this.isCircleStyle) {
-            this.circleGradient = handleCircleGradient((/** @type {?} */ (this.nzStrokeColor)));
+            this.circleGradient = handleCircleGradient(this.nzStrokeColor);
         }
         else {
             this.lineGradient = null;
@@ -575,8 +451,10 @@ class NzProgressComponent {
         }
     }
 }
+/** @nocollapse */
 NzProgressComponent.ɵfac = function NzProgressComponent_Factory(t) { return new (t || NzProgressComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"])); };
-NzProgressComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzProgressComponent, selectors: [["nz-progress"]], inputs: { nzShowInfo: "nzShowInfo", nzWidth: "nzWidth", nzStrokeColor: "nzStrokeColor", nzSize: "nzSize", nzPercent: "nzPercent", nzStrokeWidth: "nzStrokeWidth", nzGapDegree: "nzGapDegree", nzType: "nzType", nzGapPosition: "nzGapPosition", nzStrokeLinecap: "nzStrokeLinecap", nzFormat: "nzFormat", nzSuccessPercent: "nzSuccessPercent", nzStatus: "nzStatus", nzSteps: "nzSteps" }, exportAs: ["nzProgress"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 5, vars: 13, consts: [["progressInfoTemplate", ""], [3, "ngClass"], [4, "ngIf"], ["class", "ant-progress-inner", 3, "width", "height", "fontSize", "ant-progress-circle-gradient", 4, "ngIf"], ["class", "ant-progress-text", 4, "ngIf"], [1, "ant-progress-text"], [4, "ngIf", "ngIfElse"], ["formatTemplate", ""], ["nz-icon", "", 3, "nzType"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["class", "ant-progress-steps-outer", 4, "ngIf"], ["class", "ant-progress-outer", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-progress-outer"], [1, "ant-progress-inner"], [1, "ant-progress-bg"], ["class", "ant-progress-success-bg", 3, "width", "border-radius", "height", 4, "ngIf"], [1, "ant-progress-success-bg"], [1, "ant-progress-steps-outer"], ["class", "ant-progress-steps-item", 3, "ngStyle", 4, "ngFor", "ngForOf"], [1, "ant-progress-steps-item", 3, "ngStyle"], ["viewBox", "0 0 100 100", 1, "ant-progress-circle"], ["stroke", "#f3f3f3", "fill-opacity", "0", 1, "ant-progress-circle-trail", 3, "ngStyle"], ["class", "ant-progress-circle-path", "fill-opacity", "0", 3, "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["x1", "100%", "y1", "0%", "x2", "0%", "y2", "0%", 3, "id"], [4, "ngFor", "ngForOf"], ["fill-opacity", "0", 1, "ant-progress-circle-path", 3, "ngStyle"]], template: function NzProgressComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */
+NzProgressComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzProgressComponent, selectors: [["nz-progress"]], inputs: { nzShowInfo: "nzShowInfo", nzWidth: "nzWidth", nzStrokeColor: "nzStrokeColor", nzSize: "nzSize", nzPercent: "nzPercent", nzStrokeWidth: "nzStrokeWidth", nzGapDegree: "nzGapDegree", nzType: "nzType", nzGapPosition: "nzGapPosition", nzStrokeLinecap: "nzStrokeLinecap", nzSteps: "nzSteps", nzFormat: "nzFormat", nzSuccessPercent: "nzSuccessPercent", nzStatus: "nzStatus" }, exportAs: ["nzProgress"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 5, vars: 13, consts: [["progressInfoTemplate", ""], [3, "ngClass"], [4, "ngIf"], ["class", "ant-progress-inner", 3, "width", "height", "fontSize", "ant-progress-circle-gradient", 4, "ngIf"], ["class", "ant-progress-text", 4, "ngIf"], [1, "ant-progress-text"], [4, "ngIf", "ngIfElse"], ["formatTemplate", ""], ["nz-icon", "", 3, "nzType"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], ["class", "ant-progress-steps-outer", 4, "ngIf"], ["class", "ant-progress-outer", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-progress-outer"], [1, "ant-progress-inner"], [1, "ant-progress-bg"], ["class", "ant-progress-success-bg", 3, "width", "border-radius", "height", 4, "ngIf"], [1, "ant-progress-success-bg"], [1, "ant-progress-steps-outer"], ["class", "ant-progress-steps-item", 3, "ngStyle", 4, "ngFor", "ngForOf"], [1, "ant-progress-steps-item", 3, "ngStyle"], ["viewBox", "0 0 100 100", 1, "ant-progress-circle"], ["stroke", "#f3f3f3", "fill-opacity", "0", 1, "ant-progress-circle-trail", 3, "ngStyle"], ["class", "ant-progress-circle-path", "fill-opacity", "0", 3, "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["x1", "100%", "y1", "0%", "x2", "0%", "y2", "0%", 3, "id"], [4, "ngFor", "ngForOf"], ["fill-opacity", "0", 1, "ant-progress-circle-path", 3, "ngStyle"]], template: function NzProgressComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzProgressComponent_ng_template_0_Template, 1, 1, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzProgressComponent_div_3_Template, 3, 2, "div", 2);
@@ -591,7 +469,6 @@ NzProgressComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.isCircleStyle);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzStringTemplateOutletDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzProgressComponent.ctorParameters = () => [
     { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }
 ];
@@ -612,15 +489,15 @@ NzProgressComponent.propDecorators = {
     nzSteps: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzProgressComponent.prototype, "nzShowInfo", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzProgressComponent.prototype, "nzStrokeColor", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String)
 ], NzProgressComponent.prototype, "nzSize", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
@@ -632,19 +509,21 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Number)
 ], NzProgressComponent.prototype, "nzPercent", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Number)
 ], NzProgressComponent.prototype, "nzStrokeWidth", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Number)
 ], NzProgressComponent.prototype, "nzGapDegree", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String)
 ], NzProgressComponent.prototype, "nzGapPosition", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String)
 ], NzProgressComponent.prototype, "nzStrokeLinecap", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
@@ -683,6 +562,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
     >
       <!-- line progress -->
       <div *ngIf="nzType === 'line'">
+        <!-- normal line style -->
         <ng-container *ngIf="!isSteps">
           <div class="ant-progress-outer" *ngIf="!isSteps">
             <div class="ant-progress-inner">
@@ -705,7 +585,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
           </div>
           <ng-template [ngTemplateOutlet]="progressInfoTemplate"></ng-template>
         </ng-container>
-        <!-- Step style progress -->
+        <!-- step style -->
         <div class="ant-progress-steps-outer" *ngIf="isSteps">
           <div *ngFor="let step of steps; let i = index" class="ant-progress-steps-item" [ngStyle]="step"></div>
           <ng-template [ngTemplateOutlet]="progressInfoTemplate"></ng-template>
@@ -771,25 +651,25 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzStrokeLinecap: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzSteps: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzFormat: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzSuccessPercent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzStatus: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzSteps: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: progress.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzProgressModule {
 }
+/** @nocollapse */
 NzProgressModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzProgressModule });
+/** @nocollapse */
 NzProgressModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzProgressModule_Factory(t) { return new (t || NzProgressModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzOutletModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzProgressModule, { declarations: function () { return [NzProgressComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzOutletModule"]]; }, exports: function () { return [NzProgressComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzProgressModule, [{
@@ -802,44 +682,17 @@ NzProgressModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineI
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: typings.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/**
- * @record
- */
-function NzProgressGradientProgress() { }
-/**
- * @record
- */
-function NzProgressGradientFromTo() { }
-if (false) {}
-/**
- * @record
- */
-function NzProgressCirclePath() { }
-if (false) {}
-/**
- * @record
- */
-function NzProgressStepItem() { }
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-progress.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

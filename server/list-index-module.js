@@ -1,7 +1,191 @@
 exports.ids = ["list-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/list/basic.ts":
+/***/ "22lF":
+/*!****************************************!*\
+  !*** ./site/doc/app/list/resposive.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoListResposiveComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListResposiveComponent", function() { return NzDemoListResposiveComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/card */ "A/CH");
+
+
+
+
+
+
+function NzDemoListResposiveComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-card", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Card content ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXXl", 8)("nzXl", 4)("nzLg", 6)("nzMd", 6)("nzSm", 12)("nzXs", 24);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTitle", item_r1.title);
+} }
+class NzDemoListResposiveComponent {
+    constructor() {
+        this.data = [
+            {
+                title: 'Title 1'
+            },
+            {
+                title: 'Title 2'
+            },
+            {
+                title: 'Title 3'
+            },
+            {
+                title: 'Title 4'
+            },
+            {
+                title: 'Title 5'
+            },
+            {
+                title: 'Title 6'
+            }
+        ];
+    }
+}
+/** @nocollapse */ NzDemoListResposiveComponent.ɵfac = function NzDemoListResposiveComponent_Factory(t) { return new (t || NzDemoListResposiveComponent)(); };
+/** @nocollapse */ NzDemoListResposiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListResposiveComponent, selectors: [["nz-demo-list-resposive"]], decls: 3, vars: 2, consts: [["nzGrid", ""], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXXl", "nzXl", "nzLg", "nzMd", "nzSm", "nzXs", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzXXl", "nzXl", "nzLg", "nzMd", "nzSm", "nzXs"], [3, "nzTitle"]], template: function NzDemoListResposiveComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoListResposiveComponent_div_2_Template, 4, 7, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
+    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListGridDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzColDirective"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListItemComponent"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__["NzCardComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListResposiveComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-list-resposive',
+                template: `
+    <nz-list nzGrid>
+      <div nz-row [nzGutter]="16">
+        <div nz-col [nzXXl]="8" [nzXl]="4" [nzLg]="6" [nzMd]="6" [nzSm]="12" [nzXs]="24" *ngFor="let item of data">
+          <nz-list-item>
+            <nz-card [nzTitle]="item.title">
+              Card content
+            </nz-card>
+          </nz-list-item>
+        </div>
+      </div>
+    </nz-list>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "8CcS":
+/*!***********************************!*\
+  !*** ./site/doc/app/list/grid.ts ***!
+  \***********************************/
+/*! exports provided: NzDemoListGridComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListGridComponent", function() { return NzDemoListGridComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/card */ "A/CH");
+
+
+
+
+
+
+function NzDemoListGridComponent_div_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-card", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Card content ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTitle", item_r1.title);
+} }
+class NzDemoListGridComponent {
+    constructor() {
+        this.data = [
+            {
+                title: 'Title 1'
+            },
+            {
+                title: 'Title 2'
+            },
+            {
+                title: 'Title 3'
+            },
+            {
+                title: 'Title 4'
+            }
+        ];
+    }
+}
+/** @nocollapse */ NzDemoListGridComponent.ɵfac = function NzDemoListGridComponent_Factory(t) { return new (t || NzDemoListGridComponent)(); };
+/** @nocollapse */ NzDemoListGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListGridComponent, selectors: [["nz-demo-list-grid"]], decls: 3, vars: 2, consts: [["nzGrid", ""], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan"], [3, "nzTitle"]], template: function NzDemoListGridComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoListGridComponent_div_2_Template, 4, 2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
+    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListGridDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzColDirective"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListItemComponent"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__["NzCardComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListGridComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-list-grid',
+                template: `
+    <nz-list nzGrid>
+      <div nz-row [nzGutter]="16">
+        <div nz-col [nzSpan]="6" *ngFor="let item of data">
+          <nz-list-item>
+            <nz-card [nzTitle]="item.title">
+              Card content
+            </nz-card>
+          </nz-list-item>
+        </div>
+      </div>
+    </nz-list>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Kx41":
 /*!************************************!*\
   !*** ./site/doc/app/list/basic.ts ***!
   \************************************/
@@ -11,12 +195,12 @@ exports.modules = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListBasicComponent", function() { return NzDemoListBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -135,7 +319,468 @@ class NzDemoListBasicComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/list/en.component.ts":
+/***/ "P7LN":
+/*!********************************************!*\
+  !*** ./site/doc/app/list/infinite-load.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoListInfiniteLoadComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListInfiniteLoadComponent", function() { return NzDemoListInfiniteLoadComponent; });
+/* harmony import */ var _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/collections */ "0EQZ");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/scrolling */ "vxfF");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "vss8");
+
+
+
+
+
+
+
+
+
+
+const _c0 = function () { return { rows: 1 }; };
+function NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_skeleton_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "nz-skeleton", 4);
+} if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzAvatar", true)("nzParagraph", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](2, _c0));
+} }
+function NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_list_item_meta_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-list-item-meta", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "nz-list-item-meta-title");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "a", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzDescription", item_r1.email);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](item_r1.name.last);
+} }
+function NzDemoListInfiniteLoadComponent_nz_list_item_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_skeleton_1_Template, 1, 3, "nz-skeleton", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_list_item_meta_2_Template, 4, 2, "nz-list-item-meta", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !item_r1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", item_r1);
+} }
+class NzDemoListInfiniteLoadComponent {
+    constructor(http) {
+        this.http = http;
+        this.ds = new MyDataSource(this.http);
+    }
+}
+/** @nocollapse */ NzDemoListInfiniteLoadComponent.ɵfac = function NzDemoListInfiniteLoadComponent_Factory(t) { return new (t || NzDemoListInfiniteLoadComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
+/** @nocollapse */ NzDemoListInfiniteLoadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzDemoListInfiniteLoadComponent, selectors: [["nz-demo-list-infinite-load"]], decls: 4, vars: 1, consts: [["itemSize", "73", 1, "demo-infinite-container"], [4, "cdkVirtualFor", "cdkVirtualForOf"], [3, "nzAvatar", "nzParagraph", 4, "ngIf"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", 3, "nzDescription", 4, "ngIf"], [3, "nzAvatar", "nzParagraph"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", 3, "nzDescription"], ["href", "https://ng.ant.design"]], template: function NzDemoListInfiniteLoadComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "cdk-virtual-scroll-viewport", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "nz-list");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, NzDemoListInfiniteLoadComponent_nz_list_item_3_Template, 3, 2, "nz-list-item", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("cdkVirtualForOf", ctx.ds);
+    } }, directives: [_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkVirtualScrollViewport"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkFixedSizeVirtualScroll"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListComponent"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkVirtualForOf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_7__["NzSkeletonComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemMetaComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemMetaTitleComponent"]], styles: [".demo-infinite-container[_ngcontent-%COMP%] {\n        height: 300px;\n        border: 1px solid #e8e8e8;\n        border-radius: 4px;\n      }\n\n      nz-list[_ngcontent-%COMP%] {\n        padding: 24px;\n      }"], changeDetection: 0 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzDemoListInfiniteLoadComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+        args: [{
+                selector: 'nz-demo-list-infinite-load',
+                template: `
+    <div>
+      <cdk-virtual-scroll-viewport itemSize="73" class="demo-infinite-container">
+        <nz-list>
+          <nz-list-item *cdkVirtualFor="let item of ds">
+            <nz-skeleton *ngIf="!item" [nzAvatar]="true" [nzParagraph]="{ rows: 1 }"></nz-skeleton>
+            <nz-list-item-meta
+              *ngIf="item"
+              nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+              [nzDescription]="item.email"
+            >
+              <nz-list-item-meta-title>
+                <a href="https://ng.ant.design">{{ item.name.last }}</a>
+              </nz-list-item-meta-title>
+            </nz-list-item-meta>
+          </nz-list-item>
+        </nz-list>
+      </cdk-virtual-scroll-viewport>
+    </div>
+  `,
+                styles: [
+                    `
+      .demo-infinite-container {
+        height: 300px;
+        border: 1px solid #e8e8e8;
+        border-radius: 4px;
+      }
+
+      nz-list {
+        padding: 24px;
+      }
+    `
+                ],
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush
+            }]
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
+class MyDataSource extends _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_0__["DataSource"] {
+    constructor(http) {
+        super();
+        this.http = http;
+        this.length = 100000;
+        this.pageSize = 10;
+        this.cachedData = Array.from({ length: this.length });
+        this.fetchedPages = new Set();
+        this.dataStream = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](this.cachedData);
+        this.subscription = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subscription"]();
+    }
+    connect(collectionViewer) {
+        this.subscription.add(collectionViewer.viewChange.subscribe(range => {
+            const startPage = this.getPageForIndex(range.start);
+            const endPage = this.getPageForIndex(range.end - 1);
+            for (let i = startPage; i <= endPage; i++) {
+                this.fetchPage(i);
+            }
+        }));
+        return this.dataStream;
+    }
+    disconnect() {
+        this.subscription.unsubscribe();
+    }
+    getPageForIndex(index) {
+        return Math.floor(index / this.pageSize);
+    }
+    fetchPage(page) {
+        if (this.fetchedPages.has(page)) {
+            return;
+        }
+        this.fetchedPages.add(page);
+        this.http
+            .get(`https://randomuser.me/api/?results=${this.pageSize}&inc=name,gender,email,nat&noinfo`)
+            .subscribe(res => {
+            this.cachedData.splice(page * this.pageSize, this.pageSize, ...res.results);
+            this.dataStream.next(this.cachedData);
+        });
+    }
+}
+
+
+/***/ }),
+
+/***/ "Q92+":
+/*!*************************************!*\
+  !*** ./site/doc/app/list/simple.ts ***!
+  \*************************************/
+/*! exports provided: NzDemoListSimpleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListSimpleComponent", function() { return NzDemoListSimpleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/typography */ "Zmph");
+
+
+
+
+
+
+
+function NzDemoListSimpleComponent_nz_list_item_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mark");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "[ITEM]");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", item_r3, " ");
+} }
+function NzDemoListSimpleComponent_nz_list_item_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function NzDemoListSimpleComponent_li_17_Template(rf, ctx) { if (rf & 1) {
+    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "ul", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-list-item-action");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoListSimpleComponent_li_17_Template_a_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.msg.info("edit"); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "edit");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r5 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", item_r5, " ");
+} }
+const _c0 = function () { return { "margin-bottom.px": 16 }; };
+const _c1 = function () { return { margin: "16px 0" }; };
+class NzDemoListSimpleComponent {
+    constructor(msg) {
+        this.msg = msg;
+        this.data = [
+            'Racing car sprays burning fuel into crowd.',
+            'Japanese princess to wed commoner.',
+            'Australian walks 100km after outback crash.',
+            'Man charged over missing wedding girl.',
+            'Los Angeles battles huge wildfires.'
+        ];
+    }
+}
+/** @nocollapse */ NzDemoListSimpleComponent.ɵfac = function NzDemoListSimpleComponent_Factory(t) { return new (t || NzDemoListSimpleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+/** @nocollapse */ NzDemoListSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListSimpleComponent, selectors: [["nz-demo-list-simple"]], decls: 20, vars: 10, consts: [[3, "ngStyle"], ["nzBordered", "", "nzHeader", "Header", "nzFooter", "Footer"], [4, "ngFor", "ngForOf"], ["nzBordered", "", "nzSize", "small"], ["nz-list", "", "nzBordered", "", "nzSize", "large", 3, "nzDataSource"], ["nz-list-item", "", "nzNoFlex", "", 4, "ngFor", "ngForOf"], ["nz-typography", ""], ["nz-list-item", "", "nzNoFlex", ""], ["nz-list-item-actions", ""], [3, "click"]], template: function NzDemoListSimpleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Default Size");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-list", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoListSimpleComponent_nz_list_item_3_Template, 5, 1, "nz-list-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h3", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Small Size");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "nz-list", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-list-header");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Header");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoListSimpleComponent_nz_list_item_9_Template, 2, 0, "nz-list-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "nz-list-footer");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Footer");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "h3", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Large Size");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "ul", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "nz-list-header");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Header");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, NzDemoListSimpleComponent_li_17_Template, 6, 1, "li", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "nz-list-footer");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Footer");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDataSource", ctx.data);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListHeaderComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListFooterComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemComponent"], ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_4__["NzTypographyComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionsComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListSimpleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-list-simple',
+                template: `
+    <h3 [ngStyle]="{ 'margin-bottom.px': 16 }">Default Size</h3>
+    <nz-list nzBordered nzHeader="Header" nzFooter="Footer">
+      <nz-list-item *ngFor="let item of data">
+        <span nz-typography><mark>[ITEM]</mark></span>
+        {{ item }}
+      </nz-list-item>
+    </nz-list>
+
+    <h3 [ngStyle]="{ margin: '16px 0' }">Small Size</h3>
+    <nz-list nzBordered nzSize="small">
+      <nz-list-header>Header</nz-list-header>
+      <nz-list-item *ngFor="let item of data">item</nz-list-item>
+      <nz-list-footer>Footer</nz-list-footer>
+    </nz-list>
+
+    <h3 [ngStyle]="{ margin: '16px 0' }">Large Size</h3>
+    <ul nz-list [nzDataSource]="data" nzBordered nzSize="large">
+      <nz-list-header>Header</nz-list-header>
+      <li nz-list-item *ngFor="let item of data" nzNoFlex>
+        <ul nz-list-item-actions>
+          <nz-list-item-action>
+            <a (click)="msg.info('edit')">edit</a>
+          </nz-list-item-action>
+        </ul>
+        {{ item }}
+      </li>
+      <nz-list-footer>Footer</nz-list-footer>
+    </ul>
+  `
+            }]
+    }], function () { return [{ type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "ldzb":
+/*!*******************************************!*\
+  !*** ./site/doc/app/list/index.module.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoListModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListModule", function() { return NzDemoListModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "mGIw");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "Kx41");
+/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./grid */ "8CcS");
+/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./infinite-load */ "P7LN");
+/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./loadmore */ "yoUK");
+/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resposive */ "22lF");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./simple */ "Q92+");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "p7H8");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "tSG+");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "meZ6");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/card */ "A/CH");
+/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "vss8");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/typography */ "Zmph");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoListModule {
+}
+/** @nocollapse */ NzDemoListModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoListModule });
+/** @nocollapse */ NzDemoListModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoListModule_Factory(t) { return new (t || NzDemoListModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoListModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoListBasicComponent"],
+        _grid__WEBPACK_IMPORTED_MODULE_5__["NzDemoListGridComponent"],
+        _infinite_load__WEBPACK_IMPORTED_MODULE_6__["NzDemoListInfiniteLoadComponent"],
+        _loadmore__WEBPACK_IMPORTED_MODULE_7__["NzDemoListLoadmoreComponent"],
+        _resposive__WEBPACK_IMPORTED_MODULE_8__["NzDemoListResposiveComponent"],
+        _simple__WEBPACK_IMPORTED_MODULE_9__["NzDemoListSimpleComponent"],
+        _vertical__WEBPACK_IMPORTED_MODULE_10__["NzDemoListVerticalComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_13__["NzListModule"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_14__["NzCardModule"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_15__["NzSkeletonModule"], ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_16__["NzPaginationModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_17__["NzButtonModule"], ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_18__["NzTypographyModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_19__["NzGridModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoListBasicComponent"],
+                    _grid__WEBPACK_IMPORTED_MODULE_5__["NzDemoListGridComponent"],
+                    _infinite_load__WEBPACK_IMPORTED_MODULE_6__["NzDemoListInfiniteLoadComponent"],
+                    _loadmore__WEBPACK_IMPORTED_MODULE_7__["NzDemoListLoadmoreComponent"],
+                    _resposive__WEBPACK_IMPORTED_MODULE_8__["NzDemoListResposiveComponent"],
+                    _simple__WEBPACK_IMPORTED_MODULE_9__["NzDemoListSimpleComponent"],
+                    _vertical__WEBPACK_IMPORTED_MODULE_10__["NzDemoListVerticalComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "mGIw":
+/*!*************************************!*\
+  !*** ./site/doc/app/list/module.ts ***!
+  \*************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/card */ "A/CH");
+/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "vss8");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/typography */ "Zmph");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+
+
+
+
+const moduleList = [
+    ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_0__["NzListModule"],
+    ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_1__["NzCardModule"],
+    ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_2__["NzSkeletonModule"],
+    ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_3__["NzPaginationModule"],
+    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__["NzButtonModule"],
+    ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_5__["NzTypographyModule"],
+    ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzGridModule"]
+];
+
+
+/***/ }),
+
+/***/ "meZ6":
 /*!*******************************************!*\
   !*** ./site/doc/app/list/en.component.ts ***!
   \*******************************************/
@@ -145,20 +790,20 @@ class NzDemoListBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListEnComponent", function() { return NzDemoListEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./simple */ "./site/doc/app/list/simple.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/list/basic.ts");
-/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./loadmore */ "./site/doc/app/list/loadmore.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/list/vertical.ts");
-/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./grid */ "./site/doc/app/list/grid.ts");
-/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./resposive */ "./site/doc/app/list/resposive.ts");
-/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./infinite-load */ "./site/doc/app/list/infinite-load.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./simple */ "Q92+");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "Kx41");
+/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./loadmore */ "yoUK");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "p7H8");
+/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./grid */ "8CcS");
+/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./resposive */ "22lF");
+/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./infinite-load */ "P7LN");
 
 
 
@@ -199,7 +844,7 @@ class NzDemoListEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 438, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-list-demo-simple", "nzTitle", "Simple list"], ["nzHref", "#components-list-demo-basic", "nzTitle", "Basic list"], ["nzHref", "#components-list-demo-loadmore", "nzTitle", "Load more"], ["nzHref", "#components-list-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-list-demo-grid", "nzTitle", "Grid"], ["nzHref", "#components-list-demo-resposive", "nzTitle", "Responsive grid list"], ["nzHref", "#components-list-demo-infinite-load", "nzTitle", "Infinite & virtualized"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/list/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Simple list", "nzSelector", "nz-demo-list-simple", "nzGenerateCommand", "ng g ng-zorro-antd:list-simple <name>", "nzComponentName", "NzDemoListSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Basic list", "nzSelector", "nz-demo-list-basic", "nzGenerateCommand", "ng g ng-zorro-antd:list-basic <name>", "nzComponentName", "NzDemoListBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Load more", "nzSelector", "nz-demo-list-loadmore", "nzGenerateCommand", "ng g ng-zorro-antd:list-loadmore <name>", "nzComponentName", "NzDemoListLoadmoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical", "nzSelector", "nz-demo-list-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:list-vertical <name>", "nzComponentName", "NzDemoListVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid", "nzSelector", "nz-demo-list-grid", "nzGenerateCommand", "ng g ng-zorro-antd:list-grid <name>", "nzComponentName", "NzDemoListGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive grid list", "nzSelector", "nz-demo-list-resposive", "nzGenerateCommand", "ng g ng-zorro-antd:list-resposive <name>", "nzComponentName", "NzDemoListResposiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Infinite & virtualized", "nzSelector", "nz-demo-list-infinite-load", "nzGenerateCommand", "ng g ng-zorro-antd:list-infinite-load <name>", "nzComponentName", "NzDemoListInfiniteLoadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://material.angular.io/cdk/scrolling/overview"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-list"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-list'", 1, "anchor"], ["id", "nz-list-empty"], ["onclick", "window.location.hash = 'nz-list-empty'", 1, "anchor"], ["id", "nz-list[nzgrid]"], ["onclick", "window.location.hash = 'nz-list[nzgrid]'", 1, "anchor"], ["id", "nz-list-header"], ["onclick", "window.location.hash = 'nz-list-header'", 1, "anchor"], ["id", "nz-list-footer"], ["onclick", "window.location.hash = 'nz-list-footer'", 1, "anchor"], ["id", "nz-list-pagination"], ["onclick", "window.location.hash = 'nz-list-pagination'", 1, "anchor"], ["id", "nz-list-load-more"], ["onclick", "window.location.hash = 'nz-list-load-more'", 1, "anchor"], ["id", "nz-list-item"], ["onclick", "window.location.hash = 'nz-list-item'", 1, "anchor"], ["id", "ul[nz-list-item-actions]"], ["onclick", "window.location.hash = 'ul[nz-list-item-actions]'", 1, "anchor"], ["id", "nz-list-item-action"], ["onclick", "window.location.hash = 'nz-list-item-action'", 1, "anchor"], ["id", "nz-list-item-extra"], ["onclick", "window.location.hash = 'nz-list-item-extra'", 1, "anchor"], ["id", "nz-list-item-meta"], ["onclick", "window.location.hash = 'nz-list-item-meta'", 1, "anchor"], ["id", "nz-list-item-meta-title"], ["onclick", "window.location.hash = 'nz-list-item-meta-title'", 1, "anchor"], ["id", "nz-list-item-meta-description"], ["onclick", "window.location.hash = 'nz-list-item-meta-description'", 1, "anchor"], ["id", "nz-list-item-meta-avatar"], ["onclick", "window.location.hash = 'nz-list-item-meta-avatar'", 1, "anchor"]], template: function NzDemoListEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 438, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-list-demo-simple", "nzTitle", "Simple list"], ["nzHref", "#components-list-demo-basic", "nzTitle", "Basic list"], ["nzHref", "#components-list-demo-loadmore", "nzTitle", "Load more"], ["nzHref", "#components-list-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-list-demo-grid", "nzTitle", "Grid"], ["nzHref", "#components-list-demo-resposive", "nzTitle", "Responsive grid list"], ["nzHref", "#components-list-demo-infinite-load", "nzTitle", "Infinite & virtualized"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/list/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Simple list", "nzSelector", "nz-demo-list-simple", "nzGenerateCommand", "ng g ng-zorro-antd:list-simple <name>", "nzComponentName", "NzDemoListSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Basic list", "nzSelector", "nz-demo-list-basic", "nzGenerateCommand", "ng g ng-zorro-antd:list-basic <name>", "nzComponentName", "NzDemoListBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Load more", "nzSelector", "nz-demo-list-loadmore", "nzGenerateCommand", "ng g ng-zorro-antd:list-loadmore <name>", "nzComponentName", "NzDemoListLoadmoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical", "nzSelector", "nz-demo-list-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:list-vertical <name>", "nzComponentName", "NzDemoListVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid", "nzSelector", "nz-demo-list-grid", "nzGenerateCommand", "ng g ng-zorro-antd:list-grid <name>", "nzComponentName", "NzDemoListGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive grid list", "nzSelector", "nz-demo-list-resposive", "nzGenerateCommand", "ng g ng-zorro-antd:list-resposive <name>", "nzComponentName", "NzDemoListResposiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Infinite & virtualized", "nzSelector", "nz-demo-list-infinite-load", "nzGenerateCommand", "ng g ng-zorro-antd:list-infinite-load <name>", "nzComponentName", "NzDemoListInfiniteLoadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://material.angular.io/cdk/scrolling/overview", "target", "_blank"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-list"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-list'", 1, "anchor"], ["id", "nz-list-empty"], ["onclick", "window.location.hash = 'nz-list-empty'", 1, "anchor"], ["id", "nz-list[nzgrid]"], ["onclick", "window.location.hash = 'nz-list[nzgrid]'", 1, "anchor"], ["id", "nz-list-header"], ["onclick", "window.location.hash = 'nz-list-header'", 1, "anchor"], ["id", "nz-list-footer"], ["onclick", "window.location.hash = 'nz-list-footer'", 1, "anchor"], ["id", "nz-list-pagination"], ["onclick", "window.location.hash = 'nz-list-pagination'", 1, "anchor"], ["id", "nz-list-load-more"], ["onclick", "window.location.hash = 'nz-list-load-more'", 1, "anchor"], ["id", "nz-list-item"], ["onclick", "window.location.hash = 'nz-list-item'", 1, "anchor"], ["id", "ul[nz-list-item-actions]"], ["onclick", "window.location.hash = 'ul[nz-list-item-actions]'", 1, "anchor"], ["id", "nz-list-item-action"], ["onclick", "window.location.hash = 'nz-list-item-action'", 1, "anchor"], ["id", "nz-list-item-extra"], ["onclick", "window.location.hash = 'nz-list-item-extra'", 1, "anchor"], ["id", "nz-list-item-meta"], ["onclick", "window.location.hash = 'nz-list-item-meta'", 1, "anchor"], ["id", "nz-list-item-meta-title"], ["onclick", "window.location.hash = 'nz-list-item-meta-title'", 1, "anchor"], ["id", "nz-list-item-meta-description"], ["onclick", "window.location.hash = 'nz-list-item-meta-description'", 1, "anchor"], ["id", "nz-list-item-meta-avatar"], ["onclick", "window.location.hash = 'nz-list-item-meta-avatar'", 1, "anchor"]], template: function NzDemoListEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -950,836 +1595,7 @@ class NzDemoListEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/list/grid.ts":
-/*!***********************************!*\
-  !*** ./site/doc/app/list/grid.ts ***!
-  \***********************************/
-/*! exports provided: NzDemoListGridComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListGridComponent", function() { return NzDemoListGridComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/card */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-card.js");
-
-
-
-
-
-
-function NzDemoListGridComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-card", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Card content ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTitle", item_r1.title);
-} }
-class NzDemoListGridComponent {
-    constructor() {
-        this.data = [
-            {
-                title: 'Title 1'
-            },
-            {
-                title: 'Title 2'
-            },
-            {
-                title: 'Title 3'
-            },
-            {
-                title: 'Title 4'
-            }
-        ];
-    }
-}
-/** @nocollapse */ NzDemoListGridComponent.ɵfac = function NzDemoListGridComponent_Factory(t) { return new (t || NzDemoListGridComponent)(); };
-/** @nocollapse */ NzDemoListGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListGridComponent, selectors: [["nz-demo-list-grid"]], decls: 3, vars: 2, consts: [["nzGrid", ""], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzSpan"], [3, "nzTitle"]], template: function NzDemoListGridComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoListGridComponent_div_2_Template, 4, 2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
-    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListGridDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzColDirective"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListItemComponent"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__["NzCardComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListGridComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-list-grid',
-                template: `
-    <nz-list nzGrid>
-      <div nz-row [nzGutter]="16">
-        <div nz-col [nzSpan]="6" *ngFor="let item of data">
-          <nz-list-item>
-            <nz-card [nzTitle]="item.title">
-              Card content
-            </nz-card>
-          </nz-list-item>
-        </div>
-      </div>
-    </nz-list>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/index.module.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/list/index.module.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoListModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListModule", function() { return NzDemoListModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/list/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/list/basic.ts");
-/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./grid */ "./site/doc/app/list/grid.ts");
-/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./infinite-load */ "./site/doc/app/list/infinite-load.ts");
-/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./loadmore */ "./site/doc/app/list/loadmore.ts");
-/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resposive */ "./site/doc/app/list/resposive.ts");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./simple */ "./site/doc/app/list/simple.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/list/vertical.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/list/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/list/en.component.ts");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/card */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-card.js");
-/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-skeleton.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/typography */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-typography.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoListModule {
-}
-/** @nocollapse */ NzDemoListModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoListModule });
-/** @nocollapse */ NzDemoListModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoListModule_Factory(t) { return new (t || NzDemoListModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoListModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoListBasicComponent"],
-        _grid__WEBPACK_IMPORTED_MODULE_5__["NzDemoListGridComponent"],
-        _infinite_load__WEBPACK_IMPORTED_MODULE_6__["NzDemoListInfiniteLoadComponent"],
-        _loadmore__WEBPACK_IMPORTED_MODULE_7__["NzDemoListLoadmoreComponent"],
-        _resposive__WEBPACK_IMPORTED_MODULE_8__["NzDemoListResposiveComponent"],
-        _simple__WEBPACK_IMPORTED_MODULE_9__["NzDemoListSimpleComponent"],
-        _vertical__WEBPACK_IMPORTED_MODULE_10__["NzDemoListVerticalComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_13__["NzListModule"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_14__["NzCardModule"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_15__["NzSkeletonModule"], ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_16__["NzPaginationModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_17__["NzButtonModule"], ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_18__["NzTypographyModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_19__["NzGridModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoListBasicComponent"],
-                    _grid__WEBPACK_IMPORTED_MODULE_5__["NzDemoListGridComponent"],
-                    _infinite_load__WEBPACK_IMPORTED_MODULE_6__["NzDemoListInfiniteLoadComponent"],
-                    _loadmore__WEBPACK_IMPORTED_MODULE_7__["NzDemoListLoadmoreComponent"],
-                    _resposive__WEBPACK_IMPORTED_MODULE_8__["NzDemoListResposiveComponent"],
-                    _simple__WEBPACK_IMPORTED_MODULE_9__["NzDemoListSimpleComponent"],
-                    _vertical__WEBPACK_IMPORTED_MODULE_10__["NzDemoListVerticalComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoListZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoListEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/infinite-load.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/list/infinite-load.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoListInfiniteLoadComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListInfiniteLoadComponent", function() { return NzDemoListInfiniteLoadComponent; });
-/* harmony import */ var _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/collections */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/collections.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/scrolling */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/scrolling.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-skeleton.js");
-
-
-
-
-
-
-
-
-
-
-const _c0 = function () { return { rows: 1 }; };
-function NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_skeleton_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "nz-skeleton", 4);
-} if (rf & 2) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzAvatar", true)("nzParagraph", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction0"](2, _c0));
-} }
-function NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_list_item_meta_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-list-item-meta", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "nz-list-item-meta-title");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "a", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzDescription", item_r1.email);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](item_r1.name.last);
-} }
-function NzDemoListInfiniteLoadComponent_nz_list_item_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_skeleton_1_Template, 1, 3, "nz-skeleton", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzDemoListInfiniteLoadComponent_nz_list_item_3_nz_list_item_meta_2_Template, 4, 2, "nz-list-item-meta", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !item_r1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", item_r1);
-} }
-class NzDemoListInfiniteLoadComponent {
-    constructor(http) {
-        this.http = http;
-        this.ds = new MyDataSource(this.http);
-    }
-}
-/** @nocollapse */ NzDemoListInfiniteLoadComponent.ɵfac = function NzDemoListInfiniteLoadComponent_Factory(t) { return new (t || NzDemoListInfiniteLoadComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
-/** @nocollapse */ NzDemoListInfiniteLoadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzDemoListInfiniteLoadComponent, selectors: [["nz-demo-list-infinite-load"]], decls: 4, vars: 1, consts: [["itemSize", "73", 1, "demo-infinite-container"], [4, "cdkVirtualFor", "cdkVirtualForOf"], [3, "nzAvatar", "nzParagraph", 4, "ngIf"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", 3, "nzDescription", 4, "ngIf"], [3, "nzAvatar", "nzParagraph"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", 3, "nzDescription"], ["href", "https://ng.ant.design"]], template: function NzDemoListInfiniteLoadComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "cdk-virtual-scroll-viewport", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "nz-list");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](3, NzDemoListInfiniteLoadComponent_nz_list_item_3_Template, 3, 2, "nz-list-item", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("cdkVirtualForOf", ctx.ds);
-    } }, directives: [_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkVirtualScrollViewport"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkFixedSizeVirtualScroll"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListComponent"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_4__["CdkVirtualForOf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_7__["NzSkeletonComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemMetaComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_5__["NzListItemMetaTitleComponent"]], styles: [".demo-infinite-container[_ngcontent-%COMP%] {\n        height: 300px;\n        border: 1px solid #e8e8e8;\n        border-radius: 4px;\n      }\n\n      nz-list[_ngcontent-%COMP%] {\n        padding: 24px;\n      }"], changeDetection: 0 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzDemoListInfiniteLoadComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
-        args: [{
-                selector: 'nz-demo-list-infinite-load',
-                template: `
-    <div>
-      <cdk-virtual-scroll-viewport itemSize="73" class="demo-infinite-container">
-        <nz-list>
-          <nz-list-item *cdkVirtualFor="let item of ds">
-            <nz-skeleton *ngIf="!item" [nzAvatar]="true" [nzParagraph]="{ rows: 1 }"></nz-skeleton>
-            <nz-list-item-meta
-              *ngIf="item"
-              nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-              [nzDescription]="item.email"
-            >
-              <nz-list-item-meta-title>
-                <a href="https://ng.ant.design">{{ item.name.last }}</a>
-              </nz-list-item-meta-title>
-            </nz-list-item-meta>
-          </nz-list-item>
-        </nz-list>
-      </cdk-virtual-scroll-viewport>
-    </div>
-  `,
-                styles: [
-                    `
-      .demo-infinite-container {
-        height: 300px;
-        border: 1px solid #e8e8e8;
-        border-radius: 4px;
-      }
-
-      nz-list {
-        padding: 24px;
-      }
-    `
-                ],
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush
-            }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
-class MyDataSource extends _angular_cdk_collections__WEBPACK_IMPORTED_MODULE_0__["DataSource"] {
-    constructor(http) {
-        super();
-        this.http = http;
-        this.length = 100000;
-        this.pageSize = 10;
-        this.cachedData = Array.from({ length: this.length });
-        this.fetchedPages = new Set();
-        this.dataStream = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](this.cachedData);
-        this.subscription = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subscription"]();
-    }
-    connect(collectionViewer) {
-        this.subscription.add(collectionViewer.viewChange.subscribe(range => {
-            const startPage = this.getPageForIndex(range.start);
-            const endPage = this.getPageForIndex(range.end - 1);
-            for (let i = startPage; i <= endPage; i++) {
-                this.fetchPage(i);
-            }
-        }));
-        return this.dataStream;
-    }
-    disconnect() {
-        this.subscription.unsubscribe();
-    }
-    getPageForIndex(index) {
-        return Math.floor(index / this.pageSize);
-    }
-    fetchPage(page) {
-        if (this.fetchedPages.has(page)) {
-            return;
-        }
-        this.fetchedPages.add(page);
-        this.http
-            .get(`https://randomuser.me/api/?results=${this.pageSize}&inc=name,gender,email,nat&noinfo`)
-            .subscribe(res => {
-            this.cachedData.splice(page * this.pageSize, this.pageSize, ...res.results);
-            this.dataStream.next(this.cachedData);
-        });
-    }
-}
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/loadmore.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/list/loadmore.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoListLoadmoreComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListLoadmoreComponent", function() { return NzDemoListLoadmoreComponent; });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-skeleton.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-// tslint:disable:no-any
-
-
-
-
-
-
-
-
-
-
-
-
-function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-list-item-meta", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "nz-list-item-meta-title");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, " content ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "ul", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "nz-list-item-action");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template_a_click_8_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r7); const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.edit(item_r2); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "edit");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "nz-list-item-action");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template_a_click_11_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r7); const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit; const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r8.edit(item_r2); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "more");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.name.last);
-} }
-function NzDemoListLoadmoreComponent_nz_list_item_1_nz_skeleton_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-skeleton", 10);
-} if (rf & 2) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzAvatar", true)("nzActive", true)("nzTitle", false)("nzLoading", true);
-} }
-function NzDemoListLoadmoreComponent_nz_list_item_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template, 13, 1, "ng-container", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzDemoListLoadmoreComponent_nz_list_item_1_nz_skeleton_2_Template, 1, 4, "nz-skeleton", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !item_r2.loading);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", item_r2.loading);
-} }
-function NzDemoListLoadmoreComponent_button_3_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_button_3_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r11.onLoadMore(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "loading more");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} }
-const count = 5;
-const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,nat&noinfo';
-class NzDemoListLoadmoreComponent {
-    constructor(http, msg) {
-        this.http = http;
-        this.msg = msg;
-        this.initLoading = true; // bug
-        this.loadingMore = false;
-        this.data = [];
-        this.list = [];
-    }
-    ngOnInit() {
-        this.getData((res) => {
-            this.data = res.results;
-            this.list = res.results;
-            this.initLoading = false;
-        });
-    }
-    getData(callback) {
-        this.http.get(fakeDataUrl).subscribe((res) => callback(res));
-    }
-    onLoadMore() {
-        this.loadingMore = true;
-        this.list = this.data.concat([...Array(count)].fill({}).map(() => ({ loading: true, name: {} })));
-        this.http.get(fakeDataUrl).subscribe((res) => {
-            this.data = this.data.concat(res.results);
-            this.list = [...this.data];
-            this.loadingMore = false;
-        });
-    }
-    edit(item) {
-        this.msg.success(item.email);
-    }
-}
-/** @nocollapse */ NzDemoListLoadmoreComponent.ɵfac = function NzDemoListLoadmoreComponent_Factory(t) { return new (t || NzDemoListLoadmoreComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
-/** @nocollapse */ NzDemoListLoadmoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoListLoadmoreComponent, selectors: [["nz-demo-list-loadmore"]], decls: 4, vars: 3, consts: [[1, "demo-loadmore-list", 3, "nzLoading"], [4, "ngFor", "ngForOf"], ["nz-list-load-more", "", 1, "loadmore"], ["nz-button", "", 3, "click", 4, "ngIf"], [4, "ngIf"], [3, "nzAvatar", "nzActive", "nzTitle", "nzLoading", 4, "ngIf"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", "nzDescription", "Ant Design, a design language for background applications, is refined by Ant UED Team"], ["href", "https://ng.ant.design"], ["nz-list-item-actions", ""], [3, "click"], [3, "nzAvatar", "nzActive", "nzTitle", "nzLoading"], ["nz-button", "", 3, "click"]], template: function NzDemoListLoadmoreComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-list", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDemoListLoadmoreComponent_nz_list_item_1_Template, 3, 2, "nz-list-item", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzDemoListLoadmoreComponent_button_3_Template, 2, 0, "button", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLoading", ctx.initLoading);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.list);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.loadingMore);
-    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemMetaComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemMetaTitleComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionsComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionComponent"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_5__["NzSkeletonComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__["ɵNzTransitionPatchDirective"]], styles: [".demo-loadmore-list[_ngcontent-%COMP%] {\n        min-height: 350px;\n      }\n      .loadmore[_ngcontent-%COMP%] {\n        text-align: center;\n        margin-top: 12px;\n        height: 32px;\n        line-height: 32px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoListLoadmoreComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'nz-demo-list-loadmore',
-                template: `
-    <nz-list class="demo-loadmore-list" [nzLoading]="initLoading">
-      <nz-list-item *ngFor="let item of list">
-        <ng-container *ngIf="!item.loading">
-          <nz-list-item-meta
-            nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-            nzDescription="Ant Design, a design language for background applications, is refined by Ant UED Team"
-          >
-            <nz-list-item-meta-title>
-              <a href="https://ng.ant.design">{{ item.name.last }}</a>
-            </nz-list-item-meta-title>
-          </nz-list-item-meta>
-          content
-          <ul nz-list-item-actions>
-            <nz-list-item-action><a (click)="edit(item)">edit</a></nz-list-item-action>
-            <nz-list-item-action><a (click)="edit(item)">more</a></nz-list-item-action>
-          </ul>
-        </ng-container>
-        <nz-skeleton *ngIf="item.loading" [nzAvatar]="true" [nzActive]="true" [nzTitle]="false" [nzLoading]="true"> </nz-skeleton>
-      </nz-list-item>
-      <div class="loadmore" nz-list-load-more>
-        <button nz-button *ngIf="!loadingMore" (click)="onLoadMore()">loading more</button>
-      </div>
-    </nz-list>
-  `,
-                styles: [
-                    `
-      .demo-loadmore-list {
-        min-height: 350px;
-      }
-      .loadmore {
-        text-align: center;
-        margin-top: 12px;
-        height: 32px;
-        line-height: 32px;
-      }
-    `
-                ]
-            }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }, { type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/module.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/list/module.ts ***!
-  \*************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/card */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-card.js");
-/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-skeleton.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/typography */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-typography.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-
-
-
-
-const moduleList = [
-    ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_0__["NzListModule"],
-    ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_1__["NzCardModule"],
-    ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_2__["NzSkeletonModule"],
-    ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_3__["NzPaginationModule"],
-    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__["NzButtonModule"],
-    ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_5__["NzTypographyModule"],
-    ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__["NzGridModule"]
-];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/resposive.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/list/resposive.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoListResposiveComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListResposiveComponent", function() { return NzDemoListResposiveComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/card */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-card.js");
-
-
-
-
-
-
-function NzDemoListResposiveComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-card", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Card content ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXXl", 8)("nzXl", 4)("nzLg", 6)("nzMd", 6)("nzSm", 12)("nzXs", 24);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTitle", item_r1.title);
-} }
-class NzDemoListResposiveComponent {
-    constructor() {
-        this.data = [
-            {
-                title: 'Title 1'
-            },
-            {
-                title: 'Title 2'
-            },
-            {
-                title: 'Title 3'
-            },
-            {
-                title: 'Title 4'
-            },
-            {
-                title: 'Title 5'
-            },
-            {
-                title: 'Title 6'
-            }
-        ];
-    }
-}
-/** @nocollapse */ NzDemoListResposiveComponent.ɵfac = function NzDemoListResposiveComponent_Factory(t) { return new (t || NzDemoListResposiveComponent)(); };
-/** @nocollapse */ NzDemoListResposiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListResposiveComponent, selectors: [["nz-demo-list-resposive"]], decls: 3, vars: 2, consts: [["nzGrid", ""], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXXl", "nzXl", "nzLg", "nzMd", "nzSm", "nzXs", 4, "ngFor", "ngForOf"], ["nz-col", "", 3, "nzXXl", "nzXl", "nzLg", "nzMd", "nzSm", "nzXs"], [3, "nzTitle"]], template: function NzDemoListResposiveComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoListResposiveComponent_div_2_Template, 4, 7, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
-    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListGridDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__["NzColDirective"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__["NzListItemComponent"], ng_zorro_antd_card__WEBPACK_IMPORTED_MODULE_4__["NzCardComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListResposiveComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-list-resposive',
-                template: `
-    <nz-list nzGrid>
-      <div nz-row [nzGutter]="16">
-        <div nz-col [nzXXl]="8" [nzXl]="4" [nzLg]="6" [nzMd]="6" [nzSm]="12" [nzXs]="24" *ngFor="let item of data">
-          <nz-list-item>
-            <nz-card [nzTitle]="item.title">
-              Card content
-            </nz-card>
-          </nz-list-item>
-        </div>
-      </div>
-    </nz-list>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/simple.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/list/simple.ts ***!
-  \*************************************/
-/*! exports provided: NzDemoListSimpleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListSimpleComponent", function() { return NzDemoListSimpleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/typography */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-typography.js");
-
-
-
-
-
-
-
-function NzDemoListSimpleComponent_nz_list_item_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mark");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "[ITEM]");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r3 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", item_r3, " ");
-} }
-function NzDemoListSimpleComponent_nz_list_item_9_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-list-item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "item");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-function NzDemoListSimpleComponent_li_17_Template(rf, ctx) { if (rf & 1) {
-    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "ul", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-list-item-action");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "a", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoListSimpleComponent_li_17_Template_a_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.msg.info("edit"); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "edit");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r5 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", item_r5, " ");
-} }
-const _c0 = function () { return { "margin-bottom.px": 16 }; };
-const _c1 = function () { return { margin: "16px 0" }; };
-class NzDemoListSimpleComponent {
-    constructor(msg) {
-        this.msg = msg;
-        this.data = [
-            'Racing car sprays burning fuel into crowd.',
-            'Japanese princess to wed commoner.',
-            'Australian walks 100km after outback crash.',
-            'Man charged over missing wedding girl.',
-            'Los Angeles battles huge wildfires.'
-        ];
-    }
-}
-/** @nocollapse */ NzDemoListSimpleComponent.ɵfac = function NzDemoListSimpleComponent_Factory(t) { return new (t || NzDemoListSimpleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoListSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoListSimpleComponent, selectors: [["nz-demo-list-simple"]], decls: 20, vars: 10, consts: [[3, "ngStyle"], ["nzBordered", "", "nzHeader", "Header", "nzFooter", "Footer"], [4, "ngFor", "ngForOf"], ["nzBordered", "", "nzSize", "small"], ["nz-list", "", "nzBordered", "", "nzSize", "large", 3, "nzDataSource"], ["nz-list-item", "", "nzNoFlex", "", 4, "ngFor", "ngForOf"], ["nz-typography", ""], ["nz-list-item", "", "nzNoFlex", ""], ["nz-list-item-actions", ""], [3, "click"]], template: function NzDemoListSimpleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h3", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Default Size");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-list", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoListSimpleComponent_nz_list_item_3_Template, 5, 1, "nz-list-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h3", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Small Size");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "nz-list", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-list-header");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Header");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoListSimpleComponent_nz_list_item_9_Template, 2, 0, "nz-list-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "nz-list-footer");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Footer");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "h3", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Large Size");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "ul", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "nz-list-header");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Header");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](17, NzDemoListSimpleComponent_li_17_Template, 6, 1, "li", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "nz-list-footer");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Footer");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c0));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c1));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDataSource", ctx.data);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.data);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListHeaderComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListFooterComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemComponent"], ng_zorro_antd_typography__WEBPACK_IMPORTED_MODULE_4__["NzTypographyComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionsComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoListSimpleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-list-simple',
-                template: `
-    <h3 [ngStyle]="{ 'margin-bottom.px': 16 }">Default Size</h3>
-    <nz-list nzBordered nzHeader="Header" nzFooter="Footer">
-      <nz-list-item *ngFor="let item of data">
-        <span nz-typography><mark>[ITEM]</mark></span>
-        {{ item }}
-      </nz-list-item>
-    </nz-list>
-
-    <h3 [ngStyle]="{ margin: '16px 0' }">Small Size</h3>
-    <nz-list nzBordered nzSize="small">
-      <nz-list-header>Header</nz-list-header>
-      <nz-list-item *ngFor="let item of data">item</nz-list-item>
-      <nz-list-footer>Footer</nz-list-footer>
-    </nz-list>
-
-    <h3 [ngStyle]="{ margin: '16px 0' }">Large Size</h3>
-    <ul nz-list [nzDataSource]="data" nzBordered nzSize="large">
-      <nz-list-header>Header</nz-list-header>
-      <li nz-list-item *ngFor="let item of data" nzNoFlex>
-        <ul nz-list-item-actions>
-          <nz-list-item-action>
-            <a (click)="msg.info('edit')">edit</a>
-          </nz-list-item-action>
-        </ul>
-        {{ item }}
-      </li>
-      <nz-list-footer>Footer</nz-list-footer>
-    </ul>
-  `
-            }]
-    }], function () { return [{ type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/list/vertical.ts":
+/***/ "p7H8":
 /*!***************************************!*\
   !*** ./site/doc/app/list/vertical.ts ***!
   \***************************************/
@@ -1789,10 +1605,10 @@ class NzDemoListSimpleComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListVerticalComponent", function() { return NzDemoListVerticalComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -1906,7 +1722,7 @@ class NzDemoListVerticalComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/list/zh.component.ts":
+/***/ "tSG+":
 /*!*******************************************!*\
   !*** ./site/doc/app/list/zh.component.ts ***!
   \*******************************************/
@@ -1916,20 +1732,20 @@ class NzDemoListVerticalComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListZhComponent", function() { return NzDemoListZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./simple */ "./site/doc/app/list/simple.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/list/basic.ts");
-/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./loadmore */ "./site/doc/app/list/loadmore.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/list/vertical.ts");
-/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./grid */ "./site/doc/app/list/grid.ts");
-/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./resposive */ "./site/doc/app/list/resposive.ts");
-/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./infinite-load */ "./site/doc/app/list/infinite-load.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./simple */ "Q92+");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "Kx41");
+/* harmony import */ var _loadmore__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./loadmore */ "yoUK");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./vertical */ "p7H8");
+/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./grid */ "8CcS");
+/* harmony import */ var _resposive__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./resposive */ "22lF");
+/* harmony import */ var _infinite_load__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./infinite-load */ "P7LN");
 
 
 
@@ -1970,7 +1786,7 @@ class NzDemoListZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 464, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-list-demo-simple", "nzTitle", "\u7B80\u5355\u5217\u8868"], ["nzHref", "#components-list-demo-basic", "nzTitle", "\u57FA\u7840\u5217\u8868"], ["nzHref", "#components-list-demo-loadmore", "nzTitle", "\u52A0\u8F7D\u66F4\u591A"], ["nzHref", "#components-list-demo-vertical", "nzTitle", "\u7AD6\u6392\u5217\u8868\u6837\u5F0F"], ["nzHref", "#components-list-demo-grid", "nzTitle", "\u6805\u683C\u5217\u8868"], ["nzHref", "#components-list-demo-resposive", "nzTitle", "\u54CD\u5E94\u5F0F\u7684\u6805\u683C\u5217\u8868"], ["nzHref", "#components-list-demo-infinite-load", "nzTitle", "\u6EDA\u52A8\u52A0\u8F7D\u65E0\u9650\u957F\u5217\u8868"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/list/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u7B80\u5355\u5217\u8868", "nzSelector", "nz-demo-list-simple", "nzGenerateCommand", "ng g ng-zorro-antd:list-simple <name>", "nzComponentName", "NzDemoListSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u57FA\u7840\u5217\u8868", "nzSelector", "nz-demo-list-basic", "nzGenerateCommand", "ng g ng-zorro-antd:list-basic <name>", "nzComponentName", "NzDemoListBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u66F4\u591A", "nzSelector", "nz-demo-list-loadmore", "nzGenerateCommand", "ng g ng-zorro-antd:list-loadmore <name>", "nzComponentName", "NzDemoListLoadmoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7AD6\u6392\u5217\u8868\u6837\u5F0F", "nzSelector", "nz-demo-list-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:list-vertical <name>", "nzComponentName", "NzDemoListVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u5217\u8868", "nzSelector", "nz-demo-list-grid", "nzGenerateCommand", "ng g ng-zorro-antd:list-grid <name>", "nzComponentName", "NzDemoListGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u7684\u6805\u683C\u5217\u8868", "nzSelector", "nz-demo-list-resposive", "nzGenerateCommand", "ng g ng-zorro-antd:list-resposive <name>", "nzComponentName", "NzDemoListResposiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6EDA\u52A8\u52A0\u8F7D\u65E0\u9650\u957F\u5217\u8868", "nzSelector", "nz-demo-list-infinite-load", "nzGenerateCommand", "ng g ng-zorro-antd:list-infinite-load <name>", "nzComponentName", "NzDemoListInfiniteLoadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://material.angular.io/cdk/scrolling/overview"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-list"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-list'", 1, "anchor"], ["id", "nz-list-empty"], ["onclick", "window.location.hash = 'nz-list-empty'", 1, "anchor"], ["id", "nz-list[nzgrid]"], ["onclick", "window.location.hash = 'nz-list[nzgrid]'", 1, "anchor"], ["id", "nz-list-header"], ["onclick", "window.location.hash = 'nz-list-header'", 1, "anchor"], ["id", "nz-list-footer"], ["onclick", "window.location.hash = 'nz-list-footer'", 1, "anchor"], ["id", "nz-list-pagination"], ["onclick", "window.location.hash = 'nz-list-pagination'", 1, "anchor"], ["id", "nz-list-load-more"], ["onclick", "window.location.hash = 'nz-list-load-more'", 1, "anchor"], ["id", "nz-list-item"], ["onclick", "window.location.hash = 'nz-list-item'", 1, "anchor"], ["id", "ul[nz-list-item-actions]"], ["onclick", "window.location.hash = 'ul[nz-list-item-actions]'", 1, "anchor"], ["id", "nz-list-item-action"], ["onclick", "window.location.hash = 'nz-list-item-action'", 1, "anchor"], ["id", "nz-list-item-extra"], ["onclick", "window.location.hash = 'nz-list-item-extra'", 1, "anchor"], ["id", "nz-list-item-meta"], ["onclick", "window.location.hash = 'nz-list-item-meta'", 1, "anchor"], ["id", "nz-list-item-meta-title"], ["onclick", "window.location.hash = 'nz-list-item-meta-title'", 1, "anchor"], ["id", "nz-list-item-meta-description"], ["onclick", "window.location.hash = 'nz-list-item-meta-description'", 1, "anchor"], ["id", "nz-list-item-meta-avatar"], ["onclick", "window.location.hash = 'nz-list-item-meta-avatar'", 1, "anchor"]], template: function NzDemoListZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 464, vars: 32, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-list-demo-simple", "nzTitle", "\u7B80\u5355\u5217\u8868"], ["nzHref", "#components-list-demo-basic", "nzTitle", "\u57FA\u7840\u5217\u8868"], ["nzHref", "#components-list-demo-loadmore", "nzTitle", "\u52A0\u8F7D\u66F4\u591A"], ["nzHref", "#components-list-demo-vertical", "nzTitle", "\u7AD6\u6392\u5217\u8868\u6837\u5F0F"], ["nzHref", "#components-list-demo-grid", "nzTitle", "\u6805\u683C\u5217\u8868"], ["nzHref", "#components-list-demo-resposive", "nzTitle", "\u54CD\u5E94\u5F0F\u7684\u6805\u683C\u5217\u8868"], ["nzHref", "#components-list-demo-infinite-load", "nzTitle", "\u6EDA\u52A8\u52A0\u8F7D\u65E0\u9650\u957F\u5217\u8868"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/list/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u7B80\u5355\u5217\u8868", "nzSelector", "nz-demo-list-simple", "nzGenerateCommand", "ng g ng-zorro-antd:list-simple <name>", "nzComponentName", "NzDemoListSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u57FA\u7840\u5217\u8868", "nzSelector", "nz-demo-list-basic", "nzGenerateCommand", "ng g ng-zorro-antd:list-basic <name>", "nzComponentName", "NzDemoListBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u66F4\u591A", "nzSelector", "nz-demo-list-loadmore", "nzGenerateCommand", "ng g ng-zorro-antd:list-loadmore <name>", "nzComponentName", "NzDemoListLoadmoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7AD6\u6392\u5217\u8868\u6837\u5F0F", "nzSelector", "nz-demo-list-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:list-vertical <name>", "nzComponentName", "NzDemoListVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u5217\u8868", "nzSelector", "nz-demo-list-grid", "nzGenerateCommand", "ng g ng-zorro-antd:list-grid <name>", "nzComponentName", "NzDemoListGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u7684\u6805\u683C\u5217\u8868", "nzSelector", "nz-demo-list-resposive", "nzGenerateCommand", "ng g ng-zorro-antd:list-resposive <name>", "nzComponentName", "NzDemoListResposiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6EDA\u52A8\u52A0\u8F7D\u65E0\u9650\u957F\u5217\u8868", "nzSelector", "nz-demo-list-infinite-load", "nzGenerateCommand", "ng g ng-zorro-antd:list-infinite-load <name>", "nzComponentName", "NzDemoListInfiniteLoadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://material.angular.io/cdk/scrolling/overview", "target", "_blank"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-list"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-list'", 1, "anchor"], ["id", "nz-list-empty"], ["onclick", "window.location.hash = 'nz-list-empty'", 1, "anchor"], ["id", "nz-list[nzgrid]"], ["onclick", "window.location.hash = 'nz-list[nzgrid]'", 1, "anchor"], ["id", "nz-list-header"], ["onclick", "window.location.hash = 'nz-list-header'", 1, "anchor"], ["id", "nz-list-footer"], ["onclick", "window.location.hash = 'nz-list-footer'", 1, "anchor"], ["id", "nz-list-pagination"], ["onclick", "window.location.hash = 'nz-list-pagination'", 1, "anchor"], ["id", "nz-list-load-more"], ["onclick", "window.location.hash = 'nz-list-load-more'", 1, "anchor"], ["id", "nz-list-item"], ["onclick", "window.location.hash = 'nz-list-item'", 1, "anchor"], ["id", "ul[nz-list-item-actions]"], ["onclick", "window.location.hash = 'ul[nz-list-item-actions]'", 1, "anchor"], ["id", "nz-list-item-action"], ["onclick", "window.location.hash = 'nz-list-item-action'", 1, "anchor"], ["id", "nz-list-item-extra"], ["onclick", "window.location.hash = 'nz-list-item-extra'", 1, "anchor"], ["id", "nz-list-item-meta"], ["onclick", "window.location.hash = 'nz-list-item-meta'", 1, "anchor"], ["id", "nz-list-item-meta-title"], ["onclick", "window.location.hash = 'nz-list-item-meta-title'", 1, "anchor"], ["id", "nz-list-item-meta-description"], ["onclick", "window.location.hash = 'nz-list-item-meta-description'", 1, "anchor"], ["id", "nz-list-item-meta-avatar"], ["onclick", "window.location.hash = 'nz-list-item-meta-avatar'", 1, "anchor"]], template: function NzDemoListZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2754,6 +2570,190 @@ class NzDemoListZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "yoUK":
+/*!***************************************!*\
+  !*** ./site/doc/app/list/loadmore.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoListLoadmoreComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoListLoadmoreComponent", function() { return NzDemoListLoadmoreComponent; });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/list */ "aTgR");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/skeleton */ "vss8");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+// tslint:disable:no-any
+
+
+
+
+
+
+
+
+
+
+
+
+function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-list-item-meta", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "nz-list-item-meta-title");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "a", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5, " content ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "ul", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "nz-list-item-action");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](8, "a", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template_a_click_8_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r7); const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.edit(item_r2); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](9, "edit");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "nz-list-item-action");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "a", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template_a_click_11_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r7); const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit; const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r8.edit(item_r2); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](12, "more");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const item_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](item_r2.name.last);
+} }
+function NzDemoListLoadmoreComponent_nz_list_item_1_nz_skeleton_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-skeleton", 10);
+} if (rf & 2) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzAvatar", true)("nzActive", true)("nzTitle", false)("nzLoading", true);
+} }
+function NzDemoListLoadmoreComponent_nz_list_item_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-list-item");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDemoListLoadmoreComponent_nz_list_item_1_ng_container_1_Template, 13, 1, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzDemoListLoadmoreComponent_nz_list_item_1_nz_skeleton_2_Template, 1, 4, "nz-skeleton", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !item_r2.loading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", item_r2.loading);
+} }
+function NzDemoListLoadmoreComponent_button_3_Template(rf, ctx) { if (rf & 1) {
+    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "button", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoListLoadmoreComponent_button_3_Template_button_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r11.onLoadMore(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "loading more");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} }
+const count = 5;
+const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,nat&noinfo';
+class NzDemoListLoadmoreComponent {
+    constructor(http, msg) {
+        this.http = http;
+        this.msg = msg;
+        this.initLoading = true; // bug
+        this.loadingMore = false;
+        this.data = [];
+        this.list = [];
+    }
+    ngOnInit() {
+        this.getData((res) => {
+            this.data = res.results;
+            this.list = res.results;
+            this.initLoading = false;
+        });
+    }
+    getData(callback) {
+        this.http.get(fakeDataUrl).subscribe((res) => callback(res));
+    }
+    onLoadMore() {
+        this.loadingMore = true;
+        this.list = this.data.concat([...Array(count)].fill({}).map(() => ({ loading: true, name: {} })));
+        this.http.get(fakeDataUrl).subscribe((res) => {
+            this.data = this.data.concat(res.results);
+            this.list = [...this.data];
+            this.loadingMore = false;
+        });
+    }
+    edit(item) {
+        this.msg.success(item.email);
+    }
+}
+/** @nocollapse */ NzDemoListLoadmoreComponent.ɵfac = function NzDemoListLoadmoreComponent_Factory(t) { return new (t || NzDemoListLoadmoreComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
+/** @nocollapse */ NzDemoListLoadmoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoListLoadmoreComponent, selectors: [["nz-demo-list-loadmore"]], decls: 4, vars: 3, consts: [[1, "demo-loadmore-list", 3, "nzLoading"], [4, "ngFor", "ngForOf"], ["nz-list-load-more", "", 1, "loadmore"], ["nz-button", "", 3, "click", 4, "ngIf"], [4, "ngIf"], [3, "nzAvatar", "nzActive", "nzTitle", "nzLoading", 4, "ngIf"], ["nzAvatar", "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png", "nzDescription", "Ant Design, a design language for background applications, is refined by Ant UED Team"], ["href", "https://ng.ant.design"], ["nz-list-item-actions", ""], [3, "click"], [3, "nzAvatar", "nzActive", "nzTitle", "nzLoading"], ["nz-button", "", 3, "click"]], template: function NzDemoListLoadmoreComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-list", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDemoListLoadmoreComponent_nz_list_item_1_Template, 3, 2, "nz-list-item", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzDemoListLoadmoreComponent_button_3_Template, 2, 0, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLoading", ctx.initLoading);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.list);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.loadingMore);
+    } }, directives: [ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemMetaComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemMetaTitleComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionsComponent"], ng_zorro_antd_list__WEBPACK_IMPORTED_MODULE_3__["NzListItemActionComponent"], ng_zorro_antd_skeleton__WEBPACK_IMPORTED_MODULE_5__["NzSkeletonComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__["ɵNzTransitionPatchDirective"]], styles: [".demo-loadmore-list[_ngcontent-%COMP%] {\n        min-height: 350px;\n      }\n      .loadmore[_ngcontent-%COMP%] {\n        text-align: center;\n        margin-top: 12px;\n        height: 32px;\n        line-height: 32px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoListLoadmoreComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                selector: 'nz-demo-list-loadmore',
+                template: `
+    <nz-list class="demo-loadmore-list" [nzLoading]="initLoading">
+      <nz-list-item *ngFor="let item of list">
+        <ng-container *ngIf="!item.loading">
+          <nz-list-item-meta
+            nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+            nzDescription="Ant Design, a design language for background applications, is refined by Ant UED Team"
+          >
+            <nz-list-item-meta-title>
+              <a href="https://ng.ant.design">{{ item.name.last }}</a>
+            </nz-list-item-meta-title>
+          </nz-list-item-meta>
+          content
+          <ul nz-list-item-actions>
+            <nz-list-item-action><a (click)="edit(item)">edit</a></nz-list-item-action>
+            <nz-list-item-action><a (click)="edit(item)">more</a></nz-list-item-action>
+          </ul>
+        </ng-container>
+        <nz-skeleton *ngIf="item.loading" [nzAvatar]="true" [nzActive]="true" [nzTitle]="false" [nzLoading]="true"> </nz-skeleton>
+      </nz-list-item>
+      <div class="loadmore" nz-list-load-more>
+        <button nz-button *ngIf="!loadingMore" (click)="onLoadMore()">loading more</button>
+      </div>
+    </nz-list>
+  `,
+                styles: [
+                    `
+      .demo-loadmore-list {
+        min-height: 350px;
+      }
+      .loadmore {
+        text-align: center;
+        margin-top: 12px;
+        height: 32px;
+        line-height: 32px;
+      }
+    `
+                ]
+            }]
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }, { type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"] }]; }, null); })();
 
 
 /***/ })

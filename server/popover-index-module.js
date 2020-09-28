@@ -1,55 +1,85 @@
 exports.ids = ["popover-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/popover/arrow-point-at-center.ts":
-/*!*******************************************************!*\
-  !*** ./site/doc/app/popover/arrow-point-at-center.ts ***!
-  \*******************************************************/
-/*! exports provided: NzDemoPopoverArrowPointAtCenterComponent */
+/***/ "+9kM":
+/*!**********************************************!*\
+  !*** ./site/doc/app/popover/trigger-type.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoPopoverTriggerTypeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverArrowPointAtCenterComponent", function() { return NzDemoPopoverArrowPointAtCenterComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverTriggerTypeComponent", function() { return NzDemoPopoverTriggerTypeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
 
 
 
 
 
 
-class NzDemoPopoverArrowPointAtCenterComponent {
+function NzDemoPopoverTriggerTypeComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Content");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Content");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+class NzDemoPopoverTriggerTypeComponent {
 }
-/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵfac = function NzDemoPopoverArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoPopoverArrowPointAtCenterComponent)(); };
-/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverArrowPointAtCenterComponent, selectors: [["nz-demo-popover-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topLeft", "nz-popover", ""], ["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topCenter", "nz-popover", ""]], template: function NzDemoPopoverArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Align edge / \u8FB9\u7F18\u5BF9\u9F50 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵfac = function NzDemoPopoverTriggerTypeComponent_Factory(t) { return new (t || NzDemoPopoverTriggerTypeComponent)(); };
+/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTriggerTypeComponent, selectors: [["nz-demo-popover-trigger-type"]], decls: 8, vars: 3, consts: [["contentTemplate", ""], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "hover", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "focus", 3, "nzPopoverContent"]], template: function NzDemoPopoverTriggerTypeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoPopoverTriggerTypeComponent_ng_template_0_Template, 5, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Arrow points to center / \u7BAD\u5934\u6307\u5411\u4E2D\u5FC3 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Click me ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], styles: ["button[_ngcontent-%COMP%] {\n        margin-right: 8px;\n        margin-bottom: 8px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverArrowPointAtCenterComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Hover me ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Focus me ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
+    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], styles: ["button[_ngcontent-%COMP%] {\n        margin-right: 8px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverTriggerTypeComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-popover-arrow-point-at-center',
+                selector: 'nz-demo-popover-trigger-type',
                 template: `
-    <button nz-button nzPopoverTitle="Title" nzPopoverContent="Content" nzPopoverPlacement="topLeft" nz-popover>
-      Align edge / 边缘对齐
+    <ng-template #contentTemplate>
+      <div>
+        <p>Content</p>
+        <p>Content</p>
+      </div>
+    </ng-template>
+    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="click">
+      Click me
     </button>
-    <button nz-button nzPopoverTitle="Title" nzPopoverContent="Content" nzPopoverPlacement="topCenter" nz-popover>
-      Arrow points to center / 箭头指向中心
+    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="hover">
+      Hover me
+    </button>
+    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="focus">
+      Focus me
     </button>
   `,
                 styles: [
                     `
       button {
         margin-right: 8px;
-        margin-bottom: 8px;
       }
     `
                 ]
@@ -59,128 +89,7 @@ class NzDemoPopoverArrowPointAtCenterComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/basic.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/popover/basic.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoPopoverBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverBasicComponent", function() { return NzDemoPopoverBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-
-
-
-
-
-
-class NzDemoPopoverBasicComponent {
-}
-/** @nocollapse */ NzDemoPopoverBasicComponent.ɵfac = function NzDemoPopoverBasicComponent_Factory(t) { return new (t || NzDemoPopoverBasicComponent)(); };
-/** @nocollapse */ NzDemoPopoverBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverBasicComponent, selectors: [["nz-demo-popover-basic"]], decls: 2, vars: 0, consts: [["nz-button", "", "nz-popover", "", "nzType", "primary", "nzPopoverTitle", "Title", "nzPopoverContent", "Content"]], template: function NzDemoPopoverBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Hover me ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-popover-basic',
-                template: `
-    <button nz-button nz-popover nzType="primary" nzPopoverTitle="Title" nzPopoverContent="Content">
-      Hover me
-    </button>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/popover/control.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/popover/control.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoPopoverControlComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverControlComponent", function() { return NzDemoPopoverControlComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-
-
-
-
-
-
-function NzDemoPopoverControlComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoPopoverControlComponent_ng_template_2_Template_a_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r2.clickMe(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Close");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-class NzDemoPopoverControlComponent {
-    constructor() {
-        this.visible = false;
-    }
-    clickMe() {
-        this.visible = false;
-    }
-    change(value) {
-        console.log(value);
-    }
-}
-/** @nocollapse */ NzDemoPopoverControlComponent.ɵfac = function NzDemoPopoverControlComponent_Factory(t) { return new (t || NzDemoPopoverControlComponent)(); };
-/** @nocollapse */ NzDemoPopoverControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverControlComponent, selectors: [["nz-demo-popover-control"]], decls: 4, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverVisible", "nzPopoverContent", "nzPopoverVisibleChange"], ["contentTemplate", ""], [3, "click"]], template: function NzDemoPopoverControlComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.visible = $event; })("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.change($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Click me ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPopoverControlComponent_ng_template_2_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverVisible", ctx.visible)("nzPopoverContent", _r0);
-    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverControlComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-popover-control',
-                template: `
-    <button
-      nz-button
-      nzType="primary"
-      nz-popover
-      nzPopoverTitle="Title"
-      [(nzPopoverVisible)]="visible"
-      (nzPopoverVisibleChange)="change($event)"
-      nzPopoverTrigger="click"
-      [nzPopoverContent]="contentTemplate"
-    >
-      Click me
-    </button>
-    <ng-template #contentTemplate>
-      <a (click)="clickMe()">Close</a>
-    </ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/popover/en.component.ts":
+/***/ "0cM1":
 /*!**********************************************!*\
   !*** ./site/doc/app/popover/en.component.ts ***!
   \**********************************************/
@@ -190,20 +99,20 @@ class NzDemoPopoverControlComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverEnComponent", function() { return NzDemoPopoverEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/popover/basic.ts");
-/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./control */ "./site/doc/app/popover/control.ts");
-/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./template */ "./site/doc/app/popover/template.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "./site/doc/app/popover/placement.ts");
-/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./arrow-point-at-center */ "./site/doc/app/popover/arrow-point-at-center.ts");
-/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./trigger-type */ "./site/doc/app/popover/trigger-type.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "rV02");
+/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./control */ "gVpb");
+/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./template */ "9giw");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "E998");
+/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./arrow-point-at-center */ "SJvV");
+/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./trigger-type */ "+9kM");
 
 
 
@@ -752,31 +661,22 @@ class NzDemoPopoverEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/index.module.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/popover/index.module.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoPopoverModule */
+/***/ "9giw":
+/*!******************************************!*\
+  !*** ./site/doc/app/popover/template.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoPopoverTemplateComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverModule", function() { return NzDemoPopoverModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/popover/module.ts");
-/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./arrow-point-at-center */ "./site/doc/app/popover/arrow-point-at-center.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "./site/doc/app/popover/basic.ts");
-/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./control */ "./site/doc/app/popover/control.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./placement */ "./site/doc/app/popover/placement.ts");
-/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./template */ "./site/doc/app/popover/template.ts");
-/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./trigger-type */ "./site/doc/app/popover/trigger-type.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/popover/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/popover/en.component.ts");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverTemplateComponent", function() { return NzDemoPopoverTemplateComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -784,85 +684,46 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-class NzDemoPopoverModule {
+function NzDemoPopoverTemplateComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Title");
+} }
+function NzDemoPopoverTemplateComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Content");
+} }
+class NzDemoPopoverTemplateComponent {
 }
-/** @nocollapse */ NzDemoPopoverModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPopoverModule });
-/** @nocollapse */ NzDemoPopoverModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPopoverModule_Factory(t) { return new (t || NzDemoPopoverModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoPopoverModule, { declarations: [_arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__["NzDemoPopoverArrowPointAtCenterComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoPopoverBasicComponent"],
-        _control__WEBPACK_IMPORTED_MODULE_6__["NzDemoPopoverControlComponent"],
-        _placement__WEBPACK_IMPORTED_MODULE_7__["NzDemoPopoverPlacementComponent"],
-        _template__WEBPACK_IMPORTED_MODULE_8__["NzDemoPopoverTemplateComponent"],
-        _trigger_type__WEBPACK_IMPORTED_MODULE_9__["NzDemoPopoverTriggerTypeComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_12__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵfac = function NzDemoPopoverTemplateComponent_Factory(t) { return new (t || NzDemoPopoverTemplateComponent)(); };
+/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTemplateComponent, selectors: [["nz-demo-popover-template"]], decls: 6, vars: 2, consts: [["nz-button", "", "nz-popover", "", 3, "nzPopoverTitle", "nzPopoverContent"], ["titleTemplate", ""], ["contentTemplate", ""], ["nz-icon", "", "nzType", "close"], ["nz-icon", "", "nzType", "check"]], template: function NzDemoPopoverTemplateComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Render Template ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPopoverTemplateComponent_ng_template_2_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoPopoverTemplateComponent_ng_template_4_Template, 2, 0, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
+        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverTitle", _r0)("nzPopoverContent", _r2);
+    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverTemplateComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__["NzDemoPopoverArrowPointAtCenterComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoPopoverBasicComponent"],
-                    _control__WEBPACK_IMPORTED_MODULE_6__["NzDemoPopoverControlComponent"],
-                    _placement__WEBPACK_IMPORTED_MODULE_7__["NzDemoPopoverPlacementComponent"],
-                    _template__WEBPACK_IMPORTED_MODULE_8__["NzDemoPopoverTemplateComponent"],
-                    _trigger_type__WEBPACK_IMPORTED_MODULE_9__["NzDemoPopoverTriggerTypeComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"],
-                ],
-                entryComponents: []
+                selector: 'nz-demo-popover-template',
+                template: `
+    <button nz-button nz-popover [nzPopoverTitle]="titleTemplate" [nzPopoverContent]="contentTemplate">
+      Render Template
+    </button>
+    <ng-template #titleTemplate><i nz-icon nzType="close"></i> Title</ng-template>
+    <ng-template #contentTemplate><i nz-icon nzType="check"></i> Content</ng-template>
+  `
             }]
     }], null, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/module.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/popover/module.ts ***!
-  \****************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-const moduleList = [ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_0__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/popover/placement.ts":
+/***/ "E998":
 /*!*******************************************!*\
   !*** ./site/doc/app/popover/placement.ts ***!
   \*******************************************/
@@ -872,11 +733,11 @@ const moduleList = [ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_0__["NzPopove
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverPlacementComponent", function() { return NzDemoPopoverPlacementComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
 
 
 
@@ -1042,147 +903,76 @@ class NzDemoPopoverPlacementComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/template.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/popover/template.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoPopoverTemplateComponent */
+/***/ "SBUp":
+/*!****************************************!*\
+  !*** ./site/doc/app/popover/module.ts ***!
+  \****************************************/
+/*! exports provided: moduleList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverTemplateComponent", function() { return NzDemoPopoverTemplateComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
-
-
-
-
-function NzDemoPopoverTemplateComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Title");
-} }
-function NzDemoPopoverTemplateComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Content");
-} }
-class NzDemoPopoverTemplateComponent {
-}
-/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵfac = function NzDemoPopoverTemplateComponent_Factory(t) { return new (t || NzDemoPopoverTemplateComponent)(); };
-/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTemplateComponent, selectors: [["nz-demo-popover-template"]], decls: 6, vars: 2, consts: [["nz-button", "", "nz-popover", "", 3, "nzPopoverTitle", "nzPopoverContent"], ["titleTemplate", ""], ["contentTemplate", ""], ["nz-icon", "", "nzType", "close"], ["nz-icon", "", "nzType", "check"]], template: function NzDemoPopoverTemplateComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Render Template ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPopoverTemplateComponent_ng_template_2_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoPopoverTemplateComponent_ng_template_4_Template, 2, 0, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
-        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverTitle", _r0)("nzPopoverContent", _r2);
-    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverTemplateComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-popover-template',
-                template: `
-    <button nz-button nz-popover [nzPopoverTitle]="titleTemplate" [nzPopoverContent]="contentTemplate">
-      Render Template
-    </button>
-    <ng-template #titleTemplate><i nz-icon nzType="close"></i> Title</ng-template>
-    <ng-template #contentTemplate><i nz-icon nzType="check"></i> Content</ng-template>
-  `
-            }]
-    }], null, null); })();
+const moduleList = [ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_0__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconModule"]];
 
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/trigger-type.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/popover/trigger-type.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoPopoverTriggerTypeComponent */
+/***/ "SJvV":
+/*!*******************************************************!*\
+  !*** ./site/doc/app/popover/arrow-point-at-center.ts ***!
+  \*******************************************************/
+/*! exports provided: NzDemoPopoverArrowPointAtCenterComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverTriggerTypeComponent", function() { return NzDemoPopoverTriggerTypeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverArrowPointAtCenterComponent", function() { return NzDemoPopoverArrowPointAtCenterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
 
 
 
 
 
 
-function NzDemoPopoverTriggerTypeComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Content");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Content");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-class NzDemoPopoverTriggerTypeComponent {
+class NzDemoPopoverArrowPointAtCenterComponent {
 }
-/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵfac = function NzDemoPopoverTriggerTypeComponent_Factory(t) { return new (t || NzDemoPopoverTriggerTypeComponent)(); };
-/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTriggerTypeComponent, selectors: [["nz-demo-popover-trigger-type"]], decls: 8, vars: 3, consts: [["contentTemplate", ""], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "hover", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "focus", 3, "nzPopoverContent"]], template: function NzDemoPopoverTriggerTypeComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoPopoverTriggerTypeComponent_ng_template_0_Template, 5, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵfac = function NzDemoPopoverArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoPopoverArrowPointAtCenterComponent)(); };
+/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverArrowPointAtCenterComponent, selectors: [["nz-demo-popover-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topLeft", "nz-popover", ""], ["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topCenter", "nz-popover", ""]], template: function NzDemoPopoverArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Align edge / \u8FB9\u7F18\u5BF9\u9F50 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Click me ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Arrow points to center / \u7BAD\u5934\u6307\u5411\u4E2D\u5FC3 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " Hover me ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "button", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " Focus me ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverContent", _r0);
-    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], styles: ["button[_ngcontent-%COMP%] {\n        margin-right: 8px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverTriggerTypeComponent, [{
+    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], styles: ["button[_ngcontent-%COMP%] {\n        margin-right: 8px;\n        margin-bottom: 8px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverArrowPointAtCenterComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-popover-trigger-type',
+                selector: 'nz-demo-popover-arrow-point-at-center',
                 template: `
-    <ng-template #contentTemplate>
-      <div>
-        <p>Content</p>
-        <p>Content</p>
-      </div>
-    </ng-template>
-    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="click">
-      Click me
+    <button nz-button nzPopoverTitle="Title" nzPopoverContent="Content" nzPopoverPlacement="topLeft" nz-popover>
+      Align edge / 边缘对齐
     </button>
-    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="hover">
-      Hover me
-    </button>
-    <button nz-button nz-popover nzPopoverTitle="Title" [nzPopoverContent]="contentTemplate" nzPopoverTrigger="focus">
-      Focus me
+    <button nz-button nzPopoverTitle="Title" nzPopoverContent="Content" nzPopoverPlacement="topCenter" nz-popover>
+      Arrow points to center / 箭头指向中心
     </button>
   `,
                 styles: [
                     `
       button {
         margin-right: 8px;
+        margin-bottom: 8px;
       }
     `
                 ]
@@ -1192,7 +982,173 @@ class NzDemoPopoverTriggerTypeComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/popover/zh.component.ts":
+/***/ "UTTr":
+/*!**********************************************!*\
+  !*** ./site/doc/app/popover/index.module.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoPopoverModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverModule", function() { return NzDemoPopoverModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "SBUp");
+/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./arrow-point-at-center */ "SJvV");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "rV02");
+/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./control */ "gVpb");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./placement */ "E998");
+/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./template */ "9giw");
+/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./trigger-type */ "+9kM");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./zh.component */ "jWys");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./en.component */ "0cM1");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoPopoverModule {
+}
+/** @nocollapse */ NzDemoPopoverModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPopoverModule });
+/** @nocollapse */ NzDemoPopoverModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPopoverModule_Factory(t) { return new (t || NzDemoPopoverModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoPopoverModule, { declarations: [_arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__["NzDemoPopoverArrowPointAtCenterComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoPopoverBasicComponent"],
+        _control__WEBPACK_IMPORTED_MODULE_6__["NzDemoPopoverControlComponent"],
+        _placement__WEBPACK_IMPORTED_MODULE_7__["NzDemoPopoverPlacementComponent"],
+        _template__WEBPACK_IMPORTED_MODULE_8__["NzDemoPopoverTemplateComponent"],
+        _trigger_type__WEBPACK_IMPORTED_MODULE_9__["NzDemoPopoverTriggerTypeComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_12__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_4__["NzDemoPopoverArrowPointAtCenterComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoPopoverBasicComponent"],
+                    _control__WEBPACK_IMPORTED_MODULE_6__["NzDemoPopoverControlComponent"],
+                    _placement__WEBPACK_IMPORTED_MODULE_7__["NzDemoPopoverPlacementComponent"],
+                    _template__WEBPACK_IMPORTED_MODULE_8__["NzDemoPopoverTemplateComponent"],
+                    _trigger_type__WEBPACK_IMPORTED_MODULE_9__["NzDemoPopoverTriggerTypeComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoPopoverZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoPopoverEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "gVpb":
+/*!*****************************************!*\
+  !*** ./site/doc/app/popover/control.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoPopoverControlComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverControlComponent", function() { return NzDemoPopoverControlComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+
+
+
+
+
+
+function NzDemoPopoverControlComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoPopoverControlComponent_ng_template_2_Template_a_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r3); const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r2.clickMe(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Close");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+class NzDemoPopoverControlComponent {
+    constructor() {
+        this.visible = false;
+    }
+    clickMe() {
+        this.visible = false;
+    }
+    change(value) {
+        console.log(value);
+    }
+}
+/** @nocollapse */ NzDemoPopoverControlComponent.ɵfac = function NzDemoPopoverControlComponent_Factory(t) { return new (t || NzDemoPopoverControlComponent)(); };
+/** @nocollapse */ NzDemoPopoverControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverControlComponent, selectors: [["nz-demo-popover-control"]], decls: 4, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverVisible", "nzPopoverContent", "nzPopoverVisibleChange"], ["contentTemplate", ""], [3, "click"]], template: function NzDemoPopoverControlComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.visible = $event; })("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.change($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Click me ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPopoverControlComponent_ng_template_2_Template, 2, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPopoverVisible", ctx.visible)("nzPopoverContent", _r0);
+    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverControlComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-popover-control',
+                template: `
+    <button
+      nz-button
+      nzType="primary"
+      nz-popover
+      nzPopoverTitle="Title"
+      [(nzPopoverVisible)]="visible"
+      (nzPopoverVisibleChange)="change($event)"
+      nzPopoverTrigger="click"
+      [nzPopoverContent]="contentTemplate"
+    >
+      Click me
+    </button>
+    <ng-template #contentTemplate>
+      <a (click)="clickMe()">Close</a>
+    </ng-template>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "jWys":
 /*!**********************************************!*\
   !*** ./site/doc/app/popover/zh.component.ts ***!
   \**********************************************/
@@ -1202,20 +1158,20 @@ class NzDemoPopoverTriggerTypeComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverZhComponent", function() { return NzDemoPopoverZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/popover/basic.ts");
-/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./control */ "./site/doc/app/popover/control.ts");
-/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./template */ "./site/doc/app/popover/template.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "./site/doc/app/popover/placement.ts");
-/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./arrow-point-at-center */ "./site/doc/app/popover/arrow-point-at-center.ts");
-/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./trigger-type */ "./site/doc/app/popover/trigger-type.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "rV02");
+/* harmony import */ var _control__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./control */ "gVpb");
+/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./template */ "9giw");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "E998");
+/* harmony import */ var _arrow_point_at_center__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./arrow-point-at-center */ "SJvV");
+/* harmony import */ var _trigger_type__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./trigger-type */ "+9kM");
 
 
 
@@ -1755,6 +1711,50 @@ class NzDemoPopoverZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "rV02":
+/*!***************************************!*\
+  !*** ./site/doc/app/popover/basic.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoPopoverBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPopoverBasicComponent", function() { return NzDemoPopoverBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+
+
+
+
+
+
+class NzDemoPopoverBasicComponent {
+}
+/** @nocollapse */ NzDemoPopoverBasicComponent.ɵfac = function NzDemoPopoverBasicComponent_Factory(t) { return new (t || NzDemoPopoverBasicComponent)(); };
+/** @nocollapse */ NzDemoPopoverBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverBasicComponent, selectors: [["nz-demo-popover-basic"]], decls: 2, vars: 0, consts: [["nz-button", "", "nz-popover", "", "nzType", "primary", "nzPopoverTitle", "Title", "nzPopoverContent", "Content"]], template: function NzDemoPopoverBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Hover me ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_1__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_2__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_4__["NzPopoverDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPopoverBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-popover-basic',
+                template: `
+    <button nz-button nz-popover nzType="primary" nzPopoverTitle="Title" nzPopoverContent="Content">
+      Hover me
+    </button>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

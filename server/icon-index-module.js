@@ -1,60 +1,149 @@
 exports.ids = ["icon-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/icon/basic.ts":
-/*!************************************!*\
-  !*** ./site/doc/app/icon/basic.ts ***!
-  \************************************/
-/*! exports provided: NzDemoIconBasicComponent */
+/***/ "FVLA":
+/*!*******************************************!*\
+  !*** ./site/doc/app/icon/index.module.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoIconModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconBasicComponent", function() { return NzDemoIconBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconModule", function() { return NzDemoIconModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "rHgZ");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "RRL5");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./custom */ "Np1k");
+/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./iconfont */ "Jslk");
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./namespace */ "LFSE");
+/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./twotone */ "c34i");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./zh.component */ "Xbnn");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./en.component */ "UaMo");
+/* harmony import */ var _zh_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.page.component */ "Td3p");
+/* harmony import */ var _en_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.page.component */ "bX8E");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
 
 
 
-class NzDemoIconBasicComponent {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoIconModule {
 }
-/** @nocollapse */ NzDemoIconBasicComponent.ɵfac = function NzDemoIconBasicComponent_Factory(t) { return new (t || NzDemoIconBasicComponent)(); };
-/** @nocollapse */ NzDemoIconBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconBasicComponent, selectors: [["nz-demo-icon-basic"]], decls: 7, vars: 11, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", 3, "nzType", "nzTheme"], ["nz-icon", "", 3, "nzType", "nzSpin"], ["nz-icon", "", 3, "nzType", "nzTheme", "nzRotate"]], template: function NzDemoIconBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoIconModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoIconModule });
+/** @nocollapse */ NzDemoIconModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoIconModule_Factory(t) { return new (t || NzDemoIconModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoIconModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoIconBasicComponent"],
+        _custom__WEBPACK_IMPORTED_MODULE_5__["NzDemoIconCustomComponent"],
+        _iconfont__WEBPACK_IMPORTED_MODULE_6__["NzDemoIconIconfontComponent"],
+        _namespace__WEBPACK_IMPORTED_MODULE_7__["NzDemoIconNamespaceComponent"],
+        _twotone__WEBPACK_IMPORTED_MODULE_8__["NzDemoIconTwotoneComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"],
+        _zh_page_component__WEBPACK_IMPORTED_MODULE_11__["NzPageDemoIconZhComponent"],
+        _en_page_component__WEBPACK_IMPORTED_MODULE_12__["NzPageDemoIconEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_14__["NzRadioModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_15__["NzInputModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_16__["NzBadgeModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoIconBasicComponent"],
+                    _custom__WEBPACK_IMPORTED_MODULE_5__["NzDemoIconCustomComponent"],
+                    _iconfont__WEBPACK_IMPORTED_MODULE_6__["NzDemoIconIconfontComponent"],
+                    _namespace__WEBPACK_IMPORTED_MODULE_7__["NzDemoIconNamespaceComponent"],
+                    _twotone__WEBPACK_IMPORTED_MODULE_8__["NzDemoIconTwotoneComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"],
+                    _zh_page_component__WEBPACK_IMPORTED_MODULE_11__["NzPageDemoIconZhComponent"],
+                    _en_page_component__WEBPACK_IMPORTED_MODULE_12__["NzPageDemoIconEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Jslk":
+/*!***************************************!*\
+  !*** ./site/doc/app/icon/iconfont.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoIconIconfontComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconIconfontComponent", function() { return NzDemoIconIconfontComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+class NzDemoIconIconfontComponent {
+    constructor(iconService) {
+        this.iconService = iconService;
+        this.iconService.fetchFromIconfont({
+            scriptUrl: 'https://at.alicdn.com/t/font_8d5l8fzk5b87iudi.js'
+        });
+    }
+}
+/** @nocollapse */ NzDemoIconIconfontComponent.ɵfac = function NzDemoIconIconfontComponent_Factory(t) { return new (t || NzDemoIconIconfontComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"])); };
+/** @nocollapse */ NzDemoIconIconfontComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconIconfontComponent, selectors: [["nz-demo-icon-iconfont"]], decls: 4, vars: 3, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzIconfont"]], template: function NzDemoIconIconfontComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "home");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-tuichu");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "setting")("nzTheme", "fill");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-facebook");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "outline");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "sync")("nzSpin", true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "outline")("nzRotate", 180);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "loading");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-twitter");
     } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: ["[nz-icon][_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconBasicComponent, [{
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconIconfontComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-icon-basic',
+                selector: 'nz-demo-icon-iconfont',
                 template: `
     <div class="icons-list">
-      <i nz-icon [nzType]="'home'"></i>
-      <i nz-icon [nzType]="'setting'" [nzTheme]="'fill'"></i>
-      <i nz-icon [nzType]="'smile'" [nzTheme]="'outline'"></i>
-      <i nz-icon [nzType]="'sync'" [nzSpin]="true"></i>
-      <i nz-icon [nzType]="'smile'" [nzTheme]="'outline'" [nzRotate]="180"></i>
-      <!-- Loading with new API would spin automatically! -->
-      <i nz-icon [nzType]="'loading'"></i>
+      <i nz-icon [nzIconfont]="'icon-tuichu'"></i>
+      <i nz-icon [nzIconfont]="'icon-facebook'"></i>
+      <i nz-icon [nzIconfont]="'icon-twitter'"></i>
     </div>
   `,
                 styles: [
@@ -66,12 +155,64 @@ class NzDemoIconBasicComponent {
     `
                 ]
             }]
-    }], null, null); })();
+    }], function () { return [{ type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"] }]; }, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/icon/custom.ts":
+/***/ "LFSE":
+/*!****************************************!*\
+  !*** ./site/doc/app/icon/namespace.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoIconNamespaceComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconNamespaceComponent", function() { return NzDemoIconNamespaceComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+const ngZorroIconLiteral = '<svg viewBox="0 0 106 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <defs>\n    <linearGradient x1="68.1279872%" y1="-35.6905737%" x2="30.4400914%" y2="114.942679%" id="linearGradient-1">\n      <stop stop-color="#FA8E7D" offset="0%"></stop>\n      <stop stop-color="#F74A5C" offset="51.2635191%"></stop>\n      <stop stop-color="#F51D2C" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="68.1279872%" y1="-35.6905737%" x2="74.5363914%" y2="162.511755%" id="linearGradient-2">\n      <stop stop-color="#FA8E7D" offset="0%"></stop>\n      <stop stop-color="#F74A5C" offset="51.2635191%"></stop>\n      <stop stop-color="#F51D2C" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="69.644116%" y1="0%" x2="69.644116%" y2="100%" id="linearGradient-3">\n      <stop stop-color="#29CDFF" offset="0%"></stop>\n      <stop stop-color="#148EFF" offset="37.8600687%"></stop>\n      <stop stop-color="#0A60FF" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="-19.8191553%" y1="-36.7931464%" x2="138.57919%" y2="157.637507%" id="linearGradient-4">\n      <stop stop-color="#29CDFF" offset="0%"></stop>\n      <stop stop-color="#0F78FF" offset="100%"></stop>\n    </linearGradient>\n  </defs>\n  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n    <g id="Angular" transform="translate(-11.000000, -4.000000)">\n      <g id="Group-9" transform="translate(11.000000, 4.000000)">\n        <path d="M65.63,72.2 L53.23,53.2 L46,63.69 L53.37,63.69 C56.4075661,63.69 58.87,66.1524339 58.87,69.19 C58.87,72.2275661 56.4075661,74.69 53.37,74.69 L35.49,74.69 C33.4448986,74.6890667 31.569189,73.5534846 30.620326,71.7418281 C29.671463,69.9301715 29.8061511,67.7416349 30.97,66.06 L48.84,40.26 C49.879226,38.7527636 51.6013948,37.8627393 53.4320154,37.8868264 C55.2626361,37.9109135 56.960791,38.8459421 57.96,40.38 L74.84,66.18 C75.9449505,67.8698206 76.0352122,70.0292067 75.0751376,71.8053446 C74.115063,73.5814826 72.2590116,74.6888076 70.24,74.69 C68.3799194,74.6978131 66.6433454,73.7598372 65.63,72.2 Z" id="Path" fill="url(#linearGradient-1)"></path>\n        <path d="M70.28,25 C69.0616939,25.0004053 67.8648105,24.6796268 66.81,24.07 L52.87,16.07 L39,24 C36.8331842,25.2504298 34.1638674,25.249892 31.9975556,23.9985892 C29.8312438,22.7472865 28.4970513,20.4353214 28.4975555,17.933589 C28.4980597,15.4318566 29.833184,13.1204295 32,11.87 L49.34,1.87 C51.5058075,0.619570435 54.1741925,0.619570435 56.34,1.87 L73.76,11.87 C76.574107,13.4207731 77.9710889,16.688234 77.147902,19.7941088 C76.324715,22.8999837 73.492775,25.0466031 70.28,25 Z" id="Path" fill="url(#linearGradient-2)"></path>\n        <path d="M52.86,119.92 C51.6310454,119.919338 50.4239235,119.595139 49.36,118.98 L3.93,92.75 C1.76486614,91.4999595 0.43077789,89.190081 0.43,86.69 L0.43,34.23 C0.43077789,31.729919 1.76486614,29.4200405 3.93,28.17 L15.16,21.69 C17.3290879,20.369153 20.0434251,20.3267208 22.2527396,21.5791219 C24.4620541,22.831523 25.8197544,25.182284 25.8004986,27.7218131 C25.7812428,30.2613423 24.3880518,32.5912449 22.16,33.81 L14.43,38.27 L14.43,82.65 L52.86,104.83 L89.7896161,83.5159515 C90.7180357,82.9801111 91.29,81.9896088 91.29,80.9176536 L91.29,40.0028421 C91.29,38.9306213 90.7177545,37.9399157 89.7889721,37.4041727 L83.61,33.84 C81.4431842,32.5895704 80.1080601,30.2781434 80.1075559,27.7764111 C80.1070518,25.2746788 81.4412443,22.9627138 83.6075559,21.7114111 C85.7738676,20.4601083 88.4431842,20.4595704 90.61,21.71 L101.79,28.17 C103.955134,29.4200405 105.289222,31.729919 105.29,34.23 L105.29,86.69 C105.289222,89.190081 103.955134,91.4999595 101.79,92.75 L56.36,119 C55.2952279,119.610805 54.087499,119.928265 52.86,119.92 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>\n        <path d="M78.06,106.45 C66.89,113 52.87,104.83 52.87,104.83 L15.9403839,83.5159515 C15.0119643,82.9801111 14.44,81.9896088 14.44,80.9176536 L14.44,40.0026171 C14.44,38.9305169 15.0121179,37.9399035 15.9407356,37.4041163 L22.17,33.81 C24.3980518,32.5912449 25.7912428,30.2613423 25.8104986,27.7218131 C25.8297544,25.182284 24.4720541,22.831523 22.2627396,21.5791219 C20.0534251,20.3267208 17.3390879,20.369153 15.17,21.69 L3.94,28.17 C1.77486614,29.4200405 0.44077789,31.729919 0.44,34.23 L0.44,86.69 C0.44077789,89.190081 1.77486614,91.4999595 3.94,92.75 L49.36,119 C51.5258075,120.25043 54.1941925,120.25043 56.36,119 L78.06,106.47 L78.06,106.45 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>\n      </g>\n    </g>\n  </g>\n</svg>';
+class NzDemoIconNamespaceComponent {
+    constructor(iconService) {
+        this.iconService = iconService;
+        this.iconService.addIconLiteral('ng-zorro:antd', ngZorroIconLiteral);
+    }
+}
+/** @nocollapse */ NzDemoIconNamespaceComponent.ɵfac = function NzDemoIconNamespaceComponent_Factory(t) { return new (t || NzDemoIconNamespaceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"])); };
+/** @nocollapse */ NzDemoIconNamespaceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconNamespaceComponent, selectors: [["nz-demo-icon-namespace"]], decls: 2, vars: 0, consts: [[1, "icons-list"], ["nz-icon", "", "nzType", "ng-zorro:antd"]], template: function NzDemoIconNamespaceComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: ["[nz-icon][_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconNamespaceComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-icon-namespace',
+                template: `
+    <div class="icons-list">
+      <i nz-icon nzType="ng-zorro:antd"></i>
+    </div>
+  `,
+                styles: [
+                    `
+      [nz-icon] {
+        margin-right: 6px;
+        font-size: 24px;
+      }
+    `
+                ]
+            }]
+    }], function () { return [{ type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "Np1k":
 /*!*************************************!*\
   !*** ./site/doc/app/icon/custom.ts ***!
   \*************************************/
@@ -81,8 +222,8 @@ class NzDemoIconBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconCustomComponent", function() { return NzDemoIconCustomComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -178,7 +319,618 @@ class NzDemoIconCustomComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/icon/en.component.ts":
+/***/ "RRL5":
+/*!************************************!*\
+  !*** ./site/doc/app/icon/basic.ts ***!
+  \************************************/
+/*! exports provided: NzDemoIconBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconBasicComponent", function() { return NzDemoIconBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+class NzDemoIconBasicComponent {
+}
+/** @nocollapse */ NzDemoIconBasicComponent.ɵfac = function NzDemoIconBasicComponent_Factory(t) { return new (t || NzDemoIconBasicComponent)(); };
+/** @nocollapse */ NzDemoIconBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconBasicComponent, selectors: [["nz-demo-icon-basic"]], decls: 7, vars: 11, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", 3, "nzType", "nzTheme"], ["nz-icon", "", 3, "nzType", "nzSpin"], ["nz-icon", "", 3, "nzType", "nzTheme", "nzRotate"]], template: function NzDemoIconBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "home");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "setting")("nzTheme", "fill");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "outline");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "sync")("nzSpin", true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "outline")("nzRotate", 180);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "loading");
+    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: ["[nz-icon][_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-icon-basic',
+                template: `
+    <div class="icons-list">
+      <i nz-icon [nzType]="'home'"></i>
+      <i nz-icon [nzType]="'setting'" [nzTheme]="'fill'"></i>
+      <i nz-icon [nzType]="'smile'" [nzTheme]="'outline'"></i>
+      <i nz-icon [nzType]="'sync'" [nzSpin]="true"></i>
+      <i nz-icon [nzType]="'smile'" [nzTheme]="'outline'" [nzRotate]="180"></i>
+      <!-- Loading with new API would spin automatically! -->
+      <i nz-icon [nzType]="'loading'"></i>
+    </div>
+  `,
+                styles: [
+                    `
+      [nz-icon] {
+        margin-right: 6px;
+        font-size: 24px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Td3p":
+/*!************************************************!*\
+  !*** ./site/doc/app/icon/zh.page.component.ts ***!
+  \************************************************/
+/*! exports provided: NzPageDemoIconZhComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzPageDemoIconZhComponent", function() { return NzPageDemoIconZhComponent; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ant-design/icons-angular */ "RZFK");
+/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "kVq8");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
+
+
+
+
+
+
+
+
+
+
+
+
+function NzPageDemoIconZhComponent_ng_template_21_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "i", 13);
+} }
+function NzPageDemoIconZhComponent_ng_container_23_li_4_nz_badge_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-badge", 21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const icon_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
+} }
+function NzPageDemoIconZhComponent_ng_container_23_li_4_ng_template_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](0);
+} if (rf & 2) {
+    const icon_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
+} }
+function NzPageDemoIconZhComponent_ng_container_23_li_4_Template(rf, ctx) { if (rf & 1) {
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzPageDemoIconZhComponent_ng_container_23_li_4_Template_li_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r13); const icon_r6 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r12.onIconClick($event, icon_r6); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "i", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "span", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageDemoIconZhComponent_ng_container_23_li_4_nz_badge_3_Template, 2, 1, "nz-badge", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconZhComponent_ng_container_23_li_4_ng_template_4_Template, 1, 1, "ng-template", null, 20, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const icon_r6 = ctx.$implicit;
+    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](5);
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", icon_r6)("nzTheme", ctx_r5.currentTheme);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r5.isNewIcon(icon_r6))("ngIfElse", _r8);
+} }
+function NzPageDemoIconZhComponent_ng_container_23_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h3");
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconZhComponent_ng_container_23_li_4_Template, 6, 4, "li", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const category_r3 = ctx.$implicit;
+    const i_r4 = ctx.index;
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r2.localeObj[category_r3]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.displayedNames[i_r4].icons)("ngForTrackBy", ctx_r2.trackByFn);
+} }
+const categories = {
+    direction: [
+        'step-backward',
+        'step-forward',
+        'fast-backward',
+        'fast-forward',
+        'shrink',
+        'arrows-alt',
+        'down',
+        'up',
+        'left',
+        'right',
+        'caret-up',
+        'caret-down',
+        'caret-left',
+        'caret-right',
+        'up-circle',
+        'down-circle',
+        'left-circle',
+        'right-circle',
+        'double-right',
+        'double-left',
+        'vertical-left',
+        'vertical-right',
+        'vertical-align-top',
+        'vertical-align-middle',
+        'vertical-align-bottom',
+        'forward',
+        'backward',
+        'rollback',
+        'enter',
+        'retweet',
+        'swap',
+        'swap-left',
+        'swap-right',
+        'arrow-up',
+        'arrow-down',
+        'arrow-left',
+        'arrow-right',
+        'play-circle',
+        'up-square',
+        'down-square',
+        'left-square',
+        'right-square',
+        'login',
+        'logout',
+        'menu-fold',
+        'menu-unfold',
+        'border-bottom',
+        'border-horizontal',
+        'border-inner',
+        'border-outer',
+        'border-left',
+        'border-right',
+        'border-top',
+        'border-verticle',
+        'pic-center',
+        'pic-left',
+        'pic-right',
+        'radius-bottomleft',
+        'radius-bottomright',
+        'radius-upleft',
+        'radius-upright',
+        'fullscreen',
+        'fullscreen-exit'
+    ],
+    suggestion: [
+        'question',
+        'question-circle',
+        'plus',
+        'plus-circle',
+        'pause',
+        'pause-circle',
+        'minus',
+        'minus-circle',
+        'plus-square',
+        'minus-square',
+        'info',
+        'info-circle',
+        'exclamation',
+        'exclamation-circle',
+        'close',
+        'close-circle',
+        'close-square',
+        'check',
+        'check-circle',
+        'check-square',
+        'clock-circle',
+        'warning',
+        'issues-close',
+        'stop'
+    ],
+    edit: [
+        'edit',
+        'form',
+        'copy',
+        'scissor',
+        'delete',
+        'snippets',
+        'diff',
+        'highlight',
+        'align-center',
+        'align-left',
+        'align-right',
+        'bg-colors',
+        'bold',
+        'italic',
+        'underline',
+        'strikethrough',
+        'redo',
+        'undo',
+        'zoom-in',
+        'zoom-out',
+        'font-colors',
+        'font-size',
+        'line-height',
+        'colum-height',
+        'colum-width',
+        'dash',
+        'small-dash',
+        'sort-ascending',
+        'sort-descending',
+        'drag',
+        'ordered-list',
+        'unordered-list',
+        'radius-setting',
+        'column-width'
+    ],
+    data: [
+        'area-chart',
+        'pie-chart',
+        'bar-chart',
+        'dot-chart',
+        'line-chart',
+        'radar-chart',
+        'heat-map',
+        'fall',
+        'rise',
+        'stock',
+        'box-plot',
+        'fund',
+        'sliders'
+    ],
+    logo: [
+        'android',
+        'apple',
+        'windows',
+        'ie',
+        'chrome',
+        'github',
+        'aliwangwang',
+        'dingding',
+        'weibo-square',
+        'weibo-circle',
+        'taobao-circle',
+        'html5',
+        'weibo',
+        'twitter',
+        'wechat',
+        'youtube',
+        'alipay-circle',
+        'taobao',
+        'skype',
+        'qq',
+        'medium-workmark',
+        'gitlab',
+        'medium',
+        'linkedin',
+        'google-plus',
+        'dropbox',
+        'facebook',
+        'codepen',
+        'code-sandbox',
+        'code-sandbox-circle',
+        'amazon',
+        'google',
+        'codepen-circle',
+        'alipay',
+        'ant-design',
+        'ant-cloud',
+        'aliyun',
+        'zhihu',
+        'slack',
+        'slack-square',
+        'behance',
+        'behance-square',
+        'dribbble',
+        'dribbble-square',
+        'instagram',
+        'yuque',
+        'alibaba',
+        'yahoo',
+        'reddit',
+        'sketch'
+    ]
+};
+const newIconNames = [
+    // direction
+    'border-outter',
+    'radius-upright',
+    // suggestion
+    // edit
+    'colum-width',
+    // data
+    // other
+    'eye-invisible',
+    'batch-folding',
+    // logo
+    'code-sandbox',
+    'code-sandbox-circle'
+];
+class NzPageDemoIconZhComponent {
+    // tslint:disable-next-line:no-any
+    constructor(dom, _iconService) {
+        this.dom = dom;
+        this._iconService = _iconService;
+        this.displayedNames = [];
+        this.categoryNames = [];
+        this.currentTheme = 'outline';
+        this.localeObj = {
+            chooseTheme: '选择图标主题风格',
+            direction: '方向性图标',
+            suggestion: '提示建议性图标',
+            edit: '编辑类图标',
+            data: '数据类图标',
+            other: '网站通用图标',
+            logo: '品牌和标识',
+            search: '在此搜索图标，点击图标可复制代码'
+        };
+        this.searchingString = '';
+        this.trackByFn = (_index, item) => {
+            return `${item}-${this.currentTheme}`;
+        };
+        this.isNewIcon = (name) => {
+            return newIconNames.indexOf(name) > -1;
+        };
+        // This is to test that tree shake works!
+        this._iconService.addIcon(_ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__["AccountBookFill"]);
+    }
+    onIconClick(e, icon) {
+        const target = e.target;
+        const copiedString = `<i nz-icon nzType="${icon}" nzTheme="${this.currentTheme}"></i>`;
+        target.classList.add('copied');
+        this._copy(copiedString).then(() => {
+            setTimeout(() => {
+                target.classList.remove('copied');
+            }, 1000);
+        });
+    }
+    _copy(value) {
+        const promise = new Promise((resolve) => {
+            let copyTextArea = null; // tslint:disable-line:no-any
+            try {
+                copyTextArea = this.dom.createElement('textarea');
+                copyTextArea.style.height = '0px';
+                copyTextArea.style.opacity = '0';
+                copyTextArea.style.width = '0px';
+                this.dom.body.appendChild(copyTextArea);
+                copyTextArea.value = value;
+                copyTextArea.select();
+                this.dom.execCommand('copy');
+                resolve(value);
+            }
+            finally {
+                if (copyTextArea && copyTextArea.parentNode) {
+                    copyTextArea.parentNode.removeChild(copyTextArea);
+                }
+            }
+        });
+        return promise;
+    }
+    prepareIcons() {
+        const theme = this.currentTheme;
+        // @ts-ignore
+        const currentThemeIcons = _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__["manifest"][theme].filter((name) => !['interation', 'canlendar'].includes(name));
+        let notEmptyCategories = Object.keys(categories).map(category => ({
+            name: category,
+            // @ts-ignore
+            icons: categories[category].filter((name) => currentThemeIcons.indexOf(name) > -1 && name.includes(this.searchingString))
+        }));
+        const otherIcons = currentThemeIcons
+            .filter(icon => {
+            return notEmptyCategories.filter(({ name }) => name !== 'all').every(item => !item.icons.includes(icon));
+        })
+            .filter(name => name.includes(this.searchingString));
+        notEmptyCategories.push({ name: 'other', icons: otherIcons });
+        notEmptyCategories = notEmptyCategories.filter(({ icons }) => Boolean(icons.length));
+        this.displayedNames = notEmptyCategories;
+        this.categoryNames = notEmptyCategories.map(({ name }) => name);
+    }
+    setIconsShouldBeDisplayed(theme) {
+        this.currentTheme = theme;
+        this.prepareIcons();
+    }
+    onSearchChange() {
+        this.prepareIcons();
+    }
+    ngOnInit() {
+        this.setIconsShouldBeDisplayed('outline');
+    }
+}
+/** @nocollapse */ NzPageDemoIconZhComponent.ɵfac = function NzPageDemoIconZhComponent_Factory(t) { return new (t || NzPageDemoIconZhComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"])); };
+/** @nocollapse */ NzPageDemoIconZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPageDemoIconZhComponent, selectors: [["nz-page-demo-icon-zh"]], decls: 24, vars: 6, consts: [[1, "icon-selector"], [3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "outline"], ["nz-icon", ""], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"], ["nz-radio-button", "", "nzValue", "fill"], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"], ["nz-radio-button", "", "nzValue", "twotone"], ["d", "M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"], [3, "nzSuffix"], ["nz-input", "", 3, "placeholder", "ngModel", "ngModelChange"], ["suffixIconSearch", ""], [4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [1, "anticons-list"], [3, "click", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "click"], ["nz-icon", "", 3, "nzType", "nzTheme"], [1, "anticon-class"], ["nzDot", "", 4, "ngIf", "ngIfElse"], ["notNewTpl", ""], ["nzDot", ""]], template: function NzPageDemoIconZhComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "nz-radio-group", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconZhComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.setIconsShouldBeDisplayed($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "label", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "svg");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "path", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, " Outlined ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "label", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "svg");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "path", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " Filled ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "label", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "svg");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "path", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18, " Two Tone ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "nz-input-group", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "input", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconZhComponent_Template_input_ngModelChange_20_listener($event) { return ctx.searchingString = $event; })("ngModelChange", function NzPageDemoIconZhComponent_Template_input_ngModelChange_20_listener() { return ctx.onSearchChange(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, NzPageDemoIconZhComponent_ng_template_21_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, NzPageDemoIconZhComponent_ng_container_23_Template, 5, 3, "ng-container", 12);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.localeObj.chooseTheme);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx.currentTheme);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSuffix", _r0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("placeholder", ctx.localeObj.search)("ngModel", ctx.searchingString);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.categoryNames);
+    } }, directives: [ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioGroupComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioButtonDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__["NzBadgeComponent"]], styles: ["h3[_ngcontent-%COMP%] {\n        margin: 1.6em 0 0.6em;\n        font-size: 18px;\n      }", "ul.anticons-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   .anticon[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }", ".icon-selector[_ngcontent-%COMP%] {\n        display: flex;\n        justify-content: space-between;\n      }\n\n      nz-input-group[_ngcontent-%COMP%] {\n        margin-left: 10px;\n        flex: 1 1 0%;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPageDemoIconZhComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                selector: 'nz-page-demo-icon-zh',
+                template: `
+    <h3>{{ localeObj.chooseTheme }}</h3>
+    <div class="icon-selector">
+      <nz-radio-group [ngModel]="currentTheme" (ngModelChange)="setIconsShouldBeDisplayed($event)">
+        <label nz-radio-button nzValue="outline">
+          <i nz-icon>
+            <svg>
+              <path
+                d="M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"
+              ></path>
+            </svg>
+          </i>
+          Outlined
+        </label>
+        <label nz-radio-button nzValue="fill">
+          <i nz-icon>
+            <svg>
+              <path d="M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"></path>
+            </svg>
+          </i>
+          Filled
+        </label>
+        <label nz-radio-button nzValue="twotone">
+          <i nz-icon>
+            <svg>
+              <path
+                d="M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"
+              ></path>
+            </svg>
+          </i>
+          Two Tone
+        </label>
+      </nz-radio-group>
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input nz-input [placeholder]="localeObj.search" [(ngModel)]="searchingString" (ngModelChange)="onSearchChange()" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <i nz-icon nzType="search"></i>
+      </ng-template>
+    </div>
+    <ng-container *ngFor="let category of categoryNames; let i = index">
+      <h3>{{ localeObj[category] }}</h3>
+      <ul class="anticons-list">
+        <li *ngFor="let icon of displayedNames[i].icons; trackBy: trackByFn" (click)="onIconClick($event, icon)">
+          <i nz-icon [nzType]="icon" [nzTheme]="currentTheme"></i>
+          <span class="anticon-class">
+            <nz-badge *ngIf="isNewIcon(icon); else notNewTpl" nzDot>
+              {{ icon }}
+            </nz-badge>
+            <ng-template #notNewTpl>
+              {{ icon }}
+            </ng-template>
+          </span>
+        </li>
+      </ul>
+    </ng-container>
+  `,
+                styles: [
+                    `
+      h3 {
+        margin: 1.6em 0 0.6em;
+        font-size: 18px;
+      }
+    `,
+                    `
+      ul.anticons-list li .anticon {
+        font-size: 24px;
+      }
+    `,
+                    `
+      .icon-selector {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      nz-input-group {
+        margin-left: 10px;
+        flex: 1 1 0%;
+      }
+    `
+                ]
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]]
+            }] }, { type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "UaMo":
 /*!*******************************************!*\
   !*** ./site/doc/app/icon/en.component.ts ***!
   \*******************************************/
@@ -188,19 +940,19 @@ class NzDemoIconCustomComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconEnComponent", function() { return NzDemoIconEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var _en_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./en.page.component */ "./site/doc/app/icon/en.page.component.ts");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/icon/basic.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./custom */ "./site/doc/app/icon/custom.ts");
-/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./namespace */ "./site/doc/app/icon/namespace.ts");
-/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./twotone */ "./site/doc/app/icon/twotone.ts");
-/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./iconfont */ "./site/doc/app/icon/iconfont.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _en_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./en.page.component */ "bX8E");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "RRL5");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./custom */ "Np1k");
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./namespace */ "LFSE");
+/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./twotone */ "c34i");
+/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./iconfont */ "Jslk");
 
 
 
@@ -240,7 +992,7 @@ class NzDemoIconEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 1022, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-icon-demo-basic", "nzTitle", "Basic usage"], ["nzHref", "#components-icon-demo-twotone", "nzTitle", "Two-tone icon and colorful icon"], ["nzHref", "#components-icon-demo-custom", "nzTitle", "Custom icon"], ["nzHref", "#components-icon-demo-iconfont", "nzTitle", "Use iconfont.cn"], ["nzHref", "#components-icon-demo-namespace", "nzTitle", "Namespace"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/icon/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "list-of-icons"], ["onclick", "window.location.hash = 'list-of-icons'", 1, "anchor"], ["href", "https://ant.design/components/icon/"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], [1, "page-demo"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic usage", "nzSelector", "nz-demo-icon-basic", "nzGenerateCommand", "ng g ng-zorro-antd:icon-basic <name>", "nzComponentName", "NzDemoIconBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Custom icon", "nzSelector", "nz-demo-icon-custom", "nzGenerateCommand", "ng g ng-zorro-antd:icon-custom <name>", "nzComponentName", "NzDemoIconCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Namespace", "nzSelector", "nz-demo-icon-namespace", "nzGenerateCommand", "ng g ng-zorro-antd:icon-namespace <name>", "nzComponentName", "NzDemoIconNamespaceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Two-tone icon and colorful icon", "nzSelector", "nz-demo-icon-twotone", "nzGenerateCommand", "ng g ng-zorro-antd:icon-twotone <name>", "nzComponentName", "NzDemoIconTwotoneComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Use iconfont.cn", "nzSelector", "nz-demo-icon-iconfont", "nzGenerateCommand", "ng g ng-zorro-antd:icon-iconfont <name>", "nzComponentName", "NzDemoIconIconfontComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://iconfont.cn/"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-icon]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-icon]'", 1, "anchor"], ["id", "nziconservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nziconservice'", 1, "anchor"], ["id", "svg-icons"], ["onclick", "window.location.hash = 'svg-icons'", 1, "anchor"], ["href", "https://github.com/ant-design/ant-design/issues/10353"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "style-attr", "language-css"], [1, "token", "property"], [1, "token", "number"], [1, "token", "hexcode"], ["id", "static-loading-and-dynamic-loading"], ["onclick", "window.location.hash = 'static-loading-and-dynamic-loading'", 1, "anchor"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"], [1, "token", "class-name"], [1, "language-json"], ["id", "add-icons-in-lazy-loaded-modules"], ["onclick", "window.location.hash = 'add-icons-in-lazy-loaded-modules'", 1, "anchor"], ["id", "set-default-twotone-color"], ["onclick", "window.location.hash = 'set-default-twotone-color'", 1, "anchor"], ["id", "custom-font-icon"], ["onclick", "window.location.hash = 'custom-font-icon'", 1, "anchor"], ["href", "http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code"], ["id", "namespace"], ["onclick", "window.location.hash = 'namespace'", 1, "anchor"], ["id", "faq"], ["onclick", "window.location.hash = 'faq'", 1, "anchor"], ["id", "all-my-icons-are-gone!"], ["onclick", "window.location.hash = 'all-my-icons-are-gone!'", 1, "anchor"], ["id", "there-are-two-similar-icons-in-a-<code><i></i></code>-tag--what-happened"], ["onclick", "window.location.hash = 'there-are-two-similar-icons-in-a-<code><i></i></code>-tag--what-happened'", 1, "anchor"], ["id", "i-want-to-import-all-icons-statically--what-should-i-do"], ["onclick", "window.location.hash = 'i-want-to-import-all-icons-statically--what-should-i-do'", 1, "anchor"], ["href", "/components/icon/en#static-loading-and-dynamic-loading"], ["id", "does-dynamic-loading-affect-web-pages'-performance"], ["onclick", "window.location.hash = 'does-dynamic-loading-affect-web-pages'-performance'", 1, "anchor"], ["id", "how-do-i-know-a-icon's-corresponding-module-to-import"], ["onclick", "window.location.hash = 'how-do-i-know-a-icon's-corresponding-module-to-import'", 1, "anchor"]], template: function NzDemoIconEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 1022, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-icon-demo-basic", "nzTitle", "Basic usage"], ["nzHref", "#components-icon-demo-twotone", "nzTitle", "Two-tone icon and colorful icon"], ["nzHref", "#components-icon-demo-custom", "nzTitle", "Custom icon"], ["nzHref", "#components-icon-demo-iconfont", "nzTitle", "Use iconfont.cn"], ["nzHref", "#components-icon-demo-namespace", "nzTitle", "Namespace"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/icon/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "list-of-icons"], ["onclick", "window.location.hash = 'list-of-icons'", 1, "anchor"], ["href", "https://ant.design/components/icon/", "target", "_blank"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], [1, "page-demo"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic usage", "nzSelector", "nz-demo-icon-basic", "nzGenerateCommand", "ng g ng-zorro-antd:icon-basic <name>", "nzComponentName", "NzDemoIconBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Custom icon", "nzSelector", "nz-demo-icon-custom", "nzGenerateCommand", "ng g ng-zorro-antd:icon-custom <name>", "nzComponentName", "NzDemoIconCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Namespace", "nzSelector", "nz-demo-icon-namespace", "nzGenerateCommand", "ng g ng-zorro-antd:icon-namespace <name>", "nzComponentName", "NzDemoIconNamespaceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Two-tone icon and colorful icon", "nzSelector", "nz-demo-icon-twotone", "nzGenerateCommand", "ng g ng-zorro-antd:icon-twotone <name>", "nzComponentName", "NzDemoIconTwotoneComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Use iconfont.cn", "nzSelector", "nz-demo-icon-iconfont", "nzGenerateCommand", "ng g ng-zorro-antd:icon-iconfont <name>", "nzComponentName", "NzDemoIconIconfontComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://iconfont.cn/", "target", "_blank"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-icon]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-icon]'", 1, "anchor"], ["id", "nziconservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nziconservice'", 1, "anchor"], ["id", "svg-icons"], ["onclick", "window.location.hash = 'svg-icons'", 1, "anchor"], ["href", "https://github.com/ant-design/ant-design/issues/10353", "target", "_blank"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "style-attr", "language-css"], [1, "token", "property"], [1, "token", "number"], [1, "token", "hexcode"], ["id", "static-loading-and-dynamic-loading"], ["onclick", "window.location.hash = 'static-loading-and-dynamic-loading'", 1, "anchor"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"], [1, "token", "class-name"], [1, "language-json"], ["id", "add-icons-in-lazy-loaded-modules"], ["onclick", "window.location.hash = 'add-icons-in-lazy-loaded-modules'", 1, "anchor"], ["id", "set-default-twotone-color"], ["onclick", "window.location.hash = 'set-default-twotone-color'", 1, "anchor"], ["id", "custom-font-icon"], ["onclick", "window.location.hash = 'custom-font-icon'", 1, "anchor"], ["href", "http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code", "target", "_blank"], ["id", "namespace"], ["onclick", "window.location.hash = 'namespace'", 1, "anchor"], ["id", "faq"], ["onclick", "window.location.hash = 'faq'", 1, "anchor"], ["id", "all-my-icons-are-gone!"], ["onclick", "window.location.hash = 'all-my-icons-are-gone!'", 1, "anchor"], ["id", "there-are-two-similar-icons-in-a-<code><i></i></code>-tag--what-happened"], ["onclick", "window.location.hash = 'there-are-two-similar-icons-in-a-<code><i></i></code>-tag--what-happened'", 1, "anchor"], ["id", "i-want-to-import-all-icons-statically--what-should-i-do"], ["onclick", "window.location.hash = 'i-want-to-import-all-icons-statically--what-should-i-do'", 1, "anchor"], ["href", "/components/icon/en#static-loading-and-dynamic-loading"], ["id", "does-dynamic-loading-affect-web-pages'-performance"], ["onclick", "window.location.hash = 'does-dynamic-loading-affect-web-pages'-performance'", 1, "anchor"], ["id", "how-do-i-know-a-icon's-corresponding-module-to-import"], ["onclick", "window.location.hash = 'how-do-i-know-a-icon's-corresponding-module-to-import'", 1, "anchor"]], template: function NzDemoIconEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1801,839 +2553,7 @@ class NzDemoIconEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/icon/en.page.component.ts":
-/*!************************************************!*\
-  !*** ./site/doc/app/icon/en.page.component.ts ***!
-  \************************************************/
-/*! exports provided: NzPageDemoIconEnComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzPageDemoIconEnComponent", function() { return NzPageDemoIconEnComponent; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ant-design/icons-angular */ "./node_modules/@ant-design/icons-angular/__ivy_ngcc__/fesm2015/ant-design-icons-angular.js");
-/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/__ivy_ngcc__/fesm2015/ant-design-icons-angular-icons.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-
-
-
-
-
-
-
-
-
-
-
-
-function NzPageDemoIconEnComponent_ng_template_21_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "i", 13);
-} }
-function NzPageDemoIconEnComponent_ng_container_23_li_4_nz_badge_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-badge", 21);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const icon_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
-} }
-function NzPageDemoIconEnComponent_ng_container_23_li_4_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](0);
-} if (rf & 2) {
-    const icon_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
-} }
-function NzPageDemoIconEnComponent_ng_container_23_li_4_Template(rf, ctx) { if (rf & 1) {
-    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzPageDemoIconEnComponent_ng_container_23_li_4_Template_li_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r13); const icon_r6 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r12.onIconClick($event, icon_r6); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "i", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "span", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageDemoIconEnComponent_ng_container_23_li_4_nz_badge_3_Template, 2, 1, "nz-badge", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconEnComponent_ng_container_23_li_4_ng_template_4_Template, 1, 1, "ng-template", null, 20, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const icon_r6 = ctx.$implicit;
-    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](5);
-    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", icon_r6)("nzTheme", ctx_r5.currentTheme);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r5.isNewIcon(icon_r6))("ngIfElse", _r8);
-} }
-function NzPageDemoIconEnComponent_ng_container_23_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h3");
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconEnComponent_ng_container_23_li_4_Template, 6, 4, "li", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const category_r3 = ctx.$implicit;
-    const i_r4 = ctx.index;
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r2.localeObj[category_r3]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r2.displayedNames[i_r4].icons)("ngForTrackBy", ctx_r2.trackByFn);
-} }
-const categories = {
-    direction: [
-        'step-backward',
-        'step-forward',
-        'fast-backward',
-        'fast-forward',
-        'shrink',
-        'arrows-alt',
-        'down',
-        'up',
-        'left',
-        'right',
-        'caret-up',
-        'caret-down',
-        'caret-left',
-        'caret-right',
-        'up-circle',
-        'down-circle',
-        'left-circle',
-        'right-circle',
-        'double-right',
-        'double-left',
-        'vertical-left',
-        'vertical-right',
-        'vertical-align-top',
-        'vertical-align-middle',
-        'vertical-align-bottom',
-        'forward',
-        'backward',
-        'rollback',
-        'enter',
-        'retweet',
-        'swap',
-        'swap-left',
-        'swap-right',
-        'arrow-up',
-        'arrow-down',
-        'arrow-left',
-        'arrow-right',
-        'play-circle',
-        'up-square',
-        'down-square',
-        'left-square',
-        'right-square',
-        'login',
-        'logout',
-        'menu-fold',
-        'menu-unfold',
-        'border-bottom',
-        'border-horizontal',
-        'border-inner',
-        'border-outer',
-        'border-left',
-        'border-right',
-        'border-top',
-        'border-verticle',
-        'pic-center',
-        'pic-left',
-        'pic-right',
-        'radius-bottomleft',
-        'radius-bottomright',
-        'radius-upleft',
-        'radius-upright',
-        'fullscreen',
-        'fullscreen-exit'
-    ],
-    suggestion: [
-        'question',
-        'question-circle',
-        'plus',
-        'plus-circle',
-        'pause',
-        'pause-circle',
-        'minus',
-        'minus-circle',
-        'plus-square',
-        'minus-square',
-        'info',
-        'info-circle',
-        'exclamation',
-        'exclamation-circle',
-        'close',
-        'close-circle',
-        'close-square',
-        'check',
-        'check-circle',
-        'check-square',
-        'clock-circle',
-        'warning',
-        'issues-close',
-        'stop'
-    ],
-    edit: [
-        'edit',
-        'form',
-        'copy',
-        'scissor',
-        'delete',
-        'snippets',
-        'diff',
-        'highlight',
-        'align-center',
-        'align-left',
-        'align-right',
-        'bg-colors',
-        'bold',
-        'italic',
-        'underline',
-        'strikethrough',
-        'redo',
-        'undo',
-        'zoom-in',
-        'zoom-out',
-        'font-colors',
-        'font-size',
-        'line-height',
-        'colum-height',
-        'colum-width',
-        'dash',
-        'small-dash',
-        'sort-ascending',
-        'sort-descending',
-        'drag',
-        'ordered-list',
-        'unordered-list',
-        'radius-setting',
-        'column-width'
-    ],
-    data: [
-        'area-chart',
-        'pie-chart',
-        'bar-chart',
-        'dot-chart',
-        'line-chart',
-        'radar-chart',
-        'heat-map',
-        'fall',
-        'rise',
-        'stock',
-        'box-plot',
-        'fund',
-        'sliders'
-    ],
-    logo: [
-        'android',
-        'apple',
-        'windows',
-        'ie',
-        'chrome',
-        'github',
-        'aliwangwang',
-        'dingding',
-        'weibo-square',
-        'weibo-circle',
-        'taobao-circle',
-        'html5',
-        'weibo',
-        'twitter',
-        'wechat',
-        'youtube',
-        'alipay-circle',
-        'taobao',
-        'skype',
-        'qq',
-        'medium-workmark',
-        'gitlab',
-        'medium',
-        'linkedin',
-        'google-plus',
-        'dropbox',
-        'facebook',
-        'codepen',
-        'code-sandbox',
-        'code-sandbox-circle',
-        'amazon',
-        'google',
-        'codepen-circle',
-        'alipay',
-        'ant-design',
-        'ant-cloud',
-        'aliyun',
-        'zhihu',
-        'slack',
-        'slack-square',
-        'behance',
-        'behance-square',
-        'dribbble',
-        'dribbble-square',
-        'instagram',
-        'yuque',
-        'alibaba',
-        'yahoo',
-        'reddit',
-        'sketch'
-    ]
-};
-const newIconNames = [
-    // direction
-    'border-outter',
-    'radius-upright',
-    // suggestion
-    // edit
-    'colum-width',
-    // data
-    // other
-    'eye-invisible',
-    'batch-folding',
-    // logo
-    'code-sandbox',
-    'code-sandbox-circle'
-];
-class NzPageDemoIconEnComponent {
-    // tslint:disable-next-line:no-any
-    constructor(dom, _iconService) {
-        this.dom = dom;
-        this._iconService = _iconService;
-        this.displayedNames = [];
-        this.categoryNames = [];
-        this.currentTheme = 'outline';
-        this.localeObj = {
-            chooseTheme: 'Select the Icon Theme',
-            direction: 'Directional Icons',
-            suggestion: 'Suggested Icons',
-            edit: 'Editor Icons',
-            data: 'Data Icons',
-            other: 'Application Icons',
-            logo: 'Brand and Logos',
-            search: 'Search icon here. Click icon to copy code.'
-        };
-        this.searchingString = '';
-        this.trackByFn = (_index, item) => {
-            return `${item}-${this.currentTheme}`;
-        };
-        this.isNewIcon = (name) => {
-            return newIconNames.indexOf(name) > -1;
-        };
-        // This is to test that tree shake works!
-        this._iconService.addIcon(_ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__["AccountBookFill"]);
-    }
-    onIconClick(e, icon) {
-        const target = e.target;
-        const copiedString = `<i nz-icon nzType="${icon}" nzTheme="${this.currentTheme}"></i>`;
-        target.classList.add('copied');
-        this._copy(copiedString).then(() => {
-            setTimeout(() => {
-                target.classList.remove('copied');
-            }, 1000);
-        });
-    }
-    _copy(value) {
-        const promise = new Promise((resolve) => {
-            let copyTextArea = null; // tslint:disable-line:no-any
-            try {
-                copyTextArea = this.dom.createElement('textarea');
-                copyTextArea.style.height = '0px';
-                copyTextArea.style.opacity = '0';
-                copyTextArea.style.width = '0px';
-                this.dom.body.appendChild(copyTextArea);
-                copyTextArea.value = value;
-                copyTextArea.select();
-                this.dom.execCommand('copy');
-                resolve(value);
-            }
-            finally {
-                if (copyTextArea && copyTextArea.parentNode) {
-                    copyTextArea.parentNode.removeChild(copyTextArea);
-                }
-            }
-        });
-        return promise;
-    }
-    prepareIcons() {
-        const theme = this.currentTheme;
-        // @ts-ignore
-        const currentThemeIcons = _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__["manifest"][theme].filter((name) => !['interation', 'canlendar'].includes(name));
-        let notEmptyCategories = Object.keys(categories).map(category => ({
-            name: category,
-            // @ts-ignore
-            icons: categories[category].filter((name) => currentThemeIcons.indexOf(name) > -1 && name.includes(this.searchingString))
-        }));
-        const otherIcons = currentThemeIcons
-            .filter(icon => {
-            return notEmptyCategories.filter(({ name }) => name !== 'all').every(item => !item.icons.includes(icon));
-        })
-            .filter(name => name.includes(this.searchingString));
-        notEmptyCategories.push({ name: 'other', icons: otherIcons });
-        notEmptyCategories = notEmptyCategories.filter(({ icons }) => Boolean(icons.length));
-        this.displayedNames = notEmptyCategories;
-        this.categoryNames = notEmptyCategories.map(({ name }) => name);
-    }
-    setIconsShouldBeDisplayed(theme) {
-        this.currentTheme = theme;
-        this.prepareIcons();
-    }
-    onSearchChange() {
-        this.prepareIcons();
-    }
-    ngOnInit() {
-        this.setIconsShouldBeDisplayed('outline');
-    }
-}
-/** @nocollapse */ NzPageDemoIconEnComponent.ɵfac = function NzPageDemoIconEnComponent_Factory(t) { return new (t || NzPageDemoIconEnComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"])); };
-/** @nocollapse */ NzPageDemoIconEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPageDemoIconEnComponent, selectors: [["nz-page-demo-icon-en"]], decls: 24, vars: 6, consts: [[1, "icon-selector"], [3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "outline"], ["nz-icon", ""], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"], ["nz-radio-button", "", "nzValue", "fill"], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"], ["nz-radio-button", "", "nzValue", "twotone"], ["d", "M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"], [3, "nzSuffix"], ["nz-input", "", 3, "placeholder", "ngModel", "ngModelChange"], ["suffixIconSearch", ""], [4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [1, "anticons-list"], [3, "click", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "click"], ["nz-icon", "", 3, "nzType", "nzTheme"], [1, "anticon-class"], ["nzDot", "", 4, "ngIf", "ngIfElse"], ["notNewTpl", ""], ["nzDot", ""]], template: function NzPageDemoIconEnComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h3");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "nz-radio-group", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconEnComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.setIconsShouldBeDisplayed($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "label", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](6, "svg");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](7, "path", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8, " Outlined ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](9, "label", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "svg");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](12, "path", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](13, " Filled ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](14, "label", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](15, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](16, "svg");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](17, "path", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](18, " Two Tone ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "nz-input-group", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "input", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconEnComponent_Template_input_ngModelChange_20_listener($event) { return ctx.searchingString = $event; })("ngModelChange", function NzPageDemoIconEnComponent_Template_input_ngModelChange_20_listener() { return ctx.onSearchChange(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, NzPageDemoIconEnComponent_ng_template_21_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, NzPageDemoIconEnComponent_ng_container_23_Template, 5, 3, "ng-container", 12);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.localeObj.chooseTheme);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx.currentTheme);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSuffix", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("placeholder", ctx.localeObj.search)("ngModel", ctx.searchingString);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.categoryNames);
-    } }, directives: [ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioGroupComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioButtonDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__["NzBadgeComponent"]], styles: ["h3[_ngcontent-%COMP%] {\n        margin: 1.6em 0 0.6em;\n        font-size: 18px;\n      }", "ul.anticons-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   .anticon[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }", ".icon-selector[_ngcontent-%COMP%] {\n        display: flex;\n        justify-content: space-between;\n      }\n\n      nz-input-group[_ngcontent-%COMP%] {\n        margin-left: 10px;\n        flex: 1 1 0%;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPageDemoIconEnComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'nz-page-demo-icon-en',
-                template: `
-    <h3>{{ localeObj.chooseTheme }}</h3>
-    <div class="icon-selector">
-      <nz-radio-group [ngModel]="currentTheme" (ngModelChange)="setIconsShouldBeDisplayed($event)">
-        <label nz-radio-button nzValue="outline">
-          <i nz-icon>
-            <svg>
-              <path
-                d="M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"
-              ></path>
-            </svg>
-          </i>
-          Outlined
-        </label>
-        <label nz-radio-button nzValue="fill">
-          <i nz-icon>
-            <svg>
-              <path d="M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"></path>
-            </svg>
-          </i>
-          Filled
-        </label>
-        <label nz-radio-button nzValue="twotone">
-          <i nz-icon>
-            <svg>
-              <path
-                d="M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"
-              ></path>
-            </svg>
-          </i>
-          Two Tone
-        </label>
-      </nz-radio-group>
-      <nz-input-group [nzSuffix]="suffixIconSearch">
-        <input nz-input [placeholder]="localeObj.search" [(ngModel)]="searchingString" (ngModelChange)="onSearchChange()" />
-      </nz-input-group>
-      <ng-template #suffixIconSearch>
-        <i nz-icon nzType="search"></i>
-      </ng-template>
-    </div>
-    <ng-container *ngFor="let category of categoryNames; let i = index">
-      <h3>{{ localeObj[category] }}</h3>
-      <ul class="anticons-list">
-        <li *ngFor="let icon of displayedNames[i].icons; trackBy: trackByFn" (click)="onIconClick($event, icon)">
-          <i nz-icon [nzType]="icon" [nzTheme]="currentTheme"></i>
-          <span class="anticon-class">
-            <nz-badge *ngIf="isNewIcon(icon); else notNewTpl" nzDot>
-              {{ icon }}
-            </nz-badge>
-            <ng-template #notNewTpl>
-              {{ icon }}
-            </ng-template>
-          </span>
-        </li>
-      </ul>
-    </ng-container>
-  `,
-                styles: [
-                    `
-      h3 {
-        margin: 1.6em 0 0.6em;
-        font-size: 18px;
-      }
-    `,
-                    `
-      ul.anticons-list li .anticon {
-        font-size: 24px;
-      }
-    `,
-                    `
-      .icon-selector {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      nz-input-group {
-        margin-left: 10px;
-        flex: 1 1 0%;
-      }
-    `
-                ]
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
-                args: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]]
-            }] }, { type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/iconfont.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/icon/iconfont.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoIconIconfontComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconIconfontComponent", function() { return NzDemoIconIconfontComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-class NzDemoIconIconfontComponent {
-    constructor(iconService) {
-        this.iconService = iconService;
-        this.iconService.fetchFromIconfont({
-            scriptUrl: 'https://at.alicdn.com/t/font_8d5l8fzk5b87iudi.js'
-        });
-    }
-}
-/** @nocollapse */ NzDemoIconIconfontComponent.ɵfac = function NzDemoIconIconfontComponent_Factory(t) { return new (t || NzDemoIconIconfontComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"])); };
-/** @nocollapse */ NzDemoIconIconfontComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconIconfontComponent, selectors: [["nz-demo-icon-iconfont"]], decls: 4, vars: 3, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzIconfont"]], template: function NzDemoIconIconfontComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-tuichu");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-facebook");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIconfont", "icon-twitter");
-    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: ["[nz-icon][_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconIconfontComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-icon-iconfont',
-                template: `
-    <div class="icons-list">
-      <i nz-icon [nzIconfont]="'icon-tuichu'"></i>
-      <i nz-icon [nzIconfont]="'icon-facebook'"></i>
-      <i nz-icon [nzIconfont]="'icon-twitter'"></i>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-icon] {
-        margin-right: 6px;
-        font-size: 24px;
-      }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/index.module.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/icon/index.module.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoIconModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconModule", function() { return NzDemoIconModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/icon/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/icon/basic.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./custom */ "./site/doc/app/icon/custom.ts");
-/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./iconfont */ "./site/doc/app/icon/iconfont.ts");
-/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./namespace */ "./site/doc/app/icon/namespace.ts");
-/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./twotone */ "./site/doc/app/icon/twotone.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/icon/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/icon/en.component.ts");
-/* harmony import */ var _zh_page_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.page.component */ "./site/doc/app/icon/zh.page.component.ts");
-/* harmony import */ var _en_page_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.page.component */ "./site/doc/app/icon/en.page.component.ts");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoIconModule {
-}
-/** @nocollapse */ NzDemoIconModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoIconModule });
-/** @nocollapse */ NzDemoIconModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoIconModule_Factory(t) { return new (t || NzDemoIconModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoIconModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoIconBasicComponent"],
-        _custom__WEBPACK_IMPORTED_MODULE_5__["NzDemoIconCustomComponent"],
-        _iconfont__WEBPACK_IMPORTED_MODULE_6__["NzDemoIconIconfontComponent"],
-        _namespace__WEBPACK_IMPORTED_MODULE_7__["NzDemoIconNamespaceComponent"],
-        _twotone__WEBPACK_IMPORTED_MODULE_8__["NzDemoIconTwotoneComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"],
-        _zh_page_component__WEBPACK_IMPORTED_MODULE_11__["NzPageDemoIconZhComponent"],
-        _en_page_component__WEBPACK_IMPORTED_MODULE_12__["NzPageDemoIconEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_14__["NzRadioModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_15__["NzInputModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_16__["NzBadgeModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoIconBasicComponent"],
-                    _custom__WEBPACK_IMPORTED_MODULE_5__["NzDemoIconCustomComponent"],
-                    _iconfont__WEBPACK_IMPORTED_MODULE_6__["NzDemoIconIconfontComponent"],
-                    _namespace__WEBPACK_IMPORTED_MODULE_7__["NzDemoIconNamespaceComponent"],
-                    _twotone__WEBPACK_IMPORTED_MODULE_8__["NzDemoIconTwotoneComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoIconZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_10__["NzDemoIconEnComponent"],
-                    _zh_page_component__WEBPACK_IMPORTED_MODULE_11__["NzPageDemoIconZhComponent"],
-                    _en_page_component__WEBPACK_IMPORTED_MODULE_12__["NzPageDemoIconEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/module.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/icon/module.ts ***!
-  \*************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-
-
-
-
-const moduleList = [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__["NzBadgeModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/namespace.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/icon/namespace.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoIconNamespaceComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconNamespaceComponent", function() { return NzDemoIconNamespaceComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-const ngZorroIconLiteral = '<svg viewBox="0 0 106 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\n  <defs>\n    <linearGradient x1="68.1279872%" y1="-35.6905737%" x2="30.4400914%" y2="114.942679%" id="linearGradient-1">\n      <stop stop-color="#FA8E7D" offset="0%"></stop>\n      <stop stop-color="#F74A5C" offset="51.2635191%"></stop>\n      <stop stop-color="#F51D2C" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="68.1279872%" y1="-35.6905737%" x2="74.5363914%" y2="162.511755%" id="linearGradient-2">\n      <stop stop-color="#FA8E7D" offset="0%"></stop>\n      <stop stop-color="#F74A5C" offset="51.2635191%"></stop>\n      <stop stop-color="#F51D2C" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="69.644116%" y1="0%" x2="69.644116%" y2="100%" id="linearGradient-3">\n      <stop stop-color="#29CDFF" offset="0%"></stop>\n      <stop stop-color="#148EFF" offset="37.8600687%"></stop>\n      <stop stop-color="#0A60FF" offset="100%"></stop>\n    </linearGradient>\n    <linearGradient x1="-19.8191553%" y1="-36.7931464%" x2="138.57919%" y2="157.637507%" id="linearGradient-4">\n      <stop stop-color="#29CDFF" offset="0%"></stop>\n      <stop stop-color="#0F78FF" offset="100%"></stop>\n    </linearGradient>\n  </defs>\n  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n    <g id="Angular" transform="translate(-11.000000, -4.000000)">\n      <g id="Group-9" transform="translate(11.000000, 4.000000)">\n        <path d="M65.63,72.2 L53.23,53.2 L46,63.69 L53.37,63.69 C56.4075661,63.69 58.87,66.1524339 58.87,69.19 C58.87,72.2275661 56.4075661,74.69 53.37,74.69 L35.49,74.69 C33.4448986,74.6890667 31.569189,73.5534846 30.620326,71.7418281 C29.671463,69.9301715 29.8061511,67.7416349 30.97,66.06 L48.84,40.26 C49.879226,38.7527636 51.6013948,37.8627393 53.4320154,37.8868264 C55.2626361,37.9109135 56.960791,38.8459421 57.96,40.38 L74.84,66.18 C75.9449505,67.8698206 76.0352122,70.0292067 75.0751376,71.8053446 C74.115063,73.5814826 72.2590116,74.6888076 70.24,74.69 C68.3799194,74.6978131 66.6433454,73.7598372 65.63,72.2 Z" id="Path" fill="url(#linearGradient-1)"></path>\n        <path d="M70.28,25 C69.0616939,25.0004053 67.8648105,24.6796268 66.81,24.07 L52.87,16.07 L39,24 C36.8331842,25.2504298 34.1638674,25.249892 31.9975556,23.9985892 C29.8312438,22.7472865 28.4970513,20.4353214 28.4975555,17.933589 C28.4980597,15.4318566 29.833184,13.1204295 32,11.87 L49.34,1.87 C51.5058075,0.619570435 54.1741925,0.619570435 56.34,1.87 L73.76,11.87 C76.574107,13.4207731 77.9710889,16.688234 77.147902,19.7941088 C76.324715,22.8999837 73.492775,25.0466031 70.28,25 Z" id="Path" fill="url(#linearGradient-2)"></path>\n        <path d="M52.86,119.92 C51.6310454,119.919338 50.4239235,119.595139 49.36,118.98 L3.93,92.75 C1.76486614,91.4999595 0.43077789,89.190081 0.43,86.69 L0.43,34.23 C0.43077789,31.729919 1.76486614,29.4200405 3.93,28.17 L15.16,21.69 C17.3290879,20.369153 20.0434251,20.3267208 22.2527396,21.5791219 C24.4620541,22.831523 25.8197544,25.182284 25.8004986,27.7218131 C25.7812428,30.2613423 24.3880518,32.5912449 22.16,33.81 L14.43,38.27 L14.43,82.65 L52.86,104.83 L89.7896161,83.5159515 C90.7180357,82.9801111 91.29,81.9896088 91.29,80.9176536 L91.29,40.0028421 C91.29,38.9306213 90.7177545,37.9399157 89.7889721,37.4041727 L83.61,33.84 C81.4431842,32.5895704 80.1080601,30.2781434 80.1075559,27.7764111 C80.1070518,25.2746788 81.4412443,22.9627138 83.6075559,21.7114111 C85.7738676,20.4601083 88.4431842,20.4595704 90.61,21.71 L101.79,28.17 C103.955134,29.4200405 105.289222,31.729919 105.29,34.23 L105.29,86.69 C105.289222,89.190081 103.955134,91.4999595 101.79,92.75 L56.36,119 C55.2952279,119.610805 54.087499,119.928265 52.86,119.92 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>\n        <path d="M78.06,106.45 C66.89,113 52.87,104.83 52.87,104.83 L15.9403839,83.5159515 C15.0119643,82.9801111 14.44,81.9896088 14.44,80.9176536 L14.44,40.0026171 C14.44,38.9305169 15.0121179,37.9399035 15.9407356,37.4041163 L22.17,33.81 C24.3980518,32.5912449 25.7912428,30.2613423 25.8104986,27.7218131 C25.8297544,25.182284 24.4720541,22.831523 22.2627396,21.5791219 C20.0534251,20.3267208 17.3390879,20.369153 15.17,21.69 L3.94,28.17 C1.77486614,29.4200405 0.44077789,31.729919 0.44,34.23 L0.44,86.69 C0.44077789,89.190081 1.77486614,91.4999595 3.94,92.75 L49.36,119 C51.5258075,120.25043 54.1941925,120.25043 56.36,119 L78.06,106.47 L78.06,106.45 Z" id="Path" fill="url(#linearGradient-4)" fill-rule="nonzero"></path>\n      </g>\n    </g>\n  </g>\n</svg>';
-class NzDemoIconNamespaceComponent {
-    constructor(iconService) {
-        this.iconService = iconService;
-        this.iconService.addIconLiteral('ng-zorro:antd', ngZorroIconLiteral);
-    }
-}
-/** @nocollapse */ NzDemoIconNamespaceComponent.ɵfac = function NzDemoIconNamespaceComponent_Factory(t) { return new (t || NzDemoIconNamespaceComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"])); };
-/** @nocollapse */ NzDemoIconNamespaceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconNamespaceComponent, selectors: [["nz-demo-icon-namespace"]], decls: 2, vars: 0, consts: [[1, "icons-list"], ["nz-icon", "", "nzType", "ng-zorro:antd"]], template: function NzDemoIconNamespaceComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: ["[nz-icon][_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconNamespaceComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-icon-namespace',
-                template: `
-    <div class="icons-list">
-      <i nz-icon nzType="ng-zorro:antd"></i>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-icon] {
-        margin-right: 6px;
-        font-size: 24px;
-      }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/twotone.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/icon/twotone.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoIconTwotoneComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconTwotoneComponent", function() { return NzDemoIconTwotoneComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-class NzDemoIconTwotoneComponent {
-}
-/** @nocollapse */ NzDemoIconTwotoneComponent.ɵfac = function NzDemoIconTwotoneComponent_Factory(t) { return new (t || NzDemoIconTwotoneComponent)(); };
-/** @nocollapse */ NzDemoIconTwotoneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconTwotoneComponent, selectors: [["nz-demo-icon-twotone"]], decls: 4, vars: 8, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzType", "nzTheme"], ["nz-icon", "", 3, "nzType", "nzTheme", "nzTwotoneColor"]], template: function NzDemoIconTwotoneComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "twotone");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "heart")("nzTheme", "twotone")("nzTwotoneColor", "#eb2f96");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "check-circle")("nzTheme", "twotone")("nzTwotoneColor", "#52c41a");
-    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: [".icons-list[_ngcontent-%COMP%]    > .anticon[_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconTwotoneComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-icon-twotone',
-                template: `
-    <div class="icons-list">
-      <i nz-icon [nzType]="'smile'" [nzTheme]="'twotone'"></i>
-      <i nz-icon [nzType]="'heart'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#eb2f96'"></i>
-      <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
-    </div>
-  `,
-                styles: [
-                    `
-      .icons-list > .anticon {
-        margin-right: 6px;
-        font-size: 24px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/icon/zh.component.ts":
+/***/ "Xbnn":
 /*!*******************************************!*\
   !*** ./site/doc/app/icon/zh.component.ts ***!
   \*******************************************/
@@ -2643,19 +2563,19 @@ class NzDemoIconTwotoneComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconZhComponent", function() { return NzDemoIconZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var _zh_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./zh.page.component */ "./site/doc/app/icon/zh.page.component.ts");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/icon/basic.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./custom */ "./site/doc/app/icon/custom.ts");
-/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./namespace */ "./site/doc/app/icon/namespace.ts");
-/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./twotone */ "./site/doc/app/icon/twotone.ts");
-/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./iconfont */ "./site/doc/app/icon/iconfont.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _zh_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./zh.page.component */ "Td3p");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "RRL5");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./custom */ "Np1k");
+/* harmony import */ var _namespace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./namespace */ "LFSE");
+/* harmony import */ var _twotone__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./twotone */ "c34i");
+/* harmony import */ var _iconfont__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./iconfont */ "Jslk");
 
 
 
@@ -2695,7 +2615,7 @@ class NzDemoIconZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 1015, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-icon-demo-basic", "nzTitle", "\u57FA\u672C\u4F7F\u7528"], ["nzHref", "#components-icon-demo-twotone", "nzTitle", "\u591A\u8272\u56FE\u6807"], ["nzHref", "#components-icon-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u56FE\u6807"], ["nzHref", "#components-icon-demo-iconfont", "nzTitle", "\u4F7F\u7528 Iconfont.cn"], ["nzHref", "#components-icon-demo-namespace", "nzTitle", "\u547D\u540D\u7A7A\u95F4"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/icon/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u56FE\u6807\u5217\u8868"], ["onclick", "window.location.hash = '\u56FE\u6807\u5217\u8868'", 1, "anchor"], ["href", "https://ant.design/components/icon-cn/"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], [1, "page-demo"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u4F7F\u7528", "nzSelector", "nz-demo-icon-basic", "nzGenerateCommand", "ng g ng-zorro-antd:icon-basic <name>", "nzComponentName", "NzDemoIconBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u81EA\u5B9A\u4E49\u56FE\u6807", "nzSelector", "nz-demo-icon-custom", "nzGenerateCommand", "ng g ng-zorro-antd:icon-custom <name>", "nzComponentName", "NzDemoIconCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u547D\u540D\u7A7A\u95F4", "nzSelector", "nz-demo-icon-namespace", "nzGenerateCommand", "ng g ng-zorro-antd:icon-namespace <name>", "nzComponentName", "NzDemoIconNamespaceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u8272\u56FE\u6807", "nzSelector", "nz-demo-icon-twotone", "nzGenerateCommand", "ng g ng-zorro-antd:icon-twotone <name>", "nzComponentName", "NzDemoIconTwotoneComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F7F\u7528 Iconfont.cn", "nzSelector", "nz-demo-icon-iconfont", "nzGenerateCommand", "ng g ng-zorro-antd:icon-iconfont <name>", "nzComponentName", "NzDemoIconIconfontComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://iconfont.cn/"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-icon]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-icon]'", 1, "anchor"], ["id", "nziconservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nziconservice'", 1, "anchor"], ["id", "svg-\u56FE\u6807"], ["onclick", "window.location.hash = 'svg-\u56FE\u6807'", 1, "anchor"], ["href", "https://github.com/ant-design/ant-design/issues/10353"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "style-attr", "language-css"], [1, "token", "property"], [1, "token", "number"], [1, "token", "hexcode"], ["id", "\u9759\u6001\u52A0\u8F7D\u4E0E\u52A8\u6001\u52A0\u8F7D"], ["onclick", "window.location.hash = '\u9759\u6001\u52A0\u8F7D\u4E0E\u52A8\u6001\u52A0\u8F7D'", 1, "anchor"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"], [1, "token", "class-name"], [1, "language-json"], ["id", "\u5728\u5B50\u6A21\u5757\u4E2D\u8865\u5145\u56FE\u6807"], ["onclick", "window.location.hash = '\u5728\u5B50\u6A21\u5757\u4E2D\u8865\u5145\u56FE\u6807'", 1, "anchor"], ["id", "\u53CC\u8272\u56FE\u6807\u4E3B\u8272"], ["onclick", "window.location.hash = '\u53CC\u8272\u56FE\u6807\u4E3B\u8272'", 1, "anchor"], ["id", "\u81EA\u5B9A\u4E49-font-\u56FE\u6807"], ["onclick", "window.location.hash = '\u81EA\u5B9A\u4E49-font-\u56FE\u6807'", 1, "anchor"], [1, "language-typescript"], ["href", "http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code"], ["id", "\u547D\u540D\u7A7A\u95F4"], ["onclick", "window.location.hash = '\u547D\u540D\u7A7A\u95F4'", 1, "anchor"], ["id", "\u5E38\u89C1\u95EE\u9898"], ["onclick", "window.location.hash = '\u5E38\u89C1\u95EE\u9898'", 1, "anchor"], ["id", "\u56FE\u6807\u90FD\u4E0D\u89C1\u4E86\uFF01"], ["onclick", "window.location.hash = '\u56FE\u6807\u90FD\u4E0D\u89C1\u4E86\uFF01'", 1, "anchor"], ["id", "\u6211\u60F3\u9759\u6001\u5F15\u5165\u5168\u90E8\u7684\u56FE\u6807\uFF0C\u8BE5\u600E\u4E48\u505A\uFF1F"], ["onclick", "window.location.hash = '\u6211\u60F3\u9759\u6001\u5F15\u5165\u5168\u90E8\u7684\u56FE\u6807\uFF0C\u8BE5\u600E\u4E48\u505A\uFF1F'", 1, "anchor"], ["href", "/components/icon/zh#%E9%9D%99%E6%80%81%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD"], ["id", "\u52A8\u6001\u52A0\u8F7D\u4F1A\u4E0D\u4F1A\u5F71\u54CD\u7F51\u9875\u7684\u6027\u80FD\uFF1F"], ["onclick", "window.location.hash = '\u52A8\u6001\u52A0\u8F7D\u4F1A\u4E0D\u4F1A\u5F71\u54CD\u7F51\u9875\u7684\u6027\u80FD\uFF1F'", 1, "anchor"], ["id", "\u6211\u600E\u4E48\u77E5\u9053\u4E00\u4E2A-icon-\u7684\u9759\u6001\u5F15\u5165\u540D\uFF1F"], ["onclick", "window.location.hash = '\u6211\u600E\u4E48\u77E5\u9053\u4E00\u4E2A-icon-\u7684\u9759\u6001\u5F15\u5165\u540D\uFF1F'", 1, "anchor"]], template: function NzDemoIconZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 1015, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-icon-demo-basic", "nzTitle", "\u57FA\u672C\u4F7F\u7528"], ["nzHref", "#components-icon-demo-twotone", "nzTitle", "\u591A\u8272\u56FE\u6807"], ["nzHref", "#components-icon-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u56FE\u6807"], ["nzHref", "#components-icon-demo-iconfont", "nzTitle", "\u4F7F\u7528 Iconfont.cn"], ["nzHref", "#components-icon-demo-namespace", "nzTitle", "\u547D\u540D\u7A7A\u95F4"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/icon/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u56FE\u6807\u5217\u8868"], ["onclick", "window.location.hash = '\u56FE\u6807\u5217\u8868'", 1, "anchor"], ["href", "https://ant.design/components/icon-cn/", "target", "_blank"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], [1, "page-demo"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u4F7F\u7528", "nzSelector", "nz-demo-icon-basic", "nzGenerateCommand", "ng g ng-zorro-antd:icon-basic <name>", "nzComponentName", "NzDemoIconBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u81EA\u5B9A\u4E49\u56FE\u6807", "nzSelector", "nz-demo-icon-custom", "nzGenerateCommand", "ng g ng-zorro-antd:icon-custom <name>", "nzComponentName", "NzDemoIconCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u547D\u540D\u7A7A\u95F4", "nzSelector", "nz-demo-icon-namespace", "nzGenerateCommand", "ng g ng-zorro-antd:icon-namespace <name>", "nzComponentName", "NzDemoIconNamespaceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u8272\u56FE\u6807", "nzSelector", "nz-demo-icon-twotone", "nzGenerateCommand", "ng g ng-zorro-antd:icon-twotone <name>", "nzComponentName", "NzDemoIconTwotoneComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F7F\u7528 Iconfont.cn", "nzSelector", "nz-demo-icon-iconfont", "nzGenerateCommand", "ng g ng-zorro-antd:icon-iconfont <name>", "nzComponentName", "NzDemoIconIconfontComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://iconfont.cn/", "target", "_blank"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-icon]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-icon]'", 1, "anchor"], ["id", "nziconservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nziconservice'", 1, "anchor"], ["id", "svg-\u56FE\u6807"], ["onclick", "window.location.hash = 'svg-\u56FE\u6807'", 1, "anchor"], ["href", "https://github.com/ant-design/ant-design/issues/10353", "target", "_blank"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "style-attr", "language-css"], [1, "token", "property"], [1, "token", "number"], [1, "token", "hexcode"], ["id", "\u9759\u6001\u52A0\u8F7D\u4E0E\u52A8\u6001\u52A0\u8F7D"], ["onclick", "window.location.hash = '\u9759\u6001\u52A0\u8F7D\u4E0E\u52A8\u6001\u52A0\u8F7D'", 1, "anchor"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"], [1, "token", "class-name"], [1, "language-json"], ["id", "\u5728\u5B50\u6A21\u5757\u4E2D\u8865\u5145\u56FE\u6807"], ["onclick", "window.location.hash = '\u5728\u5B50\u6A21\u5757\u4E2D\u8865\u5145\u56FE\u6807'", 1, "anchor"], ["id", "\u53CC\u8272\u56FE\u6807\u4E3B\u8272"], ["onclick", "window.location.hash = '\u53CC\u8272\u56FE\u6807\u4E3B\u8272'", 1, "anchor"], ["id", "\u81EA\u5B9A\u4E49-font-\u56FE\u6807"], ["onclick", "window.location.hash = '\u81EA\u5B9A\u4E49-font-\u56FE\u6807'", 1, "anchor"], [1, "language-typescript"], ["href", "http://iconfont.cn/help/detail?spm=a313x.7781069.1998910419.15&helptype=code", "target", "_blank"], ["id", "\u547D\u540D\u7A7A\u95F4"], ["onclick", "window.location.hash = '\u547D\u540D\u7A7A\u95F4'", 1, "anchor"], ["id", "\u5E38\u89C1\u95EE\u9898"], ["onclick", "window.location.hash = '\u5E38\u89C1\u95EE\u9898'", 1, "anchor"], ["id", "\u56FE\u6807\u90FD\u4E0D\u89C1\u4E86\uFF01"], ["onclick", "window.location.hash = '\u56FE\u6807\u90FD\u4E0D\u89C1\u4E86\uFF01'", 1, "anchor"], ["id", "\u6211\u60F3\u9759\u6001\u5F15\u5165\u5168\u90E8\u7684\u56FE\u6807\uFF0C\u8BE5\u600E\u4E48\u505A\uFF1F"], ["onclick", "window.location.hash = '\u6211\u60F3\u9759\u6001\u5F15\u5165\u5168\u90E8\u7684\u56FE\u6807\uFF0C\u8BE5\u600E\u4E48\u505A\uFF1F'", 1, "anchor"], ["href", "/components/icon/zh#%E9%9D%99%E6%80%81%E5%8A%A0%E8%BD%BD%E4%B8%8E%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BD"], ["id", "\u52A8\u6001\u52A0\u8F7D\u4F1A\u4E0D\u4F1A\u5F71\u54CD\u7F51\u9875\u7684\u6027\u80FD\uFF1F"], ["onclick", "window.location.hash = '\u52A8\u6001\u52A0\u8F7D\u4F1A\u4E0D\u4F1A\u5F71\u54CD\u7F51\u9875\u7684\u6027\u80FD\uFF1F'", 1, "anchor"], ["id", "\u6211\u600E\u4E48\u77E5\u9053\u4E00\u4E2A-icon-\u7684\u9759\u6001\u5F15\u5165\u540D\uFF1F"], ["onclick", "window.location.hash = '\u6211\u600E\u4E48\u77E5\u9053\u4E00\u4E2A-icon-\u7684\u9759\u6001\u5F15\u5165\u540D\uFF1F'", 1, "anchor"]], template: function NzDemoIconZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -4243,25 +4163,25 @@ class NzDemoIconZhComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/icon/zh.page.component.ts":
+/***/ "bX8E":
 /*!************************************************!*\
-  !*** ./site/doc/app/icon/zh.page.component.ts ***!
+  !*** ./site/doc/app/icon/en.page.component.ts ***!
   \************************************************/
-/*! exports provided: NzPageDemoIconZhComponent */
+/*! exports provided: NzPageDemoIconEnComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzPageDemoIconZhComponent", function() { return NzPageDemoIconZhComponent; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ant-design/icons-angular */ "./node_modules/@ant-design/icons-angular/__ivy_ngcc__/fesm2015/ant-design-icons-angular.js");
-/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "./node_modules/@ant-design/icons-angular/__ivy_ngcc__/fesm2015/ant-design-icons-angular-icons.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzPageDemoIconEnComponent", function() { return NzPageDemoIconEnComponent; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _ant_design_icons_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ant-design/icons-angular */ "RZFK");
+/* harmony import */ var _ant_design_icons_angular_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons-angular/icons */ "kVq8");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
 
 
 
@@ -4274,10 +4194,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function NzPageDemoIconZhComponent_ng_template_21_Template(rf, ctx) { if (rf & 1) {
+function NzPageDemoIconEnComponent_ng_template_21_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "i", 13);
 } }
-function NzPageDemoIconZhComponent_ng_container_23_li_4_nz_badge_3_Template(rf, ctx) { if (rf & 1) {
+function NzPageDemoIconEnComponent_ng_container_23_li_4_nz_badge_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-badge", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -4286,20 +4206,20 @@ function NzPageDemoIconZhComponent_ng_container_23_li_4_nz_badge_3_Template(rf, 
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
 } }
-function NzPageDemoIconZhComponent_ng_container_23_li_4_ng_template_4_Template(rf, ctx) { if (rf & 1) {
+function NzPageDemoIconEnComponent_ng_container_23_li_4_ng_template_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](0);
 } if (rf & 2) {
     const icon_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", icon_r6, " ");
 } }
-function NzPageDemoIconZhComponent_ng_container_23_li_4_Template(rf, ctx) { if (rf & 1) {
+function NzPageDemoIconEnComponent_ng_container_23_li_4_Template(rf, ctx) { if (rf & 1) {
     const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "li", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzPageDemoIconZhComponent_ng_container_23_li_4_Template_li_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r13); const icon_r6 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r12.onIconClick($event, icon_r6); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzPageDemoIconEnComponent_ng_container_23_li_4_Template_li_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r13); const icon_r6 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2); return ctx_r12.onIconClick($event, icon_r6); });
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](1, "i", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "span", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageDemoIconZhComponent_ng_container_23_li_4_nz_badge_3_Template, 2, 1, "nz-badge", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconZhComponent_ng_container_23_li_4_ng_template_4_Template, 1, 1, "ng-template", null, 20, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzPageDemoIconEnComponent_ng_container_23_li_4_nz_badge_3_Template, 2, 1, "nz-badge", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconEnComponent_ng_container_23_li_4_ng_template_4_Template, 1, 1, "ng-template", null, 20, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -4311,13 +4231,13 @@ function NzPageDemoIconZhComponent_ng_container_23_li_4_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r5.isNewIcon(icon_r6))("ngIfElse", _r8);
 } }
-function NzPageDemoIconZhComponent_ng_container_23_Template(rf, ctx) { if (rf & 1) {
+function NzPageDemoIconEnComponent_ng_container_23_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "h3");
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "ul", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconZhComponent_ng_container_23_li_4_Template, 6, 4, "li", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzPageDemoIconEnComponent_ng_container_23_li_4_Template, 6, 4, "li", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
@@ -4540,7 +4460,7 @@ const newIconNames = [
     'code-sandbox',
     'code-sandbox-circle'
 ];
-class NzPageDemoIconZhComponent {
+class NzPageDemoIconEnComponent {
     // tslint:disable-next-line:no-any
     constructor(dom, _iconService) {
         this.dom = dom;
@@ -4549,14 +4469,14 @@ class NzPageDemoIconZhComponent {
         this.categoryNames = [];
         this.currentTheme = 'outline';
         this.localeObj = {
-            chooseTheme: '选择图标主题风格',
-            direction: '方向性图标',
-            suggestion: '提示建议性图标',
-            edit: '编辑类图标',
-            data: '数据类图标',
-            other: '网站通用图标',
-            logo: '品牌和标识',
-            search: '在此搜索图标，点击图标可复制代码'
+            chooseTheme: 'Select the Icon Theme',
+            direction: 'Directional Icons',
+            suggestion: 'Suggested Icons',
+            edit: 'Editor Icons',
+            data: 'Data Icons',
+            other: 'Application Icons',
+            logo: 'Brand and Logos',
+            search: 'Search icon here. Click icon to copy code.'
         };
         this.searchingString = '';
         this.trackByFn = (_index, item) => {
@@ -4630,14 +4550,14 @@ class NzPageDemoIconZhComponent {
         this.setIconsShouldBeDisplayed('outline');
     }
 }
-/** @nocollapse */ NzPageDemoIconZhComponent.ɵfac = function NzPageDemoIconZhComponent_Factory(t) { return new (t || NzPageDemoIconZhComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"])); };
-/** @nocollapse */ NzPageDemoIconZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPageDemoIconZhComponent, selectors: [["nz-page-demo-icon-zh"]], decls: 24, vars: 6, consts: [[1, "icon-selector"], [3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "outline"], ["nz-icon", ""], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"], ["nz-radio-button", "", "nzValue", "fill"], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"], ["nz-radio-button", "", "nzValue", "twotone"], ["d", "M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"], [3, "nzSuffix"], ["nz-input", "", 3, "placeholder", "ngModel", "ngModelChange"], ["suffixIconSearch", ""], [4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [1, "anticons-list"], [3, "click", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "click"], ["nz-icon", "", 3, "nzType", "nzTheme"], [1, "anticon-class"], ["nzDot", "", 4, "ngIf", "ngIfElse"], ["notNewTpl", ""], ["nzDot", ""]], template: function NzPageDemoIconZhComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzPageDemoIconEnComponent.ɵfac = function NzPageDemoIconEnComponent_Factory(t) { return new (t || NzPageDemoIconEnComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"])); };
+/** @nocollapse */ NzPageDemoIconEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzPageDemoIconEnComponent, selectors: [["nz-page-demo-icon-en"]], decls: 24, vars: 6, consts: [[1, "icon-selector"], [3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "outline"], ["nz-icon", ""], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z m-12 800H172c-6.6 0-12-5.4-12-12V172c0-6.6 5.4-12 12-12h680c6.6 0 12 5.4 12 12v680c0 6.6-5.4 12-12 12z"], ["nz-radio-button", "", "nzValue", "fill"], ["d", "M864 64H160C107 64 64 107 64 160v704c0 53 43 96 96 96h704c53 0 96-43 96-96V160c0-53-43-96-96-96z"], ["nz-radio-button", "", "nzValue", "twotone"], ["d", "M16 512c0 273.932 222.066 496 496 496s496-222.068 496-496S785.932 16 512 16 16 238.066 16 512z m496 368V144c203.41 0 368 164.622 368 368 0 203.41-164.622 368-368 368z"], [3, "nzSuffix"], ["nz-input", "", 3, "placeholder", "ngModel", "ngModelChange"], ["suffixIconSearch", ""], [4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [1, "anticons-list"], [3, "click", 4, "ngFor", "ngForOf", "ngForTrackBy"], [3, "click"], ["nz-icon", "", 3, "nzType", "nzTheme"], [1, "anticon-class"], ["nzDot", "", 4, "ngIf", "ngIfElse"], ["notNewTpl", ""], ["nzDot", ""]], template: function NzPageDemoIconEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "h3");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "nz-radio-group", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconZhComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.setIconsShouldBeDisplayed($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconEnComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.setIconsShouldBeDisplayed($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "label", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "i", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceSVG"]();
@@ -4671,12 +4591,12 @@ class NzPageDemoIconZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnamespaceHTML"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "nz-input-group", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "input", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconZhComponent_Template_input_ngModelChange_20_listener($event) { return ctx.searchingString = $event; })("ngModelChange", function NzPageDemoIconZhComponent_Template_input_ngModelChange_20_listener() { return ctx.onSearchChange(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzPageDemoIconEnComponent_Template_input_ngModelChange_20_listener($event) { return ctx.searchingString = $event; })("ngModelChange", function NzPageDemoIconEnComponent_Template_input_ngModelChange_20_listener() { return ctx.onSearchChange(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, NzPageDemoIconZhComponent_ng_template_21_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](21, NzPageDemoIconEnComponent_ng_template_21_Template, 1, 0, "ng-template", null, 11, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, NzPageDemoIconZhComponent_ng_container_23_Template, 5, 3, "ng-container", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](23, NzPageDemoIconEnComponent_ng_container_23_Template, 5, 3, "ng-container", 12);
     } if (rf & 2) {
         const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](22);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
@@ -4690,10 +4610,10 @@ class NzPageDemoIconZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.categoryNames);
     } }, directives: [ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioGroupComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["NgModel"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioButtonDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__["DefaultValueAccessor"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_8__["NzBadgeComponent"]], styles: ["h3[_ngcontent-%COMP%] {\n        margin: 1.6em 0 0.6em;\n        font-size: 18px;\n      }", "ul.anticons-list[_ngcontent-%COMP%]   li[_ngcontent-%COMP%]   .anticon[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }", ".icon-selector[_ngcontent-%COMP%] {\n        display: flex;\n        justify-content: space-between;\n      }\n\n      nz-input-group[_ngcontent-%COMP%] {\n        margin-left: 10px;\n        flex: 1 1 0%;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPageDemoIconZhComponent, [{
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPageDemoIconEnComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
         args: [{
-                selector: 'nz-page-demo-icon-zh',
+                selector: 'nz-page-demo-icon-en',
                 template: `
     <h3>{{ localeObj.chooseTheme }}</h3>
     <div class="icon-selector">
@@ -4780,6 +4700,86 @@ class NzPageDemoIconZhComponent {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
                 args: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"]]
             }] }, { type: ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "c34i":
+/*!**************************************!*\
+  !*** ./site/doc/app/icon/twotone.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoIconTwotoneComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoIconTwotoneComponent", function() { return NzDemoIconTwotoneComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+class NzDemoIconTwotoneComponent {
+}
+/** @nocollapse */ NzDemoIconTwotoneComponent.ɵfac = function NzDemoIconTwotoneComponent_Factory(t) { return new (t || NzDemoIconTwotoneComponent)(); };
+/** @nocollapse */ NzDemoIconTwotoneComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoIconTwotoneComponent, selectors: [["nz-demo-icon-twotone"]], decls: 4, vars: 8, consts: [[1, "icons-list"], ["nz-icon", "", 3, "nzType", "nzTheme"], ["nz-icon", "", 3, "nzType", "nzTheme", "nzTwotoneColor"]], template: function NzDemoIconTwotoneComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "smile")("nzTheme", "twotone");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "heart")("nzTheme", "twotone")("nzTwotoneColor", "#eb2f96");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "check-circle")("nzTheme", "twotone")("nzTwotoneColor", "#52c41a");
+    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconDirective"]], styles: [".icons-list[_ngcontent-%COMP%]    > .anticon[_ngcontent-%COMP%] {\n        margin-right: 6px;\n        font-size: 24px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoIconTwotoneComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-icon-twotone',
+                template: `
+    <div class="icons-list">
+      <i nz-icon [nzType]="'smile'" [nzTheme]="'twotone'"></i>
+      <i nz-icon [nzType]="'heart'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#eb2f96'"></i>
+      <i nz-icon [nzType]="'check-circle'" [nzTheme]="'twotone'" [nzTwotoneColor]="'#52c41a'"></i>
+    </div>
+  `,
+                styles: [
+                    `
+      .icons-list > .anticon {
+        margin-right: 6px;
+        font-size: 24px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "rHgZ":
+/*!*************************************!*\
+  !*** ./site/doc/app/icon/module.ts ***!
+  \*************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
+
+
+
+
+const moduleList = [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__["NzBadgeModule"]];
 
 
 /***/ })

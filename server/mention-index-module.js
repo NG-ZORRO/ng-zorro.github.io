@@ -1,1316 +1,7 @@
 exports.ids = ["mention-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js":
-/*!****************************************************************!*\
-  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js ***!
-  \****************************************************************/
-/*! exports provided: NZ_MENTION_TRIGGER_ACCESSOR, NzMentionComponent, NzMentionModule, NzMentionService, NzMentionSuggestionDirective, NzMentionTriggerDirective */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NZ_MENTION_TRIGGER_ACCESSOR", function() { return NZ_MENTION_TRIGGER_ACCESSOR; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionComponent", function() { return NzMentionComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionModule", function() { return NzMentionModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionService", function() { return NzMentionService; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionSuggestionDirective", function() { return NzMentionSuggestionDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionTriggerDirective", function() { return NzMentionTriggerDirective; });
-/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/overlay */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/overlay.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/keycodes */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/keycodes.js");
-/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/portal */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/portal.js");
-/* harmony import */ var ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/overlay */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-overlay.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @fileoverview added by tsickle
- * Generated from: mention-suggestions.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-
-
-function NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainer"](0);
-} }
-const _c0 = function (a0) { return { $implicit: a0 }; };
-function NzMentionComponent_ng_template_1_li_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template, 1, 0, "ng-container", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const suggestion_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
-    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r6.suggestionTemplate)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](2, _c0, suggestion_r4));
-} }
-function NzMentionComponent_ng_template_1_li_1_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](0);
-} if (rf & 2) {
-    const suggestion_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
-    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r8.nzValueWith(suggestion_r4));
-} }
-function NzMentionComponent_ng_template_1_li_1_Template(rf, ctx) { if (rf & 1) {
-    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("mousedown", function NzMentionComponent_ng_template_1_li_1_Template_li_mousedown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r13); return $event.preventDefault(); })("click", function NzMentionComponent_ng_template_1_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r13); const suggestion_r4 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r14.selectSuggestion(suggestion_r4); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_ng_container_1_Template, 2, 4, "ng-container", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_1_ng_template_2_Template, 1, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const i_r5 = ctx.index;
-    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](3);
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("focus", i_r5 === ctx_r2.activeIndex);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r2.suggestionTemplate)("ngIfElse", _r7);
-} }
-function NzMentionComponent_ng_template_1_li_2_span_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "i", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} }
-function NzMentionComponent_ng_template_1_li_2_span_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r16.nzNotFoundContent);
-} }
-function NzMentionComponent_ng_template_1_li_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_2_span_1_Template, 2, 0, "span", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_2_span_2_Template, 2, 1, "span", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r3.nzLoading);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx_r3.nzLoading);
-} }
-function NzMentionComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "ul", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_Template, 4, 4, "li", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_2_Template, 3, 2, "li", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r1.filteredSuggestions);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r1.filteredSuggestions.length === 0);
-} }
-const _c1 = ["*"];
-class NzMentionSuggestionDirective {
-}
-NzMentionSuggestionDirective.ɵfac = function NzMentionSuggestionDirective_Factory(t) { return new (t || NzMentionSuggestionDirective)(); };
-NzMentionSuggestionDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzMentionSuggestionDirective, selectors: [["", "nzMentionSuggestion", ""]], exportAs: ["nzMentionSuggestion"] });
-
-/**
- * @fileoverview added by tsickle
- * Generated from: mention.service.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzMentionService {
-    constructor() {
-        this.triggerChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
-    }
-    /**
-     * @return {?}
-     */
-    triggerChanged() {
-        return this.triggerChange$.asObservable();
-    }
-    /**
-     * @param {?} trigger
-     * @return {?}
-     */
-    registerTrigger(trigger) {
-        if (this.trigger !== trigger) {
-            this.trigger = trigger;
-            this.triggerChange$.next(trigger);
-        }
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this.triggerChange$.complete();
-    }
-}
-NzMentionService.ɵfac = function NzMentionService_Factory(t) { return new (t || NzMentionService)(); };
-NzMentionService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: NzMentionService, factory: NzMentionService.ɵfac });
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: mention-trigger.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const NZ_MENTION_TRIGGER_ACCESSOR = {
-    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
-    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])((/**
-     * @return {?}
-     */
-    () => NzMentionTriggerDirective)),
-    multi: true
-};
-class NzMentionTriggerDirective {
-    /**
-     * @param {?} el
-     * @param {?} nzMentionService
-     */
-    constructor(el, nzMentionService) {
-        this.el = el;
-        this.nzMentionService = nzMentionService;
-        this.onChange = (/**
-         * @return {?}
-         */
-        () => { });
-        this.onTouched = (/**
-         * @return {?}
-         */
-        () => { });
-        this.onFocusin = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.onBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.onInput = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.onKeydown = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.onClick = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-    }
-    /**
-     * @return {?}
-     */
-    completeEvents() {
-        this.onFocusin.complete();
-        this.onBlur.complete();
-        this.onInput.complete();
-        this.onKeydown.complete();
-        this.onClick.complete();
-    }
-    /**
-     * @param {?=} caretPos
-     * @return {?}
-     */
-    focus(caretPos) {
-        this.el.nativeElement.focus();
-        this.el.nativeElement.setSelectionRange(caretPos, caretPos);
-    }
-    /**
-     * @param {?} mention
-     * @return {?}
-     */
-    insertMention(mention) {
-        /** @type {?} */
-        const value = this.el.nativeElement.value;
-        /** @type {?} */
-        const insertValue = mention.mention.trim() + ' ';
-        /** @type {?} */
-        const newValue = [value.slice(0, mention.startPos + 1), insertValue, value.slice(mention.endPos, value.length)].join('');
-        this.el.nativeElement.value = newValue;
-        this.focus(mention.startPos + insertValue.length + 1);
-        this.onChange(newValue);
-        this.value = newValue;
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    writeValue(value) {
-        this.value = value;
-        if (typeof value === 'string') {
-            this.el.nativeElement.value = value;
-        }
-        else {
-            this.el.nativeElement.value = '';
-        }
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    registerOnChange(fn) {
-        this.onChange = fn;
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    registerOnTouched(fn) {
-        this.onTouched = fn;
-    }
-    /**
-     * @return {?}
-     */
-    ngAfterViewInit() {
-        this.nzMentionService.registerTrigger(this);
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this.completeEvents();
-    }
-}
-NzMentionTriggerDirective.ɵfac = function NzMentionTriggerDirective_Factory(t) { return new (t || NzMentionTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzMentionService)); };
-NzMentionTriggerDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzMentionTriggerDirective, selectors: [["input", "nzMentionTrigger", ""], ["textarea", "nzMentionTrigger", ""]], hostAttrs: ["autocomplete", "off"], hostBindings: function NzMentionTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("focusin", function NzMentionTriggerDirective_focusin_HostBindingHandler() { return ctx.onFocusin.emit(); })("blur", function NzMentionTriggerDirective_blur_HostBindingHandler() { return ctx.onBlur.emit(); })("input", function NzMentionTriggerDirective_input_HostBindingHandler($event) { return ctx.onInput.emit($event); })("keydown", function NzMentionTriggerDirective_keydown_HostBindingHandler($event) { return ctx.onKeydown.emit($event); })("click", function NzMentionTriggerDirective_click_HostBindingHandler($event) { return ctx.onClick.emit($event); });
-    } }, exportAs: ["nzMentionTrigger"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NZ_MENTION_TRIGGER_ACCESSOR])] });
-/** @nocollapse */
-NzMentionTriggerDirective.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: NzMentionService }
-];
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: mention.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @record
- */
-function MentionOnSearchTypes() { }
-if (false) {}
-/**
- * @record
- */
-function Mention() { }
-if (false) {}
-class NzMentionComponent {
-    /**
-     * @param {?} ngDocument
-     * @param {?} cdr
-     * @param {?} overlay
-     * @param {?} viewContainerRef
-     * @param {?} nzMentionService
-     */
-    constructor(ngDocument, cdr, overlay, viewContainerRef, nzMentionService) {
-        this.ngDocument = ngDocument;
-        this.cdr = cdr;
-        this.overlay = overlay;
-        this.viewContainerRef = viewContainerRef;
-        this.nzMentionService = nzMentionService;
-        this.nzValueWith = (/**
-         * @param {?} value
-         * @return {?}
-         */
-        value => value);
-        this.nzPrefix = '@';
-        this.nzLoading = false;
-        this.nzNotFoundContent = '无匹配结果，轻敲空格完成输入';
-        this.nzPlacement = 'bottom';
-        this.nzSuggestions = [];
-        this.nzOnSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.nzOnSearchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.isOpen = false;
-        this.filteredSuggestions = [];
-        this.suggestionTemplate = null;
-        this.activeIndex = -1;
-        this.previousValue = null;
-        this.cursorMention = null;
-        this.overlayRef = null;
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    set suggestionChild(value) {
-        if (value) {
-            this.suggestionTemplate = value;
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    get triggerNativeElement() {
-        return this.trigger.el.nativeElement;
-    }
-    /**
-     * @return {?}
-     */
-    ngOnInit() {
-        this.nzMentionService.triggerChanged().subscribe((/**
-         * @param {?} trigger
-         * @return {?}
-         */
-        trigger => {
-            this.trigger = trigger;
-            this.bindTriggerEvents();
-            this.closeDropdown();
-            this.overlayRef = null;
-        }));
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    ngOnChanges(changes) {
-        if (changes.hasOwnProperty('nzSuggestions')) {
-            if (this.isOpen) {
-                this.previousValue = null;
-                this.activeIndex = -1;
-                this.resetDropdown(false);
-            }
-        }
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this.closeDropdown();
-    }
-    /**
-     * @return {?}
-     */
-    closeDropdown() {
-        if (this.overlayRef && this.overlayRef.hasAttached()) {
-            this.overlayRef.detach();
-            this.overlayBackdropClickSubscription.unsubscribe();
-            this.isOpen = false;
-            this.cdr.markForCheck();
-        }
-    }
-    /**
-     * @return {?}
-     */
-    openDropdown() {
-        this.attachOverlay();
-        this.isOpen = true;
-        this.cdr.markForCheck();
-    }
-    /**
-     * @return {?}
-     */
-    getMentions() {
-        return this.trigger ? Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["getMentions"])((/** @type {?} */ (this.trigger.value)), this.nzPrefix) : [];
-    }
-    /**
-     * @param {?} suggestion
-     * @return {?}
-     */
-    selectSuggestion(suggestion) {
-        /** @type {?} */
-        const value = this.nzValueWith(suggestion);
-        this.trigger.insertMention({
-            mention: value,
-            startPos: (/** @type {?} */ (this.cursorMentionStart)),
-            endPos: (/** @type {?} */ (this.cursorMentionEnd))
-        });
-        this.nzOnSelect.emit(suggestion);
-        this.closeDropdown();
-        this.activeIndex = -1;
-    }
-    /**
-     * @private
-     * @param {?} event
-     * @return {?}
-     */
-    handleInput(event) {
-        /** @type {?} */
-        const target = (/** @type {?} */ (event.target));
-        this.trigger.onChange(target.value);
-        this.trigger.value = target.value;
-        this.resetDropdown();
-    }
-    /**
-     * @private
-     * @param {?} event
-     * @return {?}
-     */
-    handleKeydown(event) {
-        /** @type {?} */
-        const keyCode = event.keyCode;
-        if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["ENTER"] && this.activeIndex !== -1 && this.filteredSuggestions.length) {
-            this.selectSuggestion(this.filteredSuggestions[this.activeIndex]);
-            event.preventDefault();
-        }
-        else if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["LEFT_ARROW"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["RIGHT_ARROW"]) {
-            this.resetDropdown();
-            event.stopPropagation();
-        }
-        else {
-            if (this.isOpen && (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["TAB"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["ESCAPE"])) {
-                this.closeDropdown();
-                return;
-            }
-            if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["UP_ARROW"]) {
-                this.setPreviousItemActive();
-                event.preventDefault();
-                event.stopPropagation();
-            }
-            if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["DOWN_ARROW"]) {
-                this.setNextItemActive();
-                event.preventDefault();
-                event.stopPropagation();
-            }
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    handleClick() {
-        this.resetDropdown();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    bindTriggerEvents() {
-        this.trigger.onInput.subscribe((/**
-         * @param {?} e
-         * @return {?}
-         */
-        (e) => this.handleInput(e)));
-        this.trigger.onKeydown.subscribe((/**
-         * @param {?} e
-         * @return {?}
-         */
-        (e) => this.handleKeydown(e)));
-        this.trigger.onClick.subscribe((/**
-         * @return {?}
-         */
-        () => this.handleClick()));
-    }
-    /**
-     * @private
-     * @param {?} value
-     * @param {?} emit
-     * @return {?}
-     */
-    suggestionsFilter(value, emit) {
-        /** @type {?} */
-        const suggestions = value.substring(1);
-        if (this.previousValue === value) {
-            return;
-        }
-        this.previousValue = value;
-        if (emit) {
-            this.nzOnSearchChange.emit({
-                value: (/** @type {?} */ (this.cursorMention)).substring(1),
-                prefix: (/** @type {?} */ (this.cursorMention))[0]
-            });
-        }
-        /** @type {?} */
-        const searchValue = suggestions.toLowerCase();
-        this.filteredSuggestions = this.nzSuggestions.filter((/**
-         * @param {?} suggestion
-         * @return {?}
-         */
-        suggestion => this.nzValueWith(suggestion).toLowerCase().includes(searchValue)));
-    }
-    /**
-     * @private
-     * @param {?=} emit
-     * @return {?}
-     */
-    resetDropdown(emit = true) {
-        this.resetCursorMention();
-        if (typeof this.cursorMention !== 'string' || !this.canOpen()) {
-            this.closeDropdown();
-            return;
-        }
-        this.suggestionsFilter(this.cursorMention, emit);
-        /** @type {?} */
-        const activeIndex = this.filteredSuggestions.indexOf(this.cursorMention.substring(1));
-        this.activeIndex = activeIndex >= 0 ? activeIndex : 0;
-        this.openDropdown();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    setNextItemActive() {
-        this.activeIndex = this.activeIndex + 1 <= this.filteredSuggestions.length - 1 ? this.activeIndex + 1 : 0;
-        this.cdr.markForCheck();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    setPreviousItemActive() {
-        this.activeIndex = this.activeIndex - 1 < 0 ? this.filteredSuggestions.length - 1 : this.activeIndex - 1;
-        this.cdr.markForCheck();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    canOpen() {
-        /** @type {?} */
-        const element = this.triggerNativeElement;
-        return !element.readOnly && !element.disabled;
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    resetCursorMention() {
-        /** @type {?} */
-        const value = this.triggerNativeElement.value.replace(/[\r\n]/g, ' ') || '';
-        /** @type {?} */
-        const selectionStart = (/** @type {?} */ (this.triggerNativeElement.selectionStart));
-        /** @type {?} */
-        const prefix = typeof this.nzPrefix === 'string' ? [this.nzPrefix] : this.nzPrefix;
-        /** @type {?} */
-        let i = prefix.length;
-        while (i >= 0) {
-            /** @type {?} */
-            const startPos = value.lastIndexOf(prefix[i], selectionStart);
-            /** @type {?} */
-            const endPos = value.indexOf(' ', selectionStart) > -1 ? value.indexOf(' ', selectionStart) : value.length;
-            /** @type {?} */
-            const mention = value.substring(startPos, endPos);
-            if ((startPos > 0 && value[startPos - 1] !== ' ') || startPos < 0 || mention.includes(prefix[i], 1) || mention.includes(' ')) {
-                this.cursorMention = null;
-                this.cursorMentionStart = -1;
-                this.cursorMentionEnd = -1;
-            }
-            else {
-                this.cursorMention = mention;
-                this.cursorMentionStart = startPos;
-                this.cursorMentionEnd = endPos;
-                return;
-            }
-            i--;
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    updatePositions() {
-        /** @type {?} */
-        const coordinates = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["getCaretCoordinates"])(this.triggerNativeElement, (/** @type {?} */ (this.cursorMentionStart)));
-        /** @type {?} */
-        const top = coordinates.top -
-            this.triggerNativeElement.getBoundingClientRect().height -
-            this.triggerNativeElement.scrollTop +
-            (this.nzPlacement === 'bottom' ? coordinates.height - 6 : -6);
-        /** @type {?} */
-        const left = coordinates.left - this.triggerNativeElement.scrollLeft;
-        this.positionStrategy.withDefaultOffsetX(left).withDefaultOffsetY(top);
-        if (this.nzPlacement === 'bottom') {
-            this.positionStrategy.withPositions([...ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__["DEFAULT_MENTION_BOTTOM_POSITIONS"]]);
-        }
-        if (this.nzPlacement === 'top') {
-            this.positionStrategy.withPositions([...ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__["DEFAULT_MENTION_TOP_POSITIONS"]]);
-        }
-        this.positionStrategy.apply();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    subscribeOverlayBackdropClick() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["merge"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'click'), Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'touchend')).subscribe((/**
-         * @param {?} event
-         * @return {?}
-         */
-        (event) => {
-            /** @type {?} */
-            const clickTarget = (/** @type {?} */ (event.target));
-            if (this.isOpen &&
-                clickTarget !== this.trigger.el.nativeElement &&
-                !!this.overlayRef &&
-                !this.overlayRef.overlayElement.contains(clickTarget)) {
-                this.closeDropdown();
-            }
-        }));
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    attachOverlay() {
-        if (!this.overlayRef) {
-            this.portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["TemplatePortal"]((/** @type {?} */ (this.suggestionsTemp)), this.viewContainerRef);
-            this.overlayRef = this.overlay.create(this.getOverlayConfig());
-        }
-        if (this.overlayRef && !this.overlayRef.hasAttached()) {
-            this.overlayRef.attach(this.portal);
-            this.overlayBackdropClickSubscription = this.subscribeOverlayBackdropClick();
-        }
-        this.updatePositions();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    getOverlayConfig() {
-        return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayConfig"]({
-            positionStrategy: this.getOverlayPosition(),
-            scrollStrategy: this.overlay.scrollStrategies.reposition(),
-            disposeOnNavigation: true
-        });
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    getOverlayPosition() {
-        /** @type {?} */
-        const positions = [
-            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
-            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' })
-        ];
-        this.positionStrategy = this.overlay
-            .position()
-            .flexibleConnectedTo(this.trigger.el)
-            .withPositions(positions)
-            .withFlexibleDimensions(false)
-            .withPush(false);
-        return this.positionStrategy;
-    }
-}
-NzMentionComponent.ɵfac = function NzMentionComponent_Factory(t) { return new (t || NzMentionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzMentionService)); };
-NzMentionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzMentionComponent, selectors: [["nz-mention"]], contentQueries: function NzMentionComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzMentionSuggestionDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"]);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.suggestionChild = _t.first);
-    } }, viewQuery: function NzMentionComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.suggestionsTemp = _t.first);
-    } }, inputs: { nzValueWith: "nzValueWith", nzPrefix: "nzPrefix", nzLoading: "nzLoading", nzNotFoundContent: "nzNotFoundContent", nzPlacement: "nzPlacement", nzSuggestions: "nzSuggestions" }, outputs: { nzOnSelect: "nzOnSelect", nzOnSearchChange: "nzOnSearchChange" }, exportAs: ["nzMention"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NzMentionService]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["suggestions", ""], [1, "ant-mention-dropdown"], ["class", "ant-mention-dropdown-item", 3, "focus", "mousedown", "click", 4, "ngFor", "ngForOf"], ["class", "ant-mention-dropdown-notfound ant-mention-dropdown-item", 4, "ngIf"], [1, "ant-mention-dropdown-item", 3, "mousedown", "click"], [4, "ngIf", "ngIfElse"], ["defaultSuggestion", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-mention-dropdown-notfound", "ant-mention-dropdown-item"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzMentionComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_Template, 3, 2, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
-NzMentionComponent.ctorParameters = () => [
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"],] }] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
-    { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] },
-    { type: NzMentionService }
-];
-NzMentionComponent.propDecorators = {
-    nzValueWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzPrefix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzLoading: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzNotFoundContent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzSuggestions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzOnSelect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    nzOnSearchChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    suggestionsTemp: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false },] }],
-    suggestionChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzMentionSuggestionDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] },] }]
-};
-Object(tslib__WEBPACK_IMPORTED_MODULE_6__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_6__["__metadata"])("design:type", Object)
-], NzMentionComponent.prototype, "nzLoading", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionSuggestionDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
-        args: [{
-                selector: '[nzMentionSuggestion]',
-                exportAs: 'nzMentionSuggestion'
-            }]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"]
-    }], function () { return []; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionTriggerDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
-        args: [{
-                selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
-                exportAs: 'nzMentionTrigger',
-                providers: [NZ_MENTION_TRIGGER_ACCESSOR],
-                host: {
-                    autocomplete: 'off',
-                    '(focusin)': 'onFocusin.emit()',
-                    '(blur)': 'onBlur.emit()',
-                    '(input)': 'onInput.emit($event)',
-                    '(keydown)': 'onKeydown.emit($event)',
-                    '(click)': 'onClick.emit($event)'
-                }
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: NzMentionService }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
-        args: [{
-                selector: 'nz-mention',
-                exportAs: 'nzMention',
-                template: `
-    <ng-content></ng-content>
-    <ng-template #suggestions>
-      <ul class="ant-mention-dropdown">
-        <li
-          class="ant-mention-dropdown-item"
-          *ngFor="let suggestion of filteredSuggestions; let i = index"
-          [class.focus]="i === activeIndex"
-          (mousedown)="$event.preventDefault()"
-          (click)="selectSuggestion(suggestion)"
-        >
-          <ng-container *ngIf="suggestionTemplate; else defaultSuggestion">
-            <ng-container *ngTemplateOutlet="suggestionTemplate; context: { $implicit: suggestion }"></ng-container>
-          </ng-container>
-          <ng-template #defaultSuggestion>{{ nzValueWith(suggestion) }}</ng-template>
-        </li>
-        <li class="ant-mention-dropdown-notfound ant-mention-dropdown-item" *ngIf="filteredSuggestions.length === 0">
-          <span *ngIf="nzLoading"><i nz-icon nzType="loading"></i></span>
-          <span *ngIf="!nzLoading">{{ nzNotFoundContent }}</span>
-        </li>
-      </ul>
-    </ng-template>
-  `,
-                preserveWhitespaces: false,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                providers: [NzMentionService]
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
-            }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
-                args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"]]
-            }] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] }, { type: NzMentionService }]; }, { nzValueWith: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzPrefix: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzLoading: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzNotFoundContent: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzPlacement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzSuggestions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzOnSelect: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], nzOnSearchChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], suggestionChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"],
-            args: [NzMentionSuggestionDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }]
-        }], suggestionsTemp: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
-            args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false }]
-        }] }); })();
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: mention.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const COMPONENTS = [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective];
-class NzMentionModule {
-}
-NzMentionModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzMentionModule });
-NzMentionModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzMentionModule_Factory(t) { return new (t || NzMentionModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzMentionModule, { declarations: function () { return [NzMentionComponent,
-        NzMentionTriggerDirective,
-        NzMentionSuggestionDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]]; }, exports: function () { return [NzMentionComponent,
-        NzMentionTriggerDirective,
-        NzMentionSuggestionDirective]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
-        args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]],
-                declarations: [...COMPONENTS],
-                exports: [...COMPONENTS]
-            }]
-    }], null, null); })();
-
-/**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-mention.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-//# sourceMappingURL=ng-zorro-antd-mention.js.map
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/async.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/mention/async.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoMentionAsyncComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionAsyncComponent", function() { return NzDemoMentionAsyncComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-class NzDemoMentionAsyncComponent {
-    constructor() {
-        this.loading = false;
-        this.suggestions = [];
-    }
-    onSearchChange({ value }) {
-        console.log(`search: ${value}`);
-        this.loading = true;
-        this.fetchSuggestions(value, suggestions => {
-            console.log(suggestions);
-            this.suggestions = suggestions;
-            this.loading = false;
-        });
-    }
-    fetchSuggestions(value, callback) {
-        const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai'];
-        setTimeout(() => {
-            return callback(users.filter(item => item.indexOf(value) !== -1));
-        }, 500);
-    }
-}
-/** @nocollapse */ NzDemoMentionAsyncComponent.ɵfac = function NzDemoMentionAsyncComponent_Factory(t) { return new (t || NzDemoMentionAsyncComponent)(); };
-/** @nocollapse */ NzDemoMentionAsyncComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionAsyncComponent, selectors: [["nz-demo-mention-async"]], decls: 2, vars: 3, consts: [[3, "nzSuggestions", "nzLoading", "nzOnSearchChange"], ["nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionAsyncComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSearchChange", function NzDemoMentionAsyncComponent_Template_nz_mention_nzOnSearchChange_0_listener($event) { return ctx.onSearchChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionAsyncComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions)("nzLoading", ctx.loading);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionAsyncComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-async',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention [nzSuggestions]="suggestions" [nzLoading]="loading" (nzOnSearchChange)="onSearchChange($event)">
-      <input nzMentionTrigger nz-input [(ngModel)]="inputValue" />
-    </nz-mention>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/avatar.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/mention/avatar.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoMentionAvatarComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionAvatarComponent", function() { return NzDemoMentionAvatarComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-avatar.js");
-
-
-
-
-
-
-function NzDemoMentionAvatarComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const framework_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzText", framework_r1.name)("nzSrc", framework_r1.icon);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", framework_r1.name, " - ", framework_r1.type, "");
-} }
-class NzDemoMentionAvatarComponent {
-    constructor() {
-        this.webFrameworks = [
-            { name: 'React', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/LFIeMPzdLcLnEUe.svg' },
-            { name: 'Angular', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/PJTbxSvzYWjDZnJ.png' },
-            { name: 'Dva', type: 'Javascript', icon: 'https://zos.alipayobjects.com/rmsportal/EYPwSeEJKxDtVxI.png' },
-            { name: 'Flask', type: 'Python', icon: 'https://zos.alipayobjects.com/rmsportal/xaypBUijfnpAlXE.png' }
-        ];
-        this.valueWith = (data) => data.name;
-    }
-    onSelect(value) {
-        console.log(value);
-    }
-}
-/** @nocollapse */ NzDemoMentionAvatarComponent.ɵfac = function NzDemoMentionAvatarComponent_Factory(t) { return new (t || NzDemoMentionAvatarComponent)(); };
-/** @nocollapse */ NzDemoMentionAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionAvatarComponent, selectors: [["nz-demo-mention-avatar"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions", "nzValueWith", "nzOnSelect"], ["nz-input", "", "nzMentionTrigger", "", 3, "ngModel", "ngModelChange"], [4, "nzMentionSuggestion"], ["nzSize", "small", 3, "nzText", "nzSrc"]], template: function NzDemoMentionAvatarComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionAvatarComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionAvatarComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoMentionAvatarComponent_ng_container_2_Template, 4, 4, "ng-container", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.webFrameworks)("nzValueWith", ctx.valueWith);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionSuggestionDirective"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_4__["NzAvatarComponent"]], styles: ["\n      .ant-avatar.ant-avatar-sm {\n        width: 14px;\n        height: 14px;\n        margin-right: 8px;\n        position: relative;\n      }\n    "], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionAvatarComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-avatar',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention [nzSuggestions]="webFrameworks" [nzValueWith]="valueWith" (nzOnSelect)="onSelect($event)">
-      <input nz-input nzMentionTrigger [(ngModel)]="inputValue" />
-      <ng-container *nzMentionSuggestion="let framework">
-        <nz-avatar nzSize="small" [nzText]="framework.name" [nzSrc]="framework.icon"></nz-avatar>
-        <span>{{ framework.name }} - {{ framework.type }}</span>
-      </ng-container>
-    </nz-mention>
-  `,
-                styles: [
-                    `
-      .ant-avatar.ant-avatar-sm {
-        width: 14px;
-        height: 14px;
-        margin-right: 8px;
-        position: relative;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/basic.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/mention/basic.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoMentionBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionBasicComponent", function() { return NzDemoMentionBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-class NzDemoMentionBasicComponent {
-    constructor() {
-        this.inputValue = '@afc163';
-        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-    }
-    onChange(value) {
-        console.log(value);
-    }
-    onSelect(suggestion) {
-        console.log(`onSelect ${suggestion}`);
-    }
-}
-/** @nocollapse */ NzDemoMentionBasicComponent.ɵfac = function NzDemoMentionBasicComponent_Factory(t) { return new (t || NzDemoMentionBasicComponent)(); };
-/** @nocollapse */ NzDemoMentionBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionBasicComponent, selectors: [["nz-demo-mention-basic"]], decls: 2, vars: 2, consts: [[3, "nzSuggestions", "nzOnSelect"], ["placeholder", "input here", "nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionBasicComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionBasicComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionBasicComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-basic',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)">
-      <input placeholder="input here" nzMentionTrigger nz-input [(ngModel)]="inputValue" (ngModelChange)="onChange($event)" />
-    </nz-mention>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/controlled.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/mention/controlled.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoMentionControlledComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionControlledComponent", function() { return NzDemoMentionControlledComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/form */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-form.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-
-
-
-
-
-
-
-
-
-
-
-
-const _c0 = ["mentions"];
-class NzDemoMentionControlledComponent {
-    constructor(fb) {
-        this.fb = fb;
-        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-        this.mentionValidator = (control) => {
-            if (!control.value) {
-                return { required: true };
-            }
-            else if (this.mentionChild.getMentions().length < 2) {
-                return { confirm: true, error: true };
-            }
-            return {};
-        };
-    }
-    get mention() {
-        return this.validateForm.get('mention');
-    }
-    ngOnInit() {
-        this.validateForm = this.fb.group({
-            mention: ['@afc163 ', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, this.mentionValidator]]
-        });
-    }
-    submitForm() {
-        this.mention.markAsDirty();
-        this.mention.updateValueAndValidity();
-        if (this.mention.valid) {
-            console.log('Submit!!!', this.mention.value);
-            console.log(this.mentionChild.getMentions());
-        }
-        else {
-            console.log('Errors in form!!!');
-        }
-    }
-    resetForm() {
-        var _a;
-        (_a = this.validateForm) === null || _a === void 0 ? void 0 : _a.reset({
-            mention: '@afc163 '
-        });
-    }
-}
-/** @nocollapse */ NzDemoMentionControlledComponent.ɵfac = function NzDemoMentionControlledComponent_Factory(t) { return new (t || NzDemoMentionControlledComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
-/** @nocollapse */ NzDemoMentionControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionControlledComponent, selectors: [["nz-demo-mention-controlled"]], viewQuery: function NzDemoMentionControlledComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](_c0, true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.mentionChild = _t.first);
-    } }, decls: 15, vars: 6, consts: [["nz-form", "", 3, "formGroup", "ngSubmit"], ["nzFor", "mention", 3, "nzSm"], ["nzErrorTip", "More than one must be selected!", 3, "nzSm"], [3, "nzSuggestions"], ["mentions", ""], ["id", "mention", "placeholder", "input here", "formControlName", "mention", "nzMentionTrigger", "", "nz-input", ""], ["nz-row", "", 2, "margin-bottom", "8px"], [3, "nzSpan", "nzOffset"], ["type", "button", "nz-button", "", "nzType", "primary", 3, "click"], ["type", "button", "nz-button", "", 3, "click"]], template: function NzDemoMentionControlledComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NzDemoMentionControlledComponent_Template_form_ngSubmit_0_listener() { return ctx.submitForm(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-form-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-form-label", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Top coders");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-form-control", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-mention", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "input", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-form-item", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-form-control", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMentionControlledComponent_Template_button_click_10_listener() { return ctx.submitForm(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Submit");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " \u00A0\u00A0\u00A0 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "button", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMentionControlledComponent_Template_button_click_13_listener() { return ctx.resetForm(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Reset");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.validateForm);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSm", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSm", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 14)("nzOffset", 6);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzRowDirective"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormItemComponent"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzColDirective"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormLabelComponent"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormControlComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__["NzMentionComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_5__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionControlledComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-controlled',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
-      <nz-form-item>
-        <nz-form-label [nzSm]="6" nzFor="mention">Top coders</nz-form-label>
-        <nz-form-control [nzSm]="16" nzErrorTip="More than one must be selected!">
-          <nz-mention #mentions [nzSuggestions]="suggestions">
-            <input id="mention" placeholder="input here" formControlName="mention" nzMentionTrigger nz-input />
-          </nz-mention>
-        </nz-form-control>
-      </nz-form-item>
-      <nz-form-item nz-row style="margin-bottom:8px;">
-        <nz-form-control [nzSpan]="14" [nzOffset]="6">
-          <button type="button" nz-button nzType="primary" (click)="submitForm()">Submit</button>
-          &nbsp;&nbsp;&nbsp;
-          <button type="button" nz-button (click)="resetForm()">Reset</button>
-        </nz-form-control>
-      </nz-form-item>
-    </form>
-  `
-            }]
-    }], function () { return [{ type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }]; }, { mentionChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
-            args: ['mentions', { static: true }]
-        }] }); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/custom-tag.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/mention/custom-tag.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoMentionCustomTagComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionCustomTagComponent", function() { return NzDemoMentionCustomTagComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-function NzDemoMentionCustomTagComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const framework_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", framework_r1.name, " - ", framework_r1.type, "");
-} }
-class NzDemoMentionCustomTagComponent {
-    constructor() {
-        this.webFrameworks = [
-            { name: 'React', type: 'JavaScript' },
-            { name: 'Angular', type: 'JavaScript' },
-            { name: 'Laravel', type: 'PHP' },
-            { name: 'Flask', type: 'Python' },
-            { name: 'Django', type: 'Python' }
-        ];
-        this.valueWith = (data) => data.name;
-    }
-    onSelect(value) {
-        console.log(value);
-    }
-}
-/** @nocollapse */ NzDemoMentionCustomTagComponent.ɵfac = function NzDemoMentionCustomTagComponent_Factory(t) { return new (t || NzDemoMentionCustomTagComponent)(); };
-/** @nocollapse */ NzDemoMentionCustomTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionCustomTagComponent, selectors: [["nz-demo-mention-custom-tag"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions", "nzValueWith", "nzOnSelect"], ["placeholder", "@someone", "nz-input", "", "nzMentionTrigger", "", 3, "ngModel", "ngModelChange"], [4, "nzMentionSuggestion"]], template: function NzDemoMentionCustomTagComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionCustomTagComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionCustomTagComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoMentionCustomTagComponent_ng_container_2_Template, 3, 2, "ng-container", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.webFrameworks)("nzValueWith", ctx.valueWith);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionSuggestionDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionCustomTagComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-custom-tag',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention [nzSuggestions]="webFrameworks" [nzValueWith]="valueWith" (nzOnSelect)="onSelect($event)">
-      <input placeholder="@someone" nz-input nzMentionTrigger [(ngModel)]="inputValue" />
-      <ng-container *nzMentionSuggestion="let framework">
-        <span>{{ framework.name }} - {{ framework.type }}</span>
-      </ng-container>
-    </nz-mention>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/en.component.ts":
+/***/ "/2GG":
 /*!**********************************************!*\
   !*** ./site/doc/app/mention/en.component.ts ***!
   \**********************************************/
@@ -1320,23 +11,23 @@ class NzDemoMentionCustomTagComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionEnComponent", function() { return NzDemoMentionEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "./site/doc/app/mention/basic.ts");
-/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./async */ "./site/doc/app/mention/async.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/mention/avatar.ts");
-/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multilines */ "./site/doc/app/mention/multilines.ts");
-/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./multiple-trigger */ "./site/doc/app/mention/multiple-trigger.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./placement */ "./site/doc/app/mention/placement.ts");
-/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./custom-tag */ "./site/doc/app/mention/custom-tag.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/mention/controlled.ts");
-/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./readonly */ "./site/doc/app/mention/readonly.ts");
-/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./preview */ "./site/doc/app/mention/preview.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "TSWS");
+/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./async */ "uNAX");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./avatar */ "RzXG");
+/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multilines */ "qxrk");
+/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./multiple-trigger */ "4pM/");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./placement */ "8xRA");
+/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./custom-tag */ "W/8X");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./controlled */ "06/8");
+/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./readonly */ "hIcG");
+/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./preview */ "O8YK");
 
 
 
@@ -2319,199 +1010,156 @@ class NzDemoMentionEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/mention/index.module.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/mention/index.module.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoMentionModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionModule", function() { return NzDemoMentionModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/mention/module.ts");
-/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./async */ "./site/doc/app/mention/async.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/mention/avatar.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/mention/basic.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/mention/controlled.ts");
-/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./custom-tag */ "./site/doc/app/mention/custom-tag.ts");
-/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./multilines */ "./site/doc/app/mention/multilines.ts");
-/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multiple-trigger */ "./site/doc/app/mention/multiple-trigger.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "./site/doc/app/mention/placement.ts");
-/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./preview */ "./site/doc/app/mention/preview.ts");
-/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./readonly */ "./site/doc/app/mention/readonly.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/mention/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/mention/en.component.ts");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-avatar.js");
-/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/form */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-form.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tabs.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoMentionModule {
-}
-/** @nocollapse */ NzDemoMentionModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoMentionModule });
-/** @nocollapse */ NzDemoMentionModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoMentionModule_Factory(t) { return new (t || NzDemoMentionModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoMentionModule, { declarations: [_async__WEBPACK_IMPORTED_MODULE_4__["NzDemoMentionAsyncComponent"],
-        _avatar__WEBPACK_IMPORTED_MODULE_5__["NzDemoMentionAvatarComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoMentionBasicComponent"],
-        _controlled__WEBPACK_IMPORTED_MODULE_7__["NzDemoMentionControlledComponent"],
-        _custom_tag__WEBPACK_IMPORTED_MODULE_8__["NzDemoMentionCustomTagComponent"],
-        _multilines__WEBPACK_IMPORTED_MODULE_9__["NzDemoMentionMultilinesComponent"],
-        _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__["NzDemoMentionMultipleTriggerComponent"],
-        _placement__WEBPACK_IMPORTED_MODULE_11__["NzDemoMentionPlacementComponent"],
-        _preview__WEBPACK_IMPORTED_MODULE_12__["NzDemoMentionPreviewComponent"],
-        _readonly__WEBPACK_IMPORTED_MODULE_13__["NzDemoMentionReadonlyComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_16__["NzMentionModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_17__["NzAvatarModule"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_18__["NzFormModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_19__["NzInputModule"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_20__["NzTabsModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_21__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _async__WEBPACK_IMPORTED_MODULE_4__["NzDemoMentionAsyncComponent"],
-                    _avatar__WEBPACK_IMPORTED_MODULE_5__["NzDemoMentionAvatarComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoMentionBasicComponent"],
-                    _controlled__WEBPACK_IMPORTED_MODULE_7__["NzDemoMentionControlledComponent"],
-                    _custom_tag__WEBPACK_IMPORTED_MODULE_8__["NzDemoMentionCustomTagComponent"],
-                    _multilines__WEBPACK_IMPORTED_MODULE_9__["NzDemoMentionMultilinesComponent"],
-                    _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__["NzDemoMentionMultipleTriggerComponent"],
-                    _placement__WEBPACK_IMPORTED_MODULE_11__["NzDemoMentionPlacementComponent"],
-                    _preview__WEBPACK_IMPORTED_MODULE_12__["NzDemoMentionPreviewComponent"],
-                    _readonly__WEBPACK_IMPORTED_MODULE_13__["NzDemoMentionReadonlyComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/module.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/mention/module.ts ***!
-  \****************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-avatar.js");
-/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/form */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-form.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tabs.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-
-
-
-
-
-
-const moduleList = [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_0__["NzMentionModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_1__["NzAvatarModule"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_2__["NzFormModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_3__["NzInputModule"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_4__["NzTabsModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/multilines.ts":
+/***/ "06/8":
 /*!********************************************!*\
-  !*** ./site/doc/app/mention/multilines.ts ***!
+  !*** ./site/doc/app/mention/controlled.ts ***!
   \********************************************/
-/*! exports provided: NzDemoMentionMultilinesComponent */
+/*! exports provided: NzDemoMentionControlledComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionMultilinesComponent", function() { return NzDemoMentionMultilinesComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionControlledComponent", function() { return NzDemoMentionControlledComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/form */ "J4sT");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
 
 
-const _c0 = function () { return { minRows: 4, maxRows: 4 }; };
-class NzDemoMentionMultilinesComponent {
-    constructor() {
+
+
+
+
+
+
+
+const _c0 = ["mentions"];
+class NzDemoMentionControlledComponent {
+    constructor(fb) {
+        this.fb = fb;
         this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+        this.mentionValidator = (control) => {
+            if (!control.value) {
+                return { required: true };
+            }
+            else if (this.mentionChild.getMentions().length < 2) {
+                return { confirm: true, error: true };
+            }
+            return {};
+        };
+    }
+    get mention() {
+        return this.validateForm.get('mention');
+    }
+    ngOnInit() {
+        this.validateForm = this.fb.group({
+            mention: ['@afc163 ', [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["Validators"].required, this.mentionValidator]]
+        });
+    }
+    submitForm() {
+        this.mention.markAsDirty();
+        this.mention.updateValueAndValidity();
+        if (this.mention.valid) {
+            console.log('Submit!!!', this.mention.value);
+            console.log(this.mentionChild.getMentions());
+        }
+        else {
+            console.log('Errors in form!!!');
+        }
+    }
+    resetForm() {
+        var _a;
+        (_a = this.validateForm) === null || _a === void 0 ? void 0 : _a.reset({
+            mention: '@afc163 '
+        });
     }
 }
-/** @nocollapse */ NzDemoMentionMultilinesComponent.ɵfac = function NzDemoMentionMultilinesComponent_Factory(t) { return new (t || NzDemoMentionMultilinesComponent)(); };
-/** @nocollapse */ NzDemoMentionMultilinesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionMultilinesComponent, selectors: [["nz-demo-mention-multilines"]], decls: 3, vars: 4, consts: [[3, "nzSuggestions"], ["nz-input", "", "nzMentionTrigger", "", 3, "nzAutosize", "ngModel", "ngModelChange"]], template: function NzDemoMentionMultilinesComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "textarea", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionMultilinesComponent_Template_textarea_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " ");
+/** @nocollapse */ NzDemoMentionControlledComponent.ɵfac = function NzDemoMentionControlledComponent_Factory(t) { return new (t || NzDemoMentionControlledComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
+/** @nocollapse */ NzDemoMentionControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionControlledComponent, selectors: [["nz-demo-mention-controlled"]], viewQuery: function NzDemoMentionControlledComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstaticViewQuery"](_c0, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.mentionChild = _t.first);
+    } }, decls: 15, vars: 6, consts: [["nz-form", "", 3, "formGroup", "ngSubmit"], ["nzFor", "mention", 3, "nzSm"], ["nzErrorTip", "More than one must be selected!", 3, "nzSm"], [3, "nzSuggestions"], ["mentions", ""], ["id", "mention", "placeholder", "input here", "formControlName", "mention", "nzMentionTrigger", "", "nz-input", ""], ["nz-row", "", 2, "margin-bottom", "8px"], [3, "nzSpan", "nzOffset"], ["type", "button", "nz-button", "", "nzType", "primary", 3, "click"], ["type", "button", "nz-button", "", 3, "click"]], template: function NzDemoMentionControlledComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngSubmit", function NzDemoMentionControlledComponent_Template_form_ngSubmit_0_listener() { return ctx.submitForm(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-form-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-form-label", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Top coders");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-form-control", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-mention", 3, 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "input", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-form-item", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-form-control", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMentionControlledComponent_Template_button_click_10_listener() { return ctx.submitForm(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Submit");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " \u00A0\u00A0\u00A0 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "button", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMentionControlledComponent_Template_button_click_13_listener() { return ctx.resetForm(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Reset");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx.validateForm);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSm", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSm", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0))("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzAutosizeDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionMultilinesComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 14)("nzOffset", 6);
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["ɵangular_packages_forms_forms_y"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatusGroup"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormGroupDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzRowDirective"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormItemComponent"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_4__["NzColDirective"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormLabelComponent"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_3__["NzFormControlComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__["NzMentionComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["DefaultValueAccessor"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_2__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_5__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormControlName"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_6__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_7__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_8__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionControlledComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-mention-multilines',
+                selector: 'nz-demo-mention-controlled',
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 template: `
-    <nz-mention [nzSuggestions]="suggestions">
-      <textarea nz-input [nzAutosize]="{ minRows: 4, maxRows: 4 }" [(ngModel)]="inputValue" nzMentionTrigger> </textarea>
-    </nz-mention>
+    <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" nzFor="mention">Top coders</nz-form-label>
+        <nz-form-control [nzSm]="16" nzErrorTip="More than one must be selected!">
+          <nz-mention #mentions [nzSuggestions]="suggestions">
+            <input id="mention" placeholder="input here" formControlName="mention" nzMentionTrigger nz-input />
+          </nz-mention>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item nz-row style="margin-bottom:8px;">
+        <nz-form-control [nzSpan]="14" [nzOffset]="6">
+          <button type="button" nz-button nzType="primary" (click)="submitForm()">Submit</button>
+          &nbsp;&nbsp;&nbsp;
+          <button type="button" nz-button (click)="resetForm()">Reset</button>
+        </nz-form-control>
+      </nz-form-item>
+    </form>
   `
             }]
-    }], null, null); })();
+    }], function () { return [{ type: _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"] }]; }, { mentionChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
+            args: ['mentions', { static: true }]
+        }] }); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/mention/multiple-trigger.ts":
+/***/ "4pM/":
 /*!**************************************************!*\
   !*** ./site/doc/app/mention/multiple-trigger.ts ***!
   \**************************************************/
@@ -2521,10 +1169,10 @@ class NzDemoMentionMultilinesComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionMultipleTriggerComponent", function() { return NzDemoMentionMultipleTriggerComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 
 
 
@@ -2571,232 +1219,7 @@ class NzDemoMentionMultipleTriggerComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/mention/placement.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/mention/placement.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoMentionPlacementComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionPlacementComponent", function() { return NzDemoMentionPlacementComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-class NzDemoMentionPlacementComponent {
-    constructor() {
-        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-    }
-    onChange(value) {
-        console.log(value);
-    }
-    onSelect(suggestion) {
-        console.log(`onSelect ${suggestion}`);
-    }
-}
-/** @nocollapse */ NzDemoMentionPlacementComponent.ɵfac = function NzDemoMentionPlacementComponent_Factory(t) { return new (t || NzDemoMentionPlacementComponent)(); };
-/** @nocollapse */ NzDemoMentionPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionPlacementComponent, selectors: [["nz-demo-mention-placement"]], decls: 2, vars: 2, consts: [["nzPlacement", "top", 3, "nzSuggestions", "nzOnSelect"], ["nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionPlacementComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionPlacementComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionPlacementComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionPlacementComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionPlacementComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-placement',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention nzPlacement="top" [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)">
-      <input nzMentionTrigger nz-input [(ngModel)]="inputValue" (ngModelChange)="onChange($event)" />
-    </nz-mention>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/preview.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/mention/preview.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoMentionPreviewComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionPreviewComponent", function() { return NzDemoMentionPreviewComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
-/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tabs.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-
-
-
-const _c0 = function () { return { minRows: 4, maxRows: 4 }; };
-class NzDemoMentionPreviewComponent {
-    constructor(sanitizer) {
-        this.sanitizer = sanitizer;
-        this.inputValue = 'Switch tab view preview @NG-ZORRO ';
-        this.suggestions = ['NG-ZORRO', 'angular', 'Reactive-Extensions'];
-        this.renderPreView();
-    }
-    getRegExp(prefix) {
-        const prefixArray = Array.isArray(prefix) ? prefix : [prefix];
-        let prefixToken = prefixArray.join('').replace(/(\$|\^)/g, '\\$1');
-        if (prefixArray.length > 1) {
-            prefixToken = `[${prefixToken}]`;
-        }
-        return new RegExp(`(\\s|^)(${prefixToken})[^\\s]*`, 'g');
-    }
-    renderPreView() {
-        if (this.inputValue) {
-            const regex = this.getRegExp('@');
-            const previewValue = this.inputValue.replace(regex, match => `<a target="_blank" href="https://github.com/${match.trim().substring(1)}">${match}</a>`);
-            this.preview = this.sanitizer.bypassSecurityTrustHtml(previewValue);
-        }
-    }
-}
-/** @nocollapse */ NzDemoMentionPreviewComponent.ɵfac = function NzDemoMentionPreviewComponent_Factory(t) { return new (t || NzDemoMentionPreviewComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"])); };
-/** @nocollapse */ NzDemoMentionPreviewComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionPreviewComponent, selectors: [["nz-demo-mention-preview"]], decls: 7, vars: 5, consts: [["nzTitle", "Write"], [3, "nzSuggestions"], ["nz-input", "", "nzMentionTrigger", "", 3, "nzAutosize", "ngModel", "ngModelChange"], ["nzTitle", "Preview"], [3, "innerHTML"]], template: function NzDemoMentionPreviewComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tab", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-mention", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "textarea", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionPreviewComponent_Template_textarea_ngModelChange_3_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionPreviewComponent_Template_textarea_ngModelChange_3_listener() { return ctx.renderPreView(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "          ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-tab", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "pre", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c0))("ngModel", ctx.inputValue);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx.preview, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
-    } }, directives: [ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__["NzTabSetComponent"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__["NzTabComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzAutosizeDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionPreviewComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-preview',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-tabset>
-      <nz-tab nzTitle="Write">
-        <nz-mention [nzSuggestions]="suggestions">
-          <textarea
-            nz-input
-            [nzAutosize]="{ minRows: 4, maxRows: 4 }"
-            [(ngModel)]="inputValue"
-            (ngModelChange)="renderPreView()"
-            nzMentionTrigger
-          >
-          </textarea>
-        </nz-mention>
-      </nz-tab>
-      <nz-tab nzTitle="Preview">
-        <pre [innerHTML]="preview"></pre>
-      </nz-tab>
-    </nz-tabset>
-  `
-            }]
-    }], function () { return [{ type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/readonly.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/mention/readonly.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoMentionReadonlyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionReadonlyComponent", function() { return NzDemoMentionReadonlyComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-class NzDemoMentionReadonlyComponent {
-    constructor() {
-        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-    }
-}
-/** @nocollapse */ NzDemoMentionReadonlyComponent.ɵfac = function NzDemoMentionReadonlyComponent_Factory(t) { return new (t || NzDemoMentionReadonlyComponent)(); };
-/** @nocollapse */ NzDemoMentionReadonlyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionReadonlyComponent, selectors: [["nz-demo-mention-readonly"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions"], ["placeholder", "this is disabled Mention", "nzMentionTrigger", "", "nz-input", "", "disabled", "", 2, "margin-bottom", "10px", 3, "ngModel", "ngModelChange"], ["placeholder", "this is readOnly Mention", "nzMentionTrigger", "", "nz-input", "", "readOnly", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionReadonlyComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionReadonlyComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionReadonlyComponent_Template_input_ngModelChange_2_listener($event) { return ctx.inputValue = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
-    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionReadonlyComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-mention-readonly',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-mention [nzSuggestions]="suggestions">
-      <input
-        style="margin-bottom: 10px"
-        placeholder="this is disabled Mention"
-        nzMentionTrigger
-        nz-input
-        disabled
-        [(ngModel)]="inputValue"
-      />
-      <input placeholder="this is readOnly Mention" nzMentionTrigger nz-input readOnly [(ngModel)]="inputValue" />
-    </nz-mention>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/mention/zh.component.ts":
+/***/ "7iol":
 /*!**********************************************!*\
   !*** ./site/doc/app/mention/zh.component.ts ***!
   \**********************************************/
@@ -2806,23 +1229,23 @@ class NzDemoMentionReadonlyComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionZhComponent", function() { return NzDemoMentionZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "./site/doc/app/mention/basic.ts");
-/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./async */ "./site/doc/app/mention/async.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/mention/avatar.ts");
-/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multilines */ "./site/doc/app/mention/multilines.ts");
-/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./multiple-trigger */ "./site/doc/app/mention/multiple-trigger.ts");
-/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./placement */ "./site/doc/app/mention/placement.ts");
-/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./custom-tag */ "./site/doc/app/mention/custom-tag.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/mention/controlled.ts");
-/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./readonly */ "./site/doc/app/mention/readonly.ts");
-/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./preview */ "./site/doc/app/mention/preview.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "TSWS");
+/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./async */ "uNAX");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./avatar */ "RzXG");
+/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multilines */ "qxrk");
+/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./multiple-trigger */ "4pM/");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./placement */ "8xRA");
+/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./custom-tag */ "W/8X");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./controlled */ "06/8");
+/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./readonly */ "hIcG");
+/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./preview */ "O8YK");
 
 
 
@@ -3826,6 +2249,1367 @@ class NzDemoMentionZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "8xRA":
+/*!*******************************************!*\
+  !*** ./site/doc/app/mention/placement.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoMentionPlacementComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionPlacementComponent", function() { return NzDemoMentionPlacementComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+class NzDemoMentionPlacementComponent {
+    constructor() {
+        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+    }
+    onChange(value) {
+        console.log(value);
+    }
+    onSelect(suggestion) {
+        console.log(`onSelect ${suggestion}`);
+    }
+}
+/** @nocollapse */ NzDemoMentionPlacementComponent.ɵfac = function NzDemoMentionPlacementComponent_Factory(t) { return new (t || NzDemoMentionPlacementComponent)(); };
+/** @nocollapse */ NzDemoMentionPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionPlacementComponent, selectors: [["nz-demo-mention-placement"]], decls: 2, vars: 2, consts: [["nzPlacement", "top", 3, "nzSuggestions", "nzOnSelect"], ["nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionPlacementComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionPlacementComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionPlacementComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionPlacementComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionPlacementComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-placement',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention nzPlacement="top" [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)">
+      <input nzMentionTrigger nz-input [(ngModel)]="inputValue" (ngModelChange)="onChange($event)" />
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "D+2/":
+/*!****************************************!*\
+  !*** ./site/doc/app/mention/module.ts ***!
+  \****************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "/XND");
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/form */ "J4sT");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "iimT");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+
+
+
+
+
+
+const moduleList = [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_0__["NzMentionModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_1__["NzAvatarModule"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_2__["NzFormModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_3__["NzInputModule"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_4__["NzTabsModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonModule"]];
+
+
+/***/ }),
+
+/***/ "LF/x":
+/*!****************************************************************!*\
+  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-mention.js ***!
+  \****************************************************************/
+/*! exports provided: NZ_MENTION_TRIGGER_ACCESSOR, NzMentionComponent, NzMentionModule, NzMentionService, NzMentionSuggestionDirective, NzMentionTriggerDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NZ_MENTION_TRIGGER_ACCESSOR", function() { return NZ_MENTION_TRIGGER_ACCESSOR; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionComponent", function() { return NzMentionComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionModule", function() { return NzMentionModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionService", function() { return NzMentionService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionSuggestionDirective", function() { return NzMentionSuggestionDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMentionTriggerDirective", function() { return NzMentionTriggerDirective; });
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/overlay */ "rDax");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/portal */ "+rOU");
+/* harmony import */ var ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/overlay */ "EOB0");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+
+
+
+
+function NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainer"](0);
+} }
+const _c0 = function (a0) { return { $implicit: a0 }; };
+function NzMentionComponent_ng_template_1_li_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template, 1, 0, "ng-container", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const suggestion_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r6.suggestionTemplate)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](2, _c0, suggestion_r4));
+} }
+function NzMentionComponent_ng_template_1_li_1_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](0);
+} if (rf & 2) {
+    const suggestion_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]().$implicit;
+    const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r8.nzValueWith(suggestion_r4));
+} }
+function NzMentionComponent_ng_template_1_li_1_Template(rf, ctx) { if (rf & 1) {
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("mousedown", function NzMentionComponent_ng_template_1_li_1_Template_li_mousedown_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r13); return $event.preventDefault(); })("click", function NzMentionComponent_ng_template_1_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r13); const suggestion_r4 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r14.selectSuggestion(suggestion_r4); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_ng_container_1_Template, 2, 4, "ng-container", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_1_ng_template_2_Template, 1, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const i_r5 = ctx.index;
+    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](3);
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("focus", i_r5 === ctx_r2.activeIndex);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r2.suggestionTemplate)("ngIfElse", _r7);
+} }
+function NzMentionComponent_ng_template_1_li_2_span_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](1, "i", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} }
+function NzMentionComponent_ng_template_1_li_2_span_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r16.nzNotFoundContent);
+} }
+function NzMentionComponent_ng_template_1_li_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_2_span_1_Template, 2, 0, "span", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_2_span_2_Template, 2, 1, "span", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r3.nzLoading);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx_r3.nzLoading);
+} }
+function NzMentionComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "ul", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_li_1_Template, 4, 4, "li", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzMentionComponent_ng_template_1_li_2_Template, 3, 2, "li", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r1.filteredSuggestions);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx_r1.filteredSuggestions.length === 0);
+} }
+const _c1 = ["*"];
+class NzMentionSuggestionDirective {
+}
+/** @nocollapse */
+NzMentionSuggestionDirective.ɵfac = function NzMentionSuggestionDirective_Factory(t) { return new (t || NzMentionSuggestionDirective)(); };
+/** @nocollapse */
+NzMentionSuggestionDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzMentionSuggestionDirective, selectors: [["", "nzMentionSuggestion", ""]], exportAs: ["nzMentionSuggestion"] });
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzMentionService {
+    constructor() {
+        this.triggerChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+    }
+    triggerChanged() {
+        return this.triggerChange$.asObservable();
+    }
+    registerTrigger(trigger) {
+        if (this.trigger !== trigger) {
+            this.trigger = trigger;
+            this.triggerChange$.next(trigger);
+        }
+    }
+    ngOnDestroy() {
+        this.triggerChange$.complete();
+    }
+}
+/** @nocollapse */
+NzMentionService.ɵfac = function NzMentionService_Factory(t) { return new (t || NzMentionService)(); };
+/** @nocollapse */
+NzMentionService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({ token: NzMentionService, factory: NzMentionService.ɵfac });
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+const NZ_MENTION_TRIGGER_ACCESSOR = {
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])(() => NzMentionTriggerDirective),
+    multi: true
+};
+class NzMentionTriggerDirective {
+    constructor(el, nzMentionService) {
+        this.el = el;
+        this.nzMentionService = nzMentionService;
+        this.onChange = () => { };
+        this.onTouched = () => { };
+        this.onFocusin = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.onBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.onInput = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.onKeydown = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.onClick = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+    }
+    completeEvents() {
+        this.onFocusin.complete();
+        this.onBlur.complete();
+        this.onInput.complete();
+        this.onKeydown.complete();
+        this.onClick.complete();
+    }
+    focus(caretPos) {
+        this.el.nativeElement.focus();
+        this.el.nativeElement.setSelectionRange(caretPos, caretPos);
+    }
+    insertMention(mention) {
+        const value = this.el.nativeElement.value;
+        const insertValue = mention.mention.trim() + ' ';
+        const newValue = [value.slice(0, mention.startPos + 1), insertValue, value.slice(mention.endPos, value.length)].join('');
+        this.el.nativeElement.value = newValue;
+        this.focus(mention.startPos + insertValue.length + 1);
+        this.onChange(newValue);
+        this.value = newValue;
+    }
+    writeValue(value) {
+        this.value = value;
+        if (typeof value === 'string') {
+            this.el.nativeElement.value = value;
+        }
+        else {
+            this.el.nativeElement.value = '';
+        }
+    }
+    registerOnChange(fn) {
+        this.onChange = fn;
+    }
+    registerOnTouched(fn) {
+        this.onTouched = fn;
+    }
+    ngAfterViewInit() {
+        this.nzMentionService.registerTrigger(this);
+    }
+    ngOnDestroy() {
+        this.completeEvents();
+    }
+}
+/** @nocollapse */
+NzMentionTriggerDirective.ɵfac = function NzMentionTriggerDirective_Factory(t) { return new (t || NzMentionTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzMentionService)); };
+/** @nocollapse */
+NzMentionTriggerDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzMentionTriggerDirective, selectors: [["input", "nzMentionTrigger", ""], ["textarea", "nzMentionTrigger", ""]], hostAttrs: ["autocomplete", "off"], hostBindings: function NzMentionTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("focusin", function NzMentionTriggerDirective_focusin_HostBindingHandler() { return ctx.onFocusin.emit(); })("blur", function NzMentionTriggerDirective_blur_HostBindingHandler() { return ctx.onBlur.emit(); })("input", function NzMentionTriggerDirective_input_HostBindingHandler($event) { return ctx.onInput.emit($event); })("keydown", function NzMentionTriggerDirective_keydown_HostBindingHandler($event) { return ctx.onKeydown.emit($event); })("click", function NzMentionTriggerDirective_click_HostBindingHandler($event) { return ctx.onClick.emit($event); });
+    } }, exportAs: ["nzMentionTrigger"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NZ_MENTION_TRIGGER_ACCESSOR])] });
+NzMentionTriggerDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
+    { type: NzMentionService }
+];
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzMentionComponent {
+    constructor(ngDocument, cdr, overlay, viewContainerRef, nzMentionService) {
+        this.ngDocument = ngDocument;
+        this.cdr = cdr;
+        this.overlay = overlay;
+        this.viewContainerRef = viewContainerRef;
+        this.nzMentionService = nzMentionService;
+        this.nzValueWith = value => value;
+        this.nzPrefix = '@';
+        this.nzLoading = false;
+        this.nzNotFoundContent = '无匹配结果，轻敲空格完成输入';
+        this.nzPlacement = 'bottom';
+        this.nzSuggestions = [];
+        this.nzOnSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.nzOnSearchChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.isOpen = false;
+        this.filteredSuggestions = [];
+        this.suggestionTemplate = null;
+        this.activeIndex = -1;
+        this.previousValue = null;
+        this.cursorMention = null;
+        this.overlayRef = null;
+    }
+    set suggestionChild(value) {
+        if (value) {
+            this.suggestionTemplate = value;
+        }
+    }
+    get triggerNativeElement() {
+        return this.trigger.el.nativeElement;
+    }
+    ngOnInit() {
+        this.nzMentionService.triggerChanged().subscribe(trigger => {
+            this.trigger = trigger;
+            this.bindTriggerEvents();
+            this.closeDropdown();
+            this.overlayRef = null;
+        });
+    }
+    ngOnChanges(changes) {
+        if (changes.hasOwnProperty('nzSuggestions')) {
+            if (this.isOpen) {
+                this.previousValue = null;
+                this.activeIndex = -1;
+                this.resetDropdown(false);
+            }
+        }
+    }
+    ngOnDestroy() {
+        this.closeDropdown();
+    }
+    closeDropdown() {
+        if (this.overlayRef && this.overlayRef.hasAttached()) {
+            this.overlayRef.detach();
+            this.overlayBackdropClickSubscription.unsubscribe();
+            this.isOpen = false;
+            this.cdr.markForCheck();
+        }
+    }
+    openDropdown() {
+        this.attachOverlay();
+        this.isOpen = true;
+        this.cdr.markForCheck();
+    }
+    getMentions() {
+        return this.trigger ? Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["getMentions"])(this.trigger.value, this.nzPrefix) : [];
+    }
+    selectSuggestion(suggestion) {
+        const value = this.nzValueWith(suggestion);
+        this.trigger.insertMention({
+            mention: value,
+            startPos: this.cursorMentionStart,
+            endPos: this.cursorMentionEnd
+        });
+        this.nzOnSelect.emit(suggestion);
+        this.closeDropdown();
+        this.activeIndex = -1;
+    }
+    handleInput(event) {
+        const target = event.target;
+        this.trigger.onChange(target.value);
+        this.trigger.value = target.value;
+        this.resetDropdown();
+    }
+    handleKeydown(event) {
+        const keyCode = event.keyCode;
+        if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["ENTER"] && this.activeIndex !== -1 && this.filteredSuggestions.length) {
+            this.selectSuggestion(this.filteredSuggestions[this.activeIndex]);
+            event.preventDefault();
+        }
+        else if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["LEFT_ARROW"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["RIGHT_ARROW"]) {
+            this.resetDropdown();
+            event.stopPropagation();
+        }
+        else {
+            if (this.isOpen && (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["TAB"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["ESCAPE"])) {
+                this.closeDropdown();
+                return;
+            }
+            if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["UP_ARROW"]) {
+                this.setPreviousItemActive();
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            if (this.isOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_7__["DOWN_ARROW"]) {
+                this.setNextItemActive();
+                event.preventDefault();
+                event.stopPropagation();
+            }
+        }
+    }
+    handleClick() {
+        this.resetDropdown();
+    }
+    bindTriggerEvents() {
+        this.trigger.onInput.subscribe((e) => this.handleInput(e));
+        this.trigger.onKeydown.subscribe((e) => this.handleKeydown(e));
+        this.trigger.onClick.subscribe(() => this.handleClick());
+    }
+    suggestionsFilter(value, emit) {
+        const suggestions = value.substring(1);
+        /**
+         * Should always emit (nzOnSearchChange) when value empty
+         *
+         * @[something]... @[empty]... @[empty]
+         *     ^             ^           ^
+         * preValue        preValue  (should emit)
+         */
+        if (this.previousValue === value && value !== this.cursorMention[0]) {
+            return;
+        }
+        this.previousValue = value;
+        if (emit) {
+            this.nzOnSearchChange.emit({
+                value: this.cursorMention.substring(1),
+                prefix: this.cursorMention[0]
+            });
+        }
+        const searchValue = suggestions.toLowerCase();
+        this.filteredSuggestions = this.nzSuggestions.filter(suggestion => this.nzValueWith(suggestion).toLowerCase().includes(searchValue));
+    }
+    resetDropdown(emit = true) {
+        this.resetCursorMention();
+        if (typeof this.cursorMention !== 'string' || !this.canOpen()) {
+            this.closeDropdown();
+            return;
+        }
+        this.suggestionsFilter(this.cursorMention, emit);
+        const activeIndex = this.filteredSuggestions.indexOf(this.cursorMention.substring(1));
+        this.activeIndex = activeIndex >= 0 ? activeIndex : 0;
+        this.openDropdown();
+    }
+    setNextItemActive() {
+        this.activeIndex = this.activeIndex + 1 <= this.filteredSuggestions.length - 1 ? this.activeIndex + 1 : 0;
+        this.cdr.markForCheck();
+    }
+    setPreviousItemActive() {
+        this.activeIndex = this.activeIndex - 1 < 0 ? this.filteredSuggestions.length - 1 : this.activeIndex - 1;
+        this.cdr.markForCheck();
+    }
+    canOpen() {
+        const element = this.triggerNativeElement;
+        return !element.readOnly && !element.disabled;
+    }
+    resetCursorMention() {
+        const value = this.triggerNativeElement.value.replace(/[\r\n]/g, ' ') || '';
+        const selectionStart = this.triggerNativeElement.selectionStart;
+        const prefix = typeof this.nzPrefix === 'string' ? [this.nzPrefix] : this.nzPrefix;
+        let i = prefix.length;
+        while (i >= 0) {
+            const startPos = value.lastIndexOf(prefix[i], selectionStart);
+            const endPos = value.indexOf(' ', selectionStart) > -1 ? value.indexOf(' ', selectionStart) : value.length;
+            const mention = value.substring(startPos, endPos);
+            if ((startPos > 0 && value[startPos - 1] !== ' ') || startPos < 0 || mention.includes(prefix[i], 1) || mention.includes(' ')) {
+                this.cursorMention = null;
+                this.cursorMentionStart = -1;
+                this.cursorMentionEnd = -1;
+            }
+            else {
+                this.cursorMention = mention;
+                this.cursorMentionStart = startPos;
+                this.cursorMentionEnd = endPos;
+                return;
+            }
+            i--;
+        }
+    }
+    updatePositions() {
+        const coordinates = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["getCaretCoordinates"])(this.triggerNativeElement, this.cursorMentionStart);
+        const top = coordinates.top -
+            this.triggerNativeElement.getBoundingClientRect().height -
+            this.triggerNativeElement.scrollTop +
+            (this.nzPlacement === 'bottom' ? coordinates.height - 6 : -6);
+        const left = coordinates.left - this.triggerNativeElement.scrollLeft;
+        this.positionStrategy.withDefaultOffsetX(left).withDefaultOffsetY(top);
+        if (this.nzPlacement === 'bottom') {
+            this.positionStrategy.withPositions([...ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__["DEFAULT_MENTION_BOTTOM_POSITIONS"]]);
+        }
+        if (this.nzPlacement === 'top') {
+            this.positionStrategy.withPositions([...ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_9__["DEFAULT_MENTION_TOP_POSITIONS"]]);
+        }
+        this.positionStrategy.apply();
+    }
+    subscribeOverlayBackdropClick() {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["merge"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'click'), Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'touchend')).subscribe((event) => {
+            const clickTarget = event.target;
+            if (this.isOpen &&
+                clickTarget !== this.trigger.el.nativeElement &&
+                !!this.overlayRef &&
+                !this.overlayRef.overlayElement.contains(clickTarget)) {
+                this.closeDropdown();
+            }
+        });
+    }
+    attachOverlay() {
+        if (!this.overlayRef) {
+            this.portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["TemplatePortal"](this.suggestionsTemp, this.viewContainerRef);
+            this.overlayRef = this.overlay.create(this.getOverlayConfig());
+        }
+        if (this.overlayRef && !this.overlayRef.hasAttached()) {
+            this.overlayRef.attach(this.portal);
+            this.overlayBackdropClickSubscription = this.subscribeOverlayBackdropClick();
+        }
+        this.updatePositions();
+    }
+    getOverlayConfig() {
+        return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayConfig"]({
+            positionStrategy: this.getOverlayPosition(),
+            scrollStrategy: this.overlay.scrollStrategies.reposition(),
+            disposeOnNavigation: true
+        });
+    }
+    getOverlayPosition() {
+        const positions = [
+            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
+            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' })
+        ];
+        this.positionStrategy = this.overlay
+            .position()
+            .flexibleConnectedTo(this.trigger.el)
+            .withPositions(positions)
+            .withFlexibleDimensions(false)
+            .withPush(false);
+        return this.positionStrategy;
+    }
+}
+/** @nocollapse */
+NzMentionComponent.ɵfac = function NzMentionComponent_Factory(t) { return new (t || NzMentionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzMentionService)); };
+/** @nocollapse */
+NzMentionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzMentionComponent, selectors: [["nz-mention"]], contentQueries: function NzMentionComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzMentionSuggestionDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"]);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.suggestionChild = _t.first);
+    } }, viewQuery: function NzMentionComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.suggestionsTemp = _t.first);
+    } }, inputs: { nzValueWith: "nzValueWith", nzPrefix: "nzPrefix", nzLoading: "nzLoading", nzNotFoundContent: "nzNotFoundContent", nzPlacement: "nzPlacement", nzSuggestions: "nzSuggestions" }, outputs: { nzOnSelect: "nzOnSelect", nzOnSearchChange: "nzOnSearchChange" }, exportAs: ["nzMention"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NzMentionService]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["suggestions", ""], [1, "ant-mention-dropdown"], ["class", "ant-mention-dropdown-item", 3, "focus", "mousedown", "click", 4, "ngFor", "ngForOf"], ["class", "ant-mention-dropdown-notfound ant-mention-dropdown-item", 4, "ngIf"], [1, "ant-mention-dropdown-item", 3, "mousedown", "click"], [4, "ngIf", "ngIfElse"], ["defaultSuggestion", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-mention-dropdown-notfound", "ant-mention-dropdown-item"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzMentionComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzMentionComponent_ng_template_1_Template, 3, 2, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
+NzMentionComponent.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"],] }] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
+    { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] },
+    { type: NzMentionService }
+];
+NzMentionComponent.propDecorators = {
+    nzValueWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzPrefix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzLoading: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzNotFoundContent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzSuggestions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzOnSelect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
+    nzOnSearchChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
+    suggestionsTemp: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false },] }],
+    suggestionChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzMentionSuggestionDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] },] }]
+};
+Object(tslib__WEBPACK_IMPORTED_MODULE_6__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_6__["__metadata"])("design:type", Object)
+], NzMentionComponent.prototype, "nzLoading", void 0);
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionSuggestionDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+        args: [{
+                selector: '[nzMentionSuggestion]',
+                exportAs: 'nzMentionSuggestion'
+            }]
+    }], null, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"]
+    }], function () { return []; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionTriggerDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+        args: [{
+                selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
+                exportAs: 'nzMentionTrigger',
+                providers: [NZ_MENTION_TRIGGER_ACCESSOR],
+                host: {
+                    autocomplete: 'off',
+                    '(focusin)': 'onFocusin.emit()',
+                    '(blur)': 'onBlur.emit()',
+                    '(input)': 'onInput.emit($event)',
+                    '(keydown)': 'onKeydown.emit($event)',
+                    '(click)': 'onClick.emit($event)'
+                }
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: NzMentionService }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+        args: [{
+                selector: 'nz-mention',
+                exportAs: 'nzMention',
+                template: `
+    <ng-content></ng-content>
+    <ng-template #suggestions>
+      <ul class="ant-mention-dropdown">
+        <li
+          class="ant-mention-dropdown-item"
+          *ngFor="let suggestion of filteredSuggestions; let i = index"
+          [class.focus]="i === activeIndex"
+          (mousedown)="$event.preventDefault()"
+          (click)="selectSuggestion(suggestion)"
+        >
+          <ng-container *ngIf="suggestionTemplate; else defaultSuggestion">
+            <ng-container *ngTemplateOutlet="suggestionTemplate; context: { $implicit: suggestion }"></ng-container>
+          </ng-container>
+          <ng-template #defaultSuggestion>{{ nzValueWith(suggestion) }}</ng-template>
+        </li>
+        <li class="ant-mention-dropdown-notfound ant-mention-dropdown-item" *ngIf="filteredSuggestions.length === 0">
+          <span *ngIf="nzLoading"><i nz-icon nzType="loading"></i></span>
+          <span *ngIf="!nzLoading">{{ nzNotFoundContent }}</span>
+        </li>
+      </ul>
+    </ng-template>
+  `,
+                preserveWhitespaces: false,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
+                providers: [NzMentionService]
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"]]
+            }] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] }, { type: NzMentionService }]; }, { nzValueWith: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzPrefix: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzLoading: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzNotFoundContent: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzPlacement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzSuggestions: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzOnSelect: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+        }], nzOnSearchChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+        }], suggestionChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"],
+            args: [NzMentionSuggestionDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }]
+        }], suggestionsTemp: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false }]
+        }] }); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+const COMPONENTS = [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective];
+class NzMentionModule {
+}
+/** @nocollapse */
+NzMentionModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzMentionModule });
+/** @nocollapse */
+NzMentionModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzMentionModule_Factory(t) { return new (t || NzMentionModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzMentionModule, { declarations: function () { return [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]]; }, exports: function () { return [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzMentionModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]],
+                declarations: [...COMPONENTS],
+                exports: [...COMPONENTS]
+            }]
+    }], null, null); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ng-zorro-antd-mention.js.map
+
+/***/ }),
+
+/***/ "O8YK":
+/*!*****************************************!*\
+  !*** ./site/doc/app/mention/preview.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoMentionPreviewComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionPreviewComponent", function() { return NzDemoMentionPreviewComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
+/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "iimT");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+
+
+const _c0 = function () { return { minRows: 4, maxRows: 4 }; };
+class NzDemoMentionPreviewComponent {
+    constructor(sanitizer) {
+        this.sanitizer = sanitizer;
+        this.inputValue = 'Switch tab view preview @NG-ZORRO ';
+        this.suggestions = ['NG-ZORRO', 'angular', 'Reactive-Extensions'];
+        this.renderPreView();
+    }
+    getRegExp(prefix) {
+        const prefixArray = Array.isArray(prefix) ? prefix : [prefix];
+        let prefixToken = prefixArray.join('').replace(/(\$|\^)/g, '\\$1');
+        if (prefixArray.length > 1) {
+            prefixToken = `[${prefixToken}]`;
+        }
+        return new RegExp(`(\\s|^)(${prefixToken})[^\\s]*`, 'g');
+    }
+    renderPreView() {
+        if (this.inputValue) {
+            const regex = this.getRegExp('@');
+            const previewValue = this.inputValue.replace(regex, match => `<a target="_blank" href="https://github.com/${match.trim().substring(1)}">${match}</a>`);
+            this.preview = this.sanitizer.bypassSecurityTrustHtml(previewValue);
+        }
+    }
+}
+/** @nocollapse */ NzDemoMentionPreviewComponent.ɵfac = function NzDemoMentionPreviewComponent_Factory(t) { return new (t || NzDemoMentionPreviewComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"])); };
+/** @nocollapse */ NzDemoMentionPreviewComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionPreviewComponent, selectors: [["nz-demo-mention-preview"]], decls: 7, vars: 5, consts: [["nzTitle", "Write"], [3, "nzSuggestions"], ["nz-input", "", "nzMentionTrigger", "", 3, "nzAutosize", "ngModel", "ngModelChange"], ["nzTitle", "Preview"], [3, "innerHTML"]], template: function NzDemoMentionPreviewComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tab", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-mention", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "textarea", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionPreviewComponent_Template_textarea_ngModelChange_3_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionPreviewComponent_Template_textarea_ngModelChange_3_listener() { return ctx.renderPreView(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "          ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-tab", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "pre", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c0))("ngModel", ctx.inputValue);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", ctx.preview, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
+    } }, directives: [ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__["NzTabSetComponent"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_2__["NzTabComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_3__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzAutosizeDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionPreviewComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-preview',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-tabset>
+      <nz-tab nzTitle="Write">
+        <nz-mention [nzSuggestions]="suggestions">
+          <textarea
+            nz-input
+            [nzAutosize]="{ minRows: 4, maxRows: 4 }"
+            [(ngModel)]="inputValue"
+            (ngModelChange)="renderPreView()"
+            nzMentionTrigger
+          >
+          </textarea>
+        </nz-mention>
+      </nz-tab>
+      <nz-tab nzTitle="Preview">
+        <pre [innerHTML]="preview"></pre>
+      </nz-tab>
+    </nz-tabset>
+  `
+            }]
+    }], function () { return [{ type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["DomSanitizer"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "R5Nc":
+/*!**********************************************!*\
+  !*** ./site/doc/app/mention/index.module.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoMentionModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionModule", function() { return NzDemoMentionModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "D+2/");
+/* harmony import */ var _async__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./async */ "uNAX");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./avatar */ "RzXG");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "TSWS");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./controlled */ "06/8");
+/* harmony import */ var _custom_tag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./custom-tag */ "W/8X");
+/* harmony import */ var _multilines__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./multilines */ "qxrk");
+/* harmony import */ var _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./multiple-trigger */ "4pM/");
+/* harmony import */ var _placement__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./placement */ "8xRA");
+/* harmony import */ var _preview__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./preview */ "O8YK");
+/* harmony import */ var _readonly__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./readonly */ "hIcG");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./zh.component */ "7iol");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./en.component */ "/2GG");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "/XND");
+/* harmony import */ var ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/form */ "J4sT");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/tabs */ "iimT");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoMentionModule {
+}
+/** @nocollapse */ NzDemoMentionModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoMentionModule });
+/** @nocollapse */ NzDemoMentionModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoMentionModule_Factory(t) { return new (t || NzDemoMentionModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoMentionModule, { declarations: [_async__WEBPACK_IMPORTED_MODULE_4__["NzDemoMentionAsyncComponent"],
+        _avatar__WEBPACK_IMPORTED_MODULE_5__["NzDemoMentionAvatarComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoMentionBasicComponent"],
+        _controlled__WEBPACK_IMPORTED_MODULE_7__["NzDemoMentionControlledComponent"],
+        _custom_tag__WEBPACK_IMPORTED_MODULE_8__["NzDemoMentionCustomTagComponent"],
+        _multilines__WEBPACK_IMPORTED_MODULE_9__["NzDemoMentionMultilinesComponent"],
+        _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__["NzDemoMentionMultipleTriggerComponent"],
+        _placement__WEBPACK_IMPORTED_MODULE_11__["NzDemoMentionPlacementComponent"],
+        _preview__WEBPACK_IMPORTED_MODULE_12__["NzDemoMentionPreviewComponent"],
+        _readonly__WEBPACK_IMPORTED_MODULE_13__["NzDemoMentionReadonlyComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_16__["NzMentionModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_17__["NzAvatarModule"], ng_zorro_antd_form__WEBPACK_IMPORTED_MODULE_18__["NzFormModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_19__["NzInputModule"], ng_zorro_antd_tabs__WEBPACK_IMPORTED_MODULE_20__["NzTabsModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_21__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _async__WEBPACK_IMPORTED_MODULE_4__["NzDemoMentionAsyncComponent"],
+                    _avatar__WEBPACK_IMPORTED_MODULE_5__["NzDemoMentionAvatarComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_6__["NzDemoMentionBasicComponent"],
+                    _controlled__WEBPACK_IMPORTED_MODULE_7__["NzDemoMentionControlledComponent"],
+                    _custom_tag__WEBPACK_IMPORTED_MODULE_8__["NzDemoMentionCustomTagComponent"],
+                    _multilines__WEBPACK_IMPORTED_MODULE_9__["NzDemoMentionMultilinesComponent"],
+                    _multiple_trigger__WEBPACK_IMPORTED_MODULE_10__["NzDemoMentionMultipleTriggerComponent"],
+                    _placement__WEBPACK_IMPORTED_MODULE_11__["NzDemoMentionPlacementComponent"],
+                    _preview__WEBPACK_IMPORTED_MODULE_12__["NzDemoMentionPreviewComponent"],
+                    _readonly__WEBPACK_IMPORTED_MODULE_13__["NzDemoMentionReadonlyComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoMentionZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoMentionEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "RzXG":
+/*!****************************************!*\
+  !*** ./site/doc/app/mention/avatar.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoMentionAvatarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionAvatarComponent", function() { return NzDemoMentionAvatarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "/XND");
+
+
+
+
+
+
+function NzDemoMentionAvatarComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const framework_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzText", framework_r1.name)("nzSrc", framework_r1.icon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", framework_r1.name, " - ", framework_r1.type, "");
+} }
+class NzDemoMentionAvatarComponent {
+    constructor() {
+        this.webFrameworks = [
+            { name: 'React', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/LFIeMPzdLcLnEUe.svg' },
+            { name: 'Angular', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/PJTbxSvzYWjDZnJ.png' },
+            { name: 'Dva', type: 'Javascript', icon: 'https://zos.alipayobjects.com/rmsportal/EYPwSeEJKxDtVxI.png' },
+            { name: 'Flask', type: 'Python', icon: 'https://zos.alipayobjects.com/rmsportal/xaypBUijfnpAlXE.png' }
+        ];
+        this.valueWith = (data) => data.name;
+    }
+    onSelect(value) {
+        console.log(value);
+    }
+}
+/** @nocollapse */ NzDemoMentionAvatarComponent.ɵfac = function NzDemoMentionAvatarComponent_Factory(t) { return new (t || NzDemoMentionAvatarComponent)(); };
+/** @nocollapse */ NzDemoMentionAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionAvatarComponent, selectors: [["nz-demo-mention-avatar"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions", "nzValueWith", "nzOnSelect"], ["nz-input", "", "nzMentionTrigger", "", 3, "ngModel", "ngModelChange"], [4, "nzMentionSuggestion"], ["nzSize", "small", 3, "nzText", "nzSrc"]], template: function NzDemoMentionAvatarComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionAvatarComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionAvatarComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoMentionAvatarComponent_ng_container_2_Template, 4, 4, "ng-container", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.webFrameworks)("nzValueWith", ctx.valueWith);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionSuggestionDirective"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_4__["NzAvatarComponent"]], styles: ["\n      .ant-avatar.ant-avatar-sm {\n        width: 14px;\n        height: 14px;\n        margin-right: 8px;\n        position: relative;\n      }\n    "], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionAvatarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-avatar',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="webFrameworks" [nzValueWith]="valueWith" (nzOnSelect)="onSelect($event)">
+      <input nz-input nzMentionTrigger [(ngModel)]="inputValue" />
+      <ng-container *nzMentionSuggestion="let framework">
+        <nz-avatar nzSize="small" [nzText]="framework.name" [nzSrc]="framework.icon"></nz-avatar>
+        <span>{{ framework.name }} - {{ framework.type }}</span>
+      </ng-container>
+    </nz-mention>
+  `,
+                styles: [
+                    `
+      .ant-avatar.ant-avatar-sm {
+        width: 14px;
+        height: 14px;
+        margin-right: 8px;
+        position: relative;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "TSWS":
+/*!***************************************!*\
+  !*** ./site/doc/app/mention/basic.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoMentionBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionBasicComponent", function() { return NzDemoMentionBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+class NzDemoMentionBasicComponent {
+    constructor() {
+        this.inputValue = '@afc163';
+        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+    }
+    onChange(value) {
+        console.log(value);
+    }
+    onSelect(suggestion) {
+        console.log(`onSelect ${suggestion}`);
+    }
+}
+/** @nocollapse */ NzDemoMentionBasicComponent.ɵfac = function NzDemoMentionBasicComponent_Factory(t) { return new (t || NzDemoMentionBasicComponent)(); };
+/** @nocollapse */ NzDemoMentionBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionBasicComponent, selectors: [["nz-demo-mention-basic"]], decls: 2, vars: 2, consts: [[3, "nzSuggestions", "nzOnSelect"], ["placeholder", "input here", "nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionBasicComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionBasicComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoMentionBasicComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-basic',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)">
+      <input placeholder="input here" nzMentionTrigger nz-input [(ngModel)]="inputValue" (ngModelChange)="onChange($event)" />
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "W/8X":
+/*!********************************************!*\
+  !*** ./site/doc/app/mention/custom-tag.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoMentionCustomTagComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionCustomTagComponent", function() { return NzDemoMentionCustomTagComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+function NzDemoMentionCustomTagComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const framework_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", framework_r1.name, " - ", framework_r1.type, "");
+} }
+class NzDemoMentionCustomTagComponent {
+    constructor() {
+        this.webFrameworks = [
+            { name: 'React', type: 'JavaScript' },
+            { name: 'Angular', type: 'JavaScript' },
+            { name: 'Laravel', type: 'PHP' },
+            { name: 'Flask', type: 'Python' },
+            { name: 'Django', type: 'Python' }
+        ];
+        this.valueWith = (data) => data.name;
+    }
+    onSelect(value) {
+        console.log(value);
+    }
+}
+/** @nocollapse */ NzDemoMentionCustomTagComponent.ɵfac = function NzDemoMentionCustomTagComponent_Factory(t) { return new (t || NzDemoMentionCustomTagComponent)(); };
+/** @nocollapse */ NzDemoMentionCustomTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionCustomTagComponent, selectors: [["nz-demo-mention-custom-tag"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions", "nzValueWith", "nzOnSelect"], ["placeholder", "@someone", "nz-input", "", "nzMentionTrigger", "", 3, "ngModel", "ngModelChange"], [4, "nzMentionSuggestion"]], template: function NzDemoMentionCustomTagComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSelect", function NzDemoMentionCustomTagComponent_Template_nz_mention_nzOnSelect_0_listener($event) { return ctx.onSelect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionCustomTagComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoMentionCustomTagComponent_ng_container_2_Template, 3, 2, "ng-container", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.webFrameworks)("nzValueWith", ctx.valueWith);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionSuggestionDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionCustomTagComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-custom-tag',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="webFrameworks" [nzValueWith]="valueWith" (nzOnSelect)="onSelect($event)">
+      <input placeholder="@someone" nz-input nzMentionTrigger [(ngModel)]="inputValue" />
+      <ng-container *nzMentionSuggestion="let framework">
+        <span>{{ framework.name }} - {{ framework.type }}</span>
+      </ng-container>
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "hIcG":
+/*!******************************************!*\
+  !*** ./site/doc/app/mention/readonly.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoMentionReadonlyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionReadonlyComponent", function() { return NzDemoMentionReadonlyComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+class NzDemoMentionReadonlyComponent {
+    constructor() {
+        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+    }
+}
+/** @nocollapse */ NzDemoMentionReadonlyComponent.ɵfac = function NzDemoMentionReadonlyComponent_Factory(t) { return new (t || NzDemoMentionReadonlyComponent)(); };
+/** @nocollapse */ NzDemoMentionReadonlyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionReadonlyComponent, selectors: [["nz-demo-mention-readonly"]], decls: 3, vars: 3, consts: [[3, "nzSuggestions"], ["placeholder", "this is disabled Mention", "nzMentionTrigger", "", "nz-input", "", "disabled", "", 2, "margin-bottom", "10px", 3, "ngModel", "ngModelChange"], ["placeholder", "this is readOnly Mention", "nzMentionTrigger", "", "nz-input", "", "readOnly", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionReadonlyComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionReadonlyComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionReadonlyComponent_Template_input_ngModelChange_2_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionReadonlyComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-readonly',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="suggestions">
+      <input
+        style="margin-bottom: 10px"
+        placeholder="this is disabled Mention"
+        nzMentionTrigger
+        nz-input
+        disabled
+        [(ngModel)]="inputValue"
+      />
+      <input placeholder="this is readOnly Mention" nzMentionTrigger nz-input readOnly [(ngModel)]="inputValue" />
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "qxrk":
+/*!********************************************!*\
+  !*** ./site/doc/app/mention/multilines.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoMentionMultilinesComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionMultilinesComponent", function() { return NzDemoMentionMultilinesComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+const _c0 = function () { return { minRows: 4, maxRows: 4 }; };
+class NzDemoMentionMultilinesComponent {
+    constructor() {
+        this.suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+    }
+}
+/** @nocollapse */ NzDemoMentionMultilinesComponent.ɵfac = function NzDemoMentionMultilinesComponent_Factory(t) { return new (t || NzDemoMentionMultilinesComponent)(); };
+/** @nocollapse */ NzDemoMentionMultilinesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionMultilinesComponent, selectors: [["nz-demo-mention-multilines"]], decls: 3, vars: 4, consts: [[3, "nzSuggestions"], ["nz-input", "", "nzMentionTrigger", "", 3, "nzAutosize", "ngModel", "ngModelChange"]], template: function NzDemoMentionMultilinesComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "textarea", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionMultilinesComponent_Template_textarea_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAutosize", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0))("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzAutosizeDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionMultilinesComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-multilines',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="suggestions">
+      <textarea nz-input [nzAutosize]="{ minRows: 4, maxRows: 4 }" [(ngModel)]="inputValue" nzMentionTrigger> </textarea>
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "uNAX":
+/*!***************************************!*\
+  !*** ./site/doc/app/mention/async.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoMentionAsyncComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoMentionAsyncComponent", function() { return NzDemoMentionAsyncComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/mention */ "LF/x");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+class NzDemoMentionAsyncComponent {
+    constructor() {
+        this.loading = false;
+        this.suggestions = [];
+    }
+    onSearchChange({ value }) {
+        console.log(`search: ${value}`);
+        this.loading = true;
+        this.fetchSuggestions(value, suggestions => {
+            console.log(suggestions);
+            this.suggestions = suggestions;
+            this.loading = false;
+        });
+    }
+    fetchSuggestions(value, callback) {
+        const users = ['afc163', 'benjycui', 'yiminghe', 'jljsj33', 'dqaria', 'RaoHai'];
+        setTimeout(() => {
+            return callback(users.filter(item => item.indexOf(value) !== -1));
+        }, 500);
+    }
+}
+/** @nocollapse */ NzDemoMentionAsyncComponent.ɵfac = function NzDemoMentionAsyncComponent_Factory(t) { return new (t || NzDemoMentionAsyncComponent)(); };
+/** @nocollapse */ NzDemoMentionAsyncComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMentionAsyncComponent, selectors: [["nz-demo-mention-async"]], decls: 2, vars: 3, consts: [[3, "nzSuggestions", "nzLoading", "nzOnSearchChange"], ["nzMentionTrigger", "", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoMentionAsyncComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-mention", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnSearchChange", function NzDemoMentionAsyncComponent_Template_nz_mention_nzOnSearchChange_0_listener($event) { return ctx.onSearchChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoMentionAsyncComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSuggestions", ctx.suggestions)("nzLoading", ctx.loading);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.inputValue);
+    } }, directives: [ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionComponent"], ng_zorro_antd_mention__WEBPACK_IMPORTED_MODULE_1__["NzMentionTriggerDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_2__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoMentionAsyncComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-mention-async',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-mention [nzSuggestions]="suggestions" [nzLoading]="loading" (nzOnSearchChange)="onSearchChange($event)">
+      <input nzMentionTrigger nz-input [(ngModel)]="inputValue" />
+    </nz-mention>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

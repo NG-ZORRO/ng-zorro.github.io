@@ -1,35 +1,99 @@
 exports.ids = ["pagination-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/pagination/basic.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/pagination/basic.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoPaginationBasicComponent */
+/***/ "+Rn7":
+/*!************************************************!*\
+  !*** ./site/doc/app/pagination/item-render.ts ***!
+  \************************************************/
+/*! exports provided: NzDemoPaginationItemRenderComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationBasicComponent", function() { return NzDemoPaginationBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationItemRenderComponent", function() { return NzDemoPaginationItemRenderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
-class NzDemoPaginationBasicComponent {
+
+function NzDemoPaginationItemRenderComponent_ng_template_1_a_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const page_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().page;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](page_r3);
+} }
+function NzDemoPaginationItemRenderComponent_ng_template_1_a_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Previous");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function NzDemoPaginationItemRenderComponent_ng_template_1_a_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Next");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function NzDemoPaginationItemRenderComponent_ng_template_1_a_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "<<");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function NzDemoPaginationItemRenderComponent_ng_template_1_a_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, ">>");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} }
+function NzDemoPaginationItemRenderComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoPaginationItemRenderComponent_ng_template_1_a_1_Template, 2, 1, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPaginationItemRenderComponent_ng_template_1_a_2_Template, 2, 0, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoPaginationItemRenderComponent_ng_template_1_a_3_Template, 2, 0, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoPaginationItemRenderComponent_ng_template_1_a_4_Template, 2, 0, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationItemRenderComponent_ng_template_1_a_5_Template, 2, 0, "a", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const type_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", type_r2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "page");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "prev");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "next");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "prev_5");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "next_5");
+} }
+class NzDemoPaginationItemRenderComponent {
 }
-/** @nocollapse */ NzDemoPaginationBasicComponent.ɵfac = function NzDemoPaginationBasicComponent_Factory(t) { return new (t || NzDemoPaginationBasicComponent)(); };
-/** @nocollapse */ NzDemoPaginationBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationBasicComponent, selectors: [["nz-demo-pagination-basic"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵfac = function NzDemoPaginationItemRenderComponent_Factory(t) { return new (t || NzDemoPaginationItemRenderComponent)(); };
+/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationItemRenderComponent, selectors: [["nz-demo-pagination-item-render"]], decls: 3, vars: 3, consts: [[3, "nzPageIndex", "nzTotal", "nzItemRender"], ["renderItemTemplate", ""], [3, "ngSwitch"], [4, "ngSwitchCase"]], template: function NzDemoPaginationItemRenderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoPaginationItemRenderComponent_ng_template_1_Template, 6, 6, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 50);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationBasicComponent, [{
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 500)("nzItemRender", _r0);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitchCase"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationItemRenderComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-pagination-basic',
+                selector: 'nz-demo-pagination-item-render',
                 template: `
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="500" [nzItemRender]="renderItemTemplate"></nz-pagination>
+    <ng-template #renderItemTemplate let-type let-page="page">
+      <ng-container [ngSwitch]="type">
+        <a *ngSwitchCase="'page'">{{ page }}</a>
+        <a *ngSwitchCase="'prev'">Previous</a>
+        <a *ngSwitchCase="'next'">Next</a>
+        <a *ngSwitchCase="'prev_5'"><<</a>
+        <a *ngSwitchCase="'next_5'">>></a>
+      </ng-container>
+    </ng-template>
   `
             }]
     }], null, null); })();
@@ -37,41 +101,102 @@ class NzDemoPaginationBasicComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/pagination/changer.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/pagination/changer.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoPaginationChangerComponent */
+/***/ "DLqp":
+/*!******************************************!*\
+  !*** ./site/doc/app/pagination/total.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoPaginationTotalComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationChangerComponent", function() { return NzDemoPaginationChangerComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationTotalComponent", function() { return NzDemoPaginationTotalComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
 
 
 
-class NzDemoPaginationChangerComponent {
+function NzDemoPaginationTotalComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
+} if (rf & 2) {
+    const total_r4 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Total ", total_r4, " items ");
+} }
+function NzDemoPaginationTotalComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
+} if (rf & 2) {
+    const range_r5 = ctx.range;
+    const total_r6 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate3"](" ", range_r5[0], "-", range_r5[1], " of ", total_r6, " items ");
+} }
+class NzDemoPaginationTotalComponent {
 }
-/** @nocollapse */ NzDemoPaginationChangerComponent.ɵfac = function NzDemoPaginationChangerComponent_Factory(t) { return new (t || NzDemoPaginationChangerComponent)(); };
-/** @nocollapse */ NzDemoPaginationChangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationChangerComponent, selectors: [["nz-demo-pagination-changer"]], decls: 3, vars: 6, consts: [["nzShowSizeChanger", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"], ["nzShowSizeChanger", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"]], template: function NzDemoPaginationChangerComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoPaginationTotalComponent.ɵfac = function NzDemoPaginationTotalComponent_Factory(t) { return new (t || NzDemoPaginationTotalComponent)(); };
+/** @nocollapse */ NzDemoPaginationTotalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationTotalComponent, selectors: [["nz-demo-pagination-total"]], decls: 7, vars: 8, consts: [[3, "nzPageIndex", "nzTotal", "nzPageSize", "nzShowTotal"], ["totalTemplate", ""], ["rangeTemplate", ""]], template: function NzDemoPaginationTotalComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoPaginationTotalComponent_ng_template_3_Template, 1, 1, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationTotalComponent_ng_template_5_Template, 1, 3, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](4);
+        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 85)("nzPageSize", 20)("nzShowTotal", _r0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 85)("nzPageSize", 20)("nzShowTotal", _r2);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationTotalComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-total',
+                template: `
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="85" [nzPageSize]="20" [nzShowTotal]="totalTemplate"></nz-pagination>
+    <br />
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="85" [nzPageSize]="20" [nzShowTotal]="rangeTemplate"></nz-pagination>
+    <ng-template #totalTemplate let-total> Total {{ total }} items </ng-template>
+    <ng-template #rangeTemplate let-range="range" let-total> {{ range[0] }}-{{ range[1] }} of {{ total }} items </ng-template>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "DqsK":
+/*!*****************************************!*\
+  !*** ./site/doc/app/pagination/jump.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoPaginationJumpComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationJumpComponent", function() { return NzDemoPaginationJumpComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+class NzDemoPaginationJumpComponent {
+}
+/** @nocollapse */ NzDemoPaginationJumpComponent.ɵfac = function NzDemoPaginationJumpComponent_Factory(t) { return new (t || NzDemoPaginationJumpComponent)(); };
+/** @nocollapse */ NzDemoPaginationJumpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationJumpComponent, selectors: [["nz-demo-pagination-jump"]], decls: 3, vars: 4, consts: [["nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal"], ["nzShowQuickJumper", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationJumpComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 1);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 500)("nzPageSize", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 500);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 500)("nzPageSize", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 500);
     } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationChangerComponent, [{
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationJumpComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-pagination-changer',
+                selector: 'nz-demo-pagination-jump',
                 template: `
-    <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
+    <nz-pagination [nzPageIndex]="2" [nzTotal]="500" nzShowQuickJumper></nz-pagination>
     <br />
-    <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10" nzDisabled></nz-pagination>
+    <nz-pagination [nzPageIndex]="2" [nzTotal]="500" nzShowQuickJumper nzDisabled></nz-pagination>
   `
             }]
     }], null, null); })();
@@ -79,35 +204,35 @@ class NzDemoPaginationChangerComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/pagination/controlled.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/pagination/controlled.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoPaginationControlledComponent */
+/***/ "Ig8Y":
+/*!*******************************************!*\
+  !*** ./site/doc/app/pagination/simple.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoPaginationSimpleComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationControlledComponent", function() { return NzDemoPaginationControlledComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationSimpleComponent", function() { return NzDemoPaginationSimpleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
 
 
 
-class NzDemoPaginationControlledComponent {
+class NzDemoPaginationSimpleComponent {
 }
-/** @nocollapse */ NzDemoPaginationControlledComponent.ɵfac = function NzDemoPaginationControlledComponent_Factory(t) { return new (t || NzDemoPaginationControlledComponent)(); };
-/** @nocollapse */ NzDemoPaginationControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationControlledComponent, selectors: [["nz-demo-pagination-controlled"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationControlledComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵfac = function NzDemoPaginationSimpleComponent_Factory(t) { return new (t || NzDemoPaginationSimpleComponent)(); };
+/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationSimpleComponent, selectors: [["nz-demo-pagination-simple"]], decls: 1, vars: 2, consts: [["nzSimple", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 50);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 50);
     } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationControlledComponent, [{
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationSimpleComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-pagination-controlled',
+                selector: 'nz-demo-pagination-simple',
                 template: `
-    <nz-pagination [nzPageIndex]="3" [nzTotal]="50"></nz-pagination>
+    <nz-pagination [nzPageIndex]="2" [nzTotal]="50" nzSimple></nz-pagination>
   `
             }]
     }], null, null); })();
@@ -115,7 +240,140 @@ class NzDemoPaginationControlledComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/pagination/en.component.ts":
+/***/ "NDG6":
+/*!*****************************************!*\
+  !*** ./site/doc/app/pagination/more.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoPaginationMoreComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationMoreComponent", function() { return NzDemoPaginationMoreComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+class NzDemoPaginationMoreComponent {
+}
+/** @nocollapse */ NzDemoPaginationMoreComponent.ɵfac = function NzDemoPaginationMoreComponent_Factory(t) { return new (t || NzDemoPaginationMoreComponent)(); };
+/** @nocollapse */ NzDemoPaginationMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMoreComponent, selectors: [["nz-demo-pagination-more"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationMoreComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 500);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationMoreComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-more',
+                template: `
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="500"></nz-pagination>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "OGu1":
+/*!*************************************************!*\
+  !*** ./site/doc/app/pagination/index.module.ts ***!
+  \*************************************************/
+/*! exports provided: NzDemoPaginationModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationModule", function() { return NzDemoPaginationModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "ZnhE");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "iRQ5");
+/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./changer */ "ptNo");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./controlled */ "zK9i");
+/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./item-render */ "+Rn7");
+/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./jump */ "DqsK");
+/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./mini */ "ifqg");
+/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./more */ "NDG6");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "Ig8Y");
+/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./total */ "DLqp");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./zh.component */ "bRrj");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./en.component */ "XqHX");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoPaginationModule {
+}
+/** @nocollapse */ NzDemoPaginationModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPaginationModule });
+/** @nocollapse */ NzDemoPaginationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPaginationModule_Factory(t) { return new (t || NzDemoPaginationModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoPaginationModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoPaginationBasicComponent"],
+        _changer__WEBPACK_IMPORTED_MODULE_5__["NzDemoPaginationChangerComponent"],
+        _controlled__WEBPACK_IMPORTED_MODULE_6__["NzDemoPaginationControlledComponent"],
+        _item_render__WEBPACK_IMPORTED_MODULE_7__["NzDemoPaginationItemRenderComponent"],
+        _jump__WEBPACK_IMPORTED_MODULE_8__["NzDemoPaginationJumpComponent"],
+        _mini__WEBPACK_IMPORTED_MODULE_9__["NzDemoPaginationMiniComponent"],
+        _more__WEBPACK_IMPORTED_MODULE_10__["NzDemoPaginationMoreComponent"],
+        _simple__WEBPACK_IMPORTED_MODULE_11__["NzDemoPaginationSimpleComponent"],
+        _total__WEBPACK_IMPORTED_MODULE_12__["NzDemoPaginationTotalComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_15__["NzPaginationModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoPaginationBasicComponent"],
+                    _changer__WEBPACK_IMPORTED_MODULE_5__["NzDemoPaginationChangerComponent"],
+                    _controlled__WEBPACK_IMPORTED_MODULE_6__["NzDemoPaginationControlledComponent"],
+                    _item_render__WEBPACK_IMPORTED_MODULE_7__["NzDemoPaginationItemRenderComponent"],
+                    _jump__WEBPACK_IMPORTED_MODULE_8__["NzDemoPaginationJumpComponent"],
+                    _mini__WEBPACK_IMPORTED_MODULE_9__["NzDemoPaginationMiniComponent"],
+                    _more__WEBPACK_IMPORTED_MODULE_10__["NzDemoPaginationMoreComponent"],
+                    _simple__WEBPACK_IMPORTED_MODULE_11__["NzDemoPaginationSimpleComponent"],
+                    _total__WEBPACK_IMPORTED_MODULE_12__["NzDemoPaginationTotalComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "XqHX":
 /*!*************************************************!*\
   !*** ./site/doc/app/pagination/en.component.ts ***!
   \*************************************************/
@@ -125,21 +383,21 @@ class NzDemoPaginationControlledComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationEnComponent", function() { return NzDemoPaginationEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/pagination/basic.ts");
-/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./more */ "./site/doc/app/pagination/more.ts");
-/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./changer */ "./site/doc/app/pagination/changer.ts");
-/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./jump */ "./site/doc/app/pagination/jump.ts");
-/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./mini */ "./site/doc/app/pagination/mini.ts");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "./site/doc/app/pagination/simple.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/pagination/controlled.ts");
-/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./total */ "./site/doc/app/pagination/total.ts");
-/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./item-render */ "./site/doc/app/pagination/item-render.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "iRQ5");
+/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./more */ "NDG6");
+/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./changer */ "ptNo");
+/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./jump */ "DqsK");
+/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./mini */ "ifqg");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "Ig8Y");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./controlled */ "zK9i");
+/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./total */ "DLqp");
+/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./item-render */ "+Rn7");
 
 
 
@@ -820,312 +1078,7 @@ class NzDemoPaginationEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/pagination/index.module.ts":
-/*!*************************************************!*\
-  !*** ./site/doc/app/pagination/index.module.ts ***!
-  \*************************************************/
-/*! exports provided: NzDemoPaginationModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationModule", function() { return NzDemoPaginationModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/pagination/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/pagination/basic.ts");
-/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./changer */ "./site/doc/app/pagination/changer.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/pagination/controlled.ts");
-/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./item-render */ "./site/doc/app/pagination/item-render.ts");
-/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./jump */ "./site/doc/app/pagination/jump.ts");
-/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./mini */ "./site/doc/app/pagination/mini.ts");
-/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./more */ "./site/doc/app/pagination/more.ts");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "./site/doc/app/pagination/simple.ts");
-/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./total */ "./site/doc/app/pagination/total.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/pagination/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/pagination/en.component.ts");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoPaginationModule {
-}
-/** @nocollapse */ NzDemoPaginationModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPaginationModule });
-/** @nocollapse */ NzDemoPaginationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPaginationModule_Factory(t) { return new (t || NzDemoPaginationModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoPaginationModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoPaginationBasicComponent"],
-        _changer__WEBPACK_IMPORTED_MODULE_5__["NzDemoPaginationChangerComponent"],
-        _controlled__WEBPACK_IMPORTED_MODULE_6__["NzDemoPaginationControlledComponent"],
-        _item_render__WEBPACK_IMPORTED_MODULE_7__["NzDemoPaginationItemRenderComponent"],
-        _jump__WEBPACK_IMPORTED_MODULE_8__["NzDemoPaginationJumpComponent"],
-        _mini__WEBPACK_IMPORTED_MODULE_9__["NzDemoPaginationMiniComponent"],
-        _more__WEBPACK_IMPORTED_MODULE_10__["NzDemoPaginationMoreComponent"],
-        _simple__WEBPACK_IMPORTED_MODULE_11__["NzDemoPaginationSimpleComponent"],
-        _total__WEBPACK_IMPORTED_MODULE_12__["NzDemoPaginationTotalComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_15__["NzPaginationModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoPaginationBasicComponent"],
-                    _changer__WEBPACK_IMPORTED_MODULE_5__["NzDemoPaginationChangerComponent"],
-                    _controlled__WEBPACK_IMPORTED_MODULE_6__["NzDemoPaginationControlledComponent"],
-                    _item_render__WEBPACK_IMPORTED_MODULE_7__["NzDemoPaginationItemRenderComponent"],
-                    _jump__WEBPACK_IMPORTED_MODULE_8__["NzDemoPaginationJumpComponent"],
-                    _mini__WEBPACK_IMPORTED_MODULE_9__["NzDemoPaginationMiniComponent"],
-                    _more__WEBPACK_IMPORTED_MODULE_10__["NzDemoPaginationMoreComponent"],
-                    _simple__WEBPACK_IMPORTED_MODULE_11__["NzDemoPaginationSimpleComponent"],
-                    _total__WEBPACK_IMPORTED_MODULE_12__["NzDemoPaginationTotalComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoPaginationZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoPaginationEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/item-render.ts":
-/*!************************************************!*\
-  !*** ./site/doc/app/pagination/item-render.ts ***!
-  \************************************************/
-/*! exports provided: NzDemoPaginationItemRenderComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationItemRenderComponent", function() { return NzDemoPaginationItemRenderComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-
-
-
-function NzDemoPaginationItemRenderComponent_ng_template_1_a_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const page_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().page;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](page_r3);
-} }
-function NzDemoPaginationItemRenderComponent_ng_template_1_a_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Previous");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-function NzDemoPaginationItemRenderComponent_ng_template_1_a_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Next");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-function NzDemoPaginationItemRenderComponent_ng_template_1_a_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "<<");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-function NzDemoPaginationItemRenderComponent_ng_template_1_a_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, ">>");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} }
-function NzDemoPaginationItemRenderComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0, 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoPaginationItemRenderComponent_ng_template_1_a_1_Template, 2, 1, "a", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoPaginationItemRenderComponent_ng_template_1_a_2_Template, 2, 0, "a", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoPaginationItemRenderComponent_ng_template_1_a_3_Template, 2, 0, "a", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoPaginationItemRenderComponent_ng_template_1_a_4_Template, 2, 0, "a", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationItemRenderComponent_ng_template_1_a_5_Template, 2, 0, "a", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const type_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", type_r2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "page");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "prev");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "next");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "prev_5");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", "next_5");
-} }
-class NzDemoPaginationItemRenderComponent {
-}
-/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵfac = function NzDemoPaginationItemRenderComponent_Factory(t) { return new (t || NzDemoPaginationItemRenderComponent)(); };
-/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationItemRenderComponent, selectors: [["nz-demo-pagination-item-render"]], decls: 3, vars: 3, consts: [[3, "nzPageIndex", "nzTotal", "nzItemRender"], ["renderItemTemplate", ""], [3, "ngSwitch"], [4, "ngSwitchCase"]], template: function NzDemoPaginationItemRenderComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoPaginationItemRenderComponent_ng_template_1_Template, 6, 6, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 500)("nzItemRender", _r0);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitchCase"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationItemRenderComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-item-render',
-                template: `
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="500" [nzItemRender]="renderItemTemplate"></nz-pagination>
-    <ng-template #renderItemTemplate let-type let-page="page">
-      <ng-container [ngSwitch]="type">
-        <a *ngSwitchCase="'page'">{{ page }}</a>
-        <a *ngSwitchCase="'prev'">Previous</a>
-        <a *ngSwitchCase="'next'">Next</a>
-        <a *ngSwitchCase="'prev_5'"><<</a>
-        <a *ngSwitchCase="'next_5'">>></a>
-      </ng-container>
-    </ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/jump.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/pagination/jump.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoPaginationJumpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationJumpComponent", function() { return NzDemoPaginationJumpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-class NzDemoPaginationJumpComponent {
-}
-/** @nocollapse */ NzDemoPaginationJumpComponent.ɵfac = function NzDemoPaginationJumpComponent_Factory(t) { return new (t || NzDemoPaginationJumpComponent)(); };
-/** @nocollapse */ NzDemoPaginationJumpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationJumpComponent, selectors: [["nz-demo-pagination-jump"]], decls: 3, vars: 4, consts: [["nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal"], ["nzShowQuickJumper", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationJumpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 1);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 500);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 500);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationJumpComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-jump',
-                template: `
-    <nz-pagination [nzPageIndex]="2" [nzTotal]="500" nzShowQuickJumper></nz-pagination>
-    <br />
-    <nz-pagination [nzPageIndex]="2" [nzTotal]="500" nzShowQuickJumper nzDisabled></nz-pagination>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/mini.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/pagination/mini.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoPaginationMiniComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationMiniComponent", function() { return NzDemoPaginationMiniComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-function NzDemoPaginationMiniComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
-} if (rf & 2) {
-    const total_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Total ", total_r2, " items");
-} }
-class NzDemoPaginationMiniComponent {
-    constructor() {
-        this.current = 1;
-    }
-}
-/** @nocollapse */ NzDemoPaginationMiniComponent.ɵfac = function NzDemoPaginationMiniComponent_Factory(t) { return new (t || NzDemoPaginationMiniComponent)(); };
-/** @nocollapse */ NzDemoPaginationMiniComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMiniComponent, selectors: [["nz-demo-pagination-mini"]], decls: 7, vars: 10, consts: [[3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], ["nzShowSizeChanger", "", "nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], [3, "nzPageIndex", "nzTotal", "nzSize", "nzShowTotal", "nzPageIndexChange"], ["totalTemplate", ""]], template: function NzDemoPaginationMiniComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-pagination", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_0_listener($event) { return ctx.current = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-pagination", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_2_listener($event) { return ctx.current = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-pagination", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_4_listener($event) { return ctx.current = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationMiniComponent_ng_template_5_Template, 1, 1, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small")("nzShowTotal", _r0);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationMiniComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-mini',
-                template: `
-    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'"></nz-pagination>
-    <br />
-    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'" nzShowSizeChanger nzShowQuickJumper></nz-pagination>
-    <br />
-    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'" [nzShowTotal]="totalTemplate"></nz-pagination>
-    <ng-template #totalTemplate let-total>Total {{ total }} items</ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/module.ts":
+/***/ "ZnhE":
 /*!*******************************************!*\
   !*** ./site/doc/app/pagination/module.ts ***!
   \*******************************************/
@@ -1135,147 +1088,14 @@ class NzDemoPaginationMiniComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
 
 const moduleList = [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_0__["NzPaginationModule"]];
 
 
 /***/ }),
 
-/***/ "./site/doc/app/pagination/more.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/pagination/more.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoPaginationMoreComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationMoreComponent", function() { return NzDemoPaginationMoreComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-class NzDemoPaginationMoreComponent {
-}
-/** @nocollapse */ NzDemoPaginationMoreComponent.ɵfac = function NzDemoPaginationMoreComponent_Factory(t) { return new (t || NzDemoPaginationMoreComponent)(); };
-/** @nocollapse */ NzDemoPaginationMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMoreComponent, selectors: [["nz-demo-pagination-more"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationMoreComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 500);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationMoreComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-more',
-                template: `
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="500"></nz-pagination>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/simple.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/pagination/simple.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoPaginationSimpleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationSimpleComponent", function() { return NzDemoPaginationSimpleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-class NzDemoPaginationSimpleComponent {
-}
-/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵfac = function NzDemoPaginationSimpleComponent_Factory(t) { return new (t || NzDemoPaginationSimpleComponent)(); };
-/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationSimpleComponent, selectors: [["nz-demo-pagination-simple"]], decls: 1, vars: 2, consts: [["nzSimple", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 50);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationSimpleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-simple',
-                template: `
-    <nz-pagination [nzPageIndex]="2" [nzTotal]="50" nzSimple></nz-pagination>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/total.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/pagination/total.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoPaginationTotalComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationTotalComponent", function() { return NzDemoPaginationTotalComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-pagination.js");
-
-
-
-function NzDemoPaginationTotalComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
-} if (rf & 2) {
-    const total_r4 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Total ", total_r4, " items ");
-} }
-function NzDemoPaginationTotalComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
-} if (rf & 2) {
-    const range_r5 = ctx.range;
-    const total_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate3"](" ", range_r5[0], "-", range_r5[1], " of ", total_r6, " items ");
-} }
-class NzDemoPaginationTotalComponent {
-}
-/** @nocollapse */ NzDemoPaginationTotalComponent.ɵfac = function NzDemoPaginationTotalComponent_Factory(t) { return new (t || NzDemoPaginationTotalComponent)(); };
-/** @nocollapse */ NzDemoPaginationTotalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationTotalComponent, selectors: [["nz-demo-pagination-total"]], decls: 7, vars: 8, consts: [[3, "nzPageIndex", "nzTotal", "nzPageSize", "nzShowTotal"], ["totalTemplate", ""], ["rangeTemplate", ""]], template: function NzDemoPaginationTotalComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoPaginationTotalComponent_ng_template_3_Template, 1, 1, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationTotalComponent_ng_template_5_Template, 1, 3, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](4);
-        const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 85)("nzPageSize", 20)("nzShowTotal", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 85)("nzPageSize", 20)("nzShowTotal", _r2);
-    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationTotalComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-pagination-total',
-                template: `
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="85" [nzPageSize]="20" [nzShowTotal]="totalTemplate"></nz-pagination>
-    <br />
-    <nz-pagination [nzPageIndex]="1" [nzTotal]="85" [nzPageSize]="20" [nzShowTotal]="rangeTemplate"></nz-pagination>
-    <ng-template #totalTemplate let-total> Total {{ total }} items </ng-template>
-    <ng-template #rangeTemplate let-range="range" let-total> {{ range[0] }}-{{ range[1] }} of {{ total }} items </ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/pagination/zh.component.ts":
+/***/ "bRrj":
 /*!*************************************************!*\
   !*** ./site/doc/app/pagination/zh.component.ts ***!
   \*************************************************/
@@ -1285,21 +1105,21 @@ class NzDemoPaginationTotalComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationZhComponent", function() { return NzDemoPaginationZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/pagination/basic.ts");
-/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./more */ "./site/doc/app/pagination/more.ts");
-/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./changer */ "./site/doc/app/pagination/changer.ts");
-/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./jump */ "./site/doc/app/pagination/jump.ts");
-/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./mini */ "./site/doc/app/pagination/mini.ts");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "./site/doc/app/pagination/simple.ts");
-/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./controlled */ "./site/doc/app/pagination/controlled.ts");
-/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./total */ "./site/doc/app/pagination/total.ts");
-/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./item-render */ "./site/doc/app/pagination/item-render.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "iRQ5");
+/* harmony import */ var _more__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./more */ "NDG6");
+/* harmony import */ var _changer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./changer */ "ptNo");
+/* harmony import */ var _jump__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./jump */ "DqsK");
+/* harmony import */ var _mini__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./mini */ "ifqg");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./simple */ "Ig8Y");
+/* harmony import */ var _controlled__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./controlled */ "zK9i");
+/* harmony import */ var _total__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./total */ "DLqp");
+/* harmony import */ var _item_render__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./item-render */ "+Rn7");
 
 
 
@@ -1961,6 +1781,186 @@ class NzDemoPaginationZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "iRQ5":
+/*!******************************************!*\
+  !*** ./site/doc/app/pagination/basic.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoPaginationBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationBasicComponent", function() { return NzDemoPaginationBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+class NzDemoPaginationBasicComponent {
+}
+/** @nocollapse */ NzDemoPaginationBasicComponent.ɵfac = function NzDemoPaginationBasicComponent_Factory(t) { return new (t || NzDemoPaginationBasicComponent)(); };
+/** @nocollapse */ NzDemoPaginationBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationBasicComponent, selectors: [["nz-demo-pagination-basic"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 50);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-basic',
+                template: `
+    <nz-pagination [nzPageIndex]="1" [nzTotal]="50"></nz-pagination>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "ifqg":
+/*!*****************************************!*\
+  !*** ./site/doc/app/pagination/mini.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoPaginationMiniComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationMiniComponent", function() { return NzDemoPaginationMiniComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+function NzDemoPaginationMiniComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
+} if (rf & 2) {
+    const total_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Total ", total_r2, " items");
+} }
+class NzDemoPaginationMiniComponent {
+    constructor() {
+        this.current = 1;
+    }
+}
+/** @nocollapse */ NzDemoPaginationMiniComponent.ɵfac = function NzDemoPaginationMiniComponent_Factory(t) { return new (t || NzDemoPaginationMiniComponent)(); };
+/** @nocollapse */ NzDemoPaginationMiniComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMiniComponent, selectors: [["nz-demo-pagination-mini"]], decls: 7, vars: 10, consts: [[3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], ["nzShowSizeChanger", "", "nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], [3, "nzPageIndex", "nzTotal", "nzSize", "nzShowTotal", "nzPageIndexChange"], ["totalTemplate", ""]], template: function NzDemoPaginationMiniComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-pagination", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_0_listener($event) { return ctx.current = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-pagination", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_2_listener($event) { return ctx.current = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-pagination", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_4_listener($event) { return ctx.current = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoPaginationMiniComponent_ng_template_5_Template, 1, 1, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", ctx.current)("nzTotal", 50)("nzSize", "small")("nzShowTotal", _r0);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationMiniComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-mini',
+                template: `
+    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'"></nz-pagination>
+    <br />
+    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'" nzShowSizeChanger nzShowQuickJumper></nz-pagination>
+    <br />
+    <nz-pagination [(nzPageIndex)]="current" [nzTotal]="50" [nzSize]="'small'" [nzShowTotal]="totalTemplate"></nz-pagination>
+    <ng-template #totalTemplate let-total>Total {{ total }} items</ng-template>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "ptNo":
+/*!********************************************!*\
+  !*** ./site/doc/app/pagination/changer.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoPaginationChangerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationChangerComponent", function() { return NzDemoPaginationChangerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+class NzDemoPaginationChangerComponent {
+}
+/** @nocollapse */ NzDemoPaginationChangerComponent.ɵfac = function NzDemoPaginationChangerComponent_Factory(t) { return new (t || NzDemoPaginationChangerComponent)(); };
+/** @nocollapse */ NzDemoPaginationChangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationChangerComponent, selectors: [["nz-demo-pagination-changer"]], decls: 3, vars: 6, consts: [["nzShowSizeChanger", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"], ["nzShowSizeChanger", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"]], template: function NzDemoPaginationChangerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 1);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 500)("nzPageSize", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 500)("nzPageSize", 10);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationChangerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-changer',
+                template: `
+    <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10"></nz-pagination>
+    <br />
+    <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10" nzDisabled></nz-pagination>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "zK9i":
+/*!***********************************************!*\
+  !*** ./site/doc/app/pagination/controlled.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoPaginationControlledComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoPaginationControlledComponent", function() { return NzDemoPaginationControlledComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
+
+
+
+class NzDemoPaginationControlledComponent {
+}
+/** @nocollapse */ NzDemoPaginationControlledComponent.ɵfac = function NzDemoPaginationControlledComponent_Factory(t) { return new (t || NzDemoPaginationControlledComponent)(); };
+/** @nocollapse */ NzDemoPaginationControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationControlledComponent, selectors: [["nz-demo-pagination-controlled"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationControlledComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 50);
+    } }, directives: [ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_1__["NzPaginationComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoPaginationControlledComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-pagination-controlled',
+                template: `
+    <nz-pagination [nzPageIndex]="3" [nzTotal]="50"></nz-pagination>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

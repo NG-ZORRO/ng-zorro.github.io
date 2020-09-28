@@ -1,7 +1,255 @@
 exports.ids = ["upload-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/upload/avatar.ts":
+/***/ "1nAl":
+/*!******************************************!*\
+  !*** ./site/doc/app/upload/directory.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoUploadDirectoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadDirectoryComponent", function() { return NzDemoUploadDirectoryComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+class NzDemoUploadDirectoryComponent {
+}
+/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵfac = function NzDemoUploadDirectoryComponent_Factory(t) { return new (t || NzDemoUploadDirectoryComponent)(); };
+/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDirectoryComponent, selectors: [["nz-demo-upload-directory"]], decls: 4, vars: 0, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzDirectory", ""], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDirectoryComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Upload Directory");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadDirectoryComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-directory',
+                template: `
+    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzDirectory>
+      <button nz-button><i nz-icon nzType="upload"></i> Upload Directory</button>
+    </nz-upload>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "2j6m":
+/*!**********************************************!*\
+  !*** ./site/doc/app/upload/picture-style.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoUploadPictureStyleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadPictureStyleComponent", function() { return NzDemoUploadPictureStyleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+class NzDemoUploadPictureStyleComponent {
+    constructor() {
+        this.defaultFileList = [
+            {
+                uid: '-1',
+                name: 'xxx.png',
+                status: 'done',
+                url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
+                thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
+            },
+            {
+                uid: '-2',
+                name: 'yyy.png',
+                status: 'error'
+            }
+        ];
+        this.fileList1 = [...this.defaultFileList];
+        this.fileList2 = [...this.defaultFileList];
+    }
+}
+/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵfac = function NzDemoUploadPictureStyleComponent_Factory(t) { return new (t || NzDemoUploadPictureStyleComponent)(); };
+/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 13, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-upload", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_1_listener($event) { return ctx.fileList1 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-upload", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_8_listener($event) { return ctx.fileList2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList2);
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], styles: ["[_nghost-%COMP%]     .upload-list-inline .ant-upload-list-item {\n        float: left;\n        width: 200px;\n        margin-right: 8px;\n      }\n      [_nghost-%COMP%]     .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {\n        float: right;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-enter {\n        animation-name: uploadAnimateInlineIn;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-leave {\n        animation-name: uploadAnimateInlineOut;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadPictureStyleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-picture-style',
+                template: `
+    <div class="clearfix">
+      <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [(nzFileList)]="fileList1">
+        <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
+      </nz-upload>
+    </div>
+    <br /><br />
+    <div class="clearfix">
+      <nz-upload
+        class="upload-list-inline"
+        nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+        nzListType="picture"
+        [(nzFileList)]="fileList2"
+      >
+        <button nz-button>
+          <span><i nz-icon nzType="upload"></i> Upload</span>
+        </button>
+      </nz-upload>
+    </div>
+  `,
+                styles: [
+                    `
+      :host ::ng-deep .upload-list-inline .ant-upload-list-item {
+        float: left;
+        width: 200px;
+        margin-right: 8px;
+      }
+      :host ::ng-deep .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {
+        float: right;
+      }
+      :host ::ng-deep .upload-list-inline .ant-upload-animate-enter {
+        animation-name: uploadAnimateInlineIn;
+      }
+      :host ::ng-deep .upload-list-inline .ant-upload-animate-leave {
+        animation-name: uploadAnimateInlineOut;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "5kwj":
+/*!***********************************************!*\
+  !*** ./site/doc/app/upload/transform-file.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoUploadTransformFileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadTransformFileComponent", function() { return NzDemoUploadTransformFileComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+class NzDemoUploadTransformFileComponent {
+    constructor() {
+        this.transformFile = (file) => {
+            return new rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"]((observer) => {
+                const reader = new FileReader();
+                // tslint:disable-next-line:no-any
+                reader.readAsDataURL(file);
+                reader.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    const img = document.createElement('img');
+                    img.src = reader.result;
+                    img.onload = () => {
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0);
+                        ctx.fillStyle = 'red';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillText('Ant Design', 20, 20);
+                        canvas.toBlob(blob => {
+                            observer.next(blob);
+                            observer.complete();
+                        });
+                    };
+                };
+            });
+        };
+    }
+}
+/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵfac = function NzDemoUploadTransformFileComponent_Factory(t) { return new (t || NzDemoUploadTransformFileComponent)(); };
+/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadTransformFileComponent, selectors: [["nz-demo-upload-transform-file"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzTransformFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadTransformFileComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTransformFile", ctx.transformFile);
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadTransformFileComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-transform-file',
+                template: `
+    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzTransformFile]="transformFile">
+      <button nz-button><i nz-icon nzType="upload"></i> Upload</button>
+    </nz-upload>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "7PVW":
 /*!***************************************!*\
   !*** ./site/doc/app/upload/avatar.ts ***!
   \***************************************/
@@ -11,13 +259,13 @@ exports.modules = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadAvatarComponent", function() { return NzDemoUploadAvatarComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -141,205 +389,7 @@ class NzDemoUploadAvatarComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/upload/basic.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/upload/basic.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoUploadBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadBasicComponent", function() { return NzDemoUploadBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-
-
-const _c0 = function () { return { authorization: "authorization-text" }; };
-class NzDemoUploadBasicComponent {
-    constructor(msg) {
-        this.msg = msg;
-    }
-    handleChange(info) {
-        if (info.file.status !== 'uploading') {
-            console.log(info.file, info.fileList);
-        }
-        if (info.file.status === 'done') {
-            this.msg.success(`${info.file.name} file uploaded successfully`);
-        }
-        else if (info.file.status === 'error') {
-            this.msg.error(`${info.file.name} file upload failed.`);
-        }
-    }
-}
-/** @nocollapse */ NzDemoUploadBasicComponent.ɵfac = function NzDemoUploadBasicComponent_Factory(t) { return new (t || NzDemoUploadBasicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 4, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadBasicComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Click to Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeaders", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-basic',
-                template: `
-    <nz-upload
-      nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-      [nzHeaders]="{ authorization: 'authorization-text' }"
-      (nzChange)="handleChange($event)"
-    >
-      <button nz-button><i nz-icon nzType="upload"></i>Click to Upload</button>
-    </nz-upload>
-  `
-            }]
-    }], function () { return [{ type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/default-file-list.ts":
-/*!**************************************************!*\
-  !*** ./site/doc/app/upload/default-file-list.ts ***!
-  \**************************************************/
-/*! exports provided: NzDemoUploadDefaultFileListComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadDefaultFileListComponent", function() { return NzDemoUploadDefaultFileListComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-class NzDemoUploadDefaultFileListComponent {
-    constructor() {
-        this.fileList = [
-            {
-                uid: '1',
-                name: 'xxx.png',
-                status: 'done',
-                response: 'Server Error 500',
-                url: 'http://www.baidu.com/xxx.png'
-            },
-            {
-                uid: '2',
-                name: 'yyy.png',
-                status: 'done',
-                url: 'http://www.baidu.com/yyy.png'
-            },
-            {
-                uid: '3',
-                name: 'zzz.png',
-                status: 'error',
-                response: 'Server Error 500',
-                url: 'http://www.baidu.com/zzz.png'
-            }
-        ];
-    }
-}
-/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵfac = function NzDemoUploadDefaultFileListComponent_Factory(t) { return new (t || NzDemoUploadDefaultFileListComponent)(); };
-/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList);
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadDefaultFileListComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-default-file-list',
-                template: `
-    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzFileList]="fileList">
-      <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
-    </nz-upload>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/directory.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/upload/directory.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoUploadDirectoryComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadDirectoryComponent", function() { return NzDemoUploadDirectoryComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-class NzDemoUploadDirectoryComponent {
-}
-/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵfac = function NzDemoUploadDirectoryComponent_Factory(t) { return new (t || NzDemoUploadDirectoryComponent)(); };
-/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDirectoryComponent, selectors: [["nz-demo-upload-directory"]], decls: 4, vars: 0, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzDirectory", ""], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDirectoryComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Upload Directory");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadDirectoryComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-directory',
-                template: `
-    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzDirectory>
-      <button nz-button><i nz-icon nzType="upload"></i> Upload Directory</button>
-    </nz-upload>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/drag.ts":
+/***/ "95cy":
 /*!*************************************!*\
   !*** ./site/doc/app/upload/drag.ts ***!
   \*************************************/
@@ -349,11 +399,11 @@ class NzDemoUploadDirectoryComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadDragComponent", function() { return NzDemoUploadDragComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -421,7 +471,492 @@ class NzDemoUploadDragComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/upload/en.component.ts":
+/***/ "9GRf":
+/*!*********************************************!*\
+  !*** ./site/doc/app/upload/index.module.ts ***!
+  \*********************************************/
+/*! exports provided: NzDemoUploadModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadModule", function() { return NzDemoUploadModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "E1NM");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./avatar */ "7PVW");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "SgSt");
+/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./default-file-list */ "yd/v");
+/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./directory */ "1nAl");
+/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./drag */ "95cy");
+/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./file-list */ "qkCr");
+/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./picture-card */ "rz7R");
+/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./picture-style */ "2j6m");
+/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./preview-file */ "MjwC");
+/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "5kwj");
+/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./upload-manually */ "R1lh");
+/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "YGFL");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./zh.component */ "vXy3");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./en.component */ "qVIS");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/modal */ "KIP6");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoUploadModule {
+}
+/** @nocollapse */ NzDemoUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoUploadModule });
+/** @nocollapse */ NzDemoUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoUploadModule_Factory(t) { return new (t || NzDemoUploadModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoUploadModule, { declarations: [_avatar__WEBPACK_IMPORTED_MODULE_4__["NzDemoUploadAvatarComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoUploadBasicComponent"],
+        _default_file_list__WEBPACK_IMPORTED_MODULE_6__["NzDemoUploadDefaultFileListComponent"],
+        _directory__WEBPACK_IMPORTED_MODULE_7__["NzDemoUploadDirectoryComponent"],
+        _drag__WEBPACK_IMPORTED_MODULE_8__["NzDemoUploadDragComponent"],
+        _file_list__WEBPACK_IMPORTED_MODULE_9__["NzDemoUploadFileListComponent"],
+        _picture_card__WEBPACK_IMPORTED_MODULE_10__["NzDemoUploadPictureCardComponent"],
+        _picture_style__WEBPACK_IMPORTED_MODULE_11__["NzDemoUploadPictureStyleComponent"],
+        _preview_file__WEBPACK_IMPORTED_MODULE_12__["NzDemoUploadPreviewFileComponent"],
+        _transform_file__WEBPACK_IMPORTED_MODULE_13__["NzDemoUploadTransformFileComponent"],
+        _upload_manually__WEBPACK_IMPORTED_MODULE_14__["NzDemoUploadUploadManuallyComponent"],
+        _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__["NzDemoUploadUploadWithAliyunOssComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_18__["NzUploadModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_19__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__["NzButtonModule"], ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_21__["NzModalModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _avatar__WEBPACK_IMPORTED_MODULE_4__["NzDemoUploadAvatarComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoUploadBasicComponent"],
+                    _default_file_list__WEBPACK_IMPORTED_MODULE_6__["NzDemoUploadDefaultFileListComponent"],
+                    _directory__WEBPACK_IMPORTED_MODULE_7__["NzDemoUploadDirectoryComponent"],
+                    _drag__WEBPACK_IMPORTED_MODULE_8__["NzDemoUploadDragComponent"],
+                    _file_list__WEBPACK_IMPORTED_MODULE_9__["NzDemoUploadFileListComponent"],
+                    _picture_card__WEBPACK_IMPORTED_MODULE_10__["NzDemoUploadPictureCardComponent"],
+                    _picture_style__WEBPACK_IMPORTED_MODULE_11__["NzDemoUploadPictureStyleComponent"],
+                    _preview_file__WEBPACK_IMPORTED_MODULE_12__["NzDemoUploadPreviewFileComponent"],
+                    _transform_file__WEBPACK_IMPORTED_MODULE_13__["NzDemoUploadTransformFileComponent"],
+                    _upload_manually__WEBPACK_IMPORTED_MODULE_14__["NzDemoUploadUploadManuallyComponent"],
+                    _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__["NzDemoUploadUploadWithAliyunOssComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "E1NM":
+/*!***************************************!*\
+  !*** ./site/doc/app/upload/module.ts ***!
+  \***************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/modal */ "KIP6");
+
+
+
+
+const moduleList = [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_0__["NzUploadModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"], ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_3__["NzModalModule"]];
+
+
+/***/ }),
+
+/***/ "MjwC":
+/*!*********************************************!*\
+  !*** ./site/doc/app/upload/preview-file.ts ***!
+  \*********************************************/
+/*! exports provided: NzDemoUploadPreviewFileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadPreviewFileComponent", function() { return NzDemoUploadPreviewFileComponent; });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+
+
+class NzDemoUploadPreviewFileComponent {
+    constructor(http) {
+        this.http = http;
+        this.previewFile = (file) => {
+            console.log('Your upload file:', file);
+            return this.http
+                .post(`https://next.json-generator.com/api/json/get/4ytyBoLK8`, {
+                method: 'POST',
+                body: file
+            })
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(res => res.thumbnail));
+        };
+    }
+}
+/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵfac = function NzDemoUploadPreviewFileComponent_Factory(t) { return new (t || NzDemoUploadPreviewFileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
+/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 5, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-upload", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "button", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzPreviewFile", ctx.previewFile);
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_5__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoUploadPreviewFileComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-preview-file',
+                template: `
+    <div class="clearfix">
+      <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [nzPreviewFile]="previewFile">
+        <button nz-button><i nz-icon nzType="upload"></i> Upload</button>
+      </nz-upload>
+    </div>
+  `
+            }]
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "R1lh":
+/*!************************************************!*\
+  !*** ./site/doc/app/upload/upload-manually.ts ***!
+  \************************************************/
+/*! exports provided: NzDemoUploadUploadManuallyComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadUploadManuallyComponent", function() { return NzDemoUploadUploadManuallyComponent; });
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoUploadUploadManuallyComponent {
+    constructor(http, msg) {
+        this.http = http;
+        this.msg = msg;
+        this.uploading = false;
+        this.fileList = [];
+        this.beforeUpload = (file) => {
+            this.fileList = this.fileList.concat(file);
+            return false;
+        };
+    }
+    handleUpload() {
+        const formData = new FormData();
+        // tslint:disable-next-line:no-any
+        this.fileList.forEach((file) => {
+            formData.append('files[]', file);
+        });
+        this.uploading = true;
+        // You can use any AJAX library you like
+        const req = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpRequest"]('POST', 'https://www.mocky.io/v2/5cc8019d300000980a055e76', formData, {
+        // reportProgress: true
+        });
+        this.http
+            .request(req)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])(e => e instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpResponse"]))
+            .subscribe(() => {
+            this.uploading = false;
+            this.fileList = [];
+            this.msg.success('upload successfully.');
+        }, () => {
+            this.uploading = false;
+            this.msg.error('upload failed.');
+        });
+    }
+}
+/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵfac = function NzDemoUploadUploadManuallyComponent_Factory(t) { return new (t || NzDemoUploadUploadManuallyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
+/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 6, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadManuallyComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.fileList = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Select File");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "button", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoUploadUploadManuallyComponent_Template_button_click_4_listener() { return ctx.handleUpload(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzFileList", ctx.fileList)("nzBeforeUpload", ctx.beforeUpload);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", "primary")("nzLoading", ctx.uploading)("disabled", ctx.fileList.length == 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.uploading ? "Uploading" : "Start Upload", " ");
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_4__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoUploadUploadManuallyComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-upload-manually',
+                template: `
+    <nz-upload [(nzFileList)]="fileList" [nzBeforeUpload]="beforeUpload">
+      <button nz-button><i nz-icon nzType="upload"></i>Select File</button>
+    </nz-upload>
+    <button
+      nz-button
+      [nzType]="'primary'"
+      [nzLoading]="uploading"
+      (click)="handleUpload()"
+      [disabled]="fileList.length == 0"
+      style="margin-top: 16px"
+    >
+      {{ uploading ? 'Uploading' : 'Start Upload' }}
+    </button>
+  `
+            }]
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }, { type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "SgSt":
+/*!**************************************!*\
+  !*** ./site/doc/app/upload/basic.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoUploadBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadBasicComponent", function() { return NzDemoUploadBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/message */ "7fq0");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+
+const _c0 = function () { return { authorization: "authorization-text" }; };
+class NzDemoUploadBasicComponent {
+    constructor(msg) {
+        this.msg = msg;
+    }
+    handleChange(info) {
+        if (info.file.status !== 'uploading') {
+            console.log(info.file, info.fileList);
+        }
+        if (info.file.status === 'done') {
+            this.msg.success(`${info.file.name} file uploaded successfully`);
+        }
+        else if (info.file.status === 'error') {
+            this.msg.error(`${info.file.name} file upload failed.`);
+        }
+    }
+}
+/** @nocollapse */ NzDemoUploadBasicComponent.ɵfac = function NzDemoUploadBasicComponent_Factory(t) { return new (t || NzDemoUploadBasicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+/** @nocollapse */ NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 4, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadBasicComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Click to Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzHeaders", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](1, _c0));
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-basic',
+                template: `
+    <nz-upload
+      nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+      [nzHeaders]="{ authorization: 'authorization-text' }"
+      (nzChange)="handleChange($event)"
+    >
+      <button nz-button><i nz-icon nzType="upload"></i>Click to Upload</button>
+    </nz-upload>
+  `
+            }]
+    }], function () { return [{ type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"] }]; }, null); })();
+
+
+/***/ }),
+
+/***/ "YGFL":
+/*!*******************************************************!*\
+  !*** ./site/doc/app/upload/upload-with-aliyun-oss.ts ***!
+  \*******************************************************/
+/*! exports provided: NzDemoUploadUploadWithAliyunOssComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadUploadWithAliyunOssComponent", function() { return NzDemoUploadUploadWithAliyunOssComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+class NzDemoUploadUploadWithAliyunOssComponent {
+    constructor() {
+        this.files = [];
+        this.mockOSSData = {
+            dir: 'user-dir/',
+            expire: '1577811661',
+            host: '//www.mocky.io/v2/5cc8019d300000980a055e76',
+            accessId: 'c2hhb2RhaG9uZw==',
+            policy: 'eGl4aWhhaGFrdWt1ZGFkYQ==',
+            signature: 'ZGFob25nc2hhbw=='
+        };
+        this.transformFile = (file) => {
+            const suffix = file.name.slice(file.name.lastIndexOf('.'));
+            const filename = Date.now() + suffix;
+            file.url = this.mockOSSData.dir + filename;
+            return file;
+        };
+        this.getExtraData = (file) => {
+            const { accessId, policy, signature } = this.mockOSSData;
+            return {
+                key: file.url,
+                OSSAccessKeyId: accessId,
+                policy: policy,
+                Signature: signature
+            };
+        };
+    }
+    onChange(e) {
+        console.log('Aliyun OSS:', e.fileList);
+    }
+}
+/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵfac = function NzDemoUploadUploadWithAliyunOssComponent_Factory(t) { return new (t || NzDemoUploadUploadWithAliyunOssComponent)(); };
+/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadWithAliyunOssComponent, selectors: [["nz-demo-upload-upload-with-aliyun-oss"]], decls: 5, vars: 4, consts: [["nzName", "file", 3, "nzFileList", "nzTransformFile", "nzData", "nzAction", "nzFileListChange", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadUploadWithAliyunOssComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.files = $event; })("nzChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.onChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Photos: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Click to Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.files)("nzTransformFile", ctx.transformFile)("nzData", ctx.getExtraData)("nzAction", ctx.mockOSSData.host);
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadUploadWithAliyunOssComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-upload-with-aliyun-oss',
+                template: `
+    <nz-upload
+      nzName="file"
+      [(nzFileList)]="files"
+      [nzTransformFile]="transformFile"
+      [nzData]="getExtraData"
+      [nzAction]="mockOSSData.host"
+      (nzChange)="onChange($event)"
+    >
+      Photos: <button nz-button><i nz-icon nzType="upload"></i> Click to Upload</button>
+    </nz-upload>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "qVIS":
 /*!*********************************************!*\
   !*** ./site/doc/app/upload/en.component.ts ***!
   \*********************************************/
@@ -431,26 +966,26 @@ class NzDemoUploadDragComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadEnComponent", function() { return NzDemoUploadEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/upload/basic.ts");
-/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./default-file-list */ "./site/doc/app/upload/default-file-list.ts");
-/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./file-list */ "./site/doc/app/upload/file-list.ts");
-/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./directory */ "./site/doc/app/upload/directory.ts");
-/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./picture-style */ "./site/doc/app/upload/picture-style.ts");
-/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "./site/doc/app/upload/transform-file.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/upload/avatar.ts");
-/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./picture-card */ "./site/doc/app/upload/picture-card.ts");
-/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./drag */ "./site/doc/app/upload/drag.ts");
-/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./upload-manually */ "./site/doc/app/upload/upload-manually.ts");
-/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./preview-file */ "./site/doc/app/upload/preview-file.ts");
-/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "./site/doc/app/upload/upload-with-aliyun-oss.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "SgSt");
+/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./default-file-list */ "yd/v");
+/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./file-list */ "qkCr");
+/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./directory */ "1nAl");
+/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./picture-style */ "2j6m");
+/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "5kwj");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./avatar */ "7PVW");
+/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./picture-card */ "rz7R");
+/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./drag */ "95cy");
+/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./upload-manually */ "R1lh");
+/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./preview-file */ "MjwC");
+/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "YGFL");
 
 
 
@@ -497,7 +1032,7 @@ class NzDemoUploadEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 774, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "Upload by clicking"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "Avatar"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "Default Files"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "Pictures Wall"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "Complete control over file list"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "Drag and Drop"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "Upload directory"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "Upload manually"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "Pictures with list style"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "Customize preview file"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "Transform file before request"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "Aliyun OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Upload by clicking", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Default Files", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Complete control over file list", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload directory", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures with list style", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Transform file before request", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Avatar", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures Wall", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Drag and Drop", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload manually", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customize preview file", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Aliyun OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept"], ["href", "https://caniuse.com/#feat=input-file-directory"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 774, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "Upload by clicking"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "Avatar"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "Default Files"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "Pictures Wall"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "Complete control over file list"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "Drag and Drop"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "Upload directory"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "Upload manually"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "Pictures with list style"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "Customize preview file"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "Transform file before request"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "Aliyun OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Upload by clicking", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Default Files", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Complete control over file list", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload directory", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures with list style", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Transform file before request", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Avatar", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures Wall", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Drag and Drop", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload manually", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customize preview file", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Aliyun OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki", "target", "_blank"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept", "target", "_blank"], ["href", "https://caniuse.com/#feat=input-file-directory", "target", "_blank"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -902,7 +1437,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](246, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](247, "Warning\uFF1Athis function is not supported in IE9");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](248, ". NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](248, ". NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](249, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](250, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -924,7 +1459,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](261, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](262, "override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](262, "override for the default xhr behavior allowing for additional customization and ability to implement your own XMLHttpRequest. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](263, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](264, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -946,7 +1481,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "Uploading params or function which can return uploading params. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "Uploading params or function which can return uploading params. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1097,7 +1632,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](369, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](370, "Set request headers, valid above IE10. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](370, "Set request headers, valid above IE10. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](371, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](372, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1286,7 +1821,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](487, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "A callback function, will be executed when file link or preview icon is clicked. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "A callback function, will be executed when file link or preview icon is clicked. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1308,7 +1843,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](501, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](502, "Customize preview file logic. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](502, "Customize preview file logic. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](503, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](504, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1330,7 +1865,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](515, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](516, "Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](516, "Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](517, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](518, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1356,7 +1891,7 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](531, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](532, "false");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](533, " or a Observable. NOTICE: Muse be use ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](533, " or a Observable. NOTICE: Must use ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](534, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](535, "=>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1778,7 +2313,7 @@ class NzDemoUploadEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/upload/file-list.ts":
+/***/ "qkCr":
 /*!******************************************!*\
   !*** ./site/doc/app/upload/file-list.ts ***!
   \******************************************/
@@ -1788,12 +2323,12 @@ class NzDemoUploadEnComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadFileListComponent", function() { return NzDemoUploadFileListComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -1855,145 +2390,7 @@ class NzDemoUploadFileListComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/upload/index.module.ts":
-/*!*********************************************!*\
-  !*** ./site/doc/app/upload/index.module.ts ***!
-  \*********************************************/
-/*! exports provided: NzDemoUploadModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadModule", function() { return NzDemoUploadModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/upload/module.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/upload/avatar.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "./site/doc/app/upload/basic.ts");
-/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./default-file-list */ "./site/doc/app/upload/default-file-list.ts");
-/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./directory */ "./site/doc/app/upload/directory.ts");
-/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./drag */ "./site/doc/app/upload/drag.ts");
-/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./file-list */ "./site/doc/app/upload/file-list.ts");
-/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./picture-card */ "./site/doc/app/upload/picture-card.ts");
-/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./picture-style */ "./site/doc/app/upload/picture-style.ts");
-/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./preview-file */ "./site/doc/app/upload/preview-file.ts");
-/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "./site/doc/app/upload/transform-file.ts");
-/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./upload-manually */ "./site/doc/app/upload/upload-manually.ts");
-/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "./site/doc/app/upload/upload-with-aliyun-oss.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/upload/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/upload/en.component.ts");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/modal */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-modal.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoUploadModule {
-}
-/** @nocollapse */ NzDemoUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoUploadModule });
-/** @nocollapse */ NzDemoUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoUploadModule_Factory(t) { return new (t || NzDemoUploadModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoUploadModule, { declarations: [_avatar__WEBPACK_IMPORTED_MODULE_4__["NzDemoUploadAvatarComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoUploadBasicComponent"],
-        _default_file_list__WEBPACK_IMPORTED_MODULE_6__["NzDemoUploadDefaultFileListComponent"],
-        _directory__WEBPACK_IMPORTED_MODULE_7__["NzDemoUploadDirectoryComponent"],
-        _drag__WEBPACK_IMPORTED_MODULE_8__["NzDemoUploadDragComponent"],
-        _file_list__WEBPACK_IMPORTED_MODULE_9__["NzDemoUploadFileListComponent"],
-        _picture_card__WEBPACK_IMPORTED_MODULE_10__["NzDemoUploadPictureCardComponent"],
-        _picture_style__WEBPACK_IMPORTED_MODULE_11__["NzDemoUploadPictureStyleComponent"],
-        _preview_file__WEBPACK_IMPORTED_MODULE_12__["NzDemoUploadPreviewFileComponent"],
-        _transform_file__WEBPACK_IMPORTED_MODULE_13__["NzDemoUploadTransformFileComponent"],
-        _upload_manually__WEBPACK_IMPORTED_MODULE_14__["NzDemoUploadUploadManuallyComponent"],
-        _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__["NzDemoUploadUploadWithAliyunOssComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_18__["NzUploadModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_19__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__["NzButtonModule"], ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_21__["NzModalModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _avatar__WEBPACK_IMPORTED_MODULE_4__["NzDemoUploadAvatarComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoUploadBasicComponent"],
-                    _default_file_list__WEBPACK_IMPORTED_MODULE_6__["NzDemoUploadDefaultFileListComponent"],
-                    _directory__WEBPACK_IMPORTED_MODULE_7__["NzDemoUploadDirectoryComponent"],
-                    _drag__WEBPACK_IMPORTED_MODULE_8__["NzDemoUploadDragComponent"],
-                    _file_list__WEBPACK_IMPORTED_MODULE_9__["NzDemoUploadFileListComponent"],
-                    _picture_card__WEBPACK_IMPORTED_MODULE_10__["NzDemoUploadPictureCardComponent"],
-                    _picture_style__WEBPACK_IMPORTED_MODULE_11__["NzDemoUploadPictureStyleComponent"],
-                    _preview_file__WEBPACK_IMPORTED_MODULE_12__["NzDemoUploadPreviewFileComponent"],
-                    _transform_file__WEBPACK_IMPORTED_MODULE_13__["NzDemoUploadTransformFileComponent"],
-                    _upload_manually__WEBPACK_IMPORTED_MODULE_14__["NzDemoUploadUploadManuallyComponent"],
-                    _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_15__["NzDemoUploadUploadWithAliyunOssComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoUploadZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoUploadEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/module.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/upload/module.ts ***!
-  \***************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/modal */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-modal.js");
-
-
-
-
-const moduleList = [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_0__["NzUploadModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"], ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_3__["NzModalModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/picture-card.ts":
+/***/ "rz7R":
 /*!*********************************************!*\
   !*** ./site/doc/app/upload/picture-card.ts ***!
   \*********************************************/
@@ -2003,14 +2400,14 @@ const moduleList = [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_0__["NzUploadM
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadPictureCardComponent", function() { return NzDemoUploadPictureCardComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/modal */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-modal.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/modal */ "KIP6");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -2141,479 +2538,7 @@ class NzDemoUploadPictureCardComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/upload/picture-style.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/upload/picture-style.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoUploadPictureStyleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadPictureStyleComponent", function() { return NzDemoUploadPictureStyleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-class NzDemoUploadPictureStyleComponent {
-    constructor() {
-        this.defaultFileList = [
-            {
-                uid: '-1',
-                name: 'xxx.png',
-                status: 'done',
-                url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
-                thumbUrl: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
-            },
-            {
-                uid: '-2',
-                name: 'yyy.png',
-                status: 'error'
-            }
-        ];
-        this.fileList1 = [...this.defaultFileList];
-        this.fileList2 = [...this.defaultFileList];
-    }
-}
-/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵfac = function NzDemoUploadPictureStyleComponent_Factory(t) { return new (t || NzDemoUploadPictureStyleComponent)(); };
-/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 13, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-upload", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_1_listener($event) { return ctx.fileList1 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-upload", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_8_listener($event) { return ctx.fileList2 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList2);
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], styles: ["[_nghost-%COMP%]     .upload-list-inline .ant-upload-list-item {\n        float: left;\n        width: 200px;\n        margin-right: 8px;\n      }\n      [_nghost-%COMP%]     .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {\n        float: right;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-enter {\n        animation-name: uploadAnimateInlineIn;\n      }\n      [_nghost-%COMP%]     .upload-list-inline .ant-upload-animate-leave {\n        animation-name: uploadAnimateInlineOut;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadPictureStyleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-picture-style',
-                template: `
-    <div class="clearfix">
-      <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [(nzFileList)]="fileList1">
-        <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
-      </nz-upload>
-    </div>
-    <br /><br />
-    <div class="clearfix">
-      <nz-upload
-        class="upload-list-inline"
-        nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-        nzListType="picture"
-        [(nzFileList)]="fileList2"
-      >
-        <button nz-button>
-          <span><i nz-icon nzType="upload"></i> Upload</span>
-        </button>
-      </nz-upload>
-    </div>
-  `,
-                styles: [
-                    `
-      :host ::ng-deep .upload-list-inline .ant-upload-list-item {
-        float: left;
-        width: 200px;
-        margin-right: 8px;
-      }
-      :host ::ng-deep .upload-list-inline [class*='-upload-list-rtl'] .ant-upload-list-item {
-        float: right;
-      }
-      :host ::ng-deep .upload-list-inline .ant-upload-animate-enter {
-        animation-name: uploadAnimateInlineIn;
-      }
-      :host ::ng-deep .upload-list-inline .ant-upload-animate-leave {
-        animation-name: uploadAnimateInlineOut;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/preview-file.ts":
-/*!*********************************************!*\
-  !*** ./site/doc/app/upload/preview-file.ts ***!
-  \*********************************************/
-/*! exports provided: NzDemoUploadPreviewFileComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadPreviewFileComponent", function() { return NzDemoUploadPreviewFileComponent; });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-
-
-
-class NzDemoUploadPreviewFileComponent {
-    constructor(http) {
-        this.http = http;
-        this.previewFile = (file) => {
-            console.log('Your upload file:', file);
-            return this.http
-                .post(`https://next.json-generator.com/api/json/get/4ytyBoLK8`, {
-                method: 'POST',
-                body: file
-            })
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(res => res.thumbnail));
-        };
-    }
-}
-/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵfac = function NzDemoUploadPreviewFileComponent_Factory(t) { return new (t || NzDemoUploadPreviewFileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
-/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 5, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-upload", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "button", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](3, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](4, " Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzPreviewFile", ctx.previewFile);
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_3__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_5__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_6__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoUploadPreviewFileComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-preview-file',
-                template: `
-    <div class="clearfix">
-      <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" nzListType="picture" [nzPreviewFile]="previewFile">
-        <button nz-button><i nz-icon nzType="upload"></i> Upload</button>
-      </nz-upload>
-    </div>
-  `
-            }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/transform-file.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/upload/transform-file.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoUploadTransformFileComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadTransformFileComponent", function() { return NzDemoUploadTransformFileComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-
-class NzDemoUploadTransformFileComponent {
-    constructor() {
-        this.transformFile = (file) => {
-            return new rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"]((observer) => {
-                const reader = new FileReader();
-                // tslint:disable-next-line:no-any
-                reader.readAsDataURL(file);
-                reader.onload = () => {
-                    const canvas = document.createElement('canvas');
-                    const img = document.createElement('img');
-                    img.src = reader.result;
-                    img.onload = () => {
-                        const ctx = canvas.getContext('2d');
-                        ctx.drawImage(img, 0, 0);
-                        ctx.fillStyle = 'red';
-                        ctx.textBaseline = 'middle';
-                        ctx.fillText('Ant Design', 20, 20);
-                        canvas.toBlob(blob => {
-                            observer.next(blob);
-                            observer.complete();
-                        });
-                    };
-                };
-            });
-        };
-    }
-}
-/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵfac = function NzDemoUploadTransformFileComponent_Factory(t) { return new (t || NzDemoUploadTransformFileComponent)(); };
-/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadTransformFileComponent, selectors: [["nz-demo-upload-transform-file"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzTransformFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadTransformFileComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTransformFile", ctx.transformFile);
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_2__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadTransformFileComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-transform-file',
-                template: `
-    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzTransformFile]="transformFile">
-      <button nz-button><i nz-icon nzType="upload"></i> Upload</button>
-    </nz-upload>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/upload-manually.ts":
-/*!************************************************!*\
-  !*** ./site/doc/app/upload/upload-manually.ts ***!
-  \************************************************/
-/*! exports provided: NzDemoUploadUploadManuallyComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadUploadManuallyComponent", function() { return NzDemoUploadUploadManuallyComponent; });
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/message */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-message.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoUploadUploadManuallyComponent {
-    constructor(http, msg) {
-        this.http = http;
-        this.msg = msg;
-        this.uploading = false;
-        this.fileList = [];
-        this.beforeUpload = (file) => {
-            this.fileList = this.fileList.concat(file);
-            return false;
-        };
-    }
-    handleUpload() {
-        const formData = new FormData();
-        // tslint:disable-next-line:no-any
-        this.fileList.forEach((file) => {
-            formData.append('files[]', file);
-        });
-        this.uploading = true;
-        // You can use any AJAX library you like
-        const req = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpRequest"]('POST', 'https://www.mocky.io/v2/5cc8019d300000980a055e76', formData, {
-        // reportProgress: true
-        });
-        this.http
-            .request(req)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["filter"])(e => e instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpResponse"]))
-            .subscribe(() => {
-            this.uploading = false;
-            this.fileList = [];
-            this.msg.success('upload successfully.');
-        }, () => {
-            this.uploading = false;
-            this.msg.error('upload failed.');
-        });
-    }
-}
-/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵfac = function NzDemoUploadUploadManuallyComponent_Factory(t) { return new (t || NzDemoUploadUploadManuallyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 6, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadManuallyComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.fileList = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](3, "Select File");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "button", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzDemoUploadUploadManuallyComponent_Template_button_click_4_listener() { return ctx.handleUpload(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzFileList", ctx.fileList)("nzBeforeUpload", ctx.beforeUpload);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzType", "primary")("nzLoading", ctx.uploading)("disabled", ctx.fileList.length == 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate1"](" ", ctx.uploading ? "Uploading" : "Start Upload", " ");
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_4__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDemoUploadUploadManuallyComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-upload-manually',
-                template: `
-    <nz-upload [(nzFileList)]="fileList" [nzBeforeUpload]="beforeUpload">
-      <button nz-button><i nz-icon nzType="upload"></i>Select File</button>
-    </nz-upload>
-    <button
-      nz-button
-      [nzType]="'primary'"
-      [nzLoading]="uploading"
-      (click)="handleUpload()"
-      [disabled]="fileList.length == 0"
-      style="margin-top: 16px"
-    >
-      {{ uploading ? 'Uploading' : 'Start Upload' }}
-    </button>
-  `
-            }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"] }, { type: ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"] }]; }, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/upload-with-aliyun-oss.ts":
-/*!*******************************************************!*\
-  !*** ./site/doc/app/upload/upload-with-aliyun-oss.ts ***!
-  \*******************************************************/
-/*! exports provided: NzDemoUploadUploadWithAliyunOssComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadUploadWithAliyunOssComponent", function() { return NzDemoUploadUploadWithAliyunOssComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-class NzDemoUploadUploadWithAliyunOssComponent {
-    constructor() {
-        this.files = [];
-        this.mockOSSData = {
-            dir: 'user-dir/',
-            expire: '1577811661',
-            host: '//www.mocky.io/v2/5cc8019d300000980a055e76',
-            accessId: 'c2hhb2RhaG9uZw==',
-            policy: 'eGl4aWhhaGFrdWt1ZGFkYQ==',
-            signature: 'ZGFob25nc2hhbw=='
-        };
-        this.transformFile = (file) => {
-            const suffix = file.name.slice(file.name.lastIndexOf('.'));
-            const filename = Date.now() + suffix;
-            file.url = this.mockOSSData.dir + filename;
-            return file;
-        };
-        this.getExtraData = (file) => {
-            const { accessId, policy, signature } = this.mockOSSData;
-            return {
-                key: file.url,
-                OSSAccessKeyId: accessId,
-                policy: policy,
-                Signature: signature
-            };
-        };
-    }
-    onChange(e) {
-        console.log('Aliyun OSS:', e.fileList);
-    }
-}
-/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵfac = function NzDemoUploadUploadWithAliyunOssComponent_Factory(t) { return new (t || NzDemoUploadUploadWithAliyunOssComponent)(); };
-/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadWithAliyunOssComponent, selectors: [["nz-demo-upload-upload-with-aliyun-oss"]], decls: 5, vars: 4, consts: [["nzName", "file", 3, "nzFileList", "nzTransformFile", "nzData", "nzAction", "nzFileListChange", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadUploadWithAliyunOssComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.files = $event; })("nzChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.onChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Photos: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Click to Upload");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.files)("nzTransformFile", ctx.transformFile)("nzData", ctx.getExtraData)("nzAction", ctx.mockOSSData.host);
-    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadUploadWithAliyunOssComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-upload-upload-with-aliyun-oss',
-                template: `
-    <nz-upload
-      nzName="file"
-      [(nzFileList)]="files"
-      [nzTransformFile]="transformFile"
-      [nzData]="getExtraData"
-      [nzAction]="mockOSSData.host"
-      (nzChange)="onChange($event)"
-    >
-      Photos: <button nz-button><i nz-icon nzType="upload"></i> Click to Upload</button>
-    </nz-upload>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/upload/zh.component.ts":
+/***/ "vXy3":
 /*!*********************************************!*\
   !*** ./site/doc/app/upload/zh.component.ts ***!
   \*********************************************/
@@ -2623,26 +2548,26 @@ class NzDemoUploadUploadWithAliyunOssComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadZhComponent", function() { return NzDemoUploadZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/upload/basic.ts");
-/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./default-file-list */ "./site/doc/app/upload/default-file-list.ts");
-/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./file-list */ "./site/doc/app/upload/file-list.ts");
-/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./directory */ "./site/doc/app/upload/directory.ts");
-/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./picture-style */ "./site/doc/app/upload/picture-style.ts");
-/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "./site/doc/app/upload/transform-file.ts");
-/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./avatar */ "./site/doc/app/upload/avatar.ts");
-/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./picture-card */ "./site/doc/app/upload/picture-card.ts");
-/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./drag */ "./site/doc/app/upload/drag.ts");
-/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./upload-manually */ "./site/doc/app/upload/upload-manually.ts");
-/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./preview-file */ "./site/doc/app/upload/preview-file.ts");
-/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "./site/doc/app/upload/upload-with-aliyun-oss.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "SgSt");
+/* harmony import */ var _default_file_list__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./default-file-list */ "yd/v");
+/* harmony import */ var _file_list__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./file-list */ "qkCr");
+/* harmony import */ var _directory__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./directory */ "1nAl");
+/* harmony import */ var _picture_style__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./picture-style */ "2j6m");
+/* harmony import */ var _transform_file__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./transform-file */ "5kwj");
+/* harmony import */ var _avatar__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./avatar */ "7PVW");
+/* harmony import */ var _picture_card__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./picture-card */ "rz7R");
+/* harmony import */ var _drag__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./drag */ "95cy");
+/* harmony import */ var _upload_manually__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./upload-manually */ "R1lh");
+/* harmony import */ var _preview_file__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./preview-file */ "MjwC");
+/* harmony import */ var _upload_with_aliyun_oss__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./upload-with-aliyun-oss */ "YGFL");
 
 
 
@@ -2689,7 +2614,7 @@ class NzDemoUploadZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 778, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "\u70B9\u51FB\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "\u7528\u6237\u5934\u50CF"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "\u7167\u7247\u5899"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "\u62D6\u62FD\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "\u624B\u52A8\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "\u963F\u91CC\u4E91 OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u70B9\u51FB\u4E0A\u4F20", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL"], ["nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7528\u6237\u5934\u50CF", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7167\u7247\u5899", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u62D6\u62FD\u4E0A\u4F20", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u624B\u52A8\u4E0A\u4F20", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u963F\u91CC\u4E91 OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept"], ["href", "https://caniuse.com/#feat=input-file-directory"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 778, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "\u70B9\u51FB\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "\u7528\u6237\u5934\u50CF"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "\u7167\u7247\u5899"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "\u62D6\u62FD\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "\u624B\u52A8\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "\u963F\u91CC\u4E91 OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u70B9\u51FB\u4E0A\u4F20", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL", "target", "_blank"], ["nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7528\u6237\u5934\u50CF", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7167\u7247\u5899", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u62D6\u62FD\u4E0A\u4F20", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u624B\u52A8\u4E0A\u4F20", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u963F\u91CC\u4E91 OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki", "target", "_blank"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept", "target", "_blank"], ["href", "https://caniuse.com/#feat=input-file-directory", "target", "_blank"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -3973,6 +3898,81 @@ class NzDemoUploadZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "yd/v":
+/*!**************************************************!*\
+  !*** ./site/doc/app/upload/default-file-list.ts ***!
+  \**************************************************/
+/*! exports provided: NzDemoUploadDefaultFileListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoUploadDefaultFileListComponent", function() { return NzDemoUploadDefaultFileListComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/upload */ "4PsB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+class NzDemoUploadDefaultFileListComponent {
+    constructor() {
+        this.fileList = [
+            {
+                uid: '1',
+                name: 'xxx.png',
+                status: 'done',
+                response: 'Server Error 500',
+                url: 'http://www.baidu.com/xxx.png'
+            },
+            {
+                uid: '2',
+                name: 'yyy.png',
+                status: 'done',
+                url: 'http://www.baidu.com/yyy.png'
+            },
+            {
+                uid: '3',
+                name: 'zzz.png',
+                status: 'error',
+                response: 'Server Error 500',
+                url: 'http://www.baidu.com/zzz.png'
+            }
+        ];
+    }
+}
+/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵfac = function NzDemoUploadDefaultFileListComponent_Factory(t) { return new (t || NzDemoUploadDefaultFileListComponent)(); };
+/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Upload");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFileList", ctx.fileList);
+    } }, directives: [ng_zorro_antd_upload__WEBPACK_IMPORTED_MODULE_1__["NzUploadComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoUploadDefaultFileListComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-upload-default-file-list',
+                template: `
+    <nz-upload nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76" [nzFileList]="fileList">
+      <button nz-button><i nz-icon nzType="upload"></i>Upload</button>
+    </nz-upload>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

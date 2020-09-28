@@ -1,1054 +1,7 @@
 exports.ids = ["carousel-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js":
-/*!*****************************************************************!*\
-  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js ***!
-  \*****************************************************************/
-/*! exports provided: NZ_CAROUSEL_CUSTOM_STRATEGIES, NzCarouselBaseStrategy, NzCarouselComponent, NzCarouselContentDirective, NzCarouselModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NZ_CAROUSEL_CUSTOM_STRATEGIES", function() { return NZ_CAROUSEL_CUSTOM_STRATEGIES; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselBaseStrategy", function() { return NzCarouselBaseStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselComponent", function() { return NzCarouselComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselContentDirective", function() { return NzCarouselContentDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselModule", function() { return NzCarouselModule; });
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/platform.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/keycodes */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/keycodes.js");
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
-/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-services.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @fileoverview added by tsickle
- * Generated from: carousel-content.directive.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-
-
-
-const _c0 = ["slickList"];
-const _c1 = ["slickTrack"];
-function NzCarouselComponent_ul_6_li_1_ng_template_1_Template(rf, ctx) { }
-const _c2 = function (a0) { return { $implicit: a0 }; };
-function NzCarouselComponent_ul_6_li_1_Template(rf, ctx) { if (rf & 1) {
-    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r9.goTo(i_r7); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const content_r6 = ctx.$implicit;
-    const i_r7 = ctx.index;
-    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-active", content_r6.isActive);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r5.nzDotRender || _r3)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](4, _c2, i_r7));
-} }
-function NzCarouselComponent_ul_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "ul", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_Template, 2, 6, "li", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-dots-top", ctx_r2.nzDotPosition === "top")("slick-dots-bottom", ctx_r2.nzDotPosition === "bottom")("slick-dots-left", ctx_r2.nzDotPosition === "left")("slick-dots-right", ctx_r2.nzDotPosition === "right");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r2.carouselContents);
-} }
-function NzCarouselComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const index_r11 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](index_r11 + 1);
-} }
-const _c3 = ["*"];
-class NzCarouselContentDirective {
-    /**
-     * @param {?} elementRef
-     * @param {?} renderer
-     */
-    constructor(elementRef, renderer) {
-        this.renderer = renderer;
-        this._active = false;
-        this.el = elementRef.nativeElement;
-        this.renderer.addClass(elementRef.nativeElement, 'slick-slide');
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    set isActive(value) {
-        this._active = value;
-        if (this.isActive) {
-            this.renderer.addClass(this.el, 'slick-active');
-        }
-        else {
-            this.renderer.removeClass(this.el, 'slick-active');
-        }
-    }
-    /**
-     * @return {?}
-     */
-    get isActive() {
-        return this._active;
-    }
-}
-NzCarouselContentDirective.ɵfac = function NzCarouselContentDirective_Factory(t) { return new (t || NzCarouselContentDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"])); };
-NzCarouselContentDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzCarouselContentDirective, selectors: [["", "nz-carousel-content", ""]], exportAs: ["nzCarouselContent"] });
-/** @nocollapse */
-NzCarouselContentDirective.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }
-];
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: strategies/base-strategy.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-/**
- * @abstract
- */
-class NzCarouselBaseStrategy {
-    /**
-     * @param {?} carouselComponent
-     * @param {?} cdr
-     * @param {?} renderer
-     */
-    constructor(carouselComponent, cdr, renderer) {
-        this.cdr = cdr;
-        this.renderer = renderer;
-        this.carouselComponent = carouselComponent;
-    }
-    /**
-     * @protected
-     * @return {?}
-     */
-    get maxIndex() {
-        return this.length - 1;
-    }
-    /**
-     * @protected
-     * @return {?}
-     */
-    get firstEl() {
-        return this.contents[0].el;
-    }
-    /**
-     * @protected
-     * @return {?}
-     */
-    get lastEl() {
-        return this.contents[this.maxIndex].el;
-    }
-    /**
-     * Initialize dragging sequences.
-     * @param {?} contents
-     * @return {?}
-     */
-    withCarouselContents(contents) {
-        // TODO: carousel and its contents should be separated.
-        /** @type {?} */
-        const carousel = (/** @type {?} */ (this.carouselComponent));
-        /** @type {?} */
-        const rect = carousel.el.getBoundingClientRect();
-        this.slickListEl = carousel.slickListEl;
-        this.slickTrackEl = carousel.slickTrackEl;
-        this.unitWidth = rect.width;
-        this.unitHeight = rect.height;
-        this.contents = contents ? contents.toArray() : [];
-        this.length = this.contents.length;
-    }
-    /**
-     * When user drag the carousel component.
-     * \@optional
-     * @param {?} _vector
-     * @return {?}
-     */
-    dragging(_vector) { }
-    /**
-     * Destroy a scroll strategy.
-     * @return {?}
-     */
-    dispose() { }
-    /**
-     * @protected
-     * @param {?} f
-     * @param {?} t
-     * @return {?}
-     */
-    getFromToInBoundary(f, t) {
-        /** @type {?} */
-        const length = this.maxIndex + 1;
-        return { from: (f + length) % length, to: (t + length) % length };
-    }
-}
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: strategies/opacity-strategy.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
-    /**
-     * @param {?} contents
-     * @return {?}
-     */
-    withCarouselContents(contents) {
-        super.withCarouselContents(contents);
-        if (this.contents) {
-            this.slickTrackEl.style.width = `${this.length * this.unitWidth}px`;
-            this.contents.forEach((/**
-             * @param {?} content
-             * @param {?} i
-             * @return {?}
-             */
-            (content, i) => {
-                this.renderer.setStyle(content.el, 'opacity', (/** @type {?} */ (this.carouselComponent)).activeIndex === i ? '1' : '0');
-                this.renderer.setStyle(content.el, 'position', 'relative');
-                this.renderer.setStyle(content.el, 'width', `${this.unitWidth}px`);
-                this.renderer.setStyle(content.el, 'left', `${-this.unitWidth * i}px`);
-                this.renderer.setStyle(content.el, 'transition', ['opacity 500ms ease 0s', 'visibility 500ms ease 0s']);
-            }));
-        }
-    }
-    /**
-     * @param {?} _f
-     * @param {?} _t
-     * @return {?}
-     */
-    switch(_f, _t) {
-        const { to: t } = this.getFromToInBoundary(_f, _t);
-        /** @type {?} */
-        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
-        this.contents.forEach((/**
-         * @param {?} content
-         * @param {?} i
-         * @return {?}
-         */
-        (content, i) => {
-            this.renderer.setStyle(content.el, 'opacity', t === i ? '1' : '0');
-        }));
-        setTimeout((/**
-         * @return {?}
-         */
-        () => {
-            complete$.next();
-            complete$.complete();
-        }), (/** @type {?} */ (this.carouselComponent)).nzTransitionSpeed);
-        return complete$;
-    }
-    /**
-     * @return {?}
-     */
-    dispose() {
-        this.contents.forEach((/**
-         * @param {?} content
-         * @return {?}
-         */
-        (content) => {
-            this.renderer.setStyle(content.el, 'transition', null);
-        }));
-        super.dispose();
-    }
-}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: strategies/transform-strategy.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
-    constructor() {
-        super(...arguments);
-        this.isDragging = false;
-        this.isTransitioning = false;
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    get vertical() {
-        return (/** @type {?} */ (this.carouselComponent)).vertical;
-    }
-    /**
-     * @return {?}
-     */
-    dispose() {
-        super.dispose();
-        this.renderer.setStyle(this.slickTrackEl, 'transform', null);
-    }
-    /**
-     * @param {?} contents
-     * @return {?}
-     */
-    withCarouselContents(contents) {
-        super.withCarouselContents(contents);
-        /** @type {?} */
-        const carousel = (/** @type {?} */ (this.carouselComponent));
-        /** @type {?} */
-        const activeIndex = carousel.activeIndex;
-        if (this.contents.length) {
-            this.renderer.setStyle(this.slickListEl, 'height', `${this.unitHeight}px`);
-            if (this.vertical) {
-                this.renderer.setStyle(this.slickTrackEl, 'width', `${this.unitWidth}px`);
-                this.renderer.setStyle(this.slickTrackEl, 'height', `${this.length * this.unitHeight}px`);
-                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-activeIndex * this.unitHeight}px, 0)`);
-            }
-            else {
-                this.renderer.setStyle(this.slickTrackEl, 'height', `${this.unitHeight}px`);
-                this.renderer.setStyle(this.slickTrackEl, 'width', `${this.length * this.unitWidth}px`);
-                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-activeIndex * this.unitWidth}px, 0, 0)`);
-            }
-            this.contents.forEach((/**
-             * @param {?} content
-             * @return {?}
-             */
-            (content) => {
-                this.renderer.setStyle(content.el, 'position', 'relative');
-                this.renderer.setStyle(content.el, 'width', `${this.unitWidth}px`);
-                this.renderer.setStyle(content.el, 'height', `${this.unitHeight}px`);
-            }));
-        }
-    }
-    /**
-     * @param {?} _f
-     * @param {?} _t
-     * @return {?}
-     */
-    switch(_f, _t) {
-        const { to: t } = this.getFromToInBoundary(_f, _t);
-        /** @type {?} */
-        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
-        this.renderer.setStyle(this.slickTrackEl, 'transition', `transform ${(/** @type {?} */ (this.carouselComponent)).nzTransitionSpeed}ms ease`);
-        if (this.vertical) {
-            this.verticalTransform(_f, _t);
-        }
-        else {
-            this.horizontalTransform(_f, _t);
-        }
-        this.isTransitioning = true;
-        this.isDragging = false;
-        setTimeout((/**
-         * @return {?}
-         */
-        () => {
-            this.renderer.setStyle(this.slickTrackEl, 'transition', null);
-            this.contents.forEach((/**
-             * @param {?} content
-             * @return {?}
-             */
-            (content) => {
-                this.renderer.setStyle(content.el, this.vertical ? 'top' : 'left', null);
-            }));
-            if (this.vertical) {
-                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-t * this.unitHeight}px, 0)`);
-            }
-            else {
-                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-t * this.unitWidth}px, 0, 0)`);
-            }
-            this.isTransitioning = false;
-            complete$.next();
-            complete$.complete();
-        }), (/** @type {?} */ (this.carouselComponent)).nzTransitionSpeed);
-        return complete$.asObservable();
-    }
-    /**
-     * @param {?} _vector
-     * @return {?}
-     */
-    dragging(_vector) {
-        if (this.isTransitioning) {
-            return;
-        }
-        /** @type {?} */
-        const activeIndex = (/** @type {?} */ (this.carouselComponent)).activeIndex;
-        if ((/** @type {?} */ (this.carouselComponent)).vertical) {
-            if (!this.isDragging && this.length > 2) {
-                if (activeIndex === this.maxIndex) {
-                    this.prepareVerticalContext(true);
-                }
-                else if (activeIndex === 0) {
-                    this.prepareVerticalContext(false);
-                }
-            }
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-activeIndex * this.unitHeight + _vector.x}px, 0)`);
-        }
-        else {
-            if (!this.isDragging && this.length > 2) {
-                if (activeIndex === this.maxIndex) {
-                    this.prepareHorizontalContext(true);
-                }
-                else if (activeIndex === 0) {
-                    this.prepareHorizontalContext(false);
-                }
-            }
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-activeIndex * this.unitWidth + _vector.x}px, 0, 0)`);
-        }
-        this.isDragging = true;
-    }
-    /**
-     * @private
-     * @param {?} _f
-     * @param {?} _t
-     * @return {?}
-     */
-    verticalTransform(_f, _t) {
-        const { from: f, to: t } = this.getFromToInBoundary(_f, _t);
-        /** @type {?} */
-        const needToAdjust = this.length > 2 && _t !== t;
-        if (needToAdjust) {
-            this.prepareVerticalContext(t < f);
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-_t * this.unitHeight}px, 0)`);
-        }
-        else {
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-t * this.unitHeight}px, 0`);
-        }
-    }
-    /**
-     * @private
-     * @param {?} _f
-     * @param {?} _t
-     * @return {?}
-     */
-    horizontalTransform(_f, _t) {
-        const { from: f, to: t } = this.getFromToInBoundary(_f, _t);
-        /** @type {?} */
-        const needToAdjust = this.length > 2 && _t !== t;
-        if (needToAdjust) {
-            this.prepareHorizontalContext(t < f);
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-_t * this.unitWidth}px, 0, 0)`);
-        }
-        else {
-            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-t * this.unitWidth}px, 0, 0`);
-        }
-    }
-    /**
-     * @private
-     * @param {?} lastToFirst
-     * @return {?}
-     */
-    prepareVerticalContext(lastToFirst) {
-        if (lastToFirst) {
-            this.renderer.setStyle(this.firstEl, 'top', `${this.length * this.unitHeight}px`);
-            this.renderer.setStyle(this.lastEl, 'top', null);
-        }
-        else {
-            this.renderer.setStyle(this.firstEl, 'top', null);
-            this.renderer.setStyle(this.lastEl, 'top', `${-this.unitHeight * this.length}px`);
-        }
-    }
-    /**
-     * @private
-     * @param {?} lastToFirst
-     * @return {?}
-     */
-    prepareHorizontalContext(lastToFirst) {
-        if (lastToFirst) {
-            this.renderer.setStyle(this.firstEl, 'left', `${this.length * this.unitWidth}px`);
-            this.renderer.setStyle(this.lastEl, 'left', null);
-        }
-        else {
-            this.renderer.setStyle(this.firstEl, 'left', null);
-            this.renderer.setStyle(this.lastEl, 'left', `${-this.unitWidth * this.length}px`);
-        }
-    }
-}
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: typings.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @record
- */
-function NzCarouselComponentAsSource() { }
-if (false) {}
-/**
- * @record
- */
-function NzCarouselStrategyRegistryItem() { }
-if (false) {}
-/** @type {?} */
-const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('nz-carousel-custom-strategies');
-/**
- * @record
- */
-function PointerVector() { }
-if (false) {}
-/**
- * @record
- */
-function FromToInterface() { }
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: carousel.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/** @type {?} */
-const NZ_CONFIG_COMPONENT_NAME = 'carousel';
-class NzCarouselComponent {
-    /**
-     * @param {?} elementRef
-     * @param {?} nzConfigService
-     * @param {?} renderer
-     * @param {?} cdr
-     * @param {?} platform
-     * @param {?} resizeService
-     * @param {?} nzDragService
-     * @param {?} customStrategies
-     */
-    constructor(elementRef, nzConfigService, renderer, cdr, platform, resizeService, nzDragService, customStrategies) {
-        this.nzConfigService = nzConfigService;
-        this.renderer = renderer;
-        this.cdr = cdr;
-        this.platform = platform;
-        this.resizeService = resizeService;
-        this.nzDragService = nzDragService;
-        this.customStrategies = customStrategies;
-        this.nzEffect = 'scrollx';
-        this.nzEnableSwipe = true;
-        this.nzDots = true;
-        this.nzAutoPlay = false;
-        this.nzAutoPlaySpeed = 3000;
-        this.nzTransitionSpeed = 500;
-        this._dotPosition = 'bottom';
-        this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.activeIndex = 0;
-        this.vertical = false;
-        this.transitionInProgress = null;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
-        this.gestureRect = null;
-        this.pointerDelta = null;
-        this.isTransiting = false;
-        this.isDragging = false;
-        /**
-         * Drag carousel.
-         */
-        this.pointerDown = (/**
-         * @param {?} event
-         * @return {?}
-         */
-        (event) => {
-            if (!this.isDragging && !this.isTransiting && this.nzEnableSwipe) {
-                this.clearScheduledTransition();
-                this.gestureRect = this.slickListEl.getBoundingClientRect();
-                this.nzDragService.requestDraggingSequence(event).subscribe((/**
-                 * @param {?} delta
-                 * @return {?}
-                 */
-                delta => {
-                    var _a;
-                    this.pointerDelta = delta;
-                    this.isDragging = true;
-                    (_a = this.strategy) === null || _a === void 0 ? void 0 : _a.dragging(this.pointerDelta);
-                }), (/**
-                 * @return {?}
-                 */
-                () => { }), (/**
-                 * @return {?}
-                 */
-                () => {
-                    if (this.nzEnableSwipe && this.isDragging) {
-                        /** @type {?} */
-                        const xDelta = this.pointerDelta ? this.pointerDelta.x : 0;
-                        // Switch to another slide if delta is bigger than third of the width.
-                        if (Math.abs(xDelta) > (/** @type {?} */ (this.gestureRect)).width / 3) {
-                            this.goTo(xDelta > 0 ? this.activeIndex - 1 : this.activeIndex + 1);
-                        }
-                        else {
-                            this.goTo(this.activeIndex);
-                        }
-                        this.gestureRect = null;
-                        this.pointerDelta = null;
-                    }
-                    this.isDragging = false;
-                }));
-            }
-        });
-        this.nzDotPosition = 'bottom';
-        this.renderer.addClass(elementRef.nativeElement, 'ant-carousel');
-        this.el = elementRef.nativeElement;
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    set nzDotPosition(value) {
-        this._dotPosition = value;
-        if (value === 'left' || value === 'right') {
-            this.vertical = true;
-        }
-        else {
-            this.vertical = false;
-        }
-    }
-    /**
-     * @return {?}
-     */
-    get nzDotPosition() {
-        return this._dotPosition;
-    }
-    /**
-     * @return {?}
-     */
-    ngAfterContentInit() {
-        this.markContentActive(0);
-    }
-    /**
-     * @return {?}
-     */
-    ngAfterViewInit() {
-        if (!this.platform.isBrowser) {
-            return;
-        }
-        this.slickListEl = (/** @type {?} */ (this.slickList)).nativeElement;
-        this.slickTrackEl = (/** @type {?} */ (this.slickTrack)).nativeElement;
-        this.carouselContents.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
-            this.markContentActive(0);
-            this.syncStrategy();
-        }));
-        this.resizeService
-            .subscribe()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$))
-            .subscribe((/**
-         * @return {?}
-         */
-        () => {
-            this.syncStrategy();
-        }));
-        this.switchStrategy();
-        this.markContentActive(0);
-        this.syncStrategy();
-        // If embedded in an entry component, it may do initial render at a inappropriate time.
-        // ngZone.onStable won't do this trick
-        Promise.resolve().then((/**
-         * @return {?}
-         */
-        () => {
-            this.syncStrategy();
-        }));
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    ngOnChanges(changes) {
-        const { nzEffect, nzDotPosition } = changes;
-        if (nzEffect && !nzEffect.isFirstChange()) {
-            this.switchStrategy();
-            this.markContentActive(0);
-            this.syncStrategy();
-        }
-        if (nzDotPosition && !nzDotPosition.isFirstChange()) {
-            this.switchStrategy();
-            this.markContentActive(0);
-            this.syncStrategy();
-        }
-        if (!this.nzAutoPlay || !this.nzAutoPlaySpeed) {
-            this.clearScheduledTransition();
-        }
-        else {
-            this.scheduleNextTransition();
-        }
-    }
-    /**
-     * @return {?}
-     */
-    ngOnDestroy() {
-        this.clearScheduledTransition();
-        if (this.strategy) {
-            this.strategy.dispose();
-        }
-        this.destroy$.next();
-        this.destroy$.complete();
-    }
-    /**
-     * @param {?} e
-     * @return {?}
-     */
-    onKeyDown(e) {
-        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["LEFT_ARROW"]) {
-            e.preventDefault();
-            this.pre();
-        }
-        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["RIGHT_ARROW"]) {
-            this.next();
-            e.preventDefault();
-        }
-    }
-    /**
-     * @return {?}
-     */
-    next() {
-        this.goTo(this.activeIndex + 1);
-    }
-    /**
-     * @return {?}
-     */
-    pre() {
-        this.goTo(this.activeIndex - 1);
-    }
-    /**
-     * @param {?} index
-     * @return {?}
-     */
-    goTo(index) {
-        if (this.carouselContents && this.carouselContents.length && !this.isTransiting) {
-            /** @type {?} */
-            const length = this.carouselContents.length;
-            /** @type {?} */
-            const from = this.activeIndex;
-            /** @type {?} */
-            const to = (index + length) % length;
-            this.isTransiting = true;
-            this.nzBeforeChange.emit({ from, to });
-            (/** @type {?} */ (this.strategy)).switch(this.activeIndex, index).subscribe((/**
-             * @return {?}
-             */
-            () => {
-                this.scheduleNextTransition();
-                this.nzAfterChange.emit(index);
-                this.isTransiting = false;
-            }));
-            this.markContentActive(to);
-            this.cdr.markForCheck();
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    switchStrategy() {
-        if (this.strategy) {
-            this.strategy.dispose();
-        }
-        // Load custom strategies first.
-        /** @type {?} */
-        const customStrategy = this.customStrategies ? this.customStrategies.find((/**
-         * @param {?} s
-         * @return {?}
-         */
-        s => s.name === this.nzEffect)) : null;
-        if (customStrategy) {
-            this.strategy = new ((/** @type {?} */ (customStrategy.strategy)))(this, this.cdr, this.renderer);
-            return;
-        }
-        this.strategy =
-            this.nzEffect === 'scrollx'
-                ? new NzCarouselTransformStrategy(this, this.cdr, this.renderer)
-                : new NzCarouselOpacityStrategy(this, this.cdr, this.renderer);
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    scheduleNextTransition() {
-        this.clearScheduledTransition();
-        if (this.nzAutoPlay && this.nzAutoPlaySpeed > 0 && this.platform.isBrowser) {
-            this.transitionInProgress = setTimeout((/**
-             * @return {?}
-             */
-            () => {
-                this.goTo(this.activeIndex + 1);
-            }), this.nzAutoPlaySpeed);
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    clearScheduledTransition() {
-        if (this.transitionInProgress) {
-            clearTimeout(this.transitionInProgress);
-            this.transitionInProgress = null;
-        }
-    }
-    /**
-     * @private
-     * @param {?} index
-     * @return {?}
-     */
-    markContentActive(index) {
-        this.activeIndex = index;
-        if (this.carouselContents) {
-            this.carouselContents.forEach((/**
-             * @param {?} slide
-             * @param {?} i
-             * @return {?}
-             */
-            (slide, i) => {
-                slide.isActive = index === i;
-            }));
-        }
-        this.cdr.markForCheck();
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    syncStrategy() {
-        if (this.strategy) {
-            this.strategy.withCarouselContents(this.carouselContents);
-        }
-    }
-}
-NzCarouselComponent.ɵfac = function NzCarouselComponent_Factory(t) { return new (t || NzCarouselComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NZ_CAROUSEL_CUSTOM_STRATEGIES, 8)); };
-NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzCarouselComponent, selectors: [["nz-carousel"]], contentQueries: function NzCarouselComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzCarouselContentDirective, false);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.carouselContents = _t);
-    } }, viewQuery: function NzCarouselComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c0, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c1, true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickList = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
-    } }, hostVars: 2, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical);
-    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1, 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("keydown", function NzCarouselComponent_Template_div_keydown_1_listener($event) { return ctx.onKeyDown($event); })("mousedown", function NzCarouselComponent_Template_div_mousedown_1_listener($event) { return ctx.pointerDown($event); })("touchstart", function NzCarouselComponent_Template_div_touchstart_1_listener($event) { return ctx.pointerDown($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, NzCarouselComponent_ul_6_Template, 2, 9, "ul", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, NzCarouselComponent_ng_template_7_Template, 2, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-vertical", ctx.nzDotPosition === "left" || ctx.nzDotPosition === "right");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzDots);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
-NzCarouselComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] },
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] },
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] },
-    { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [NZ_CAROUSEL_CUSTOM_STRATEGIES,] }] }
-];
-NzCarouselComponent.propDecorators = {
-    carouselContents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"], args: [NzCarouselContentDirective,] }],
-    slickList: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickList', { static: false },] }],
-    slickTrack: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickTrack', { static: false },] }],
-    nzDotRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzEffect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzEnableSwipe: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzAutoPlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzAutoPlaySpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzTransitionSpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDotPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzBeforeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
-};
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String)
-], NzCarouselComponent.prototype, "nzEffect", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
-], NzCarouselComponent.prototype, "nzEnableSwipe", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
-], NzCarouselComponent.prototype, "nzDots", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
-], NzCarouselComponent.prototype, "nzAutoPlay", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Number)
-], NzCarouselComponent.prototype, "nzAutoPlaySpeed", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Object)
-], NzCarouselComponent.prototype, "nzTransitionSpeed", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:paramtypes", [String])
-], NzCarouselComponent.prototype, "nzDotPosition", null);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselContentDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
-        args: [{
-                selector: '[nz-carousel-content]',
-                exportAs: 'nzCarouselContent'
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
-        args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
-                selector: 'nz-carousel',
-                exportAs: 'nzCarousel',
-                preserveWhitespaces: false,
-                template: `
-    <div class="slick-initialized slick-slider" [class.slick-vertical]="nzDotPosition === 'left' || nzDotPosition === 'right'">
-      <div
-        #slickList
-        class="slick-list"
-        tabindex="-1"
-        (keydown)="onKeyDown($event)"
-        (mousedown)="pointerDown($event)"
-        (touchstart)="pointerDown($event)"
-      >
-        <!-- Render carousel items. -->
-        <div class="slick-track" #slickTrack>
-          <ng-content></ng-content>
-        </div>
-      </div>
-      <!-- Render dots. -->
-      <ul
-        class="slick-dots"
-        *ngIf="nzDots"
-        [class.slick-dots-top]="nzDotPosition === 'top'"
-        [class.slick-dots-bottom]="nzDotPosition === 'bottom'"
-        [class.slick-dots-left]="nzDotPosition === 'left'"
-        [class.slick-dots-right]="nzDotPosition === 'right'"
-      >
-        <li *ngFor="let content of carouselContents; let i = index" [class.slick-active]="content.isActive" (click)="goTo(i)">
-          <ng-template [ngTemplateOutlet]="nzDotRender || renderDotTemplate" [ngTemplateOutletContext]="{ $implicit: i }"> </ng-template>
-        </li>
-      </ul>
-    </div>
-
-    <ng-template #renderDotTemplate let-index>
-      <button>{{ index + 1 }}</button>
-    </ng-template>
-  `,
-                host: {
-                    '[class.ant-carousel-vertical]': 'vertical'
-                }
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] }, { type: Array, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
-            }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
-                args: [NZ_CAROUSEL_CUSTOM_STRATEGIES]
-            }] }]; }, { nzEffect: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzEnableSwipe: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzDots: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzAutoPlay: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzAutoPlaySpeed: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzTransitionSpeed: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], nzBeforeChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], nzAfterChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
-        }], nzDotPosition: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }], carouselContents: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"],
-            args: [NzCarouselContentDirective]
-        }], slickList: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
-            args: ['slickList', { static: false }]
-        }], slickTrack: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
-            args: ['slickTrack', { static: false }]
-        }], nzDotRender: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
-        }] }); })();
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: carousel.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCarouselModule {
-}
-NzCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzCarouselModule });
-NzCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzCarouselModule_Factory(t) { return new (t || NzCarouselModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzCarouselModule, { declarations: function () { return [NzCarouselComponent,
-        NzCarouselContentDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzCarouselComponent,
-        NzCarouselContentDirective]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
-        args: [{
-                declarations: [NzCarouselComponent, NzCarouselContentDirective],
-                exports: [NzCarouselComponent, NzCarouselContentDirective],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]
-            }]
-    }], null, null); })();
-
-/**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-carousel.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-//# sourceMappingURL=ng-zorro-antd-carousel.js.map
-
-/***/ }),
-
-/***/ "./site/doc/app/carousel/autoplay.ts":
+/***/ "Euqd":
 /*!*******************************************!*\
   !*** ./site/doc/app/carousel/autoplay.ts ***!
   \*******************************************/
@@ -1058,9 +11,9 @@ NzCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineI
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselAutoplayComponent", function() { return NzDemoCarouselAutoplayComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -1124,85 +77,86 @@ class NzDemoCarouselAutoplayComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/basic.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/carousel/basic.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoCarouselBasicComponent */
+/***/ "G7CS":
+/*!***********************************************!*\
+  !*** ./site/doc/app/carousel/index.module.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoCarouselModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselBasicComponent", function() { return NzDemoCarouselBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselModule", function() { return NzDemoCarouselModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "YDMJ");
+/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./autoplay */ "Euqd");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "QGr5");
+/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fade */ "Xw4y");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./position */ "cpoo");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./zh.component */ "ysXv");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./en.component */ "LTwy");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
 
 
 
 
-function NzDemoCarouselBasicComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const index_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](index_r1);
-} }
-class NzDemoCarouselBasicComponent {
-    constructor() {
-        this.array = [1, 2, 3, 4];
-        this.effect = 'scrollx';
-    }
+
+
+
+
+
+
+
+
+
+
+class NzDemoCarouselModule {
 }
-/** @nocollapse */ NzDemoCarouselBasicComponent.ɵfac = function NzDemoCarouselBasicComponent_Factory(t) { return new (t || NzDemoCarouselBasicComponent)(); };
-/** @nocollapse */ NzDemoCarouselBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselBasicComponent, selectors: [["nz-demo-carousel-basic"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-carousel", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCarouselBasicComponent_div_1_Template, 3, 1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzEffect", ctx.effect);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
-    } }, directives: [ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__["NzCarouselComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__["NzCarouselContentDirective"]], styles: ["[nz-carousel-content][_ngcontent-%COMP%] {\n        text-align: center;\n        height: 160px;\n        line-height: 160px;\n        background: #364d79;\n        color: #fff;\n        overflow: hidden;\n      }\n\n      h3[_ngcontent-%COMP%] {\n        color: #fff;\n        margin-bottom: 0;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+/** @nocollapse */ NzDemoCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCarouselModule });
+/** @nocollapse */ NzDemoCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCarouselModule_Factory(t) { return new (t || NzDemoCarouselModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoCarouselModule, { declarations: [_autoplay__WEBPACK_IMPORTED_MODULE_4__["NzDemoCarouselAutoplayComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoCarouselBasicComponent"],
+        _fade__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselFadeComponent"],
+        _position__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselPositionComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_10__["NzCarouselModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_11__["NzRadioModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                selector: 'nz-demo-carousel-basic',
-                template: `
-    <nz-carousel [nzEffect]="effect">
-      <div nz-carousel-content *ngFor="let index of array">
-        <h3>{{ index }}</h3>
-      </div>
-    </nz-carousel>
-  `,
-                styles: [
-                    `
-      [nz-carousel-content] {
-        text-align: center;
-        height: 160px;
-        line-height: 160px;
-        background: #364d79;
-        color: #fff;
-        overflow: hidden;
-      }
-
-      h3 {
-        color: #fff;
-        margin-bottom: 0;
-      }
-    `
-                ]
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _autoplay__WEBPACK_IMPORTED_MODULE_4__["NzDemoCarouselAutoplayComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoCarouselBasicComponent"],
+                    _fade__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselFadeComponent"],
+                    _position__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselPositionComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"],
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/en.component.ts":
+/***/ "LTwy":
 /*!***********************************************!*\
   !*** ./site/doc/app/carousel/en.component.ts ***!
   \***********************************************/
@@ -1212,16 +166,16 @@ class NzDemoCarouselBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselEnComponent", function() { return NzDemoCarouselEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/carousel/basic.ts");
-/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fade */ "./site/doc/app/carousel/fade.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./position */ "./site/doc/app/carousel/position.ts");
-/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./autoplay */ "./site/doc/app/carousel/autoplay.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "QGr5");
+/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fade */ "Xw4y");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./position */ "cpoo");
+/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./autoplay */ "Euqd");
 
 
 
@@ -1788,7 +742,85 @@ class NzDemoCarouselEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/fade.ts":
+/***/ "QGr5":
+/*!****************************************!*\
+  !*** ./site/doc/app/carousel/basic.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoCarouselBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselBasicComponent", function() { return NzDemoCarouselBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+function NzDemoCarouselBasicComponent_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h3");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const index_r1 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](index_r1);
+} }
+class NzDemoCarouselBasicComponent {
+    constructor() {
+        this.array = [1, 2, 3, 4];
+        this.effect = 'scrollx';
+    }
+}
+/** @nocollapse */ NzDemoCarouselBasicComponent.ɵfac = function NzDemoCarouselBasicComponent_Factory(t) { return new (t || NzDemoCarouselBasicComponent)(); };
+/** @nocollapse */ NzDemoCarouselBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselBasicComponent, selectors: [["nz-demo-carousel-basic"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-carousel", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCarouselBasicComponent_div_1_Template, 3, 1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzEffect", ctx.effect);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
+    } }, directives: [ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__["NzCarouselComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__["NzCarouselContentDirective"]], styles: ["[nz-carousel-content][_ngcontent-%COMP%] {\n        text-align: center;\n        height: 160px;\n        line-height: 160px;\n        background: #364d79;\n        color: #fff;\n        overflow: hidden;\n      }\n\n      h3[_ngcontent-%COMP%] {\n        color: #fff;\n        margin-bottom: 0;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-carousel-basic',
+                template: `
+    <nz-carousel [nzEffect]="effect">
+      <div nz-carousel-content *ngFor="let index of array">
+        <h3>{{ index }}</h3>
+      </div>
+    </nz-carousel>
+  `,
+                styles: [
+                    `
+      [nz-carousel-content] {
+        text-align: center;
+        height: 160px;
+        line-height: 160px;
+        background: #364d79;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      h3 {
+        color: #fff;
+        margin-bottom: 0;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Xw4y":
 /*!***************************************!*\
   !*** ./site/doc/app/carousel/fade.ts ***!
   \***************************************/
@@ -1798,9 +830,9 @@ class NzDemoCarouselEnComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselFadeComponent", function() { return NzDemoCarouselFadeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -1865,86 +897,7 @@ class NzDemoCarouselFadeComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/index.module.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/carousel/index.module.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoCarouselModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselModule", function() { return NzDemoCarouselModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/carousel/module.ts");
-/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./autoplay */ "./site/doc/app/carousel/autoplay.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "./site/doc/app/carousel/basic.ts");
-/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fade */ "./site/doc/app/carousel/fade.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./position */ "./site/doc/app/carousel/position.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/carousel/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/carousel/en.component.ts");
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoCarouselModule {
-}
-/** @nocollapse */ NzDemoCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCarouselModule });
-/** @nocollapse */ NzDemoCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCarouselModule_Factory(t) { return new (t || NzDemoCarouselModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoCarouselModule, { declarations: [_autoplay__WEBPACK_IMPORTED_MODULE_4__["NzDemoCarouselAutoplayComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoCarouselBasicComponent"],
-        _fade__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselFadeComponent"],
-        _position__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselPositionComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_10__["NzCarouselModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_11__["NzRadioModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCarouselModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _autoplay__WEBPACK_IMPORTED_MODULE_4__["NzDemoCarouselAutoplayComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoCarouselBasicComponent"],
-                    _fade__WEBPACK_IMPORTED_MODULE_6__["NzDemoCarouselFadeComponent"],
-                    _position__WEBPACK_IMPORTED_MODULE_7__["NzDemoCarouselPositionComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCarouselZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCarouselEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/carousel/module.ts":
+/***/ "YDMJ":
 /*!*****************************************!*\
   !*** ./site/doc/app/carousel/module.ts ***!
   \*****************************************/
@@ -1954,8 +907,8 @@ class NzDemoCarouselModule {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
 
 
 const moduleList = [ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_0__["NzCarouselModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__["NzRadioModule"]];
@@ -1963,7 +916,7 @@ const moduleList = [ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_0__["NzCarou
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/position.ts":
+/***/ "cpoo":
 /*!*******************************************!*\
   !*** ./site/doc/app/carousel/position.ts ***!
   \*******************************************/
@@ -1973,11 +926,11 @@ const moduleList = [ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_0__["NzCarou
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselPositionComponent", function() { return NzDemoCarouselPositionComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/carousel */ "o09u");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -2072,7 +1025,792 @@ class NzDemoCarouselPositionComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/carousel/zh.component.ts":
+/***/ "o09u":
+/*!*****************************************************************!*\
+  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-carousel.js ***!
+  \*****************************************************************/
+/*! exports provided: NZ_CAROUSEL_CUSTOM_STRATEGIES, NzCarouselBaseStrategy, NzCarouselComponent, NzCarouselContentDirective, NzCarouselModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NZ_CAROUSEL_CUSTOM_STRATEGIES", function() { return NZ_CAROUSEL_CUSTOM_STRATEGIES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselBaseStrategy", function() { return NzCarouselBaseStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselComponent", function() { return NzCarouselComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselContentDirective", function() { return NzCarouselContentDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselModule", function() { return NzCarouselModule; });
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
+/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+
+
+
+
+
+const _c0 = ["slickList"];
+const _c1 = ["slickTrack"];
+function NzCarouselComponent_ul_6_li_1_ng_template_1_Template(rf, ctx) { }
+const _c2 = function (a0) { return { $implicit: a0 }; };
+function NzCarouselComponent_ul_6_li_1_Template(rf, ctx) { if (rf & 1) {
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r9.goTo(i_r7); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const content_r6 = ctx.$implicit;
+    const i_r7 = ctx.index;
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-active", content_r6.isActive);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r5.nzDotRender || _r3)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](4, _c2, i_r7));
+} }
+function NzCarouselComponent_ul_6_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "ul", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_Template, 2, 6, "li", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-dots-top", ctx_r2.nzDotPosition === "top")("slick-dots-bottom", ctx_r2.nzDotPosition === "bottom")("slick-dots-left", ctx_r2.nzDotPosition === "left")("slick-dots-right", ctx_r2.nzDotPosition === "right");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r2.carouselContents);
+} }
+function NzCarouselComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const index_r11 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](index_r11 + 1);
+} }
+const _c3 = ["*"];
+class NzCarouselContentDirective {
+    constructor(elementRef, renderer) {
+        this.renderer = renderer;
+        this._active = false;
+        this.el = elementRef.nativeElement;
+        this.renderer.addClass(elementRef.nativeElement, 'slick-slide');
+    }
+    set isActive(value) {
+        this._active = value;
+        if (this.isActive) {
+            this.renderer.addClass(this.el, 'slick-active');
+        }
+        else {
+            this.renderer.removeClass(this.el, 'slick-active');
+        }
+    }
+    get isActive() {
+        return this._active;
+    }
+}
+/** @nocollapse */
+NzCarouselContentDirective.ɵfac = function NzCarouselContentDirective_Factory(t) { return new (t || NzCarouselContentDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"])); };
+/** @nocollapse */
+NzCarouselContentDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzCarouselContentDirective, selectors: [["", "nz-carousel-content", ""]], exportAs: ["nzCarouselContent"] });
+NzCarouselContentDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }
+];
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCarouselBaseStrategy {
+    constructor(carouselComponent, cdr, renderer, platform) {
+        this.cdr = cdr;
+        this.renderer = renderer;
+        this.platform = platform;
+        this.carouselComponent = carouselComponent;
+    }
+    get maxIndex() {
+        return this.length - 1;
+    }
+    get firstEl() {
+        return this.contents[0].el;
+    }
+    get lastEl() {
+        return this.contents[this.maxIndex].el;
+    }
+    /**
+     * Initialize dragging sequences.
+     * @param contents
+     */
+    withCarouselContents(contents) {
+        const carousel = this.carouselComponent;
+        this.slickListEl = carousel.slickListEl;
+        this.slickTrackEl = carousel.slickTrackEl;
+        this.contents = (contents === null || contents === void 0 ? void 0 : contents.toArray()) || [];
+        this.length = this.contents.length;
+        if (this.platform.isBrowser) {
+            const rect = carousel.el.getBoundingClientRect();
+            this.unitWidth = rect.width;
+            this.unitHeight = rect.height;
+        }
+        else {
+            // Since we cannot call getBoundingClientRect in server, we just hide all items except for the first one.
+            contents === null || contents === void 0 ? void 0 : contents.forEach((content, index) => {
+                if (index === 0) {
+                    this.renderer.setStyle(content.el, 'width', '100%');
+                }
+                else {
+                    this.renderer.setStyle(content.el, 'display', 'none');
+                }
+            });
+        }
+    }
+    /**
+     * When user drag the carousel component.
+     * @optional
+     */
+    dragging(_vector) { }
+    /**
+     * Destroy a scroll strategy.
+     */
+    dispose() { }
+    getFromToInBoundary(f, t) {
+        const length = this.maxIndex + 1;
+        return { from: (f + length) % length, to: (t + length) % length };
+    }
+}
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
+    withCarouselContents(contents) {
+        super.withCarouselContents(contents);
+        if (this.contents) {
+            this.slickTrackEl.style.width = `${this.length * this.unitWidth}px`;
+            this.contents.forEach((content, i) => {
+                this.renderer.setStyle(content.el, 'opacity', this.carouselComponent.activeIndex === i ? '1' : '0');
+                this.renderer.setStyle(content.el, 'position', 'relative');
+                this.renderer.setStyle(content.el, 'width', `${this.unitWidth}px`);
+                this.renderer.setStyle(content.el, 'left', `${-this.unitWidth * i}px`);
+                this.renderer.setStyle(content.el, 'transition', ['opacity 500ms ease 0s', 'visibility 500ms ease 0s']);
+            });
+        }
+    }
+    switch(_f, _t) {
+        const { to: t } = this.getFromToInBoundary(_f, _t);
+        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        this.contents.forEach((content, i) => {
+            this.renderer.setStyle(content.el, 'opacity', t === i ? '1' : '0');
+        });
+        setTimeout(() => {
+            complete$.next();
+            complete$.complete();
+        }, this.carouselComponent.nzTransitionSpeed);
+        return complete$;
+    }
+    dispose() {
+        this.contents.forEach((content) => {
+            this.renderer.setStyle(content.el, 'transition', null);
+        });
+        super.dispose();
+    }
+}
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
+    constructor() {
+        super(...arguments);
+        this.isDragging = false;
+        this.isTransitioning = false;
+    }
+    get vertical() {
+        return this.carouselComponent.vertical;
+    }
+    dispose() {
+        super.dispose();
+        this.renderer.setStyle(this.slickTrackEl, 'transform', null);
+    }
+    withCarouselContents(contents) {
+        super.withCarouselContents(contents);
+        const carousel = this.carouselComponent;
+        const activeIndex = carousel.activeIndex;
+        // We only do when we are in browser.
+        if (this.platform.isBrowser && this.contents.length) {
+            this.renderer.setStyle(this.slickListEl, 'height', `${this.unitHeight}px`);
+            if (this.vertical) {
+                this.renderer.setStyle(this.slickTrackEl, 'width', `${this.unitWidth}px`);
+                this.renderer.setStyle(this.slickTrackEl, 'height', `${this.length * this.unitHeight}px`);
+                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-activeIndex * this.unitHeight}px, 0)`);
+            }
+            else {
+                this.renderer.setStyle(this.slickTrackEl, 'height', `${this.unitHeight}px`);
+                this.renderer.setStyle(this.slickTrackEl, 'width', `${this.length * this.unitWidth}px`);
+                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-activeIndex * this.unitWidth}px, 0, 0)`);
+            }
+            this.contents.forEach((content) => {
+                this.renderer.setStyle(content.el, 'position', 'relative');
+                this.renderer.setStyle(content.el, 'width', `${this.unitWidth}px`);
+                this.renderer.setStyle(content.el, 'height', `${this.unitHeight}px`);
+            });
+        }
+    }
+    switch(_f, _t) {
+        const { to: t } = this.getFromToInBoundary(_f, _t);
+        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        this.renderer.setStyle(this.slickTrackEl, 'transition', `transform ${this.carouselComponent.nzTransitionSpeed}ms ease`);
+        if (this.vertical) {
+            this.verticalTransform(_f, _t);
+        }
+        else {
+            this.horizontalTransform(_f, _t);
+        }
+        this.isTransitioning = true;
+        this.isDragging = false;
+        setTimeout(() => {
+            this.renderer.setStyle(this.slickTrackEl, 'transition', null);
+            this.contents.forEach((content) => {
+                this.renderer.setStyle(content.el, this.vertical ? 'top' : 'left', null);
+            });
+            if (this.vertical) {
+                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-t * this.unitHeight}px, 0)`);
+            }
+            else {
+                this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-t * this.unitWidth}px, 0, 0)`);
+            }
+            this.isTransitioning = false;
+            complete$.next();
+            complete$.complete();
+        }, this.carouselComponent.nzTransitionSpeed);
+        return complete$.asObservable();
+    }
+    dragging(_vector) {
+        if (this.isTransitioning) {
+            return;
+        }
+        const activeIndex = this.carouselComponent.activeIndex;
+        if (this.carouselComponent.vertical) {
+            if (!this.isDragging && this.length > 2) {
+                if (activeIndex === this.maxIndex) {
+                    this.prepareVerticalContext(true);
+                }
+                else if (activeIndex === 0) {
+                    this.prepareVerticalContext(false);
+                }
+            }
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-activeIndex * this.unitHeight + _vector.x}px, 0)`);
+        }
+        else {
+            if (!this.isDragging && this.length > 2) {
+                if (activeIndex === this.maxIndex) {
+                    this.prepareHorizontalContext(true);
+                }
+                else if (activeIndex === 0) {
+                    this.prepareHorizontalContext(false);
+                }
+            }
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-activeIndex * this.unitWidth + _vector.x}px, 0, 0)`);
+        }
+        this.isDragging = true;
+    }
+    verticalTransform(_f, _t) {
+        const { from: f, to: t } = this.getFromToInBoundary(_f, _t);
+        const needToAdjust = this.length > 2 && _t !== t;
+        if (needToAdjust) {
+            this.prepareVerticalContext(t < f);
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-_t * this.unitHeight}px, 0)`);
+        }
+        else {
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(0, ${-t * this.unitHeight}px, 0`);
+        }
+    }
+    horizontalTransform(_f, _t) {
+        const { from: f, to: t } = this.getFromToInBoundary(_f, _t);
+        const needToAdjust = this.length > 2 && _t !== t;
+        if (needToAdjust) {
+            this.prepareHorizontalContext(t < f);
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-_t * this.unitWidth}px, 0, 0)`);
+        }
+        else {
+            this.renderer.setStyle(this.slickTrackEl, 'transform', `translate3d(${-t * this.unitWidth}px, 0, 0`);
+        }
+    }
+    prepareVerticalContext(lastToFirst) {
+        if (lastToFirst) {
+            this.renderer.setStyle(this.firstEl, 'top', `${this.length * this.unitHeight}px`);
+            this.renderer.setStyle(this.lastEl, 'top', null);
+        }
+        else {
+            this.renderer.setStyle(this.firstEl, 'top', null);
+            this.renderer.setStyle(this.lastEl, 'top', `${-this.unitHeight * this.length}px`);
+        }
+    }
+    prepareHorizontalContext(lastToFirst) {
+        if (lastToFirst) {
+            this.renderer.setStyle(this.firstEl, 'left', `${this.length * this.unitWidth}px`);
+            this.renderer.setStyle(this.lastEl, 'left', null);
+        }
+        else {
+            this.renderer.setStyle(this.firstEl, 'left', null);
+            this.renderer.setStyle(this.lastEl, 'left', `${-this.unitWidth * this.length}px`);
+        }
+    }
+}
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('nz-carousel-custom-strategies');
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+const NZ_CONFIG_MODULE_NAME = 'carousel';
+class NzCarouselComponent {
+    constructor(elementRef, nzConfigService, renderer, cdr, platform, resizeService, nzDragService, customStrategies) {
+        this.nzConfigService = nzConfigService;
+        this.renderer = renderer;
+        this.cdr = cdr;
+        this.platform = platform;
+        this.resizeService = resizeService;
+        this.nzDragService = nzDragService;
+        this.customStrategies = customStrategies;
+        this._nzModuleName = NZ_CONFIG_MODULE_NAME;
+        this.nzEffect = 'scrollx';
+        this.nzEnableSwipe = true;
+        this.nzDots = true;
+        this.nzAutoPlay = false;
+        this.nzAutoPlaySpeed = 3000;
+        this.nzTransitionSpeed = 500;
+        this._dotPosition = 'bottom';
+        this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.activeIndex = 0;
+        this.vertical = false;
+        this.transitionInProgress = null;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        this.gestureRect = null;
+        this.pointerDelta = null;
+        this.isTransiting = false;
+        this.isDragging = false;
+        /**
+         * Drag carousel.
+         */
+        this.pointerDown = (event) => {
+            if (!this.isDragging && !this.isTransiting && this.nzEnableSwipe) {
+                this.clearScheduledTransition();
+                this.gestureRect = this.slickListEl.getBoundingClientRect();
+                this.nzDragService.requestDraggingSequence(event).subscribe(delta => {
+                    var _a;
+                    this.pointerDelta = delta;
+                    this.isDragging = true;
+                    (_a = this.strategy) === null || _a === void 0 ? void 0 : _a.dragging(this.pointerDelta);
+                }, () => { }, () => {
+                    if (this.nzEnableSwipe && this.isDragging) {
+                        const xDelta = this.pointerDelta ? this.pointerDelta.x : 0;
+                        // Switch to another slide if delta is bigger than third of the width.
+                        if (Math.abs(xDelta) > this.gestureRect.width / 3) {
+                            this.goTo(xDelta > 0 ? this.activeIndex - 1 : this.activeIndex + 1);
+                        }
+                        else {
+                            this.goTo(this.activeIndex);
+                        }
+                        this.gestureRect = null;
+                        this.pointerDelta = null;
+                    }
+                    this.isDragging = false;
+                });
+            }
+        };
+        this.nzDotPosition = 'bottom';
+        this.renderer.addClass(elementRef.nativeElement, 'ant-carousel');
+        this.el = elementRef.nativeElement;
+    }
+    set nzDotPosition(value) {
+        this._dotPosition = value;
+        if (value === 'left' || value === 'right') {
+            this.vertical = true;
+        }
+        else {
+            this.vertical = false;
+        }
+    }
+    get nzDotPosition() {
+        return this._dotPosition;
+    }
+    ngAfterContentInit() {
+        this.markContentActive(0);
+    }
+    ngAfterViewInit() {
+        this.slickListEl = this.slickList.nativeElement;
+        this.slickTrackEl = this.slickTrack.nativeElement;
+        this.carouselContents.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$)).subscribe(() => {
+            this.markContentActive(0);
+            this.layout();
+        });
+        this.resizeService
+            .subscribe()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$))
+            .subscribe(() => {
+            this.layout();
+        });
+        this.switchStrategy();
+        this.markContentActive(0);
+        this.layout();
+        // If embedded in an entry component, it may do initial render at an inappropriate time.
+        // ngZone.onStable won't do this trick
+        // TODO: need to change this.
+        Promise.resolve().then(() => {
+            this.layout();
+        });
+    }
+    ngOnChanges(changes) {
+        const { nzEffect, nzDotPosition } = changes;
+        if (nzEffect && !nzEffect.isFirstChange()) {
+            this.switchStrategy();
+            this.markContentActive(0);
+            this.layout();
+        }
+        if (nzDotPosition && !nzDotPosition.isFirstChange()) {
+            this.switchStrategy();
+            this.markContentActive(0);
+            this.layout();
+        }
+        if (!this.nzAutoPlay || !this.nzAutoPlaySpeed) {
+            this.clearScheduledTransition();
+        }
+        else {
+            this.scheduleNextTransition();
+        }
+    }
+    ngOnDestroy() {
+        this.clearScheduledTransition();
+        if (this.strategy) {
+            this.strategy.dispose();
+        }
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
+    onKeyDown(e) {
+        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["LEFT_ARROW"]) {
+            e.preventDefault();
+            this.pre();
+        }
+        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["RIGHT_ARROW"]) {
+            this.next();
+            e.preventDefault();
+        }
+    }
+    next() {
+        this.goTo(this.activeIndex + 1);
+    }
+    pre() {
+        this.goTo(this.activeIndex - 1);
+    }
+    goTo(index) {
+        if (this.carouselContents && this.carouselContents.length && !this.isTransiting) {
+            const length = this.carouselContents.length;
+            const from = this.activeIndex;
+            const to = (index + length) % length;
+            this.isTransiting = true;
+            this.nzBeforeChange.emit({ from, to });
+            this.strategy.switch(this.activeIndex, index).subscribe(() => {
+                this.scheduleNextTransition();
+                this.nzAfterChange.emit(index);
+                this.isTransiting = false;
+            });
+            this.markContentActive(to);
+            this.cdr.markForCheck();
+        }
+    }
+    switchStrategy() {
+        if (this.strategy) {
+            this.strategy.dispose();
+        }
+        // Load custom strategies first.
+        const customStrategy = this.customStrategies ? this.customStrategies.find(s => s.name === this.nzEffect) : null;
+        if (customStrategy) {
+            this.strategy = new customStrategy.strategy(this, this.cdr, this.renderer, this.platform);
+            return;
+        }
+        this.strategy =
+            this.nzEffect === 'scrollx'
+                ? new NzCarouselTransformStrategy(this, this.cdr, this.renderer, this.platform)
+                : new NzCarouselOpacityStrategy(this, this.cdr, this.renderer, this.platform);
+    }
+    scheduleNextTransition() {
+        this.clearScheduledTransition();
+        if (this.nzAutoPlay && this.nzAutoPlaySpeed > 0 && this.platform.isBrowser) {
+            this.transitionInProgress = setTimeout(() => {
+                this.goTo(this.activeIndex + 1);
+            }, this.nzAutoPlaySpeed);
+        }
+    }
+    clearScheduledTransition() {
+        if (this.transitionInProgress) {
+            clearTimeout(this.transitionInProgress);
+            this.transitionInProgress = null;
+        }
+    }
+    markContentActive(index) {
+        this.activeIndex = index;
+        if (this.carouselContents) {
+            this.carouselContents.forEach((slide, i) => {
+                slide.isActive = index === i;
+            });
+        }
+        this.cdr.markForCheck();
+    }
+    layout() {
+        if (this.strategy) {
+            this.strategy.withCarouselContents(this.carouselContents);
+        }
+    }
+}
+/** @nocollapse */
+NzCarouselComponent.ɵfac = function NzCarouselComponent_Factory(t) { return new (t || NzCarouselComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NZ_CAROUSEL_CUSTOM_STRATEGIES, 8)); };
+/** @nocollapse */
+NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzCarouselComponent, selectors: [["nz-carousel"]], contentQueries: function NzCarouselComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzCarouselContentDirective, false);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.carouselContents = _t);
+    } }, viewQuery: function NzCarouselComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c0, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c1, true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickList = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
+    } }, hostVars: 2, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical);
+    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("keydown", function NzCarouselComponent_Template_div_keydown_1_listener($event) { return ctx.onKeyDown($event); })("mousedown", function NzCarouselComponent_Template_div_mousedown_1_listener($event) { return ctx.pointerDown($event); })("touchstart", function NzCarouselComponent_Template_div_touchstart_1_listener($event) { return ctx.pointerDown($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 3, 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, NzCarouselComponent_ul_6_Template, 2, 9, "ul", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, NzCarouselComponent_ng_template_7_Template, 2, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-vertical", ctx.nzDotPosition === "left" || ctx.nzDotPosition === "right");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzDots);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
+NzCarouselComponent.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
+    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] },
+    { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [NZ_CAROUSEL_CUSTOM_STRATEGIES,] }] }
+];
+NzCarouselComponent.propDecorators = {
+    carouselContents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"], args: [NzCarouselContentDirective,] }],
+    slickList: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickList', { static: false },] }],
+    slickTrack: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickTrack', { static: false },] }],
+    nzDotRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzEffect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzEnableSwipe: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzAutoPlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzAutoPlaySpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzTransitionSpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzDotPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzBeforeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
+    nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
+};
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String)
+], NzCarouselComponent.prototype, "nzEffect", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+], NzCarouselComponent.prototype, "nzEnableSwipe", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+], NzCarouselComponent.prototype, "nzDots", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+], NzCarouselComponent.prototype, "nzAutoPlay", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Number)
+], NzCarouselComponent.prototype, "nzAutoPlaySpeed", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Object)
+], NzCarouselComponent.prototype, "nzTransitionSpeed", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:paramtypes", [String])
+], NzCarouselComponent.prototype, "nzDotPosition", null);
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselContentDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+        args: [{
+                selector: '[nz-carousel-content]',
+                exportAs: 'nzCarouselContent'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+        args: [{
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
+                selector: 'nz-carousel',
+                exportAs: 'nzCarousel',
+                preserveWhitespaces: false,
+                template: `
+    <div class="slick-initialized slick-slider" [class.slick-vertical]="nzDotPosition === 'left' || nzDotPosition === 'right'">
+      <div
+        #slickList
+        class="slick-list"
+        tabindex="-1"
+        (keydown)="onKeyDown($event)"
+        (mousedown)="pointerDown($event)"
+        (touchstart)="pointerDown($event)"
+      >
+        <!-- Render carousel items. -->
+        <div class="slick-track" #slickTrack>
+          <ng-content></ng-content>
+        </div>
+      </div>
+      <!-- Render dots. -->
+      <ul
+        class="slick-dots"
+        *ngIf="nzDots"
+        [class.slick-dots-top]="nzDotPosition === 'top'"
+        [class.slick-dots-bottom]="nzDotPosition === 'bottom'"
+        [class.slick-dots-left]="nzDotPosition === 'left'"
+        [class.slick-dots-right]="nzDotPosition === 'right'"
+      >
+        <li *ngFor="let content of carouselContents; let i = index" [class.slick-active]="content.isActive" (click)="goTo(i)">
+          <ng-template [ngTemplateOutlet]="nzDotRender || renderDotTemplate" [ngTemplateOutletContext]="{ $implicit: i }"></ng-template>
+        </li>
+      </ul>
+    </div>
+
+    <ng-template #renderDotTemplate let-index>
+      <button>{{ index + 1 }}</button>
+    </ng-template>
+  `,
+                host: {
+                    '[class.ant-carousel-vertical]': 'vertical'
+                }
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] }, { type: Array, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
+                args: [NZ_CAROUSEL_CUSTOM_STRATEGIES]
+            }] }]; }, { nzEffect: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzEnableSwipe: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzDots: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzAutoPlay: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzAutoPlaySpeed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzTransitionSpeed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], nzBeforeChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+        }], nzAfterChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+        }], nzDotPosition: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }], carouselContents: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"],
+            args: [NzCarouselContentDirective]
+        }], slickList: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            args: ['slickList', { static: false }]
+        }], slickTrack: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            args: ['slickTrack', { static: false }]
+        }], nzDotRender: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+        }] }); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCarouselModule {
+}
+/** @nocollapse */
+NzCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzCarouselModule });
+/** @nocollapse */
+NzCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzCarouselModule_Factory(t) { return new (t || NzCarouselModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzCarouselModule, { declarations: function () { return [NzCarouselComponent, NzCarouselContentDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzCarouselComponent, NzCarouselContentDirective]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
+        args: [{
+                declarations: [NzCarouselComponent, NzCarouselContentDirective],
+                exports: [NzCarouselComponent, NzCarouselContentDirective],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]
+            }]
+    }], null, null); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ng-zorro-antd-carousel.js.map
+
+/***/ }),
+
+/***/ "ysXv":
 /*!***********************************************!*\
   !*** ./site/doc/app/carousel/zh.component.ts ***!
   \***********************************************/
@@ -2082,16 +1820,16 @@ class NzDemoCarouselPositionComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCarouselZhComponent", function() { return NzDemoCarouselZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/carousel/basic.ts");
-/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fade */ "./site/doc/app/carousel/fade.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./position */ "./site/doc/app/carousel/position.ts");
-/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./autoplay */ "./site/doc/app/carousel/autoplay.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "QGr5");
+/* harmony import */ var _fade__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fade */ "Xw4y");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./position */ "cpoo");
+/* harmony import */ var _autoplay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./autoplay */ "Euqd");
 
 
 

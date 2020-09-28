@@ -1,7 +1,7 @@
 exports.ids = ["anchor-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/anchor/basic.ts":
+/***/ "/YlK":
 /*!**************************************!*\
   !*** ./site/doc/app/anchor/basic.ts ***!
   \**************************************/
@@ -11,8 +11,8 @@ exports.modules = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorBasicComponent", function() { return NzDemoAnchorBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
 
 
 
@@ -49,7 +49,7 @@ class NzDemoAnchorBasicComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/anchor/en.component.ts":
+/***/ "10Eh":
 /*!*********************************************!*\
   !*** ./site/doc/app/anchor/en.component.ts ***!
   \*********************************************/
@@ -59,14 +59,14 @@ class NzDemoAnchorBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorEnComponent", function() { return NzDemoAnchorEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/anchor/basic.ts");
-/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./static */ "./site/doc/app/anchor/static.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "/YlK");
+/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./static */ "V0Pa");
 
 
 
@@ -493,7 +493,7 @@ class NzDemoAnchorEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/anchor/index.module.ts":
+/***/ "7mjV":
 /*!*********************************************!*\
   !*** ./site/doc/app/anchor/index.module.ts ***!
   \*********************************************/
@@ -503,15 +503,15 @@ class NzDemoAnchorEnComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorModule", function() { return NzDemoAnchorModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/anchor/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/anchor/basic.ts");
-/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./static */ "./site/doc/app/anchor/static.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/anchor/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/anchor/en.component.ts");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "X3+Q");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "/YlK");
+/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./static */ "V0Pa");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./zh.component */ "LRpH");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./en.component */ "10Eh");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
 
 
 
@@ -562,75 +562,7 @@ class NzDemoAnchorModule {
 
 /***/ }),
 
-/***/ "./site/doc/app/anchor/module.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/anchor/module.ts ***!
-  \***************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-
-const moduleList = [ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_0__["NzAnchorModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/anchor/static.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/anchor/static.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoAnchorStaticComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorStaticComponent", function() { return NzDemoAnchorStaticComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-
-
-
-class NzDemoAnchorStaticComponent {
-}
-/** @nocollapse */ NzDemoAnchorStaticComponent.ɵfac = function NzDemoAnchorStaticComponent_Factory(t) { return new (t || NzDemoAnchorStaticComponent)(); };
-/** @nocollapse */ NzDemoAnchorStaticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorStaticComponent, selectors: [["nz-demo-anchor-static"]], decls: 6, vars: 1, consts: [[3, "nzAffix"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorStaticComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-anchor", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-link", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-link", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-link", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-link", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-link", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAffix", false);
-    } }, directives: [ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__["NzAnchorLinkComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAnchorStaticComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-anchor-static',
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
-                template: `
-    <nz-anchor [nzAffix]="false">
-      <nz-link nzHref="#components-anchor-demo-basic" nzTitle="Basic demo"></nz-link>
-      <nz-link nzHref="#components-anchor-demo-static" nzTitle="Static demo"></nz-link>
-      <nz-link nzHref="#api" nzTitle="API">
-        <nz-link nzHref="#nz-anchor" nzTitle="nz-anchor"></nz-link>
-        <nz-link nzHref="#nz-link" nzTitle="nz-link"></nz-link>
-      </nz-link>
-    </nz-anchor>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/anchor/zh.component.ts":
+/***/ "LRpH":
 /*!*********************************************!*\
   !*** ./site/doc/app/anchor/zh.component.ts ***!
   \*********************************************/
@@ -640,14 +572,14 @@ class NzDemoAnchorStaticComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorZhComponent", function() { return NzDemoAnchorZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/anchor/basic.ts");
-/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./static */ "./site/doc/app/anchor/static.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "/YlK");
+/* harmony import */ var _static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./static */ "V0Pa");
 
 
 
@@ -1070,6 +1002,74 @@ class NzDemoAnchorZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "V0Pa":
+/*!***************************************!*\
+  !*** ./site/doc/app/anchor/static.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoAnchorStaticComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAnchorStaticComponent", function() { return NzDemoAnchorStaticComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+
+
+
+class NzDemoAnchorStaticComponent {
+}
+/** @nocollapse */ NzDemoAnchorStaticComponent.ɵfac = function NzDemoAnchorStaticComponent_Factory(t) { return new (t || NzDemoAnchorStaticComponent)(); };
+/** @nocollapse */ NzDemoAnchorStaticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorStaticComponent, selectors: [["nz-demo-anchor-static"]], decls: 6, vars: 1, consts: [[3, "nzAffix"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorStaticComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-anchor", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-link", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-link", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-link", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-link", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-link", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAffix", false);
+    } }, directives: [ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_1__["NzAnchorLinkComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAnchorStaticComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-anchor-static',
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
+                template: `
+    <nz-anchor [nzAffix]="false">
+      <nz-link nzHref="#components-anchor-demo-basic" nzTitle="Basic demo"></nz-link>
+      <nz-link nzHref="#components-anchor-demo-static" nzTitle="Static demo"></nz-link>
+      <nz-link nzHref="#api" nzTitle="API">
+        <nz-link nzHref="#nz-anchor" nzTitle="nz-anchor"></nz-link>
+        <nz-link nzHref="#nz-link" nzTitle="nz-link"></nz-link>
+      </nz-link>
+    </nz-anchor>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "X3+Q":
+/*!***************************************!*\
+  !*** ./site/doc/app/anchor/module.ts ***!
+  \***************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+
+const moduleList = [ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_0__["NzAnchorModule"]];
 
 
 /***/ })

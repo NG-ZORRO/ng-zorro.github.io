@@ -1,7 +1,7 @@
 exports.ids = ["empty-index-module~transfer-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-transfer.js":
+/***/ "OXuD":
 /*!*****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-transfer.js ***!
   \*****************************************************************/
@@ -14,22 +14,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTransferListComponent", function() { return NzTransferListComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTransferModule", function() { return NzTransferModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTransferSearchComponent", function() { return NzTransferSearchComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-i18n.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/checkbox */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-checkbox.js");
-/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/empty */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-empty.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/checkbox */ "JPEx");
+/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/empty */ "vqhg");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
 
 
 
@@ -45,12 +45,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * Generated from: interface.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @record
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -221,39 +217,8 @@ function NzTransferComponent_span_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r1.nzOperations[0]);
 } }
-function TransferItem() { }
-if (false) {}
-/**
- * @record
- */
-function TransferCanMove() { }
-if (false) {}
-/**
- * @record
- */
-function TransferChange() { }
-if (false) {}
-/**
- * @record
- */
-function TransferSearchChange() { }
-if (false) {}
-/**
- * @record
- */
-function TransferSelectChange() { }
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: transfer-list.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 class NzTransferListComponent {
     // #endregion
-    /**
-     * @param {?} cdr
-     */
     constructor(cdr) {
         this.cdr = cdr;
         // #region fields
@@ -264,6 +229,7 @@ class NzTransferListComponent {
         this.itemUnit = '';
         this.itemsUnit = '';
         this.filter = '';
+        this.disabled = false;
         this.renderList = null;
         this.render = null;
         this.footer = null;
@@ -277,112 +243,61 @@ class NzTransferListComponent {
             checkCount: 0,
             shownCount: 0
         };
-        this.onItemSelect = (/**
-         * @param {?} item
-         * @return {?}
-         */
-        (item) => {
+        this.onItemSelect = (item) => {
             if (this.disabled || item.disabled) {
                 return;
             }
             item.checked = !item.checked;
             this.updateCheckStatus();
             this.handleSelect.emit(item);
-        });
-        this.onItemSelectAll = (/**
-         * @param {?} status
-         * @return {?}
-         */
-        (status) => {
-            this.dataSource.forEach((/**
-             * @param {?} item
-             * @return {?}
-             */
-            item => {
+        };
+        this.onItemSelectAll = (status) => {
+            this.dataSource.forEach(item => {
                 if (!item.disabled && !item.hide) {
                     item.checked = status;
                 }
-            }));
+            });
             this.updateCheckStatus();
             this.handleSelectAll.emit(status);
-        });
+        };
     }
-    /**
-     * @private
-     * @return {?}
-     */
     updateCheckStatus() {
-        /** @type {?} */
-        const validCount = this.dataSource.filter((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => !w.disabled)).length;
-        this.stat.checkCount = this.dataSource.filter((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => w.checked && !w.disabled)).length;
-        this.stat.shownCount = this.dataSource.filter((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => !w.hide)).length;
+        const validCount = this.dataSource.filter(w => !w.disabled).length;
+        this.stat.checkCount = this.dataSource.filter(w => w.checked && !w.disabled).length;
+        this.stat.shownCount = this.dataSource.filter(w => !w.hide).length;
         this.stat.checkAll = validCount > 0 && validCount === this.stat.checkCount;
         this.stat.checkHalf = this.stat.checkCount > 0 && !this.stat.checkAll;
     }
     // #endregion
     // #region search
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     handleFilter(value) {
         this.filter = value;
-        this.dataSource.forEach((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => {
+        this.dataSource.forEach(item => {
             item.hide = value.length > 0 && !this.matchFilter(value, item);
-        }));
-        this.stat.shownCount = this.dataSource.filter((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => !w.hide)).length;
+        });
+        this.stat.shownCount = this.dataSource.filter(w => !w.hide).length;
         this.filterChange.emit({ direction: this.direction, value });
     }
-    /**
-     * @return {?}
-     */
     handleClear() {
         this.handleFilter('');
     }
-    /**
-     * @private
-     * @param {?} text
-     * @param {?} item
-     * @return {?}
-     */
     matchFilter(text, item) {
         if (this.filterOption) {
             return this.filterOption(text, item);
         }
         return item.title.includes(text);
     }
-    /**
-     * @return {?}
-     */
     markForCheck() {
         this.updateCheckStatus();
         this.cdr.markForCheck();
     }
 }
+/** @nocollapse */
 NzTransferListComponent.ɵfac = function NzTransferListComponent_Factory(t) { return new (t || NzTransferListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+/** @nocollapse */
 NzTransferListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTransferListComponent, selectors: [["nz-transfer-list"]], hostVars: 4, hostBindings: function NzTransferListComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-transfer-list", true)("ant-transfer-list-with-footer", !!ctx.footer);
-    } }, inputs: { direction: "direction", titleText: "titleText", showSelectAll: "showSelectAll", dataSource: "dataSource", itemUnit: "itemUnit", itemsUnit: "itemsUnit", filter: "filter", renderList: "renderList", render: "render", footer: "footer", disabled: "disabled", showSearch: "showSearch", searchPlaceholder: "searchPlaceholder", notFoundContent: "notFoundContent", filterOption: "filterOption" }, outputs: { handleSelectAll: "handleSelectAll", handleSelect: "handleSelect", filterChange: "filterChange" }, exportAs: ["nzTransferList"], decls: 12, vars: 14, consts: [["defaultRenderList", ""], [1, "ant-transfer-list-header"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange", 4, "ngIf"], [1, "ant-transfer-list-header-selected"], ["class", "ant-transfer-list-header-title", 4, "ngIf"], [3, "ngClass"], ["class", "ant-transfer-list-body-search-wrapper", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["class", "ant-transfer-list-footer", 4, "ngIf"], ["class", "ant-transfer-list-content", 4, "ngIf"], ["class", "ant-transfer-list-body-not-found", 4, "ngIf"], [1, "ant-transfer-list-content"], ["class", "LazyLoad", 4, "ngFor", "ngForOf"], [1, "LazyLoad"], ["class", "ant-transfer-list-content-item", 3, "ngClass", "click", 4, "ngIf"], [1, "ant-transfer-list-content-item", 3, "ngClass", "click"], ["nz-checkbox", "", 3, "nzChecked", "nzDisabled", "nzCheckedChange", "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["renderContainer", ""], [1, "ant-transfer-list-body-not-found"], [3, "nzComponentName", "specificContent"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange"], [1, "ant-transfer-list-header-title"], [1, "ant-transfer-list-body-search-wrapper"], ["nz-transfer-search", "", 3, "placeholder", "disabled", "value", "valueChanged", "valueClear"], [1, "ant-transfer-list-body-customize-wrapper"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-transfer-list-footer"]], template: function NzTransferListComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { direction: "direction", titleText: "titleText", showSelectAll: "showSelectAll", dataSource: "dataSource", itemUnit: "itemUnit", itemsUnit: "itemsUnit", filter: "filter", disabled: "disabled", renderList: "renderList", render: "render", footer: "footer", showSearch: "showSearch", searchPlaceholder: "searchPlaceholder", notFoundContent: "notFoundContent", filterOption: "filterOption" }, outputs: { handleSelectAll: "handleSelectAll", handleSelect: "handleSelect", filterChange: "filterChange" }, exportAs: ["nzTransferList"], decls: 12, vars: 14, consts: [["defaultRenderList", ""], [1, "ant-transfer-list-header"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange", 4, "ngIf"], [1, "ant-transfer-list-header-selected"], ["class", "ant-transfer-list-header-title", 4, "ngIf"], [3, "ngClass"], ["class", "ant-transfer-list-body-search-wrapper", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["class", "ant-transfer-list-footer", 4, "ngIf"], ["class", "ant-transfer-list-content", 4, "ngIf"], ["class", "ant-transfer-list-body-not-found", 4, "ngIf"], [1, "ant-transfer-list-content"], ["class", "LazyLoad", 4, "ngFor", "ngForOf"], [1, "LazyLoad"], ["class", "ant-transfer-list-content-item", 3, "ngClass", "click", 4, "ngIf"], [1, "ant-transfer-list-content-item", 3, "ngClass", "click"], ["nz-checkbox", "", 3, "nzChecked", "nzDisabled", "nzCheckedChange", "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["renderContainer", ""], [1, "ant-transfer-list-body-not-found"], [3, "nzComponentName", "specificContent"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange"], [1, "ant-transfer-list-header-title"], [1, "ant-transfer-list-body-search-wrapper"], ["nz-transfer-search", "", 3, "placeholder", "disabled", "value", "valueChanged", "valueClear"], [1, "ant-transfer-list-body-customize-wrapper"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-transfer-list-footer"]], template: function NzTransferListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzTransferListComponent_ng_template_0_Template, 2, 2, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzTransferListComponent_label_3_Template, 1, 3, "label", 2);
@@ -403,7 +318,7 @@ NzTransferListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.showSelectAll);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("", (ctx.stat.checkCount > 0 ? ctx.stat.checkCount + "/" : "") + ctx.stat.shownCount, " ", ctx.dataSource.length > 1 ? ctx.itemsUnit : ctx.itemUnit, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", (ctx.stat.checkCount > 0 ? ctx.stat.checkCount + "/" : "") + ctx.stat.shownCount, " ", ctx.dataSource.length > 1 ? ctx.itemsUnit : ctx.itemUnit, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.titleText);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -416,7 +331,6 @@ NzTransferListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.footer);
     } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__["NzCheckboxComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgTemplateOutlet"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__["NzEmbedEmptyComponent"], NzTransferSearchComponent]; }, encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzTransferListComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
 ];
@@ -440,32 +354,22 @@ NzTransferListComponent.propDecorators = {
     handleSelect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     filterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: transfer-search.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTransferSearchComponent {
     // endregion
-    /**
-     * @param {?} cdr
-     */
     constructor(cdr) {
         this.cdr = cdr;
+        this.disabled = false;
         this.valueChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.valueClear = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
-    /**
-     * @return {?}
-     */
     _handle() {
         this.valueChanged.emit(this.value);
     }
-    /**
-     * @return {?}
-     */
     _clear() {
         if (this.disabled) {
             return;
@@ -473,15 +377,14 @@ class NzTransferSearchComponent {
         this.value = '';
         this.valueClear.emit();
     }
-    /**
-     * @return {?}
-     */
     ngOnChanges() {
         this.cdr.detectChanges();
     }
 }
+/** @nocollapse */
 NzTransferSearchComponent.ɵfac = function NzTransferSearchComponent_Factory(t) { return new (t || NzTransferSearchComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
-NzTransferSearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTransferSearchComponent, selectors: [["", "nz-transfer-search", ""]], inputs: { value: "value", placeholder: "placeholder", disabled: "disabled" }, outputs: { valueChanged: "valueChanged", valueClear: "valueClear" }, exportAs: ["nzTransferSearch"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], attrs: _c4, decls: 4, vars: 8, consts: [[1, "ant-input", "ant-transfer-list-search", 3, "ngModel", "disabled", "placeholder", "ngClass", "ngModelChange"], ["class", "ant-transfer-list-search-action", 3, "click", 4, "ngIf", "ngIfElse"], ["def", ""], [1, "ant-transfer-list-search-action", 3, "click"], ["nz-icon", "", "nzType", "close-circle"], [1, "ant-transfer-list-search-action"], ["nz-icon", "", "nzType", "search"]], template: function NzTransferSearchComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */
+NzTransferSearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTransferSearchComponent, selectors: [["", "nz-transfer-search", ""]], inputs: { disabled: "disabled", value: "value", placeholder: "placeholder" }, outputs: { valueChanged: "valueChanged", valueClear: "valueClear" }, exportAs: ["nzTransferSearch"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], attrs: _c4, decls: 4, vars: 8, consts: [[1, "ant-input", "ant-transfer-list-search", 3, "ngModel", "disabled", "placeholder", "ngClass", "ngModelChange"], ["class", "ant-transfer-list-search-action", 3, "click", 4, "ngIf", "ngIfElse"], ["def", ""], [1, "ant-transfer-list-search-action", 3, "click"], ["nz-icon", "", "nzType", "close-circle"], [1, "ant-transfer-list-search-action"], ["nz-icon", "", "nzType", "search"]], template: function NzTransferSearchComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "input", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzTransferSearchComponent_Template_input_ngModelChange_0_listener($event) { return ctx.value = $event; })("ngModelChange", function NzTransferSearchComponent_Template_input_ngModelChange_0_listener() { return ctx._handle(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -493,7 +396,6 @@ NzTransferSearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.value && ctx.value.length > 0)("ngIfElse", _r1);
     } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_13__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzTransferSearchComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
 ];
@@ -504,19 +406,13 @@ NzTransferSearchComponent.propDecorators = {
     valueChanged: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     valueClear: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: transfer.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTransferComponent {
     // #endregion
-    /**
-     * @param {?} cdr
-     * @param {?} i18n
-     */
     constructor(cdr, i18n) {
         this.cdr = cdr;
         this.i18n = i18n;
@@ -530,11 +426,7 @@ class NzTransferComponent {
         this.nzOperations = [];
         this.nzListStyle = {};
         this.nzShowSelectAll = true;
-        this.nzCanMove = (/**
-         * @param {?} arg
-         * @return {?}
-         */
-        (arg) => Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(arg.list));
+        this.nzCanMove = (arg) => Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(arg.list);
         this.nzRenderList = null;
         this.nzRender = null;
         this.nzFooter = null;
@@ -551,51 +443,21 @@ class NzTransferComponent {
         this.leftDataSource = [];
         // right
         this.rightDataSource = [];
-        this.handleLeftSelectAll = (/**
-         * @param {?} checked
-         * @return {?}
-         */
-        (checked) => this.handleSelect('left', checked));
-        this.handleRightSelectAll = (/**
-         * @param {?} checked
-         * @return {?}
-         */
-        (checked) => this.handleSelect('right', checked));
-        this.handleLeftSelect = (/**
-         * @param {?} item
-         * @return {?}
-         */
-        (item) => this.handleSelect('left', !!item.checked, item));
-        this.handleRightSelect = (/**
-         * @param {?} item
-         * @return {?}
-         */
-        (item) => this.handleSelect('right', !!item.checked, item));
+        this.handleLeftSelectAll = (checked) => this.handleSelect('left', checked);
+        this.handleRightSelectAll = (checked) => this.handleSelect('right', checked);
+        this.handleLeftSelect = (item) => this.handleSelect('left', !!item.checked, item);
+        this.handleRightSelect = (item) => this.handleSelect('right', !!item.checked, item);
         // #endregion
         // #region operation
         this.leftActive = false;
         this.rightActive = false;
-        this.moveToLeft = (/**
-         * @return {?}
-         */
-        () => this.moveTo('left'));
-        this.moveToRight = (/**
-         * @return {?}
-         */
-        () => this.moveTo('right'));
+        this.moveToLeft = () => this.moveTo('left');
+        this.moveToRight = () => this.moveTo('right');
     }
-    /**
-     * @private
-     * @return {?}
-     */
     splitDataSource() {
         this.leftDataSource = [];
         this.rightDataSource = [];
-        this.nzDataSource.forEach((/**
-         * @param {?} record
-         * @return {?}
-         */
-        record => {
+        this.nzDataSource.forEach(record => {
             if (record.direction === 'right') {
                 record.direction = 'right';
                 this.rightDataSource.push(record);
@@ -604,98 +466,33 @@ class NzTransferComponent {
                 record.direction = 'left';
                 this.leftDataSource.push(record);
             }
-        }));
+        });
     }
-    /**
-     * @private
-     * @param {?} direction
-     * @return {?}
-     */
     getCheckedData(direction) {
-        return this[direction === 'left' ? 'leftDataSource' : 'rightDataSource'].filter((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => w.checked));
+        return this[direction === 'left' ? 'leftDataSource' : 'rightDataSource'].filter(w => w.checked);
     }
-    /**
-     * @param {?} direction
-     * @param {?} checked
-     * @param {?=} item
-     * @return {?}
-     */
     handleSelect(direction, checked, item) {
-        /** @type {?} */
         const list = this.getCheckedData(direction);
         this.updateOperationStatus(direction, list.length);
         this.nzSelectChange.emit({ direction, checked, list, item });
     }
-    /**
-     * @param {?} ret
-     * @return {?}
-     */
     handleFilterChange(ret) {
         this.nzSearchChange.emit(ret);
     }
-    /**
-     * @private
-     * @param {?} direction
-     * @param {?=} count
-     * @return {?}
-     */
     updateOperationStatus(direction, count) {
         this[direction === 'right' ? 'leftActive' : 'rightActive'] =
-            (typeof count === 'undefined' ? this.getCheckedData(direction).filter((/**
-             * @param {?} w
-             * @return {?}
-             */
-            w => !w.disabled)).length : count) > 0;
+            (typeof count === 'undefined' ? this.getCheckedData(direction).filter(w => !w.disabled).length : count) > 0;
     }
-    /**
-     * @param {?} direction
-     * @return {?}
-     */
     moveTo(direction) {
-        /** @type {?} */
         const oppositeDirection = direction === 'left' ? 'right' : 'left';
         this.updateOperationStatus(oppositeDirection, 0);
-        /** @type {?} */
         const datasource = direction === 'left' ? this.rightDataSource : this.leftDataSource;
-        /** @type {?} */
-        const moveList = datasource.filter((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => item.checked === true && !item.disabled));
-        this.nzCanMove({ direction, list: moveList }).subscribe((/**
-         * @param {?} newMoveList
-         * @return {?}
-         */
-        newMoveList => this.truthMoveTo(direction, newMoveList.filter((/**
-         * @param {?} i
-         * @return {?}
-         */
-        i => !!i)))), (/**
-         * @return {?}
-         */
-        () => moveList.forEach((/**
-         * @param {?} i
-         * @return {?}
-         */
-        i => (i.checked = false)))));
+        const moveList = datasource.filter(item => item.checked === true && !item.disabled);
+        this.nzCanMove({ direction, list: moveList }).subscribe(newMoveList => this.truthMoveTo(direction, newMoveList.filter(i => !!i)), () => moveList.forEach(i => (i.checked = false)));
     }
-    /**
-     * @private
-     * @param {?} direction
-     * @param {?} list
-     * @return {?}
-     */
     truthMoveTo(direction, list) {
-        /** @type {?} */
         const oppositeDirection = direction === 'left' ? 'right' : 'left';
-        /** @type {?} */
         const datasource = direction === 'left' ? this.rightDataSource : this.leftDataSource;
-        /** @type {?} */
         const targetDatasource = direction === 'left' ? this.leftDataSource : this.rightDataSource;
         for (const item of list) {
             item.checked = false;
@@ -712,85 +509,39 @@ class NzTransferComponent {
         });
         this.markForCheckAllList();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     markForCheckAllList() {
         if (!this.lists) {
             return;
         }
-        this.lists.forEach((/**
-         * @param {?} i
-         * @return {?}
-         */
-        i => i.markForCheck()));
+        this.lists.forEach(i => i.markForCheck());
     }
-    /**
-     * @private
-     * @return {?}
-     */
     handleNzTargetKeys() {
-        /** @type {?} */
         const keys = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["toArray"])(this.nzTargetKeys);
-        /** @type {?} */
-        const hasOwnKey = (/**
-         * @param {?} e
-         * @return {?}
-         */
-        (e) => e.hasOwnProperty('key'));
-        this.leftDataSource.forEach((/**
-         * @param {?} e
-         * @return {?}
-         */
-        e => {
+        const hasOwnKey = (e) => e.hasOwnProperty('key');
+        this.leftDataSource.forEach(e => {
             if (hasOwnKey(e) && keys.indexOf(e.key) !== -1 && !e.disabled) {
                 e.checked = true;
             }
-        }));
+        });
         this.moveToRight();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     handleNzSelectedKeys() {
-        /** @type {?} */
         const keys = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["toArray"])(this.nzSelectedKeys);
-        this.nzDataSource.forEach((/**
-         * @param {?} e
-         * @return {?}
-         */
-        e => {
+        this.nzDataSource.forEach(e => {
             if (keys.indexOf(e.key) !== -1) {
                 e.checked = true;
             }
-        }));
-        /** @type {?} */
-        const term = (/**
-         * @param {?} ld
-         * @return {?}
-         */
-        (ld) => ld.disabled === false && ld.checked === true);
+        });
+        const term = (ld) => ld.disabled === false && ld.checked === true;
         this.rightActive = this.leftDataSource.some(term);
         this.leftActive = this.rightDataSource.some(term);
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
-        this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.unsubscribe$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.unsubscribe$)).subscribe(() => {
             this.locale = this.i18n.getLocaleData('Transfer');
             this.markForCheckAllList();
-        }));
+        });
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         if (changes.nzDataSource) {
             this.splitDataSource();
@@ -806,15 +557,14 @@ class NzTransferComponent {
             this.handleNzSelectedKeys();
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.unsubscribe$.next();
         this.unsubscribe$.complete();
     }
 }
+/** @nocollapse */
 NzTransferComponent.ɵfac = function NzTransferComponent_Factory(t) { return new (t || NzTransferComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nService"])); };
+/** @nocollapse */
 NzTransferComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTransferComponent, selectors: [["nz-transfer"]], viewQuery: function NzTransferComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](NzTransferListComponent, true);
     } if (rf & 2) {
@@ -854,7 +604,6 @@ NzTransferComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.nzListStyle)("titleText", ctx.nzTitles[1])("showSelectAll", ctx.nzShowSelectAll)("dataSource", ctx.rightDataSource)("filter", ctx.rightFilter)("filterOption", ctx.nzFilterOption)("renderList", ctx.nzRenderList && ctx.nzRenderList[1])("render", ctx.nzRender)("disabled", ctx.nzDisabled)("showSearch", ctx.nzShowSearch)("searchPlaceholder", ctx.nzSearchPlaceholder || (ctx.locale == null ? null : ctx.locale.searchPlaceholder))("notFoundContent", ctx.nzNotFoundContent)("itemUnit", ctx.nzItemUnit || (ctx.locale == null ? null : ctx.locale.itemUnit))("itemsUnit", ctx.nzItemsUnit || (ctx.locale == null ? null : ctx.locale.itemsUnit))("footer", ctx.nzFooter);
     } }, directives: [NzTransferListComponent, _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgStyle"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_14__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_13__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzTransferComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nService"] }
@@ -936,13 +685,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
         (nzCheckedChange)="onItemSelectAll($event)"
         [nzIndeterminate]="stat.checkHalf"
         [nzDisabled]="stat.shownCount == 0 || disabled"
-      >
-      </label>
+      ></label>
       <span class="ant-transfer-list-header-selected">
-        <span
-          >{{ (stat.checkCount > 0 ? stat.checkCount + '/' : '') + stat.shownCount }}
-          {{ dataSource.length > 1 ? itemsUnit : itemUnit }}</span
-        >
+        <span>
+          {{ (stat.checkCount > 0 ? stat.checkCount + '/' : '') + stat.shownCount }} {{ dataSource.length > 1 ? itemsUnit : itemUnit }}
+        </span>
         <span *ngIf="titleText" class="ant-transfer-list-header-title">{{ titleText }}</span>
       </span>
     </div>
@@ -1003,6 +750,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], filter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], renderList: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], render: [{
@@ -1015,8 +764,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }], filterChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
-        }], disabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], showSearch: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], searchPlaceholder: [{
@@ -1051,15 +798,15 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { valueChanged: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }]; }, { disabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], valueChanged: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }], valueClear: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }], value: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], placeholder: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }], disabled: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzTransferComponent, [{
@@ -1180,20 +927,18 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
         }], nzNotFoundContent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: transfer.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTransferModule {
 }
+/** @nocollapse */
 NzTransferModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzTransferModule });
+/** @nocollapse */
 NzTransferModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTransferModule_Factory(t) { return new (t || NzTransferModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__["NzCheckboxModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__["NzButtonModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_12__["NzInputModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__["NzEmptyModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTransferModule, { declarations: function () { return [NzTransferComponent,
-        NzTransferListComponent,
-        NzTransferSearchComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__["NzCheckboxModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__["NzButtonModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_12__["NzInputModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__["NzEmptyModule"]]; }, exports: function () { return [NzTransferComponent]; } }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTransferModule, { declarations: function () { return [NzTransferComponent, NzTransferListComponent, NzTransferSearchComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormsModule"], ng_zorro_antd_checkbox__WEBPACK_IMPORTED_MODULE_9__["NzCheckboxModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_8__["NzButtonModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_12__["NzInputModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_3__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_10__["NzEmptyModule"]]; }, exports: function () { return [NzTransferComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzTransferModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -1204,15 +949,12 @@ NzTransferModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-transfer.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

@@ -1,37 +1,39 @@
 exports.ids = ["space-index-module~upload-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js":
+/***/ "4PsB":
 /*!***************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-upload.js ***!
   \***************************************************************/
-/*! exports provided: NzShowUploadListInterface, NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule */
+/*! exports provided: NzUploadBtnComponent, NzUploadComponent, NzUploadListComponent, NzUploadModule, ɵ0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzShowUploadListInterface", function() { return NzShowUploadListInterface; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadBtnComponent", function() { return NzUploadBtnComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadComponent", function() { return NzUploadComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadListComponent", function() { return NzUploadListComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzUploadModule", function() { return NzUploadModule; });
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/keycodes */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/keycodes.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-logger.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/__ivy_ngcc__/fesm2015/animations.js");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/platform */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/platform.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ0", function() { return ɵ0; });
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "RuSR");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/animations */ "R0Ic");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-i18n.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/progress */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-progress.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/progress */ "cpkz");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -49,18 +51,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * @fileoverview added by tsickle
- * Generated from: interface.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
+
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 /**
- * @record
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
+
 
 
 
@@ -212,10 +214,10 @@ function NzUploadListComponent_div_0_ng_template_3_Template(rf, ctx) { if (rf & 
     const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", !ctx_r5.iconRender)("ngIfElse", ctx_r5.iconRender);
 } }
-function NzUploadListComponent_div_0_ng_template_5_span_0_a_1_ng_template_1_Template(rf, ctx) { }
-function NzUploadListComponent_div_0_ng_template_5_span_0_a_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "a", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_a_1_ng_template_1_Template, 0, 0, "ng-template", 9);
+function NzUploadListComponent_div_0_ng_template_5_span_0_button_1_ng_template_1_Template(rf, ctx) { }
+function NzUploadListComponent_div_0_ng_template_5_span_0_button_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_button_1_ng_template_1_Template, 0, 0, "ng-template", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](3);
@@ -225,10 +227,10 @@ function NzUploadListComponent_div_0_ng_template_5_span_0_a_1_Template(rf, ctx) 
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", _r12);
 } }
-function NzUploadListComponent_div_0_ng_template_5_span_0_a_2_ng_template_1_Template(rf, ctx) { }
-function NzUploadListComponent_div_0_ng_template_5_span_0_a_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "a", 32);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_a_2_ng_template_1_Template, 0, 0, "ng-template", 9);
+function NzUploadListComponent_div_0_ng_template_5_span_0_button_2_ng_template_1_Template(rf, ctx) { }
+function NzUploadListComponent_div_0_ng_template_5_span_0_button_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button", 32);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_button_2_ng_template_1_Template, 0, 0, "ng-template", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](3);
@@ -240,8 +242,8 @@ function NzUploadListComponent_div_0_ng_template_5_span_0_a_2_Template(rf, ctx) 
 } }
 function NzUploadListComponent_div_0_ng_template_5_span_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_a_1_Template, 2, 2, "a", 31);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzUploadListComponent_div_0_ng_template_5_span_0_a_2_Template, 2, 2, "a", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzUploadListComponent_div_0_ng_template_5_span_0_button_1_Template, 2, 2, "button", 31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](2, NzUploadListComponent_div_0_ng_template_5_span_0_button_2_Template, 2, 2, "button", 31);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const file_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2).$implicit;
@@ -521,45 +523,7 @@ function NzUploadComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", _r0);
 } }
-function NzUploadFile() { }
-if (false) {}
-/**
- * @record
- */
-function NzUploadChangeParam() { }
-if (false) {}
-/**
- * @record
- */
-function NzShowUploadList() { }
-if (false) {}
-/**
- * @record
- */
-function ZipButtonOptions() { }
-if (false) {}
-/**
- * @record
- */
-function UploadFilter() { }
-if (false) {}
-/**
- * @record
- */
-function NzUploadXHRArgs() { }
-if (false) {}
-class NzShowUploadListInterface {
-}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: upload-btn.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 class NzUploadBtnComponent {
-    /**
-     * @param {?} http
-     */
     constructor(http) {
         this.http = http;
         this.reqs = {};
@@ -568,19 +532,12 @@ class NzUploadBtnComponent {
             throw new Error(`Not found 'HttpClient', You can import 'HttpClientModule' in your root module.`);
         }
     }
-    /**
-     * @return {?}
-     */
     onClick() {
         if (this.options.disabled || !this.options.openFileDialogOnClick) {
             return;
         }
-        ((/** @type {?} */ (this.file.nativeElement))).click();
+        this.file.nativeElement.click();
     }
-    /**
-     * @param {?} e
-     * @return {?}
-     */
     onKeyDown(e) {
         if (this.options.disabled) {
             return;
@@ -590,110 +547,61 @@ class NzUploadBtnComponent {
         }
     }
     // skip safari bug
-    /**
-     * @param {?} e
-     * @return {?}
-     */
     onFileDrop(e) {
         if (this.options.disabled || e.type === 'dragover') {
             e.preventDefault();
             return;
         }
         if (this.options.directory) {
-            this.traverseFileTree((/** @type {?} */ (e.dataTransfer)).items);
+            this.traverseFileTree(e.dataTransfer.items);
         }
         else {
-            /** @type {?} */
             const files = Array.prototype.slice
-                .call((/** @type {?} */ (e.dataTransfer)).files)
-                .filter((/**
-             * @param {?} file
-             * @return {?}
-             */
-            (file) => this.attrAccept(file, this.options.accept)));
+                .call(e.dataTransfer.files)
+                .filter((file) => this.attrAccept(file, this.options.accept));
             if (files.length) {
                 this.uploadFiles(files);
             }
         }
         e.preventDefault();
     }
-    /**
-     * @param {?} e
-     * @return {?}
-     */
     onChange(e) {
         if (this.options.disabled) {
             return;
         }
-        /** @type {?} */
-        const hie = (/** @type {?} */ (e.target));
-        this.uploadFiles((/** @type {?} */ (hie.files)));
+        const hie = e.target;
+        this.uploadFiles(hie.files);
         hie.value = '';
     }
-    /**
-     * @private
-     * @param {?} files
-     * @return {?}
-     */
     traverseFileTree(files) {
-        /** @type {?} */
-        const _traverseFileTree = (/**
-         * @param {?} item
-         * @param {?} path
-         * @return {?}
-         */
-        (item, path) => {
+        const _traverseFileTree = (item, path) => {
             if (item.isFile) {
-                item.file((/**
-                 * @param {?} file
-                 * @return {?}
-                 */
-                (file) => {
+                item.file((file) => {
                     if (this.attrAccept(file, this.options.accept)) {
                         this.uploadFiles([file]);
                     }
-                }));
+                });
             }
             else if (item.isDirectory) {
-                /** @type {?} */
                 const dirReader = item.createReader();
-                dirReader.readEntries((/**
-                 * @param {?} entries
-                 * @return {?}
-                 */
-                (entries) => {
+                dirReader.readEntries((entries) => {
                     for (const entrieItem of entries) {
                         _traverseFileTree(entrieItem, `${path}${item.name}/`);
                     }
-                }));
+                });
             }
-        });
-        for (const file of (/** @type {?} */ (files))) {
+        };
+        for (const file of files) {
             _traverseFileTree(file.webkitGetAsEntry(), '');
         }
     }
-    /**
-     * @private
-     * @param {?} file
-     * @param {?=} acceptedFiles
-     * @return {?}
-     */
     attrAccept(file, acceptedFiles) {
         if (file && acceptedFiles) {
-            /** @type {?} */
             const acceptedFilesArray = Array.isArray(acceptedFiles) ? acceptedFiles : acceptedFiles.split(',');
-            /** @type {?} */
             const fileName = '' + file.name;
-            /** @type {?} */
             const mimeType = '' + file.type;
-            /** @type {?} */
             const baseMimeType = mimeType.replace(/\/.*$/, '');
-            return acceptedFilesArray.some((/**
-             * @param {?} type
-             * @return {?}
-             */
-            type => {
-                /** @type {?} */
+            return acceptedFilesArray.some(type => {
                 const validType = type.trim();
                 if (validType.charAt(0) === '.') {
                     return (fileName.toLowerCase().indexOf(validType.toLowerCase(), fileName.toLowerCase().length - validType.toLowerCase().length) !== -1);
@@ -703,85 +611,42 @@ class NzUploadBtnComponent {
                     return baseMimeType === validType.replace(/\/.*$/, '');
                 }
                 return mimeType === validType;
-            }));
+            });
         }
         return true;
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     attachUid(file) {
         if (!file.uid) {
             file.uid = Math.random().toString(36).substring(2);
         }
         return file;
     }
-    /**
-     * @param {?} fileList
-     * @return {?}
-     */
     uploadFiles(fileList) {
-        /** @type {?} */
         let filters$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(Array.prototype.slice.call(fileList));
         if (this.options.filters) {
-            this.options.filters.forEach((/**
-             * @param {?} f
-             * @return {?}
-             */
-            f => {
-                filters$ = filters$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((/**
-                 * @param {?} list
-                 * @return {?}
-                 */
-                list => {
-                    /** @type {?} */
+            this.options.filters.forEach(f => {
+                filters$ = filters$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(list => {
                     const fnRes = f.fn(list);
                     return fnRes instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"] ? fnRes : Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(fnRes);
-                })));
-            }));
+                }));
+            });
         }
-        filters$.subscribe((/**
-         * @param {?} list
-         * @return {?}
-         */
-        list => {
-            list.forEach((/**
-             * @param {?} file
-             * @return {?}
-             */
-            (file) => {
+        filters$.subscribe(list => {
+            list.forEach((file) => {
                 this.attachUid(file);
                 this.upload(file, list);
-            }));
-        }), (/**
-         * @param {?} e
-         * @return {?}
-         */
-        e => {
+            });
+        }, e => {
             Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_3__["warn"])(`Unhandled upload filter error`, e);
-        }));
+        });
     }
-    /**
-     * @private
-     * @param {?} file
-     * @param {?} fileList
-     * @return {?}
-     */
     upload(file, fileList) {
         if (!this.options.beforeUpload) {
             return this.post(file);
         }
-        /** @type {?} */
         const before = this.options.beforeUpload(file, fileList);
         if (before instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"]) {
-            before.subscribe((/**
-             * @param {?} processedFile
-             * @return {?}
-             */
-            (processedFile) => {
-                /** @type {?} */
+            before.subscribe((processedFile) => {
                 const processedFileType = Object.prototype.toString.call(processedFile);
                 if (processedFileType === '[object File]' || processedFileType === '[object Blob]') {
                     this.attachUid(processedFile);
@@ -790,34 +655,22 @@ class NzUploadBtnComponent {
                 else if (typeof processedFile === 'boolean' && processedFile !== false) {
                     this.post(file);
                 }
-            }), (/**
-             * @param {?} e
-             * @return {?}
-             */
-            e => {
+            }, e => {
                 Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_3__["warn"])(`Unhandled upload beforeUpload error`, e);
-            }));
+            });
         }
         else if (before !== false) {
             return this.post(file);
         }
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     post(file) {
         if (this.destroy) {
             return;
         }
-        /** @type {?} */
         let process$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(file);
-        /** @type {?} */
         const opt = this.options;
         const { uid } = file;
         const { action, data, headers, transformFile } = opt;
-        /** @type {?} */
         const args = {
             action: typeof action === 'string' ? action : '',
             name: opt.name,
@@ -827,133 +680,77 @@ class NzUploadBtnComponent {
             data,
             withCredentials: opt.withCredentials,
             onProgress: opt.onProgress
-                ? (/**
-                 * @param {?} e
-                 * @return {?}
-                 */
-                e => {
-                    (/** @type {?} */ (opt.onProgress))(e, file);
-                })
+                ? e => {
+                    opt.onProgress(e, file);
+                }
                 : undefined,
-            onSuccess: (/**
-             * @param {?} ret
-             * @param {?} xhr
-             * @return {?}
-             */
-            (ret, xhr) => {
+            onSuccess: (ret, xhr) => {
                 this.clean(uid);
-                (/** @type {?} */ (opt.onSuccess))(ret, file, xhr);
-            }),
-            onError: (/**
-             * @param {?} xhr
-             * @return {?}
-             */
-            xhr => {
+                opt.onSuccess(ret, file, xhr);
+            },
+            onError: xhr => {
                 this.clean(uid);
-                (/** @type {?} */ (opt.onError))(xhr, file);
-            })
+                opt.onError(xhr, file);
+            }
         };
         if (typeof action === 'function') {
-            /** @type {?} */
-            const actionResult = ((/** @type {?} */ (action)))(file);
+            const actionResult = action(file);
             if (actionResult instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"]) {
-                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((/**
-                 * @return {?}
-                 */
-                () => actionResult)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])((/**
-                 * @param {?} res
-                 * @return {?}
-                 */
-                res => {
+                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(() => actionResult), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(res => {
                     args.action = res;
                     return file;
-                })));
+                }));
             }
             else {
                 args.action = actionResult;
             }
         }
         if (typeof transformFile === 'function') {
-            /** @type {?} */
             const transformResult = transformFile(file);
-            process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((/**
-             * @return {?}
-             */
-            () => (transformResult instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"] ? transformResult : Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(transformResult)))));
+            process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(() => (transformResult instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"] ? transformResult : Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(transformResult))));
         }
         if (typeof data === 'function') {
-            /** @type {?} */
-            const dataResult = ((/** @type {?} */ (data)))(file);
+            const dataResult = data(file);
             if (dataResult instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"]) {
-                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((/**
-                 * @return {?}
-                 */
-                () => dataResult)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])((/**
-                 * @param {?} res
-                 * @return {?}
-                 */
-                res => {
+                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(() => dataResult), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(res => {
                     args.data = res;
                     return file;
-                })));
+                }));
             }
             else {
                 args.data = dataResult;
             }
         }
         if (typeof headers === 'function') {
-            /** @type {?} */
-            const headersResult = ((/** @type {?} */ (headers)))(file);
+            const headersResult = headers(file);
             if (headersResult instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"]) {
-                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])((/**
-                 * @return {?}
-                 */
-                () => headersResult)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])((/**
-                 * @param {?} res
-                 * @return {?}
-                 */
-                res => {
+                process$ = process$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(() => headersResult), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(res => {
                     args.headers = res;
                     return file;
-                })));
+                }));
             }
             else {
                 args.headers = headersResult;
             }
         }
-        process$.subscribe((/**
-         * @param {?} newFile
-         * @return {?}
-         */
-        newFile => {
+        process$.subscribe(newFile => {
             args.postFile = newFile;
-            /** @type {?} */
             const req$ = (opt.customRequest || this.xhr).call(this, args);
             if (!(req$ instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Subscription"])) {
                 Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_3__["warn"])(`Must return Subscription type in '[nzCustomRequest]' property`);
             }
             this.reqs[uid] = req$;
-            (/** @type {?} */ (opt.onStart))(file);
-        }));
+            opt.onStart(file);
+        });
     }
-    /**
-     * @private
-     * @param {?} args
-     * @return {?}
-     */
     xhr(args) {
-        /** @type {?} */
         const formData = new FormData();
         if (args.data) {
-            Object.keys(args.data).map((/**
-             * @param {?} key
-             * @return {?}
-             */
-            key => {
-                formData.append(key, (/** @type {?} */ (args.data))[key]);
-            }));
+            Object.keys(args.data).map(key => {
+                formData.append(key, args.data[key]);
+            });
         }
-        formData.append((/** @type {?} */ (args.name)), (/** @type {?} */ (args.postFile)));
+        formData.append(args.name, args.postFile);
         if (!args.headers) {
             args.headers = {};
         }
@@ -963,73 +760,49 @@ class NzUploadBtnComponent {
         else {
             delete args.headers['X-Requested-With'];
         }
-        /** @type {?} */
-        const req = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpRequest"]('POST', (/** @type {?} */ (args.action)), formData, {
+        const req = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpRequest"]('POST', args.action, formData, {
             reportProgress: true,
             withCredentials: args.withCredentials,
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"](args.headers)
         });
-        return this.http.request(req).subscribe((/**
-         * @param {?} event
-         * @return {?}
-         */
-        (event) => {
+        return this.http.request(req).subscribe((event) => {
             if (event.type === _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpEventType"].UploadProgress) {
-                if ((/** @type {?} */ (event.total)) > 0) {
-                    ((/** @type {?} */ (event))).percent = (event.loaded / (/** @type {?} */ (event.total))) * 100;
+                if (event.total > 0) {
+                    event.percent = (event.loaded / event.total) * 100;
                 }
-                (/** @type {?} */ (args.onProgress))(event, args.file);
+                args.onProgress(event, args.file);
             }
             else if (event instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpResponse"]) {
-                (/** @type {?} */ (args.onSuccess))(event.body, args.file, event);
+                args.onSuccess(event.body, args.file, event);
             }
-        }), (/**
-         * @param {?} err
-         * @return {?}
-         */
-        err => {
+        }, err => {
             this.abort(args.file);
-            (/** @type {?} */ (args.onError))(err, args.file);
-        }));
+            args.onError(err, args.file);
+        });
     }
-    /**
-     * @private
-     * @param {?} uid
-     * @return {?}
-     */
     clean(uid) {
-        /** @type {?} */
         const req$ = this.reqs[uid];
         if (req$ instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Subscription"]) {
             req$.unsubscribe();
         }
         delete this.reqs[uid];
     }
-    /**
-     * @param {?=} file
-     * @return {?}
-     */
     abort(file) {
         if (file) {
             this.clean(file && file.uid);
         }
         else {
-            Object.keys(this.reqs).forEach((/**
-             * @param {?} uid
-             * @return {?}
-             */
-            uid => this.clean(uid)));
+            Object.keys(this.reqs).forEach(uid => this.clean(uid));
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy = true;
         this.abort();
     }
 }
+/** @nocollapse */
 NzUploadBtnComponent.ɵfac = function NzUploadBtnComponent_Factory(t) { return new (t || NzUploadBtnComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], 8)); };
+/** @nocollapse */
 NzUploadBtnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzUploadBtnComponent, selectors: [["", "nz-upload-btn", ""]], viewQuery: function NzUploadBtnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
@@ -1050,7 +823,6 @@ NzUploadBtnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("multiple", ctx.options.multiple);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵattribute"]("accept", ctx.options.accept)("directory", ctx.options.directory ? "directory" : null)("webkitdirectory", ctx.options.directory ? "webkitdirectory" : null);
     } }, encapsulation: 2 });
-/** @nocollapse */
 NzUploadBtnComponent.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] }
 ];
@@ -1058,35 +830,16 @@ NzUploadBtnComponent.propDecorators = {
     file: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['file', { static: false },] }],
     options: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: upload-list.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
-const isImageFileType = (/**
- * @param {?} type
- * @return {?}
- */
-(type) => !!type && type.indexOf('image/') === 0);
+const isImageFileType = (type) => !!type && type.indexOf('image/') === 0;
 const ɵ0 = isImageFileType;
-/** @type {?} */
 const MEASURE_SIZE = 200;
-/**
- * @record
- */
-function UploadListFile() { }
-if (false) {}
 class NzUploadListComponent {
     // #endregion
-    /**
-     * @param {?} cdr
-     * @param {?} doc
-     * @param {?} ngZone
-     * @param {?} platform
-     */
     constructor(cdr, doc, ngZone, platform) {
         this.cdr = cdr;
         this.doc = doc;
@@ -1096,59 +849,32 @@ class NzUploadListComponent {
         this.locale = {};
         this.iconRender = null;
     }
-    /**
-     * @private
-     * @return {?}
-     */
     get showPic() {
         return this.listType === 'picture' || this.listType === 'picture-card';
     }
-    /**
-     * @param {?} list
-     * @return {?}
-     */
     set items(list) {
         this.list = list;
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     genErr(file) {
         if (file.response && typeof file.response === 'string') {
             return file.response;
         }
         return (file.error && file.error.statusText) || this.locale.uploadError;
     }
-    /**
-     * @private
-     * @param {?} url
-     * @return {?}
-     */
     extname(url) {
-        /** @type {?} */
         const temp = url.split('/');
-        /** @type {?} */
         const filename = temp[temp.length - 1];
-        /** @type {?} */
         const filenameWithoutSuffix = filename.split(/#|\?/)[0];
         return (/\.[^./\\]*$/.exec(filenameWithoutSuffix) || [''])[0];
     }
-    /**
-     * @param {?} file
-     * @return {?}
-     */
     isImageUrl(file) {
-        if (isImageFileType((/** @type {?} */ (file.type)))) {
+        if (isImageFileType(file.type)) {
             return true;
         }
-        /** @type {?} */
-        const url = (/** @type {?} */ ((file.thumbUrl || file.url || '')));
+        const url = (file.thumbUrl || file.url || '');
         if (!url) {
             return false;
         }
-        /** @type {?} */
         const extension = this.extname(url);
         if (/^data:image\//.test(url) || /(webp|svg|png|gif|jpg|jpeg|jfif|bmp|dpg)$/i.test(extension)) {
             return true;
@@ -1163,11 +889,6 @@ class NzUploadListComponent {
         }
         return true;
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     getIconType(file) {
         if (!this.showPic) {
             return '';
@@ -1179,47 +900,25 @@ class NzUploadListComponent {
             return 'thumbnail';
         }
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     previewImage(file) {
-        return new Promise((/**
-         * @param {?} resolve
-         * @return {?}
-         */
-        resolve => {
+        return new Promise(resolve => {
             if (!isImageFileType(file.type)) {
                 resolve('');
                 return;
             }
-            this.ngZone.runOutsideAngular((/**
-             * @return {?}
-             */
-            () => {
-                /** @type {?} */
+            this.ngZone.runOutsideAngular(() => {
                 const canvas = this.doc.createElement('canvas');
                 canvas.width = MEASURE_SIZE;
                 canvas.height = MEASURE_SIZE;
                 canvas.style.cssText = `position: fixed; left: 0; top: 0; width: ${MEASURE_SIZE}px; height: ${MEASURE_SIZE}px; z-index: 9999; display: none;`;
                 this.doc.body.appendChild(canvas);
-                /** @type {?} */
                 const ctx = canvas.getContext('2d');
-                /** @type {?} */
                 const img = new Image();
-                img.onload = (/**
-                 * @return {?}
-                 */
-                () => {
+                img.onload = () => {
                     const { width, height } = img;
-                    /** @type {?} */
                     let drawWidth = MEASURE_SIZE;
-                    /** @type {?} */
                     let drawHeight = MEASURE_SIZE;
-                    /** @type {?} */
                     let offsetX = 0;
-                    /** @type {?} */
                     let offsetY = 0;
                     if (width < height) {
                         drawHeight = height * (MEASURE_SIZE / width);
@@ -1230,88 +929,47 @@ class NzUploadListComponent {
                         offsetX = -(drawWidth - drawHeight) / 2;
                     }
                     try {
-                        (/** @type {?} */ (ctx)).drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+                        ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
                     }
                     catch (_a) { }
-                    /** @type {?} */
                     const dataURL = canvas.toDataURL();
                     this.doc.body.removeChild(canvas);
                     resolve(dataURL);
-                });
+                };
                 img.src = window.URL.createObjectURL(file);
-            }));
-        }));
+            });
+        });
     }
-    /**
-     * @private
-     * @return {?}
-     */
     genThumb() {
         if (!this.platform.isBrowser) {
             return;
         }
-        /** @type {?} */
-        const win = (/** @type {?} */ (window));
+        const win = window;
         if (!this.showPic || typeof document === 'undefined' || typeof win === 'undefined' || !win.FileReader || !win.File) {
             return;
         }
         this.list
-            .filter((/**
-         * @param {?} file
-         * @return {?}
-         */
-        file => file.originFileObj instanceof File && file.thumbUrl === undefined))
-            .forEach((/**
-         * @param {?} file
-         * @return {?}
-         */
-        file => {
+            .filter(file => file.originFileObj instanceof File && file.thumbUrl === undefined)
+            .forEach(file => {
             file.thumbUrl = '';
-            (this.previewFile ? this.previewFile(file).toPromise() : this.previewImage((/** @type {?} */ (file.originFileObj)))).then((/**
-             * @param {?} dataUrl
-             * @return {?}
-             */
-            dataUrl => {
+            (this.previewFile ? this.previewFile(file).toPromise() : this.previewImage(file.originFileObj)).then(dataUrl => {
                 file.thumbUrl = dataUrl;
                 this.detectChanges();
-            }));
-        }));
+            });
+        });
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     listItemNameCls(file) {
-        /** @type {?} */
-        const count = [this.showDownload(file), this.icons.showRemoveIcon].filter((/**
-         * @param {?} x
-         * @return {?}
-         */
-        x => x)).length;
+        const count = [this.showDownload(file), this.icons.showRemoveIcon].filter(x => x).length;
         return {
             [`ant-upload-list-item-name`]: true,
             [`ant-upload-list-item-name-icon-count-${count}`]: true
         };
     }
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     showDownload(file) {
         return !!(this.icons.showDownloadIcon && file.status === 'done');
     }
-    /**
-     * @private
-     * @return {?}
-     */
     fixData() {
-        this.list.forEach((/**
-         * @param {?} file
-         * @return {?}
-         */
-        file => {
+        this.list.forEach(file => {
             file.isUploading = file.status === 'uploading';
             file.message = this.genErr(file);
             file.linkProps = typeof file.linkProps === 'string' ? JSON.parse(file.linkProps) : file.linkProps;
@@ -1319,13 +977,8 @@ class NzUploadListComponent {
             file.iconType = this.getIconType(file);
             file.listItemNameCls = this.listItemNameCls(file);
             file.showDownload = this.showDownload(file);
-        }));
+        });
     }
-    /**
-     * @param {?} file
-     * @param {?} e
-     * @return {?}
-     */
     handlePreview(file, e) {
         if (!this.onPreview) {
             return;
@@ -1333,11 +986,6 @@ class NzUploadListComponent {
         e.preventDefault();
         return this.onPreview(file);
     }
-    /**
-     * @param {?} file
-     * @param {?} e
-     * @return {?}
-     */
     handleRemove(file, e) {
         e.preventDefault();
         if (this.onRemove) {
@@ -1345,10 +993,6 @@ class NzUploadListComponent {
         }
         return;
     }
-    /**
-     * @param {?} file
-     * @return {?}
-     */
     handleDownload(file) {
         if (typeof this.onDownload === 'function') {
             this.onDownload(file);
@@ -1357,35 +1001,30 @@ class NzUploadListComponent {
             window.open(file.url);
         }
     }
-    /**
-     * @return {?}
-     */
     detectChanges() {
         this.fixData();
         this.cdr.detectChanges();
     }
-    /**
-     * @return {?}
-     */
     ngOnChanges() {
         this.fixData();
         this.genThumb();
     }
 }
+/** @nocollapse */
 NzUploadListComponent.ɵfac = function NzUploadListComponent_Factory(t) { return new (t || NzUploadListComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["Platform"])); };
+/** @nocollapse */
 NzUploadListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzUploadListComponent, selectors: [["nz-upload-list"]], hostVars: 8, hostBindings: function NzUploadListComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-upload-list", true)("ant-upload-list-text", ctx.listType === "text")("ant-upload-list-picture", ctx.listType === "picture")("ant-upload-list-picture-card", ctx.listType === "picture-card");
-    } }, inputs: { locale: "locale", iconRender: "iconRender", items: "items", listType: "listType", icons: "icons", onPreview: "onPreview", onRemove: "onRemove", onDownload: "onDownload", previewFile: "previewFile", previewIsImage: "previewIsImage" }, exportAs: ["nzUploadList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [["nz-tooltip", "", 3, "class", "nzTooltipTitle", 4, "ngFor", "ngForOf"], ["nz-tooltip", "", 3, "nzTooltipTitle"], ["icon", ""], ["iconNode", ""], ["downloadOrDelete", ""], ["preview", ""], ["removeIcon", ""], ["downloadIcon", ""], [1, "ant-upload-list-item-info"], [3, "ngTemplateOutlet"], ["class", "ant-upload-list-item-actions", 4, "ngIf"], ["class", "ant-upload-list-item-progress", 4, "ngIf"], [3, "ngSwitch"], ["class", "ant-upload-list-item-thumbnail", 3, "ant-upload-list-item-file", 4, "ngSwitchCase"], ["class", "ant-upload-list-item-thumbnail", "target", "_blank", "rel", "noopener noreferrer", 3, "ant-upload-list-item-file", "href", "click", 4, "ngSwitchCase"], ["class", "ant-upload-text-icon", 4, "ngSwitchDefault"], ["noImageThumbTpl", ""], [1, "ant-upload-list-item-thumbnail"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["target", "_blank", "rel", "noopener noreferrer", 1, "ant-upload-list-item-thumbnail", 3, "href", "click"], ["class", "ant-upload-list-item-image", 3, "src", 4, "ngIf", "ngIfElse"], [1, "ant-upload-list-item-image", 3, "src"], [1, "ant-upload-text-icon"], [4, "ngIf", "ngIfElse"], ["iconNodeFileIcon", ""], [4, "ngSwitchCase"], ["nz-icon", "", 3, "nzType", 4, "ngSwitchDefault"], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", "nzTheme", "twotone", 3, "nzType"], [3, "class", 4, "ngIf"], [3, "title", 4, "ngIf"], [3, "title"], ["target", "_blank", "rel", "noopener noreferrer", 3, "ngClass", "href", "click", 4, "ngIf"], [3, "ngClass", "click", 4, "ngIf"], ["target", "_blank", "rel", "noopener noreferrer", 3, "ngClass", "href", "click"], [3, "ngClass", "click"], ["nz-icon", "", "nzType", "delete", 3, "title", "click", 4, "ngIf"], ["nz-icon", "", "nzType", "delete", 3, "title", "click"], ["nz-icon", "", "nzType", "download", 3, "title", "click", 4, "ngIf"], ["nz-icon", "", "nzType", "download", 3, "title", "click"], [1, "ant-upload-list-item-actions"], ["target", "_blank", "rel", "noopener noreferrer", 3, "href", "title", "ngStyle", "click", 4, "ngIf"], ["target", "_blank", "rel", "noopener noreferrer", 3, "href", "title", "ngStyle", "click"], ["nz-icon", "", "nzType", "eye"], [1, "ant-upload-list-item-progress"], ["nzType", "line", 3, "nzPercent", "nzShowInfo", "nzStrokeWidth"]], template: function NzUploadListComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { locale: "locale", iconRender: "iconRender", items: "items", listType: "listType", icons: "icons", onPreview: "onPreview", onRemove: "onRemove", onDownload: "onDownload", previewFile: "previewFile", previewIsImage: "previewIsImage" }, exportAs: ["nzUploadList"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [["nz-tooltip", "", 3, "class", "nzTooltipTitle", 4, "ngFor", "ngForOf"], ["nz-tooltip", "", 3, "nzTooltipTitle"], ["icon", ""], ["iconNode", ""], ["downloadOrDelete", ""], ["preview", ""], ["removeIcon", ""], ["downloadIcon", ""], [1, "ant-upload-list-item-info"], [3, "ngTemplateOutlet"], ["class", "ant-upload-list-item-actions", 4, "ngIf"], ["class", "ant-upload-list-item-progress", 4, "ngIf"], [3, "ngSwitch"], ["class", "ant-upload-list-item-thumbnail", 3, "ant-upload-list-item-file", 4, "ngSwitchCase"], ["class", "ant-upload-list-item-thumbnail", "target", "_blank", "rel", "noopener noreferrer", 3, "ant-upload-list-item-file", "href", "click", 4, "ngSwitchCase"], ["class", "ant-upload-text-icon", 4, "ngSwitchDefault"], ["noImageThumbTpl", ""], [1, "ant-upload-list-item-thumbnail"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["target", "_blank", "rel", "noopener noreferrer", 1, "ant-upload-list-item-thumbnail", 3, "href", "click"], ["class", "ant-upload-list-item-image", 3, "src", 4, "ngIf", "ngIfElse"], [1, "ant-upload-list-item-image", 3, "src"], [1, "ant-upload-text-icon"], [4, "ngIf", "ngIfElse"], ["iconNodeFileIcon", ""], [4, "ngSwitchCase"], ["nz-icon", "", 3, "nzType", 4, "ngSwitchDefault"], ["nz-icon", "", "nzType", "loading"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", "nzTheme", "twotone", 3, "nzType"], [3, "class", 4, "ngIf"], ["nz-button", "", "nzType", "text", "nzSize", "small", 3, "title", 4, "ngIf"], ["nz-button", "", "nzType", "text", "nzSize", "small", 3, "title"], ["target", "_blank", "rel", "noopener noreferrer", 3, "ngClass", "href", "click", 4, "ngIf"], [3, "ngClass", "click", 4, "ngIf"], ["target", "_blank", "rel", "noopener noreferrer", 3, "ngClass", "href", "click"], [3, "ngClass", "click"], ["nz-icon", "", "nzType", "delete", 3, "title", "click", 4, "ngIf"], ["nz-icon", "", "nzType", "delete", 3, "title", "click"], ["nz-icon", "", "nzType", "download", 3, "title", "click", 4, "ngIf"], ["nz-icon", "", "nzType", "download", 3, "title", "click"], [1, "ant-upload-list-item-actions"], ["target", "_blank", "rel", "noopener noreferrer", 3, "href", "title", "ngStyle", "click", 4, "ngIf"], ["target", "_blank", "rel", "noopener noreferrer", 3, "href", "title", "ngStyle", "click"], ["nz-icon", "", "nzType", "eye"], [1, "ant-upload-list-item-progress"], ["nzType", "line", 3, "nzPercent", "nzShowInfo", "nzStrokeWidth"]], template: function NzUploadListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzUploadListComponent_div_0_Template, 19, 11, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.list);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_15__["NzTooltipDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchDefault"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgStyle"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_14__["NzProgressComponent"]], encapsulation: 2, data: { animation: [
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_16__["NzTooltipDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchDefault"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_17__["ɵNzTransitionPatchDirective"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgStyle"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_15__["NzProgressComponent"]], encapsulation: 2, data: { animation: [
             Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["trigger"])('itemState', [
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["style"])({ height: '0', width: '0', opacity: 0 }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["animate"])(150, Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["style"])({ height: '*', width: '*', opacity: 1 }))]),
                 Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["transition"])(':leave', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["animate"])(150, Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["style"])({ height: '0', width: '0', opacity: 0 }))])
             ])
         ] }, changeDetection: 0 });
-/** @nocollapse */
 NzUploadListComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
     { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["DOCUMENT"],] }] },
@@ -1404,19 +1043,13 @@ NzUploadListComponent.propDecorators = {
     previewIsImage: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
     iconRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: upload.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzUploadComponent {
     // #endregion
-    /**
-     * @param {?} cdr
-     * @param {?} i18n
-     */
     constructor(cdr, i18n) {
         this.cdr = cdr;
         this.i18n = i18n;
@@ -1439,31 +1072,19 @@ class NzUploadComponent {
         this.nzFileListRender = null;
         this.nzChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
         this.nzFileListChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.onStart = (/**
-         * @param {?} file
-         * @return {?}
-         */
-        (file) => {
+        this.onStart = (file) => {
             if (!this.nzFileList) {
                 this.nzFileList = [];
             }
-            /** @type {?} */
             const targetItem = this.fileToObject(file);
             targetItem.status = 'uploading';
             this.nzFileList = this.nzFileList.concat(targetItem);
             this.nzFileListChange.emit(this.nzFileList);
             this.nzChange.emit({ file: targetItem, fileList: this.nzFileList, type: 'start' });
             this.detectChangesList();
-        });
-        this.onProgress = (/**
-         * @param {?} e
-         * @param {?} file
-         * @return {?}
-         */
-        (e, file) => {
-            /** @type {?} */
+        };
+        this.onProgress = (e, file) => {
             const fileList = this.nzFileList;
-            /** @type {?} */
             const targetItem = this.getFileItem(file, fileList);
             targetItem.percent = e.percent;
             this.nzChange.emit({
@@ -1473,16 +1094,9 @@ class NzUploadComponent {
                 type: 'progress'
             });
             this.detectChangesList();
-        });
-        this.onSuccess = (/**
-         * @param {?} res
-         * @param {?} file
-         * @return {?}
-         */
-        (res, file) => {
-            /** @type {?} */
+        };
+        this.onSuccess = (res, file) => {
             const fileList = this.nzFileList;
-            /** @type {?} */
             const targetItem = this.getFileItem(file, fileList);
             targetItem.status = 'done';
             targetItem.response = res;
@@ -1492,16 +1106,9 @@ class NzUploadComponent {
                 type: 'success'
             });
             this.detectChangesList();
-        });
-        this.onError = (/**
-         * @param {?} err
-         * @param {?} file
-         * @return {?}
-         */
-        (err, file) => {
-            /** @type {?} */
+        };
+        this.onError = (err, file) => {
             const fileList = this.nzFileList;
-            /** @type {?} */
             const targetItem = this.getFileItem(file, fileList);
             targetItem.error = err;
             targetItem.status = 'error';
@@ -1511,24 +1118,12 @@ class NzUploadComponent {
                 type: 'error'
             });
             this.detectChangesList();
-        });
-        this.onRemove = (/**
-         * @param {?} file
-         * @return {?}
-         */
-        (file) => {
+        };
+        this.onRemove = (file) => {
             this.uploadComp.abort(file);
             file.status = 'removed';
-            /** @type {?} */
             const fnRes = typeof this.nzRemove === 'function' ? this.nzRemove(file) : this.nzRemove == null ? true : this.nzRemove;
-            (fnRes instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"] ? fnRes : Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(fnRes)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["filter"])((/**
-             * @param {?} res
-             * @return {?}
-             */
-            (res) => res))).subscribe((/**
-             * @return {?}
-             */
-            () => {
+            (fnRes instanceof rxjs__WEBPACK_IMPORTED_MODULE_4__["Observable"] ? fnRes : Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["of"])(fnRes)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["filter"])((res) => res)).subscribe(() => {
                 this.nzFileList = this.removeFileItem(file, this.nzFileList);
                 this.nzChange.emit({
                     file,
@@ -1537,123 +1132,71 @@ class NzUploadComponent {
                 });
                 this.nzFileListChange.emit(this.nzFileList);
                 this.cdr.detectChanges();
-            }));
-        });
+            });
+        };
         // #endregion
         // #region styles
         this.prefixCls = 'ant-upload';
         this.classList = [];
     }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     set nzShowUploadList(value) {
         this._showUploadList = typeof value === 'boolean' ? Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_10__["toBoolean"])(value) : value;
     }
-    /**
-     * @return {?}
-     */
     get nzShowUploadList() {
         return this._showUploadList;
     }
-    /**
-     * @private
-     * @template THIS
-     * @this {THIS}
-     * @return {THIS}
-     */
     zipOptions() {
-        if (typeof (/** @type {?} */ (this)).nzShowUploadList === 'boolean' && (/** @type {?} */ (this)).nzShowUploadList) {
-            (/** @type {?} */ (this)).nzShowUploadList = {
+        if (typeof this.nzShowUploadList === 'boolean' && this.nzShowUploadList) {
+            this.nzShowUploadList = {
                 showPreviewIcon: true,
                 showRemoveIcon: true,
                 showDownloadIcon: true
             };
         }
         // filters
-        /** @type {?} */
-        const filters = (/** @type {?} */ (this)).nzFilter.slice();
-        if ((/** @type {?} */ (this)).nzMultiple && (/** @type {?} */ (this)).nzLimit > 0 && filters.findIndex((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => w.name === 'limit')) === -1) {
+        const filters = this.nzFilter.slice();
+        if (this.nzMultiple && this.nzLimit > 0 && filters.findIndex(w => w.name === 'limit') === -1) {
             filters.push({
                 name: 'limit',
-                fn: (/**
-                 * @param {?} fileList
-                 * @return {?}
-                 */
-                (fileList) => fileList.slice(-(/** @type {?} */ (this)).nzLimit))
+                fn: (fileList) => fileList.slice(-this.nzLimit)
             });
         }
-        if ((/** @type {?} */ (this)).nzSize > 0 && filters.findIndex((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => w.name === 'size')) === -1) {
+        if (this.nzSize > 0 && filters.findIndex(w => w.name === 'size') === -1) {
             filters.push({
                 name: 'size',
-                fn: (/**
-                 * @param {?} fileList
-                 * @return {?}
-                 */
-                (fileList) => fileList.filter((/**
-                 * @param {?} w
-                 * @return {?}
-                 */
-                w => (/** @type {?} */ (w.size)) / 1024 <= (/** @type {?} */ (this)).nzSize)))
+                fn: (fileList) => fileList.filter(w => w.size / 1024 <= this.nzSize)
             });
         }
-        if ((/** @type {?} */ (this)).nzFileType && (/** @type {?} */ (this)).nzFileType.length > 0 && filters.findIndex((/**
-         * @param {?} w
-         * @return {?}
-         */
-        w => w.name === 'type')) === -1) {
-            /** @type {?} */
-            const types = (/** @type {?} */ (this)).nzFileType.split(',');
+        if (this.nzFileType && this.nzFileType.length > 0 && filters.findIndex(w => w.name === 'type') === -1) {
+            const types = this.nzFileType.split(',');
             filters.push({
                 name: 'type',
-                fn: (/**
-                 * @param {?} fileList
-                 * @return {?}
-                 */
-                (fileList) => fileList.filter((/**
-                 * @param {?} w
-                 * @return {?}
-                 */
-                w => ~types.indexOf((/** @type {?} */ (w.type))))))
+                fn: (fileList) => fileList.filter(w => ~types.indexOf(w.type))
             });
         }
-        (/** @type {?} */ (this))._btnOptions = {
-            disabled: (/** @type {?} */ (this)).nzDisabled,
-            accept: (/** @type {?} */ (this)).nzAccept,
-            action: (/** @type {?} */ (this)).nzAction,
-            directory: (/** @type {?} */ (this)).nzDirectory,
-            openFileDialogOnClick: (/** @type {?} */ (this)).nzOpenFileDialogOnClick,
-            beforeUpload: (/** @type {?} */ (this)).nzBeforeUpload,
-            customRequest: (/** @type {?} */ (this)).nzCustomRequest,
-            data: (/** @type {?} */ (this)).nzData,
-            headers: (/** @type {?} */ (this)).nzHeaders,
-            name: (/** @type {?} */ (this)).nzName,
-            multiple: (/** @type {?} */ (this)).nzMultiple,
-            withCredentials: (/** @type {?} */ (this)).nzWithCredentials,
+        this._btnOptions = {
+            disabled: this.nzDisabled,
+            accept: this.nzAccept,
+            action: this.nzAction,
+            directory: this.nzDirectory,
+            openFileDialogOnClick: this.nzOpenFileDialogOnClick,
+            beforeUpload: this.nzBeforeUpload,
+            customRequest: this.nzCustomRequest,
+            data: this.nzData,
+            headers: this.nzHeaders,
+            name: this.nzName,
+            multiple: this.nzMultiple,
+            withCredentials: this.nzWithCredentials,
             filters,
-            transformFile: (/** @type {?} */ (this)).nzTransformFile,
-            onStart: (/** @type {?} */ (this)).onStart,
-            onProgress: (/** @type {?} */ (this)).onProgress,
-            onSuccess: (/** @type {?} */ (this)).onSuccess,
-            onError: (/** @type {?} */ (this)).onError
+            transformFile: this.nzTransformFile,
+            onStart: this.onStart,
+            onProgress: this.onProgress,
+            onSuccess: this.onSuccess,
+            onError: this.onError
         };
-        return (/** @type {?} */ (this));
+        return this;
     }
     // #region upload
-    /**
-     * @private
-     * @param {?} file
-     * @return {?}
-     */
     fileToObject(file) {
         return {
             lastModified: file.lastModified,
@@ -1665,40 +1208,16 @@ class NzUploadComponent {
             response: file.response,
             error: file.error,
             percent: 0,
-            originFileObj: (/** @type {?} */ (file))
+            originFileObj: file
         };
     }
-    /**
-     * @private
-     * @param {?} file
-     * @param {?} fileList
-     * @return {?}
-     */
     getFileItem(file, fileList) {
-        return fileList.filter((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => item.uid === file.uid))[0];
+        return fileList.filter(item => item.uid === file.uid)[0];
     }
-    /**
-     * @private
-     * @param {?} file
-     * @param {?} fileList
-     * @return {?}
-     */
     removeFileItem(file, fileList) {
-        return fileList.filter((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => item.uid !== file.uid));
+        return fileList.filter(item => item.uid !== file.uid);
     }
     // skip safari bug
-    /**
-     * @param {?} e
-     * @return {?}
-     */
     fileDrop(e) {
         if (e.type === this.dragState) {
             return;
@@ -1708,28 +1227,15 @@ class NzUploadComponent {
     }
     // #endregion
     // #region list
-    /**
-     * @private
-     * @return {?}
-     */
     detectChangesList() {
         var _a;
         this.cdr.detectChanges();
         (_a = this.listComp) === null || _a === void 0 ? void 0 : _a.detectChanges();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setClassMap() {
-        /** @type {?} */
         let subCls = [];
         if (this.nzType === 'drag') {
-            if (this.nzFileList.some((/**
-             * @param {?} file
-             * @return {?}
-             */
-            file => file.status === 'uploading'))) {
+            if (this.nzFileList.some(file => file.status === 'uploading')) {
                 subCls.push(`${this.prefixCls}-drag-uploading`);
             }
             if (this.dragState === 'dragover') {
@@ -1744,40 +1250,26 @@ class NzUploadComponent {
             `${this.prefixCls}-${this.nzType}`,
             ...subCls,
             (this.nzDisabled && `${this.prefixCls}-disabled`) || ''
-        ].filter((/**
-         * @param {?} item
-         * @return {?}
-         */
-        item => !!item));
+        ].filter(item => !!item);
         this.cdr.detectChanges();
     }
     // #endregion
-    /**
-     * @return {?}
-     */
     ngOnInit() {
-        this.i18n$ = this.i18n.localeChange.subscribe((/**
-         * @return {?}
-         */
-        () => {
+        this.i18n$ = this.i18n.localeChange.subscribe(() => {
             this.locale = this.i18n.getLocaleData('Upload');
             this.detectChangesList();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnChanges() {
         this.zipOptions().setClassMap();
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.i18n$.unsubscribe();
     }
 }
+/** @nocollapse */
 NzUploadComponent.ɵfac = function NzUploadComponent_Factory(t) { return new (t || NzUploadComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nService"])); };
+/** @nocollapse */
 NzUploadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzUploadComponent, selectors: [["nz-upload"]], viewQuery: function NzUploadComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c5, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c6, true);
@@ -1800,7 +1292,6 @@ NzUploadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzType === "drag")("ngIfElse", _r7);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], NzUploadListComponent, _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], NzUploadBtnComponent], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzUploadComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nService"] }
@@ -1904,7 +1395,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
         args: [{
                 selector: 'nz-upload-list',
                 exportAs: 'nzUploadList',
-                template: "<div\n  *ngFor=\"let file of list\"\n  class=\"ant-upload-list-item ant-upload-list-item-{{\n    file.status\n  }} ant-upload-list-item-list-type-{{ listType }}\"\n  [attr.data-key]=\"file.key\"\n  @itemState\n  nz-tooltip\n  [nzTooltipTitle]=\"file.status === 'error' ? file.message : null\"\n>\n  <ng-template #icon>\n    <ng-container [ngSwitch]=\"file.iconType\">\n      <div\n        *ngSwitchCase=\"'uploading'\"\n        class=\"ant-upload-list-item-thumbnail\"\n        [class.ant-upload-list-item-file]=\"!file.isUploading\"\n      >\n        <ng-template\n          [ngTemplateOutlet]=\"iconNode\"\n          [ngTemplateOutletContext]=\"{ $implicit: file }\"\n        ></ng-template>\n      </div>\n      <a\n        *ngSwitchCase=\"'thumbnail'\"\n        class=\"ant-upload-list-item-thumbnail\"\n        [class.ant-upload-list-item-file]=\"!file.isImageUrl\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        [href]=\"file.url || file.thumbUrl\"\n        (click)=\"handlePreview(file, $event)\"\n      >\n        <img\n          *ngIf=\"file.isImageUrl; else noImageThumbTpl\"\n          class=\"ant-upload-list-item-image\"\n          [src]=\"file.thumbUrl || file.url\"\n          [attr.alt]=\"file.name\"\n        />\n      </a>\n      <span *ngSwitchDefault class=\"ant-upload-text-icon\">\n        <ng-template\n          [ngTemplateOutlet]=\"iconNode\"\n          [ngTemplateOutletContext]=\"{ $implicit: file }\"\n        ></ng-template>\n      </span>\n    </ng-container>\n    <ng-template #noImageThumbTpl>\n      <ng-template\n        [ngTemplateOutlet]=\"iconNode\"\n        [ngTemplateOutletContext]=\"{ $implicit: file }\"\n      ></ng-template>\n    </ng-template>\n  </ng-template>\n  <ng-template #iconNode let-file>\n    <ng-container *ngIf=\"!iconRender; else iconRender\">\n      <ng-container [ngSwitch]=\"listType\">\n        <ng-container *ngSwitchCase=\"'picture'\">\n          <ng-container *ngIf=\"file.isUploading; else iconNodeFileIcon\">\n            <i nz-icon nzType=\"loading\"></i>\n          </ng-container>\n        </ng-container>\n        <ng-container *ngSwitchCase=\"'picture-card'\">\n          <ng-container *ngIf=\"file.isUploading; else iconNodeFileIcon\">{{\n            locale.uploading\n          }}</ng-container>\n        </ng-container>\n        <i *ngSwitchDefault nz-icon [nzType]=\"file.isUploading ? 'loading' : 'paper-clip'\"></i>\n      </ng-container>\n    </ng-container>\n    <ng-template #iconNodeFileIcon>\n      <i nz-icon [nzType]=\"file.isImageUrl ? 'picture' : 'file'\" nzTheme=\"twotone\"></i>\n    </ng-template>\n  </ng-template>\n  <ng-template #downloadOrDelete>\n    <span\n      *ngIf=\"listType !== 'picture-card'\"\n      class=\"ant-upload-list-item-card-actions {{ listType === 'picture' ? 'picture' : '' }}\"\n    >\n      <a *ngIf=\"file.showDownload\" title=\"{{ locale.downloadFile }}\">\n        <ng-template [ngTemplateOutlet]=\"downloadIcon\"></ng-template>\n      </a>\n      <a *ngIf=\"icons.showRemoveIcon\" title=\"{{ locale.removeFile }}\">\n        <ng-template [ngTemplateOutlet]=\"removeIcon\"></ng-template>\n      </a>\n    </span>\n  </ng-template>\n  <ng-template #preview>\n    <a\n      *ngIf=\"file.url\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      [ngClass]=\"file.listItemNameCls!\"\n      [attr.title]=\"file.name\"\n      [href]=\"file.url\"\n      [attr.download]=\"file.linkProps && file.linkProps.download\"\n      (click)=\"handlePreview(file, $event)\"\n      >{{ file.name }}</a\n    >\n    <span\n      *ngIf=\"!file.url\"\n      [ngClass]=\"file.listItemNameCls!\"\n      [attr.title]=\"file.name\"\n      (click)=\"handlePreview(file, $event)\"\n      >{{ file.name }}</span\n    >\n    <ng-template [ngTemplateOutlet]=\"downloadOrDelete\"></ng-template>\n  </ng-template>\n  <ng-template #removeIcon>\n    <i\n      *ngIf=\"icons.showRemoveIcon\"\n      (click)=\"handleRemove(file, $event)\"\n      nz-icon\n      nzType=\"delete\"\n      title=\"{{ locale.removeFile }}\"\n    ></i>\n  </ng-template>\n  <ng-template #downloadIcon>\n    <i\n      *ngIf=\"file.showDownload\"\n      (click)=\"handleDownload(file)\"\n      nz-icon\n      nzType=\"download\"\n      title=\"{{ locale.downloadFile }}\"\n    ></i>\n  </ng-template>\n  <div class=\"ant-upload-list-item-info\">\n    <span>\n      <ng-template [ngTemplateOutlet]=\"icon\"></ng-template>\n      <ng-template [ngTemplateOutlet]=\"preview\"></ng-template>\n    </span>\n  </div>\n  <span\n    *ngIf=\"listType === 'picture-card' && !file.isUploading\"\n    class=\"ant-upload-list-item-actions\"\n  >\n    <a\n      *ngIf=\"icons.showPreviewIcon\"\n      [href]=\"file.url || file.thumbUrl\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      title=\"{{ locale.previewFile }}\"\n      [ngStyle]=\"!(file.url || file.thumbUrl) ? { opacity: 0.5, 'pointer-events': 'none' } : null\"\n      (click)=\"handlePreview(file, $event)\"\n    >\n      <i nz-icon nzType=\"eye\"></i>\n    </a>\n    <ng-template [ngTemplateOutlet]=\"downloadIcon\"></ng-template>\n    <ng-template [ngTemplateOutlet]=\"removeIcon\"></ng-template>\n  </span>\n  <div *ngIf=\"file.isUploading\" class=\"ant-upload-list-item-progress\">\n    <nz-progress\n      [nzPercent]=\"file.percent!\"\n      nzType=\"line\"\n      [nzShowInfo]=\"false\"\n      [nzStrokeWidth]=\"2\"\n    ></nz-progress>\n  </div>\n</div>\n",
+                template: "<div\n  *ngFor=\"let file of list\"\n  class=\"ant-upload-list-item ant-upload-list-item-{{\n    file.status\n  }} ant-upload-list-item-list-type-{{ listType }}\"\n  [attr.data-key]=\"file.key\"\n  @itemState\n  nz-tooltip\n  [nzTooltipTitle]=\"file.status === 'error' ? file.message : null\"\n>\n  <ng-template #icon>\n    <ng-container [ngSwitch]=\"file.iconType\">\n      <div\n        *ngSwitchCase=\"'uploading'\"\n        class=\"ant-upload-list-item-thumbnail\"\n        [class.ant-upload-list-item-file]=\"!file.isUploading\"\n      >\n        <ng-template\n          [ngTemplateOutlet]=\"iconNode\"\n          [ngTemplateOutletContext]=\"{ $implicit: file }\"\n        ></ng-template>\n      </div>\n      <a\n        *ngSwitchCase=\"'thumbnail'\"\n        class=\"ant-upload-list-item-thumbnail\"\n        [class.ant-upload-list-item-file]=\"!file.isImageUrl\"\n        target=\"_blank\"\n        rel=\"noopener noreferrer\"\n        [href]=\"file.url || file.thumbUrl\"\n        (click)=\"handlePreview(file, $event)\"\n      >\n        <img\n          *ngIf=\"file.isImageUrl; else noImageThumbTpl\"\n          class=\"ant-upload-list-item-image\"\n          [src]=\"file.thumbUrl || file.url\"\n          [attr.alt]=\"file.name\"\n        />\n      </a>\n      <span *ngSwitchDefault class=\"ant-upload-text-icon\">\n        <ng-template\n          [ngTemplateOutlet]=\"iconNode\"\n          [ngTemplateOutletContext]=\"{ $implicit: file }\"\n        ></ng-template>\n      </span>\n    </ng-container>\n    <ng-template #noImageThumbTpl>\n      <ng-template\n        [ngTemplateOutlet]=\"iconNode\"\n        [ngTemplateOutletContext]=\"{ $implicit: file }\"\n      ></ng-template>\n    </ng-template>\n  </ng-template>\n  <ng-template #iconNode let-file>\n    <ng-container *ngIf=\"!iconRender; else iconRender\">\n      <ng-container [ngSwitch]=\"listType\">\n        <ng-container *ngSwitchCase=\"'picture'\">\n          <ng-container *ngIf=\"file.isUploading; else iconNodeFileIcon\">\n            <i nz-icon nzType=\"loading\"></i>\n          </ng-container>\n        </ng-container>\n        <ng-container *ngSwitchCase=\"'picture-card'\">\n          <ng-container *ngIf=\"file.isUploading; else iconNodeFileIcon\">{{\n            locale.uploading\n          }}</ng-container>\n        </ng-container>\n        <i *ngSwitchDefault nz-icon [nzType]=\"file.isUploading ? 'loading' : 'paper-clip'\"></i>\n      </ng-container>\n    </ng-container>\n    <ng-template #iconNodeFileIcon>\n      <i nz-icon [nzType]=\"file.isImageUrl ? 'picture' : 'file'\" nzTheme=\"twotone\"></i>\n    </ng-template>\n  </ng-template>\n  <ng-template #downloadOrDelete>\n    <span\n      *ngIf=\"listType !== 'picture-card'\"\n      class=\"ant-upload-list-item-card-actions {{ listType === 'picture' ? 'picture' : '' }}\"\n    >\n      <button\n        nz-button\n        nzType=\"text\"\n        nzSize=\"small\"\n        *ngIf=\"file.showDownload\"\n        title=\"{{ locale.downloadFile }}\"\n      >\n        <ng-template [ngTemplateOutlet]=\"downloadIcon\"></ng-template>\n      </button>\n      <button\n        nz-button\n        nzType=\"text\"\n        nzSize=\"small\"\n        *ngIf=\"icons.showRemoveIcon\"\n        title=\"{{ locale.removeFile }}\"\n      >\n        <ng-template [ngTemplateOutlet]=\"removeIcon\"></ng-template>\n      </button>\n    </span>\n  </ng-template>\n  <ng-template #preview>\n    <a\n      *ngIf=\"file.url\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      [ngClass]=\"file.listItemNameCls!\"\n      [attr.title]=\"file.name\"\n      [href]=\"file.url\"\n      [attr.download]=\"file.linkProps && file.linkProps.download\"\n      (click)=\"handlePreview(file, $event)\"\n      >{{ file.name }}</a\n    >\n    <span\n      *ngIf=\"!file.url\"\n      [ngClass]=\"file.listItemNameCls!\"\n      [attr.title]=\"file.name\"\n      (click)=\"handlePreview(file, $event)\"\n      >{{ file.name }}</span\n    >\n    <ng-template [ngTemplateOutlet]=\"downloadOrDelete\"></ng-template>\n  </ng-template>\n  <ng-template #removeIcon>\n    <i\n      *ngIf=\"icons.showRemoveIcon\"\n      (click)=\"handleRemove(file, $event)\"\n      nz-icon\n      nzType=\"delete\"\n      title=\"{{ locale.removeFile }}\"\n    ></i>\n  </ng-template>\n  <ng-template #downloadIcon>\n    <i\n      *ngIf=\"file.showDownload\"\n      (click)=\"handleDownload(file)\"\n      nz-icon\n      nzType=\"download\"\n      title=\"{{ locale.downloadFile }}\"\n    ></i>\n  </ng-template>\n  <div class=\"ant-upload-list-item-info\">\n    <span>\n      <ng-template [ngTemplateOutlet]=\"icon\"></ng-template>\n      <ng-template [ngTemplateOutlet]=\"preview\"></ng-template>\n    </span>\n  </div>\n  <span\n    *ngIf=\"listType === 'picture-card' && !file.isUploading\"\n    class=\"ant-upload-list-item-actions\"\n  >\n    <a\n      *ngIf=\"icons.showPreviewIcon\"\n      [href]=\"file.url || file.thumbUrl\"\n      target=\"_blank\"\n      rel=\"noopener noreferrer\"\n      title=\"{{ locale.previewFile }}\"\n      [ngStyle]=\"!(file.url || file.thumbUrl) ? { opacity: 0.5, 'pointer-events': 'none' } : null\"\n      (click)=\"handlePreview(file, $event)\"\n    >\n      <i nz-icon nzType=\"eye\"></i>\n    </a>\n    <ng-template [ngTemplateOutlet]=\"downloadIcon\"></ng-template>\n    <ng-template [ngTemplateOutlet]=\"removeIcon\"></ng-template>\n  </span>\n  <div *ngIf=\"file.isUploading\" class=\"ant-upload-list-item-progress\">\n    <nz-progress\n      [nzPercent]=\"file.percent!\"\n      nzType=\"line\"\n      [nzShowInfo]=\"false\"\n      [nzStrokeWidth]=\"2\"\n    ></nz-progress>\n  </div>\n</div>\n",
                 animations: [
                     Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["trigger"])('itemState', [
                         Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["transition"])(':enter', [Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["style"])({ height: '0', width: '0', opacity: 0 }), Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["animate"])(150, Object(_angular_animations__WEBPACK_IMPORTED_MODULE_6__["style"])({ height: '*', width: '*', opacity: 1 }))]),
@@ -2027,39 +1518,34 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
         }], nzDownload: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: upload.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzUploadModule {
 }
+/** @nocollapse */
 NzUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzUploadModule });
-NzUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzUploadModule_Factory(t) { return new (t || NzUploadModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_15__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_14__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzUploadModule, { declarations: function () { return [NzUploadComponent,
-        NzUploadBtnComponent,
-        NzUploadListComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_15__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_14__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]]; }, exports: function () { return [NzUploadComponent]; } }); })();
+/** @nocollapse */
+NzUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzUploadModule_Factory(t) { return new (t || NzUploadModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_16__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_15__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzUploadModule, { declarations: function () { return [NzUploadComponent, NzUploadBtnComponent, NzUploadListComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_16__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_15__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonModule"]]; }, exports: function () { return [NzUploadComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzUploadModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_15__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_14__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"]],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_7__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_16__["NzToolTipModule"], ng_zorro_antd_progress__WEBPACK_IMPORTED_MODULE_15__["NzProgressModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__["NzI18nModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_14__["NzIconModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_13__["NzButtonModule"]],
                 declarations: [NzUploadComponent, NzUploadBtnComponent, NzUploadListComponent],
                 exports: [NzUploadComponent]
             }]
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-upload.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

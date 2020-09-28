@@ -1,800 +1,7 @@
 exports.ids = ["calendar-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js":
-/*!*****************************************************************!*\
-  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js ***!
-  \*****************************************************************/
-/*! exports provided: NzCalendarComponent, NzCalendarHeaderComponent, NzCalendarModule, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarComponent", function() { return NzCalendarComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarHeaderComponent", function() { return NzCalendarHeaderComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarModule", function() { return NzCalendarModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDateCellDirective", function() { return NzDateCellDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDateFullCellDirective", function() { return NzDateFullCellDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMonthCellDirective", function() { return NzMonthCellDirective; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMonthFullCellDirective", function() { return NzMonthFullCellDirective; });
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/date-picker */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-date-picker.js");
-/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-i18n.js");
-/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-radio.js");
-/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/select */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-select.js");
-/* harmony import */ var ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/time */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-time.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-
-
-
-
-
-
-
-
-
-
-
-/**
- * @fileoverview added by tsickle
- * Generated from: calendar-cells.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-
-
-
-
-
-function NzCalendarHeaderComponent_nz_option_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-option", 7);
-} if (rf & 2) {
-    const year_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLabel", year_r2.label)("nzValue", year_r2.value);
-} }
-function NzCalendarHeaderComponent_nz_select_3_nz_option_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-option", 7);
-} if (rf & 2) {
-    const month_r4 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLabel", month_r4.label)("nzValue", month_r4.value);
-} }
-function NzCalendarHeaderComponent_nz_select_3_Template(rf, ctx) { if (rf & 1) {
-    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-select", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_nz_select_3_Template_nz_select_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.monthChange.emit($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzCalendarHeaderComponent_nz_select_3_nz_option_1_Template, 1, 2, "nz-option", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSize", ctx_r1.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx_r1.activeMonth);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r1.months);
-} }
-function NzCalendarComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainer"](0);
-} }
-function NzCalendarComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "date-table", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("valueChange", function NzCalendarComponent_ng_template_5_Template_date_table_valueChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.onDateSelect($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("prefixCls", ctx_r2.prefixCls)("value", ctx_r2.activeDate)("activeDate", ctx_r2.activeDate)("cellRender", ctx_r2.dateCell)("fullCellRender", ctx_r2.dateFullCell)("disabledDate", ctx_r2.nzDisabledDate);
-} }
-function NzCalendarComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "month-table", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("valueChange", function NzCalendarComponent_ng_template_7_Template_month_table_valueChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r8); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r7.onDateSelect($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("prefixCls", ctx_r4.prefixCls)("value", ctx_r4.activeDate)("activeDate", ctx_r4.activeDate)("cellRender", ctx_r4.monthCell)("fullCellRender", ctx_r4.monthFullCell);
-} }
-class NzDateCellDirective {
-}
-NzDateCellDirective.ɵfac = function NzDateCellDirective_Factory(t) { return new (t || NzDateCellDirective)(); };
-NzDateCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzDateCellDirective, selectors: [["", "nzDateCell", ""]], exportAs: ["nzDateCell"] });
-class NzMonthCellDirective {
-}
-NzMonthCellDirective.ɵfac = function NzMonthCellDirective_Factory(t) { return new (t || NzMonthCellDirective)(); };
-NzMonthCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzMonthCellDirective, selectors: [["", "nzMonthCell", ""]], exportAs: ["nzMonthCell"] });
-class NzDateFullCellDirective {
-}
-NzDateFullCellDirective.ɵfac = function NzDateFullCellDirective_Factory(t) { return new (t || NzDateFullCellDirective)(); };
-NzDateFullCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzDateFullCellDirective, selectors: [["", "nzDateFullCell", ""]], exportAs: ["nzDateFullCell"] });
-class NzMonthFullCellDirective {
-}
-NzMonthFullCellDirective.ɵfac = function NzMonthFullCellDirective_Factory(t) { return new (t || NzMonthFullCellDirective)(); };
-NzMonthFullCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzMonthFullCellDirective, selectors: [["", "nzMonthFullCell", ""]], exportAs: ["nzMonthFullCell"] });
-
-/**
- * @fileoverview added by tsickle
- * Generated from: calendar-header.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCalendarHeaderComponent {
-    /**
-     * @param {?} i18n
-     * @param {?} dateHelper
-     */
-    constructor(i18n, dateHelper) {
-        this.i18n = i18n;
-        this.dateHelper = dateHelper;
-        this.mode = 'month';
-        this.fullscreen = true;
-        this.activeDate = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"]();
-        this.modeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.yearChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.monthChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        // @Output() readonly valueChange: EventEmitter<CandyDate> = new EventEmitter();
-        this.yearOffset = 10;
-        this.yearTotal = 20;
-        this.years = [];
-        this.months = [];
-    }
-    /**
-     * @return {?}
-     */
-    get activeYear() {
-        return this.activeDate.getYear();
-    }
-    /**
-     * @return {?}
-     */
-    get activeMonth() {
-        return this.activeDate.getMonth();
-    }
-    /**
-     * @return {?}
-     */
-    get size() {
-        return this.fullscreen ? 'default' : 'small';
-    }
-    /**
-     * @return {?}
-     */
-    get yearTypeText() {
-        return this.i18n.getLocale().Calendar.lang.year;
-    }
-    /**
-     * @return {?}
-     */
-    get monthTypeText() {
-        return this.i18n.getLocale().Calendar.lang.month;
-    }
-    /**
-     * @return {?}
-     */
-    ngOnInit() {
-        this.setUpYears();
-        this.setUpMonths();
-    }
-    /**
-     * @param {?} year
-     * @return {?}
-     */
-    updateYear(year) {
-        this.yearChange.emit(year);
-        this.setUpYears(year);
-    }
-    /**
-     * @private
-     * @param {?=} year
-     * @return {?}
-     */
-    setUpYears(year) {
-        /** @type {?} */
-        const start = (year || this.activeYear) - this.yearOffset;
-        /** @type {?} */
-        const end = start + this.yearTotal;
-        this.years = [];
-        for (let i = start; i < end; i++) {
-            this.years.push({ label: `${i}`, value: i });
-        }
-    }
-    /**
-     * @private
-     * @return {?}
-     */
-    setUpMonths() {
-        this.months = [];
-        for (let i = 0; i < 12; i++) {
-            /** @type {?} */
-            const dateInMonth = this.activeDate.setMonth(i);
-            /** @type {?} */
-            const monthText = this.dateHelper.format(dateInMonth.nativeDate, 'MMM');
-            this.months.push({ label: monthText, value: i });
-        }
-    }
-}
-NzCalendarHeaderComponent.ɵfac = function NzCalendarHeaderComponent_Factory(t) { return new (t || NzCalendarHeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"])); };
-NzCalendarHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCalendarHeaderComponent, selectors: [["nz-calendar-header"]], hostVars: 4, hostBindings: function NzCalendarHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("display", "block");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-fullcalendar-header", true);
-    } }, inputs: { mode: "mode", fullscreen: "fullscreen", activeDate: "activeDate" }, outputs: { modeChange: "modeChange", yearChange: "yearChange", monthChange: "monthChange" }, exportAs: ["nzCalendarHeader"], decls: 9, vars: 9, consts: [[1, "ant-picker-calendar-header"], [1, "ant-picker-calendar-year-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], ["class", "ant-picker-calendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange", 4, "ngIf"], [1, "ant-picker-calendar-mode-switch", 3, "ngModel", "nzSize", "ngModelChange"], ["nz-radio-button", "", "nzValue", "month"], ["nz-radio-button", "", "nzValue", "year"], [3, "nzLabel", "nzValue"], [1, "ant-picker-calendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"]], template: function NzCalendarHeaderComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-select", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_Template_nz_select_ngModelChange_1_listener($event) { return ctx.updateYear($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzCalendarHeaderComponent_nz_option_2_Template, 1, 2, "nz-option", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzCalendarHeaderComponent_nz_select_3_Template, 2, 4, "nz-select", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "nz-radio-group", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_4_listener($event) { return ctx.mode = $event; })("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_4_listener($event) { return ctx.modeChange.emit($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "label", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "label", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSize", ctx.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx.activeYear);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.years);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.mode === "month");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx.mode)("nzSize", ctx.size);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.monthTypeText);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.yearTypeText);
-    } }, directives: [ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioGroupComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioButtonDirective"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzOptionComponent"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
-NzCalendarHeaderComponent.ctorParameters = () => [
-    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"] },
-    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"] }
-];
-NzCalendarHeaderComponent.propDecorators = {
-    mode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    fullscreen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    activeDate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    modeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    yearChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    monthChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
-};
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: calendar.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCalendarComponent {
-    /**
-     * @param {?} cdr
-     */
-    constructor(cdr) {
-        this.cdr = cdr;
-        this.activeDate = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"]();
-        this.prefixCls = 'ant-picker-calendar';
-        this.onChangeFn = (/**
-         * @return {?}
-         */
-        () => { });
-        this.onTouchFn = (/**
-         * @return {?}
-         */
-        () => { });
-        this.nzMode = 'month';
-        this.nzModeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.nzPanelChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.nzSelectChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.nzValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.nzFullscreen = true;
-    }
-    /**
-     * @return {?}
-     */
-    get dateCell() {
-        return (/** @type {?} */ ((this.nzDateCell || this.nzDateCellChild)));
-    }
-    /**
-     * @return {?}
-     */
-    get dateFullCell() {
-        return (/** @type {?} */ ((this.nzDateFullCell || this.nzDateFullCellChild)));
-    }
-    /**
-     * @return {?}
-     */
-    get monthCell() {
-        return (/** @type {?} */ ((this.nzMonthCell || this.nzMonthCellChild)));
-    }
-    /**
-     * @return {?}
-     */
-    get monthFullCell() {
-        return (/** @type {?} */ ((this.nzMonthFullCell || this.nzMonthFullCellChild)));
-    }
-    /**
-     * @param {?} mode
-     * @return {?}
-     */
-    onModeChange(mode) {
-        this.nzModeChange.emit(mode);
-        this.nzPanelChange.emit({ date: this.activeDate.nativeDate, mode });
-    }
-    /**
-     * @param {?} year
-     * @return {?}
-     */
-    onYearSelect(year) {
-        /** @type {?} */
-        const date = this.activeDate.setYear(year);
-        this.updateDate(date);
-    }
-    /**
-     * @param {?} month
-     * @return {?}
-     */
-    onMonthSelect(month) {
-        /** @type {?} */
-        const date = this.activeDate.setMonth(month);
-        this.updateDate(date);
-    }
-    /**
-     * @param {?} date
-     * @return {?}
-     */
-    onDateSelect(date) {
-        // Only activeDate is enough in calendar
-        // this.value = date;
-        this.updateDate(date);
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    writeValue(value) {
-        this.updateDate(new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"]((/** @type {?} */ (value))), false);
-        this.cdr.markForCheck();
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    registerOnChange(fn) {
-        this.onChangeFn = fn;
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    registerOnTouched(fn) {
-        this.onTouchFn = fn;
-    }
-    /**
-     * @private
-     * @param {?} date
-     * @param {?=} touched
-     * @return {?}
-     */
-    updateDate(date, touched = true) {
-        this.activeDate = date;
-        if (touched) {
-            this.onChangeFn(date.nativeDate);
-            this.onTouchFn();
-            this.nzSelectChange.emit(date.nativeDate);
-            this.nzValueChange.emit(date.nativeDate);
-        }
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    ngOnChanges(changes) {
-        if (changes.nzValue) {
-            this.updateDate(new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"](this.nzValue), false);
-        }
-    }
-}
-NzCalendarComponent.ɵfac = function NzCalendarComponent_Factory(t) { return new (t || NzCalendarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"])); };
-NzCalendarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCalendarComponent, selectors: [["nz-calendar"]], contentQueries: function NzCalendarComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzDateCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzDateFullCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzMonthCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzMonthFullCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzDateCellChild = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzDateFullCellChild = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzMonthCellChild = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzMonthFullCellChild = _t.first);
-    } }, hostVars: 6, hostBindings: function NzCalendarComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-picker-calendar", true)("ant-picker-calendar-full", ctx.nzFullscreen)("ant-picker-calendar-mini", !ctx.nzFullscreen);
-    } }, inputs: { nzMode: "nzMode", nzFullscreen: "nzFullscreen", nzValue: "nzValue", nzDisabledDate: "nzDisabledDate", nzDateCell: "nzDateCell", nzDateFullCell: "nzDateFullCell", nzMonthCell: "nzMonthCell", nzMonthFullCell: "nzMonthFullCell" }, outputs: { nzModeChange: "nzModeChange", nzPanelChange: "nzPanelChange", nzSelectChange: "nzSelectChange", nzValueChange: "nzValueChange" }, exportAs: ["nzCalendar"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"], useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(( /**
-                         * @return {?}
-                         */() => NzCalendarComponent)), multi: true }]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 9, vars: 9, consts: [[3, "fullscreen", "activeDate", "mode", "modeChange", "yearChange", "monthChange"], [1, "ant-picker-panel"], [1, "ant-picker-body"], [4, "ngIf", "ngIfThen", "ngIfElse"], ["monthModeTable", ""], ["yearModeTable", ""], [3, "prefixCls", "value", "activeDate", "cellRender", "fullCellRender", "disabledDate", "valueChange"], [3, "prefixCls", "value", "activeDate", "cellRender", "fullCellRender", "valueChange"]], template: function NzCalendarComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-calendar-header", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.nzMode = $event; })("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.onModeChange($event); })("yearChange", function NzCalendarComponent_Template_nz_calendar_header_yearChange_0_listener($event) { return ctx.onYearSelect($event); })("monthChange", function NzCalendarComponent_Template_nz_calendar_header_monthChange_0_listener($event) { return ctx.onMonthSelect($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzCalendarComponent_ng_container_4_Template, 1, 0, "ng-container", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, NzCalendarComponent_ng_template_5_Template, 1, 6, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, NzCalendarComponent_ng_template_7_Template, 1, 5, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](6);
-        const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("fullscreen", ctx.nzFullscreen)("activeDate", ctx.activeDate)("mode", ctx.nzMode);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMapInterpolate1"]("ant-picker-", ctx.nzMode === "month" ? "date" : "month", "-panel");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzMode === "month")("ngIfThen", _r1)("ngIfElse", _r3);
-    } }, directives: [NzCalendarHeaderComponent, _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["ɵDateTableComponent"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["ɵMonthTableComponent"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
-NzCalendarComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
-];
-NzCalendarComponent.propDecorators = {
-    nzMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzDisabledDate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzModeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    nzPanelChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    nzSelectChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    nzValueChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    nzDateCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzDateCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzDateCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
-    nzDateFullCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzDateFullCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzDateFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
-    nzMonthCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzMonthCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzMonthCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
-    nzMonthFullCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzMonthFullCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzMonthFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
-    nzFullscreen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
-};
-Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__metadata"])("design:type", Boolean)
-], NzCalendarComponent.prototype, "nzFullscreen", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDateCellDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: '[nzDateCell]',
-                exportAs: 'nzDateCell'
-            }]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzMonthCellDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: '[nzMonthCell]',
-                exportAs: 'nzMonthCell'
-            }]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDateFullCellDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: '[nzDateFullCell]',
-                exportAs: 'nzDateFullCell'
-            }]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzMonthFullCellDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
-        args: [{
-                selector: '[nzMonthFullCell]',
-                exportAs: 'nzMonthFullCell'
-            }]
-    }], null, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarHeaderComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
-                selector: 'nz-calendar-header',
-                exportAs: 'nzCalendarHeader',
-                template: `
-    <div class="ant-picker-calendar-header">
-      <nz-select
-        class="ant-picker-calendar-year-select"
-        [nzSize]="size"
-        [nzDropdownMatchSelectWidth]="false"
-        [ngModel]="activeYear"
-        (ngModelChange)="updateYear($event)"
-      >
-        <nz-option *ngFor="let year of years" [nzLabel]="year.label" [nzValue]="year.value"></nz-option>
-      </nz-select>
-
-      <nz-select
-        *ngIf="mode === 'month'"
-        class="ant-picker-calendar-month-select"
-        [nzSize]="size"
-        [nzDropdownMatchSelectWidth]="false"
-        [ngModel]="activeMonth"
-        (ngModelChange)="monthChange.emit($event)"
-      >
-        <nz-option *ngFor="let month of months" [nzLabel]="month.label" [nzValue]="month.value"></nz-option>
-      </nz-select>
-
-      <nz-radio-group class="ant-picker-calendar-mode-switch" [(ngModel)]="mode" (ngModelChange)="modeChange.emit($event)" [nzSize]="size">
-        <label nz-radio-button nzValue="month">{{ monthTypeText }}</label>
-        <label nz-radio-button nzValue="year">{{ yearTypeText }}</label>
-      </nz-radio-group>
-    </div>
-  `,
-                host: {
-                    '[style.display]': `'block'`,
-                    '[class.ant-fullcalendar-header]': `true`
-                }
-            }]
-    }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"] }]; }, { mode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], fullscreen: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], activeDate: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], modeChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], yearChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], monthChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
-        args: [{
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
-                selector: 'nz-calendar',
-                exportAs: 'nzCalendar',
-                template: `
-    <nz-calendar-header
-      [fullscreen]="nzFullscreen"
-      [activeDate]="activeDate"
-      [(mode)]="nzMode"
-      (modeChange)="onModeChange($event)"
-      (yearChange)="onYearSelect($event)"
-      (monthChange)="onMonthSelect($event)"
-    >
-    </nz-calendar-header>
-
-    <div class="ant-picker-panel">
-      <div class="ant-picker-{{ nzMode === 'month' ? 'date' : 'month' }}-panel">
-        <div class="ant-picker-body">
-          <ng-container *ngIf="nzMode === 'month'; then monthModeTable; else yearModeTable"></ng-container>
-        </div>
-      </div>
-    </div>
-    <ng-template #monthModeTable>
-      <!--  TODO(@wenqi73) [cellRender] [fullCellRender] -->
-      <date-table
-        [prefixCls]="prefixCls"
-        [value]="activeDate"
-        [activeDate]="activeDate"
-        [cellRender]="$any(dateCell)"
-        [fullCellRender]="$any(dateFullCell)"
-        [disabledDate]="nzDisabledDate"
-        (valueChange)="onDateSelect($event)"
-      ></date-table>
-    </ng-template>
-
-    <!--  TODO(@wenqi73) [cellRender] [fullCellRender] -->
-    <ng-template #yearModeTable>
-      <month-table
-        [prefixCls]="prefixCls"
-        [value]="activeDate"
-        [activeDate]="activeDate"
-        [cellRender]="$any(monthCell)"
-        [fullCellRender]="$any(monthFullCell)"
-        (valueChange)="onDateSelect($event)"
-      ></month-table>
-    </ng-template>
-  `,
-                host: {
-                    '[class.ant-picker-calendar]': 'true',
-                    '[class.ant-picker-calendar-full]': 'nzFullscreen',
-                    '[class.ant-picker-calendar-mini]': '!nzFullscreen'
-                },
-                providers: [{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"], useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])(( /**
-                                 * @return {?}
-                                 */() => NzCalendarComponent)), multi: true }]
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzMode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzModeChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], nzPanelChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], nzSelectChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], nzValueChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], nzFullscreen: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzValue: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzDisabledDate: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzDateCell: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzDateCellChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
-            args: [NzDateCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
-        }], nzDateFullCell: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzDateFullCellChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
-            args: [NzDateFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
-        }], nzMonthCell: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzMonthCellChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
-            args: [NzMonthCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
-        }], nzMonthFullCell: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzMonthFullCellChild: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
-            args: [NzMonthFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
-        }] }); })();
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: calendar.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzCalendarModule {
-}
-NzCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzCalendarModule });
-NzCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzCalendarModule_Factory(t) { return new (t || NzCalendarModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzCalendarModule, { declarations: function () { return [NzCalendarHeaderComponent,
-        NzCalendarComponent,
-        NzDateCellDirective,
-        NzDateFullCellDirective,
-        NzMonthCellDirective,
-        NzMonthFullCellDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]; }, exports: function () { return [NzCalendarComponent,
-        NzDateCellDirective,
-        NzDateFullCellDirective,
-        NzMonthCellDirective,
-        NzMonthFullCellDirective]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
-        args: [{
-                declarations: [
-                    NzCalendarHeaderComponent,
-                    NzCalendarComponent,
-                    NzDateCellDirective,
-                    NzDateFullCellDirective,
-                    NzMonthCellDirective,
-                    NzMonthFullCellDirective
-                ],
-                exports: [NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]
-            }]
-    }], null, null); })();
-
-/**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-calendar.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-//# sourceMappingURL=ng-zorro-antd-calendar.js.map
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/basic.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/calendar/basic.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoCalendarBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarBasicComponent", function() { return NzDemoCalendarBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-class NzDemoCalendarBasicComponent {
-    constructor() {
-        this.date = new Date(2012, 11, 21);
-        this.mode = 'month';
-    }
-    panelChange(change) {
-        console.log(change.date, change.mode);
-    }
-}
-/** @nocollapse */ NzDemoCalendarBasicComponent.ɵfac = function NzDemoCalendarBasicComponent_Factory(t) { return new (t || NzDemoCalendarBasicComponent)(); };
-/** @nocollapse */ NzDemoCalendarBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarBasicComponent, selectors: [["nz-demo-calendar-basic"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzMode", "ngModelChange", "nzModeChange", "nzPanelChange"]], template: function NzDemoCalendarBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-calendar", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_ngModelChange_0_listener($event) { return ctx.date = $event; })("nzModeChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_nzModeChange_0_listener($event) { return ctx.mode = $event; })("nzPanelChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_nzPanelChange_0_listener($event) { return ctx.panelChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.date)("nzMode", ctx.mode);
-    } }, directives: [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzCalendarComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-calendar-basic',
-                template: ` <nz-calendar [(ngModel)]="date" [(nzMode)]="mode" (nzPanelChange)="panelChange($event)"></nz-calendar> `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/card.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/calendar/card.ts ***!
-  \***************************************/
-/*! exports provided: NzDemoCalendarCardComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarCardComponent", function() { return NzDemoCalendarCardComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-
-
-
-
-const _c0 = function () { return { width: "300px", border: "1px solid #d9d9d9", borderRadius: "4px" }; };
-class NzDemoCalendarCardComponent {
-    onValueChange(value) {
-        console.log(`Current value: ${value}`);
-    }
-    onPanelChange(change) {
-        console.log(`Current value: ${change.date}`);
-        console.log(`Current mode: ${change.mode}`);
-    }
-}
-/** @nocollapse */ NzDemoCalendarCardComponent.ɵfac = function NzDemoCalendarCardComponent_Factory(t) { return new (t || NzDemoCalendarCardComponent)(); };
-/** @nocollapse */ NzDemoCalendarCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarCardComponent, selectors: [["nz-demo-calendar-card"]], decls: 2, vars: 3, consts: [[3, "ngStyle"], [3, "nzFullscreen", "nzSelectChange", "nzPanelChange"]], template: function NzDemoCalendarCardComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-calendar", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzSelectChange", function NzDemoCalendarCardComponent_Template_nz_calendar_nzSelectChange_1_listener($event) { return ctx.onValueChange($event); })("nzPanelChange", function NzDemoCalendarCardComponent_Template_nz_calendar_nzPanelChange_1_listener($event) { return ctx.onPanelChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFullscreen", false);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__["NzCalendarComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarCardComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-calendar-card',
-                template: `
-    <div [ngStyle]="{ width: '300px', border: '1px solid #d9d9d9', borderRadius: '4px' }">
-      <nz-calendar [nzFullscreen]="false" (nzSelectChange)="onValueChange($event)" (nzPanelChange)="onPanelChange($event)"></nz-calendar>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/en.component.ts":
+/***/ "2YDI":
 /*!***********************************************!*\
   !*** ./site/doc/app/calendar/en.component.ts ***!
   \***********************************************/
@@ -804,16 +11,16 @@ class NzDemoCalendarCardComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarEnComponent", function() { return NzDemoCalendarEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/calendar/basic.ts");
-/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./notice-calendar */ "./site/doc/app/calendar/notice-calendar.ts");
-/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./card */ "./site/doc/app/calendar/card.ts");
-/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./select */ "./site/doc/app/calendar/select.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "b6Ir");
+/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./notice-calendar */ "T80Y");
+/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./card */ "Yb8W");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./select */ "pg3C");
 
 
 
@@ -850,7 +57,7 @@ class NzDemoCalendarEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 408, vars: 20, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-calendar-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-calendar-demo-notice-calendar", "nzTitle", "Notice Calendar"], ["nzHref", "#components-calendar-demo-card", "nzTitle", "Card"], ["nzHref", "#components-calendar-demo-select", "nzTitle", "Selectable Calendar"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/calendar/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-calendar-basic", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-basic <name>", "nzComponentName", "NzDemoCalendarBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Notice Calendar", "nzSelector", "nz-demo-calendar-notice-calendar", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-notice-calendar <name>", "nzComponentName", "NzDemoCalendarNoticeCalendarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Card", "nzSelector", "nz-demo-calendar-card", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-card <name>", "nzComponentName", "NzDemoCalendarCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Selectable Calendar", "nzSelector", "nz-demo-calendar-select", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-select <name>", "nzComponentName", "NzDemoCalendarSelectComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://angular.io/guide/i18n"], [1, "language-typescript"], [1, "token", "function"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nz-calendar"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-calendar'", 1, "anchor"]], template: function NzDemoCalendarEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 408, vars: 20, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-calendar-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-calendar-demo-notice-calendar", "nzTitle", "Notice Calendar"], ["nzHref", "#components-calendar-demo-card", "nzTitle", "Card"], ["nzHref", "#components-calendar-demo-select", "nzTitle", "Selectable Calendar"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/calendar/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-calendar-basic", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-basic <name>", "nzComponentName", "NzDemoCalendarBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Notice Calendar", "nzSelector", "nz-demo-calendar-notice-calendar", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-notice-calendar <name>", "nzComponentName", "NzDemoCalendarNoticeCalendarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Card", "nzSelector", "nz-demo-calendar-card", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-card <name>", "nzComponentName", "NzDemoCalendarCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Selectable Calendar", "nzSelector", "nz-demo-calendar-select", "nzGenerateCommand", "ng g ng-zorro-antd:calendar-select <name>", "nzComponentName", "NzDemoCalendarSelectComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://angular.io/guide/i18n", "target", "_blank"], [1, "language-typescript"], [1, "token", "function"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nz-calendar"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-calendar'", 1, "anchor"]], template: function NzDemoCalendarEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1519,381 +726,7 @@ class NzDemoCalendarEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/calendar/index.module.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/calendar/index.module.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoCalendarModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarModule", function() { return NzDemoCalendarModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/calendar/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/calendar/basic.ts");
-/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./card */ "./site/doc/app/calendar/card.ts");
-/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./notice-calendar */ "./site/doc/app/calendar/notice-calendar.ts");
-/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./select */ "./site/doc/app/calendar/select.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/calendar/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/calendar/en.component.ts");
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoCalendarModule {
-}
-/** @nocollapse */ NzDemoCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCalendarModule });
-/** @nocollapse */ NzDemoCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCalendarModule_Factory(t) { return new (t || NzDemoCalendarModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoCalendarModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoCalendarBasicComponent"],
-        _card__WEBPACK_IMPORTED_MODULE_5__["NzDemoCalendarCardComponent"],
-        _notice_calendar__WEBPACK_IMPORTED_MODULE_6__["NzDemoCalendarNoticeCalendarComponent"],
-        _select__WEBPACK_IMPORTED_MODULE_7__["NzDemoCalendarSelectComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__["NzCalendarModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_11__["NzBadgeModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_12__["NzAlertModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoCalendarBasicComponent"],
-                    _card__WEBPACK_IMPORTED_MODULE_5__["NzDemoCalendarCardComponent"],
-                    _notice_calendar__WEBPACK_IMPORTED_MODULE_6__["NzDemoCalendarNoticeCalendarComponent"],
-                    _select__WEBPACK_IMPORTED_MODULE_7__["NzDemoCalendarSelectComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/module.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/calendar/module.ts ***!
-  \*****************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-const moduleList = [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_0__["NzCalendarModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_1__["NzBadgeModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/notice-calendar.ts":
-/*!**************************************************!*\
-  !*** ./site/doc/app/calendar/notice-calendar.ts ***!
-  \**************************************************/
-/*! exports provided: NzDemoCalendarNoticeCalendarComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarNoticeCalendarComponent", function() { return NzDemoCalendarNoticeCalendarComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/badge */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-badge.js");
-
-
-
-
-
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_li_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r7 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r7.type)("nzText", item_r7.content);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_li_1_Template, 2, 2, "li", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r3.listDataMap.eight);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r9 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r9.type)("nzText", item_r9.content);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_li_1_Template, 2, 2, "li", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.listDataMap.ten);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_li_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const item_r11 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r11.type)("nzText", item_r11.content);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_li_1_Template, 2, 2, "li", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r5.listDataMap.eleven);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ul_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](1, 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_Template, 2, 1, "ng-container", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_Template, 2, 1, "ng-container", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_Template, 2, 1, "ng-container", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const date_r2 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", date_r2.getDate());
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 11);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Backlog number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const monthData_r14 = ctx.ngIf;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](monthData_r14);
-} }
-function NzDemoCalendarNoticeCalendarComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ng_container_2_div_1_Template, 5, 1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const month_r12 = ctx.$implicit;
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.getMonthData(month_r12));
-} }
-class NzDemoCalendarNoticeCalendarComponent {
-    constructor() {
-        this.listDataMap = {
-            eight: [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' }
-            ],
-            ten: [
-                { type: 'warning', content: 'This is warning event.' },
-                { type: 'success', content: 'This is usual event.' },
-                { type: 'error', content: 'This is error event.' }
-            ],
-            eleven: [
-                { type: 'warning', content: 'This is warning event' },
-                { type: 'success', content: 'This is very long usual event........' },
-                { type: 'error', content: 'This is error event 1.' },
-                { type: 'error', content: 'This is error event 2.' },
-                { type: 'error', content: 'This is error event 3.' },
-                { type: 'error', content: 'This is error event 4.' }
-            ]
-        };
-    }
-    getMonthData(date) {
-        if (date.getMonth() === 8) {
-            return 1394;
-        }
-        return null;
-    }
-}
-/** @nocollapse */ NzDemoCalendarNoticeCalendarComponent.ɵfac = function NzDemoCalendarNoticeCalendarComponent_Factory(t) { return new (t || NzDemoCalendarNoticeCalendarComponent)(); };
-/** @nocollapse */ NzDemoCalendarNoticeCalendarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarNoticeCalendarComponent, selectors: [["nz-demo-calendar-notice-calendar"]], decls: 3, vars: 0, consts: [["class", "events", 4, "nzDateCell"], [4, "nzMonthCell"], [1, "events"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngFor", "ngForOf"], [3, "nzStatus", "nzText"], ["class", "notes-month", 4, "ngIf"], [1, "notes-month"]], template: function NzDemoCalendarNoticeCalendarComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-calendar");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_Template, 5, 4, "ul", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoCalendarNoticeCalendarComponent_ng_container_2_Template, 2, 1, "ng-container", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzCalendarComponent"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzDateCellDirective"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzMonthCellDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__["NzBadgeComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]], styles: [".events[_ngcontent-%COMP%] {\n        list-style: none;\n        margin: 0;\n        padding: 0;\n      }\n\n      .events[_ngcontent-%COMP%]   .ant-badge-status[_ngcontent-%COMP%] {\n        overflow: hidden;\n        white-space: nowrap;\n        width: 100%;\n        text-overflow: ellipsis;\n        font-size: 12px;\n      }\n\n      .notes-month[_ngcontent-%COMP%] {\n        text-align: center;\n        font-size: 28px;\n      }\n\n      .notes-month[_ngcontent-%COMP%]   section[_ngcontent-%COMP%] {\n        font-size: 28px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarNoticeCalendarComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-calendar-notice-calendar',
-                template: `
-    <nz-calendar>
-      <ul *nzDateCell="let date" class="events">
-        <ng-container [ngSwitch]="date.getDate()">
-          <ng-container *ngSwitchCase="8">
-            <li *ngFor="let item of listDataMap.eight">
-              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
-            </li>
-          </ng-container>
-          <ng-container *ngSwitchCase="10">
-            <li *ngFor="let item of listDataMap.ten">
-              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
-            </li>
-          </ng-container>
-          <ng-container *ngSwitchCase="11">
-            <li *ngFor="let item of listDataMap.eleven">
-              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
-            </li>
-          </ng-container>
-        </ng-container>
-      </ul>
-      <ng-container *nzMonthCell="let month">
-        <div *ngIf="getMonthData(month) as monthData" class="notes-month">
-          <section>{{ monthData }}</section>
-          <span>Backlog number</span>
-        </div>
-      </ng-container>
-    </nz-calendar>
-  `,
-                styles: [
-                    `
-      .events {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      .events .ant-badge-status {
-        overflow: hidden;
-        white-space: nowrap;
-        width: 100%;
-        text-overflow: ellipsis;
-        font-size: 12px;
-      }
-
-      .notes-month {
-        text-align: center;
-        font-size: 28px;
-      }
-
-      .notes-month section {
-        font-size: 28px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/select.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/calendar/select.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoCalendarSelectComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarSelectComponent", function() { return NzDemoCalendarSelectComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-
-
-
-
-
-class NzDemoCalendarSelectComponent {
-    constructor() {
-        this.selectedValue = new Date('2017-01-25');
-    }
-    selectChange(select) {
-        console.log(`Select value: ${select}`);
-    }
-}
-/** @nocollapse */ NzDemoCalendarSelectComponent.ɵfac = function NzDemoCalendarSelectComponent_Factory(t) { return new (t || NzDemoCalendarSelectComponent)(); };
-/** @nocollapse */ NzDemoCalendarSelectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarSelectComponent, selectors: [["nz-demo-calendar-select"]], decls: 3, vars: 5, consts: [[3, "nzMessage"], [3, "ngModel", "ngModelChange", "nzSelectChange"]], template: function NzDemoCalendarSelectComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "date");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-calendar", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCalendarSelectComponent_Template_nz_calendar_ngModelChange_2_listener($event) { return ctx.selectedValue = $event; })("nzSelectChange", function NzDemoCalendarSelectComponent_Template_nz_calendar_nzSelectChange_2_listener($event) { return ctx.selectChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("nzMessage", "Your selected date: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](1, 2, ctx.selectedValue, "yyyy-MM-dd"), "");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.selectedValue);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__["NzCalendarComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarSelectComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-calendar-select',
-                template: `
-    <nz-alert nzMessage="Your selected date: {{ selectedValue | date: 'yyyy-MM-dd' }}"></nz-alert>
-    <nz-calendar [(ngModel)]="selectedValue" (nzSelectChange)="selectChange($event)"></nz-calendar>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/calendar/zh.component.ts":
+/***/ "4LE0":
 /*!***********************************************!*\
   !*** ./site/doc/app/calendar/zh.component.ts ***!
   \***********************************************/
@@ -1903,16 +736,16 @@ class NzDemoCalendarSelectComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarZhComponent", function() { return NzDemoCalendarZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/calendar/basic.ts");
-/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./notice-calendar */ "./site/doc/app/calendar/notice-calendar.ts");
-/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./card */ "./site/doc/app/calendar/card.ts");
-/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./select */ "./site/doc/app/calendar/select.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "b6Ir");
+/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./notice-calendar */ "T80Y");
+/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./card */ "Yb8W");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./select */ "pg3C");
 
 
 
@@ -2595,6 +1428,1063 @@ class NzDemoCalendarZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "F8FN":
+/*!***********************************************!*\
+  !*** ./site/doc/app/calendar/index.module.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoCalendarModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarModule", function() { return NzDemoCalendarModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "mQJi");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "b6Ir");
+/* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./card */ "Yb8W");
+/* harmony import */ var _notice_calendar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./notice-calendar */ "T80Y");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./select */ "pg3C");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./zh.component */ "4LE0");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./en.component */ "2YDI");
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoCalendarModule {
+}
+/** @nocollapse */ NzDemoCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCalendarModule });
+/** @nocollapse */ NzDemoCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCalendarModule_Factory(t) { return new (t || NzDemoCalendarModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoCalendarModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoCalendarBasicComponent"],
+        _card__WEBPACK_IMPORTED_MODULE_5__["NzDemoCalendarCardComponent"],
+        _notice_calendar__WEBPACK_IMPORTED_MODULE_6__["NzDemoCalendarNoticeCalendarComponent"],
+        _select__WEBPACK_IMPORTED_MODULE_7__["NzDemoCalendarSelectComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_10__["NzCalendarModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_11__["NzBadgeModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_12__["NzAlertModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoCalendarBasicComponent"],
+                    _card__WEBPACK_IMPORTED_MODULE_5__["NzDemoCalendarCardComponent"],
+                    _notice_calendar__WEBPACK_IMPORTED_MODULE_6__["NzDemoCalendarNoticeCalendarComponent"],
+                    _select__WEBPACK_IMPORTED_MODULE_7__["NzDemoCalendarSelectComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_8__["NzDemoCalendarZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_9__["NzDemoCalendarEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "T80Y":
+/*!**************************************************!*\
+  !*** ./site/doc/app/calendar/notice-calendar.ts ***!
+  \**************************************************/
+/*! exports provided: NzDemoCalendarNoticeCalendarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarNoticeCalendarComponent", function() { return NzDemoCalendarNoticeCalendarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
+
+
+
+
+
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_li_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r7 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r7.type)("nzText", item_r7.content);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_li_1_Template, 2, 2, "li", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r3.listDataMap.eight);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r9 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r9.type)("nzText", item_r9.content);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_li_1_Template, 2, 2, "li", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r4.listDataMap.ten);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_li_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-badge", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const item_r11 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStatus", item_r11.type)("nzText", item_r11.content);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_li_1_Template, 2, 2, "li", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r5.listDataMap.eleven);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ul_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](1, 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_2_Template, 2, 1, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_3_Template, 2, 1, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzDemoCalendarNoticeCalendarComponent_ul_1_ng_container_4_Template, 2, 1, "ng-container", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const date_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitch", date_r2.getDate());
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngSwitchCase", 11);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ng_container_2_div_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "section");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Backlog number");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const monthData_r14 = ctx.ngIf;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](monthData_r14);
+} }
+function NzDemoCalendarNoticeCalendarComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ng_container_2_div_1_Template, 5, 1, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const month_r12 = ctx.$implicit;
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx_r1.getMonthData(month_r12));
+} }
+class NzDemoCalendarNoticeCalendarComponent {
+    constructor() {
+        this.listDataMap = {
+            eight: [
+                { type: 'warning', content: 'This is warning event.' },
+                { type: 'success', content: 'This is usual event.' }
+            ],
+            ten: [
+                { type: 'warning', content: 'This is warning event.' },
+                { type: 'success', content: 'This is usual event.' },
+                { type: 'error', content: 'This is error event.' }
+            ],
+            eleven: [
+                { type: 'warning', content: 'This is warning event' },
+                { type: 'success', content: 'This is very long usual event........' },
+                { type: 'error', content: 'This is error event 1.' },
+                { type: 'error', content: 'This is error event 2.' },
+                { type: 'error', content: 'This is error event 3.' },
+                { type: 'error', content: 'This is error event 4.' }
+            ]
+        };
+    }
+    getMonthData(date) {
+        if (date.getMonth() === 8) {
+            return 1394;
+        }
+        return null;
+    }
+}
+/** @nocollapse */ NzDemoCalendarNoticeCalendarComponent.ɵfac = function NzDemoCalendarNoticeCalendarComponent_Factory(t) { return new (t || NzDemoCalendarNoticeCalendarComponent)(); };
+/** @nocollapse */ NzDemoCalendarNoticeCalendarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarNoticeCalendarComponent, selectors: [["nz-demo-calendar-notice-calendar"]], decls: 3, vars: 0, consts: [["class", "events", 4, "nzDateCell"], [4, "nzMonthCell"], [1, "events"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngFor", "ngForOf"], [3, "nzStatus", "nzText"], ["class", "notes-month", 4, "ngIf"], [1, "notes-month"]], template: function NzDemoCalendarNoticeCalendarComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-calendar");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCalendarNoticeCalendarComponent_ul_1_Template, 5, 4, "ul", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoCalendarNoticeCalendarComponent_ng_container_2_Template, 2, 1, "ng-container", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzCalendarComponent"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzDateCellDirective"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzMonthCellDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_3__["NzBadgeComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"]], styles: [".events[_ngcontent-%COMP%] {\n        list-style: none;\n        margin: 0;\n        padding: 0;\n      }\n\n      .events[_ngcontent-%COMP%]   .ant-badge-status[_ngcontent-%COMP%] {\n        overflow: hidden;\n        white-space: nowrap;\n        width: 100%;\n        text-overflow: ellipsis;\n        font-size: 12px;\n      }\n\n      .notes-month[_ngcontent-%COMP%] {\n        text-align: center;\n        font-size: 28px;\n      }\n\n      .notes-month[_ngcontent-%COMP%]   section[_ngcontent-%COMP%] {\n        font-size: 28px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarNoticeCalendarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-calendar-notice-calendar',
+                template: `
+    <nz-calendar>
+      <ul *nzDateCell="let date" class="events">
+        <ng-container [ngSwitch]="date.getDate()">
+          <ng-container *ngSwitchCase="8">
+            <li *ngFor="let item of listDataMap.eight">
+              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
+            </li>
+          </ng-container>
+          <ng-container *ngSwitchCase="10">
+            <li *ngFor="let item of listDataMap.ten">
+              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
+            </li>
+          </ng-container>
+          <ng-container *ngSwitchCase="11">
+            <li *ngFor="let item of listDataMap.eleven">
+              <nz-badge [nzStatus]="item.type" [nzText]="item.content"></nz-badge>
+            </li>
+          </ng-container>
+        </ng-container>
+      </ul>
+      <ng-container *nzMonthCell="let month">
+        <div *ngIf="getMonthData(month) as monthData" class="notes-month">
+          <section>{{ monthData }}</section>
+          <span>Backlog number</span>
+        </div>
+      </ng-container>
+    </nz-calendar>
+  `,
+                styles: [
+                    `
+      .events {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .events .ant-badge-status {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        text-overflow: ellipsis;
+        font-size: 12px;
+      }
+
+      .notes-month {
+        text-align: center;
+        font-size: 28px;
+      }
+
+      .notes-month section {
+        font-size: 28px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Yb8W":
+/*!***************************************!*\
+  !*** ./site/doc/app/calendar/card.ts ***!
+  \***************************************/
+/*! exports provided: NzDemoCalendarCardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarCardComponent", function() { return NzDemoCalendarCardComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+
+
+
+
+const _c0 = function () { return { width: "300px", border: "1px solid #d9d9d9", borderRadius: "4px" }; };
+class NzDemoCalendarCardComponent {
+    onValueChange(value) {
+        console.log(`Current value: ${value}`);
+    }
+    onPanelChange(change) {
+        console.log(`Current value: ${change.date}`);
+        console.log(`Current mode: ${change.mode}`);
+    }
+}
+/** @nocollapse */ NzDemoCalendarCardComponent.ɵfac = function NzDemoCalendarCardComponent_Factory(t) { return new (t || NzDemoCalendarCardComponent)(); };
+/** @nocollapse */ NzDemoCalendarCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarCardComponent, selectors: [["nz-demo-calendar-card"]], decls: 2, vars: 3, consts: [[3, "ngStyle"], [3, "nzFullscreen", "nzSelectChange", "nzPanelChange"]], template: function NzDemoCalendarCardComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-calendar", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzSelectChange", function NzDemoCalendarCardComponent_Template_nz_calendar_nzSelectChange_1_listener($event) { return ctx.onValueChange($event); })("nzPanelChange", function NzDemoCalendarCardComponent_Template_nz_calendar_nzPanelChange_1_listener($event) { return ctx.onPanelChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzFullscreen", false);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__["NzCalendarComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarCardComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-calendar-card',
+                template: `
+    <div [ngStyle]="{ width: '300px', border: '1px solid #d9d9d9', borderRadius: '4px' }">
+      <nz-calendar [nzFullscreen]="false" (nzSelectChange)="onValueChange($event)" (nzPanelChange)="onPanelChange($event)"></nz-calendar>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "b6Ir":
+/*!****************************************!*\
+  !*** ./site/doc/app/calendar/basic.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoCalendarBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarBasicComponent", function() { return NzDemoCalendarBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+class NzDemoCalendarBasicComponent {
+    constructor() {
+        this.date = new Date(2012, 11, 21);
+        this.mode = 'month';
+    }
+    panelChange(change) {
+        console.log(change.date, change.mode);
+    }
+}
+/** @nocollapse */ NzDemoCalendarBasicComponent.ɵfac = function NzDemoCalendarBasicComponent_Factory(t) { return new (t || NzDemoCalendarBasicComponent)(); };
+/** @nocollapse */ NzDemoCalendarBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarBasicComponent, selectors: [["nz-demo-calendar-basic"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzMode", "ngModelChange", "nzModeChange", "nzPanelChange"]], template: function NzDemoCalendarBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-calendar", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_ngModelChange_0_listener($event) { return ctx.date = $event; })("nzModeChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_nzModeChange_0_listener($event) { return ctx.mode = $event; })("nzPanelChange", function NzDemoCalendarBasicComponent_Template_nz_calendar_nzPanelChange_0_listener($event) { return ctx.panelChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.date)("nzMode", ctx.mode);
+    } }, directives: [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_1__["NzCalendarComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-calendar-basic',
+                template: ` <nz-calendar [(ngModel)]="date" [(nzMode)]="mode" (nzPanelChange)="panelChange($event)"></nz-calendar> `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "mQJi":
+/*!*****************************************!*\
+  !*** ./site/doc/app/calendar/module.ts ***!
+  \*****************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+/* harmony import */ var ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/badge */ "lysd");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+const moduleList = [ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_0__["NzCalendarModule"], ng_zorro_antd_badge__WEBPACK_IMPORTED_MODULE_1__["NzBadgeModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertModule"]];
+
+
+/***/ }),
+
+/***/ "pDMR":
+/*!*****************************************************************!*\
+  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-calendar.js ***!
+  \*****************************************************************/
+/*! exports provided: NzCalendarComponent, NzCalendarHeaderComponent, NzCalendarModule, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarComponent", function() { return NzCalendarComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarHeaderComponent", function() { return NzCalendarHeaderComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCalendarModule", function() { return NzCalendarModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDateCellDirective", function() { return NzDateCellDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDateFullCellDirective", function() { return NzDateFullCellDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMonthCellDirective", function() { return NzMonthCellDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzMonthFullCellDirective", function() { return NzMonthFullCellDirective; });
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/date-picker */ "WE/1");
+/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
+/* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
+/* harmony import */ var ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/select */ "sBNc");
+/* harmony import */ var ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/time */ "H8ly");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+
+
+
+
+
+
+
+function NzCalendarHeaderComponent_nz_option_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-option", 7);
+} if (rf & 2) {
+    const year_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLabel", year_r2.label)("nzValue", year_r2.value);
+} }
+function NzCalendarHeaderComponent_nz_select_3_nz_option_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-option", 7);
+} if (rf & 2) {
+    const month_r4 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzLabel", month_r4.label)("nzValue", month_r4.value);
+} }
+function NzCalendarHeaderComponent_nz_select_3_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-select", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_nz_select_3_Template_nz_select_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.monthChange.emit($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzCalendarHeaderComponent_nz_select_3_nz_option_1_Template, 1, 2, "nz-option", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSize", ctx_r1.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx_r1.activeMonth);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r1.months);
+} }
+function NzCalendarComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainer"](0);
+} }
+function NzCalendarComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "date-table", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("valueChange", function NzCalendarComponent_ng_template_5_Template_date_table_valueChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r6); const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r5.onDateSelect($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("prefixCls", ctx_r2.prefixCls)("value", ctx_r2.activeDate)("activeDate", ctx_r2.activeDate)("cellRender", ctx_r2.dateCell)("fullCellRender", ctx_r2.dateFullCell)("disabledDate", ctx_r2.nzDisabledDate);
+} }
+function NzCalendarComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "month-table", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("valueChange", function NzCalendarComponent_ng_template_7_Template_month_table_valueChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r8); const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r7.onDateSelect($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("prefixCls", ctx_r4.prefixCls)("value", ctx_r4.activeDate)("activeDate", ctx_r4.activeDate)("cellRender", ctx_r4.monthCell)("fullCellRender", ctx_r4.monthFullCell);
+} }
+class NzDateCellDirective {
+}
+/** @nocollapse */
+NzDateCellDirective.ɵfac = function NzDateCellDirective_Factory(t) { return new (t || NzDateCellDirective)(); };
+/** @nocollapse */
+NzDateCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzDateCellDirective, selectors: [["", "nzDateCell", ""]], exportAs: ["nzDateCell"] });
+class NzMonthCellDirective {
+}
+/** @nocollapse */
+NzMonthCellDirective.ɵfac = function NzMonthCellDirective_Factory(t) { return new (t || NzMonthCellDirective)(); };
+/** @nocollapse */
+NzMonthCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzMonthCellDirective, selectors: [["", "nzMonthCell", ""]], exportAs: ["nzMonthCell"] });
+class NzDateFullCellDirective {
+}
+/** @nocollapse */
+NzDateFullCellDirective.ɵfac = function NzDateFullCellDirective_Factory(t) { return new (t || NzDateFullCellDirective)(); };
+/** @nocollapse */
+NzDateFullCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzDateFullCellDirective, selectors: [["", "nzDateFullCell", ""]], exportAs: ["nzDateFullCell"] });
+class NzMonthFullCellDirective {
+}
+/** @nocollapse */
+NzMonthFullCellDirective.ɵfac = function NzMonthFullCellDirective_Factory(t) { return new (t || NzMonthFullCellDirective)(); };
+/** @nocollapse */
+NzMonthFullCellDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzMonthFullCellDirective, selectors: [["", "nzMonthFullCell", ""]], exportAs: ["nzMonthFullCell"] });
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCalendarHeaderComponent {
+    constructor(i18n, dateHelper) {
+        this.i18n = i18n;
+        this.dateHelper = dateHelper;
+        this.mode = 'month';
+        this.fullscreen = true;
+        this.activeDate = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"]();
+        this.modeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.yearChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.monthChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        // @Output() readonly valueChange: EventEmitter<CandyDate> = new EventEmitter();
+        this.yearOffset = 10;
+        this.yearTotal = 20;
+        this.years = [];
+        this.months = [];
+    }
+    get activeYear() {
+        return this.activeDate.getYear();
+    }
+    get activeMonth() {
+        return this.activeDate.getMonth();
+    }
+    get size() {
+        return this.fullscreen ? 'default' : 'small';
+    }
+    get yearTypeText() {
+        return this.i18n.getLocale().Calendar.lang.year;
+    }
+    get monthTypeText() {
+        return this.i18n.getLocale().Calendar.lang.month;
+    }
+    ngOnInit() {
+        this.setUpYears();
+        this.setUpMonths();
+    }
+    updateYear(year) {
+        this.yearChange.emit(year);
+        this.setUpYears(year);
+    }
+    setUpYears(year) {
+        const start = (year || this.activeYear) - this.yearOffset;
+        const end = start + this.yearTotal;
+        this.years = [];
+        for (let i = start; i < end; i++) {
+            this.years.push({ label: `${i}`, value: i });
+        }
+    }
+    setUpMonths() {
+        this.months = [];
+        for (let i = 0; i < 12; i++) {
+            const dateInMonth = this.activeDate.setMonth(i);
+            const monthText = this.dateHelper.format(dateInMonth.nativeDate, 'MMM');
+            this.months.push({ label: monthText, value: i });
+        }
+    }
+}
+/** @nocollapse */
+NzCalendarHeaderComponent.ɵfac = function NzCalendarHeaderComponent_Factory(t) { return new (t || NzCalendarHeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"])); };
+/** @nocollapse */
+NzCalendarHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCalendarHeaderComponent, selectors: [["nz-calendar-header"]], hostVars: 4, hostBindings: function NzCalendarHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("display", "block");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-fullcalendar-header", true);
+    } }, inputs: { mode: "mode", fullscreen: "fullscreen", activeDate: "activeDate" }, outputs: { modeChange: "modeChange", yearChange: "yearChange", monthChange: "monthChange" }, exportAs: ["nzCalendarHeader"], decls: 9, vars: 9, consts: [[1, "ant-picker-calendar-header"], [1, "ant-picker-calendar-year-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], ["class", "ant-picker-calendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange", 4, "ngIf"], [1, "ant-picker-calendar-mode-switch", 3, "ngModel", "nzSize", "ngModelChange"], ["nz-radio-button", "", "nzValue", "month"], ["nz-radio-button", "", "nzValue", "year"], [3, "nzLabel", "nzValue"], [1, "ant-picker-calendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"]], template: function NzCalendarHeaderComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-select", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_Template_nz_select_ngModelChange_1_listener($event) { return ctx.updateYear($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzCalendarHeaderComponent_nz_option_2_Template, 1, 2, "nz-option", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, NzCalendarHeaderComponent_nz_select_3_Template, 2, 4, "nz-select", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "nz-radio-group", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_4_listener($event) { return ctx.mode = $event; })("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_4_listener($event) { return ctx.modeChange.emit($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "label", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](7, "label", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzSize", ctx.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx.activeYear);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.years);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.mode === "month");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngModel", ctx.mode)("nzSize", ctx.size);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.monthTypeText);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.yearTypeText);
+    } }, directives: [ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioGroupComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioComponent"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioButtonDirective"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzOptionComponent"]], encapsulation: 2, changeDetection: 0 });
+NzCalendarHeaderComponent.ctorParameters = () => [
+    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"] },
+    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"] }
+];
+NzCalendarHeaderComponent.propDecorators = {
+    mode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    fullscreen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    activeDate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    modeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    yearChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    monthChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
+};
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCalendarComponent {
+    constructor(cdr) {
+        this.cdr = cdr;
+        this.activeDate = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"]();
+        this.prefixCls = 'ant-picker-calendar';
+        this.onChangeFn = () => { };
+        this.onTouchFn = () => { };
+        this.nzMode = 'month';
+        this.nzModeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.nzPanelChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.nzSelectChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.nzValueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.nzFullscreen = true;
+    }
+    get dateCell() {
+        return (this.nzDateCell || this.nzDateCellChild);
+    }
+    get dateFullCell() {
+        return (this.nzDateFullCell || this.nzDateFullCellChild);
+    }
+    get monthCell() {
+        return (this.nzMonthCell || this.nzMonthCellChild);
+    }
+    get monthFullCell() {
+        return (this.nzMonthFullCell || this.nzMonthFullCellChild);
+    }
+    onModeChange(mode) {
+        this.nzModeChange.emit(mode);
+        this.nzPanelChange.emit({ date: this.activeDate.nativeDate, mode });
+    }
+    onYearSelect(year) {
+        const date = this.activeDate.setYear(year);
+        this.updateDate(date);
+    }
+    onMonthSelect(month) {
+        const date = this.activeDate.setMonth(month);
+        this.updateDate(date);
+    }
+    onDateSelect(date) {
+        // Only activeDate is enough in calendar
+        // this.value = date;
+        this.updateDate(date);
+    }
+    writeValue(value) {
+        this.updateDate(new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"](value), false);
+        this.cdr.markForCheck();
+    }
+    registerOnChange(fn) {
+        this.onChangeFn = fn;
+    }
+    registerOnTouched(fn) {
+        this.onTouchFn = fn;
+    }
+    updateDate(date, touched = true) {
+        this.activeDate = date;
+        if (touched) {
+            this.onChangeFn(date.nativeDate);
+            this.onTouchFn();
+            this.nzSelectChange.emit(date.nativeDate);
+            this.nzValueChange.emit(date.nativeDate);
+        }
+    }
+    ngOnChanges(changes) {
+        if (changes.nzValue) {
+            this.updateDate(new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_7__["CandyDate"](this.nzValue), false);
+        }
+    }
+}
+/** @nocollapse */
+NzCalendarComponent.ɵfac = function NzCalendarComponent_Factory(t) { return new (t || NzCalendarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"])); };
+/** @nocollapse */
+NzCalendarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCalendarComponent, selectors: [["nz-calendar"]], contentQueries: function NzCalendarComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzDateCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzDateFullCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzMonthCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵcontentQuery"](dirIndex, NzMonthFullCellDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"]);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzDateCellChild = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzDateFullCellChild = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzMonthCellChild = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵloadQuery"]()) && (ctx.nzMonthFullCellChild = _t.first);
+    } }, hostVars: 6, hostBindings: function NzCalendarComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-picker-calendar", true)("ant-picker-calendar-full", ctx.nzFullscreen)("ant-picker-calendar-mini", !ctx.nzFullscreen);
+    } }, inputs: { nzMode: "nzMode", nzFullscreen: "nzFullscreen", nzValue: "nzValue", nzDisabledDate: "nzDisabledDate", nzDateCell: "nzDateCell", nzDateFullCell: "nzDateFullCell", nzMonthCell: "nzMonthCell", nzMonthFullCell: "nzMonthFullCell" }, outputs: { nzModeChange: "nzModeChange", nzPanelChange: "nzPanelChange", nzSelectChange: "nzSelectChange", nzValueChange: "nzValueChange" }, exportAs: ["nzCalendar"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"], useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])((() => NzCalendarComponent)), multi: true }]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 9, vars: 9, consts: [[3, "fullscreen", "activeDate", "mode", "modeChange", "yearChange", "monthChange"], [1, "ant-picker-panel"], [1, "ant-picker-body"], [4, "ngIf", "ngIfThen", "ngIfElse"], ["monthModeTable", ""], ["yearModeTable", ""], [3, "prefixCls", "value", "activeDate", "cellRender", "fullCellRender", "disabledDate", "valueChange"], [3, "prefixCls", "value", "activeDate", "cellRender", "fullCellRender", "valueChange"]], template: function NzCalendarComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-calendar-header", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.nzMode = $event; })("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.onModeChange($event); })("yearChange", function NzCalendarComponent_Template_nz_calendar_header_yearChange_0_listener($event) { return ctx.onYearSelect($event); })("monthChange", function NzCalendarComponent_Template_nz_calendar_header_monthChange_0_listener($event) { return ctx.onMonthSelect($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, NzCalendarComponent_ng_container_4_Template, 1, 0, "ng-container", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, NzCalendarComponent_ng_template_5_Template, 1, 6, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, NzCalendarComponent_ng_template_7_Template, 1, 5, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](6);
+        const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("fullscreen", ctx.nzFullscreen)("activeDate", ctx.activeDate)("mode", ctx.nzMode);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMapInterpolate1"]("ant-picker-", ctx.nzMode === "month" ? "date" : "month", "-panel");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzMode === "month")("ngIfThen", _r1)("ngIfElse", _r3);
+    } }, directives: [NzCalendarHeaderComponent, _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["ɵDateTableComponent"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["ɵMonthTableComponent"]], encapsulation: 2, changeDetection: 0 });
+NzCalendarComponent.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
+];
+NzCalendarComponent.propDecorators = {
+    nzMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzDisabledDate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzModeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    nzPanelChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    nzSelectChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    nzValueChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
+    nzDateCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzDateCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzDateCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
+    nzDateFullCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzDateFullCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzDateFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
+    nzMonthCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzMonthCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzMonthCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
+    nzMonthFullCell: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzMonthFullCellChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"], args: [NzMonthFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] },] }],
+    nzFullscreen: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+};
+Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__metadata"])("design:type", Boolean)
+], NzCalendarComponent.prototype, "nzFullscreen", void 0);
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDateCellDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
+        args: [{
+                selector: '[nzDateCell]',
+                exportAs: 'nzDateCell'
+            }]
+    }], null, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzMonthCellDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
+        args: [{
+                selector: '[nzMonthCell]',
+                exportAs: 'nzMonthCell'
+            }]
+    }], null, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDateFullCellDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
+        args: [{
+                selector: '[nzDateFullCell]',
+                exportAs: 'nzDateFullCell'
+            }]
+    }], null, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzMonthFullCellDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Directive"],
+        args: [{
+                selector: '[nzMonthFullCell]',
+                exportAs: 'nzMonthFullCell'
+            }]
+    }], null, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarHeaderComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                selector: 'nz-calendar-header',
+                exportAs: 'nzCalendarHeader',
+                template: `
+    <div class="ant-picker-calendar-header">
+      <nz-select
+        class="ant-picker-calendar-year-select"
+        [nzSize]="size"
+        [nzDropdownMatchSelectWidth]="false"
+        [ngModel]="activeYear"
+        (ngModelChange)="updateYear($event)"
+      >
+        <nz-option *ngFor="let year of years" [nzLabel]="year.label" [nzValue]="year.value"></nz-option>
+      </nz-select>
+
+      <nz-select
+        *ngIf="mode === 'month'"
+        class="ant-picker-calendar-month-select"
+        [nzSize]="size"
+        [nzDropdownMatchSelectWidth]="false"
+        [ngModel]="activeMonth"
+        (ngModelChange)="monthChange.emit($event)"
+      >
+        <nz-option *ngFor="let month of months" [nzLabel]="month.label" [nzValue]="month.value"></nz-option>
+      </nz-select>
+
+      <nz-radio-group class="ant-picker-calendar-mode-switch" [(ngModel)]="mode" (ngModelChange)="modeChange.emit($event)" [nzSize]="size">
+        <label nz-radio-button nzValue="month">{{ monthTypeText }}</label>
+        <label nz-radio-button nzValue="year">{{ yearTypeText }}</label>
+      </nz-radio-group>
+    </div>
+  `,
+                host: {
+                    '[style.display]': `'block'`,
+                    '[class.ant-fullcalendar-header]': `true`
+                }
+            }]
+    }], function () { return [{ type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nService"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["DateHelperService"] }]; }, { mode: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], fullscreen: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], activeDate: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], modeChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], yearChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], monthChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        args: [{
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                selector: 'nz-calendar',
+                exportAs: 'nzCalendar',
+                template: `
+    <nz-calendar-header
+      [fullscreen]="nzFullscreen"
+      [activeDate]="activeDate"
+      [(mode)]="nzMode"
+      (modeChange)="onModeChange($event)"
+      (yearChange)="onYearSelect($event)"
+      (monthChange)="onMonthSelect($event)"
+    >
+    </nz-calendar-header>
+
+    <div class="ant-picker-panel">
+      <div class="ant-picker-{{ nzMode === 'month' ? 'date' : 'month' }}-panel">
+        <div class="ant-picker-body">
+          <ng-container *ngIf="nzMode === 'month'; then monthModeTable; else yearModeTable"></ng-container>
+        </div>
+      </div>
+    </div>
+    <ng-template #monthModeTable>
+      <!--  TODO(@wenqi73) [cellRender] [fullCellRender] -->
+      <date-table
+        [prefixCls]="prefixCls"
+        [value]="activeDate"
+        [activeDate]="activeDate"
+        [cellRender]="$any(dateCell)"
+        [fullCellRender]="$any(dateFullCell)"
+        [disabledDate]="nzDisabledDate"
+        (valueChange)="onDateSelect($event)"
+      ></date-table>
+    </ng-template>
+
+    <!--  TODO(@wenqi73) [cellRender] [fullCellRender] -->
+    <ng-template #yearModeTable>
+      <month-table
+        [prefixCls]="prefixCls"
+        [value]="activeDate"
+        [activeDate]="activeDate"
+        [cellRender]="$any(monthCell)"
+        [fullCellRender]="$any(monthFullCell)"
+        (valueChange)="onDateSelect($event)"
+      ></month-table>
+    </ng-template>
+  `,
+                host: {
+                    '[class.ant-picker-calendar]': 'true',
+                    '[class.ant-picker-calendar-full]': 'nzFullscreen',
+                    '[class.ant-picker-calendar-mini]': '!nzFullscreen'
+                },
+                providers: [{ provide: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NG_VALUE_ACCESSOR"], useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["forwardRef"])((() => NzCalendarComponent)), multi: true }]
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzMode: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzModeChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], nzPanelChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], nzSelectChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], nzValueChange: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+        }], nzFullscreen: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzValue: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzDisabledDate: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzDateCell: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzDateCellChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
+            args: [NzDateCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
+        }], nzDateFullCell: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzDateFullCellChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
+            args: [NzDateFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
+        }], nzMonthCell: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzMonthCellChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
+            args: [NzMonthCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
+        }], nzMonthFullCell: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzMonthFullCellChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ContentChild"],
+            args: [NzMonthFullCellDirective, { static: false, read: _angular_core__WEBPACK_IMPORTED_MODULE_1__["TemplateRef"] }]
+        }] }); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzCalendarModule {
+}
+/** @nocollapse */
+NzCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzCalendarModule });
+/** @nocollapse */
+NzCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzCalendarModule_Factory(t) { return new (t || NzCalendarModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzCalendarModule, { declarations: function () { return [NzCalendarHeaderComponent, NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]; }, exports: function () { return [NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzCalendarModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{
+                declarations: [
+                    NzCalendarHeaderComponent,
+                    NzCalendarComponent,
+                    NzDateCellDirective,
+                    NzDateFullCellDirective,
+                    NzMonthCellDirective,
+                    NzMonthFullCellDirective
+                ],
+                exports: [NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective],
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_4__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_5__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_6__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_3__["LibPackerModule"]]
+            }]
+    }], null, null); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ng-zorro-antd-calendar.js.map
+
+/***/ }),
+
+/***/ "pg3C":
+/*!*****************************************!*\
+  !*** ./site/doc/app/calendar/select.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoCalendarSelectComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoCalendarSelectComponent", function() { return NzDemoCalendarSelectComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+/* harmony import */ var ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/calendar */ "pDMR");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+
+
+class NzDemoCalendarSelectComponent {
+    constructor() {
+        this.selectedValue = new Date('2017-01-25');
+    }
+    selectChange(select) {
+        console.log(`Select value: ${select}`);
+    }
+}
+/** @nocollapse */ NzDemoCalendarSelectComponent.ɵfac = function NzDemoCalendarSelectComponent_Factory(t) { return new (t || NzDemoCalendarSelectComponent)(); };
+/** @nocollapse */ NzDemoCalendarSelectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCalendarSelectComponent, selectors: [["nz-demo-calendar-select"]], decls: 3, vars: 5, consts: [[3, "nzMessage"], [3, "ngModel", "ngModelChange", "nzSelectChange"]], template: function NzDemoCalendarSelectComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](1, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-calendar", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCalendarSelectComponent_Template_nz_calendar_ngModelChange_2_listener($event) { return ctx.selectedValue = $event; })("nzSelectChange", function NzDemoCalendarSelectComponent_Template_nz_calendar_nzSelectChange_2_listener($event) { return ctx.selectChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate1"]("nzMessage", "Your selected date: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](1, 2, ctx.selectedValue, "yyyy-MM-dd"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.selectedValue);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"], ng_zorro_antd_calendar__WEBPACK_IMPORTED_MODULE_2__["NzCalendarComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["DatePipe"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoCalendarSelectComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-calendar-select',
+                template: `
+    <nz-alert nzMessage="Your selected date: {{ selectedValue | date: 'yyyy-MM-dd' }}"></nz-alert>
+    <nz-calendar [(ngModel)]="selectedValue" (nzSelectChange)="selectChange($event)"></nz-calendar>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

@@ -1,7 +1,116 @@
 exports.ids = ["grid-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js":
+/***/ "52hb":
+/*!*******************************************!*\
+  !*** ./site/doc/app/grid/index.module.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoGridModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridModule", function() { return NzDemoGridModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "NtwG");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "vCry");
+/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./flex-align */ "x6m7");
+/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./flex-order */ "f5RA");
+/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./flex-stretch */ "sKzt");
+/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./flex */ "aIUY");
+/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./gutter */ "eURE");
+/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./offset */ "uUCk");
+/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./playground */ "EDM+");
+/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./responsive-more */ "WpUU");
+/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./responsive */ "zJeg");
+/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./sort */ "pgto");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./zh.component */ "nyM4");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./en.component */ "c+m1");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoGridModule {
+}
+/** @nocollapse */ NzDemoGridModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoGridModule });
+/** @nocollapse */ NzDemoGridModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoGridModule_Factory(t) { return new (t || NzDemoGridModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoGridModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoGridBasicComponent"],
+        _flex_align__WEBPACK_IMPORTED_MODULE_5__["NzDemoGridFlexAlignComponent"],
+        _flex_order__WEBPACK_IMPORTED_MODULE_6__["NzDemoGridFlexOrderComponent"],
+        _flex_stretch__WEBPACK_IMPORTED_MODULE_7__["NzDemoGridFlexStretchComponent"],
+        _flex__WEBPACK_IMPORTED_MODULE_8__["NzDemoGridFlexComponent"],
+        _gutter__WEBPACK_IMPORTED_MODULE_9__["NzDemoGridGutterComponent"],
+        _offset__WEBPACK_IMPORTED_MODULE_10__["NzDemoGridOffsetComponent"],
+        _playground__WEBPACK_IMPORTED_MODULE_11__["NzDemoGridPlaygroundComponent"],
+        _responsive_more__WEBPACK_IMPORTED_MODULE_12__["NzDemoGridResponsiveMoreComponent"],
+        _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoGridResponsiveComponent"],
+        _sort__WEBPACK_IMPORTED_MODULE_14__["NzDemoGridSortComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_17__["NzGridModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_18__["NzSliderModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_19__["NzDividerModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoGridBasicComponent"],
+                    _flex_align__WEBPACK_IMPORTED_MODULE_5__["NzDemoGridFlexAlignComponent"],
+                    _flex_order__WEBPACK_IMPORTED_MODULE_6__["NzDemoGridFlexOrderComponent"],
+                    _flex_stretch__WEBPACK_IMPORTED_MODULE_7__["NzDemoGridFlexStretchComponent"],
+                    _flex__WEBPACK_IMPORTED_MODULE_8__["NzDemoGridFlexComponent"],
+                    _gutter__WEBPACK_IMPORTED_MODULE_9__["NzDemoGridGutterComponent"],
+                    _offset__WEBPACK_IMPORTED_MODULE_10__["NzDemoGridOffsetComponent"],
+                    _playground__WEBPACK_IMPORTED_MODULE_11__["NzDemoGridPlaygroundComponent"],
+                    _responsive_more__WEBPACK_IMPORTED_MODULE_12__["NzDemoGridResponsiveMoreComponent"],
+                    _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoGridResponsiveComponent"],
+                    _sort__WEBPACK_IMPORTED_MODULE_14__["NzDemoGridSortComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "658v":
 /*!****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js ***!
   \****************************************************************/
@@ -12,12 +121,12 @@ exports.modules = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerComponent", function() { return NzDividerComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerModule", function() { return NzDividerModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
 
 
 
@@ -25,9 +134,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * Generated from: divider.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -56,12 +164,15 @@ class NzDividerComponent {
         this.nzType = 'horizontal';
         this.nzOrientation = 'center';
         this.nzDashed = false;
+        this.nzPlain = false;
     }
 }
+/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(); };
-NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 14, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider", true)("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
-    } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */
+NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 18, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider", true)("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
+    } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
@@ -70,12 +181,17 @@ NzDividerComponent.propDecorators = {
     nzText: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzOrientation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzDashed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+    nzDashed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzPlain: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzDividerComponent.prototype, "nzDashed", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], NzDividerComponent.prototype, "nzPlain", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
         args: [{
@@ -93,6 +209,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                     '[class.ant-divider]': 'true',
                     '[class.ant-divider-horizontal]': `nzType === 'horizontal'`,
                     '[class.ant-divider-vertical]': `nzType === 'vertical'`,
+                    '[class.ant-divider-with-text]': `nzText`,
+                    '[class.ant-divider-plain]': `nzPlain`,
                     '[class.ant-divider-with-text-left]': `nzText && nzOrientation === 'left'`,
                     '[class.ant-divider-with-text-right]': `nzText && nzOrientation === 'right'`,
                     '[class.ant-divider-with-text-center]': `nzText && nzOrientation === 'center'`,
@@ -105,19 +223,21 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzDashed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzPlain: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzText: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: divider.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzDividerModule {
 }
+/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
+/** @nocollapse */
 NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
@@ -130,15 +250,12 @@ NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineIn
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-divider.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 
@@ -147,78 +264,269 @@ NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineIn
 
 /***/ }),
 
-/***/ "./site/doc/app/grid/basic.ts":
-/*!************************************!*\
-  !*** ./site/doc/app/grid/basic.ts ***!
-  \************************************/
-/*! exports provided: NzDemoGridBasicComponent */
+/***/ "EDM+":
+/*!*****************************************!*\
+  !*** ./site/doc/app/grid/playground.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoGridPlaygroundComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridBasicComponent", function() { return NzDemoGridBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridPlaygroundComponent", function() { return NzDemoGridPlaygroundComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
-class NzDemoGridBasicComponent {
+
+
+
+function NzDemoGridPlaygroundComponent_div_15_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Column");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24 / ctx_r0.count);
+} }
+function NzDemoGridPlaygroundComponent_div_16_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Column");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24 / ctx_r1.count);
+} }
+const _c0 = function (a0, a1) { return [a0, a1]; };
+class NzDemoGridPlaygroundComponent {
+    constructor() {
+        this.hGutter = 16;
+        this.vGutter = 16;
+        this.count = 4;
+        this.array = new Array(this.count);
+        this.marksHGutter = {
+            '8': '8',
+            '16': '16',
+            '24': '24',
+            '32': '32',
+            '40': '40',
+            '48': '48'
+        };
+        this.marksVGutter = {
+            '8': '8',
+            '16': '16',
+            '24': '24',
+            '32': '32',
+            '40': '40',
+            '48': '48'
+        };
+        this.marksCount = {
+            '2': '2',
+            '3': '3',
+            '4': '4',
+            '6': '6',
+            '8': '8',
+            '12': '12'
+        };
+    }
+    reGenerateArray(count) {
+        this.array = new Array(count);
+    }
 }
-/** @nocollapse */ NzDemoGridBasicComponent.ɵfac = function NzDemoGridBasicComponent_Factory(t) { return new (t || NzDemoGridBasicComponent)(); };
-/** @nocollapse */ NzDemoGridBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridBasicComponent, selectors: [["nz-demo-grid-basic"]], decls: 21, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "6"]], template: function NzDemoGridBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵfac = function NzDemoGridPlaygroundComponent_Factory(t) { return new (t || NzDemoGridPlaygroundComponent)(); };
+/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridPlaygroundComponent, selectors: [["nz-demo-grid-playground"]], decls: 17, vars: 21, consts: [[1, "slider-container"], [1, "slider"], [3, "nzMarks", "nzStep", "nzMin", "nzMax", "ngModel", "ngModelChange"], [1, "gutter-example"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "class", "gutter-row", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "grid-config"]], template: function NzDemoGridPlaygroundComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "col-12");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Horizontal Gutter (px): ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "col-12");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-slider", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_4_listener($event) { return ctx.hGutter = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "col-8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Vertical Gutter (px): ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-8");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "col-8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-slider", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_8_listener($event) { return ctx.vGutter = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Column Count:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "nz-slider", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_12_listener($event) { return ctx.count = $event; })("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_12_listener($event) { return ctx.reGenerateArray($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "col-6");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "col-6");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "col-6");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "col-6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, NzDemoGridPlaygroundComponent_div_15_Template, 3, 1, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, NzDemoGridPlaygroundComponent_div_16_Template, 3, 1, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridBasicComponent, [{
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksHGutter)("nzStep", null)("nzMin", 8)("nzMax", 48)("ngModel", ctx.hGutter);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksVGutter)("nzStep", null)("nzMin", 8)("nzMax", 48)("ngModel", ctx.vGutter);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksCount)("nzStep", null)("nzMin", 2)("nzMax", 12)("ngModel", ctx.count);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](18, _c0, ctx.hGutter, ctx.vGutter));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzColDirective"]], styles: [".slider[_ngcontent-%COMP%] {\n        width: 50%;\n      }\n      .slider-container[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }\n      .grid-config[_ngcontent-%COMP%] {\n        height: 120px;\n        font-size: 14px;\n        line-height: 120px;\n        background: #0092ff;\n        border-radius: 4px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridPlaygroundComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-grid-basic',
+                selector: 'nz-demo-grid-playground',
+                template: `
+    <div class="slider-container">
+      <span>Horizontal Gutter (px): </span>
+      <div class="slider">
+        <nz-slider [nzMarks]="marksHGutter" [nzStep]="null" [nzMin]="8" [nzMax]="48" [(ngModel)]="hGutter"></nz-slider>
+      </div>
+      <span>Vertical Gutter (px): </span>
+      <div class="slider">
+        <nz-slider [nzMarks]="marksVGutter" [nzStep]="null" [nzMin]="8" [nzMax]="48" [(ngModel)]="vGutter"></nz-slider>
+      </div>
+      <span>Column Count:</span>
+      <div class="slider">
+        <nz-slider
+          [nzMarks]="marksCount"
+          [nzStep]="null"
+          [nzMin]="2"
+          [nzMax]="12"
+          [(ngModel)]="count"
+          (ngModelChange)="reGenerateArray($event)"
+        ></nz-slider>
+      </div>
+    </div>
+
+    <div class="gutter-example">
+      <div nz-row [nzGutter]="[hGutter, vGutter]">
+        <div nz-col class="gutter-row" [nzSpan]="24 / count" *ngFor="let i of array">
+          <div class="grid-config">Column</div>
+        </div>
+        <div nz-col class="gutter-row" [nzSpan]="24 / count" *ngFor="let i of array">
+          <div class="grid-config">Column</div>
+        </div>
+      </div>
+    </div>
+  `,
+                styles: [
+                    `
+      .slider {
+        width: 50%;
+      }
+      .slider-container {
+        margin-bottom: 16px;
+      }
+      .grid-config {
+        height: 120px;
+        font-size: 14px;
+        line-height: 120px;
+        background: #0092ff;
+        border-radius: 4px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "NtwG":
+/*!*************************************!*\
+  !*** ./site/doc/app/grid/module.ts ***!
+  \*************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+
+
+
+const moduleList = [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_0__["NzGridModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerModule"]];
+
+
+/***/ }),
+
+/***/ "WpUU":
+/*!**********************************************!*\
+  !*** ./site/doc/app/grid/responsive-more.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoGridResponsiveMoreComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridResponsiveMoreComponent", function() { return NzDemoGridResponsiveMoreComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+const _c0 = function () { return { span: 5, offset: 1 }; };
+const _c1 = function () { return { span: 6, offset: 2 }; };
+const _c2 = function () { return { span: 11, offset: 1 }; };
+class NzDemoGridResponsiveMoreComponent {
+}
+/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵfac = function NzDemoGridResponsiveMoreComponent_Factory(t) { return new (t || NzDemoGridResponsiveMoreComponent)(); };
+/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveMoreComponent, selectors: [["nz-demo-grid-responsive-more"]], decls: 7, vars: 12, consts: [["nz-row", ""], ["nz-col", "", 3, "nzXs", "nzLg"]], template: function NzDemoGridResponsiveMoreComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c0))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c2))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c0))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c1));
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridResponsiveMoreComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-responsive-more',
                 template: `
     <div nz-row>
-      <div nz-col nzSpan="12">col-12</div>
-      <div nz-col nzSpan="12">col-12</div>
-    </div>
-    <div nz-row>
-      <div nz-col nzSpan="8">col-8</div>
-      <div nz-col nzSpan="8">col-8</div>
-      <div nz-col nzSpan="8">col-8</div>
-    </div>
-    <div nz-row>
-      <div nz-col nzSpan="6">col-6</div>
-      <div nz-col nzSpan="6">col-6</div>
-      <div nz-col nzSpan="6">col-6</div>
-      <div nz-col nzSpan="6">col-6</div>
+      <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+        Col
+      </div>
+      <div nz-col [nzXs]="{ span: 11, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+        Col
+      </div>
+      <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
+        Col
+      </div>
     </div>
   `
             }]
@@ -227,7 +535,170 @@ class NzDemoGridBasicComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/grid/en.component.ts":
+/***/ "aIUY":
+/*!***********************************!*\
+  !*** ./site/doc/app/grid/flex.ts ***!
+  \***********************************/
+/*! exports provided: NzDemoGridFlexComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexComponent", function() { return NzDemoGridFlexComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridFlexComponent {
+}
+/** @nocollapse */ NzDemoGridFlexComponent.ɵfac = function NzDemoGridFlexComponent_Factory(t) { return new (t || NzDemoGridFlexComponent)(); };
+/** @nocollapse */ NzDemoGridFlexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexComponent, selectors: [["nz-demo-grid-flex"]], decls: 56, vars: 0, consts: [["nz-row", "", "nzJustify", "start"], ["nz-col", "", "nzSpan", "4"], ["nz-row", "", "nzJustify", "center"], ["nz-row", "", "nzJustify", "end"], ["nz-row", "", "nzJustify", "space-between"], ["nz-row", "", "nzJustify", "space-around"]], template: function NzDemoGridFlexComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "sub-element align left");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "sub-element align center");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "sub-element align right");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "sub-element monospaced arrangement");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "sub-element align full");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-flex',
+                template: `
+    <div>
+      <p>sub-element align left</p>
+      <div nz-row nzJustify="start">
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+      </div>
+      <p>sub-element align center</p>
+      <div nz-row nzJustify="center">
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+      </div>
+      <p>sub-element align right</p>
+      <div nz-row nzJustify="end">
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+      </div>
+      <p>sub-element monospaced arrangement</p>
+      <div nz-row nzJustify="space-between">
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+      </div>
+      <p>sub-element align full</p>
+      <div nz-row nzJustify="space-around">
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+        <div nz-col nzSpan="4">col-4</div>
+      </div>
+    </div>
+  `,
+                styles: [
+                    `
+      [nz-row] {
+        background-color: rgba(128, 128, 128, 0.08);
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "c+m1":
 /*!*******************************************!*\
   !*** ./site/doc/app/grid/en.component.ts ***!
   \*******************************************/
@@ -237,23 +708,23 @@ class NzDemoGridBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridEnComponent", function() { return NzDemoGridEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/grid/basic.ts");
-/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gutter */ "./site/doc/app/grid/gutter.ts");
-/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./offset */ "./site/doc/app/grid/offset.ts");
-/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sort */ "./site/doc/app/grid/sort.ts");
-/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./flex */ "./site/doc/app/grid/flex.ts");
-/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./flex-align */ "./site/doc/app/grid/flex-align.ts");
-/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./flex-order */ "./site/doc/app/grid/flex-order.ts");
-/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./flex-stretch */ "./site/doc/app/grid/flex-stretch.ts");
-/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./responsive */ "./site/doc/app/grid/responsive.ts");
-/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./responsive-more */ "./site/doc/app/grid/responsive-more.ts");
-/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./playground */ "./site/doc/app/grid/playground.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "vCry");
+/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gutter */ "eURE");
+/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./offset */ "uUCk");
+/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sort */ "pgto");
+/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./flex */ "aIUY");
+/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./flex-align */ "x6m7");
+/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./flex-order */ "f5RA");
+/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./flex-stretch */ "sKzt");
+/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./responsive */ "zJeg");
+/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./responsive-more */ "WpUU");
+/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./playground */ "EDM+");
 
 
 
@@ -297,7 +768,7 @@ class NzDemoGridEnComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 567, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "Basic Grid"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "Grid Gutter"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "Column offset"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "Grid sort"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "Layout"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "Alignment"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "Order"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex Stretch"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "Responsive"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "More responsive"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "Playground"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "design-concept"], ["onclick", "window.location.hash = 'design-concept'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "outline"], ["onclick", "window.location.hash = 'outline'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Grid", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Grid Gutter", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Column offset", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid sort", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Layout", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Alignment", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Order", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex Stretch", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries"], ["nzTitle", "More responsive", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Playground", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints"]], template: function NzDemoGridEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 567, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "Basic Grid"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "Grid Gutter"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "Column offset"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "Grid sort"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "Layout"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "Alignment"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "Order"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex Stretch"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "Responsive"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "More responsive"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "Playground"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "design-concept"], ["onclick", "window.location.hash = 'design-concept'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "outline"], ["onclick", "window.location.hash = 'outline'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Grid", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Grid Gutter", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Column offset", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid sort", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Layout", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Alignment", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Order", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex Stretch", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries", "target", "_blank"], ["nzTitle", "More responsive", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Playground", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints", "target", "_blank"]], template: function NzDemoGridEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1239,471 +1710,7 @@ class NzDemoGridEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/grid/flex-align.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/grid/flex-align.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoGridFlexAlignComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexAlignComponent", function() { return NzDemoGridFlexAlignComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridFlexAlignComponent {
-}
-/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵfac = function NzDemoGridFlexAlignComponent_Factory(t) { return new (t || NzDemoGridFlexAlignComponent)(); };
-/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexAlignComponent, selectors: [["nz-demo-grid-flex-align"]], decls: 46, vars: 0, consts: [["nz-row", "", "nzJustify", "center", "nzAlign", "top"], ["nz-col", "", "nzSpan", "4"], [1, "height-100"], [1, "height-50"], [1, "height-120"], [1, "height-80"], ["nz-row", "", "nzJustify", "space-around", "nzAlign", "middle"], ["nz-row", "", "nzJustify", "space-between", "nzAlign", "bottom"]], template: function NzDemoGridFlexAlignComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Align Top");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Align Center");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Align Bottom");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "p", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "p", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "p", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexAlignComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-flex-align',
-                template: `
-    <div>
-      <p>Align Top</p>
-      <div nz-row nzJustify="center" nzAlign="top">
-        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
-      </div>
-      <p>Align Center</p>
-      <div nz-row nzJustify="space-around" nzAlign="middle">
-        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
-      </div>
-      <p>Align Bottom</p>
-      <div nz-row nzJustify="space-between" nzAlign="bottom">
-        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
-        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
-      </div>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-row] {
-        background-color: rgba(128, 128, 128, 0.08);
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/flex-order.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/grid/flex-order.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoGridFlexOrderComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexOrderComponent", function() { return NzDemoGridFlexOrderComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridFlexOrderComponent {
-}
-/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵfac = function NzDemoGridFlexOrderComponent_Factory(t) { return new (t || NzDemoGridFlexOrderComponent)(); };
-/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexOrderComponent, selectors: [["nz-demo-grid-flex-order"]], decls: 10, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "6", "nzOrder", "4"], ["nz-col", "", "nzSpan", "6", "nzOrder", "3"], ["nz-col", "", "nzSpan", "6", "nzOrder", "2"], ["nz-col", "", "nzSpan", "6", "nzOrder", "1"]], template: function NzDemoGridFlexOrderComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " 1 col-order-4 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " 2 col-order-3 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " 3 col-order-2 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " 4 col-order-1 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexOrderComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-flex-order',
-                template: `
-    <div>
-      <div nz-row>
-        <div nz-col nzSpan="6" nzOrder="4">
-          1 col-order-4
-        </div>
-        <div nz-col nzSpan="6" nzOrder="3">
-          2 col-order-3
-        </div>
-        <div nz-col nzSpan="6" nzOrder="2">
-          3 col-order-2
-        </div>
-        <div nz-col nzSpan="6" nzOrder="1">
-          4 col-order-1
-        </div>
-      </div>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-row] {
-        background-color: rgba(128, 128, 128, 0.08);
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/flex-stretch.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/grid/flex-stretch.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoGridFlexStretchComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexStretchComponent", function() { return NzDemoGridFlexStretchComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridFlexStretchComponent {
-}
-/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵfac = function NzDemoGridFlexStretchComponent_Factory(t) { return new (t || NzDemoGridFlexStretchComponent)(); };
-/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexStretchComponent, selectors: [["nz-demo-grid-flex-stretch"]], decls: 22, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzFlex", "2"], ["nz-col", "", "nzFlex", "3"], ["nz-col", "", "nzFlex", "100px"], ["nz-col", "", "nzFlex", "auto"], ["nz-col", "", "nzFlex", "1 1 200px"], ["nz-col", "", "nzFlex", "0 1 300px"]], template: function NzDemoGridFlexStretchComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Percentage columns");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "2 / 5");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "3 / 5");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Fill rest");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "100px");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Fill Rest");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Raw flex style");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "1 1 200px");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "0 1 300px");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexStretchComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-flex-stretch',
-                template: `
-    <div>
-      <p>Percentage columns</p>
-      <div nz-row>
-        <div nz-col nzFlex="2">2 / 5</div>
-        <div nz-col nzFlex="3">3 / 5</div>
-      </div>
-      <p>Fill rest</p>
-      <div nz-row>
-        <div nz-col nzFlex="100px">100px</div>
-        <div nz-col nzFlex="auto">Fill Rest</div>
-      </div>
-      <p>Raw flex style</p>
-      <div nz-row>
-        <div nz-col nzFlex="1 1 200px">1 1 200px</div>
-        <div nz-col nzFlex="0 1 300px">0 1 300px</div>
-      </div>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-row] {
-        background-color: rgba(128, 128, 128, 0.08);
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/flex.ts":
-/*!***********************************!*\
-  !*** ./site/doc/app/grid/flex.ts ***!
-  \***********************************/
-/*! exports provided: NzDemoGridFlexComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexComponent", function() { return NzDemoGridFlexComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridFlexComponent {
-}
-/** @nocollapse */ NzDemoGridFlexComponent.ɵfac = function NzDemoGridFlexComponent_Factory(t) { return new (t || NzDemoGridFlexComponent)(); };
-/** @nocollapse */ NzDemoGridFlexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexComponent, selectors: [["nz-demo-grid-flex"]], decls: 56, vars: 0, consts: [["nz-row", "", "nzJustify", "start"], ["nz-col", "", "nzSpan", "4"], ["nz-row", "", "nzJustify", "center"], ["nz-row", "", "nzJustify", "end"], ["nz-row", "", "nzJustify", "space-between"], ["nz-row", "", "nzJustify", "space-around"]], template: function NzDemoGridFlexComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "sub-element align left");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "sub-element align center");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "sub-element align right");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "sub-element monospaced arrangement");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "sub-element align full");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "col-4");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-flex',
-                template: `
-    <div>
-      <p>sub-element align left</p>
-      <div nz-row nzJustify="start">
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-      </div>
-      <p>sub-element align center</p>
-      <div nz-row nzJustify="center">
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-      </div>
-      <p>sub-element align right</p>
-      <div nz-row nzJustify="end">
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-      </div>
-      <p>sub-element monospaced arrangement</p>
-      <div nz-row nzJustify="space-between">
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-      </div>
-      <p>sub-element align full</p>
-      <div nz-row nzJustify="space-around">
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-        <div nz-col nzSpan="4">col-4</div>
-      </div>
-    </div>
-  `,
-                styles: [
-                    `
-      [nz-row] {
-        background-color: rgba(128, 128, 128, 0.08);
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/gutter.ts":
+/***/ "eURE":
 /*!*************************************!*\
   !*** ./site/doc/app/grid/gutter.ts ***!
   \*************************************/
@@ -1713,9 +1720,9 @@ class NzDemoGridFlexComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridGutterComponent", function() { return NzDemoGridGutterComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
 
 
 
@@ -1904,387 +1911,68 @@ class NzDemoGridGutterComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/grid/index.module.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/grid/index.module.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoGridModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridModule", function() { return NzDemoGridModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/grid/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/grid/basic.ts");
-/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./flex-align */ "./site/doc/app/grid/flex-align.ts");
-/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./flex-order */ "./site/doc/app/grid/flex-order.ts");
-/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./flex-stretch */ "./site/doc/app/grid/flex-stretch.ts");
-/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./flex */ "./site/doc/app/grid/flex.ts");
-/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./gutter */ "./site/doc/app/grid/gutter.ts");
-/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./offset */ "./site/doc/app/grid/offset.ts");
-/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./playground */ "./site/doc/app/grid/playground.ts");
-/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./responsive-more */ "./site/doc/app/grid/responsive-more.ts");
-/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./responsive */ "./site/doc/app/grid/responsive.ts");
-/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./sort */ "./site/doc/app/grid/sort.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/grid/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/grid/en.component.ts");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoGridModule {
-}
-/** @nocollapse */ NzDemoGridModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoGridModule });
-/** @nocollapse */ NzDemoGridModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoGridModule_Factory(t) { return new (t || NzDemoGridModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoGridModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoGridBasicComponent"],
-        _flex_align__WEBPACK_IMPORTED_MODULE_5__["NzDemoGridFlexAlignComponent"],
-        _flex_order__WEBPACK_IMPORTED_MODULE_6__["NzDemoGridFlexOrderComponent"],
-        _flex_stretch__WEBPACK_IMPORTED_MODULE_7__["NzDemoGridFlexStretchComponent"],
-        _flex__WEBPACK_IMPORTED_MODULE_8__["NzDemoGridFlexComponent"],
-        _gutter__WEBPACK_IMPORTED_MODULE_9__["NzDemoGridGutterComponent"],
-        _offset__WEBPACK_IMPORTED_MODULE_10__["NzDemoGridOffsetComponent"],
-        _playground__WEBPACK_IMPORTED_MODULE_11__["NzDemoGridPlaygroundComponent"],
-        _responsive_more__WEBPACK_IMPORTED_MODULE_12__["NzDemoGridResponsiveMoreComponent"],
-        _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoGridResponsiveComponent"],
-        _sort__WEBPACK_IMPORTED_MODULE_14__["NzDemoGridSortComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_17__["NzGridModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_18__["NzSliderModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_19__["NzDividerModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoGridBasicComponent"],
-                    _flex_align__WEBPACK_IMPORTED_MODULE_5__["NzDemoGridFlexAlignComponent"],
-                    _flex_order__WEBPACK_IMPORTED_MODULE_6__["NzDemoGridFlexOrderComponent"],
-                    _flex_stretch__WEBPACK_IMPORTED_MODULE_7__["NzDemoGridFlexStretchComponent"],
-                    _flex__WEBPACK_IMPORTED_MODULE_8__["NzDemoGridFlexComponent"],
-                    _gutter__WEBPACK_IMPORTED_MODULE_9__["NzDemoGridGutterComponent"],
-                    _offset__WEBPACK_IMPORTED_MODULE_10__["NzDemoGridOffsetComponent"],
-                    _playground__WEBPACK_IMPORTED_MODULE_11__["NzDemoGridPlaygroundComponent"],
-                    _responsive_more__WEBPACK_IMPORTED_MODULE_12__["NzDemoGridResponsiveMoreComponent"],
-                    _responsive__WEBPACK_IMPORTED_MODULE_13__["NzDemoGridResponsiveComponent"],
-                    _sort__WEBPACK_IMPORTED_MODULE_14__["NzDemoGridSortComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_15__["NzDemoGridZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoGridEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/module.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/grid/module.ts ***!
-  \*************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-
-
-
-const moduleList = [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_0__["NzGridModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/offset.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/grid/offset.ts ***!
-  \*************************************/
-/*! exports provided: NzDemoGridOffsetComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridOffsetComponent", function() { return NzDemoGridOffsetComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridOffsetComponent {
-}
-/** @nocollapse */ NzDemoGridOffsetComponent.ɵfac = function NzDemoGridOffsetComponent_Factory(t) { return new (t || NzDemoGridOffsetComponent)(); };
-/** @nocollapse */ NzDemoGridOffsetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridOffsetComponent, selectors: [["nz-demo-grid-offset"]], decls: 13, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "8", "nzOffset", "8"], ["nz-col", "", "nzSpan", "6", "nzOffset", "6"], ["nz-col", "", "nzSpan", "12", "nzOffset", "6"]], template: function NzDemoGridOffsetComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-8 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " col-8 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " col-6 col-offset-6 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " col-6 col-offset-6 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " col-12 col-offset-6 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridOffsetComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-offset',
-                template: `
-    <div nz-row>
-      <div nz-col nzSpan="8">
-        col-8
-      </div>
-      <div nz-col nzSpan="8" nzOffset="8">
-        col-8
-      </div>
-    </div>
-    <div nz-row>
-      <div nz-col nzSpan="6" nzOffset="6">
-        col-6 col-offset-6
-      </div>
-      <div nz-col nzSpan="6" nzOffset="6">
-        col-6 col-offset-6
-      </div>
-    </div>
-    <div nz-row>
-      <div nz-col nzSpan="12" nzOffset="6">
-        col-12 col-offset-6
-      </div>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/playground.ts":
+/***/ "f5RA":
 /*!*****************************************!*\
-  !*** ./site/doc/app/grid/playground.ts ***!
+  !*** ./site/doc/app/grid/flex-order.ts ***!
   \*****************************************/
-/*! exports provided: NzDemoGridPlaygroundComponent */
+/*! exports provided: NzDemoGridFlexOrderComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridPlaygroundComponent", function() { return NzDemoGridPlaygroundComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexOrderComponent", function() { return NzDemoGridFlexOrderComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
 
 
 
-
-
-
-function NzDemoGridPlaygroundComponent_div_15_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Column");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24 / ctx_r0.count);
-} }
-function NzDemoGridPlaygroundComponent_div_16_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Column");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24 / ctx_r1.count);
-} }
-const _c0 = function (a0, a1) { return [a0, a1]; };
-class NzDemoGridPlaygroundComponent {
-    constructor() {
-        this.hGutter = 16;
-        this.vGutter = 16;
-        this.count = 4;
-        this.array = new Array(this.count);
-        this.marksHGutter = {
-            '8': '8',
-            '16': '16',
-            '24': '24',
-            '32': '32',
-            '40': '40',
-            '48': '48'
-        };
-        this.marksVGutter = {
-            '8': '8',
-            '16': '16',
-            '24': '24',
-            '32': '32',
-            '40': '40',
-            '48': '48'
-        };
-        this.marksCount = {
-            '2': '2',
-            '3': '3',
-            '4': '4',
-            '6': '6',
-            '8': '8',
-            '12': '12'
-        };
-    }
-    reGenerateArray(count) {
-        this.array = new Array(count);
-    }
+class NzDemoGridFlexOrderComponent {
 }
-/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵfac = function NzDemoGridPlaygroundComponent_Factory(t) { return new (t || NzDemoGridPlaygroundComponent)(); };
-/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridPlaygroundComponent, selectors: [["nz-demo-grid-playground"]], decls: 17, vars: 21, consts: [[1, "slider-container"], [1, "slider"], [3, "nzMarks", "nzStep", "nzMin", "nzMax", "ngModel", "ngModelChange"], [1, "gutter-example"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "class", "gutter-row", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "grid-config"]], template: function NzDemoGridPlaygroundComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Horizontal Gutter (px): ");
+/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵfac = function NzDemoGridFlexOrderComponent_Factory(t) { return new (t || NzDemoGridFlexOrderComponent)(); };
+/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexOrderComponent, selectors: [["nz-demo-grid-flex-order"]], decls: 10, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "6", "nzOrder", "4"], ["nz-col", "", "nzSpan", "6", "nzOrder", "3"], ["nz-col", "", "nzSpan", "6", "nzOrder", "2"], ["nz-col", "", "nzSpan", "6", "nzOrder", "1"]], template: function NzDemoGridFlexOrderComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " 1 col-order-4 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-slider", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_4_listener($event) { return ctx.hGutter = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, " 2 col-order-3 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " 3 col-order-2 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Vertical Gutter (px): ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-slider", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_8_listener($event) { return ctx.vGutter = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Column Count:");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "nz-slider", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_12_listener($event) { return ctx.count = $event; })("ngModelChange", function NzDemoGridPlaygroundComponent_Template_nz_slider_ngModelChange_12_listener($event) { return ctx.reGenerateArray($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " 4 col-order-1 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](15, NzDemoGridPlaygroundComponent_div_15_Template, 3, 1, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](16, NzDemoGridPlaygroundComponent_div_16_Template, 3, 1, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksHGutter)("nzStep", null)("nzMin", 8)("nzMax", 48)("ngModel", ctx.hGutter);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksVGutter)("nzStep", null)("nzMin", 8)("nzMax", 48)("ngModel", ctx.vGutter);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marksCount)("nzStep", null)("nzMin", 2)("nzMax", 12)("ngModel", ctx.count);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](18, _c0, ctx.hGutter, ctx.vGutter));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.array);
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzRowDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzColDirective"]], styles: [".slider[_ngcontent-%COMP%] {\n        width: 50%;\n      }\n      .slider-container[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }\n      .grid-config[_ngcontent-%COMP%] {\n        height: 120px;\n        font-size: 14px;\n        line-height: 120px;\n        background: #0092ff;\n        border-radius: 4px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridPlaygroundComponent, [{
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexOrderComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-grid-playground',
+                selector: 'nz-demo-grid-flex-order',
                 template: `
-    <div class="slider-container">
-      <span>Horizontal Gutter (px): </span>
-      <div class="slider">
-        <nz-slider [nzMarks]="marksHGutter" [nzStep]="null" [nzMin]="8" [nzMax]="48" [(ngModel)]="hGutter"></nz-slider>
-      </div>
-      <span>Vertical Gutter (px): </span>
-      <div class="slider">
-        <nz-slider [nzMarks]="marksVGutter" [nzStep]="null" [nzMin]="8" [nzMax]="48" [(ngModel)]="vGutter"></nz-slider>
-      </div>
-      <span>Column Count:</span>
-      <div class="slider">
-        <nz-slider
-          [nzMarks]="marksCount"
-          [nzStep]="null"
-          [nzMin]="2"
-          [nzMax]="12"
-          [(ngModel)]="count"
-          (ngModelChange)="reGenerateArray($event)"
-        ></nz-slider>
-      </div>
-    </div>
-
-    <div class="gutter-example">
-      <div nz-row [nzGutter]="[hGutter, vGutter]">
-        <div nz-col class="gutter-row" [nzSpan]="24 / count" *ngFor="let i of array">
-          <div class="grid-config">Column</div>
+    <div>
+      <div nz-row>
+        <div nz-col nzSpan="6" nzOrder="4">
+          1 col-order-4
         </div>
-        <div nz-col class="gutter-row" [nzSpan]="24 / count" *ngFor="let i of array">
-          <div class="grid-config">Column</div>
+        <div nz-col nzSpan="6" nzOrder="3">
+          2 col-order-3
+        </div>
+        <div nz-col nzSpan="6" nzOrder="2">
+          3 col-order-2
+        </div>
+        <div nz-col nzSpan="6" nzOrder="1">
+          4 col-order-1
         </div>
       </div>
     </div>
   `,
                 styles: [
                     `
-      .slider {
-        width: 50%;
-      }
-      .slider-container {
-        margin-bottom: 16px;
-      }
-      .grid-config {
-        height: 120px;
-        font-size: 14px;
-        line-height: 120px;
-        background: #0092ff;
-        border-radius: 4px;
+      [nz-row] {
+        background-color: rgba(128, 128, 128, 0.08);
       }
     `
                 ]
@@ -2294,178 +1982,7 @@ class NzDemoGridPlaygroundComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/grid/responsive-more.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/grid/responsive-more.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoGridResponsiveMoreComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridResponsiveMoreComponent", function() { return NzDemoGridResponsiveMoreComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-const _c0 = function () { return { span: 5, offset: 1 }; };
-const _c1 = function () { return { span: 6, offset: 2 }; };
-const _c2 = function () { return { span: 11, offset: 1 }; };
-class NzDemoGridResponsiveMoreComponent {
-}
-/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵfac = function NzDemoGridResponsiveMoreComponent_Factory(t) { return new (t || NzDemoGridResponsiveMoreComponent)(); };
-/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveMoreComponent, selectors: [["nz-demo-grid-responsive-more"]], decls: 7, vars: 12, consts: [["nz-row", ""], ["nz-col", "", 3, "nzXs", "nzLg"]], template: function NzDemoGridResponsiveMoreComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c0))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c1));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c2))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c1));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzXs", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c0))("nzLg", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c1));
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridResponsiveMoreComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-responsive-more',
-                template: `
-    <div nz-row>
-      <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
-        Col
-      </div>
-      <div nz-col [nzXs]="{ span: 11, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
-        Col
-      </div>
-      <div nz-col [nzXs]="{ span: 5, offset: 1 }" [nzLg]="{ span: 6, offset: 2 }">
-        Col
-      </div>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/responsive.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/grid/responsive.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoGridResponsiveComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridResponsiveComponent", function() { return NzDemoGridResponsiveComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridResponsiveComponent {
-}
-/** @nocollapse */ NzDemoGridResponsiveComponent.ɵfac = function NzDemoGridResponsiveComponent_Factory(t) { return new (t || NzDemoGridResponsiveComponent)(); };
-/** @nocollapse */ NzDemoGridResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveComponent, selectors: [["nz-demo-grid-responsive"]], decls: 7, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzXs", "2", "nzSm", "4", "nzMd", "6", "nzLg", "8", "nzXl", "10"], ["nz-col", "", "nzXs", "20", "nzSm", "16", "nzMd", "12", "nzLg", "8", "nzXl", "4"]], template: function NzDemoGridResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Col ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridResponsiveComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-responsive',
-                template: `
-    <div nz-row>
-      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
-        Col
-      </div>
-      <div nz-col nzXs="20" nzSm="16" nzMd="12" nzLg="8" nzXl="4">
-        Col
-      </div>
-      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
-        Col
-      </div>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/sort.ts":
-/*!***********************************!*\
-  !*** ./site/doc/app/grid/sort.ts ***!
-  \***********************************/
-/*! exports provided: NzDemoGridSortComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridSortComponent", function() { return NzDemoGridSortComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-
-
-
-class NzDemoGridSortComponent {
-}
-/** @nocollapse */ NzDemoGridSortComponent.ɵfac = function NzDemoGridSortComponent_Factory(t) { return new (t || NzDemoGridSortComponent)(); };
-/** @nocollapse */ NzDemoGridSortComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridSortComponent, selectors: [["nz-demo-grid-sort"]], decls: 5, vars: 4, consts: [["nz-row", ""], ["nz-col", "", 3, "nzSpan", "nzPush"], ["nz-col", "", 3, "nzSpan", "nzPull"]], template: function NzDemoGridSortComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-18 col-push-6 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " col-6 col-pull-18 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 18)("nzPush", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 6)("nzPull", 18);
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridSortComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-grid-sort',
-                template: `
-    <div nz-row>
-      <div nz-col [nzSpan]="18" [nzPush]="6">
-        col-18 col-push-6
-      </div>
-      <div nz-col [nzSpan]="6" [nzPull]="18">
-        col-6 col-pull-18
-      </div>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/grid/zh.component.ts":
+/***/ "nyM4":
 /*!*******************************************!*\
   !*** ./site/doc/app/grid/zh.component.ts ***!
   \*******************************************/
@@ -2475,23 +1992,23 @@ class NzDemoGridSortComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridZhComponent", function() { return NzDemoGridZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/grid/basic.ts");
-/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gutter */ "./site/doc/app/grid/gutter.ts");
-/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./offset */ "./site/doc/app/grid/offset.ts");
-/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sort */ "./site/doc/app/grid/sort.ts");
-/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./flex */ "./site/doc/app/grid/flex.ts");
-/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./flex-align */ "./site/doc/app/grid/flex-align.ts");
-/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./flex-order */ "./site/doc/app/grid/flex-order.ts");
-/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./flex-stretch */ "./site/doc/app/grid/flex-stretch.ts");
-/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./responsive */ "./site/doc/app/grid/responsive.ts");
-/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./responsive-more */ "./site/doc/app/grid/responsive-more.ts");
-/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./playground */ "./site/doc/app/grid/playground.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "vCry");
+/* harmony import */ var _gutter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./gutter */ "eURE");
+/* harmony import */ var _offset__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./offset */ "uUCk");
+/* harmony import */ var _sort__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sort */ "pgto");
+/* harmony import */ var _flex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./flex */ "aIUY");
+/* harmony import */ var _flex_align__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./flex-align */ "x6m7");
+/* harmony import */ var _flex_order__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./flex-order */ "f5RA");
+/* harmony import */ var _flex_stretch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./flex-stretch */ "sKzt");
+/* harmony import */ var _responsive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./responsive */ "zJeg");
+/* harmony import */ var _responsive_more__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./responsive-more */ "WpUU");
+/* harmony import */ var _playground__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./playground */ "EDM+");
 
 
 
@@ -2535,7 +2052,7 @@ class NzDemoGridZhComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 544, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "\u57FA\u7840\u6805\u683C"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "\u533A\u5757\u95F4\u9694"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "\u5DE6\u53F3\u504F\u79FB"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "\u6805\u683C\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "\u6392\u7248"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "\u5BF9\u9F50"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex \u586B\u5145"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "\u6805\u683C\u914D\u7F6E\u5668"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u8BBE\u8BA1\u7406\u5FF5"], ["onclick", "window.location.hash = '\u8BBE\u8BA1\u7406\u5FF5'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "\u6982\u8FF0"], ["onclick", "window.location.hash = '\u6982\u8FF0'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u7840\u6805\u683C", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u533A\u5757\u95F4\u9694", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5DE6\u53F3\u504F\u79FB", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u6392\u5E8F", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u7248", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5BF9\u9F50", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u5E8F", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex \u586B\u5145", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries"], ["nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u914D\u7F6E\u5668", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints"]], template: function NzDemoGridZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 544, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "\u57FA\u7840\u6805\u683C"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "\u533A\u5757\u95F4\u9694"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "\u5DE6\u53F3\u504F\u79FB"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "\u6805\u683C\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "\u6392\u7248"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "\u5BF9\u9F50"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex \u586B\u5145"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "\u6805\u683C\u914D\u7F6E\u5668"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u8BBE\u8BA1\u7406\u5FF5"], ["onclick", "window.location.hash = '\u8BBE\u8BA1\u7406\u5FF5'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "\u6982\u8FF0"], ["onclick", "window.location.hash = '\u6982\u8FF0'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u7840\u6805\u683C", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u533A\u5757\u95F4\u9694", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5DE6\u53F3\u504F\u79FB", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u6392\u5E8F", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u7248", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5BF9\u9F50", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u5E8F", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex \u586B\u5145", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries", "target", "_blank"], ["nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u914D\u7F6E\u5668", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints", "target", "_blank"]], template: function NzDemoGridZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -3440,6 +2957,497 @@ class NzDemoGridZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "pgto":
+/*!***********************************!*\
+  !*** ./site/doc/app/grid/sort.ts ***!
+  \***********************************/
+/*! exports provided: NzDemoGridSortComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridSortComponent", function() { return NzDemoGridSortComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridSortComponent {
+}
+/** @nocollapse */ NzDemoGridSortComponent.ɵfac = function NzDemoGridSortComponent_Factory(t) { return new (t || NzDemoGridSortComponent)(); };
+/** @nocollapse */ NzDemoGridSortComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridSortComponent, selectors: [["nz-demo-grid-sort"]], decls: 5, vars: 4, consts: [["nz-row", ""], ["nz-col", "", 3, "nzSpan", "nzPush"], ["nz-col", "", 3, "nzSpan", "nzPull"]], template: function NzDemoGridSortComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-18 col-push-6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " col-6 col-pull-18 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 18)("nzPush", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 6)("nzPull", 18);
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridSortComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-sort',
+                template: `
+    <div nz-row>
+      <div nz-col [nzSpan]="18" [nzPush]="6">
+        col-18 col-push-6
+      </div>
+      <div nz-col [nzSpan]="6" [nzPull]="18">
+        col-6 col-pull-18
+      </div>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "sKzt":
+/*!*******************************************!*\
+  !*** ./site/doc/app/grid/flex-stretch.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoGridFlexStretchComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexStretchComponent", function() { return NzDemoGridFlexStretchComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridFlexStretchComponent {
+}
+/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵfac = function NzDemoGridFlexStretchComponent_Factory(t) { return new (t || NzDemoGridFlexStretchComponent)(); };
+/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexStretchComponent, selectors: [["nz-demo-grid-flex-stretch"]], decls: 22, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzFlex", "2"], ["nz-col", "", "nzFlex", "3"], ["nz-col", "", "nzFlex", "100px"], ["nz-col", "", "nzFlex", "auto"], ["nz-col", "", "nzFlex", "1 1 200px"], ["nz-col", "", "nzFlex", "0 1 300px"]], template: function NzDemoGridFlexStretchComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Percentage columns");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "2 / 5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "3 / 5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Fill rest");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "100px");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Fill Rest");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Raw flex style");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "1 1 200px");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "0 1 300px");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexStretchComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-flex-stretch',
+                template: `
+    <div>
+      <p>Percentage columns</p>
+      <div nz-row>
+        <div nz-col nzFlex="2">2 / 5</div>
+        <div nz-col nzFlex="3">3 / 5</div>
+      </div>
+      <p>Fill rest</p>
+      <div nz-row>
+        <div nz-col nzFlex="100px">100px</div>
+        <div nz-col nzFlex="auto">Fill Rest</div>
+      </div>
+      <p>Raw flex style</p>
+      <div nz-row>
+        <div nz-col nzFlex="1 1 200px">1 1 200px</div>
+        <div nz-col nzFlex="0 1 300px">0 1 300px</div>
+      </div>
+    </div>
+  `,
+                styles: [
+                    `
+      [nz-row] {
+        background-color: rgba(128, 128, 128, 0.08);
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "uUCk":
+/*!*************************************!*\
+  !*** ./site/doc/app/grid/offset.ts ***!
+  \*************************************/
+/*! exports provided: NzDemoGridOffsetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridOffsetComponent", function() { return NzDemoGridOffsetComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridOffsetComponent {
+}
+/** @nocollapse */ NzDemoGridOffsetComponent.ɵfac = function NzDemoGridOffsetComponent_Factory(t) { return new (t || NzDemoGridOffsetComponent)(); };
+/** @nocollapse */ NzDemoGridOffsetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridOffsetComponent, selectors: [["nz-demo-grid-offset"]], decls: 13, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "8", "nzOffset", "8"], ["nz-col", "", "nzSpan", "6", "nzOffset", "6"], ["nz-col", "", "nzSpan", "12", "nzOffset", "6"]], template: function NzDemoGridOffsetComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-8 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " col-8 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " col-6 col-offset-6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " col-6 col-offset-6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, " col-12 col-offset-6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridOffsetComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-offset',
+                template: `
+    <div nz-row>
+      <div nz-col nzSpan="8">
+        col-8
+      </div>
+      <div nz-col nzSpan="8" nzOffset="8">
+        col-8
+      </div>
+    </div>
+    <div nz-row>
+      <div nz-col nzSpan="6" nzOffset="6">
+        col-6 col-offset-6
+      </div>
+      <div nz-col nzSpan="6" nzOffset="6">
+        col-6 col-offset-6
+      </div>
+    </div>
+    <div nz-row>
+      <div nz-col nzSpan="12" nzOffset="6">
+        col-12 col-offset-6
+      </div>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "vCry":
+/*!************************************!*\
+  !*** ./site/doc/app/grid/basic.ts ***!
+  \************************************/
+/*! exports provided: NzDemoGridBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridBasicComponent", function() { return NzDemoGridBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridBasicComponent {
+}
+/** @nocollapse */ NzDemoGridBasicComponent.ɵfac = function NzDemoGridBasicComponent_Factory(t) { return new (t || NzDemoGridBasicComponent)(); };
+/** @nocollapse */ NzDemoGridBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridBasicComponent, selectors: [["nz-demo-grid-basic"]], decls: 21, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "6"]], template: function NzDemoGridBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "col-12");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "col-12");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "col-8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "col-8");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "col-6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "col-6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "col-6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "col-6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-basic',
+                template: `
+    <div nz-row>
+      <div nz-col nzSpan="12">col-12</div>
+      <div nz-col nzSpan="12">col-12</div>
+    </div>
+    <div nz-row>
+      <div nz-col nzSpan="8">col-8</div>
+      <div nz-col nzSpan="8">col-8</div>
+      <div nz-col nzSpan="8">col-8</div>
+    </div>
+    <div nz-row>
+      <div nz-col nzSpan="6">col-6</div>
+      <div nz-col nzSpan="6">col-6</div>
+      <div nz-col nzSpan="6">col-6</div>
+      <div nz-col nzSpan="6">col-6</div>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "x6m7":
+/*!*****************************************!*\
+  !*** ./site/doc/app/grid/flex-align.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoGridFlexAlignComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridFlexAlignComponent", function() { return NzDemoGridFlexAlignComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridFlexAlignComponent {
+}
+/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵfac = function NzDemoGridFlexAlignComponent_Factory(t) { return new (t || NzDemoGridFlexAlignComponent)(); };
+/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexAlignComponent, selectors: [["nz-demo-grid-flex-align"]], decls: 46, vars: 0, consts: [["nz-row", "", "nzJustify", "center", "nzAlign", "top"], ["nz-col", "", "nzSpan", "4"], [1, "height-100"], [1, "height-50"], [1, "height-120"], [1, "height-80"], ["nz-row", "", "nzJustify", "space-around", "nzAlign", "middle"], ["nz-row", "", "nzJustify", "space-between", "nzAlign", "bottom"]], template: function NzDemoGridFlexAlignComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Align Top");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "p", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Align Center");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "p", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Align Bottom");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "p", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "p", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "p", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, "col-4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], styles: ["[nz-row][_ngcontent-%COMP%] {\n        background-color: rgba(128, 128, 128, 0.08);\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridFlexAlignComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-flex-align',
+                template: `
+    <div>
+      <p>Align Top</p>
+      <div nz-row nzJustify="center" nzAlign="top">
+        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
+      </div>
+      <p>Align Center</p>
+      <div nz-row nzJustify="space-around" nzAlign="middle">
+        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
+      </div>
+      <p>Align Bottom</p>
+      <div nz-row nzJustify="space-between" nzAlign="bottom">
+        <div nz-col nzSpan="4"><p class="height-100">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-50">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-120">col-4</p></div>
+        <div nz-col nzSpan="4"><p class="height-80">col-4</p></div>
+      </div>
+    </div>
+  `,
+                styles: [
+                    `
+      [nz-row] {
+        background-color: rgba(128, 128, 128, 0.08);
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "zJeg":
+/*!*****************************************!*\
+  !*** ./site/doc/app/grid/responsive.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoGridResponsiveComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoGridResponsiveComponent", function() { return NzDemoGridResponsiveComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+
+
+
+class NzDemoGridResponsiveComponent {
+}
+/** @nocollapse */ NzDemoGridResponsiveComponent.ɵfac = function NzDemoGridResponsiveComponent_Factory(t) { return new (t || NzDemoGridResponsiveComponent)(); };
+/** @nocollapse */ NzDemoGridResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveComponent, selectors: [["nz-demo-grid-responsive"]], decls: 7, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzXs", "2", "nzSm", "4", "nzMd", "6", "nzLg", "8", "nzXl", "10"], ["nz-col", "", "nzXs", "20", "nzSm", "16", "nzMd", "12", "nzLg", "8", "nzXl", "4"]], template: function NzDemoGridResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Col ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoGridResponsiveComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-grid-responsive',
+                template: `
+    <div nz-row>
+      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+        Col
+      </div>
+      <div nz-col nzXs="20" nzSm="16" nzMd="12" nzLg="8" nzXl="4">
+        Col
+      </div>
+      <div nz-col nzXs="2" nzSm="4" nzMd="6" nzLg="8" nzXl="10">
+        Col
+      </div>
+    </div>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

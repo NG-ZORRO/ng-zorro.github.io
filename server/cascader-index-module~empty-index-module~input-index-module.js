@@ -1,11 +1,11 @@
 exports.ids = ["cascader-index-module~empty-index-module~input-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-cascader.js":
+/***/ "YOLp":
 /*!*****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-cascader.js ***!
   \*****************************************************************/
-/*! exports provided: NzCascaderComponent, NzCascaderModule, NzCascaderOptionComponent, NzCascaderService, isChildOption, isParentOption, isShowSearchObject */
+/*! exports provided: NzCascaderComponent, NzCascaderModule, NzCascaderOptionComponent, NzCascaderService, isChildOption, isParentOption, isShowSearchObject, ɵ0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17,26 +17,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isChildOption", function() { return isChildOption; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isParentOption", function() { return isParentOption; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isShowSearchObject", function() { return isShowSearchObject; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵ0", function() { return ɵ0; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/keycodes */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/keycodes.js");
-/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/overlay */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/overlay.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-animation.js");
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
-/* harmony import */ var ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/no-animation */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-no-animation.js");
-/* harmony import */ var ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/overlay */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-overlay.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-i18n.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_highlight__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/core/highlight */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-highlight.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/empty */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-empty.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/input */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input.js");
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/overlay */ "rDax");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "eczo");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
+/* harmony import */ var ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/no-animation */ "H3Kp");
+/* harmony import */ var ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/overlay */ "EOB0");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_highlight__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/core/highlight */ "0xAx");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/empty */ "vqhg");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
 
 
 
@@ -57,15 +58,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * @fileoverview added by tsickle
- * Generated from: typings.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @deprecated Use the prefixed version.
- * @record
- */
 
 
 
@@ -229,69 +221,26 @@ function NzCascaderComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r3.shouldShowEmpty)("ngIfElse", _r21);
 } }
 const _c4 = ["*"];
-function CascaderOption() { }
-if (false) {}
-/**
- * @deprecated Use the prefixed version.
- * @record
- */
-function CascaderSearchOption() { }
-if (false) {}
-/**
- * @record
- */
-function NzShowSearchOptions() { }
-if (false) {}
-/**
- * @param {?} options
- * @return {?}
- */
 function isShowSearchObject(options) {
     return typeof options !== 'boolean';
 }
-/**
- * To avoid circular dependency, provide an interface of `NzCascaderComponent`
- * for `NzCascaderService`.
- * @record
- */
-function NzCascaderComponentAsSource() { }
-if (false) {}
 
-/**
- * @fileoverview added by tsickle
- * Generated from: utils.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/**
- * @param {?} o
- * @return {?}
- */
 function isChildOption(o) {
     return o.isLeaf || !o.children || !o.children.length;
 }
-/**
- * @param {?} o
- * @return {?}
- */
 function isParentOption(o) {
     return !!o.children && !!o.children.length && !o.isLeaf;
 }
 
 /**
- * @fileoverview added by tsickle
- * Generated from: cascader-li.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzCascaderOptionComponent {
-    /**
-     * @param {?} cdr
-     * @param {?} elementRef
-     * @param {?} renderer
-     */
     constructor(cdr, elementRef, renderer) {
         this.cdr = cdr;
         this.optionTemplate = null;
@@ -299,20 +248,16 @@ class NzCascaderOptionComponent {
         this.nzLabelProperty = 'label';
         renderer.addClass(elementRef.nativeElement, 'ant-cascader-menu-item');
     }
-    /**
-     * @return {?}
-     */
     get optionLabel() {
         return this.option[this.nzLabelProperty];
     }
-    /**
-     * @return {?}
-     */
     markForCheck() {
         this.cdr.markForCheck();
     }
 }
+/** @nocollapse */
 NzCascaderOptionComponent.ɵfac = function NzCascaderOptionComponent_Factory(t) { return new (t || NzCascaderOptionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"])); };
+/** @nocollapse */
 NzCascaderOptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzCascaderOptionComponent, selectors: [["", "nz-cascader-option", ""]], hostVars: 7, hostBindings: function NzCascaderOptionComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("title", ctx.option.title || ctx.optionLabel);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-cascader-menu-item-active", ctx.activated)("ant-cascader-menu-item-expand", !ctx.option.isLeaf)("ant-cascader-menu-item-disabled", ctx.option.disabled);
@@ -326,7 +271,6 @@ NzCascaderOptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", !ctx.option.isLeaf || (ctx.option.children == null ? null : ctx.option.children.length) || ctx.option.loading);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_13__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__["NzIconDirective"]], pipes: [ng_zorro_antd_core_highlight__WEBPACK_IMPORTED_MODULE_14__["NzHighlightPipe"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzCascaderOptionComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
@@ -340,33 +284,23 @@ NzCascaderOptionComponent.propDecorators = {
     nzLabelProperty: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     columnIndex: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: cascader.service.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 /**
  * All data is stored and parsed in NzCascaderService.
  */
 class NzCascaderService {
     constructor() {
-        /**
-         * Activated options in each column.
-         */
+        /** Activated options in each column. */
         this.activatedOptions = [];
-        /**
-         * An array to store cascader items arranged in different layers.
-         */
+        /** An array to store cascader items arranged in different layers. */
         this.columns = [];
-        /**
-         * If user has entered searching mode.
-         */
+        /** If user has entered searching mode. */
         this.inSearchingMode = false;
-        /**
-         * Selected options would be output to user.
-         */
+        /** Selected options would be output to user. */
         this.selectedOptions = [];
         this.values = [];
         this.$loading = new rxjs__WEBPACK_IMPORTED_MODULE_10__["BehaviorSubject"](false);
@@ -385,25 +319,15 @@ class NzCascaderService {
          * Only emit when user do select a searching option.
          */
         this.$quitSearching = new rxjs__WEBPACK_IMPORTED_MODULE_10__["Subject"]();
-        /**
-         * To hold columns before entering searching mode.
-         */
+        /** To hold columns before entering searching mode. */
         this.columnsSnapshot = [[]];
-        /**
-         * To hold activated options before entering searching mode.
-         */
+        /** To hold activated options before entering searching mode. */
         this.activatedOptionsSnapshot = [];
     }
-    /**
-     * Return cascader options in the first layer.
-     * @return {?}
-     */
+    /** Return cascader options in the first layer. */
     get nzOptions() {
         return this.columns[0];
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.$redraw.complete();
         this.$quitSearching.complete();
@@ -412,34 +336,18 @@ class NzCascaderService {
     }
     /**
      * Make sure that value matches what is displayed in the dropdown.
-     * @param {?=} first
-     * @return {?}
      */
     syncOptions(first = false) {
-        /** @type {?} */
         const values = this.values;
-        /** @type {?} */
         const hasValue = values && values.length;
-        /** @type {?} */
         const lastColumnIndex = values.length - 1;
-        /** @type {?} */
-        const initColumnWithIndex = (/**
-         * @param {?} columnIndex
-         * @return {?}
-         */
-        (columnIndex) => {
-            /** @type {?} */
-            const activatedOptionSetter = (/**
-             * @return {?}
-             */
-            () => {
-                /** @type {?} */
+        const initColumnWithIndex = (columnIndex) => {
+            const activatedOptionSetter = () => {
                 const currentValue = values[columnIndex];
                 if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["isNotNil"])(currentValue)) {
                     this.$redraw.next();
                     return;
                 }
-                /** @type {?} */
                 const option = this.findOptionWithValue(columnIndex, values[columnIndex]) ||
                     (typeof currentValue === 'object'
                         ? currentValue
@@ -456,16 +364,15 @@ class NzCascaderService {
                     this.selectedOptions = [...this.activatedOptions];
                     this.$redraw.next();
                 }
-            });
+            };
             if (this.isLoaded(columnIndex) || !this.cascaderComponent.nzLoadData) {
                 activatedOptionSetter();
             }
             else {
-                /** @type {?} */
                 const option = this.activatedOptions[columnIndex - 1] || {};
                 this.loadChildren(option, columnIndex - 1, activatedOptionSetter);
             }
-        });
+        };
         this.activatedOptions = [];
         this.selectedOptions = [];
         if (first && this.cascaderComponent.nzLoadData && !hasValue) {
@@ -479,16 +386,12 @@ class NzCascaderService {
     }
     /**
      * Bind cascader component so this service could use inputs.
-     * @param {?} cascaderComponent
-     * @return {?}
      */
     withComponent(cascaderComponent) {
         this.cascaderComponent = cascaderComponent;
     }
     /**
      * Reset all options. Rebuild searching options if in searching mode.
-     * @param {?} options
-     * @return {?}
      */
     withOptions(options) {
         this.columnsSnapshot = this.columns = options && options.length ? [options] : [];
@@ -501,11 +404,10 @@ class NzCascaderService {
     }
     /**
      * Try to set a option as activated.
-     * @param {?} option Cascader option
-     * @param {?} columnIndex Of which column this option is in
-     * @param {?=} performSelect Select
-     * @param {?=} loadingChildren Try to load children asynchronously.
-     * @return {?}
+     * @param option Cascader option
+     * @param columnIndex Of which column this option is in
+     * @param performSelect Select
+     * @param loadingChildren Try to load children asynchronously.
      */
     setOptionActivated(option, columnIndex, performSelect = false, loadingChildren = true) {
         if (option.disabled) {
@@ -514,11 +416,10 @@ class NzCascaderService {
         this.activatedOptions[columnIndex] = option;
         this.trackAncestorActivatedOptions(columnIndex);
         this.dropBehindActivatedOptions(columnIndex);
-        /** @type {?} */
         const isParent = isParentOption(option);
         if (isParent) {
             // Parent option that has children.
-            this.setColumnData((/** @type {?} */ (option.children)), columnIndex + 1, option);
+            this.setColumnData(option.children, columnIndex + 1, option);
         }
         else if (!option.isLeaf && loadingChildren) {
             // Parent option that should try to load children asynchronously.
@@ -534,23 +435,11 @@ class NzCascaderService {
         }
         this.$redraw.next();
     }
-    /**
-     * @param {?} option
-     * @param {?} index
-     * @return {?}
-     */
     setOptionSelected(option, index) {
-        /** @type {?} */
         const changeOn = this.cascaderComponent.nzChangeOn;
-        /** @type {?} */
-        const shouldPerformSelection = (/**
-         * @param {?} o
-         * @param {?} i
-         * @return {?}
-         */
-        (o, i) => {
+        const shouldPerformSelection = (o, i) => {
             return typeof changeOn === 'function' ? changeOn(o, i) : false;
-        });
+        };
         if (option.isLeaf || this.cascaderComponent.nzChangeOnSelect || shouldPerformSelection(option, index)) {
             this.selectedOptions = [...this.activatedOptions];
             this.prepareEmitValue();
@@ -558,10 +447,6 @@ class NzCascaderService {
             this.$optionSelected.next({ option, index });
         }
     }
-    /**
-     * @param {?} column
-     * @return {?}
-     */
     setOptionDeactivatedSinceColumn(column) {
         this.dropBehindActivatedOptions(column - 1);
         this.dropBehindColumns(column);
@@ -569,8 +454,7 @@ class NzCascaderService {
     }
     /**
      * Set a searching option as selected, finishing up things.
-     * @param {?} option
-     * @return {?}
+     * @param option
      */
     setSearchOptionSelected(option) {
         this.activatedOptions = [option];
@@ -578,95 +462,50 @@ class NzCascaderService {
         this.prepareEmitValue();
         this.$redraw.next();
         this.$optionSelected.next({ option, index: 0 });
-        setTimeout((/**
-         * @return {?}
-         */
-        () => {
+        setTimeout(() => {
             // Reset data and tell UI only to remove input and reset dropdown width style.
             this.$quitSearching.next();
             this.$redraw.next();
             this.inSearchingMode = false;
             this.columns = [...this.columnsSnapshot];
             this.activatedOptions = [...this.selectedOptions];
-        }), 200);
+        }, 200);
     }
     /**
      * Filter cascader options to reset `columns`.
-     * @param {?} searchValue The string user wants to search.
-     * @return {?}
+     * @param searchValue The string user wants to search.
      */
     prepareSearchOptions(searchValue) {
-        /** @type {?} */
-        const results = [];
-        // Search results only have one layer.
-        /** @type {?} */
+        const results = []; // Search results only have one layer.
         const path = [];
-        /** @type {?} */
-        const defaultFilter = (/**
-         * @param {?} i
-         * @param {?} p
-         * @return {?}
-         */
-        (i, p) => {
-            return p.some((/**
-             * @param {?} o
-             * @return {?}
-             */
-            o => {
-                /** @type {?} */
+        const defaultFilter = (i, p) => {
+            return p.some(o => {
                 const label = this.getOptionLabel(o);
                 return !!label && label.indexOf(i) !== -1;
-            }));
-        });
-        /** @type {?} */
+            });
+        };
         const showSearch = this.cascaderComponent.nzShowSearch;
-        /** @type {?} */
         const filter = isShowSearchObject(showSearch) && showSearch.filter ? showSearch.filter : defaultFilter;
-        /** @type {?} */
         const sorter = isShowSearchObject(showSearch) && showSearch.sorter ? showSearch.sorter : null;
-        /** @type {?} */
-        const loopChild = (/**
-         * @param {?} node
-         * @param {?=} forceDisabled
-         * @return {?}
-         */
-        (node, forceDisabled = false) => {
+        const loopChild = (node, forceDisabled = false) => {
             path.push(node);
-            /** @type {?} */
             const cPath = Array.from(path);
             if (filter(searchValue, cPath)) {
-                /** @type {?} */
                 const disabled = forceDisabled || node.disabled;
-                /** @type {?} */
                 const option = {
                     disabled,
                     isLeaf: true,
                     path: cPath,
-                    [this.cascaderComponent.nzLabelProperty]: cPath.map((/**
-                     * @param {?} p
-                     * @return {?}
-                     */
-                    p => this.getOptionLabel(p))).join(' / ')
+                    [this.cascaderComponent.nzLabelProperty]: cPath.map(p => this.getOptionLabel(p)).join(' / ')
                 };
                 results.push(option);
             }
             path.pop();
-        });
-        /** @type {?} */
-        const loopParent = (/**
-         * @param {?} node
-         * @param {?=} forceDisabled
-         * @return {?}
-         */
-        (node, forceDisabled = false) => {
-            /** @type {?} */
+        };
+        const loopParent = (node, forceDisabled = false) => {
             const disabled = forceDisabled || node.disabled;
             path.push(node);
-            (/** @type {?} */ (node.children)).forEach((/**
-             * @param {?} sNode
-             * @return {?}
-             */
-            sNode => {
+            node.children.forEach(sNode => {
                 if (!sNode.parent) {
                     sNode.parent = node;
                 }
@@ -676,33 +515,23 @@ class NzCascaderService {
                 if (sNode.isLeaf || !sNode.children || !sNode.children.length) {
                     loopChild(sNode, disabled);
                 }
-            }));
+            });
             path.pop();
-        });
+        };
         if (!this.columnsSnapshot.length) {
             this.columns = [[]];
             return;
         }
-        this.columnsSnapshot[0].forEach((/**
-         * @param {?} o
-         * @return {?}
-         */
-        o => (isChildOption(o) ? loopChild(o) : loopParent(o))));
+        this.columnsSnapshot[0].forEach(o => (isChildOption(o) ? loopChild(o) : loopParent(o)));
         if (sorter) {
-            results.sort((/**
-             * @param {?} a
-             * @param {?} b
-             * @return {?}
-             */
-            (a, b) => sorter(a.path, b.path, searchValue)));
+            results.sort((a, b) => sorter(a.path, b.path, searchValue));
         }
         this.columns = [results];
         this.$redraw.next(); // Search results may be empty, so should redraw.
     }
     /**
      * Toggle searching mode by UI. It deals with things not directly related to UI.
-     * @param {?} toSearching If this cascader is entering searching mode
-     * @return {?}
+     * @param toSearching If this cascader is entering searching mode
      */
     toggleSearchingMode(toSearching) {
         this.inSearchingMode = toSearching;
@@ -723,7 +552,6 @@ class NzCascaderService {
     }
     /**
      * Clear selected options.
-     * @return {?}
      */
     clear() {
         this.values = [];
@@ -734,67 +562,38 @@ class NzCascaderService {
         this.$redraw.next();
         this.$optionSelected.next(null);
     }
-    /**
-     * @param {?} o
-     * @return {?}
-     */
     getOptionLabel(o) {
-        return (/** @type {?} */ (o[this.cascaderComponent.nzLabelProperty || 'label']));
+        return o[this.cascaderComponent.nzLabelProperty || 'label'];
     }
-    /**
-     * @param {?} o
-     * @return {?}
-     */
     getOptionValue(o) {
         return o[this.cascaderComponent.nzValueProperty || 'value'];
     }
     /**
      * Try to insert options into a column.
-     * @private
-     * @param {?} options Options to insert
-     * @param {?} columnIndex Position
-     * @param {?} parent
-     * @return {?}
+     * @param options Options to insert
+     * @param columnIndex Position
      */
     setColumnData(options, columnIndex, parent) {
-        /** @type {?} */
         const existingOptions = this.columns[columnIndex];
         if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["arraysEqual"])(existingOptions, options)) {
-            options.forEach((/**
-             * @param {?} o
-             * @return {?}
-             */
-            o => (o.parent = parent)));
+            options.forEach(o => (o.parent = parent));
             this.columns[columnIndex] = options;
             this.dropBehindColumns(columnIndex);
         }
     }
     /**
      * Set all ancestor options as activated.
-     * @private
-     * @param {?} startIndex
-     * @return {?}
      */
     trackAncestorActivatedOptions(startIndex) {
         for (let i = startIndex - 1; i >= 0; i--) {
             if (!this.activatedOptions[i]) {
-                this.activatedOptions[i] = (/** @type {?} */ (this.activatedOptions[i + 1].parent));
+                this.activatedOptions[i] = this.activatedOptions[i + 1].parent;
             }
         }
     }
-    /**
-     * @private
-     * @param {?} lastReserveIndex
-     * @return {?}
-     */
     dropBehindActivatedOptions(lastReserveIndex) {
         this.activatedOptions = this.activatedOptions.splice(0, lastReserveIndex + 1);
     }
-    /**
-     * @private
-     * @param {?} lastReserveIndex
-     * @return {?}
-     */
     dropBehindColumns(lastReserveIndex) {
         if (lastReserveIndex < this.columns.length - 1) {
             this.columns = this.columns.slice(0, lastReserveIndex + 1);
@@ -802,14 +601,8 @@ class NzCascaderService {
     }
     /**
      * Load children of an option asynchronously.
-     * @param {?} option
-     * @param {?} columnIndex
-     * @param {?=} success
-     * @param {?=} failure
-     * @return {?}
      */
     loadChildren(option, columnIndex, success, failure) {
-        /** @type {?} */
         const loadFn = this.cascaderComponent.nzLoadData;
         if (loadFn) {
             // If there isn't any option in columns.
@@ -817,10 +610,7 @@ class NzCascaderService {
             if (typeof option === 'object') {
                 option.loading = true;
             }
-            loadFn(option, columnIndex).then((/**
-             * @return {?}
-             */
-            () => {
+            loadFn(option, columnIndex).then(() => {
                 option.loading = false;
                 if (option.children) {
                     this.setColumnData(option.children, columnIndex + 1, option);
@@ -830,94 +620,54 @@ class NzCascaderService {
                 }
                 this.$loading.next(false);
                 this.$redraw.next();
-            }), (/**
-             * @return {?}
-             */
-            () => {
+            }, () => {
                 option.loading = false;
                 option.isLeaf = true;
                 if (failure) {
                     failure();
                 }
                 this.$redraw.next();
-            }));
+            });
         }
     }
-    /**
-     * @private
-     * @param {?} index
-     * @return {?}
-     */
     isLoaded(index) {
         return this.columns[index] && this.columns[index].length > 0;
     }
     /**
      * Find a option that has a given value in a given column.
-     * @private
-     * @param {?} columnIndex
-     * @param {?} value
-     * @return {?}
      */
     findOptionWithValue(columnIndex, value) {
-        /** @type {?} */
         const targetColumn = this.columns[columnIndex];
         if (targetColumn) {
-            /** @type {?} */
             const v = typeof value === 'object' ? this.getOptionValue(value) : value;
-            return (/** @type {?} */ (targetColumn.find((/**
-             * @param {?} o
-             * @return {?}
-             */
-            o => v === this.getOptionValue(o)))));
+            return targetColumn.find(o => v === this.getOptionValue(o));
         }
         return null;
     }
-    /**
-     * @private
-     * @return {?}
-     */
     prepareEmitValue() {
-        this.values = this.selectedOptions.map((/**
-         * @param {?} o
-         * @return {?}
-         */
-        o => this.getOptionValue(o)));
+        this.values = this.selectedOptions.map(o => this.getOptionValue(o));
     }
 }
+/** @nocollapse */
 NzCascaderService.ɵfac = function NzCascaderService_Factory(t) { return new (t || NzCascaderService)(); };
+/** @nocollapse */
 NzCascaderService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: NzCascaderService, factory: NzCascaderService.ɵfac });
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: cascader.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
-const NZ_CONFIG_COMPONENT_NAME = 'cascader';
-/** @type {?} */
-const defaultDisplayRender = (/**
- * @param {?} labels
- * @return {?}
- */
-(labels) => labels.join(' / '));
+const NZ_CONFIG_MODULE_NAME = 'cascader';
+const defaultDisplayRender = (labels) => labels.join(' / ');
 const ɵ0 = defaultDisplayRender;
 class NzCascaderComponent {
-    /**
-     * @param {?} cascaderService
-     * @param {?} i18nService
-     * @param {?} nzConfigService
-     * @param {?} cdr
-     * @param {?} elementRef
-     * @param {?} renderer
-     * @param {?=} noAnimation
-     */
     constructor(cascaderService, i18nService, nzConfigService, cdr, elementRef, renderer, noAnimation) {
         this.cascaderService = cascaderService;
         this.i18nService = i18nService;
         this.nzConfigService = nzConfigService;
         this.cdr = cdr;
         this.noAnimation = noAnimation;
+        this._nzModuleName = NZ_CONFIG_MODULE_NAME;
         this.nzOptionRender = null;
         this.nzShowInput = true;
         this.nzShowArrow = true;
@@ -934,10 +684,8 @@ class NzCascaderComponent {
         this.nzPlaceHolder = '';
         this.nzMenuStyle = null;
         this.nzMouseEnterDelay = 150; // ms
-        // ms
         this.nzMouseLeaveDelay = 150; // ms
-        // ms
-        this.nzTriggerAction = (/** @type {?} */ (['click']));
+        this.nzTriggerAction = ['click'];
         this.nzVisibleChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzSelectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzSelect = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
@@ -965,112 +713,57 @@ class NzCascaderComponent {
         renderer.addClass(elementRef.nativeElement, 'ant-cascader');
         renderer.addClass(elementRef.nativeElement, 'ant-cascader-picker');
     }
-    /**
-     * @return {?}
-     */
     get nzOptions() {
         return this.cascaderService.nzOptions;
     }
-    /**
-     * @param {?} options
-     * @return {?}
-     */
     set nzOptions(options) {
         this.cascaderService.withOptions(options);
     }
-    /**
-     * @return {?}
-     */
     get inSearchingMode() {
         return this.cascaderService.inSearchingMode;
     }
-    /**
-     * @param {?} inputValue
-     * @return {?}
-     */
     set inputValue(inputValue) {
         this.inputString = inputValue;
         this.toggleSearchingMode(!!inputValue);
     }
-    /**
-     * @return {?}
-     */
     get inputValue() {
         return this.inputString;
     }
-    /**
-     * @return {?}
-     */
     get menuCls() {
         return { [`${this.nzMenuClassName}`]: !!this.nzMenuClassName };
     }
-    /**
-     * @return {?}
-     */
     get menuColumnCls() {
         return { [`${this.nzColumnClassName}`]: !!this.nzColumnClassName };
     }
-    /**
-     * @private
-     * @return {?}
-     */
     get hasInput() {
         return !!this.inputValue;
     }
-    /**
-     * @private
-     * @return {?}
-     */
     get hasValue() {
         return this.cascaderService.values && this.cascaderService.values.length > 0;
     }
-    /**
-     * @return {?}
-     */
     get showPlaceholder() {
         return !(this.hasInput || this.hasValue);
     }
-    /**
-     * @return {?}
-     */
     get clearIconVisible() {
         return this.nzAllowClear && !this.nzDisabled && (this.hasValue || this.hasInput);
     }
-    /**
-     * @return {?}
-     */
     get isLabelRenderTemplate() {
         return !!this.nzLabelRender;
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
-        /** @type {?} */
         const srv = this.cascaderService;
-        srv.$redraw.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        srv.$redraw.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe(() => {
             // These operations would not mutate data.
             this.checkChildren();
             this.setDisplayLabel();
             this.reposition();
             this.setDropdownStyles();
             this.cdr.markForCheck();
-        }));
-        srv.$loading.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @param {?} loading
-         * @return {?}
-         */
-        loading => {
+        });
+        srv.$loading.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe(loading => {
             this.isLoading = loading;
-        }));
-        srv.$optionSelected.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @param {?} data
-         * @return {?}
-         */
-        data => {
+        });
+        srv.$optionSelected.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe(data => {
             if (!data) {
                 this.onChange([]);
                 this.nzSelect.emit(null);
@@ -1078,7 +771,6 @@ class NzCascaderComponent {
             }
             else {
                 const { option, index } = data;
-                /** @type {?} */
                 const shouldClose = option.isLeaf;
                 if (shouldClose) {
                     this.delaySetMenuVisible(false);
@@ -1088,98 +780,58 @@ class NzCascaderComponent {
                 this.nzSelect.emit({ option, index });
                 this.cdr.markForCheck();
             }
-        }));
-        srv.$quitSearching.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        });
+        srv.$quitSearching.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.inputString = '';
             this.dropdownWidthStyle = '';
-        }));
-        this.i18nService.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        });
+        this.i18nService.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.setLocale();
-        }));
+        });
         this.nzConfigService
-            .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
+            .getConfigChangeEventForComponent(NZ_CONFIG_MODULE_NAME)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["takeUntil"])(this.destroy$))
-            .subscribe((/**
-         * @return {?}
-         */
-        () => {
+            .subscribe(() => {
             this.cdr.markForCheck();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
         this.clearDelayMenuTimer();
         this.clearDelaySelectTimer();
     }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
     registerOnChange(fn) {
         this.onChange = fn;
     }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
     registerOnTouched(fn) {
         this.onTouched = fn;
     }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     writeValue(value) {
         this.cascaderService.values = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["toArray"])(value);
         this.cascaderService.syncOptions(true);
     }
-    /**
-     * @param {?} visible
-     * @param {?=} delay
-     * @param {?=} setOpening
-     * @return {?}
-     */
     delaySetMenuVisible(visible, delay = 100, setOpening = false) {
         this.clearDelayMenuTimer();
         if (delay) {
             if (visible && setOpening) {
                 this.isOpening = true;
             }
-            this.delayMenuTimer = setTimeout((/**
-             * @return {?}
-             */
-            () => {
+            this.delayMenuTimer = setTimeout(() => {
                 this.setMenuVisible(visible);
                 this.cdr.detectChanges();
                 this.clearDelayMenuTimer();
                 if (visible) {
-                    setTimeout((/**
-                     * @return {?}
-                     */
-                    () => {
+                    setTimeout(() => {
                         this.isOpening = false;
-                    }), 100);
+                    }, 100);
                 }
-            }), delay);
+            }, delay);
         }
         else {
             this.setMenuVisible(visible);
         }
     }
-    /**
-     * @param {?} visible
-     * @return {?}
-     */
     setMenuVisible(visible) {
         if (this.nzDisabled || this.menuVisible === visible) {
             return;
@@ -1191,20 +843,12 @@ class NzCascaderComponent {
         this.nzVisibleChange.emit(visible);
         this.cdr.detectChanges();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     clearDelayMenuTimer() {
         if (this.delayMenuTimer) {
             clearTimeout(this.delayMenuTimer);
             this.delayMenuTimer = null;
         }
     }
-    /**
-     * @param {?=} event
-     * @return {?}
-     */
     clearSelection(event) {
         if (event) {
             event.preventDefault();
@@ -1216,52 +860,28 @@ class NzCascaderComponent {
         this.setMenuVisible(false);
         this.cascaderService.clear();
     }
-    /**
-     * @return {?}
-     */
     getSubmitValue() {
-        return this.cascaderService.selectedOptions.map((/**
-         * @param {?} o
-         * @return {?}
-         */
-        o => this.cascaderService.getOptionValue(o)));
+        return this.cascaderService.selectedOptions.map(o => this.cascaderService.getOptionValue(o));
     }
-    /**
-     * @return {?}
-     */
     focus() {
         if (!this.isFocused) {
             (this.input ? this.input.nativeElement : this.el).focus();
             this.isFocused = true;
         }
     }
-    /**
-     * @return {?}
-     */
     blur() {
         if (this.isFocused) {
             (this.input ? this.input.nativeElement : this.el).blur();
             this.isFocused = false;
         }
     }
-    /**
-     * @return {?}
-     */
     handleInputBlur() {
         this.menuVisible ? this.focus() : this.blur();
     }
-    /**
-     * @return {?}
-     */
     handleInputFocus() {
         this.focus();
     }
-    /**
-     * @param {?} event
-     * @return {?}
-     */
     onKeyDown(event) {
-        /** @type {?} */
         const keyCode = event.keyCode;
         if (keyCode !== _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["DOWN_ARROW"] &&
             keyCode !== _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["UP_ARROW"] &&
@@ -1300,9 +920,6 @@ class NzCascaderComponent {
             }
         }
     }
-    /**
-     * @return {?}
-     */
     onTriggerClick() {
         if (this.nzDisabled) {
             return;
@@ -1315,41 +932,25 @@ class NzCascaderComponent {
         }
         this.onTouched();
     }
-    /**
-     * @return {?}
-     */
     onTriggerMouseEnter() {
         if (this.nzDisabled || !this.isActionTrigger('hover')) {
             return;
         }
         this.delaySetMenuVisible(true, this.nzMouseEnterDelay, true);
     }
-    /**
-     * @param {?} event
-     * @return {?}
-     */
     onTriggerMouseLeave(event) {
         if (this.nzDisabled || !this.menuVisible || this.isOpening || !this.isActionTrigger('hover')) {
             event.preventDefault();
             return;
         }
-        /** @type {?} */
-        const mouseTarget = (/** @type {?} */ (event.relatedTarget));
-        /** @type {?} */
+        const mouseTarget = event.relatedTarget;
         const hostEl = this.el;
-        /** @type {?} */
-        const menuEl = this.menu && ((/** @type {?} */ (this.menu.nativeElement)));
+        const menuEl = this.menu && this.menu.nativeElement;
         if (hostEl.contains(mouseTarget) || (menuEl && menuEl.contains(mouseTarget))) {
             return;
         }
         this.delaySetMenuVisible(false, this.nzMouseLeaveDelay);
     }
-    /**
-     * @param {?} option
-     * @param {?} columnIndex
-     * @param {?} event
-     * @return {?}
-     */
     onOptionMouseEnter(option, columnIndex, event) {
         event.preventDefault();
         if (this.nzExpandTrigger === 'hover') {
@@ -1361,24 +962,12 @@ class NzCascaderComponent {
             }
         }
     }
-    /**
-     * @param {?} option
-     * @param {?} _columnIndex
-     * @param {?} event
-     * @return {?}
-     */
     onOptionMouseLeave(option, _columnIndex, event) {
         event.preventDefault();
         if (this.nzExpandTrigger === 'hover' && !option.isLeaf) {
             this.clearDelaySelectTimer();
         }
     }
-    /**
-     * @param {?} option
-     * @param {?} columnIndex
-     * @param {?} event
-     * @return {?}
-     */
     onOptionClick(option, columnIndex, event) {
         if (event) {
             event.preventDefault();
@@ -1388,47 +977,26 @@ class NzCascaderComponent {
         }
         this.el.focus();
         this.inSearchingMode
-            ? this.cascaderService.setSearchOptionSelected((/** @type {?} */ (option)))
+            ? this.cascaderService.setSearchOptionSelected(option)
             : this.cascaderService.setOptionActivated(option, columnIndex, true);
     }
-    /**
-     * @private
-     * @param {?} action
-     * @return {?}
-     */
     isActionTrigger(action) {
         return typeof this.nzTriggerAction === 'string' ? this.nzTriggerAction === action : this.nzTriggerAction.indexOf(action) !== -1;
     }
-    /**
-     * @private
-     * @return {?}
-     */
     onEnter() {
-        /** @type {?} */
         const columnIndex = Math.max(this.cascaderService.activatedOptions.length - 1, 0);
-        /** @type {?} */
         const option = this.cascaderService.activatedOptions[columnIndex];
         if (option && !option.disabled) {
             this.inSearchingMode
-                ? this.cascaderService.setSearchOptionSelected((/** @type {?} */ (option)))
+                ? this.cascaderService.setSearchOptionSelected(option)
                 : this.cascaderService.setOptionActivated(option, columnIndex, true);
         }
     }
-    /**
-     * @private
-     * @param {?} isUp
-     * @return {?}
-     */
     moveUpOrDown(isUp) {
-        /** @type {?} */
         const columnIndex = Math.max(this.cascaderService.activatedOptions.length - 1, 0);
-        /** @type {?} */
         const activeOption = this.cascaderService.activatedOptions[columnIndex];
-        /** @type {?} */
         const options = this.cascaderService.columns[columnIndex] || [];
-        /** @type {?} */
         const length = options.length;
-        /** @type {?} */
         let nextIndex = -1;
         if (!activeOption) {
             // Not selected options in this column
@@ -1442,7 +1010,6 @@ class NzCascaderComponent {
             if (nextIndex < 0 || nextIndex >= length) {
                 break;
             }
-            /** @type {?} */
             const nextOption = options[nextIndex];
             if (!nextOption || nextOption.disabled) {
                 continue;
@@ -1451,70 +1018,35 @@ class NzCascaderComponent {
             break;
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     moveLeft() {
-        /** @type {?} */
         const options = this.cascaderService.activatedOptions;
         if (options.length) {
             options.pop(); // Remove the last one
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     moveRight() {
-        /** @type {?} */
         const length = this.cascaderService.activatedOptions.length;
-        /** @type {?} */
         const options = this.cascaderService.columns[length];
         if (options && options.length) {
-            /** @type {?} */
-            const nextOpt = options.find((/**
-             * @param {?} o
-             * @return {?}
-             */
-            o => !o.disabled));
+            const nextOpt = options.find(o => !o.disabled);
             if (nextOpt) {
                 this.cascaderService.setOptionActivated(nextOpt, length);
             }
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     clearDelaySelectTimer() {
         if (this.delaySelectTimer) {
             clearTimeout(this.delaySelectTimer);
             this.delaySelectTimer = null;
         }
     }
-    /**
-     * @private
-     * @param {?} option
-     * @param {?} columnIndex
-     * @param {?} performSelect
-     * @return {?}
-     */
     delaySetOptionActivated(option, columnIndex, performSelect) {
         this.clearDelaySelectTimer();
-        this.delaySelectTimer = setTimeout((/**
-         * @return {?}
-         */
-        () => {
+        this.delaySelectTimer = setTimeout(() => {
             this.cascaderService.setOptionActivated(option, columnIndex, performSelect);
             this.delaySelectTimer = null;
-        }), 150);
+        }, 150);
     }
-    /**
-     * @private
-     * @param {?} toSearching
-     * @return {?}
-     */
     toggleSearchingMode(toSearching) {
         if (this.inSearchingMode !== toSearching) {
             this.cascaderService.toggleSearchingMode(toSearching);
@@ -1523,29 +1055,16 @@ class NzCascaderComponent {
             this.cascaderService.prepareSearchOptions(this.inputValue);
         }
     }
-    /**
-     * @param {?} option
-     * @param {?} index
-     * @return {?}
-     */
     isOptionActivated(option, index) {
-        /** @type {?} */
         const activeOpt = this.cascaderService.activatedOptions[index];
         return activeOpt === option;
     }
-    /**
-     * @param {?} isDisabled
-     * @return {?}
-     */
     setDisabledState(isDisabled) {
         if (isDisabled) {
             this.closeMenu();
         }
         this.nzDisabled = isDisabled;
     }
-    /**
-     * @return {?}
-     */
     closeMenu() {
         this.blur();
         this.clearDelayMenuTimer();
@@ -1554,46 +1073,25 @@ class NzCascaderComponent {
     /**
      * Reposition the cascader panel. When a menu opens, the cascader expands
      * and may exceed the boundary of browser's window.
-     * @private
-     * @return {?}
      */
     reposition() {
         if (this.overlay && this.overlay.overlayRef && this.menuVisible) {
-            Promise.resolve().then((/**
-             * @return {?}
-             */
-            () => {
+            Promise.resolve().then(() => {
                 this.overlay.overlayRef.updatePosition();
-            }));
+            });
         }
     }
     /**
      * When a cascader options is changed, a child needs to know that it should re-render.
-     * @private
-     * @return {?}
      */
     checkChildren() {
         if (this.cascaderItems) {
-            this.cascaderItems.forEach((/**
-             * @param {?} item
-             * @return {?}
-             */
-            item => item.markForCheck()));
+            this.cascaderItems.forEach(item => item.markForCheck());
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setDisplayLabel() {
-        /** @type {?} */
         const selectedOptions = this.cascaderService.selectedOptions;
-        /** @type {?} */
-        const labels = selectedOptions.map((/**
-         * @param {?} o
-         * @return {?}
-         */
-        o => this.cascaderService.getOptionLabel(o)));
+        const labels = selectedOptions.map(o => this.cascaderService.getOptionLabel(o));
         if (this.isLabelRenderTemplate) {
             this.labelRenderContext = { labels, selectedOptions };
         }
@@ -1601,12 +1099,7 @@ class NzCascaderComponent {
             this.labelRenderText = defaultDisplayRender.call(this, labels, selectedOptions);
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setDropdownStyles() {
-        /** @type {?} */
         const firstColumn = this.cascaderService.columns[0];
         this.shouldShowEmpty =
             (this.inSearchingMode && (!firstColumn || !firstColumn.length)) || // Should show empty when there's no searching result
@@ -1616,16 +1109,14 @@ class NzCascaderComponent {
             this.dropdownWidthStyle = this.inSearchingMode || this.shouldShowEmpty ? `${this.input.nativeElement.offsetWidth}px` : '';
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setLocale() {
         this.locale = this.i18nService.getLocaleData('global');
         this.cdr.markForCheck();
     }
 }
+/** @nocollapse */
 NzCascaderComponent.ɵfac = function NzCascaderComponent_Factory(t) { return new (t || NzCascaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzCascaderService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_7__["NzNoAnimationDirective"], 9)); };
+/** @nocollapse */
 NzCascaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzCascaderComponent, selectors: [["nz-cascader"], ["", "nz-cascader", ""]], viewQuery: function NzCascaderComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c2, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c3, true);
@@ -1645,9 +1136,7 @@ NzCascaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
     } }, inputs: { nzOptionRender: "nzOptionRender", nzShowInput: "nzShowInput", nzShowArrow: "nzShowArrow", nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzChangeOnSelect: "nzChangeOnSelect", nzDisabled: "nzDisabled", nzExpandTrigger: "nzExpandTrigger", nzValueProperty: "nzValueProperty", nzLabelRender: "nzLabelRender", nzLabelProperty: "nzLabelProperty", nzSize: "nzSize", nzShowSearch: "nzShowSearch", nzPlaceHolder: "nzPlaceHolder", nzMenuStyle: "nzMenuStyle", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzTriggerAction: "nzTriggerAction", nzOptions: "nzOptions", nzColumnClassName: "nzColumnClassName", nzNotFoundContent: "nzNotFoundContent", nzMenuClassName: "nzMenuClassName", nzChangeOn: "nzChangeOn", nzLoadData: "nzLoadData" }, outputs: { nzVisibleChange: "nzVisibleChange", nzSelectionChange: "nzSelectionChange", nzSelect: "nzSelect", nzClear: "nzClear" }, exportAs: ["nzCascader"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(( /**
-                 * @return {?}
-                 */() => NzCascaderComponent)),
+                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzCascaderComponent)),
                 multi: true
             },
             NzCascaderService
@@ -1666,7 +1155,6 @@ NzCascaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("cdkConnectedOverlayOrigin", _r0)("cdkConnectedOverlayPositions", ctx.positions)("cdkConnectedOverlayTransformOriginOn", ".ant-cascader-menus")("cdkConnectedOverlayOpen", ctx.menuVisible);
     } }, directives: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_2__["CdkOverlayOrigin"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgIf"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_2__["CdkConnectedOverlay"], ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__["NzConnectedOverlayDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_18__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_17__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgStyle"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_7__["NzNoAnimationDirective"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_16__["NzEmbedEmptyComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_13__["NgForOf"], NzCascaderOptionComponent], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_5__["slideMotion"]] }, changeDetection: 0 });
-/** @nocollapse */
 NzCascaderComponent.ctorParameters = () => [
     { type: NzCascaderService },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_12__["NzI18nService"] },
@@ -1739,7 +1227,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzCascaderComponent.prototype, "nzDisabled", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
 ], NzCascaderComponent.prototype, "nzSize", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzCascaderOptionComponent, [{
@@ -1826,8 +1314,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
           nzType="down"
           class="ant-cascader-picker-arrow"
           [class.ant-cascader-picker-arrow-expand]="menuVisible"
-        >
-        </i>
+        ></i>
         <i *ngIf="isLoading" nz-icon nzType="loading" class="ant-cascader-picker-arrow"></i>
         <span
           class="ant-cascader-picker-label"
@@ -1904,9 +1391,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 providers: [
                     {
                         provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(( /**
-                         * @return {?}
-                         */() => NzCascaderComponent)),
+                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzCascaderComponent)),
                         multi: true
                     },
                     NzCascaderService
@@ -2006,16 +1491,16 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         }], nzLoadData: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: cascader.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzCascaderModule {
 }
+/** @nocollapse */
 NzCascaderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzCascaderModule });
+/** @nocollapse */
 NzCascaderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzCascaderModule_Factory(t) { return new (t || NzCascaderModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_13__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
@@ -2028,8 +1513,7 @@ NzCascaderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineI
             ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_7__["NzNoAnimationModule"],
             ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__["NzOverlayModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzCascaderModule, { declarations: function () { return [NzCascaderComponent,
-        NzCascaderOptionComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_13__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzCascaderModule, { declarations: function () { return [NzCascaderComponent, NzCascaderOptionComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_13__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_2__["OverlayModule"],
         ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_15__["NzOutletModule"],
@@ -2060,15 +1544,12 @@ NzCascaderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineI
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-cascader.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

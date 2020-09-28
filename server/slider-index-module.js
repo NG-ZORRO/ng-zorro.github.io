@@ -1,68 +1,7 @@
 exports.ids = ["slider-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/slider/basic.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/slider/basic.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoSliderBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderBasicComponent", function() { return NzDemoSliderBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-
-
-
-
-
-class NzDemoSliderBasicComponent {
-    constructor() {
-        this.disabled = false;
-        this.value1 = 30;
-        this.value2 = [20, 50];
-    }
-}
-/** @nocollapse */ NzDemoSliderBasicComponent.ɵfac = function NzDemoSliderBasicComponent_Factory(t) { return new (t || NzDemoSliderBasicComponent)(); };
-/** @nocollapse */ NzDemoSliderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderBasicComponent, selectors: [["nz-demo-slider-basic"]], decls: 4, vars: 5, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nzRange", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.value1 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.value2 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Disabled: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-switch", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_switch_ngModelChange_3_listener($event) { return ctx.disabled = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.value1)("nzDisabled", ctx.disabled);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.value2)("nzDisabled", ctx.disabled);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.disabled);
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-slider-basic',
-                template: `
-    <nz-slider [(ngModel)]="value1" [nzDisabled]="disabled"></nz-slider>
-    <nz-slider nzRange [(ngModel)]="value2" [nzDisabled]="disabled"></nz-slider>
-    Disabled:
-    <nz-switch nzSize="small" [(ngModel)]="disabled"></nz-switch>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/en.component.ts":
+/***/ "0pu0":
 /*!*********************************************!*\
   !*** ./site/doc/app/slider/en.component.ts ***!
   \*********************************************/
@@ -72,23 +11,23 @@ class NzDemoSliderBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderEnComponent", function() { return NzDemoSliderEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/slider/basic.ts");
-/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon-slider */ "./site/doc/app/slider/icon-slider.ts");
-/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./event */ "./site/doc/app/slider/event.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/slider/vertical.ts");
-/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./reverse */ "./site/doc/app/slider/reverse.ts");
-/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./input-number */ "./site/doc/app/slider/input-number.ts");
-/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tip-formatter */ "./site/doc/app/slider/tip-formatter.ts");
-/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./mark */ "./site/doc/app/slider/mark.ts");
-/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./tooltip */ "./site/doc/app/slider/tooltip.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "HO9o");
+/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon-slider */ "Tjwy");
+/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./event */ "jHC0");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./vertical */ "aAer");
+/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./reverse */ "GmRy");
+/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./input-number */ "C44j");
+/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tip-formatter */ "qEQZ");
+/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./mark */ "brlI");
+/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./tooltip */ "szz3");
 
 
 
@@ -837,61 +776,199 @@ class NzDemoSliderEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/event.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/slider/event.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoSliderEventComponent */
+/***/ "7rC0":
+/*!*********************************************!*\
+  !*** ./site/doc/app/slider/index.module.ts ***!
+  \*********************************************/
+/*! exports provided: NzDemoSliderModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderEventComponent", function() { return NzDemoSliderEventComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderModule", function() { return NzDemoSliderModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "CEZg");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "HO9o");
+/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./event */ "jHC0");
+/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./icon-slider */ "Tjwy");
+/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./input-number */ "C44j");
+/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mark */ "brlI");
+/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./reverse */ "GmRy");
+/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tip-formatter */ "qEQZ");
+/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./tooltip */ "szz3");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./vertical */ "aAer");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./zh.component */ "jN1m");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./en.component */ "0pu0");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "nJzI");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
 
 
 
 
-class NzDemoSliderEventComponent {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoSliderModule {
+}
+/** @nocollapse */ NzDemoSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSliderModule });
+/** @nocollapse */ NzDemoSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSliderModule_Factory(t) { return new (t || NzDemoSliderModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoSliderModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSliderBasicComponent"],
+        _event__WEBPACK_IMPORTED_MODULE_5__["NzDemoSliderEventComponent"],
+        _icon_slider__WEBPACK_IMPORTED_MODULE_6__["NzDemoSliderIconSliderComponent"],
+        _input_number__WEBPACK_IMPORTED_MODULE_7__["NzDemoSliderInputNumberComponent"],
+        _mark__WEBPACK_IMPORTED_MODULE_8__["NzDemoSliderMarkComponent"],
+        _reverse__WEBPACK_IMPORTED_MODULE_9__["NzDemoSliderReverseComponent"],
+        _tip_formatter__WEBPACK_IMPORTED_MODULE_10__["NzDemoSliderTipFormatterComponent"],
+        _tooltip__WEBPACK_IMPORTED_MODULE_11__["NzDemoSliderTooltipComponent"],
+        _vertical__WEBPACK_IMPORTED_MODULE_12__["NzDemoSliderVerticalComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__["NzIconModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_16__["NzSliderModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_17__["NzSwitchModule"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_18__["NzInputNumberModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_19__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSliderBasicComponent"],
+                    _event__WEBPACK_IMPORTED_MODULE_5__["NzDemoSliderEventComponent"],
+                    _icon_slider__WEBPACK_IMPORTED_MODULE_6__["NzDemoSliderIconSliderComponent"],
+                    _input_number__WEBPACK_IMPORTED_MODULE_7__["NzDemoSliderInputNumberComponent"],
+                    _mark__WEBPACK_IMPORTED_MODULE_8__["NzDemoSliderMarkComponent"],
+                    _reverse__WEBPACK_IMPORTED_MODULE_9__["NzDemoSliderReverseComponent"],
+                    _tip_formatter__WEBPACK_IMPORTED_MODULE_10__["NzDemoSliderTipFormatterComponent"],
+                    _tooltip__WEBPACK_IMPORTED_MODULE_11__["NzDemoSliderTooltipComponent"],
+                    _vertical__WEBPACK_IMPORTED_MODULE_12__["NzDemoSliderVerticalComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "C44j":
+/*!*********************************************!*\
+  !*** ./site/doc/app/slider/input-number.ts ***!
+  \*********************************************/
+/*! exports provided: NzDemoSliderInputNumberComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderInputNumberComponent", function() { return NzDemoSliderInputNumberComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "nJzI");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+
+
+
+const _c0 = function () { return { marginLeft: "16px" }; };
+class NzDemoSliderInputNumberComponent {
     constructor() {
-        this.singleValue = 30;
-        this.rangeValue = [20, 50];
-    }
-    onChange(value) {
-        console.log(`onChange: ${value}`);
-    }
-    onAfterChange(value) {
-        console.log(`onAfterChange: ${value}`);
+        this.value1 = 1;
+        this.value2 = 0;
     }
 }
-/** @nocollapse */ NzDemoSliderEventComponent.ɵfac = function NzDemoSliderEventComponent_Factory(t) { return new (t || NzDemoSliderEventComponent)(); };
-/** @nocollapse */ NzDemoSliderEventComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEventComponent, selectors: [["nz-demo-slider-event"]], decls: 2, vars: 3, consts: [[3, "ngModel", "ngModelChange", "nzOnAfterChange"], ["nzRange", "", 3, "nzStep", "ngModel", "ngModelChange", "nzOnAfterChange"]], template: function NzDemoSliderEventComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.singleValue = $event; })("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.onChange($event); })("nzOnAfterChange", function NzDemoSliderEventComponent_Template_nz_slider_nzOnAfterChange_0_listener($event) { return ctx.onAfterChange($event); });
+/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵfac = function NzDemoSliderInputNumberComponent_Factory(t) { return new (t || NzDemoSliderInputNumberComponent)(); };
+/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderInputNumberComponent, selectors: [["nz-demo-slider-input-number"]], decls: 10, vars: 18, consts: [["nzSpan", "12"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-col", "", "nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "ngModel", "ngModelChange"], [3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "nzStep", "ngModel", "ngModelChange"]], template: function NzDemoSliderInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-slider", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_slider_ngModelChange_2_listener($event) { return ctx.value1 = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.rangeValue = $event; })("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.onChange($event); })("nzOnAfterChange", function NzDemoSliderEventComponent_Template_nz_slider_nzOnAfterChange_1_listener($event) { return ctx.onAfterChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-input-number", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_input_number_ngModelChange_4_listener($event) { return ctx.value1 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-row");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "nz-col", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-slider", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_slider_ngModelChange_7_listener($event) { return ctx.value2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-col", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-input-number", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_input_number_ngModelChange_9_listener($event) { return ctx.value2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.singleValue);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStep", 10)("ngModel", ctx.rangeValue);
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderEventComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 1)("nzMax", 20)("ngModel", ctx.value1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 1)("nzMax", 20)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](16, _c0))("ngModel", ctx.value1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 0)("nzMax", 1)("nzStep", 0.01)("ngModel", ctx.value2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 0)("nzMax", 1)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](17, _c0))("nzStep", 0.01)("ngModel", ctx.value2);
+    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__["NzInputNumberComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgStyle"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderInputNumberComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-slider-event',
+                selector: 'nz-demo-slider-input-number',
                 template: `
-    <nz-slider [(ngModel)]="singleValue" (ngModelChange)="onChange($event)" (nzOnAfterChange)="onAfterChange($event)"></nz-slider>
-    <nz-slider
-      nzRange
-      [nzStep]="10"
-      [(ngModel)]="rangeValue"
-      (ngModelChange)="onChange($event)"
-      (nzOnAfterChange)="onAfterChange($event)"
-    ></nz-slider>
+    <nz-row>
+      <nz-col nzSpan="12">
+        <nz-slider [nzMin]="1" [nzMax]="20" [(ngModel)]="value1"></nz-slider>
+      </nz-col>
+      <div nz-col nzSpan="4">
+        <nz-input-number [nzMin]="1" [nzMax]="20" [ngStyle]="{ marginLeft: '16px' }" [(ngModel)]="value1"></nz-input-number>
+      </div>
+    </nz-row>
+
+    <nz-row>
+      <nz-col nzSpan="12">
+        <nz-slider [nzMin]="0" [nzMax]="1" [nzStep]="0.01" [(ngModel)]="value2"></nz-slider>
+      </nz-col>
+      <nz-col nzSpan="4">
+        <nz-input-number [nzMin]="0" [nzMax]="1" [ngStyle]="{ marginLeft: '16px' }" [nzStep]="0.01" [(ngModel)]="value2"></nz-input-number>
+      </nz-col>
+    </nz-row>
   `
             }]
     }], null, null); })();
@@ -899,7 +976,170 @@ class NzDemoSliderEventComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/icon-slider.ts":
+/***/ "CEZg":
+/*!***************************************!*\
+  !*** ./site/doc/app/slider/module.ts ***!
+  \***************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "nJzI");
+
+
+
+
+
+const moduleList = [
+    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"],
+    ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderModule"],
+    ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_2__["NzSwitchModule"],
+    ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__["NzInputNumberModule"],
+    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonModule"]
+];
+
+
+/***/ }),
+
+/***/ "GmRy":
+/*!****************************************!*\
+  !*** ./site/doc/app/slider/reverse.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoSliderReverseComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderReverseComponent", function() { return NzDemoSliderReverseComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+
+
+
+
+
+const _c0 = function () { return [20, 50]; };
+class NzDemoSliderReverseComponent {
+    constructor() {
+        this.reverse = true;
+    }
+}
+/** @nocollapse */ NzDemoSliderReverseComponent.ɵfac = function NzDemoSliderReverseComponent_Factory(t) { return new (t || NzDemoSliderReverseComponent)(); };
+/** @nocollapse */ NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 5, vars: 6, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Reversed: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-switch", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderReverseComponent_Template_nz_switch_ngModelChange_4_listener($event) { return ctx.reverse = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", 30)("nzReverse", ctx.reverse);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0))("nzReverse", ctx.reverse);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.reverse);
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"]], styles: ["h4[_ngcontent-%COMP%] {\n        margin: 0 0 16px;\n      }\n\n      .ant-slider-with-marks[_ngcontent-%COMP%] {\n        margin-bottom: 44px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderReverseComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-slider-reverse',
+                template: `
+    <div>
+      <nz-slider [ngModel]="30" [nzReverse]="reverse"></nz-slider>
+      <nz-slider nzRange [ngModel]="[20, 50]" [nzReverse]="reverse"></nz-slider>
+      Reversed: <nz-switch nzSize="small" [(ngModel)]="reverse"></nz-switch>
+    </div>
+  `,
+                styles: [
+                    `
+      h4 {
+        margin: 0 0 16px;
+      }
+
+      .ant-slider-with-marks {
+        margin-bottom: 44px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "HO9o":
+/*!**************************************!*\
+  !*** ./site/doc/app/slider/basic.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoSliderBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderBasicComponent", function() { return NzDemoSliderBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+
+
+
+
+
+class NzDemoSliderBasicComponent {
+    constructor() {
+        this.disabled = false;
+        this.value1 = 30;
+        this.value2 = [20, 50];
+    }
+}
+/** @nocollapse */ NzDemoSliderBasicComponent.ɵfac = function NzDemoSliderBasicComponent_Factory(t) { return new (t || NzDemoSliderBasicComponent)(); };
+/** @nocollapse */ NzDemoSliderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderBasicComponent, selectors: [["nz-demo-slider-basic"]], decls: 4, vars: 5, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nzRange", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.value1 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-slider", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.value2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Disabled: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-switch", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_switch_ngModelChange_3_listener($event) { return ctx.disabled = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.value1)("nzDisabled", ctx.disabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.value2)("nzDisabled", ctx.disabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.disabled);
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-slider-basic',
+                template: `
+    <nz-slider [(ngModel)]="value1" [nzDisabled]="disabled"></nz-slider>
+    <nz-slider nzRange [(ngModel)]="value2" [nzDisabled]="disabled"></nz-slider>
+    Disabled:
+    <nz-switch nzSize="small" [(ngModel)]="disabled"></nz-switch>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Tjwy":
 /*!********************************************!*\
   !*** ./site/doc/app/slider/icon-slider.ts ***!
   \********************************************/
@@ -909,11 +1149,11 @@ class NzDemoSliderEventComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderIconSliderComponent", function() { return NzDemoSliderIconSliderComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 
 
 
@@ -1009,199 +1249,92 @@ class NzDemoSliderIconSliderComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/index.module.ts":
-/*!*********************************************!*\
-  !*** ./site/doc/app/slider/index.module.ts ***!
-  \*********************************************/
-/*! exports provided: NzDemoSliderModule */
+/***/ "aAer":
+/*!*****************************************!*\
+  !*** ./site/doc/app/slider/vertical.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoSliderVerticalComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderModule", function() { return NzDemoSliderModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/slider/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/slider/basic.ts");
-/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./event */ "./site/doc/app/slider/event.ts");
-/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./icon-slider */ "./site/doc/app/slider/icon-slider.ts");
-/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./input-number */ "./site/doc/app/slider/input-number.ts");
-/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./mark */ "./site/doc/app/slider/mark.ts");
-/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./reverse */ "./site/doc/app/slider/reverse.ts");
-/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tip-formatter */ "./site/doc/app/slider/tip-formatter.ts");
-/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./tooltip */ "./site/doc/app/slider/tooltip.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/slider/vertical.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/slider/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/slider/en.component.ts");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input-number.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderVerticalComponent", function() { return NzDemoSliderVerticalComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoSliderModule {
-}
-/** @nocollapse */ NzDemoSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSliderModule });
-/** @nocollapse */ NzDemoSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSliderModule_Factory(t) { return new (t || NzDemoSliderModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoSliderModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSliderBasicComponent"],
-        _event__WEBPACK_IMPORTED_MODULE_5__["NzDemoSliderEventComponent"],
-        _icon_slider__WEBPACK_IMPORTED_MODULE_6__["NzDemoSliderIconSliderComponent"],
-        _input_number__WEBPACK_IMPORTED_MODULE_7__["NzDemoSliderInputNumberComponent"],
-        _mark__WEBPACK_IMPORTED_MODULE_8__["NzDemoSliderMarkComponent"],
-        _reverse__WEBPACK_IMPORTED_MODULE_9__["NzDemoSliderReverseComponent"],
-        _tip_formatter__WEBPACK_IMPORTED_MODULE_10__["NzDemoSliderTipFormatterComponent"],
-        _tooltip__WEBPACK_IMPORTED_MODULE_11__["NzDemoSliderTooltipComponent"],
-        _vertical__WEBPACK_IMPORTED_MODULE_12__["NzDemoSliderVerticalComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__["NzIconModule"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_16__["NzSliderModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_17__["NzSwitchModule"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_18__["NzInputNumberModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_19__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSliderBasicComponent"],
-                    _event__WEBPACK_IMPORTED_MODULE_5__["NzDemoSliderEventComponent"],
-                    _icon_slider__WEBPACK_IMPORTED_MODULE_6__["NzDemoSliderIconSliderComponent"],
-                    _input_number__WEBPACK_IMPORTED_MODULE_7__["NzDemoSliderInputNumberComponent"],
-                    _mark__WEBPACK_IMPORTED_MODULE_8__["NzDemoSliderMarkComponent"],
-                    _reverse__WEBPACK_IMPORTED_MODULE_9__["NzDemoSliderReverseComponent"],
-                    _tip_formatter__WEBPACK_IMPORTED_MODULE_10__["NzDemoSliderTipFormatterComponent"],
-                    _tooltip__WEBPACK_IMPORTED_MODULE_11__["NzDemoSliderTooltipComponent"],
-                    _vertical__WEBPACK_IMPORTED_MODULE_12__["NzDemoSliderVerticalComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_13__["NzDemoSliderZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_14__["NzDemoSliderEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/input-number.ts":
-/*!*********************************************!*\
-  !*** ./site/doc/app/slider/input-number.ts ***!
-  \*********************************************/
-/*! exports provided: NzDemoSliderInputNumberComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderInputNumberComponent", function() { return NzDemoSliderInputNumberComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input-number.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-
-
-
-
-
-
-const _c0 = function () { return { marginLeft: "16px" }; };
-class NzDemoSliderInputNumberComponent {
+const _c0 = function () { return { height: "300px" }; };
+const _c1 = function () { return [20, 50]; };
+const _c2 = function () { return [26, 37]; };
+class NzDemoSliderVerticalComponent {
     constructor() {
-        this.value1 = 1;
-        this.value2 = 0;
+        this.style = {
+            float: 'left',
+            height: '300px',
+            marginLeft: '70px'
+        };
+        this.marks = {
+            0: '0°C',
+            26: '26°C',
+            37: '37°C',
+            100: {
+                style: {
+                    color: '#f50'
+                },
+                label: '<strong>100°C</strong>'
+            }
+        };
     }
 }
-/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵfac = function NzDemoSliderInputNumberComponent_Factory(t) { return new (t || NzDemoSliderInputNumberComponent)(); };
-/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderInputNumberComponent, selectors: [["nz-demo-slider-input-number"]], decls: 10, vars: 18, consts: [["nzSpan", "12"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-col", "", "nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "ngModel", "ngModelChange"], [3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "nzStep", "ngModel", "ngModelChange"]], template: function NzDemoSliderInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_slider_ngModelChange_2_listener($event) { return ctx.value1 = $event; });
+/** @nocollapse */ NzDemoSliderVerticalComponent.ɵfac = function NzDemoSliderVerticalComponent_Factory(t) { return new (t || NzDemoSliderVerticalComponent)(); };
+/** @nocollapse */ NzDemoSliderVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderVerticalComponent, selectors: [["nz-demo-slider-vertical"]], decls: 7, vars: 12, consts: [[3, "ngStyle"], ["nzVertical", "", 3, "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzStep", "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzMarks", "ngModel"]], template: function NzDemoSliderVerticalComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-slider", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-input-number", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_input_number_ngModelChange_4_listener($event) { return ctx.value1 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-row");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "nz-col", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-slider", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_slider_ngModelChange_7_listener($event) { return ctx.value2 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "nz-col", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-input-number", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderInputNumberComponent_Template_nz_input_number_ngModelChange_9_listener($event) { return ctx.value2 = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-slider", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 1)("nzMax", 20)("ngModel", ctx.value1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 1)("nzMax", 20)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](16, _c0))("ngModel", ctx.value1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 0)("nzMax", 1)("nzStep", 0.01)("ngModel", ctx.value2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMin", 0)("nzMax", 1)("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](17, _c0))("nzStep", 0.01)("ngModel", ctx.value2);
-    } }, directives: [ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_1__["NzColDirective"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__["NzInputNumberComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgStyle"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderInputNumberComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c0));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStep", 10)("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1));
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marks)("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2));
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderVerticalComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-slider-input-number',
+                selector: 'nz-demo-slider-vertical',
                 template: `
-    <nz-row>
-      <nz-col nzSpan="12">
-        <nz-slider [nzMin]="1" [nzMax]="20" [(ngModel)]="value1"></nz-slider>
-      </nz-col>
-      <div nz-col nzSpan="4">
-        <nz-input-number [nzMin]="1" [nzMax]="20" [ngStyle]="{ marginLeft: '16px' }" [(ngModel)]="value1"></nz-input-number>
+    <div [ngStyle]="{ height: '300px' }">
+      <div [ngStyle]="style">
+        <nz-slider nzVertical [ngModel]="30"></nz-slider>
       </div>
-    </nz-row>
-
-    <nz-row>
-      <nz-col nzSpan="12">
-        <nz-slider [nzMin]="0" [nzMax]="1" [nzStep]="0.01" [(ngModel)]="value2"></nz-slider>
-      </nz-col>
-      <nz-col nzSpan="4">
-        <nz-input-number [nzMin]="0" [nzMax]="1" [ngStyle]="{ marginLeft: '16px' }" [nzStep]="0.01" [(ngModel)]="value2"></nz-input-number>
-      </nz-col>
-    </nz-row>
+      <div [ngStyle]="style">
+        <nz-slider nzVertical nzRange [nzStep]="10" [ngModel]="[20, 50]"></nz-slider>
+      </div>
+      <div [ngStyle]="style">
+        <nz-slider nzVertical nzRange [nzMarks]="marks" [ngModel]="[26, 37]"></nz-slider>
+      </div>
+    </div>
   `
             }]
     }], null, null); })();
@@ -1209,7 +1342,7 @@ class NzDemoSliderInputNumberComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/mark.ts":
+/***/ "brlI":
 /*!*************************************!*\
   !*** ./site/doc/app/slider/mark.ts ***!
   \*************************************/
@@ -1219,12 +1352,12 @@ class NzDemoSliderInputNumberComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderMarkComponent", function() { return NzDemoSliderMarkComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -1331,144 +1464,61 @@ class NzDemoSliderMarkComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/module.ts":
-/*!***************************************!*\
-  !*** ./site/doc/app/slider/module.ts ***!
-  \***************************************/
-/*! exports provided: moduleList */
+/***/ "jHC0":
+/*!**************************************!*\
+  !*** ./site/doc/app/slider/event.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoSliderEventComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input-number */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-input-number.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderEventComponent", function() { return NzDemoSliderEventComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
 
 
 
 
-
-const moduleList = [
-    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"],
-    ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderModule"],
-    ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_2__["NzSwitchModule"],
-    ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_4__["NzInputNumberModule"],
-    ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__["NzButtonModule"]
-];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/reverse.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/slider/reverse.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoSliderReverseComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderReverseComponent", function() { return NzDemoSliderReverseComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-
-
-
-
-
-const _c0 = function () { return [20, 50]; };
-class NzDemoSliderReverseComponent {
+class NzDemoSliderEventComponent {
     constructor() {
-        this.reverse = true;
+        this.singleValue = 30;
+        this.rangeValue = [20, 50];
+    }
+    onChange(value) {
+        console.log(`onChange: ${value}`);
+    }
+    onAfterChange(value) {
+        console.log(`onAfterChange: ${value}`);
     }
 }
-/** @nocollapse */ NzDemoSliderReverseComponent.ɵfac = function NzDemoSliderReverseComponent_Factory(t) { return new (t || NzDemoSliderReverseComponent)(); };
-/** @nocollapse */ NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 5, vars: 6, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Reversed: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-switch", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderReverseComponent_Template_nz_switch_ngModelChange_4_listener($event) { return ctx.reverse = $event; });
+/** @nocollapse */ NzDemoSliderEventComponent.ɵfac = function NzDemoSliderEventComponent_Factory(t) { return new (t || NzDemoSliderEventComponent)(); };
+/** @nocollapse */ NzDemoSliderEventComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEventComponent, selectors: [["nz-demo-slider-event"]], decls: 2, vars: 3, consts: [[3, "ngModel", "ngModelChange", "nzOnAfterChange"], ["nzRange", "", 3, "nzStep", "ngModel", "ngModelChange", "nzOnAfterChange"]], template: function NzDemoSliderEventComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.singleValue = $event; })("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.onChange($event); })("nzOnAfterChange", function NzDemoSliderEventComponent_Template_nz_slider_nzOnAfterChange_0_listener($event) { return ctx.onAfterChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-slider", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.rangeValue = $event; })("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_1_listener($event) { return ctx.onChange($event); })("nzOnAfterChange", function NzDemoSliderEventComponent_Template_nz_slider_nzOnAfterChange_1_listener($event) { return ctx.onAfterChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.singleValue);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", 30)("nzReverse", ctx.reverse);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0))("nzReverse", ctx.reverse);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.reverse);
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"]], styles: ["h4[_ngcontent-%COMP%] {\n        margin: 0 0 16px;\n      }\n\n      .ant-slider-with-marks[_ngcontent-%COMP%] {\n        margin-bottom: 44px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderReverseComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStep", 10)("ngModel", ctx.rangeValue);
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderEventComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-demo-slider-reverse',
+                selector: 'nz-demo-slider-event',
                 template: `
-    <div>
-      <nz-slider [ngModel]="30" [nzReverse]="reverse"></nz-slider>
-      <nz-slider nzRange [ngModel]="[20, 50]" [nzReverse]="reverse"></nz-slider>
-      Reversed: <nz-switch nzSize="small" [(ngModel)]="reverse"></nz-switch>
-    </div>
-  `,
-                styles: [
-                    `
-      h4 {
-        margin: 0 0 16px;
-      }
-
-      .ant-slider-with-marks {
-        margin-bottom: 44px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/tip-formatter.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/slider/tip-formatter.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoSliderTipFormatterComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderTipFormatterComponent", function() { return NzDemoSliderTipFormatterComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-
-
-
-class NzDemoSliderTipFormatterComponent {
-    formatter(value) {
-        return `${value}%`;
-    }
-}
-/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵfac = function NzDemoSliderTipFormatterComponent_Factory(t) { return new (t || NzDemoSliderTipFormatterComponent)(); };
-/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTipFormatterComponent, selectors: [["nz-demo-slider-tip-formatter"]], decls: 2, vars: 2, consts: [[3, "nzTipFormatter"]], template: function NzDemoSliderTipFormatterComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTipFormatter", ctx.formatter);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTipFormatter", null);
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderTipFormatterComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-slider-tip-formatter',
-                template: `
-    <nz-slider [nzTipFormatter]="formatter"></nz-slider>
-    <nz-slider [nzTipFormatter]="null"></nz-slider>
+    <nz-slider [(ngModel)]="singleValue" (ngModelChange)="onChange($event)" (nzOnAfterChange)="onAfterChange($event)"></nz-slider>
+    <nz-slider
+      nzRange
+      [nzStep]="10"
+      [(ngModel)]="rangeValue"
+      (ngModelChange)="onChange($event)"
+      (nzOnAfterChange)="onAfterChange($event)"
+    ></nz-slider>
   `
             }]
     }], null, null); })();
@@ -1476,140 +1526,7 @@ class NzDemoSliderTipFormatterComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/slider/tooltip.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/slider/tooltip.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoSliderTooltipComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderTooltipComponent", function() { return NzDemoSliderTooltipComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-
-
-
-class NzDemoSliderTooltipComponent {
-}
-/** @nocollapse */ NzDemoSliderTooltipComponent.ɵfac = function NzDemoSliderTooltipComponent_Factory(t) { return new (t || NzDemoSliderTooltipComponent)(); };
-/** @nocollapse */ NzDemoSliderTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTooltipComponent, selectors: [["nz-demo-slider-tooltip"]], decls: 2, vars: 2, consts: [[3, "nzTooltipVisible"]], template: function NzDemoSliderTooltipComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipVisible", "always");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipVisible", "never");
-    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderTooltipComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-slider-tooltip',
-                template: `
-    <nz-slider [nzTooltipVisible]="'always'"></nz-slider>
-    <nz-slider [nzTooltipVisible]="'never'"></nz-slider>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/vertical.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/slider/vertical.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoSliderVerticalComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderVerticalComponent", function() { return NzDemoSliderVerticalComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/slider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-slider.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-const _c0 = function () { return { height: "300px" }; };
-const _c1 = function () { return [20, 50]; };
-const _c2 = function () { return [26, 37]; };
-class NzDemoSliderVerticalComponent {
-    constructor() {
-        this.style = {
-            float: 'left',
-            height: '300px',
-            marginLeft: '70px'
-        };
-        this.marks = {
-            0: '0°C',
-            26: '26°C',
-            37: '37°C',
-            100: {
-                style: {
-                    color: '#f50'
-                },
-                label: '<strong>100°C</strong>'
-            }
-        };
-    }
-}
-/** @nocollapse */ NzDemoSliderVerticalComponent.ɵfac = function NzDemoSliderVerticalComponent_Factory(t) { return new (t || NzDemoSliderVerticalComponent)(); };
-/** @nocollapse */ NzDemoSliderVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderVerticalComponent, selectors: [["nz-demo-slider-vertical"]], decls: 7, vars: 12, consts: [[3, "ngStyle"], ["nzVertical", "", 3, "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzStep", "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzMarks", "ngModel"]], template: function NzDemoSliderVerticalComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-slider", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-slider", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](9, _c0));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStep", 10)("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](10, _c1));
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.style);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marks)("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](11, _c2));
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_2__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderVerticalComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-slider-vertical',
-                template: `
-    <div [ngStyle]="{ height: '300px' }">
-      <div [ngStyle]="style">
-        <nz-slider nzVertical [ngModel]="30"></nz-slider>
-      </div>
-      <div [ngStyle]="style">
-        <nz-slider nzVertical nzRange [nzStep]="10" [ngModel]="[20, 50]"></nz-slider>
-      </div>
-      <div [ngStyle]="style">
-        <nz-slider nzVertical nzRange [nzMarks]="marks" [ngModel]="[26, 37]"></nz-slider>
-      </div>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/slider/zh.component.ts":
+/***/ "jN1m":
 /*!*********************************************!*\
   !*** ./site/doc/app/slider/zh.component.ts ***!
   \*********************************************/
@@ -1619,23 +1536,23 @@ class NzDemoSliderVerticalComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderZhComponent", function() { return NzDemoSliderZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/slider/basic.ts");
-/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon-slider */ "./site/doc/app/slider/icon-slider.ts");
-/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./event */ "./site/doc/app/slider/event.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/slider/vertical.ts");
-/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./reverse */ "./site/doc/app/slider/reverse.ts");
-/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./input-number */ "./site/doc/app/slider/input-number.ts");
-/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tip-formatter */ "./site/doc/app/slider/tip-formatter.ts");
-/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./mark */ "./site/doc/app/slider/mark.ts");
-/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./tooltip */ "./site/doc/app/slider/tooltip.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "HO9o");
+/* harmony import */ var _icon_slider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon-slider */ "Tjwy");
+/* harmony import */ var _event__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./event */ "jHC0");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./vertical */ "aAer");
+/* harmony import */ var _reverse__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./reverse */ "GmRy");
+/* harmony import */ var _input_number__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./input-number */ "C44j");
+/* harmony import */ var _tip_formatter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tip-formatter */ "qEQZ");
+/* harmony import */ var _mark__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./mark */ "brlI");
+/* harmony import */ var _tooltip__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./tooltip */ "szz3");
 
 
 
@@ -2393,6 +2310,89 @@ class NzDemoSliderZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "qEQZ":
+/*!**********************************************!*\
+  !*** ./site/doc/app/slider/tip-formatter.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoSliderTipFormatterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderTipFormatterComponent", function() { return NzDemoSliderTipFormatterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+
+
+
+class NzDemoSliderTipFormatterComponent {
+    formatter(value) {
+        return `${value}%`;
+    }
+}
+/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵfac = function NzDemoSliderTipFormatterComponent_Factory(t) { return new (t || NzDemoSliderTipFormatterComponent)(); };
+/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTipFormatterComponent, selectors: [["nz-demo-slider-tip-formatter"]], decls: 2, vars: 2, consts: [[3, "nzTipFormatter"]], template: function NzDemoSliderTipFormatterComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTipFormatter", ctx.formatter);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTipFormatter", null);
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderTipFormatterComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-slider-tip-formatter',
+                template: `
+    <nz-slider [nzTipFormatter]="formatter"></nz-slider>
+    <nz-slider [nzTipFormatter]="null"></nz-slider>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "szz3":
+/*!****************************************!*\
+  !*** ./site/doc/app/slider/tooltip.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoSliderTooltipComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSliderTooltipComponent", function() { return NzDemoSliderTooltipComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/slider */ "Dkbx");
+
+
+
+class NzDemoSliderTooltipComponent {
+}
+/** @nocollapse */ NzDemoSliderTooltipComponent.ɵfac = function NzDemoSliderTooltipComponent_Factory(t) { return new (t || NzDemoSliderTooltipComponent)(); };
+/** @nocollapse */ NzDemoSliderTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTooltipComponent, selectors: [["nz-demo-slider-tooltip"]], decls: 2, vars: 2, consts: [[3, "nzTooltipVisible"]], template: function NzDemoSliderTooltipComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipVisible", "always");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipVisible", "never");
+    } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSliderTooltipComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-slider-tooltip',
+                template: `
+    <nz-slider [nzTooltipVisible]="'always'"></nz-slider>
+    <nz-slider [nzTooltipVisible]="'never'"></nz-slider>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })

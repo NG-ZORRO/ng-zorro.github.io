@@ -1,7 +1,7 @@
 exports.ids = ["comment-index-module~drawer-index-module~empty-index-module~list-index-module~skeleton-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js":
+/***/ "aTgR":
 /*!*************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-list.js ***!
   \*************************************************************/
@@ -26,18 +26,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzListLoadMoreDirective", function() { return NzListLoadMoreDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzListModule", function() { return NzListModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzListPaginationComponent", function() { return NzListPaginationComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-avatar.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/empty */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-empty.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/avatar */ "/XND");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/empty */ "vqhg");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
 
 
 
@@ -50,17 +50,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * @fileoverview added by tsickle
- * Generated from: interface.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 /**
- * @record
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -77,7 +74,7 @@ function NzListItemMetaAvatarComponent_nz_avatar_1_Template(rf, ctx) { if (rf & 
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSrc", ctx_r0.nzSrc);
 } }
-function NzListItemMetaAvatarComponent_2_Template(rf, ctx) { if (rf & 1) {
+function NzListItemMetaAvatarComponent_ng_content_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0, 0, ["*ngIf", "!nzSrc"]);
 } }
 function NzListItemMetaComponent_nz_list_item_meta_avatar_0_Template(rf, ctx) { if (rf & 1) {
@@ -377,17 +374,11 @@ function NzListItemComponent_ng_container_8_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c7 = [[["nz-list-item-actions"], ["", "nz-list-item-actions", ""]], [["nz-list-item-meta"], ["", "nz-list-item-meta", ""]], "*", [["nz-list-item-extra"], ["", "nz-list-item-extra", ""]]];
 const _c8 = ["nz-list-item-actions, [nz-list-item-actions]", "nz-list-item-meta, [nz-list-item-meta]", "*", "nz-list-item-extra, [nz-list-item-extra]"];
-function NzListGrid() { }
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: list-item-meta-cell.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 class NzListItemMetaTitleComponent {
 }
+/** @nocollapse */
 NzListItemMetaTitleComponent.ɵfac = function NzListItemMetaTitleComponent_Factory(t) { return new (t || NzListItemMetaTitleComponent)(); };
+/** @nocollapse */
 NzListItemMetaTitleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemMetaTitleComponent, selectors: [["nz-list-item-meta-title"]], exportAs: ["nzListItemMetaTitle"], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "ant-list-item-meta-title"]], template: function NzListItemMetaTitleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h4", 0);
@@ -396,7 +387,9 @@ NzListItemMetaTitleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
     } }, encapsulation: 2, changeDetection: 0 });
 class NzListItemMetaDescriptionComponent {
 }
+/** @nocollapse */
 NzListItemMetaDescriptionComponent.ɵfac = function NzListItemMetaDescriptionComponent_Factory(t) { return new (t || NzListItemMetaDescriptionComponent)(); };
+/** @nocollapse */
 NzListItemMetaDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemMetaDescriptionComponent, selectors: [["nz-list-item-meta-description"]], exportAs: ["nzListItemMetaDescription"], ngContentSelectors: _c0, decls: 2, vars: 0, consts: [[1, "ant-list-item-meta-description"]], template: function NzListItemMetaDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -405,12 +398,14 @@ NzListItemMetaDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODUL
     } }, encapsulation: 2, changeDetection: 0 });
 class NzListItemMetaAvatarComponent {
 }
+/** @nocollapse */
 NzListItemMetaAvatarComponent.ɵfac = function NzListItemMetaAvatarComponent_Factory(t) { return new (t || NzListItemMetaAvatarComponent)(); };
+/** @nocollapse */
 NzListItemMetaAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemMetaAvatarComponent, selectors: [["nz-list-item-meta-avatar"]], inputs: { nzSrc: "nzSrc" }, exportAs: ["nzListItemMetaAvatar"], ngContentSelectors: _c0, decls: 3, vars: 2, consts: [[1, "ant-list-item-meta-avatar"], [3, "nzSrc", 4, "ngIf"], [4, "ngIf"], [3, "nzSrc"]], template: function NzListItemMetaAvatarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzListItemMetaAvatarComponent_nz_avatar_1_Template, 1, 1, "nz-avatar", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzListItemMetaAvatarComponent_2_Template, 1, 0, undefined, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzListItemMetaAvatarComponent_ng_content_2_Template, 1, 0, "ng-content", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
@@ -421,28 +416,18 @@ NzListItemMetaAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__
 NzListItemMetaAvatarComponent.propDecorators = {
     nzSrc: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list-item-meta.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzListItemMetaComponent {
-    /**
-     * @param {?} elementRef
-     * @param {?} renderer
-     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.avatarStr = '';
         this.renderer.addClass(elementRef.nativeElement, 'ant-list-item-meta');
     }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     set nzAvatar(value) {
         if (value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]) {
             this.avatarStr = '';
@@ -453,7 +438,9 @@ class NzListItemMetaComponent {
         }
     }
 }
+/** @nocollapse */
 NzListItemMetaComponent.ɵfac = function NzListItemMetaComponent_Factory(t) { return new (t || NzListItemMetaComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"])); };
+/** @nocollapse */
 NzListItemMetaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemMetaComponent, selectors: [["nz-list-item-meta"], ["", "nz-list-item-meta", ""]], contentQueries: function NzListItemMetaComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListItemMetaDescriptionComponent, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListItemMetaTitleComponent, true);
@@ -474,7 +461,6 @@ NzListItemMetaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzTitle || ctx.nzDescription || ctx.descriptionComponent || ctx.titleComponent);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], NzListItemMetaAvatarComponent, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], NzListItemMetaTitleComponent, ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], NzListItemMetaDescriptionComponent], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzListItemMetaComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] }
@@ -486,27 +472,28 @@ NzListItemMetaComponent.propDecorators = {
     descriptionComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [NzListItemMetaDescriptionComponent,] }],
     titleComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [NzListItemMetaTitleComponent,] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list-item-cell.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzListItemExtraComponent {
     constructor() { }
 }
+/** @nocollapse */
 NzListItemExtraComponent.ɵfac = function NzListItemExtraComponent_Factory(t) { return new (t || NzListItemExtraComponent)(); };
+/** @nocollapse */
 NzListItemExtraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemExtraComponent, selectors: [["nz-list-item-extra"], ["", "nz-list-item-extra", ""]], hostAttrs: [1, "ant-list-item-extra"], exportAs: ["nzListItemExtra"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzListItemExtraComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzListItemExtraComponent.ctorParameters = () => [];
 class NzListItemActionComponent {
     constructor() { }
 }
+/** @nocollapse */
 NzListItemActionComponent.ɵfac = function NzListItemActionComponent_Factory(t) { return new (t || NzListItemActionComponent)(); };
+/** @nocollapse */
 NzListItemActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemActionComponent, selectors: [["nz-list-item-action"]], viewQuery: function NzListItemActionComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"], true);
     } if (rf & 2) {
@@ -516,17 +503,11 @@ NzListItemActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzListItemActionComponent_ng_template_0_Template, 1, 0, "ng-template");
     } }, encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzListItemActionComponent.ctorParameters = () => [];
 NzListItemActionComponent.propDecorators = {
     templateRef: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"],] }]
 };
-if (false) {}
 class NzListItemActionsComponent {
-    /**
-     * @param {?} ngZone
-     * @param {?} cdr
-     */
     constructor(ngZone, cdr) {
         this.ngZone = ngZone;
         this.cdr = cdr;
@@ -534,52 +515,35 @@ class NzListItemActionsComponent {
         this.actions = [];
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
         this.inputActionChanges$ = new rxjs__WEBPACK_IMPORTED_MODULE_3__["Subject"]();
-        this.contentChildrenChanges$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["defer"])((/**
-         * @return {?}
-         */
-        () => {
+        this.contentChildrenChanges$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["defer"])(() => {
             if (this.nzListItemActions) {
                 return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null);
             }
-            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])((/**
-             * @return {?}
-             */
-            () => this.contentChildrenChanges$)));
-        }));
+            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["switchMap"])(() => this.contentChildrenChanges$));
+        });
         Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["merge"])(this.contentChildrenChanges$, this.inputActionChanges$)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(this.destroy$))
-            .subscribe((/**
-         * @return {?}
-         */
-        () => {
+            .subscribe(() => {
             if (this.nzActions.length) {
                 this.actions = this.nzActions;
             }
             else {
-                this.actions = this.nzListItemActions.map((/**
-                 * @param {?} action
-                 * @return {?}
-                 */
-                action => (/** @type {?} */ (action.templateRef))));
+                this.actions = this.nzListItemActions.map(action => action.templateRef);
             }
             this.cdr.detectChanges();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnChanges() {
         this.inputActionChanges$.next(null);
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
 }
+/** @nocollapse */
 NzListItemActionsComponent.ɵfac = function NzListItemActionsComponent_Factory(t) { return new (t || NzListItemActionsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+/** @nocollapse */
 NzListItemActionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemActionsComponent, selectors: [["ul", "nz-list-item-actions", ""]], contentQueries: function NzListItemActionsComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListItemActionComponent, false);
     } if (rf & 2) {
@@ -590,7 +554,6 @@ NzListItemActionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["�
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.actions);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzListItemActionsComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
@@ -599,16 +562,16 @@ NzListItemActionsComponent.propDecorators = {
     nzActions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzListItemActions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzListItemActionComponent,] }]
 };
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list-cell.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzListEmptyComponent {
 }
+/** @nocollapse */
 NzListEmptyComponent.ɵfac = function NzListEmptyComponent_Factory(t) { return new (t || NzListEmptyComponent)(); };
+/** @nocollapse */
 NzListEmptyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListEmptyComponent, selectors: [["nz-list-empty"]], hostAttrs: [1, "ant-list-empty-text"], inputs: { nzNoResult: "nzNoResult" }, exportAs: ["nzListHeader"], decls: 1, vars: 2, consts: [[3, "nzComponentName", "specificContent"]], template: function NzListEmptyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-embed-empty", 0);
     } if (rf & 2) {
@@ -617,41 +580,49 @@ NzListEmptyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 NzListEmptyComponent.propDecorators = {
     nzNoResult: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
 };
-if (false) {}
 class NzListHeaderComponent {
 }
+/** @nocollapse */
 NzListHeaderComponent.ɵfac = function NzListHeaderComponent_Factory(t) { return new (t || NzListHeaderComponent)(); };
+/** @nocollapse */
 NzListHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListHeaderComponent, selectors: [["nz-list-header"]], hostAttrs: [1, "ant-list-header"], exportAs: ["nzListHeader"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzListHeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
 class NzListFooterComponent {
 }
+/** @nocollapse */
 NzListFooterComponent.ɵfac = function NzListFooterComponent_Factory(t) { return new (t || NzListFooterComponent)(); };
+/** @nocollapse */
 NzListFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListFooterComponent, selectors: [["nz-list-footer"]], hostAttrs: [1, "ant-list-footer"], exportAs: ["nzListFooter"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzListFooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
 class NzListPaginationComponent {
 }
+/** @nocollapse */
 NzListPaginationComponent.ɵfac = function NzListPaginationComponent_Factory(t) { return new (t || NzListPaginationComponent)(); };
+/** @nocollapse */
 NzListPaginationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListPaginationComponent, selectors: [["nz-list-pagination"]], hostAttrs: [1, "ant-list-pagination"], exportAs: ["nzListPagination"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzListPaginationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
 class NzListLoadMoreDirective {
 }
+/** @nocollapse */
 NzListLoadMoreDirective.ɵfac = function NzListLoadMoreDirective_Factory(t) { return new (t || NzListLoadMoreDirective)(); };
+/** @nocollapse */
 NzListLoadMoreDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzListLoadMoreDirective, selectors: [["nz-list-load-more"]], exportAs: ["nzListLoadMoreDirective"] });
 class NzListGridDirective {
 }
+/** @nocollapse */
 NzListGridDirective.ɵfac = function NzListGridDirective_Factory(t) { return new (t || NzListGridDirective)(); };
+/** @nocollapse */
 NzListGridDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzListGridDirective, selectors: [["nz-list", "nzGrid", ""]], hostAttrs: [1, "ant-list-grid"] });
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzListComponent {
     constructor() {
@@ -666,15 +637,9 @@ class NzListComponent {
         this.hasSomethingAfterLastItem = false;
         this.itemLayoutNotifySource = new rxjs__WEBPACK_IMPORTED_MODULE_3__["BehaviorSubject"](this.nzItemLayout);
     }
-    /**
-     * @return {?}
-     */
     get itemLayoutNotify$() {
         return this.itemLayoutNotifySource.asObservable();
     }
-    /**
-     * @return {?}
-     */
     getSomethingAfterLastItem() {
         return !!(this.nzLoadMore ||
             this.nzPagination ||
@@ -683,29 +648,21 @@ class NzListComponent {
             this.nzListPaginationComponent ||
             this.nzListLoadMoreDirective);
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         if (changes.nzItemLayout) {
             this.itemLayoutNotifySource.next(this.nzItemLayout);
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.itemLayoutNotifySource.unsubscribe();
     }
-    /**
-     * @return {?}
-     */
     ngAfterContentInit() {
         this.hasSomethingAfterLastItem = this.getSomethingAfterLastItem();
     }
 }
+/** @nocollapse */
 NzListComponent.ɵfac = function NzListComponent_Factory(t) { return new (t || NzListComponent)(); };
+/** @nocollapse */
 NzListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListComponent, selectors: [["nz-list"], ["", "nz-list", ""]], contentQueries: function NzListComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListFooterComponent, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListPaginationComponent, true);
@@ -754,10 +711,7 @@ NzListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", ctx.nzLoadMore);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzPagination);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__["NzSpinComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], NzListHeaderComponent, ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzColDirective"], NzListEmptyComponent,
-        NzListFooterComponent,
-        NzListPaginationComponent], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__["NzSpinComponent"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], NzListHeaderComponent, ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzColDirective"], NzListEmptyComponent, NzListFooterComponent, NzListPaginationComponent], encapsulation: 2, changeDetection: 0 });
 NzListComponent.ctorParameters = () => [];
 NzListComponent.propDecorators = {
     nzDataSource: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
@@ -789,20 +743,12 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
 ], NzListComponent.prototype, "nzSplit", void 0);
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list-item.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzListItemComponent {
-    /**
-     * @param {?} elementRef
-     * @param {?} renderer
-     * @param {?} parentComp
-     * @param {?} cdr
-     */
     constructor(elementRef, renderer, parentComp, cdr) {
         this.parentComp = parentComp;
         this.cdr = cdr;
@@ -811,35 +757,24 @@ class NzListItemComponent {
         this.nzNoFlex = false;
         renderer.addClass(elementRef.nativeElement, 'ant-list-item');
     }
-    /**
-     * @return {?}
-     */
     get isVerticalAndExtra() {
         return this.itemLayout === 'vertical' && (!!this.listItemExtraDirective || !!this.nzExtra);
     }
-    /**
-     * @return {?}
-     */
     ngAfterViewInit() {
-        this.itemLayout$ = this.parentComp.itemLayoutNotify$.subscribe((/**
-         * @param {?} val
-         * @return {?}
-         */
-        val => {
+        this.itemLayout$ = this.parentComp.itemLayoutNotify$.subscribe(val => {
             this.itemLayout = val;
             this.cdr.detectChanges();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         if (this.itemLayout$) {
             this.itemLayout$.unsubscribe();
         }
     }
 }
+/** @nocollapse */
 NzListItemComponent.ɵfac = function NzListItemComponent_Factory(t) { return new (t || NzListItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](NzListComponent), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+/** @nocollapse */
 NzListItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzListItemComponent, selectors: [["nz-list-item"], ["", "nz-list-item", ""]], contentQueries: function NzListItemComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzListItemExtraComponent, true);
     } if (rf & 2) {
@@ -859,7 +794,6 @@ NzListItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isVerticalAndExtra)("ngIfElse", _r6);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], NzListItemActionsComponent, ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], NzListItemExtraComponent], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzListItemComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"] },
@@ -1240,14 +1174,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"],
             args: [NzListItemExtraComponent]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: list.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
 const DIRECTIVES = [
     NzListComponent,
     NzListHeaderComponent,
@@ -1267,37 +1198,11 @@ const DIRECTIVES = [
 ];
 class NzListModule {
 }
+/** @nocollapse */
 NzListModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzListModule });
+/** @nocollapse */
 NzListModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzListModule_Factory(t) { return new (t || NzListModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__["NzSpinModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzGridModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_6__["NzAvatarModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzOutletModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_8__["NzEmptyModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzListModule, { declarations: function () { return [NzListComponent,
-        NzListHeaderComponent,
-        NzListFooterComponent,
-        NzListPaginationComponent,
-        NzListEmptyComponent,
-        NzListItemComponent,
-        NzListItemMetaComponent,
-        NzListItemMetaTitleComponent,
-        NzListItemMetaDescriptionComponent,
-        NzListItemMetaAvatarComponent,
-        NzListItemActionsComponent,
-        NzListItemActionComponent,
-        NzListItemExtraComponent,
-        NzListLoadMoreDirective,
-        NzListGridDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__["NzSpinModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzGridModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_6__["NzAvatarModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzOutletModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_8__["NzEmptyModule"]]; }, exports: function () { return [NzListComponent,
-        NzListHeaderComponent,
-        NzListFooterComponent,
-        NzListPaginationComponent,
-        NzListEmptyComponent,
-        NzListItemComponent,
-        NzListItemMetaComponent,
-        NzListItemMetaTitleComponent,
-        NzListItemMetaDescriptionComponent,
-        NzListItemMetaAvatarComponent,
-        NzListItemActionsComponent,
-        NzListItemActionComponent,
-        NzListItemExtraComponent,
-        NzListLoadMoreDirective,
-        NzListGridDirective]; } }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzListModule, { declarations: function () { return [NzListComponent, NzListHeaderComponent, NzListFooterComponent, NzListPaginationComponent, NzListEmptyComponent, NzListItemComponent, NzListItemMetaComponent, NzListItemMetaTitleComponent, NzListItemMetaDescriptionComponent, NzListItemMetaAvatarComponent, NzListItemActionsComponent, NzListItemActionComponent, NzListItemExtraComponent, NzListLoadMoreDirective, NzListGridDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_10__["NzSpinModule"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_9__["NzGridModule"], ng_zorro_antd_avatar__WEBPACK_IMPORTED_MODULE_6__["NzAvatarModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzOutletModule"], ng_zorro_antd_empty__WEBPACK_IMPORTED_MODULE_8__["NzEmptyModule"]]; }, exports: function () { return [NzListComponent, NzListHeaderComponent, NzListFooterComponent, NzListPaginationComponent, NzListEmptyComponent, NzListItemComponent, NzListItemMetaComponent, NzListItemMetaTitleComponent, NzListItemMetaDescriptionComponent, NzListItemMetaAvatarComponent, NzListItemActionsComponent, NzListItemActionComponent, NzListItemExtraComponent, NzListLoadMoreDirective, NzListGridDirective]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzListModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -1308,15 +1213,12 @@ NzListModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjec
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-list.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

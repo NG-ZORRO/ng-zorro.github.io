@@ -1,153 +1,98 @@
 exports.ids = ["steps-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js":
-/*!****************************************************************!*\
-  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js ***!
-  \****************************************************************/
-/*! exports provided: NzDividerComponent, NzDividerModule */
+/***/ "/zTT":
+/*!**************************************!*\
+  !*** ./site/doc/app/steps/simple.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoStepsSimpleComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerComponent", function() { return NzDividerComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerModule", function() { return NzDividerModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsSimpleComponent", function() { return NzDemoStepsSimpleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
 
 
 
-
-
-
-/**
- * @fileoverview added by tsickle
- * Generated from: divider.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-
-function NzDividerComponent_span_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
-} if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r1.nzText);
-} }
-function NzDividerComponent_span_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDividerComponent_span_0_ng_container_1_Template, 2, 1, "ng-container", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r0.nzText);
-} }
-class NzDividerComponent {
-    constructor() {
-        this.nzType = 'horizontal';
-        this.nzOrientation = 'center';
-        this.nzDashed = false;
-    }
+class NzDemoStepsSimpleComponent {
 }
-NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(); };
-NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 14, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider", true)("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
-    } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
+/** @nocollapse */ NzDemoStepsSimpleComponent.ɵfac = function NzDemoStepsSimpleComponent_Factory(t) { return new (t || NzDemoStepsSimpleComponent)(); };
+/** @nocollapse */ NzDemoStepsSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsSimpleComponent, selectors: [["nz-demo-steps-simple"]], decls: 4, vars: 1, consts: [[3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzSubtitle", "Left 00:00:08", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsSimpleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
-NzDividerComponent.propDecorators = {
-    nzText: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzOrientation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzDashed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
-};
-Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
-], NzDividerComponent.prototype, "nzDashed", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsSimpleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'nz-divider',
-                exportAs: 'nzDivider',
-                preserveWhitespaces: false,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
+                selector: 'nz-demo-steps-simple',
                 template: `
-    <span *ngIf="nzText" class="ant-divider-inner-text">
-      <ng-container *nzStringTemplateOutlet="nzText">{{ nzText }}</ng-container>
-    </span>
-  `,
-                host: {
-                    '[class.ant-divider]': 'true',
-                    '[class.ant-divider-horizontal]': `nzType === 'horizontal'`,
-                    '[class.ant-divider-vertical]': `nzType === 'vertical'`,
-                    '[class.ant-divider-with-text-left]': `nzText && nzOrientation === 'left'`,
-                    '[class.ant-divider-with-text-right]': `nzText && nzOrientation === 'right'`,
-                    '[class.ant-divider-with-text-center]': `nzText && nzOrientation === 'center'`,
-                    '[class.ant-divider-dashed]': `nzDashed`
-                }
-            }]
-    }], function () { return []; }, { nzType: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzOrientation: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzDashed: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzText: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }] }); })();
-if (false) {}
-
-/**
- * @fileoverview added by tsickle
- * Generated from: divider.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-class NzDividerModule {
-}
-NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
-        args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
-                declarations: [NzDividerComponent],
-                exports: [NzDividerComponent]
+    <nz-steps [nzCurrent]="1">
+      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzSubtitle="Left 00:00:08" nzDescription="This is a description."> </nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+  `
             }]
     }], null, null); })();
 
-/**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-divider.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-
-
-//# sourceMappingURL=ng-zorro-antd-divider.js.map
 
 /***/ }),
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js":
+/***/ "14/K":
+/*!******************************************!*\
+  !*** ./site/doc/app/steps/small-size.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoStepsSmallSizeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsSmallSizeComponent", function() { return NzDemoStepsSmallSizeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+
+
+
+class NzDemoStepsSmallSizeComponent {
+    constructor() {
+        this.current = 1;
+    }
+}
+/** @nocollapse */ NzDemoStepsSmallSizeComponent.ɵfac = function NzDemoStepsSmallSizeComponent_Factory(t) { return new (t || NzDemoStepsSmallSizeComponent)(); };
+/** @nocollapse */ NzDemoStepsSmallSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsSmallSizeComponent, selectors: [["nz-demo-steps-small-size"]], decls: 4, vars: 1, consts: [["nzSize", "small", 3, "nzCurrent"], ["nzTitle", "Finished"], ["nzTitle", "In Progress"], ["nzTitle", "Waiting"]], template: function NzDemoStepsSmallSizeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.current);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsSmallSizeComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-small-size',
+                template: `
+    <nz-steps [nzCurrent]="current" nzSize="small">
+      <nz-step nzTitle="Finished"></nz-step>
+      <nz-step nzTitle="In Progress"></nz-step>
+      <nz-step nzTitle="Waiting"></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "43Vo":
 /*!**************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js ***!
   \**************************************************************/
@@ -159,15 +104,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzStepComponent", function() { return NzStepComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzStepsComponent", function() { return NzStepsComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzStepsModule", function() { return NzStepsModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -178,9 +123,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * Generated from: step.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -298,16 +242,12 @@ function NzStepComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c2 = ["*"];
 class NzStepComponent {
-    /**
-     * @param {?} cdr
-     */
     constructor(cdr) {
         this.cdr = cdr;
         this.nzDisabled = false;
         this.isCustomStatus = false;
         this._status = 'wait';
         this.oldAPIIcon = true;
-        // Set by parent.
         this.direction = 'horizontal';
         this.index = 0;
         this.last = false;
@@ -317,30 +257,16 @@ class NzStepComponent {
         this.click$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this._currentIndex = 0;
     }
-    /**
-     * @return {?}
-     */
     get nzStatus() {
         return this._status;
     }
-    /**
-     * @param {?} status
-     * @return {?}
-     */
     set nzStatus(status) {
         this._status = status;
         this.isCustomStatus = true;
     }
-    /**
-     * @return {?}
-     */
     get nzIcon() {
         return this._icon;
     }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     set nzIcon(value) {
         if (!(value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"])) {
             this.oldAPIIcon = typeof value === 'string' && value.indexOf('anticon') > -1;
@@ -349,44 +275,30 @@ class NzStepComponent {
         }
         this._icon = value;
     }
-    /**
-     * @return {?}
-     */
     get currentIndex() {
         return this._currentIndex;
     }
-    /**
-     * @param {?} current
-     * @return {?}
-     */
     set currentIndex(current) {
         this._currentIndex = current;
         if (!this.isCustomStatus) {
             this._status = current > this.index ? 'finish' : current === this.index ? this.outStatus || '' : 'wait';
         }
     }
-    /**
-     * @return {?}
-     */
     onClick() {
         if (this.clickable && this.currentIndex !== this.index && !this.nzDisabled) {
             this.click$.next(this.index);
         }
     }
-    /**
-     * @return {?}
-     */
     markForCheck() {
         this.cdr.markForCheck();
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.click$.complete();
     }
 }
+/** @nocollapse */
 NzStepComponent.ɵfac = function NzStepComponent_Factory(t) { return new (t || NzStepComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"])); };
+/** @nocollapse */
 NzStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzStepComponent, selectors: [["nz-step"]], viewQuery: function NzStepComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
@@ -428,7 +340,6 @@ NzStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzStringTemplateOutlet", ctx.nzDescription);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzStepComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }
 ];
@@ -530,12 +441,10 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
         }], nzDescription: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: steps.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzStepsComponent {
     constructor() {
@@ -551,10 +460,6 @@ class NzStepsComponent {
         this.showProcessDot = false;
         this.classMap = {};
     }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
     set nzProgressDot(value) {
         if (value instanceof _angular_core__WEBPACK_IMPORTED_MODULE_0__["TemplateRef"]) {
             this.showProcessDot = true;
@@ -565,10 +470,6 @@ class NzStepsComponent {
         }
         this.updateChildrenSteps();
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         if (changes.nzStartIndex || changes.nzDirection || changes.nzStatus || changes.nzCurrent) {
             this.updateChildrenSteps();
@@ -577,16 +478,10 @@ class NzStepsComponent {
             this.setClassMap();
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
         this.setClassMap();
         this.updateChildrenSteps();
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
@@ -594,37 +489,18 @@ class NzStepsComponent {
             this.indexChangeSubscription.unsubscribe();
         }
     }
-    /**
-     * @return {?}
-     */
     ngAfterContentInit() {
         if (this.steps) {
-            this.steps.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(null), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.destroy$)).subscribe((/**
-             * @return {?}
-             */
-            () => {
+            this.steps.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(null), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.destroy$)).subscribe(() => {
                 this.updateChildrenSteps();
-            }));
+            });
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     updateChildrenSteps() {
         if (this.steps) {
-            /** @type {?} */
             const length = this.steps.length;
-            this.steps.toArray().forEach((/**
-             * @param {?} step
-             * @param {?} index
-             * @return {?}
-             */
-            (step, index) => {
-                Promise.resolve().then((/**
-                 * @return {?}
-                 */
-                () => {
+            this.steps.toArray().forEach((step, index) => {
+                Promise.resolve().then(() => {
                     step.outStatus = this.nzStatus;
                     step.showProcessDot = this.showProcessDot;
                     if (this.customProcessDotTemplate) {
@@ -636,26 +512,14 @@ class NzStepsComponent {
                     step.currentIndex = this.nzCurrent;
                     step.last = length === index + 1;
                     step.markForCheck();
-                }));
-            }));
+                });
+            });
             if (this.indexChangeSubscription) {
                 this.indexChangeSubscription.unsubscribe();
             }
-            this.indexChangeSubscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(...this.steps.map((/**
-             * @param {?} step
-             * @return {?}
-             */
-            step => step.click$))).subscribe((/**
-             * @param {?} index
-             * @return {?}
-             */
-            index => this.nzIndexChange.emit(index)));
+            this.indexChangeSubscription = Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["merge"])(...this.steps.map(step => step.click$)).subscribe(index => this.nzIndexChange.emit(index));
         }
     }
-    /**
-     * @private
-     * @return {?}
-     */
     setClassMap() {
         this.classMap = {
             [`ant-steps-${this.nzDirection}`]: true,
@@ -667,7 +531,9 @@ class NzStepsComponent {
         };
     }
 }
+/** @nocollapse */
 NzStepsComponent.ɵfac = function NzStepsComponent_Factory(t) { return new (t || NzStepsComponent)(); };
+/** @nocollapse */
 NzStepsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzStepsComponent, selectors: [["nz-steps"]], contentQueries: function NzStepsComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzStepComponent, false);
     } if (rf & 2) {
@@ -729,20 +595,18 @@ NzStepsComponent.propDecorators = {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
             args: [NzStepComponent]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: steps.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzStepsModule {
 }
+/** @nocollapse */
 NzStepsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzStepsModule });
+/** @nocollapse */
 NzStepsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzStepsModule_Factory(t) { return new (t || NzStepsModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzStepsModule, { declarations: function () { return [NzStepsComponent,
-        NzStepComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]; }, exports: function () { return [NzStepsComponent,
-        NzStepComponent]; } }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzStepsModule, { declarations: function () { return [NzStepsComponent, NzStepComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]; }, exports: function () { return [NzStepsComponent, NzStepComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzStepsModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -753,15 +617,12 @@ NzStepsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-steps.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 
@@ -770,78 +631,161 @@ NzStepsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
 
 /***/ }),
 
-/***/ "./site/doc/app/steps/clickable.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/steps/clickable.ts ***!
-  \*****************************************/
-/*! exports provided: NzDemoStepsClickableComponent */
+/***/ "658v":
+/*!****************************************************************!*\
+  !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js ***!
+  \****************************************************************/
+/*! exports provided: NzDividerComponent, NzDividerModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsClickableComponent", function() { return NzDemoStepsClickableComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerComponent", function() { return NzDividerComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDividerModule", function() { return NzDividerModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
 
 
 
 
-class NzDemoStepsClickableComponent {
+
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+
+
+
+function NzDividerComponent_span_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementContainerEnd"]();
+} if (rf & 2) {
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx_r1.nzText);
+} }
+function NzDividerComponent_span_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzDividerComponent_span_0_ng_container_1_Template, 2, 1, "ng-container", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r0.nzText);
+} }
+class NzDividerComponent {
     constructor() {
-        this.index = 0;
-        this.disable = false;
-    }
-    onIndexChange(index) {
-        this.index = index;
+        this.nzType = 'horizontal';
+        this.nzOrientation = 'center';
+        this.nzDashed = false;
+        this.nzPlain = false;
     }
 }
-/** @nocollapse */ NzDemoStepsClickableComponent.ɵfac = function NzDemoStepsClickableComponent_Factory(t) { return new (t || NzDemoStepsClickableComponent)(); };
-/** @nocollapse */ NzDemoStepsClickableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsClickableComponent, selectors: [["nz-demo-steps-clickable"]], decls: 9, vars: 3, consts: [[3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Finished", "nzDescription", "This is a description.", 3, "nzDisabled"], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."], ["nzDirection", "vertical", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Finished", "nzDescription", "This is a description."]], template: function NzDemoStepsClickableComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsClickableComponent_Template_nz_steps_nzIndexChange_0_listener($event) { return ctx.onIndexChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-divider");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-steps", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsClickableComponent_Template_nz_steps_nzIndexChange_5_listener($event) { return ctx.onIndexChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+/** @nocollapse */
+NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(); };
+/** @nocollapse */
+NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 18, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider", true)("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
+    } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDisabled", ctx.disable);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsClickableComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+NzDividerComponent.propDecorators = {
+    nzText: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzOrientation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzDashed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
+    nzPlain: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }]
+};
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], NzDividerComponent.prototype, "nzDashed", void 0);
+Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
+], NzDividerComponent.prototype, "nzPlain", void 0);
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
         args: [{
-                selector: 'nz-demo-steps-clickable',
+                selector: 'nz-divider',
+                exportAs: 'nzDivider',
+                preserveWhitespaces: false,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
                 template: `
-    <nz-steps [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
-      <nz-step nzTitle="Finished" [nzDisabled]="disable" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-    <nz-divider></nz-divider>
-    <nz-steps nzDirection="vertical" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
-      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-  `
+    <span *ngIf="nzText" class="ant-divider-inner-text">
+      <ng-container *nzStringTemplateOutlet="nzText">{{ nzText }}</ng-container>
+    </span>
+  `,
+                host: {
+                    '[class.ant-divider]': 'true',
+                    '[class.ant-divider-horizontal]': `nzType === 'horizontal'`,
+                    '[class.ant-divider-vertical]': `nzType === 'vertical'`,
+                    '[class.ant-divider-with-text]': `nzText`,
+                    '[class.ant-divider-plain]': `nzPlain`,
+                    '[class.ant-divider-with-text-left]': `nzText && nzOrientation === 'left'`,
+                    '[class.ant-divider-with-text-right]': `nzText && nzOrientation === 'right'`,
+                    '[class.ant-divider-with-text-center]': `nzText && nzOrientation === 'center'`,
+                    '[class.ant-divider-dashed]': `nzDashed`
+                }
+            }]
+    }], function () { return []; }, { nzType: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzOrientation: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzDashed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzPlain: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }], nzText: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+        }] }); })();
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+class NzDividerModule {
+}
+/** @nocollapse */
+NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
+/** @nocollapse */
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{
+                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                declarations: [NzDividerComponent],
+                exports: [NzDividerComponent]
             }]
     }], null, null); })();
 
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+//# sourceMappingURL=ng-zorro-antd-divider.js.map
 
 /***/ }),
 
-/***/ "./site/doc/app/steps/customized-progress-dot.ts":
+/***/ "7pml":
 /*!*******************************************************!*\
   !*** ./site/doc/app/steps/customized-progress-dot.ts ***!
   \*******************************************************/
@@ -851,10 +795,10 @@ class NzDemoStepsClickableComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsCustomizedProgressDotComponent", function() { return NzDemoStepsCustomizedProgressDotComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
 
 
 
@@ -869,14 +813,14 @@ function NzDemoStepsCustomizedProgressDotComponent_ng_template_5_Template(rf, ct
     const dot_r2 = ctx.$implicit;
     const status_r3 = ctx.status;
     const index_r4 = ctx.index;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate2"]("nzContent", "steps ", index_r4, " status: ", status_r3, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate2"]("nzPopoverContent", "steps ", index_r4, " status: ", status_r3, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngTemplateOutlet", dot_r2);
 } }
 class NzDemoStepsCustomizedProgressDotComponent {
 }
 /** @nocollapse */ NzDemoStepsCustomizedProgressDotComponent.ɵfac = function NzDemoStepsCustomizedProgressDotComponent_Factory(t) { return new (t || NzDemoStepsCustomizedProgressDotComponent)(); };
-/** @nocollapse */ NzDemoStepsCustomizedProgressDotComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsCustomizedProgressDotComponent, selectors: [["nz-demo-steps-customized-progress-dot"]], decls: 7, vars: 2, consts: [[3, "nzCurrent", "nzProgressDot"], ["nzTitle", "Finished", "nzDescription", "You can hover on the dot."], ["nzTitle", "In Progress", "nzDescription", "You can hover on the dot."], ["nzTitle", "Waiting", "nzDescription", "You can hover on the dot."], ["progressTemplate", ""], ["nz-popover", "", 2, "margin-left", "-100%", 3, "nzContent"], [3, "ngTemplateOutlet"]], template: function NzDemoStepsCustomizedProgressDotComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoStepsCustomizedProgressDotComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsCustomizedProgressDotComponent, selectors: [["nz-demo-steps-customized-progress-dot"]], decls: 7, vars: 2, consts: [[3, "nzCurrent", "nzProgressDot"], ["nzTitle", "Finished", "nzDescription", "You can hover on the dot."], ["nzTitle", "In Progress", "nzDescription", "You can hover on the dot."], ["nzTitle", "Waiting", "nzDescription", "You can hover on the dot."], ["progressTemplate", ""], ["nz-popover", "", 2, "margin-left", "-100%", 3, "nzPopoverContent"], [3, "ngTemplateOutlet"]], template: function NzDemoStepsCustomizedProgressDotComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
@@ -900,7 +844,7 @@ class NzDemoStepsCustomizedProgressDotComponent {
       <nz-step nzTitle="Waiting" nzDescription="You can hover on the dot."></nz-step>
     </nz-steps>
     <ng-template #progressTemplate let-dot let-status="status" let-index="index">
-      <span nz-popover nzContent="steps {{ index }} status: {{ status }}" style="margin-left: -100%;">
+      <span nz-popover nzPopoverContent="steps {{ index }} status: {{ status }}" style="margin-left: -100%;">
         <ng-template [ngTemplateOutlet]="dot"></ng-template>
       </span>
     </ng-template>
@@ -911,954 +855,7 @@ class NzDemoStepsCustomizedProgressDotComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/steps/en.component.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/steps/en.component.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoStepsEnComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsEnComponent", function() { return NzDemoStepsEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./simple */ "./site/doc/app/steps/simple.ts");
-/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./small-size */ "./site/doc/app/steps/small-size.ts");
-/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./start-index */ "./site/doc/app/steps/start-index.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./icon */ "./site/doc/app/steps/icon.ts");
-/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./step-next */ "./site/doc/app/steps/step-next.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/steps/vertical.ts");
-/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "./site/doc/app/steps/vertical-small.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./error */ "./site/doc/app/steps/error.ts");
-/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./progress-dot */ "./site/doc/app/steps/progress-dot.ts");
-/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./customized-progress-dot */ "./site/doc/app/steps/customized-progress-dot.ts");
-/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./clickable */ "./site/doc/app/steps/clickable.ts");
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./nav */ "./site/doc/app/steps/nav.ts");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoStepsEnComponent {
-    constructor() {
-        this.expanded = false;
-    }
-    goLink(link) {
-        if (window) {
-            window.location.hash = link;
-        }
-    }
-    expandAllCode() {
-        this.expanded = !this.expanded;
-        this.codeBoxes.forEach(code => {
-            code.nzExpanded = this.expanded;
-            code.expandCode(this.expanded);
-            code.check();
-        });
-    }
-}
-/** @nocollapse */ NzDemoStepsEnComponent.ɵfac = function NzDemoStepsEnComponent_Factory(t) { return new (t || NzDemoStepsEnComponent)(); };
-/** @nocollapse */ NzDemoStepsEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsEnComponent, selectors: [["nz-demo-steps"]], viewQuery: function NzDemoStepsEnComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
-    } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 508, vars: 52, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-steps-demo-simple", "nzTitle", "Basic"], ["nzHref", "#components-steps-demo-small-size", "nzTitle", "Mini version"], ["nzHref", "#components-steps-demo-start-index", "nzTitle", "Starting Index"], ["nzHref", "#components-steps-demo-icon", "nzTitle", "With icon"], ["nzHref", "#components-steps-demo-step-next", "nzTitle", "Switch Step"], ["nzHref", "#components-steps-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-steps-demo-vertical-small", "nzTitle", "Vertical mini version"], ["nzHref", "#components-steps-demo-error", "nzTitle", "Error status"], ["nzHref", "#components-steps-demo-progress-dot", "nzTitle", "Dot Style"], ["nzHref", "#components-steps-demo-customized-progress-dot", "nzTitle", "Customized Dot Style"], ["nzHref", "#components-steps-demo-clickable", "nzTitle", "Clickable"], ["nzHref", "#components-steps-demo-nav", "nzTitle", "Navigation Steps"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-steps-simple", "nzGenerateCommand", "ng g ng-zorro-antd:steps-simple <name>", "nzComponentName", "NzDemoStepsSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Mini version", "nzSelector", "nz-demo-steps-small-size", "nzGenerateCommand", "ng g ng-zorro-antd:steps-small-size <name>", "nzComponentName", "NzDemoStepsSmallSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Starting Index", "nzSelector", "nz-demo-steps-start-index", "nzGenerateCommand", "ng g ng-zorro-antd:steps-start-index <name>", "nzComponentName", "NzDemoStepsStartIndexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With icon", "nzSelector", "nz-demo-steps-icon", "nzGenerateCommand", "ng g ng-zorro-antd:steps-icon <name>", "nzComponentName", "NzDemoStepsIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Switch Step", "nzSelector", "nz-demo-steps-step-next", "nzGenerateCommand", "ng g ng-zorro-antd:steps-step-next <name>", "nzComponentName", "NzDemoStepsStepNextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical", "nzSelector", "nz-demo-steps-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:steps-vertical <name>", "nzComponentName", "NzDemoStepsVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical mini version", "nzSelector", "nz-demo-steps-vertical-small", "nzGenerateCommand", "ng g ng-zorro-antd:steps-vertical-small <name>", "nzComponentName", "NzDemoStepsVerticalSmallComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Error status", "nzSelector", "nz-demo-steps-error", "nzGenerateCommand", "ng g ng-zorro-antd:steps-error <name>", "nzComponentName", "NzDemoStepsErrorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Dot Style", "nzSelector", "nz-demo-steps-progress-dot", "nzGenerateCommand", "ng g ng-zorro-antd:steps-progress-dot <name>", "nzComponentName", "NzDemoStepsProgressDotComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customized Dot Style", "nzSelector", "nz-demo-steps-customized-progress-dot", "nzGenerateCommand", "ng g ng-zorro-antd:steps-customized-progress-dot <name>", "nzComponentName", "NzDemoStepsCustomizedProgressDotComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Clickable", "nzSelector", "nz-demo-steps-clickable", "nzGenerateCommand", "ng g ng-zorro-antd:steps-clickable <name>", "nzComponentName", "NzDemoStepsClickableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Navigation Steps", "nzSelector", "nz-demo-steps-nav", "nzGenerateCommand", "ng g ng-zorro-antd:steps-nav <name>", "nzComponentName", "NzDemoStepsNavComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-steps"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-steps'", 1, "anchor"], ["id", "nz-step"], ["onclick", "window.location.hash = 'nz-step'", 1, "anchor"]], template: function NzDemoStepsEnComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzClick", function NzDemoStepsEnComponent_Template_nz_anchor_nzClick_2_listener($event) { return ctx.goLink($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-link", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-link", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-link", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-link", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-link", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-link", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "nz-link", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-link", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "nz-link", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "nz-link", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "nz-link", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "nz-link", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "nz-link", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "section", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "i", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "section", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " is a navigation bar that guides users through the steps of a task.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "h2", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "When To Use");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "#");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "When the task is complicated or has a certain sequence in the series of subtasks, we can decompose it into several steps to make things easier.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "pre", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "span", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "import");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "{");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " NzStepsModule ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "}");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "span", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "from");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "span", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "'ng-zorro-antd/steps'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, ";");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "h2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Examples");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "i", 26);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoStepsEnComponent_Template_i_click_56_listener() { return ctx.expandAllCode(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 27);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 28);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "nz-code-box", 29);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "nz-demo-steps-simple", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "The most basic step bar.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "nz-code-box", 32);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "nz-demo-steps-small-size", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "By setting like this: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "<nz-steps nzSize=\"small\">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, ", you can get a mini version.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "nz-code-box", 33);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](73, "nz-demo-steps-start-index", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "By setting ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "nzStartIndex");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " to change starting index of a step component. Be sure to add an offset to ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "nzCurrent");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, " as well.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "nz-code-box", 34);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](84, "nz-demo-steps-icon", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "You can use your own custom icons by setting the property ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "nzIcon");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, " for ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, ". Old API is still compatible but we strongly suggest the new API.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "nz-code-box", 35);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "nz-demo-steps-step-next", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "Cooperate with the content and buttons, to represent the progress of a process.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "nz-code-box", 36);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](100, "nz-demo-steps-vertical", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, "A simple step bar in the vertical direction.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "nz-code-box", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](105, "nz-demo-steps-vertical-small", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "A simple mini version step bar in the vertical direction.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "nz-code-box", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "nz-demo-steps-error", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "By using ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "nzStatus");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116, " of ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, ", you can specify the state for current step.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "nz-code-box", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](121, "nz-demo-steps-progress-dot", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "Steps with progress dot style.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "nz-code-box", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](126, "nz-demo-steps-customized-progress-dot", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "You can customize the display for Steps with progress dot style.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "nz-code-box", 41);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](131, "nz-demo-steps-clickable", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "subscribe ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "(nzIndexChange)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, " makes Steps clickable.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "nz-code-box", 42);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](139, "nz-demo-steps-nav", 30);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "div", 31);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Navigation steps.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "section", 43);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](144, "h2", 44);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "API");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "a", 45);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148, "#");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "pre", 46);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154, "<");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](155, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](156, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](157, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](158, "\n  ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](161, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](162, "<");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](163, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "span", 48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](166, "nzTitle");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "span", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](168, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](169, "=");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](170, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](171, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172, "first step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](176, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](178, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180, "</");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](181, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](183, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184, "\n  ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](186, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](187, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](188, "<");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](189, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "span", 48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](192, "nzTitle");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](193, "span", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](194, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](195, "=");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](196, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](197, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](198, "second step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206, "</");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](207, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](208, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](210, "\n  ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](212, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, "<");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](215, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](217, "span", 48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](218, "nzTitle");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](219, "span", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](220, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](221, "=");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](222, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](223, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, "third step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](225, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](226, "\"");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](227, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](228, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](229, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](230, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](231, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](232, "</");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](233, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](234, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](235, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](236, "\n");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](237, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](238, "span", 47);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](239, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](240, "</");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](241, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](242, "span", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](243, ">");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](244, "h3", 50);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](245, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](246, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](247, "label", 51);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](248, "component");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](249, "a", 52);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](250, "#");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](251, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](252, "The whole of the step bar.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](253, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](254, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](255, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257, "Property");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "Description");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](260, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](261, "Type");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](262, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](263, "Default");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](264, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](265, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](267, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](268, "[nzType]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](269, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](270, "type of steps, can be set to one of the following values: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](271, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](272, "default");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, ", ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, "navigation");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "'default' | 'navigation'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](280, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](281, "default");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](282, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](283, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, "[nzCurrent]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](286, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "To set the current step, counting from 0. You can overwrite this state by using ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](289, "nzStatus");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, " of ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](291, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](293, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](294, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, "number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](296, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](297, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, "0");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](301, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](302, "[nzDirection]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "To specify the direction of the step bar, ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](306, "horizontal");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, " and ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](308, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](309, "vertical");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, " are currently supported");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](311, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](312, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](313, "'vertical' | 'horizontal'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](314, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](315, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](316, "horizontal");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](317, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](318, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](320, "[nzLabelPlacement]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](321, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, "Support vertical title and description");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](323, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](324, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](325, "'vertical' | 'horizontal'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](326, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](327, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](328, "horizontal");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](329, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](330, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](331, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](332, "[nzProgressDot]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](333, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](334, "Steps with progress dot style, customize the progress dot by setting it with TemplateRef");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](335, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](336, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](337, "boolean | TemplateRef<{ $implicit: TemplateRef<void>, status: string, index: number }>");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](338, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](339, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](340, "false");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](341, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](342, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](343, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](344, "[nzSize]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](345, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](346, "To specify the size of the step bar, ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](347, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](348, "default");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](349, " and ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](350, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](351, "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](352, " are currently supported");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](353, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](354, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](355, "'small' | 'default'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](356, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](357, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](358, "'default'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](359, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](360, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](361, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](362, "[nzStatus]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](363, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](364, "To specify the status of current step, can be set to one of the following values: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](365, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](366, "wait");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](367, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](368, "process");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](369, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](370, "finish");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](371, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](372, "error");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](373, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](374, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](375, "'wait' | 'process' | 'finish' | 'error'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](376, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](377, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](378, "'process'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](379, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](380, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](381, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](382, "[nzStartIndex]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](383, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](384, "To specify the starting number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](385, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](386, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](387, "number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](388, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](389, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](390, "0");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](391, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](392, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](393, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](394, "(nzIndexChange)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](395, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](396, "Trigger event when step click");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](397, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](398, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](399, "number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](400, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](401, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](402, "h3", 53);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](403, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](404, "nz-step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](405, "label", 51);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](406, "component");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](407, "a", 54);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](408, "#");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](410, "A single step in the step bar.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](411, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](412, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](413, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](414, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](415, "Property");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](416, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](417, "Description");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](418, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](419, "Type");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](420, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](421, "Default");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](422, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](423, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](424, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](425, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](426, "[nzDescription]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](427, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](428, "description of the step, optional property");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](429, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](430, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](431, "string | TemplateRef<void>");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](432, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](433, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](434, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](435, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](436, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](437, "[nzIcon]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](438, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](439, "icon of the step, optional property");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](440, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](441, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](442, "string | string[] | Set<string> | { [klass: string]: any; }");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](443, " | ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "TemplateRef<void>");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](447, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](448, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](449, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](450, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](451, "[nzStatus]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](452, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](453, "to specify the status. It will be automatically set by ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](454, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](455, "nzCurrent");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](456, " of ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](457, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](458, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](459, " if not configured. Optional values are: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](461, "wait");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](462, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](463, "process");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](464, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](465, "finish");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](466, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](467, "error");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](468, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](469, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](470, "'wait' | 'process' | 'finish' | 'error'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](472, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, "'wait'");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](477, "[nzTitle]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](478, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](479, "title of the step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](480, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](481, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](482, "string | TemplateRef<void>");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](484, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](485, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](487, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "[nzSubtitle]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "subTitle of the step");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](491, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](492, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](493, "string | TemplateRef<void>");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](494, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](495, "-");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](496, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](497, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](498, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](499, "[nzDisabled]");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](500, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](501, "disable click");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](502, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](503, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](504, "boolean");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](505, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](506, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](507, "false");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzOffsetTop", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAffix", false);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](55);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-simple")("nzLink", "components-steps-demo-simple")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/simple.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-small-size")("nzLink", "components-steps-demo-small-size")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/small-size.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-start-index")("nzLink", "components-steps-demo-start-index")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/start-index.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-icon")("nzLink", "components-steps-demo-icon")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/icon.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-step-next")("nzLink", "components-steps-demo-step-next")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/step-next.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-vertical")("nzLink", "components-steps-demo-vertical")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/vertical.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-vertical-small")("nzLink", "components-steps-demo-vertical-small")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/vertical-small.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-error")("nzLink", "components-steps-demo-error")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/error.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-progress-dot")("nzLink", "components-steps-demo-progress-dot")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/progress-dot.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-customized-progress-dot")("nzLink", "components-steps-demo-customized-progress-dot")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/customized-progress-dot.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-clickable")("nzLink", "components-steps-demo-clickable")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/clickable.md");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-nav")("nzLink", "components-steps-demo-nav")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/nav.md");
-    } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _simple__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsSimpleComponent"], _small_size__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsSmallSizeComponent"], _start_index__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsStartIndexComponent"], _icon__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsIconComponent"], _step_next__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStepNextComponent"], _vertical__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsVerticalComponent"], _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"], _error__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsErrorComponent"], _progress_dot__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsProgressDotComponent"], _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsCustomizedProgressDotComponent"], _clickable__WEBPACK_IMPORTED_MODULE_18__["NzDemoStepsClickableComponent"], _nav__WEBPACK_IMPORTED_MODULE_19__["NzDemoStepsNavComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsEnComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps',
-                preserveWhitespaces: false,
-                templateUrl: './en.html'
-            }]
-    }], null, { codeBoxes: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
-            args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
-        }] }); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/error.ts":
+/***/ "D6Tb":
 /*!*************************************!*\
   !*** ./site/doc/app/steps/error.ts ***!
   \*************************************/
@@ -1868,8 +865,8 @@ class NzDemoStepsEnComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsErrorComponent", function() { return NzDemoStepsErrorComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
 
 
 
@@ -1902,498 +899,7 @@ class NzDemoStepsErrorComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/steps/icon.ts":
-/*!************************************!*\
-  !*** ./site/doc/app/steps/icon.ts ***!
-  \************************************/
-/*! exports provided: NzDemoStepsIconComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsIconComponent", function() { return NzDemoStepsIconComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-function NzDemoStepsIconComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 5);
-} }
-class NzDemoStepsIconComponent {
-}
-/** @nocollapse */ NzDemoStepsIconComponent.ɵfac = function NzDemoStepsIconComponent_Factory(t) { return new (t || NzDemoStepsIconComponent)(); };
-/** @nocollapse */ NzDemoStepsIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsIconComponent, selectors: [["nz-demo-steps-icon"]], decls: 7, vars: 1, consts: [["nzTitle", "Login", "nzStatus", "finish", "nzIcon", "user"], ["nzTitle", "Verification", "nzStatus", "finish", "nzIcon", "solution"], ["nzTitle", "Pay", "nzStatus", "process", "nzIcon", "loading"], ["nzTitle", "Done", "nzStatus", "wait", 3, "nzIcon"], ["iconTemplate", ""], ["nz-icon", "", "nzType", "smile"]], template: function NzDemoStepsIconComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoStepsIconComponent_ng_template_5_Template, 1, 0, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIcon", _r0);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsIconComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-icon',
-                template: `
-    <nz-steps>
-      <nz-step nzTitle="Login" nzStatus="finish" nzIcon="user"></nz-step>
-      <nz-step nzTitle="Verification" nzStatus="finish" nzIcon="solution"></nz-step>
-      <nz-step nzTitle="Pay" nzStatus="process" nzIcon="loading"></nz-step>
-      <nz-step nzTitle="Done" nzStatus="wait" [nzIcon]="iconTemplate"></nz-step>
-      <ng-template #iconTemplate><i nz-icon nzType="smile"></i></ng-template>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/index.module.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/steps/index.module.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoStepsModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsModule", function() { return NzDemoStepsModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/steps/module.ts");
-/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clickable */ "./site/doc/app/steps/clickable.ts");
-/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./customized-progress-dot */ "./site/doc/app/steps/customized-progress-dot.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./error */ "./site/doc/app/steps/error.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./icon */ "./site/doc/app/steps/icon.ts");
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nav */ "./site/doc/app/steps/nav.ts");
-/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./progress-dot */ "./site/doc/app/steps/progress-dot.ts");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./simple */ "./site/doc/app/steps/simple.ts");
-/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./small-size */ "./site/doc/app/steps/small-size.ts");
-/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./start-index */ "./site/doc/app/steps/start-index.ts");
-/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./step-next */ "./site/doc/app/steps/step-next.ts");
-/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "./site/doc/app/steps/vertical-small.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/steps/vertical.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/steps/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/steps/en.component.ts");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoStepsModule {
-}
-/** @nocollapse */ NzDemoStepsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoStepsModule });
-/** @nocollapse */ NzDemoStepsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoStepsModule_Factory(t) { return new (t || NzDemoStepsModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoStepsModule, { declarations: [_clickable__WEBPACK_IMPORTED_MODULE_4__["NzDemoStepsClickableComponent"],
-        _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__["NzDemoStepsCustomizedProgressDotComponent"],
-        _error__WEBPACK_IMPORTED_MODULE_6__["NzDemoStepsErrorComponent"],
-        _icon__WEBPACK_IMPORTED_MODULE_7__["NzDemoStepsIconComponent"],
-        _nav__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsNavComponent"],
-        _progress_dot__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsProgressDotComponent"],
-        _simple__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsSimpleComponent"],
-        _small_size__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsSmallSizeComponent"],
-        _start_index__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStartIndexComponent"],
-        _step_next__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsStepNextComponent"],
-        _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"],
-        _vertical__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsVerticalComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_18__["NzStepsModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_19__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__["NzButtonModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_21__["NzDividerModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_22__["NzIconModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _clickable__WEBPACK_IMPORTED_MODULE_4__["NzDemoStepsClickableComponent"],
-                    _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__["NzDemoStepsCustomizedProgressDotComponent"],
-                    _error__WEBPACK_IMPORTED_MODULE_6__["NzDemoStepsErrorComponent"],
-                    _icon__WEBPACK_IMPORTED_MODULE_7__["NzDemoStepsIconComponent"],
-                    _nav__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsNavComponent"],
-                    _progress_dot__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsProgressDotComponent"],
-                    _simple__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsSimpleComponent"],
-                    _small_size__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsSmallSizeComponent"],
-                    _start_index__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStartIndexComponent"],
-                    _step_next__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsStepNextComponent"],
-                    _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"],
-                    _vertical__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsVerticalComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/module.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/steps/module.ts ***!
-  \**************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/popover */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-popover.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-
-const moduleList = [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_0__["NzStepsModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_1__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_3__["NzDividerModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/nav.ts":
-/*!***********************************!*\
-  !*** ./site/doc/app/steps/nav.ts ***!
-  \***********************************/
-/*! exports provided: NzDemoStepsNavComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsNavComponent", function() { return NzDemoStepsNavComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsNavComponent {
-    constructor() {
-        this.index = 0;
-    }
-    onIndexChange(event) {
-        this.index = event;
-    }
-}
-/** @nocollapse */ NzDemoStepsNavComponent.ɵfac = function NzDemoStepsNavComponent_Factory(t) { return new (t || NzDemoStepsNavComponent)(); };
-/** @nocollapse */ NzDemoStepsNavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsNavComponent, selectors: [["nz-demo-steps-nav"]], decls: 14, vars: 3, consts: [["nzType", "navigation", "nzSize", "small", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Step 1", "nzSubtitle", "00:00:05", "nzStatus", "finish", "nzDescription", "This is a description."], ["nzTitle", "Step 2", "nzSubtitle", "00:01:02", "nzStatus", "process", "nzDescription", "This is a description."], ["nzTitle", "Step 3", "nzSubtitle", "waiting for long long time", "nzStatus", "wait", "nzDescription", "This is a description."], ["nzType", "navigation", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Step 1", "nzStatus", "finish"], ["nzTitle", "Step 2", "nzStatus", "process"], ["nzTitle", "Step 3", "nzStatus", "wait"], ["nzTitle", "Step 4", "nzStatus", "wait"], ["nzTitle", "finish 1", "nzStatus", "finish"], ["nzTitle", "finish 2", "nzStatus", "finish"], ["nzTitle", "current process", "nzStatus", "process"], ["nzTitle", "wait", "nzStatus", "wait", "nzDisabled", ""]], template: function NzDemoStepsNavComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_0_listener($event) { return ctx.onIndexChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-steps", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_4_listener($event) { return ctx.onIndexChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-step", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_9_listener($event) { return ctx.onIndexChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-step", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "nz-step", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "nz-step", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "nz-step", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], styles: ["nz-steps[_ngcontent-%COMP%] {\n        display: block;\n        margin-bottom: 60px;\n        box-shadow: rgb(232, 232, 232) 0px -1px 0px 0 inset;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsNavComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-nav',
-                template: `
-    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
-      <nz-step nzTitle="Step 1" nzSubtitle="00:00:05" nzStatus="finish" nzDescription="This is a description."> </nz-step>
-      <nz-step nzTitle="Step 2" nzSubtitle="00:01:02" nzStatus="process" nzDescription="This is a description."> </nz-step>
-      <nz-step nzTitle="Step 3" nzSubtitle="waiting for long long time" nzStatus="wait" nzDescription="This is a description."> </nz-step>
-    </nz-steps>
-    <nz-steps nzType="navigation" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
-      <nz-step nzTitle="Step 1" nzStatus="finish"></nz-step>
-      <nz-step nzTitle="Step 2" nzStatus="process"></nz-step>
-      <nz-step nzTitle="Step 3" nzStatus="wait"></nz-step>
-      <nz-step nzTitle="Step 4" nzStatus="wait"></nz-step>
-    </nz-steps>
-    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
-      <nz-step nzTitle="finish 1" nzStatus="finish"></nz-step>
-      <nz-step nzTitle="finish 2" nzStatus="finish"></nz-step>
-      <nz-step nzTitle="current process" nzStatus="process"></nz-step>
-      <nz-step nzTitle="wait" nzStatus="wait" nzDisabled></nz-step>
-    </nz-steps>
-  `,
-                styles: [
-                    `
-      nz-steps {
-        display: block;
-        margin-bottom: 60px;
-        box-shadow: rgb(232, 232, 232) 0px -1px 0px 0 inset;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/progress-dot.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/steps/progress-dot.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoStepsProgressDotComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsProgressDotComponent", function() { return NzDemoStepsProgressDotComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-divider.js");
-
-
-
-
-class NzDemoStepsProgressDotComponent {
-}
-/** @nocollapse */ NzDemoStepsProgressDotComponent.ɵfac = function NzDemoStepsProgressDotComponent_Factory(t) { return new (t || NzDemoStepsProgressDotComponent)(); };
-/** @nocollapse */ NzDemoStepsProgressDotComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsProgressDotComponent, selectors: [["nz-demo-steps-progress-dot"]], decls: 11, vars: 2, consts: [["nzProgressDot", "", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."], ["nzProgressDot", "", "nzDirection", "vertical", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description. This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description. This is a description."]], template: function NzDemoStepsProgressDotComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-divider");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-steps", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsProgressDotComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-progress-dot',
-                template: `
-    <nz-steps [nzCurrent]="1" nzProgressDot>
-      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-    <nz-divider></nz-divider>
-    <nz-steps [nzCurrent]="1" nzProgressDot nzDirection="vertical">
-      <nz-step nzTitle="Finished" nzDescription="This is a description. This is a description."></nz-step>
-      <nz-step nzTitle="Finished" nzDescription="This is a description. This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description. This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/simple.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/steps/simple.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoStepsSimpleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsSimpleComponent", function() { return NzDemoStepsSimpleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsSimpleComponent {
-}
-/** @nocollapse */ NzDemoStepsSimpleComponent.ɵfac = function NzDemoStepsSimpleComponent_Factory(t) { return new (t || NzDemoStepsSimpleComponent)(); };
-/** @nocollapse */ NzDemoStepsSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsSimpleComponent, selectors: [["nz-demo-steps-simple"]], decls: 4, vars: 1, consts: [[3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzSubtitle", "Left 00:00:08", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsSimpleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsSimpleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-simple',
-                template: `
-    <nz-steps [nzCurrent]="1">
-      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzSubtitle="Left 00:00:08" nzDescription="This is a description."> </nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/small-size.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/steps/small-size.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoStepsSmallSizeComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsSmallSizeComponent", function() { return NzDemoStepsSmallSizeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsSmallSizeComponent {
-    constructor() {
-        this.current = 1;
-    }
-}
-/** @nocollapse */ NzDemoStepsSmallSizeComponent.ɵfac = function NzDemoStepsSmallSizeComponent_Factory(t) { return new (t || NzDemoStepsSmallSizeComponent)(); };
-/** @nocollapse */ NzDemoStepsSmallSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsSmallSizeComponent, selectors: [["nz-demo-steps-small-size"]], decls: 4, vars: 1, consts: [["nzSize", "small", 3, "nzCurrent"], ["nzTitle", "Finished"], ["nzTitle", "In Progress"], ["nzTitle", "Waiting"]], template: function NzDemoStepsSmallSizeComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.current);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsSmallSizeComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-small-size',
-                template: `
-    <nz-steps [nzCurrent]="current" nzSize="small">
-      <nz-step nzTitle="Finished"></nz-step>
-      <nz-step nzTitle="In Progress"></nz-step>
-      <nz-step nzTitle="Waiting"></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/start-index.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/steps/start-index.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoStepsStartIndexComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsStartIndexComponent", function() { return NzDemoStepsStartIndexComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsStartIndexComponent {
-    constructor() {
-        this.current = 3;
-    }
-}
-/** @nocollapse */ NzDemoStepsStartIndexComponent.ɵfac = function NzDemoStepsStartIndexComponent_Factory(t) { return new (t || NzDemoStepsStartIndexComponent)(); };
-/** @nocollapse */ NzDemoStepsStartIndexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsStartIndexComponent, selectors: [["nz-demo-steps-start-index"]], decls: 4, vars: 2, consts: [["nzSize", "small", 3, "nzCurrent", "nzStartIndex"], ["nzTitle", "Finished"], ["nzTitle", "In Progress"], ["nzTitle", "Waiting"]], template: function NzDemoStepsStartIndexComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.current)("nzStartIndex", 3);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsStartIndexComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-start-index',
-                template: `
-    <nz-steps [nzCurrent]="current" [nzStartIndex]="3" nzSize="small">
-      <nz-step nzTitle="Finished"></nz-step>
-      <nz-step nzTitle="In Progress"></nz-step>
-      <nz-step nzTitle="Waiting"></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/step-next.ts":
+/***/ "LuT1":
 /*!*****************************************!*\
   !*** ./site/doc/app/steps/step-next.ts ***!
   \*****************************************/
@@ -2403,12 +909,12 @@ class NzDemoStepsStartIndexComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsStepNextComponent", function() { return NzDemoStepsStepNextComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -2556,95 +1062,7 @@ class NzDemoStepsStepNextComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/steps/vertical-small.ts":
-/*!**********************************************!*\
-  !*** ./site/doc/app/steps/vertical-small.ts ***!
-  \**********************************************/
-/*! exports provided: NzDemoStepsVerticalSmallComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsVerticalSmallComponent", function() { return NzDemoStepsVerticalSmallComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsVerticalSmallComponent {
-}
-/** @nocollapse */ NzDemoStepsVerticalSmallComponent.ɵfac = function NzDemoStepsVerticalSmallComponent_Factory(t) { return new (t || NzDemoStepsVerticalSmallComponent)(); };
-/** @nocollapse */ NzDemoStepsVerticalSmallComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsVerticalSmallComponent, selectors: [["nz-demo-steps-vertical-small"]], decls: 4, vars: 1, consts: [["nzDirection", "vertical", "nzSize", "small", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsVerticalSmallComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsVerticalSmallComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-vertical-small',
-                template: `
-    <nz-steps [nzCurrent]="1" nzDirection="vertical" nzSize="small">
-      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/vertical.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/steps/vertical.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoStepsVerticalComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsVerticalComponent", function() { return NzDemoStepsVerticalComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-steps.js");
-
-
-
-class NzDemoStepsVerticalComponent {
-}
-/** @nocollapse */ NzDemoStepsVerticalComponent.ɵfac = function NzDemoStepsVerticalComponent_Factory(t) { return new (t || NzDemoStepsVerticalComponent)(); };
-/** @nocollapse */ NzDemoStepsVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsVerticalComponent, selectors: [["nz-demo-steps-vertical"]], decls: 4, vars: 1, consts: [["nzDirection", "vertical", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsVerticalComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
-    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsVerticalComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-steps-vertical',
-                template: `
-    <nz-steps [nzCurrent]="1" nzDirection="vertical">
-      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
-      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
-    </nz-steps>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/steps/zh.component.ts":
+/***/ "MF7T":
 /*!********************************************!*\
   !*** ./site/doc/app/steps/zh.component.ts ***!
   \********************************************/
@@ -2654,26 +1072,26 @@ class NzDemoStepsVerticalComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsZhComponent", function() { return NzDemoStepsZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./simple */ "./site/doc/app/steps/simple.ts");
-/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./small-size */ "./site/doc/app/steps/small-size.ts");
-/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./start-index */ "./site/doc/app/steps/start-index.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./icon */ "./site/doc/app/steps/icon.ts");
-/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./step-next */ "./site/doc/app/steps/step-next.ts");
-/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./vertical */ "./site/doc/app/steps/vertical.ts");
-/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "./site/doc/app/steps/vertical-small.ts");
-/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./error */ "./site/doc/app/steps/error.ts");
-/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./progress-dot */ "./site/doc/app/steps/progress-dot.ts");
-/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./customized-progress-dot */ "./site/doc/app/steps/customized-progress-dot.ts");
-/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./clickable */ "./site/doc/app/steps/clickable.ts");
-/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./nav */ "./site/doc/app/steps/nav.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./simple */ "/zTT");
+/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./small-size */ "14/K");
+/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./start-index */ "cb24");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./icon */ "lCFB");
+/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./step-next */ "LuT1");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./vertical */ "Zr8u");
+/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "kA6o");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./error */ "D6Tb");
+/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./progress-dot */ "d/aV");
+/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./customized-progress-dot */ "7pml");
+/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./clickable */ "bDV4");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./nav */ "qCp6");
 
 
 
@@ -3587,6 +2005,1512 @@ class NzDemoStepsZhComponent {
                 selector: 'nz-demo-steps',
                 preserveWhitespaces: false,
                 templateUrl: './zh.html'
+            }]
+    }], null, { codeBoxes: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
+            args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
+        }] }); })();
+
+
+/***/ }),
+
+/***/ "QC+E":
+/*!**************************************!*\
+  !*** ./site/doc/app/steps/module.ts ***!
+  \**************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+const moduleList = [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_0__["NzStepsModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_1__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_3__["NzDividerModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__["NzIconModule"]];
+
+
+/***/ }),
+
+/***/ "Zr8u":
+/*!****************************************!*\
+  !*** ./site/doc/app/steps/vertical.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoStepsVerticalComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsVerticalComponent", function() { return NzDemoStepsVerticalComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+
+
+
+class NzDemoStepsVerticalComponent {
+}
+/** @nocollapse */ NzDemoStepsVerticalComponent.ɵfac = function NzDemoStepsVerticalComponent_Factory(t) { return new (t || NzDemoStepsVerticalComponent)(); };
+/** @nocollapse */ NzDemoStepsVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsVerticalComponent, selectors: [["nz-demo-steps-vertical"]], decls: 4, vars: 1, consts: [["nzDirection", "vertical", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsVerticalComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsVerticalComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-vertical',
+                template: `
+    <nz-steps [nzCurrent]="1" nzDirection="vertical">
+      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "bDV4":
+/*!*****************************************!*\
+  !*** ./site/doc/app/steps/clickable.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoStepsClickableComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsClickableComponent", function() { return NzDemoStepsClickableComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+
+
+
+
+class NzDemoStepsClickableComponent {
+    constructor() {
+        this.index = 0;
+        this.disable = false;
+    }
+    onIndexChange(index) {
+        this.index = index;
+    }
+}
+/** @nocollapse */ NzDemoStepsClickableComponent.ɵfac = function NzDemoStepsClickableComponent_Factory(t) { return new (t || NzDemoStepsClickableComponent)(); };
+/** @nocollapse */ NzDemoStepsClickableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsClickableComponent, selectors: [["nz-demo-steps-clickable"]], decls: 9, vars: 3, consts: [[3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Finished", "nzDescription", "This is a description.", 3, "nzDisabled"], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."], ["nzDirection", "vertical", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Finished", "nzDescription", "This is a description."]], template: function NzDemoStepsClickableComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsClickableComponent_Template_nz_steps_nzIndexChange_0_listener($event) { return ctx.onIndexChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-steps", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsClickableComponent_Template_nz_steps_nzIndexChange_5_listener($event) { return ctx.onIndexChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDisabled", ctx.disable);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsClickableComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-clickable',
+                template: `
+    <nz-steps [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+      <nz-step nzTitle="Finished" [nzDisabled]="disable" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+    <nz-divider></nz-divider>
+    <nz-steps nzDirection="vertical" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "cb24":
+/*!*******************************************!*\
+  !*** ./site/doc/app/steps/start-index.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoStepsStartIndexComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsStartIndexComponent", function() { return NzDemoStepsStartIndexComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+
+
+
+class NzDemoStepsStartIndexComponent {
+    constructor() {
+        this.current = 3;
+    }
+}
+/** @nocollapse */ NzDemoStepsStartIndexComponent.ɵfac = function NzDemoStepsStartIndexComponent_Factory(t) { return new (t || NzDemoStepsStartIndexComponent)(); };
+/** @nocollapse */ NzDemoStepsStartIndexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsStartIndexComponent, selectors: [["nz-demo-steps-start-index"]], decls: 4, vars: 2, consts: [["nzSize", "small", 3, "nzCurrent", "nzStartIndex"], ["nzTitle", "Finished"], ["nzTitle", "In Progress"], ["nzTitle", "Waiting"]], template: function NzDemoStepsStartIndexComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.current)("nzStartIndex", 3);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsStartIndexComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-start-index',
+                template: `
+    <nz-steps [nzCurrent]="current" [nzStartIndex]="3" nzSize="small">
+      <nz-step nzTitle="Finished"></nz-step>
+      <nz-step nzTitle="In Progress"></nz-step>
+      <nz-step nzTitle="Waiting"></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "d/aV":
+/*!********************************************!*\
+  !*** ./site/doc/app/steps/progress-dot.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoStepsProgressDotComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsProgressDotComponent", function() { return NzDemoStepsProgressDotComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+
+
+
+
+class NzDemoStepsProgressDotComponent {
+}
+/** @nocollapse */ NzDemoStepsProgressDotComponent.ɵfac = function NzDemoStepsProgressDotComponent_Factory(t) { return new (t || NzDemoStepsProgressDotComponent)(); };
+/** @nocollapse */ NzDemoStepsProgressDotComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsProgressDotComponent, selectors: [["nz-demo-steps-progress-dot"]], decls: 11, vars: 2, consts: [["nzProgressDot", "", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."], ["nzProgressDot", "", "nzDirection", "vertical", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description. This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description. This is a description."]], template: function NzDemoStepsProgressDotComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-divider");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-steps", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_2__["NzDividerComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsProgressDotComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-progress-dot',
+                template: `
+    <nz-steps [nzCurrent]="1" nzProgressDot>
+      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+    <nz-divider></nz-divider>
+    <nz-steps [nzCurrent]="1" nzProgressDot nzDirection="vertical">
+      <nz-step nzTitle="Finished" nzDescription="This is a description. This is a description."></nz-step>
+      <nz-step nzTitle="Finished" nzDescription="This is a description. This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description. This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "kA6o":
+/*!**********************************************!*\
+  !*** ./site/doc/app/steps/vertical-small.ts ***!
+  \**********************************************/
+/*! exports provided: NzDemoStepsVerticalSmallComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsVerticalSmallComponent", function() { return NzDemoStepsVerticalSmallComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+
+
+
+class NzDemoStepsVerticalSmallComponent {
+}
+/** @nocollapse */ NzDemoStepsVerticalSmallComponent.ɵfac = function NzDemoStepsVerticalSmallComponent_Factory(t) { return new (t || NzDemoStepsVerticalSmallComponent)(); };
+/** @nocollapse */ NzDemoStepsVerticalSmallComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsVerticalSmallComponent, selectors: [["nz-demo-steps-vertical-small"]], decls: 4, vars: 1, consts: [["nzDirection", "vertical", "nzSize", "small", 3, "nzCurrent"], ["nzTitle", "Finished", "nzDescription", "This is a description."], ["nzTitle", "In Progress", "nzDescription", "This is a description."], ["nzTitle", "Waiting", "nzDescription", "This is a description."]], template: function NzDemoStepsVerticalSmallComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", 1);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsVerticalSmallComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-vertical-small',
+                template: `
+    <nz-steps [nzCurrent]="1" nzDirection="vertical" nzSize="small">
+      <nz-step nzTitle="Finished" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="In Progress" nzDescription="This is a description."></nz-step>
+      <nz-step nzTitle="Waiting" nzDescription="This is a description."></nz-step>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "lCFB":
+/*!************************************!*\
+  !*** ./site/doc/app/steps/icon.ts ***!
+  \************************************/
+/*! exports provided: NzDemoStepsIconComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsIconComponent", function() { return NzDemoStepsIconComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+function NzDemoStepsIconComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 5);
+} }
+class NzDemoStepsIconComponent {
+}
+/** @nocollapse */ NzDemoStepsIconComponent.ɵfac = function NzDemoStepsIconComponent_Factory(t) { return new (t || NzDemoStepsIconComponent)(); };
+/** @nocollapse */ NzDemoStepsIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsIconComponent, selectors: [["nz-demo-steps-icon"]], decls: 7, vars: 1, consts: [["nzTitle", "Login", "nzStatus", "finish", "nzIcon", "user"], ["nzTitle", "Verification", "nzStatus", "finish", "nzIcon", "solution"], ["nzTitle", "Pay", "nzStatus", "process", "nzIcon", "loading"], ["nzTitle", "Done", "nzStatus", "wait", 3, "nzIcon"], ["iconTemplate", ""], ["nz-icon", "", "nzType", "smile"]], template: function NzDemoStepsIconComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, NzDemoStepsIconComponent_ng_template_5_Template, 1, 0, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIcon", _r0);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsIconComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-icon',
+                template: `
+    <nz-steps>
+      <nz-step nzTitle="Login" nzStatus="finish" nzIcon="user"></nz-step>
+      <nz-step nzTitle="Verification" nzStatus="finish" nzIcon="solution"></nz-step>
+      <nz-step nzTitle="Pay" nzStatus="process" nzIcon="loading"></nz-step>
+      <nz-step nzTitle="Done" nzStatus="wait" [nzIcon]="iconTemplate"></nz-step>
+      <ng-template #iconTemplate><i nz-icon nzType="smile"></i></ng-template>
+    </nz-steps>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "lehi":
+/*!********************************************!*\
+  !*** ./site/doc/app/steps/index.module.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoStepsModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsModule", function() { return NzDemoStepsModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "QC+E");
+/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./clickable */ "bDV4");
+/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./customized-progress-dot */ "7pml");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./error */ "D6Tb");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./icon */ "lCFB");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nav */ "qCp6");
+/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./progress-dot */ "d/aV");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./simple */ "/zTT");
+/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./small-size */ "14/K");
+/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./start-index */ "cb24");
+/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./step-next */ "LuT1");
+/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "kA6o");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./vertical */ "Zr8u");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./zh.component */ "MF7T");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./en.component */ "v25D");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+/* harmony import */ var ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng-zorro-antd/popover */ "T9nw");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/divider */ "658v");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoStepsModule {
+}
+/** @nocollapse */ NzDemoStepsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoStepsModule });
+/** @nocollapse */ NzDemoStepsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoStepsModule_Factory(t) { return new (t || NzDemoStepsModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoStepsModule, { declarations: [_clickable__WEBPACK_IMPORTED_MODULE_4__["NzDemoStepsClickableComponent"],
+        _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__["NzDemoStepsCustomizedProgressDotComponent"],
+        _error__WEBPACK_IMPORTED_MODULE_6__["NzDemoStepsErrorComponent"],
+        _icon__WEBPACK_IMPORTED_MODULE_7__["NzDemoStepsIconComponent"],
+        _nav__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsNavComponent"],
+        _progress_dot__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsProgressDotComponent"],
+        _simple__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsSimpleComponent"],
+        _small_size__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsSmallSizeComponent"],
+        _start_index__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStartIndexComponent"],
+        _step_next__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsStepNextComponent"],
+        _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"],
+        _vertical__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsVerticalComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_18__["NzStepsModule"], ng_zorro_antd_popover__WEBPACK_IMPORTED_MODULE_19__["NzPopoverModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_20__["NzButtonModule"], ng_zorro_antd_divider__WEBPACK_IMPORTED_MODULE_21__["NzDividerModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_22__["NzIconModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _clickable__WEBPACK_IMPORTED_MODULE_4__["NzDemoStepsClickableComponent"],
+                    _customized_progress_dot__WEBPACK_IMPORTED_MODULE_5__["NzDemoStepsCustomizedProgressDotComponent"],
+                    _error__WEBPACK_IMPORTED_MODULE_6__["NzDemoStepsErrorComponent"],
+                    _icon__WEBPACK_IMPORTED_MODULE_7__["NzDemoStepsIconComponent"],
+                    _nav__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsNavComponent"],
+                    _progress_dot__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsProgressDotComponent"],
+                    _simple__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsSimpleComponent"],
+                    _small_size__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsSmallSizeComponent"],
+                    _start_index__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStartIndexComponent"],
+                    _step_next__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsStepNextComponent"],
+                    _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"],
+                    _vertical__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsVerticalComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "qCp6":
+/*!***********************************!*\
+  !*** ./site/doc/app/steps/nav.ts ***!
+  \***********************************/
+/*! exports provided: NzDemoStepsNavComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsNavComponent", function() { return NzDemoStepsNavComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/steps */ "43Vo");
+
+
+
+class NzDemoStepsNavComponent {
+    constructor() {
+        this.index = 0;
+    }
+    onIndexChange(event) {
+        this.index = event;
+    }
+}
+/** @nocollapse */ NzDemoStepsNavComponent.ɵfac = function NzDemoStepsNavComponent_Factory(t) { return new (t || NzDemoStepsNavComponent)(); };
+/** @nocollapse */ NzDemoStepsNavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsNavComponent, selectors: [["nz-demo-steps-nav"]], decls: 14, vars: 3, consts: [["nzType", "navigation", "nzSize", "small", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Step 1", "nzSubtitle", "00:00:05", "nzStatus", "finish", "nzDescription", "This is a description."], ["nzTitle", "Step 2", "nzSubtitle", "00:01:02", "nzStatus", "process", "nzDescription", "This is a description."], ["nzTitle", "Step 3", "nzSubtitle", "waiting for long long time", "nzStatus", "wait", "nzDescription", "This is a description."], ["nzType", "navigation", 3, "nzCurrent", "nzIndexChange"], ["nzTitle", "Step 1", "nzStatus", "finish"], ["nzTitle", "Step 2", "nzStatus", "process"], ["nzTitle", "Step 3", "nzStatus", "wait"], ["nzTitle", "Step 4", "nzStatus", "wait"], ["nzTitle", "finish 1", "nzStatus", "finish"], ["nzTitle", "finish 2", "nzStatus", "finish"], ["nzTitle", "current process", "nzStatus", "process"], ["nzTitle", "wait", "nzStatus", "wait", "nzDisabled", ""]], template: function NzDemoStepsNavComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_0_listener($event) { return ctx.onIndexChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-step", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-step", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-step", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-steps", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_4_listener($event) { return ctx.onIndexChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-step", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-step", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-step", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-step", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-steps", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzIndexChange", function NzDemoStepsNavComponent_Template_nz_steps_nzIndexChange_9_listener($event) { return ctx.onIndexChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-step", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "nz-step", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "nz-step", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "nz-step", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzCurrent", ctx.index);
+    } }, directives: [ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepsComponent"], ng_zorro_antd_steps__WEBPACK_IMPORTED_MODULE_1__["NzStepComponent"]], styles: ["nz-steps[_ngcontent-%COMP%] {\n        display: block;\n        margin-bottom: 60px;\n        box-shadow: rgb(232, 232, 232) 0px -1px 0px 0 inset;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsNavComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps-nav',
+                template: `
+    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+      <nz-step nzTitle="Step 1" nzSubtitle="00:00:05" nzStatus="finish" nzDescription="This is a description."> </nz-step>
+      <nz-step nzTitle="Step 2" nzSubtitle="00:01:02" nzStatus="process" nzDescription="This is a description."> </nz-step>
+      <nz-step nzTitle="Step 3" nzSubtitle="waiting for long long time" nzStatus="wait" nzDescription="This is a description."> </nz-step>
+    </nz-steps>
+    <nz-steps nzType="navigation" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+      <nz-step nzTitle="Step 1" nzStatus="finish"></nz-step>
+      <nz-step nzTitle="Step 2" nzStatus="process"></nz-step>
+      <nz-step nzTitle="Step 3" nzStatus="wait"></nz-step>
+      <nz-step nzTitle="Step 4" nzStatus="wait"></nz-step>
+    </nz-steps>
+    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+      <nz-step nzTitle="finish 1" nzStatus="finish"></nz-step>
+      <nz-step nzTitle="finish 2" nzStatus="finish"></nz-step>
+      <nz-step nzTitle="current process" nzStatus="process"></nz-step>
+      <nz-step nzTitle="wait" nzStatus="wait" nzDisabled></nz-step>
+    </nz-steps>
+  `,
+                styles: [
+                    `
+      nz-steps {
+        display: block;
+        margin-bottom: 60px;
+        box-shadow: rgb(232, 232, 232) 0px -1px 0px 0 inset;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "v25D":
+/*!********************************************!*\
+  !*** ./site/doc/app/steps/en.component.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoStepsEnComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoStepsEnComponent", function() { return NzDemoStepsEnComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _simple__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./simple */ "/zTT");
+/* harmony import */ var _small_size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./small-size */ "14/K");
+/* harmony import */ var _start_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./start-index */ "cb24");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./icon */ "lCFB");
+/* harmony import */ var _step_next__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./step-next */ "LuT1");
+/* harmony import */ var _vertical__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./vertical */ "Zr8u");
+/* harmony import */ var _vertical_small__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./vertical-small */ "kA6o");
+/* harmony import */ var _error__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./error */ "D6Tb");
+/* harmony import */ var _progress_dot__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./progress-dot */ "d/aV");
+/* harmony import */ var _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./customized-progress-dot */ "7pml");
+/* harmony import */ var _clickable__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./clickable */ "bDV4");
+/* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./nav */ "qCp6");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoStepsEnComponent {
+    constructor() {
+        this.expanded = false;
+    }
+    goLink(link) {
+        if (window) {
+            window.location.hash = link;
+        }
+    }
+    expandAllCode() {
+        this.expanded = !this.expanded;
+        this.codeBoxes.forEach(code => {
+            code.nzExpanded = this.expanded;
+            code.expandCode(this.expanded);
+            code.check();
+        });
+    }
+}
+/** @nocollapse */ NzDemoStepsEnComponent.ɵfac = function NzDemoStepsEnComponent_Factory(t) { return new (t || NzDemoStepsEnComponent)(); };
+/** @nocollapse */ NzDemoStepsEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStepsEnComponent, selectors: [["nz-demo-steps"]], viewQuery: function NzDemoStepsEnComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
+    } if (rf & 2) {
+        var _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
+    } }, decls: 508, vars: 52, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-steps-demo-simple", "nzTitle", "Basic"], ["nzHref", "#components-steps-demo-small-size", "nzTitle", "Mini version"], ["nzHref", "#components-steps-demo-start-index", "nzTitle", "Starting Index"], ["nzHref", "#components-steps-demo-icon", "nzTitle", "With icon"], ["nzHref", "#components-steps-demo-step-next", "nzTitle", "Switch Step"], ["nzHref", "#components-steps-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-steps-demo-vertical-small", "nzTitle", "Vertical mini version"], ["nzHref", "#components-steps-demo-error", "nzTitle", "Error status"], ["nzHref", "#components-steps-demo-progress-dot", "nzTitle", "Dot Style"], ["nzHref", "#components-steps-demo-customized-progress-dot", "nzTitle", "Customized Dot Style"], ["nzHref", "#components-steps-demo-clickable", "nzTitle", "Clickable"], ["nzHref", "#components-steps-demo-nav", "nzTitle", "Navigation Steps"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-steps-simple", "nzGenerateCommand", "ng g ng-zorro-antd:steps-simple <name>", "nzComponentName", "NzDemoStepsSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Mini version", "nzSelector", "nz-demo-steps-small-size", "nzGenerateCommand", "ng g ng-zorro-antd:steps-small-size <name>", "nzComponentName", "NzDemoStepsSmallSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Starting Index", "nzSelector", "nz-demo-steps-start-index", "nzGenerateCommand", "ng g ng-zorro-antd:steps-start-index <name>", "nzComponentName", "NzDemoStepsStartIndexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With icon", "nzSelector", "nz-demo-steps-icon", "nzGenerateCommand", "ng g ng-zorro-antd:steps-icon <name>", "nzComponentName", "NzDemoStepsIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Switch Step", "nzSelector", "nz-demo-steps-step-next", "nzGenerateCommand", "ng g ng-zorro-antd:steps-step-next <name>", "nzComponentName", "NzDemoStepsStepNextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical", "nzSelector", "nz-demo-steps-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:steps-vertical <name>", "nzComponentName", "NzDemoStepsVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical mini version", "nzSelector", "nz-demo-steps-vertical-small", "nzGenerateCommand", "ng g ng-zorro-antd:steps-vertical-small <name>", "nzComponentName", "NzDemoStepsVerticalSmallComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Error status", "nzSelector", "nz-demo-steps-error", "nzGenerateCommand", "ng g ng-zorro-antd:steps-error <name>", "nzComponentName", "NzDemoStepsErrorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Dot Style", "nzSelector", "nz-demo-steps-progress-dot", "nzGenerateCommand", "ng g ng-zorro-antd:steps-progress-dot <name>", "nzComponentName", "NzDemoStepsProgressDotComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customized Dot Style", "nzSelector", "nz-demo-steps-customized-progress-dot", "nzGenerateCommand", "ng g ng-zorro-antd:steps-customized-progress-dot <name>", "nzComponentName", "NzDemoStepsCustomizedProgressDotComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Clickable", "nzSelector", "nz-demo-steps-clickable", "nzGenerateCommand", "ng g ng-zorro-antd:steps-clickable <name>", "nzComponentName", "NzDemoStepsClickableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Navigation Steps", "nzSelector", "nz-demo-steps-nav", "nzGenerateCommand", "ng g ng-zorro-antd:steps-nav <name>", "nzComponentName", "NzDemoStepsNavComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-steps"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-steps'", 1, "anchor"], ["id", "nz-step"], ["onclick", "window.location.hash = 'nz-step'", 1, "anchor"]], template: function NzDemoStepsEnComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzClick", function NzDemoStepsEnComponent_Template_nz_anchor_nzClick_2_listener($event) { return ctx.goLink($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-link", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-link", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-link", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-link", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-link", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "nz-link", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "nz-link", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "nz-link", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "nz-link", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "nz-link", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "nz-link", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "nz-link", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "nz-link", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "section", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "i", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "section", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " is a navigation bar that guides users through the steps of a task.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "h2", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "When To Use");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "When the task is complicated or has a certain sequence in the series of subtasks, we can decompose it into several steps to make things easier.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "pre", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "span", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "import");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "{");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " NzStepsModule ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "}");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](45, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "span", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, "from");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "span", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "'ng-zorro-antd/steps'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Examples");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "i", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoStepsEnComponent_Template_i_click_56_listener() { return ctx.expandAllCode(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "nz-code-box", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "nz-demo-steps-simple", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "The most basic step bar.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "nz-code-box", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "nz-demo-steps-small-size", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "By setting like this: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "<nz-steps nzSize=\"small\">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, ", you can get a mini version.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "nz-code-box", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](73, "nz-demo-steps-start-index", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "By setting ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "nzStartIndex");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " to change starting index of a step component. Be sure to add an offset to ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "nzCurrent");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, " as well.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "nz-code-box", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](84, "nz-demo-steps-icon", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "You can use your own custom icons by setting the property ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "nzIcon");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, " for ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, ". Old API is still compatible but we strongly suggest the new API.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "nz-code-box", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](95, "nz-demo-steps-step-next", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](96, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "Cooperate with the content and buttons, to represent the progress of a process.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "nz-code-box", 36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](100, "nz-demo-steps-vertical", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](103, "A simple step bar in the vertical direction.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](104, "nz-code-box", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](105, "nz-demo-steps-vertical-small", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "A simple mini version step bar in the vertical direction.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "nz-code-box", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "nz-demo-steps-error", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](111, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "By using ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, "nzStatus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](116, " of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, ", you can specify the state for current step.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "nz-code-box", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](121, "nz-demo-steps-progress-dot", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](123, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](124, "Steps with progress dot style.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "nz-code-box", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](126, "nz-demo-steps-customized-progress-dot", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "You can customize the display for Steps with progress dot style.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "nz-code-box", 41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](131, "nz-demo-steps-clickable", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](133, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](134, "subscribe ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "(nzIndexChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, " makes Steps clickable.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "nz-code-box", 42);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](139, "nz-demo-steps-nav", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](140, "div", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Navigation steps.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "section", 43);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](144, "h2", 44);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](146, "API");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](147, "a", 45);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "pre", 46);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](151, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](153, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](154, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](155, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](156, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](157, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](158, "\n  ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](161, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](162, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](163, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](165, "span", 48);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](166, "nzTitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](167, "span", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](168, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](169, "=");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](170, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](171, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](172, "first step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](173, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](174, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](175, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](176, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](178, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](179, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180, "</");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](181, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](182, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](183, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184, "\n  ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](186, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](187, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](188, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](189, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "span", 48);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](192, "nzTitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](193, "span", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](194, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](195, "=");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](196, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](197, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](198, "second step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206, "</");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](207, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](208, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](210, "\n  ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](212, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](215, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](217, "span", 48);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](218, "nzTitle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](219, "span", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](220, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](221, "=");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](222, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](223, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, "third step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](225, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](226, "\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](227, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](228, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](229, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](230, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](231, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](232, "</");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](233, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](234, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](235, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](236, "\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](237, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](238, "span", 47);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](239, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](240, "</");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](241, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](242, "span", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](243, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](244, "h3", 50);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](245, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](246, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](247, "label", 51);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](248, "component");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](249, "a", 52);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](250, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](251, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](252, "The whole of the step bar.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](253, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](254, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](255, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257, "Property");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "Description");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](260, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](261, "Type");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](262, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](263, "Default");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](264, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](265, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](267, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](268, "[nzType]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](269, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](270, "type of steps, can be set to one of the following values: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](271, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](272, "default");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, ", ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, "navigation");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "'default' | 'navigation'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](280, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](281, "default");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](282, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](283, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, "[nzCurrent]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](286, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "To set the current step, counting from 0. You can overwrite this state by using ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](289, "nzStatus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, " of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](291, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](293, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](294, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](296, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](297, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, "0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](301, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](302, "[nzDirection]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "To specify the direction of the step bar, ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](306, "horizontal");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, " and ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](308, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](309, "vertical");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, " are currently supported");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](311, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](312, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](313, "'vertical' | 'horizontal'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](314, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](315, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](316, "horizontal");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](317, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](318, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](320, "[nzLabelPlacement]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](321, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, "Support vertical title and description");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](323, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](324, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](325, "'vertical' | 'horizontal'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](326, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](327, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](328, "horizontal");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](329, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](330, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](331, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](332, "[nzProgressDot]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](333, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](334, "Steps with progress dot style, customize the progress dot by setting it with TemplateRef");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](335, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](336, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](337, "boolean | TemplateRef<{ $implicit: TemplateRef<void>, status: string, index: number }>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](338, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](339, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](340, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](341, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](342, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](343, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](344, "[nzSize]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](345, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](346, "To specify the size of the step bar, ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](347, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](348, "default");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](349, " and ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](350, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](351, "small");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](352, " are currently supported");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](353, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](354, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](355, "'small' | 'default'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](356, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](357, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](358, "'default'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](359, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](360, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](361, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](362, "[nzStatus]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](363, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](364, "To specify the status of current step, can be set to one of the following values: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](365, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](366, "wait");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](367, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](368, "process");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](369, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](370, "finish");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](371, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](372, "error");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](373, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](374, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](375, "'wait' | 'process' | 'finish' | 'error'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](376, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](377, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](378, "'process'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](379, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](380, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](381, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](382, "[nzStartIndex]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](383, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](384, "To specify the starting number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](385, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](386, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](387, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](388, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](389, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](390, "0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](391, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](392, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](393, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](394, "(nzIndexChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](395, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](396, "Trigger event when step click");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](397, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](398, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](399, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](400, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](401, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](402, "h3", 53);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](403, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](404, "nz-step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](405, "label", 51);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](406, "component");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](407, "a", 54);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](408, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](410, "A single step in the step bar.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](411, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](412, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](413, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](414, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](415, "Property");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](416, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](417, "Description");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](418, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](419, "Type");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](420, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](421, "Default");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](422, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](423, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](424, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](425, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](426, "[nzDescription]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](427, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](428, "description of the step, optional property");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](429, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](430, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](431, "string | TemplateRef<void>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](432, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](433, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](434, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](435, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](436, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](437, "[nzIcon]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](438, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](439, "icon of the step, optional property");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](440, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](441, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](442, "string | string[] | Set<string> | { [klass: string]: any; }");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](443, " | ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "TemplateRef<void>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](447, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](448, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](449, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](450, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](451, "[nzStatus]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](452, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](453, "to specify the status. It will be automatically set by ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](454, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](455, "nzCurrent");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](456, " of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](457, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](458, "nz-steps");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](459, " if not configured. Optional values are: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](461, "wait");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](462, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](463, "process");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](464, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](465, "finish");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](466, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](467, "error");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](468, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](469, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](470, "'wait' | 'process' | 'finish' | 'error'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](472, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, "'wait'");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](477, "[nzTitle]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](478, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](479, "title of the step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](480, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](481, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](482, "string | TemplateRef<void>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](484, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](485, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](487, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "[nzSubtitle]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "subTitle of the step");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](491, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](492, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](493, "string | TemplateRef<void>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](494, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](495, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](496, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](497, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](498, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](499, "[nzDisabled]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](500, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](501, "disable click");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](502, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](503, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](504, "boolean");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](505, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](506, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](507, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzOffsetTop", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzAffix", false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](55);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzGutter", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-simple")("nzLink", "components-steps-demo-simple")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/simple.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-small-size")("nzLink", "components-steps-demo-small-size")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/small-size.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-start-index")("nzLink", "components-steps-demo-start-index")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/start-index.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-icon")("nzLink", "components-steps-demo-icon")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/icon.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-step-next")("nzLink", "components-steps-demo-step-next")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/step-next.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-vertical")("nzLink", "components-steps-demo-vertical")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/vertical.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-vertical-small")("nzLink", "components-steps-demo-vertical-small")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/vertical-small.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-error")("nzLink", "components-steps-demo-error")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/error.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-progress-dot")("nzLink", "components-steps-demo-progress-dot")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/progress-dot.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-customized-progress-dot")("nzLink", "components-steps-demo-customized-progress-dot")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/customized-progress-dot.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-clickable")("nzLink", "components-steps-demo-clickable")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/clickable.md");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzId", "components-steps-demo-nav")("nzLink", "components-steps-demo-nav")("nzIframeHeight", null)("nzHref", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/steps/demo/nav.md");
+    } }, directives: [ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__["NzAffixComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorComponent"], ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__["NzAnchorLinkComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_5__["NzIconDirective"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__["NzTooltipDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__["NzColDirective"], _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], _simple__WEBPACK_IMPORTED_MODULE_8__["NzDemoStepsSimpleComponent"], _small_size__WEBPACK_IMPORTED_MODULE_9__["NzDemoStepsSmallSizeComponent"], _start_index__WEBPACK_IMPORTED_MODULE_10__["NzDemoStepsStartIndexComponent"], _icon__WEBPACK_IMPORTED_MODULE_11__["NzDemoStepsIconComponent"], _step_next__WEBPACK_IMPORTED_MODULE_12__["NzDemoStepsStepNextComponent"], _vertical__WEBPACK_IMPORTED_MODULE_13__["NzDemoStepsVerticalComponent"], _vertical_small__WEBPACK_IMPORTED_MODULE_14__["NzDemoStepsVerticalSmallComponent"], _error__WEBPACK_IMPORTED_MODULE_15__["NzDemoStepsErrorComponent"], _progress_dot__WEBPACK_IMPORTED_MODULE_16__["NzDemoStepsProgressDotComponent"], _customized_progress_dot__WEBPACK_IMPORTED_MODULE_17__["NzDemoStepsCustomizedProgressDotComponent"], _clickable__WEBPACK_IMPORTED_MODULE_18__["NzDemoStepsClickableComponent"], _nav__WEBPACK_IMPORTED_MODULE_19__["NzDemoStepsNavComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoStepsEnComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-steps',
+                preserveWhitespaces: false,
+                templateUrl: './en.html'
             }]
     }], null, { codeBoxes: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],

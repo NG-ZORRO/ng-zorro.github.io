@@ -1,159 +1,30 @@
 exports.ids = ["spin-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/spin/basic.ts":
-/*!************************************!*\
-  !*** ./site/doc/app/spin/basic.ts ***!
-  \************************************/
-/*! exports provided: NzDemoSpinBasicComponent */
+/***/ "0q4u":
+/*!*************************************!*\
+  !*** ./site/doc/app/spin/module.ts ***!
+  \*************************************/
+/*! exports provided: moduleList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinBasicComponent", function() { return NzDemoSpinBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
 
 
 
-class NzDemoSpinBasicComponent {
-}
-/** @nocollapse */ NzDemoSpinBasicComponent.ɵfac = function NzDemoSpinBasicComponent_Factory(t) { return new (t || NzDemoSpinBasicComponent)(); };
-/** @nocollapse */ NzDemoSpinBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinBasicComponent, selectors: [["nz-demo-spin-basic"]], decls: 1, vars: 0, consts: [["nzSimple", ""]], template: function NzDemoSpinBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-basic',
-                template: `
-    <nz-spin nzSimple></nz-spin>
-  `
-            }]
-    }], null, null); })();
+
+const moduleList = [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_0__["NzSpinModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchModule"]];
 
 
 /***/ }),
 
-/***/ "./site/doc/app/spin/custom-indicator.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/spin/custom-indicator.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoSpinCustomIndicatorComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinCustomIndicatorComponent", function() { return NzDemoSpinCustomIndicatorComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-
-
-
-
-function NzDemoSpinCustomIndicatorComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 2);
-} }
-class NzDemoSpinCustomIndicatorComponent {
-}
-/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵfac = function NzDemoSpinCustomIndicatorComponent_Factory(t) { return new (t || NzDemoSpinCustomIndicatorComponent)(); };
-/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinCustomIndicatorComponent, selectors: [["nz-demo-spin-custom-indicator"]], decls: 3, vars: 1, consts: [["indicatorTemplate", ""], ["nzSimple", "", 3, "nzIndicator"], ["nz-icon", "", "nzType", "loading"]], template: function NzDemoSpinCustomIndicatorComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoSpinCustomIndicatorComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 1);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIndicator", _r0);
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"]], styles: ["i[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinCustomIndicatorComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-custom-indicator',
-                template: `
-    <ng-template #indicatorTemplate><i nz-icon nzType="loading"></i></ng-template>
-    <nz-spin nzSimple [nzIndicator]="indicatorTemplate"> </nz-spin>
-  `,
-                styles: [
-                    `
-      i {
-        font-size: 24px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/delay-and-debounce.ts":
-/*!*************************************************!*\
-  !*** ./site/doc/app/spin/delay-and-debounce.ts ***!
-  \*************************************************/
-/*! exports provided: NzDemoSpinDelayAndDebounceComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinDelayAndDebounceComponent", function() { return NzDemoSpinDelayAndDebounceComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-
-class NzDemoSpinDelayAndDebounceComponent {
-    constructor() {
-        this.isSpinning = false;
-    }
-}
-/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵfac = function NzDemoSpinDelayAndDebounceComponent_Factory(t) { return new (t || NzDemoSpinDelayAndDebounceComponent)(); };
-/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinDelayAndDebounceComponent, selectors: [["nz-demo-spin-delay-and-debounce"]], decls: 6, vars: 6, consts: [[3, "nzSpinning", "nzDelay"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinDelayAndDebounceComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Loading state\uFF1A ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-switch", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSpinDelayAndDebounceComponent_Template_nz_switch_ngModelChange_5_listener($event) { return ctx.isSpinning = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpinning", ctx.isSpinning)("nzDelay", 500);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "info")("nzMessage", "Alert message title")("nzDescription", "Further details about the context of this alert.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.isSpinning);
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinDelayAndDebounceComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-delay-and-debounce',
-                template: `
-    <nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
-      <nz-alert [nzType]="'info'" [nzMessage]="'Alert message title'" [nzDescription]="'Further details about the context of this alert.'">
-      </nz-alert>
-    </nz-spin>
-    <br />
-    <div>
-      Loading state：
-      <nz-switch [(ngModel)]="isSpinning"></nz-switch>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/en.component.ts":
+/***/ "5As7":
 /*!*******************************************!*\
   !*** ./site/doc/app/spin/en.component.ts ***!
   \*******************************************/
@@ -163,20 +34,20 @@ class NzDemoSpinDelayAndDebounceComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinEnComponent", function() { return NzDemoSpinEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "./site/doc/app/spin/basic.ts");
-/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inside */ "./site/doc/app/spin/inside.ts");
-/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tip */ "./site/doc/app/spin/tip.ts");
-/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom-indicator */ "./site/doc/app/spin/custom-indicator.ts");
-/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./size */ "./site/doc/app/spin/size.ts");
-/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nested */ "./site/doc/app/spin/nested.ts");
-/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./delay-and-debounce */ "./site/doc/app/spin/delay-and-debounce.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "G3Li");
+/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inside */ "mDsg");
+/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tip */ "cVKm");
+/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom-indicator */ "7HvB");
+/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./size */ "XLKp");
+/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nested */ "kVaW");
+/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./delay-and-debounce */ "YW6X");
 
 
 
@@ -734,331 +605,7 @@ class NzDemoSpinEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/spin/index.module.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/spin/index.module.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoSpinModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinModule", function() { return NzDemoSpinModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/spin/module.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "./site/doc/app/spin/basic.ts");
-/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./custom-indicator */ "./site/doc/app/spin/custom-indicator.ts");
-/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./delay-and-debounce */ "./site/doc/app/spin/delay-and-debounce.ts");
-/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./inside */ "./site/doc/app/spin/inside.ts");
-/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nested */ "./site/doc/app/spin/nested.ts");
-/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./size */ "./site/doc/app/spin/size.ts");
-/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tip */ "./site/doc/app/spin/tip.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/spin/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/spin/en.component.ts");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoSpinModule {
-}
-/** @nocollapse */ NzDemoSpinModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSpinModule });
-/** @nocollapse */ NzDemoSpinModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSpinModule_Factory(t) { return new (t || NzDemoSpinModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoSpinModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSpinBasicComponent"],
-        _custom_indicator__WEBPACK_IMPORTED_MODULE_5__["NzDemoSpinCustomIndicatorComponent"],
-        _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__["NzDemoSpinDelayAndDebounceComponent"],
-        _inside__WEBPACK_IMPORTED_MODULE_7__["NzDemoSpinInsideComponent"],
-        _nested__WEBPACK_IMPORTED_MODULE_8__["NzDemoSpinNestedComponent"],
-        _size__WEBPACK_IMPORTED_MODULE_9__["NzDemoSpinSizeComponent"],
-        _tip__WEBPACK_IMPORTED_MODULE_10__["NzDemoSpinTipComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_13__["NzSpinModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_14__["NzAlertModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__["NzIconModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_16__["NzSwitchModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSpinBasicComponent"],
-                    _custom_indicator__WEBPACK_IMPORTED_MODULE_5__["NzDemoSpinCustomIndicatorComponent"],
-                    _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__["NzDemoSpinDelayAndDebounceComponent"],
-                    _inside__WEBPACK_IMPORTED_MODULE_7__["NzDemoSpinInsideComponent"],
-                    _nested__WEBPACK_IMPORTED_MODULE_8__["NzDemoSpinNestedComponent"],
-                    _size__WEBPACK_IMPORTED_MODULE_9__["NzDemoSpinSizeComponent"],
-                    _tip__WEBPACK_IMPORTED_MODULE_10__["NzDemoSpinTipComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/inside.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/spin/inside.ts ***!
-  \*************************************/
-/*! exports provided: NzDemoSpinInsideComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinInsideComponent", function() { return NzDemoSpinInsideComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-
-
-
-class NzDemoSpinInsideComponent {
-}
-/** @nocollapse */ NzDemoSpinInsideComponent.ɵfac = function NzDemoSpinInsideComponent_Factory(t) { return new (t || NzDemoSpinInsideComponent)(); };
-/** @nocollapse */ NzDemoSpinInsideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinInsideComponent, selectors: [["nz-demo-spin-inside"]], decls: 2, vars: 0, consts: [[1, "example"], ["nzSimple", ""]], template: function NzDemoSpinInsideComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], styles: [".example[_ngcontent-%COMP%] {\n        text-align: center;\n        background: rgba(0, 0, 0, 0.05);\n        border-radius: 4px;\n        margin-bottom: 20px;\n        padding: 30px 50px;\n        margin: 20px 0;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinInsideComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-inside',
-                template: `
-    <div class="example">
-      <nz-spin nzSimple></nz-spin>
-    </div>
-  `,
-                styles: [
-                    `
-      .example {
-        text-align: center;
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 4px;
-        margin-bottom: 20px;
-        padding: 30px 50px;
-        margin: 20px 0;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/module.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/spin/module.ts ***!
-  \*************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-
-
-
-
-const moduleList = [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_0__["NzSpinModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/nested.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/spin/nested.ts ***!
-  \*************************************/
-/*! exports provided: NzDemoSpinNestedComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinNestedComponent", function() { return NzDemoSpinNestedComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-switch.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-
-
-
-
-
-
-class NzDemoSpinNestedComponent {
-    constructor() {
-        this.isSpinning = false;
-    }
-}
-/** @nocollapse */ NzDemoSpinNestedComponent.ɵfac = function NzDemoSpinNestedComponent_Factory(t) { return new (t || NzDemoSpinNestedComponent)(); };
-/** @nocollapse */ NzDemoSpinNestedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinNestedComponent, selectors: [["nz-demo-spin-nested"]], decls: 6, vars: 5, consts: [[3, "nzSpinning"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinNestedComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Loading state\uFF1A ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-switch", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSpinNestedComponent_Template_nz_switch_ngModelChange_5_listener($event) { return ctx.isSpinning = $event; });
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpinning", ctx.isSpinning);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "info")("nzMessage", "Alert message title")("nzDescription", "Further details about the context of this alert.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.isSpinning);
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinNestedComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-nested',
-                template: `
-    <nz-spin [nzSpinning]="isSpinning">
-      <nz-alert [nzType]="'info'" [nzMessage]="'Alert message title'" [nzDescription]="'Further details about the context of this alert.'">
-      </nz-alert>
-    </nz-spin>
-    <br />
-    <div>
-      Loading state：
-      <nz-switch [(ngModel)]="isSpinning"></nz-switch>
-    </div>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/size.ts":
-/*!***********************************!*\
-  !*** ./site/doc/app/spin/size.ts ***!
-  \***********************************/
-/*! exports provided: NzDemoSpinSizeComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinSizeComponent", function() { return NzDemoSpinSizeComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-
-
-
-class NzDemoSpinSizeComponent {
-}
-/** @nocollapse */ NzDemoSpinSizeComponent.ɵfac = function NzDemoSpinSizeComponent_Factory(t) { return new (t || NzDemoSpinSizeComponent)(); };
-/** @nocollapse */ NzDemoSpinSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinSizeComponent, selectors: [["nz-demo-spin-size"]], decls: 3, vars: 2, consts: [["nzSimple", "", 3, "nzSize"], ["nzSimple", ""]], template: function NzDemoSpinSizeComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSize", "small");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSize", "large");
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], styles: ["nz-spin[_ngcontent-%COMP%] {\n        display: inline-block;\n        margin-right: 16px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinSizeComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-size',
-                template: `
-    <nz-spin nzSimple [nzSize]="'small'"></nz-spin>
-    <nz-spin nzSimple></nz-spin>
-    <nz-spin nzSimple [nzSize]="'large'"></nz-spin>
-  `,
-                styles: [
-                    `
-      nz-spin {
-        display: inline-block;
-        margin-right: 16px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/tip.ts":
-/*!**********************************!*\
-  !*** ./site/doc/app/spin/tip.ts ***!
-  \**********************************/
-/*! exports provided: NzDemoSpinTipComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinTipComponent", function() { return NzDemoSpinTipComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-spin.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-
-class NzDemoSpinTipComponent {
-}
-/** @nocollapse */ NzDemoSpinTipComponent.ɵfac = function NzDemoSpinTipComponent_Factory(t) { return new (t || NzDemoSpinTipComponent)(); };
-/** @nocollapse */ NzDemoSpinTipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinTipComponent, selectors: [["nz-demo-spin-tip"]], decls: 2, vars: 0, consts: [["nzTip", "Loading..."], ["nzType", "info", "nzMessage", "Alert message title", "nzDescription", "Further details about the context of this alert."]], template: function NzDemoSpinTipComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinTipComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-spin-tip',
-                template: `
-    <nz-spin nzTip="Loading...">
-      <nz-alert nzType="info" nzMessage="Alert message title" nzDescription="Further details about the context of this alert."> </nz-alert>
-    </nz-spin>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/spin/zh.component.ts":
+/***/ "6j/B":
 /*!*******************************************!*\
   !*** ./site/doc/app/spin/zh.component.ts ***!
   \*******************************************/
@@ -1068,20 +615,20 @@ class NzDemoSpinTipComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinZhComponent", function() { return NzDemoSpinZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "./site/doc/app/spin/basic.ts");
-/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inside */ "./site/doc/app/spin/inside.ts");
-/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tip */ "./site/doc/app/spin/tip.ts");
-/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom-indicator */ "./site/doc/app/spin/custom-indicator.ts");
-/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./size */ "./site/doc/app/spin/size.ts");
-/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nested */ "./site/doc/app/spin/nested.ts");
-/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./delay-and-debounce */ "./site/doc/app/spin/delay-and-debounce.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./basic */ "G3Li");
+/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inside */ "mDsg");
+/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tip */ "cVKm");
+/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom-indicator */ "7HvB");
+/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./size */ "XLKp");
+/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./nested */ "kVaW");
+/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./delay-and-debounce */ "YW6X");
 
 
 
@@ -1495,6 +1042,459 @@ class NzDemoSpinZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "7HvB":
+/*!***********************************************!*\
+  !*** ./site/doc/app/spin/custom-indicator.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoSpinCustomIndicatorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinCustomIndicatorComponent", function() { return NzDemoSpinCustomIndicatorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
+
+function NzDemoSpinCustomIndicatorComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 2);
+} }
+class NzDemoSpinCustomIndicatorComponent {
+}
+/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵfac = function NzDemoSpinCustomIndicatorComponent_Factory(t) { return new (t || NzDemoSpinCustomIndicatorComponent)(); };
+/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinCustomIndicatorComponent, selectors: [["nz-demo-spin-custom-indicator"]], decls: 3, vars: 1, consts: [["indicatorTemplate", ""], ["nzSimple", "", 3, "nzIndicator"], ["nz-icon", "", "nzType", "loading"]], template: function NzDemoSpinCustomIndicatorComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoSpinCustomIndicatorComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 1);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzIndicator", _r0);
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"]], styles: ["i[_ngcontent-%COMP%] {\n        font-size: 24px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinCustomIndicatorComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-custom-indicator',
+                template: `
+    <ng-template #indicatorTemplate><i nz-icon nzType="loading"></i></ng-template>
+    <nz-spin nzSimple [nzIndicator]="indicatorTemplate"> </nz-spin>
+  `,
+                styles: [
+                    `
+      i {
+        font-size: 24px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "G3Li":
+/*!************************************!*\
+  !*** ./site/doc/app/spin/basic.ts ***!
+  \************************************/
+/*! exports provided: NzDemoSpinBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinBasicComponent", function() { return NzDemoSpinBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+
+
+
+class NzDemoSpinBasicComponent {
+}
+/** @nocollapse */ NzDemoSpinBasicComponent.ɵfac = function NzDemoSpinBasicComponent_Factory(t) { return new (t || NzDemoSpinBasicComponent)(); };
+/** @nocollapse */ NzDemoSpinBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinBasicComponent, selectors: [["nz-demo-spin-basic"]], decls: 1, vars: 0, consts: [["nzSimple", ""]], template: function NzDemoSpinBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-basic',
+                template: `
+    <nz-spin nzSimple></nz-spin>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "XLKp":
+/*!***********************************!*\
+  !*** ./site/doc/app/spin/size.ts ***!
+  \***********************************/
+/*! exports provided: NzDemoSpinSizeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinSizeComponent", function() { return NzDemoSpinSizeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+
+
+
+class NzDemoSpinSizeComponent {
+}
+/** @nocollapse */ NzDemoSpinSizeComponent.ɵfac = function NzDemoSpinSizeComponent_Factory(t) { return new (t || NzDemoSpinSizeComponent)(); };
+/** @nocollapse */ NzDemoSpinSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinSizeComponent, selectors: [["nz-demo-spin-size"]], decls: 3, vars: 2, consts: [["nzSimple", "", 3, "nzSize"], ["nzSimple", ""]], template: function NzDemoSpinSizeComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 0);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSize", "small");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSize", "large");
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], styles: ["nz-spin[_ngcontent-%COMP%] {\n        display: inline-block;\n        margin-right: 16px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinSizeComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-size',
+                template: `
+    <nz-spin nzSimple [nzSize]="'small'"></nz-spin>
+    <nz-spin nzSimple></nz-spin>
+    <nz-spin nzSimple [nzSize]="'large'"></nz-spin>
+  `,
+                styles: [
+                    `
+      nz-spin {
+        display: inline-block;
+        margin-right: 16px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "YW6X":
+/*!*************************************************!*\
+  !*** ./site/doc/app/spin/delay-and-debounce.ts ***!
+  \*************************************************/
+/*! exports provided: NzDemoSpinDelayAndDebounceComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinDelayAndDebounceComponent", function() { return NzDemoSpinDelayAndDebounceComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+class NzDemoSpinDelayAndDebounceComponent {
+    constructor() {
+        this.isSpinning = false;
+    }
+}
+/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵfac = function NzDemoSpinDelayAndDebounceComponent_Factory(t) { return new (t || NzDemoSpinDelayAndDebounceComponent)(); };
+/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinDelayAndDebounceComponent, selectors: [["nz-demo-spin-delay-and-debounce"]], decls: 6, vars: 6, consts: [[3, "nzSpinning", "nzDelay"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinDelayAndDebounceComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Loading state\uFF1A ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-switch", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSpinDelayAndDebounceComponent_Template_nz_switch_ngModelChange_5_listener($event) { return ctx.isSpinning = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpinning", ctx.isSpinning)("nzDelay", 500);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "info")("nzMessage", "Alert message title")("nzDescription", "Further details about the context of this alert.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.isSpinning);
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinDelayAndDebounceComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-delay-and-debounce',
+                template: `
+    <nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
+      <nz-alert [nzType]="'info'" [nzMessage]="'Alert message title'" [nzDescription]="'Further details about the context of this alert.'">
+      </nz-alert>
+    </nz-spin>
+    <br />
+    <div>
+      Loading state：
+      <nz-switch [(ngModel)]="isSpinning"></nz-switch>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "cVKm":
+/*!**********************************!*\
+  !*** ./site/doc/app/spin/tip.ts ***!
+  \**********************************/
+/*! exports provided: NzDemoSpinTipComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinTipComponent", function() { return NzDemoSpinTipComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+
+class NzDemoSpinTipComponent {
+}
+/** @nocollapse */ NzDemoSpinTipComponent.ɵfac = function NzDemoSpinTipComponent_Factory(t) { return new (t || NzDemoSpinTipComponent)(); };
+/** @nocollapse */ NzDemoSpinTipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinTipComponent, selectors: [["nz-demo-spin-tip"]], decls: 2, vars: 0, consts: [["nzTip", "Loading..."], ["nzType", "info", "nzMessage", "Alert message title", "nzDescription", "Further details about the context of this alert."]], template: function NzDemoSpinTipComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinTipComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-tip',
+                template: `
+    <nz-spin nzTip="Loading...">
+      <nz-alert nzType="info" nzMessage="Alert message title" nzDescription="Further details about the context of this alert."> </nz-alert>
+    </nz-spin>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "kVaW":
+/*!*************************************!*\
+  !*** ./site/doc/app/spin/nested.ts ***!
+  \*************************************/
+/*! exports provided: NzDemoSpinNestedComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinNestedComponent", function() { return NzDemoSpinNestedComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+
+
+class NzDemoSpinNestedComponent {
+    constructor() {
+        this.isSpinning = false;
+    }
+}
+/** @nocollapse */ NzDemoSpinNestedComponent.ɵfac = function NzDemoSpinNestedComponent_Factory(t) { return new (t || NzDemoSpinNestedComponent)(); };
+/** @nocollapse */ NzDemoSpinNestedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinNestedComponent, selectors: [["nz-demo-spin-nested"]], decls: 6, vars: 5, consts: [[3, "nzSpinning"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinNestedComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Loading state\uFF1A ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-switch", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSpinNestedComponent_Template_nz_switch_ngModelChange_5_listener($event) { return ctx.isSpinning = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpinning", ctx.isSpinning);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzType", "info")("nzMessage", "Alert message title")("nzDescription", "Further details about the context of this alert.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.isSpinning);
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_2__["NzAlertComponent"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinNestedComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-nested',
+                template: `
+    <nz-spin [nzSpinning]="isSpinning">
+      <nz-alert [nzType]="'info'" [nzMessage]="'Alert message title'" [nzDescription]="'Further details about the context of this alert.'">
+      </nz-alert>
+    </nz-spin>
+    <br />
+    <div>
+      Loading state：
+      <nz-switch [(ngModel)]="isSpinning"></nz-switch>
+    </div>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "mDsg":
+/*!*************************************!*\
+  !*** ./site/doc/app/spin/inside.ts ***!
+  \*************************************/
+/*! exports provided: NzDemoSpinInsideComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinInsideComponent", function() { return NzDemoSpinInsideComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+
+
+
+class NzDemoSpinInsideComponent {
+}
+/** @nocollapse */ NzDemoSpinInsideComponent.ɵfac = function NzDemoSpinInsideComponent_Factory(t) { return new (t || NzDemoSpinInsideComponent)(); };
+/** @nocollapse */ NzDemoSpinInsideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinInsideComponent, selectors: [["nz-demo-spin-inside"]], decls: 2, vars: 0, consts: [[1, "example"], ["nzSimple", ""]], template: function NzDemoSpinInsideComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], styles: [".example[_ngcontent-%COMP%] {\n        text-align: center;\n        background: rgba(0, 0, 0, 0.05);\n        border-radius: 4px;\n        margin-bottom: 20px;\n        padding: 30px 50px;\n        margin: 20px 0;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinInsideComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-spin-inside',
+                template: `
+    <div class="example">
+      <nz-spin nzSimple></nz-spin>
+    </div>
+  `,
+                styles: [
+                    `
+      .example {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 30px 50px;
+        margin: 20px 0;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "rEOW":
+/*!*******************************************!*\
+  !*** ./site/doc/app/spin/index.module.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoSpinModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoSpinModule", function() { return NzDemoSpinModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "0q4u");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./basic */ "G3Li");
+/* harmony import */ var _custom_indicator__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./custom-indicator */ "7HvB");
+/* harmony import */ var _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./delay-and-debounce */ "YW6X");
+/* harmony import */ var _inside__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./inside */ "mDsg");
+/* harmony import */ var _nested__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./nested */ "kVaW");
+/* harmony import */ var _size__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./size */ "XLKp");
+/* harmony import */ var _tip__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./tip */ "cVKm");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "6j/B");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "5As7");
+/* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/switch */ "uPy1");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoSpinModule {
+}
+/** @nocollapse */ NzDemoSpinModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSpinModule });
+/** @nocollapse */ NzDemoSpinModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSpinModule_Factory(t) { return new (t || NzDemoSpinModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoSpinModule, { declarations: [_basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSpinBasicComponent"],
+        _custom_indicator__WEBPACK_IMPORTED_MODULE_5__["NzDemoSpinCustomIndicatorComponent"],
+        _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__["NzDemoSpinDelayAndDebounceComponent"],
+        _inside__WEBPACK_IMPORTED_MODULE_7__["NzDemoSpinInsideComponent"],
+        _nested__WEBPACK_IMPORTED_MODULE_8__["NzDemoSpinNestedComponent"],
+        _size__WEBPACK_IMPORTED_MODULE_9__["NzDemoSpinSizeComponent"],
+        _tip__WEBPACK_IMPORTED_MODULE_10__["NzDemoSpinTipComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_13__["NzSpinModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_14__["NzAlertModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__["NzIconModule"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_16__["NzSwitchModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _basic__WEBPACK_IMPORTED_MODULE_4__["NzDemoSpinBasicComponent"],
+                    _custom_indicator__WEBPACK_IMPORTED_MODULE_5__["NzDemoSpinCustomIndicatorComponent"],
+                    _delay_and_debounce__WEBPACK_IMPORTED_MODULE_6__["NzDemoSpinDelayAndDebounceComponent"],
+                    _inside__WEBPACK_IMPORTED_MODULE_7__["NzDemoSpinInsideComponent"],
+                    _nested__WEBPACK_IMPORTED_MODULE_8__["NzDemoSpinNestedComponent"],
+                    _size__WEBPACK_IMPORTED_MODULE_9__["NzDemoSpinSizeComponent"],
+                    _tip__WEBPACK_IMPORTED_MODULE_10__["NzDemoSpinTipComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoSpinZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoSpinEnComponent"],
+                ],
+                entryComponents: []
+            }]
+    }], null, null); })();
 
 
 /***/ })

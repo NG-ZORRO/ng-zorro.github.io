@@ -1,57 +1,96 @@
 exports.ids = ["alert-index-module"];
 exports.modules = {
 
-/***/ "./site/doc/app/alert/banner.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/alert/banner.ts ***!
-  \**************************************/
-/*! exports provided: NzDemoAlertBannerComponent */
+/***/ "3+w0":
+/*!********************************************!*\
+  !*** ./site/doc/app/alert/index.module.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoAlertModule */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertBannerComponent", function() { return NzDemoAlertBannerComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertModule", function() { return NzDemoAlertModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "yyyn");
+/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./banner */ "vFeQ");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "CrtY");
+/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./closable */ "Y7Sc");
+/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./close-text */ "sNRv");
+/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./description */ "WZ50");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon */ "RDbg");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "Wacb");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "rw2d");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "bSms");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
 
 
 
-class NzDemoAlertBannerComponent {
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoAlertModule {
 }
-/** @nocollapse */ NzDemoAlertBannerComponent.ɵfac = function NzDemoAlertBannerComponent_Factory(t) { return new (t || NzDemoAlertBannerComponent)(); };
-/** @nocollapse */ NzDemoAlertBannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBannerComponent, selectors: [["nz-demo-alert-banner"]], decls: 4, vars: 1, consts: [["nzBanner", "", "nzMessage", "Warning text"], ["nzBanner", "", "nzMessage", "Very long warning text warning text text text text text text text", "nzCloseable", ""], ["nzBanner", "", "nzMessage", "Warning text without icon", 3, "nzShowIcon"], ["nzBanner", "", "nzType", "error", "nzMessage", "Error text"]], template: function NzDemoAlertBannerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzShowIcon", false);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 12px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertBannerComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+/** @nocollapse */ NzDemoAlertModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAlertModule });
+/** @nocollapse */ NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoAlertModule, { declarations: [_banner__WEBPACK_IMPORTED_MODULE_4__["NzDemoAlertBannerComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoAlertBasicComponent"],
+        _closable__WEBPACK_IMPORTED_MODULE_6__["NzDemoAlertClosableComponent"],
+        _close_text__WEBPACK_IMPORTED_MODULE_7__["NzDemoAlertCloseTextComponent"],
+        _description__WEBPACK_IMPORTED_MODULE_8__["NzDemoAlertDescriptionComponent"],
+        _icon__WEBPACK_IMPORTED_MODULE_9__["NzDemoAlertIconComponent"],
+        _style__WEBPACK_IMPORTED_MODULE_10__["NzDemoAlertStyleComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_13__["NzAlertModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                selector: 'nz-demo-alert-banner',
-                template: `
-    <nz-alert nzBanner nzMessage="Warning text"></nz-alert>
-    <nz-alert nzBanner nzMessage="Very long warning text warning text text text text text text text" nzCloseable></nz-alert>
-    <nz-alert nzBanner nzMessage="Warning text without icon" [nzShowIcon]="false"></nz-alert>
-    <nz-alert nzBanner nzType="error" nzMessage="Error text"></nz-alert>
-  `,
-                styles: [
-                    `
-      nz-alert {
-        margin-bottom: 12px;
-      }
-    `
-                ]
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _banner__WEBPACK_IMPORTED_MODULE_4__["NzDemoAlertBannerComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoAlertBasicComponent"],
+                    _closable__WEBPACK_IMPORTED_MODULE_6__["NzDemoAlertClosableComponent"],
+                    _close_text__WEBPACK_IMPORTED_MODULE_7__["NzDemoAlertCloseTextComponent"],
+                    _description__WEBPACK_IMPORTED_MODULE_8__["NzDemoAlertDescriptionComponent"],
+                    _icon__WEBPACK_IMPORTED_MODULE_9__["NzDemoAlertIconComponent"],
+                    _style__WEBPACK_IMPORTED_MODULE_10__["NzDemoAlertStyleComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"],
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/alert/basic.ts":
+/***/ "CrtY":
 /*!*************************************!*\
   !*** ./site/doc/app/alert/basic.ts ***!
   \*************************************/
@@ -61,8 +100,8 @@ class NzDemoAlertBannerComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertBasicComponent", function() { return NzDemoAlertBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
 
 
 
@@ -85,7 +124,176 @@ class NzDemoAlertBasicComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/alert/closable.ts":
+/***/ "RDbg":
+/*!************************************!*\
+  !*** ./site/doc/app/alert/icon.ts ***!
+  \************************************/
+/*! exports provided: NzDemoAlertIconComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertIconComponent", function() { return NzDemoAlertIconComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+class NzDemoAlertIconComponent {
+}
+/** @nocollapse */ NzDemoAlertIconComponent.ɵfac = function NzDemoAlertIconComponent_Factory(t) { return new (t || NzDemoAlertIconComponent)(); };
+/** @nocollapse */ NzDemoAlertIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertIconComponent, selectors: [["nz-demo-alert-icon"]], decls: 8, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Tips", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzShowIcon", ""], ["nzType", "success", "nzMessage", "Success Tips", "nzDescription", "Detailed description and advices about successful copywriting.", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzDescription", "Additional description and informations about copywriting.", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzDescription", "This is a warning notice about copywriting.", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzDescription", "This is an error message about copywriting.", "nzShowIcon", ""]], template: function NzDemoAlertIconComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-alert", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-alert", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-alert", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-alert", 7);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertIconComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-alert-icon',
+                template: `
+    <nz-alert nzType="success" nzMessage="Success Tips" nzShowIcon></nz-alert>
+    <nz-alert nzType="info" nzMessage="Informational Notes" nzShowIcon></nz-alert>
+    <nz-alert nzType="warning" nzMessage="Warning" nzShowIcon></nz-alert>
+    <nz-alert nzType="error" nzMessage="Error" nzShowIcon></nz-alert>
+    <nz-alert
+      nzType="success"
+      nzMessage="Success Tips"
+      nzDescription="Detailed description and advices about successful copywriting."
+      nzShowIcon
+    >
+    </nz-alert>
+    <nz-alert
+      nzType="info"
+      nzMessage="Informational Notes"
+      nzDescription="Additional description and informations about copywriting."
+      nzShowIcon
+    >
+    </nz-alert>
+    <nz-alert nzType="warning" nzMessage="Warning" nzDescription="This is a warning notice about copywriting." nzShowIcon> </nz-alert>
+    <nz-alert nzType="error" nzMessage="Error" nzDescription="This is an error message about copywriting." nzShowIcon> </nz-alert>
+  `,
+                styles: [
+                    `
+      nz-alert {
+        margin-bottom: 16px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "WZ50":
+/*!*******************************************!*\
+  !*** ./site/doc/app/alert/description.ts ***!
+  \*******************************************/
+/*! exports provided: NzDemoAlertDescriptionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertDescriptionComponent", function() { return NzDemoAlertDescriptionComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+class NzDemoAlertDescriptionComponent {
+}
+/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵfac = function NzDemoAlertDescriptionComponent_Factory(t) { return new (t || NzDemoAlertDescriptionComponent)(); };
+/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertDescriptionComponent, selectors: [["nz-demo-alert-description"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text", "nzDescription", "Success Description Success Description Success Description"], ["nzType", "info", "nzMessage", "Info Text", "nzDescription", "Info Description Info Description Info Description Info Description"], ["nzType", "warning", "nzMessage", "Warning Text", "nzDescription", "Warning Description Warning Description Warning Description Warning Description"], ["nzType", "error", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description"]], template: function NzDemoAlertDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertDescriptionComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-alert-description',
+                template: `
+    <nz-alert nzType="success" nzMessage="Success Text" nzDescription="Success Description Success Description Success Description">
+    </nz-alert>
+    <nz-alert nzType="info" nzMessage="Info Text" nzDescription="Info Description Info Description Info Description Info Description">
+    </nz-alert>
+    <nz-alert
+      nzType="warning"
+      nzMessage="Warning Text"
+      nzDescription="Warning Description Warning Description Warning Description Warning Description"
+    >
+    </nz-alert>
+    <nz-alert nzType="error" nzMessage="Error Text" nzDescription="Error Description Error Description Error Description Error Description">
+    </nz-alert>
+  `,
+                styles: [
+                    `
+      nz-alert {
+        margin-bottom: 16px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Wacb":
+/*!*************************************!*\
+  !*** ./site/doc/app/alert/style.ts ***!
+  \*************************************/
+/*! exports provided: NzDemoAlertStyleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertStyleComponent", function() { return NzDemoAlertStyleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+class NzDemoAlertStyleComponent {
+}
+/** @nocollapse */ NzDemoAlertStyleComponent.ɵfac = function NzDemoAlertStyleComponent_Factory(t) { return new (t || NzDemoAlertStyleComponent)(); };
+/** @nocollapse */ NzDemoAlertStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertStyleComponent, selectors: [["nz-demo-alert-style"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"], ["nzType", "info", "nzMessage", "Info Text"], ["nzType", "warning", "nzMessage", "Warning Text"], ["nzType", "error", "nzMessage", "Error Text"]], template: function NzDemoAlertStyleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertStyleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-alert-style',
+                template: `
+    <nz-alert nzType="success" nzMessage="Success Text"></nz-alert>
+    <nz-alert nzType="info" nzMessage="Info Text"></nz-alert>
+    <nz-alert nzType="warning" nzMessage="Warning Text"></nz-alert>
+    <nz-alert nzType="error" nzMessage="Error Text"></nz-alert>
+  `,
+                styles: [
+                    `
+      nz-alert {
+        margin-bottom: 16px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "Y7Sc":
 /*!****************************************!*\
   !*** ./site/doc/app/alert/closable.ts ***!
   \****************************************/
@@ -95,8 +303,8 @@ class NzDemoAlertBasicComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertClosableComponent", function() { return NzDemoAlertClosableComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
 
 
 
@@ -148,96 +356,7 @@ class NzDemoAlertClosableComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/alert/close-text.ts":
-/*!******************************************!*\
-  !*** ./site/doc/app/alert/close-text.ts ***!
-  \******************************************/
-/*! exports provided: NzDemoAlertCloseTextComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertCloseTextComponent", function() { return NzDemoAlertCloseTextComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-class NzDemoAlertCloseTextComponent {
-}
-/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵfac = function NzDemoAlertCloseTextComponent_Factory(t) { return new (t || NzDemoAlertCloseTextComponent)(); };
-/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertCloseTextComponent, selectors: [["nz-demo-alert-close-text"]], decls: 1, vars: 0, consts: [["nzType", "info", "nzMessage", "Info Text", "nzCloseText", "Close Now"]], template: function NzDemoAlertCloseTextComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertCloseTextComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-alert-close-text',
-                template: `
-    <nz-alert nzType="info" nzMessage="Info Text" nzCloseText="Close Now"></nz-alert>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/description.ts":
-/*!*******************************************!*\
-  !*** ./site/doc/app/alert/description.ts ***!
-  \*******************************************/
-/*! exports provided: NzDemoAlertDescriptionComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertDescriptionComponent", function() { return NzDemoAlertDescriptionComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-class NzDemoAlertDescriptionComponent {
-}
-/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵfac = function NzDemoAlertDescriptionComponent_Factory(t) { return new (t || NzDemoAlertDescriptionComponent)(); };
-/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertDescriptionComponent, selectors: [["nz-demo-alert-description"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text", "nzDescription", "Success Description Success Description Success Description"], ["nzType", "info", "nzMessage", "Info Text", "nzDescription", "Info Description Info Description Info Description Info Description"], ["nzType", "warning", "nzMessage", "Warning Text", "nzDescription", "Warning Description Warning Description Warning Description Warning Description"], ["nzType", "error", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description"]], template: function NzDemoAlertDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertDescriptionComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-alert-description',
-                template: `
-    <nz-alert nzType="success" nzMessage="Success Text" nzDescription="Success Description Success Description Success Description">
-    </nz-alert>
-    <nz-alert nzType="info" nzMessage="Info Text" nzDescription="Info Description Info Description Info Description Info Description">
-    </nz-alert>
-    <nz-alert
-      nzType="warning"
-      nzMessage="Warning Text"
-      nzDescription="Warning Description Warning Description Warning Description Warning Description"
-    >
-    </nz-alert>
-    <nz-alert nzType="error" nzMessage="Error Text" nzDescription="Error Description Error Description Error Description Error Description">
-    </nz-alert>
-  `,
-                styles: [
-                    `
-      nz-alert {
-        margin-bottom: 16px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/en.component.ts":
+/***/ "bSms":
 /*!********************************************!*\
   !*** ./site/doc/app/alert/en.component.ts ***!
   \********************************************/
@@ -247,19 +366,19 @@ class NzDemoAlertDescriptionComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertEnComponent", function() { return NzDemoAlertEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/alert/basic.ts");
-/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./closable */ "./site/doc/app/alert/closable.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./icon */ "./site/doc/app/alert/icon.ts");
-/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./banner */ "./site/doc/app/alert/banner.ts");
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "./site/doc/app/alert/style.ts");
-/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./description */ "./site/doc/app/alert/description.ts");
-/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./close-text */ "./site/doc/app/alert/close-text.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "CrtY");
+/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./closable */ "Y7Sc");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./icon */ "RDbg");
+/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./banner */ "vFeQ");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "Wacb");
+/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./description */ "WZ50");
+/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./close-text */ "sNRv");
 
 
 
@@ -763,227 +882,7 @@ class NzDemoAlertEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/alert/icon.ts":
-/*!************************************!*\
-  !*** ./site/doc/app/alert/icon.ts ***!
-  \************************************/
-/*! exports provided: NzDemoAlertIconComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertIconComponent", function() { return NzDemoAlertIconComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-class NzDemoAlertIconComponent {
-}
-/** @nocollapse */ NzDemoAlertIconComponent.ɵfac = function NzDemoAlertIconComponent_Factory(t) { return new (t || NzDemoAlertIconComponent)(); };
-/** @nocollapse */ NzDemoAlertIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertIconComponent, selectors: [["nz-demo-alert-icon"]], decls: 8, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Tips", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzShowIcon", ""], ["nzType", "success", "nzMessage", "Success Tips", "nzDescription", "Detailed description and advices about successful copywriting.", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzDescription", "Additional description and informations about copywriting.", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzDescription", "This is a warning notice about copywriting.", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzDescription", "This is an error message about copywriting.", "nzShowIcon", ""]], template: function NzDemoAlertIconComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "nz-alert", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "nz-alert", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](6, "nz-alert", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "nz-alert", 7);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertIconComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-alert-icon',
-                template: `
-    <nz-alert nzType="success" nzMessage="Success Tips" nzShowIcon></nz-alert>
-    <nz-alert nzType="info" nzMessage="Informational Notes" nzShowIcon></nz-alert>
-    <nz-alert nzType="warning" nzMessage="Warning" nzShowIcon></nz-alert>
-    <nz-alert nzType="error" nzMessage="Error" nzShowIcon></nz-alert>
-    <nz-alert
-      nzType="success"
-      nzMessage="Success Tips"
-      nzDescription="Detailed description and advices about successful copywriting."
-      nzShowIcon
-    >
-    </nz-alert>
-    <nz-alert
-      nzType="info"
-      nzMessage="Informational Notes"
-      nzDescription="Additional description and informations about copywriting."
-      nzShowIcon
-    >
-    </nz-alert>
-    <nz-alert nzType="warning" nzMessage="Warning" nzDescription="This is a warning notice about copywriting." nzShowIcon> </nz-alert>
-    <nz-alert nzType="error" nzMessage="Error" nzDescription="This is an error message about copywriting." nzShowIcon> </nz-alert>
-  `,
-                styles: [
-                    `
-      nz-alert {
-        margin-bottom: 16px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/index.module.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/alert/index.module.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoAlertModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertModule", function() { return NzDemoAlertModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/alert/module.ts");
-/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./banner */ "./site/doc/app/alert/banner.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "./site/doc/app/alert/basic.ts");
-/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./closable */ "./site/doc/app/alert/closable.ts");
-/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./close-text */ "./site/doc/app/alert/close-text.ts");
-/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./description */ "./site/doc/app/alert/description.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon */ "./site/doc/app/alert/icon.ts");
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "./site/doc/app/alert/style.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/alert/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/alert/en.component.ts");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoAlertModule {
-}
-/** @nocollapse */ NzDemoAlertModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAlertModule });
-/** @nocollapse */ NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoAlertModule, { declarations: [_banner__WEBPACK_IMPORTED_MODULE_4__["NzDemoAlertBannerComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoAlertBasicComponent"],
-        _closable__WEBPACK_IMPORTED_MODULE_6__["NzDemoAlertClosableComponent"],
-        _close_text__WEBPACK_IMPORTED_MODULE_7__["NzDemoAlertCloseTextComponent"],
-        _description__WEBPACK_IMPORTED_MODULE_8__["NzDemoAlertDescriptionComponent"],
-        _icon__WEBPACK_IMPORTED_MODULE_9__["NzDemoAlertIconComponent"],
-        _style__WEBPACK_IMPORTED_MODULE_10__["NzDemoAlertStyleComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_13__["NzAlertModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
-        args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _banner__WEBPACK_IMPORTED_MODULE_4__["NzDemoAlertBannerComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoAlertBasicComponent"],
-                    _closable__WEBPACK_IMPORTED_MODULE_6__["NzDemoAlertClosableComponent"],
-                    _close_text__WEBPACK_IMPORTED_MODULE_7__["NzDemoAlertCloseTextComponent"],
-                    _description__WEBPACK_IMPORTED_MODULE_8__["NzDemoAlertDescriptionComponent"],
-                    _icon__WEBPACK_IMPORTED_MODULE_9__["NzDemoAlertIconComponent"],
-                    _style__WEBPACK_IMPORTED_MODULE_10__["NzDemoAlertStyleComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoAlertZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoAlertEnComponent"],
-                ],
-                entryComponents: []
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/module.ts":
-/*!**************************************!*\
-  !*** ./site/doc/app/alert/module.ts ***!
-  \**************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-const moduleList = [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_0__["NzAlertModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/style.ts":
-/*!*************************************!*\
-  !*** ./site/doc/app/alert/style.ts ***!
-  \*************************************/
-/*! exports provided: NzDemoAlertStyleComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertStyleComponent", function() { return NzDemoAlertStyleComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-alert.js");
-
-
-
-class NzDemoAlertStyleComponent {
-}
-/** @nocollapse */ NzDemoAlertStyleComponent.ɵfac = function NzDemoAlertStyleComponent_Factory(t) { return new (t || NzDemoAlertStyleComponent)(); };
-/** @nocollapse */ NzDemoAlertStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertStyleComponent, selectors: [["nz-demo-alert-style"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"], ["nzType", "info", "nzMessage", "Info Text"], ["nzType", "warning", "nzMessage", "Warning Text"], ["nzType", "error", "nzMessage", "Error Text"]], template: function NzDemoAlertStyleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
-    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 16px;\n      }"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertStyleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-alert-style',
-                template: `
-    <nz-alert nzType="success" nzMessage="Success Text"></nz-alert>
-    <nz-alert nzType="info" nzMessage="Info Text"></nz-alert>
-    <nz-alert nzType="warning" nzMessage="Warning Text"></nz-alert>
-    <nz-alert nzType="error" nzMessage="Error Text"></nz-alert>
-  `,
-                styles: [
-                    `
-      nz-alert {
-        margin-bottom: 16px;
-      }
-    `
-                ]
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/alert/zh.component.ts":
+/***/ "rw2d":
 /*!********************************************!*\
   !*** ./site/doc/app/alert/zh.component.ts ***!
   \********************************************/
@@ -993,19 +892,19 @@ class NzDemoAlertStyleComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertZhComponent", function() { return NzDemoAlertZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "./site/doc/app/alert/basic.ts");
-/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./closable */ "./site/doc/app/alert/closable.ts");
-/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./icon */ "./site/doc/app/alert/icon.ts");
-/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./banner */ "./site/doc/app/alert/banner.ts");
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "./site/doc/app/alert/style.ts");
-/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./description */ "./site/doc/app/alert/description.ts");
-/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./close-text */ "./site/doc/app/alert/close-text.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./basic */ "CrtY");
+/* harmony import */ var _closable__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./closable */ "Y7Sc");
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./icon */ "RDbg");
+/* harmony import */ var _banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./banner */ "vFeQ");
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./style */ "Wacb");
+/* harmony import */ var _description__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./description */ "WZ50");
+/* harmony import */ var _close_text__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./close-text */ "sNRv");
 
 
 
@@ -1516,6 +1415,107 @@ class NzDemoAlertZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "sNRv":
+/*!******************************************!*\
+  !*** ./site/doc/app/alert/close-text.ts ***!
+  \******************************************/
+/*! exports provided: NzDemoAlertCloseTextComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertCloseTextComponent", function() { return NzDemoAlertCloseTextComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+class NzDemoAlertCloseTextComponent {
+}
+/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵfac = function NzDemoAlertCloseTextComponent_Factory(t) { return new (t || NzDemoAlertCloseTextComponent)(); };
+/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertCloseTextComponent, selectors: [["nz-demo-alert-close-text"]], decls: 1, vars: 0, consts: [["nzType", "info", "nzMessage", "Info Text", "nzCloseText", "Close Now"]], template: function NzDemoAlertCloseTextComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertCloseTextComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-alert-close-text',
+                template: `
+    <nz-alert nzType="info" nzMessage="Info Text" nzCloseText="Close Now"></nz-alert>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "vFeQ":
+/*!**************************************!*\
+  !*** ./site/doc/app/alert/banner.ts ***!
+  \**************************************/
+/*! exports provided: NzDemoAlertBannerComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoAlertBannerComponent", function() { return NzDemoAlertBannerComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+
+
+class NzDemoAlertBannerComponent {
+}
+/** @nocollapse */ NzDemoAlertBannerComponent.ɵfac = function NzDemoAlertBannerComponent_Factory(t) { return new (t || NzDemoAlertBannerComponent)(); };
+/** @nocollapse */ NzDemoAlertBannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBannerComponent, selectors: [["nz-demo-alert-banner"]], decls: 4, vars: 1, consts: [["nzBanner", "", "nzMessage", "Warning text"], ["nzBanner", "", "nzMessage", "Very long warning text warning text text text text text text text", "nzCloseable", ""], ["nzBanner", "", "nzMessage", "Warning text without icon", 3, "nzShowIcon"], ["nzBanner", "", "nzType", "error", "nzMessage", "Error text"]], template: function NzDemoAlertBannerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-alert", 3);
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzShowIcon", false);
+    } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], styles: ["nz-alert[_ngcontent-%COMP%] {\n        margin-bottom: 12px;\n      }"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertBannerComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-alert-banner',
+                template: `
+    <nz-alert nzBanner nzMessage="Warning text"></nz-alert>
+    <nz-alert nzBanner nzMessage="Very long warning text warning text text text text text text text" nzCloseable></nz-alert>
+    <nz-alert nzBanner nzMessage="Warning text without icon" [nzShowIcon]="false"></nz-alert>
+    <nz-alert nzBanner nzType="error" nzMessage="Error text"></nz-alert>
+  `,
+                styles: [
+                    `
+      nz-alert {
+        margin-bottom: 12px;
+      }
+    `
+                ]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "yyyn":
+/*!**************************************!*\
+  !*** ./site/doc/app/alert/module.ts ***!
+  \**************************************/
+/*! exports provided: moduleList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/alert */ "TcjH");
+
+const moduleList = [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_0__["NzAlertModule"]];
 
 
 /***/ })

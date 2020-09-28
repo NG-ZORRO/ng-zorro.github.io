@@ -1,7 +1,7 @@
 exports.ids = ["descriptions-index-module~drawer-index-module~page-header-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-descriptions.js":
+/***/ "iOzl":
 /*!*********************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-descriptions.js ***!
   \*********************************************************************/
@@ -13,18 +13,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDescriptionsComponent", function() { return NzDescriptionsComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDescriptionsItemComponent", function() { return NzDescriptionsItemComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDescriptionsModule", function() { return NzDescriptionsModule; });
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/platform.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.js");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-util.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-config.js");
-/* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-logger.js");
-/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-services.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
+/* harmony import */ var ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/logger */ "RuSR");
+/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
 
 
 
@@ -38,9 +38,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * Generated from: descriptions-item.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -315,20 +314,16 @@ class NzDescriptionsItemComponent {
         this.nzTitle = '';
         this.inputChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
     }
-    /**
-     * @return {?}
-     */
     ngOnChanges() {
         this.inputChange$.next();
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.inputChange$.complete();
     }
 }
+/** @nocollapse */
 NzDescriptionsItemComponent.ɵfac = function NzDescriptionsItemComponent_Factory(t) { return new (t || NzDescriptionsItemComponent)(); };
+/** @nocollapse */
 NzDescriptionsItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzDescriptionsItemComponent, selectors: [["nz-descriptions-item"]], viewQuery: function NzDescriptionsItemComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstaticViewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], true);
     } if (rf & 2) {
@@ -347,16 +342,12 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzDescriptionsItemComponent.prototype, "nzSpan", void 0);
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: descriptions.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
-const NZ_CONFIG_COMPONENT_NAME = 'descriptions';
-/** @type {?} */
+const NZ_CONFIG_MODULE_NAME = 'descriptions';
 const defaultColumnMap = {
     xxl: 3,
     xl: 3,
@@ -366,15 +357,11 @@ const defaultColumnMap = {
     xs: 1
 };
 class NzDescriptionsComponent {
-    /**
-     * @param {?} nzConfigService
-     * @param {?} cdr
-     * @param {?} breakpointService
-     */
     constructor(nzConfigService, cdr, breakpointService) {
         this.nzConfigService = nzConfigService;
         this.cdr = cdr;
         this.breakpointService = breakpointService;
+        this._nzModuleName = NZ_CONFIG_MODULE_NAME;
         this.nzBordered = false;
         this.nzLayout = 'horizontal';
         this.nzColumn = defaultColumnMap;
@@ -386,81 +373,43 @@ class NzDescriptionsComponent {
         this.breakpoint = ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__["NzBreakpointEnum"].md;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         if (changes.nzColumn) {
             this.prepareMatrix();
         }
     }
-    /**
-     * @return {?}
-     */
     ngAfterContentInit() {
-        /** @type {?} */
         const contentChange$ = this.items.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["startWith"])(this.items), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$));
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(contentChange$, contentChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])((/**
-         * @return {?}
-         */
-        () => Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(...this.items.map((/**
-         * @param {?} i
-         * @return {?}
-         */
-        i => i.inputChange$))).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["auditTime"])(16))))), this.breakpointService.subscribe(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__["gridResponsiveMap"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["tap"])((/**
-         * @param {?} bp
-         * @return {?}
-         */
-        bp => (this.breakpoint = bp)))))
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(contentChange$, contentChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(...this.items.map(i => i.inputChange$)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["auditTime"])(16)))), this.breakpointService.subscribe(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__["gridResponsiveMap"]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["tap"])(bp => (this.breakpoint = bp))))
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$))
-            .subscribe((/**
-         * @return {?}
-         */
-        () => {
+            .subscribe(() => {
             this.prepareMatrix();
             this.cdr.markForCheck();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
     /**
      * Prepare the render matrix according to description items' spans.
-     * @private
-     * @return {?}
      */
     prepareMatrix() {
         if (!this.items) {
             return;
         }
-        /** @type {?} */
         let currentRow = [];
-        /** @type {?} */
         let width = 0;
-        /** @type {?} */
         const column = (this.realColumn = this.getColumn());
-        /** @type {?} */
         const items = this.items.toArray();
-        /** @type {?} */
         const length = items.length;
-        /** @type {?} */
         const matrix = [];
-        /** @type {?} */
-        const flushRow = (/**
-         * @return {?}
-         */
-        () => {
+        const flushRow = () => {
             matrix.push(currentRow);
             currentRow = [];
             width = 0;
-        });
+        };
         for (let i = 0; i < length; i++) {
-            /** @type {?} */
             const item = items[i];
             const { nzTitle: title, content, nzSpan: span } = item;
             width += span;
@@ -484,10 +433,6 @@ class NzDescriptionsComponent {
         }
         this.itemMatrix = matrix;
     }
-    /**
-     * @private
-     * @return {?}
-     */
     getColumn() {
         if (typeof this.nzColumn !== 'number') {
             return this.nzColumn[this.breakpoint];
@@ -495,7 +440,9 @@ class NzDescriptionsComponent {
         return this.nzColumn;
     }
 }
+/** @nocollapse */
 NzDescriptionsComponent.ɵfac = function NzDescriptionsComponent_Factory(t) { return new (t || NzDescriptionsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_9__["NzBreakpointService"])); };
+/** @nocollapse */
 NzDescriptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzDescriptionsComponent, selectors: [["nz-descriptions"]], contentQueries: function NzDescriptionsComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzDescriptionsItemComponent, false);
     } if (rf & 2) {
@@ -520,7 +467,6 @@ NzDescriptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzLayout === "vertical");
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__["NzStringTemplateOutletDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzDescriptionsComponent.ctorParameters = () => [
     { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["NzConfigService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
@@ -536,19 +482,21 @@ NzDescriptionsComponent.propDecorators = {
     nzColon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(), Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzDescriptionsComponent.prototype, "nzBordered", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzDescriptionsComponent.prototype, "nzColumn", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String)
 ], NzDescriptionsComponent.prototype, "nzSize", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(NZ_CONFIG_COMPONENT_NAME), Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_7__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzDescriptionsComponent.prototype, "nzColon", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzDescriptionsItemComponent, [{
@@ -694,20 +642,18 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"],
             args: [NzDescriptionsItemComponent]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: descriptions.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzDescriptionsModule {
 }
+/** @nocollapse */
 NzDescriptionsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzDescriptionsModule });
+/** @nocollapse */
 NzDescriptionsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzDescriptionsModule_Factory(t) { return new (t || NzDescriptionsModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__["NzOutletModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzDescriptionsModule, { declarations: function () { return [NzDescriptionsComponent,
-        NzDescriptionsItemComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__["NzOutletModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzDescriptionsComponent,
-        NzDescriptionsItemComponent]; } }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzDescriptionsModule, { declarations: function () { return [NzDescriptionsComponent, NzDescriptionsItemComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_3__["NzOutletModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzDescriptionsComponent, NzDescriptionsItemComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzDescriptionsModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
@@ -718,30 +664,17 @@ NzDescriptionsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdef
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: typings.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/**
- * @record
- */
-function NzDescriptionsItemRenderProps() { }
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-
-/**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-descriptions.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 

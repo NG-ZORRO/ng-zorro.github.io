@@ -1,7 +1,74 @@
 exports.ids = ["timeline-index-module"];
 exports.modules = {
 
-/***/ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js":
+/***/ "AM8p":
+/*!*****************************************!*\
+  !*** ./site/doc/app/timeline/custom.ts ***!
+  \*****************************************/
+/*! exports provided: NzDemoTimelineCustomComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineCustomComponent", function() { return NzDemoTimelineCustomComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+
+
+
+
+
+function NzDemoTimelineCustomComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 2);
+} }
+class NzDemoTimelineCustomComponent {
+}
+/** @nocollapse */ NzDemoTimelineCustomComponent.ɵfac = function NzDemoTimelineCustomComponent_Factory(t) { return new (t || NzDemoTimelineCustomComponent)(); };
+/** @nocollapse */ NzDemoTimelineCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineCustomComponent, selectors: [["nz-demo-timeline-custom"]], decls: 11, vars: 1, consts: [["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineCustomComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoTimelineCustomComponent_ng_template_9_Template, 1, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
+    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineCustomComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-timeline-custom',
+                template: `
+    <nz-timeline>
+      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
+      <nz-timeline-item nzColor="red" [nzDot]="dotTemplate">Technical testing 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
+    </nz-timeline>
+    <ng-template #dotTemplate>
+      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    </ng-template>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "D1JB":
 /*!*****************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js ***!
   \*****************************************************************/
@@ -14,13 +81,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTimelineItemComponent", function() { return NzTimelineItemComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTimelineModule", function() { return NzTimelineModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TimelineService", function() { return TimelineService; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/platform */ "./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/platform.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-outlet.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -30,9 +97,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * @fileoverview added by tsickle
- * Generated from: timeline.service.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 
@@ -144,57 +210,34 @@ class TimelineService {
     constructor() {
         this.check$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["ReplaySubject"](1);
     }
-    /**
-     * @return {?}
-     */
     markForCheck() {
         this.check$.next();
     }
 }
+/** @nocollapse */
 TimelineService.ɵfac = function TimelineService_Factory(t) { return new (t || TimelineService)(); };
+/** @nocollapse */
 TimelineService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: TimelineService, factory: TimelineService.ɵfac });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimelineService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
     }], function () { return []; }, null); })();
-if (false) {}
 
-/**
- * @fileoverview added by tsickle
- * Generated from: typings.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 /**
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-/** @type {?} */
-const TimelineModes = (/** @type {?} */ (['left', 'alternate', 'right', 'custom']));
-/** @type {?} */
-const TimelinePositions = (/** @type {?} */ (['left', 'right']));
-/** @type {?} */
-const TimelineTimeDefaultColors = (/** @type {?} */ (['red', 'blue', 'green', 'grey', 'gray']));
+const TimelineModes = ['left', 'alternate', 'right', 'custom'];
+const TimelinePositions = ['left', 'right'];
+const TimelineTimeDefaultColors = ['red', 'blue', 'green', 'grey', 'gray'];
 
 /**
- * @fileoverview added by tsickle
- * Generated from: timeline-item.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-/**
- * @param {?=} color
- * @return {?}
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 function isDefaultColor(color) {
-    return TimelineTimeDefaultColors.findIndex((/**
-     * @param {?} i
-     * @return {?}
-     */
-    i => i === color)) !== -1;
+    return TimelineTimeDefaultColors.findIndex(i => i === color) !== -1;
 }
 class NzTimelineItemComponent {
-    /**
-     * @param {?} cdr
-     * @param {?} timelineService
-     */
     constructor(cdr, timelineService) {
         this.cdr = cdr;
         this.timelineService = timelineService;
@@ -202,31 +245,22 @@ class NzTimelineItemComponent {
         this.isLast = false;
         this.borderColor = null;
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         this.timelineService.markForCheck();
         if (changes.nzColor) {
             this.updateCustomColor();
         }
     }
-    /**
-     * @return {?}
-     */
     detectChanges() {
         this.cdr.detectChanges();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     updateCustomColor() {
         this.borderColor = isDefaultColor(this.nzColor) ? null : this.nzColor;
     }
 }
+/** @nocollapse */
 NzTimelineItemComponent.ɵfac = function NzTimelineItemComponent_Factory(t) { return new (t || NzTimelineItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
+/** @nocollapse */
 NzTimelineItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineItemComponent, selectors: [["nz-timeline-item"], ["", "nz-timeline-item", ""]], viewQuery: function NzTimelineItemComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
@@ -236,7 +270,6 @@ NzTimelineItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzTimelineItemComponent_ng_template_0_Template, 6, 19, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzTimelineItemComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
     { type: TimelineService }
@@ -292,18 +325,12 @@ NzTimelineItemComponent.propDecorators = {
         }], nzDot: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
-if (false) {}
 
 /**
- * @fileoverview added by tsickle
- * Generated from: timeline.component.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTimelineComponent {
-    /**
-     * @param {?} cdr
-     * @param {?} timelineService
-     */
     constructor(cdr, timelineService) {
         this.cdr = cdr;
         this.timelineService = timelineService;
@@ -313,10 +340,6 @@ class NzTimelineComponent {
         this.timelineItems = [];
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
     }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
     ngOnChanges(changes) {
         const { nzMode, nzReverse, nzPending } = changes;
         if (simpleChangeActivated(nzMode) || simpleChangeActivated(nzReverse)) {
@@ -326,60 +349,37 @@ class NzTimelineComponent {
             this.isPendingBoolean = nzPending.currentValue === true;
         }
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
-        this.timelineService.check$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        this.timelineService.check$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.cdr.markForCheck();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngAfterContentInit() {
         this.updateChildren();
-        this.listOfItems.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe((/**
-         * @return {?}
-         */
-        () => {
+        this.listOfItems.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.updateChildren();
-        }));
+        });
     }
-    /**
-     * @return {?}
-     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
-    /**
-     * @private
-     * @return {?}
-     */
     updateChildren() {
         if (this.listOfItems && this.listOfItems.length) {
-            /** @type {?} */
             const length = this.listOfItems.length;
-            this.listOfItems.forEach((/**
-             * @param {?} item
-             * @param {?} index
-             * @return {?}
-             */
-            (item, index) => {
+            this.listOfItems.forEach((item, index) => {
                 item.isLast = !this.nzReverse ? index === length - 1 : index === 0;
                 item.position = getInferredTimelineItemPosition(index, this.nzMode);
                 item.detectChanges();
-            }));
+            });
             this.timelineItems = this.nzReverse ? this.listOfItems.toArray().reverse() : this.listOfItems.toArray();
         }
         this.cdr.markForCheck();
     }
 }
+/** @nocollapse */
 NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
+/** @nocollapse */
 NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineComponent, selectors: [["nz-timeline"]], contentQueries: function NzTimelineComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzTimelineItemComponent, false);
     } if (rf & 2) {
@@ -403,7 +403,6 @@ NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.nzReverse);
     } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgTemplateOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
-/** @nocollapse */
 NzTimelineComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
     { type: TimelineService }
@@ -472,19 +471,9 @@ NzTimelineComponent.propDecorators = {
         }], nzPendingDot: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
-if (false) {}
-/**
- * @param {?=} simpleChange
- * @return {?}
- */
 function simpleChangeActivated(simpleChange) {
     return !!(simpleChange && (simpleChange.previousValue !== simpleChange.currentValue || simpleChange.isFirstChange()));
 }
-/**
- * @param {?} index
- * @param {?} mode
- * @return {?}
- */
 function getInferredTimelineItemPosition(index, mode) {
     return mode === 'custom'
         ? undefined
@@ -498,17 +487,16 @@ function getInferredTimelineItemPosition(index, mode) {
 }
 
 /**
- * @fileoverview added by tsickle
- * Generated from: timeline.module.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTimelineModule {
 }
+/** @nocollapse */
 NzTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzTimelineModule });
+/** @nocollapse */
 NzTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTimelineModule_Factory(t) { return new (t || NzTimelineModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTimelineModule, { declarations: function () { return [NzTimelineItemComponent,
-        NzTimelineComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzTimelineItemComponent,
-        NzTimelineComponent]; } }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTimelineModule, { declarations: function () { return [NzTimelineItemComponent, NzTimelineComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzTimelineItemComponent, NzTimelineComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzTimelineModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -519,15 +507,12 @@ NzTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
     }], null, null); })();
 
 /**
- * @fileoverview added by tsickle
- * Generated from: public-api.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
 /**
- * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-timeline.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 
@@ -536,314 +521,121 @@ NzTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineI
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/alternate.ts":
-/*!********************************************!*\
-  !*** ./site/doc/app/timeline/alternate.ts ***!
-  \********************************************/
-/*! exports provided: NzDemoTimelineAlternateComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineAlternateComponent", function() { return NzDemoTimelineAlternateComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-
-
-
-
-
-function NzDemoTimelineAlternateComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 5);
-} }
-class NzDemoTimelineAlternateComponent {
-}
-/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵfac = function NzDemoTimelineAlternateComponent_Factory(t) { return new (t || NzDemoTimelineAlternateComponent)(); };
-/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineAlternateComponent, selectors: [["nz-demo-timeline-alternate"]], decls: 15, vars: 2, consts: [["nzMode", "alternate"], ["nzColor", "green"], [3, "nzDot"], ["nzColor", "red"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineAlternateComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "nz-timeline-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Technical testing 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, NzDemoTimelineAlternateComponent_ng_template_13_Template, 1, 0, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
-    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineAlternateComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-timeline-alternate',
-                template: `
-    <nz-timeline nzMode="alternate">
-      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item nzColor="green">Solve initial network problems 2015-09-01</nz-timeline-item>
-      <nz-timeline-item [nzDot]="dotTemplate"
-        >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</nz-timeline-item
-      >
-      <nz-timeline-item nzColor="red">Network problems being solved 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item [nzDot]="dotTemplate">Technical testing 2015-09-01</nz-timeline-item>
-    </nz-timeline>
-    <ng-template #dotTemplate>
-      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
-    </ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/timeline/basic.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/timeline/basic.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoTimelineBasicComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineBasicComponent", function() { return NzDemoTimelineBasicComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-
-
-
-class NzDemoTimelineBasicComponent {
-}
-/** @nocollapse */ NzDemoTimelineBasicComponent.ɵfac = function NzDemoTimelineBasicComponent_Factory(t) { return new (t || NzDemoTimelineBasicComponent)(); };
-/** @nocollapse */ NzDemoTimelineBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineBasicComponent, selectors: [["nz-demo-timeline-basic"]], decls: 9, vars: 0, template: function NzDemoTimelineBasicComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineBasicComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-timeline-basic',
-                template: `
-    <nz-timeline>
-      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Technical testing 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
-    </nz-timeline>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/timeline/color.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/timeline/color.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoTimelineColorComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineColorComponent", function() { return NzDemoTimelineColorComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-
-
-
-class NzDemoTimelineColorComponent {
-}
-/** @nocollapse */ NzDemoTimelineColorComponent.ɵfac = function NzDemoTimelineColorComponent_Factory(t) { return new (t || NzDemoTimelineColorComponent)(); };
-/** @nocollapse */ NzDemoTimelineColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineColorComponent, selectors: [["nz-demo-timeline-color"]], decls: 33, vars: 0, consts: [["nzColor", "green"], ["nzColor", "red"], ["nzColor", "gray"]], template: function NzDemoTimelineColorComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Solve initial network problems 1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Solve initial network problems 2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Solve initial network problems 3 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Technical testing 1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Technical testing 2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Technical testing 3 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "nz-timeline-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Technical testing 1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Technical testing 2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Technical testing 3 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "nz-timeline-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Technical testing 1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Technical testing 2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Technical testing 3 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineColorComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-timeline-color',
-                template: `
-    <nz-timeline>
-      <nz-timeline-item nzColor="green">Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item nzColor="green">Solve initial network problems 2015-09-01</nz-timeline-item>
-      <nz-timeline-item nzColor="red">
-        <p>Solve initial network problems 1</p>
-        <p>Solve initial network problems 2</p>
-        <p>Solve initial network problems 3 2015-09-01</p>
-      </nz-timeline-item>
-      <nz-timeline-item>
-        <p>Technical testing 1</p>
-        <p>Technical testing 2</p>
-        <p>Technical testing 3 2015-09-01</p>
-      </nz-timeline-item>
-      <nz-timeline-item nzColor="gray">
-        <p>Technical testing 1</p>
-        <p>Technical testing 2</p>
-        <p>Technical testing 3 2015-09-01</p>
-      </nz-timeline-item>
-      <nz-timeline-item nzColor="gray">
-        <p>Technical testing 1</p>
-        <p>Technical testing 2</p>
-        <p>Technical testing 3 2015-09-01</p>
-      </nz-timeline-item>
-    </nz-timeline>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/timeline/custom.ts":
+/***/ "DDE6":
 /*!*****************************************!*\
-  !*** ./site/doc/app/timeline/custom.ts ***!
+  !*** ./site/doc/app/timeline/module.ts ***!
   \*****************************************/
-/*! exports provided: NzDemoTimelineCustomComponent */
+/*! exports provided: moduleList */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineCustomComponent", function() { return NzDemoTimelineCustomComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+
+
+
+const moduleList = [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"]];
+
+
+/***/ }),
+
+/***/ "Jvhj":
+/*!***********************************************!*\
+  !*** ./site/doc/app/timeline/index.module.ts ***!
+  \***********************************************/
+/*! exports provided: NzDemoTimelineModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineModule", function() { return NzDemoTimelineModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "WGB2");
+/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "DDE6");
+/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./alternate */ "j8zO");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "ttmA");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./color */ "LuYb");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./custom */ "AM8p");
+/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pending */ "OWVj");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./position */ "Xqhc");
+/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./right */ "ybf5");
+/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "fdJo");
+/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "Ky3c");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
 
 
 
 
 
-function NzDemoTimelineCustomComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 2);
-} }
-class NzDemoTimelineCustomComponent {
+
+
+
+
+
+
+
+
+
+
+
+
+
+class NzDemoTimelineModule {
 }
-/** @nocollapse */ NzDemoTimelineCustomComponent.ɵfac = function NzDemoTimelineCustomComponent_Factory(t) { return new (t || NzDemoTimelineCustomComponent)(); };
-/** @nocollapse */ NzDemoTimelineCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineCustomComponent, selectors: [["nz-demo-timeline-custom"]], decls: 11, vars: 1, consts: [["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineCustomComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoTimelineCustomComponent_ng_template_9_Template, 1, 0, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
-    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineCustomComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+/** @nocollapse */ NzDemoTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimelineModule });
+/** @nocollapse */ NzDemoTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimelineModule_Factory(t) { return new (t || NzDemoTimelineModule)(); }, imports: [[
+            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"] },
+                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"] }
+            ])
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoTimelineModule, { declarations: [_alternate__WEBPACK_IMPORTED_MODULE_4__["NzDemoTimelineAlternateComponent"],
+        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoTimelineBasicComponent"],
+        _color__WEBPACK_IMPORTED_MODULE_6__["NzDemoTimelineColorComponent"],
+        _custom__WEBPACK_IMPORTED_MODULE_7__["NzDemoTimelineCustomComponent"],
+        _pending__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelinePendingComponent"],
+        _position__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePositionComponent"],
+        _right__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineRightComponent"],
+        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"],
+        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_14__["NzTimelineModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_15__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
-                selector: 'nz-demo-timeline-custom',
-                template: `
-    <nz-timeline>
-      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
-      <nz-timeline-item nzColor="red" [nzDot]="dotTemplate">Technical testing 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
-    </nz-timeline>
-    <ng-template #dotTemplate>
-      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
-    </ng-template>
-  `
+                imports: [
+                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
+                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
+                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
+                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"] },
+                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"] }
+                    ])
+                ],
+                declarations: [
+                    _alternate__WEBPACK_IMPORTED_MODULE_4__["NzDemoTimelineAlternateComponent"],
+                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoTimelineBasicComponent"],
+                    _color__WEBPACK_IMPORTED_MODULE_6__["NzDemoTimelineColorComponent"],
+                    _custom__WEBPACK_IMPORTED_MODULE_7__["NzDemoTimelineCustomComponent"],
+                    _pending__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelinePendingComponent"],
+                    _position__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePositionComponent"],
+                    _right__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineRightComponent"],
+                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"],
+                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"],
+                ],
+                entryComponents: []
             }]
     }], null, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/en.component.ts":
+/***/ "Ky3c":
 /*!***********************************************!*\
   !*** ./site/doc/app/timeline/en.component.ts ***!
   \***********************************************/
@@ -853,21 +645,21 @@ class NzDemoTimelineCustomComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineEnComponent", function() { return NzDemoTimelineEnComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/timeline/basic.ts");
-/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pending */ "./site/doc/app/timeline/pending.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom */ "./site/doc/app/timeline/custom.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./position */ "./site/doc/app/timeline/position.ts");
-/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./color */ "./site/doc/app/timeline/color.ts");
-/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./alternate */ "./site/doc/app/timeline/alternate.ts");
-/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./right */ "./site/doc/app/timeline/right.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "ttmA");
+/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pending */ "OWVj");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom */ "AM8p");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./position */ "Xqhc");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./color */ "LuYb");
+/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./alternate */ "j8zO");
+/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./right */ "ybf5");
 
 
 
@@ -1485,121 +1277,115 @@ class NzDemoTimelineEnComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/index.module.ts":
-/*!***********************************************!*\
-  !*** ./site/doc/app/timeline/index.module.ts ***!
-  \***********************************************/
-/*! exports provided: NzDemoTimelineModule */
+/***/ "LuYb":
+/*!****************************************!*\
+  !*** ./site/doc/app/timeline/color.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoTimelineColorComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineModule", function() { return NzDemoTimelineModule; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _share_share_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../share/share.module */ "./site/doc/app/share/share.module.ts");
-/* harmony import */ var _module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./module */ "./site/doc/app/timeline/module.ts");
-/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./alternate */ "./site/doc/app/timeline/alternate.ts");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./basic */ "./site/doc/app/timeline/basic.ts");
-/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./color */ "./site/doc/app/timeline/color.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./custom */ "./site/doc/app/timeline/custom.ts");
-/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pending */ "./site/doc/app/timeline/pending.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./position */ "./site/doc/app/timeline/position.ts");
-/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./right */ "./site/doc/app/timeline/right.ts");
-/* harmony import */ var _zh_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./zh.component */ "./site/doc/app/timeline/zh.component.ts");
-/* harmony import */ var _en_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./en.component */ "./site/doc/app/timeline/en.component.ts");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineColorComponent", function() { return NzDemoTimelineColorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class NzDemoTimelineModule {
+class NzDemoTimelineColorComponent {
 }
-/** @nocollapse */ NzDemoTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimelineModule });
-/** @nocollapse */ NzDemoTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimelineModule_Factory(t) { return new (t || NzDemoTimelineModule)(); }, imports: [[
-            _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-            ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-            _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"] },
-                { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"] }
-            ])
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzDemoTimelineModule, { declarations: [_alternate__WEBPACK_IMPORTED_MODULE_4__["NzDemoTimelineAlternateComponent"],
-        _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoTimelineBasicComponent"],
-        _color__WEBPACK_IMPORTED_MODULE_6__["NzDemoTimelineColorComponent"],
-        _custom__WEBPACK_IMPORTED_MODULE_7__["NzDemoTimelineCustomComponent"],
-        _pending__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelinePendingComponent"],
-        _position__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePositionComponent"],
-        _right__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineRightComponent"],
-        _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"],
-        _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"]], imports: [_share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_14__["NzTimelineModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_15__["NzButtonModule"], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+/** @nocollapse */ NzDemoTimelineColorComponent.ɵfac = function NzDemoTimelineColorComponent_Factory(t) { return new (t || NzDemoTimelineColorComponent)(); };
+/** @nocollapse */ NzDemoTimelineColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineColorComponent, selectors: [["nz-demo-timeline-color"]], decls: 33, vars: 0, consts: [["nzColor", "green"], ["nzColor", "red"], ["nzColor", "gray"]], template: function NzDemoTimelineColorComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Solve initial network problems 1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Solve initial network problems 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Solve initial network problems 3 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Technical testing 1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Technical testing 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Technical testing 3 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "nz-timeline-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Technical testing 1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Technical testing 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Technical testing 3 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "nz-timeline-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Technical testing 1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Technical testing 2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Technical testing 3 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineColorComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                imports: [
-                    _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
-                    ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
-                    _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
-                        { path: 'en', component: _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"] },
-                        { path: 'zh', component: _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"] }
-                    ])
-                ],
-                declarations: [
-                    _alternate__WEBPACK_IMPORTED_MODULE_4__["NzDemoTimelineAlternateComponent"],
-                    _basic__WEBPACK_IMPORTED_MODULE_5__["NzDemoTimelineBasicComponent"],
-                    _color__WEBPACK_IMPORTED_MODULE_6__["NzDemoTimelineColorComponent"],
-                    _custom__WEBPACK_IMPORTED_MODULE_7__["NzDemoTimelineCustomComponent"],
-                    _pending__WEBPACK_IMPORTED_MODULE_8__["NzDemoTimelinePendingComponent"],
-                    _position__WEBPACK_IMPORTED_MODULE_9__["NzDemoTimelinePositionComponent"],
-                    _right__WEBPACK_IMPORTED_MODULE_10__["NzDemoTimelineRightComponent"],
-                    _zh_component__WEBPACK_IMPORTED_MODULE_11__["NzDemoTimelineZhComponent"],
-                    _en_component__WEBPACK_IMPORTED_MODULE_12__["NzDemoTimelineEnComponent"],
-                ],
-                entryComponents: []
+                selector: 'nz-demo-timeline-color',
+                template: `
+    <nz-timeline>
+      <nz-timeline-item nzColor="green">Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item nzColor="green">Solve initial network problems 2015-09-01</nz-timeline-item>
+      <nz-timeline-item nzColor="red">
+        <p>Solve initial network problems 1</p>
+        <p>Solve initial network problems 2</p>
+        <p>Solve initial network problems 3 2015-09-01</p>
+      </nz-timeline-item>
+      <nz-timeline-item>
+        <p>Technical testing 1</p>
+        <p>Technical testing 2</p>
+        <p>Technical testing 3 2015-09-01</p>
+      </nz-timeline-item>
+      <nz-timeline-item nzColor="gray">
+        <p>Technical testing 1</p>
+        <p>Technical testing 2</p>
+        <p>Technical testing 3 2015-09-01</p>
+      </nz-timeline-item>
+      <nz-timeline-item nzColor="gray">
+        <p>Technical testing 1</p>
+        <p>Technical testing 2</p>
+        <p>Technical testing 3 2015-09-01</p>
+      </nz-timeline-item>
+    </nz-timeline>
+  `
             }]
     }], null, null); })();
 
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/module.ts":
-/*!*****************************************!*\
-  !*** ./site/doc/app/timeline/module.ts ***!
-  \*****************************************/
-/*! exports provided: moduleList */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "moduleList", function() { return moduleList; });
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-
-
-
-const moduleList = [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModule"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineModule"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__["NzButtonModule"]];
-
-
-/***/ }),
-
-/***/ "./site/doc/app/timeline/pending.ts":
+/***/ "OWVj":
 /*!******************************************!*\
   !*** ./site/doc/app/timeline/pending.ts ***!
   \******************************************/
@@ -1609,11 +1395,11 @@ const moduleList = [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_0__["NzIconModul
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelinePendingComponent", function() { return NzDemoTimelinePendingComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-button.js");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-wave.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
 
 
@@ -1666,7 +1452,7 @@ class NzDemoTimelinePendingComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/position.ts":
+/***/ "Xqhc":
 /*!*******************************************!*\
   !*** ./site/doc/app/timeline/position.ts ***!
   \*******************************************/
@@ -1676,8 +1462,8 @@ class NzDemoTimelinePendingComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelinePositionComponent", function() { return NzDemoTimelinePositionComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
 
 
 
@@ -1735,74 +1521,7 @@ class NzDemoTimelinePositionComponent {
 
 /***/ }),
 
-/***/ "./site/doc/app/timeline/right.ts":
-/*!****************************************!*\
-  !*** ./site/doc/app/timeline/right.ts ***!
-  \****************************************/
-/*! exports provided: NzDemoTimelineRightComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineRightComponent", function() { return NzDemoTimelineRightComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-timeline.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-
-
-
-
-
-function NzDemoTimelineRightComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 3);
-} }
-class NzDemoTimelineRightComponent {
-}
-/** @nocollapse */ NzDemoTimelineRightComponent.ɵfac = function NzDemoTimelineRightComponent_Factory(t) { return new (t || NzDemoTimelineRightComponent)(); };
-/** @nocollapse */ NzDemoTimelineRightComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineRightComponent, selectors: [["nz-demo-timeline-right"]], decls: 11, vars: 1, consts: [["nzMode", "right"], ["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineRightComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoTimelineRightComponent_ng_template_9_Template, 1, 0, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } if (rf & 2) {
-        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
-    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineRightComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'nz-demo-timeline-right',
-                template: `
-    <nz-timeline nzMode="right">
-      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
-      <nz-timeline-item [nzDot]="dotTemplate" nzColor="red">Technical testing 2015-09-01</nz-timeline-item>
-      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
-    </nz-timeline>
-    <ng-template #dotTemplate>
-      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
-    </ng-template>
-  `
-            }]
-    }], null, null); })();
-
-
-/***/ }),
-
-/***/ "./site/doc/app/timeline/zh.component.ts":
+/***/ "fdJo":
 /*!***********************************************!*\
   !*** ./site/doc/app/timeline/zh.component.ts ***!
   \***********************************************/
@@ -1812,21 +1531,21 @@ class NzDemoTimelineRightComponent {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineZhComponent", function() { return NzDemoTimelineZhComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "./site/doc/app/share/codebox/codebox.component.ts");
-/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-affix.js");
-/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-anchor.js");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-icon.js");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-core-transition-patch.js");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-tooltip.js");
-/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-grid.js");
-/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "./site/doc/app/timeline/basic.ts");
-/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pending */ "./site/doc/app/timeline/pending.ts");
-/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom */ "./site/doc/app/timeline/custom.ts");
-/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./position */ "./site/doc/app/timeline/position.ts");
-/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./color */ "./site/doc/app/timeline/color.ts");
-/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./alternate */ "./site/doc/app/timeline/alternate.ts");
-/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./right */ "./site/doc/app/timeline/right.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../share/codebox/codebox.component */ "rKiv");
+/* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
+/* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
+/* harmony import */ var _basic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./basic */ "ttmA");
+/* harmony import */ var _pending__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pending */ "OWVj");
+/* harmony import */ var _custom__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./custom */ "AM8p");
+/* harmony import */ var _position__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./position */ "Xqhc");
+/* harmony import */ var _color__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./color */ "LuYb");
+/* harmony import */ var _alternate__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./alternate */ "j8zO");
+/* harmony import */ var _right__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./right */ "ybf5");
 
 
 
@@ -2437,6 +2156,205 @@ class NzDemoTimelineZhComponent {
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChildren"],
             args: [_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"]]
         }] }); })();
+
+
+/***/ }),
+
+/***/ "j8zO":
+/*!********************************************!*\
+  !*** ./site/doc/app/timeline/alternate.ts ***!
+  \********************************************/
+/*! exports provided: NzDemoTimelineAlternateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineAlternateComponent", function() { return NzDemoTimelineAlternateComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+
+
+
+
+
+function NzDemoTimelineAlternateComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 5);
+} }
+class NzDemoTimelineAlternateComponent {
+}
+/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵfac = function NzDemoTimelineAlternateComponent_Factory(t) { return new (t || NzDemoTimelineAlternateComponent)(); };
+/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineAlternateComponent, selectors: [["nz-demo-timeline-alternate"]], decls: 15, vars: 2, consts: [["nzMode", "alternate"], ["nzColor", "green"], [3, "nzDot"], ["nzColor", "red"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineAlternateComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "nz-timeline-item", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Technical testing 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](13, NzDemoTimelineAlternateComponent_ng_template_13_Template, 1, 0, "ng-template", null, 4, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
+    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineAlternateComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-timeline-alternate',
+                template: `
+    <nz-timeline nzMode="alternate">
+      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item nzColor="green">Solve initial network problems 2015-09-01</nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate"
+        >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</nz-timeline-item
+      >
+      <nz-timeline-item nzColor="red">Network problems being solved 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate">Technical testing 2015-09-01</nz-timeline-item>
+    </nz-timeline>
+    <ng-template #dotTemplate>
+      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    </ng-template>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "ttmA":
+/*!****************************************!*\
+  !*** ./site/doc/app/timeline/basic.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoTimelineBasicComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineBasicComponent", function() { return NzDemoTimelineBasicComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+
+
+
+class NzDemoTimelineBasicComponent {
+}
+/** @nocollapse */ NzDemoTimelineBasicComponent.ɵfac = function NzDemoTimelineBasicComponent_Factory(t) { return new (t || NzDemoTimelineBasicComponent)(); };
+/** @nocollapse */ NzDemoTimelineBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineBasicComponent, selectors: [["nz-demo-timeline-basic"]], decls: 9, vars: 0, template: function NzDemoTimelineBasicComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineBasicComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-timeline-basic',
+                template: `
+    <nz-timeline>
+      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Technical testing 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
+    </nz-timeline>
+  `
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "ybf5":
+/*!****************************************!*\
+  !*** ./site/doc/app/timeline/right.ts ***!
+  \****************************************/
+/*! exports provided: NzDemoTimelineRightComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzDemoTimelineRightComponent", function() { return NzDemoTimelineRightComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ng-zorro-antd/timeline */ "D1JB");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+
+
+
+
+
+function NzDemoTimelineRightComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "i", 3);
+} }
+class NzDemoTimelineRightComponent {
+}
+/** @nocollapse */ NzDemoTimelineRightComponent.ɵfac = function NzDemoTimelineRightComponent_Factory(t) { return new (t || NzDemoTimelineRightComponent)(); };
+/** @nocollapse */ NzDemoTimelineRightComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineRightComponent, selectors: [["nz-demo-timeline-right"]], decls: 11, vars: 1, consts: [["nzMode", "right"], ["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineRightComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Solve initial network problems 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-timeline-item", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Technical testing 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-timeline-item");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Network problems being solved 2015-09-01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, NzDemoTimelineRightComponent_ng_template_9_Template, 1, 0, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
+    } if (rf & 2) {
+        const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDot", _r0);
+    } }, directives: [ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineComponent"], ng_zorro_antd_timeline__WEBPACK_IMPORTED_MODULE_1__["NzTimelineItemComponent"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimelineRightComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'nz-demo-timeline-right',
+                template: `
+    <nz-timeline nzMode="right">
+      <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
+      <nz-timeline-item [nzDot]="dotTemplate" nzColor="red">Technical testing 2015-09-01</nz-timeline-item>
+      <nz-timeline-item>Network problems being solved 2015-09-01</nz-timeline-item>
+    </nz-timeline>
+    <ng-template #dotTemplate>
+      <i nz-icon nzType="clock-circle-o" style="font-size: 16px;"></i>
+    </ng-template>
+  `
+            }]
+    }], null, null); })();
 
 
 /***/ })
