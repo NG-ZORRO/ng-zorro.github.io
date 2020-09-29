@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1601352993105,
+  "timestamp": 1601366725697,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -13,14 +13,14 @@
       "urls": [
         "./index.html",
         "./main-es2015.ac83731c5126b864e3ff.js",
-        "./main-es5.ac83731c5126b864e3ff.js",
         "./polyfills-es2015.5209681987de21037e3a.js",
-        "./polyfills-es5.2a35ae2e141bf6560e37.js",
         "./runtime-es2015.66c79b9d36e7169e27b0.js",
-        "./runtime-es5.66c79b9d36e7169e27b0.js",
         "./styles.92d22c7616367d25de40.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/gw\\.alipayobjects\\.com\\/.*",
+        "https:\\/\\/img\\.alicdn\\.com\\/.*"
+      ]
     },
     {
       "name": "assets",
@@ -3200,21 +3200,14 @@
     "./assets/twotone/warning.svg": "8c7a2d3e765a2e7dd58ac674870c6655cecb0068",
     "./index.html": "ab6792d7b744e1836c82b1caf48107b4a81ede18",
     "./main-es2015.ac83731c5126b864e3ff.js": "7103cce7e46071c509464883fa608ea15b79a6ce",
-    "./main-es5.ac83731c5126b864e3ff.js": "20f004ca77b1da26aa0835a2b914853375993838",
     "./polyfills-es2015.5209681987de21037e3a.js": "fbfabae6d2dc19de3dff68ff83b4176658a63f2d",
-    "./polyfills-es5.2a35ae2e141bf6560e37.js": "4f7ad5ca93fd2856ea8e2b4bee78d5823f13d290",
     "./runtime-es2015.66c79b9d36e7169e27b0.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "./runtime-es5.66c79b9d36e7169e27b0.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "./styles.92d22c7616367d25de40.css": "c17432b015a8c1042b575b735b97b169cee090b5"
   },
   "navigationUrls": [
     {
       "positive": true,
       "regex": "^\\/.*$"
-    },
-    {
-      "positive": false,
-      "regex": "^\\/assets\\/codes\\/.*$"
     },
     {
       "positive": false,
@@ -3230,7 +3223,27 @@
     },
     {
       "positive": false,
-      "regex": "^\\/(?:.+\\/)?(version|issue-helper|iframe|blog)\\/.*$"
+      "regex": "^\\/assets\\/codes\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?stackblitz$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/version\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/issue-helper\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/iframe\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/blog\\/.*$"
     }
   ]
 }
