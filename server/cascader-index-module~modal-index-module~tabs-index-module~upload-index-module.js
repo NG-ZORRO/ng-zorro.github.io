@@ -47,9 +47,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "R1ws");
 /* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
 /* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/animations */ "R0Ic");
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! tslib */ "zOht");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
 /* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
 /* harmony import */ var ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/core/no-animation */ "H3Kp");
 /* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
@@ -859,10 +859,6 @@ NzModalContainerComponent.propDecorators = {
     modalElementRef: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['modalElement', { static: true },] }]
 };
 
-/**
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
 class NzModalRef {
     constructor(overlayRef, config, containerInstance) {
         this.overlayRef = overlayRef;
@@ -899,8 +895,8 @@ class NzModalRef {
             return (this.config.nzKeyboard &&
                 !this.config.nzCancelLoading &&
                 !this.config.nzOkLoading &&
-                event.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__["ESCAPE"] &&
-                !Object(_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__["hasModifierKey"])(event));
+                event.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_14__["ESCAPE"] &&
+                !Object(_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_14__["hasModifierKey"])(event));
         }))
             .subscribe(event => {
             event.preventDefault();
@@ -928,10 +924,10 @@ class NzModalRef {
         this.close(result);
     }
     triggerOk() {
-        this.trigger("ok" /* OK */);
+        return this.trigger("ok" /* OK */);
     }
     triggerCancel() {
-        this.trigger("cancel" /* CANCEL */);
+        return this.trigger("cancel" /* CANCEL */);
     }
     /**
      * Open the modal.
@@ -969,30 +965,34 @@ class NzModalRef {
         return this.overlayRef.backdropElement;
     }
     trigger(action) {
-        const trigger = { ok: this.config.nzOnOk, cancel: this.config.nzOnCancel }[action];
-        const loadingKey = { ok: 'nzOkLoading', cancel: 'nzCancelLoading' }[action];
-        const loading = this.config[loadingKey];
-        if (loading) {
-            return;
-        }
-        if (trigger instanceof _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]) {
-            trigger.emit(this.getContentComponent());
-        }
-        else if (typeof trigger === 'function') {
-            const result = trigger(this.getContentComponent());
-            const caseClose = (doClose) => doClose !== false && this.close(doClose);
-            if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["isPromise"])(result)) {
-                this.config[loadingKey] = true;
-                const handleThen = (doClose) => {
-                    this.config[loadingKey] = false;
-                    this.closeWhitResult(doClose);
-                };
-                result.then(handleThen).catch(handleThen);
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__awaiter"])(this, void 0, void 0, function* () {
+            const trigger = { ok: this.config.nzOnOk, cancel: this.config.nzOnCancel }[action];
+            const loadingKey = { ok: 'nzOkLoading', cancel: 'nzCancelLoading' }[action];
+            const loading = this.config[loadingKey];
+            if (loading) {
+                return;
             }
-            else {
-                caseClose(result);
+            if (trigger instanceof _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]) {
+                trigger.emit(this.getContentComponent());
             }
-        }
+            else if (typeof trigger === 'function') {
+                const result = trigger(this.getContentComponent());
+                if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["isPromise"])(result)) {
+                    this.config[loadingKey] = true;
+                    let doClose = false;
+                    try {
+                        doClose = yield result;
+                    }
+                    finally {
+                        this.config[loadingKey] = false;
+                        this.closeWhitResult(doClose);
+                    }
+                }
+                else {
+                    this.closeWhitResult(result);
+                }
+            }
+        });
     }
     closeWhitResult(result) {
         if (result !== false) {
@@ -1305,7 +1305,7 @@ class NzModalComponent {
         return componentConfig;
     }
     ngOnChanges(changes) {
-        const { nzVisible } = changes, otherChanges = Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__rest"])(changes, ["nzVisible"]);
+        const { nzVisible } = changes, otherChanges = Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__rest"])(changes, ["nzVisible"]);
         if (Object.keys(otherChanges).length && this.modalRef) {
             this.modalRef.updateConfig(getConfigFromComponent(this));
         }
@@ -1384,49 +1384,49 @@ NzModalComponent.propDecorators = {
     contentTemplateRef: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: true },] }],
     modalFooter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzModalFooterDirective,] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzMask", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzMaskClosable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzCloseOnNavigation", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzVisible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzClosable", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzOkLoading", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzOkDisabled", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzCancelDisabled", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzCancelLoading", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Boolean)
 ], NzModalComponent.prototype, "nzKeyboard", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Object)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__metadata"])("design:type", Object)
 ], NzModalComponent.prototype, "nzNoAnimation", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](BaseModalContainerComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"]

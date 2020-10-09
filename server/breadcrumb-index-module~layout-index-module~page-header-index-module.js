@@ -152,7 +152,7 @@ class NzBreadCrumbComponent {
             const router = this.injector.get(_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]);
             const activatedRoute = this.injector.get(_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]);
             router.events
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["filter"])(e => e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["startWith"])(true) // Trigger initial render.
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["filter"])(e => e instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["startWith"])(true) // trigger initial render
             )
                 .subscribe(() => {
                 this.breadcrumbs = this.getBreadcrumbs(activatedRoute.root);
@@ -192,7 +192,7 @@ class NzBreadCrumbComponent {
                 return this.getBreadcrumbs(child, nextUrl, breadcrumbs);
             }
         }
-        return undefined;
+        return breadcrumbs;
     }
 }
 /** @nocollapse */
@@ -204,7 +204,7 @@ NzBreadCrumbComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzBreadCrumbComponent_ng_container_1_Template, 2, 1, "ng-container", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzAutoGenerate);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzAutoGenerate && ctx.breadcrumbs.length);
     } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], NzBreadCrumbItemComponent]; }, encapsulation: 2, changeDetection: 0 });
 NzBreadCrumbComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injector"] },
@@ -233,7 +233,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
                 preserveWhitespaces: false,
                 template: `
     <ng-content></ng-content>
-    <ng-container *ngIf="nzAutoGenerate">
+    <ng-container *ngIf="nzAutoGenerate && breadcrumbs.length">
       <nz-breadcrumb-item *ngFor="let breadcrumb of breadcrumbs">
         <a [attr.href]="breadcrumb.url" (click)="navigate(breadcrumb.url, $event)">{{ breadcrumb.label }}</a>
       </nz-breadcrumb-item>

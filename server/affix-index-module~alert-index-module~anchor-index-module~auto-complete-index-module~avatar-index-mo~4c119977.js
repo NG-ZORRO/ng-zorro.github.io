@@ -99,11 +99,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/affix */ "utH8");
 /* harmony import */ var ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/anchor */ "l83q");
 /* harmony import */ var ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/grid */ "T+9E");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
-/* harmony import */ var ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ngx-quicklink */ "FDOz");
-/* harmony import */ var _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./codebox/codebox.module */ "KMdG");
-/* harmony import */ var _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./github-btn/github-btn.module */ "pHN7");
-/* harmony import */ var _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./highlight/highlight.module */ "vBS8");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ngx-quicklink */ "FDOz");
+/* harmony import */ var _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./codebox/codebox.module */ "KMdG");
+/* harmony import */ var _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./github-btn/github-btn.module */ "pHN7");
+/* harmony import */ var _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./highlight/highlight.module */ "vBS8");
+
 
 
 
@@ -127,59 +129,63 @@ class ShareModule {
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-            _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-            _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
-            _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
-            ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+            _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+            _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
+            _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
+            ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
             ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
             ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
             ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
+            ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
             // third libs
             _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-            ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]
+            ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]
         ], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
         _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
-        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
+        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
         ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
         ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
-        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
+        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
         ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
-        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
+        ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
         // third libs
         _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_1__["ScrollingModule"],
         _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-        ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]] });
+        ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](ShareModule, { imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
-        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
-        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
+        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
+        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
         ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
         ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
         ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
+        ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
         // third libs
         _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-        ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]], exports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
+        ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]], exports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
         _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
-        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
+        _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+        _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
         ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
         ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
-        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
+        _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
         ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
-        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+        ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
+        ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
         // third libs
         _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_1__["ScrollingModule"],
         _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-        ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]] }); })();
+        ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](ShareModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
         args: [{
@@ -188,33 +194,35 @@ class ShareModule {
                     _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                     _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-                    _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-                    _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
-                    _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
-                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+                    _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+                    _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
+                    _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
+                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
                     ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
                     ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
                     ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
+                    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
                     // third libs
                     _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-                    ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]
+                    ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]
                 ],
                 exports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                     _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
                     _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"],
-                    _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_11__["NzCodeBoxModule"],
-                    _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_13__["NzHighlightModule"],
+                    _codebox_codebox_module__WEBPACK_IMPORTED_MODULE_12__["NzCodeBoxModule"],
+                    _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_14__["NzHighlightModule"],
                     ng_zorro_antd_anchor__WEBPACK_IMPORTED_MODULE_7__["NzAnchorModule"],
                     ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_6__["NzAffixModule"],
-                    _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_12__["NzGithubBtnModule"],
+                    _github_btn_github_btn_module__WEBPACK_IMPORTED_MODULE_13__["NzGithubBtnModule"],
                     ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_8__["NzGridModule"],
-                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"],
+                    ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_10__["NzToolTipModule"],
+                    ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
                     // third libs
                     _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_1__["ScrollingModule"],
                     _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_0__["DragDropModule"],
-                    ngx_quicklink__WEBPACK_IMPORTED_MODULE_10__["QuicklinkModule"]
+                    ngx_quicklink__WEBPACK_IMPORTED_MODULE_11__["QuicklinkModule"]
                 ]
             }]
     }], null, null); })();
