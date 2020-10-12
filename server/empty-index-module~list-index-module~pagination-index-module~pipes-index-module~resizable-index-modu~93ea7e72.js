@@ -883,7 +883,7 @@ class NzPaginationOptionsComponent {
     }
     jumpToPageViaInput($event) {
         const target = $event.target;
-        const index = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_3__["toNumber"])(target.value, this.pageIndex);
+        const index = Math.floor(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_3__["toNumber"])(target.value, this.pageIndex));
         this.pageIndexChange.next(index);
         target.value = '';
     }
