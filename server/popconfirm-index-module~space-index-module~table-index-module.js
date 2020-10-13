@@ -176,33 +176,18 @@ function NzPopconfirmComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
 class NzPopconfirmDirective extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzTooltipBaseDirective"] {
     constructor(elementRef, hostView, resolver, renderer, noAnimation) {
         super(elementRef, hostView, resolver, renderer, noAnimation);
-        this.specificTrigger = 'click';
-        this.specificPlacement = 'top';
+        this.trigger = 'click';
+        this.placement = 'top';
         this.nzCondition = false;
         this.nzPopconfirmShowArrow = true;
-        /**
-         * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
-         * Please use a more specific API. Like `nzTooltipTrigger`.
-         */
-        this.nzTrigger = 'click';
         // tslint:disable-next-line:no-output-rename
-        this.specificVisibleChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.visibleChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.nzOnCancel = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.nzOnConfirm = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.componentFactory = this.resolver.resolveComponentFactory(NzPopconfirmComponent);
-        this.needProxyProperties = [
-            'nzOverlayClassName',
-            'nzOverlayStyle',
-            'nzMouseEnterDelay',
-            'nzMouseLeaveDelay',
-            'nzVisible',
-            'nzOkText',
-            'nzOkType',
-            'nzCancelText',
-            'nzCondition',
-            'nzIcon',
-            'nzPopconfirmShowArrow'
-        ];
+    }
+    getProxyPropertyMap() {
+        return Object.assign({ nzOkText: ['nzOkText', () => this.nzOkText], nzOkType: ['nzOkType', () => this.nzOkType], nzCancelText: ['nzCancelText', () => this.nzCancelText], nzCondition: ['nzCondition', () => this.nzCondition], nzIcon: ['nzIcon', () => this.nzIcon], nzPopconfirmShowArrow: ['nzPopconfirmShowArrow', () => this.nzPopconfirmShowArrow] }, super.getProxyPropertyMap());
     }
     /**
      * @override
@@ -222,7 +207,7 @@ NzPopconfirmDirective.ɵfac = function NzPopconfirmDirective_Factory(t) { return
 /** @nocollapse */
 NzPopconfirmDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzPopconfirmDirective, selectors: [["", "nz-popconfirm", ""]], hostVars: 2, hostBindings: function NzPopconfirmDirective_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-popover-open", ctx.visible);
-    } }, inputs: { specificTrigger: ["nzPopconfirmTrigger", "specificTrigger"], specificPlacement: ["nzPopconfirmPlacement", "specificPlacement"], nzCondition: "nzCondition", nzPopconfirmShowArrow: "nzPopconfirmShowArrow", nzTrigger: "nzTrigger", specificTitle: ["nzPopconfirmTitle", "specificTitle"], directiveNameTitle: ["nz-popconfirm", "directiveNameTitle"], specificOrigin: ["nzPopconfirmOrigin", "specificOrigin"], specificMouseEnterDelay: ["nzPopconfirmMouseEnterDelay", "specificMouseEnterDelay"], specificMouseLeaveDelay: ["nzPopconfirmMouseLeaveDelay", "specificMouseLeaveDelay"], specificOverlayClassName: ["nzPopconfirmOverlayClassName", "specificOverlayClassName"], specificOverlayStyle: ["nzPopconfirmOverlayStyle", "specificOverlayStyle"], nzOkText: "nzOkText", nzOkType: "nzOkType", nzCancelText: "nzCancelText", nzIcon: "nzIcon", specificVisible: ["nzPopconfirmVisible", "specificVisible"] }, outputs: { specificVisibleChange: "nzPopconfirmVisibleChange", nzOnCancel: "nzOnCancel", nzOnConfirm: "nzOnConfirm" }, exportAs: ["nzPopconfirm"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"]] });
+    } }, inputs: { trigger: ["nzPopconfirmTrigger", "trigger"], placement: ["nzPopconfirmPlacement", "placement"], nzCondition: "nzCondition", nzPopconfirmShowArrow: "nzPopconfirmShowArrow", title: ["nzPopconfirmTitle", "title"], directiveTitle: ["nz-popconfirm", "directiveTitle"], origin: ["nzPopconfirmOrigin", "origin"], mouseEnterDelay: ["nzPopconfirmMouseEnterDelay", "mouseEnterDelay"], mouseLeaveDelay: ["nzPopconfirmMouseLeaveDelay", "mouseLeaveDelay"], overlayClassName: ["nzPopconfirmOverlayClassName", "overlayClassName"], overlayStyle: ["nzPopconfirmOverlayStyle", "overlayStyle"], visible: ["nzPopconfirmVisible", "visible"], nzOkText: "nzOkText", nzOkType: "nzOkType", nzCancelText: "nzCancelText", nzIcon: "nzIcon" }, outputs: { visibleChange: "nzPopconfirmVisibleChange", nzOnCancel: "nzOnCancel", nzOnConfirm: "nzOnConfirm" }, exportAs: ["nzPopconfirm"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"]] });
 NzPopconfirmDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewContainerRef"] },
@@ -231,24 +216,23 @@ NzPopconfirmDirective.ctorParameters = () => [
     { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_3__["NzNoAnimationDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }] }
 ];
 NzPopconfirmDirective.propDecorators = {
-    specificTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmTitle',] }],
-    directiveNameTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nz-popconfirm',] }],
-    specificTrigger: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmTrigger',] }],
-    specificPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmPlacement',] }],
-    specificOrigin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOrigin',] }],
-    specificMouseEnterDelay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmMouseEnterDelay',] }],
-    specificMouseLeaveDelay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmMouseLeaveDelay',] }],
-    specificOverlayClassName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOverlayClassName',] }],
-    specificOverlayStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOverlayStyle',] }],
+    title: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmTitle',] }],
+    directiveTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nz-popconfirm',] }],
+    trigger: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmTrigger',] }],
+    placement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmPlacement',] }],
+    origin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOrigin',] }],
+    mouseEnterDelay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmMouseEnterDelay',] }],
+    mouseLeaveDelay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmMouseLeaveDelay',] }],
+    overlayClassName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOverlayClassName',] }],
+    overlayStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmOverlayStyle',] }],
+    visible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmVisible',] }],
     nzOkText: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzOkType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzCancelText: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzCondition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzPopconfirmShowArrow: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzTrigger: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    specificVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"], args: ['nzPopconfirmVisible',] }],
-    specificVisibleChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['nzPopconfirmVisibleChange',] }],
+    visibleChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"], args: ['nzPopconfirmVisibleChange',] }],
     nzOnCancel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
     nzOnConfirm: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
 };
@@ -273,46 +257,47 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Host"]
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
-            }] }]; }, { specificTrigger: [{
+            }] }]; }, { trigger: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmTrigger']
-        }], specificPlacement: [{
+        }], placement: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmPlacement']
         }], nzCondition: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzPopconfirmShowArrow: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], nzTrigger: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], specificVisibleChange: [{
+        }], visibleChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"],
             args: ['nzPopconfirmVisibleChange']
         }], nzOnCancel: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
         }], nzOnConfirm: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
-        }], specificTitle: [{
+        }], title: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmTitle']
-        }], directiveNameTitle: [{
+        }], directiveTitle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nz-popconfirm']
-        }], specificOrigin: [{
+        }], origin: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmOrigin']
-        }], specificMouseEnterDelay: [{
+        }], mouseEnterDelay: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmMouseEnterDelay']
-        }], specificMouseLeaveDelay: [{
+        }], mouseLeaveDelay: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmMouseLeaveDelay']
-        }], specificOverlayClassName: [{
+        }], overlayClassName: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmOverlayClassName']
-        }], specificOverlayStyle: [{
+        }], overlayStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
             args: ['nzPopconfirmOverlayStyle']
+        }], visible: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
+            args: ['nzPopconfirmVisible']
         }], nzOkText: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzOkType: [{
@@ -321,9 +306,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
-        }], specificVisible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"],
-            args: ['nzPopconfirmVisible']
         }] }); })();
 class NzPopconfirmComponent extends ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_5__["NzToolTipComponent"] {
     constructor(cdr, noAnimation) {

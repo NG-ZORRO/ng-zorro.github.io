@@ -897,17 +897,19 @@ __webpack_require__.r(__webpack_exports__);
 class NzDemoTooltipBasicComponent {
 }
 /** @nocollapse */ NzDemoTooltipBasicComponent.ɵfac = function NzDemoTooltipBasicComponent_Factory(t) { return new (t || NzDemoTooltipBasicComponent)(); };
-/** @nocollapse */ NzDemoTooltipBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipBasicComponent, selectors: [["nz-demo-tooltip-basic"]], decls: 2, vars: 0, consts: [["nz-tooltip", "", "nzTooltipTitle", "prompt text"]], template: function NzDemoTooltipBasicComponent_Template(rf, ctx) { if (rf & 1) {
+/** @nocollapse */ NzDemoTooltipBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipBasicComponent, selectors: [["nz-demo-tooltip-basic"]], decls: 2, vars: 1, consts: [["nz-tooltip", "", "nzTooltipTitle", "prompt text", 3, "nzTooltipMouseLeaveDelay"]], template: function NzDemoTooltipBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Tooltip will show when mouse enter.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipMouseLeaveDelay", 2);
     } }, directives: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_1__["NzTooltipDirective"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTooltipBasicComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'nz-demo-tooltip-basic',
                 template: `
-    <span nz-tooltip nzTooltipTitle="prompt text">Tooltip will show when mouse enter.</span>
+    <span nz-tooltip nzTooltipTitle="prompt text" [nzTooltipMouseLeaveDelay]="2">Tooltip will show when mouse enter.</span>
   `
             }]
     }], null, null); })();

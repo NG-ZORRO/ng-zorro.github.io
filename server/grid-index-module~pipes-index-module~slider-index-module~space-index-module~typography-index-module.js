@@ -486,14 +486,19 @@ class NzSliderComponent {
         const sliderLength = this.getSliderLength();
         const ratio = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["ensureNumberInRange"])((position - sliderStart) / sliderLength, 0, 1);
         const val = (this.nzMax - this.nzMin) * (this.nzVertical ? 1 - ratio : ratio) + this.nzMin;
-        const points = this.nzMarks === null ? [] : Object.keys(this.nzMarks).map(parseFloat);
+        const points = this.nzMarks === null
+            ? []
+            : Object.keys(this.nzMarks)
+                .map(parseFloat)
+                .sort((a, b) => a - b);
         if (this.nzStep !== 0 && !this.nzDots) {
             const closestOne = Math.round(val / this.nzStep) * this.nzStep;
             points.push(closestOne);
         }
         const gaps = points.map(point => Math.abs(val - point));
         const closest = points[gaps.indexOf(Math.min(...gaps))];
-        return this.nzStep === null ? closest : parseFloat(closest.toFixed(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getPrecision"])(this.nzStep)));
+        // return parseFloat(closest.toFixed(getPrecision(this.nzStep)));
+        return this.nzStep === 0 ? closest : parseFloat(closest.toFixed(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getPrecision"])(this.nzStep)));
     }
     valueToOffset(value) {
         return Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getPercent"])(this.nzMin, this.nzMax, value);
