@@ -524,6 +524,13 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/resizable/zh"/>
   </url>
   <url>
+    <loc>https://ng.ant.design/experimental/pipes/en</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/pipes/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/pipes/zh"/>
+  </url>
+  <url>
     <loc>https://ng.ant.design/experimental/code-editor/en</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1047,6 +1054,13 @@
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/resizable/en"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/resizable/zh"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/pipes/zh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/pipes/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/pipes/zh"/>
   </url>
   <url>
     <loc>https://ng.ant.design/experimental/code-editor/zh</loc>
