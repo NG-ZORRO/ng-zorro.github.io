@@ -59,8 +59,17 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+    <style type="text/css">
+       /* Prevent trigger animations before page load, will be removed when the page is ready */
+      .preload * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -ms-transition: none !important;
+        -o-transition: none !important;
+      }
+    </style>
   <link rel="stylesheet" href="styles.a12b1fe752e784f26f73.css"></head>
-  <body>
+  <body class="preload">
     <app-root></app-root>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52892298-2"></script>
@@ -72,5 +81,5 @@
       gtag('config', 'UA-52892298-2');
     </script>
     <noscript>Please enable JavaScript to continue using this application.</noscript>
-  <script src="runtime-es2015.94eccf1836863906e330.js" type="module"></script><script src="runtime-es5.94eccf1836863906e330.js" nomodule defer></script><script src="polyfills-es5.87b55d81c66504a39b28.js" nomodule defer></script><script src="polyfills-es2015.07edec4967079cb1f3d9.js" type="module"></script><script src="main-es2015.5af573200d9c0414b50f.js" type="module"></script><script src="main-es5.5af573200d9c0414b50f.js" nomodule defer></script></body>
+  <script src="runtime-es2015.eb9f7cfa5526babcdde6.js" type="module"></script><script src="runtime-es5.eb9f7cfa5526babcdde6.js" nomodule defer></script><script src="polyfills-es5.87b55d81c66504a39b28.js" nomodule defer></script><script src="polyfills-es2015.07edec4967079cb1f3d9.js" type="module"></script><script src="main-es2015.68d4697ff90530996364.js" type="module"></script><script src="main-es5.68d4697ff90530996364.js" nomodule defer></script></body>
 </html>

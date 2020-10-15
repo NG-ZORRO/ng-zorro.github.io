@@ -2577,21 +2577,24 @@ class NzDatePickerComponent {
     setDefaultPlaceHolder() {
         if (!this.isCustomPlaceHolder && this.nzLocale) {
             const defaultPlaceholder = {
-                year: this.nzLocale.lang.yearPlaceholder,
-                month: this.nzLocale.lang.monthPlaceholder,
-                week: this.nzLocale.lang.weekPlaceholder,
-                date: this.nzLocale.lang.placeholder
+                year: this.getPropertyOfLocale('yearPlaceholder'),
+                month: this.getPropertyOfLocale('monthPlaceholder'),
+                week: this.getPropertyOfLocale('weekPlaceholder'),
+                date: this.getPropertyOfLocale('placeholder')
             };
             const defaultRangePlaceholder = {
-                year: this.nzLocale.lang.rangeYearPlaceholder,
-                month: this.nzLocale.lang.rangeMonthPlaceholder,
-                week: this.nzLocale.lang.rangeWeekPlaceholder,
-                date: this.nzLocale.lang.rangePlaceholder
+                year: this.getPropertyOfLocale('rangeYearPlaceholder'),
+                month: this.getPropertyOfLocale('rangeMonthPlaceholder'),
+                week: this.getPropertyOfLocale('rangeWeekPlaceholder'),
+                date: this.getPropertyOfLocale('rangePlaceholder')
             };
             this.nzPlaceHolder = this.isRange
                 ? defaultRangePlaceholder[this.nzMode]
                 : defaultPlaceholder[this.nzMode];
         }
+    }
+    getPropertyOfLocale(type) {
+        return this.nzLocale.lang[type] || this.i18n.getLocaleData(`DatePicker.lang.${type}`);
     }
     // Safe way of setting value with default
     setValue(value) {
