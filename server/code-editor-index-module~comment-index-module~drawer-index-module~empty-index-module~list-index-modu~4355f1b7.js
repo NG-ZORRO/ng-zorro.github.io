@@ -96,17 +96,15 @@ class NzSpinComponent {
         this.nzSpinning = true;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
         this.spinning$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"](this.nzSpinning);
-        this.delay$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["BehaviorSubject"](this.nzDelay);
-        this.isLoading = true;
+        this.delay$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["ReplaySubject"](1);
+        this.isLoading = false;
     }
     ngOnInit() {
-        const loading$ = this.spinning$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["mergeMap"])(() => this.delay$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["mergeMap"])(delay => {
+        const loading$ = this.delay$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["startWith"])(this.nzDelay), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["switchMap"])(delay => {
             if (delay === 0) {
                 return this.spinning$;
             }
-            else {
-                return this.spinning$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["debounceTime"])(delay));
-            }
+            return this.spinning$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["debounce"])(spinning => Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["timer"])(spinning ? delay : 0)));
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$));
         loading$.subscribe(loading => {
             this.isLoading = loading;
