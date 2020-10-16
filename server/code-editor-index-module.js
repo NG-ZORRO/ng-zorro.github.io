@@ -326,6 +326,11 @@ class NzCodeEditorComponent {
         });
     }
     emitValue(value) {
+        if (this.value === value) {
+            // If the value didn't change there's no reason to send an update.
+            // Specifically this may happen during an update from the model (writeValue) where sending an update to the model would actually be incorrect.
+            return;
+        }
         this.value = value;
         this.onChange(value);
     }
