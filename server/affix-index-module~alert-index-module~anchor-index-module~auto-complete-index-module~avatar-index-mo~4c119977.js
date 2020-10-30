@@ -743,9 +743,11 @@ class NzAnchorComponent {
         const containerScrollTop = this.scrollSrv.getScroll(this.getContainer());
         const elOffsetTop = getOffsetTop(el, this.getContainer());
         const targetScrollTop = containerScrollTop + elOffsetTop - (this.nzOffsetTop || 0);
-        this.scrollSrv.scrollTo(this.getContainer(), targetScrollTop, undefined, () => {
-            this.animating = false;
-            this.handleActive(linkComp);
+        this.scrollSrv.scrollTo(this.getContainer(), targetScrollTop, {
+            callback: () => {
+                this.animating = false;
+                this.handleActive(linkComp);
+            }
         });
         this.nzClick.emit(linkComp.nzHref);
     }

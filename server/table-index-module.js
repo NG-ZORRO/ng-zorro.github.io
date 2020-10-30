@@ -1642,7 +1642,7 @@ class NzDemoTableEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](998, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](999, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1000, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1001, "[nzOutBordered]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1001, "[nzOuterBordered]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1002, "td");
@@ -6120,7 +6120,7 @@ class NzDemoTableZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1001, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1002, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1003, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1004, "[nzOutBordered]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1004, "[nzOuterBordered]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1005, "td");

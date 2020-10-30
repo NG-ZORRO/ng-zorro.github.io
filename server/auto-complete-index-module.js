@@ -876,7 +876,7 @@ class NzAutocompleteTriggerDirective {
             this.nzAutocomplete.isOpen = this.panelOpen = false;
             if (this.overlayRef && this.overlayRef.hasAttached()) {
                 this.selectionChangeSubscription.unsubscribe();
-                this.overlayBackdropClickSubscription.unsubscribe();
+                this.overlayOutsideClickSubscription.unsubscribe();
                 this.optionsChangeSubscription.unsubscribe();
                 this.overlayRef.dispose();
                 this.overlayRef = null;
@@ -961,16 +961,11 @@ class NzAutocompleteTriggerDirective {
             this.setValueAndClose(option);
         });
     }
-    /**
-     * Subscription external click and close panel
-     */
-    subscribeOverlayBackdropClick() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["merge"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["fromEvent"])(this.document, 'click'), Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["fromEvent"])(this.document, 'touchend')).subscribe((event) => {
-            const clickTarget = event.target;
-            // Make sure is not self
-            if (clickTarget !== this.elementRef.nativeElement && !this.overlayRef.overlayElement.contains(clickTarget) && this.panelOpen) {
-                this.closePanel();
-            }
+    subscribeOverlayOutsideClick() {
+        return this.overlayRef.outsidePointerEvents()
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["filter"])((e) => !this.elementRef.nativeElement.contains(e.target)))
+            .subscribe(() => {
+            this.closePanel();
         });
     }
     attachOverlay() {
@@ -986,8 +981,8 @@ class NzAutocompleteTriggerDirective {
         if (this.overlayRef && !this.overlayRef.hasAttached()) {
             this.overlayRef.attach(this.portal);
             this.selectionChangeSubscription = this.subscribeSelectionChange();
-            this.overlayBackdropClickSubscription = this.subscribeOverlayBackdropClick();
             this.optionsChangeSubscription = this.subscribeOptionsChange();
+            this.overlayOutsideClickSubscription = this.subscribeOverlayOutsideClick();
             this.overlayRef
                 .detachments()
                 .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["takeUntil"])(this.destroy$))

@@ -2631,7 +2631,7 @@ class NzMentionComponent {
     closeDropdown() {
         if (this.overlayRef && this.overlayRef.hasAttached()) {
             this.overlayRef.detach();
-            this.overlayBackdropClickSubscription.unsubscribe();
+            this.overlayOutsideClickSubscription.unsubscribe();
             this.isOpen = false;
             this.cdr.markForCheck();
         }
@@ -2780,13 +2780,11 @@ class NzMentionComponent {
         }
         this.positionStrategy.apply();
     }
-    subscribeOverlayBackdropClick() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["merge"])(Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'click'), Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'touchend')).subscribe((event) => {
+    subscribeOverlayOutsideClick() {
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["merge"])(this.overlayRef.outsidePointerEvents(), Object(rxjs__WEBPACK_IMPORTED_MODULE_5__["fromEvent"])(this.ngDocument, 'touchend')).subscribe((event) => {
+            var _a;
             const clickTarget = event.target;
-            if (this.isOpen &&
-                clickTarget !== this.trigger.el.nativeElement &&
-                !!this.overlayRef &&
-                !this.overlayRef.overlayElement.contains(clickTarget)) {
+            if (this.isOpen && clickTarget !== this.trigger.el.nativeElement && !((_a = this.overlayRef) === null || _a === void 0 ? void 0 : _a.overlayElement.contains(clickTarget))) {
                 this.closeDropdown();
             }
         });
@@ -2798,7 +2796,7 @@ class NzMentionComponent {
         }
         if (this.overlayRef && !this.overlayRef.hasAttached()) {
             this.overlayRef.attach(this.portal);
-            this.overlayBackdropClickSubscription = this.subscribeOverlayBackdropClick();
+            this.overlayOutsideClickSubscription = this.subscribeOverlayOutsideClick();
         }
         this.updatePositions();
     }

@@ -1057,6 +1057,7 @@ class NzUploadComponent {
     constructor(cdr, i18n) {
         this.cdr = cdr;
         this.i18n = i18n;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
         // #region fields
         this.nzType = 'select';
         this.nzLimit = 0;
@@ -1259,7 +1260,7 @@ class NzUploadComponent {
     }
     // #endregion
     ngOnInit() {
-        this.i18n$ = this.i18n.localeChange.subscribe(() => {
+        this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.locale = this.i18n.getLocaleData('Upload');
             this.detectChangesList();
         });
@@ -1268,7 +1269,8 @@ class NzUploadComponent {
         this.zipOptions().setClassMap();
     }
     ngOnDestroy() {
-        this.i18n$.unsubscribe();
+        this.destroy$.next();
+        this.destroy$.complete();
     }
 }
 /** @nocollapse */

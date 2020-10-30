@@ -3043,7 +3043,7 @@ class NzDemoIconZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](267, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](268, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](269, "changeAssetypescriptSource()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](269, "changeAssetsSource()");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](270, "td");
