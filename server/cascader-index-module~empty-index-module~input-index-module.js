@@ -191,7 +191,7 @@ function NzCascaderComponent_div_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r2.isLoading);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-cascader-show-search", !!ctx_r2.nzShowSearch)("ant-focusd", !!ctx_r2.nzShowSearch && ctx_r2.isFocused && !ctx_r2.inputValue);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-cascader-picker-show-search", !!ctx_r2.nzShowSearch)("ant-cascader-picker-focused", !!ctx_r2.nzShowSearch && ctx_r2.isFocused && !ctx_r2.inputValue);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", !ctx_r2.isLabelRenderTemplate)("ngIfElse", _r9);
 } }
@@ -807,7 +807,7 @@ class NzCascaderComponent {
             }
             else {
                 const { option, index } = data;
-                const shouldClose = option.isLeaf;
+                const shouldClose = option.isLeaf || this.nzChangeOnSelect;
                 if (shouldClose) {
                     this.delaySetMenuVisible(false);
                 }
@@ -1370,8 +1370,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         <i *ngIf="isLoading" nz-icon nzType="loading" class="ant-cascader-picker-arrow"></i>
         <span
           class="ant-cascader-picker-label"
-          [class.ant-cascader-show-search]="!!nzShowSearch"
-          [class.ant-focusd]="!!nzShowSearch && isFocused && !inputValue"
+          [class.ant-cascader-picker-show-search]="!!nzShowSearch"
+          [class.ant-cascader-picker-focused]="!!nzShowSearch && isFocused && !inputValue"
         >
           <ng-container *ngIf="!isLabelRenderTemplate; else labelTemplate">{{ labelRenderText }}</ng-container>
           <ng-template #labelTemplate>
