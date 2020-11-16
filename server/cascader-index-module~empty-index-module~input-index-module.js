@@ -807,7 +807,7 @@ class NzCascaderComponent {
             }
             else {
                 const { option, index } = data;
-                const shouldClose = option.isLeaf || this.nzChangeOnSelect;
+                const shouldClose = option.isLeaf || (this.nzChangeOnSelect && this.nzExpandTrigger === 'hover');
                 if (shouldClose) {
                     this.delaySetMenuVisible(false);
                 }

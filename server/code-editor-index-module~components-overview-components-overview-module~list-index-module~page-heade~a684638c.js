@@ -278,7 +278,7 @@ function NzTypographyComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](3);
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r2.expanded || !ctx_r2.nzExpandable && ctx_r2.nzEllipsisRows === 1 && !ctx_r2.hasEllipsisObservers || ctx_r2.canCssEllipsis || ctx_r2.nzSuffix && ctx_r2.expanded)("ngIfElse", _r8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r2.expanded || !ctx_r2.hasOperationsWithEllipsis && ctx_r2.nzEllipsisRows === 1 && !ctx_r2.hasEllipsisObservers || ctx_r2.canCssEllipsis || ctx_r2.nzSuffix && ctx_r2.expanded)("ngIfElse", _r8);
 } }
 function NzTypographyComponent_nz_text_edit_3_Template(rf, ctx) { if (rf & 1) {
     const _r20 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
@@ -549,6 +549,9 @@ class NzTypographyComponent {
     }
     get canCssEllipsis() {
         return this.nzEllipsis && this.cssEllipsis && !this.expanded && !this.hasEllipsisObservers;
+    }
+    get hasOperationsWithEllipsis() {
+        return (this.nzCopyable || this.nzEditable || this.nzExpandable) && this.nzEllipsis;
     }
     get copyText() {
         return (typeof this.nzCopyText === 'string' ? this.nzCopyText : this.nzContent);
@@ -908,7 +911,10 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_12__["__decorate"])([
     <ng-container *ngIf="!editing">
       <ng-container
         *ngIf="
-          expanded || (!nzExpandable && nzEllipsisRows === 1 && !hasEllipsisObservers) || canCssEllipsis || (nzSuffix && expanded);
+          expanded ||
+            (!hasOperationsWithEllipsis && nzEllipsisRows === 1 && !hasEllipsisObservers) ||
+            canCssEllipsis ||
+            (nzSuffix && expanded);
           else jsEllipsis
         "
       >

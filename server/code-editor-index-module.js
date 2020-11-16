@@ -292,7 +292,8 @@ class NzCodeEditorComponent {
         }
         if (this.nzEditorMode === 'normal') {
             if (this.modelSet) {
-                this.editorInstance.getModel().setValue(this.value);
+                const model = this.editorInstance.getModel();
+                this.preservePositionAndSelections(() => model.setValue(this.value));
             }
             else {
                 this.editorInstance.setModel(monaco.editor.createModel(this.value, this.editorOptionCached.language));
@@ -302,8 +303,10 @@ class NzCodeEditorComponent {
         else {
             if (this.modelSet) {
                 const model = this.editorInstance.getModel();
-                model.modified.setValue(this.value);
-                model.original.setValue(this.nzOriginalText);
+                this.preservePositionAndSelections(() => {
+                    model.modified.setValue(this.value);
+                    model.original.setValue(this.nzOriginalText);
+                });
             }
             else {
                 const language = this.editorOptionCached.language;
@@ -313,6 +316,26 @@ class NzCodeEditorComponent {
                 });
                 this.modelSet = true;
             }
+        }
+    }
+    /**
+     * {@link editor.ICodeEditor}#setValue resets the cursor position to the start of the document.
+     * This helper memorizes the cursor position and selections and restores them after the given
+     * function has been called.
+     */
+    preservePositionAndSelections(fn) {
+        if (!this.editorInstance) {
+            fn();
+            return;
+        }
+        const position = this.editorInstance.getPosition();
+        const selections = this.editorInstance.getSelections();
+        fn();
+        if (position) {
+            this.editorInstance.setPosition(position);
+        }
+        if (selections) {
+            this.editorInstance.setSelections(selections);
         }
     }
     setValueEmitter() {
