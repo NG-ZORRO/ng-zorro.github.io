@@ -1554,9 +1554,12 @@ const IconMap = {
 };
 const ExceptionStatus = ['404', '500', '403'];
 class NzResultComponent {
-    constructor() {
+    constructor(elementRef) {
+        this.elementRef = elementRef;
         this.nzStatus = 'info';
         this.isException = false;
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-result');
     }
     ngOnChanges() {
         this.setStatusIcon();
@@ -1574,10 +1577,10 @@ class NzResultComponent {
     }
 }
 /** @nocollapse */
-NzResultComponent.ɵfac = function NzResultComponent_Factory(t) { return new (t || NzResultComponent)(); };
+NzResultComponent.ɵfac = function NzResultComponent_Factory(t) { return new (t || NzResultComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
 /** @nocollapse */
-NzResultComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResultComponent, selectors: [["nz-result"]], hostVars: 10, hostBindings: function NzResultComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-result", true)("ant-result-success", ctx.nzStatus === "success")("ant-result-error", ctx.nzStatus === "error")("ant-result-info", ctx.nzStatus === "info")("ant-result-warning", ctx.nzStatus === "warning");
+NzResultComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResultComponent, selectors: [["nz-result"]], hostVars: 8, hostBindings: function NzResultComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-result-success", ctx.nzStatus === "success")("ant-result-error", ctx.nzStatus === "error")("ant-result-info", ctx.nzStatus === "info")("ant-result-warning", ctx.nzStatus === "warning");
     } }, inputs: { nzStatus: "nzStatus", nzIcon: "nzIcon", nzTitle: "nzTitle", nzSubTitle: "nzSubTitle", nzExtra: "nzExtra" }, exportAs: ["nzResult"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 11, vars: 8, consts: [[1, "ant-result-icon"], [4, "ngIf", "ngIfElse"], [4, "ngIf"], ["class", "ant-result-extra", 4, "ngIf"], ["exceptionTpl", ""], [4, "nzStringTemplateOutlet"], ["nz-icon", "", "nzTheme", "fill", 3, "nzType"], ["class", "ant-result-title", 4, "nzStringTemplateOutlet"], [1, "ant-result-title"], ["class", "ant-result-subtitle", 4, "nzStringTemplateOutlet"], [1, "ant-result-subtitle"], [1, "ant-result-extra"], [3, "ngSwitch"], [4, "ngSwitchCase"]], template: function NzResultComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"](_c0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
@@ -1608,7 +1611,9 @@ NzResultComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefine
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.nzExtra);
     } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_2__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_3__["NzIconDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_0__["NgSwitchCase"], NzResultNotFoundComponent, NzResultServerErrorComponent, NzResultUnauthorizedComponent]; }, encapsulation: 2, changeDetection: 0 });
-NzResultComponent.ctorParameters = () => [];
+NzResultComponent.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+];
 NzResultComponent.propDecorators = {
     nzIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzTitle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -1663,14 +1668,13 @@ NzResultComponent.propDecorators = {
     </ng-template>
   `,
                 host: {
-                    '[class.ant-result]': 'true',
                     '[class.ant-result-success]': `nzStatus === 'success'`,
                     '[class.ant-result-error]': `nzStatus === 'error'`,
                     '[class.ant-result-info]': `nzStatus === 'info'`,
                     '[class.ant-result-warning]': `nzStatus === 'warning'`
                 }
             }]
-    }], function () { return []; }, { nzStatus: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }]; }, { nzStatus: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzIcon: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]

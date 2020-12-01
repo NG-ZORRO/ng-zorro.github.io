@@ -279,6 +279,7 @@ class NzCascaderOptionComponent {
         this.nzLabelProperty = 'label';
         this.expandIcon = 'right';
         renderer.addClass(elementRef.nativeElement, 'ant-cascader-menu-item');
+        this.nativeElement = elementRef.nativeElement;
     }
     get optionLabel() {
         return this.option[this.nzLabelProperty];
@@ -874,6 +875,10 @@ class NzCascaderComponent {
         }
         if (visible) {
             this.cascaderService.syncOptions();
+            this.scrollToActivatedOptions();
+        }
+        if (!visible) {
+            this.inputValue = '';
         }
         this.menuVisible = visible;
         this.nzVisibleChange.emit(visible);
@@ -1153,6 +1158,18 @@ class NzCascaderComponent {
     setLocale() {
         this.locale = this.i18nService.getLocaleData('global');
         this.cdr.markForCheck();
+    }
+    scrollToActivatedOptions() {
+        // scroll only until option menu view is ready
+        Promise.resolve().then(() => {
+            this.cascaderItems
+                .toArray()
+                .filter(e => e.activated)
+                .forEach(e => {
+                var _a;
+                (_a = e.nativeElement) === null || _a === void 0 ? void 0 : _a.scrollIntoView({ block: 'start', inline: 'nearest' });
+            });
+        });
     }
 }
 /** @nocollapse */

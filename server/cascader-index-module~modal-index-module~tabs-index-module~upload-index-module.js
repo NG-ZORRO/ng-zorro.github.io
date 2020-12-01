@@ -5,7 +5,7 @@ exports.modules = {
 /*!**************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-modal.js ***!
   \**************************************************************/
-/*! exports provided: BaseModalContainerComponent, FADE_CLASS_NAME_MAP, MODAL_MASK_CLASS_NAME, ModalOptions, NZ_CONFIG_MODULE_NAME, NzModalCloseComponent, NzModalComponent, NzModalConfirmContainerComponent, NzModalContainerComponent, NzModalFooterComponent, NzModalFooterDirective, NzModalLegacyAPI, NzModalModule, NzModalRef, NzModalService, NzModalTitleComponent, ZOOM_CLASS_NAME_MAP, applyConfigDefaults, getConfigFromComponent, getValueWithConfig, nzModalAnimations, setContentInstanceParams, throwNzModalContentAlreadyAttachedError, ɵ0 */
+/*! exports provided: BaseModalContainerComponent, FADE_CLASS_NAME_MAP, MODAL_MASK_CLASS_NAME, ModalOptions, NZ_CONFIG_MODULE_NAME, NzModalCloseComponent, NzModalComponent, NzModalConfirmContainerComponent, NzModalContainerComponent, NzModalContentDirective, NzModalFooterComponent, NzModalFooterDirective, NzModalLegacyAPI, NzModalModule, NzModalRef, NzModalService, NzModalTitleComponent, ZOOM_CLASS_NAME_MAP, applyConfigDefaults, getConfigFromComponent, getValueWithConfig, nzModalAnimations, setContentInstanceParams, throwNzModalContentAlreadyAttachedError, ɵ0 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19,6 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalComponent", function() { return NzModalComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalConfirmContainerComponent", function() { return NzModalConfirmContainerComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalContainerComponent", function() { return NzModalContainerComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalContentDirective", function() { return NzModalContentDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalFooterComponent", function() { return NzModalFooterComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalFooterDirective", function() { return NzModalFooterDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzModalLegacyAPI", function() { return NzModalLegacyAPI; });
@@ -1176,6 +1177,23 @@ NzModalService.ctorParameters = () => [
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+class NzModalContentDirective {
+    constructor(templateRef) {
+        this.templateRef = templateRef;
+    }
+}
+/** @nocollapse */
+NzModalContentDirective.ɵfac = function NzModalContentDirective_Factory(t) { return new (t || NzModalContentDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"])); };
+/** @nocollapse */
+NzModalContentDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzModalContentDirective, selectors: [["", "nzModalContent", ""]], exportAs: ["nzModalContent"] });
+NzModalContentDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }
+];
+
+/**
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 class NzModalFooterDirective {
     constructor(nzModalRef, templateRef) {
         this.nzModalRef = nzModalRef;
@@ -1230,8 +1248,8 @@ class NzModalComponent {
         this.modalRef = null;
     }
     set modalFooter(value) {
-        if (value && value.templateRef) {
-            this.setFooterWithTemplate(value.templateRef);
+        if (value) {
+            this.setFooterWithTemplate(value);
         }
     }
     get afterOpen() {
@@ -1299,8 +1317,12 @@ class NzModalComponent {
     getConfig() {
         const componentConfig = getConfigFromComponent(this);
         componentConfig.nzViewContainerRef = this.viewContainerRef;
-        if (!this.nzContent) {
+        if (!this.nzContent && !this.contentFromContentChild) {
             componentConfig.nzContent = this.contentTemplateRef;
+            Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_4__["warnDeprecation"])('Usage `<ng-content></ng-content>` is deprecated, which will be removed in 12.0.0. Please instead use `<ng-template nzModalContent></ng-template>` to declare the content of the modal.');
+        }
+        else {
+            componentConfig.nzContent = this.nzContent || this.contentFromContentChild;
         }
         return componentConfig;
     }
@@ -1327,10 +1349,12 @@ class NzModalComponent {
 NzModalComponent.ɵfac = function NzModalComponent_Factory(t) { return new (t || NzModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzModalService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"])); };
 /** @nocollapse */
 NzModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzModalComponent, selectors: [["nz-modal"]], contentQueries: function NzModalComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzModalFooterDirective, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstaticContentQuery"](dirIndex, NzModalFooterDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstaticContentQuery"](dirIndex, NzModalContentDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"]);
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.modalFooter = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.contentFromContentChild = _t.first);
     } }, viewQuery: function NzModalComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstaticViewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], true);
     } if (rf & 2) {
@@ -1382,7 +1406,8 @@ NzModalComponent.propDecorators = {
     nzAfterClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
     nzVisibleChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
     contentTemplateRef: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: true },] }],
-    modalFooter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzModalFooterDirective,] }]
+    contentFromContentChild: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzModalContentDirective, { static: true, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] },] }],
+    modalFooter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"], args: [NzModalFooterDirective, { static: true, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] },] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
@@ -1599,6 +1624,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["SkipSelf"]
             }] }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzModalContentDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+        args: [{
+                selector: '[nzModalContent]',
+                exportAs: 'nzModalContent'
+            }]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }]; }, null); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzModalFooterDirective, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
         args: [{
@@ -1664,7 +1696,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], modalFooter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"],
-            args: [NzModalFooterDirective]
+            args: [NzModalFooterDirective, { static: true, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }]
         }], nzFooter: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzMask: [{
@@ -1698,6 +1730,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
         }], contentTemplateRef: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
             args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: true }]
+        }], contentFromContentChild: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChild"],
+            args: [NzModalContentDirective, { static: true, read: _angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"] }]
         }] }); })();
 
 /**
@@ -1946,7 +1981,7 @@ NzModalModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInje
             ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_16__["NzNoAnimationModule"],
             ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_19__["NzPipesModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzModalModule, { declarations: function () { return [NzModalComponent, NzModalFooterDirective, NzModalCloseComponent, NzModalFooterComponent, NzModalTitleComponent, NzModalContainerComponent, NzModalConfirmContainerComponent, NzModalComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzModalModule, { declarations: function () { return [NzModalComponent, NzModalFooterDirective, NzModalContentDirective, NzModalCloseComponent, NzModalFooterComponent, NzModalTitleComponent, NzModalContainerComponent, NzModalConfirmContainerComponent, NzModalComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"],
         ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_17__["NzOutletModule"],
         _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_1__["PortalModule"],
@@ -1955,7 +1990,7 @@ NzModalModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInje
         ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_18__["NzIconModule"],
         ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_19__["NzPipesModule"],
         ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_16__["NzNoAnimationModule"],
-        ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_19__["NzPipesModule"]]; }, exports: function () { return [NzModalComponent, NzModalFooterDirective]; } }); })();
+        ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_19__["NzPipesModule"]]; }, exports: function () { return [NzModalComponent, NzModalFooterDirective, NzModalContentDirective]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzModalModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
@@ -1971,12 +2006,13 @@ NzModalModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInje
                     ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_16__["NzNoAnimationModule"],
                     ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_19__["NzPipesModule"]
                 ],
-                exports: [NzModalComponent, NzModalFooterDirective],
+                exports: [NzModalComponent, NzModalFooterDirective, NzModalContentDirective],
                 providers: [NzModalService],
                 entryComponents: [NzModalContainerComponent, NzModalConfirmContainerComponent],
                 declarations: [
                     NzModalComponent,
                     NzModalFooterDirective,
+                    NzModalContentDirective,
                     NzModalCloseComponent,
                     NzModalFooterComponent,
                     NzModalTitleComponent,

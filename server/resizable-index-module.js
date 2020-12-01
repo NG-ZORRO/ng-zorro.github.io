@@ -3042,6 +3042,8 @@ class NzResizableDirective {
         this.ghostElement = null;
         this.sizeCache = null;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('nz-resizable');
         this.nzResizableService.handleMouseDown$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe(event => {
             if (this.nzDisabled) {
                 return;
@@ -3260,10 +3262,10 @@ class NzResizableDirective {
 /** @nocollapse */
 NzResizableDirective.ɵfac = function NzResizableDirective_Factory(t) { return new (t || NzResizableDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NzResizableService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
 /** @nocollapse */
-NzResizableDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzResizableDirective, selectors: [["", "nz-resizable", ""]], hostVars: 6, hostBindings: function NzResizableDirective_HostBindings(rf, ctx) { if (rf & 1) {
+NzResizableDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzResizableDirective, selectors: [["", "nz-resizable", ""]], hostVars: 4, hostBindings: function NzResizableDirective_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("mouseenter", function NzResizableDirective_mouseenter_HostBindingHandler() { return ctx.onMouseenter(); })("mouseleave", function NzResizableDirective_mouseleave_HostBindingHandler() { return ctx.onMouseleave(); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("nz-resizable", true)("nz-resizable-resizing", ctx.resizing)("nz-resizable-disabled", ctx.nzDisabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("nz-resizable-resizing", ctx.resizing)("nz-resizable-disabled", ctx.nzDisabled);
     } }, inputs: { nzBounds: "nzBounds", nzMinHeight: "nzMinHeight", nzMinWidth: "nzMinWidth", nzGridColumnCount: "nzGridColumnCount", nzMaxColumn: "nzMaxColumn", nzMinColumn: "nzMinColumn", nzLockAspectRatio: "nzLockAspectRatio", nzPreview: "nzPreview", nzDisabled: "nzDisabled", nzMaxHeight: "nzMaxHeight", nzMaxWidth: "nzMaxWidth" }, outputs: { nzResize: "nzResize", nzResizeEnd: "nzResizeEnd", nzResizeStart: "nzResizeStart" }, exportAs: ["nzResizable"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵProvidersFeature"]([NzResizableService])] });
 NzResizableDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] },
@@ -3313,7 +3315,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_2__["__decorate"])([
                 exportAs: 'nzResizable',
                 providers: [NzResizableService],
                 host: {
-                    '[class.nz-resizable]': 'true',
                     '[class.nz-resizable-resizing]': 'resizing',
                     '[class.nz-resizable-disabled]': 'nzDisabled',
                     '(mouseenter)': 'onMouseenter()',
@@ -3361,13 +3362,16 @@ class NzResizeHandleMouseDownEvent {
     }
 }
 class NzResizeHandleComponent {
-    constructor(nzResizableService, cdr) {
+    constructor(nzResizableService, cdr, elementRef) {
         this.nzResizableService = nzResizableService;
         this.cdr = cdr;
+        this.elementRef = elementRef;
         this.nzDirection = 'bottomRight';
         this.nzMouseDown = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.entered = false;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('nz-resizable-handle');
     }
     ngOnInit() {
         this.nzResizableService.mouseEntered$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe(entered => {
@@ -3384,19 +3388,20 @@ class NzResizeHandleComponent {
     }
 }
 /** @nocollapse */
-NzResizeHandleComponent.ɵfac = function NzResizeHandleComponent_Factory(t) { return new (t || NzResizeHandleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NzResizableService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"])); };
+NzResizeHandleComponent.ɵfac = function NzResizeHandleComponent_Factory(t) { return new (t || NzResizeHandleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NzResizableService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
 /** @nocollapse */
-NzResizeHandleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResizeHandleComponent, selectors: [["nz-resize-handle"], ["", "nz-resize-handle", ""]], hostVars: 20, hostBindings: function NzResizeHandleComponent_HostBindings(rf, ctx) { if (rf & 1) {
+NzResizeHandleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResizeHandleComponent, selectors: [["nz-resize-handle"], ["", "nz-resize-handle", ""]], hostVars: 18, hostBindings: function NzResizeHandleComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("mousedown", function NzResizeHandleComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); })("touchstart", function NzResizeHandleComponent_touchstart_HostBindingHandler($event) { return ctx.onMousedown($event); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("nz-resizable-handle", true)("nz-resizable-handle-top", ctx.nzDirection === "top")("nz-resizable-handle-right", ctx.nzDirection === "right")("nz-resizable-handle-bottom", ctx.nzDirection === "bottom")("nz-resizable-handle-left", ctx.nzDirection === "left")("nz-resizable-handle-topRight", ctx.nzDirection === "topRight")("nz-resizable-handle-bottomRight", ctx.nzDirection === "bottomRight")("nz-resizable-handle-bottomLeft", ctx.nzDirection === "bottomLeft")("nz-resizable-handle-topLeft", ctx.nzDirection === "topLeft")("nz-resizable-handle-box-hover", ctx.entered);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("nz-resizable-handle-top", ctx.nzDirection === "top")("nz-resizable-handle-right", ctx.nzDirection === "right")("nz-resizable-handle-bottom", ctx.nzDirection === "bottom")("nz-resizable-handle-left", ctx.nzDirection === "left")("nz-resizable-handle-topRight", ctx.nzDirection === "topRight")("nz-resizable-handle-bottomRight", ctx.nzDirection === "bottomRight")("nz-resizable-handle-bottomLeft", ctx.nzDirection === "bottomLeft")("nz-resizable-handle-topLeft", ctx.nzDirection === "topLeft")("nz-resizable-handle-box-hover", ctx.entered);
     } }, inputs: { nzDirection: "nzDirection" }, outputs: { nzMouseDown: "nzMouseDown" }, exportAs: ["nzResizeHandle"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzResizeHandleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
 NzResizeHandleComponent.ctorParameters = () => [
     { type: NzResizableService },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
 NzResizeHandleComponent.propDecorators = {
     nzDirection: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -3407,10 +3412,11 @@ NzResizeHandleComponent.propDecorators = {
         args: [{
                 selector: 'nz-resize-handle, [nz-resize-handle]',
                 exportAs: 'nzResizeHandle',
-                template: ` <ng-content></ng-content> `,
+                template: `
+    <ng-content></ng-content>
+  `,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
                 host: {
-                    '[class.nz-resizable-handle]': 'true',
                     '[class.nz-resizable-handle-top]': `nzDirection === 'top'`,
                     '[class.nz-resizable-handle-right]': `nzDirection === 'right'`,
                     '[class.nz-resizable-handle-bottom]': `nzDirection === 'bottom'`,
@@ -3424,7 +3430,7 @@ NzResizeHandleComponent.propDecorators = {
                     '(touchstart)': 'onMousedown($event)'
                 }
             }]
-    }], function () { return [{ type: NzResizableService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }]; }, { nzDirection: [{
+    }], function () { return [{ type: NzResizableService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }]; }, { nzDirection: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzMouseDown: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]

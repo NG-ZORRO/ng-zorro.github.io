@@ -203,6 +203,7 @@ class NzCodeEditorComponent {
         this.onChange = (_value) => { };
         this.onTouch = () => { };
         this.el = elementRef.nativeElement;
+        this.el.classList.add('ant-code-editor');
     }
     set nzEditorOption(value) {
         this.editorOption$.next(value);
@@ -366,9 +367,7 @@ class NzCodeEditorComponent {
 /** @nocollapse */
 NzCodeEditorComponent.ɵfac = function NzCodeEditorComponent_Factory(t) { return new (t || NzCodeEditorComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzCodeEditorService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"])); };
 /** @nocollapse */
-NzCodeEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzCodeEditorComponent, selectors: [["nz-code-editor"]], hostVars: 2, hostBindings: function NzCodeEditorComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-code-editor", true);
-    } }, inputs: { nzEditorMode: "nzEditorMode", nzOriginalText: "nzOriginalText", nzLoading: "nzLoading", nzFullControl: "nzFullControl", nzEditorOption: "nzEditorOption", nzToolkit: "nzToolkit" }, outputs: { nzEditorInitialized: "nzEditorInitialized" }, exportAs: ["nzCodeEditor"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
+NzCodeEditorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzCodeEditorComponent, selectors: [["nz-code-editor"]], inputs: { nzEditorMode: "nzEditorMode", nzOriginalText: "nzOriginalText", nzLoading: "nzLoading", nzFullControl: "nzFullControl", nzEditorOption: "nzEditorOption", nzToolkit: "nzToolkit" }, outputs: { nzEditorInitialized: "nzEditorInitialized" }, exportAs: ["nzCodeEditor"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
             {
                 provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
                 useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])((() => NzCodeEditorComponent)),
@@ -430,9 +429,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
       <ng-template [ngTemplateOutlet]="nzToolkit"></ng-template>
     </div>
   `,
-                host: {
-                    '[class.ant-code-editor]': 'true'
-                },
                 providers: [
                     {
                         provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],

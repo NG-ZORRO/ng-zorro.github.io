@@ -9476,6 +9476,30 @@ a.ant-typography.ant-typography-disabled:hover,
   background-color: @primary-color;
   border-radius: 100%;
 }
+.nz-graph {
+  background-color: #fff;
+}
+.nz-graph-edge-marker {
+  color: color(~`colorPalette("@{primary-color}", 3)`);
+}
+.nz-graph-node-wrapper {
+  background-color: color(~`colorPalette("@{primary-color}", 1)`);
+  border: 1px solid #8cc8ff;
+  color: rgba(0, 0, 0, 0.85);
+}
+.nz-graph-node-wrapper:hover {
+  border-color: @primary-color;
+}
+.nz-graph .nz-graph-node-expanded .nz-graph-node-wrapper {
+  background-color: transparent;
+}
+.nz-graph-minimap {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+.nz-graph-minimap canvas {
+  border: 1px solid #999;
+}
 .gh-btn,
 .gh-count {
   color: #333;
@@ -14099,6 +14123,30 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
 .ant-form-item-explain,
 .ant-form-item-extra {
   color: rgba(0, 0, 0, 0.45);
+}
+.nz-graph {
+  background-color: #fff;
+}
+.nz-graph-edge-marker {
+  color: color(~`colorPalette("@{primary-color}", 3)`);
+}
+.nz-graph-node-wrapper {
+  background-color: color(~`colorPalette("@{primary-color}", 1)`);
+  border: 1px solid #8cc8ff;
+  color: rgba(0, 0, 0, 0.85);
+}
+.nz-graph-node-wrapper:hover {
+  border-color: @primary-color;
+}
+.nz-graph .nz-graph-node-expanded .nz-graph-node-wrapper {
+  background-color: transparent;
+}
+.nz-graph-minimap {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+.nz-graph-minimap canvas {
+  border: 1px solid #999;
 }
 .ant-input-number {
   color: rgba(0, 0, 0, 0.85);

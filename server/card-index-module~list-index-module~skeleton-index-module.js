@@ -246,16 +246,22 @@ NzSkeletonComponent.propDecorators = {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzSkeletonElementDirective {
-    constructor() {
+    constructor(elementRef) {
+        this.elementRef = elementRef;
         this.nzActive = false;
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-skeleton', 'ant-skeleton-element');
     }
 }
 /** @nocollapse */
-NzSkeletonElementDirective.ɵfac = function NzSkeletonElementDirective_Factory(t) { return new (t || NzSkeletonElementDirective)(); };
+NzSkeletonElementDirective.ɵfac = function NzSkeletonElementDirective_Factory(t) { return new (t || NzSkeletonElementDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
 /** @nocollapse */
-NzSkeletonElementDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzSkeletonElementDirective, selectors: [["nz-skeleton-element"]], hostVars: 6, hostBindings: function NzSkeletonElementDirective_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-skeleton", true)("ant-skeleton-element", true)("ant-skeleton-active", ctx.nzActive);
+NzSkeletonElementDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzSkeletonElementDirective, selectors: [["nz-skeleton-element"]], hostVars: 2, hostBindings: function NzSkeletonElementDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-skeleton-active", ctx.nzActive);
     } }, inputs: { nzActive: "nzActive", nzType: "nzType" } });
+NzSkeletonElementDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
+];
 NzSkeletonElementDirective.propDecorators = {
     nzActive: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
@@ -265,12 +271,10 @@ NzSkeletonElementDirective.propDecorators = {
         args: [{
                 selector: 'nz-skeleton-element',
                 host: {
-                    '[class.ant-skeleton]': 'true',
-                    '[class.ant-skeleton-element]': 'true',
                     '[class.ant-skeleton-active]': 'nzActive'
                 }
             }]
-    }], function () { return []; }, { nzActive: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { nzActive: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzType: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]

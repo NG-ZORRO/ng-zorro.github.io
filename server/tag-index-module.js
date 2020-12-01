@@ -121,7 +121,7 @@ const _c0 = ["inputElement"];
 function NzDemoTagControlComponent_nz_tag_0_Template(rf, ctx) { if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tag", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzAfterClose", function NzDemoTagControlComponent_nz_tag_0_Template_nz_tag_nzAfterClose_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const tag_r3 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.handleClose(tag_r3); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnClose", function NzDemoTagControlComponent_nz_tag_0_Template_nz_tag_nzOnClose_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const tag_r3 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.handleClose(tag_r3); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -183,7 +183,7 @@ class NzDemoTagControlComponent {
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.inputElement = _t.first);
-    } }, decls: 3, vars: 3, consts: [[3, "nzMode", "nzAfterClose", 4, "ngFor", "ngForOf"], ["class", "editable-tag", "nzNoAnimation", "", 3, "click", 4, "ngIf"], ["nz-input", "", "nzSize", "small", "type", "text", "style", "width: 78px;", 3, "ngModel", "ngModelChange", "blur", "keydown.enter", 4, "ngIf"], [3, "nzMode", "nzAfterClose"], ["nzNoAnimation", "", 1, "editable-tag", 3, "click"], ["nz-icon", "", "nzType", "plus"], ["nz-input", "", "nzSize", "small", "type", "text", 2, "width", "78px", 3, "ngModel", "ngModelChange", "blur", "keydown.enter"], ["inputElement", ""]], template: function NzDemoTagControlComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 3, vars: 3, consts: [[3, "nzMode", "nzOnClose", 4, "ngFor", "ngForOf"], ["class", "editable-tag", "nzNoAnimation", "", 3, "click", 4, "ngIf"], ["nz-input", "", "nzSize", "small", "type", "text", "style", "width: 78px;", 3, "ngModel", "ngModelChange", "blur", "keydown.enter", 4, "ngIf"], [3, "nzMode", "nzOnClose"], ["nzNoAnimation", "", 1, "editable-tag", 3, "click"], ["nz-icon", "", "nzType", "plus"], ["nz-input", "", "nzSize", "small", "type", "text", 2, "width", "78px", 3, "ngModel", "ngModelChange", "blur", "keydown.enter"], ["inputElement", ""]], template: function NzDemoTagControlComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoTagControlComponent_nz_tag_0_Template, 2, 2, "nz-tag", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTagControlComponent_nz_tag_1_Template, 3, 0, "nz-tag", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoTagControlComponent_input_2_Template, 2, 1, "input", 2);
@@ -199,10 +199,13 @@ class NzDemoTagControlComponent {
         args: [{
                 selector: 'nz-demo-tag-control',
                 template: `
-    <nz-tag *ngFor="let tag of tags; let i = index" [nzMode]="i === 0 ? 'default' : 'closeable'" (nzAfterClose)="handleClose(tag)">
+    <nz-tag *ngFor="let tag of tags; let i = index" [nzMode]="i === 0 ? 'default' : 'closeable'" (nzOnClose)="handleClose(tag)">
       {{ sliceTagName(tag) }}
     </nz-tag>
-    <nz-tag *ngIf="!inputVisible" class="editable-tag" nzNoAnimation (click)="showInput()"> <i nz-icon nzType="plus"></i> New Tag </nz-tag>
+    <nz-tag *ngIf="!inputVisible" class="editable-tag" nzNoAnimation (click)="showInput()">
+      <i nz-icon nzType="plus"></i>
+      New Tag
+    </nz-tag>
     <input
       #inputElement
       nz-input
@@ -999,6 +1002,8 @@ class NzTagComponent {
         this.nzChecked = false;
         this.nzOnClose = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.nzCheckedChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-tag');
     }
     updateCheckedStatus() {
         if (this.nzMode === 'checkable') {
@@ -1027,12 +1032,12 @@ class NzTagComponent {
 /** @nocollapse */
 NzTagComponent.ɵfac = function NzTagComponent_Factory(t) { return new (t || NzTagComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
 /** @nocollapse */
-NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 12, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
+NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 10, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzTagComponent_click_HostBindingHandler() { return ctx.updateCheckedStatus(); });
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMap"](ctx.isPresetColor ? "ant-tag-" + ctx.nzColor : "");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("background-color", ctx.isPresetColor ? "" : ctx.nzColor);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-tag", true)("ant-tag-has-color", ctx.nzColor && !ctx.isPresetColor)("ant-tag-checkable", ctx.nzMode === "checkable")("ant-tag-checkable-checked", ctx.nzChecked);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-tag-has-color", ctx.nzColor && !ctx.isPresetColor)("ant-tag-checkable", ctx.nzMode === "checkable")("ant-tag-checkable-checked", ctx.nzChecked);
     } }, inputs: { nzMode: "nzMode", nzChecked: "nzChecked", nzColor: "nzColor" }, outputs: { nzOnClose: "nzOnClose", nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzTag"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [["nz-icon", "", "nzType", "close", "class", "ant-tag-close-icon", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 1, "ant-tag-close-icon", 3, "click"]], template: function NzTagComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
@@ -1071,7 +1076,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 host: {
                     '[style.background-color]': `isPresetColor ? '' : nzColor`,
                     '[class]': `isPresetColor ? ('ant-tag-' + nzColor) : ''`,
-                    '[class.ant-tag]': `true`,
                     '[class.ant-tag-has-color]': `nzColor && !isPresetColor`,
                     '[class.ant-tag-checkable]': `nzMode === 'checkable'`,
                     '[class.ant-tag-checkable-checked]': `nzChecked`,

@@ -639,7 +639,7 @@ class NzDemoTimePickerZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](190, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](192, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](193, "[nzAddon]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](193, "[nzAddOn]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](194, "td");
@@ -1668,7 +1668,7 @@ class NzDemoTimePickerEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](187, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](188, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](189, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190, "[nzAddon]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190, "[nzAddOn]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](191, "td");

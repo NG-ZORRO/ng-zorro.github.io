@@ -1712,10 +1712,8 @@ class DatePickerService {
         }
     }
     setValue(value) {
-        if (value !== this.value) {
-            this.value = value;
-            this.valueChange$.next(this.value);
-        }
+        this.value = value;
+        this.valueChange$.next(this.value);
     }
     getActiveIndex(part = this.activeInput) {
         return { left: 0, right: 1 }[part];
@@ -2149,8 +2147,10 @@ class NzPickerComponent {
         this.destroy$.complete();
     }
     ngOnChanges(changes) {
-        if (changes.format && changes.format.currentValue) {
+        var _a, _b;
+        if (((_a = changes.format) === null || _a === void 0 ? void 0 : _a.currentValue) !== ((_b = changes.format) === null || _b === void 0 ? void 0 : _b.previousValue)) {
             this.inputSize = Math.max(10, this.format.length) + 2;
+            this.updateInputValue();
         }
     }
     updateInputWidthAndArrowLeft() {
@@ -2404,6 +2404,7 @@ class NzDatePickerComponent {
         this.panelMode = 'date';
         this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_14__["Subject"]();
         this.isCustomPlaceHolder = false;
+        this.isCustomFormat = false;
         this.showTime = false;
         // --- Common API
         this.nzAllowClear = true;
@@ -2430,6 +2431,8 @@ class NzDatePickerComponent {
         // NOTE: onChangeFn/onTouchedFn will not be assigned if user not use as ngModel
         this.onChangeFn = () => void 0;
         this.onTouchedFn = () => void 0;
+        // TODO: move to host after View Engine deprecation
+        this.elementRef.nativeElement.classList.add('ant-picker');
     }
     get nzShowTime() {
         return this.showTime;
@@ -2473,7 +2476,7 @@ class NzDatePickerComponent {
         this.setModeAndFormat();
     }
     ngOnChanges(changes) {
-        var _a;
+        var _a, _b;
         if (changes.nzPopupStyle) {
             // Always assign the popup style patch
             this.nzPopupStyle = this.nzPopupStyle ? Object.assign(Object.assign({}, this.nzPopupStyle), POPUP_STYLE_PATCH) : POPUP_STYLE_PATCH;
@@ -2481,6 +2484,9 @@ class NzDatePickerComponent {
         // Mark as customized placeholder by user once nzPlaceHolder assigned at the first time
         if ((_a = changes.nzPlaceHolder) === null || _a === void 0 ? void 0 : _a.currentValue) {
             this.isCustomPlaceHolder = true;
+        }
+        if ((_b = changes.nzFormat) === null || _b === void 0 ? void 0 : _b.currentValue) {
+            this.isCustomFormat = true;
         }
         if (changes.nzLocale) {
             // The nzLocale is currently handled by user
@@ -2493,6 +2499,7 @@ class NzDatePickerComponent {
             Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_17__["warnDeprecation"])(`'nzOpen' in DatePicker is going to be removed in 11.0.0. Please use open() or close() method instead.`);
         }
         if (changes.nzMode) {
+            this.setDefaultPlaceHolder();
             this.setModeAndFormat();
         }
     }
@@ -2517,7 +2524,7 @@ class NzDatePickerComponent {
         }
         this.panelMode = this.isRange ? [this.nzMode, this.nzMode] : this.nzMode;
         // Default format when it's empty
-        if (!this.nzFormat) {
+        if (!this.isCustomFormat) {
             this.nzFormat = inputFormats[this.nzMode];
         }
     }
@@ -2634,10 +2641,10 @@ NzDatePickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵde
     } if (rf & 2) {
         var _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.picker = _t.first);
-    } }, hostVars: 12, hostBindings: function NzDatePickerComponent_HostBindings(rf, ctx) { if (rf & 1) {
+    } }, hostVars: 10, hostBindings: function NzDatePickerComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzDatePickerComponent_click_HostBindingHandler($event) { return ctx.picker.onClickInputBox($event); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-picker", true)("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.nzSize === "large")("ant-picker-small", ctx.nzSize === "small")("ant-picker-disabled", ctx.nzDisabled)("ant-picker-borderless", ctx.nzBorderless);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.nzSize === "large")("ant-picker-small", ctx.nzSize === "small")("ant-picker-disabled", ctx.nzDisabled)("ant-picker-borderless", ctx.nzBorderless);
     } }, inputs: { nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzBorderless: "nzBorderless", nzInputReadOnly: "nzInputReadOnly", nzPlaceHolder: "nzPlaceHolder", nzPopupStyle: "nzPopupStyle", nzSize: "nzSize", nzShowToday: "nzShowToday", nzMode: "nzMode", nzDefaultPickerValue: "nzDefaultPickerValue", nzSeparator: "nzSeparator", nzSuffixIcon: "nzSuffixIcon", nzShowTime: "nzShowTime", nzFormat: "nzFormat", nzLocale: "nzLocale", nzOpen: "nzOpen", nzDisabledDate: "nzDisabledDate", nzDropdownClassName: "nzDropdownClassName", nzDateRender: "nzDateRender", nzDisabledTime: "nzDisabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", nzRanges: "nzRanges" }, outputs: { nzOnPanelChange: "nzOnPanelChange", nzOnCalendarChange: "nzOnCalendarChange", nzOnOk: "nzOnOk", nzOnOpenChange: "nzOnOpenChange" }, exportAs: ["nzDatePicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([
             DatePickerService,
             {
@@ -3143,7 +3150,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_13__["__decorate"])([
     </div>
   `,
                 host: {
-                    '[class.ant-picker]': `true`,
                     '[class.ant-picker-range]': `isRange`,
                     '[class.ant-picker-large]': `nzSize === 'large'`,
                     '[class.ant-picker-small]': `nzSize === 'small'`,
@@ -3783,6 +3789,7 @@ class AbstractTable {
         }
         if (changes.disabledDate ||
             changes.locale ||
+            changes.showWeek ||
             this.isDateRealChange(changes.activeDate) ||
             this.isDateRealChange(changes.value) ||
             this.isDateRealChange(changes.selectedValue) ||
