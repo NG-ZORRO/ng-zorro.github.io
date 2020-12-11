@@ -3028,10 +3028,6 @@ html {
 .ant-alert-close-text:hover {
   color: rgba(0, 0, 0, 0.75);
 }
-.ant-alert-with-description {
-  color: rgba(0, 0, 0, 0.85);
-  border-radius: 2px;
-}
 .ant-alert-with-description .ant-alert-message {
   color: rgba(0, 0, 0, 0.85);
 }
@@ -7468,7 +7464,7 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   box-shadow: none !important;
 }
 .ant-skeleton-header .ant-skeleton-avatar {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-header .ant-skeleton-avatar.ant-skeleton-avatar-circle {
   border-radius: 50%;
@@ -7480,10 +7476,10 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   border-radius: 50%;
 }
 .ant-skeleton-content .ant-skeleton-title {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-content .ant-skeleton-paragraph > li {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-round .ant-skeleton-content .ant-skeleton-title,
 .ant-skeleton-round .ant-skeleton-content .ant-skeleton-paragraph > li {
@@ -7491,27 +7487,27 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
 }
 .ant-skeleton.ant-skeleton-active .ant-skeleton-content .ant-skeleton-title,
 .ant-skeleton.ant-skeleton-active .ant-skeleton-content .ant-skeleton-paragraph > li {
-  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
   background-size: 400% 100%;
 }
 .ant-skeleton.ant-skeleton-active .ant-skeleton-avatar {
-  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
   background-size: 400% 100%;
 }
 .ant-skeleton.ant-skeleton-active .ant-skeleton-button {
-  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
   background-size: 400% 100%;
 }
 .ant-skeleton.ant-skeleton-active .ant-skeleton-input {
-  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
   background-size: 400% 100%;
 }
 .ant-skeleton.ant-skeleton-active .ant-skeleton-image {
-  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background: linear-gradient(90deg, rgba(190, 190, 190, 0.2) 25%, rgba(129, 129, 129, 0.24) 37%, rgba(190, 190, 190, 0.2) 63%);
   background-size: 400% 100%;
 }
 .ant-skeleton-element .ant-skeleton-button {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
   border-radius: 2px;
 }
 .ant-skeleton-element .ant-skeleton-button.ant-skeleton-button-circle {
@@ -7533,7 +7529,7 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   border-radius: 24px;
 }
 .ant-skeleton-element .ant-skeleton-avatar {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-element .ant-skeleton-avatar.ant-skeleton-avatar-circle {
   border-radius: 50%;
@@ -7545,10 +7541,10 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   border-radius: 50%;
 }
 .ant-skeleton-element .ant-skeleton-input {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-element .ant-skeleton-image {
-  background: #f2f2f2;
+  background: rgba(190, 190, 190, 0.2);
 }
 .ant-skeleton-element .ant-skeleton-image.ant-skeleton-image-circle {
   border-radius: 50%;
@@ -8977,9 +8973,6 @@ a.ant-typography.ant-typography-disabled:hover,
 .ant-upload-list-picture-card .ant-upload-list-item-uploading.ant-upload-list-item {
   background-color: #fafafa;
 }
-.ant-upload-list .ant-upload-success-icon {
-  color: #52c41a;
-}
 .ant-select-auto-complete {
   color: rgba(0, 0, 0, 0.85);
 }
@@ -9481,17 +9474,6 @@ a.ant-typography.ant-typography-disabled:hover,
 }
 .nz-graph-edge-marker {
   color: color(~`colorPalette("@{primary-color}", 3)`);
-}
-.nz-graph-node-wrapper {
-  background-color: color(~`colorPalette("@{primary-color}", 1)`);
-  border: 1px solid #8cc8ff;
-  color: rgba(0, 0, 0, 0.85);
-}
-.nz-graph-node-wrapper:hover {
-  border-color: @primary-color;
-}
-.nz-graph .nz-graph-node-expanded .nz-graph-node-wrapper {
-  background-color: transparent;
 }
 .nz-graph-minimap {
   background-color: #fff;
@@ -11000,7 +10982,7 @@ body[data-theme='dark']::-webkit-scrollbar-thumb :hover,
   background-color: #262626;
 }
 label.api-type-label {
-  border-radius: 4px;
+  border-radius: 2px;
   color: rgba(255, 255, 255, 0.85);
 }
 label.api-type-label.directive {
@@ -11305,10 +11287,6 @@ html {
 }
 .ant-alert-close-text:hover {
   color: rgba(0, 0, 0, 0.75);
-}
-.ant-alert-with-description {
-  color: rgba(0, 0, 0, 0.85);
-  border-radius: 2px;
 }
 .ant-alert-with-description .ant-alert-message {
   color: rgba(0, 0, 0, 0.85);
@@ -14129,17 +14107,6 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
 }
 .nz-graph-edge-marker {
   color: color(~`colorPalette("@{primary-color}", 3)`);
-}
-.nz-graph-node-wrapper {
-  background-color: color(~`colorPalette("@{primary-color}", 1)`);
-  border: 1px solid #8cc8ff;
-  color: rgba(0, 0, 0, 0.85);
-}
-.nz-graph-node-wrapper:hover {
-  border-color: @primary-color;
-}
-.nz-graph .nz-graph-node-expanded .nz-graph-node-wrapper {
-  background-color: transparent;
 }
 .nz-graph-minimap {
   background-color: #fff;
@@ -17703,9 +17670,6 @@ a.ant-typography.ant-typography-disabled:hover,
 }
 .ant-upload-list-picture-card .ant-upload-list-item-uploading.ant-upload-list-item {
   background-color: #fafafa;
-}
-.ant-upload-list .ant-upload-success-icon {
-  color: #52c41a;
 }
 .cdk-overlay-backdrop {
   -webkit-tap-highlight-color: transparent;
@@ -19277,7 +19241,7 @@ body[data-theme='dark']::-webkit-scrollbar-thumb :hover,
   background-color: #262626;
 }
 label.api-type-label {
-  border-radius: 4px;
+  border-radius: 2px;
   color: rgba(255, 255, 255, 0.85);
 }
 label.api-type-label.directive {

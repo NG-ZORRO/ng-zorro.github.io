@@ -938,7 +938,8 @@ class NzTabNavBarComponent {
         this.setPingStatus();
     }
     handleKeydown(event) {
-        if (Object(_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_6__["hasModifierKey"])(event)) {
+        const inNavigationList = this.navWarpRef.nativeElement.contains(event.target);
+        if (Object(_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_6__["hasModifierKey"])(event) || !inNavigationList) {
             return;
         }
         switch (event.keyCode) {

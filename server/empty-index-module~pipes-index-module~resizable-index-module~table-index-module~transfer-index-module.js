@@ -631,7 +631,7 @@ function NzTableComponent_ng_template_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzTableComponent_ng_template_10_nz_pagination_0_Template, 1, 11, "nz-pagination", 15);
 } if (rf & 2) {
     const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r9.nzShowPagination && ctx_r9.data.length);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r9.nzShowPagination && ctx_r9.showPagination && ctx_r9.data.length);
 } }
 function NzTableComponent_ng_template_12_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](0);
@@ -2116,6 +2116,7 @@ class NzTableComponent {
         this.listOfManualColWidth = [];
         this.hasFixLeft = false;
         this.hasFixRight = false;
+        this.showPagination = true;
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
         this.loading$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["BehaviorSubject"](false);
         this.templateMode$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["BehaviorSubject"](false);
@@ -2207,9 +2208,7 @@ class NzTableComponent {
             this.nzTableDataService.updateFrontPagination(this.nzFrontPagination);
         }
         if (nzScroll) {
-            this.scrollX = (this.nzScroll && this.nzScroll.x) || null;
-            this.scrollY = (this.nzScroll && this.nzScroll.y) || null;
-            this.nzTableStyleService.setScroll(this.scrollX, this.scrollY);
+            this.setScrollOnChanges();
         }
         if (nzWidthConfig) {
             this.nzTableStyleService.setTableWidthConfig(this.nzWidthConfig);
@@ -2223,6 +2222,8 @@ class NzTableComponent {
         if (nzNoResult) {
             this.nzTableStyleService.setNoResult(this.nzNoResult);
         }
+        this.showPagination =
+            (this.nzHideOnSinglePage && this.nzData.length > this.nzPageSize) || (this.nzData.length > 0 && !this.nzHideOnSinglePage);
     }
     ngAfterViewInit() {
         this.nzResizeObserver
@@ -2240,6 +2241,11 @@ class NzTableComponent {
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
+    }
+    setScrollOnChanges() {
+        this.scrollX = (this.nzScroll && this.nzScroll.x) || null;
+        this.scrollY = (this.nzScroll && this.nzScroll.y) || null;
+        this.nzTableStyleService.setScroll(this.scrollX, this.scrollY);
     }
 }
 /** @nocollapse */
@@ -3051,7 +3057,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_19__["__decorate"])([
     </nz-spin>
     <ng-template #paginationTemplate>
       <nz-pagination
-        *ngIf="nzShowPagination && data.length"
+        *ngIf="nzShowPagination && showPagination && data.length"
         class="ant-table-pagination ant-table-pagination-right"
         [nzShowSizeChanger]="nzShowSizeChanger"
         [nzPageSizeOptions]="nzPageSizeOptions"

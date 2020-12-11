@@ -2923,7 +2923,7 @@ function NzDemoTransferTreeTransferComponent_ng_template_1_ng_template_2_Templat
     const node_r8 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-tree-checkbox-disabled", node_r8.isDisabled)("ant-tree-checkbox-checked", node_r8.isChecked);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](node_r8.title);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", node_r8.title, " ");
 } }
 function NzDemoTransferTreeTransferComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tree", 2, 3);
@@ -3025,9 +3025,9 @@ class NzDemoTransferTreeTransferComponent {
             >
               <span class="ant-tree-checkbox-inner"></span>
             </span>
-            <span (click)="checkBoxChange(node, onItemSelect)" class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open">{{
-              node.title
-            }}</span>
+            <span (click)="checkBoxChange(node, onItemSelect)" class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-open">
+              {{ node.title }}
+            </span>
           </ng-template>
         </nz-tree>
       </ng-template>

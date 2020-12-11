@@ -128,7 +128,7 @@ function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("colSpan", item_r11.span);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-descriptions-item-colon", ctx_r13.nzColon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-descriptions-item-no-colon", !ctx_r13.nzColon);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzStringTemplateOutlet", item_r11.title);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](2);
@@ -222,7 +222,7 @@ function NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("colSpan", item_r32.span);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-descriptions-item-colon", ctx_r30.nzColon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-descriptions-item-no-colon", !ctx_r30.nzColon);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzStringTemplateOutlet", item_r32.title);
 } }
@@ -581,7 +581,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
                 <ng-container *ngIf="!nzBordered">
                   <td class="ant-descriptions-item" [colSpan]="item.span">
                     <div class="ant-descriptions-item-container">
-                      <span class="ant-descriptions-item-label" [class.ant-descriptions-item-colon]="nzColon">
+                      <span class="ant-descriptions-item-label" [class.ant-descriptions-item-no-colon]="!nzColon">
                         <ng-container *nzStringTemplateOutlet="item.title">
                           {{ item.title }}
                         </ng-container>
@@ -614,7 +614,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
                 <tr class="ant-descriptions-row">
                   <ng-container *ngFor="let item of row; let isLast = last">
                     <td class="ant-descriptions-item" [colSpan]="item.span">
-                      <span class="ant-descriptions-item-label" [class.ant-descriptions-item-colon]="nzColon">
+                      <span class="ant-descriptions-item-label" [class.ant-descriptions-item-no-colon]="!nzColon">
                         <ng-container *nzStringTemplateOutlet="item.title">
                           {{ item.title }}
                         </ng-container>

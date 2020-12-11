@@ -2459,6 +2459,13 @@ class NzDemoUploadPictureCardComponent {
                 url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
             },
             {
+                uid: '-xxx',
+                percent: 50,
+                name: 'image.png',
+                status: 'uploading',
+                url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
+            },
+            {
                 uid: '-5',
                 name: 'image.png',
                 status: 'error'

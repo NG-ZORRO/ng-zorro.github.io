@@ -3383,7 +3383,7 @@ class NzDemoAutoCompleteZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](406, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](407, "\u4F7F\u7528\u952E\u76D8\u9009\u62E9\u9009\u9879\u7684\u65F6\u5019\u628A\u9009\u4E2D\u9879\u56DE\u586B\u5230\u8F93\u5165\u6846\u4E2D");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](407, "\u4F7F\u7528\u952E\u76D8\u9009\u62E9\u9009\u9879\u7684\u65F6\u5019\uFF0C\u4F1A\u628A\u5F53\u524D\u9AD8\u4EAE\u9879\u7684\u503C\u5373\u65F6\u56DE\u586B\u5230\u8F93\u5165\u6846\u4E2D");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](408, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](409, "code");
