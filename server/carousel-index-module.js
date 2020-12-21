@@ -34,8 +34,8 @@ class NzDemoCarouselAutoplayComponent {
         this.array = [1, 2, 3, 4];
     }
 }
-/** @nocollapse */ NzDemoCarouselAutoplayComponent.ɵfac = function NzDemoCarouselAutoplayComponent_Factory(t) { return new (t || NzDemoCarouselAutoplayComponent)(); };
-/** @nocollapse */ NzDemoCarouselAutoplayComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselAutoplayComponent, selectors: [["nz-demo-carousel-autoplay"]], decls: 2, vars: 1, consts: [["nzAutoPlay", ""], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselAutoplayComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCarouselAutoplayComponent.ɵfac = function NzDemoCarouselAutoplayComponent_Factory(t) { return new (t || NzDemoCarouselAutoplayComponent)(); };
+NzDemoCarouselAutoplayComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselAutoplayComponent, selectors: [["nz-demo-carousel-autoplay"]], decls: 2, vars: 1, consts: [["nzAutoPlay", ""], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselAutoplayComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-carousel", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCarouselAutoplayComponent_div_1_Template, 3, 1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -115,8 +115,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoCarouselModule {
 }
-/** @nocollapse */ NzDemoCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCarouselModule });
-/** @nocollapse */ NzDemoCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCarouselModule_Factory(t) { return new (t || NzDemoCarouselModule)(); }, imports: [[
+NzDemoCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCarouselModule });
+NzDemoCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCarouselModule_Factory(t) { return new (t || NzDemoCarouselModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -208,11 +208,11 @@ class NzDemoCarouselEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCarouselEnComponent.ɵfac = function NzDemoCarouselEnComponent_Factory(t) { return new (t || NzDemoCarouselEnComponent)(); };
-/** @nocollapse */ NzDemoCarouselEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselEnComponent, selectors: [["nz-demo-carousel"]], viewQuery: function NzDemoCarouselEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCarouselEnComponent.ɵfac = function NzDemoCarouselEnComponent_Factory(t) { return new (t || NzDemoCarouselEnComponent)(); };
+NzDemoCarouselEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselEnComponent, selectors: [["nz-demo-carousel"]], viewQuery: function NzDemoCarouselEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 299, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "Position"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "Fade in"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "Scroll automatically"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Fade in", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Position", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Scroll automatically", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "customizing-transition-effects"], ["onclick", "window.location.hash = 'customizing-transition-effects'", 1, "anchor"]], template: function NzDemoCarouselEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -250,13 +250,13 @@ class NzDemoCarouselEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "When there is a group of content on the same level.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " When there is a group of content on the same level.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "When there is insufficient content space, it can be used to save space in the form of a revolving door.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " When there is insufficient content space, it can be used to save space in the form of a revolving door.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "Commonly used for a group of pictures/cards.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " Commonly used for a group of pictures/cards.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "pre", 14);
@@ -778,8 +778,8 @@ class NzDemoCarouselBasicComponent {
         this.effect = 'scrollx';
     }
 }
-/** @nocollapse */ NzDemoCarouselBasicComponent.ɵfac = function NzDemoCarouselBasicComponent_Factory(t) { return new (t || NzDemoCarouselBasicComponent)(); };
-/** @nocollapse */ NzDemoCarouselBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselBasicComponent, selectors: [["nz-demo-carousel-basic"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCarouselBasicComponent.ɵfac = function NzDemoCarouselBasicComponent_Factory(t) { return new (t || NzDemoCarouselBasicComponent)(); };
+NzDemoCarouselBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselBasicComponent, selectors: [["nz-demo-carousel-basic"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-carousel", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCarouselBasicComponent_div_1_Template, 3, 1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -855,8 +855,8 @@ class NzDemoCarouselFadeComponent {
         this.array = [1, 2, 3, 4];
     }
 }
-/** @nocollapse */ NzDemoCarouselFadeComponent.ɵfac = function NzDemoCarouselFadeComponent_Factory(t) { return new (t || NzDemoCarouselFadeComponent)(); };
-/** @nocollapse */ NzDemoCarouselFadeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselFadeComponent, selectors: [["nz-demo-carousel-fade"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselFadeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCarouselFadeComponent.ɵfac = function NzDemoCarouselFadeComponent_Factory(t) { return new (t || NzDemoCarouselFadeComponent)(); };
+NzDemoCarouselFadeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselFadeComponent, selectors: [["nz-demo-carousel-fade"]], decls: 2, vars: 2, consts: [[3, "nzEffect"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselFadeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-carousel", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoCarouselFadeComponent_div_1_Template, 3, 1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -956,8 +956,8 @@ class NzDemoCarouselPositionComponent {
         this.dotPosition = 'bottom';
     }
 }
-/** @nocollapse */ NzDemoCarouselPositionComponent.ɵfac = function NzDemoCarouselPositionComponent_Factory(t) { return new (t || NzDemoCarouselPositionComponent)(); };
-/** @nocollapse */ NzDemoCarouselPositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselPositionComponent, selectors: [["nz-demo-carousel-position"]], decls: 11, vars: 3, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "bottom"], ["nz-radio-button", "", "nzValue", "top"], ["nz-radio-button", "", "nzValue", "left"], ["nz-radio-button", "", "nzValue", "right"], [3, "nzDotPosition"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselPositionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCarouselPositionComponent.ɵfac = function NzDemoCarouselPositionComponent_Factory(t) { return new (t || NzDemoCarouselPositionComponent)(); };
+NzDemoCarouselPositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselPositionComponent, selectors: [["nz-demo-carousel-position"]], decls: 11, vars: 3, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "bottom"], ["nz-radio-button", "", "nzValue", "top"], ["nz-radio-button", "", "nzValue", "left"], ["nz-radio-button", "", "nzValue", "right"], [3, "nzDotPosition"], ["nz-carousel-content", "", 4, "ngFor", "ngForOf"], ["nz-carousel-content", ""]], template: function NzDemoCarouselPositionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-radio-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCarouselPositionComponent_Template_nz_radio_group_ngModelChange_0_listener($event) { return ctx.dotPosition = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
@@ -1041,17 +1041,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselComponent", function() { return NzCarouselComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselContentDirective", function() { return NzCarouselContentDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzCarouselModule", function() { return NzCarouselModule; });
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "zOht");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
-/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
+/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+
 
 
 
@@ -1073,43 +1075,44 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const _c0 = ["slickList"];
 const _c1 = ["slickTrack"];
 function NzCarouselComponent_ul_6_li_1_ng_template_1_Template(rf, ctx) { }
 const _c2 = function (a0) { return { $implicit: a0 }; };
 function NzCarouselComponent_ul_6_li_1_Template(rf, ctx) { if (rf & 1) {
-    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "li", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2); return ctx_r9.goTo(i_r7); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r9.goTo(i_r7); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const content_r6 = ctx.$implicit;
     const i_r7 = ctx.index;
-    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-active", content_r6.isActive);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r5.nzDotRender || _r3)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](4, _c2, i_r7));
+    const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("slick-active", content_r6.isActive);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", ctx_r5.nzDotRender || _r3)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](4, _c2, i_r7));
 } }
 function NzCarouselComponent_ul_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "ul", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_Template, 2, 6, "li", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "ul", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_Template, 2, 6, "li", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-dots-top", ctx_r2.nzDotPosition === "top")("slick-dots-bottom", ctx_r2.nzDotPosition === "bottom")("slick-dots-left", ctx_r2.nzDotPosition === "left")("slick-dots-right", ctx_r2.nzDotPosition === "right");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r2.carouselContents);
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("slick-dots-top", ctx_r2.nzDotPosition === "top")("slick-dots-bottom", ctx_r2.nzDotPosition === "bottom")("slick-dots-left", ctx_r2.nzDotPosition === "left")("slick-dots-right", ctx_r2.nzDotPosition === "right");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx_r2.carouselContents);
 } }
 function NzCarouselComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "button");
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "button");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const index_r11 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](index_r11 + 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](index_r11 + 1);
 } }
 const _c3 = ["*"];
 class NzCarouselContentDirective {
@@ -1132,13 +1135,11 @@ class NzCarouselContentDirective {
         return this._active;
     }
 }
-/** @nocollapse */
-NzCarouselContentDirective.ɵfac = function NzCarouselContentDirective_Factory(t) { return new (t || NzCarouselContentDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"])); };
-/** @nocollapse */
-NzCarouselContentDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzCarouselContentDirective, selectors: [["", "nz-carousel-content", ""]], exportAs: ["nzCarouselContent"] });
+NzCarouselContentDirective.ɵfac = function NzCarouselContentDirective_Factory(t) { return new (t || NzCarouselContentDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"])); };
+NzCarouselContentDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzCarouselContentDirective, selectors: [["", "nz-carousel-content", ""]], exportAs: ["nzCarouselContent"] });
 NzCarouselContentDirective.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }
 ];
 
 /**
@@ -1223,7 +1224,7 @@ class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
     }
     switch(_f, _t) {
         const { to: t } = this.getFromToInBoundary(_f, _t);
-        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
         this.contents.forEach((content, i) => {
             this.renderer.setStyle(content.el, 'opacity', t === i ? '1' : '0');
         });
@@ -1284,7 +1285,7 @@ class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
     }
     switch(_f, _t) {
         const { to: t } = this.getFromToInBoundary(_f, _t);
-        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        const complete$ = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
         this.renderer.setStyle(this.slickTrackEl, 'transition', `transform ${this.carouselComponent.nzTransitionSpeed}ms ease`);
         if (this.vertical) {
             this.verticalTransform(_f, _t);
@@ -1388,7 +1389,7 @@ class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["InjectionToken"]('nz-carousel-custom-strategies');
+const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["InjectionToken"]('nz-carousel-custom-strategies');
 
 /**
  * Use of this source code is governed by an MIT-style license that can be
@@ -1396,13 +1397,14 @@ const NZ_CAROUSEL_CUSTOM_STRATEGIES = new _angular_core__WEBPACK_IMPORTED_MODULE
  */
 const NZ_CONFIG_MODULE_NAME = 'carousel';
 class NzCarouselComponent {
-    constructor(elementRef, nzConfigService, renderer, cdr, platform, resizeService, nzDragService, customStrategies) {
+    constructor(elementRef, nzConfigService, renderer, cdr, platform, resizeService, nzDragService, directionality, customStrategies) {
         this.nzConfigService = nzConfigService;
         this.renderer = renderer;
         this.cdr = cdr;
         this.platform = platform;
         this.resizeService = resizeService;
         this.nzDragService = nzDragService;
+        this.directionality = directionality;
         this.customStrategies = customStrategies;
         this._nzModuleName = NZ_CONFIG_MODULE_NAME;
         this.nzEffect = 'scrollx';
@@ -1412,12 +1414,13 @@ class NzCarouselComponent {
         this.nzAutoPlaySpeed = 3000;
         this.nzTransitionSpeed = 500;
         this._dotPosition = 'bottom';
-        this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
+        this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.activeIndex = 0;
         this.vertical = false;
         this.transitionInProgress = null;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_8__["Subject"]();
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_9__["Subject"]();
         this.gestureRect = null;
         this.pointerDelta = null;
         this.isTransiting = false;
@@ -1467,19 +1470,27 @@ class NzCarouselComponent {
     get nzDotPosition() {
         return this._dotPosition;
     }
+    ngOnInit() {
+        var _a;
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.switchStrategy();
+        });
+    }
     ngAfterContentInit() {
         this.markContentActive(0);
     }
     ngAfterViewInit() {
         this.slickListEl = this.slickList.nativeElement;
         this.slickTrackEl = this.slickTrack.nativeElement;
-        this.carouselContents.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$)).subscribe(() => {
+        this.carouselContents.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.markContentActive(0);
             this.layout();
         });
         this.resizeService
             .subscribe()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$))
             .subscribe(() => {
             this.layout();
         });
@@ -1521,11 +1532,11 @@ class NzCarouselComponent {
         this.destroy$.complete();
     }
     onKeyDown(e) {
-        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["LEFT_ARROW"]) {
+        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_5__["LEFT_ARROW"]) {
             e.preventDefault();
             this.pre();
         }
-        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_4__["RIGHT_ARROW"]) {
+        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_5__["RIGHT_ARROW"]) {
             this.next();
             e.preventDefault();
         }
@@ -1596,110 +1607,109 @@ class NzCarouselComponent {
         }
     }
 }
-/** @nocollapse */
-NzCarouselComponent.ɵfac = function NzCarouselComponent_Factory(t) { return new (t || NzCarouselComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NZ_CAROUSEL_CUSTOM_STRATEGIES, 8)); };
-/** @nocollapse */
-NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzCarouselComponent, selectors: [["nz-carousel"]], contentQueries: function NzCarouselComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzCarouselContentDirective, false);
+NzCarouselComponent.ɵfac = function NzCarouselComponent_Factory(t) { return new (t || NzCarouselComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzResizeService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzDragService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NZ_CAROUSEL_CUSTOM_STRATEGIES, 8)); };
+NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzCarouselComponent, selectors: [["nz-carousel"]], contentQueries: function NzCarouselComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, NzCarouselContentDirective, false);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.carouselContents = _t);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.carouselContents = _t);
     } }, viewQuery: function NzCarouselComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c0, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c1, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c0, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c1, true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickList = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
-    } }, hostVars: 2, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical);
-    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "div", 1, 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("keydown", function NzCarouselComponent_Template_div_keydown_1_listener($event) { return ctx.onKeyDown($event); })("mousedown", function NzCarouselComponent_Template_div_mousedown_1_listener($event) { return ctx.pointerDown($event); })("touchstart", function NzCarouselComponent_Template_div_touchstart_1_listener($event) { return ctx.pointerDown($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 3, 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, NzCarouselComponent_ul_6_Template, 2, 9, "ul", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, NzCarouselComponent_ng_template_7_Template, 2, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.slickList = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
+    } }, hostVars: 4, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical)("ant-carousel-rtl", ctx.dir === "rtl");
+    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 1, 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("keydown", function NzCarouselComponent_Template_div_keydown_1_listener($event) { return ctx.onKeyDown($event); })("mousedown", function NzCarouselComponent_Template_div_mousedown_1_listener($event) { return ctx.pointerDown($event); })("touchstart", function NzCarouselComponent_Template_div_touchstart_1_listener($event) { return ctx.pointerDown($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "div", 3, 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, NzCarouselComponent_ul_6_Template, 2, 9, "ul", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzCarouselComponent_ng_template_7_Template, 2, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("slick-vertical", ctx.nzDotPosition === "left" || ctx.nzDotPosition === "right");
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzDots);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("slick-vertical", ctx.nzDotPosition === "left" || ctx.nzDotPosition === "right");
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.nzDots);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
 NzCarouselComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] },
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] },
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] },
-    { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [NZ_CAROUSEL_CUSTOM_STRATEGIES,] }] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
+    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["NzConfigService"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzResizeService"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzDragService"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] },
+    { type: Array, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"], args: [NZ_CAROUSEL_CUSTOM_STRATEGIES,] }] }
 ];
 NzCarouselComponent.propDecorators = {
-    carouselContents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"], args: [NzCarouselContentDirective,] }],
-    slickList: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickList', { static: false },] }],
-    slickTrack: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['slickTrack', { static: false },] }],
-    nzDotRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzEffect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzEnableSwipe: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzAutoPlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzAutoPlaySpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzTransitionSpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDotPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzBeforeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
+    carouselContents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzCarouselContentDirective,] }],
+    slickList: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['slickList', { static: false },] }],
+    slickTrack: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['slickTrack', { static: false },] }],
+    nzDotRender: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzEffect: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzEnableSwipe: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzAutoPlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzAutoPlaySpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzTransitionSpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzDotPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzBeforeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
+    nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String)
 ], NzCarouselComponent.prototype, "nzEffect", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzEnableSwipe", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzDots", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Boolean)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Boolean)
 ], NzCarouselComponent.prototype, "nzAutoPlay", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Number)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputNumber"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Number)
 ], NzCarouselComponent.prototype, "nzAutoPlaySpeed", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputNumber"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputNumber"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzCarouselComponent.prototype, "nzTransitionSpeed", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["WithConfig"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:type", String),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__metadata"])("design:paramtypes", [String])
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["WithConfig"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", String),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:paramtypes", [String])
 ], NzCarouselComponent.prototype, "nzDotPosition", null);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselContentDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzCarouselContentDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Directive"],
         args: [{
                 selector: '[nz-carousel-content]',
                 exportAs: 'nzCarouselContent'
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }]; }, null); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzCarouselComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 selector: 'nz-carousel',
                 exportAs: 'nzCarousel',
                 preserveWhitespaces: false,
@@ -1738,43 +1748,46 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
     </ng-template>
   `,
                 host: {
-                    '[class.ant-carousel-vertical]': 'vertical'
+                    '[class.ant-carousel-vertical]': 'vertical',
+                    '[class.ant-carousel-rtl]': `dir ==='rtl'`
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_5__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzResizeService"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzDragService"] }, { type: Array, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_6__["NzConfigService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["Platform"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzResizeService"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_7__["NzDragService"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
+            }] }, { type: Array, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"],
                 args: [NZ_CAROUSEL_CUSTOM_STRATEGIES]
             }] }]; }, { nzEffect: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzEnableSwipe: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzDots: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzAutoPlay: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzAutoPlaySpeed: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzTransitionSpeed: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzBeforeChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzAfterChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzDotPosition: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], carouselContents: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"],
             args: [NzCarouselContentDirective]
         }], slickList: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
             args: ['slickList', { static: false }]
         }], slickTrack: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
             args: ['slickTrack', { static: false }]
         }], nzDotRender: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 
 /**
@@ -1783,17 +1796,15 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_3__["__decorate"])([
  */
 class NzCarouselModule {
 }
-/** @nocollapse */
-NzCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzCarouselModule });
-/** @nocollapse */
-NzCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzCarouselModule_Factory(t) { return new (t || NzCarouselModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzCarouselModule, { declarations: function () { return [NzCarouselComponent, NzCarouselContentDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzCarouselComponent, NzCarouselContentDirective]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCarouselModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
+NzCarouselModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzCarouselModule });
+NzCarouselModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzCarouselModule_Factory(t) { return new (t || NzCarouselModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["PlatformModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzCarouselModule, { declarations: function () { return [NzCarouselComponent, NzCarouselContentDirective]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["PlatformModule"]]; }, exports: function () { return [NzCarouselComponent, NzCarouselContentDirective]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzCarouselModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
         args: [{
                 declarations: [NzCarouselComponent, NzCarouselContentDirective],
                 exports: [NzCarouselComponent, NzCarouselContentDirective],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_1__["PlatformModule"]]
             }]
     }], null, null); })();
 
@@ -1864,11 +1875,11 @@ class NzDemoCarouselZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCarouselZhComponent.ɵfac = function NzDemoCarouselZhComponent_Factory(t) { return new (t || NzDemoCarouselZhComponent)(); };
-/** @nocollapse */ NzDemoCarouselZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselZhComponent, selectors: [["nz-demo-carousel"]], viewQuery: function NzDemoCarouselZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCarouselZhComponent.ɵfac = function NzDemoCarouselZhComponent_Factory(t) { return new (t || NzDemoCarouselZhComponent)(); };
+NzDemoCarouselZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCarouselZhComponent, selectors: [["nz-demo-carousel"]], viewQuery: function NzDemoCarouselZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 305, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-carousel-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-carousel-demo-position", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-carousel-demo-fade", "nzTitle", "\u6E10\u663E"], ["nzHref", "#components-carousel-demo-autoplay", "nzTitle", "\u81EA\u52A8\u5207\u6362"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/carousel/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-carousel-basic", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-basic <name>", "nzComponentName", "NzDemoCarouselBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6E10\u663E", "nzSelector", "nz-demo-carousel-fade", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-fade <name>", "nzComponentName", "NzDemoCarouselFadeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-carousel-position", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-position <name>", "nzComponentName", "NzDemoCarouselPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u52A8\u5207\u6362", "nzSelector", "nz-demo-carousel-autoplay", "nzGenerateCommand", "ng g ng-zorro-antd:carousel-autoplay <name>", "nzComponentName", "NzDemoCarouselAutoplayComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-carousel"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-carousel'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"], ["id", "injectiontoken"], ["onclick", "window.location.hash = 'injectiontoken'", 1, "anchor"], ["id", "\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C"], ["onclick", "window.location.hash = '\u81EA\u5B9A\u4E49\u5207\u6362\u6548\u679C'", 1, "anchor"]], template: function NzDemoCarouselZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1908,13 +1919,13 @@ class NzDemoCarouselZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "\u5F53\u6709\u4E00\u7EC4\u5E73\u7EA7\u7684\u5185\u5BB9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " \u5F53\u6709\u4E00\u7EC4\u5E73\u7EA7\u7684\u5185\u5BB9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u5F53\u5185\u5BB9\u7A7A\u95F4\u4E0D\u8DB3\u65F6\uFF0C\u53EF\u4EE5\u7528\u8D70\u9A6C\u706F\u7684\u5F62\u5F0F\u8FDB\u884C\u6536\u7EB3\uFF0C\u8FDB\u884C\u8F6E\u64AD\u5C55\u73B0\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u5F53\u5185\u5BB9\u7A7A\u95F4\u4E0D\u8DB3\u65F6\uFF0C\u53EF\u4EE5\u7528\u8D70\u9A6C\u706F\u7684\u5F62\u5F0F\u8FDB\u884C\u6536\u7EB3\uFF0C\u8FDB\u884C\u8F6E\u64AD\u5C55\u73B0\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "\u5E38\u7528\u4E8E\u4E00\u7EC4\u56FE\u7247\u6216\u5361\u7247\u8F6E\u64AD\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " \u5E38\u7528\u4E8E\u4E00\u7EC4\u56FE\u7247\u6216\u5361\u7247\u8F6E\u64AD\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "pre", 14);

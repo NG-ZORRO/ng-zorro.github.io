@@ -15,12 +15,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/a11y */ "u47x");
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
 
 
 
@@ -30,10 +33,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
+
+
+
+
 
 
 
@@ -41,17 +44,20 @@ __webpack_require__.r(__webpack_exports__);
 
 const _c0 = ["inputElement"];
 class NzInputNumberComponent {
-    constructor(elementRef, cdr, focusMonitor) {
+    constructor(elementRef, cdr, focusMonitor, directionality) {
         this.elementRef = elementRef;
         this.cdr = cdr;
         this.focusMonitor = focusMonitor;
+        this.directionality = directionality;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
         this.isFocused = false;
         this.disabledUp = false;
         this.disabledDown = false;
+        this.dir = 'ltr';
         this.onChange = () => { };
         this.onTouched = () => { };
-        this.nzBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
-        this.nzFocus = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
+        this.nzBlur = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
+        this.nzFocus = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
         this.nzSize = 'default';
         this.nzMin = -Infinity;
         this.nzMax = Infinity;
@@ -112,7 +118,7 @@ class NzInputNumberComponent {
             return num;
         }
         const numStr = String(num);
-        if (numStr.indexOf('.') >= 0 && Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["isNotNil"])(this.nzPrecision)) {
+        if (numStr.indexOf('.') >= 0 && Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzPrecision)) {
             if (typeof this.nzPrecisionMode === 'function') {
                 return this.nzPrecisionMode(num, this.nzPrecision);
             }
@@ -164,7 +170,7 @@ class NzInputNumberComponent {
     // if this.props.precision is undefined
     // https://github.com/react-component/input-number/issues/39
     getMaxPrecision(currentValue, ratio) {
-        if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["isNotNil"])(this.nzPrecision)) {
+        if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzPrecision)) {
             return this.nzPrecision;
         }
         const ratioPrecision = this.getPrecision(ratio);
@@ -257,22 +263,22 @@ class NzInputNumberComponent {
         }
     }
     updateDisplayValue(value) {
-        const displayValue = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["isNotNil"])(this.nzFormatter(value)) ? this.nzFormatter(value) : '';
+        const displayValue = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.nzFormatter(value)) ? this.nzFormatter(value) : '';
         this.displayValue = displayValue;
         this.inputElement.nativeElement.value = `${displayValue}`;
     }
     onKeyDown(e) {
-        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["UP_ARROW"]) {
+        if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_3__["UP_ARROW"]) {
             const ratio = this.getRatio(e);
             this.up(e, ratio);
             this.stop();
         }
-        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["DOWN_ARROW"]) {
+        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_3__["DOWN_ARROW"]) {
             const ratio = this.getRatio(e);
             this.down(e, ratio);
             this.stop();
         }
-        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["ENTER"]) {
+        else if (e.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_3__["ENTER"]) {
             this.updateDisplayValue(this.value);
         }
     }
@@ -299,6 +305,7 @@ class NzInputNumberComponent {
         this.inputElement.nativeElement.blur();
     }
     ngOnInit() {
+        var _a;
         this.focusMonitor.monitor(this.elementRef, true).subscribe(focusOrigin => {
             if (!focusOrigin) {
                 this.isFocused = false;
@@ -310,6 +317,10 @@ class NzInputNumberComponent {
                 this.isFocused = true;
                 this.nzFocus.emit();
             }
+        });
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
         });
     }
     ngOnChanges(changes) {
@@ -326,82 +337,83 @@ class NzInputNumberComponent {
     }
     ngOnDestroy() {
         this.focusMonitor.stopMonitoring(this.elementRef);
+        this.destroy$.next();
+        this.destroy$.complete();
     }
 }
-/** @nocollapse */
-NzInputNumberComponent.ɵfac = function NzInputNumberComponent_Factory(t) { return new (t || NzInputNumberComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"])); };
-/** @nocollapse */
-NzInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzInputNumberComponent, selectors: [["nz-input-number"]], viewQuery: function NzInputNumberComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵstaticViewQuery"](_c0, true);
+NzInputNumberComponent.ɵfac = function NzInputNumberComponent_Factory(t) { return new (t || NzInputNumberComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["Directionality"], 8)); };
+NzInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzInputNumberComponent, selectors: [["nz-input-number"]], viewQuery: function NzInputNumberComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵstaticViewQuery"](_c0, true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.inputElement = _t.first);
-    } }, hostVars: 8, hostBindings: function NzInputNumberComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-input-number-focused", ctx.isFocused)("ant-input-number-lg", ctx.nzSize === "large")("ant-input-number-sm", ctx.nzSize === "small")("ant-input-number-disabled", ctx.nzDisabled);
-    } }, inputs: { nzSize: "nzSize", nzMin: "nzMin", nzMax: "nzMax", nzParser: "nzParser", nzPrecisionMode: "nzPrecisionMode", nzPlaceHolder: "nzPlaceHolder", nzStep: "nzStep", nzInputMode: "nzInputMode", nzId: "nzId", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzFormatter: "nzFormatter", nzPrecision: "nzPrecision" }, outputs: { nzBlur: "nzBlur", nzFocus: "nzFocus" }, exportAs: ["nzInputNumber"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.inputElement = _t.first);
+    } }, hostVars: 10, hostBindings: function NzInputNumberComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-input-number-focused", ctx.isFocused)("ant-input-number-lg", ctx.nzSize === "large")("ant-input-number-sm", ctx.nzSize === "small")("ant-input-number-disabled", ctx.nzDisabled)("ant-input-number-rtl", ctx.dir === "rtl");
+    } }, inputs: { nzSize: "nzSize", nzMin: "nzMin", nzMax: "nzMax", nzParser: "nzParser", nzPrecisionMode: "nzPrecisionMode", nzPlaceHolder: "nzPlaceHolder", nzStep: "nzStep", nzInputMode: "nzInputMode", nzId: "nzId", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzFormatter: "nzFormatter", nzPrecision: "nzPrecision" }, outputs: { nzBlur: "nzBlur", nzFocus: "nzFocus" }, exportAs: ["nzInputNumber"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵProvidersFeature"]([
             {
-                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzInputNumberComponent)),
+                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"],
+                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["forwardRef"])(() => NzInputNumberComponent),
                 multi: true
             }
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 8, vars: 13, consts: [[1, "ant-input-number-handler-wrap"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-up", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "up", 1, "ant-input-number-handler-up-inner"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-down", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "down", 1, "ant-input-number-handler-down-inner"], [1, "ant-input-number-input-wrap"], ["autocomplete", "off", 1, "ant-input-number-input", 3, "disabled", "placeholder", "ngModel", "keydown", "keyup", "ngModelChange"], ["inputElement", ""]], template: function NzInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "span", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("mousedown", function NzInputNumberComponent_Template_span_mousedown_1_listener($event) { return ctx.up($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_1_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_1_listener() { return ctx.stop(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "span", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("mousedown", function NzInputNumberComponent_Template_span_mousedown_3_listener($event) { return ctx.down($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_3_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_3_listener() { return ctx.stop(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](4, "i", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "div", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](6, "input", 6, 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("keydown", function NzInputNumberComponent_Template_input_keydown_6_listener($event) { return ctx.onKeyDown($event); })("keyup", function NzInputNumberComponent_Template_input_keyup_6_listener() { return ctx.stop(); })("ngModelChange", function NzInputNumberComponent_Template_input_ngModelChange_6_listener($event) { return ctx.onModelChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 8, vars: 13, consts: [[1, "ant-input-number-handler-wrap"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-up", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "up", 1, "ant-input-number-handler-up-inner"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-down", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "down", 1, "ant-input-number-handler-down-inner"], [1, "ant-input-number-input-wrap"], ["autocomplete", "off", 1, "ant-input-number-input", 3, "disabled", "placeholder", "ngModel", "keydown", "keyup", "ngModelChange"], ["inputElement", ""]], template: function NzInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("mousedown", function NzInputNumberComponent_Template_span_mousedown_1_listener($event) { return ctx.up($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_1_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_1_listener() { return ctx.stop(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "i", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](3, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("mousedown", function NzInputNumberComponent_Template_span_mousedown_3_listener($event) { return ctx.down($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_3_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_3_listener() { return ctx.stop(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](4, "i", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](5, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](6, "input", 6, 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("keydown", function NzInputNumberComponent_Template_input_keydown_6_listener($event) { return ctx.onKeyDown($event); })("keyup", function NzInputNumberComponent_Template_input_keyup_6_listener() { return ctx.stop(); })("ngModelChange", function NzInputNumberComponent_Template_input_ngModelChange_6_listener($event) { return ctx.onModelChange($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-input-number-handler-up-disabled", ctx.disabledUp);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-input-number-handler-down-disabled", ctx.disabledDown);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx.nzDisabled)("placeholder", ctx.nzPlaceHolder)("ngModel", ctx.displayValue);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("id", ctx.nzId)("autofocus", ctx.nzAutoFocus ? "autofocus" : null)("min", ctx.nzMin)("max", ctx.nzMax)("step", ctx.nzStep)("inputmode", ctx.nzInputMode);
-    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-input-number-handler-up-disabled", ctx.disabledUp);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-input-number-handler-down-disabled", ctx.disabledDown);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("disabled", ctx.nzDisabled)("placeholder", ctx.nzPlaceHolder)("ngModel", ctx.displayValue);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵattribute"]("id", ctx.nzId)("autofocus", ctx.nzAutoFocus ? "autofocus" : null)("min", ctx.nzMin)("max", ctx.nzMax)("step", ctx.nzStep)("inputmode", ctx.nzInputMode);
+    } }, directives: [ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NgModel"]], encapsulation: 2, changeDetection: 0 });
 NzInputNumberComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
-    { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ElementRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] },
+    { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Optional"] }] }
 ];
 NzInputNumberComponent.propDecorators = {
-    nzBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    nzFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    inputElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['inputElement', { static: true },] }],
-    nzSize: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzMin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzMax: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzParser: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzPrecision: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzPrecisionMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzPlaceHolder: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzStep: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzInputMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzAutoFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    nzBlur: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }],
+    nzFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }],
+    inputElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"], args: ['inputElement', { static: true },] }],
+    nzSize: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzMin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzMax: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzParser: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzPrecision: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzPrecisionMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzPlaceHolder: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzStep: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzInputMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzAutoFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzInputNumberComponent.prototype, "nzDisabled", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzInputNumberComponent.prototype, "nzAutoFocus", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzInputNumberComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzInputNumberComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
                 selector: 'nz-input-number',
                 exportAs: 'nzInputNumber',
@@ -450,53 +462,56 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
   `,
                 providers: [
                     {
-                        provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzInputNumberComponent)),
+                        provide: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"],
+                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["forwardRef"])(() => NzInputNumberComponent),
                         multi: true
                     }
                 ],
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 host: {
                     '[class.ant-input-number-focused]': 'isFocused',
                     '[class.ant-input-number-lg]': `nzSize === 'large'`,
                     '[class.ant-input-number-sm]': `nzSize === 'small'`,
-                    '[class.ant-input-number-disabled]': 'nzDisabled'
+                    '[class.ant-input-number-disabled]': 'nzDisabled',
+                    '[class.ant-input-number-rtl]': `dir === 'rtl'`
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"] }]; }, { nzBlur: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] }, { type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusMonitor"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Optional"]
+            }] }]; }, { nzBlur: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"]
         }], nzFocus: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"]
         }], nzSize: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzMin: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzMax: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzParser: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzPrecisionMode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzPlaceHolder: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzStep: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzInputMode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzId: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzDisabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzAutoFocus: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzFormatter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], inputElement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"],
             args: ['inputElement', { static: true }]
         }], nzPrecision: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
 
 /**
@@ -505,15 +520,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzInputNumberModule {
 }
-/** @nocollapse */
-NzInputNumberModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzInputNumberModule });
-/** @nocollapse */
-NzInputNumberModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzInputNumberModule_Factory(t) { return new (t || NzInputNumberModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzInputNumberModule, { declarations: function () { return [NzInputNumberComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"]]; }, exports: function () { return [NzInputNumberComponent]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzInputNumberModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
+NzInputNumberModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: NzInputNumberModule });
+NzInputNumberModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ factory: function NzInputNumberModule_Factory(t) { return new (t || NzInputNumberModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](NzInputNumberModule, { declarations: function () { return [NzInputNumberComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"]]; }, exports: function () { return [NzInputNumberComponent]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzInputNumberModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"]],
                 declarations: [NzInputNumberComponent],
                 exports: [NzInputNumberComponent]
             }]

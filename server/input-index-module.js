@@ -59,9 +59,7 @@ class NzHighlightPipe {
             .replace(new RegExp(this.UNIQUE_WRAPPERS[1], 'g'), '</span>');
     }
 }
-/** @nocollapse */
 NzHighlightPipe.ɵfac = function NzHighlightPipe_Factory(t) { return new (t || NzHighlightPipe)(); };
-/** @nocollapse */
 NzHighlightPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({ name: "nzHighlight", type: NzHighlightPipe, pure: true });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzHighlightPipe, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
@@ -77,9 +75,7 @@ NzHighlightPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineP
  */
 class NzHighlightModule {
 }
-/** @nocollapse */
 NzHighlightModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzHighlightModule });
-/** @nocollapse */
 NzHighlightModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzHighlightModule, { declarations: function () { return [NzHighlightPipe]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [NzHighlightPipe]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzHighlightModule, [{
@@ -159,8 +155,8 @@ class NzDemoInputAllowClearComponent {
         this.textValue = null;
     }
 }
-/** @nocollapse */ NzDemoInputAllowClearComponent.ɵfac = function NzDemoInputAllowClearComponent_Factory(t) { return new (t || NzDemoInputAllowClearComponent)(); };
-/** @nocollapse */ NzDemoInputAllowClearComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAllowClearComponent, selectors: [["nz-demo-input-allow-clear"]], decls: 10, vars: 4, consts: [[3, "nzSuffix"], ["type", "text", "nz-input", "", "placeholder", "input with clear icon", 3, "ngModel", "ngModelChange"], ["inputClearTpl", ""], [1, "ant-input-affix-wrapper-textarea-with-clear-btn", 3, "nzSuffix"], ["nz-input", "", "placeholder", "textarea with clear icon", 3, "ngModel", "ngModelChange"], ["textAreaClearTpl", ""], ["nz-icon", "", "class", "ant-input-clear-icon", "nzTheme", "fill", "nzType", "close-circle", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzTheme", "fill", "nzType", "close-circle", 1, "ant-input-clear-icon", 3, "click"], ["nz-icon", "", "class", "ant-input-textarea-clear-icon", "nzTheme", "fill", "nzType", "close-circle", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzTheme", "fill", "nzType", "close-circle", 1, "ant-input-textarea-clear-icon", 3, "click"]], template: function NzDemoInputAllowClearComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputAllowClearComponent.ɵfac = function NzDemoInputAllowClearComponent_Factory(t) { return new (t || NzDemoInputAllowClearComponent)(); };
+NzDemoInputAllowClearComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAllowClearComponent, selectors: [["nz-demo-input-allow-clear"]], decls: 10, vars: 4, consts: [[3, "nzSuffix"], ["type", "text", "nz-input", "", "placeholder", "input with clear icon", 3, "ngModel", "ngModelChange"], ["inputClearTpl", ""], [1, "ant-input-affix-wrapper-textarea-with-clear-btn", 3, "nzSuffix"], ["nz-input", "", "placeholder", "textarea with clear icon", 3, "ngModel", "ngModelChange"], ["textAreaClearTpl", ""], ["nz-icon", "", "class", "ant-input-clear-icon", "nzTheme", "fill", "nzType", "close-circle", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzTheme", "fill", "nzType", "close-circle", 1, "ant-input-clear-icon", 3, "click"], ["nz-icon", "", "class", "ant-input-textarea-clear-icon", "nzTheme", "fill", "nzType", "close-circle", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzTheme", "fill", "nzType", "close-circle", 1, "ant-input-textarea-clear-icon", 3, "click"]], template: function NzDemoInputAllowClearComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoInputAllowClearComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
@@ -254,8 +250,8 @@ class NzDemoInputPasswordInputComponent {
         this.passwordVisible = false;
     }
 }
-/** @nocollapse */ NzDemoInputPasswordInputComponent.ɵfac = function NzDemoInputPasswordInputComponent_Factory(t) { return new (t || NzDemoInputPasswordInputComponent)(); };
-/** @nocollapse */ NzDemoInputPasswordInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputPasswordInputComponent, selectors: [["nz-demo-input-password-input"]], decls: 4, vars: 3, consts: [[3, "nzSuffix"], ["nz-input", "", "placeholder", "input password", 3, "type", "ngModel", "ngModelChange"], ["suffixTemplate", ""], ["nz-icon", "", 3, "nzType", "click"]], template: function NzDemoInputPasswordInputComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputPasswordInputComponent.ɵfac = function NzDemoInputPasswordInputComponent_Factory(t) { return new (t || NzDemoInputPasswordInputComponent)(); };
+NzDemoInputPasswordInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputPasswordInputComponent, selectors: [["nz-demo-input-password-input"]], decls: 4, vars: 3, consts: [[3, "nzSuffix"], ["nz-input", "", "placeholder", "input password", 3, "type", "ngModel", "ngModelChange"], ["suffixTemplate", ""], ["nz-icon", "", 3, "nzType", "click"]], template: function NzDemoInputPasswordInputComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoInputPasswordInputComponent_Template_input_ngModelChange_1_listener($event) { return ctx.password = $event; });
@@ -323,8 +319,8 @@ class NzDemoInputTextareaWithCharacterCountComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoInputTextareaWithCharacterCountComponent.ɵfac = function NzDemoInputTextareaWithCharacterCountComponent_Factory(t) { return new (t || NzDemoInputTextareaWithCharacterCountComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
-/** @nocollapse */ NzDemoInputTextareaWithCharacterCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTextareaWithCharacterCountComponent, selectors: [["nz-demo-input-textarea-with-character-count"]], decls: 5, vars: 2, consts: [["nz-form", "", "nzLayout", "vertical", 3, "formGroup"], [3, "nzMaxCharacterCount"], ["rows", "4", "formControlName", "comment", "nz-input", ""]], template: function NzDemoInputTextareaWithCharacterCountComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputTextareaWithCharacterCountComponent.ɵfac = function NzDemoInputTextareaWithCharacterCountComponent_Factory(t) { return new (t || NzDemoInputTextareaWithCharacterCountComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
+NzDemoInputTextareaWithCharacterCountComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTextareaWithCharacterCountComponent, selectors: [["nz-demo-input-textarea-with-character-count"]], decls: 5, vars: 2, consts: [["nz-form", "", "nzLayout", "vertical", 3, "formGroup"], [3, "nzMaxCharacterCount"], ["rows", "4", "formControlName", "comment", "nz-input", ""]], template: function NzDemoInputTextareaWithCharacterCountComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-form-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-form-control");
@@ -377,8 +373,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoInputBorderlessComponent {
 }
-/** @nocollapse */ NzDemoInputBorderlessComponent.ɵfac = function NzDemoInputBorderlessComponent_Factory(t) { return new (t || NzDemoInputBorderlessComponent)(); };
-/** @nocollapse */ NzDemoInputBorderlessComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputBorderlessComponent, selectors: [["nz-demo-input-borderless"]], decls: 1, vars: 0, consts: [["nz-input", "", "placeholder", "borderless", "nzBorderless", ""]], template: function NzDemoInputBorderlessComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputBorderlessComponent.ɵfac = function NzDemoInputBorderlessComponent_Factory(t) { return new (t || NzDemoInputBorderlessComponent)(); };
+NzDemoInputBorderlessComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputBorderlessComponent, selectors: [["nz-demo-input-borderless"]], decls: 1, vars: 0, consts: [["nz-input", "", "placeholder", "borderless", "nzBorderless", ""]], template: function NzDemoInputBorderlessComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "input", 0);
     } }, directives: [ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_1__["NzInputDirective"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoInputBorderlessComponent, [{
@@ -455,11 +451,11 @@ class NzDemoInputTooltipComponent {
         return `${prefix}${result}${list[1] ? `.${list[1]}` : ''}`;
     }
 }
-/** @nocollapse */ NzDemoInputTooltipComponent.ɵfac = function NzDemoInputTooltipComponent_Factory(t) { return new (t || NzDemoInputTooltipComponent)(); };
-/** @nocollapse */ NzDemoInputTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTooltipComponent, selectors: [["nz-demo-input-tooltip"]], viewQuery: function NzDemoInputTooltipComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoInputTooltipComponent.ɵfac = function NzDemoInputTooltipComponent_Factory(t) { return new (t || NzDemoInputTooltipComponent)(); };
+NzDemoInputTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTooltipComponent, selectors: [["nz-demo-input-tooltip"]], viewQuery: function NzDemoInputTooltipComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.inputElement = _t.first);
     } }, decls: 2, vars: 2, consts: [["nz-input", "", "nz-tooltip", "", "nzTooltipTrigger", "focus", "nzTooltipPlacement", "topLeft", "nzOverlayClassName", "numeric-input", "placeholder", "Input a number", 2, "width", "120px", 3, "ngModel", "nzTooltipTitle", "ngModelChange", "blur"], ["inputElement", ""]], template: function NzDemoInputTooltipComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "input", 0, 1);
@@ -554,8 +550,8 @@ class NzDemoInputAddonComponent {
         this.inputValue = 'my site';
     }
 }
-/** @nocollapse */ NzDemoInputAddonComponent.ɵfac = function NzDemoInputAddonComponent_Factory(t) { return new (t || NzDemoInputAddonComponent)(); };
-/** @nocollapse */ NzDemoInputAddonComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAddonComponent, selectors: [["nz-demo-input-addon"]], decls: 13, vars: 5, consts: [["nzAddOnBefore", "Http://", "nzAddOnAfter", ".com"], ["type", "text", "nz-input", "", 3, "ngModel", "ngModelChange"], [3, "nzAddOnBefore", "nzAddOnAfter"], ["addOnBeforeTemplate", ""], ["addOnAfterTemplate", ""], ["nzAddOnAfterIcon", "setting"], [3, "ngModel"], ["nzLabel", "Http://", "nzValue", "Http://"], ["nzLabel", "Https://", "nzValue", "Https://"], ["nzLabel", ".com", "nzValue", ".com"], ["nzLabel", ".jp", "nzValue", ".jp"], ["nzLabel", ".cn", "nzValue", ".cn"], ["nzLabel", ".org", "nzValue", ".org"]], template: function NzDemoInputAddonComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputAddonComponent.ɵfac = function NzDemoInputAddonComponent_Factory(t) { return new (t || NzDemoInputAddonComponent)(); };
+NzDemoInputAddonComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAddonComponent, selectors: [["nz-demo-input-addon"]], decls: 13, vars: 5, consts: [["nzAddOnBefore", "Http://", "nzAddOnAfter", ".com"], ["type", "text", "nz-input", "", 3, "ngModel", "ngModelChange"], [3, "nzAddOnBefore", "nzAddOnAfter"], ["addOnBeforeTemplate", ""], ["addOnAfterTemplate", ""], ["nzAddOnAfterIcon", "setting"], [3, "ngModel"], ["nzLabel", "Http://", "nzValue", "Http://"], ["nzLabel", "Https://", "nzValue", "Https://"], ["nzLabel", ".com", "nzValue", ".com"], ["nzLabel", ".jp", "nzValue", ".jp"], ["nzLabel", ".cn", "nzValue", ".cn"], ["nzLabel", ".org", "nzValue", ".org"]], template: function NzDemoInputAddonComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 1);
@@ -656,8 +652,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoInputSizeComponent {
 }
-/** @nocollapse */ NzDemoInputSizeComponent.ɵfac = function NzDemoInputSizeComponent_Factory(t) { return new (t || NzDemoInputSizeComponent)(); };
-/** @nocollapse */ NzDemoInputSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputSizeComponent, selectors: [["nz-demo-input-size"]], decls: 4, vars: 0, consts: [[1, "example-input"], ["nz-input", "", "placeholder", "large size", "nzSize", "large"], ["nz-input", "", "placeholder", "default size", "nzSize", "default"], ["nz-input", "", "placeholder", "small size", "nzSize", "small"]], template: function NzDemoInputSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputSizeComponent.ɵfac = function NzDemoInputSizeComponent_Factory(t) { return new (t || NzDemoInputSizeComponent)(); };
+NzDemoInputSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputSizeComponent, selectors: [["nz-demo-input-size"]], decls: 4, vars: 0, consts: [[1, "example-input"], ["nz-input", "", "placeholder", "large size", "nzSize", "large"], ["nz-input", "", "placeholder", "default size", "nzSize", "default"], ["nz-input", "", "placeholder", "small size", "nzSize", "small"]], template: function NzDemoInputSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "input", 2);
@@ -708,8 +704,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoInputTextareaComponent {
 }
-/** @nocollapse */ NzDemoInputTextareaComponent.ɵfac = function NzDemoInputTextareaComponent_Factory(t) { return new (t || NzDemoInputTextareaComponent)(); };
-/** @nocollapse */ NzDemoInputTextareaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTextareaComponent, selectors: [["nz-demo-input-textarea"]], decls: 1, vars: 1, consts: [["rows", "4", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoInputTextareaComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputTextareaComponent.ɵfac = function NzDemoInputTextareaComponent_Factory(t) { return new (t || NzDemoInputTextareaComponent)(); };
+NzDemoInputTextareaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputTextareaComponent, selectors: [["nz-demo-input-textarea"]], decls: 1, vars: 1, consts: [["rows", "4", "nz-input", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoInputTextareaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "textarea", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoInputTextareaComponent_Template_textarea_ngModelChange_0_listener($event) { return ctx.inputValue = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -801,11 +797,11 @@ class NzDemoInputEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoInputEnComponent.ɵfac = function NzDemoInputEnComponent_Factory(t) { return new (t || NzDemoInputEnComponent)(); };
-/** @nocollapse */ NzDemoInputEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputEnComponent, selectors: [["nz-demo-input"]], viewQuery: function NzDemoInputEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoInputEnComponent.ɵfac = function NzDemoInputEnComponent_Factory(t) { return new (t || NzDemoInputEnComponent)(); };
+NzDemoInputEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputEnComponent, selectors: [["nz-demo-input"]], viewQuery: function NzDemoInputEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 388, vars: 59, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-input-demo-basic", "nzTitle", "Basic usage"], ["nzHref", "#components-input-demo-size", "nzTitle", "Three sizes of Input"], ["nzHref", "#components-input-demo-addon", "nzTitle", "Pre / Post tab"], ["nzHref", "#components-input-demo-group", "nzTitle", "Input Group"], ["nzHref", "#components-input-demo-search-input", "nzTitle", "Search box"], ["nzHref", "#components-input-demo-textarea", "nzTitle", "TextArea"], ["nzHref", "#components-input-demo-autosize-textarea", "nzTitle", "Autosizing the height to fit the content"], ["nzHref", "#components-input-demo-tooltip", "nzTitle", "Format Tooltip Input"], ["nzHref", "#components-input-demo-presuffix", "nzTitle", "prefix and suffix"], ["nzHref", "#components-input-demo-password-input", "nzTitle", "Password box"], ["nzHref", "#components-input-demo-allow-clear", "nzTitle", "With clear icon"], ["nzHref", "#components-input-demo-borderless", "nzTitle", "Borderless"], ["nzHref", "#components-input-demo-textarea-with-character-count", "nzTitle", "Textarea with character count"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/input/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic usage", "nzSelector", "nz-demo-input-basic", "nzGenerateCommand", "ng g ng-zorro-antd:input-basic <name>", "nzComponentName", "NzDemoInputBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Pre / Post tab", "nzSelector", "nz-demo-input-addon", "nzGenerateCommand", "ng g ng-zorro-antd:input-addon <name>", "nzComponentName", "NzDemoInputAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Search box", "nzSelector", "nz-demo-input-search-input", "nzGenerateCommand", "ng g ng-zorro-antd:input-search-input <name>", "nzComponentName", "NzDemoInputSearchInputComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Autosizing the height to fit the content", "nzSelector", "nz-demo-input-autosize-textarea", "nzGenerateCommand", "ng g ng-zorro-antd:input-autosize-textarea <name>", "nzComponentName", "NzDemoInputAutosizeTextareaComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "prefix and suffix", "nzSelector", "nz-demo-input-presuffix", "nzGenerateCommand", "ng g ng-zorro-antd:input-presuffix <name>", "nzComponentName", "NzDemoInputPresuffixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With clear icon", "nzSelector", "nz-demo-input-allow-clear", "nzGenerateCommand", "ng g ng-zorro-antd:input-allow-clear <name>", "nzComponentName", "NzDemoInputAllowClearComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Textarea with character count", "nzSelector", "nz-demo-input-textarea-with-character-count", "nzGenerateCommand", "ng g ng-zorro-antd:input-textarea-with-character-count <name>", "nzComponentName", "NzDemoInputTextareaWithCharacterCountComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Three sizes of Input", "nzSelector", "nz-demo-input-size", "nzGenerateCommand", "ng g ng-zorro-antd:input-size <name>", "nzComponentName", "NzDemoInputSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Input Group", "nzSelector", "nz-demo-input-group", "nzGenerateCommand", "ng g ng-zorro-antd:input-group <name>", "nzComponentName", "NzDemoInputGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "TextArea", "nzSelector", "nz-demo-input-textarea", "nzGenerateCommand", "ng g ng-zorro-antd:input-textarea <name>", "nzComponentName", "NzDemoInputTextareaComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Format Tooltip Input", "nzSelector", "nz-demo-input-tooltip", "nzGenerateCommand", "ng g ng-zorro-antd:input-tooltip <name>", "nzComponentName", "NzDemoInputTooltipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "/components/tooltip/en"], ["nzTitle", "Password box", "nzSelector", "nz-demo-input-password-input", "nzGenerateCommand", "ng g ng-zorro-antd:input-password-input <name>", "nzComponentName", "NzDemoInputPasswordInputComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Borderless", "nzSelector", "nz-demo-input-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:input-borderless <name>", "nzComponentName", "NzDemoInputBorderlessComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-input]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-input]'", 1, "anchor"], ["href", "https://www.w3schools.com/tags/tag_input.asp", "target", "_blank", "rel", "noopener"], ["id", "nz-input-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-input-group'", 1, "anchor"], ["id", "nz-textarea-count"], ["onclick", "window.location.hash = 'nz-textarea-count'", 1, "anchor"]], template: function NzDemoInputEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -852,10 +848,10 @@ class NzDemoInputEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "A user input in a form field is needed.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, " A user input in a form field is needed.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "A search input is required.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " A search input is required.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "pre", 23);
@@ -1517,8 +1513,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoInputBasicComponent {
 }
-/** @nocollapse */ NzDemoInputBasicComponent.ɵfac = function NzDemoInputBasicComponent_Factory(t) { return new (t || NzDemoInputBasicComponent)(); };
-/** @nocollapse */ NzDemoInputBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputBasicComponent, selectors: [["nz-demo-input-basic"]], decls: 4, vars: 3, consts: [["nz-input", "", "placeholder", "Basic usage", 3, "ngModel", "ngModelChange"], ["nz-input", "", "placeholder", "Basic usage", 3, "ngModel", "disabled", "ngModelChange"]], template: function NzDemoInputBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputBasicComponent.ɵfac = function NzDemoInputBasicComponent_Factory(t) { return new (t || NzDemoInputBasicComponent)(); };
+NzDemoInputBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputBasicComponent, selectors: [["nz-demo-input-basic"]], decls: 4, vars: 3, consts: [["nz-input", "", "placeholder", "Basic usage", 3, "ngModel", "ngModelChange"], ["nz-input", "", "placeholder", "Basic usage", 3, "ngModel", "disabled", "ngModelChange"]], template: function NzDemoInputBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "input", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoInputBasicComponent_Template_input_ngModelChange_0_listener($event) { return ctx.value = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1567,8 +1563,8 @@ const _c0 = function () { return { minRows: 2, maxRows: 6 }; };
 const _c1 = function () { return { minRows: 3, maxRows: 5 }; };
 class NzDemoInputAutosizeTextareaComponent {
 }
-/** @nocollapse */ NzDemoInputAutosizeTextareaComponent.ɵfac = function NzDemoInputAutosizeTextareaComponent_Factory(t) { return new (t || NzDemoInputAutosizeTextareaComponent)(); };
-/** @nocollapse */ NzDemoInputAutosizeTextareaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAutosizeTextareaComponent, selectors: [["nz-demo-input-autosize-textarea"]], decls: 4, vars: 4, consts: [["nz-input", "", "placeholder", "Autosize height based on content lines", "nzAutosize", ""], ["nz-input", "", "placeholder", "Autosize height with minimum and maximum number of lines", 3, "nzAutosize"], ["nz-input", "", "placeholder", "Controlled autosize", 3, "nzAutosize"]], template: function NzDemoInputAutosizeTextareaComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputAutosizeTextareaComponent.ɵfac = function NzDemoInputAutosizeTextareaComponent_Factory(t) { return new (t || NzDemoInputAutosizeTextareaComponent)(); };
+NzDemoInputAutosizeTextareaComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputAutosizeTextareaComponent, selectors: [["nz-demo-input-autosize-textarea"]], decls: 4, vars: 4, consts: [["nz-input", "", "placeholder", "Autosize height based on content lines", "nzAutosize", ""], ["nz-input", "", "placeholder", "Autosize height with minimum and maximum number of lines", 3, "nzAutosize"], ["nz-input", "", "placeholder", "Controlled autosize", 3, "nzAutosize"]], template: function NzDemoInputAutosizeTextareaComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "textarea", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "textarea", 1);
@@ -1646,8 +1642,8 @@ function NzDemoInputSearchInputComponent_ng_template_14_Template(rf, ctx) { if (
 } }
 class NzDemoInputSearchInputComponent {
 }
-/** @nocollapse */ NzDemoInputSearchInputComponent.ɵfac = function NzDemoInputSearchInputComponent_Factory(t) { return new (t || NzDemoInputSearchInputComponent)(); };
-/** @nocollapse */ NzDemoInputSearchInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputSearchInputComponent, selectors: [["nz-demo-input-search-input"]], decls: 16, vars: 3, consts: [[3, "nzSuffix"], ["type", "text", "nz-input", "", "placeholder", "input search text"], ["suffixIconSearch", ""], ["nzSearch", "", 3, "nzAddOnAfter"], ["suffixIconButton", ""], ["nzSearch", "", "nzSize", "large", 3, "nzAddOnAfter"], ["suffixButton", ""], ["nz-icon", "", "nzType", "search"], ["nz-button", "", "nzType", "primary", "nzSearch", ""], ["nz-button", "", "nzType", "primary", "nzSize", "large", "nzSearch", ""]], template: function NzDemoInputSearchInputComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputSearchInputComponent.ɵfac = function NzDemoInputSearchInputComponent_Factory(t) { return new (t || NzDemoInputSearchInputComponent)(); };
+NzDemoInputSearchInputComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputSearchInputComponent, selectors: [["nz-demo-input-search-input"]], decls: 16, vars: 3, consts: [[3, "nzSuffix"], ["type", "text", "nz-input", "", "placeholder", "input search text"], ["suffixIconSearch", ""], ["nzSearch", "", 3, "nzAddOnAfter"], ["suffixIconButton", ""], ["nzSearch", "", "nzSize", "large", 3, "nzAddOnAfter"], ["suffixButton", ""], ["nz-icon", "", "nzType", "search"], ["nz-button", "", "nzType", "primary", "nzSearch", ""], ["nz-button", "", "nzType", "primary", "nzSize", "large", "nzSearch", ""]], template: function NzDemoInputSearchInputComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1737,8 +1733,8 @@ function NzDemoInputPresuffixComponent_ng_template_4_Template(rf, ctx) { if (rf 
 } }
 class NzDemoInputPresuffixComponent {
 }
-/** @nocollapse */ NzDemoInputPresuffixComponent.ɵfac = function NzDemoInputPresuffixComponent_Factory(t) { return new (t || NzDemoInputPresuffixComponent)(); };
-/** @nocollapse */ NzDemoInputPresuffixComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputPresuffixComponent, selectors: [["nz-demo-input-presuffix"]], decls: 10, vars: 2, consts: [[3, "nzSuffix", "nzPrefix"], ["type", "text", "nz-input", "", "placeholder", "Enter your username"], ["prefixTemplateUser", ""], ["suffixTemplateInfo", ""], ["nzSuffix", "RMB", "nzPrefix", "\uFFE5"], ["type", "text", "nz-input", ""], ["nz-icon", "", "nzType", "user"], ["nz-icon", "", "nz-tooltip", "", "nzTooltipTitle", "Extra information", "nzType", "info-circle"]], template: function NzDemoInputPresuffixComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputPresuffixComponent.ɵfac = function NzDemoInputPresuffixComponent_Factory(t) { return new (t || NzDemoInputPresuffixComponent)(); };
+NzDemoInputPresuffixComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputPresuffixComponent, selectors: [["nz-demo-input-presuffix"]], decls: 10, vars: 2, consts: [[3, "nzSuffix", "nzPrefix"], ["type", "text", "nz-input", "", "placeholder", "Enter your username"], ["prefixTemplateUser", ""], ["suffixTemplateInfo", ""], ["nzSuffix", "RMB", "nzPrefix", "\uFFE5"], ["type", "text", "nz-input", ""], ["nz-icon", "", "nzType", "user"], ["nz-icon", "", "nz-tooltip", "", "nzTooltipTitle", "Extra information", "nzType", "info-circle"]], template: function NzDemoInputPresuffixComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1894,11 +1890,11 @@ class NzDemoInputZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoInputZhComponent.ɵfac = function NzDemoInputZhComponent_Factory(t) { return new (t || NzDemoInputZhComponent)(); };
-/** @nocollapse */ NzDemoInputZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputZhComponent, selectors: [["nz-demo-input"]], viewQuery: function NzDemoInputZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoInputZhComponent.ɵfac = function NzDemoInputZhComponent_Factory(t) { return new (t || NzDemoInputZhComponent)(); };
+NzDemoInputZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputZhComponent, selectors: [["nz-demo-input"]], viewQuery: function NzDemoInputZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 400, vars: 59, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-input-demo-basic", "nzTitle", "\u57FA\u672C\u4F7F\u7528"], ["nzHref", "#components-input-demo-size", "nzTitle", "\u4E09\u79CD\u5927\u5C0F"], ["nzHref", "#components-input-demo-addon", "nzTitle", "\u524D\u7F6E/\u540E\u7F6E\u6807\u7B7E"], ["nzHref", "#components-input-demo-group", "nzTitle", "\u8F93\u5165\u6846\u7EC4\u5408"], ["nzHref", "#components-input-demo-search-input", "nzTitle", "\u641C\u7D22\u6846"], ["nzHref", "#components-input-demo-textarea", "nzTitle", "\u6587\u672C\u57DF"], ["nzHref", "#components-input-demo-autosize-textarea", "nzTitle", "\u9002\u5E94\u6587\u672C\u9AD8\u5EA6\u7684\u6587\u672C\u57DF"], ["nzHref", "#components-input-demo-tooltip", "nzTitle", "\u8F93\u5165\u65F6\u683C\u5F0F\u5316\u5C55\u793A"], ["nzHref", "#components-input-demo-presuffix", "nzTitle", "\u524D\u7F00\u548C\u540E\u7F00"], ["nzHref", "#components-input-demo-password-input", "nzTitle", "\u5BC6\u7801\u6846"], ["nzHref", "#components-input-demo-allow-clear", "nzTitle", "\u5E26\u79FB\u9664\u56FE\u6807"], ["nzHref", "#components-input-demo-borderless", "nzTitle", "\u65E0\u8FB9\u6846"], ["nzHref", "#components-input-demo-textarea-with-character-count", "nzTitle", "\u5E26\u6570\u5B57\u63D0\u793A\u7684\u6587\u672C\u57DF"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/input/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u4F7F\u7528", "nzSelector", "nz-demo-input-basic", "nzGenerateCommand", "ng g ng-zorro-antd:input-basic <name>", "nzComponentName", "NzDemoInputBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u524D\u7F6E/\u540E\u7F6E\u6807\u7B7E", "nzSelector", "nz-demo-input-addon", "nzGenerateCommand", "ng g ng-zorro-antd:input-addon <name>", "nzComponentName", "NzDemoInputAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u641C\u7D22\u6846", "nzSelector", "nz-demo-input-search-input", "nzGenerateCommand", "ng g ng-zorro-antd:input-search-input <name>", "nzComponentName", "NzDemoInputSearchInputComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9002\u5E94\u6587\u672C\u9AD8\u5EA6\u7684\u6587\u672C\u57DF", "nzSelector", "nz-demo-input-autosize-textarea", "nzGenerateCommand", "ng g ng-zorro-antd:input-autosize-textarea <name>", "nzComponentName", "NzDemoInputAutosizeTextareaComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u524D\u7F00\u548C\u540E\u7F00", "nzSelector", "nz-demo-input-presuffix", "nzGenerateCommand", "ng g ng-zorro-antd:input-presuffix <name>", "nzComponentName", "NzDemoInputPresuffixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u79FB\u9664\u56FE\u6807", "nzSelector", "nz-demo-input-allow-clear", "nzGenerateCommand", "ng g ng-zorro-antd:input-allow-clear <name>", "nzComponentName", "NzDemoInputAllowClearComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u6570\u5B57\u63D0\u793A\u7684\u6587\u672C\u57DF", "nzSelector", "nz-demo-input-textarea-with-character-count", "nzGenerateCommand", "ng g ng-zorro-antd:input-textarea-with-character-count <name>", "nzComponentName", "NzDemoInputTextareaWithCharacterCountComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E09\u79CD\u5927\u5C0F", "nzSelector", "nz-demo-input-size", "nzGenerateCommand", "ng g ng-zorro-antd:input-size <name>", "nzComponentName", "NzDemoInputSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8F93\u5165\u6846\u7EC4\u5408", "nzSelector", "nz-demo-input-group", "nzGenerateCommand", "ng g ng-zorro-antd:input-group <name>", "nzComponentName", "NzDemoInputGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6587\u672C\u57DF", "nzSelector", "nz-demo-input-textarea", "nzGenerateCommand", "ng g ng-zorro-antd:input-textarea <name>", "nzComponentName", "NzDemoInputTextareaComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8F93\u5165\u65F6\u683C\u5F0F\u5316\u5C55\u793A", "nzSelector", "nz-demo-input-tooltip", "nzGenerateCommand", "ng g ng-zorro-antd:input-tooltip <name>", "nzComponentName", "NzDemoInputTooltipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "/components/tooltip/zh"], ["nzTitle", "\u5BC6\u7801\u6846", "nzSelector", "nz-demo-input-password-input", "nzGenerateCommand", "ng g ng-zorro-antd:input-password-input <name>", "nzComponentName", "NzDemoInputPasswordInputComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u65E0\u8FB9\u6846", "nzSelector", "nz-demo-input-borderless", "nzGenerateCommand", "ng g ng-zorro-antd:input-borderless <name>", "nzComponentName", "NzDemoInputBorderlessComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-input]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-input]'", 1, "anchor"], ["href", "https://www.w3schools.com/tags/tag_input.asp", "target", "_blank", "rel", "noopener"], ["id", "nz-input-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-input-group'", 1, "anchor"], ["id", "nz-textarea-count"], ["onclick", "window.location.hash = 'nz-textarea-count'", 1, "anchor"]], template: function NzDemoInputZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1947,10 +1943,10 @@ class NzDemoInputZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "\u9700\u8981\u7528\u6237\u8F93\u5165\u8868\u5355\u57DF\u5185\u5BB9\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " \u9700\u8981\u7528\u6237\u8F93\u5165\u8868\u5355\u57DF\u5185\u5BB9\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "\u63D0\u4F9B\u7EC4\u5408\u578B\u8F93\u5165\u6846\uFF0C\u5E26\u641C\u7D22\u7684\u8F93\u5165\u6846\uFF0C\u8FD8\u53EF\u4EE5\u8FDB\u884C\u5927\u5C0F\u9009\u62E9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " \u63D0\u4F9B\u7EC4\u5408\u578B\u8F93\u5165\u6846\uFF0C\u5E26\u641C\u7D22\u7684\u8F93\u5165\u6846\uFF0C\u8FD8\u53EF\u4EE5\u8FDB\u884C\u5927\u5C0F\u9009\u62E9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "pre", 23);
@@ -2685,8 +2681,8 @@ class NzDemoInputGroupComponent {
         ];
     }
 }
-/** @nocollapse */ NzDemoInputGroupComponent.ɵfac = function NzDemoInputGroupComponent_Factory(t) { return new (t || NzDemoInputGroupComponent)(); };
-/** @nocollapse */ NzDemoInputGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputGroupComponent, selectors: [["nz-demo-input-group"]], decls: 55, vars: 45, consts: [[3, "nzSize"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "nzSpan", "5"], ["type", "text", "nz-input", "", 3, "ngModel"], ["nz-col", "", "nzSpan", "8"], ["nzCompact", ""], ["type", "text", "nz-input", "", 2, "width", "20%", 3, "ngModel"], ["type", "text", "nz-input", "", 2, "width", "30%", 3, "ngModel"], [3, "ngModel"], [3, "nzLabel", "nzValue"], ["type", "text", "nz-input", "", 2, "width", "50%", 3, "ngModel"], ["type", "text", "nz-input", "", "placeholder", "Minimum", 2, "width", "100px", "text-align", "center"], ["type", "text", "disabled", "", "nz-input", "", "placeholder", "~", 2, "width", "30px", "border-left", "0px", "pointer-events", "none", "background-color", "rgb(255, 255, 255)"], ["type", "text", "nz-input", "", "placeholder", "Maximum", 2, "width", "100px", "text-align", "center", "border-left", "0px"], ["type", "email", "nz-input", "", "placeholder", "Email", 2, "width", "200px"], [2, "width", "30%", 3, "ngModel"], [2, "width", "70%", 3, "nzOptions"]], template: function NzDemoInputGroupComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoInputGroupComponent.ɵfac = function NzDemoInputGroupComponent_Factory(t) { return new (t || NzDemoInputGroupComponent)(); };
+NzDemoInputGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoInputGroupComponent, selectors: [["nz-demo-input-group"]], decls: 55, vars: 45, consts: [[3, "nzSize"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "nzSpan", "5"], ["type", "text", "nz-input", "", 3, "ngModel"], ["nz-col", "", "nzSpan", "8"], ["nzCompact", ""], ["type", "text", "nz-input", "", 2, "width", "20%", 3, "ngModel"], ["type", "text", "nz-input", "", 2, "width", "30%", 3, "ngModel"], [3, "ngModel"], [3, "nzLabel", "nzValue"], ["type", "text", "nz-input", "", 2, "width", "50%", 3, "ngModel"], ["type", "text", "nz-input", "", "placeholder", "Minimum", 2, "width", "100px", "text-align", "center"], ["type", "text", "disabled", "", "nz-input", "", "placeholder", "~", 1, "demo-input-split", 2, "width", "30px", "border-left", "0px", "border-right", "0px", "pointer-events", "none", "background-color", "rgb(255, 255, 255)"], ["type", "text", "nz-input", "", "placeholder", "Maximum", 1, "demo-input-right"], ["type", "email", "nz-input", "", "placeholder", "Email", 2, "width", "200px"], [2, "width", "30%", 3, "ngModel"], [2, "width", "70%", 3, "nzOptions"]], template: function NzDemoInputGroupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-input-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -2823,7 +2819,7 @@ class NzDemoInputGroupComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzLabel", "Company")("nzValue", "Company");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzOptions", ctx.options);
-    } }, directives: [ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_1__["NzInputGroupComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzColDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_1__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_5__["NzSelectComponent"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_5__["NzOptionComponent"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_6__["NzInputNumberComponent"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_7__["NzDatePickerComponent"], ng_zorro_antd_cascader__WEBPACK_IMPORTED_MODULE_8__["NzCascaderComponent"]], encapsulation: 2 });
+    } }, directives: [ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_1__["NzInputGroupComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_2__["ɵNzTransitionPatchDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzRowDirective"], ng_zorro_antd_grid__WEBPACK_IMPORTED_MODULE_3__["NzColDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_1__["NzInputDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_5__["NzSelectComponent"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_5__["NzOptionComponent"], ng_zorro_antd_input_number__WEBPACK_IMPORTED_MODULE_6__["NzInputNumberComponent"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_7__["NzDatePickerComponent"], ng_zorro_antd_cascader__WEBPACK_IMPORTED_MODULE_8__["NzCascaderComponent"]], styles: [".ant-input.demo-input-right[_ngcontent-%COMP%] {\n        width: 100px;\n        text-align: center;\n        border-left-width: 0px;\n      }\n\n      .ant-input.ant-input-rtl.demo-input-right[_ngcontent-%COMP%] {\n        border-right-width: 0px;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoInputGroupComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -2889,9 +2885,10 @@ class NzDemoInputGroupComponent {
         disabled
         nz-input
         placeholder="~"
-        style="width: 30px; border-left: 0px; pointer-events: none; background-color: rgb(255, 255, 255);"
+        class="demo-input-split"
+        style="width: 30px; border-left: 0px; border-right: 0px; pointer-events: none; background-color: rgb(255, 255, 255);"
       />
-      <input type="text" nz-input placeholder="Maximum" style="width: 100px; text-align: center; border-left: 0px;" />
+      <input type="text" nz-input placeholder="Maximum" class="demo-input-right" />
     </nz-input-group>
     <br />
     <nz-input-group nzCompact>
@@ -2909,7 +2906,20 @@ class NzDemoInputGroupComponent {
       </nz-select>
       <nz-cascader [nzOptions]="options" style="width: 70%;"></nz-cascader>
     </nz-input-group>
-  `
+  `,
+                styles: [
+                    `
+      .ant-input.demo-input-right {
+        width: 100px;
+        text-align: center;
+        border-left-width: 0px;
+      }
+
+      .ant-input.ant-input-rtl.demo-input-right {
+        border-right-width: 0px;
+      }
+    `
+                ]
             }]
     }], null, null); })();
 
@@ -2988,8 +2998,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoInputModule {
 }
-/** @nocollapse */ NzDemoInputModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoInputModule });
-/** @nocollapse */ NzDemoInputModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoInputModule_Factory(t) { return new (t || NzDemoInputModule)(); }, imports: [[
+NzDemoInputModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoInputModule });
+NzDemoInputModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoInputModule_Factory(t) { return new (t || NzDemoInputModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([

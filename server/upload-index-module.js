@@ -26,8 +26,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoUploadDirectoryComponent {
 }
-/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵfac = function NzDemoUploadDirectoryComponent_Factory(t) { return new (t || NzDemoUploadDirectoryComponent)(); };
-/** @nocollapse */ NzDemoUploadDirectoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDirectoryComponent, selectors: [["nz-demo-upload-directory"]], decls: 4, vars: 0, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzDirectory", ""], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDirectoryComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadDirectoryComponent.ɵfac = function NzDemoUploadDirectoryComponent_Factory(t) { return new (t || NzDemoUploadDirectoryComponent)(); };
+NzDemoUploadDirectoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDirectoryComponent, selectors: [["nz-demo-upload-directory"]], decls: 4, vars: 0, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzDirectory", ""], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDirectoryComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
@@ -93,8 +93,8 @@ class NzDemoUploadPictureStyleComponent {
         this.fileList2 = [...this.defaultFileList];
     }
 }
-/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵfac = function NzDemoUploadPictureStyleComponent_Factory(t) { return new (t || NzDemoUploadPictureStyleComponent)(); };
-/** @nocollapse */ NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 13, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadPictureStyleComponent.ɵfac = function NzDemoUploadPictureStyleComponent_Factory(t) { return new (t || NzDemoUploadPictureStyleComponent)(); };
+NzDemoUploadPictureStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureStyleComponent, selectors: [["nz-demo-upload-picture-style"]], decls: 13, vars: 2, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzFileList", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 1, "upload-list-inline", 3, "nzFileList", "nzFileListChange"]], template: function NzDemoUploadPictureStyleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureStyleComponent_Template_nz_upload_nzFileListChange_1_listener($event) { return ctx.fileList1 = $event; });
@@ -223,8 +223,8 @@ class NzDemoUploadTransformFileComponent {
         };
     }
 }
-/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵfac = function NzDemoUploadTransformFileComponent_Factory(t) { return new (t || NzDemoUploadTransformFileComponent)(); };
-/** @nocollapse */ NzDemoUploadTransformFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadTransformFileComponent, selectors: [["nz-demo-upload-transform-file"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzTransformFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadTransformFileComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadTransformFileComponent.ɵfac = function NzDemoUploadTransformFileComponent_Factory(t) { return new (t || NzDemoUploadTransformFileComponent)(); };
+NzDemoUploadTransformFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadTransformFileComponent, selectors: [["nz-demo-upload-transform-file"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzTransformFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadTransformFileComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);
@@ -340,8 +340,8 @@ class NzDemoUploadAvatarComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoUploadAvatarComponent.ɵfac = function NzDemoUploadAvatarComponent_Factory(t) { return new (t || NzDemoUploadAvatarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadAvatarComponent, selectors: [["nz-demo-upload-avatar"]], decls: 3, vars: 4, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzName", "avatar", "nzListType", "picture-card", 1, "avatar-uploader", 3, "nzShowUploadList", "nzBeforeUpload", "nzChange"], [4, "ngIf"], ["style", "width: 100%", 3, "src", 4, "ngIf"], ["nz-icon", "", 1, "upload-icon", 3, "nzType"], [1, "ant-upload-text"], [2, "width", "100%", 3, "src"]], template: function NzDemoUploadAvatarComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadAvatarComponent.ɵfac = function NzDemoUploadAvatarComponent_Factory(t) { return new (t || NzDemoUploadAvatarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoUploadAvatarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadAvatarComponent, selectors: [["nz-demo-upload-avatar"]], decls: 3, vars: 4, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzName", "avatar", "nzListType", "picture-card", 1, "avatar-uploader", 3, "nzShowUploadList", "nzBeforeUpload", "nzChange"], [4, "ngIf"], ["style", "width: 100%", 3, "src", 4, "ngIf"], ["nz-icon", "", 1, "upload-icon", 3, "nzType"], [1, "ant-upload-text"], [2, "width", "100%", 3, "src"]], template: function NzDemoUploadAvatarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadAvatarComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoUploadAvatarComponent_ng_container_1_Template, 4, 1, "ng-container", 1);
@@ -428,8 +428,8 @@ class NzDemoUploadDragComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoUploadDragComponent.ɵfac = function NzDemoUploadDragComponent_Factory(t) { return new (t || NzDemoUploadDragComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadDragComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDragComponent, selectors: [["nz-demo-upload-drag"]], decls: 7, vars: 1, consts: [["nzType", "drag", "nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzMultiple", "nzChange"], [1, "ant-upload-drag-icon"], ["nz-icon", "", "nzType", "inbox"], [1, "ant-upload-text"], [1, "ant-upload-hint"]], template: function NzDemoUploadDragComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadDragComponent.ɵfac = function NzDemoUploadDragComponent_Factory(t) { return new (t || NzDemoUploadDragComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoUploadDragComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDragComponent, selectors: [["nz-demo-upload-drag"]], decls: 7, vars: 1, consts: [["nzType", "drag", "nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzMultiple", "nzChange"], [1, "ant-upload-drag-icon"], ["nz-icon", "", "nzType", "inbox"], [1, "ant-upload-text"], [1, "ant-upload-hint"]], template: function NzDemoUploadDragComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadDragComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 1);
@@ -529,8 +529,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoUploadModule {
 }
-/** @nocollapse */ NzDemoUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoUploadModule });
-/** @nocollapse */ NzDemoUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoUploadModule_Factory(t) { return new (t || NzDemoUploadModule)(); }, imports: [[
+NzDemoUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoUploadModule });
+NzDemoUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoUploadModule_Factory(t) { return new (t || NzDemoUploadModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -651,8 +651,8 @@ class NzDemoUploadPreviewFileComponent {
         };
     }
 }
-/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵfac = function NzDemoUploadPreviewFileComponent_Factory(t) { return new (t || NzDemoUploadPreviewFileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
-/** @nocollapse */ NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 5, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadPreviewFileComponent.ɵfac = function NzDemoUploadPreviewFileComponent_Factory(t) { return new (t || NzDemoUploadPreviewFileComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"])); };
+NzDemoUploadPreviewFileComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPreviewFileComponent, selectors: [["nz-demo-upload-preview-file"]], decls: 5, vars: 1, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture", 3, "nzPreviewFile"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadPreviewFileComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "button", 2);
@@ -748,8 +748,8 @@ class NzDemoUploadUploadManuallyComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵfac = function NzDemoUploadUploadManuallyComponent_Factory(t) { return new (t || NzDemoUploadUploadManuallyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 6, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadUploadManuallyComponent.ɵfac = function NzDemoUploadUploadManuallyComponent_Factory(t) { return new (t || NzDemoUploadUploadManuallyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpClient"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_2__["NzMessageService"])); };
+NzDemoUploadUploadManuallyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadManuallyComponent, selectors: [["nz-demo-upload-upload-manually"]], decls: 6, vars: 6, consts: [[3, "nzFileList", "nzBeforeUpload", "nzFileListChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"], ["nz-button", "", 2, "margin-top", "16px", 3, "nzType", "nzLoading", "disabled", "click"]], template: function NzDemoUploadUploadManuallyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadManuallyComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.fileList = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "button", 1);
@@ -836,8 +836,8 @@ class NzDemoUploadBasicComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoUploadBasicComponent.ɵfac = function NzDemoUploadBasicComponent_Factory(t) { return new (t || NzDemoUploadBasicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 4, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadBasicComponent.ɵfac = function NzDemoUploadBasicComponent_Factory(t) { return new (t || NzDemoUploadBasicComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoUploadBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadBasicComponent, selectors: [["nz-demo-upload-basic"]], decls: 4, vars: 2, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzHeaders", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadBasicComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
@@ -921,8 +921,8 @@ class NzDemoUploadUploadWithAliyunOssComponent {
         console.log('Aliyun OSS:', e.fileList);
     }
 }
-/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵfac = function NzDemoUploadUploadWithAliyunOssComponent_Factory(t) { return new (t || NzDemoUploadUploadWithAliyunOssComponent)(); };
-/** @nocollapse */ NzDemoUploadUploadWithAliyunOssComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadWithAliyunOssComponent, selectors: [["nz-demo-upload-upload-with-aliyun-oss"]], decls: 5, vars: 4, consts: [["nzName", "file", 3, "nzFileList", "nzTransformFile", "nzData", "nzAction", "nzFileListChange", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadUploadWithAliyunOssComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadUploadWithAliyunOssComponent.ɵfac = function NzDemoUploadUploadWithAliyunOssComponent_Factory(t) { return new (t || NzDemoUploadUploadWithAliyunOssComponent)(); };
+NzDemoUploadUploadWithAliyunOssComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadUploadWithAliyunOssComponent, selectors: [["nz-demo-upload-upload-with-aliyun-oss"]], decls: 5, vars: 4, consts: [["nzName", "file", 3, "nzFileList", "nzTransformFile", "nzData", "nzAction", "nzFileListChange", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadUploadWithAliyunOssComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzFileListChange_0_listener($event) { return ctx.files = $event; })("nzChange", function NzDemoUploadUploadWithAliyunOssComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.onChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Photos: ");
@@ -1026,11 +1026,11 @@ class NzDemoUploadEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoUploadEnComponent.ɵfac = function NzDemoUploadEnComponent_Factory(t) { return new (t || NzDemoUploadEnComponent)(); };
-/** @nocollapse */ NzDemoUploadEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadEnComponent, selectors: [["nz-demo-upload"]], viewQuery: function NzDemoUploadEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoUploadEnComponent.ɵfac = function NzDemoUploadEnComponent_Factory(t) { return new (t || NzDemoUploadEnComponent)(); };
+NzDemoUploadEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadEnComponent, selectors: [["nz-demo-upload"]], viewQuery: function NzDemoUploadEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 774, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "Upload by clicking"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "Avatar"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "Default Files"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "Pictures Wall"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "Complete control over file list"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "Drag and Drop"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "Upload directory"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "Upload manually"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "Pictures with list style"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "Customize preview file"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "Transform file before request"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "Aliyun OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Upload by clicking", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Default Files", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Complete control over file list", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload directory", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures with list style", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Transform file before request", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Avatar", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Pictures Wall", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Drag and Drop", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Upload manually", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customize preview file", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Aliyun OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki", "target", "_blank", "rel", "noopener"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept", "target", "_blank", "rel", "noopener"], ["href", "https://caniuse.com/#feat=input-file-directory", "target", "_blank", "rel", "noopener"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1079,13 +1079,13 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "When you need to upload one or more files.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " When you need to upload one or more files.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "When you need to show the process of uploading.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " When you need to show the process of uploading.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "When you need to upload files by dragging and dropping.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " When you need to upload files by dragging and dropping.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "pre", 22);
@@ -1165,12 +1165,12 @@ class NzDemoUploadEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "ol");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "limit the number of uploaded files.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, " limit the number of uploaded files.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "read from response and show file link.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, " read from response and show file link.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2363,8 +2363,8 @@ class NzDemoUploadFileListComponent {
         this.fileList = fileList;
     }
 }
-/** @nocollapse */ NzDemoUploadFileListComponent.ɵfac = function NzDemoUploadFileListComponent_Factory(t) { return new (t || NzDemoUploadFileListComponent)(); };
-/** @nocollapse */ NzDemoUploadFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadFileListComponent, selectors: [["nz-demo-upload-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadFileListComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadFileListComponent.ɵfac = function NzDemoUploadFileListComponent_Factory(t) { return new (t || NzDemoUploadFileListComponent)(); };
+NzDemoUploadFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadFileListComponent, selectors: [["nz-demo-upload-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList", "nzChange"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadFileListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoUploadFileListComponent_Template_nz_upload_nzChange_0_listener($event) { return ctx.handleChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
@@ -2482,8 +2482,8 @@ class NzDemoUploadPictureCardComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoUploadPictureCardComponent.ɵfac = function NzDemoUploadPictureCardComponent_Factory(t) { return new (t || NzDemoUploadPictureCardComponent)(); };
-/** @nocollapse */ NzDemoUploadPictureCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureCardComponent, selectors: [["nz-demo-upload-picture-card"]], decls: 9, vars: 6, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture-card", 3, "nzFileList", "nzShowButton", "nzPreview", "nzFileListChange"], ["nz-icon", "", "nzType", "plus"], [2, "margin-top", "8px"], [3, "nzVisible", "nzContent", "nzFooter", "nzOnCancel"], ["modalContent", ""], [3, "src", "ngStyle"]], template: function NzDemoUploadPictureCardComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadPictureCardComponent.ɵfac = function NzDemoUploadPictureCardComponent_Factory(t) { return new (t || NzDemoUploadPictureCardComponent)(); };
+NzDemoUploadPictureCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDemoUploadPictureCardComponent, selectors: [["nz-demo-upload-picture-card"]], decls: 9, vars: 6, consts: [[1, "clearfix"], ["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", "nzListType", "picture-card", 3, "nzFileList", "nzShowButton", "nzPreview", "nzFileListChange"], ["nz-icon", "", "nzType", "plus"], [2, "margin-top", "8px"], [3, "nzVisible", "nzContent", "nzFooter", "nzOnCancel"], ["modalContent", ""], [3, "src", "ngStyle"]], template: function NzDemoUploadPictureCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "nz-upload", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("nzFileListChange", function NzDemoUploadPictureCardComponent_Template_nz_upload_nzFileListChange_1_listener($event) { return ctx.fileList = $event; });
@@ -2607,11 +2607,11 @@ class NzDemoUploadZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoUploadZhComponent.ɵfac = function NzDemoUploadZhComponent_Factory(t) { return new (t || NzDemoUploadZhComponent)(); };
-/** @nocollapse */ NzDemoUploadZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadZhComponent, selectors: [["nz-demo-upload"]], viewQuery: function NzDemoUploadZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoUploadZhComponent.ɵfac = function NzDemoUploadZhComponent_Factory(t) { return new (t || NzDemoUploadZhComponent)(); };
+NzDemoUploadZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadZhComponent, selectors: [["nz-demo-upload"]], viewQuery: function NzDemoUploadZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 778, vars: 55, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-upload-demo-basic", "nzTitle", "\u70B9\u51FB\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-avatar", "nzTitle", "\u7528\u6237\u5934\u50CF"], ["nzHref", "#components-upload-demo-default-file-list", "nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868"], ["nzHref", "#components-upload-demo-picture-card", "nzTitle", "\u7167\u7247\u5899"], ["nzHref", "#components-upload-demo-file-list", "nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868"], ["nzHref", "#components-upload-demo-drag", "nzTitle", "\u62D6\u62FD\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-directory", "nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-upload-manually", "nzTitle", "\u624B\u52A8\u4E0A\u4F20"], ["nzHref", "#components-upload-demo-picture-style", "nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F"], ["nzHref", "#components-upload-demo-preview-file", "nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8"], ["nzHref", "#components-upload-demo-transform-file", "nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6"], ["nzHref", "#components-upload-demo-upload-with-aliyun-oss", "nzTitle", "\u963F\u91CC\u4E91 OSS"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/upload/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u70B9\u51FB\u4E0A\u4F20", "nzSelector", "nz-demo-upload-basic", "nzGenerateCommand", "ng g ng-zorro-antd:upload-basic <name>", "nzComponentName", "NzDemoUploadBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u5217\u8868", "nzSelector", "nz-demo-upload-default-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-default-file-list <name>", "nzComponentName", "NzDemoUploadDefaultFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5B8C\u5168\u63A7\u5236\u7684\u4E0A\u4F20\u5217\u8868", "nzSelector", "nz-demo-upload-file-list", "nzGenerateCommand", "ng g ng-zorro-antd:upload-file-list <name>", "nzComponentName", "NzDemoUploadFileListComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6587\u4EF6\u5939\u4E0A\u4F20", "nzSelector", "nz-demo-upload-directory", "nzGenerateCommand", "ng g ng-zorro-antd:upload-directory <name>", "nzComponentName", "NzDemoUploadDirectoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u7247\u5217\u8868\u6837\u5F0F", "nzSelector", "nz-demo-upload-picture-style", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-style <name>", "nzComponentName", "NzDemoUploadPictureStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL", "target", "_blank", "rel", "noopener"], ["nzTitle", "\u4E0A\u4F20\u524D\u8F6C\u6362\u6587\u4EF6", "nzSelector", "nz-demo-upload-transform-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-transform-file <name>", "nzComponentName", "NzDemoUploadTransformFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7528\u6237\u5934\u50CF", "nzSelector", "nz-demo-upload-avatar", "nzGenerateCommand", "ng g ng-zorro-antd:upload-avatar <name>", "nzComponentName", "NzDemoUploadAvatarComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7167\u7247\u5899", "nzSelector", "nz-demo-upload-picture-card", "nzGenerateCommand", "ng g ng-zorro-antd:upload-picture-card <name>", "nzComponentName", "NzDemoUploadPictureCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u62D6\u62FD\u4E0A\u4F20", "nzSelector", "nz-demo-upload-drag", "nzGenerateCommand", "ng g ng-zorro-antd:upload-drag <name>", "nzComponentName", "NzDemoUploadDragComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u624B\u52A8\u4E0A\u4F20", "nzSelector", "nz-demo-upload-upload-manually", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-manually <name>", "nzComponentName", "NzDemoUploadUploadManuallyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9884\u89C8", "nzSelector", "nz-demo-upload-preview-file", "nzGenerateCommand", "ng g ng-zorro-antd:upload-preview-file <name>", "nzComponentName", "NzDemoUploadPreviewFileComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u963F\u91CC\u4E91 OSS", "nzSelector", "nz-demo-upload-upload-with-aliyun-oss", "nzGenerateCommand", "ng g ng-zorro-antd:upload-upload-with-aliyun-oss <name>", "nzComponentName", "NzDemoUploadUploadWithAliyunOssComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["href", "https://github.com/blueimp/jQuery-File-Upload/wiki", "target", "_blank", "rel", "noopener"], ["id", "nz-upload"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-upload'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept", "target", "_blank", "rel", "noopener"], ["href", "https://caniuse.com/#feat=input-file-directory", "target", "_blank", "rel", "noopener"], ["id", "nzchange"], ["onclick", "window.location.hash = 'nzchange'", 1, "anchor"], [1, "language-js"], ["spellcheck", "true", 1, "token", "comment"], ["id", "nzcustomrequest"], ["onclick", "window.location.hash = 'nzcustomrequest'", 1, "anchor"]], template: function NzDemoUploadZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -2662,13 +2662,13 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "\u5F53\u9700\u8981\u4E0A\u4F20\u4E00\u4E2A\u6216\u4E00\u4E9B\u6587\u4EF6\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " \u5F53\u9700\u8981\u4E0A\u4F20\u4E00\u4E2A\u6216\u4E00\u4E9B\u6587\u4EF6\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "\u5F53\u9700\u8981\u5C55\u73B0\u4E0A\u4F20\u7684\u8FDB\u5EA6\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, " \u5F53\u9700\u8981\u5C55\u73B0\u4E0A\u4F20\u7684\u8FDB\u5EA6\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "\u5F53\u9700\u8981\u4F7F\u7528\u62D6\u62FD\u4EA4\u4E92\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, " \u5F53\u9700\u8981\u4F7F\u7528\u62D6\u62FD\u4EA4\u4E92\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "pre", 22);
@@ -2748,12 +2748,12 @@ class NzDemoUploadZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "ol");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "\u4E0A\u4F20\u5217\u8868\u6570\u91CF\u7684\u9650\u5236\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " \u4E0A\u4F20\u5217\u8868\u6570\u91CF\u7684\u9650\u5236\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "\u8BFB\u53D6\u8FDC\u7A0B\u8DEF\u5F84\u5E76\u663E\u793A\u94FE\u63A5\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, " \u8BFB\u53D6\u8FDC\u7A0B\u8DEF\u5F84\u5E76\u663E\u793A\u94FE\u63A5\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -3950,8 +3950,8 @@ class NzDemoUploadDefaultFileListComponent {
         ];
     }
 }
-/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵfac = function NzDemoUploadDefaultFileListComponent_Factory(t) { return new (t || NzDemoUploadDefaultFileListComponent)(); };
-/** @nocollapse */ NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoUploadDefaultFileListComponent.ɵfac = function NzDemoUploadDefaultFileListComponent_Factory(t) { return new (t || NzDemoUploadDefaultFileListComponent)(); };
+NzDemoUploadDefaultFileListComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoUploadDefaultFileListComponent, selectors: [["nz-demo-upload-default-file-list"]], decls: 4, vars: 1, consts: [["nzAction", "https://www.mocky.io/v2/5cc8019d300000980a055e76", 3, "nzFileList"], ["nz-button", ""], ["nz-icon", "", "nzType", "upload"]], template: function NzDemoUploadDefaultFileListComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-upload", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 2);

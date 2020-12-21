@@ -20,15 +20,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵNzSliderTrackComponent", function() { return NzSliderTrackComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/tooltip */ "pk25");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
 
 
 
@@ -49,50 +51,49 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const _c0 = ["handle"];
 const _c1 = ["slider"];
 function NzSliderComponent_nz_slider_step_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-step", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-step", 7);
 } if (rf & 2) {
-    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r1.nzVertical)("lowerBound", ctx_r1.bounds.lower)("upperBound", ctx_r1.bounds.upper)("marksArray", ctx_r1.marksArray)("included", ctx_r1.nzIncluded);
+    const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r1.nzVertical)("lowerBound", ctx_r1.bounds.lower)("upperBound", ctx_r1.bounds.upper)("marksArray", ctx_r1.marksArray)("included", ctx_r1.nzIncluded);
 } }
 function NzSliderComponent_nz_slider_handle_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-handle", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-handle", 8);
 } if (rf & 2) {
     const handle_r4 = ctx.$implicit;
-    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r2.nzVertical)("reverse", ctx_r2.nzReverse)("offset", handle_r4.offset)("value", handle_r4.value)("active", handle_r4.active)("tooltipFormatter", ctx_r2.nzTipFormatter)("tooltipVisible", ctx_r2.nzTooltipVisible)("tooltipPlacement", ctx_r2.nzTooltipPlacement);
+    const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r2.nzVertical)("reverse", ctx_r2.nzReverse)("offset", handle_r4.offset)("value", handle_r4.value)("active", handle_r4.active)("tooltipFormatter", ctx_r2.nzTipFormatter)("tooltipVisible", ctx_r2.nzTooltipVisible)("tooltipPlacement", ctx_r2.nzTooltipPlacement)("dir", ctx_r2.dir);
 } }
 function NzSliderComponent_nz_slider_marks_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "nz-slider-marks", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-marks", 9);
 } if (rf & 2) {
-    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx_r3.nzVertical)("min", ctx_r3.nzMin)("max", ctx_r3.nzMax)("lowerBound", ctx_r3.bounds.lower)("upperBound", ctx_r3.bounds.upper)("marksArray", ctx_r3.marksArray)("included", ctx_r3.nzIncluded);
+    const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r3.nzVertical)("min", ctx_r3.nzMin)("max", ctx_r3.nzMax)("lowerBound", ctx_r3.bounds.lower)("upperBound", ctx_r3.bounds.upper)("marksArray", ctx_r3.marksArray)("included", ctx_r3.nzIncluded);
 } }
 function NzSliderMarksComponent_span_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "span", 2);
 } if (rf & 2) {
     const attr_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-mark-active", attr_r1.active);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", attr_r1.style)("innerHTML", attr_r1.label, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsanitizeHtml"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-slider-mark-active", attr_r1.active);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngStyle", attr_r1.style)("innerHTML", attr_r1.label, _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsanitizeHtml"]);
 } }
 function NzSliderStepComponent_span_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "span", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "span", 2);
 } if (rf & 2) {
     const mark_r1 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-dot-active", mark_r1.active);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", mark_r1.style);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-slider-dot-active", mark_r1.active);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngStyle", mark_r1.style);
 } }
 class NzSliderService {
     constructor() {
         this.isDragging = false;
     }
 }
-/** @nocollapse */
 NzSliderService.ɵfac = function NzSliderService_Factory(t) { return new (t || NzSliderService)(); };
-/** @nocollapse */
-NzSliderService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({ token: NzSliderService, factory: NzSliderService.ɵfac });
+NzSliderService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjectable"]({ token: NzSliderService, factory: NzSliderService.ɵfac });
 
 /**
  * Use of this source code is governed by an MIT-style license that can be
@@ -104,6 +105,7 @@ class NzSliderHandleComponent {
         this.cdr = cdr;
         this.tooltipVisible = 'default';
         this.active = false;
+        this.dir = 'ltr';
         this.style = {};
         this.enterHandle = () => {
             if (!this.sliderService.isDragging) {
@@ -120,8 +122,8 @@ class NzSliderHandleComponent {
         };
     }
     ngOnChanges(changes) {
-        const { offset, value, active, tooltipVisible, reverse } = changes;
-        if (offset || reverse) {
+        const { offset, value, active, tooltipVisible, reverse, dir } = changes;
+        if (offset || reverse || dir) {
             this.updateStyle();
         }
         if (value) {
@@ -174,50 +176,55 @@ class NzSliderHandleComponent {
                 [reverse ? 'bottom' : 'top']: 'auto',
                 transform: reverse ? null : `translateY(+50%)`
             }
-            : {
-                [reverse ? 'right' : 'left']: `${offset}%`,
-                [reverse ? 'left' : 'right']: 'auto',
-                transform: `translateX(${reverse ? '+' : '-'}50%)`
-            };
+            : Object.assign(Object.assign({}, this.getHorizontalStylePosition()), { transform: `translateX(${reverse ? (this.dir === 'rtl' ? '-' : '+') : this.dir === 'rtl' ? '+' : '-'}50%)` });
         this.style = positionStyle;
         this.cdr.markForCheck();
     }
+    getHorizontalStylePosition() {
+        let left = this.reverse ? 'auto' : `${this.offset}%`;
+        let right = this.reverse ? `${this.offset}%` : 'auto';
+        if (this.dir === 'rtl') {
+            const tmp = left;
+            left = right;
+            right = tmp;
+        }
+        return { left, right };
+    }
 }
-/** @nocollapse */
-NzSliderHandleComponent.ɵfac = function NzSliderHandleComponent_Factory(t) { return new (t || NzSliderHandleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzSliderService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"])); };
-/** @nocollapse */
-NzSliderHandleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzSliderHandleComponent, selectors: [["nz-slider-handle"]], viewQuery: function NzSliderHandleComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c0, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzTooltipDirective"], true);
+NzSliderHandleComponent.ɵfac = function NzSliderHandleComponent_Factory(t) { return new (t || NzSliderHandleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](NzSliderService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"])); };
+NzSliderHandleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderHandleComponent, selectors: [["nz-slider-handle"]], viewQuery: function NzSliderHandleComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵviewQuery"](_c0, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵviewQuery"](ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzTooltipDirective"], true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.handleEl = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.tooltip = _t.first);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.handleEl = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.tooltip = _t.first);
     } }, hostBindings: function NzSliderHandleComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("mouseenter", function NzSliderHandleComponent_mouseenter_HostBindingHandler() { return ctx.enterHandle(); })("mouseleave", function NzSliderHandleComponent_mouseleave_HostBindingHandler() { return ctx.leaveHandle(); });
-    } }, inputs: { tooltipVisible: "tooltipVisible", active: "active", vertical: "vertical", reverse: "reverse", offset: "offset", value: "value", tooltipPlacement: "tooltipPlacement", tooltipFormatter: "tooltipFormatter" }, exportAs: ["nzSliderHandle"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 4, consts: [["tabindex", "0", "nz-tooltip", "", 1, "ant-slider-handle", 3, "ngStyle", "nzTooltipTitle", "nzTooltipTrigger", "nzTooltipPlacement"], ["handle", ""]], template: function NzSliderHandleComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("mouseenter", function NzSliderHandleComponent_mouseenter_HostBindingHandler() { return ctx.enterHandle(); })("mouseleave", function NzSliderHandleComponent_mouseleave_HostBindingHandler() { return ctx.leaveHandle(); });
+    } }, inputs: { tooltipVisible: "tooltipVisible", active: "active", dir: "dir", vertical: "vertical", reverse: "reverse", offset: "offset", value: "value", tooltipPlacement: "tooltipPlacement", tooltipFormatter: "tooltipFormatter" }, exportAs: ["nzSliderHandle"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 4, consts: [["tabindex", "0", "nz-tooltip", "", 1, "ant-slider-handle", 3, "ngStyle", "nzTooltipTitle", "nzTooltipTrigger", "nzTooltipPlacement"], ["handle", ""]], template: function NzSliderHandleComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "div", 0, 1);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", ctx.style)("nzTooltipTitle", ctx.tooltipFormatter === null || ctx.tooltipVisible === "never" ? null : ctx.tooltipTitle)("nzTooltipTrigger", null)("nzTooltipPlacement", ctx.tooltipPlacement);
-    } }, directives: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzTooltipDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngStyle", ctx.style)("nzTooltipTitle", ctx.tooltipFormatter === null || ctx.tooltipVisible === "never" ? null : ctx.tooltipTitle)("nzTooltipTrigger", null)("nzTooltipPlacement", ctx.tooltipPlacement);
+    } }, directives: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzTooltipDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
 NzSliderHandleComponent.ctorParameters = () => [
     { type: NzSliderService },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] }
 ];
 NzSliderHandleComponent.propDecorators = {
-    handleEl: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['handle', { static: false },] }],
-    tooltip: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzTooltipDirective"], { static: false },] }],
-    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    offset: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    tooltipVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    tooltipPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    tooltipFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    active: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    handleEl: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"], args: ['handle', { static: false },] }],
+    tooltip: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"], args: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzTooltipDirective"], { static: false },] }],
+    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    offset: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    value: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    tooltipVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    tooltipPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    tooltipFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    active: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    dir: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderHandleComponent.prototype, "active", void 0);
 
@@ -226,10 +233,11 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzSliderComponent {
-    constructor(sliderService, cdr, platform) {
+    constructor(sliderService, cdr, platform, directionality) {
         this.sliderService = sliderService;
         this.cdr = cdr;
         this.platform = platform;
+        this.directionality = directionality;
         this.nzDisabled = false;
         this.nzDots = false;
         this.nzIncluded = true;
@@ -242,7 +250,7 @@ class NzSliderComponent {
         this.nzStep = 1;
         this.nzTooltipVisible = 'default';
         this.nzTooltipPlacement = 'top';
-        this.nzOnAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
+        this.nzOnAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
         this.value = null;
         this.cacheSliderStart = null;
         this.cacheSliderLength = null;
@@ -251,8 +259,18 @@ class NzSliderComponent {
         this.handles = []; // Handles' offset
         this.marksArray = null; // "steps" in array type with more data & FILTER out the invalid mark
         this.bounds = { lower: null, upper: null }; // now for nz-slider-step
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
     }
     ngOnInit() {
+        var _a;
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+            this.updateTrackAndHandles();
+            this.onValueChange(this.getValue(true));
+        });
         this.handles = generateHandlers(this.nzRange ? 2 : 1);
         this.marksArray = this.nzMarks ? this.generateMarkItems(this.nzMarks) : null;
         this.bindDraggingHandlers();
@@ -275,6 +293,8 @@ class NzSliderComponent {
     }
     ngOnDestroy() {
         this.unsubscribeDrag();
+        this.destroy$.next();
+        this.destroy$.complete();
     }
     writeValue(val) {
         this.setValue(val, true);
@@ -296,15 +316,16 @@ class NzSliderComponent {
      */
     onKeyDown(e) {
         const code = e.keyCode;
-        const isIncrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["RIGHT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["UP_ARROW"];
-        const isDecrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["LEFT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_1__["DOWN_ARROW"];
+        const isIncrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["RIGHT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["UP_ARROW"];
+        const isDecrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["LEFT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["DOWN_ARROW"];
         if (!(isIncrease || isDecrease)) {
             return;
         }
         e.preventDefault();
-        const step = (isDecrease ? -this.nzStep : this.nzStep) * (this.nzReverse ? -1 : 1);
+        let step = (isDecrease ? -this.nzStep : this.nzStep) * (this.nzReverse ? -1 : 1);
+        step = this.dir === 'rtl' ? step * -1 : step;
         const newVal = this.nzRange ? this.value[this.activeValueIndex] + step : this.value + step;
-        this.setActiveValue(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["ensureNumberInRange"])(newVal, this.nzMin, this.nzMax));
+        this.setActiveValue(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["ensureNumberInRange"])(newVal, this.nzMin, this.nzMax));
     }
     setValue(value, isWriteValue = false) {
         if (isWriteValue) {
@@ -396,7 +417,16 @@ class NzSliderComponent {
         this.cdr.markForCheck();
     }
     getLogicalValue(value) {
-        return this.nzReverse ? this.nzMax - value + this.nzMin : value;
+        if (this.nzReverse) {
+            if (!this.nzVertical && this.dir === 'rtl') {
+                return value;
+            }
+            return this.nzMax - value + this.nzMin;
+        }
+        if (!this.nzVertical && this.dir === 'rtl') {
+            return this.nzMax - value + this.nzMin;
+        }
+        return value;
     }
     onDragEnd() {
         this.nzOnAfterChange.emit(this.getValue(true));
@@ -429,13 +459,13 @@ class NzSliderComponent {
         };
         [mouse, touch].forEach(source => {
             const { start, move, end, pluckKey, filter: filterFunc = () => true } = source;
-            source.startPlucked$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["fromEvent"])(sliderDOM, start).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["filter"])(filterFunc), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["tap"])(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["silentEvent"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["pluck"])(...pluckKey), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])((position) => this.findClosestValue(position)));
-            source.end$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["fromEvent"])(document, end);
-            source.moveResolved$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["fromEvent"])(document, move).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["filter"])(filterFunc), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["tap"])(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["silentEvent"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["pluck"])(...pluckKey), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])((position) => this.findClosestValue(position)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(source.end$));
+            source.startPlucked$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["fromEvent"])(sliderDOM, start).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["filter"])(filterFunc), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["tap"])(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["silentEvent"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["pluck"])(...pluckKey), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["map"])((position) => this.findClosestValue(position)));
+            source.end$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["fromEvent"])(document, end);
+            source.moveResolved$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["fromEvent"])(document, move).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["filter"])(filterFunc), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["tap"])(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["silentEvent"]), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["pluck"])(...pluckKey), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["map"])((position) => this.findClosestValue(position)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["distinctUntilChanged"])(), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(source.end$));
         });
-        this.dragStart$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(mouse.startPlucked$, touch.startPlucked$);
-        this.dragMove$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(mouse.moveResolved$, touch.moveResolved$);
-        this.dragEnd$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_6__["merge"])(mouse.end$, touch.end$);
+        this.dragStart$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["merge"])(mouse.startPlucked$, touch.startPlucked$);
+        this.dragMove$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["merge"])(mouse.moveResolved$, touch.moveResolved$);
+        this.dragEnd$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_7__["merge"])(mouse.end$, touch.end$);
     }
     subscribeDrag(periods = ['start', 'move', 'end']) {
         if (periods.indexOf('start') !== -1 && this.dragStart$ && !this.dragStart_) {
@@ -484,7 +514,7 @@ class NzSliderComponent {
     findClosestValue(position) {
         const sliderStart = this.getSliderStartPosition();
         const sliderLength = this.getSliderLength();
-        const ratio = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["ensureNumberInRange"])((position - sliderStart) / sliderLength, 0, 1);
+        const ratio = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["ensureNumberInRange"])((position - sliderStart) / sliderLength, 0, 1);
         const val = (this.nzMax - this.nzMin) * (this.nzVertical ? 1 - ratio : ratio) + this.nzMin;
         const points = this.nzMarks === null
             ? []
@@ -498,16 +528,16 @@ class NzSliderComponent {
         const gaps = points.map(point => Math.abs(val - point));
         const closest = points[gaps.indexOf(Math.min(...gaps))];
         // return parseFloat(closest.toFixed(getPrecision(this.nzStep)));
-        return this.nzStep === 0 ? closest : parseFloat(closest.toFixed(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getPrecision"])(this.nzStep)));
+        return this.nzStep === 0 ? closest : parseFloat(closest.toFixed(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["getPrecision"])(this.nzStep)));
     }
     valueToOffset(value) {
-        return Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getPercent"])(this.nzMin, this.nzMax, value);
+        return Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["getPercent"])(this.nzMin, this.nzMax, value);
     }
     getSliderStartPosition() {
         if (this.cacheSliderStart !== null) {
             return this.cacheSliderStart;
         }
-        const offset = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["getElementOffset"])(this.slider.nativeElement);
+        const offset = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["getElementOffset"])(this.slider.nativeElement);
         return this.nzVertical ? offset.top : offset.left;
     }
     getSliderLength() {
@@ -530,8 +560,8 @@ class NzSliderComponent {
         }
         else if (assertValueValid(value, this.nzRange)) {
             return isValueRange(value)
-                ? value.map(val => Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["ensureNumberInRange"])(val, this.nzMin, this.nzMax))
-                : Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["ensureNumberInRange"])(value, this.nzMin, this.nzMax);
+                ? value.map(val => Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["ensureNumberInRange"])(val, this.nzMin, this.nzMax))
+                : Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["ensureNumberInRange"])(value, this.nzMin, this.nzMax);
         }
         else {
             return this.nzDefaultValue ? this.nzDefaultValue : this.nzRange ? [this.nzMin, this.nzMax] : this.nzMin;
@@ -560,102 +590,101 @@ class NzSliderComponent {
         return marksArray.length ? marksArray : null;
     }
 }
-/** @nocollapse */
-NzSliderComponent.ɵfac = function NzSliderComponent_Factory(t) { return new (t || NzSliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzSliderService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"])); };
-/** @nocollapse */
-NzSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzSliderComponent, selectors: [["nz-slider"]], viewQuery: function NzSliderComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵstaticViewQuery"](_c1, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](NzSliderHandleComponent, true);
+NzSliderComponent.ɵfac = function NzSliderComponent_Factory(t) { return new (t || NzSliderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](NzSliderService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], 8)); };
+NzSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderComponent, selectors: [["nz-slider"]], viewQuery: function NzSliderComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵstaticViewQuery"](_c1, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵviewQuery"](NzSliderHandleComponent, true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.slider = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.handlerComponents = _t);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.slider = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.handlerComponents = _t);
     } }, hostBindings: function NzSliderComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("keydown", function NzSliderComponent_keydown_HostBindingHandler($event) { return ctx.onKeyDown($event); });
-    } }, inputs: { nzDisabled: "nzDisabled", nzDots: "nzDots", nzIncluded: "nzIncluded", nzRange: "nzRange", nzVertical: "nzVertical", nzReverse: "nzReverse", nzMarks: "nzMarks", nzMax: "nzMax", nzMin: "nzMin", nzStep: "nzStep", nzTooltipVisible: "nzTooltipVisible", nzTooltipPlacement: "nzTooltipPlacement", nzDefaultValue: "nzDefaultValue", nzTipFormatter: "nzTipFormatter" }, outputs: { nzOnAfterChange: "nzOnAfterChange" }, exportAs: ["nzSlider"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("keydown", function NzSliderComponent_keydown_HostBindingHandler($event) { return ctx.onKeyDown($event); });
+    } }, inputs: { nzDisabled: "nzDisabled", nzDots: "nzDots", nzIncluded: "nzIncluded", nzRange: "nzRange", nzVertical: "nzVertical", nzReverse: "nzReverse", nzMarks: "nzMarks", nzMax: "nzMax", nzMin: "nzMin", nzStep: "nzStep", nzTooltipVisible: "nzTooltipVisible", nzTooltipPlacement: "nzTooltipPlacement", nzDefaultValue: "nzDefaultValue", nzTipFormatter: "nzTipFormatter" }, outputs: { nzOnAfterChange: "nzOnAfterChange" }, exportAs: ["nzSlider"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵProvidersFeature"]([
             {
-                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzSliderComponent)),
+                provide: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"],
+                useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["forwardRef"])(() => NzSliderComponent),
                 multi: true
             },
             NzSliderService
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 14, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0, 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](3, "nz-slider-track", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](4, NzSliderComponent_nz_slider_step_4_Template, 1, 5, "nz-slider-step", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](5, NzSliderComponent_nz_slider_handle_5_Template, 1, 8, "nz-slider-handle", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, NzSliderComponent_nz_slider_marks_6_Template, 1, 7, "nz-slider-marks", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 17, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse", "dir"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "div", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "nz-slider-track", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, NzSliderComponent_nz_slider_step_4_Template, 1, 5, "nz-slider-step", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, NzSliderComponent_nz_slider_handle_5_Template, 1, 9, "nz-slider-handle", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, NzSliderComponent_nz_slider_marks_6_Template, 1, 7, "nz-slider-marks", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-slider-disabled", ctx.nzDisabled)("ant-slider-vertical", ctx.nzVertical)("ant-slider-with-marks", ctx.marksArray);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("vertical", ctx.nzVertical)("included", ctx.nzIncluded)("offset", ctx.track.offset)("length", ctx.track.length)("reverse", ctx.nzReverse);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.marksArray);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.handles);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx.marksArray);
-    } }, directives: function () { return [NzSliderTrackComponent, _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], NzSliderStepComponent, NzSliderHandleComponent, NzSliderMarksComponent]; }, encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-slider-rtl", ctx.dir === "rtl")("ant-slider-disabled", ctx.nzDisabled)("ant-slider-vertical", ctx.nzVertical)("ant-slider-with-marks", ctx.marksArray);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx.nzVertical)("included", ctx.nzIncluded)("offset", ctx.track.offset)("length", ctx.track.length)("reverse", ctx.nzReverse)("dir", ctx.dir);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.marksArray);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.handles);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngIf", ctx.marksArray);
+    } }, directives: function () { return [NzSliderTrackComponent, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Dir"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgForOf"], NzSliderStepComponent, NzSliderHandleComponent, NzSliderMarksComponent]; }, encapsulation: 2, changeDetection: 0 });
 NzSliderComponent.ctorParameters = () => [
     { type: NzSliderService },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Optional"] }] }
 ];
 NzSliderComponent.propDecorators = {
-    slider: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['slider', { static: true },] }],
-    handlerComponents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"], args: [NzSliderHandleComponent,] }],
-    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzIncluded: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzRange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzVertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzReverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzDefaultValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzMarks: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzMax: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzMin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzStep: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzTooltipVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzTooltipPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzTipFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzOnAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }]
+    slider: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"], args: ['slider', { static: true },] }],
+    handlerComponents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChildren"], args: [NzSliderHandleComponent,] }],
+    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzDots: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzIncluded: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzRange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzVertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzReverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzDefaultValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzMarks: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzMax: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzMin: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzStep: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzTooltipVisible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzTooltipPlacement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzTipFormatter: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    nzOnAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderComponent.prototype, "nzDisabled", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzDots", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzIncluded", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzRange", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzVertical", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzReverse", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderComponent.prototype, "nzMax", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderComponent.prototype, "nzMin", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderComponent.prototype, "nzStep", void 0);
 function getValueTypeNotMatchError() {
@@ -696,7 +725,7 @@ function valuesEqual(valA, valB) {
     if (typeof valA !== typeof valB) {
         return false;
     }
-    return isValueRange(valA) && isValueRange(valB) ? Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["arraysEqual"])(valA, valB) : valA === valB;
+    return isValueRange(valA) && isValueRange(valB) ? Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["arraysEqual"])(valA, valB) : valA === valB;
 }
 
 /**
@@ -769,32 +798,30 @@ class NzSliderMarksComponent {
         }
     }
 }
-/** @nocollapse */
 NzSliderMarksComponent.ɵfac = function NzSliderMarksComponent_Factory(t) { return new (t || NzSliderMarksComponent)(); };
-/** @nocollapse */
-NzSliderMarksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzSliderMarksComponent, selectors: [["nz-slider-marks"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included", min: "min", max: "max" }, exportAs: ["nzSliderMarks"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-mark"], ["class", "ant-slider-mark-text", 3, "ant-slider-mark-active", "ngStyle", "innerHTML", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-mark-text", 3, "ngStyle", "innerHTML"]], template: function NzSliderMarksComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzSliderMarksComponent_span_1_Template, 1, 4, "span", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+NzSliderMarksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderMarksComponent, selectors: [["nz-slider-marks"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included", min: "min", max: "max" }, exportAs: ["nzSliderMarks"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-mark"], ["class", "ant-slider-mark-text", 3, "ant-slider-mark-active", "ngStyle", "innerHTML", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-mark-text", 3, "ngStyle", "innerHTML"]], template: function NzSliderMarksComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, NzSliderMarksComponent_span_1_Template, 1, 4, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.marks)("ngForTrackBy", ctx.trackById);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.marks)("ngForTrackBy", ctx.trackById);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_10__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
 NzSliderMarksComponent.propDecorators = {
-    lowerBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    upperBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    marksArray: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    min: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    max: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    lowerBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    upperBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    marksArray: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    min: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    max: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderMarksComponent.prototype, "vertical", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderMarksComponent.prototype, "included", void 0);
 function isConfigObject(config) {
@@ -850,30 +877,28 @@ class NzSliderStepComponent {
         }
     }
 }
-/** @nocollapse */
 NzSliderStepComponent.ɵfac = function NzSliderStepComponent_Factory(t) { return new (t || NzSliderStepComponent)(); };
-/** @nocollapse */
-NzSliderStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzSliderStepComponent, selectors: [["nz-slider-step"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included" }, exportAs: ["nzSliderStep"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-step"], ["class", "ant-slider-dot", 3, "ant-slider-dot-active", "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-dot", 3, "ngStyle"]], template: function NzSliderStepComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzSliderStepComponent_span_1_Template, 1, 3, "span", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+NzSliderStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderStepComponent, selectors: [["nz-slider-step"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included" }, exportAs: ["nzSliderStep"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-step"], ["class", "ant-slider-dot", 3, "ant-slider-dot-active", "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-dot", 3, "ngStyle"]], template: function NzSliderStepComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, NzSliderStepComponent_span_1_Template, 1, 3, "span", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx.steps)("ngForTrackBy", ctx.trackById);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngForOf", ctx.steps)("ngForTrackBy", ctx.trackById);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_10__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
 NzSliderStepComponent.propDecorators = {
-    lowerBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    upperBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    marksArray: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    lowerBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    upperBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    marksArray: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderStepComponent.prototype, "vertical", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderStepComponent.prototype, "included", void 0);
 
@@ -885,6 +910,7 @@ class NzSliderTrackComponent {
     constructor() {
         this.offset = 0;
         this.reverse = false;
+        this.dir = 'ltr';
         this.length = 0;
         this.vertical = false;
         this.included = false;
@@ -903,58 +929,62 @@ class NzSliderTrackComponent {
                 height: `${length}%`,
                 visibility
             }
-            : {
-                [reverse ? 'right' : 'left']: `${offset}%`,
-                [reverse ? 'left' : 'right']: 'auto',
-                width: `${length}%`,
-                visibility
-            };
+            : Object.assign(Object.assign({}, this.getHorizontalStylePosition()), { width: `${length}%`, visibility });
         this.style = positonStyle;
     }
+    getHorizontalStylePosition() {
+        let left = this.reverse ? 'auto' : `${this.offset}%`;
+        let right = this.reverse ? `${this.offset}%` : 'auto';
+        if (this.dir === 'rtl') {
+            const tmp = left;
+            left = right;
+            right = tmp;
+        }
+        return { left, right };
+    }
 }
-/** @nocollapse */
 NzSliderTrackComponent.ɵfac = function NzSliderTrackComponent_Factory(t) { return new (t || NzSliderTrackComponent)(); };
-/** @nocollapse */
-NzSliderTrackComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzSliderTrackComponent, selectors: [["nz-slider-track"]], inputs: { offset: "offset", reverse: "reverse", length: "length", vertical: "vertical", included: "included" }, exportAs: ["nzSliderTrack"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [[1, "ant-slider-track", 3, "ngStyle"]], template: function NzSliderTrackComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "div", 0);
+NzSliderTrackComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderTrackComponent, selectors: [["nz-slider-track"]], inputs: { offset: "offset", reverse: "reverse", dir: "dir", length: "length", vertical: "vertical", included: "included" }, exportAs: ["nzSliderTrack"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [[1, "ant-slider-track", 3, "ngStyle"]], template: function NzSliderTrackComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "div", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", ctx.style);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("ngStyle", ctx.style);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_10__["NgStyle"]], encapsulation: 2, changeDetection: 0 });
 NzSliderTrackComponent.propDecorators = {
-    offset: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    length: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    offset: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    dir: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    length: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
 ], NzSliderTrackComponent.prototype, "offset", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Boolean)
 ], NzSliderTrackComponent.prototype, "reverse", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputNumber"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputNumber"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Number)
 ], NzSliderTrackComponent.prototype, "length", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderTrackComponent.prototype, "vertical", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_5__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzSliderTrackComponent.prototype, "included", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderService, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"]
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Injectable"]
     }], function () { return []; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderHandleComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderHandleComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 selector: 'nz-slider-handle',
                 exportAs: 'nzSliderHandle',
                 preserveWhitespaces: false,
@@ -975,41 +1005,43 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                     '(mouseleave)': 'leaveHandle()'
                 }
             }]
-    }], function () { return [{ type: NzSliderService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }]; }, { tooltipVisible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+    }], function () { return [{ type: NzSliderService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] }]; }, { tooltipVisible: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], active: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], dir: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], handleEl: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"],
             args: ['handle', { static: false }]
         }], tooltip: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
-            args: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzTooltipDirective"], { static: false }]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"],
+            args: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzTooltipDirective"], { static: false }]
         }], vertical: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], reverse: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], offset: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], value: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], tooltipPlacement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], tooltipFormatter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 selector: 'nz-slider',
                 exportAs: 'nzSlider',
                 preserveWhitespaces: false,
                 providers: [
                     {
-                        provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
-                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])((() => NzSliderComponent)),
+                        provide: _angular_forms__WEBPACK_IMPORTED_MODULE_5__["NG_VALUE_ACCESSOR"],
+                        useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["forwardRef"])(() => NzSliderComponent),
                         multi: true
                     },
                     NzSliderService
@@ -1021,6 +1053,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     <div
       #slider
       class="ant-slider"
+      [class.ant-slider-rtl]="dir === 'rtl'"
       [class.ant-slider-disabled]="nzDisabled"
       [class.ant-slider-vertical]="nzVertical"
       [class.ant-slider-with-marks]="marksArray"
@@ -1032,6 +1065,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [offset]="track.offset!"
         [length]="track.length!"
         [reverse]="nzReverse"
+        [dir]="dir"
       ></nz-slider-track>
       <nz-slider-step
         *ngIf="marksArray"
@@ -1051,6 +1085,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [tooltipFormatter]="nzTipFormatter"
         [tooltipVisible]="nzTooltipVisible"
         [tooltipPlacement]="nzTooltipPlacement"
+        [dir]="dir"
       ></nz-slider-handle>
       <nz-slider-marks
         *ngIf="marksArray"
@@ -1065,48 +1100,50 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     </div>
   `
             }]
-    }], function () { return [{ type: NzSliderService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] }]; }, { nzDisabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+    }], function () { return [{ type: NzSliderService }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Optional"]
+            }] }]; }, { nzDisabled: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzDots: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzIncluded: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzRange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzVertical: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzReverse: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzMarks: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzMax: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzMin: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzStep: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzTooltipVisible: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzTooltipPlacement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzOnAfterChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"]
         }], slider: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"],
             args: ['slider', { static: true }]
         }], handlerComponents: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChildren"],
             args: [NzSliderHandleComponent]
         }], nzDefaultValue: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], nzTipFormatter: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderMarksComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderMarksComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 preserveWhitespaces: false,
                 selector: 'nz-slider-marks',
                 exportAs: 'nzSliderMarks',
@@ -1124,25 +1161,25 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
   `
             }]
     }], function () { return []; }, { lowerBound: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], upperBound: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], marksArray: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], vertical: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], included: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], min: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], max: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderStepComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderStepComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 selector: 'nz-slider-step',
                 exportAs: 'nzSliderStep',
                 preserveWhitespaces: false,
@@ -1159,36 +1196,40 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
   `
             }]
     }], function () { return []; }, { lowerBound: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], upperBound: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], marksArray: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], vertical: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], included: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderTrackComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderTrackComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
         args: [{
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewEncapsulation"].None,
                 selector: 'nz-slider-track',
                 exportAs: 'nzSliderTrack',
                 preserveWhitespaces: false,
-                template: ` <div class="ant-slider-track" [ngStyle]="style"></div> `
+                template: `
+    <div class="ant-slider-track" [ngStyle]="style"></div>
+  `
             }]
     }], function () { return []; }, { offset: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], reverse: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], dir: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], length: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], vertical: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], included: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
 
 /**
@@ -1197,17 +1238,15 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzSliderModule {
 }
-/** @nocollapse */
-NzSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzSliderModule });
-/** @nocollapse */
-NzSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzSliderModule_Factory(t) { return new (t || NzSliderModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzToolTipModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzSliderModule, { declarations: function () { return [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzToolTipModule"]]; }, exports: function () { return [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzSliderModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
+NzSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: NzSliderModule });
+NzSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ factory: function NzSliderModule_Factory(t) { return new (t || NzSliderModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](NzSliderModule, { declarations: function () { return [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"]]; }, exports: function () { return [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"],
         args: [{
                 exports: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent],
                 declarations: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_8__["NzToolTipModule"]]
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_9__["NzToolTipModule"]]
             }]
     }], null, null); })();
 

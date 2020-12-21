@@ -43,8 +43,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoCheckboxModule {
 }
-/** @nocollapse */ NzDemoCheckboxModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCheckboxModule });
-/** @nocollapse */ NzDemoCheckboxModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCheckboxModule_Factory(t) { return new (t || NzDemoCheckboxModule)(); }, imports: [[
+NzDemoCheckboxModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCheckboxModule });
+NzDemoCheckboxModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCheckboxModule_Factory(t) { return new (t || NzDemoCheckboxModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -142,8 +142,8 @@ class NzDemoCheckboxCheckAllComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoCheckboxCheckAllComponent.ɵfac = function NzDemoCheckboxCheckAllComponent_Factory(t) { return new (t || NzDemoCheckboxCheckAllComponent)(); };
-/** @nocollapse */ NzDemoCheckboxCheckAllComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxCheckAllComponent, selectors: [["nz-demo-checkbox-check-all"]], decls: 5, vars: 3, consts: [[2, "border-bottom", "1px solid rgb(233, 233, 233)"], ["nz-checkbox", "", 3, "ngModel", "nzIndeterminate", "ngModelChange"], [3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxCheckAllComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxCheckAllComponent.ɵfac = function NzDemoCheckboxCheckAllComponent_Factory(t) { return new (t || NzDemoCheckboxCheckAllComponent)(); };
+NzDemoCheckboxCheckAllComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxCheckAllComponent, selectors: [["nz-demo-checkbox-check-all"]], decls: 5, vars: 3, consts: [[2, "border-bottom", "1px solid rgb(233, 233, 233)"], ["nz-checkbox", "", 3, "ngModel", "nzIndeterminate", "ngModelChange"], [3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxCheckAllComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCheckboxCheckAllComponent_Template_label_ngModelChange_1_listener($event) { return ctx.allChecked = $event; })("ngModelChange", function NzDemoCheckboxCheckAllComponent_Template_label_ngModelChange_1_listener() { return ctx.updateAllChecked(); });
@@ -201,8 +201,8 @@ class NzDemoCheckboxBasicComponent {
         this.checked = true;
     }
 }
-/** @nocollapse */ NzDemoCheckboxBasicComponent.ɵfac = function NzDemoCheckboxBasicComponent_Factory(t) { return new (t || NzDemoCheckboxBasicComponent)(); };
-/** @nocollapse */ NzDemoCheckboxBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxBasicComponent, selectors: [["nz-demo-checkbox-basic"]], decls: 2, vars: 1, consts: [["nz-checkbox", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxBasicComponent.ɵfac = function NzDemoCheckboxBasicComponent_Factory(t) { return new (t || NzDemoCheckboxBasicComponent)(); };
+NzDemoCheckboxBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxBasicComponent, selectors: [["nz-demo-checkbox-basic"]], decls: 2, vars: 1, consts: [["nz-checkbox", "", 3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "label", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCheckboxBasicComponent_Template_label_ngModelChange_0_listener($event) { return ctx.checked = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Checkbox");
@@ -247,8 +247,8 @@ class NzDemoCheckboxLayoutComponent {
         console.log(value);
     }
 }
-/** @nocollapse */ NzDemoCheckboxLayoutComponent.ɵfac = function NzDemoCheckboxLayoutComponent_Factory(t) { return new (t || NzDemoCheckboxLayoutComponent)(); };
-/** @nocollapse */ NzDemoCheckboxLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxLayoutComponent, selectors: [["nz-demo-checkbox-layout"]], decls: 17, vars: 1, consts: [[2, "width", "100%", 3, "nzOnChange"], ["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-checkbox", "", "nzValue", "A", 3, "ngModel"], ["nz-checkbox", "", "nzValue", "B"], ["nz-checkbox", "", "nzValue", "C"], ["nz-checkbox", "", "nzValue", "D"], ["nz-checkbox", "", "nzValue", "E"]], template: function NzDemoCheckboxLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxLayoutComponent.ɵfac = function NzDemoCheckboxLayoutComponent_Factory(t) { return new (t || NzDemoCheckboxLayoutComponent)(); };
+NzDemoCheckboxLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxLayoutComponent, selectors: [["nz-demo-checkbox-layout"]], decls: 17, vars: 1, consts: [[2, "width", "100%", 3, "nzOnChange"], ["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-checkbox", "", "nzValue", "A", 3, "ngModel"], ["nz-checkbox", "", "nzValue", "B"], ["nz-checkbox", "", "nzValue", "C"], ["nz-checkbox", "", "nzValue", "D"], ["nz-checkbox", "", "nzValue", "E"]], template: function NzDemoCheckboxLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-checkbox-wrapper", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnChange", function NzDemoCheckboxLayoutComponent_Template_nz_checkbox_wrapper_nzOnChange_0_listener($event) { return ctx.log($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
@@ -342,8 +342,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoCheckboxDisabledComponent {
 }
-/** @nocollapse */ NzDemoCheckboxDisabledComponent.ɵfac = function NzDemoCheckboxDisabledComponent_Factory(t) { return new (t || NzDemoCheckboxDisabledComponent)(); };
-/** @nocollapse */ NzDemoCheckboxDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxDisabledComponent, selectors: [["nz-demo-checkbox-disabled"]], decls: 3, vars: 2, consts: [["nz-checkbox", "", "nzDisabled", "", 3, "ngModel"]], template: function NzDemoCheckboxDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxDisabledComponent.ɵfac = function NzDemoCheckboxDisabledComponent_Factory(t) { return new (t || NzDemoCheckboxDisabledComponent)(); };
+NzDemoCheckboxDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxDisabledComponent, selectors: [["nz-demo-checkbox-disabled"]], decls: 3, vars: 2, consts: [["nz-checkbox", "", "nzDisabled", "", 3, "ngModel"]], template: function NzDemoCheckboxDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "label", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "label", 0);
@@ -425,11 +425,11 @@ class NzDemoCheckboxZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCheckboxZhComponent.ɵfac = function NzDemoCheckboxZhComponent_Factory(t) { return new (t || NzDemoCheckboxZhComponent)(); };
-/** @nocollapse */ NzDemoCheckboxZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxZhComponent, selectors: [["nz-demo-checkbox"]], viewQuery: function NzDemoCheckboxZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxZhComponent.ɵfac = function NzDemoCheckboxZhComponent_Factory(t) { return new (t || NzDemoCheckboxZhComponent)(); };
+NzDemoCheckboxZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxZhComponent, selectors: [["nz-demo-checkbox"]], viewQuery: function NzDemoCheckboxZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 320, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-checkbox-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-checkbox-demo-disabled", "nzTitle", "\u4E0D\u53EF\u7528"], ["nzHref", "#components-checkbox-demo-controller", "nzTitle", "\u53D7\u63A7\u7684 Checkbox"], ["nzHref", "#components-checkbox-demo-group", "nzTitle", "Checkbox \u7EC4"], ["nzHref", "#components-checkbox-demo-check-all", "nzTitle", "\u5168\u9009"], ["nzHref", "#components-checkbox-demo-layout", "nzTitle", "\u5E03\u5C40"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/checkbox/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-checkbox-basic", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-basic <name>", "nzComponentName", "NzDemoCheckboxBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u53D7\u63A7\u7684 Checkbox", "nzSelector", "nz-demo-checkbox-controller", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-controller <name>", "nzComponentName", "NzDemoCheckboxControllerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5168\u9009", "nzSelector", "nz-demo-checkbox-check-all", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-check-all <name>", "nzComponentName", "NzDemoCheckboxCheckAllComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E0D\u53EF\u7528", "nzSelector", "nz-demo-checkbox-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-disabled <name>", "nzComponentName", "NzDemoCheckboxDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Checkbox \u7EC4", "nzSelector", "nz-demo-checkbox-group", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-group <name>", "nzComponentName", "NzDemoCheckboxGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E03\u5C40", "nzSelector", "nz-demo-checkbox-layout", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-layout <name>", "nzComponentName", "NzDemoCheckboxLayoutComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-checkbox]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-checkbox]'", 1, "anchor"], ["id", "nz-checkbox-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-checkbox-group'", 1, "anchor"], ["id", "nz-checkbox-wrapper"], ["onclick", "window.location.hash = 'nz-checkbox-wrapper'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoCheckboxZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -471,10 +471,10 @@ class NzDemoCheckboxZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u5728\u4E00\u7EC4\u53EF\u9009\u9879\u4E2D\u8FDB\u884C\u591A\u9879\u9009\u62E9\u65F6\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u5728\u4E00\u7EC4\u53EF\u9009\u9879\u4E2D\u8FDB\u884C\u591A\u9879\u9009\u62E9\u65F6\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "\u5355\u72EC\u4F7F\u7528\u53EF\u4EE5\u8868\u793A\u4E24\u79CD\u72B6\u6001\u4E4B\u95F4\u7684\u5207\u6362\uFF0C\u548C ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " \u5355\u72EC\u4F7F\u7528\u53EF\u4EE5\u8868\u793A\u4E24\u79CD\u72B6\u6001\u4E4B\u95F4\u7684\u5207\u6362\uFF0C\u548C ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "switch");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1035,8 +1035,8 @@ class NzDemoCheckboxControllerComponent {
         this.isDisabledButton = !this.isDisabledButton;
     }
 }
-/** @nocollapse */ NzDemoCheckboxControllerComponent.ɵfac = function NzDemoCheckboxControllerComponent_Factory(t) { return new (t || NzDemoCheckboxControllerComponent)(); };
-/** @nocollapse */ NzDemoCheckboxControllerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxControllerComponent, selectors: [["nz-demo-checkbox-controller"]], decls: 8, vars: 10, consts: [[2, "margin-bottom", "20px"], ["nz-checkbox", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nz-button", "", 3, "nzType", "nzSize", "click"]], template: function NzDemoCheckboxControllerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxControllerComponent.ɵfac = function NzDemoCheckboxControllerComponent_Factory(t) { return new (t || NzDemoCheckboxControllerComponent)(); };
+NzDemoCheckboxControllerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxControllerComponent, selectors: [["nz-demo-checkbox-controller"]], decls: 8, vars: 10, consts: [[2, "margin-bottom", "20px"], ["nz-checkbox", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nz-button", "", 3, "nzType", "nzSize", "click"]], template: function NzDemoCheckboxControllerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCheckboxControllerComponent_Template_label_ngModelChange_1_listener($event) { return ctx.isCheckedButton = $event; });
@@ -1138,8 +1138,8 @@ class NzDemoCheckboxGroupComponent {
         console.log(value);
     }
 }
-/** @nocollapse */ NzDemoCheckboxGroupComponent.ɵfac = function NzDemoCheckboxGroupComponent_Factory(t) { return new (t || NzDemoCheckboxGroupComponent)(); };
-/** @nocollapse */ NzDemoCheckboxGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxGroupComponent, selectors: [["nz-demo-checkbox-group"]], decls: 7, vars: 3, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxGroupComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxGroupComponent.ɵfac = function NzDemoCheckboxGroupComponent_Factory(t) { return new (t || NzDemoCheckboxGroupComponent)(); };
+NzDemoCheckboxGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxGroupComponent, selectors: [["nz-demo-checkbox-group"]], decls: 7, vars: 3, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoCheckboxGroupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-checkbox-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCheckboxGroupComponent_Template_nz_checkbox_group_ngModelChange_0_listener($event) { return ctx.checkOptionsOne = $event; })("ngModelChange", function NzDemoCheckboxGroupComponent_Template_nz_checkbox_group_ngModelChange_0_listener() { return ctx.log(ctx.checkOptionsOne); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1237,11 +1237,11 @@ class NzDemoCheckboxEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCheckboxEnComponent.ɵfac = function NzDemoCheckboxEnComponent_Factory(t) { return new (t || NzDemoCheckboxEnComponent)(); };
-/** @nocollapse */ NzDemoCheckboxEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxEnComponent, selectors: [["nz-demo-checkbox"]], viewQuery: function NzDemoCheckboxEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCheckboxEnComponent.ɵfac = function NzDemoCheckboxEnComponent_Factory(t) { return new (t || NzDemoCheckboxEnComponent)(); };
+NzDemoCheckboxEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCheckboxEnComponent, selectors: [["nz-demo-checkbox"]], viewQuery: function NzDemoCheckboxEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 305, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-checkbox-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-checkbox-demo-disabled", "nzTitle", "Disabled"], ["nzHref", "#components-checkbox-demo-controller", "nzTitle", "Controlled Checkbox"], ["nzHref", "#components-checkbox-demo-group", "nzTitle", "Checkbox Group"], ["nzHref", "#components-checkbox-demo-check-all", "nzTitle", "Check all"], ["nzHref", "#components-checkbox-demo-layout", "nzTitle", "Use with Grid"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/checkbox/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-checkbox-basic", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-basic <name>", "nzComponentName", "NzDemoCheckboxBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Controlled Checkbox", "nzSelector", "nz-demo-checkbox-controller", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-controller <name>", "nzComponentName", "NzDemoCheckboxControllerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Check all", "nzSelector", "nz-demo-checkbox-check-all", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-check-all <name>", "nzComponentName", "NzDemoCheckboxCheckAllComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Disabled", "nzSelector", "nz-demo-checkbox-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-disabled <name>", "nzComponentName", "NzDemoCheckboxDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Checkbox Group", "nzSelector", "nz-demo-checkbox-group", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-group <name>", "nzComponentName", "NzDemoCheckboxGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Use with Grid", "nzSelector", "nz-demo-checkbox-layout", "nzGenerateCommand", "ng g ng-zorro-antd:checkbox-layout <name>", "nzComponentName", "NzDemoCheckboxLayoutComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-checkbox]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-checkbox]'", 1, "anchor"], ["id", "nz-checkbox-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-checkbox-group'", 1, "anchor"], ["id", "nz-checkbox-wrapper"], ["onclick", "window.location.hash = 'nz-checkbox-wrapper'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoCheckboxEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1281,10 +1281,10 @@ class NzDemoCheckboxEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Used for selecting multiple values from several options.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " Used for selecting multiple values from several options.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "If you use only one checkbox, it is the same as using Switch to toggle between two states. The difference is that Switch will trigger the state change directly, but Checkbox just marks the state as changed and this needs to be submitted.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " If you use only one checkbox, it is the same as using Switch to toggle between two states. The difference is that Switch will trigger the state change directly, but Checkbox just marks the state as changed and this needs to be submitted.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "pre", 16);

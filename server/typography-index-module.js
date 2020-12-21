@@ -16,8 +16,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+
 
 
 
@@ -61,16 +63,14 @@ class NzDividerComponent {
         this.elementRef.nativeElement.classList.add('ant-divider');
     }
 }
-/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 16, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
     } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzDividerComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
@@ -131,15 +131,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDividerModule {
 }
-/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-/** @nocollapse */
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]],
                 declarations: [NzDividerComponent],
                 exports: [NzDividerComponent]
             }]
@@ -177,8 +175,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTypographyTitleComponent {
 }
-/** @nocollapse */ NzDemoTypographyTitleComponent.ɵfac = function NzDemoTypographyTitleComponent_Factory(t) { return new (t || NzDemoTypographyTitleComponent)(); };
-/** @nocollapse */ NzDemoTypographyTitleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyTitleComponent, selectors: [["nz-demo-typography-title"]], decls: 10, vars: 0, consts: [["nz-typography", ""]], template: function NzDemoTypographyTitleComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographyTitleComponent.ɵfac = function NzDemoTypographyTitleComponent_Factory(t) { return new (t || NzDemoTypographyTitleComponent)(); };
+NzDemoTypographyTitleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyTitleComponent, selectors: [["nz-demo-typography-title"]], decls: 10, vars: 0, consts: [["nz-typography", ""]], template: function NzDemoTypographyTitleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "h1. Ant Design");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -230,8 +228,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTypographyTextComponent {
 }
-/** @nocollapse */ NzDemoTypographyTextComponent.ɵfac = function NzDemoTypographyTextComponent_Factory(t) { return new (t || NzDemoTypographyTextComponent)(); };
-/** @nocollapse */ NzDemoTypographyTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyTextComponent, selectors: [["nz-demo-typography-text"]], decls: 34, vars: 0, consts: [["nz-typography", ""], ["nz-typography", "", "nzType", "secondary"], ["nz-typography", "", "nzType", "success"], ["nz-typography", "", "nzType", "warning"], ["nz-typography", "", "nzType", "danger"], ["nz-typography", "", "nzDisabled", ""], ["href", "https://ng.ant.design/", "target", "_blank"]], template: function NzDemoTypographyTextComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographyTextComponent.ɵfac = function NzDemoTypographyTextComponent_Factory(t) { return new (t || NzDemoTypographyTextComponent)(); };
+NzDemoTypographyTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyTextComponent, selectors: [["nz-demo-typography-text"]], decls: 34, vars: 0, consts: [["nz-typography", ""], ["nz-typography", "", "nzType", "secondary"], ["nz-typography", "", "nzType", "success"], ["nz-typography", "", "nzType", "warning"], ["nz-typography", "", "nzType", "danger"], ["nz-typography", "", "nzDisabled", ""], ["href", "https://ng.ant.design/", "target", "_blank"]], template: function NzDemoTypographyTextComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Ant Design (default)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -392,8 +390,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTypographyModule {
 }
-/** @nocollapse */ NzDemoTypographyModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTypographyModule });
-/** @nocollapse */ NzDemoTypographyModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTypographyModule_Factory(t) { return new (t || NzDemoTypographyModule)(); }, imports: [[
+NzDemoTypographyModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTypographyModule });
+NzDemoTypographyModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTypographyModule_Factory(t) { return new (t || NzDemoTypographyModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -493,11 +491,11 @@ class NzDemoTypographyEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTypographyEnComponent.ɵfac = function NzDemoTypographyEnComponent_Factory(t) { return new (t || NzDemoTypographyEnComponent)(); };
-/** @nocollapse */ NzDemoTypographyEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyEnComponent, selectors: [["nz-demo-typography"]], viewQuery: function NzDemoTypographyEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTypographyEnComponent.ɵfac = function NzDemoTypographyEnComponent_Factory(t) { return new (t || NzDemoTypographyEnComponent)(); };
+NzDemoTypographyEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyEnComponent, selectors: [["nz-demo-typography"]], viewQuery: function NzDemoTypographyEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 341, vars: 28, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-typography-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-typography-demo-title", "nzTitle", "Title Component"], ["nzHref", "#components-typography-demo-interactive", "nzTitle", "Interactive"], ["nzHref", "#components-typography-demo-text", "nzTitle", "Text Component"], ["nzHref", "#components-typography-demo-ellipsis", "nzTitle", "ellipsis"], ["nzHref", "#components-typography-demo-suffix", "nzTitle", "suffix"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/typography/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-typography-basic", "nzGenerateCommand", "ng g ng-zorro-antd:typography-basic <name>", "nzComponentName", "NzDemoTypographyBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Title Component", "nzSelector", "nz-demo-typography-title", "nzGenerateCommand", "ng g ng-zorro-antd:typography-title <name>", "nzComponentName", "NzDemoTypographyTitleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Interactive", "nzSelector", "nz-demo-typography-interactive", "nzGenerateCommand", "ng g ng-zorro-antd:typography-interactive <name>", "nzComponentName", "NzDemoTypographyInteractiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Text Component", "nzSelector", "nz-demo-typography-text", "nzGenerateCommand", "ng g ng-zorro-antd:typography-text <name>", "nzComponentName", "NzDemoTypographyTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "ellipsis", "nzSelector", "nz-demo-typography-ellipsis", "nzGenerateCommand", "ng g ng-zorro-antd:typography-ellipsis <name>", "nzComponentName", "NzDemoTypographyEllipsisComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "suffix", "nzSelector", "nz-demo-typography-suffix", "nzGenerateCommand", "ng g ng-zorro-antd:typography-suffix <name>", "nzComponentName", "NzDemoTypographySuffixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-typography]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-typography]'", 1, "anchor"]], template: function NzDemoTypographyEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -537,10 +535,10 @@ class NzDemoTypographyEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "When need to display title or paragraph contents in Articles/Blogs/Notes.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " When need to display title or paragraph contents in Articles/Blogs/Notes.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "When you need copyable/editable/ellipsis texts.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " When you need copyable/editable/ellipsis texts.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "pre", 16);
@@ -1127,8 +1125,8 @@ class NzDemoTypographyInteractiveComponent {
         this.copyStr = 'This is a copyable text.';
     }
 }
-/** @nocollapse */ NzDemoTypographyInteractiveComponent.ɵfac = function NzDemoTypographyInteractiveComponent_Factory(t) { return new (t || NzDemoTypographyInteractiveComponent)(); };
-/** @nocollapse */ NzDemoTypographyInteractiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyInteractiveComponent, selectors: [["nz-demo-typography-interactive"]], decls: 10, vars: 11, consts: [["nz-typography", "", "nzEditable", "", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzEditable", "", "nzEditIcon", "highlight", "nzEditTooltip", "click to edit text", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzEditable", "", 3, "nzEditTooltip", "nzContent", "nzContentChange"], ["nz-typography", "", "nzCopyable", "", "nzEditable", "", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzCopyable", "", "nzCopyText", "Hello, Ant Design!"], ["nz-typography", "", "nzCopyable", "", "nzContent", "Custom copy icons and tooltips text.", 3, "nzCopyTooltips", "nzCopyIcons"], ["copedIcon", ""], ["nz-typography", "", "nzCopyable", "", "nzContent", "Hide copy tooltips.", 3, "nzCopyTooltips"], ["nz-icon", "", "nzType", "smile", "nzTheme", "fill"]], template: function NzDemoTypographyInteractiveComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographyInteractiveComponent.ɵfac = function NzDemoTypographyInteractiveComponent_Factory(t) { return new (t || NzDemoTypographyInteractiveComponent)(); };
+NzDemoTypographyInteractiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyInteractiveComponent, selectors: [["nz-demo-typography-interactive"]], decls: 10, vars: 11, consts: [["nz-typography", "", "nzEditable", "", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzEditable", "", "nzEditIcon", "highlight", "nzEditTooltip", "click to edit text", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzEditable", "", 3, "nzEditTooltip", "nzContent", "nzContentChange"], ["nz-typography", "", "nzCopyable", "", "nzEditable", "", 3, "nzContent", "nzContentChange"], ["nz-typography", "", "nzCopyable", "", "nzCopyText", "Hello, Ant Design!"], ["nz-typography", "", "nzCopyable", "", "nzContent", "Custom copy icons and tooltips text.", 3, "nzCopyTooltips", "nzCopyIcons"], ["copedIcon", ""], ["nz-typography", "", "nzCopyable", "", "nzContent", "Hide copy tooltips.", 3, "nzCopyTooltips"], ["nz-icon", "", "nzType", "smile", "nzTheme", "fill"]], template: function NzDemoTypographyInteractiveComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzContentChange", function NzDemoTypographyInteractiveComponent_Template_p_nzContentChange_0_listener($event) { return ctx.editStr = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1253,11 +1251,11 @@ class NzDemoTypographyZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTypographyZhComponent.ɵfac = function NzDemoTypographyZhComponent_Factory(t) { return new (t || NzDemoTypographyZhComponent)(); };
-/** @nocollapse */ NzDemoTypographyZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyZhComponent, selectors: [["nz-demo-typography"]], viewQuery: function NzDemoTypographyZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTypographyZhComponent.ɵfac = function NzDemoTypographyZhComponent_Factory(t) { return new (t || NzDemoTypographyZhComponent)(); };
+NzDemoTypographyZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyZhComponent, selectors: [["nz-demo-typography"]], viewQuery: function NzDemoTypographyZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 344, vars: 28, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-typography-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-typography-demo-title", "nzTitle", "\u6807\u9898\u7EC4\u4EF6"], ["nzHref", "#components-typography-demo-interactive", "nzTitle", "\u53EF\u4EA4\u4E92"], ["nzHref", "#components-typography-demo-text", "nzTitle", "\u6587\u672C\u7EC4\u4EF6"], ["nzHref", "#components-typography-demo-ellipsis", "nzTitle", "\u7701\u7565\u53F7"], ["nzHref", "#components-typography-demo-suffix", "nzTitle", "\u540E\u7F00"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/typography/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-typography-basic", "nzGenerateCommand", "ng g ng-zorro-antd:typography-basic <name>", "nzComponentName", "NzDemoTypographyBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6807\u9898\u7EC4\u4EF6", "nzSelector", "nz-demo-typography-title", "nzGenerateCommand", "ng g ng-zorro-antd:typography-title <name>", "nzComponentName", "NzDemoTypographyTitleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53EF\u4EA4\u4E92", "nzSelector", "nz-demo-typography-interactive", "nzGenerateCommand", "ng g ng-zorro-antd:typography-interactive <name>", "nzComponentName", "NzDemoTypographyInteractiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6587\u672C\u7EC4\u4EF6", "nzSelector", "nz-demo-typography-text", "nzGenerateCommand", "ng g ng-zorro-antd:typography-text <name>", "nzComponentName", "NzDemoTypographyTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7701\u7565\u53F7", "nzSelector", "nz-demo-typography-ellipsis", "nzGenerateCommand", "ng g ng-zorro-antd:typography-ellipsis <name>", "nzComponentName", "NzDemoTypographyEllipsisComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u540E\u7F00", "nzSelector", "nz-demo-typography-suffix", "nzGenerateCommand", "ng g ng-zorro-antd:typography-suffix <name>", "nzComponentName", "NzDemoTypographySuffixComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-typography]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-typography]'", 1, "anchor"]], template: function NzDemoTypographyZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1299,10 +1297,10 @@ class NzDemoTypographyZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u5F53\u9700\u8981\u5C55\u793A\u6807\u9898\u3001\u6BB5\u843D\u3001\u5217\u8868\u5185\u5BB9\u65F6\u4F7F\u7528\uFF0C\u5982\u6587\u7AE0/\u535A\u5BA2/\u65E5\u5FD7\u7684\u6587\u672C\u6837\u5F0F\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u5F53\u9700\u8981\u5C55\u793A\u6807\u9898\u3001\u6BB5\u843D\u3001\u5217\u8868\u5185\u5BB9\u65F6\u4F7F\u7528\uFF0C\u5982\u6587\u7AE0/\u535A\u5BA2/\u65E5\u5FD7\u7684\u6587\u672C\u6837\u5F0F\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "\u5F53\u9700\u8981\u4E00\u5217\u57FA\u4E8E\u6587\u672C\u7684\u57FA\u7840\u64CD\u4F5C\u65F6\uFF0C\u5982\u62F7\u8D1D/\u7701\u7565/\u53EF\u7F16\u8F91\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " \u5F53\u9700\u8981\u4E00\u5217\u57FA\u4E8E\u6587\u672C\u7684\u57FA\u7840\u64CD\u4F5C\u65F6\uFF0C\u5982\u62F7\u8D1D/\u7701\u7565/\u53EF\u7F16\u8F91\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "pre", 16);
@@ -1885,8 +1883,8 @@ class NzDemoTypographyEllipsisComponent {
         this.dynamicContent = event;
     }
 }
-/** @nocollapse */ NzDemoTypographyEllipsisComponent.ɵfac = function NzDemoTypographyEllipsisComponent_Factory(t) { return new (t || NzDemoTypographyEllipsisComponent)(); };
-/** @nocollapse */ NzDemoTypographyEllipsisComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyEllipsisComponent, selectors: [["nz-demo-typography-ellipsis"]], decls: 9, vars: 3, consts: [["nz-typography", "", "nzEllipsis", "", "nzCopyable", "", "nzContent", "Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background\n      applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant\n      Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background\n      applications, is refined by Ant UED Team. Ant Design"], ["nz-typography", "", "nzEllipsis", ""], ["nz-typography", "", "nzEllipsis", "", "nzExpandable", "", 3, "nzEllipsisRows"], ["nz-typography", "", "nzEllipsis", "", "nzEditable", "", 3, "nzEllipsisRows", "nzContent", "nzContentChange"]], template: function NzDemoTypographyEllipsisComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographyEllipsisComponent.ɵfac = function NzDemoTypographyEllipsisComponent_Factory(t) { return new (t || NzDemoTypographyEllipsisComponent)(); };
+NzDemoTypographyEllipsisComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyEllipsisComponent, selectors: [["nz-demo-typography-ellipsis"]], decls: 9, vars: 3, consts: [["nz-typography", "", "nzEllipsis", "", "nzCopyable", "", "nzContent", "Ant Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background\n      applications, is refined by Ant UED Team. Ant Design, a design language for background applications, is refined by Ant UED Team. Ant\n      Design, a design language for background applications, is refined by Ant UED Team. Ant Design, a design language for background\n      applications, is refined by Ant UED Team. Ant Design"], ["nz-typography", "", "nzEllipsis", ""], ["nz-typography", "", "nzEllipsis", "", "nzExpandable", "", 3, "nzEllipsisRows"], ["nz-typography", "", "nzEllipsis", "", "nzEditable", "", 3, "nzEllipsisRows", "nzContent", "nzContentChange"]], template: function NzDemoTypographyEllipsisComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 1);
@@ -1977,8 +1975,8 @@ class NzDemoTypographySuffixComponent {
         console.log(ellipsis);
     }
 }
-/** @nocollapse */ NzDemoTypographySuffixComponent.ɵfac = function NzDemoTypographySuffixComponent_Factory(t) { return new (t || NzDemoTypographySuffixComponent)(); };
-/** @nocollapse */ NzDemoTypographySuffixComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographySuffixComponent, selectors: [["nz-demo-typography-suffix"]], decls: 3, vars: 7, consts: [[3, "ngModel", "nzMax", "nzMin", "ngModelChange"], ["nz-typography", "", "nzEllipsis", "", "nzExpandable", "", 3, "nzEllipsisRows", "nzSuffix", "nzOnEllipsis"]], template: function NzDemoTypographySuffixComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographySuffixComponent.ɵfac = function NzDemoTypographySuffixComponent_Factory(t) { return new (t || NzDemoTypographySuffixComponent)(); };
+NzDemoTypographySuffixComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographySuffixComponent, selectors: [["nz-demo-typography-suffix"]], decls: 3, vars: 7, consts: [[3, "ngModel", "nzMax", "nzMin", "ngModelChange"], ["nz-typography", "", "nzEllipsis", "", "nzExpandable", "", 3, "nzEllipsisRows", "nzSuffix", "nzOnEllipsis"]], template: function NzDemoTypographySuffixComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTypographySuffixComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.rows = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2037,8 +2035,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTypographyBasicComponent {
 }
-/** @nocollapse */ NzDemoTypographyBasicComponent.ɵfac = function NzDemoTypographyBasicComponent_Factory(t) { return new (t || NzDemoTypographyBasicComponent)(); };
-/** @nocollapse */ NzDemoTypographyBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyBasicComponent, selectors: [["nz-demo-typography-basic"]], decls: 85, vars: 0, consts: [["nz-typography", ""], ["href", "/docs/spec/proximity"], ["href", "/docs/pattern/navigation"], ["href", "/docs/resource/download"]], template: function NzDemoTypographyBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTypographyBasicComponent.ɵfac = function NzDemoTypographyBasicComponent_Factory(t) { return new (t || NzDemoTypographyBasicComponent)(); };
+NzDemoTypographyBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTypographyBasicComponent, selectors: [["nz-demo-typography-basic"]], decls: 85, vars: 0, consts: [["nz-typography", ""], ["href", "/docs/spec/proximity"], ["href", "/docs/pattern/navigation"], ["href", "/docs/resource/download"]], template: function NzDemoTypographyBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Introduction");

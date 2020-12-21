@@ -18,17 +18,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzSiderComponent", function() { return NzSiderComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵNzSiderTriggerComponent", function() { return NzSiderTriggerComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "zOht");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
-/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/menu */ "Z9Oo");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/layout */ "0MNC");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/menu */ "Z9Oo");
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/layout */ "0MNC");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
 
 
 
@@ -45,6 +47,7 @@ __webpack_require__.r(__webpack_exports__);
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 
 
 
@@ -115,9 +118,7 @@ class NzContentComponent {
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-content');
     }
 }
-/** @nocollapse */
 NzContentComponent.ɵfac = function NzContentComponent_Factory(t) { return new (t || NzContentComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"])); };
-/** @nocollapse */
 NzContentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzContentComponent, selectors: [["nz-content"]], exportAs: ["nzContent"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzContentComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
@@ -138,9 +139,7 @@ class NzFooterComponent {
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-footer');
     }
 }
-/** @nocollapse */
 NzFooterComponent.ɵfac = function NzFooterComponent_Factory(t) { return new (t || NzFooterComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"])); };
-/** @nocollapse */
 NzFooterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzFooterComponent, selectors: [["nz-footer"]], exportAs: ["nzFooter"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzFooterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
@@ -161,9 +160,7 @@ class NzHeaderComponent {
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-header');
     }
 }
-/** @nocollapse */
 NzHeaderComponent.ɵfac = function NzHeaderComponent_Factory(t) { return new (t || NzHeaderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["Renderer2"])); };
-/** @nocollapse */
 NzHeaderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzHeaderComponent, selectors: [["nz-header"]], exportAs: ["nzHeader"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzHeaderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
@@ -183,7 +180,7 @@ class NzSiderComponent {
         this.cdr = cdr;
         this.breakpointService = breakpointService;
         this.elementRef = elementRef;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_6__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         this.nzMenuDirective = null;
         this.nzCollapsedChange = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
         this.nzWidth = 200;
@@ -202,7 +199,7 @@ class NzSiderComponent {
         this.elementRef.nativeElement.classList.add('ant-layout-sider');
     }
     updateStyleMap() {
-        this.widthSetting = this.nzCollapsed ? `${this.nzCollapsedWidth}px` : Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["toCssPixel"])(this.nzWidth);
+        this.widthSetting = this.nzCollapsed ? `${this.nzCollapsedWidth}px` : Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["toCssPixel"])(this.nzWidth);
         this.flexSetting = `0 0 ${this.widthSetting}`;
         this.cdr.markForCheck();
     }
@@ -224,12 +221,12 @@ class NzSiderComponent {
         this.updateStyleMap();
         if (this.platform.isBrowser) {
             this.breakpointService
-                .subscribe(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_3__["siderResponsiveMap"], true)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["takeUntil"])(this.destroy$))
+                .subscribe(ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["siderResponsiveMap"], true)
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.destroy$))
                 .subscribe(map => {
                 const breakpoint = this.nzBreakpoint;
                 if (breakpoint) {
-                    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["inNextTick"])().subscribe(() => {
+                    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["inNextTick"])().subscribe(() => {
                         this.matchBreakPoint = !map[breakpoint];
                         this.setCollapsed(this.matchBreakPoint);
                         this.cdr.markForCheck();
@@ -255,13 +252,11 @@ class NzSiderComponent {
         this.destroy$.complete();
     }
 }
-/** @nocollapse */
-NzSiderComponent.ɵfac = function NzSiderComponent_Factory(t) { return new (t || NzSiderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_3__["NzBreakpointService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
-/** @nocollapse */
+NzSiderComponent.ɵfac = function NzSiderComponent_Factory(t) { return new (t || NzSiderComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzBreakpointService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
 NzSiderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzSiderComponent, selectors: [["nz-sider"]], contentQueries: function NzSiderComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_5__["NzMenuDirective"], true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_8__["NzMenuDirective"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.nzMenuDirective = _t.first);
     } }, hostVars: 16, hostBindings: function NzSiderComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("flex", ctx.flexSetting)("max-width", ctx.widthSetting)("min-width", ctx.widthSetting)("width", ctx.widthSetting);
@@ -275,15 +270,15 @@ NzSiderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzCollapsible && ctx.nzTrigger !== null);
-    } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], NzSiderTriggerComponent]; }, encapsulation: 2, changeDetection: 0 });
+    } }, directives: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], NzSiderTriggerComponent]; }, encapsulation: 2, changeDetection: 0 });
 NzSiderComponent.ctorParameters = () => [
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
-    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_3__["NzBreakpointService"] },
+    { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzBreakpointService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
 ];
 NzSiderComponent.propDecorators = {
-    nzMenuDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_5__["NzMenuDirective"],] }],
+    nzMenuDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"], args: [ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_8__["NzMenuDirective"],] }],
     nzCollapsedChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"] }],
     nzWidth: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzTheme: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
@@ -295,17 +290,17 @@ NzSiderComponent.propDecorators = {
     nzCollapsible: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzCollapsed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzSiderComponent.prototype, "nzReverseArrow", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzSiderComponent.prototype, "nzCollapsible", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_7__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__metadata"])("design:type", Object)
 ], NzSiderComponent.prototype, "nzCollapsed", void 0);
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzContentComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
@@ -377,9 +372,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
                     '[style.width]': 'widthSetting'
                 }
             }]
-    }], function () { return [{ type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["Platform"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_3__["NzBreakpointService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { nzMenuDirective: [{
+    }], function () { return [{ type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["Platform"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_6__["NzBreakpointService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { nzMenuDirective: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChild"],
-            args: [ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_5__["NzMenuDirective"]]
+            args: [ng_zorro_antd_menu__WEBPACK_IMPORTED_MODULE_8__["NzMenuDirective"]]
         }], nzCollapsedChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
         }], nzWidth: [{
@@ -407,28 +402,41 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzLayoutComponent {
-    constructor(elementRef) {
+    constructor(elementRef, directionality) {
         this.elementRef = elementRef;
+        this.directionality = directionality;
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-layout');
     }
+    ngOnInit() {
+        var _a;
+        this.dir = this.directionality.value;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+        });
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
 }
-/** @nocollapse */
-NzLayoutComponent.ɵfac = function NzLayoutComponent_Factory(t) { return new (t || NzLayoutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
-/** @nocollapse */
+NzLayoutComponent.ɵfac = function NzLayoutComponent_Factory(t) { return new (t || NzLayoutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], 8)); };
 NzLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzLayoutComponent, selectors: [["nz-layout"]], contentQueries: function NzLayoutComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzSiderComponent, false);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.listOfNzSiderComponent = _t);
-    } }, hostVars: 2, hostBindings: function NzLayoutComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-layout-has-sider", ctx.listOfNzSiderComponent.length > 0);
+    } }, hostVars: 4, hostBindings: function NzLayoutComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-layout-rtl", ctx.dir === "rtl")("ant-layout-has-sider", ctx.listOfNzSiderComponent.length > 0);
     } }, exportAs: ["nzLayout"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
     } }, encapsulation: 2, changeDetection: 0 });
 NzLayoutComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
 ];
 NzLayoutComponent.propDecorators = {
     listOfNzSiderComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzSiderComponent,] }]
@@ -445,10 +453,13 @@ NzLayoutComponent.propDecorators = {
     <ng-content></ng-content>
   `,
                 host: {
+                    '[class.ant-layout-rtl]': `dir === 'rtl'`,
                     '[class.ant-layout-has-sider]': 'listOfNzSiderComponent.length > 0'
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }]; }, { listOfNzSiderComponent: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
+            }] }]; }, { listOfNzSiderComponent: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"],
             args: [NzSiderComponent]
         }] }); })();
@@ -481,9 +492,7 @@ class NzSiderTriggerComponent {
         this.updateTriggerType();
     }
 }
-/** @nocollapse */
 NzSiderTriggerComponent.ɵfac = function NzSiderTriggerComponent_Factory(t) { return new (t || NzSiderTriggerComponent)(); };
-/** @nocollapse */
 NzSiderTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzSiderTriggerComponent, selectors: [["", "nz-sider-trigger", ""]], hostVars: 10, hostBindings: function NzSiderTriggerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("width", ctx.isNormalTrigger ? ctx.siderWidth : null);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-layout-sider-trigger", ctx.isNormalTrigger)("ant-layout-sider-zero-width-trigger", ctx.isZeroTrigger)("ant-layout-sider-zero-width-trigger-right", ctx.isZeroTrigger && ctx.nzReverseArrow)("ant-layout-sider-zero-width-trigger-left", ctx.isZeroTrigger && !ctx.nzReverseArrow);
@@ -496,7 +505,7 @@ NzSiderTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isZeroTrigger);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.isNormalTrigger);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_9__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_10__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
 NzSiderTriggerComponent.propDecorators = {
     nzCollapsed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
     nzReverseArrow: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"] }],
@@ -562,17 +571,15 @@ NzSiderTriggerComponent.propDecorators = {
  */
 class NzLayoutModule {
 }
-/** @nocollapse */
 NzLayoutModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzLayoutModule });
-/** @nocollapse */
-NzLayoutModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzLayoutModule_Factory(t) { return new (t || NzLayoutModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzLayoutModule, { declarations: function () { return [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent, NzSiderTriggerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"]]; }, exports: function () { return [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent]; } }); })();
+NzLayoutModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzLayoutModule_Factory(t) { return new (t || NzLayoutModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_9__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["PlatformModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzLayoutModule, { declarations: function () { return [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent, NzSiderTriggerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_9__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["PlatformModule"]]; }, exports: function () { return [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzLayoutModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
                 declarations: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent, NzSiderTriggerComponent],
                 exports: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_9__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_10__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_8__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_2__["PlatformModule"]]
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_10__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_11__["NzIconModule"], _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_9__["LayoutModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_5__["PlatformModule"]]
             }]
     }], null, null); })();
 

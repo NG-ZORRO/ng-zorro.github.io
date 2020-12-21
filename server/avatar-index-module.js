@@ -16,8 +16,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+
 
 
 
@@ -61,16 +63,14 @@ class NzDividerComponent {
         this.elementRef.nativeElement.classList.add('ant-divider');
     }
 }
-/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 16, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
     } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzDividerComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
@@ -131,15 +131,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDividerModule {
 }
-/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-/** @nocollapse */
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]],
                 declarations: [NzDividerComponent],
                 exports: [NzDividerComponent]
             }]
@@ -177,8 +175,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAvatarTypeComponent {
 }
-/** @nocollapse */ NzDemoAvatarTypeComponent.ɵfac = function NzDemoAvatarTypeComponent_Factory(t) { return new (t || NzDemoAvatarTypeComponent)(); };
-/** @nocollapse */ NzDemoAvatarTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarTypeComponent, selectors: [["nz-demo-avatar-type"]], decls: 6, vars: 0, consts: [["nzIcon", "user"], ["nzText", "U"], ["nzText", "USER"], ["nzIcon", "user", "nzSrc", "//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"], ["nzText", "U", 2, "color", "#f56a00", "background-color", "#fde3cf"], ["nzIcon", "user", 2, "background-color", "#87d068"]], template: function NzDemoAvatarTypeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAvatarTypeComponent.ɵfac = function NzDemoAvatarTypeComponent_Factory(t) { return new (t || NzDemoAvatarTypeComponent)(); };
+NzDemoAvatarTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarTypeComponent, selectors: [["nz-demo-avatar-type"]], decls: 6, vars: 0, consts: [["nzIcon", "user"], ["nzText", "U"], ["nzText", "USER"], ["nzIcon", "user", "nzSrc", "//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"], ["nzText", "U", 2, "color", "#f56a00", "background-color", "#fde3cf"], ["nzIcon", "user", 2, "background-color", "#87d068"]], template: function NzDemoAvatarTypeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-avatar", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-avatar", 2);
@@ -258,8 +256,8 @@ class NzDemoAvatarDynamicComponent {
         this.color = colorList[idx];
     }
 }
-/** @nocollapse */ NzDemoAvatarDynamicComponent.ɵfac = function NzDemoAvatarDynamicComponent_Factory(t) { return new (t || NzDemoAvatarDynamicComponent)(); };
-/** @nocollapse */ NzDemoAvatarDynamicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarDynamicComponent, selectors: [["nz-demo-avatar-dynamic"]], decls: 8, vars: 9, consts: [[3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nz-button", "", 3, "click"], ["nzSize", "large", 2, "vertical-align", "middle", 3, "nzGap", "ngStyle", "nzText"]], template: function NzDemoAvatarDynamicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAvatarDynamicComponent.ɵfac = function NzDemoAvatarDynamicComponent_Factory(t) { return new (t || NzDemoAvatarDynamicComponent)(); };
+NzDemoAvatarDynamicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarDynamicComponent, selectors: [["nz-demo-avatar-dynamic"]], decls: 8, vars: 9, consts: [[3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nz-button", "", 3, "click"], ["nzSize", "large", 2, "vertical-align", "middle", 3, "nzGap", "ngStyle", "nzText"]], template: function NzDemoAvatarDynamicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Gap: ");
@@ -376,11 +374,11 @@ class NzDemoAvatarZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAvatarZhComponent.ɵfac = function NzDemoAvatarZhComponent_Factory(t) { return new (t || NzDemoAvatarZhComponent)(); };
-/** @nocollapse */ NzDemoAvatarZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarZhComponent, selectors: [["nz-demo-avatar"]], viewQuery: function NzDemoAvatarZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAvatarZhComponent.ɵfac = function NzDemoAvatarZhComponent_Factory(t) { return new (t || NzDemoAvatarZhComponent)(); };
+NzDemoAvatarZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarZhComponent, selectors: [["nz-demo-avatar"]], viewQuery: function NzDemoAvatarZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 265, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-avatar-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-avatar-demo-type", "nzTitle", "\u7C7B\u578B"], ["nzHref", "#components-avatar-demo-dynamic", "nzTitle", "\u81EA\u52A8\u8C03\u6574\u5B57\u7B26\u5927\u5C0F"], ["nzHref", "#components-avatar-demo-badge", "nzTitle", "\u5E26\u5FBD\u6807\u7684\u5934\u50CF"], ["nzHref", "#components-avatar-demo-group", "nzTitle", "\u5934\u50CF\u7EC4"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/avatar/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-avatar-basic", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-basic <name>", "nzComponentName", "NzDemoAvatarBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u81EA\u52A8\u8C03\u6574\u5B57\u7B26\u5927\u5C0F", "nzSelector", "nz-demo-avatar-dynamic", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-dynamic <name>", "nzComponentName", "NzDemoAvatarDynamicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5934\u50CF\u7EC4", "nzSelector", "nz-demo-avatar-group", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-group <name>", "nzComponentName", "NzDemoAvatarGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7C7B\u578B", "nzSelector", "nz-demo-avatar-type", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-type <name>", "nzComponentName", "NzDemoAvatarTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u5FBD\u6807\u7684\u5934\u50CF", "nzSelector", "nz-demo-avatar-badge", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-badge <name>", "nzComponentName", "NzDemoAvatarBadgeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-avatar"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-avatar'", 1, "anchor"], ["id", "nz-avatar-group"], ["onclick", "window.location.hash = 'nz-avatar-group'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"]], template: function NzDemoAvatarZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -908,11 +906,11 @@ class NzDemoAvatarEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAvatarEnComponent.ɵfac = function NzDemoAvatarEnComponent_Factory(t) { return new (t || NzDemoAvatarEnComponent)(); };
-/** @nocollapse */ NzDemoAvatarEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarEnComponent, selectors: [["nz-demo-avatar"]], viewQuery: function NzDemoAvatarEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAvatarEnComponent.ɵfac = function NzDemoAvatarEnComponent_Factory(t) { return new (t || NzDemoAvatarEnComponent)(); };
+NzDemoAvatarEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarEnComponent, selectors: [["nz-demo-avatar"]], viewQuery: function NzDemoAvatarEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 270, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-avatar-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-avatar-demo-type", "nzTitle", "Type"], ["nzHref", "#components-avatar-demo-dynamic", "nzTitle", "Autoset Font Size"], ["nzHref", "#components-avatar-demo-badge", "nzTitle", "With Badge"], ["nzHref", "#components-avatar-demo-group", "nzTitle", "Avatar Group"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/avatar/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-avatar-basic", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-basic <name>", "nzComponentName", "NzDemoAvatarBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Autoset Font Size", "nzSelector", "nz-demo-avatar-dynamic", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-dynamic <name>", "nzComponentName", "NzDemoAvatarDynamicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Avatar Group", "nzSelector", "nz-demo-avatar-group", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-group <name>", "nzComponentName", "NzDemoAvatarGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Type", "nzSelector", "nz-demo-avatar-type", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-type <name>", "nzComponentName", "NzDemoAvatarTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With Badge", "nzSelector", "nz-demo-avatar-badge", "nzGenerateCommand", "ng g ng-zorro-antd:avatar-badge <name>", "nzComponentName", "NzDemoAvatarBadgeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-avatar"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-avatar'", 1, "anchor"], ["id", "nz-avatar-group"], ["onclick", "window.location.hash = 'nz-avatar-group'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"]], template: function NzDemoAvatarEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1442,8 +1440,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAvatarModule {
 }
-/** @nocollapse */ NzDemoAvatarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAvatarModule });
-/** @nocollapse */ NzDemoAvatarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAvatarModule_Factory(t) { return new (t || NzDemoAvatarModule)(); }, imports: [[
+NzDemoAvatarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAvatarModule });
+NzDemoAvatarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAvatarModule_Factory(t) { return new (t || NzDemoAvatarModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -1535,8 +1533,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAvatarBadgeComponent {
 }
-/** @nocollapse */ NzDemoAvatarBadgeComponent.ɵfac = function NzDemoAvatarBadgeComponent_Factory(t) { return new (t || NzDemoAvatarBadgeComponent)(); };
-/** @nocollapse */ NzDemoAvatarBadgeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarBadgeComponent, selectors: [["nz-demo-avatar-badge"]], decls: 4, vars: 3, consts: [[2, "margin-right", "24px", 3, "nzCount"], ["nzIcon", "user", 3, "nzShape"], ["nzDot", ""]], template: function NzDemoAvatarBadgeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAvatarBadgeComponent.ɵfac = function NzDemoAvatarBadgeComponent_Factory(t) { return new (t || NzDemoAvatarBadgeComponent)(); };
+NzDemoAvatarBadgeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarBadgeComponent, selectors: [["nz-demo-avatar-badge"]], decls: 4, vars: 3, consts: [[2, "margin-right", "24px", 3, "nzCount"], ["nzIcon", "user", 3, "nzShape"], ["nzDot", ""]], template: function NzDemoAvatarBadgeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-badge", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1585,8 +1583,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAvatarBasicComponent {
 }
-/** @nocollapse */ NzDemoAvatarBasicComponent.ɵfac = function NzDemoAvatarBasicComponent_Factory(t) { return new (t || NzDemoAvatarBasicComponent)(); };
-/** @nocollapse */ NzDemoAvatarBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarBasicComponent, selectors: [["nz-demo-avatar-basic"]], decls: 10, vars: 12, consts: [["nzIcon", "user", 3, "nzSize"], ["nzSize", "large", "nzIcon", "user"], ["nzIcon", "user"], ["nzSize", "small", "nzIcon", "user"], [3, "nzShape", "nzSize", "nzIcon"], [3, "nzShape", "nzIcon"]], template: function NzDemoAvatarBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAvatarBasicComponent.ɵfac = function NzDemoAvatarBasicComponent_Factory(t) { return new (t || NzDemoAvatarBasicComponent)(); };
+NzDemoAvatarBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarBasicComponent, selectors: [["nz-demo-avatar-basic"]], decls: 10, vars: 12, consts: [["nzIcon", "user", 3, "nzSize"], ["nzSize", "large", "nzIcon", "user"], ["nzIcon", "user"], ["nzSize", "small", "nzIcon", "user"], [3, "nzShape", "nzSize", "nzIcon"], [3, "nzShape", "nzIcon"]], template: function NzDemoAvatarBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-avatar", 1);
@@ -1664,8 +1662,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAvatarGroupComponent {
 }
-/** @nocollapse */ NzDemoAvatarGroupComponent.ɵfac = function NzDemoAvatarGroupComponent_Factory(t) { return new (t || NzDemoAvatarGroupComponent)(); };
-/** @nocollapse */ NzDemoAvatarGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarGroupComponent, selectors: [["nz-demo-avatar-group"]], decls: 10, vars: 0, consts: [["nzIcon", "user", "nzSrc", "//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"], ["nzText", "U", 2, "background-color", "#f56a00"], ["nz-tooltip", "", "nzTooltipTitle", "NG-ZORRO User", "nzIcon", "user", 2, "background-color", "#87d068"], ["nzText", "NG", 2, "background-color", "#1890ff"], ["nzText", "+2", 2, "background-color", "#fde3cf", "color", "#f56a00"]], template: function NzDemoAvatarGroupComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAvatarGroupComponent.ɵfac = function NzDemoAvatarGroupComponent_Factory(t) { return new (t || NzDemoAvatarGroupComponent)(); };
+NzDemoAvatarGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAvatarGroupComponent, selectors: [["nz-demo-avatar-group"]], decls: 10, vars: 0, consts: [["nzIcon", "user", "nzSrc", "//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"], ["nzText", "U", 2, "background-color", "#f56a00"], ["nz-tooltip", "", "nzTooltipTitle", "NG-ZORRO User", "nzIcon", "user", 2, "background-color", "#87d068"], ["nzText", "NG", 2, "background-color", "#1890ff"], ["nzText", "+2", 2, "background-color", "#fde3cf", "color", "#f56a00"]], template: function NzDemoAvatarGroupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-avatar-group");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-avatar", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-avatar", 1);

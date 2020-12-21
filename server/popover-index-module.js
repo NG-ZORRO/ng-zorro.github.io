@@ -34,8 +34,8 @@ function NzDemoPopoverTriggerTypeComponent_ng_template_0_Template(rf, ctx) { if 
 } }
 class NzDemoPopoverTriggerTypeComponent {
 }
-/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵfac = function NzDemoPopoverTriggerTypeComponent_Factory(t) { return new (t || NzDemoPopoverTriggerTypeComponent)(); };
-/** @nocollapse */ NzDemoPopoverTriggerTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTriggerTypeComponent, selectors: [["nz-demo-popover-trigger-type"]], decls: 8, vars: 3, consts: [["contentTemplate", ""], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "hover", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "focus", 3, "nzPopoverContent"]], template: function NzDemoPopoverTriggerTypeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverTriggerTypeComponent.ɵfac = function NzDemoPopoverTriggerTypeComponent_Factory(t) { return new (t || NzDemoPopoverTriggerTypeComponent)(); };
+NzDemoPopoverTriggerTypeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTriggerTypeComponent, selectors: [["nz-demo-popover-trigger-type"]], decls: 8, vars: 3, consts: [["contentTemplate", ""], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "hover", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "focus", 3, "nzPopoverContent"]], template: function NzDemoPopoverTriggerTypeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoPopoverTriggerTypeComponent_ng_template_0_Template, 5, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Click me ");
@@ -147,13 +147,13 @@ class NzDemoPopoverEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoPopoverEnComponent.ɵfac = function NzDemoPopoverEnComponent_Factory(t) { return new (t || NzDemoPopoverEnComponent)(); };
-/** @nocollapse */ NzDemoPopoverEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverEnComponent, selectors: [["nz-demo-popover"]], viewQuery: function NzDemoPopoverEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoPopoverEnComponent.ɵfac = function NzDemoPopoverEnComponent_Factory(t) { return new (t || NzDemoPopoverEnComponent)(); };
+NzDemoPopoverEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverEnComponent, selectors: [["nz-demo-popover"]], viewQuery: function NzDemoPopoverEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 287, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-popover-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-popover-demo-placement", "nzTitle", "Placement"], ["nzHref", "#components-popover-demo-control", "nzTitle", "Controlling the close of the dialog"], ["nzHref", "#components-popover-demo-arrow-point-at-center", "nzTitle", "Arrow pointing at the center"], ["nzHref", "#components-popover-demo-template", "nzTitle", "Template"], ["nzHref", "#components-popover-demo-trigger-type", "nzTitle", "Three ways to trigger"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/popover/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-popover-basic", "nzGenerateCommand", "ng g ng-zorro-antd:popover-basic <name>", "nzComponentName", "NzDemoPopoverBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Controlling the close of the dialog", "nzSelector", "nz-demo-popover-control", "nzGenerateCommand", "ng g ng-zorro-antd:popover-control <name>", "nzComponentName", "NzDemoPopoverControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Template", "nzSelector", "nz-demo-popover-template", "nzGenerateCommand", "ng g ng-zorro-antd:popover-template <name>", "nzComponentName", "NzDemoPopoverTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Placement", "nzSelector", "nz-demo-popover-placement", "nzGenerateCommand", "ng g ng-zorro-antd:popover-placement <name>", "nzComponentName", "NzDemoPopoverPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Arrow pointing at the center", "nzSelector", "nz-demo-popover-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:popover-arrow-point-at-center <name>", "nzComponentName", "NzDemoPopoverArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Three ways to trigger", "nzSelector", "nz-demo-popover-trigger-type", "nzGenerateCommand", "ng g ng-zorro-antd:popover-trigger-type <name>", "nzComponentName", "NzDemoPopoverTriggerTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-popover]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-popover]'", 1, "anchor"], ["href", "/components/tooltip/en#api"], ["id", "note"], ["onclick", "window.location.hash = 'note'", 1, "anchor"]], template: function NzDemoPopoverEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 291, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-popover-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-popover-demo-placement", "nzTitle", "Placement"], ["nzHref", "#components-popover-demo-control", "nzTitle", "Controlling the close of the dialog"], ["nzHref", "#components-popover-demo-arrow-point-at-center", "nzTitle", "Arrow pointing at the center"], ["nzHref", "#components-popover-demo-template", "nzTitle", "Template"], ["nzHref", "#components-popover-demo-trigger-type", "nzTitle", "Three ways to trigger"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/popover/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-popover-basic", "nzGenerateCommand", "ng g ng-zorro-antd:popover-basic <name>", "nzComponentName", "NzDemoPopoverBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Controlling the close of the dialog", "nzSelector", "nz-demo-popover-control", "nzGenerateCommand", "ng g ng-zorro-antd:popover-control <name>", "nzComponentName", "NzDemoPopoverControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Template", "nzSelector", "nz-demo-popover-template", "nzGenerateCommand", "ng g ng-zorro-antd:popover-template <name>", "nzComponentName", "NzDemoPopoverTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Placement", "nzSelector", "nz-demo-popover-placement", "nzGenerateCommand", "ng g ng-zorro-antd:popover-placement <name>", "nzComponentName", "NzDemoPopoverPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Arrow pointing at the center", "nzSelector", "nz-demo-popover-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:popover-arrow-point-at-center <name>", "nzComponentName", "NzDemoPopoverArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Three ways to trigger", "nzSelector", "nz-demo-popover-trigger-type", "nzGenerateCommand", "ng g ng-zorro-antd:popover-trigger-type <name>", "nzComponentName", "NzDemoPopoverTriggerTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-popover]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-popover]'", 1, "anchor"], ["href", "/components/tooltip/en#api"], ["id", "note"], ["onclick", "window.location.hash = 'note'", 1, "anchor"]], template: function NzDemoPopoverEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -579,45 +579,50 @@ class NzDemoPopoverEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](260, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](261, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](262, "Consult ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](263, "a", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](264, "Tooltip's documentation");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](265, " to find more APIs.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](266, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](267, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](268, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](260, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](261, "Consult ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](262, "a", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](263, "Tooltip's documentation");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](264, " to find more APIs.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](269, "h2", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](270, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271, "Note");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](265, "h2", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](267, "Note");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](268, "a", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](269, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](272, "a", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](270, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271, "Please ensure that the node of ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](272, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, "[nz-popover]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, "Please ensure that the node of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](276, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](277, "[nz-popover]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, " accepts ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "onMouseEnter");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, " accepts ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "onMouseEnter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](277, ", ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](279, "onMouseLeave");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](281, ", ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](282, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, "onMouseLeave");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, ", ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "onFocus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](284, ", ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](285, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](286, "onFocus");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, ", ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, "onClick");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, ", ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](289, "onClick");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](286, " events.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, " events.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -694,8 +699,8 @@ function NzDemoPopoverTemplateComponent_ng_template_4_Template(rf, ctx) { if (rf
 } }
 class NzDemoPopoverTemplateComponent {
 }
-/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵfac = function NzDemoPopoverTemplateComponent_Factory(t) { return new (t || NzDemoPopoverTemplateComponent)(); };
-/** @nocollapse */ NzDemoPopoverTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTemplateComponent, selectors: [["nz-demo-popover-template"]], decls: 6, vars: 2, consts: [["nz-button", "", "nz-popover", "", 3, "nzPopoverTitle", "nzPopoverContent"], ["titleTemplate", ""], ["contentTemplate", ""], ["nz-icon", "", "nzType", "close"], ["nz-icon", "", "nzType", "check"]], template: function NzDemoPopoverTemplateComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverTemplateComponent.ɵfac = function NzDemoPopoverTemplateComponent_Factory(t) { return new (t || NzDemoPopoverTemplateComponent)(); };
+NzDemoPopoverTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverTemplateComponent, selectors: [["nz-demo-popover-template"]], decls: 6, vars: 2, consts: [["nz-button", "", "nz-popover", "", 3, "nzPopoverTitle", "nzPopoverContent"], ["titleTemplate", ""], ["contentTemplate", ""], ["nz-icon", "", "nzType", "close"], ["nz-icon", "", "nzType", "check"]], template: function NzDemoPopoverTemplateComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Render Template ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -756,8 +761,8 @@ function NzDemoPopoverPlacementComponent_ng_template_28_Template(rf, ctx) { if (
 } }
 class NzDemoPopoverPlacementComponent {
 }
-/** @nocollapse */ NzDemoPopoverPlacementComponent.ɵfac = function NzDemoPopoverPlacementComponent_Factory(t) { return new (t || NzDemoPopoverPlacementComponent)(); };
-/** @nocollapse */ NzDemoPopoverPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverPlacementComponent, selectors: [["nz-demo-popover-placement"]], decls: 30, vars: 12, consts: [[2, "margin-left", "60px"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "topLeft", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "top", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "topRight", 3, "nzPopoverContent"], [2, "width", "60px", "float", "left"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "leftTop", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "left", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "leftBottom", 3, "nzPopoverContent"], [2, "width", "60px", "margin-left", "252px"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "rightTop", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "right", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "rightBottom", 3, "nzPopoverContent"], [2, "margin-left", "60px", "clear", "both"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottomLeft", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottom", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottomRight", 3, "nzPopoverContent"], ["contentTemplate", ""]], template: function NzDemoPopoverPlacementComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverPlacementComponent.ɵfac = function NzDemoPopoverPlacementComponent_Factory(t) { return new (t || NzDemoPopoverPlacementComponent)(); };
+NzDemoPopoverPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverPlacementComponent, selectors: [["nz-demo-popover-placement"]], decls: 30, vars: 12, consts: [[2, "margin-left", "60px"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "topLeft", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "top", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "topRight", 3, "nzPopoverContent"], [2, "width", "60px", "float", "left"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "leftTop", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "left", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "leftBottom", 3, "nzPopoverContent"], [2, "width", "60px", "margin-left", "252px"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "rightTop", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "right", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "rightBottom", 3, "nzPopoverContent"], [2, "margin-left", "60px", "clear", "both"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottomLeft", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottom", 3, "nzPopoverContent"], ["nz-button", "", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverPlacement", "bottomRight", 3, "nzPopoverContent"], ["contentTemplate", ""]], template: function NzDemoPopoverPlacementComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " TL ");
@@ -947,8 +952,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPopoverArrowPointAtCenterComponent {
 }
-/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵfac = function NzDemoPopoverArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoPopoverArrowPointAtCenterComponent)(); };
-/** @nocollapse */ NzDemoPopoverArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverArrowPointAtCenterComponent, selectors: [["nz-demo-popover-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topLeft", "nz-popover", ""], ["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topCenter", "nz-popover", ""]], template: function NzDemoPopoverArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverArrowPointAtCenterComponent.ɵfac = function NzDemoPopoverArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoPopoverArrowPointAtCenterComponent)(); };
+NzDemoPopoverArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverArrowPointAtCenterComponent, selectors: [["nz-demo-popover-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topLeft", "nz-popover", ""], ["nz-button", "", "nzPopoverTitle", "Title", "nzPopoverContent", "Content", "nzPopoverPlacement", "topCenter", "nz-popover", ""]], template: function NzDemoPopoverArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Align edge / \u8FB9\u7F18\u5BF9\u9F50 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1026,8 +1031,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPopoverModule {
 }
-/** @nocollapse */ NzDemoPopoverModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPopoverModule });
-/** @nocollapse */ NzDemoPopoverModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPopoverModule_Factory(t) { return new (t || NzDemoPopoverModule)(); }, imports: [[
+NzDemoPopoverModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPopoverModule });
+NzDemoPopoverModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPopoverModule_Factory(t) { return new (t || NzDemoPopoverModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -1110,8 +1115,8 @@ class NzDemoPopoverControlComponent {
         console.log(value);
     }
 }
-/** @nocollapse */ NzDemoPopoverControlComponent.ɵfac = function NzDemoPopoverControlComponent_Factory(t) { return new (t || NzDemoPopoverControlComponent)(); };
-/** @nocollapse */ NzDemoPopoverControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverControlComponent, selectors: [["nz-demo-popover-control"]], decls: 4, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverVisible", "nzPopoverContent", "nzPopoverVisibleChange"], ["contentTemplate", ""], [3, "click"]], template: function NzDemoPopoverControlComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverControlComponent.ɵfac = function NzDemoPopoverControlComponent_Factory(t) { return new (t || NzDemoPopoverControlComponent)(); };
+NzDemoPopoverControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverControlComponent, selectors: [["nz-demo-popover-control"]], decls: 4, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nz-popover", "", "nzPopoverTitle", "Title", "nzPopoverTrigger", "click", 3, "nzPopoverVisible", "nzPopoverContent", "nzPopoverVisibleChange"], ["contentTemplate", ""], [3, "click"]], template: function NzDemoPopoverControlComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.visible = $event; })("nzPopoverVisibleChange", function NzDemoPopoverControlComponent_Template_button_nzPopoverVisibleChange_0_listener($event) { return ctx.change($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Click me ");
@@ -1206,13 +1211,13 @@ class NzDemoPopoverZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoPopoverZhComponent.ɵfac = function NzDemoPopoverZhComponent_Factory(t) { return new (t || NzDemoPopoverZhComponent)(); };
-/** @nocollapse */ NzDemoPopoverZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverZhComponent, selectors: [["nz-demo-popover"]], viewQuery: function NzDemoPopoverZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoPopoverZhComponent.ɵfac = function NzDemoPopoverZhComponent_Factory(t) { return new (t || NzDemoPopoverZhComponent)(); };
+NzDemoPopoverZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverZhComponent, selectors: [["nz-demo-popover"]], viewQuery: function NzDemoPopoverZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 283, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-popover-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-popover-demo-placement", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-popover-demo-control", "nzTitle", "\u4ECE\u6D6E\u5C42\u5185\u5173\u95ED"], ["nzHref", "#components-popover-demo-arrow-point-at-center", "nzTitle", "\u7BAD\u5934\u6307\u5411"], ["nzHref", "#components-popover-demo-template", "nzTitle", "\u6A21\u677F\u6E32\u67D3"], ["nzHref", "#components-popover-demo-trigger-type", "nzTitle", "\u4E09\u79CD\u89E6\u53D1\u65B9\u5F0F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/popover/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-popover-basic", "nzGenerateCommand", "ng g ng-zorro-antd:popover-basic <name>", "nzComponentName", "NzDemoPopoverBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4ECE\u6D6E\u5C42\u5185\u5173\u95ED", "nzSelector", "nz-demo-popover-control", "nzGenerateCommand", "ng g ng-zorro-antd:popover-control <name>", "nzComponentName", "NzDemoPopoverControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6A21\u677F\u6E32\u67D3", "nzSelector", "nz-demo-popover-template", "nzGenerateCommand", "ng g ng-zorro-antd:popover-template <name>", "nzComponentName", "NzDemoPopoverTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-popover-placement", "nzGenerateCommand", "ng g ng-zorro-antd:popover-placement <name>", "nzComponentName", "NzDemoPopoverPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7BAD\u5934\u6307\u5411", "nzSelector", "nz-demo-popover-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:popover-arrow-point-at-center <name>", "nzComponentName", "NzDemoPopoverArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E09\u79CD\u89E6\u53D1\u65B9\u5F0F", "nzSelector", "nz-demo-popover-trigger-type", "nzGenerateCommand", "ng g ng-zorro-antd:popover-trigger-type <name>", "nzComponentName", "NzDemoPopoverTriggerTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-popover]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-popover]'", 1, "anchor"], ["href", "/components/tooltip/zh#api"], ["id", "\u6CE8\u610F"], ["onclick", "window.location.hash = '\u6CE8\u610F'", 1, "anchor"]], template: function NzDemoPopoverZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 287, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-popover-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-popover-demo-placement", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-popover-demo-control", "nzTitle", "\u4ECE\u6D6E\u5C42\u5185\u5173\u95ED"], ["nzHref", "#components-popover-demo-arrow-point-at-center", "nzTitle", "\u7BAD\u5934\u6307\u5411"], ["nzHref", "#components-popover-demo-template", "nzTitle", "\u6A21\u677F\u6E32\u67D3"], ["nzHref", "#components-popover-demo-trigger-type", "nzTitle", "\u4E09\u79CD\u89E6\u53D1\u65B9\u5F0F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/popover/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-popover-basic", "nzGenerateCommand", "ng g ng-zorro-antd:popover-basic <name>", "nzComponentName", "NzDemoPopoverBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4ECE\u6D6E\u5C42\u5185\u5173\u95ED", "nzSelector", "nz-demo-popover-control", "nzGenerateCommand", "ng g ng-zorro-antd:popover-control <name>", "nzComponentName", "NzDemoPopoverControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6A21\u677F\u6E32\u67D3", "nzSelector", "nz-demo-popover-template", "nzGenerateCommand", "ng g ng-zorro-antd:popover-template <name>", "nzComponentName", "NzDemoPopoverTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-popover-placement", "nzGenerateCommand", "ng g ng-zorro-antd:popover-placement <name>", "nzComponentName", "NzDemoPopoverPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7BAD\u5934\u6307\u5411", "nzSelector", "nz-demo-popover-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:popover-arrow-point-at-center <name>", "nzComponentName", "NzDemoPopoverArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E09\u79CD\u89E6\u53D1\u65B9\u5F0F", "nzSelector", "nz-demo-popover-trigger-type", "nzGenerateCommand", "ng g ng-zorro-antd:popover-trigger-type <name>", "nzComponentName", "NzDemoPopoverTriggerTypeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-popover]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-popover]'", 1, "anchor"], ["href", "/components/tooltip/zh#api"], ["id", "\u6CE8\u610F"], ["onclick", "window.location.hash = '\u6CE8\u610F'", 1, "anchor"]], template: function NzDemoPopoverZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1633,45 +1638,50 @@ class NzDemoPopoverZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](257, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](258, "\u66F4\u591A\u5C5E\u6027\u8BF7\u53C2\u8003 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](259, "a", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](260, "Tooltip");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](261, "\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](262, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](263, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](264, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257, "\u66F4\u591A\u5C5E\u6027\u8BF7\u53C2\u8003 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "a", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "Tooltip");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](260, "\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](265, "h2", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](267, "\u6CE8\u610F");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](261, "h2", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](262, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](263, "\u6CE8\u610F");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](264, "a", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](265, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](268, "a", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](269, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](266, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](267, "\u8BF7\u786E\u4FDD ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](268, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](269, "[nz-popover]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](270, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271, "\u8BF7\u786E\u4FDD ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](272, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, "[nz-popover]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](270, " \u5143\u7D20\u80FD\u63A5\u53D7 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](271, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](272, "onMouseEnter");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, " \u5143\u7D20\u80FD\u63A5\u53D7 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "onMouseEnter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](273, "\u3001");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](275, "onMouseLeave");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](277, "\u3001");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](279, "onMouseLeave");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "\u3001");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "onFocus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "\u3001");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "onFocus");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](279, "\u3001");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](280, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](281, "onClick");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, "\u3001");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, "onClick");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, " \u4E8B\u4EF6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](286, " \u4E8B\u4EF6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1738,8 +1748,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPopoverBasicComponent {
 }
-/** @nocollapse */ NzDemoPopoverBasicComponent.ɵfac = function NzDemoPopoverBasicComponent_Factory(t) { return new (t || NzDemoPopoverBasicComponent)(); };
-/** @nocollapse */ NzDemoPopoverBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverBasicComponent, selectors: [["nz-demo-popover-basic"]], decls: 2, vars: 0, consts: [["nz-button", "", "nz-popover", "", "nzType", "primary", "nzPopoverTitle", "Title", "nzPopoverContent", "Content"]], template: function NzDemoPopoverBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPopoverBasicComponent.ɵfac = function NzDemoPopoverBasicComponent_Factory(t) { return new (t || NzDemoPopoverBasicComponent)(); };
+NzDemoPopoverBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPopoverBasicComponent, selectors: [["nz-demo-popover-basic"]], decls: 2, vars: 0, consts: [["nz-button", "", "nz-popover", "", "nzType", "primary", "nzPopoverTitle", "Title", "nzPopoverContent", "Content"]], template: function NzDemoPopoverBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Hover me ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

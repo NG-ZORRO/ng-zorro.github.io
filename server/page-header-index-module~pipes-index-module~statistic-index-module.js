@@ -41,9 +41,7 @@ class NzTimeRangePipe {
         }, format);
     }
 }
-/** @nocollapse */
 NzTimeRangePipe.ɵfac = function NzTimeRangePipe_Factory(t) { return new (t || NzTimeRangePipe)(); };
-/** @nocollapse */
 NzTimeRangePipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefinePipe"]({ name: "nzTimeRange", type: NzTimeRangePipe, pure: true });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzTimeRangePipe, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"],
@@ -59,9 +57,7 @@ NzTimeRangePipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineP
  */
 class NzPipesModule {
 }
-/** @nocollapse */
 NzPipesModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzPipesModule });
-/** @nocollapse */
 NzPipesModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzPipesModule_Factory(t) { return new (t || NzPipesModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzPipesModule, { declarations: function () { return [NzTimeRangePipe]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]; }, exports: function () { return [NzTimeRangePipe]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzPipesModule, [{
@@ -104,9 +100,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
-/* harmony import */ var ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/pipe */ "3hSY");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/pipe */ "3hSY");
+
+
 
 
 
@@ -118,6 +118,7 @@ __webpack_require__.r(__webpack_exports__);
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 
 
 
@@ -214,14 +215,28 @@ function NzStatisticNumberComponent_ng_container_2_Template(rf, ctx) { if (rf & 
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r1.displayDecimal);
 } }
 class NzStatisticComponent {
-    constructor() {
+    constructor(cdr, directionality) {
+        this.cdr = cdr;
+        this.directionality = directionality;
         this.nzValueStyle = {};
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["Subject"]();
+    }
+    ngOnInit() {
+        var _a;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+        this.dir = this.directionality.value;
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
     }
 }
-/** @nocollapse */
-NzStatisticComponent.ɵfac = function NzStatisticComponent_Factory(t) { return new (t || NzStatisticComponent)(); };
-/** @nocollapse */
-NzStatisticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzStatisticComponent, selectors: [["nz-statistic"]], inputs: { nzValueStyle: "nzValueStyle", nzPrefix: "nzPrefix", nzSuffix: "nzSuffix", nzTitle: "nzTitle", nzValue: "nzValue", nzValueTemplate: "nzValueTemplate" }, exportAs: ["nzStatistic"], decls: 7, vars: 6, consts: [[1, "ant-statistic"], [1, "ant-statistic-title"], [4, "nzStringTemplateOutlet"], [1, "ant-statistic-content", 3, "ngStyle"], ["class", "ant-statistic-content-prefix", 4, "ngIf"], [3, "nzValue", "nzValueTemplate"], ["class", "ant-statistic-content-suffix", 4, "ngIf"], [1, "ant-statistic-content-prefix"], [1, "ant-statistic-content-suffix"]], template: function NzStatisticComponent_Template(rf, ctx) { if (rf & 1) {
+NzStatisticComponent.ɵfac = function NzStatisticComponent_Factory(t) { return new (t || NzStatisticComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], 8)); };
+NzStatisticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzStatisticComponent, selectors: [["nz-statistic"]], inputs: { nzValueStyle: "nzValueStyle", nzPrefix: "nzPrefix", nzSuffix: "nzSuffix", nzTitle: "nzTitle", nzValue: "nzValue", nzValueTemplate: "nzValueTemplate" }, exportAs: ["nzStatistic"], decls: 7, vars: 8, consts: [[1, "ant-statistic"], [1, "ant-statistic-title"], [4, "nzStringTemplateOutlet"], [1, "ant-statistic-content", 3, "ngStyle"], ["class", "ant-statistic-content-prefix", 4, "ngIf"], [3, "nzValue", "nzValueTemplate"], ["class", "ant-statistic-content-suffix", 4, "ngIf"], [1, "ant-statistic-content-prefix"], [1, "ant-statistic-content-suffix"]], template: function NzStatisticComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](2, NzStatisticComponent_ng_container_2_Template, 2, 1, "ng-container", 2);
@@ -233,6 +248,7 @@ NzStatisticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
     } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-statistic-rtl", ctx.dir === "rtl");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzStringTemplateOutlet", ctx.nzTitle);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
@@ -243,7 +259,11 @@ NzStatisticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdef
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzValue", ctx.nzValue)("nzValueTemplate", ctx.nzValueTemplate);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzSuffix);
-    } }, directives: function () { return [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], NzStatisticNumberComponent]; }, encapsulation: 2, changeDetection: 0 });
+    } }, directives: function () { return [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], NzStatisticNumberComponent]; }, encapsulation: 2, changeDetection: 0 });
+NzStatisticComponent.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }] }
+];
 NzStatisticComponent.propDecorators = {
     nzPrefix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
     nzSuffix: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -260,7 +280,7 @@ NzStatisticComponent.propDecorators = {
                 selector: 'nz-statistic',
                 exportAs: 'nzStatistic',
                 template: `
-    <div class="ant-statistic">
+    <div class="ant-statistic" [class.ant-statistic-rtl]="dir === 'rtl'">
       <div class="ant-statistic-title">
         <ng-container *nzStringTemplateOutlet="nzTitle">{{ nzTitle }}</ng-container>
       </div>
@@ -268,7 +288,7 @@ NzStatisticComponent.propDecorators = {
         <span *ngIf="nzPrefix" class="ant-statistic-content-prefix">
           <ng-container *nzStringTemplateOutlet="nzPrefix">{{ nzPrefix }}</ng-container>
         </span>
-        <nz-statistic-number [nzValue]="nzValue" [nzValueTemplate]="nzValueTemplate"> </nz-statistic-number>
+        <nz-statistic-number [nzValue]="nzValue" [nzValueTemplate]="nzValueTemplate"></nz-statistic-number>
         <span *ngIf="nzSuffix" class="ant-statistic-content-suffix">
           <ng-container *nzStringTemplateOutlet="nzSuffix">{{ nzSuffix }}</ng-container>
         </span>
@@ -276,7 +296,9 @@ NzStatisticComponent.propDecorators = {
     </div>
   `
             }]
-    }], function () { return []; }, { nzValueStyle: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
+            }] }]; }, { nzValueStyle: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzPrefix: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
@@ -296,9 +318,8 @@ NzStatisticComponent.propDecorators = {
  */
 const REFRESH_INTERVAL = 1000 / 30;
 class NzCountdownComponent extends NzStatisticComponent {
-    constructor(cdr, ngZone, platform) {
-        super();
-        this.cdr = cdr;
+    constructor(cdr, ngZone, platform, directionality) {
+        super(cdr, directionality);
         this.ngZone = ngZone;
         this.platform = platform;
         this.nzFormat = 'HH:mm:ss';
@@ -314,6 +335,7 @@ class NzCountdownComponent extends NzStatisticComponent {
         }
     }
     ngOnInit() {
+        super.ngOnInit();
         this.syncTimer();
     }
     ngOnDestroy() {
@@ -355,20 +377,19 @@ class NzCountdownComponent extends NzStatisticComponent {
         }
     }
 }
-/** @nocollapse */
-NzCountdownComponent.ɵfac = function NzCountdownComponent_Factory(t) { return new (t || NzCountdownComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"])); };
-/** @nocollapse */
+NzCountdownComponent.ɵfac = function NzCountdownComponent_Factory(t) { return new (t || NzCountdownComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], 8)); };
 NzCountdownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzCountdownComponent, selectors: [["nz-countdown"]], inputs: { nzFormat: "nzFormat" }, outputs: { nzCountdownFinish: "nzCountdownFinish" }, exportAs: ["nzCountdown"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵInheritDefinitionFeature"], _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 3, vars: 6, consts: [[3, "nzValue", "nzValueStyle", "nzValueTemplate", "nzTitle", "nzPrefix", "nzSuffix"], ["countDownTpl", ""]], template: function NzCountdownComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](0, "nz-statistic", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzCountdownComponent_ng_template_1_Template, 2, 4, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
         const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("nzValue", ctx.diff)("nzValueStyle", ctx.nzValueStyle)("nzValueTemplate", ctx.nzValueTemplate || _r0)("nzTitle", ctx.nzTitle)("nzPrefix", ctx.nzPrefix)("nzSuffix", ctx.nzSuffix);
-    } }, directives: [NzStatisticComponent], pipes: [ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_5__["NzTimeRangePipe"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [NzStatisticComponent], pipes: [ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_7__["NzTimeRangePipe"]], encapsulation: 2, changeDetection: 0 });
 NzCountdownComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"] }] }
 ];
 NzCountdownComponent.propDecorators = {
     nzFormat: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
@@ -389,13 +410,14 @@ NzCountdownComponent.propDecorators = {
       [nzTitle]="nzTitle"
       [nzPrefix]="nzPrefix"
       [nzSuffix]="nzSuffix"
-    >
-    </nz-statistic>
+    ></nz-statistic>
 
     <ng-template #countDownTpl>{{ diff | nzTimeRange: nzFormat }}</ng-template>
   `
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }]; }, { nzFormat: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["Platform"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Optional"]
+            }] }]; }, { nzFormat: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
         }], nzCountdownFinish: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
@@ -415,16 +437,14 @@ class NzStatisticNumberComponent {
         this.formatNumber();
     }
     formatNumber() {
-        const decimalSeparator = typeof this.nzValue === 'number' ? '.' : Object(_angular_common__WEBPACK_IMPORTED_MODULE_3__["getLocaleNumberSymbol"])(this.locale_id, _angular_common__WEBPACK_IMPORTED_MODULE_3__["NumberSymbol"].Decimal);
+        const decimalSeparator = typeof this.nzValue === 'number' ? '.' : Object(_angular_common__WEBPACK_IMPORTED_MODULE_5__["getLocaleNumberSymbol"])(this.locale_id, _angular_common__WEBPACK_IMPORTED_MODULE_5__["NumberSymbol"].Decimal);
         const value = String(this.nzValue);
         const [int, decimal] = value.split(decimalSeparator);
         this.displayInt = int;
         this.displayDecimal = decimal ? `${decimalSeparator}${decimal}` : '';
     }
 }
-/** @nocollapse */
 NzStatisticNumberComponent.ɵfac = function NzStatisticNumberComponent_Factory(t) { return new (t || NzStatisticNumberComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"])); };
-/** @nocollapse */
 NzStatisticNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzStatisticNumberComponent, selectors: [["nz-statistic-number"]], inputs: { nzValue: "nzValue", nzValueTemplate: "nzValueTemplate" }, exportAs: ["nzStatisticNumber"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 3, vars: 2, consts: [[1, "ant-statistic-content-value"], [3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "ant-statistic-content-value-int", 4, "ngIf"], ["class", "ant-statistic-content-value-decimal", 4, "ngIf"], [1, "ant-statistic-content-value-int"], [1, "ant-statistic-content-value-decimal"]], template: function NzStatisticNumberComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "span", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzStatisticNumberComponent_ng_container_1_Template, 1, 4, "ng-container", 1);
@@ -435,7 +455,7 @@ NzStatisticNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["�
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzValueTemplate);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", !ctx.nzValueTemplate);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"]], encapsulation: 2, changeDetection: 0 });
 NzStatisticNumberComponent.ctorParameters = () => [
     { type: String, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["LOCALE_ID"],] }] }
 ];
@@ -477,15 +497,13 @@ NzStatisticNumberComponent.propDecorators = {
  */
 class NzStatisticModule {
 }
-/** @nocollapse */
 NzStatisticModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzStatisticModule });
-/** @nocollapse */
-NzStatisticModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzStatisticModule_Factory(t) { return new (t || NzStatisticModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_5__["NzPipesModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzStatisticModule, { declarations: function () { return [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_5__["NzPipesModule"]]; }, exports: function () { return [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]; } }); })();
+NzStatisticModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzStatisticModule_Factory(t) { return new (t || NzStatisticModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_7__["NzPipesModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzStatisticModule, { declarations: function () { return [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_7__["NzPipesModule"]]; }, exports: function () { return [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzStatisticModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_5__["NzPipesModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_pipe__WEBPACK_IMPORTED_MODULE_7__["NzPipesModule"]],
                 declarations: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent],
                 exports: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]
             }]

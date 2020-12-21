@@ -29,8 +29,8 @@ class NzDemoAutoCompleteBasicComponent {
         this.options = value ? [value, value + value, value + value + value] : [];
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteBasicComponent.ɵfac = function NzDemoAutoCompleteBasicComponent_Factory(t) { return new (t || NzDemoAutoCompleteBasicComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteBasicComponent, selectors: [["nz-demo-auto-complete-basic"]], decls: 4, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["nzBackfill", "", 3, "nzDataSource"], ["auto", ""]], template: function NzDemoAutoCompleteBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteBasicComponent.ɵfac = function NzDemoAutoCompleteBasicComponent_Factory(t) { return new (t || NzDemoAutoCompleteBasicComponent)(); };
+NzDemoAutoCompleteBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteBasicComponent, selectors: [["nz-demo-auto-complete-basic"]], decls: 4, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["nzBackfill", "", 3, "nzDataSource"], ["auto", ""]], template: function NzDemoAutoCompleteBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoAutoCompleteBasicComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("input", function NzDemoAutoCompleteBasicComponent_Template_input_input_1_listener($event) { return ctx.onInput($event); });
@@ -177,8 +177,8 @@ class NzDemoAutoCompleteCertainCategoryComponent {
         }, 1000);
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteCertainCategoryComponent.ɵfac = function NzDemoAutoCompleteCertainCategoryComponent_Factory(t) { return new (t || NzDemoAutoCompleteCertainCategoryComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteCertainCategoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteCertainCategoryComponent, selectors: [["nz-demo-auto-complete-certain-category"]], decls: 8, vars: 4, consts: [[1, "example-input"], ["nzSize", "large", 3, "nzSuffix"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], ["suffixIcon", ""], ["auto", ""], [3, "nzLabel", 4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [3, "nzLabel"], ["groupTitle", ""], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], ["href", "https://www.google.com/search?q=ng+zorro", "target", "_blank", 1, "more-link"], [3, "nzLabel", "nzValue"], [1, "certain-search-item-count"]], template: function NzDemoAutoCompleteCertainCategoryComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteCertainCategoryComponent.ɵfac = function NzDemoAutoCompleteCertainCategoryComponent_Factory(t) { return new (t || NzDemoAutoCompleteCertainCategoryComponent)(); };
+NzDemoAutoCompleteCertainCategoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteCertainCategoryComponent, selectors: [["nz-demo-auto-complete-certain-category"]], decls: 8, vars: 4, consts: [[1, "example-input"], ["nzSize", "large", 3, "nzSuffix"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], ["suffixIcon", ""], ["auto", ""], [3, "nzLabel", 4, "ngFor", "ngForOf"], ["nz-icon", "", "nzType", "search"], [3, "nzLabel"], ["groupTitle", ""], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], ["href", "https://www.google.com/search?q=ng+zorro", "target", "_blank", 1, "more-link"], [3, "nzLabel", "nzValue"], [1, "certain-search-item-count"]], template: function NzDemoAutoCompleteCertainCategoryComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-input-group", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2);
@@ -265,21 +265,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzAutocompleteTriggerDirective", function() { return NzAutocompleteTriggerDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzOptionSelectionChange", function() { return NzOptionSelectionChange; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getNzAutocompleteMissingPanelError", function() { return getNzAutocompleteMissingPanelError; });
-/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/overlay */ "rDax");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/no-animation */ "H3Kp");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! tslib */ "zOht");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/cdk/portal */ "+rOU");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "eczo");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/overlay */ "rDax");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/no-animation */ "H3Kp");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/cdk/portal */ "+rOU");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "eczo");
+
 
 
 
@@ -306,14 +308,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function NzAutocompleteOptgroupComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](ctx_r0.nzLabel);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r0.nzLabel);
 } }
 const _c0 = [[["nz-auto-option"]]];
 const _c1 = ["nz-auto-option"];
@@ -322,65 +325,63 @@ const _c3 = ["panel"];
 const _c4 = ["content"];
 function NzAutocompleteComponent_ng_template_0_4_ng_template_0_Template(rf, ctx) { }
 function NzAutocompleteComponent_ng_template_0_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_4_ng_template_0_Template, 0, 0, "ng-template");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_4_ng_template_0_Template, 0, 0, "ng-template");
 } }
 function NzAutocompleteComponent_ng_template_0_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](0);
 } }
 function NzAutocompleteComponent_ng_template_0_ng_template_7_nz_auto_option_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "nz-auto-option", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "nz-auto-option", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const option_r9 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzValue", option_r9)("nzLabel", option_r9 && option_r9.label ? option_r9.label : option_r9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", option_r9 && option_r9.label ? option_r9.label : option_r9, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzValue", option_r9)("nzLabel", option_r9 && option_r9.label ? option_r9.label : option_r9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", option_r9 && option_r9.label ? option_r9.label : option_r9, " ");
 } }
 function NzAutocompleteComponent_ng_template_0_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_ng_template_7_nz_auto_option_0_Template, 2, 3, "nz-auto-option", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_ng_template_7_nz_auto_option_0_Template, 2, 3, "nz-auto-option", 7);
 } if (rf & 2) {
-    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx_r6.nzDataSource);
+    const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx_r6.nzDataSource);
 } }
 function NzAutocompleteComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0, 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](2, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "div", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](4, NzAutocompleteComponent_ng_template_0_4_Template, 1, 0, undefined, 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](5, NzAutocompleteComponent_ng_template_0_ng_template_5_Template, 1, 0, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](7, NzAutocompleteComponent_ng_template_0_ng_template_7_Template, 1, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0, 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "div", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](4, NzAutocompleteComponent_ng_template_0_4_Template, 1, 0, undefined, 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](5, NzAutocompleteComponent_ng_template_0_ng_template_5_Template, 1, 0, "ng-template", null, 5, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzAutocompleteComponent_ng_template_0_ng_template_7_Template, 1, 1, "ng-template", null, 6, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
 } if (rf & 2) {
-    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](6);
-    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵreference"](8);
-    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-select-dropdown-hidden", !ctx_r0.showPanel);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", "enter")("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngTemplateOutlet", ctx_r0.nzDataSource ? _r5 : _r3);
+    const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](6);
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](8);
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-select-dropdown-hidden", !ctx_r0.showPanel)("ant-select-dropdown-rtl", ctx_r0.dir === "rtl");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", "enter")("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", ctx_r0.nzDataSource ? _r5 : _r3);
 } }
 class NzAutocompleteOptgroupComponent {
     constructor() { }
 }
-/** @nocollapse */
 NzAutocompleteOptgroupComponent.ɵfac = function NzAutocompleteOptgroupComponent_Factory(t) { return new (t || NzAutocompleteOptgroupComponent)(); };
-/** @nocollapse */
-NzAutocompleteOptgroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzAutocompleteOptgroupComponent, selectors: [["nz-auto-optgroup"]], inputs: { nzLabel: "nzLabel" }, exportAs: ["nzAutoOptgroup"], ngContentSelectors: _c1, decls: 3, vars: 1, consts: [[1, "ant-select-item", "ant-select-item-group"], [4, "nzStringTemplateOutlet"]], template: function NzAutocompleteOptgroupComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"](_c0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzAutocompleteOptgroupComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](2);
+NzAutocompleteOptgroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzAutocompleteOptgroupComponent, selectors: [["nz-auto-optgroup"]], inputs: { nzLabel: "nzLabel" }, exportAs: ["nzAutoOptgroup"], ngContentSelectors: _c1, decls: 3, vars: 1, consts: [[1, "ant-select-item", "ant-select-item-group"], [4, "nzStringTemplateOutlet"]], template: function NzAutocompleteOptgroupComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"](_c0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzAutocompleteOptgroupComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](2);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("nzStringTemplateOutlet", ctx.nzLabel);
-    } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx.nzLabel);
+    } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzAutocompleteOptgroupComponent.ctorParameters = () => [];
 NzAutocompleteOptgroupComponent.propDecorators = {
-    nzLabel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }]
+    nzLabel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
 
 /**
@@ -399,8 +400,8 @@ class NzAutocompleteOptionComponent {
         this.element = element;
         this.nzAutocompleteOptgroupComponent = nzAutocompleteOptgroupComponent;
         this.nzDisabled = false;
-        this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
-        this.mouseEntered = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
+        this.mouseEntered = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.active = false;
         this.selected = false;
     }
@@ -438,7 +439,7 @@ class NzAutocompleteOptionComponent {
         }
     }
     scrollIntoViewIfNeeded() {
-        Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["scrollIntoView"])(this.element.nativeElement);
+        Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["scrollIntoView"])(this.element.nativeElement);
     }
     selectViaInteraction() {
         if (!this.nzDisabled) {
@@ -457,35 +458,33 @@ class NzAutocompleteOptionComponent {
         this.selectionChange.emit(new NzOptionSelectionChange(this, isUserInput));
     }
 }
-/** @nocollapse */
-NzAutocompleteOptionComponent.ɵfac = function NzAutocompleteOptionComponent_Factory(t) { return new (t || NzAutocompleteOptionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](NzAutocompleteOptgroupComponent, 8)); };
-/** @nocollapse */
-NzAutocompleteOptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzAutocompleteOptionComponent, selectors: [["nz-auto-option"]], hostAttrs: ["role", "menuitem", 1, "ant-select-item", "ant-select-item-option"], hostVars: 10, hostBindings: function NzAutocompleteOptionComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzAutocompleteOptionComponent_click_HostBindingHandler() { return ctx.selectViaInteraction(); })("mouseenter", function NzAutocompleteOptionComponent_mouseenter_HostBindingHandler() { return ctx.onMouseEnter(); })("mousedown", function NzAutocompleteOptionComponent_mousedown_HostBindingHandler($event) { return $event.preventDefault(); });
+NzAutocompleteOptionComponent.ɵfac = function NzAutocompleteOptionComponent_Factory(t) { return new (t || NzAutocompleteOptionComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzAutocompleteOptgroupComponent, 8)); };
+NzAutocompleteOptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzAutocompleteOptionComponent, selectors: [["nz-auto-option"]], hostAttrs: ["role", "menuitem", 1, "ant-select-item", "ant-select-item-option"], hostVars: 10, hostBindings: function NzAutocompleteOptionComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzAutocompleteOptionComponent_click_HostBindingHandler() { return ctx.selectViaInteraction(); })("mouseenter", function NzAutocompleteOptionComponent_mouseenter_HostBindingHandler() { return ctx.onMouseEnter(); })("mousedown", function NzAutocompleteOptionComponent_mousedown_HostBindingHandler($event) { return $event.preventDefault(); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵattribute"]("aria-selected", ctx.selected.toString())("aria-disabled", ctx.nzDisabled.toString());
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-select-item-option-grouped", ctx.nzAutocompleteOptgroupComponent)("ant-select-item-option-selected", ctx.selected)("ant-select-item-option-active", ctx.active)("ant-select-item-option-disabled", ctx.nzDisabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("aria-selected", ctx.selected.toString())("aria-disabled", ctx.nzDisabled.toString());
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-select-item-option-grouped", ctx.nzAutocompleteOptgroupComponent)("ant-select-item-option-selected", ctx.selected)("ant-select-item-option-active", ctx.active)("ant-select-item-option-disabled", ctx.nzDisabled);
     } }, inputs: { nzDisabled: "nzDisabled", nzValue: "nzValue", nzLabel: "nzLabel" }, outputs: { selectionChange: "selectionChange", mouseEntered: "mouseEntered" }, exportAs: ["nzAutoOption"], ngContentSelectors: _c2, decls: 2, vars: 0, consts: [[1, "ant-select-item-option-content"]], template: function NzAutocompleteOptionComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     } }, encapsulation: 2, changeDetection: 0 });
 NzAutocompleteOptionComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: NzAutocompleteOptgroupComponent, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
+    { type: NzAutocompleteOptgroupComponent, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] }
 ];
 NzAutocompleteOptionComponent.propDecorators = {
-    nzValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzLabel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    selectionChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    mouseEntered: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
+    nzValue: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzLabel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzDisabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    selectionChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
+    mouseEntered: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__metadata"])("design:type", Object)
 ], NzAutocompleteOptionComponent.prototype, "nzDisabled", void 0);
 
 /**
@@ -493,34 +492,37 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzAutocompleteComponent {
-    constructor(changeDetectorRef, ngZone, noAnimation) {
+    constructor(changeDetectorRef, ngZone, directionality, noAnimation) {
         this.changeDetectorRef = changeDetectorRef;
         this.ngZone = ngZone;
+        this.directionality = directionality;
         this.noAnimation = noAnimation;
         this.nzOverlayClassName = '';
         this.nzOverlayStyle = {};
         this.nzDefaultActiveFirstOption = true;
         this.nzBackfill = false;
         this.compareWith = (o1, o2) => o1 === o2;
-        this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.showPanel = true;
         this.isOpen = false;
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_12__["Subject"]();
         this.activeItemIndex = -1;
-        this.selectionChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_11__["Subscription"].EMPTY;
-        this.optionMouseEnterSubscription = rxjs__WEBPACK_IMPORTED_MODULE_11__["Subscription"].EMPTY;
-        this.dataSourceChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_11__["Subscription"].EMPTY;
+        this.selectionChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_12__["Subscription"].EMPTY;
+        this.optionMouseEnterSubscription = rxjs__WEBPACK_IMPORTED_MODULE_12__["Subscription"].EMPTY;
+        this.dataSourceChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_12__["Subscription"].EMPTY;
         /** Options changes listener */
-        this.optionSelectionChanges = Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["defer"])(() => {
+        this.optionSelectionChanges = Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["defer"])(() => {
             if (this.options) {
-                return Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["merge"])(...this.options.map(option => option.selectionChange));
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["merge"])(...this.options.map(option => option.selectionChange));
             }
-            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["switchMap"])(() => this.optionSelectionChanges));
+            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["switchMap"])(() => this.optionSelectionChanges));
         });
-        this.optionMouseEnter = Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["defer"])(() => {
+        this.optionMouseEnter = Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["defer"])(() => {
             if (this.options) {
-                return Object(rxjs__WEBPACK_IMPORTED_MODULE_11__["merge"])(...this.options.map(option => option.mouseEntered));
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["merge"])(...this.options.map(option => option.mouseEntered));
             }
-            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["switchMap"])(() => this.optionMouseEnter));
+            return this.ngZone.onStable.asObservable().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["take"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["switchMap"])(() => this.optionMouseEnter));
         });
     }
     /**
@@ -534,6 +536,14 @@ class NzAutocompleteComponent {
         else {
             return this.fromContentOptions;
         }
+    }
+    ngOnInit() {
+        var _a;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.changeDetectorRef.detectChanges();
+        });
+        this.dir = this.directionality.value;
     }
     ngAfterContentInit() {
         if (!this.nzDataSource) {
@@ -549,6 +559,8 @@ class NzAutocompleteComponent {
         this.dataSourceChangeSubscription.unsubscribe();
         this.selectionChangeSubscription.unsubscribe();
         this.optionMouseEnterSubscription.unsubscribe();
+        this.destroy$.next();
+        this.destroy$.complete();
     }
     setVisibility() {
         this.showPanel = !!this.options.length;
@@ -608,7 +620,7 @@ class NzAutocompleteComponent {
     subscribeOptionChanges() {
         this.selectionChangeSubscription.unsubscribe();
         this.selectionChangeSubscription = this.optionSelectionChanges
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["filter"])((event) => event.isUserInput))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["filter"])((event) => event.isUserInput))
             .subscribe((event) => {
             event.source.select();
             event.source.setActiveStyles();
@@ -626,65 +638,64 @@ class NzAutocompleteComponent {
         });
     }
 }
-/** @nocollapse */
-NzAutocompleteComponent.ɵfac = function NzAutocompleteComponent_Factory(t) { return new (t || NzAutocompleteComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationDirective"], 9)); };
-/** @nocollapse */
-NzAutocompleteComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzAutocompleteComponent, selectors: [["nz-autocomplete"]], contentQueries: function NzAutocompleteComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵcontentQuery"](dirIndex, NzAutocompleteOptionComponent, true);
+NzAutocompleteComponent.ɵfac = function NzAutocompleteComponent_Factory(t) { return new (t || NzAutocompleteComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationDirective"], 9)); };
+NzAutocompleteComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzAutocompleteComponent, selectors: [["nz-autocomplete"]], contentQueries: function NzAutocompleteComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, NzAutocompleteOptionComponent, true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.fromContentOptions = _t);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.fromContentOptions = _t);
     } }, viewQuery: function NzAutocompleteComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c3, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](_c4, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵviewQuery"](NzAutocompleteOptionComponent, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["TemplateRef"], true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c3, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c4, true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](NzAutocompleteOptionComponent, true);
     } if (rf & 2) {
-        var _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.template = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.panel = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.content = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵloadQuery"]()) && (ctx.fromDataSourceOptions = _t);
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.template = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.panel = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.content = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.fromDataSourceOptions = _t);
     } }, inputs: { nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzDefaultActiveFirstOption: "nzDefaultActiveFirstOption", nzBackfill: "nzBackfill", compareWith: "compareWith", nzWidth: "nzWidth", nzDataSource: "nzDataSource" }, outputs: { selectionChange: "selectionChange" }, exportAs: ["nzAutocomplete"], ngContentSelectors: _c2, decls: 1, vars: 0, consts: [[1, "ant-select-dropdown", "ant-select-dropdown-placement-bottomLeft", 3, "ngClass", "ngStyle", "nzNoAnimation"], ["panel", ""], [2, "max-height", "256px", "overflow-y", "auto", "overflow-anchor", "none"], [2, "display", "flex", "flex-direction", "column"], [4, "ngTemplateOutlet"], ["contentTemplate", ""], ["optionsTemplate", ""], [3, "nzValue", "nzLabel", 4, "ngFor", "ngForOf"], [3, "nzValue", "nzLabel"]], template: function NzAutocompleteComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_Template, 9, 8, "ng-template");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], NzAutocompleteOptionComponent], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_13__["slideMotion"]] }, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzAutocompleteComponent_ng_template_0_Template, 9, 10, "ng-template");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"], NzAutocompleteOptionComponent], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_14__["slideMotion"]] }, changeDetection: 0 });
 NzAutocompleteComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"] },
-    { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgZone"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] },
+    { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] }
 ];
 NzAutocompleteComponent.propDecorators = {
-    nzWidth: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzOverlayClassName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzOverlayStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDefaultActiveFirstOption: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzBackfill: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    compareWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    nzDataSource: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
-    selectionChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
-    fromContentOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"], args: [NzAutocompleteOptionComponent, { descendants: true },] }],
-    fromDataSourceOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChildren"], args: [NzAutocompleteOptionComponent,] }],
-    template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false },] }],
-    panel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['panel', { static: false },] }],
-    content: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"], args: ['content', { static: false },] }]
+    nzWidth: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzOverlayClassName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzOverlayStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzDefaultActiveFirstOption: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzBackfill: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    compareWith: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzDataSource: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    selectionChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
+    fromContentOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"], args: [NzAutocompleteOptionComponent, { descendants: true },] }],
+    fromDataSourceOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"], args: [NzAutocompleteOptionComponent,] }],
+    template: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["TemplateRef"], { static: false },] }],
+    panel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['panel', { static: false },] }],
+    content: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['content', { static: false },] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__metadata"])("design:type", Object)
 ], NzAutocompleteComponent.prototype, "nzDefaultActiveFirstOption", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_8__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_9__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__metadata"])("design:type", Object)
 ], NzAutocompleteComponent.prototype, "nzBackfill", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzAutocompleteOptgroupComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteOptgroupComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
                 selector: 'nz-auto-optgroup',
                 exportAs: 'nzAutoOptgroup',
                 preserveWhitespaces: false,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 template: `
     <div class="ant-select-item ant-select-item-group">
       <ng-container *nzStringTemplateOutlet="nzLabel">{{ nzLabel }}</ng-container>
@@ -693,16 +704,16 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
   `
             }]
     }], function () { return []; }, { nzLabel: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzAutocompleteOptionComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteOptionComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
                 selector: 'nz-auto-option',
                 exportAs: 'nzAutoOption',
                 preserveWhitespaces: false,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 template: `
     <div class="ant-select-item-option-content">
       <ng-content></ng-content>
@@ -722,33 +733,34 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
                     '(mousedown)': '$event.preventDefault()'
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: NzAutocompleteOptgroupComponent, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: NzAutocompleteOptgroupComponent, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }] }]; }, { nzDisabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], selectionChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], mouseEntered: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzValue: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzLabel: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzAutocompleteComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
                 selector: 'nz-autocomplete',
                 exportAs: 'nzAutocomplete',
                 preserveWhitespaces: false,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
                 template: `
     <ng-template>
       <div
         #panel
         class="ant-select-dropdown ant-select-dropdown-placement-bottomLeft"
         [class.ant-select-dropdown-hidden]="!showPanel"
+        [class.ant-select-dropdown-rtl]="dir === 'rtl'"
         [ngClass]="nzOverlayClassName"
         [ngStyle]="nzOverlayStyle"
         [nzNoAnimation]="noAnimation?.nzNoAnimation"
@@ -775,42 +787,44 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
       </ng-template>
     </ng-template>
   `,
-                animations: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_13__["slideMotion"]]
+                animations: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_14__["slideMotion"]]
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgZone"] }, { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationDirective"], decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Host"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgZone"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
+            }] }, { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationDirective"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Host"]
             }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }] }]; }, { nzOverlayClassName: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzOverlayStyle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzDefaultActiveFirstOption: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzBackfill: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], compareWith: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], selectionChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
         }], nzWidth: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzDataSource: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], fromContentOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ContentChildren"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChildren"],
             args: [NzAutocompleteOptionComponent, { descendants: true }]
         }], fromDataSourceOptions: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChildren"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"],
             args: [NzAutocompleteOptionComponent]
         }], template: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
-            args: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["TemplateRef"], { static: false }]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            args: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["TemplateRef"], { static: false }]
         }], panel: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
             args: ['panel', { static: false }]
         }], content: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewChild"],
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
             args: ['content', { static: false }]
         }] }); })();
 
@@ -819,8 +833,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_7__["__decorate"])([
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 const NZ_AUTOCOMPLETE_VALUE_ACCESSOR = {
-    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["NG_VALUE_ACCESSOR"],
-    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["forwardRef"])(() => NzAutocompleteTriggerDirective),
+    provide: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NG_VALUE_ACCESSOR"],
+    useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(() => NzAutocompleteTriggerDirective),
     multi: true
 };
 function getNzAutocompleteMissingPanelError() {
@@ -838,7 +852,7 @@ class NzAutocompleteTriggerDirective {
         this.onChange = () => { };
         this.onTouched = () => { };
         this.panelOpen = false;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_11__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_12__["Subject"]();
         this.overlayRef = null;
         this.portal = null;
         this.previousValue = null;
@@ -886,18 +900,18 @@ class NzAutocompleteTriggerDirective {
     }
     handleKeydown(event) {
         const keyCode = event.keyCode;
-        const isArrowKey = keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["UP_ARROW"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["DOWN_ARROW"];
-        if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["ESCAPE"]) {
+        const isArrowKey = keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["UP_ARROW"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["DOWN_ARROW"];
+        if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["ESCAPE"]) {
             event.preventDefault();
         }
-        if (this.panelOpen && (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["ESCAPE"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["TAB"])) {
+        if (this.panelOpen && (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["ESCAPE"] || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["TAB"])) {
             // Reset value when tab / ESC close
             if (this.activeOption && this.activeOption.getLabel() !== this.previousValue) {
                 this.setTriggerValue(this.previousValue);
             }
             this.closePanel();
         }
-        else if (this.panelOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["ENTER"]) {
+        else if (this.panelOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["ENTER"]) {
             if (this.nzAutocomplete.showPanel && this.activeOption) {
                 event.preventDefault();
                 this.activeOption.selectViaInteraction();
@@ -906,7 +920,7 @@ class NzAutocompleteTriggerDirective {
         else if (this.panelOpen && isArrowKey && this.nzAutocomplete.showPanel) {
             event.stopPropagation();
             event.preventDefault();
-            if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_9__["UP_ARROW"]) {
+            if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["UP_ARROW"]) {
                 this.nzAutocomplete.setPreviousItemActive();
             }
             else {
@@ -945,7 +959,7 @@ class NzAutocompleteTriggerDirective {
      * Subscription data source changes event
      */
     subscribeOptionsChange() {
-        const optionChanges = this.nzAutocomplete.options.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["tap"])(() => this.positionStrategy.reapplyLastPosition()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["delay"])(0));
+        const optionChanges = this.nzAutocomplete.options.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["tap"])(() => this.positionStrategy.reapplyLastPosition()), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["delay"])(0));
         return optionChanges.subscribe(() => {
             this.resetActiveItem();
             if (this.panelOpen) {
@@ -963,7 +977,7 @@ class NzAutocompleteTriggerDirective {
     }
     subscribeOverlayOutsideClick() {
         return this.overlayRef.outsidePointerEvents()
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["filter"])((e) => !this.elementRef.nativeElement.contains(e.target)))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["filter"])((e) => !this.elementRef.nativeElement.contains(e.target)))
             .subscribe(() => {
             this.closePanel();
         });
@@ -973,7 +987,7 @@ class NzAutocompleteTriggerDirective {
             throw getNzAutocompleteMissingPanelError();
         }
         if (!this.portal && this.nzAutocomplete.template) {
-            this.portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_10__["TemplatePortal"](this.nzAutocomplete.template, this.viewContainerRef);
+            this.portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_11__["TemplatePortal"](this.nzAutocomplete.template, this.viewContainerRef);
         }
         if (!this.overlayRef) {
             this.overlayRef = this.overlay.create(this.getOverlayConfig());
@@ -985,7 +999,7 @@ class NzAutocompleteTriggerDirective {
             this.overlayOutsideClickSubscription = this.subscribeOverlayOutsideClick();
             this.overlayRef
                 .detachments()
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_12__["takeUntil"])(this.destroy$))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["takeUntil"])(this.destroy$))
                 .subscribe(() => {
                 this.closePanel();
             });
@@ -1008,7 +1022,7 @@ class NzAutocompleteTriggerDirective {
         }
     }
     getOverlayConfig() {
-        return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayConfig"]({
+        return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayConfig"]({
             positionStrategy: this.getOverlayPosition(),
             disposeOnNavigation: true,
             scrollStrategy: this.overlay.scrollStrategies.reposition(),
@@ -1024,8 +1038,8 @@ class NzAutocompleteTriggerDirective {
     }
     getOverlayPosition() {
         const positions = [
-            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
-            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["ConnectionPositionPair"]({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' })
+            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["ConnectionPositionPair"]({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
+            new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["ConnectionPositionPair"]({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' })
         ];
         this.positionStrategy = this.overlay
             .position()
@@ -1072,24 +1086,22 @@ class NzAutocompleteTriggerDirective {
         return !element.readOnly && !element.disabled;
     }
 }
-/** @nocollapse */
-NzAutocompleteTriggerDirective.ɵfac = function NzAutocompleteTriggerDirective_Factory(t) { return new (t || NzAutocompleteTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"], 8)); };
-/** @nocollapse */
-NzAutocompleteTriggerDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({ type: NzAutocompleteTriggerDirective, selectors: [["input", "nzAutocomplete", ""], ["textarea", "nzAutocomplete", ""]], hostAttrs: ["autocomplete", "off", "aria-autocomplete", "list"], hostBindings: function NzAutocompleteTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("focusin", function NzAutocompleteTriggerDirective_focusin_HostBindingHandler() { return ctx.handleFocus(); })("blur", function NzAutocompleteTriggerDirective_blur_HostBindingHandler() { return ctx.handleBlur(); })("input", function NzAutocompleteTriggerDirective_input_HostBindingHandler($event) { return ctx.handleInput($event); })("keydown", function NzAutocompleteTriggerDirective_keydown_HostBindingHandler($event) { return ctx.handleKeydown($event); });
-    } }, inputs: { nzAutocomplete: "nzAutocomplete" }, exportAs: ["nzAutocompleteTrigger"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵProvidersFeature"]([NZ_AUTOCOMPLETE_VALUE_ACCESSOR])] });
+NzAutocompleteTriggerDirective.ɵfac = function NzAutocompleteTriggerDirective_Factory(t) { return new (t || NzAutocompleteTriggerDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"], 8)); };
+NzAutocompleteTriggerDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzAutocompleteTriggerDirective, selectors: [["input", "nzAutocomplete", ""], ["textarea", "nzAutocomplete", ""]], hostAttrs: ["autocomplete", "off", "aria-autocomplete", "list"], hostBindings: function NzAutocompleteTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("focusin", function NzAutocompleteTriggerDirective_focusin_HostBindingHandler() { return ctx.handleFocus(); })("blur", function NzAutocompleteTriggerDirective_blur_HostBindingHandler() { return ctx.handleBlur(); })("input", function NzAutocompleteTriggerDirective_input_HostBindingHandler($event) { return ctx.handleInput($event); })("keydown", function NzAutocompleteTriggerDirective_keydown_HostBindingHandler($event) { return ctx.handleKeydown($event); });
+    } }, inputs: { nzAutocomplete: "nzAutocomplete" }, exportAs: ["nzAutocompleteTrigger"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([NZ_AUTOCOMPLETE_VALUE_ACCESSOR])] });
 NzAutocompleteTriggerDirective.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
-    { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] },
-    { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] },
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"],] }] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
+    { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["Overlay"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewContainerRef"] },
+    { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"],] }] }
 ];
 NzAutocompleteTriggerDirective.propDecorators = {
-    nzAutocomplete: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }]
+    nzAutocomplete: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzAutocompleteTriggerDirective, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Directive"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteTriggerDirective, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Directive"],
         args: [{
                 selector: `input[nzAutocomplete], textarea[nzAutocomplete]`,
                 exportAs: 'nzAutocompleteTrigger',
@@ -1103,15 +1115,15 @@ NzAutocompleteTriggerDirective.propDecorators = {
                     '(keydown)': 'handleKeydown($event)'
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewContainerRef"] }, { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["Overlay"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewContainerRef"] }, { type: ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputGroupWhitSuffixOrPrefixDirective"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }] }, { type: undefined, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }, {
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Inject"],
-                args: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"]]
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"],
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"]]
             }] }]; }, { nzAutocomplete: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
 
 /**
@@ -1120,17 +1132,15 @@ NzAutocompleteTriggerDirective.propDecorators = {
  */
 class NzAutocompleteModule {
 }
-/** @nocollapse */
-NzAutocompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzAutocompleteModule });
-/** @nocollapse */
-NzAutocompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzAutocompleteModule_Factory(t) { return new (t || NzAutocompleteModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzAutocompleteModule, { declarations: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputModule"]]; }, exports: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzAutocompleteModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
+NzAutocompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzAutocompleteModule });
+NzAutocompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzAutocompleteModule_Factory(t) { return new (t || NzAutocompleteModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzAutocompleteModule, { declarations: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]; }, exports: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
         args: [{
                 declarations: [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent],
                 exports: [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_0__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_4__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_6__["NzInputModule"]]
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]
             }]
     }], null, null); })();
 
@@ -1209,11 +1219,11 @@ class NzDemoAutoCompleteEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteEnComponent.ɵfac = function NzDemoAutoCompleteEnComponent_Factory(t) { return new (t || NzDemoAutoCompleteEnComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteEnComponent, selectors: [["nz-demo-auto-complete"]], viewQuery: function NzDemoAutoCompleteEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteEnComponent.ɵfac = function NzDemoAutoCompleteEnComponent_Factory(t) { return new (t || NzDemoAutoCompleteEnComponent)(); };
+NzDemoAutoCompleteEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteEnComponent, selectors: [["nz-demo-auto-complete"]], viewQuery: function NzDemoAutoCompleteEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 541, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-auto-complete-demo-basic", "nzTitle", "Basic Usage"], ["nzHref", "#components-auto-complete-demo-object-value", "nzTitle", "Use option with object type"], ["nzHref", "#components-auto-complete-demo-options", "nzTitle", "Customized"], ["nzHref", "#components-auto-complete-demo-custom", "nzTitle", "Customize Input Component"], ["nzHref", "#components-auto-complete-demo-non-case-sensitive", "nzTitle", "Non-case-sensitive AutoComplete"], ["nzHref", "#components-auto-complete-demo-certain-category", "nzTitle", "Lookup-Patterns - Certain Category"], ["nzHref", "#components-auto-complete-demo-uncertain-category", "nzTitle", "Lookup-Patterns - Uncertain Category"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/auto-complete/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic Usage", "nzSelector", "nz-demo-auto-complete-basic", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-basic <name>", "nzComponentName", "NzDemoAutoCompleteBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Customized", "nzSelector", "nz-demo-auto-complete-options", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-options <name>", "nzComponentName", "NzDemoAutoCompleteOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Non-case-sensitive AutoComplete", "nzSelector", "nz-demo-auto-complete-non-case-sensitive", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-non-case-sensitive <name>", "nzComponentName", "NzDemoAutoCompleteNonCaseSensitiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Lookup-Patterns - Uncertain Category", "nzSelector", "nz-demo-auto-complete-uncertain-category", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-uncertain-category <name>", "nzComponentName", "NzDemoAutoCompleteUncertainCategoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://ant.design/docs/spec/reaction#Lookup-Patterns", "target", "_blank", "rel", "noopener"], ["nzTitle", "Use option with object type", "nzSelector", "nz-demo-auto-complete-object-value", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-object-value <name>", "nzComponentName", "NzDemoAutoCompleteObjectValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://angular.io/api/forms/SelectControlValueAccessor#caveat-option-selection", "target", "_blank", "rel", "noopener"], ["nzTitle", "Customize Input Component", "nzSelector", "nz-demo-auto-complete-custom", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-custom <name>", "nzComponentName", "NzDemoAutoCompleteCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Lookup-Patterns - Certain Category", "nzSelector", "nz-demo-auto-complete-certain-category", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-certain-category <name>", "nzComponentName", "NzDemoAutoCompleteCertainCategoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "[nzautocomplete]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nzautocomplete]'", 1, "anchor"], ["id", "nz-autocomplete"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-autocomplete'", 1, "anchor"], ["id", "nz-auto-option"], ["onclick", "window.location.hash = 'nz-auto-option'", 1, "anchor"]], template: function NzDemoAutoCompleteEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -2136,8 +2146,8 @@ class NzDemoAutoCompleteNonCaseSensitiveComponent {
         this.filteredOptions = this.options.filter(option => option.toLowerCase().indexOf(value.toLowerCase()) !== -1);
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteNonCaseSensitiveComponent.ɵfac = function NzDemoAutoCompleteNonCaseSensitiveComponent_Factory(t) { return new (t || NzDemoAutoCompleteNonCaseSensitiveComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteNonCaseSensitiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteNonCaseSensitiveComponent, selectors: [["nz-demo-auto-complete-non-case-sensitive"]], decls: 4, vars: 3, consts: [[1, "example-input"], ["placeholder", "try to type `b`", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], [3, "nzDataSource"], ["auto", ""]], template: function NzDemoAutoCompleteNonCaseSensitiveComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteNonCaseSensitiveComponent.ɵfac = function NzDemoAutoCompleteNonCaseSensitiveComponent_Factory(t) { return new (t || NzDemoAutoCompleteNonCaseSensitiveComponent)(); };
+NzDemoAutoCompleteNonCaseSensitiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteNonCaseSensitiveComponent, selectors: [["nz-demo-auto-complete-non-case-sensitive"]], decls: 4, vars: 3, consts: [[1, "example-input"], ["placeholder", "try to type `b`", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], [3, "nzDataSource"], ["auto", ""]], template: function NzDemoAutoCompleteNonCaseSensitiveComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoAutoCompleteNonCaseSensitiveComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("ngModelChange", function NzDemoAutoCompleteNonCaseSensitiveComponent_Template_input_ngModelChange_1_listener($event) { return ctx.onChange($event); });
@@ -2239,8 +2249,8 @@ class NzDemoAutoCompleteObjectValueComponent {
         };
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteObjectValueComponent.ɵfac = function NzDemoAutoCompleteObjectValueComponent_Factory(t) { return new (t || NzDemoAutoCompleteObjectValueComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteObjectValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteObjectValueComponent, selectors: [["nz-demo-auto-complete-object-value"]], decls: 5, vars: 4, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], [3, "compareWith"], ["auto", ""], [3, "nzValue", "nzLabel", 4, "ngFor", "ngForOf"], [3, "nzValue", "nzLabel"]], template: function NzDemoAutoCompleteObjectValueComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteObjectValueComponent.ɵfac = function NzDemoAutoCompleteObjectValueComponent_Factory(t) { return new (t || NzDemoAutoCompleteObjectValueComponent)(); };
+NzDemoAutoCompleteObjectValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteObjectValueComponent, selectors: [["nz-demo-auto-complete-object-value"]], decls: 5, vars: 4, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange"], [3, "compareWith"], ["auto", ""], [3, "nzValue", "nzLabel", 4, "ngFor", "ngForOf"], [3, "nzValue", "nzLabel"]], template: function NzDemoAutoCompleteObjectValueComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoAutoCompleteObjectValueComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; });
@@ -2354,8 +2364,8 @@ class NzDemoAutoCompleteUncertainCategoryComponent {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteUncertainCategoryComponent.ɵfac = function NzDemoAutoCompleteUncertainCategoryComponent_Factory(t) { return new (t || NzDemoAutoCompleteUncertainCategoryComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteUncertainCategoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteUncertainCategoryComponent, selectors: [["nz-demo-auto-complete-uncertain-category"]], decls: 8, vars: 4, consts: [[1, "example-input"], ["nzSearch", "", "nzSize", "large", 3, "nzAddOnAfter"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["suffixIconButton", ""], ["auto", ""], ["class", "global-search-item", 3, "nzValue", 4, "ngFor", "ngForOf"], ["nz-button", "", "nzType", "primary", "nzSize", "large", "nzSearch", ""], ["nz-icon", "", "nzType", "search", "nzTheme", "outline"], [1, "global-search-item", 3, "nzValue"], ["target", "_blank", "rel", "noopener noreferrer", 1, "global-search-item-desc", 3, "href"], [1, "global-search-item-count"]], template: function NzDemoAutoCompleteUncertainCategoryComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteUncertainCategoryComponent.ɵfac = function NzDemoAutoCompleteUncertainCategoryComponent_Factory(t) { return new (t || NzDemoAutoCompleteUncertainCategoryComponent)(); };
+NzDemoAutoCompleteUncertainCategoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteUncertainCategoryComponent, selectors: [["nz-demo-auto-complete-uncertain-category"]], decls: 8, vars: 4, consts: [[1, "example-input"], ["nzSearch", "", "nzSize", "large", 3, "nzAddOnAfter"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["suffixIconButton", ""], ["auto", ""], ["class", "global-search-item", 3, "nzValue", 4, "ngFor", "ngForOf"], ["nz-button", "", "nzType", "primary", "nzSize", "large", "nzSearch", ""], ["nz-icon", "", "nzType", "search", "nzTheme", "outline"], [1, "global-search-item", 3, "nzValue"], ["target", "_blank", "rel", "noopener noreferrer", 1, "global-search-item-desc", 3, "href"], [1, "global-search-item-count"]], template: function NzDemoAutoCompleteUncertainCategoryComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-input-group", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2);
@@ -2479,8 +2489,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAutoCompleteModule {
 }
-/** @nocollapse */ NzDemoAutoCompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAutoCompleteModule });
-/** @nocollapse */ NzDemoAutoCompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAutoCompleteModule_Factory(t) { return new (t || NzDemoAutoCompleteModule)(); }, imports: [[
+NzDemoAutoCompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAutoCompleteModule });
+NzDemoAutoCompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAutoCompleteModule_Factory(t) { return new (t || NzDemoAutoCompleteModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -2571,8 +2581,8 @@ class NzDemoAutoCompleteOptionsComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteOptionsComponent.ɵfac = function NzDemoAutoCompleteOptionsComponent_Factory(t) { return new (t || NzDemoAutoCompleteOptionsComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteOptionsComponent, selectors: [["nz-demo-auto-complete-options"]], decls: 5, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["auto", ""], [3, "nzValue", 4, "ngFor", "ngForOf"], [3, "nzValue"]], template: function NzDemoAutoCompleteOptionsComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteOptionsComponent.ɵfac = function NzDemoAutoCompleteOptionsComponent_Factory(t) { return new (t || NzDemoAutoCompleteOptionsComponent)(); };
+NzDemoAutoCompleteOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteOptionsComponent, selectors: [["nz-demo-auto-complete-options"]], decls: 5, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["auto", ""], [3, "nzValue", 4, "ngFor", "ngForOf"], [3, "nzValue"]], template: function NzDemoAutoCompleteOptionsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "input", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoAutoCompleteOptionsComponent_Template_input_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("input", function NzDemoAutoCompleteOptionsComponent_Template_input_input_1_listener($event) { return ctx.onInput($event); });
@@ -2647,8 +2657,8 @@ class NzDemoAutoCompleteCustomComponent {
         this.options = value ? [value, value + value, value + value + value] : [];
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteCustomComponent.ɵfac = function NzDemoAutoCompleteCustomComponent_Factory(t) { return new (t || NzDemoAutoCompleteCustomComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteCustomComponent, selectors: [["nz-demo-auto-complete-custom"]], decls: 5, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", "row", "4", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["auto", ""], [3, "nzValue", 4, "ngFor", "ngForOf"], [3, "nzValue"]], template: function NzDemoAutoCompleteCustomComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteCustomComponent.ɵfac = function NzDemoAutoCompleteCustomComponent_Factory(t) { return new (t || NzDemoAutoCompleteCustomComponent)(); };
+NzDemoAutoCompleteCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteCustomComponent, selectors: [["nz-demo-auto-complete-custom"]], decls: 5, vars: 3, consts: [[1, "example-input"], ["placeholder", "input here", "nz-input", "", "row", "4", 3, "ngModel", "nzAutocomplete", "ngModelChange", "input"], ["auto", ""], [3, "nzValue", 4, "ngFor", "ngForOf"], [3, "nzValue"]], template: function NzDemoAutoCompleteCustomComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "textarea", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoAutoCompleteCustomComponent_Template_textarea_ngModelChange_1_listener($event) { return ctx.inputValue = $event; })("input", function NzDemoAutoCompleteCustomComponent_Template_textarea_input_1_listener($event) { return ctx.onInput($event); });
@@ -2750,11 +2760,11 @@ class NzDemoAutoCompleteZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAutoCompleteZhComponent.ɵfac = function NzDemoAutoCompleteZhComponent_Factory(t) { return new (t || NzDemoAutoCompleteZhComponent)(); };
-/** @nocollapse */ NzDemoAutoCompleteZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteZhComponent, selectors: [["nz-demo-auto-complete"]], viewQuery: function NzDemoAutoCompleteZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAutoCompleteZhComponent.ɵfac = function NzDemoAutoCompleteZhComponent_Factory(t) { return new (t || NzDemoAutoCompleteZhComponent)(); };
+NzDemoAutoCompleteZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAutoCompleteZhComponent, selectors: [["nz-demo-auto-complete"]], viewQuery: function NzDemoAutoCompleteZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 538, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-auto-complete-demo-basic", "nzTitle", "\u57FA\u672C\u4F7F\u7528"], ["nzHref", "#components-auto-complete-demo-object-value", "nzTitle", "\u4F7F\u7528\u5BF9\u8C61\u7C7B\u578B\u9009\u9879"], ["nzHref", "#components-auto-complete-demo-options", "nzTitle", "\u81EA\u5B9A\u4E49\u9009\u9879"], ["nzHref", "#components-auto-complete-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u8F93\u5165\u7EC4\u4EF6"], ["nzHref", "#components-auto-complete-demo-non-case-sensitive", "nzTitle", "\u4E0D\u533A\u5206\u5927\u5C0F\u5199"], ["nzHref", "#components-auto-complete-demo-certain-category", "nzTitle", "\u67E5\u8BE2\u6A21\u5F0F - \u786E\u5B9A\u7C7B\u76EE"], ["nzHref", "#components-auto-complete-demo-uncertain-category", "nzTitle", "\u67E5\u8BE2\u6A21\u5F0F - \u4E0D\u786E\u5B9A\u7C7B\u76EE"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/auto-complete/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u4F7F\u7528", "nzSelector", "nz-demo-auto-complete-basic", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-basic <name>", "nzComponentName", "NzDemoAutoCompleteBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u81EA\u5B9A\u4E49\u9009\u9879", "nzSelector", "nz-demo-auto-complete-options", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-options <name>", "nzComponentName", "NzDemoAutoCompleteOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E0D\u533A\u5206\u5927\u5C0F\u5199", "nzSelector", "nz-demo-auto-complete-non-case-sensitive", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-non-case-sensitive <name>", "nzComponentName", "NzDemoAutoCompleteNonCaseSensitiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u67E5\u8BE2\u6A21\u5F0F - \u4E0D\u786E\u5B9A\u7C7B\u76EE", "nzSelector", "nz-demo-auto-complete-uncertain-category", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-uncertain-category <name>", "nzComponentName", "NzDemoAutoCompleteUncertainCategoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://ant.design/docs/spec/reaction#Lookup-Patterns", "target", "_blank", "rel", "noopener"], ["nzTitle", "\u4F7F\u7528\u5BF9\u8C61\u7C7B\u578B\u9009\u9879", "nzSelector", "nz-demo-auto-complete-object-value", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-object-value <name>", "nzComponentName", "NzDemoAutoCompleteObjectValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://angular.io/api/forms/SelectControlValueAccessor#caveat-option-selection", "target", "_blank", "rel", "noopener"], ["nzTitle", "\u81EA\u5B9A\u4E49\u8F93\u5165\u7EC4\u4EF6", "nzSelector", "nz-demo-auto-complete-custom", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-custom <name>", "nzComponentName", "NzDemoAutoCompleteCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u67E5\u8BE2\u6A21\u5F0F - \u786E\u5B9A\u7C7B\u76EE", "nzSelector", "nz-demo-auto-complete-certain-category", "nzGenerateCommand", "ng g ng-zorro-antd:auto-complete-certain-category <name>", "nzComponentName", "NzDemoAutoCompleteCertainCategoryComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "[nzautocomplete]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nzautocomplete]'", 1, "anchor"], ["id", "nz-autocomplete"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-autocomplete'", 1, "anchor"], ["id", "nz-auto-option"], ["onclick", "window.location.hash = 'nz-auto-option'", 1, "anchor"]], template: function NzDemoAutoCompleteZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");

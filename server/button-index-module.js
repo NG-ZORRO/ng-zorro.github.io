@@ -22,8 +22,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonBasicComponent {
 }
-/** @nocollapse */ NzDemoButtonBasicComponent.ɵfac = function NzDemoButtonBasicComponent_Factory(t) { return new (t || NzDemoButtonBasicComponent)(); };
-/** @nocollapse */ NzDemoButtonBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonBasicComponent, selectors: [["nz-demo-button-basic"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed"], ["nz-button", "", "nzType", "text"], ["nz-button", "", "nzType", "link"]], template: function NzDemoButtonBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonBasicComponent.ɵfac = function NzDemoButtonBasicComponent_Factory(t) { return new (t || NzDemoButtonBasicComponent)(); };
+NzDemoButtonBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonBasicComponent, selectors: [["nz-demo-button-basic"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed"], ["nz-button", "", "nzType", "text"], ["nz-button", "", "nzType", "link"]], template: function NzDemoButtonBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Primary Button");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -95,8 +95,8 @@ class NzDemoButtonSizeComponent {
         this.size = 'large';
     }
 }
-/** @nocollapse */ NzDemoButtonSizeComponent.ɵfac = function NzDemoButtonSizeComponent_Factory(t) { return new (t || NzDemoButtonSizeComponent)(); };
-/** @nocollapse */ NzDemoButtonSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonSizeComponent, selectors: [["nz-demo-button-size"]], decls: 38, vars: 11, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "large"], ["nz-radio-button", "", "nzValue", "default"], ["nz-radio-button", "", "nzValue", "small"], ["nz-button", "", "nzType", "primary", 3, "nzSize"], ["nz-button", "", "nzType", "default", 3, "nzSize"], ["nz-button", "", "nzType", "dashed", 3, "nzSize"], ["nz-button", "", "nzType", "link", 3, "nzSize"], ["nz-icon", "", "nzType", "download"], ["nz-button", "", "nzType", "primary", "nzShape", "circle", 3, "nzSize"], ["nz-button", "", "nzType", "primary", "nzShape", "round", 3, "nzSize"], [3, "nzSize"], ["nz-button", "", "nzType", "primary"], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"]], template: function NzDemoButtonSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonSizeComponent.ɵfac = function NzDemoButtonSizeComponent_Factory(t) { return new (t || NzDemoButtonSizeComponent)(); };
+NzDemoButtonSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonSizeComponent, selectors: [["nz-demo-button-size"]], decls: 38, vars: 11, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "large"], ["nz-radio-button", "", "nzValue", "default"], ["nz-radio-button", "", "nzValue", "small"], ["nz-button", "", "nzType", "primary", 3, "nzSize"], ["nz-button", "", "nzType", "default", 3, "nzSize"], ["nz-button", "", "nzType", "dashed", 3, "nzSize"], ["nz-button", "", "nzType", "link", 3, "nzSize"], ["nz-icon", "", "nzType", "download"], ["nz-button", "", "nzType", "primary", "nzShape", "circle", 3, "nzSize"], ["nz-button", "", "nzType", "primary", "nzShape", "round", 3, "nzSize"], [3, "nzSize"], ["nz-button", "", "nzType", "primary"], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"]], template: function NzDemoButtonSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-radio-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoButtonSizeComponent_Template_nz_radio_group_ngModelChange_0_listener($event) { return ctx.size = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
@@ -242,8 +242,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonGhostComponent {
 }
-/** @nocollapse */ NzDemoButtonGhostComponent.ɵfac = function NzDemoButtonGhostComponent_Factory(t) { return new (t || NzDemoButtonGhostComponent)(); };
-/** @nocollapse */ NzDemoButtonGhostComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonGhostComponent, selectors: [["nz-demo-button-ghost"]], decls: 9, vars: 0, consts: [[2, "background", "rgb(190, 200, 200)", "padding", "26px 16px 16px"], ["nz-button", "", "nzType", "primary", "nzGhost", ""], ["nz-button", "", "nzType", "default", "nzGhost", ""], ["nz-button", "", "nzType", "dashed", "nzGhost", ""], ["nz-button", "", "nzType", "link", "nzGhost", ""]], template: function NzDemoButtonGhostComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonGhostComponent.ɵfac = function NzDemoButtonGhostComponent_Factory(t) { return new (t || NzDemoButtonGhostComponent)(); };
+NzDemoButtonGhostComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonGhostComponent, selectors: [["nz-demo-button-ghost"]], decls: 9, vars: 0, consts: [[2, "background", "rgb(190, 200, 200)", "padding", "26px 16px 16px"], ["nz-button", "", "nzType", "primary", "nzGhost", ""], ["nz-button", "", "nzType", "default", "nzGhost", ""], ["nz-button", "", "nzType", "dashed", "nzGhost", ""], ["nz-button", "", "nzType", "link", "nzGhost", ""]], template: function NzDemoButtonGhostComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Primary");
@@ -308,8 +308,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonIconComponent {
 }
-/** @nocollapse */ NzDemoButtonIconComponent.ɵfac = function NzDemoButtonIconComponent_Factory(t) { return new (t || NzDemoButtonIconComponent)(); };
-/** @nocollapse */ NzDemoButtonIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonIconComponent, selectors: [["nz-demo-button-icon"]], decls: 23, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzShape", "circle"], ["nz-icon", "", "nzType", "search"], ["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default", "nzShape", "circle"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed", "nzShape", "circle"], ["nz-button", "", "nzType", "dashed"]], template: function NzDemoButtonIconComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonIconComponent.ɵfac = function NzDemoButtonIconComponent_Factory(t) { return new (t || NzDemoButtonIconComponent)(); };
+NzDemoButtonIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonIconComponent, selectors: [["nz-demo-button-icon"]], decls: 23, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzShape", "circle"], ["nz-icon", "", "nzType", "search"], ["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default", "nzShape", "circle"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed", "nzShape", "circle"], ["nz-button", "", "nzType", "dashed"]], template: function NzDemoButtonIconComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -396,8 +396,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonButtonGroupComponent {
 }
-/** @nocollapse */ NzDemoButtonButtonGroupComponent.ɵfac = function NzDemoButtonButtonGroupComponent_Factory(t) { return new (t || NzDemoButtonButtonGroupComponent)(); };
-/** @nocollapse */ NzDemoButtonButtonGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonButtonGroupComponent, selectors: [["nz-demo-button-button-group"]], decls: 37, vars: 0, consts: [["nz-button", ""], ["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default", "disabled", ""], ["nz-button", "", "nzType", "primary", "disabled", ""], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed", "disabled", ""], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"], ["nz-icon", "", "nzType", "cloud"], ["nz-icon", "", "nzType", "cloud-download"]], template: function NzDemoButtonButtonGroupComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonButtonGroupComponent.ɵfac = function NzDemoButtonButtonGroupComponent_Factory(t) { return new (t || NzDemoButtonButtonGroupComponent)(); };
+NzDemoButtonButtonGroupComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonButtonGroupComponent, selectors: [["nz-demo-button-button-group"]], decls: 37, vars: 0, consts: [["nz-button", ""], ["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default", "disabled", ""], ["nz-button", "", "nzType", "primary", "disabled", ""], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "dashed", "disabled", ""], ["nz-icon", "", "nzType", "left"], ["nz-icon", "", "nzType", "right"], ["nz-icon", "", "nzType", "cloud"], ["nz-icon", "", "nzType", "cloud-download"]], template: function NzDemoButtonButtonGroupComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h4");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Basic");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -570,8 +570,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonModule {
 }
-/** @nocollapse */ NzDemoButtonModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoButtonModule });
-/** @nocollapse */ NzDemoButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoButtonModule_Factory(t) { return new (t || NzDemoButtonModule)(); }, imports: [[
+NzDemoButtonModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoButtonModule });
+NzDemoButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoButtonModule_Factory(t) { return new (t || NzDemoButtonModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -712,11 +712,11 @@ class NzDemoButtonZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoButtonZhComponent.ɵfac = function NzDemoButtonZhComponent_Factory(t) { return new (t || NzDemoButtonZhComponent)(); };
-/** @nocollapse */ NzDemoButtonZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonZhComponent, selectors: [["nz-demo-button"]], viewQuery: function NzDemoButtonZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoButtonZhComponent.ɵfac = function NzDemoButtonZhComponent_Factory(t) { return new (t || NzDemoButtonZhComponent)(); };
+NzDemoButtonZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonZhComponent, selectors: [["nz-demo-button"]], viewQuery: function NzDemoButtonZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 401, vars: 47, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-button-demo-basic", "nzTitle", "\u6309\u94AE\u7C7B\u578B"], ["nzHref", "#components-button-demo-icon", "nzTitle", "\u56FE\u6807\u6309\u94AE"], ["nzHref", "#components-button-demo-size", "nzTitle", "\u6309\u94AE\u5C3A\u5BF8"], ["nzHref", "#components-button-demo-disabled", "nzTitle", "\u4E0D\u53EF\u7528\u72B6\u6001"], ["nzHref", "#components-button-demo-loading", "nzTitle", "\u52A0\u8F7D\u4E2D\u72B6\u6001"], ["nzHref", "#components-button-demo-multiple", "nzTitle", "\u591A\u4E2A\u6309\u94AE\u7EC4\u5408"], ["nzHref", "#components-button-demo-button-group", "nzTitle", "\u6309\u94AE\u7EC4\u5408"], ["nzHref", "#components-button-demo-ghost", "nzTitle", "\u5E7D\u7075\u6309\u94AE"], ["nzHref", "#components-button-demo-block", "nzTitle", "Block \u6309\u94AE"], ["nzHref", "#components-button-demo-danger", "nzTitle", "\u5371\u9669\u6309\u94AE"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/button/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u6309\u94AE\u7C7B\u578B", "nzSelector", "nz-demo-button-basic", "nzGenerateCommand", "ng g ng-zorro-antd:button-basic <name>", "nzComponentName", "NzDemoButtonBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6309\u94AE\u5C3A\u5BF8", "nzSelector", "nz-demo-button-size", "nzGenerateCommand", "ng g ng-zorro-antd:button-size <name>", "nzComponentName", "NzDemoButtonSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u4E2D\u72B6\u6001", "nzSelector", "nz-demo-button-loading", "nzGenerateCommand", "ng g ng-zorro-antd:button-loading <name>", "nzComponentName", "NzDemoButtonLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6309\u94AE\u7EC4\u5408", "nzSelector", "nz-demo-button-button-group", "nzGenerateCommand", "ng g ng-zorro-antd:button-button-group <name>", "nzComponentName", "NzDemoButtonButtonGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Block \u6309\u94AE", "nzSelector", "nz-demo-button-block", "nzGenerateCommand", "ng g ng-zorro-antd:button-block <name>", "nzComponentName", "NzDemoButtonBlockComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u6807\u6309\u94AE", "nzSelector", "nz-demo-button-icon", "nzGenerateCommand", "ng g ng-zorro-antd:button-icon <name>", "nzComponentName", "NzDemoButtonIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E0D\u53EF\u7528\u72B6\u6001", "nzSelector", "nz-demo-button-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:button-disabled <name>", "nzComponentName", "NzDemoButtonDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u4E2A\u6309\u94AE\u7EC4\u5408", "nzSelector", "nz-demo-button-multiple", "nzGenerateCommand", "ng g ng-zorro-antd:button-multiple <name>", "nzComponentName", "NzDemoButtonMultipleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E7D\u7075\u6309\u94AE", "nzSelector", "nz-demo-button-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:button-ghost <name>", "nzComponentName", "NzDemoButtonGhostComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5371\u9669\u6309\u94AE", "nzSelector", "nz-demo-button-danger", "nzGenerateCommand", "ng g ng-zorro-antd:button-danger <name>", "nzComponentName", "NzDemoButtonDangerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-button]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-button]'", 1, "anchor"], ["href", "https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/button", "target", "_blank", "rel", "noopener"], ["id", "nz-button-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-button-group'", 1, "anchor"]], template: function NzDemoButtonZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -768,19 +768,19 @@ class NzDemoButtonZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "\u4E3B\u6309\u94AE\uFF1A\u7528\u4E8E\u4E3B\u884C\u52A8\u70B9\uFF0C\u4E00\u4E2A\u64CD\u4F5C\u533A\u57DF\u53EA\u80FD\u6709\u4E00\u4E2A\u4E3B\u6309\u94AE\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " \u4E3B\u6309\u94AE\uFF1A\u7528\u4E8E\u4E3B\u884C\u52A8\u70B9\uFF0C\u4E00\u4E2A\u64CD\u4F5C\u533A\u57DF\u53EA\u80FD\u6709\u4E00\u4E2A\u4E3B\u6309\u94AE\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, "\u9ED8\u8BA4\u6309\u94AE\uFF1A\u7528\u4E8E\u6CA1\u6709\u4E3B\u6B21\u4E4B\u5206\u7684\u4E00\u7EC4\u884C\u52A8\u70B9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, " \u9ED8\u8BA4\u6309\u94AE\uFF1A\u7528\u4E8E\u6CA1\u6709\u4E3B\u6B21\u4E4B\u5206\u7684\u4E00\u7EC4\u884C\u52A8\u70B9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "\u865A\u7EBF\u6309\u94AE\uFF1A\u5E38\u7528\u4E8E\u6DFB\u52A0\u64CD\u4F5C\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, " \u865A\u7EBF\u6309\u94AE\uFF1A\u5E38\u7528\u4E8E\u6DFB\u52A0\u64CD\u4F5C\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "\u6587\u672C\u6309\u94AE\uFF1A\u7528\u4E8E\u6700\u6B21\u7EA7\u7684\u884C\u52A8\u70B9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " \u6587\u672C\u6309\u94AE\uFF1A\u7528\u4E8E\u6700\u6B21\u7EA7\u7684\u884C\u52A8\u70B9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "\u94FE\u63A5\u6309\u94AE\uFF1A\u7528\u4E8E\u6B21\u8981\u6216\u5916\u94FE\u7684\u884C\u52A8\u70B9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, " \u94FE\u63A5\u6309\u94AE\uFF1A\u7528\u4E8E\u6B21\u8981\u6216\u5916\u94FE\u7684\u884C\u52A8\u70B9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "p");
@@ -788,16 +788,16 @@ class NzDemoButtonZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "\u5371\u9669\uFF1A\u5220\u9664/\u79FB\u52A8/\u4FEE\u6539\u6743\u9650\u7B49\u5371\u9669\u64CD\u4F5C\uFF0C\u4E00\u822C\u9700\u8981\u4E8C\u6B21\u786E\u8BA4\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, " \u5371\u9669\uFF1A\u5220\u9664/\u79FB\u52A8/\u4FEE\u6539\u6743\u9650\u7B49\u5371\u9669\u64CD\u4F5C\uFF0C\u4E00\u822C\u9700\u8981\u4E8C\u6B21\u786E\u8BA4\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "\u5E7D\u7075\uFF1A\u7528\u4E8E\u80CC\u666F\u8272\u6BD4\u8F83\u590D\u6742\u7684\u5730\u65B9\uFF0C\u5E38\u7528\u5728\u9996\u9875/\u4EA7\u54C1\u9875\u7B49\u5C55\u793A\u573A\u666F\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, " \u5E7D\u7075\uFF1A\u7528\u4E8E\u80CC\u666F\u8272\u6BD4\u8F83\u590D\u6742\u7684\u5730\u65B9\uFF0C\u5E38\u7528\u5728\u9996\u9875/\u4EA7\u54C1\u9875\u7B49\u5C55\u793A\u573A\u666F\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "\u7981\u7528\uFF1A\u884C\u52A8\u70B9\u4E0D\u53EF\u7528\u7684\u65F6\u5019\uFF0C\u4E00\u822C\u9700\u8981\u6587\u6848\u89E3\u91CA\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, " \u7981\u7528\uFF1A\u884C\u52A8\u70B9\u4E0D\u53EF\u7528\u7684\u65F6\u5019\uFF0C\u4E00\u822C\u9700\u8981\u6587\u6848\u89E3\u91CA\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "\u52A0\u8F7D\u4E2D\uFF1A\u7528\u4E8E\u5F02\u6B65\u64CD\u4F5C\u7B49\u5F85\u53CD\u9988\u7684\u65F6\u5019\uFF0C\u4E5F\u53EF\u4EE5\u907F\u514D\u591A\u6B21\u63D0\u4EA4\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, " \u52A0\u8F7D\u4E2D\uFF1A\u7528\u4E8E\u5F02\u6B65\u64CD\u4F5C\u7B49\u5F85\u53CD\u9988\u7684\u65F6\u5019\uFF0C\u4E5F\u53EF\u4EE5\u907F\u514D\u591A\u6B21\u63D0\u4EA4\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "pre", 20);
@@ -1432,8 +1432,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonMultipleComponent {
 }
-/** @nocollapse */ NzDemoButtonMultipleComponent.ɵfac = function NzDemoButtonMultipleComponent_Factory(t) { return new (t || NzDemoButtonMultipleComponent)(); };
-/** @nocollapse */ NzDemoButtonMultipleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonMultipleComponent, selectors: [["nz-demo-button-multiple"]], decls: 19, vars: 1, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nz-dropdown", "", 3, "nzDropdownMenu"], ["nz-icon", "", "nzType", "down"], ["menu", "nzDropdownMenu"], ["nz-menu", ""], ["nz-menu-item", ""]], template: function NzDemoButtonMultipleComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonMultipleComponent.ɵfac = function NzDemoButtonMultipleComponent_Factory(t) { return new (t || NzDemoButtonMultipleComponent)(); };
+NzDemoButtonMultipleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonMultipleComponent, selectors: [["nz-demo-button-multiple"]], decls: 19, vars: 1, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nz-dropdown", "", 3, "nzDropdownMenu"], ["nz-icon", "", "nzType", "down"], ["menu", "nzDropdownMenu"], ["nz-menu", ""], ["nz-menu-item", ""]], template: function NzDemoButtonMultipleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "primary");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1525,8 +1525,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonDisabledComponent {
 }
-/** @nocollapse */ NzDemoButtonDisabledComponent.ɵfac = function NzDemoButtonDisabledComponent_Factory(t) { return new (t || NzDemoButtonDisabledComponent)(); };
-/** @nocollapse */ NzDemoButtonDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonDisabledComponent, selectors: [["nz-demo-button-disabled"]], decls: 44, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "primary", "disabled", ""], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "default", "disabled", ""], ["nz-button", "", "nzType", "dashed"], ["nz-button", "", "nzType", "dashed", "disabled", ""], ["nz-button", "", "nzType", "text"], ["nz-button", "", "nzType", "text", "disabled", ""], ["nz-button", "", "nzType", "link"], ["nz-button", "", "nzType", "link", "disabled", ""], ["nz-button", "", "nzType", "text", "nzDanger", ""], ["nz-button", "", "nzType", "text", "disabled", "", "nzDanger", ""], ["nz-button", "", "nzType", "link", "nzDanger", ""], ["nz-button", "", "nzType", "link", "disabled", "", "nzDanger", ""], ["nz-button", "", "nzType", "default", "nzDanger", ""], ["nz-button", "", "nzType", "default", "disabled", "", "nzDanger", ""], [2, "padding", "8px 8px 0px", "background", "rgb(190, 200, 200)"], ["nz-button", "", "nzGhost", ""], ["nz-button", "", "nzGhost", "", "disabled", ""]], template: function NzDemoButtonDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonDisabledComponent.ɵfac = function NzDemoButtonDisabledComponent_Factory(t) { return new (t || NzDemoButtonDisabledComponent)(); };
+NzDemoButtonDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonDisabledComponent, selectors: [["nz-demo-button-disabled"]], decls: 44, vars: 0, consts: [["nz-button", "", "nzType", "primary"], ["nz-button", "", "nzType", "primary", "disabled", ""], ["nz-button", "", "nzType", "default"], ["nz-button", "", "nzType", "default", "disabled", ""], ["nz-button", "", "nzType", "dashed"], ["nz-button", "", "nzType", "dashed", "disabled", ""], ["nz-button", "", "nzType", "text"], ["nz-button", "", "nzType", "text", "disabled", ""], ["nz-button", "", "nzType", "link"], ["nz-button", "", "nzType", "link", "disabled", ""], ["nz-button", "", "nzType", "text", "nzDanger", ""], ["nz-button", "", "nzType", "text", "disabled", "", "nzDanger", ""], ["nz-button", "", "nzType", "link", "nzDanger", ""], ["nz-button", "", "nzType", "link", "disabled", "", "nzDanger", ""], ["nz-button", "", "nzType", "default", "nzDanger", ""], ["nz-button", "", "nzType", "default", "disabled", "", "nzDanger", ""], [2, "padding", "8px 8px 0px", "background", "rgb(190, 200, 200)"], ["nz-button", "", "nzGhost", ""], ["nz-button", "", "nzGhost", "", "disabled", ""]], template: function NzDemoButtonDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Primary");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1677,8 +1677,8 @@ class NzDemoButtonLoadingComponent {
         }, 5000);
     }
 }
-/** @nocollapse */ NzDemoButtonLoadingComponent.ɵfac = function NzDemoButtonLoadingComponent_Factory(t) { return new (t || NzDemoButtonLoadingComponent)(); };
-/** @nocollapse */ NzDemoButtonLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonLoadingComponent, selectors: [["nz-demo-button-loading"]], decls: 14, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nzLoading", ""], ["nz-icon", "", "nzType", "poweroff"], ["nz-button", "", "nzType", "primary", "nzSize", "small", "nzLoading", ""], ["nz-button", "", "nzType", "primary", 3, "nzLoading", "click"], ["nz-button", "", "nzLoading", "", "nzShape", "circle"], ["nz-button", "", "nzLoading", "", "nzType", "primary", "nzShape", "circle"]], template: function NzDemoButtonLoadingComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonLoadingComponent.ɵfac = function NzDemoButtonLoadingComponent_Factory(t) { return new (t || NzDemoButtonLoadingComponent)(); };
+NzDemoButtonLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonLoadingComponent, selectors: [["nz-demo-button-loading"]], decls: 14, vars: 2, consts: [["nz-button", "", "nzType", "primary", "nzLoading", ""], ["nz-icon", "", "nzType", "poweroff"], ["nz-button", "", "nzType", "primary", "nzSize", "small", "nzLoading", ""], ["nz-button", "", "nzType", "primary", 3, "nzLoading", "click"], ["nz-button", "", "nzLoading", "", "nzShape", "circle"], ["nz-button", "", "nzLoading", "", "nzType", "primary", "nzShape", "circle"]], template: function NzDemoButtonLoadingComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Loading");
@@ -1754,8 +1754,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonDangerComponent {
 }
-/** @nocollapse */ NzDemoButtonDangerComponent.ɵfac = function NzDemoButtonDangerComponent_Factory(t) { return new (t || NzDemoButtonDangerComponent)(); };
-/** @nocollapse */ NzDemoButtonDangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonDangerComponent, selectors: [["nz-demo-button-danger"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzDanger", ""], ["nz-button", "", "nzType", "default", "nzDanger", ""], ["nz-button", "", "nzType", "dashed", "nzDanger", ""], ["nz-button", "", "nzType", "text", "nzDanger", ""], ["nz-button", "", "nzType", "link", "nzDanger", ""]], template: function NzDemoButtonDangerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonDangerComponent.ɵfac = function NzDemoButtonDangerComponent_Factory(t) { return new (t || NzDemoButtonDangerComponent)(); };
+NzDemoButtonDangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonDangerComponent, selectors: [["nz-demo-button-danger"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzDanger", ""], ["nz-button", "", "nzType", "default", "nzDanger", ""], ["nz-button", "", "nzType", "dashed", "nzDanger", ""], ["nz-button", "", "nzType", "text", "nzDanger", ""], ["nz-button", "", "nzType", "link", "nzDanger", ""]], template: function NzDemoButtonDangerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Primary");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1863,11 +1863,11 @@ class NzDemoButtonEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoButtonEnComponent.ɵfac = function NzDemoButtonEnComponent_Factory(t) { return new (t || NzDemoButtonEnComponent)(); };
-/** @nocollapse */ NzDemoButtonEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonEnComponent, selectors: [["nz-demo-button"]], viewQuery: function NzDemoButtonEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoButtonEnComponent.ɵfac = function NzDemoButtonEnComponent_Factory(t) { return new (t || NzDemoButtonEnComponent)(); };
+NzDemoButtonEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonEnComponent, selectors: [["nz-demo-button"]], viewQuery: function NzDemoButtonEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 430, vars: 47, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-button-demo-basic", "nzTitle", "Type"], ["nzHref", "#components-button-demo-icon", "nzTitle", "Icon"], ["nzHref", "#components-button-demo-size", "nzTitle", "Size"], ["nzHref", "#components-button-demo-disabled", "nzTitle", "Disabled"], ["nzHref", "#components-button-demo-loading", "nzTitle", "Loading"], ["nzHref", "#components-button-demo-multiple", "nzTitle", "Multiple Buttons"], ["nzHref", "#components-button-demo-button-group", "nzTitle", "Button Group"], ["nzHref", "#components-button-demo-ghost", "nzTitle", "Ghost Button"], ["nzHref", "#components-button-demo-block", "nzTitle", "Block Button"], ["nzHref", "#components-button-demo-danger", "nzTitle", "Danger Buttons"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/button/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Type", "nzSelector", "nz-demo-button-basic", "nzGenerateCommand", "ng g ng-zorro-antd:button-basic <name>", "nzComponentName", "NzDemoButtonBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Size", "nzSelector", "nz-demo-button-size", "nzGenerateCommand", "ng g ng-zorro-antd:button-size <name>", "nzComponentName", "NzDemoButtonSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Loading", "nzSelector", "nz-demo-button-loading", "nzGenerateCommand", "ng g ng-zorro-antd:button-loading <name>", "nzComponentName", "NzDemoButtonLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Button Group", "nzSelector", "nz-demo-button-button-group", "nzGenerateCommand", "ng g ng-zorro-antd:button-button-group <name>", "nzComponentName", "NzDemoButtonButtonGroupComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Block Button", "nzSelector", "nz-demo-button-block", "nzGenerateCommand", "ng g ng-zorro-antd:button-block <name>", "nzComponentName", "NzDemoButtonBlockComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Icon", "nzSelector", "nz-demo-button-icon", "nzGenerateCommand", "ng g ng-zorro-antd:button-icon <name>", "nzComponentName", "NzDemoButtonIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Disabled", "nzSelector", "nz-demo-button-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:button-disabled <name>", "nzComponentName", "NzDemoButtonDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Multiple Buttons", "nzSelector", "nz-demo-button-multiple", "nzGenerateCommand", "ng g ng-zorro-antd:button-multiple <name>", "nzComponentName", "NzDemoButtonMultipleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Ghost Button", "nzSelector", "nz-demo-button-ghost", "nzGenerateCommand", "ng g ng-zorro-antd:button-ghost <name>", "nzComponentName", "NzDemoButtonGhostComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Danger Buttons", "nzSelector", "nz-demo-button-danger", "nzGenerateCommand", "ng g ng-zorro-antd:button-danger <name>", "nzComponentName", "NzDemoButtonDangerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-button]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-button]'", 1, "anchor"], ["href", "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button", "target", "_blank", "rel", "noopener"], ["id", "nz-button-group"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-button-group'", 1, "anchor"]], template: function NzDemoButtonEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1917,19 +1917,19 @@ class NzDemoButtonEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "Primary button: indicate the main action, one primary button at most in one section.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " Primary button: indicate the main action, one primary button at most in one section.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Default button: indicate a series of actions without priority.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " Default button: indicate a series of actions without priority.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Dashed button: used for adding action commonly.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " Dashed button: used for adding action commonly.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "Text button: used for the most secondary action.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " Text button: used for the most secondary action.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Link button: used for external links.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, " Link button: used for external links.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "p");
@@ -2616,8 +2616,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonBlockComponent {
 }
-/** @nocollapse */ NzDemoButtonBlockComponent.ɵfac = function NzDemoButtonBlockComponent_Factory(t) { return new (t || NzDemoButtonBlockComponent)(); };
-/** @nocollapse */ NzDemoButtonBlockComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonBlockComponent, selectors: [["nz-demo-button-block"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzBlock", ""], ["nz-button", "", "nzType", "default", "nzBlock", ""], ["nz-button", "", "nzType", "dashed", "nzBlock", ""], ["nz-button", "", "nzType", "text", "nzBlock", ""], ["nz-button", "", "nzType", "link", "nzBlock", ""]], template: function NzDemoButtonBlockComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoButtonBlockComponent.ɵfac = function NzDemoButtonBlockComponent_Factory(t) { return new (t || NzDemoButtonBlockComponent)(); };
+NzDemoButtonBlockComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoButtonBlockComponent, selectors: [["nz-demo-button-block"]], decls: 10, vars: 0, consts: [["nz-button", "", "nzType", "primary", "nzBlock", ""], ["nz-button", "", "nzType", "default", "nzBlock", ""], ["nz-button", "", "nzType", "dashed", "nzBlock", ""], ["nz-button", "", "nzType", "text", "nzBlock", ""], ["nz-button", "", "nzType", "link", "nzBlock", ""]], template: function NzDemoButtonBlockComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Primary");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

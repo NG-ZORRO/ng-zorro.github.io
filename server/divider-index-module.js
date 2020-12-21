@@ -53,11 +53,11 @@ class NzDemoDividerEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoDividerEnComponent.ɵfac = function NzDemoDividerEnComponent_Factory(t) { return new (t || NzDemoDividerEnComponent)(); };
-/** @nocollapse */ NzDemoDividerEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerEnComponent, selectors: [["nz-demo-divider"]], viewQuery: function NzDemoDividerEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoDividerEnComponent.ɵfac = function NzDemoDividerEnComponent_Factory(t) { return new (t || NzDemoDividerEnComponent)(); };
+NzDemoDividerEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerEnComponent, selectors: [["nz-demo-divider"]], viewQuery: function NzDemoDividerEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 166, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-divider-demo-horizontal", "nzTitle", "Horizontal"], ["nzHref", "#components-divider-demo-orientation", "nzTitle", "Orientation of title"], ["nzHref", "#components-divider-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-divider-demo-plain", "nzTitle", "Text without heading style"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/divider/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Horizontal", "nzSelector", "nz-demo-divider-horizontal", "nzGenerateCommand", "ng g ng-zorro-antd:divider-horizontal <name>", "nzComponentName", "NzDemoDividerHorizontalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Vertical", "nzSelector", "nz-demo-divider-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:divider-vertical <name>", "nzComponentName", "NzDemoDividerVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Orientation of title", "nzSelector", "nz-demo-divider-orientation", "nzGenerateCommand", "ng g ng-zorro-antd:divider-orientation <name>", "nzComponentName", "NzDemoDividerOrientationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Text without heading style", "nzSelector", "nz-demo-divider-plain", "nzGenerateCommand", "ng g ng-zorro-antd:divider-plain <name>", "nzComponentName", "NzDemoDividerPlainComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-divider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-divider'", 1, "anchor"]], template: function NzDemoDividerEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -95,10 +95,10 @@ class NzDemoDividerEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Divide sections of article.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " Divide sections of article.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Divide inline text and links such as the operation column of table.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " Divide inline text and links such as the operation column of table.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "pre", 14);
@@ -388,8 +388,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+
 
 
 
@@ -433,16 +435,14 @@ class NzDividerComponent {
         this.elementRef.nativeElement.classList.add('ant-divider');
     }
 }
-/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 16, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
     } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzDividerComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
@@ -503,15 +503,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDividerModule {
 }
-/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-/** @nocollapse */
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]],
                 declarations: [NzDividerComponent],
                 exports: [NzDividerComponent]
             }]
@@ -549,8 +547,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDividerVerticalComponent {
 }
-/** @nocollapse */ NzDemoDividerVerticalComponent.ɵfac = function NzDemoDividerVerticalComponent_Factory(t) { return new (t || NzDemoDividerVerticalComponent)(); };
-/** @nocollapse */ NzDemoDividerVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerVerticalComponent, selectors: [["nz-demo-divider-vertical"]], decls: 8, vars: 0, consts: [["nzType", "vertical"], ["href", "#"]], template: function NzDemoDividerVerticalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoDividerVerticalComponent.ɵfac = function NzDemoDividerVerticalComponent_Factory(t) { return new (t || NzDemoDividerVerticalComponent)(); };
+NzDemoDividerVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerVerticalComponent, selectors: [["nz-demo-divider-vertical"]], decls: 8, vars: 0, consts: [["nzType", "vertical"], ["href", "#"]], template: function NzDemoDividerVerticalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Text ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-divider", 0);
@@ -620,8 +618,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDividerModule {
 }
-/** @nocollapse */ NzDemoDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoDividerModule });
-/** @nocollapse */ NzDemoDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoDividerModule_Factory(t) { return new (t || NzDemoDividerModule)(); }, imports: [[
+NzDemoDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoDividerModule });
+NzDemoDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoDividerModule_Factory(t) { return new (t || NzDemoDividerModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -732,11 +730,11 @@ class NzDemoDividerZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoDividerZhComponent.ɵfac = function NzDemoDividerZhComponent_Factory(t) { return new (t || NzDemoDividerZhComponent)(); };
-/** @nocollapse */ NzDemoDividerZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerZhComponent, selectors: [["nz-demo-divider"]], viewQuery: function NzDemoDividerZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoDividerZhComponent.ɵfac = function NzDemoDividerZhComponent_Factory(t) { return new (t || NzDemoDividerZhComponent)(); };
+NzDemoDividerZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerZhComponent, selectors: [["nz-demo-divider"]], viewQuery: function NzDemoDividerZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 164, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-divider-demo-horizontal", "nzTitle", "\u6C34\u5E73\u5206\u5272\u7EBF"], ["nzHref", "#components-divider-demo-orientation", "nzTitle", "\u6807\u9898\u4F4D\u7F6E"], ["nzHref", "#components-divider-demo-vertical", "nzTitle", "\u5782\u76F4\u5206\u5272\u7EBF"], ["nzHref", "#components-divider-demo-plain", "nzTitle", "\u5206\u5272\u6587\u5B57\u4F7F\u7528\u6B63\u6587\u6837\u5F0F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/divider/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u6C34\u5E73\u5206\u5272\u7EBF", "nzSelector", "nz-demo-divider-horizontal", "nzGenerateCommand", "ng g ng-zorro-antd:divider-horizontal <name>", "nzComponentName", "NzDemoDividerHorizontalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5782\u76F4\u5206\u5272\u7EBF", "nzSelector", "nz-demo-divider-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:divider-vertical <name>", "nzComponentName", "NzDemoDividerVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6807\u9898\u4F4D\u7F6E", "nzSelector", "nz-demo-divider-orientation", "nzGenerateCommand", "ng g ng-zorro-antd:divider-orientation <name>", "nzComponentName", "NzDemoDividerOrientationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5206\u5272\u6587\u5B57\u4F7F\u7528\u6B63\u6587\u6837\u5F0F", "nzSelector", "nz-demo-divider-plain", "nzGenerateCommand", "ng g ng-zorro-antd:divider-plain <name>", "nzComponentName", "NzDemoDividerPlainComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-divider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-divider'", 1, "anchor"]], template: function NzDemoDividerZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -776,10 +774,10 @@ class NzDemoDividerZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "\u5BF9\u4E0D\u540C\u7AE0\u8282\u7684\u6587\u672C\u6BB5\u843D\u8FDB\u884C\u5206\u5272\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " \u5BF9\u4E0D\u540C\u7AE0\u8282\u7684\u6587\u672C\u6BB5\u843D\u8FDB\u884C\u5206\u5272\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u5BF9\u884C\u5185\u6587\u5B57/\u94FE\u63A5\u8FDB\u884C\u5206\u5272\uFF0C\u4F8B\u5982\u8868\u683C\u7684\u64CD\u4F5C\u5217\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u5BF9\u884C\u5185\u6587\u5B57/\u94FE\u63A5\u8FDB\u884C\u5206\u5272\uFF0C\u4F8B\u5982\u8868\u683C\u7684\u64CD\u4F5C\u5217\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "pre", 14);
@@ -1067,8 +1065,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDividerPlainComponent {
 }
-/** @nocollapse */ NzDemoDividerPlainComponent.ɵfac = function NzDemoDividerPlainComponent_Factory(t) { return new (t || NzDemoDividerPlainComponent)(); };
-/** @nocollapse */ NzDemoDividerPlainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerPlainComponent, selectors: [["nz-demo-divider-plain"]], decls: 12, vars: 0, consts: [["nzPlain", "", "nzText", "Text"], ["nzPlain", "", "nzText", "Left Text", "nzOrientation", "left"], ["nzPlain", "", "nzText", "Right Text", "nzOrientation", "right"]], template: function NzDemoDividerPlainComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoDividerPlainComponent.ɵfac = function NzDemoDividerPlainComponent_Factory(t) { return new (t || NzDemoDividerPlainComponent)(); };
+NzDemoDividerPlainComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerPlainComponent, selectors: [["nz-demo-divider-plain"]], decls: 12, vars: 0, consts: [["nzPlain", "", "nzText", "Text"], ["nzPlain", "", "nzText", "Left Text", "nzOrientation", "left"], ["nzPlain", "", "nzText", "Right Text", "nzOrientation", "right"]], template: function NzDemoDividerPlainComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. ");
@@ -1143,8 +1141,8 @@ function NzDemoDividerHorizontalComponent_ng_template_10_Template(rf, ctx) { if 
 } }
 class NzDemoDividerHorizontalComponent {
 }
-/** @nocollapse */ NzDemoDividerHorizontalComponent.ɵfac = function NzDemoDividerHorizontalComponent_Factory(t) { return new (t || NzDemoDividerHorizontalComponent)(); };
-/** @nocollapse */ NzDemoDividerHorizontalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerHorizontalComponent, selectors: [["nz-demo-divider-horizontal"]], decls: 14, vars: 1, consts: [["nzText", "With Text"], ["nzDashed", "", 3, "nzText"], ["text", ""], ["nz-icon", "", "nzType", "plus"]], template: function NzDemoDividerHorizontalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoDividerHorizontalComponent.ɵfac = function NzDemoDividerHorizontalComponent_Factory(t) { return new (t || NzDemoDividerHorizontalComponent)(); };
+NzDemoDividerHorizontalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerHorizontalComponent, selectors: [["nz-demo-divider-horizontal"]], decls: 14, vars: 1, consts: [["nzText", "With Text"], ["nzDashed", "", 3, "nzText"], ["text", ""], ["nz-icon", "", "nzType", "plus"]], template: function NzDemoDividerHorizontalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. ");
@@ -1222,8 +1220,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDividerOrientationComponent {
 }
-/** @nocollapse */ NzDemoDividerOrientationComponent.ɵfac = function NzDemoDividerOrientationComponent_Factory(t) { return new (t || NzDemoDividerOrientationComponent)(); };
-/** @nocollapse */ NzDemoDividerOrientationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerOrientationComponent, selectors: [["nz-demo-divider-orientation"]], decls: 12, vars: 0, consts: [["nzText", "Text"], ["nzText", "Left Text", "nzOrientation", "left"], ["nzText", "Right Text", "nzOrientation", "right"]], template: function NzDemoDividerOrientationComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoDividerOrientationComponent.ɵfac = function NzDemoDividerOrientationComponent_Factory(t) { return new (t || NzDemoDividerOrientationComponent)(); };
+NzDemoDividerOrientationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDividerOrientationComponent, selectors: [["nz-demo-divider-orientation"]], decls: 12, vars: 0, consts: [["nzText", "Text"], ["nzText", "Left Text", "nzOrientation", "left"], ["nzText", "Right Text", "nzOrientation", "right"]], template: function NzDemoDividerOrientationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo. ");

@@ -30,8 +30,8 @@ function NzDemoSwitchTextComponent_ng_template_9_Template(rf, ctx) { if (rf & 1)
 } }
 class NzDemoSwitchTextComponent {
 }
-/** @nocollapse */ NzDemoSwitchTextComponent.ɵfac = function NzDemoSwitchTextComponent_Factory(t) { return new (t || NzDemoSwitchTextComponent)(); };
-/** @nocollapse */ NzDemoSwitchTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchTextComponent, selectors: [["nz-demo-switch-text"]], decls: 11, vars: 5, consts: [["nzCheckedChildren", "\u5F00", "nzUnCheckedChildren", "\u5173", 3, "ngModel"], ["nzCheckedChildren", "1", "nzUnCheckedChildren", "0", 3, "ngModel"], [3, "ngModel", "nzCheckedChildren", "nzUnCheckedChildren"], ["checkedTemplate", ""], ["unCheckedTemplate", ""], ["nz-icon", "", "nzType", "check"], ["nz-icon", "", "nzType", "close"]], template: function NzDemoSwitchTextComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchTextComponent.ɵfac = function NzDemoSwitchTextComponent_Factory(t) { return new (t || NzDemoSwitchTextComponent)(); };
+NzDemoSwitchTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchTextComponent, selectors: [["nz-demo-switch-text"]], decls: 11, vars: 5, consts: [["nzCheckedChildren", "\u5F00", "nzUnCheckedChildren", "\u5173", 3, "ngModel"], ["nzCheckedChildren", "1", "nzUnCheckedChildren", "0", 3, "ngModel"], [3, "ngModel", "nzCheckedChildren", "nzUnCheckedChildren"], ["checkedTemplate", ""], ["unCheckedTemplate", ""], ["nz-icon", "", "nzType", "check"], ["nz-icon", "", "nzType", "close"]], template: function NzDemoSwitchTextComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
@@ -90,8 +90,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSwitchSizeComponent {
 }
-/** @nocollapse */ NzDemoSwitchSizeComponent.ɵfac = function NzDemoSwitchSizeComponent_Factory(t) { return new (t || NzDemoSwitchSizeComponent)(); };
-/** @nocollapse */ NzDemoSwitchSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchSizeComponent, selectors: [["nz-demo-switch-size"]], decls: 4, vars: 2, consts: [[3, "ngModel"], ["nzSize", "small", 3, "ngModel"]], template: function NzDemoSwitchSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchSizeComponent.ɵfac = function NzDemoSwitchSizeComponent_Factory(t) { return new (t || NzDemoSwitchSizeComponent)(); };
+NzDemoSwitchSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchSizeComponent, selectors: [["nz-demo-switch-size"]], decls: 4, vars: 2, consts: [[3, "ngModel"], ["nzSize", "small", 3, "ngModel"]], template: function NzDemoSwitchSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
@@ -175,11 +175,11 @@ class NzDemoSwitchEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSwitchEnComponent.ɵfac = function NzDemoSwitchEnComponent_Factory(t) { return new (t || NzDemoSwitchEnComponent)(); };
-/** @nocollapse */ NzDemoSwitchEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchEnComponent, selectors: [["nz-demo-switch"]], viewQuery: function NzDemoSwitchEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSwitchEnComponent.ɵfac = function NzDemoSwitchEnComponent_Factory(t) { return new (t || NzDemoSwitchEnComponent)(); };
+NzDemoSwitchEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchEnComponent, selectors: [["nz-demo-switch"]], viewQuery: function NzDemoSwitchEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 267, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-switch-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-switch-demo-disabled", "nzTitle", "Disabled"], ["nzHref", "#components-switch-demo-text", "nzTitle", "Text & icon"], ["nzHref", "#components-switch-demo-size", "nzTitle", "Two sizes"], ["nzHref", "#components-switch-demo-loading", "nzTitle", "Loading"], ["nzHref", "#components-switch-demo-control", "nzTitle", "Control"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/switch/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-switch-basic", "nzGenerateCommand", "ng g ng-zorro-antd:switch-basic <name>", "nzComponentName", "NzDemoSwitchBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Text & icon", "nzSelector", "nz-demo-switch-text", "nzGenerateCommand", "ng g ng-zorro-antd:switch-text <name>", "nzComponentName", "NzDemoSwitchTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Loading", "nzSelector", "nz-demo-switch-loading", "nzGenerateCommand", "ng g ng-zorro-antd:switch-loading <name>", "nzComponentName", "NzDemoSwitchLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Disabled", "nzSelector", "nz-demo-switch-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:switch-disabled <name>", "nzComponentName", "NzDemoSwitchDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Two sizes", "nzSelector", "nz-demo-switch-size", "nzGenerateCommand", "ng g ng-zorro-antd:switch-size <name>", "nzComponentName", "NzDemoSwitchSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Control", "nzSelector", "nz-demo-switch-control", "nzGenerateCommand", "ng g ng-zorro-antd:switch-control <name>", "nzComponentName", "NzDemoSwitchControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-switch"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-switch'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoSwitchEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -219,10 +219,10 @@ class NzDemoSwitchEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "If you need to represent the switching between two states or on-off state.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " If you need to represent the switching between two states or on-off state.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "The difference between ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " The difference between ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "Switch");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -689,8 +689,8 @@ class NzDemoSwitchControlComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoSwitchControlComponent.ɵfac = function NzDemoSwitchControlComponent_Factory(t) { return new (t || NzDemoSwitchControlComponent)(); };
-/** @nocollapse */ NzDemoSwitchControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchControlComponent, selectors: [["nz-demo-switch-control"]], decls: 1, vars: 3, consts: [[3, "ngModel", "nzControl", "nzLoading", "ngModelChange", "click"]], template: function NzDemoSwitchControlComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchControlComponent.ɵfac = function NzDemoSwitchControlComponent_Factory(t) { return new (t || NzDemoSwitchControlComponent)(); };
+NzDemoSwitchControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchControlComponent, selectors: [["nz-demo-switch-control"]], decls: 1, vars: 3, consts: [[3, "ngModel", "nzControl", "nzLoading", "ngModelChange", "click"]], template: function NzDemoSwitchControlComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSwitchControlComponent_Template_nz_switch_ngModelChange_0_listener($event) { return ctx.switchValue = $event; })("click", function NzDemoSwitchControlComponent_Template_nz_switch_click_0_listener() { return ctx.clickSwitch(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -729,8 +729,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSwitchLoadingComponent {
 }
-/** @nocollapse */ NzDemoSwitchLoadingComponent.ɵfac = function NzDemoSwitchLoadingComponent_Factory(t) { return new (t || NzDemoSwitchLoadingComponent)(); };
-/** @nocollapse */ NzDemoSwitchLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchLoadingComponent, selectors: [["nz-demo-switch-loading"]], decls: 4, vars: 2, consts: [["nzLoading", "", 3, "ngModel"], ["nzSize", "small", "nzLoading", "", 3, "ngModel"]], template: function NzDemoSwitchLoadingComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchLoadingComponent.ɵfac = function NzDemoSwitchLoadingComponent_Factory(t) { return new (t || NzDemoSwitchLoadingComponent)(); };
+NzDemoSwitchLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchLoadingComponent, selectors: [["nz-demo-switch-loading"]], decls: 4, vars: 2, consts: [["nzLoading", "", 3, "ngModel"], ["nzSize", "small", "nzLoading", "", 3, "ngModel"]], template: function NzDemoSwitchLoadingComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "br");
@@ -778,8 +778,8 @@ class NzDemoSwitchBasicComponent {
         this.switchValue = false;
     }
 }
-/** @nocollapse */ NzDemoSwitchBasicComponent.ɵfac = function NzDemoSwitchBasicComponent_Factory(t) { return new (t || NzDemoSwitchBasicComponent)(); };
-/** @nocollapse */ NzDemoSwitchBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchBasicComponent, selectors: [["nz-demo-switch-basic"]], decls: 1, vars: 1, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoSwitchBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchBasicComponent.ɵfac = function NzDemoSwitchBasicComponent_Factory(t) { return new (t || NzDemoSwitchBasicComponent)(); };
+NzDemoSwitchBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchBasicComponent, selectors: [["nz-demo-switch-basic"]], decls: 1, vars: 1, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoSwitchBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSwitchBasicComponent_Template_nz_switch_ngModelChange_0_listener($event) { return ctx.switchValue = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -828,8 +828,8 @@ class NzDemoSwitchDisabledComponent {
         this.isDisabled = true;
     }
 }
-/** @nocollapse */ NzDemoSwitchDisabledComponent.ɵfac = function NzDemoSwitchDisabledComponent_Factory(t) { return new (t || NzDemoSwitchDisabledComponent)(); };
-/** @nocollapse */ NzDemoSwitchDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchDisabledComponent, selectors: [["nz-demo-switch-disabled"]], decls: 5, vars: 3, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nz-button", "", 3, "nzType", "click"]], template: function NzDemoSwitchDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSwitchDisabledComponent.ɵfac = function NzDemoSwitchDisabledComponent_Factory(t) { return new (t || NzDemoSwitchDisabledComponent)(); };
+NzDemoSwitchDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchDisabledComponent, selectors: [["nz-demo-switch-disabled"]], decls: 5, vars: 3, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nz-button", "", 3, "nzType", "click"]], template: function NzDemoSwitchDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-switch", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSwitchDisabledComponent_Template_nz_switch_ngModelChange_0_listener($event) { return ctx.switchValue = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -904,8 +904,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSwitchModule {
 }
-/** @nocollapse */ NzDemoSwitchModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSwitchModule });
-/** @nocollapse */ NzDemoSwitchModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSwitchModule_Factory(t) { return new (t || NzDemoSwitchModule)(); }, imports: [[
+NzDemoSwitchModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSwitchModule });
+NzDemoSwitchModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSwitchModule_Factory(t) { return new (t || NzDemoSwitchModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -1007,11 +1007,11 @@ class NzDemoSwitchZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSwitchZhComponent.ɵfac = function NzDemoSwitchZhComponent_Factory(t) { return new (t || NzDemoSwitchZhComponent)(); };
-/** @nocollapse */ NzDemoSwitchZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchZhComponent, selectors: [["nz-demo-switch"]], viewQuery: function NzDemoSwitchZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSwitchZhComponent.ɵfac = function NzDemoSwitchZhComponent_Factory(t) { return new (t || NzDemoSwitchZhComponent)(); };
+NzDemoSwitchZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSwitchZhComponent, selectors: [["nz-demo-switch"]], viewQuery: function NzDemoSwitchZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 256, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-switch-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-switch-demo-disabled", "nzTitle", "\u4E0D\u53EF\u7528"], ["nzHref", "#components-switch-demo-text", "nzTitle", "\u6587\u5B57\u548C\u56FE\u6807"], ["nzHref", "#components-switch-demo-size", "nzTitle", "\u4E24\u79CD\u5927\u5C0F"], ["nzHref", "#components-switch-demo-loading", "nzTitle", "\u52A0\u8F7D\u4E2D"], ["nzHref", "#components-switch-demo-control", "nzTitle", "\u5B8C\u6574\u63A7\u5236"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/switch/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-switch-basic", "nzGenerateCommand", "ng g ng-zorro-antd:switch-basic <name>", "nzComponentName", "NzDemoSwitchBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6587\u5B57\u548C\u56FE\u6807", "nzSelector", "nz-demo-switch-text", "nzGenerateCommand", "ng g ng-zorro-antd:switch-text <name>", "nzComponentName", "NzDemoSwitchTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u4E2D", "nzSelector", "nz-demo-switch-loading", "nzGenerateCommand", "ng g ng-zorro-antd:switch-loading <name>", "nzComponentName", "NzDemoSwitchLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E0D\u53EF\u7528", "nzSelector", "nz-demo-switch-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:switch-disabled <name>", "nzComponentName", "NzDemoSwitchDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E24\u79CD\u5927\u5C0F", "nzSelector", "nz-demo-switch-size", "nzGenerateCommand", "ng g ng-zorro-antd:switch-size <name>", "nzComponentName", "NzDemoSwitchSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5B8C\u6574\u63A7\u5236", "nzSelector", "nz-demo-switch-control", "nzGenerateCommand", "ng g ng-zorro-antd:switch-control <name>", "nzComponentName", "NzDemoSwitchControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-switch"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-switch'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoSwitchZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1053,10 +1053,10 @@ class NzDemoSwitchZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u9700\u8981\u8868\u793A\u5F00\u5173\u72B6\u6001/\u4E24\u79CD\u72B6\u6001\u4E4B\u95F4\u7684\u5207\u6362\u65F6\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u9700\u8981\u8868\u793A\u5F00\u5173\u72B6\u6001/\u4E24\u79CD\u72B6\u6001\u4E4B\u95F4\u7684\u5207\u6362\u65F6\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "\u548C ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " \u548C ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "checkbox");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

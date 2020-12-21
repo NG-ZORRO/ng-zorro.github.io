@@ -62,8 +62,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoStatisticModule {
 }
-/** @nocollapse */ NzDemoStatisticModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoStatisticModule });
-/** @nocollapse */ NzDemoStatisticModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoStatisticModule_Factory(t) { return new (t || NzDemoStatisticModule)(); }, imports: [[
+NzDemoStatisticModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoStatisticModule });
+NzDemoStatisticModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoStatisticModule_Factory(t) { return new (t || NzDemoStatisticModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -124,8 +124,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoStatisticBasicComponent {
 }
-/** @nocollapse */ NzDemoStatisticBasicComponent.ɵfac = function NzDemoStatisticBasicComponent_Factory(t) { return new (t || NzDemoStatisticBasicComponent)(); };
-/** @nocollapse */ NzDemoStatisticBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticBasicComponent, selectors: [["nz-demo-statistic-basic"]], decls: 7, vars: 12, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle"]], template: function NzDemoStatisticBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoStatisticBasicComponent.ɵfac = function NzDemoStatisticBasicComponent_Factory(t) { return new (t || NzDemoStatisticBasicComponent)(); };
+NzDemoStatisticBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticBasicComponent, selectors: [["nz-demo-statistic-basic"]], decls: 7, vars: 12, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle"]], template: function NzDemoStatisticBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-statistic", 2);
@@ -219,11 +219,11 @@ class NzDemoStatisticZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoStatisticZhComponent.ɵfac = function NzDemoStatisticZhComponent_Factory(t) { return new (t || NzDemoStatisticZhComponent)(); };
-/** @nocollapse */ NzDemoStatisticZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticZhComponent, selectors: [["nz-demo-statistic"]], viewQuery: function NzDemoStatisticZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoStatisticZhComponent.ɵfac = function NzDemoStatisticZhComponent_Factory(t) { return new (t || NzDemoStatisticZhComponent)(); };
+NzDemoStatisticZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticZhComponent, selectors: [["nz-demo-statistic"]], viewQuery: function NzDemoStatisticZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 317, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-statistic-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-statistic-demo-unit", "nzTitle", "\u5355\u4F4D"], ["nzHref", "#components-statistic-demo-card", "nzTitle", "\u5728\u5361\u7247\u4E2D\u4F7F\u7528"], ["nzHref", "#components-statistic-demo-countdown", "nzTitle", "\u5012\u8BA1\u65F6"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/statistic/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-statistic-basic", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-basic <name>", "nzComponentName", "NzDemoStatisticBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5728\u5361\u7247\u4E2D\u4F7F\u7528", "nzSelector", "nz-demo-statistic-card", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-card <name>", "nzComponentName", "NzDemoStatisticCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5355\u4F4D", "nzSelector", "nz-demo-statistic-unit", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-unit <name>", "nzComponentName", "NzDemoStatisticUnitComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5012\u8BA1\u65F6", "nzSelector", "nz-demo-statistic-countdown", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-countdown <name>", "nzComponentName", "NzDemoStatisticCountdownComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-statistic"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-statistic'", 1, "anchor"], ["id", "nz-countdown"], ["onclick", "window.location.hash = 'nz-countdown'", 1, "anchor"], ["id", "nzformat"], ["onclick", "window.location.hash = 'nzformat'", 1, "anchor"]], template: function NzDemoStatisticZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -263,10 +263,10 @@ class NzDemoStatisticZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "\u5F53\u9700\u8981\u7A81\u51FA\u67D0\u4E2A\u6216\u67D0\u7EC4\u6570\u5B57\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " \u5F53\u9700\u8981\u7A81\u51FA\u67D0\u4E2A\u6216\u67D0\u7EC4\u6570\u5B57\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "\u5F53\u9700\u8981\u5C55\u793A\u5E26\u63CF\u8FF0\u7684\u7EDF\u8BA1\u7C7B\u6570\u636E\u65F6\u4F7F\u7528\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " \u5F53\u9700\u8981\u5C55\u793A\u5E26\u63CF\u8FF0\u7684\u7EDF\u8BA1\u7C7B\u6570\u636E\u65F6\u4F7F\u7528\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "pre", 14);
@@ -812,8 +812,8 @@ class NzDemoStatisticCountdownComponent {
         this.deadline = Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30;
     }
 }
-/** @nocollapse */ NzDemoStatisticCountdownComponent.ɵfac = function NzDemoStatisticCountdownComponent_Factory(t) { return new (t || NzDemoStatisticCountdownComponent)(); };
-/** @nocollapse */ NzDemoStatisticCountdownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticCountdownComponent, selectors: [["nz-demo-statistic-countdown"]], decls: 7, vars: 12, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle"], [3, "nzValue", "nzTitle", "nzFormat"], [2, "margin-top", "32px", 3, "nzSpan"]], template: function NzDemoStatisticCountdownComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoStatisticCountdownComponent.ɵfac = function NzDemoStatisticCountdownComponent_Factory(t) { return new (t || NzDemoStatisticCountdownComponent)(); };
+NzDemoStatisticCountdownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticCountdownComponent, selectors: [["nz-demo-statistic-countdown"]], decls: 7, vars: 12, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle"], [3, "nzValue", "nzTitle", "nzFormat"], [2, "margin-top", "32px", 3, "nzSpan"]], template: function NzDemoStatisticCountdownComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-countdown", 2);
@@ -889,8 +889,8 @@ function NzDemoStatisticUnitComponent_ng_template_4_Template(rf, ctx) { if (rf &
 } }
 class NzDemoStatisticUnitComponent {
 }
-/** @nocollapse */ NzDemoStatisticUnitComponent.ɵfac = function NzDemoStatisticUnitComponent_Factory(t) { return new (t || NzDemoStatisticUnitComponent)(); };
-/** @nocollapse */ NzDemoStatisticUnitComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticUnitComponent, selectors: [["nz-demo-statistic-unit"]], decls: 8, vars: 11, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle", "nzPrefix"], ["prefixTpl", ""], [3, "nzValue", "nzTitle", "nzSuffix"], ["nz-icon", "", "nzType", "like"]], template: function NzDemoStatisticUnitComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoStatisticUnitComponent.ɵfac = function NzDemoStatisticUnitComponent_Factory(t) { return new (t || NzDemoStatisticUnitComponent)(); };
+NzDemoStatisticUnitComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticUnitComponent, selectors: [["nz-demo-statistic-unit"]], decls: 8, vars: 11, consts: [[3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle", "nzPrefix"], ["prefixTpl", ""], [3, "nzValue", "nzTitle", "nzSuffix"], ["nz-icon", "", "nzType", "like"]], template: function NzDemoStatisticUnitComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-statistic", 2);
@@ -967,8 +967,8 @@ const _c0 = function () { return { color: "#3F8600" }; };
 const _c1 = function () { return { color: "#CF1322" }; };
 class NzDemoStatisticCardComponent {
 }
-/** @nocollapse */ NzDemoStatisticCardComponent.ɵfac = function NzDemoStatisticCardComponent_Factory(t) { return new (t || NzDemoStatisticCardComponent)(); };
-/** @nocollapse */ NzDemoStatisticCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticCardComponent, selectors: [["nz-demo-statistic-card"]], decls: 14, vars: 21, consts: [[2, "background", "#ECECEC", "padding", "30px"], [3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle", "nzPrefix", "nzSuffix", "nzValueStyle"], ["prefixTplOne", ""], ["prefixTplTwo", ""], ["nz-icon", "", "nzType", "arrow-up"], ["nz-icon", "", "nzType", "arrow-down"]], template: function NzDemoStatisticCardComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoStatisticCardComponent.ɵfac = function NzDemoStatisticCardComponent_Factory(t) { return new (t || NzDemoStatisticCardComponent)(); };
+NzDemoStatisticCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticCardComponent, selectors: [["nz-demo-statistic-card"]], decls: 14, vars: 21, consts: [[2, "background", "#ECECEC", "padding", "30px"], [3, "nzGutter"], [3, "nzSpan"], [3, "nzValue", "nzTitle", "nzPrefix", "nzSuffix", "nzValueStyle"], ["prefixTplOne", ""], ["prefixTplTwo", ""], ["nz-icon", "", "nzType", "arrow-up"], ["nz-icon", "", "nzType", "arrow-down"]], template: function NzDemoStatisticCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-row", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-col", 2);
@@ -1095,11 +1095,11 @@ class NzDemoStatisticEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoStatisticEnComponent.ɵfac = function NzDemoStatisticEnComponent_Factory(t) { return new (t || NzDemoStatisticEnComponent)(); };
-/** @nocollapse */ NzDemoStatisticEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticEnComponent, selectors: [["nz-demo-statistic"]], viewQuery: function NzDemoStatisticEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoStatisticEnComponent.ɵfac = function NzDemoStatisticEnComponent_Factory(t) { return new (t || NzDemoStatisticEnComponent)(); };
+NzDemoStatisticEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoStatisticEnComponent, selectors: [["nz-demo-statistic"]], viewQuery: function NzDemoStatisticEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 322, vars: 23, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-statistic-demo-basic", "nzTitle", "Basic Usage"], ["nzHref", "#components-statistic-demo-unit", "nzTitle", "Unit"], ["nzHref", "#components-statistic-demo-card", "nzTitle", "In Card"], ["nzHref", "#components-statistic-demo-countdown", "nzTitle", "Countdown"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/statistic/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic Usage", "nzSelector", "nz-demo-statistic-basic", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-basic <name>", "nzComponentName", "NzDemoStatisticBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "In Card", "nzSelector", "nz-demo-statistic-card", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-card <name>", "nzComponentName", "NzDemoStatisticCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Unit", "nzSelector", "nz-demo-statistic-unit", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-unit <name>", "nzComponentName", "NzDemoStatisticUnitComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Countdown", "nzSelector", "nz-demo-statistic-countdown", "nzGenerateCommand", "ng g ng-zorro-antd:statistic-countdown <name>", "nzComponentName", "NzDemoStatisticCountdownComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-statistic"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-statistic'", 1, "anchor"], ["id", "nz-countdown"], ["onclick", "window.location.hash = 'nz-countdown'", 1, "anchor"], ["id", "nzformat"], ["onclick", "window.location.hash = 'nzformat'", 1, "anchor"]], template: function NzDemoStatisticEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1137,10 +1137,10 @@ class NzDemoStatisticEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "When want to highlight some data.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " When want to highlight some data.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "When want to display statistic data with description.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " When want to display statistic data with description.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "pre", 14);

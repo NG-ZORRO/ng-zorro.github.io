@@ -43,8 +43,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertModule {
 }
-/** @nocollapse */ NzDemoAlertModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAlertModule });
-/** @nocollapse */ NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); }, imports: [[
+NzDemoAlertModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAlertModule });
+NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -107,8 +107,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertBasicComponent {
 }
-/** @nocollapse */ NzDemoAlertBasicComponent.ɵfac = function NzDemoAlertBasicComponent_Factory(t) { return new (t || NzDemoAlertBasicComponent)(); };
-/** @nocollapse */ NzDemoAlertBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBasicComponent, selectors: [["nz-demo-alert-basic"]], decls: 1, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"]], template: function NzDemoAlertBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertBasicComponent.ɵfac = function NzDemoAlertBasicComponent_Factory(t) { return new (t || NzDemoAlertBasicComponent)(); };
+NzDemoAlertBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBasicComponent, selectors: [["nz-demo-alert-basic"]], decls: 1, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"]], template: function NzDemoAlertBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
     } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertBasicComponent, [{
@@ -141,8 +141,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertIconComponent {
 }
-/** @nocollapse */ NzDemoAlertIconComponent.ɵfac = function NzDemoAlertIconComponent_Factory(t) { return new (t || NzDemoAlertIconComponent)(); };
-/** @nocollapse */ NzDemoAlertIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertIconComponent, selectors: [["nz-demo-alert-icon"]], decls: 8, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Tips", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzShowIcon", ""], ["nzType", "success", "nzMessage", "Success Tips", "nzDescription", "Detailed description and advices about successful copywriting.", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzDescription", "Additional description and informations about copywriting.", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzDescription", "This is a warning notice about copywriting.", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzDescription", "This is an error message about copywriting.", "nzShowIcon", ""]], template: function NzDemoAlertIconComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertIconComponent.ɵfac = function NzDemoAlertIconComponent_Factory(t) { return new (t || NzDemoAlertIconComponent)(); };
+NzDemoAlertIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertIconComponent, selectors: [["nz-demo-alert-icon"]], decls: 8, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Tips", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzShowIcon", ""], ["nzType", "success", "nzMessage", "Success Tips", "nzDescription", "Detailed description and advices about successful copywriting.", "nzShowIcon", ""], ["nzType", "info", "nzMessage", "Informational Notes", "nzDescription", "Additional description and informations about copywriting.", "nzShowIcon", ""], ["nzType", "warning", "nzMessage", "Warning", "nzDescription", "This is a warning notice about copywriting.", "nzShowIcon", ""], ["nzType", "error", "nzMessage", "Error", "nzDescription", "This is an error message about copywriting.", "nzShowIcon", ""]], template: function NzDemoAlertIconComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
@@ -208,8 +208,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertDescriptionComponent {
 }
-/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵfac = function NzDemoAlertDescriptionComponent_Factory(t) { return new (t || NzDemoAlertDescriptionComponent)(); };
-/** @nocollapse */ NzDemoAlertDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertDescriptionComponent, selectors: [["nz-demo-alert-description"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text", "nzDescription", "Success Description Success Description Success Description"], ["nzType", "info", "nzMessage", "Info Text", "nzDescription", "Info Description Info Description Info Description Info Description"], ["nzType", "warning", "nzMessage", "Warning Text", "nzDescription", "Warning Description Warning Description Warning Description Warning Description"], ["nzType", "error", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description"]], template: function NzDemoAlertDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertDescriptionComponent.ɵfac = function NzDemoAlertDescriptionComponent_Factory(t) { return new (t || NzDemoAlertDescriptionComponent)(); };
+NzDemoAlertDescriptionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertDescriptionComponent, selectors: [["nz-demo-alert-description"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text", "nzDescription", "Success Description Success Description Success Description"], ["nzType", "info", "nzMessage", "Info Text", "nzDescription", "Info Description Info Description Info Description Info Description"], ["nzType", "warning", "nzMessage", "Warning Text", "nzDescription", "Warning Description Warning Description Warning Description Warning Description"], ["nzType", "error", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description"]], template: function NzDemoAlertDescriptionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
@@ -263,8 +263,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertStyleComponent {
 }
-/** @nocollapse */ NzDemoAlertStyleComponent.ɵfac = function NzDemoAlertStyleComponent_Factory(t) { return new (t || NzDemoAlertStyleComponent)(); };
-/** @nocollapse */ NzDemoAlertStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertStyleComponent, selectors: [["nz-demo-alert-style"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"], ["nzType", "info", "nzMessage", "Info Text"], ["nzType", "warning", "nzMessage", "Warning Text"], ["nzType", "error", "nzMessage", "Error Text"]], template: function NzDemoAlertStyleComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertStyleComponent.ɵfac = function NzDemoAlertStyleComponent_Factory(t) { return new (t || NzDemoAlertStyleComponent)(); };
+NzDemoAlertStyleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertStyleComponent, selectors: [["nz-demo-alert-style"]], decls: 4, vars: 0, consts: [["nzType", "success", "nzMessage", "Success Text"], ["nzType", "info", "nzMessage", "Info Text"], ["nzType", "warning", "nzMessage", "Warning Text"], ["nzType", "error", "nzMessage", "Error Text"]], template: function NzDemoAlertStyleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);
@@ -313,8 +313,8 @@ class NzDemoAlertClosableComponent {
         console.log('close');
     }
 }
-/** @nocollapse */ NzDemoAlertClosableComponent.ɵfac = function NzDemoAlertClosableComponent_Factory(t) { return new (t || NzDemoAlertClosableComponent)(); };
-/** @nocollapse */ NzDemoAlertClosableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertClosableComponent, selectors: [["nz-demo-alert-closable"]], decls: 2, vars: 0, consts: [["nzType", "warning", "nzCloseable", "", "nzMessage", "Warning Text Warning Text Warning Text Warning Text Warning Text Warning Text Warning Text", 3, "nzOnClose"], ["nzType", "error", "nzCloseable", "", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description Error Description Error Description", 3, "nzOnClose"]], template: function NzDemoAlertClosableComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertClosableComponent.ɵfac = function NzDemoAlertClosableComponent_Factory(t) { return new (t || NzDemoAlertClosableComponent)(); };
+NzDemoAlertClosableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertClosableComponent, selectors: [["nz-demo-alert-closable"]], decls: 2, vars: 0, consts: [["nzType", "warning", "nzCloseable", "", "nzMessage", "Warning Text Warning Text Warning Text Warning Text Warning Text Warning Text Warning Text", 3, "nzOnClose"], ["nzType", "error", "nzCloseable", "", "nzMessage", "Error Text", "nzDescription", "Error Description Error Description Error Description Error Description Error Description Error Description", 3, "nzOnClose"]], template: function NzDemoAlertClosableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-alert", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzOnClose", function NzDemoAlertClosableComponent_Template_nz_alert_nzOnClose_0_listener() { return ctx.afterClose(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -414,11 +414,11 @@ class NzDemoAlertEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAlertEnComponent.ɵfac = function NzDemoAlertEnComponent_Factory(t) { return new (t || NzDemoAlertEnComponent)(); };
-/** @nocollapse */ NzDemoAlertEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertEnComponent, selectors: [["nz-demo-alert"]], viewQuery: function NzDemoAlertEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAlertEnComponent.ɵfac = function NzDemoAlertEnComponent_Factory(t) { return new (t || NzDemoAlertEnComponent)(); };
+NzDemoAlertEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertEnComponent, selectors: [["nz-demo-alert"]], viewQuery: function NzDemoAlertEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 258, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-alert-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-alert-demo-style", "nzTitle", "More types"], ["nzHref", "#components-alert-demo-closable", "nzTitle", "Closable"], ["nzHref", "#components-alert-demo-description", "nzTitle", "Description"], ["nzHref", "#components-alert-demo-icon", "nzTitle", "Icon"], ["nzHref", "#components-alert-demo-close-text", "nzTitle", "Customized Close Text"], ["nzHref", "#components-alert-demo-banner", "nzTitle", "Banner"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/alert/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-alert-basic", "nzGenerateCommand", "ng g ng-zorro-antd:alert-basic <name>", "nzComponentName", "NzDemoAlertBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Closable", "nzSelector", "nz-demo-alert-closable", "nzGenerateCommand", "ng g ng-zorro-antd:alert-closable <name>", "nzComponentName", "NzDemoAlertClosableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Icon", "nzSelector", "nz-demo-alert-icon", "nzGenerateCommand", "ng g ng-zorro-antd:alert-icon <name>", "nzComponentName", "NzDemoAlertIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Banner", "nzSelector", "nz-demo-alert-banner", "nzGenerateCommand", "ng g ng-zorro-antd:alert-banner <name>", "nzComponentName", "NzDemoAlertBannerComponent", "nzIframeSource", "/iframe/#/alert-banner", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "More types", "nzSelector", "nz-demo-alert-style", "nzGenerateCommand", "ng g ng-zorro-antd:alert-style <name>", "nzComponentName", "NzDemoAlertStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Description", "nzSelector", "nz-demo-alert-description", "nzGenerateCommand", "ng g ng-zorro-antd:alert-description <name>", "nzComponentName", "NzDemoAlertDescriptionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customized Close Text", "nzSelector", "nz-demo-alert-close-text", "nzGenerateCommand", "ng g ng-zorro-antd:alert-close-text <name>", "nzComponentName", "NzDemoAlertCloseTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-alert"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-alert'", 1, "anchor"]], template: function NzDemoAlertEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -459,10 +459,10 @@ class NzDemoAlertEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "When you need to show alert messages to users.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " When you need to show alert messages to users.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "When you need a persistent static container which is closable by user actions.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " When you need a persistent static container which is closable by user actions.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "pre", 17);
@@ -942,11 +942,11 @@ class NzDemoAlertZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAlertZhComponent.ɵfac = function NzDemoAlertZhComponent_Factory(t) { return new (t || NzDemoAlertZhComponent)(); };
-/** @nocollapse */ NzDemoAlertZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertZhComponent, selectors: [["nz-demo-alert"]], viewQuery: function NzDemoAlertZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAlertZhComponent.ɵfac = function NzDemoAlertZhComponent_Factory(t) { return new (t || NzDemoAlertZhComponent)(); };
+NzDemoAlertZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertZhComponent, selectors: [["nz-demo-alert"]], viewQuery: function NzDemoAlertZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 266, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-alert-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-alert-demo-style", "nzTitle", "\u56DB\u79CD\u6837\u5F0F"], ["nzHref", "#components-alert-demo-closable", "nzTitle", "\u53EF\u5173\u95ED\u7684\u8B66\u544A\u63D0\u793A"], ["nzHref", "#components-alert-demo-description", "nzTitle", "\u542B\u6709\u8F85\u52A9\u6027\u6587\u5B57\u4ECB\u7ECD"], ["nzHref", "#components-alert-demo-icon", "nzTitle", "\u56FE\u6807"], ["nzHref", "#components-alert-demo-close-text", "nzTitle", "\u81EA\u5B9A\u4E49\u5173\u95ED"], ["nzHref", "#components-alert-demo-banner", "nzTitle", "\u9876\u90E8\u516C\u544A"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/alert/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-alert-basic", "nzGenerateCommand", "ng g ng-zorro-antd:alert-basic <name>", "nzComponentName", "NzDemoAlertBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u53EF\u5173\u95ED\u7684\u8B66\u544A\u63D0\u793A", "nzSelector", "nz-demo-alert-closable", "nzGenerateCommand", "ng g ng-zorro-antd:alert-closable <name>", "nzComponentName", "NzDemoAlertClosableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u6807", "nzSelector", "nz-demo-alert-icon", "nzGenerateCommand", "ng g ng-zorro-antd:alert-icon <name>", "nzComponentName", "NzDemoAlertIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9876\u90E8\u516C\u544A", "nzSelector", "nz-demo-alert-banner", "nzGenerateCommand", "ng g ng-zorro-antd:alert-banner <name>", "nzComponentName", "NzDemoAlertBannerComponent", "nzIframeSource", "/iframe/#/alert-banner", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56DB\u79CD\u6837\u5F0F", "nzSelector", "nz-demo-alert-style", "nzGenerateCommand", "ng g ng-zorro-antd:alert-style <name>", "nzComponentName", "NzDemoAlertStyleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u542B\u6709\u8F85\u52A9\u6027\u6587\u5B57\u4ECB\u7ECD", "nzSelector", "nz-demo-alert-description", "nzGenerateCommand", "ng g ng-zorro-antd:alert-description <name>", "nzComponentName", "NzDemoAlertDescriptionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u5173\u95ED", "nzSelector", "nz-demo-alert-close-text", "nzGenerateCommand", "ng g ng-zorro-antd:alert-close-text <name>", "nzComponentName", "NzDemoAlertCloseTextComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-alert"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-alert'", 1, "anchor"]], template: function NzDemoAlertZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -989,10 +989,10 @@ class NzDemoAlertZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u5F53\u67D0\u4E2A\u9875\u9762\u9700\u8981\u5411\u7528\u6237\u663E\u793A\u8B66\u544A\u7684\u4FE1\u606F\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " \u5F53\u67D0\u4E2A\u9875\u9762\u9700\u8981\u5411\u7528\u6237\u663E\u793A\u8B66\u544A\u7684\u4FE1\u606F\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "\u975E\u6D6E\u5C42\u7684\u9759\u6001\u5C55\u73B0\u5F62\u5F0F\uFF0C\u59CB\u7EC8\u5C55\u73B0\uFF0C\u4E0D\u4F1A\u81EA\u52A8\u6D88\u5931\uFF0C\u7528\u6237\u53EF\u4EE5\u70B9\u51FB\u5173\u95ED\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " \u975E\u6D6E\u5C42\u7684\u9759\u6001\u5C55\u73B0\u5F62\u5F0F\uFF0C\u59CB\u7EC8\u5C55\u73B0\uFF0C\u4E0D\u4F1A\u81EA\u52A8\u6D88\u5931\uFF0C\u7528\u6237\u53EF\u4EE5\u70B9\u51FB\u5173\u95ED\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "pre", 17);
@@ -1440,8 +1440,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertCloseTextComponent {
 }
-/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵfac = function NzDemoAlertCloseTextComponent_Factory(t) { return new (t || NzDemoAlertCloseTextComponent)(); };
-/** @nocollapse */ NzDemoAlertCloseTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertCloseTextComponent, selectors: [["nz-demo-alert-close-text"]], decls: 1, vars: 0, consts: [["nzType", "info", "nzMessage", "Info Text", "nzCloseText", "Close Now"]], template: function NzDemoAlertCloseTextComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertCloseTextComponent.ɵfac = function NzDemoAlertCloseTextComponent_Factory(t) { return new (t || NzDemoAlertCloseTextComponent)(); };
+NzDemoAlertCloseTextComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertCloseTextComponent, selectors: [["nz-demo-alert-close-text"]], decls: 1, vars: 0, consts: [["nzType", "info", "nzMessage", "Info Text", "nzCloseText", "Close Now"]], template: function NzDemoAlertCloseTextComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
     } }, directives: [ng_zorro_antd_alert__WEBPACK_IMPORTED_MODULE_1__["NzAlertComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoAlertCloseTextComponent, [{
@@ -1474,8 +1474,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertBannerComponent {
 }
-/** @nocollapse */ NzDemoAlertBannerComponent.ɵfac = function NzDemoAlertBannerComponent_Factory(t) { return new (t || NzDemoAlertBannerComponent)(); };
-/** @nocollapse */ NzDemoAlertBannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBannerComponent, selectors: [["nz-demo-alert-banner"]], decls: 4, vars: 1, consts: [["nzBanner", "", "nzMessage", "Warning text"], ["nzBanner", "", "nzMessage", "Very long warning text warning text text text text text text text", "nzCloseable", ""], ["nzBanner", "", "nzMessage", "Warning text without icon", 3, "nzShowIcon"], ["nzBanner", "", "nzType", "error", "nzMessage", "Error text"]], template: function NzDemoAlertBannerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAlertBannerComponent.ɵfac = function NzDemoAlertBannerComponent_Factory(t) { return new (t || NzDemoAlertBannerComponent)(); };
+NzDemoAlertBannerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAlertBannerComponent, selectors: [["nz-demo-alert-banner"]], decls: 4, vars: 1, consts: [["nzBanner", "", "nzMessage", "Warning text"], ["nzBanner", "", "nzMessage", "Very long warning text warning text text text text text text text", "nzCloseable", ""], ["nzBanner", "", "nzMessage", "Warning text without icon", 3, "nzShowIcon"], ["nzBanner", "", "nzType", "error", "nzMessage", "Error text"]], template: function NzDemoAlertBannerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-alert", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-alert", 2);

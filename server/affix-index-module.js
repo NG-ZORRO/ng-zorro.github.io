@@ -39,8 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAffixModule {
 }
-/** @nocollapse */ NzDemoAffixModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAffixModule });
-/** @nocollapse */ NzDemoAffixModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAffixModule_Factory(t) { return new (t || NzDemoAffixModule)(); }, imports: [[
+NzDemoAffixModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAffixModule });
+NzDemoAffixModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAffixModule_Factory(t) { return new (t || NzDemoAffixModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -125,8 +125,8 @@ class NzDemoAffixOnChangeComponent {
         console.log(status);
     }
 }
-/** @nocollapse */ NzDemoAffixOnChangeComponent.ɵfac = function NzDemoAffixOnChangeComponent_Factory(t) { return new (t || NzDemoAffixOnChangeComponent)(); };
-/** @nocollapse */ NzDemoAffixOnChangeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixOnChangeComponent, selectors: [["nz-demo-affix-on-change"]], decls: 4, vars: 1, consts: [[3, "nzOffsetTop", "nzChange"], ["nz-button", ""]], template: function NzDemoAffixOnChangeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAffixOnChangeComponent.ɵfac = function NzDemoAffixOnChangeComponent_Factory(t) { return new (t || NzDemoAffixOnChangeComponent)(); };
+NzDemoAffixOnChangeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixOnChangeComponent, selectors: [["nz-demo-affix-on-change"]], decls: 4, vars: 1, consts: [[3, "nzOffsetTop", "nzChange"], ["nz-button", ""]], template: function NzDemoAffixOnChangeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzChange", function NzDemoAffixOnChangeComponent_Template_nz_affix_nzChange_0_listener($event) { return ctx.onChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
@@ -178,8 +178,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAffixTargetComponent {
 }
-/** @nocollapse */ NzDemoAffixTargetComponent.ɵfac = function NzDemoAffixTargetComponent_Factory(t) { return new (t || NzDemoAffixTargetComponent)(); };
-/** @nocollapse */ NzDemoAffixTargetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixTargetComponent, selectors: [["nz-demo-affix-target"]], decls: 7, vars: 2, consts: [[1, "scrollable-container"], ["target", ""], [1, "background"], ["id", "affix-container-target", 3, "nzTarget"], ["nz-button", "", 3, "nzType"]], template: function NzDemoAffixTargetComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAffixTargetComponent.ɵfac = function NzDemoAffixTargetComponent_Factory(t) { return new (t || NzDemoAffixTargetComponent)(); };
+NzDemoAffixTargetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixTargetComponent, selectors: [["nz-demo-affix-target"]], decls: 7, vars: 2, consts: [[1, "scrollable-container"], ["target", ""], [1, "background"], ["id", "affix-container-target", 3, "nzTarget"], ["nz-button", "", 3, "nzType"]], template: function NzDemoAffixTargetComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-affix", 3);
@@ -285,11 +285,11 @@ class NzDemoAffixZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAffixZhComponent.ɵfac = function NzDemoAffixZhComponent_Factory(t) { return new (t || NzDemoAffixZhComponent)(); };
-/** @nocollapse */ NzDemoAffixZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixZhComponent, selectors: [["nz-demo-affix"]], viewQuery: function NzDemoAffixZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAffixZhComponent.ɵfac = function NzDemoAffixZhComponent_Factory(t) { return new (t || NzDemoAffixZhComponent)(); };
+NzDemoAffixZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixZhComponent, selectors: [["nz-demo-affix"]], viewQuery: function NzDemoAffixZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 221, vars: 19, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-affix-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-affix-demo-on-change", "nzTitle", "\u56FA\u5B9A\u72B6\u6001\u6539\u53D8\u7684\u56DE\u8C03"], ["nzHref", "#components-affix-demo-target", "nzTitle", "\u6EDA\u52A8\u5BB9\u5668"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/affix/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-affix-basic", "nzGenerateCommand", "ng g ng-zorro-antd:affix-basic <name>", "nzComponentName", "NzDemoAffixBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6EDA\u52A8\u5BB9\u5668", "nzSelector", "nz-demo-affix-target", "nzGenerateCommand", "ng g ng-zorro-antd:affix-target <name>", "nzComponentName", "NzDemoAffixTargetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FA\u5B9A\u72B6\u6001\u6539\u53D8\u7684\u56DE\u8C03", "nzSelector", "nz-demo-affix-on-change", "nzGenerateCommand", "ng g ng-zorro-antd:affix-on-change <name>", "nzComponentName", "NzDemoAffixOnChangeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-affix"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-affix'", 1, "anchor"], [1, "language-jsx"], [1, "token", "tag"], [1, "token", "style-attr", "language-css"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "property"], [1, "token", "number"], [1, "token", "operator"]], template: function NzDemoAffixZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -730,11 +730,11 @@ class NzDemoAffixEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAffixEnComponent.ɵfac = function NzDemoAffixEnComponent_Factory(t) { return new (t || NzDemoAffixEnComponent)(); };
-/** @nocollapse */ NzDemoAffixEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixEnComponent, selectors: [["nz-demo-affix"]], viewQuery: function NzDemoAffixEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAffixEnComponent.ɵfac = function NzDemoAffixEnComponent_Factory(t) { return new (t || NzDemoAffixEnComponent)(); };
+NzDemoAffixEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixEnComponent, selectors: [["nz-demo-affix"]], viewQuery: function NzDemoAffixEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 221, vars: 19, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-affix-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-affix-demo-on-change", "nzTitle", "Callback"], ["nzHref", "#components-affix-demo-target", "nzTitle", "Container to scroll."], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/affix/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-affix-basic", "nzGenerateCommand", "ng g ng-zorro-antd:affix-basic <name>", "nzComponentName", "NzDemoAffixBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Container to scroll.", "nzSelector", "nz-demo-affix-target", "nzGenerateCommand", "ng g ng-zorro-antd:affix-target <name>", "nzComponentName", "NzDemoAffixTargetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Callback", "nzSelector", "nz-demo-affix-on-change", "nzGenerateCommand", "ng g ng-zorro-antd:affix-on-change <name>", "nzComponentName", "NzDemoAffixOnChangeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-affix"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-affix'", 1, "anchor"], [1, "language-jsx"], [1, "token", "tag"], [1, "token", "style-attr", "language-css"], [1, "token", "attr-name"], [1, "token", "attr-value"], [1, "token", "property"], [1, "token", "number"], [1, "token", "operator"]], template: function NzDemoAffixEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1155,8 +1155,8 @@ class NzDemoAffixBasicComponent {
         this.nzOffsetBottom += 10;
     }
 }
-/** @nocollapse */ NzDemoAffixBasicComponent.ɵfac = function NzDemoAffixBasicComponent_Factory(t) { return new (t || NzDemoAffixBasicComponent)(); };
-/** @nocollapse */ NzDemoAffixBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixBasicComponent, selectors: [["nz-demo-affix-basic"]], decls: 9, vars: 2, consts: [[3, "nzOffsetTop"], ["nz-button", "", "nzType", "primary", 3, "click"], [3, "nzOffsetBottom", "click"], ["nz-button", "", "nzType", "primary"]], template: function NzDemoAffixBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAffixBasicComponent.ɵfac = function NzDemoAffixBasicComponent_Factory(t) { return new (t || NzDemoAffixBasicComponent)(); };
+NzDemoAffixBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAffixBasicComponent, selectors: [["nz-demo-affix-basic"]], decls: 9, vars: 2, consts: [[3, "nzOffsetTop"], ["nz-button", "", "nzType", "primary", 3, "click"], [3, "nzOffsetBottom", "click"], ["nz-button", "", "nzType", "primary"]], template: function NzDemoAffixBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoAffixBasicComponent_Template_button_click_1_listener() { return ctx.setOffsetTop(); });

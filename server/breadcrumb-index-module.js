@@ -18,8 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbAutoComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbAutoComponent.ɵfac = function NzDemoBreadcrumbAutoComponent_Factory(t) { return new (t || NzDemoBreadcrumbAutoComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbAutoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbAutoComponent, selectors: [["nz-demo-breadcrumb-auto"]], decls: 2, vars: 1, consts: [[3, "nzAutoGenerate"]], template: function NzDemoBreadcrumbAutoComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbAutoComponent.ɵfac = function NzDemoBreadcrumbAutoComponent_Factory(t) { return new (t || NzDemoBreadcrumbAutoComponent)(); };
+NzDemoBreadcrumbAutoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbAutoComponent, selectors: [["nz-demo-breadcrumb-auto"]], decls: 2, vars: 1, consts: [[3, "nzAutoGenerate"]], template: function NzDemoBreadcrumbAutoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Please refer to StackBlitz demo at https://stackblitz.com/edit/ng-zorro-breadcrumb-auto ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -62,8 +62,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbDropdownComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbDropdownComponent.ɵfac = function NzDemoBreadcrumbDropdownComponent_Factory(t) { return new (t || NzDemoBreadcrumbDropdownComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbDropdownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbDropdownComponent, selectors: [["nz-demo-breadcrumb-dropdown"]], decls: 20, vars: 1, consts: [[3, "nzOverlay"], ["href", ""], ["menu", "nzDropdownMenu"], ["nz-menu", "", "nzSelectable", ""], ["nz-menu-item", ""]], template: function NzDemoBreadcrumbDropdownComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbDropdownComponent.ɵfac = function NzDemoBreadcrumbDropdownComponent_Factory(t) { return new (t || NzDemoBreadcrumbDropdownComponent)(); };
+NzDemoBreadcrumbDropdownComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbDropdownComponent, selectors: [["nz-demo-breadcrumb-dropdown"]], decls: 20, vars: 1, consts: [[3, "nzOverlay"], ["href", ""], ["menu", "nzDropdownMenu"], ["nz-menu", "", "nzSelectable", ""], ["nz-menu-item", ""]], template: function NzDemoBreadcrumbDropdownComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-breadcrumb-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Ant Design ");
@@ -150,8 +150,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbSeparatorIndependentComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbSeparatorIndependentComponent.ɵfac = function NzDemoBreadcrumbSeparatorIndependentComponent_Factory(t) { return new (t || NzDemoBreadcrumbSeparatorIndependentComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbSeparatorIndependentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbSeparatorIndependentComponent, selectors: [["nz-demo-breadcrumb-separator-independent"]], decls: 16, vars: 1, consts: [[3, "nzSeparator"]], template: function NzDemoBreadcrumbSeparatorIndependentComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbSeparatorIndependentComponent.ɵfac = function NzDemoBreadcrumbSeparatorIndependentComponent_Factory(t) { return new (t || NzDemoBreadcrumbSeparatorIndependentComponent)(); };
+NzDemoBreadcrumbSeparatorIndependentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbSeparatorIndependentComponent, selectors: [["nz-demo-breadcrumb-separator-independent"]], decls: 16, vars: 1, consts: [[3, "nzSeparator"]], template: function NzDemoBreadcrumbSeparatorIndependentComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-breadcrumb-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Location ");
@@ -273,11 +273,11 @@ class NzDemoBreadcrumbZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoBreadcrumbZhComponent.ɵfac = function NzDemoBreadcrumbZhComponent_Factory(t) { return new (t || NzDemoBreadcrumbZhComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbZhComponent, selectors: [["nz-demo-breadcrumb"]], viewQuery: function NzDemoBreadcrumbZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbZhComponent.ɵfac = function NzDemoBreadcrumbZhComponent_Factory(t) { return new (t || NzDemoBreadcrumbZhComponent)(); };
+NzDemoBreadcrumbZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbZhComponent, selectors: [["nz-demo-breadcrumb"]], viewQuery: function NzDemoBreadcrumbZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 499, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-breadcrumb-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-breadcrumb-demo-with-icon", "nzTitle", "\u5E26\u6709\u56FE\u6807\u7684"], ["nzHref", "#components-breadcrumb-demo-router", "nzTitle", "\u8DEF\u7531"], ["nzHref", "#components-breadcrumb-demo-auto", "nzTitle", "\u81EA\u52A8\u751F\u6210"], ["nzHref", "#components-breadcrumb-demo-separator", "nzTitle", "\u5206\u9694\u7B26"], ["nzHref", "#components-breadcrumb-demo-dropdown", "nzTitle", "\u5E26\u4E0B\u62C9\u83DC\u5355\u7684\u9762\u5305\u5C51"], ["nzHref", "#components-breadcrumb-demo-separator-independent", "nzTitle", "\u72EC\u7ACB\u7684\u5206\u9694\u7B26"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/breadcrumb/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-breadcrumb-basic", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-basic <name>", "nzComponentName", "NzDemoBreadcrumbBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u8DEF\u7531", "nzSelector", "nz-demo-breadcrumb-router", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-router <name>", "nzComponentName", "NzDemoBreadcrumbRouterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://angular.io/api/router/RouterLink", "target", "_blank", "rel", "noopener"], ["nzTitle", "\u5206\u9694\u7B26", "nzSelector", "nz-demo-breadcrumb-separator", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-separator <name>", "nzComponentName", "NzDemoBreadcrumbSeparatorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u72EC\u7ACB\u7684\u5206\u9694\u7B26", "nzSelector", "nz-demo-breadcrumb-separator-independent", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-separator-independent <name>", "nzComponentName", "NzDemoBreadcrumbSeparatorIndependentComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u6709\u56FE\u6807\u7684", "nzSelector", "nz-demo-breadcrumb-with-icon", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-with-icon <name>", "nzComponentName", "NzDemoBreadcrumbWithIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u52A8\u751F\u6210", "nzSelector", "nz-demo-breadcrumb-auto", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-auto <name>", "nzComponentName", "NzDemoBreadcrumbAutoComponent", "nzIframeSource", "https://stackblitz.com/edit/ng-zorro-breadcrumb-auto?embed=1&file=src/app/app.component.html&hideExplorer=1&hideNavigation=1&view=preview", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u4E0B\u62C9\u83DC\u5355\u7684\u9762\u5305\u5C51", "nzSelector", "nz-demo-breadcrumb-dropdown", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-dropdown <name>", "nzComponentName", "NzDemoBreadcrumbDropdownComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-breadcrumb"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-breadcrumb'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"]], template: function NzDemoBreadcrumbZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -320,13 +320,13 @@ class NzDemoBreadcrumbZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u5F53\u7CFB\u7EDF\u62E5\u6709\u8D85\u8FC7\u4E24\u7EA7\u4EE5\u4E0A\u7684\u5C42\u7EA7\u7ED3\u6784\u65F6\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " \u5F53\u7CFB\u7EDF\u62E5\u6709\u8D85\u8FC7\u4E24\u7EA7\u4EE5\u4E0A\u7684\u5C42\u7EA7\u7ED3\u6784\u65F6\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "\u5F53\u9700\u8981\u544A\u77E5\u7528\u6237\u300E\u4F60\u5728\u54EA\u91CC\u300F\u65F6\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " \u5F53\u9700\u8981\u544A\u77E5\u7528\u6237\u300E\u4F60\u5728\u54EA\u91CC\u300F\u65F6\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "\u5F53\u9700\u8981\u5411\u4E0A\u5BFC\u822A\u7684\u529F\u80FD\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, " \u5F53\u9700\u8981\u5411\u4E0A\u5BFC\u822A\u7684\u529F\u80FD\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "pre", 17);
@@ -1137,11 +1137,11 @@ class NzDemoBreadcrumbEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoBreadcrumbEnComponent.ɵfac = function NzDemoBreadcrumbEnComponent_Factory(t) { return new (t || NzDemoBreadcrumbEnComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbEnComponent, selectors: [["nz-demo-breadcrumb"]], viewQuery: function NzDemoBreadcrumbEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbEnComponent.ɵfac = function NzDemoBreadcrumbEnComponent_Factory(t) { return new (t || NzDemoBreadcrumbEnComponent)(); };
+NzDemoBreadcrumbEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbEnComponent, selectors: [["nz-demo-breadcrumb"]], viewQuery: function NzDemoBreadcrumbEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 499, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-breadcrumb-demo-basic", "nzTitle", "Basic Usage"], ["nzHref", "#components-breadcrumb-demo-with-icon", "nzTitle", "With an Icon"], ["nzHref", "#components-breadcrumb-demo-router", "nzTitle", "RouterLink"], ["nzHref", "#components-breadcrumb-demo-auto", "nzTitle", "Auto generated breadcrumbs"], ["nzHref", "#components-breadcrumb-demo-separator", "nzTitle", "Configuring the Separator"], ["nzHref", "#components-breadcrumb-demo-dropdown", "nzTitle", "Bread crumbs with drop down menu"], ["nzHref", "#components-breadcrumb-demo-separator-independent", "nzTitle", "Configuring the Separator Independently"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/breadcrumb/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic Usage", "nzSelector", "nz-demo-breadcrumb-basic", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-basic <name>", "nzComponentName", "NzDemoBreadcrumbBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "RouterLink", "nzSelector", "nz-demo-breadcrumb-router", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-router <name>", "nzComponentName", "NzDemoBreadcrumbRouterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "https://angular.io/api/router/RouterLink", "target", "_blank", "rel", "noopener"], ["nzTitle", "Configuring the Separator", "nzSelector", "nz-demo-breadcrumb-separator", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-separator <name>", "nzComponentName", "NzDemoBreadcrumbSeparatorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Configuring the Separator Independently", "nzSelector", "nz-demo-breadcrumb-separator-independent", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-separator-independent <name>", "nzComponentName", "NzDemoBreadcrumbSeparatorIndependentComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With an Icon", "nzSelector", "nz-demo-breadcrumb-with-icon", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-with-icon <name>", "nzComponentName", "NzDemoBreadcrumbWithIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Auto generated breadcrumbs", "nzSelector", "nz-demo-breadcrumb-auto", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-auto <name>", "nzComponentName", "NzDemoBreadcrumbAutoComponent", "nzIframeSource", "https://stackblitz.com/edit/ng-zorro-breadcrumb-auto?embed=1&file=src/app/app.component.html&hideExplorer=1&hideNavigation=1&view=preview", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Bread crumbs with drop down menu", "nzSelector", "nz-demo-breadcrumb-dropdown", "nzGenerateCommand", "ng g ng-zorro-antd:breadcrumb-dropdown <name>", "nzComponentName", "NzDemoBreadcrumbDropdownComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-breadcrumb"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-breadcrumb'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["spellcheck", "true", 1, "token", "comment"], [1, "token", "operator"], [1, "token", "function"]], template: function NzDemoBreadcrumbEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1182,16 +1182,16 @@ class NzDemoBreadcrumbEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "When the system has more than two layers in a hierarchy.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " When the system has more than two layers in a hierarchy.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "When you need to inform the user of where they are.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " When you need to inform the user of where they are.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "When the user may need to navigate back to a higher level.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " When the user may need to navigate back to a higher level.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "When the application has multi-layer architecture.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, " When the application has multi-layer architecture.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "pre", 17);
@@ -1984,8 +1984,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbWithIconComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbWithIconComponent.ɵfac = function NzDemoBreadcrumbWithIconComponent_Factory(t) { return new (t || NzDemoBreadcrumbWithIconComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbWithIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbWithIconComponent, selectors: [["nz-demo-breadcrumb-with-icon"]], decls: 10, vars: 0, consts: [["nz-icon", "", "nzType", "home"], ["nz-icon", "", "nzType", "user"]], template: function NzDemoBreadcrumbWithIconComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbWithIconComponent.ɵfac = function NzDemoBreadcrumbWithIconComponent_Factory(t) { return new (t || NzDemoBreadcrumbWithIconComponent)(); };
+NzDemoBreadcrumbWithIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbWithIconComponent, selectors: [["nz-demo-breadcrumb-with-icon"]], decls: 10, vars: 0, consts: [["nz-icon", "", "nzType", "home"], ["nz-icon", "", "nzType", "user"]], template: function NzDemoBreadcrumbWithIconComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-breadcrumb-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "i", 0);
@@ -2048,8 +2048,8 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = function () { return ["../../"]; };
 class NzDemoBreadcrumbRouterComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbRouterComponent.ɵfac = function NzDemoBreadcrumbRouterComponent_Factory(t) { return new (t || NzDemoBreadcrumbRouterComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbRouterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbRouterComponent, selectors: [["nz-demo-breadcrumb-router"]], decls: 6, vars: 2, consts: [[3, "routerLink"]], template: function NzDemoBreadcrumbRouterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbRouterComponent.ɵfac = function NzDemoBreadcrumbRouterComponent_Factory(t) { return new (t || NzDemoBreadcrumbRouterComponent)(); };
+NzDemoBreadcrumbRouterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbRouterComponent, selectors: [["nz-demo-breadcrumb-router"]], decls: 6, vars: 2, consts: [[3, "routerLink"]], template: function NzDemoBreadcrumbRouterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-breadcrumb-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 0);
@@ -2101,8 +2101,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbBasicComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbBasicComponent.ɵfac = function NzDemoBreadcrumbBasicComponent_Factory(t) { return new (t || NzDemoBreadcrumbBasicComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbBasicComponent, selectors: [["nz-demo-breadcrumb-basic"]], decls: 8, vars: 0, template: function NzDemoBreadcrumbBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbBasicComponent.ɵfac = function NzDemoBreadcrumbBasicComponent_Factory(t) { return new (t || NzDemoBreadcrumbBasicComponent)(); };
+NzDemoBreadcrumbBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbBasicComponent, selectors: [["nz-demo-breadcrumb-basic"]], decls: 8, vars: 0, template: function NzDemoBreadcrumbBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-breadcrumb");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-breadcrumb-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Home ");
@@ -2162,8 +2162,8 @@ function NzDemoBreadcrumbSeparatorComponent_ng_template_21_Template(rf, ctx) { i
 } }
 class NzDemoBreadcrumbSeparatorComponent {
 }
-/** @nocollapse */ NzDemoBreadcrumbSeparatorComponent.ɵfac = function NzDemoBreadcrumbSeparatorComponent_Factory(t) { return new (t || NzDemoBreadcrumbSeparatorComponent)(); };
-/** @nocollapse */ NzDemoBreadcrumbSeparatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbSeparatorComponent, selectors: [["nz-demo-breadcrumb-separator"]], decls: 23, vars: 1, consts: [["nzSeparator", ">"], [3, "nzSeparator"], ["iconTemplate", ""], ["nz-icon", "", "nzType", "arrow-right"]], template: function NzDemoBreadcrumbSeparatorComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoBreadcrumbSeparatorComponent.ɵfac = function NzDemoBreadcrumbSeparatorComponent_Factory(t) { return new (t || NzDemoBreadcrumbSeparatorComponent)(); };
+NzDemoBreadcrumbSeparatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoBreadcrumbSeparatorComponent, selectors: [["nz-demo-breadcrumb-separator"]], decls: 23, vars: 1, consts: [["nzSeparator", ">"], [3, "nzSeparator"], ["iconTemplate", ""], ["nz-icon", "", "nzType", "arrow-right"]], template: function NzDemoBreadcrumbSeparatorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h4");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "String");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2301,8 +2301,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBreadcrumbModule {
 }
-/** @nocollapse */ NzDemoBreadcrumbModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoBreadcrumbModule });
-/** @nocollapse */ NzDemoBreadcrumbModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoBreadcrumbModule_Factory(t) { return new (t || NzDemoBreadcrumbModule)(); }, imports: [[
+NzDemoBreadcrumbModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoBreadcrumbModule });
+NzDemoBreadcrumbModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoBreadcrumbModule_Factory(t) { return new (t || NzDemoBreadcrumbModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([

@@ -18,8 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAnchorBasicComponent {
 }
-/** @nocollapse */ NzDemoAnchorBasicComponent.ɵfac = function NzDemoAnchorBasicComponent_Factory(t) { return new (t || NzDemoAnchorBasicComponent)(); };
-/** @nocollapse */ NzDemoAnchorBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorBasicComponent, selectors: [["nz-demo-anchor-basic"]], decls: 6, vars: 0, consts: [["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAnchorBasicComponent.ɵfac = function NzDemoAnchorBasicComponent_Factory(t) { return new (t || NzDemoAnchorBasicComponent)(); };
+NzDemoAnchorBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorBasicComponent, selectors: [["nz-demo-anchor-basic"]], decls: 6, vars: 0, consts: [["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-anchor");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-link", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-link", 1);
@@ -97,11 +97,11 @@ class NzDemoAnchorEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAnchorEnComponent.ɵfac = function NzDemoAnchorEnComponent_Factory(t) { return new (t || NzDemoAnchorEnComponent)(); };
-/** @nocollapse */ NzDemoAnchorEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorEnComponent, selectors: [["nz-demo-anchor"]], viewQuery: function NzDemoAnchorEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAnchorEnComponent.ɵfac = function NzDemoAnchorEnComponent_Factory(t) { return new (t || NzDemoAnchorEnComponent)(); };
+NzDemoAnchorEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorEnComponent, selectors: [["nz-demo-anchor"]], viewQuery: function NzDemoAnchorEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 218, vars: 15, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static Anchor"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/anchor/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-anchor-basic", "nzGenerateCommand", "ng g ng-zorro-antd:anchor-basic <name>", "nzComponentName", "NzDemoAnchorBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Static Anchor", "nzSelector", "nz-demo-anchor-static", "nzGenerateCommand", "ng g ng-zorro-antd:anchor-static <name>", "nzComponentName", "NzDemoAnchorStaticComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-anchor"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-anchor'", 1, "anchor"], ["id", "nz-link"], ["onclick", "window.location.hash = 'nz-link'", 1, "anchor"]], template: function NzDemoAnchorEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -527,8 +527,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAnchorModule {
 }
-/** @nocollapse */ NzDemoAnchorModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAnchorModule });
-/** @nocollapse */ NzDemoAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAnchorModule_Factory(t) { return new (t || NzDemoAnchorModule)(); }, imports: [[
+NzDemoAnchorModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoAnchorModule });
+NzDemoAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoAnchorModule_Factory(t) { return new (t || NzDemoAnchorModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -612,11 +612,11 @@ class NzDemoAnchorZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoAnchorZhComponent.ɵfac = function NzDemoAnchorZhComponent_Factory(t) { return new (t || NzDemoAnchorZhComponent)(); };
-/** @nocollapse */ NzDemoAnchorZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorZhComponent, selectors: [["nz-demo-anchor"]], viewQuery: function NzDemoAnchorZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoAnchorZhComponent.ɵfac = function NzDemoAnchorZhComponent_Factory(t) { return new (t || NzDemoAnchorZhComponent)(); };
+NzDemoAnchorZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorZhComponent, selectors: [["nz-demo-anchor"]], viewQuery: function NzDemoAnchorZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 218, vars: 15, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "\u9759\u6001\u4F4D\u7F6E"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/anchor/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-anchor-basic", "nzGenerateCommand", "ng g ng-zorro-antd:anchor-basic <name>", "nzComponentName", "NzDemoAnchorBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u9759\u6001\u4F4D\u7F6E", "nzSelector", "nz-demo-anchor-static", "nzGenerateCommand", "ng g ng-zorro-antd:anchor-static <name>", "nzComponentName", "NzDemoAnchorStaticComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-anchor"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-anchor'", 1, "anchor"], ["id", "nz-link"], ["onclick", "window.location.hash = 'nz-link'", 1, "anchor"]], template: function NzDemoAnchorZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1027,8 +1027,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAnchorStaticComponent {
 }
-/** @nocollapse */ NzDemoAnchorStaticComponent.ɵfac = function NzDemoAnchorStaticComponent_Factory(t) { return new (t || NzDemoAnchorStaticComponent)(); };
-/** @nocollapse */ NzDemoAnchorStaticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorStaticComponent, selectors: [["nz-demo-anchor-static"]], decls: 6, vars: 1, consts: [[3, "nzAffix"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorStaticComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoAnchorStaticComponent.ɵfac = function NzDemoAnchorStaticComponent_Factory(t) { return new (t || NzDemoAnchorStaticComponent)(); };
+NzDemoAnchorStaticComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoAnchorStaticComponent, selectors: [["nz-demo-anchor-static"]], decls: 6, vars: 1, consts: [[3, "nzAffix"], ["nzHref", "#components-anchor-demo-basic", "nzTitle", "Basic demo"], ["nzHref", "#components-anchor-demo-static", "nzTitle", "Static demo"], ["nzHref", "#api", "nzTitle", "API"], ["nzHref", "#nz-anchor", "nzTitle", "nz-anchor"], ["nzHref", "#nz-link", "nzTitle", "nz-link"]], template: function NzDemoAnchorStaticComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-anchor", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-link", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-link", 2);

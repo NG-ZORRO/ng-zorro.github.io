@@ -25,8 +25,8 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = function () { return ["topLeft", "leftTop"]; };
 class NzDemoTooltipPlacementComponent {
 }
-/** @nocollapse */ NzDemoTooltipPlacementComponent.ɵfac = function NzDemoTooltipPlacementComponent_Factory(t) { return new (t || NzDemoTooltipPlacementComponent)(); };
-/** @nocollapse */ NzDemoTooltipPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipPlacementComponent, selectors: [["nz-demo-tooltip-placement"]], decls: 28, vars: 2, consts: [[2, "margin-left", "60px"], ["nzTooltipTitle", "prompt text", "nz-button", "", "nz-tooltip", "", 3, "nzTooltipPlacement"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "top", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topRight", "nz-button", "", "nz-tooltip", ""], [2, "float", "left", "width", "60px"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "leftTop", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "left", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "leftBottom", "nz-button", "", "nz-tooltip", ""], [2, "margin-left", "270px", "width", "60px"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "rightTop", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "right", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "rightBottom", "nz-button", "", "nz-tooltip", ""], [2, "margin-left", "60px", "clear", "both"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottomLeft", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottom", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottomRight", "nz-button", "", "nz-tooltip", ""]], template: function NzDemoTooltipPlacementComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipPlacementComponent.ɵfac = function NzDemoTooltipPlacementComponent_Factory(t) { return new (t || NzDemoTooltipPlacementComponent)(); };
+NzDemoTooltipPlacementComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipPlacementComponent, selectors: [["nz-demo-tooltip-placement"]], decls: 28, vars: 2, consts: [[2, "margin-left", "60px"], ["nzTooltipTitle", "prompt text", "nz-button", "", "nz-tooltip", "", 3, "nzTooltipPlacement"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "top", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topRight", "nz-button", "", "nz-tooltip", ""], [2, "float", "left", "width", "60px"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "leftTop", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "left", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "leftBottom", "nz-button", "", "nz-tooltip", ""], [2, "margin-left", "270px", "width", "60px"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "rightTop", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "right", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "rightBottom", "nz-button", "", "nz-tooltip", ""], [2, "margin-left", "60px", "clear", "both"], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottomLeft", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottom", "nz-button", "", "nz-tooltip", ""], ["nzTooltipTitle", "prompt text", "nzTooltipPlacement", "bottomRight", "nz-button", "", "nz-tooltip", ""]], template: function NzDemoTooltipPlacementComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "TL");
@@ -133,8 +133,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+
 
 
 
@@ -178,16 +180,14 @@ class NzDividerComponent {
         this.elementRef.nativeElement.classList.add('ant-divider');
     }
 }
-/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 16, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
     } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzDividerComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
@@ -248,15 +248,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDividerModule {
 }
-/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-/** @nocollapse */
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]],
                 declarations: [NzDividerComponent],
                 exports: [NzDividerComponent]
             }]
@@ -309,9 +307,7 @@ class NzElementPatchDirective {
         return this.elementRef.nativeElement;
     }
 }
-/** @nocollapse */
 NzElementPatchDirective.ɵfac = function NzElementPatchDirective_Factory(t) { return new (t || NzElementPatchDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])); };
-/** @nocollapse */
 NzElementPatchDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzElementPatchDirective, selectors: [["", "nzElement", ""], ["", "nz-element", ""]], exportAs: ["nzElement"] });
 NzElementPatchDirective.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }
@@ -330,9 +326,7 @@ NzElementPatchDirective.ctorParameters = () => [
  */
 class NzElementPatchModule {
 }
-/** @nocollapse */
 NzElementPatchModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzElementPatchModule });
-/** @nocollapse */
 NzElementPatchModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzElementPatchModule_Factory(t) { return new (t || NzElementPatchModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzElementPatchModule, { declarations: function () { return [NzElementPatchDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [NzElementPatchDirective]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzElementPatchModule, [{
@@ -417,11 +411,11 @@ class NzDemoTooltipZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTooltipZhComponent.ɵfac = function NzDemoTooltipZhComponent_Factory(t) { return new (t || NzDemoTooltipZhComponent)(); };
-/** @nocollapse */ NzDemoTooltipZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipZhComponent, selectors: [["nz-demo-tooltip"]], viewQuery: function NzDemoTooltipZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTooltipZhComponent.ɵfac = function NzDemoTooltipZhComponent_Factory(t) { return new (t || NzDemoTooltipZhComponent)(); };
+NzDemoTooltipZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipZhComponent, selectors: [["nz-demo-tooltip"]], viewQuery: function NzDemoTooltipZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 342, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tooltip-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-tooltip-demo-placement", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-tooltip-demo-arrow-point-at-center", "nzTitle", "\u7BAD\u5934\u6307\u5411"], ["nzHref", "#components-tooltip-demo-template", "nzTitle", "\u6A21\u677F\u6E32\u67D3"], ["nzHref", "#components-tooltip-demo-origin", "nzTitle", "\u6307\u5B9A\u76EE\u6807"], ["nzHref", "#components-tooltip-demo-color", "nzTitle", "\u591A\u5F69\u6587\u5B57\u63D0\u793A"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tooltip/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-tooltip-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-basic <name>", "nzComponentName", "NzDemoTooltipBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u7BAD\u5934\u6307\u5411", "nzSelector", "nz-demo-tooltip-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-arrow-point-at-center <name>", "nzComponentName", "NzDemoTooltipArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6307\u5B9A\u76EE\u6807", "nzSelector", "nz-demo-tooltip-origin", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-origin <name>", "nzComponentName", "NzDemoTooltipOriginComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-tooltip-placement", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-placement <name>", "nzComponentName", "NzDemoTooltipPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6A21\u677F\u6E32\u67D3", "nzSelector", "nz-demo-tooltip-template", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-template <name>", "nzComponentName", "NzDemoTooltipTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u5F69\u6587\u5B57\u63D0\u793A", "nzSelector", "nz-demo-tooltip-color", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-color <name>", "nzComponentName", "NzDemoTooltipColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-tooltip]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-tooltip]'", 1, "anchor"], ["id", "\u5171\u540C\u7684-api"], ["onclick", "window.location.hash = '\u5171\u540C\u7684-api'", 1, "anchor"], ["id", "\u975E-body-\u6EDA\u8F74\u4E8B\u4EF6\u9700\u8981\u66F4\u65B0-cdk-\u7684\u4F4D\u7F6E"], ["onclick", "window.location.hash = '\u975E-body-\u6EDA\u8F74\u4E8B\u4EF6\u9700\u8981\u66F4\u65B0-cdk-\u7684\u4F4D\u7F6E'", 1, "anchor"], ["href", "https://material.angular.io/cdk/scrolling/api", "target", "_blank", "rel", "noopener"], ["id", "\u6CE8\u610F"], ["onclick", "window.location.hash = '\u6CE8\u610F'", 1, "anchor"]], template: function NzDemoTooltipZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1040,8 +1034,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTooltipArrowPointAtCenterComponent {
 }
-/** @nocollapse */ NzDemoTooltipArrowPointAtCenterComponent.ɵfac = function NzDemoTooltipArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoTooltipArrowPointAtCenterComponent)(); };
-/** @nocollapse */ NzDemoTooltipArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipArrowPointAtCenterComponent, selectors: [["nz-demo-tooltip-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topLeft", "nz-tooltip", ""], ["nz-button", "", "nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topCenter", "nz-tooltip", ""]], template: function NzDemoTooltipArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipArrowPointAtCenterComponent.ɵfac = function NzDemoTooltipArrowPointAtCenterComponent_Factory(t) { return new (t || NzDemoTooltipArrowPointAtCenterComponent)(); };
+NzDemoTooltipArrowPointAtCenterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipArrowPointAtCenterComponent, selectors: [["nz-demo-tooltip-arrow-point-at-center"]], decls: 4, vars: 0, consts: [["nz-button", "", "nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topLeft", "nz-tooltip", ""], ["nz-button", "", "nzTooltipTitle", "prompt text", "nzTooltipPlacement", "topCenter", "nz-tooltip", ""]], template: function NzDemoTooltipArrowPointAtCenterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Align edge / \u8FB9\u7F18\u5BF9\u9F50 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1092,8 +1086,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTooltipBasicComponent {
 }
-/** @nocollapse */ NzDemoTooltipBasicComponent.ɵfac = function NzDemoTooltipBasicComponent_Factory(t) { return new (t || NzDemoTooltipBasicComponent)(); };
-/** @nocollapse */ NzDemoTooltipBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipBasicComponent, selectors: [["nz-demo-tooltip-basic"]], decls: 2, vars: 0, consts: [["nz-tooltip", "", "nzTooltipTitle", "prompt text"]], template: function NzDemoTooltipBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipBasicComponent.ɵfac = function NzDemoTooltipBasicComponent_Factory(t) { return new (t || NzDemoTooltipBasicComponent)(); };
+NzDemoTooltipBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipBasicComponent, selectors: [["nz-demo-tooltip-basic"]], decls: 2, vars: 0, consts: [["nz-tooltip", "", "nzTooltipTitle", "prompt text"]], template: function NzDemoTooltipBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Tooltip will show when mouse enter.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1169,11 +1163,11 @@ class NzDemoTooltipEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTooltipEnComponent.ɵfac = function NzDemoTooltipEnComponent_Factory(t) { return new (t || NzDemoTooltipEnComponent)(); };
-/** @nocollapse */ NzDemoTooltipEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipEnComponent, selectors: [["nz-demo-tooltip"]], viewQuery: function NzDemoTooltipEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTooltipEnComponent.ɵfac = function NzDemoTooltipEnComponent_Factory(t) { return new (t || NzDemoTooltipEnComponent)(); };
+NzDemoTooltipEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipEnComponent, selectors: [["nz-demo-tooltip"]], viewQuery: function NzDemoTooltipEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 338, vars: 31, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tooltip-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-tooltip-demo-placement", "nzTitle", "Placement"], ["nzHref", "#components-tooltip-demo-arrow-point-at-center", "nzTitle", "Arrow pointing at the center"], ["nzHref", "#components-tooltip-demo-template", "nzTitle", "Template"], ["nzHref", "#components-tooltip-demo-origin", "nzTitle", "Target"], ["nzHref", "#components-tooltip-demo-color", "nzTitle", "Colorful tooltip"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tooltip/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-tooltip-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-basic <name>", "nzComponentName", "NzDemoTooltipBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Arrow pointing at the center", "nzSelector", "nz-demo-tooltip-arrow-point-at-center", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-arrow-point-at-center <name>", "nzComponentName", "NzDemoTooltipArrowPointAtCenterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Target", "nzSelector", "nz-demo-tooltip-origin", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-origin <name>", "nzComponentName", "NzDemoTooltipOriginComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Placement", "nzSelector", "nz-demo-tooltip-placement", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-placement <name>", "nzComponentName", "NzDemoTooltipPlacementComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Template", "nzSelector", "nz-demo-tooltip-template", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-template <name>", "nzComponentName", "NzDemoTooltipTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Colorful tooltip", "nzSelector", "nz-demo-tooltip-color", "nzGenerateCommand", "ng g ng-zorro-antd:tooltip-color <name>", "nzComponentName", "NzDemoTooltipColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-tooltip]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-tooltip]'", 1, "anchor"], ["id", "common-api"], ["onclick", "window.location.hash = 'common-api'", 1, "anchor"], ["id", "exclude-body-element's-scroll-event-need-to-refresh-the-position-of-cdk"], ["onclick", "window.location.hash = 'exclude-body-element's-scroll-event-need-to-refresh-the-position-of-cdk'", 1, "anchor"], ["href", "https://material.angular.io/cdk/scrolling/api", "target", "_blank", "rel", "noopener"], ["id", "note"], ["onclick", "window.location.hash = 'note'", 1, "anchor"]], template: function NzDemoTooltipEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1213,10 +1207,10 @@ class NzDemoTooltipEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "The tip is shown on mouse enter, and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " The tip is shown on mouse enter, and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "To provide an explanation of a ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " To provide an explanation of a ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "button/text/operation");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1814,8 +1808,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTooltipOriginComponent {
 }
-/** @nocollapse */ NzDemoTooltipOriginComponent.ɵfac = function NzDemoTooltipOriginComponent_Factory(t) { return new (t || NzDemoTooltipOriginComponent)(); };
-/** @nocollapse */ NzDemoTooltipOriginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipOriginComponent, selectors: [["nz-demo-tooltip-origin"]], decls: 5, vars: 1, consts: [["nz-button", "", "nz-element", ""], ["button", "nzElement"], ["nz-tooltip", "", "nzTooltipTitle", "This action could not be revoked!", 3, "nzTooltipOrigin"]], template: function NzDemoTooltipOriginComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipOriginComponent.ɵfac = function NzDemoTooltipOriginComponent_Factory(t) { return new (t || NzDemoTooltipOriginComponent)(); };
+NzDemoTooltipOriginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipOriginComponent, selectors: [["nz-demo-tooltip-origin"]], decls: 5, vars: 1, consts: [["nz-button", "", "nz-element", ""], ["button", "nzElement"], ["nz-tooltip", "", "nzTooltipTitle", "This action could not be revoked!", 3, "nzTooltipOrigin"]], template: function NzDemoTooltipOriginComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Action");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1875,8 +1869,8 @@ function NzDemoTooltipTemplateComponent_ng_template_2_Template(rf, ctx) { if (rf
 } }
 class NzDemoTooltipTemplateComponent {
 }
-/** @nocollapse */ NzDemoTooltipTemplateComponent.ɵfac = function NzDemoTooltipTemplateComponent_Factory(t) { return new (t || NzDemoTooltipTemplateComponent)(); };
-/** @nocollapse */ NzDemoTooltipTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipTemplateComponent, selectors: [["nz-demo-tooltip-template"]], decls: 4, vars: 1, consts: [["nz-tooltip", "", 3, "nzTooltipTitle"], ["titleTemplate", ""], ["nz-icon", "", "nzType", "file", 2, "margin-right", "8px"]], template: function NzDemoTooltipTemplateComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipTemplateComponent.ɵfac = function NzDemoTooltipTemplateComponent_Factory(t) { return new (t || NzDemoTooltipTemplateComponent)(); };
+NzDemoTooltipTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipTemplateComponent, selectors: [["nz-demo-tooltip-template"]], decls: 4, vars: 1, consts: [["nz-tooltip", "", 3, "nzTooltipTitle"], ["titleTemplate", ""], ["nz-icon", "", "nzType", "file"]], template: function NzDemoTooltipTemplateComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "a", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "This Tooltip has an Icon");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1884,15 +1878,26 @@ class NzDemoTooltipTemplateComponent {
     } if (rf & 2) {
         const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzTooltipTitle", _r0);
-    } }, directives: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_1__["NzTooltipDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], encapsulation: 2 });
+    } }, directives: [ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_1__["NzTooltipDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_2__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_3__["ɵNzTransitionPatchDirective"]], styles: [".anticon[_ngcontent-%COMP%] {\n        margin-right: 8px;\n        margin-left: 8px;\n      }"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTooltipTemplateComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
                 selector: 'nz-demo-tooltip-template',
                 template: `
     <a nz-tooltip [nzTooltipTitle]="titleTemplate">This Tooltip has an Icon</a>
-    <ng-template #titleTemplate> <i nz-icon nzType="file" style="margin-right: 8px"></i> <span>Tooltip With Icon</span> </ng-template>
-  `
+    <ng-template #titleTemplate>
+      <i nz-icon nzType="file"></i>
+      <span>Tooltip With Icon</span>
+    </ng-template>
+  `,
+                styles: [
+                    `
+      .anticon {
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+    `
+                ]
             }]
     }], null, null); })();
 
@@ -1952,8 +1957,8 @@ class NzDemoTooltipColorComponent {
         this.presetColors = ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_1__["presetColors"];
     }
 }
-/** @nocollapse */ NzDemoTooltipColorComponent.ɵfac = function NzDemoTooltipColorComponent_Factory(t) { return new (t || NzDemoTooltipColorComponent)(); };
-/** @nocollapse */ NzDemoTooltipColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipColorComponent, selectors: [["nz-demo-tooltip-color"]], decls: 4, vars: 2, consts: [["nzText", "Preset", "nzOrientation", "left"], ["nz-button", "", "nz-tooltip", "", 3, "nzTooltipTitle", "nzTooltipColor", 4, "ngFor", "ngForOf"], ["nzText", "Custom", "nzOrientation", "left"], ["nz-button", "", "nz-tooltip", "", 3, "nzTooltipTitle", "nzTooltipColor"]], template: function NzDemoTooltipColorComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTooltipColorComponent.ɵfac = function NzDemoTooltipColorComponent_Factory(t) { return new (t || NzDemoTooltipColorComponent)(); };
+NzDemoTooltipColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTooltipColorComponent, selectors: [["nz-demo-tooltip-color"]], decls: 4, vars: 2, consts: [["nzText", "Preset", "nzOrientation", "left"], ["nz-button", "", "nz-tooltip", "", 3, "nzTooltipTitle", "nzTooltipColor", 4, "ngFor", "ngForOf"], ["nzText", "Custom", "nzOrientation", "left"], ["nz-button", "", "nz-tooltip", "", 3, "nzTooltipTitle", "nzTooltipColor"]], template: function NzDemoTooltipColorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-divider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTooltipColorComponent_button_1_Template, 2, 3, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-divider", 2);
@@ -2040,8 +2045,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTooltipModule {
 }
-/** @nocollapse */ NzDemoTooltipModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTooltipModule });
-/** @nocollapse */ NzDemoTooltipModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTooltipModule_Factory(t) { return new (t || NzDemoTooltipModule)(); }, imports: [[
+NzDemoTooltipModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTooltipModule });
+NzDemoTooltipModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTooltipModule_Factory(t) { return new (t || NzDemoTooltipModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([

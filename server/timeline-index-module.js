@@ -25,8 +25,8 @@ function NzDemoTimelineCustomComponent_ng_template_9_Template(rf, ctx) { if (rf 
 } }
 class NzDemoTimelineCustomComponent {
 }
-/** @nocollapse */ NzDemoTimelineCustomComponent.ɵfac = function NzDemoTimelineCustomComponent_Factory(t) { return new (t || NzDemoTimelineCustomComponent)(); };
-/** @nocollapse */ NzDemoTimelineCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineCustomComponent, selectors: [["nz-demo-timeline-custom"]], decls: 11, vars: 1, consts: [["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineCustomComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelineCustomComponent.ɵfac = function NzDemoTimelineCustomComponent_Factory(t) { return new (t || NzDemoTimelineCustomComponent)(); };
+NzDemoTimelineCustomComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineCustomComponent, selectors: [["nz-demo-timeline-custom"]], decls: 11, vars: 1, consts: [["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineCustomComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
@@ -84,10 +84,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "qCKp");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
 
 
 
@@ -100,6 +102,7 @@ __webpack_require__.r(__webpack_exports__);
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+
 
 
 
@@ -170,7 +173,7 @@ function NzTimelineComponent_ng_template_4_li_0_ng_container_3_Template(rf, ctx)
 } if (rf & 2) {
     const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r8.nzPendingDot, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx_r8.nzPendingDot, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx_r8.nzPendingDot);
 } }
@@ -214,9 +217,7 @@ class TimelineService {
         this.check$.next();
     }
 }
-/** @nocollapse */
 TimelineService.ɵfac = function TimelineService_Factory(t) { return new (t || TimelineService)(); };
-/** @nocollapse */
 TimelineService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: TimelineService, factory: TimelineService.ɵfac });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TimelineService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"]
@@ -258,18 +259,16 @@ class NzTimelineItemComponent {
         this.borderColor = isDefaultColor(this.nzColor) ? null : this.nzColor;
     }
 }
-/** @nocollapse */
 NzTimelineItemComponent.ɵfac = function NzTimelineItemComponent_Factory(t) { return new (t || NzTimelineItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
-/** @nocollapse */
 NzTimelineItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineItemComponent, selectors: [["nz-timeline-item"], ["", "nz-timeline-item", ""]], viewQuery: function NzTimelineItemComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.template = _t.first);
     } }, inputs: { nzColor: "nzColor", nzPosition: "nzPosition", nzDot: "nzDot" }, exportAs: ["nzTimelineItem"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 2, vars: 0, consts: [["template", ""], [1, "ant-timeline-item"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"]], template: function NzTimelineItemComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzTimelineItemComponent_ng_template_0_Template, 6, 19, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
-    } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzTimelineItemComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
     { type: TimelineService }
@@ -331,13 +330,15 @@ NzTimelineItemComponent.propDecorators = {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzTimelineComponent {
-    constructor(cdr, timelineService) {
+    constructor(cdr, timelineService, directionality) {
         this.cdr = cdr;
         this.timelineService = timelineService;
+        this.directionality = directionality;
         this.nzMode = 'left';
         this.nzReverse = false;
         this.isPendingBoolean = false;
         this.timelineItems = [];
+        this.dir = 'ltr';
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_1__["Subject"]();
     }
     ngOnChanges(changes) {
@@ -350,9 +351,15 @@ class NzTimelineComponent {
         }
     }
     ngOnInit() {
+        var _a;
         this.timelineService.check$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.cdr.markForCheck();
         });
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+        this.dir = this.directionality.value;
     }
     ngAfterContentInit() {
         this.updateChildren();
@@ -377,15 +384,13 @@ class NzTimelineComponent {
         this.cdr.markForCheck();
     }
 }
-/** @nocollapse */
-NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService)); };
-/** @nocollapse */
+NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](TimelineService), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], 8)); };
 NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzTimelineComponent, selectors: [["nz-timeline"]], contentQueries: function NzTimelineComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, NzTimelineItemComponent, false);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.listOfItems = _t);
-    } }, inputs: { nzMode: "nzMode", nzReverse: "nzReverse", nzPending: "nzPending", nzPendingDot: "nzPendingDot" }, exportAs: ["nzTimeline"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([TimelineService]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 7, vars: 11, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzTimelineComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzMode: "nzMode", nzReverse: "nzReverse", nzPending: "nzPending", nzPendingDot: "nzPendingDot" }, exportAs: ["nzTimeline"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([TimelineService]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c1, decls: 7, vars: 13, consts: [[1, "ant-timeline"], [3, "ngTemplateOutlet", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["pendingTemplate", ""], [3, "ngTemplateOutlet"], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzTimelineComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzTimelineComponent_ng_container_1_Template, 1, 1, "ng-container", 1);
@@ -395,17 +400,18 @@ NzTimelineComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, NzTimelineComponent_ng_template_4_Template, 1, 1, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](6);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-timeline-right", ctx.nzMode === "right")("ant-timeline-alternate", ctx.nzMode === "alternate" || ctx.nzMode === "custom")("ant-timeline-pending", !!ctx.nzPending)("ant-timeline-reverse", ctx.nzReverse);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("ant-timeline-right", ctx.nzMode === "right")("ant-timeline-alternate", ctx.nzMode === "alternate" || ctx.nzMode === "custom")("ant-timeline-pending", !!ctx.nzPending)("ant-timeline-reverse", ctx.nzReverse)("ant-timeline-rtl", ctx.dir === "rtl");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.nzReverse);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.timelineItems);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.nzReverse);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgTemplateOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgTemplateOutlet"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzStringTemplateOutletDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
 NzTimelineComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
-    { type: TimelineService }
+    { type: TimelineService },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] }
 ];
 NzTimelineComponent.propDecorators = {
     listOfItems: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [NzTimelineItemComponent,] }],
@@ -430,6 +436,7 @@ NzTimelineComponent.propDecorators = {
       [class.ant-timeline-alternate]="nzMode === 'alternate' || nzMode === 'custom'"
       [class.ant-timeline-pending]="!!nzPending"
       [class.ant-timeline-reverse]="nzReverse"
+      [class.ant-timeline-rtl]="dir === 'rtl'"
     >
       <!-- pending dot (reversed) -->
       <ng-container *ngIf="nzReverse" [ngTemplateOutlet]="pendingTemplate"></ng-container>
@@ -445,7 +452,8 @@ NzTimelineComponent.propDecorators = {
         <div class="ant-timeline-item-tail"></div>
         <div class="ant-timeline-item-head ant-timeline-item-head-custom ant-timeline-item-head-blue">
           <ng-container *nzStringTemplateOutlet="nzPendingDot">
-            {{ nzPendingDot }}<i *ngIf="!nzPendingDot" nz-icon nzType="loading"></i>
+            {{ nzPendingDot }}
+            <i *ngIf="!nzPendingDot" nz-icon nzType="loading"></i>
           </ng-container>
         </div>
         <div class="ant-timeline-item-content">
@@ -459,7 +467,9 @@ NzTimelineComponent.propDecorators = {
     <ng-content></ng-content>
   `
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: TimelineService }]; }, { nzMode: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] }, { type: TimelineService }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
+            }] }]; }, { nzMode: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }], nzReverse: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
@@ -492,17 +502,15 @@ function getInferredTimelineItemPosition(index, mode) {
  */
 class NzTimelineModule {
 }
-/** @nocollapse */
 NzTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzTimelineModule });
-/** @nocollapse */
-NzTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTimelineModule_Factory(t) { return new (t || NzTimelineModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTimelineModule, { declarations: function () { return [NzTimelineItemComponent, NzTimelineComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzTimelineItemComponent, NzTimelineComponent]; } }); })();
+NzTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTimelineModule_Factory(t) { return new (t || NzTimelineModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzTimelineModule, { declarations: function () { return [NzTimelineItemComponent, NzTimelineComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]; }, exports: function () { return [NzTimelineItemComponent, NzTimelineComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzTimelineModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
                 declarations: [NzTimelineItemComponent, NzTimelineComponent],
                 exports: [NzTimelineItemComponent, NzTimelineComponent],
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["CommonModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_4__["PlatformModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_7__["NzIconModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"]]
             }]
     }], null, null); })();
 
@@ -588,8 +596,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimelineModule {
 }
-/** @nocollapse */ NzDemoTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimelineModule });
-/** @nocollapse */ NzDemoTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimelineModule_Factory(t) { return new (t || NzDemoTimelineModule)(); }, imports: [[
+NzDemoTimelineModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimelineModule });
+NzDemoTimelineModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimelineModule_Factory(t) { return new (t || NzDemoTimelineModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -695,11 +703,11 @@ class NzDemoTimelineEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTimelineEnComponent.ɵfac = function NzDemoTimelineEnComponent_Factory(t) { return new (t || NzDemoTimelineEnComponent)(); };
-/** @nocollapse */ NzDemoTimelineEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineEnComponent, selectors: [["nz-demo-timeline"]], viewQuery: function NzDemoTimelineEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTimelineEnComponent.ɵfac = function NzDemoTimelineEnComponent_Factory(t) { return new (t || NzDemoTimelineEnComponent)(); };
+NzDemoTimelineEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineEnComponent, selectors: [["nz-demo-timeline"]], viewQuery: function NzDemoTimelineEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 330, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "Color"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "Last node"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "Alternate"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "Custom"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "Right alternate"], ["nzHref", "#components-timeline-demo-position", "nzTitle", "Custom Position"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Last node", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom Position", "nzSelector", "nz-demo-timeline-position", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-position <name>", "nzComponentName", "NzDemoTimelinePositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Color", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Alternate", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Right alternate", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -740,10 +748,10 @@ class NzDemoTimelineEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "When a series of information needs to be ordered by time (ascend or descend).");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " When a series of information needs to be ordered by time (ascend or descend).");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "When you need a timeline to make a visual connection.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " When you need a timeline to make a visual connection.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "pre", 17);
@@ -1294,8 +1302,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimelineColorComponent {
 }
-/** @nocollapse */ NzDemoTimelineColorComponent.ɵfac = function NzDemoTimelineColorComponent_Factory(t) { return new (t || NzDemoTimelineColorComponent)(); };
-/** @nocollapse */ NzDemoTimelineColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineColorComponent, selectors: [["nz-demo-timeline-color"]], decls: 33, vars: 0, consts: [["nzColor", "green"], ["nzColor", "red"], ["nzColor", "gray"]], template: function NzDemoTimelineColorComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelineColorComponent.ɵfac = function NzDemoTimelineColorComponent_Factory(t) { return new (t || NzDemoTimelineColorComponent)(); };
+NzDemoTimelineColorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineColorComponent, selectors: [["nz-demo-timeline-color"]], decls: 33, vars: 0, consts: [["nzColor", "green"], ["nzColor", "red"], ["nzColor", "gray"]], template: function NzDemoTimelineColorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
@@ -1414,8 +1422,8 @@ class NzDemoTimelinePendingComponent {
         this.reverse = !this.reverse;
     }
 }
-/** @nocollapse */ NzDemoTimelinePendingComponent.ɵfac = function NzDemoTimelinePendingComponent_Factory(t) { return new (t || NzDemoTimelinePendingComponent)(); };
-/** @nocollapse */ NzDemoTimelinePendingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelinePendingComponent, selectors: [["nz-demo-timeline-pending"]], decls: 9, vars: 2, consts: [[3, "nzPending", "nzReverse"], ["nz-button", "", "nzType", "primary", 2, "margin-top", "16px", 3, "click"]], template: function NzDemoTimelinePendingComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelinePendingComponent.ɵfac = function NzDemoTimelinePendingComponent_Factory(t) { return new (t || NzDemoTimelinePendingComponent)(); };
+NzDemoTimelinePendingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelinePendingComponent, selectors: [["nz-demo-timeline-pending"]], decls: 9, vars: 2, consts: [[3, "nzPending", "nzReverse"], ["nz-button", "", "nzType", "primary", 2, "margin-top", "16px", 3, "click"]], template: function NzDemoTimelinePendingComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
@@ -1472,8 +1480,8 @@ function NzDemoTimelinePositionComponent_ng_template_9_Template(rf, ctx) { if (r
 } }
 class NzDemoTimelinePositionComponent {
 }
-/** @nocollapse */ NzDemoTimelinePositionComponent.ɵfac = function NzDemoTimelinePositionComponent_Factory(t) { return new (t || NzDemoTimelinePositionComponent)(); };
-/** @nocollapse */ NzDemoTimelinePositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelinePositionComponent, selectors: [["nz-demo-timeline-position"]], decls: 11, vars: 4, consts: [["nzMode", "custom"], ["nzPosition", "left", 3, "nzDot"], ["nzPosition", "right", "nzColor", "red", 3, "nzDot"], ["soccerTemplate", ""]], template: function NzDemoTimelinePositionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelinePositionComponent.ɵfac = function NzDemoTimelinePositionComponent_Factory(t) { return new (t || NzDemoTimelinePositionComponent)(); };
+NzDemoTimelinePositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelinePositionComponent, selectors: [["nz-demo-timeline-position"]], decls: 11, vars: 4, consts: [["nzMode", "custom"], ["nzPosition", "left", 3, "nzDot"], ["nzPosition", "right", "nzColor", "red", 3, "nzDot"], ["soccerTemplate", ""]], template: function NzDemoTimelinePositionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Alice 20'");
@@ -1581,11 +1589,11 @@ class NzDemoTimelineZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTimelineZhComponent.ɵfac = function NzDemoTimelineZhComponent_Factory(t) { return new (t || NzDemoTimelineZhComponent)(); };
-/** @nocollapse */ NzDemoTimelineZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineZhComponent, selectors: [["nz-demo-timeline"]], viewQuery: function NzDemoTimelineZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTimelineZhComponent.ɵfac = function NzDemoTimelineZhComponent_Factory(t) { return new (t || NzDemoTimelineZhComponent)(); };
+NzDemoTimelineZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineZhComponent, selectors: [["nz-demo-timeline"]], viewQuery: function NzDemoTimelineZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 328, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-timeline-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-timeline-demo-color", "nzTitle", "\u5706\u5708\u989C\u8272"], ["nzHref", "#components-timeline-demo-pending", "nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F"], ["nzHref", "#components-timeline-demo-alternate", "nzTitle", "\u4EA4\u66FF\u5C55\u73B0"], ["nzHref", "#components-timeline-demo-custom", "nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#components-timeline-demo-right", "nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9"], ["nzHref", "#components-timeline-demo-position", "nzTitle", "\u81EA\u5B9A\u4E49\u4F4D\u7F6E"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/timeline/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-timeline-basic", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-basic <name>", "nzComponentName", "NzDemoTimelineBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u6700\u540E\u4E00\u4E2A\u53CA\u6392\u5E8F", "nzSelector", "nz-demo-timeline-pending", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-pending <name>", "nzComponentName", "NzDemoTimelinePendingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-custom", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-custom <name>", "nzComponentName", "NzDemoTimelineCustomComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u4F4D\u7F6E", "nzSelector", "nz-demo-timeline-position", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-position <name>", "nzComponentName", "NzDemoTimelinePositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5706\u5708\u989C\u8272", "nzSelector", "nz-demo-timeline-color", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-color <name>", "nzComponentName", "NzDemoTimelineColorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4EA4\u66FF\u5C55\u73B0", "nzSelector", "nz-demo-timeline-alternate", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-alternate <name>", "nzComponentName", "NzDemoTimelineAlternateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53F3\u4FA7\u65F6\u95F4\u8F74\u70B9", "nzSelector", "nz-demo-timeline-right", "nzGenerateCommand", "ng g ng-zorro-antd:timeline-right <name>", "nzComponentName", "NzDemoTimelineRightComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-timeline"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-timeline'", 1, "anchor"], ["id", "nz-timeline-item"], ["onclick", "window.location.hash = 'nz-timeline-item'", 1, "anchor"]], template: function NzDemoTimelineZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1628,10 +1636,10 @@ class NzDemoTimelineZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u5F53\u6709\u4E00\u7CFB\u5217\u4FE1\u606F\u9700\u6309\u65F6\u95F4\u6392\u5217\u65F6\uFF0C\u53EF\u6B63\u5E8F\u548C\u5012\u5E8F\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " \u5F53\u6709\u4E00\u7CFB\u5217\u4FE1\u606F\u9700\u6309\u65F6\u95F4\u6392\u5217\u65F6\uFF0C\u53EF\u6B63\u5E8F\u548C\u5012\u5E8F\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "\u9700\u8981\u6709\u4E00\u6761\u65F6\u95F4\u8F74\u8FDB\u884C\u89C6\u89C9\u4E0A\u7684\u4E32\u8054\u65F6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " \u9700\u8981\u6709\u4E00\u6761\u65F6\u95F4\u8F74\u8FDB\u884C\u89C6\u89C9\u4E0A\u7684\u4E32\u8054\u65F6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "pre", 17);
@@ -2184,8 +2192,8 @@ function NzDemoTimelineAlternateComponent_ng_template_13_Template(rf, ctx) { if 
 } }
 class NzDemoTimelineAlternateComponent {
 }
-/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵfac = function NzDemoTimelineAlternateComponent_Factory(t) { return new (t || NzDemoTimelineAlternateComponent)(); };
-/** @nocollapse */ NzDemoTimelineAlternateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineAlternateComponent, selectors: [["nz-demo-timeline-alternate"]], decls: 15, vars: 2, consts: [["nzMode", "alternate"], ["nzColor", "green"], [3, "nzDot"], ["nzColor", "red"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineAlternateComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelineAlternateComponent.ɵfac = function NzDemoTimelineAlternateComponent_Factory(t) { return new (t || NzDemoTimelineAlternateComponent)(); };
+NzDemoTimelineAlternateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineAlternateComponent, selectors: [["nz-demo-timeline-alternate"]], decls: 15, vars: 2, consts: [["nzMode", "alternate"], ["nzColor", "green"], [3, "nzDot"], ["nzColor", "red"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineAlternateComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
@@ -2257,8 +2265,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimelineBasicComponent {
 }
-/** @nocollapse */ NzDemoTimelineBasicComponent.ɵfac = function NzDemoTimelineBasicComponent_Factory(t) { return new (t || NzDemoTimelineBasicComponent)(); };
-/** @nocollapse */ NzDemoTimelineBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineBasicComponent, selectors: [["nz-demo-timeline-basic"]], decls: 9, vars: 0, template: function NzDemoTimelineBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelineBasicComponent.ɵfac = function NzDemoTimelineBasicComponent_Factory(t) { return new (t || NzDemoTimelineBasicComponent)(); };
+NzDemoTimelineBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineBasicComponent, selectors: [["nz-demo-timeline-basic"]], decls: 9, vars: 0, template: function NzDemoTimelineBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");
@@ -2316,8 +2324,8 @@ function NzDemoTimelineRightComponent_ng_template_9_Template(rf, ctx) { if (rf &
 } }
 class NzDemoTimelineRightComponent {
 }
-/** @nocollapse */ NzDemoTimelineRightComponent.ɵfac = function NzDemoTimelineRightComponent_Factory(t) { return new (t || NzDemoTimelineRightComponent)(); };
-/** @nocollapse */ NzDemoTimelineRightComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineRightComponent, selectors: [["nz-demo-timeline-right"]], decls: 11, vars: 1, consts: [["nzMode", "right"], ["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineRightComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimelineRightComponent.ɵfac = function NzDemoTimelineRightComponent_Factory(t) { return new (t || NzDemoTimelineRightComponent)(); };
+NzDemoTimelineRightComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimelineRightComponent, selectors: [["nz-demo-timeline-right"]], decls: 11, vars: 1, consts: [["nzMode", "right"], ["nzColor", "red", 3, "nzDot"], ["dotTemplate", ""], ["nz-icon", "", "nzType", "clock-circle-o", 2, "font-size", "16px"]], template: function NzDemoTimelineRightComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-timeline", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-timeline-item");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Create a services site 2015-09-01");

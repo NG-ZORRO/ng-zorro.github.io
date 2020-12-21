@@ -22,8 +22,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutTopComponent {
 }
-/** @nocollapse */ NzDemoLayoutTopComponent.ɵfac = function NzDemoLayoutTopComponent_Factory(t) { return new (t || NzDemoLayoutTopComponent)(); };
-/** @nocollapse */ NzDemoLayoutTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopComponent, selectors: [["nz-demo-layout-top"]], decls: 22, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal"], ["nz-menu-item", ""], [1, "inner-content"]], template: function NzDemoLayoutTopComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutTopComponent.ɵfac = function NzDemoLayoutTopComponent_Factory(t) { return new (t || NzDemoLayoutTopComponent)(); };
+NzDemoLayoutTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopComponent, selectors: [["nz-demo-layout-top"]], decls: 22, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal"], ["nz-menu-item", ""], [1, "inner-content"]], template: function NzDemoLayoutTopComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 0);
@@ -186,11 +186,11 @@ class NzDemoLayoutEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoLayoutEnComponent.ɵfac = function NzDemoLayoutEnComponent_Factory(t) { return new (t || NzDemoLayoutEnComponent)(); };
-/** @nocollapse */ NzDemoLayoutEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutEnComponent, selectors: [["nz-demo-layout"]], viewQuery: function NzDemoLayoutEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoLayoutEnComponent.ɵfac = function NzDemoLayoutEnComponent_Factory(t) { return new (t || NzDemoLayoutEnComponent)(); };
+NzDemoLayoutEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutEnComponent, selectors: [["nz-demo-layout"]], viewQuery: function NzDemoLayoutEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 598, vars: 40, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-layout-demo-basic", "nzTitle", "Basic Structure"], ["nzHref", "#components-layout-demo-top", "nzTitle", "Header-Content-Footer"], ["nzHref", "#components-layout-demo-top-side-2", "nzTitle", "Header Sider 2"], ["nzHref", "#components-layout-demo-top-side", "nzTitle", "Header-Sider"], ["nzHref", "#components-layout-demo-side", "nzTitle", "Sider"], ["nzHref", "#components-layout-demo-custom-trigger", "nzTitle", "Custom trigger"], ["nzHref", "#components-layout-demo-responsive", "nzTitle", "Responsive"], ["nzHref", "#components-layout-demo-fixed", "nzTitle", "Fixed Header"], ["nzHref", "#components-layout-demo-fixed-sider", "nzTitle", "Fixed Sider"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/layout/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["id", "specification"], ["onclick", "window.location.hash = 'specification'", 1, "anchor"], ["id", "size"], ["onclick", "window.location.hash = 'size'", 1, "anchor"], ["id", "interaction-rules"], ["onclick", "window.location.hash = 'interaction-rules'", 1, "anchor"], ["id", "visualization-rules"], ["onclick", "window.location.hash = 'visualization-rules'", 1, "anchor"], ["id", "component-overview"], ["onclick", "window.location.hash = 'component-overview'", 1, "anchor"], ["href", "http://caniuse.com/#search=flex", "target", "_blank", "rel", "noopener"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Structure", "nzSelector", "nz-demo-layout-basic", "nzGenerateCommand", "ng g ng-zorro-antd:layout-basic <name>", "nzComponentName", "NzDemoLayoutBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Header-Content-Footer", "nzSelector", "nz-demo-layout-top", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top <name>", "nzComponentName", "NzDemoLayoutTopComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Header Sider 2", "nzSelector", "nz-demo-layout-top-side-2", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top-side-2 <name>", "nzComponentName", "NzDemoLayoutTopSide2Component", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Header-Sider", "nzSelector", "nz-demo-layout-top-side", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top-side <name>", "nzComponentName", "NzDemoLayoutTopSideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Sider", "nzSelector", "nz-demo-layout-side", "nzGenerateCommand", "ng g ng-zorro-antd:layout-side <name>", "nzComponentName", "NzDemoLayoutSideComponent", "nzIframeSource", "/iframe/#/layout-side", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom trigger", "nzSelector", "nz-demo-layout-custom-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:layout-custom-trigger <name>", "nzComponentName", "NzDemoLayoutCustomTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive", "nzSelector", "nz-demo-layout-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:layout-responsive <name>", "nzComponentName", "NzDemoLayoutResponsiveComponent", "nzIframeSource", "/iframe/#/layout-responsive", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Fixed Header", "nzSelector", "nz-demo-layout-fixed", "nzGenerateCommand", "ng g ng-zorro-antd:layout-fixed <name>", "nzComponentName", "NzDemoLayoutFixedComponent", "nzIframeSource", "/iframe/#/layout-fixed", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Fixed Sider", "nzSelector", "nz-demo-layout-fixed-sider", "nzGenerateCommand", "ng g ng-zorro-antd:layout-fixed-sider <name>", "nzComponentName", "NzDemoLayoutFixedSiderComponent", "nzIframeSource", "/iframe/#/layout-fixed-sider", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-sider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-sider'", 1, "anchor"], ["id", "breakpoint-width"], ["onclick", "window.location.hash = 'breakpoint-width'", 1, "anchor"], [1, "language-js"]], template: function NzDemoLayoutEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -270,7 +270,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](53, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Top Navigation (almost systems): the height of the first level navigation ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, " Top Navigation (almost systems): the height of the first level navigation ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "64px");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -281,7 +281,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](62, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, "Top Navigation(contents page): the height of the first level navigation ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, " Top Navigation(contents page): the height of the first level navigation ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "80px");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -292,14 +292,14 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](69, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](70, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, "Calculation formula of a top navigation: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](71, " Calculation formula of a top navigation: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, "48+8n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "Calculation formula of an aside navigation: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, " Calculation formula of an aside navigation: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](77, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](78, "200+8n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -316,16 +316,16 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](85, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, "The first level navigation and the last level navigation should be distincted by visualization;");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, " The first level navigation and the last level navigation should be distincted by visualization;");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "The current item should have the highest priority of visualization;");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " The current item should have the highest priority of visualization;");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "When the current navigation item is collapsed, the stlye of the current navigation item will be applied to its parent level;");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, " When the current navigation item is collapsed, the stlye of the current navigation item will be applied to its parent level;");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "The left side navigation bar has support for both the accordion and expanding styles, you can choose the one that fits your case best.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, " The left side navigation bar has support for both the accordion and expanding styles, you can choose the one that fits your case best.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "h2", 27);
@@ -337,7 +337,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, " Style of a navigation should conform to the its level.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, "Style of a navigation should conform to the its level.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](101, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](102, "li");
@@ -347,7 +347,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "When background color is a deep color, you can use this pattern for the parent level navigation item of current page.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, " When background color is a deep color, you can use this pattern for the parent level navigation item of current page.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "li");
@@ -357,7 +357,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, "When background color is a light color, you can use this pattern for the current page navigation item, we recommed using it for the last item of the navigation path.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, " When background color is a light color, you can use this pattern for the current page navigation item, we recommed using it for the last item of the navigation path.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](114, "li");
@@ -367,7 +367,7 @@ class NzDemoLayoutEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "From the visualization aspect, hightlighted font is stronger than colorblock, this pattern is often used for the parent level of the current item.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, " From the visualization aspect, hightlighted font is stronger than colorblock, this pattern is often used for the parent level of the current item.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "li");
@@ -1195,8 +1195,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutTopSideComponent {
 }
-/** @nocollapse */ NzDemoLayoutTopSideComponent.ɵfac = function NzDemoLayoutTopSideComponent_Factory(t) { return new (t || NzDemoLayoutTopSideComponent)(); };
-/** @nocollapse */ NzDemoLayoutTopSideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopSideComponent, selectors: [["nz-demo-layout-top-side"]], decls: 55, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal", 1, "header-menu"], ["nz-menu-item", ""], ["nz-menu-item", "", "nzSelected", ""], [1, "outer-content"], [1, "inner-layout"], ["nzWidth", "200px", "nzTheme", "light"], ["nz-menu", "", "nzMode", "inline", 1, "sider-menu"], ["nz-submenu", "", "nzOpen", "", "nzTitle", "subnav 1", "nzIcon", "user"], ["nz-submenu", "", "nzTitle", "subnav 2", "nzIcon", "laptop"], ["nz-submenu", "", "nzTitle", "subnav 3", "nzIcon", "notification"], [1, "inner-content"]], template: function NzDemoLayoutTopSideComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutTopSideComponent.ɵfac = function NzDemoLayoutTopSideComponent_Factory(t) { return new (t || NzDemoLayoutTopSideComponent)(); };
+NzDemoLayoutTopSideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopSideComponent, selectors: [["nz-demo-layout-top-side"]], decls: 55, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal", 1, "header-menu"], ["nz-menu-item", ""], ["nz-menu-item", "", "nzSelected", ""], [1, "outer-content"], [1, "inner-layout"], ["nzWidth", "200px", "nzTheme", "light"], ["nz-menu", "", "nzMode", "inline", 1, "sider-menu"], ["nz-submenu", "", "nzOpen", "", "nzTitle", "subnav 1", "nzIcon", "user"], ["nz-submenu", "", "nzTitle", "subnav 2", "nzIcon", "laptop"], ["nz-submenu", "", "nzTitle", "subnav 3", "nzIcon", "notification"], [1, "inner-content"]], template: function NzDemoLayoutTopSideComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 0);
@@ -1451,11 +1451,11 @@ class NzDemoLayoutZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoLayoutZhComponent.ɵfac = function NzDemoLayoutZhComponent_Factory(t) { return new (t || NzDemoLayoutZhComponent)(); };
-/** @nocollapse */ NzDemoLayoutZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutZhComponent, selectors: [["nz-demo-layout"]], viewQuery: function NzDemoLayoutZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoLayoutZhComponent.ɵfac = function NzDemoLayoutZhComponent_Factory(t) { return new (t || NzDemoLayoutZhComponent)(); };
+NzDemoLayoutZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutZhComponent, selectors: [["nz-demo-layout"]], viewQuery: function NzDemoLayoutZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 578, vars: 40, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-layout-demo-basic", "nzTitle", "\u57FA\u672C\u7ED3\u6784"], ["nzHref", "#components-layout-demo-top", "nzTitle", "\u4E0A\u4E2D\u4E0B\u5E03\u5C40"], ["nzHref", "#components-layout-demo-top-side-2", "nzTitle", "\u9876\u90E8-\u4FA7\u8FB9\u5E03\u5C40-\u901A\u680F"], ["nzHref", "#components-layout-demo-top-side", "nzTitle", "\u9876\u90E8-\u4FA7\u8FB9\u5E03\u5C40"], ["nzHref", "#components-layout-demo-side", "nzTitle", "\u4FA7\u8FB9\u5E03\u5C40"], ["nzHref", "#components-layout-demo-custom-trigger", "nzTitle", "\u81EA\u5B9A\u4E49\u89E6\u53D1\u5668"], ["nzHref", "#components-layout-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40"], ["nzHref", "#components-layout-demo-fixed", "nzTitle", "\u56FA\u5B9A\u5934\u90E8"], ["nzHref", "#components-layout-demo-fixed-sider", "nzTitle", "\u56FA\u5B9A\u4FA7\u8FB9\u680F"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/layout/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["id", "\u8BBE\u8BA1\u89C4\u5219"], ["onclick", "window.location.hash = '\u8BBE\u8BA1\u89C4\u5219'", 1, "anchor"], ["id", "\u5C3A\u5BF8"], ["onclick", "window.location.hash = '\u5C3A\u5BF8'", 1, "anchor"], ["id", "\u4EA4\u4E92"], ["onclick", "window.location.hash = '\u4EA4\u4E92'", 1, "anchor"], ["id", "\u89C6\u89C9"], ["onclick", "window.location.hash = '\u89C6\u89C9'", 1, "anchor"], ["id", "\u7EC4\u4EF6\u6982\u8FF0"], ["onclick", "window.location.hash = '\u7EC4\u4EF6\u6982\u8FF0'", 1, "anchor"], ["href", "http://caniuse.com/#search=flex", "target", "_blank", "rel", "noopener"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u672C\u7ED3\u6784", "nzSelector", "nz-demo-layout-basic", "nzGenerateCommand", "ng g ng-zorro-antd:layout-basic <name>", "nzComponentName", "NzDemoLayoutBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4E0A\u4E2D\u4E0B\u5E03\u5C40", "nzSelector", "nz-demo-layout-top", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top <name>", "nzComponentName", "NzDemoLayoutTopComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9876\u90E8-\u4FA7\u8FB9\u5E03\u5C40-\u901A\u680F", "nzSelector", "nz-demo-layout-top-side-2", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top-side-2 <name>", "nzComponentName", "NzDemoLayoutTopSide2Component", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9876\u90E8-\u4FA7\u8FB9\u5E03\u5C40", "nzSelector", "nz-demo-layout-top-side", "nzGenerateCommand", "ng g ng-zorro-antd:layout-top-side <name>", "nzComponentName", "NzDemoLayoutTopSideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4FA7\u8FB9\u5E03\u5C40", "nzSelector", "nz-demo-layout-side", "nzGenerateCommand", "ng g ng-zorro-antd:layout-side <name>", "nzComponentName", "NzDemoLayoutSideComponent", "nzIframeSource", "/iframe/#/layout-side", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u89E6\u53D1\u5668", "nzSelector", "nz-demo-layout-custom-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:layout-custom-trigger <name>", "nzComponentName", "NzDemoLayoutCustomTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40", "nzSelector", "nz-demo-layout-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:layout-responsive <name>", "nzComponentName", "NzDemoLayoutResponsiveComponent", "nzIframeSource", "/iframe/#/layout-responsive", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FA\u5B9A\u5934\u90E8", "nzSelector", "nz-demo-layout-fixed", "nzGenerateCommand", "ng g ng-zorro-antd:layout-fixed <name>", "nzComponentName", "NzDemoLayoutFixedComponent", "nzIframeSource", "/iframe/#/layout-fixed", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FA\u5B9A\u4FA7\u8FB9\u680F", "nzSelector", "nz-demo-layout-fixed-sider", "nzGenerateCommand", "ng g ng-zorro-antd:layout-fixed-sider <name>", "nzComponentName", "NzDemoLayoutFixedSiderComponent", "nzIframeSource", "/iframe/#/layout-fixed-sider", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], ["id", "nz-sider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-sider'", 1, "anchor"], ["id", "breakpoint-width"], ["onclick", "window.location.hash = 'breakpoint-width'", 1, "anchor"], [1, "language-js"]], template: function NzDemoLayoutZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1537,7 +1537,7 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "\u9876\u90E8\u5BFC\u822A\uFF08\u5927\u90E8\u5206\u7CFB\u7EDF\uFF09\uFF1A\u4E00\u7EA7\u5BFC\u822A\u9AD8\u5EA6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, " \u9876\u90E8\u5BFC\u822A\uFF08\u5927\u90E8\u5206\u7CFB\u7EDF\uFF09\uFF1A\u4E00\u7EA7\u5BFC\u822A\u9AD8\u5EA6 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, "64px");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1548,7 +1548,7 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, "\u9876\u90E8\u5BFC\u822A\uFF08\u5C55\u793A\u7C7B\u9875\u9762\uFF09\uFF1A\u4E00\u7EA7\u5BFC\u822A\u9AD8\u5EA6 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, " \u9876\u90E8\u5BFC\u822A\uFF08\u5C55\u793A\u7C7B\u9875\u9762\uFF09\uFF1A\u4E00\u7EA7\u5BFC\u822A\u9AD8\u5EA6 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](65, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "80px");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1559,14 +1559,14 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "\u9876\u90E8\u5BFC\u822A\u9AD8\u5EA6\u7684\u8303\u56F4\u8BA1\u7B97\u516C\u5F0F\u4E3A\uFF1A");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, " \u9876\u90E8\u5BFC\u822A\u9AD8\u5EA6\u7684\u8303\u56F4\u8BA1\u7B97\u516C\u5F0F\u4E3A\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "48+8n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](76, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, "\u4FA7\u8FB9\u5BFC\u822A\u5BBD\u5EA6\u7684\u8303\u56F4\u8BA1\u7B97\u516C\u5F0F\uFF1A");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, " \u4FA7\u8FB9\u5BFC\u822A\u5BBD\u5EA6\u7684\u8303\u56F4\u8BA1\u7B97\u516C\u5F0F\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](78, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, "200+8n");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1583,16 +1583,16 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](86, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, "\u4E00\u7EA7\u5BFC\u822A\u548C\u672B\u7EA7\u7684\u5BFC\u822A\u9700\u8981\u5728\u53EF\u89C6\u5316\u7684\u5C42\u9762\u88AB\u5F3A\u8C03\u51FA\u6765\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](88, " \u4E00\u7EA7\u5BFC\u822A\u548C\u672B\u7EA7\u7684\u5BFC\u822A\u9700\u8981\u5728\u53EF\u89C6\u5316\u7684\u5C42\u9762\u88AB\u5F3A\u8C03\u51FA\u6765\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](89, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, "\u5F53\u524D\u9879\u5E94\u8BE5\u5728\u5448\u73B0\u4E0A\u4F18\u5148\u7EA7\u6700\u9AD8\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](90, " \u5F53\u524D\u9879\u5E94\u8BE5\u5728\u5448\u73B0\u4E0A\u4F18\u5148\u7EA7\u6700\u9AD8\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](91, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, "\u5F53\u5BFC\u822A\u6536\u8D77\u7684\u65F6\u5019\uFF0C\u5F53\u524D\u9879\u7684\u6837\u5F0F\u81EA\u52A8\u8D4B\u4E88\u7ED9\u5B83\u7684\u4E0A\u4E00\u4E2A\u5C42\u7EA7\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](92, " \u5F53\u5BFC\u822A\u6536\u8D77\u7684\u65F6\u5019\uFF0C\u5F53\u524D\u9879\u7684\u6837\u5F0F\u81EA\u52A8\u8D4B\u4E88\u7ED9\u5B83\u7684\u4E0A\u4E00\u4E2A\u5C42\u7EA7\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "\u5DE6\u4FA7\u5BFC\u822A\u680F\u7684\u6536\u653E\u4EA4\u4E92\u540C\u65F6\u652F\u6301\u624B\u98CE\u7434\u548C\u5168\u5C55\u5F00\u7684\u6837\u5F0F\uFF0C\u6839\u636E\u4E1A\u52A1\u7684\u8981\u6C42\u8FDB\u884C\u9002\u5F53\u7684\u9009\u62E9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, " \u5DE6\u4FA7\u5BFC\u822A\u680F\u7684\u6536\u653E\u4EA4\u4E92\u540C\u65F6\u652F\u6301\u624B\u98CE\u7434\u548C\u5168\u5C55\u5F00\u7684\u6837\u5F0F\uFF0C\u6839\u636E\u4E1A\u52A1\u7684\u8981\u6C42\u8FDB\u884C\u9002\u5F53\u7684\u9009\u62E9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](95, "h3", 27);
@@ -1614,7 +1614,7 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](107, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, "\u5EFA\u8BAE\u7528\u4E8E\u5E95\u8272\u4E3A\u6DF1\u8272\u7CFB\u65F6\uFF0C\u5F53\u524D\u9875\u9762\u7236\u7EA7\u7684\u5BFC\u822A\u9879\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](108, " \u5EFA\u8BAE\u7528\u4E8E\u5E95\u8272\u4E3A\u6DF1\u8272\u7CFB\u65F6\uFF0C\u5F53\u524D\u9875\u9762\u7236\u7EA7\u7684\u5BFC\u822A\u9879\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](109, "li");
@@ -1624,7 +1624,7 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "\u5F53\u5BFC\u822A\u680F\u5E95\u8272\u4E3A\u6D45\u8272\u7CFB\u65F6\u4F7F\u7528\uFF0C\u53EF\u7528\u4E8E\u5F53\u524D\u9875\u9762\u5BF9\u5E94\u5BFC\u822A\u9879\uFF0C\u5EFA\u8BAE\u5C3D\u91CF\u5728\u5BFC\u822A\u8DEF\u5F84\u7684\u6700\u7EC8\u9879\u4F7F\u7528\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, " \u5F53\u5BFC\u822A\u680F\u5E95\u8272\u4E3A\u6D45\u8272\u7CFB\u65F6\u4F7F\u7528\uFF0C\u53EF\u7528\u4E8E\u5F53\u524D\u9875\u9762\u5BF9\u5E94\u5BFC\u822A\u9879\uFF0C\u5EFA\u8BAE\u5C3D\u91CF\u5728\u5BFC\u822A\u8DEF\u5F84\u7684\u6700\u7EC8\u9879\u4F7F\u7528\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "li");
@@ -1634,7 +1634,7 @@ class NzDemoLayoutZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, "\u4ECE\u53EF\u89C6\u5316\u5C42\u9762\uFF0C\u5B57\u4F53\u9AD8\u4EAE\u7684\u89C6\u89C9\u5F3A\u5316\u529B\u5EA6\u4F4E\u4E8E\u5927\u8272\u5757\uFF0C\u901A\u5E38\u5728\u5F53\u524D\u9879\u7684\u4E0A\u4E00\u7EA7\u4F7F\u7528\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](120, " \u4ECE\u53EF\u89C6\u5316\u5C42\u9762\uFF0C\u5B57\u4F53\u9AD8\u4EAE\u7684\u89C6\u89C9\u5F3A\u5316\u529B\u5EA6\u4F4E\u4E8E\u5927\u8272\u5757\uFF0C\u901A\u5E38\u5728\u5F53\u524D\u9879\u7684\u4E0A\u4E00\u7EA7\u4F7F\u7528\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "li");
@@ -2429,8 +2429,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutBasicComponent {
 }
-/** @nocollapse */ NzDemoLayoutBasicComponent.ɵfac = function NzDemoLayoutBasicComponent_Factory(t) { return new (t || NzDemoLayoutBasicComponent)(); };
-/** @nocollapse */ NzDemoLayoutBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutBasicComponent, selectors: [["nz-demo-layout-basic"]], decls: 37, vars: 0, template: function NzDemoLayoutBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutBasicComponent.ɵfac = function NzDemoLayoutBasicComponent_Factory(t) { return new (t || NzDemoLayoutBasicComponent)(); };
+NzDemoLayoutBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutBasicComponent, selectors: [["nz-demo-layout-basic"]], decls: 37, vars: 0, template: function NzDemoLayoutBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Header");
@@ -2594,8 +2594,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutFixedComponent {
 }
-/** @nocollapse */ NzDemoLayoutFixedComponent.ɵfac = function NzDemoLayoutFixedComponent_Factory(t) { return new (t || NzDemoLayoutFixedComponent)(); };
-/** @nocollapse */ NzDemoLayoutFixedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutFixedComponent, selectors: [["nz-demo-layout-fixed"]], decls: 22, vars: 0, consts: [[1, "layout"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal"], ["nz-menu-item", ""], [1, "inner-content"]], template: function NzDemoLayoutFixedComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutFixedComponent.ɵfac = function NzDemoLayoutFixedComponent_Factory(t) { return new (t || NzDemoLayoutFixedComponent)(); };
+NzDemoLayoutFixedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutFixedComponent, selectors: [["nz-demo-layout-fixed"]], decls: 22, vars: 0, consts: [[1, "layout"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal"], ["nz-menu-item", ""], [1, "inner-content"]], template: function NzDemoLayoutFixedComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 1);
@@ -2727,8 +2727,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutFixedSiderComponent {
 }
-/** @nocollapse */ NzDemoLayoutFixedSiderComponent.ɵfac = function NzDemoLayoutFixedSiderComponent_Factory(t) { return new (t || NzDemoLayoutFixedSiderComponent)(); };
-/** @nocollapse */ NzDemoLayoutFixedSiderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutFixedSiderComponent, selectors: [["nz-demo-layout-fixed-sider"]], decls: 137, vars: 0, consts: [[1, "layout"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-menu-item", ""], ["nz-icon", "", "nzType", "file"], ["nz-icon", "", "nzType", "video-camera"], ["nz-icon", "", "nzType", "upload"], ["nz-icon", "", "nzType", "bar-chart"], ["nz-icon", "", "nzType", "cloud-o"], ["nz-icon", "", "nzType", "appstore-o"], ["nz-icon", "", "nzType", "team"], ["nz-icon", "", "nzType", "shop"], [1, "right-layout"], [1, "inner-content"]], template: function NzDemoLayoutFixedSiderComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutFixedSiderComponent.ɵfac = function NzDemoLayoutFixedSiderComponent_Factory(t) { return new (t || NzDemoLayoutFixedSiderComponent)(); };
+NzDemoLayoutFixedSiderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutFixedSiderComponent, selectors: [["nz-demo-layout-fixed-sider"]], decls: 137, vars: 0, consts: [[1, "layout"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-menu-item", ""], ["nz-icon", "", "nzType", "file"], ["nz-icon", "", "nzType", "video-camera"], ["nz-icon", "", "nzType", "upload"], ["nz-icon", "", "nzType", "bar-chart"], ["nz-icon", "", "nzType", "cloud-o"], ["nz-icon", "", "nzType", "appstore-o"], ["nz-icon", "", "nzType", "team"], ["nz-icon", "", "nzType", "shop"], [1, "right-layout"], [1, "inner-content"]], template: function NzDemoLayoutFixedSiderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-sider");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 1);
@@ -3024,8 +3024,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutResponsiveComponent {
 }
-/** @nocollapse */ NzDemoLayoutResponsiveComponent.ɵfac = function NzDemoLayoutResponsiveComponent_Factory(t) { return new (t || NzDemoLayoutResponsiveComponent)(); };
-/** @nocollapse */ NzDemoLayoutResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutResponsiveComponent, selectors: [["nz-demo-layout-responsive"]], decls: 27, vars: 1, consts: [[1, "layout"], ["nzCollapsible", "", "nzBreakpoint", "lg", 3, "nzCollapsedWidth"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-menu-item", ""], ["nz-icon", "", "nzType", "user"], ["nz-icon", "", "nzType", "video-camera"], ["nz-icon", "", "nzType", "upload"], [1, "inner-content"]], template: function NzDemoLayoutResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutResponsiveComponent.ɵfac = function NzDemoLayoutResponsiveComponent_Factory(t) { return new (t || NzDemoLayoutResponsiveComponent)(); };
+NzDemoLayoutResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutResponsiveComponent, selectors: [["nz-demo-layout-responsive"]], decls: 27, vars: 1, consts: [[1, "layout"], ["nzCollapsible", "", "nzBreakpoint", "lg", 3, "nzCollapsedWidth"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-menu-item", ""], ["nz-icon", "", "nzType", "user"], ["nz-icon", "", "nzType", "video-camera"], ["nz-icon", "", "nzType", "upload"], [1, "inner-content"]], template: function NzDemoLayoutResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-sider", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 2);
@@ -3174,8 +3174,8 @@ class NzDemoLayoutCustomTriggerComponent {
         this.isCollapsed = false;
     }
 }
-/** @nocollapse */ NzDemoLayoutCustomTriggerComponent.ɵfac = function NzDemoLayoutCustomTriggerComponent_Factory(t) { return new (t || NzDemoLayoutCustomTriggerComponent)(); };
-/** @nocollapse */ NzDemoLayoutCustomTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutCustomTriggerComponent, selectors: [["nz-demo-layout-custom-trigger"]], decls: 35, vars: 3, consts: [["nzCollapsible", "", 3, "nzCollapsed", "nzTrigger", "nzCollapsedChange"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-submenu", "", "nzTitle", "User", "nzIcon", "user"], ["nz-menu-item", ""], ["nz-submenu", "", "nzTitle", "Team", "nzIcon", "team"], ["nz-icon", "", "nzType", "file"], ["nz-icon", "", 1, "trigger", 3, "nzType", "click"], [1, "inner-content"]], template: function NzDemoLayoutCustomTriggerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutCustomTriggerComponent.ɵfac = function NzDemoLayoutCustomTriggerComponent_Factory(t) { return new (t || NzDemoLayoutCustomTriggerComponent)(); };
+NzDemoLayoutCustomTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutCustomTriggerComponent, selectors: [["nz-demo-layout-custom-trigger"]], decls: 35, vars: 3, consts: [["nzCollapsible", "", 3, "nzCollapsed", "nzTrigger", "nzCollapsedChange"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-submenu", "", "nzTitle", "User", "nzIcon", "user"], ["nz-menu-item", ""], ["nz-submenu", "", "nzTitle", "Team", "nzIcon", "team"], ["nz-icon", "", "nzType", "file"], ["nz-icon", "", 1, "trigger", 3, "nzType", "click"], [1, "inner-content"]], template: function NzDemoLayoutCustomTriggerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-sider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzCollapsedChange", function NzDemoLayoutCustomTriggerComponent_Template_nz_sider_nzCollapsedChange_1_listener($event) { return ctx.isCollapsed = $event; });
@@ -3358,8 +3358,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutTopSide2Component {
 }
-/** @nocollapse */ NzDemoLayoutTopSide2Component.ɵfac = function NzDemoLayoutTopSide2Component_Factory(t) { return new (t || NzDemoLayoutTopSide2Component)(); };
-/** @nocollapse */ NzDemoLayoutTopSide2Component.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopSide2Component, selectors: [["nz-demo-layout-top-side-2"]], decls: 53, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal", 1, "header-menu"], ["nz-menu-item", "", "nzSelected", ""], ["nz-menu-item", ""], ["nzWidth", "200px", "nzTheme", "light"], ["nz-menu", "", "nzMode", "inline", 1, "sider-menu"], ["nz-submenu", "", "nzOpen", "", "nzIcon", "user", "nzTitle", "subnav 1"], ["nz-submenu", "", "nzTitle", "subnav 2", "nzIcon", "laptop"], ["nz-submenu", "", "nzTitle", "subnav 3", "nzIcon", "notification"], [1, "inner-layout"]], template: function NzDemoLayoutTopSide2Component_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutTopSide2Component.ɵfac = function NzDemoLayoutTopSide2Component_Factory(t) { return new (t || NzDemoLayoutTopSide2Component)(); };
+NzDemoLayoutTopSide2Component.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutTopSide2Component, selectors: [["nz-demo-layout-top-side-2"]], decls: 53, vars: 0, consts: [[1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "horizontal", 1, "header-menu"], ["nz-menu-item", "", "nzSelected", ""], ["nz-menu-item", ""], ["nzWidth", "200px", "nzTheme", "light"], ["nz-menu", "", "nzMode", "inline", 1, "sider-menu"], ["nz-submenu", "", "nzOpen", "", "nzIcon", "user", "nzTitle", "subnav 1"], ["nz-submenu", "", "nzTitle", "subnav 2", "nzIcon", "laptop"], ["nz-submenu", "", "nzTitle", "subnav 3", "nzIcon", "notification"], [1, "inner-layout"]], template: function NzDemoLayoutTopSide2Component_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 0);
@@ -3593,8 +3593,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutModule {
 }
-/** @nocollapse */ NzDemoLayoutModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoLayoutModule });
-/** @nocollapse */ NzDemoLayoutModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoLayoutModule_Factory(t) { return new (t || NzDemoLayoutModule)(); }, imports: [[
+NzDemoLayoutModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoLayoutModule });
+NzDemoLayoutModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoLayoutModule_Factory(t) { return new (t || NzDemoLayoutModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -3690,8 +3690,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoLayoutSideComponent {
 }
-/** @nocollapse */ NzDemoLayoutSideComponent.ɵfac = function NzDemoLayoutSideComponent_Factory(t) { return new (t || NzDemoLayoutSideComponent)(); };
-/** @nocollapse */ NzDemoLayoutSideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutSideComponent, selectors: [["nz-demo-layout-side"]], decls: 34, vars: 0, consts: [["nzCollapsible", "", "nzWidth", "200px"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-submenu", "", "nzTitle", "User", "nzIcon", "user"], ["nz-menu-item", ""], ["nz-submenu", "", "nzTitle", "Team", "nzIcon", "team"], ["nz-icon", "", "nzType", "file"], [1, "inner-content"]], template: function NzDemoLayoutSideComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoLayoutSideComponent.ɵfac = function NzDemoLayoutSideComponent_Factory(t) { return new (t || NzDemoLayoutSideComponent)(); };
+NzDemoLayoutSideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoLayoutSideComponent, selectors: [["nz-demo-layout-side"]], decls: 34, vars: 0, consts: [["nzCollapsible", "", "nzWidth", "200px"], [1, "logo"], ["nz-menu", "", "nzTheme", "dark", "nzMode", "inline"], ["nz-submenu", "", "nzTitle", "User", "nzIcon", "user"], ["nz-menu-item", ""], ["nz-submenu", "", "nzTitle", "Team", "nzIcon", "team"], ["nz-icon", "", "nzType", "file"], [1, "inner-content"]], template: function NzDemoLayoutSideComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-sider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "div", 1);

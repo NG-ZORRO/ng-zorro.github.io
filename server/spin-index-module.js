@@ -82,11 +82,11 @@ class NzDemoSpinEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSpinEnComponent.ɵfac = function NzDemoSpinEnComponent_Factory(t) { return new (t || NzDemoSpinEnComponent)(); };
-/** @nocollapse */ NzDemoSpinEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinEnComponent, selectors: [["nz-demo-spin"]], viewQuery: function NzDemoSpinEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSpinEnComponent.ɵfac = function NzDemoSpinEnComponent_Factory(t) { return new (t || NzDemoSpinEnComponent)(); };
+NzDemoSpinEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinEnComponent, selectors: [["nz-demo-spin"]], viewQuery: function NzDemoSpinEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 209, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-spin-demo-basic", "nzTitle", "Basic Usage"], ["nzHref", "#components-spin-demo-size", "nzTitle", "Size"], ["nzHref", "#components-spin-demo-inside", "nzTitle", "Inside a container"], ["nzHref", "#components-spin-demo-nested", "nzTitle", "Embedded mode"], ["nzHref", "#components-spin-demo-tip", "nzTitle", "Customized description"], ["nzHref", "#components-spin-demo-delay-and-debounce", "nzTitle", "delay"], ["nzHref", "#components-spin-demo-custom-indicator", "nzTitle", "Custom spinning indicator"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/spin/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic Usage", "nzSelector", "nz-demo-spin-basic", "nzGenerateCommand", "ng g ng-zorro-antd:spin-basic <name>", "nzComponentName", "NzDemoSpinBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Inside a container", "nzSelector", "nz-demo-spin-inside", "nzGenerateCommand", "ng g ng-zorro-antd:spin-inside <name>", "nzComponentName", "NzDemoSpinInsideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customized description", "nzSelector", "nz-demo-spin-tip", "nzGenerateCommand", "ng g ng-zorro-antd:spin-tip <name>", "nzComponentName", "NzDemoSpinTipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom spinning indicator", "nzSelector", "nz-demo-spin-custom-indicator", "nzGenerateCommand", "ng g ng-zorro-antd:spin-custom-indicator <name>", "nzComponentName", "NzDemoSpinCustomIndicatorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Size", "nzSelector", "nz-demo-spin-size", "nzGenerateCommand", "ng g ng-zorro-antd:spin-size <name>", "nzComponentName", "NzDemoSpinSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Embedded mode", "nzSelector", "nz-demo-spin-nested", "nzGenerateCommand", "ng g ng-zorro-antd:spin-nested <name>", "nzComponentName", "NzDemoSpinNestedComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "delay", "nzSelector", "nz-demo-spin-delay-and-debounce", "nzGenerateCommand", "ng g ng-zorro-antd:spin-delay-and-debounce <name>", "nzComponentName", "NzDemoSpinDelayAndDebounceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-spin"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-spin'", 1, "anchor"]], template: function NzDemoSpinEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -533,11 +533,11 @@ class NzDemoSpinZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSpinZhComponent.ɵfac = function NzDemoSpinZhComponent_Factory(t) { return new (t || NzDemoSpinZhComponent)(); };
-/** @nocollapse */ NzDemoSpinZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinZhComponent, selectors: [["nz-demo-spin"]], viewQuery: function NzDemoSpinZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSpinZhComponent.ɵfac = function NzDemoSpinZhComponent_Factory(t) { return new (t || NzDemoSpinZhComponent)(); };
+NzDemoSpinZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinZhComponent, selectors: [["nz-demo-spin"]], viewQuery: function NzDemoSpinZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 201, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-spin-demo-basic", "nzTitle", "\u57FA\u672C\u7528\u6CD5"], ["nzHref", "#components-spin-demo-size", "nzTitle", "\u5404\u79CD\u5927\u5C0F"], ["nzHref", "#components-spin-demo-inside", "nzTitle", "\u5BB9\u5668"], ["nzHref", "#components-spin-demo-nested", "nzTitle", "\u5361\u7247\u52A0\u8F7D\u4E2D"], ["nzHref", "#components-spin-demo-tip", "nzTitle", "\u81EA\u5B9A\u4E49\u63CF\u8FF0\u6587\u6848"], ["nzHref", "#components-spin-demo-delay-and-debounce", "nzTitle", "\u5EF6\u8FDF"], ["nzHref", "#components-spin-demo-custom-indicator", "nzTitle", "\u81EA\u5B9A\u4E49\u6307\u793A\u7B26"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/spin/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C\u7528\u6CD5", "nzSelector", "nz-demo-spin-basic", "nzGenerateCommand", "ng g ng-zorro-antd:spin-basic <name>", "nzComponentName", "NzDemoSpinBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5BB9\u5668", "nzSelector", "nz-demo-spin-inside", "nzGenerateCommand", "ng g ng-zorro-antd:spin-inside <name>", "nzComponentName", "NzDemoSpinInsideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u63CF\u8FF0\u6587\u6848", "nzSelector", "nz-demo-spin-tip", "nzGenerateCommand", "ng g ng-zorro-antd:spin-tip <name>", "nzComponentName", "NzDemoSpinTipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u6307\u793A\u7B26", "nzSelector", "nz-demo-spin-custom-indicator", "nzGenerateCommand", "ng g ng-zorro-antd:spin-custom-indicator <name>", "nzComponentName", "NzDemoSpinCustomIndicatorComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5404\u79CD\u5927\u5C0F", "nzSelector", "nz-demo-spin-size", "nzGenerateCommand", "ng g ng-zorro-antd:spin-size <name>", "nzComponentName", "NzDemoSpinSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5361\u7247\u52A0\u8F7D\u4E2D", "nzSelector", "nz-demo-spin-nested", "nzGenerateCommand", "ng g ng-zorro-antd:spin-nested <name>", "nzComponentName", "NzDemoSpinNestedComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5EF6\u8FDF", "nzSelector", "nz-demo-spin-delay-and-debounce", "nzGenerateCommand", "ng g ng-zorro-antd:spin-delay-and-debounce <name>", "nzComponentName", "NzDemoSpinDelayAndDebounceComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-spin"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-spin'", 1, "anchor"]], template: function NzDemoSpinZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -938,8 +938,8 @@ function NzDemoSpinCustomIndicatorComponent_ng_template_0_Template(rf, ctx) { if
 } }
 class NzDemoSpinCustomIndicatorComponent {
 }
-/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵfac = function NzDemoSpinCustomIndicatorComponent_Factory(t) { return new (t || NzDemoSpinCustomIndicatorComponent)(); };
-/** @nocollapse */ NzDemoSpinCustomIndicatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinCustomIndicatorComponent, selectors: [["nz-demo-spin-custom-indicator"]], decls: 3, vars: 1, consts: [["indicatorTemplate", ""], ["nzSimple", "", 3, "nzIndicator"], ["nz-icon", "", "nzType", "loading"]], template: function NzDemoSpinCustomIndicatorComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinCustomIndicatorComponent.ɵfac = function NzDemoSpinCustomIndicatorComponent_Factory(t) { return new (t || NzDemoSpinCustomIndicatorComponent)(); };
+NzDemoSpinCustomIndicatorComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinCustomIndicatorComponent, selectors: [["nz-demo-spin-custom-indicator"]], decls: 3, vars: 1, consts: [["indicatorTemplate", ""], ["nzSimple", "", 3, "nzIndicator"], ["nz-icon", "", "nzType", "loading"]], template: function NzDemoSpinCustomIndicatorComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoSpinCustomIndicatorComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 1);
     } if (rf & 2) {
@@ -985,8 +985,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSpinBasicComponent {
 }
-/** @nocollapse */ NzDemoSpinBasicComponent.ɵfac = function NzDemoSpinBasicComponent_Factory(t) { return new (t || NzDemoSpinBasicComponent)(); };
-/** @nocollapse */ NzDemoSpinBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinBasicComponent, selectors: [["nz-demo-spin-basic"]], decls: 1, vars: 0, consts: [["nzSimple", ""]], template: function NzDemoSpinBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinBasicComponent.ɵfac = function NzDemoSpinBasicComponent_Factory(t) { return new (t || NzDemoSpinBasicComponent)(); };
+NzDemoSpinBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinBasicComponent, selectors: [["nz-demo-spin-basic"]], decls: 1, vars: 0, consts: [["nzSimple", ""]], template: function NzDemoSpinBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
     } }, directives: [ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_1__["NzSpinComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoSpinBasicComponent, [{
@@ -1019,8 +1019,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSpinSizeComponent {
 }
-/** @nocollapse */ NzDemoSpinSizeComponent.ɵfac = function NzDemoSpinSizeComponent_Factory(t) { return new (t || NzDemoSpinSizeComponent)(); };
-/** @nocollapse */ NzDemoSpinSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinSizeComponent, selectors: [["nz-demo-spin-size"]], decls: 3, vars: 2, consts: [["nzSimple", "", 3, "nzSize"], ["nzSimple", ""]], template: function NzDemoSpinSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinSizeComponent.ɵfac = function NzDemoSpinSizeComponent_Factory(t) { return new (t || NzDemoSpinSizeComponent)(); };
+NzDemoSpinSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinSizeComponent, selectors: [["nz-demo-spin-size"]], decls: 3, vars: 2, consts: [["nzSimple", "", 3, "nzSize"], ["nzSimple", ""]], template: function NzDemoSpinSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-spin", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-spin", 0);
@@ -1078,8 +1078,8 @@ class NzDemoSpinDelayAndDebounceComponent {
         this.isSpinning = false;
     }
 }
-/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵfac = function NzDemoSpinDelayAndDebounceComponent_Factory(t) { return new (t || NzDemoSpinDelayAndDebounceComponent)(); };
-/** @nocollapse */ NzDemoSpinDelayAndDebounceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinDelayAndDebounceComponent, selectors: [["nz-demo-spin-delay-and-debounce"]], decls: 6, vars: 6, consts: [[3, "nzSpinning", "nzDelay"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinDelayAndDebounceComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinDelayAndDebounceComponent.ɵfac = function NzDemoSpinDelayAndDebounceComponent_Factory(t) { return new (t || NzDemoSpinDelayAndDebounceComponent)(); };
+NzDemoSpinDelayAndDebounceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinDelayAndDebounceComponent, selectors: [["nz-demo-spin-delay-and-debounce"]], decls: 6, vars: 6, consts: [[3, "nzSpinning", "nzDelay"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinDelayAndDebounceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1137,8 +1137,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSpinTipComponent {
 }
-/** @nocollapse */ NzDemoSpinTipComponent.ɵfac = function NzDemoSpinTipComponent_Factory(t) { return new (t || NzDemoSpinTipComponent)(); };
-/** @nocollapse */ NzDemoSpinTipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinTipComponent, selectors: [["nz-demo-spin-tip"]], decls: 2, vars: 0, consts: [["nzTip", "Loading..."], ["nzType", "info", "nzMessage", "Alert message title", "nzDescription", "Further details about the context of this alert."]], template: function NzDemoSpinTipComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinTipComponent.ɵfac = function NzDemoSpinTipComponent_Factory(t) { return new (t || NzDemoSpinTipComponent)(); };
+NzDemoSpinTipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinTipComponent, selectors: [["nz-demo-spin-tip"]], decls: 2, vars: 0, consts: [["nzTip", "Loading..."], ["nzType", "info", "nzMessage", "Alert message title", "nzDescription", "Further details about the context of this alert."]], template: function NzDemoSpinTipComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1184,8 +1184,8 @@ class NzDemoSpinNestedComponent {
         this.isSpinning = false;
     }
 }
-/** @nocollapse */ NzDemoSpinNestedComponent.ɵfac = function NzDemoSpinNestedComponent_Factory(t) { return new (t || NzDemoSpinNestedComponent)(); };
-/** @nocollapse */ NzDemoSpinNestedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinNestedComponent, selectors: [["nz-demo-spin-nested"]], decls: 6, vars: 5, consts: [[3, "nzSpinning"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinNestedComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinNestedComponent.ɵfac = function NzDemoSpinNestedComponent_Factory(t) { return new (t || NzDemoSpinNestedComponent)(); };
+NzDemoSpinNestedComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinNestedComponent, selectors: [["nz-demo-spin-nested"]], decls: 6, vars: 5, consts: [[3, "nzSpinning"], [3, "nzType", "nzMessage", "nzDescription"], [3, "ngModel", "ngModelChange"]], template: function NzDemoSpinNestedComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-spin", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-alert", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1241,8 +1241,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSpinInsideComponent {
 }
-/** @nocollapse */ NzDemoSpinInsideComponent.ɵfac = function NzDemoSpinInsideComponent_Factory(t) { return new (t || NzDemoSpinInsideComponent)(); };
-/** @nocollapse */ NzDemoSpinInsideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinInsideComponent, selectors: [["nz-demo-spin-inside"]], decls: 2, vars: 0, consts: [[1, "example"], ["nzSimple", ""]], template: function NzDemoSpinInsideComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSpinInsideComponent.ɵfac = function NzDemoSpinInsideComponent_Factory(t) { return new (t || NzDemoSpinInsideComponent)(); };
+NzDemoSpinInsideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSpinInsideComponent, selectors: [["nz-demo-spin-inside"]], decls: 2, vars: 0, consts: [[1, "example"], ["nzSimple", ""]], template: function NzDemoSpinInsideComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-spin", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1322,8 +1322,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSpinModule {
 }
-/** @nocollapse */ NzDemoSpinModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSpinModule });
-/** @nocollapse */ NzDemoSpinModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSpinModule_Factory(t) { return new (t || NzDemoSpinModule)(); }, imports: [[
+NzDemoSpinModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSpinModule });
+NzDemoSpinModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSpinModule_Factory(t) { return new (t || NzDemoSpinModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([

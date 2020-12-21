@@ -65,11 +65,11 @@ class NzDemoSliderEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSliderEnComponent.ɵfac = function NzDemoSliderEnComponent_Factory(t) { return new (t || NzDemoSliderEnComponent)(); };
-/** @nocollapse */ NzDemoSliderEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEnComponent, selectors: [["nz-demo-slider"]], viewQuery: function NzDemoSliderEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSliderEnComponent.ɵfac = function NzDemoSliderEnComponent_Factory(t) { return new (t || NzDemoSliderEnComponent)(); };
+NzDemoSliderEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEnComponent, selectors: [["nz-demo-slider"]], viewQuery: function NzDemoSliderEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 411, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-slider-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-slider-demo-input-number", "nzTitle", "Slider with InputNumber"], ["nzHref", "#components-slider-demo-icon-slider", "nzTitle", "Slider with icon"], ["nzHref", "#components-slider-demo-tip-formatter", "nzTitle", "Customerize tooltip"], ["nzHref", "#components-slider-demo-event", "nzTitle", "Event"], ["nzHref", "#components-slider-demo-mark", "nzTitle", "Graduated slider"], ["nzHref", "#components-slider-demo-vertical", "nzTitle", "Vertical"], ["nzHref", "#components-slider-demo-tooltip", "nzTitle", "Control visibility of Tooltip"], ["nzHref", "#components-slider-demo-reverse", "nzTitle", "Reverse"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/slider/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-slider-basic", "nzGenerateCommand", "ng g ng-zorro-antd:slider-basic <name>", "nzComponentName", "NzDemoSliderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Slider with icon", "nzSelector", "nz-demo-slider-icon-slider", "nzGenerateCommand", "ng g ng-zorro-antd:slider-icon-slider <name>", "nzComponentName", "NzDemoSliderIconSliderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Event", "nzSelector", "nz-demo-slider-event", "nzGenerateCommand", "ng g ng-zorro-antd:slider-event <name>", "nzComponentName", "NzDemoSliderEventComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Vertical", "nzSelector", "nz-demo-slider-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:slider-vertical <name>", "nzComponentName", "NzDemoSliderVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Reverse", "nzSelector", "nz-demo-slider-reverse", "nzGenerateCommand", "ng g ng-zorro-antd:slider-reverse <name>", "nzComponentName", "NzDemoSliderReverseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Slider with InputNumber", "nzSelector", "nz-demo-slider-input-number", "nzGenerateCommand", "ng g ng-zorro-antd:slider-input-number <name>", "nzComponentName", "NzDemoSliderInputNumberComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "/components/input-number/"], ["nzTitle", "Customerize tooltip", "nzSelector", "nz-demo-slider-tip-formatter", "nzGenerateCommand", "ng g ng-zorro-antd:slider-tip-formatter <name>", "nzComponentName", "NzDemoSliderTipFormatterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Graduated slider", "nzSelector", "nz-demo-slider-mark", "nzGenerateCommand", "ng g ng-zorro-antd:slider-mark <name>", "nzComponentName", "NzDemoSliderMarkComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Control visibility of Tooltip", "nzSelector", "nz-demo-slider-tooltip", "nzGenerateCommand", "ng g ng-zorro-antd:slider-tooltip <name>", "nzComponentName", "NzDemoSliderTooltipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-slider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-slider'", 1, "anchor"]], template: function NzDemoSliderEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -830,8 +830,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSliderModule {
 }
-/** @nocollapse */ NzDemoSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSliderModule });
-/** @nocollapse */ NzDemoSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSliderModule_Factory(t) { return new (t || NzDemoSliderModule)(); }, imports: [[
+NzDemoSliderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoSliderModule });
+NzDemoSliderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoSliderModule_Factory(t) { return new (t || NzDemoSliderModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -911,8 +911,8 @@ class NzDemoSliderInputNumberComponent {
         this.value2 = 0;
     }
 }
-/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵfac = function NzDemoSliderInputNumberComponent_Factory(t) { return new (t || NzDemoSliderInputNumberComponent)(); };
-/** @nocollapse */ NzDemoSliderInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderInputNumberComponent, selectors: [["nz-demo-slider-input-number"]], decls: 10, vars: 18, consts: [["nzSpan", "12"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-col", "", "nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "ngModel", "ngModelChange"], [3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "nzStep", "ngModel", "ngModelChange"]], template: function NzDemoSliderInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderInputNumberComponent.ɵfac = function NzDemoSliderInputNumberComponent_Factory(t) { return new (t || NzDemoSliderInputNumberComponent)(); };
+NzDemoSliderInputNumberComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderInputNumberComponent, selectors: [["nz-demo-slider-input-number"]], decls: 10, vars: 18, consts: [["nzSpan", "12"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-col", "", "nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "ngModel", "ngModelChange"], [3, "nzMin", "nzMax", "nzStep", "ngModel", "ngModelChange"], ["nzSpan", "4"], [3, "nzMin", "nzMax", "ngStyle", "nzStep", "ngModel", "ngModelChange"]], template: function NzDemoSliderInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-row");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-col", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-slider", 1);
@@ -1032,8 +1032,8 @@ class NzDemoSliderReverseComponent {
         this.reverse = true;
     }
 }
-/** @nocollapse */ NzDemoSliderReverseComponent.ɵfac = function NzDemoSliderReverseComponent_Factory(t) { return new (t || NzDemoSliderReverseComponent)(); };
-/** @nocollapse */ NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 5, vars: 6, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderReverseComponent.ɵfac = function NzDemoSliderReverseComponent_Factory(t) { return new (t || NzDemoSliderReverseComponent)(); };
+NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 5, vars: 6, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
@@ -1104,8 +1104,8 @@ class NzDemoSliderBasicComponent {
         this.value2 = [20, 50];
     }
 }
-/** @nocollapse */ NzDemoSliderBasicComponent.ɵfac = function NzDemoSliderBasicComponent_Factory(t) { return new (t || NzDemoSliderBasicComponent)(); };
-/** @nocollapse */ NzDemoSliderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderBasicComponent, selectors: [["nz-demo-slider-basic"]], decls: 4, vars: 5, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nzRange", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderBasicComponent.ɵfac = function NzDemoSliderBasicComponent_Factory(t) { return new (t || NzDemoSliderBasicComponent)(); };
+NzDemoSliderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderBasicComponent, selectors: [["nz-demo-slider-basic"]], decls: 4, vars: 5, consts: [[3, "ngModel", "nzDisabled", "ngModelChange"], ["nzRange", "", 3, "ngModel", "nzDisabled", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderBasicComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.value1 = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1185,8 +1185,8 @@ class NzDemoSliderIconSliderComponent {
         this.nextHighLight = lower;
     }
 }
-/** @nocollapse */ NzDemoSliderIconSliderComponent.ɵfac = function NzDemoSliderIconSliderComponent_Factory(t) { return new (t || NzDemoSliderIconSliderComponent)(); };
-/** @nocollapse */ NzDemoSliderIconSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderIconSliderComponent, selectors: [["nz-demo-slider-icon-slider"]], decls: 4, vars: 7, consts: [[1, "icon-wrapper", "test-class"], ["nz-icon", "", "nzType", "frown"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-icon", "", "nzType", "smile"]], template: function NzDemoSliderIconSliderComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderIconSliderComponent.ɵfac = function NzDemoSliderIconSliderComponent_Factory(t) { return new (t || NzDemoSliderIconSliderComponent)(); };
+NzDemoSliderIconSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderIconSliderComponent, selectors: [["nz-demo-slider-icon-slider"]], decls: 4, vars: 7, consts: [[1, "icon-wrapper", "test-class"], ["nz-icon", "", "nzType", "frown"], [3, "nzMin", "nzMax", "ngModel", "ngModelChange"], ["nz-icon", "", "nzType", "smile"]], template: function NzDemoSliderIconSliderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-slider", 2);
@@ -1291,8 +1291,8 @@ class NzDemoSliderVerticalComponent {
         };
     }
 }
-/** @nocollapse */ NzDemoSliderVerticalComponent.ɵfac = function NzDemoSliderVerticalComponent_Factory(t) { return new (t || NzDemoSliderVerticalComponent)(); };
-/** @nocollapse */ NzDemoSliderVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderVerticalComponent, selectors: [["nz-demo-slider-vertical"]], decls: 7, vars: 12, consts: [[3, "ngStyle"], ["nzVertical", "", 3, "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzStep", "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzMarks", "ngModel"]], template: function NzDemoSliderVerticalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderVerticalComponent.ɵfac = function NzDemoSliderVerticalComponent_Factory(t) { return new (t || NzDemoSliderVerticalComponent)(); };
+NzDemoSliderVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderVerticalComponent, selectors: [["nz-demo-slider-vertical"]], decls: 7, vars: 12, consts: [[3, "ngStyle"], ["nzVertical", "", 3, "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzStep", "ngModel"], ["nzVertical", "", "nzRange", "", 3, "nzMarks", "ngModel"]], template: function NzDemoSliderVerticalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
@@ -1387,8 +1387,8 @@ class NzDemoSliderMarkComponent {
         };
     }
 }
-/** @nocollapse */ NzDemoSliderMarkComponent.ɵfac = function NzDemoSliderMarkComponent_Factory(t) { return new (t || NzDemoSliderMarkComponent)(); };
-/** @nocollapse */ NzDemoSliderMarkComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderMarkComponent, selectors: [["nz-demo-slider-mark"]], decls: 18, vars: 16, consts: [[3, "nzMarks", "ngModel"], ["nzIncluded", "", "nzRange", "", 3, "nzMarks", "ngModel"], [3, "nzMarks", "nzIncluded", "ngModel"], [3, "nzMarks", "nzStep", "ngModel"], ["nzDots", "", 3, "nzMarks", "ngModel"], ["nz-button", "", 3, "click"]], template: function NzDemoSliderMarkComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderMarkComponent.ɵfac = function NzDemoSliderMarkComponent_Factory(t) { return new (t || NzDemoSliderMarkComponent)(); };
+NzDemoSliderMarkComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderMarkComponent, selectors: [["nz-demo-slider-mark"]], decls: 18, vars: 16, consts: [[3, "nzMarks", "ngModel"], ["nzIncluded", "", "nzRange", "", 3, "nzMarks", "ngModel"], [3, "nzMarks", "nzIncluded", "ngModel"], [3, "nzMarks", "nzStep", "ngModel"], ["nzDots", "", 3, "nzMarks", "ngModel"], ["nz-button", "", 3, "click"]], template: function NzDemoSliderMarkComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h4");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "included=true");
@@ -1493,8 +1493,8 @@ class NzDemoSliderEventComponent {
         console.log(`onAfterChange: ${value}`);
     }
 }
-/** @nocollapse */ NzDemoSliderEventComponent.ɵfac = function NzDemoSliderEventComponent_Factory(t) { return new (t || NzDemoSliderEventComponent)(); };
-/** @nocollapse */ NzDemoSliderEventComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEventComponent, selectors: [["nz-demo-slider-event"]], decls: 2, vars: 3, consts: [[3, "ngModel", "ngModelChange", "nzOnAfterChange"], ["nzRange", "", 3, "nzStep", "ngModel", "ngModelChange", "nzOnAfterChange"]], template: function NzDemoSliderEventComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderEventComponent.ɵfac = function NzDemoSliderEventComponent_Factory(t) { return new (t || NzDemoSliderEventComponent)(); };
+NzDemoSliderEventComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderEventComponent, selectors: [["nz-demo-slider-event"]], decls: 2, vars: 3, consts: [[3, "ngModel", "ngModelChange", "nzOnAfterChange"], ["nzRange", "", 3, "nzStep", "ngModel", "ngModelChange", "nzOnAfterChange"]], template: function NzDemoSliderEventComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.singleValue = $event; })("ngModelChange", function NzDemoSliderEventComponent_Template_nz_slider_ngModelChange_0_listener($event) { return ctx.onChange($event); })("nzOnAfterChange", function NzDemoSliderEventComponent_Template_nz_slider_nzOnAfterChange_0_listener($event) { return ctx.onAfterChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1590,11 +1590,11 @@ class NzDemoSliderZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoSliderZhComponent.ɵfac = function NzDemoSliderZhComponent_Factory(t) { return new (t || NzDemoSliderZhComponent)(); };
-/** @nocollapse */ NzDemoSliderZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderZhComponent, selectors: [["nz-demo-slider"]], viewQuery: function NzDemoSliderZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoSliderZhComponent.ɵfac = function NzDemoSliderZhComponent_Factory(t) { return new (t || NzDemoSliderZhComponent)(); };
+NzDemoSliderZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderZhComponent, selectors: [["nz-demo-slider"]], viewQuery: function NzDemoSliderZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 420, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-slider-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-slider-demo-input-number", "nzTitle", "\u5E26\u8F93\u5165\u6846\u7684\u6ED1\u5757"], ["nzHref", "#components-slider-demo-icon-slider", "nzTitle", "\u5E26 icon \u7684\u6ED1\u5757"], ["nzHref", "#components-slider-demo-tip-formatter", "nzTitle", "\u81EA\u5B9A\u4E49\u63D0\u793A"], ["nzHref", "#components-slider-demo-event", "nzTitle", "\u4E8B\u4EF6"], ["nzHref", "#components-slider-demo-mark", "nzTitle", "\u5E26\u6807\u7B7E\u7684\u6ED1\u5757"], ["nzHref", "#components-slider-demo-vertical", "nzTitle", "\u5782\u76F4"], ["nzHref", "#components-slider-demo-tooltip", "nzTitle", "\u63A7\u5236 Tooltip \u7684\u663E\u793A"], ["nzHref", "#components-slider-demo-reverse", "nzTitle", "\u53CD\u5411"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/slider/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-slider-basic", "nzGenerateCommand", "ng g ng-zorro-antd:slider-basic <name>", "nzComponentName", "NzDemoSliderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u5E26 icon \u7684\u6ED1\u5757", "nzSelector", "nz-demo-slider-icon-slider", "nzGenerateCommand", "ng g ng-zorro-antd:slider-icon-slider <name>", "nzComponentName", "NzDemoSliderIconSliderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E8B\u4EF6", "nzSelector", "nz-demo-slider-event", "nzGenerateCommand", "ng g ng-zorro-antd:slider-event <name>", "nzComponentName", "NzDemoSliderEventComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5782\u76F4", "nzSelector", "nz-demo-slider-vertical", "nzGenerateCommand", "ng g ng-zorro-antd:slider-vertical <name>", "nzComponentName", "NzDemoSliderVerticalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53CD\u5411", "nzSelector", "nz-demo-slider-reverse", "nzGenerateCommand", "ng g ng-zorro-antd:slider-reverse <name>", "nzComponentName", "NzDemoSliderReverseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u8F93\u5165\u6846\u7684\u6ED1\u5757", "nzSelector", "nz-demo-slider-input-number", "nzGenerateCommand", "ng g ng-zorro-antd:slider-input-number <name>", "nzComponentName", "NzDemoSliderInputNumberComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "/components/input-number/"], ["nzTitle", "\u81EA\u5B9A\u4E49\u63D0\u793A", "nzSelector", "nz-demo-slider-tip-formatter", "nzGenerateCommand", "ng g ng-zorro-antd:slider-tip-formatter <name>", "nzComponentName", "NzDemoSliderTipFormatterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E26\u6807\u7B7E\u7684\u6ED1\u5757", "nzSelector", "nz-demo-slider-mark", "nzGenerateCommand", "ng g ng-zorro-antd:slider-mark <name>", "nzComponentName", "NzDemoSliderMarkComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u63A7\u5236 Tooltip \u7684\u663E\u793A", "nzSelector", "nz-demo-slider-tooltip", "nzGenerateCommand", "ng g ng-zorro-antd:slider-tooltip <name>", "nzComponentName", "NzDemoSliderTooltipComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-slider"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-slider'", 1, "anchor"]], template: function NzDemoSliderZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -2334,8 +2334,8 @@ class NzDemoSliderTipFormatterComponent {
         return `${value}%`;
     }
 }
-/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵfac = function NzDemoSliderTipFormatterComponent_Factory(t) { return new (t || NzDemoSliderTipFormatterComponent)(); };
-/** @nocollapse */ NzDemoSliderTipFormatterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTipFormatterComponent, selectors: [["nz-demo-slider-tip-formatter"]], decls: 2, vars: 2, consts: [[3, "nzTipFormatter"]], template: function NzDemoSliderTipFormatterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderTipFormatterComponent.ɵfac = function NzDemoSliderTipFormatterComponent_Factory(t) { return new (t || NzDemoSliderTipFormatterComponent)(); };
+NzDemoSliderTipFormatterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTipFormatterComponent, selectors: [["nz-demo-slider-tip-formatter"]], decls: 2, vars: 2, consts: [[3, "nzTipFormatter"]], template: function NzDemoSliderTipFormatterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
     } if (rf & 2) {
@@ -2374,8 +2374,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoSliderTooltipComponent {
 }
-/** @nocollapse */ NzDemoSliderTooltipComponent.ɵfac = function NzDemoSliderTooltipComponent_Factory(t) { return new (t || NzDemoSliderTooltipComponent)(); };
-/** @nocollapse */ NzDemoSliderTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTooltipComponent, selectors: [["nz-demo-slider-tooltip"]], decls: 2, vars: 2, consts: [[3, "nzTooltipVisible"]], template: function NzDemoSliderTooltipComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderTooltipComponent.ɵfac = function NzDemoSliderTooltipComponent_Factory(t) { return new (t || NzDemoSliderTooltipComponent)(); };
+NzDemoSliderTooltipComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderTooltipComponent, selectors: [["nz-demo-slider-tooltip"]], decls: 2, vars: 2, consts: [[3, "nzTooltipVisible"]], template: function NzDemoSliderTooltipComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
     } if (rf & 2) {

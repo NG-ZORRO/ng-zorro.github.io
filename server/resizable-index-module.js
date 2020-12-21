@@ -30,8 +30,8 @@ class NzDemoResizableLockAspectRatioComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableLockAspectRatioComponent.ɵfac = function NzDemoResizableLockAspectRatioComponent_Factory(t) { return new (t || NzDemoResizableLockAspectRatioComponent)(); };
-/** @nocollapse */ NzDemoResizableLockAspectRatioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableLockAspectRatioComponent, selectors: [["nz-demo-resizable-lock-aspect-ratio"]], decls: 3, vars: 4, consts: [["nz-resizable", "", "nzLockAspectRatio", "", 1, "box", 3, "nzResize"]], template: function NzDemoResizableLockAspectRatioComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableLockAspectRatioComponent.ɵfac = function NzDemoResizableLockAspectRatioComponent_Factory(t) { return new (t || NzDemoResizableLockAspectRatioComponent)(); };
+NzDemoResizableLockAspectRatioComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableLockAspectRatioComponent, selectors: [["nz-demo-resizable-lock-aspect-ratio"]], decls: 3, vars: 4, consts: [["nz-resizable", "", "nzLockAspectRatio", "", 1, "box", 3, "nzResize"]], template: function NzDemoResizableLockAspectRatioComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResize", function NzDemoResizableLockAspectRatioComponent_Template_div_nzResize_0_listener($event) { return ctx.onResize($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-resize-handles");
@@ -177,8 +177,8 @@ class NzDemoResizableDrawerComponent {
         this.visible = false;
     }
 }
-/** @nocollapse */ NzDemoResizableDrawerComponent.ɵfac = function NzDemoResizableDrawerComponent_Factory(t) { return new (t || NzDemoResizableDrawerComponent)(); };
-/** @nocollapse */ NzDemoResizableDrawerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableDrawerComponent, selectors: [["nz-demo-resizable-drawer"]], decls: 4, vars: 6, consts: [["nz-button", "", "nzType", "primary", 3, "click"], ["nzPlacement", "left", "nzTitle", "Resizable Drawer", 3, "nzClosable", "nzVisible", "nzBodyStyle", "nzWidth", "nzOnClose"], ["class", "drawer-body", "nz-resizable", "", "nzBounds", "window", 3, "nzMinWidth", "nzResize", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", 1, "drawer-body", 3, "nzMinWidth", "nzResize"], [3, "nzDirections"]], template: function NzDemoResizableDrawerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableDrawerComponent.ɵfac = function NzDemoResizableDrawerComponent_Factory(t) { return new (t || NzDemoResizableDrawerComponent)(); };
+NzDemoResizableDrawerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableDrawerComponent, selectors: [["nz-demo-resizable-drawer"]], decls: 4, vars: 6, consts: [["nz-button", "", "nzType", "primary", 3, "click"], ["nzPlacement", "left", "nzTitle", "Resizable Drawer", 3, "nzClosable", "nzVisible", "nzBodyStyle", "nzWidth", "nzOnClose"], ["class", "drawer-body", "nz-resizable", "", "nzBounds", "window", 3, "nzMinWidth", "nzResize", 4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", 1, "drawer-body", 3, "nzMinWidth", "nzResize"], [3, "nzDirections"]], template: function NzDemoResizableDrawerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoResizableDrawerComponent_Template_button_click_0_listener() { return ctx.open(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Open");
@@ -264,8 +264,8 @@ class NzDemoResizableBasicComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableBasicComponent.ɵfac = function NzDemoResizableBasicComponent_Factory(t) { return new (t || NzDemoResizableBasicComponent)(); };
-/** @nocollapse */ NzDemoResizableBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableBasicComponent, selectors: [["nz-demo-resizable-basic"]], decls: 3, vars: 9, consts: [["nz-resizable", "", 1, "box", 3, "nzMaxWidth", "nzMinWidth", "nzMaxHeight", "nzMinHeight", "nzDisabled", "nzResize"]], template: function NzDemoResizableBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableBasicComponent.ɵfac = function NzDemoResizableBasicComponent_Factory(t) { return new (t || NzDemoResizableBasicComponent)(); };
+NzDemoResizableBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableBasicComponent, selectors: [["nz-demo-resizable-basic"]], decls: 3, vars: 9, consts: [["nz-resizable", "", 1, "box", 3, "nzMaxWidth", "nzMinWidth", "nzMaxHeight", "nzMinHeight", "nzDisabled", "nzResize"]], template: function NzDemoResizableBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResize", function NzDemoResizableBasicComponent_Template_div_nzResize_0_listener($event) { return ctx.onResize($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-resize-handles");
@@ -350,8 +350,8 @@ class NzDemoResizableCustomizeComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableCustomizeComponent.ɵfac = function NzDemoResizableCustomizeComponent_Factory(t) { return new (t || NzDemoResizableCustomizeComponent)(); };
-/** @nocollapse */ NzDemoResizableCustomizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableCustomizeComponent, selectors: [["nz-demo-resizable-customize"]], decls: 7, vars: 5, consts: [["nz-resizable", "", 1, "box", 3, "nzResize"], ["nzDirection", "bottomRight"], ["nz-icon", "", "nzType", "caret-up", "nzTheme", "outline", 1, "bottom-right", 3, "nzRotate"], ["nzDirection", "right"], [1, "right-wrap"], ["nz-icon", "", "nzType", "more", "nzTheme", "outline", 1, "right"]], template: function NzDemoResizableCustomizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableCustomizeComponent.ɵfac = function NzDemoResizableCustomizeComponent_Factory(t) { return new (t || NzDemoResizableCustomizeComponent)(); };
+NzDemoResizableCustomizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableCustomizeComponent, selectors: [["nz-demo-resizable-customize"]], decls: 7, vars: 5, consts: [["nz-resizable", "", 1, "box", 3, "nzResize"], ["nzDirection", "bottomRight"], ["nz-icon", "", "nzType", "caret-up", "nzTheme", "outline", 1, "bottom-right", 3, "nzRotate"], ["nzDirection", "right"], [1, "right-wrap"], ["nz-icon", "", "nzType", "more", "nzTheme", "outline", 1, "right"]], template: function NzDemoResizableCustomizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResize", function NzDemoResizableCustomizeComponent_Template_div_nzResize_0_listener($event) { return ctx.onResize($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " content ");
@@ -493,11 +493,11 @@ class NzDemoResizableEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableEnComponent.ɵfac = function NzDemoResizableEnComponent_Factory(t) { return new (t || NzDemoResizableEnComponent)(); };
-/** @nocollapse */ NzDemoResizableEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableEnComponent, selectors: [["nz-demo-resizable"]], viewQuery: function NzDemoResizableEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoResizableEnComponent.ɵfac = function NzDemoResizableEnComponent_Factory(t) { return new (t || NzDemoResizableEnComponent)(); };
+NzDemoResizableEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableEnComponent, selectors: [["nz-demo-resizable"]], viewQuery: function NzDemoResizableEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 598, vars: 36, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-resizable-demo-basic", "nzTitle", "Basic Usage"], ["nzHref", "#components-resizable-demo-customize", "nzTitle", "Customize"], ["nzHref", "#components-resizable-demo-lock-aspect-ratio", "nzTitle", "Lock Aspect Ratio"], ["nzHref", "#components-resizable-demo-preview", "nzTitle", "Preview"], ["nzHref", "#components-resizable-demo-grid", "nzTitle", "Grid"], ["nzHref", "#components-resizable-demo-layout", "nzTitle", "Layout"], ["nzHref", "#components-resizable-demo-drawer", "nzTitle", "Drawer"], ["nzHref", "#components-resizable-demo-table", "nzTitle", "Table"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/resizable/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [2, "border-color", "#faad14"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], ["id", "import-module"], ["onclick", "window.location.hash = 'import-module'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["id", "import-style"], ["onclick", "window.location.hash = 'import-style'", 1, "anchor"], [1, "language-less"], [1, "token", "variable"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Usage", "nzSelector", "nz-demo-resizable-basic", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-basic <name>", "nzComponentName", "NzDemoResizableBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Customize", "nzSelector", "nz-demo-resizable-customize", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-customize <name>", "nzComponentName", "NzDemoResizableCustomizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Lock Aspect Ratio", "nzSelector", "nz-demo-resizable-lock-aspect-ratio", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-lock-aspect-ratio <name>", "nzComponentName", "NzDemoResizableLockAspectRatioComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Preview", "nzSelector", "nz-demo-resizable-preview", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-preview <name>", "nzComponentName", "NzDemoResizablePreviewComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid", "nzSelector", "nz-demo-resizable-grid", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-grid <name>", "nzComponentName", "NzDemoResizableGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Layout", "nzSelector", "nz-demo-resizable-layout", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-layout <name>", "nzComponentName", "NzDemoResizableLayoutComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Drawer", "nzSelector", "nz-demo-resizable-drawer", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-drawer <name>", "nzComponentName", "NzDemoResizableDrawerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Table", "nzSelector", "nz-demo-resizable-table", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-table <name>", "nzComponentName", "NzDemoResizableTableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-resizable]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-resizable]'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["id", "nz-resize-handle"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-resize-handle'", 1, "anchor"], ["id", "nz-resize-handles"], ["onclick", "window.location.hash = 'nz-resize-handles'", 1, "anchor"], ["id", "styling"], ["onclick", "window.location.hash = 'styling'", 1, "anchor"]], template: function NzDemoResizableEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -543,13 +543,13 @@ class NzDemoResizableEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Support preview");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " Support preview");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "Support Grids System");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, " Support Grids System");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, "Support for custom handles and preview styles");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](36, " Support for custom handles and preview styles");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "h2", 17);
@@ -644,7 +644,7 @@ class NzDemoResizableEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "div", 34);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](93, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, " Customize Handle\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](94, "Customize Handle\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1505,8 +1505,8 @@ class NzDemoResizablePreviewComponent {
         this.height = height;
     }
 }
-/** @nocollapse */ NzDemoResizablePreviewComponent.ɵfac = function NzDemoResizablePreviewComponent_Factory(t) { return new (t || NzDemoResizablePreviewComponent)(); };
-/** @nocollapse */ NzDemoResizablePreviewComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizablePreviewComponent, selectors: [["nz-demo-resizable-preview"]], decls: 3, vars: 4, consts: [["nz-resizable", "", "nzPreview", "", 1, "box", 3, "nzResizeEnd"]], template: function NzDemoResizablePreviewComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizablePreviewComponent.ɵfac = function NzDemoResizablePreviewComponent_Factory(t) { return new (t || NzDemoResizablePreviewComponent)(); };
+NzDemoResizablePreviewComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizablePreviewComponent, selectors: [["nz-demo-resizable-preview"]], decls: 3, vars: 4, consts: [["nz-resizable", "", "nzPreview", "", 1, "box", 3, "nzResizeEnd"]], template: function NzDemoResizablePreviewComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResizeEnd", function NzDemoResizablePreviewComponent_Template_div_nzResizeEnd_0_listener($event) { return ctx.onResize($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-resize-handles");
@@ -1610,11 +1610,11 @@ class NzDemoResizableZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableZhComponent.ɵfac = function NzDemoResizableZhComponent_Factory(t) { return new (t || NzDemoResizableZhComponent)(); };
-/** @nocollapse */ NzDemoResizableZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableZhComponent, selectors: [["nz-demo-resizable"]], viewQuery: function NzDemoResizableZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoResizableZhComponent.ɵfac = function NzDemoResizableZhComponent_Factory(t) { return new (t || NzDemoResizableZhComponent)(); };
+NzDemoResizableZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableZhComponent, selectors: [["nz-demo-resizable"]], viewQuery: function NzDemoResizableZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 596, vars: 36, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-resizable-demo-basic", "nzTitle", "\u57FA\u672C\u4F7F\u7528"], ["nzHref", "#components-resizable-demo-customize", "nzTitle", "\u81EA\u5B9A\u4E49"], ["nzHref", "#components-resizable-demo-lock-aspect-ratio", "nzTitle", "\u9501\u5B9A\u6BD4\u4F8B"], ["nzHref", "#components-resizable-demo-preview", "nzTitle", "\u9884\u89C8"], ["nzHref", "#components-resizable-demo-grid", "nzTitle", "\u6805\u683C"], ["nzHref", "#components-resizable-demo-layout", "nzTitle", "\u5E03\u5C40"], ["nzHref", "#components-resizable-demo-drawer", "nzTitle", "\u62BD\u5C49"], ["nzHref", "#components-resizable-demo-table", "nzTitle", "\u8868\u683C"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/resizable/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], [2, "border-color", "#faad14"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], ["id", "\u5F15\u5165\u6A21\u5757"], ["onclick", "window.location.hash = '\u5F15\u5165\u6A21\u5757'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["id", "\u5F15\u5165\u6837\u5F0F"], ["onclick", "window.location.hash = '\u5F15\u5165\u6837\u5F0F'", 1, "anchor"], [1, "language-less"], [1, "token", "variable"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u672C\u4F7F\u7528", "nzSelector", "nz-demo-resizable-basic", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-basic <name>", "nzComponentName", "NzDemoResizableBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u81EA\u5B9A\u4E49", "nzSelector", "nz-demo-resizable-customize", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-customize <name>", "nzComponentName", "NzDemoResizableCustomizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9501\u5B9A\u6BD4\u4F8B", "nzSelector", "nz-demo-resizable-lock-aspect-ratio", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-lock-aspect-ratio <name>", "nzComponentName", "NzDemoResizableLockAspectRatioComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9884\u89C8", "nzSelector", "nz-demo-resizable-preview", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-preview <name>", "nzComponentName", "NzDemoResizablePreviewComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C", "nzSelector", "nz-demo-resizable-grid", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-grid <name>", "nzComponentName", "NzDemoResizableGridComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5E03\u5C40", "nzSelector", "nz-demo-resizable-layout", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-layout <name>", "nzComponentName", "NzDemoResizableLayoutComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u62BD\u5C49", "nzSelector", "nz-demo-resizable-drawer", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-drawer <name>", "nzComponentName", "NzDemoResizableDrawerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8868\u683C", "nzSelector", "nz-demo-resizable-table", "nzGenerateCommand", "ng g ng-zorro-antd:resizable-table <name>", "nzComponentName", "NzDemoResizableTableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-resizable]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-resizable]'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["id", "nz-resize-handle"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-resize-handle'", 1, "anchor"], ["id", "nz-resize-handles"], ["onclick", "window.location.hash = 'nz-resize-handles'", 1, "anchor"], ["id", "\u6837\u5F0F"], ["onclick", "window.location.hash = '\u6837\u5F0F'", 1, "anchor"]], template: function NzDemoResizableZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1662,13 +1662,13 @@ class NzDemoResizableZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "\u652F\u6301\u91CA\u653E\u524D\u9884\u89C8\u63D0\u9AD8\u6027\u80FD");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, " \u652F\u6301\u91CA\u653E\u524D\u9884\u89C8\u63D0\u9AD8\u6027\u80FD");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "\u652F\u6301\u6805\u683C\u7CFB\u7EDF");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " \u652F\u6301\u6805\u683C\u7CFB\u7EDF");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "\u652F\u6301\u81EA\u5B9A\u4E49\u8C03\u6574\u624B\u67C4\u548C\u9884\u89C8\u6837\u5F0F");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " \u652F\u6301\u81EA\u5B9A\u4E49\u8C03\u6574\u624B\u67C4\u548C\u9884\u89C8\u6837\u5F0F");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "h2", 17);
@@ -2498,7 +2498,7 @@ class NzDemoResizableZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](563, " \u4E0A\u65F6\u88AB\u6DFB\u52A0\u5230 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](564, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](565, "nz-resize-handle");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](565, " nz-resize-handle");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](566, " \u4E0A\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2615,9 +2615,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NzDemoResizableTableComponent_ng_container_4_th_1_Template(rf, ctx) { if (rf & 1) {
-    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "th", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResizeEnd", function NzDemoResizableTableComponent_ng_container_4_th_1_Template_th_nzResizeEnd_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r7); const col_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit; const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onResize($event, col_r3.title); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResizeEnd", function NzDemoResizableTableComponent_ng_container_4_th_1_Template_th_nzResizeEnd_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r8); const col_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit; const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r6.onResize($event, col_r3.title); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-resize-handle", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "div", 7);
@@ -2718,8 +2718,8 @@ class NzDemoResizableTableComponent {
         this.cols = this.cols.map(e => (e.title === col ? Object.assign(Object.assign({}, e), { width: `${width}px` }) : e));
     }
 }
-/** @nocollapse */ NzDemoResizableTableComponent.ɵfac = function NzDemoResizableTableComponent_Factory(t) { return new (t || NzDemoResizableTableComponent)(); };
-/** @nocollapse */ NzDemoResizableTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableTableComponent, selectors: [["nz-demo-resizable-table"]], decls: 7, vars: 3, consts: [[3, "nzData"], ["basicTable", ""], [4, "ngFor", "ngForOf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzWidth", "nzMaxWidth", "nzMinWidth", "nzResizeEnd", 4, "ngIf"], [4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzWidth", "nzMaxWidth", "nzMinWidth", "nzResizeEnd"], ["nzDirection", "right"], [1, "resize-trigger"]], template: function NzDemoResizableTableComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableTableComponent.ɵfac = function NzDemoResizableTableComponent_Factory(t) { return new (t || NzDemoResizableTableComponent)(); };
+NzDemoResizableTableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableTableComponent, selectors: [["nz-demo-resizable-table"]], decls: 7, vars: 3, consts: [[3, "nzData"], ["basicTable", ""], [4, "ngFor", "ngForOf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzWidth", "nzMaxWidth", "nzMinWidth", "nzResizeEnd", 4, "ngIf"], [4, "ngIf"], ["nz-resizable", "", "nzBounds", "window", "nzPreview", "", 3, "nzWidth", "nzMaxWidth", "nzMinWidth", "nzResizeEnd"], ["nzDirection", "right"], [1, "resize-trigger"]], template: function NzDemoResizableTableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-table", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "thead");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "tr");
@@ -2856,8 +2856,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoResizableModule {
 }
-/** @nocollapse */ NzDemoResizableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoResizableModule });
-/** @nocollapse */ NzDemoResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoResizableModule_Factory(t) { return new (t || NzDemoResizableModule)(); }, imports: [[
+NzDemoResizableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoResizableModule });
+NzDemoResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoResizableModule_Factory(t) { return new (t || NzDemoResizableModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -3005,9 +3005,7 @@ class NzResizableService {
         this.clearListeners();
     }
 }
-/** @nocollapse */
 NzResizableService.ɵfac = function NzResizableService_Factory(t) { return new (t || NzResizableService)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common__WEBPACK_IMPORTED_MODULE_0__["DOCUMENT"])); };
-/** @nocollapse */
 NzResizableService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjectable"]({ token: NzResizableService, factory: NzResizableService.ɵfac });
 NzResizableService.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
@@ -3259,9 +3257,7 @@ class NzResizableDirective {
         this.destroy$.complete();
     }
 }
-/** @nocollapse */
 NzResizableDirective.ɵfac = function NzResizableDirective_Factory(t) { return new (t || NzResizableDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NzResizableService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_3__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"])); };
-/** @nocollapse */
 NzResizableDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineDirective"]({ type: NzResizableDirective, selectors: [["", "nz-resizable", ""]], hostVars: 4, hostBindings: function NzResizableDirective_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("mouseenter", function NzResizableDirective_mouseenter_HostBindingHandler() { return ctx.onMouseenter(); })("mouseleave", function NzResizableDirective_mouseleave_HostBindingHandler() { return ctx.onMouseleave(); });
     } if (rf & 2) {
@@ -3387,9 +3383,7 @@ class NzResizeHandleComponent {
         this.destroy$.complete();
     }
 }
-/** @nocollapse */
 NzResizeHandleComponent.ɵfac = function NzResizeHandleComponent_Factory(t) { return new (t || NzResizeHandleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](NzResizableService), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzResizeHandleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResizeHandleComponent, selectors: [["nz-resize-handle"], ["", "nz-resize-handle", ""]], hostVars: 18, hostBindings: function NzResizeHandleComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("mousedown", function NzResizeHandleComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); })("touchstart", function NzResizeHandleComponent_touchstart_HostBindingHandler($event) { return ctx.onMousedown($event); });
     } if (rf & 2) {
@@ -3461,9 +3455,7 @@ class NzResizeHandlesComponent {
         }
     }
 }
-/** @nocollapse */
 NzResizeHandlesComponent.ɵfac = function NzResizeHandlesComponent_Factory(t) { return new (t || NzResizeHandlesComponent)(); };
-/** @nocollapse */
 NzResizeHandlesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzResizeHandlesComponent, selectors: [["nz-resize-handles"]], inputs: { nzDirections: "nzDirections" }, exportAs: ["nzResizeHandles"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], decls: 1, vars: 1, consts: [[3, "nzDirection", 4, "ngFor", "ngForOf"], [3, "nzDirection"]], template: function NzResizeHandlesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzResizeHandlesComponent_nz_resize_handle_0_Template, 1, 1, "nz-resize-handle", 0);
     } if (rf & 2) {
@@ -3491,9 +3483,7 @@ NzResizeHandlesComponent.propDecorators = {
  */
 class NzResizableModule {
 }
-/** @nocollapse */
 NzResizableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzResizableModule });
-/** @nocollapse */
 NzResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzResizableModule_Factory(t) { return new (t || NzResizableModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzResizableModule, { declarations: function () { return [NzResizableDirective, NzResizeHandleComponent, NzResizeHandlesComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]; }, exports: function () { return [NzResizableDirective, NzResizeHandleComponent, NzResizeHandlesComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzResizableModule, [{
@@ -3556,8 +3546,8 @@ class NzDemoResizableLayoutComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableLayoutComponent.ɵfac = function NzDemoResizableLayoutComponent_Factory(t) { return new (t || NzDemoResizableLayoutComponent)(); };
-/** @nocollapse */ NzDemoResizableLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableLayoutComponent, selectors: [["nz-demo-resizable-layout"]], decls: 15, vars: 7, consts: [["nz-resizable", "", 3, "nzWidth", "nzMinWidth", "nzMaxWidth", "nzResize"], ["nzDirection", "right"], [1, "sider-resize-line"], ["nz-resizable", "", 1, "resizable-box", 3, "nzMaxHeight", "nzMinHeight", "nzResize"], ["nzDirection", "bottom"], [1, "content-resize-line"]], template: function NzDemoResizableLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableLayoutComponent.ɵfac = function NzDemoResizableLayoutComponent_Factory(t) { return new (t || NzDemoResizableLayoutComponent)(); };
+NzDemoResizableLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableLayoutComponent, selectors: [["nz-demo-resizable-layout"]], decls: 15, vars: 7, consts: [["nz-resizable", "", 3, "nzWidth", "nzMinWidth", "nzMaxWidth", "nzResize"], ["nzDirection", "right"], [1, "sider-resize-line"], ["nz-resizable", "", 1, "resizable-box", 3, "nzMaxHeight", "nzMinHeight", "nzResize"], ["nzDirection", "bottom"], [1, "content-resize-line"]], template: function NzDemoResizableLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-layout");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-header");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Header");
@@ -3718,8 +3708,8 @@ class NzDemoResizableGridComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoResizableGridComponent.ɵfac = function NzDemoResizableGridComponent_Factory(t) { return new (t || NzDemoResizableGridComponent)(); };
-/** @nocollapse */ NzDemoResizableGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableGridComponent, selectors: [["nz-demo-resizable-grid"]], decls: 6, vars: 9, consts: [["nz-row", ""], ["nz-col", "", "nz-resizable", "", 1, "col", 3, "nzMinColumn", "nzMaxColumn", "nzGridColumnCount", "nzSpan", "nzResize"], [3, "nzDirections"], ["nz-col", "", 1, "col", "right", 3, "nzSpan"]], template: function NzDemoResizableGridComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoResizableGridComponent.ɵfac = function NzDemoResizableGridComponent_Factory(t) { return new (t || NzDemoResizableGridComponent)(); };
+NzDemoResizableGridComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoResizableGridComponent, selectors: [["nz-demo-resizable-grid"]], decls: 6, vars: 9, consts: [["nz-row", ""], ["nz-col", "", "nz-resizable", "", 1, "col", 3, "nzMinColumn", "nzMaxColumn", "nzGridColumnCount", "nzSpan", "nzResize"], [3, "nzDirections"], ["nz-col", "", 1, "col", "right", 3, "nzSpan"]], template: function NzDemoResizableGridComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzResize", function NzDemoResizableGridComponent_Template_div_nzResize_1_listener($event) { return ctx.onResize($event); });

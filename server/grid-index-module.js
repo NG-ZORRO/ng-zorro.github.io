@@ -55,8 +55,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridModule {
 }
-/** @nocollapse */ NzDemoGridModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoGridModule });
-/** @nocollapse */ NzDemoGridModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoGridModule_Factory(t) { return new (t || NzDemoGridModule)(); }, imports: [[
+NzDemoGridModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoGridModule });
+NzDemoGridModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoGridModule_Factory(t) { return new (t || NzDemoGridModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -125,8 +125,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/outlet */ "fwD0");
+
 
 
 
@@ -170,16 +172,14 @@ class NzDividerComponent {
         this.elementRef.nativeElement.classList.add('ant-divider');
     }
 }
-/** @nocollapse */
 NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
 NzDividerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzDividerComponent, selectors: [["nz-divider"]], hostVars: 16, hostBindings: function NzDividerComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-divider-horizontal", ctx.nzType === "horizontal")("ant-divider-vertical", ctx.nzType === "vertical")("ant-divider-with-text", ctx.nzText)("ant-divider-plain", ctx.nzPlain)("ant-divider-with-text-left", ctx.nzText && ctx.nzOrientation === "left")("ant-divider-with-text-right", ctx.nzText && ctx.nzOrientation === "right")("ant-divider-with-text-center", ctx.nzText && ctx.nzOrientation === "center")("ant-divider-dashed", ctx.nzDashed);
     } }, inputs: { nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed", nzPlain: "nzPlain", nzText: "nzText" }, exportAs: ["nzDivider"], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzText);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzStringTemplateOutletDirective"]], encapsulation: 2, changeDetection: 0 });
 NzDividerComponent.ctorParameters = () => [
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
 ];
@@ -240,15 +240,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDividerModule {
 }
-/** @nocollapse */
 NzDividerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzDividerModule });
-/** @nocollapse */
-NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
+NzDividerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzDividerModule, { declarations: function () { return [NzDividerComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]]; }, exports: function () { return [NzDividerComponent]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzDividerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_4__["NzOutletModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_3__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_5__["NzOutletModule"]],
                 declarations: [NzDividerComponent],
                 exports: [NzDividerComponent]
             }]
@@ -346,8 +344,8 @@ class NzDemoGridPlaygroundComponent {
         this.array = new Array(count);
     }
 }
-/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵfac = function NzDemoGridPlaygroundComponent_Factory(t) { return new (t || NzDemoGridPlaygroundComponent)(); };
-/** @nocollapse */ NzDemoGridPlaygroundComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridPlaygroundComponent, selectors: [["nz-demo-grid-playground"]], decls: 17, vars: 21, consts: [[1, "slider-container"], [1, "slider"], [3, "nzMarks", "nzStep", "nzMin", "nzMax", "ngModel", "ngModelChange"], [1, "gutter-example"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "class", "gutter-row", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "grid-config"]], template: function NzDemoGridPlaygroundComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridPlaygroundComponent.ɵfac = function NzDemoGridPlaygroundComponent_Factory(t) { return new (t || NzDemoGridPlaygroundComponent)(); };
+NzDemoGridPlaygroundComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridPlaygroundComponent, selectors: [["nz-demo-grid-playground"]], decls: 17, vars: 21, consts: [[1, "slider-container"], [1, "slider"], [3, "nzMarks", "nzStep", "nzMin", "nzMax", "ngModel", "ngModelChange"], [1, "gutter-example"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", "class", "gutter-row", 3, "nzSpan", 4, "ngFor", "ngForOf"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "grid-config"]], template: function NzDemoGridPlaygroundComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Horizontal Gutter (px): ");
@@ -496,8 +494,8 @@ const _c1 = function () { return { span: 6, offset: 2 }; };
 const _c2 = function () { return { span: 11, offset: 1 }; };
 class NzDemoGridResponsiveMoreComponent {
 }
-/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵfac = function NzDemoGridResponsiveMoreComponent_Factory(t) { return new (t || NzDemoGridResponsiveMoreComponent)(); };
-/** @nocollapse */ NzDemoGridResponsiveMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveMoreComponent, selectors: [["nz-demo-grid-responsive-more"]], decls: 7, vars: 12, consts: [["nz-row", ""], ["nz-col", "", 3, "nzXs", "nzLg"]], template: function NzDemoGridResponsiveMoreComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridResponsiveMoreComponent.ɵfac = function NzDemoGridResponsiveMoreComponent_Factory(t) { return new (t || NzDemoGridResponsiveMoreComponent)(); };
+NzDemoGridResponsiveMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveMoreComponent, selectors: [["nz-demo-grid-responsive-more"]], decls: 7, vars: 12, consts: [["nz-row", ""], ["nz-col", "", 3, "nzXs", "nzLg"]], template: function NzDemoGridResponsiveMoreComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");
@@ -557,8 +555,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridFlexComponent {
 }
-/** @nocollapse */ NzDemoGridFlexComponent.ɵfac = function NzDemoGridFlexComponent_Factory(t) { return new (t || NzDemoGridFlexComponent)(); };
-/** @nocollapse */ NzDemoGridFlexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexComponent, selectors: [["nz-demo-grid-flex"]], decls: 56, vars: 0, consts: [["nz-row", "", "nzJustify", "start"], ["nz-col", "", "nzSpan", "4"], ["nz-row", "", "nzJustify", "center"], ["nz-row", "", "nzJustify", "end"], ["nz-row", "", "nzJustify", "space-between"], ["nz-row", "", "nzJustify", "space-around"]], template: function NzDemoGridFlexComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridFlexComponent.ɵfac = function NzDemoGridFlexComponent_Factory(t) { return new (t || NzDemoGridFlexComponent)(); };
+NzDemoGridFlexComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexComponent, selectors: [["nz-demo-grid-flex"]], decls: 56, vars: 0, consts: [["nz-row", "", "nzJustify", "start"], ["nz-col", "", "nzSpan", "4"], ["nz-row", "", "nzJustify", "center"], ["nz-row", "", "nzJustify", "end"], ["nz-row", "", "nzJustify", "space-between"], ["nz-row", "", "nzJustify", "space-around"]], template: function NzDemoGridFlexComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "sub-element align left");
@@ -769,11 +767,11 @@ class NzDemoGridEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoGridEnComponent.ɵfac = function NzDemoGridEnComponent_Factory(t) { return new (t || NzDemoGridEnComponent)(); };
-/** @nocollapse */ NzDemoGridEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridEnComponent, selectors: [["nz-demo-grid"]], viewQuery: function NzDemoGridEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoGridEnComponent.ɵfac = function NzDemoGridEnComponent_Factory(t) { return new (t || NzDemoGridEnComponent)(); };
+NzDemoGridEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridEnComponent, selectors: [["nz-demo-grid"]], viewQuery: function NzDemoGridEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 567, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "Basic Grid"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "Grid Gutter"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "Column offset"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "Grid sort"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "Layout"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "Alignment"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "Order"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex Stretch"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "Responsive"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "More responsive"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "Playground"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "design-concept"], ["onclick", "window.location.hash = 'design-concept'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "outline"], ["onclick", "window.location.hash = 'outline'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic Grid", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Grid Gutter", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Column offset", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Grid sort", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Layout", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Alignment", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Order", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex Stretch", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Responsive", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries", "target", "_blank", "rel", "noopener"], ["nzTitle", "More responsive", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Playground", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints", "target", "_blank", "rel", "noopener"]], template: function NzDemoGridEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -894,7 +892,7 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](79, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](80, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, "Establish a set of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, " Establish a set of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](82, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, "column");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -905,7 +903,7 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](87, " (abbreviated col)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "Your content elements should be placed directly in the ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, " Your content elements should be placed directly in the ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "col");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -919,14 +917,14 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](98, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, "The column grid system is a value of 1-24 to represent its range spans. For example, three columns of equal width can be created by ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, " The column grid system is a value of 1-24 to represent its range spans. For example, three columns of equal width can be created by ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "<div nz-col [nzSpan]=\"8\" />");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "If the sum of ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, " If the sum of ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](105, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](106, "col");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1098,7 +1096,7 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, ",");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216, "center");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216, " center");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](217, ", ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](218, "code");
@@ -1106,7 +1104,7 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](220, ",");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](221, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](222, "space-between");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](222, " space-between");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](223, ", ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](224, "code");
@@ -1163,11 +1161,11 @@ class NzDemoGridEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](252, "div", 42);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](253, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](254, "Referring to the Bootstrap ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](254, "Referring to the Bootstrap [responsive design] (");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](255, "a", 51);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](256, "responsive design");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](256, "http://getbootstrap.com/css/#grid-media-queries");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257, ", here preset five dimensions: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257, "), here preset five dimensions: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](258, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259, "xs");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1738,8 +1736,8 @@ const _c0 = function () { return { xs: 8, sm: 16, md: 24, lg: 32 }; };
 const _c1 = function () { return [16, 24]; };
 class NzDemoGridGutterComponent {
 }
-/** @nocollapse */ NzDemoGridGutterComponent.ɵfac = function NzDemoGridGutterComponent_Factory(t) { return new (t || NzDemoGridGutterComponent)(); };
-/** @nocollapse */ NzDemoGridGutterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridGutterComponent, selectors: [["nz-demo-grid-gutter"]], decls: 54, vars: 21, consts: [["nzOrientation", "left", "nzText", "Horizontal"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "inner-box"], ["nzOrientation", "left", "nzText", "Responsive"], ["nzOrientation", "left", "nzText", "Vertical"]], template: function NzDemoGridGutterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridGutterComponent.ɵfac = function NzDemoGridGutterComponent_Factory(t) { return new (t || NzDemoGridGutterComponent)(); };
+NzDemoGridGutterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridGutterComponent, selectors: [["nz-demo-grid-gutter"]], decls: 54, vars: 21, consts: [["nzOrientation", "left", "nzText", "Horizontal"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 1, "gutter-row", 3, "nzSpan"], [1, "inner-box"], ["nzOrientation", "left", "nzText", "Responsive"], ["nzOrientation", "left", "nzText", "Vertical"]], template: function NzDemoGridGutterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-divider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1935,8 +1933,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridFlexOrderComponent {
 }
-/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵfac = function NzDemoGridFlexOrderComponent_Factory(t) { return new (t || NzDemoGridFlexOrderComponent)(); };
-/** @nocollapse */ NzDemoGridFlexOrderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexOrderComponent, selectors: [["nz-demo-grid-flex-order"]], decls: 10, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "6", "nzOrder", "4"], ["nz-col", "", "nzSpan", "6", "nzOrder", "3"], ["nz-col", "", "nzSpan", "6", "nzOrder", "2"], ["nz-col", "", "nzSpan", "6", "nzOrder", "1"]], template: function NzDemoGridFlexOrderComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridFlexOrderComponent.ɵfac = function NzDemoGridFlexOrderComponent_Factory(t) { return new (t || NzDemoGridFlexOrderComponent)(); };
+NzDemoGridFlexOrderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexOrderComponent, selectors: [["nz-demo-grid-flex-order"]], decls: 10, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "6", "nzOrder", "4"], ["nz-col", "", "nzSpan", "6", "nzOrder", "3"], ["nz-col", "", "nzSpan", "6", "nzOrder", "2"], ["nz-col", "", "nzSpan", "6", "nzOrder", "1"]], template: function NzDemoGridFlexOrderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 1);
@@ -2055,11 +2053,11 @@ class NzDemoGridZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoGridZhComponent.ɵfac = function NzDemoGridZhComponent_Factory(t) { return new (t || NzDemoGridZhComponent)(); };
-/** @nocollapse */ NzDemoGridZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridZhComponent, selectors: [["nz-demo-grid"]], viewQuery: function NzDemoGridZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoGridZhComponent.ɵfac = function NzDemoGridZhComponent_Factory(t) { return new (t || NzDemoGridZhComponent)(); };
+NzDemoGridZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridZhComponent, selectors: [["nz-demo-grid"]], viewQuery: function NzDemoGridZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 544, vars: 48, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-grid-demo-basic", "nzTitle", "\u57FA\u7840\u6805\u683C"], ["nzHref", "#components-grid-demo-gutter", "nzTitle", "\u533A\u5757\u95F4\u9694"], ["nzHref", "#components-grid-demo-offset", "nzTitle", "\u5DE6\u53F3\u504F\u79FB"], ["nzHref", "#components-grid-demo-sort", "nzTitle", "\u6805\u683C\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex", "nzTitle", "\u6392\u7248"], ["nzHref", "#components-grid-demo-flex-align", "nzTitle", "\u5BF9\u9F50"], ["nzHref", "#components-grid-demo-flex-order", "nzTitle", "\u6392\u5E8F"], ["nzHref", "#components-grid-demo-flex-stretch", "nzTitle", "Flex \u586B\u5145"], ["nzHref", "#components-grid-demo-responsive", "nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40"], ["nzHref", "#components-grid-demo-responsive-more", "nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F"], ["nzHref", "#components-grid-demo-playground", "nzTitle", "\u6805\u683C\u914D\u7F6E\u5668"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/grid/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u8BBE\u8BA1\u7406\u5FF5"], ["onclick", "window.location.hash = '\u8BBE\u8BA1\u7406\u5FF5'", 1, "anchor"], [1, "grid-demo"], [1, "ant-row", "demo-row"], [1, "ant-col-24", "demo-col", "demo-col-1"], [1, "ant-col-6", "demo-col", "demo-col-2"], [1, "ant-col-6", "demo-col", "demo-col-3"], [1, "ant-col-8", "demo-col", "demo-col-4"], [1, "ant-col-8", "demo-col", "demo-col-5"], [1, "ant-col-12", "demo-col", "demo-col-1"], [1, "ant-col-12", "demo-col", "demo-col-3"], [1, "ant-col-16", "demo-col", "demo-col-4"], ["id", "\u6982\u8FF0"], ["onclick", "window.location.hash = '\u6982\u8FF0'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u7840\u6805\u683C", "nzSelector", "nz-demo-grid-basic", "nzGenerateCommand", "ng g ng-zorro-antd:grid-basic <name>", "nzComponentName", "NzDemoGridBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u533A\u5757\u95F4\u9694", "nzSelector", "nz-demo-grid-gutter", "nzGenerateCommand", "ng g ng-zorro-antd:grid-gutter <name>", "nzComponentName", "NzDemoGridGutterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5DE6\u53F3\u504F\u79FB", "nzSelector", "nz-demo-grid-offset", "nzGenerateCommand", "ng g ng-zorro-antd:grid-offset <name>", "nzComponentName", "NzDemoGridOffsetComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u6392\u5E8F", "nzSelector", "nz-demo-grid-sort", "nzGenerateCommand", "ng g ng-zorro-antd:grid-sort <name>", "nzComponentName", "NzDemoGridSortComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u7248", "nzSelector", "nz-demo-grid-flex", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex <name>", "nzComponentName", "NzDemoGridFlexComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5BF9\u9F50", "nzSelector", "nz-demo-grid-flex-align", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-align <name>", "nzComponentName", "NzDemoGridFlexAlignComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6392\u5E8F", "nzSelector", "nz-demo-grid-flex-order", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-order <name>", "nzComponentName", "NzDemoGridFlexOrderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Flex \u586B\u5145", "nzSelector", "nz-demo-grid-flex-stretch", "nzGenerateCommand", "ng g ng-zorro-antd:grid-flex-stretch <name>", "nzComponentName", "NzDemoGridFlexStretchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u5F0F\u5E03\u5C40", "nzSelector", "nz-demo-grid-responsive", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive <name>", "nzComponentName", "NzDemoGridResponsiveComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["href", "http://getbootstrap.com/css/#grid-media-queries", "target", "_blank", "rel", "noopener"], ["nzTitle", "\u5176\u4ED6\u5C5E\u6027\u7684\u54CD\u5E94\u5F0F", "nzSelector", "nz-demo-grid-responsive-more", "nzGenerateCommand", "ng g ng-zorro-antd:grid-responsive-more <name>", "nzComponentName", "NzDemoGridResponsiveMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6805\u683C\u914D\u7F6E\u5668", "nzSelector", "nz-demo-grid-playground", "nzGenerateCommand", "ng g ng-zorro-antd:grid-playground <name>", "nzComponentName", "NzDemoGridPlaygroundComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "[nz-row]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-row]'", 1, "anchor"], ["id", "[nz-col]"], ["onclick", "window.location.hash = '[nz-col]'", 1, "anchor"], ["href", "https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints", "target", "_blank", "rel", "noopener"]], template: function NzDemoGridZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -2171,7 +2169,7 @@ class NzDemoGridZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, "\u901A\u8FC7 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](74, " \u901A\u8FC7 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "row");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2182,7 +2180,7 @@ class NzDemoGridZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](80, "\uFF08\u7B80\u5199 col\uFF09");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](81, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, "\u4F60\u7684\u5185\u5BB9\u5E94\u5F53\u653E\u7F6E\u4E8E ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](82, " \u4F60\u7684\u5185\u5BB9\u5E94\u5F53\u653E\u7F6E\u4E8E ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](83, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](84, "col");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2197,14 +2195,14 @@ class NzDemoGridZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, " \u7684\u76F4\u63A5\u5143\u7D20");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](92, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, "\u6805\u683C\u7CFB\u7EDF\u4E2D\u7684\u5217\u662F\u6307 1 \u5230 24 \u7684\u503C\u6765\u8868\u793A\u5176\u8DE8\u8D8A\u7684\u8303\u56F4\u3002\u4F8B\u5982\uFF0C\u4E09\u4E2A\u7B49\u5BBD\u7684\u5217\u53EF\u4EE5\u4F7F\u7528 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, " \u6805\u683C\u7CFB\u7EDF\u4E2D\u7684\u5217\u662F\u6307 1 \u5230 24 \u7684\u503C\u6765\u8868\u793A\u5176\u8DE8\u8D8A\u7684\u8303\u56F4\u3002\u4F8B\u5982\uFF0C\u4E09\u4E2A\u7B49\u5BBD\u7684\u5217\u53EF\u4EE5\u4F7F\u7528 ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "<div nz-col [nzSpan]=\"8\" />");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, " \u6765\u521B\u5EFA");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "\u5982\u679C\u4E00\u4E2A ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, " \u5982\u679C\u4E00\u4E2A ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](99, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](100, "row");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2987,8 +2985,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridSortComponent {
 }
-/** @nocollapse */ NzDemoGridSortComponent.ɵfac = function NzDemoGridSortComponent_Factory(t) { return new (t || NzDemoGridSortComponent)(); };
-/** @nocollapse */ NzDemoGridSortComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridSortComponent, selectors: [["nz-demo-grid-sort"]], decls: 5, vars: 4, consts: [["nz-row", ""], ["nz-col", "", 3, "nzSpan", "nzPush"], ["nz-col", "", 3, "nzSpan", "nzPull"]], template: function NzDemoGridSortComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridSortComponent.ɵfac = function NzDemoGridSortComponent_Factory(t) { return new (t || NzDemoGridSortComponent)(); };
+NzDemoGridSortComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridSortComponent, selectors: [["nz-demo-grid-sort"]], decls: 5, vars: 4, consts: [["nz-row", ""], ["nz-col", "", 3, "nzSpan", "nzPush"], ["nz-col", "", 3, "nzSpan", "nzPull"]], template: function NzDemoGridSortComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-18 col-push-6 ");
@@ -3040,8 +3038,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridFlexStretchComponent {
 }
-/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵfac = function NzDemoGridFlexStretchComponent_Factory(t) { return new (t || NzDemoGridFlexStretchComponent)(); };
-/** @nocollapse */ NzDemoGridFlexStretchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexStretchComponent, selectors: [["nz-demo-grid-flex-stretch"]], decls: 22, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzFlex", "2"], ["nz-col", "", "nzFlex", "3"], ["nz-col", "", "nzFlex", "100px"], ["nz-col", "", "nzFlex", "auto"], ["nz-col", "", "nzFlex", "1 1 200px"], ["nz-col", "", "nzFlex", "0 1 300px"]], template: function NzDemoGridFlexStretchComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridFlexStretchComponent.ɵfac = function NzDemoGridFlexStretchComponent_Factory(t) { return new (t || NzDemoGridFlexStretchComponent)(); };
+NzDemoGridFlexStretchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexStretchComponent, selectors: [["nz-demo-grid-flex-stretch"]], decls: 22, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzFlex", "2"], ["nz-col", "", "nzFlex", "3"], ["nz-col", "", "nzFlex", "100px"], ["nz-col", "", "nzFlex", "auto"], ["nz-col", "", "nzFlex", "1 1 200px"], ["nz-col", "", "nzFlex", "0 1 300px"]], template: function NzDemoGridFlexStretchComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Percentage columns");
@@ -3131,8 +3129,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridOffsetComponent {
 }
-/** @nocollapse */ NzDemoGridOffsetComponent.ɵfac = function NzDemoGridOffsetComponent_Factory(t) { return new (t || NzDemoGridOffsetComponent)(); };
-/** @nocollapse */ NzDemoGridOffsetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridOffsetComponent, selectors: [["nz-demo-grid-offset"]], decls: 13, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "8", "nzOffset", "8"], ["nz-col", "", "nzSpan", "6", "nzOffset", "6"], ["nz-col", "", "nzSpan", "12", "nzOffset", "6"]], template: function NzDemoGridOffsetComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridOffsetComponent.ɵfac = function NzDemoGridOffsetComponent_Factory(t) { return new (t || NzDemoGridOffsetComponent)(); };
+NzDemoGridOffsetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridOffsetComponent, selectors: [["nz-demo-grid-offset"]], decls: 13, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "8", "nzOffset", "8"], ["nz-col", "", "nzSpan", "6", "nzOffset", "6"], ["nz-col", "", "nzSpan", "12", "nzOffset", "6"]], template: function NzDemoGridOffsetComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " col-8 ");
@@ -3205,8 +3203,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridBasicComponent {
 }
-/** @nocollapse */ NzDemoGridBasicComponent.ɵfac = function NzDemoGridBasicComponent_Factory(t) { return new (t || NzDemoGridBasicComponent)(); };
-/** @nocollapse */ NzDemoGridBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridBasicComponent, selectors: [["nz-demo-grid-basic"]], decls: 21, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "6"]], template: function NzDemoGridBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridBasicComponent.ɵfac = function NzDemoGridBasicComponent_Factory(t) { return new (t || NzDemoGridBasicComponent)(); };
+NzDemoGridBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridBasicComponent, selectors: [["nz-demo-grid-basic"]], decls: 21, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzSpan", "12"], ["nz-col", "", "nzSpan", "8"], ["nz-col", "", "nzSpan", "6"]], template: function NzDemoGridBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "col-12");
@@ -3285,8 +3283,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridFlexAlignComponent {
 }
-/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵfac = function NzDemoGridFlexAlignComponent_Factory(t) { return new (t || NzDemoGridFlexAlignComponent)(); };
-/** @nocollapse */ NzDemoGridFlexAlignComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexAlignComponent, selectors: [["nz-demo-grid-flex-align"]], decls: 46, vars: 0, consts: [["nz-row", "", "nzJustify", "center", "nzAlign", "top"], ["nz-col", "", "nzSpan", "4"], [1, "height-100"], [1, "height-50"], [1, "height-120"], [1, "height-80"], ["nz-row", "", "nzJustify", "space-around", "nzAlign", "middle"], ["nz-row", "", "nzJustify", "space-between", "nzAlign", "bottom"]], template: function NzDemoGridFlexAlignComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridFlexAlignComponent.ɵfac = function NzDemoGridFlexAlignComponent_Factory(t) { return new (t || NzDemoGridFlexAlignComponent)(); };
+NzDemoGridFlexAlignComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridFlexAlignComponent, selectors: [["nz-demo-grid-flex-align"]], decls: 46, vars: 0, consts: [["nz-row", "", "nzJustify", "center", "nzAlign", "top"], ["nz-col", "", "nzSpan", "4"], [1, "height-100"], [1, "height-50"], [1, "height-120"], [1, "height-80"], ["nz-row", "", "nzJustify", "space-around", "nzAlign", "middle"], ["nz-row", "", "nzJustify", "space-between", "nzAlign", "bottom"]], template: function NzDemoGridFlexAlignComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Align Top");
@@ -3424,8 +3422,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGridResponsiveComponent {
 }
-/** @nocollapse */ NzDemoGridResponsiveComponent.ɵfac = function NzDemoGridResponsiveComponent_Factory(t) { return new (t || NzDemoGridResponsiveComponent)(); };
-/** @nocollapse */ NzDemoGridResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveComponent, selectors: [["nz-demo-grid-responsive"]], decls: 7, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzXs", "2", "nzSm", "4", "nzMd", "6", "nzLg", "8", "nzXl", "10"], ["nz-col", "", "nzXs", "20", "nzSm", "16", "nzMd", "12", "nzLg", "8", "nzXl", "4"]], template: function NzDemoGridResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoGridResponsiveComponent.ɵfac = function NzDemoGridResponsiveComponent_Factory(t) { return new (t || NzDemoGridResponsiveComponent)(); };
+NzDemoGridResponsiveComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoGridResponsiveComponent, selectors: [["nz-demo-grid-responsive"]], decls: 7, vars: 0, consts: [["nz-row", ""], ["nz-col", "", "nzXs", "2", "nzSm", "4", "nzMd", "6", "nzLg", "8", "nzXl", "10"], ["nz-col", "", "nzXs", "20", "nzSm", "16", "nzMd", "12", "nzLg", "8", "nzXl", "4"]], template: function NzDemoGridResponsiveComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Col ");

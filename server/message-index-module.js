@@ -43,8 +43,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoMessageModule {
 }
-/** @nocollapse */ NzDemoMessageModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoMessageModule });
-/** @nocollapse */ NzDemoMessageModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoMessageModule_Factory(t) { return new (t || NzDemoMessageModule)(); }, imports: [[
+NzDemoMessageModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoMessageModule });
+NzDemoMessageModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoMessageModule_Factory(t) { return new (t || NzDemoMessageModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -119,8 +119,8 @@ class NzDemoMessageLoadingComponent {
         }, 2500);
     }
 }
-/** @nocollapse */ NzDemoMessageLoadingComponent.ɵfac = function NzDemoMessageLoadingComponent_Factory(t) { return new (t || NzDemoMessageLoadingComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoMessageLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageLoadingComponent, selectors: [["nz-demo-message-loading"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageLoadingComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoMessageLoadingComponent.ɵfac = function NzDemoMessageLoadingComponent_Factory(t) { return new (t || NzDemoMessageLoadingComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoMessageLoadingComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageLoadingComponent, selectors: [["nz-demo-message-loading"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageLoadingComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMessageLoadingComponent_Template_button_click_0_listener() { return ctx.createBasicMessage(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Display a loading indicator");
@@ -218,13 +218,13 @@ class NzDemoMessageZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoMessageZhComponent.ɵfac = function NzDemoMessageZhComponent_Factory(t) { return new (t || NzDemoMessageZhComponent)(); };
-/** @nocollapse */ NzDemoMessageZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageZhComponent, selectors: [["nz-demo-message"]], viewQuery: function NzDemoMessageZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoMessageZhComponent.ɵfac = function NzDemoMessageZhComponent_Factory(t) { return new (t || NzDemoMessageZhComponent)(); };
+NzDemoMessageZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageZhComponent, selectors: [["nz-demo-message"]], viewQuery: function NzDemoMessageZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 323, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-message-demo-info", "nzTitle", "\u666E\u901A\u63D0\u793A"], ["nzHref", "#components-message-demo-other", "nzTitle", "\u5176\u4ED6\u63D0\u793A\u7C7B\u578B"], ["nzHref", "#components-message-demo-duration", "nzTitle", "\u4FEE\u6539\u5EF6\u65F6"], ["nzHref", "#components-message-demo-loading", "nzTitle", "\u52A0\u8F7D\u4E2D"], ["nzHref", "#components-message-demo-close", "nzTitle", "\u7ED3\u675F\u4E8B\u4EF6"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/message/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u666E\u901A\u63D0\u793A", "nzSelector", "nz-demo-message-info", "nzGenerateCommand", "ng g ng-zorro-antd:message-info <name>", "nzComponentName", "NzDemoMessageInfoComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4FEE\u6539\u5EF6\u65F6", "nzSelector", "nz-demo-message-duration", "nzGenerateCommand", "ng g ng-zorro-antd:message-duration <name>", "nzComponentName", "NzDemoMessageDurationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7ED3\u675F\u4E8B\u4EF6", "nzSelector", "nz-demo-message-close", "nzGenerateCommand", "ng g ng-zorro-antd:message-close <name>", "nzComponentName", "NzDemoMessageCloseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5176\u4ED6\u63D0\u793A\u7C7B\u578B", "nzSelector", "nz-demo-message-other", "nzGenerateCommand", "ng g ng-zorro-antd:message-other <name>", "nzComponentName", "NzDemoMessageOtherComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u4E2D", "nzSelector", "nz-demo-message-loading", "nzGenerateCommand", "ng g ng-zorro-antd:message-loading <name>", "nzComponentName", "NzDemoMessageLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nzmessageservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nzmessageservice'", 1, "anchor"], ["id", "\u5168\u5C40\u914D\u7F6E"], ["onclick", "window.location.hash = '\u5168\u5C40\u914D\u7F6E'", 1, "anchor"], ["id", "nzmessageref"], ["onclick", "window.location.hash = 'nzmessageref'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["spellcheck", "true", 1, "token", "comment"]], template: function NzDemoMessageZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 333, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-message-demo-info", "nzTitle", "\u666E\u901A\u63D0\u793A"], ["nzHref", "#components-message-demo-other", "nzTitle", "\u5176\u4ED6\u63D0\u793A\u7C7B\u578B"], ["nzHref", "#components-message-demo-duration", "nzTitle", "\u4FEE\u6539\u5EF6\u65F6"], ["nzHref", "#components-message-demo-loading", "nzTitle", "\u52A0\u8F7D\u4E2D"], ["nzHref", "#components-message-demo-close", "nzTitle", "\u7ED3\u675F\u4E8B\u4EF6"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/message/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u666E\u901A\u63D0\u793A", "nzSelector", "nz-demo-message-info", "nzGenerateCommand", "ng g ng-zorro-antd:message-info <name>", "nzComponentName", "NzDemoMessageInfoComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4FEE\u6539\u5EF6\u65F6", "nzSelector", "nz-demo-message-duration", "nzGenerateCommand", "ng g ng-zorro-antd:message-duration <name>", "nzComponentName", "NzDemoMessageDurationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7ED3\u675F\u4E8B\u4EF6", "nzSelector", "nz-demo-message-close", "nzGenerateCommand", "ng g ng-zorro-antd:message-close <name>", "nzComponentName", "NzDemoMessageCloseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5176\u4ED6\u63D0\u793A\u7C7B\u578B", "nzSelector", "nz-demo-message-other", "nzGenerateCommand", "ng g ng-zorro-antd:message-other <name>", "nzComponentName", "NzDemoMessageOtherComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A0\u8F7D\u4E2D", "nzSelector", "nz-demo-message-loading", "nzGenerateCommand", "ng g ng-zorro-antd:message-loading <name>", "nzComponentName", "NzDemoMessageLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nzmessageservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nzmessageservice'", 1, "anchor"], ["id", "\u5168\u5C40\u914D\u7F6E"], ["onclick", "window.location.hash = '\u5168\u5C40\u914D\u7F6E'", 1, "anchor"], ["id", "nzmessageref"], ["onclick", "window.location.hash = 'nzmessageref'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["spellcheck", "true", 1, "token", "comment"]], template: function NzDemoMessageZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -263,10 +263,10 @@ class NzDemoMessageZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "\u53EF\u63D0\u4F9B\u6210\u529F\u3001\u8B66\u544A\u548C\u9519\u8BEF\u7B49\u53CD\u9988\u4FE1\u606F\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " \u53EF\u63D0\u4F9B\u6210\u529F\u3001\u8B66\u544A\u548C\u9519\u8BEF\u7B49\u53CD\u9988\u4FE1\u606F\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u9876\u90E8\u5C45\u4E2D\u663E\u793A\u5E76\u81EA\u52A8\u6D88\u5931\uFF0C\u662F\u4E00\u79CD\u4E0D\u6253\u65AD\u7528\u6237\u64CD\u4F5C\u7684\u8F7B\u91CF\u7EA7\u63D0\u793A\u65B9\u5F0F\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " \u9876\u90E8\u5C45\u4E2D\u663E\u793A\u5E76\u81EA\u52A8\u6D88\u5931\uFF0C\u662F\u4E00\u79CD\u4E0D\u6253\u65AD\u7528\u6237\u64CD\u4F5C\u7684\u8F7B\u91CF\u7EA7\u63D0\u793A\u65B9\u5F0F\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "pre", 15);
@@ -673,75 +673,91 @@ class NzDemoMessageZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "nzDirection");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "\u6D88\u606F\u6587\u5B57\u65B9\u5411");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](280, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](281, "'ltr' | 'rtl'");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](274, "h3", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](275, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276, "NzMessageRef");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](277, "a", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](278, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](282, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "\u5F53\u4F60\u8C03\u7528 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "NzMessageService.success");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](283, " \u6216\u5176\u4ED6\u65B9\u6CD5\u65F6\u4F1A\u8FD4\u56DE\u8BE5\u5BF9\u8C61\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "pre", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](285, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](286, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "export");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "h3", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](285, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](286, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](288, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](289, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, "interface");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](287, "a", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](288, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](291, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](292, "span", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](293, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](294, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](295, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](296, "{");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](289, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, "\u5F53\u4F60\u8C03\u7528 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](291, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, "NzMessageService.success");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](297, "\n  messageId");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](298, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](299, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](293, " \u6216\u5176\u4ED6\u65B9\u6CD5\u65F6\u4F1A\u8FD4\u56DE\u8BE5\u5BF9\u8C61\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](300, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](301, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](302, "string");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](294, "pre", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](295, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](296, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](297, "export");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](300, "interface");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](305, "\n  onClose");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](306, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](302, "span", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](303, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, " Subject");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](309, "span", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](306, "{");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, "\n  messageId");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](308, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](309, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](311, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](312, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](312, "string");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](313, "span", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](314, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](313, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](314, ";");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](315, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](316, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](315, "\n  onClose");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](316, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](317, ":");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](317, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](318, "span", 41);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](319, "// \u5F53 message \u5173\u95ED\u65F6\u5B83\u4F1A\u6D3E\u53D1\u4E00\u4E2A\u4E8B\u4EF6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](318, " Subject");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "span", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](320, "<");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](320, "\n");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](321, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, "}");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](321, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](323, "span", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](324, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](325, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](326, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](327, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](328, "span", 41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](329, "// \u5F53 message \u5173\u95ED\u65F6\u5B83\u4F1A\u6D3E\u53D1\u4E00\u4E2A\u4E8B\u4EF6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](330, "\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](331, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](332, "}");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -822,8 +838,8 @@ class NzDemoMessageCloseComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoMessageCloseComponent.ɵfac = function NzDemoMessageCloseComponent_Factory(t) { return new (t || NzDemoMessageCloseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoMessageCloseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageCloseComponent, selectors: [["nz-demo-message-close"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageCloseComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoMessageCloseComponent.ɵfac = function NzDemoMessageCloseComponent_Factory(t) { return new (t || NzDemoMessageCloseComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoMessageCloseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageCloseComponent, selectors: [["nz-demo-message-close"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageCloseComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMessageCloseComponent_Template_button_click_0_listener() { return ctx.startShowMessages(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Display a sequence of messages");
@@ -874,8 +890,8 @@ class NzDemoMessageInfoComponent {
         this.message.info('This is a normal message');
     }
 }
-/** @nocollapse */ NzDemoMessageInfoComponent.ɵfac = function NzDemoMessageInfoComponent_Factory(t) { return new (t || NzDemoMessageInfoComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoMessageInfoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageInfoComponent, selectors: [["nz-demo-message-info"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageInfoComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoMessageInfoComponent.ɵfac = function NzDemoMessageInfoComponent_Factory(t) { return new (t || NzDemoMessageInfoComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoMessageInfoComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageInfoComponent, selectors: [["nz-demo-message-info"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageInfoComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMessageInfoComponent_Template_button_click_0_listener() { return ctx.createBasicMessage(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Display normal message");
@@ -928,8 +944,8 @@ class NzDemoMessageDurationComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoMessageDurationComponent.ɵfac = function NzDemoMessageDurationComponent_Factory(t) { return new (t || NzDemoMessageDurationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoMessageDurationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageDurationComponent, selectors: [["nz-demo-message-duration"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageDurationComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoMessageDurationComponent.ɵfac = function NzDemoMessageDurationComponent_Factory(t) { return new (t || NzDemoMessageDurationComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoMessageDurationComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageDurationComponent, selectors: [["nz-demo-message-duration"]], decls: 2, vars: 1, consts: [["nz-button", "", 3, "nzType", "click"]], template: function NzDemoMessageDurationComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMessageDurationComponent_Template_button_click_0_listener() { return ctx.createBasicMessage(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Customized display duration");
@@ -1006,13 +1022,13 @@ class NzDemoMessageEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoMessageEnComponent.ɵfac = function NzDemoMessageEnComponent_Factory(t) { return new (t || NzDemoMessageEnComponent)(); };
-/** @nocollapse */ NzDemoMessageEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageEnComponent, selectors: [["nz-demo-message"]], viewQuery: function NzDemoMessageEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoMessageEnComponent.ɵfac = function NzDemoMessageEnComponent_Factory(t) { return new (t || NzDemoMessageEnComponent)(); };
+NzDemoMessageEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageEnComponent, selectors: [["nz-demo-message"]], viewQuery: function NzDemoMessageEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 327, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-message-demo-info", "nzTitle", "Normal prompt"], ["nzHref", "#components-message-demo-other", "nzTitle", "Other types of message"], ["nzHref", "#components-message-demo-duration", "nzTitle", "Customize duration"], ["nzHref", "#components-message-demo-loading", "nzTitle", "Message of loading"], ["nzHref", "#components-message-demo-close", "nzTitle", "Customize duration"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/message/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Normal prompt", "nzSelector", "nz-demo-message-info", "nzGenerateCommand", "ng g ng-zorro-antd:message-info <name>", "nzComponentName", "NzDemoMessageInfoComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Customize duration", "nzSelector", "nz-demo-message-duration", "nzGenerateCommand", "ng g ng-zorro-antd:message-duration <name>", "nzComponentName", "NzDemoMessageDurationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customize duration", "nzSelector", "nz-demo-message-close", "nzGenerateCommand", "ng g ng-zorro-antd:message-close <name>", "nzComponentName", "NzDemoMessageCloseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Other types of message", "nzSelector", "nz-demo-message-other", "nzGenerateCommand", "ng g ng-zorro-antd:message-other <name>", "nzComponentName", "NzDemoMessageOtherComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Message of loading", "nzSelector", "nz-demo-message-loading", "nzGenerateCommand", "ng g ng-zorro-antd:message-loading <name>", "nzComponentName", "NzDemoMessageLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nzmessageservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nzmessageservice'", 1, "anchor"], ["id", "global-configuration"], ["onclick", "window.location.hash = 'global-configuration'", 1, "anchor"], ["id", "nzmessageref"], ["onclick", "window.location.hash = 'nzmessageref'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["spellcheck", "true", 1, "token", "comment"]], template: function NzDemoMessageEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 337, vars: 27, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-message-demo-info", "nzTitle", "Normal prompt"], ["nzHref", "#components-message-demo-other", "nzTitle", "Other types of message"], ["nzHref", "#components-message-demo-duration", "nzTitle", "Customize duration"], ["nzHref", "#components-message-demo-loading", "nzTitle", "Message of loading"], ["nzHref", "#components-message-demo-close", "nzTitle", "Customize duration"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/message/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Normal prompt", "nzSelector", "nz-demo-message-info", "nzGenerateCommand", "ng g ng-zorro-antd:message-info <name>", "nzComponentName", "NzDemoMessageInfoComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Customize duration", "nzSelector", "nz-demo-message-duration", "nzGenerateCommand", "ng g ng-zorro-antd:message-duration <name>", "nzComponentName", "NzDemoMessageDurationComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customize duration", "nzSelector", "nz-demo-message-close", "nzGenerateCommand", "ng g ng-zorro-antd:message-close <name>", "nzComponentName", "NzDemoMessageCloseComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Other types of message", "nzSelector", "nz-demo-message-other", "nzGenerateCommand", "ng g ng-zorro-antd:message-other <name>", "nzComponentName", "NzDemoMessageOtherComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Message of loading", "nzSelector", "nz-demo-message-loading", "nzGenerateCommand", "ng g ng-zorro-antd:message-loading <name>", "nzComponentName", "NzDemoMessageLoadingComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nzmessageservice"], [1, "api-type-label", "service"], ["onclick", "window.location.hash = 'nzmessageservice'", 1, "anchor"], ["id", "global-configuration"], ["onclick", "window.location.hash = 'global-configuration'", 1, "anchor"], ["id", "nzmessageref"], ["onclick", "window.location.hash = 'nzmessageref'", 1, "anchor"], [1, "token", "class-name"], [1, "token", "operator"], ["spellcheck", "true", 1, "token", "comment"]], template: function NzDemoMessageEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1049,10 +1065,10 @@ class NzDemoMessageEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "To provide feedback such as success, warning, error etc.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " To provide feedback such as success, warning, error etc.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "A message is displayed at top and center and will be dismissed automatically, as a non-interrupting light-weighted prompt.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " A message is displayed at top and center and will be dismissed automatically, as a non-interrupting light-weighted prompt.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "pre", 15);
@@ -1466,75 +1482,91 @@ class NzDemoMessageEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "nzDirection");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "Direction of the text in the messages");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](283, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](284, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, "'ltr' | 'rtl'");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](278, "h3", 37);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](279, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](280, "NzMessageRef");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](281, "a", 38);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](286, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](283, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](284, "It's the object that returned when you call ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](285, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](286, "NzMessageService.success");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287, " and others.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "pre", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](289, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](290, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](291, "export");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](288, "h3", 37);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](289, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](293, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](294, "interface");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](291, "a", 38);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](296, "span", 39);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](297, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](300, "{");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](293, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](294, "It's the object that returned when you call ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](295, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](296, "NzMessageService.success");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "\n  messageId");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](302, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](303, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](297, " and others.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](305, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](306, "string");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](298, "pre", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](299, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](300, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301, "export");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](307, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](302, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](303, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304, "interface");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](309, "\n  onClose");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](310, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](311, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](305, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](306, "span", 39);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](307, "NzMessageRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](312, " Subject");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](313, "span", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](314, "<");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](308, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](309, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](310, "{");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](311, "\n  messageId");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](312, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](313, ":");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](314, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](315, "span", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](316, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](316, "string");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](317, "span", 40);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](318, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](317, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](318, ";");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](319, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](320, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](319, "\n  onClose");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](320, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](321, ":");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](321, " ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](322, "span", 41);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](323, "// It would emit an event when the message is closed");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](322, " Subject");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](323, "span", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](324, "<");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](324, "\n");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](325, "span", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](326, "}");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](325, "span", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](326, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](327, "span", 40);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](328, ">");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](329, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](330, ";");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](331, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](332, "span", 41);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](333, "// It would emit an event when the message is closed");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](334, "\n");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](335, "span", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](336, "}");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1608,8 +1640,8 @@ class NzDemoMessageOtherComponent {
         this.message.create(type, `This is a message of ${type}`);
     }
 }
-/** @nocollapse */ NzDemoMessageOtherComponent.ɵfac = function NzDemoMessageOtherComponent_Factory(t) { return new (t || NzDemoMessageOtherComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
-/** @nocollapse */ NzDemoMessageOtherComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageOtherComponent, selectors: [["nz-demo-message-other"]], decls: 6, vars: 0, consts: [["nz-button", "", 3, "click"]], template: function NzDemoMessageOtherComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoMessageOtherComponent.ɵfac = function NzDemoMessageOtherComponent_Factory(t) { return new (t || NzDemoMessageOtherComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_message__WEBPACK_IMPORTED_MODULE_1__["NzMessageService"])); };
+NzDemoMessageOtherComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoMessageOtherComponent, selectors: [["nz-demo-message-other"]], decls: 6, vars: 0, consts: [["nz-button", "", 3, "click"]], template: function NzDemoMessageOtherComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "button", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoMessageOtherComponent_Template_button_click_0_listener() { return ctx.createMessage("success"); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Success");

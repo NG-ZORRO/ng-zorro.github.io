@@ -47,8 +47,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTagModule {
 }
-/** @nocollapse */ NzDemoTagModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTagModule });
-/** @nocollapse */ NzDemoTagModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTagModule_Factory(t) { return new (t || NzDemoTagModule)(); }, imports: [[
+NzDemoTagModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTagModule });
+NzDemoTagModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTagModule_Factory(t) { return new (t || NzDemoTagModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -177,11 +177,11 @@ class NzDemoTagControlComponent {
         this.inputVisible = false;
     }
 }
-/** @nocollapse */ NzDemoTagControlComponent.ɵfac = function NzDemoTagControlComponent_Factory(t) { return new (t || NzDemoTagControlComponent)(); };
-/** @nocollapse */ NzDemoTagControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagControlComponent, selectors: [["nz-demo-tag-control"]], viewQuery: function NzDemoTagControlComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTagControlComponent.ɵfac = function NzDemoTagControlComponent_Factory(t) { return new (t || NzDemoTagControlComponent)(); };
+NzDemoTagControlComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagControlComponent, selectors: [["nz-demo-tag-control"]], viewQuery: function NzDemoTagControlComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.inputElement = _t.first);
     } }, decls: 3, vars: 3, consts: [[3, "nzMode", "nzOnClose", 4, "ngFor", "ngForOf"], ["class", "editable-tag", "nzNoAnimation", "", 3, "click", 4, "ngIf"], ["nz-input", "", "nzSize", "small", "type", "text", "style", "width: 78px;", 3, "ngModel", "ngModelChange", "blur", "keydown.enter", 4, "ngIf"], [3, "nzMode", "nzOnClose"], ["nzNoAnimation", "", 1, "editable-tag", 3, "click"], ["nz-icon", "", "nzType", "plus"], ["nz-input", "", "nzSize", "small", "type", "text", 2, "width", "78px", 3, "ngModel", "ngModelChange", "blur", "keydown.enter"], ["inputElement", ""]], template: function NzDemoTagControlComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, NzDemoTagControlComponent_nz_tag_0_Template, 2, 2, "nz-tag", 0);
@@ -252,8 +252,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTagColorfulComponent {
 }
-/** @nocollapse */ NzDemoTagColorfulComponent.ɵfac = function NzDemoTagColorfulComponent_Factory(t) { return new (t || NzDemoTagColorfulComponent)(); };
-/** @nocollapse */ NzDemoTagColorfulComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagColorfulComponent, selectors: [["nz-demo-tag-colorful"]], decls: 36, vars: 15, consts: [[2, "margin-bottom", "16px"], [3, "nzColor"], [2, "margin", "16px 0px"]], template: function NzDemoTagColorfulComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagColorfulComponent.ɵfac = function NzDemoTagColorfulComponent_Factory(t) { return new (t || NzDemoTagColorfulComponent)(); };
+NzDemoTagColorfulComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagColorfulComponent, selectors: [["nz-demo-tag-colorful"]], decls: 36, vars: 15, consts: [[2, "margin-bottom", "16px"], [3, "nzColor"], [2, "margin", "16px 0px"]], template: function NzDemoTagColorfulComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h4", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Presets:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -440,11 +440,11 @@ class NzDemoTagEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTagEnComponent.ɵfac = function NzDemoTagEnComponent_Factory(t) { return new (t || NzDemoTagEnComponent)(); };
-/** @nocollapse */ NzDemoTagEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagEnComponent, selectors: [["nz-demo-tag"]], viewQuery: function NzDemoTagEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTagEnComponent.ɵfac = function NzDemoTagEnComponent_Factory(t) { return new (t || NzDemoTagEnComponent)(); };
+NzDemoTagEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagEnComponent, selectors: [["nz-demo-tag"]], viewQuery: function NzDemoTagEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 207, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tag-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-tag-demo-colorful", "nzTitle", "Colorful Tag"], ["nzHref", "#components-tag-demo-control", "nzTitle", "Add & Remove Dynamically"], ["nzHref", "#components-tag-demo-checkable", "nzTitle", "Checkable"], ["nzHref", "#components-tag-demo-hot-tags", "nzTitle", "Hot Tags"], ["nzHref", "#components-tag-demo-icon", "nzTitle", "Icon"], ["nzHref", "#components-tag-demo-status", "nzTitle", "Status Tag"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tag/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-tag-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tag-basic <name>", "nzComponentName", "NzDemoTagBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Add & Remove Dynamically", "nzSelector", "nz-demo-tag-control", "nzGenerateCommand", "ng g ng-zorro-antd:tag-control <name>", "nzComponentName", "NzDemoTagControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Hot Tags", "nzSelector", "nz-demo-tag-hot-tags", "nzGenerateCommand", "ng g ng-zorro-antd:tag-hot-tags <name>", "nzComponentName", "NzDemoTagHotTagsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Status Tag", "nzSelector", "nz-demo-tag-status", "nzGenerateCommand", "ng g ng-zorro-antd:tag-status <name>", "nzComponentName", "NzDemoTagStatusComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Colorful Tag", "nzSelector", "nz-demo-tag-colorful", "nzGenerateCommand", "ng g ng-zorro-antd:tag-colorful <name>", "nzComponentName", "NzDemoTagColorfulComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Checkable", "nzSelector", "nz-demo-tag-checkable", "nzGenerateCommand", "ng g ng-zorro-antd:tag-checkable <name>", "nzComponentName", "NzDemoTagCheckableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Icon", "nzSelector", "nz-demo-tag-icon", "nzGenerateCommand", "ng g ng-zorro-antd:tag-icon <name>", "nzComponentName", "NzDemoTagIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-tag"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-tag'", 1, "anchor"]], template: function NzDemoTagEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -486,12 +486,12 @@ class NzDemoTagEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "It can be used to tag by dimension or property.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " It can be used to tag by dimension or property.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "When categorizing.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, " When categorizing.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -850,8 +850,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTagStatusComponent {
 }
-/** @nocollapse */ NzDemoTagStatusComponent.ɵfac = function NzDemoTagStatusComponent_Factory(t) { return new (t || NzDemoTagStatusComponent)(); };
-/** @nocollapse */ NzDemoTagStatusComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagStatusComponent, selectors: [["nz-demo-tag-status"]], decls: 36, vars: 0, consts: [["nzColor", "success"], ["nzColor", "processing"], ["nzColor", "error"], ["nzColor", "warning"], ["nzColor", "default"], ["nz-icon", "", "nzType", "check-circle"], ["nz-icon", "", "nzType", "sync", "nzSpin", ""], ["nz-icon", "", "nzType", "close-circle"], ["nz-icon", "", "nzType", "exclamation-circle"], ["nz-icon", "", "nzType", "clock-circle"]], template: function NzDemoTagStatusComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagStatusComponent.ɵfac = function NzDemoTagStatusComponent_Factory(t) { return new (t || NzDemoTagStatusComponent)(); };
+NzDemoTagStatusComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagStatusComponent, selectors: [["nz-demo-tag-status"]], decls: 36, vars: 0, consts: [["nzColor", "success"], ["nzColor", "processing"], ["nzColor", "error"], ["nzColor", "warning"], ["nzColor", "default"], ["nz-icon", "", "nzType", "check-circle"], ["nz-icon", "", "nzType", "sync", "nzSpin", ""], ["nz-icon", "", "nzType", "close-circle"], ["nz-icon", "", "nzType", "exclamation-circle"], ["nz-icon", "", "nzType", "clock-circle"]], template: function NzDemoTagStatusComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h4");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Without icon");
@@ -964,12 +964,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzTagModule", function() { return NzTagModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/core/color */ "TDbb");
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "ofXK");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd/core/color */ "TDbb");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+
+
+
 
 
 
@@ -986,22 +992,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function NzTagComponent_i_1_Template(rf, ctx) { if (rf & 1) {
-    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "i", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzTagComponent_i_1_Template_i_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r2); const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](); return ctx_r1.closeTag($event); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "i", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzTagComponent_i_1_Template_i_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r2); const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"](); return ctx_r1.closeTag($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
 } }
 const _c0 = ["*"];
 class NzTagComponent {
-    constructor(renderer, elementRef) {
+    constructor(cdr, renderer, elementRef, directionality) {
+        this.cdr = cdr;
         this.renderer = renderer;
         this.elementRef = elementRef;
+        this.directionality = directionality;
         this.isPresetColor = false;
         this.nzMode = 'default';
         this.nzChecked = false;
-        this.nzOnClose = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
-        this.nzCheckedChange = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        this.nzOnClose = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.nzCheckedChange = new _angular_core__WEBPACK_IMPORTED_MODULE_2__["EventEmitter"]();
+        this.dir = 'ltr';
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_5__["Subject"]();
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-tag');
     }
@@ -1017,6 +1028,14 @@ class NzTagComponent {
             this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), this.elementRef.nativeElement);
         }
     }
+    ngOnInit() {
+        var _a;
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+            this.dir = direction;
+            this.cdr.detectChanges();
+        });
+        this.dir = this.directionality.value;
+    }
     ngOnChanges(changes) {
         const { nzColor } = changes;
         if (nzColor) {
@@ -1024,45 +1043,49 @@ class NzTagComponent {
                 this.isPresetColor = false;
             }
             else {
-                this.isPresetColor = Object(ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_2__["isPresetColor"])(this.nzColor) || /^(success|processing|error|default|warning)$/.test(this.nzColor);
+                this.isPresetColor = Object(ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["isPresetColor"])(this.nzColor) || /^(success|processing|error|default|warning)$/.test(this.nzColor);
             }
         }
     }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
+    }
 }
-/** @nocollapse */
-NzTagComponent.ɵfac = function NzTagComponent_Factory(t) { return new (t || NzTagComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"])); };
-/** @nocollapse */
-NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 10, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function NzTagComponent_click_HostBindingHandler() { return ctx.updateCheckedStatus(); });
+NzTagComponent.ɵfac = function NzTagComponent_Factory(t) { return new (t || NzTagComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], 8)); };
+NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 12, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzTagComponent_click_HostBindingHandler() { return ctx.updateCheckedStatus(); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassMap"](ctx.isPresetColor ? "ant-tag-" + ctx.nzColor : "");
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵstyleProp"]("background-color", ctx.isPresetColor ? "" : ctx.nzColor);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵclassProp"]("ant-tag-has-color", ctx.nzColor && !ctx.isPresetColor)("ant-tag-checkable", ctx.nzMode === "checkable")("ant-tag-checkable-checked", ctx.nzChecked);
-    } }, inputs: { nzMode: "nzMode", nzChecked: "nzChecked", nzColor: "nzColor" }, outputs: { nzOnClose: "nzOnClose", nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzTag"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [["nz-icon", "", "nzType", "close", "class", "ant-tag-close-icon", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 1, "ant-tag-close-icon", 3, "click"]], template: function NzTagComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵprojection"](0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](1, NzTagComponent_i_1_Template, 1, 0, "i", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.isPresetColor ? "ant-tag-" + ctx.nzColor : "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("background-color", ctx.isPresetColor ? "" : ctx.nzColor);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-tag-has-color", ctx.nzColor && !ctx.isPresetColor)("ant-tag-checkable", ctx.nzMode === "checkable")("ant-tag-checkable-checked", ctx.nzChecked)("ant-tag-rtl", ctx.dir === "rtl");
+    } }, inputs: { nzMode: "nzMode", nzChecked: "nzChecked", nzColor: "nzColor" }, outputs: { nzOnClose: "nzOnClose", nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzTag"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [["nz-icon", "", "nzType", "close", "class", "ant-tag-close-icon", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 1, "ant-tag-close-icon", 3, "click"]], template: function NzTagComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojectionDef"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵprojection"](0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](1, NzTagComponent_i_1_Template, 1, 0, "i", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.nzMode === "closeable");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngIf", ctx.nzMode === "closeable");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconDirective"]], encapsulation: 2, changeDetection: 0 });
 NzTagComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] },
+    { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"] }] }
 ];
 NzTagComponent.propDecorators = {
-    nzMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzColor: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzChecked: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"] }],
-    nzOnClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }],
-    nzCheckedChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"] }]
+    nzMode: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzColor: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzChecked: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"] }],
+    nzOnClose: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }],
+    nzCheckedChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_3__["InputBoolean"])(),
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_4__["InputBoolean"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", Object)
 ], NzTagComponent.prototype, "nzChecked", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzTagComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"],
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzTagComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"],
         args: [{
                 selector: 'nz-tag',
                 exportAs: 'nzTag',
@@ -1071,27 +1094,30 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     <ng-content></ng-content>
     <i nz-icon nzType="close" class="ant-tag-close-icon" *ngIf="nzMode === 'closeable'" tabindex="-1" (click)="closeTag($event)"></i>
   `,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ChangeDetectionStrategy"].OnPush,
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewEncapsulation"].None,
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectionStrategy"].OnPush,
+                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
                 host: {
                     '[style.background-color]': `isPresetColor ? '' : nzColor`,
                     '[class]': `isPresetColor ? ('ant-tag-' + nzColor) : ''`,
                     '[class.ant-tag-has-color]': `nzColor && !isPresetColor`,
                     '[class.ant-tag-checkable]': `nzMode === 'checkable'`,
                     '[class.ant-tag-checkable-checked]': `nzChecked`,
+                    '[class.ant-tag-rtl]': `dir === 'rtl'`,
                     '(click)': 'updateCheckedStatus()'
                 }
             }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"] }]; }, { nzMode: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Optional"]
+            }] }]; }, { nzMode: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzChecked: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }], nzOnClose: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], nzCheckedChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Output"]
         }], nzColor: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"]
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["Input"]
         }] }); })();
 
 /**
@@ -1100,15 +1126,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzTagModule {
 }
-/** @nocollapse */
-NzTagModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzTagModule });
-/** @nocollapse */
-NzTagModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzTagModule_Factory(t) { return new (t || NzTagModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"]]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzTagModule, { declarations: function () { return [NzTagComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"]]; }, exports: function () { return [NzTagComponent]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzTagModule, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+NzTagModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzTagModule });
+NzTagModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzTagModule_Factory(t) { return new (t || NzTagModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"]]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzTagModule, { declarations: function () { return [NzTagComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"]]; }, exports: function () { return [NzTagComponent]; } }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzTagModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                imports: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"]],
+                imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"]],
                 declarations: [NzTagComponent],
                 exports: [NzTagComponent]
             }]
@@ -1208,11 +1232,11 @@ class NzDemoTagZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTagZhComponent.ɵfac = function NzDemoTagZhComponent_Factory(t) { return new (t || NzDemoTagZhComponent)(); };
-/** @nocollapse */ NzDemoTagZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagZhComponent, selectors: [["nz-demo-tag"]], viewQuery: function NzDemoTagZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTagZhComponent.ɵfac = function NzDemoTagZhComponent_Factory(t) { return new (t || NzDemoTagZhComponent)(); };
+NzDemoTagZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagZhComponent, selectors: [["nz-demo-tag"]], viewQuery: function NzDemoTagZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 210, vars: 35, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tag-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-tag-demo-colorful", "nzTitle", "\u591A\u5F69\u6807\u7B7E"], ["nzHref", "#components-tag-demo-control", "nzTitle", "\u52A8\u6001\u6DFB\u52A0\u548C\u5220\u9664"], ["nzHref", "#components-tag-demo-checkable", "nzTitle", "\u53EF\u9009\u62E9"], ["nzHref", "#components-tag-demo-hot-tags", "nzTitle", "\u70ED\u95E8\u6807\u7B7E"], ["nzHref", "#components-tag-demo-icon", "nzTitle", "\u56FE\u6807\u6309\u94AE"], ["nzHref", "#components-tag-demo-status", "nzTitle", "\u9884\u8BBE\u72B6\u6001\u7684\u6807\u7B7E"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tag/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-tag-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tag-basic <name>", "nzComponentName", "NzDemoTagBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u52A8\u6001\u6DFB\u52A0\u548C\u5220\u9664", "nzSelector", "nz-demo-tag-control", "nzGenerateCommand", "ng g ng-zorro-antd:tag-control <name>", "nzComponentName", "NzDemoTagControlComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u70ED\u95E8\u6807\u7B7E", "nzSelector", "nz-demo-tag-hot-tags", "nzGenerateCommand", "ng g ng-zorro-antd:tag-hot-tags <name>", "nzComponentName", "NzDemoTagHotTagsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9884\u8BBE\u72B6\u6001\u7684\u6807\u7B7E", "nzSelector", "nz-demo-tag-status", "nzGenerateCommand", "ng g ng-zorro-antd:tag-status <name>", "nzComponentName", "NzDemoTagStatusComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u591A\u5F69\u6807\u7B7E", "nzSelector", "nz-demo-tag-colorful", "nzGenerateCommand", "ng g ng-zorro-antd:tag-colorful <name>", "nzComponentName", "NzDemoTagColorfulComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u53EF\u9009\u62E9", "nzSelector", "nz-demo-tag-checkable", "nzGenerateCommand", "ng g ng-zorro-antd:tag-checkable <name>", "nzComponentName", "NzDemoTagCheckableComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u6807\u6309\u94AE", "nzSelector", "nz-demo-tag-icon", "nzGenerateCommand", "ng g ng-zorro-antd:tag-icon <name>", "nzComponentName", "NzDemoTagIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-tag"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-tag'", 1, "anchor"]], template: function NzDemoTagZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1255,10 +1279,10 @@ class NzDemoTagZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "\u7528\u4E8E\u6807\u8BB0\u4E8B\u7269\u7684\u5C5E\u6027\u548C\u7EF4\u5EA6\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " \u7528\u4E8E\u6807\u8BB0\u4E8B\u7269\u7684\u5C5E\u6027\u548C\u7EF4\u5EA6\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "\u8FDB\u884C\u5206\u7C7B\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " \u8FDB\u884C\u5206\u7C7B\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "pre", 17);
@@ -1620,8 +1644,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTagIconComponent {
 }
-/** @nocollapse */ NzDemoTagIconComponent.ɵfac = function NzDemoTagIconComponent_Factory(t) { return new (t || NzDemoTagIconComponent)(); };
-/** @nocollapse */ NzDemoTagIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagIconComponent, selectors: [["nz-demo-tag-icon"]], decls: 16, vars: 0, consts: [["nzColor", "#55acee"], ["nz-icon", "", "nzType", "twitter"], ["nzColor", "#cd201f"], ["nz-icon", "", "nzType", "youtube"], ["nzColor", "#3b5999"], ["nz-icon", "", "nzType", "facebook"], ["nz-icon", "", "nzType", "linkedin"]], template: function NzDemoTagIconComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagIconComponent.ɵfac = function NzDemoTagIconComponent_Factory(t) { return new (t || NzDemoTagIconComponent)(); };
+NzDemoTagIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagIconComponent, selectors: [["nz-demo-tag-icon"]], decls: 16, vars: 0, consts: [["nzColor", "#55acee"], ["nz-icon", "", "nzType", "twitter"], ["nzColor", "#cd201f"], ["nz-icon", "", "nzType", "youtube"], ["nzColor", "#3b5999"], ["nz-icon", "", "nzType", "facebook"], ["nz-icon", "", "nzType", "linkedin"]], template: function NzDemoTagIconComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tag", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "i", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
@@ -1721,8 +1745,8 @@ class NzDemoTagHotTagsComponent {
         console.log('You are interested in: ', this.selectedTags);
     }
 }
-/** @nocollapse */ NzDemoTagHotTagsComponent.ɵfac = function NzDemoTagHotTagsComponent_Factory(t) { return new (t || NzDemoTagHotTagsComponent)(); };
-/** @nocollapse */ NzDemoTagHotTagsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagHotTagsComponent, selectors: [["nz-demo-tag-hot-tags"]], decls: 3, vars: 1, consts: [["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange", 4, "ngFor", "ngForOf"], ["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange"]], template: function NzDemoTagHotTagsComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagHotTagsComponent.ɵfac = function NzDemoTagHotTagsComponent_Factory(t) { return new (t || NzDemoTagHotTagsComponent)(); };
+NzDemoTagHotTagsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagHotTagsComponent, selectors: [["nz-demo-tag-hot-tags"]], decls: 3, vars: 1, consts: [["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange", 4, "ngFor", "ngForOf"], ["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange"]], template: function NzDemoTagHotTagsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Categories: ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1777,8 +1801,8 @@ class NzDemoTagBasicComponent {
         console.log('tag can not be closed.');
     }
 }
-/** @nocollapse */ NzDemoTagBasicComponent.ɵfac = function NzDemoTagBasicComponent_Factory(t) { return new (t || NzDemoTagBasicComponent)(); };
-/** @nocollapse */ NzDemoTagBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagBasicComponent, selectors: [["nz-demo-tag-basic"]], decls: 9, vars: 0, consts: [["href", "https://github.com/NG-ZORRO/ng-zorro-antd"], ["nzMode", "closeable", 3, "nzOnClose"]], template: function NzDemoTagBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagBasicComponent.ɵfac = function NzDemoTagBasicComponent_Factory(t) { return new (t || NzDemoTagBasicComponent)(); };
+NzDemoTagBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagBasicComponent, selectors: [["nz-demo-tag-basic"]], decls: 9, vars: 0, consts: [["href", "https://github.com/NG-ZORRO/ng-zorro-antd"], ["nzMode", "closeable", 3, "nzOnClose"]], template: function NzDemoTagBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tag");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Tag 1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1834,8 +1858,8 @@ class NzDemoTagCheckableComponent {
         console.log(e);
     }
 }
-/** @nocollapse */ NzDemoTagCheckableComponent.ɵfac = function NzDemoTagCheckableComponent_Factory(t) { return new (t || NzDemoTagCheckableComponent)(); };
-/** @nocollapse */ NzDemoTagCheckableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagCheckableComponent, selectors: [["nz-demo-tag-checkable"]], decls: 6, vars: 3, consts: [["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange"]], template: function NzDemoTagCheckableComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTagCheckableComponent.ɵfac = function NzDemoTagCheckableComponent_Factory(t) { return new (t || NzDemoTagCheckableComponent)(); };
+NzDemoTagCheckableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTagCheckableComponent, selectors: [["nz-demo-tag-checkable"]], decls: 6, vars: 3, consts: [["nzMode", "checkable", 3, "nzChecked", "nzCheckedChange"]], template: function NzDemoTagCheckableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tag", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzCheckedChange", function NzDemoTagCheckableComponent_Template_nz_tag_nzCheckedChange_0_listener($event) { return ctx.checkChange($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Tag1");

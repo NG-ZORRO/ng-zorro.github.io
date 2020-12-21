@@ -69,8 +69,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTabsModule {
 }
-/** @nocollapse */ NzDemoTabsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTabsModule });
-/** @nocollapse */ NzDemoTabsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTabsModule_Factory(t) { return new (t || NzDemoTabsModule)(); }, imports: [[
+NzDemoTabsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTabsModule });
+NzDemoTabsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTabsModule_Factory(t) { return new (t || NzDemoTabsModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -192,8 +192,8 @@ class NzDemoTabsSlideComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoTabsSlideComponent.ɵfac = function NzDemoTabsSlideComponent_Factory(t) { return new (t || NzDemoTabsSlideComponent)(); };
-/** @nocollapse */ NzDemoTabsSlideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsSlideComponent, selectors: [["nz-demo-tabs-slide"]], decls: 8, vars: 9, consts: [[2, "margin-bottom", "8px", 3, "ngModel", "ngModelChange"], ["nz-radio-button", "", 3, "nzValue"], [2, "float", "right", 3, "nzMin", "nzMax", "ngModel", "ngModelChange"], [2, "height", "220px", 3, "nzTabPosition", "nzSelectedIndex", "nzSelectedIndexChange", "nzSelectChange"], [3, "nzTitle", "nzDisabled", "nzSelect", "nzClick", "nzContextmenu", "nzDeselect", 4, "ngFor", "ngForOf"], [3, "nzTitle", "nzDisabled", "nzSelect", "nzClick", "nzContextmenu", "nzDeselect"]], template: function NzDemoTabsSlideComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsSlideComponent.ɵfac = function NzDemoTabsSlideComponent_Factory(t) { return new (t || NzDemoTabsSlideComponent)(); };
+NzDemoTabsSlideComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsSlideComponent, selectors: [["nz-demo-tabs-slide"]], decls: 8, vars: 9, consts: [[2, "margin-bottom", "8px", 3, "ngModel", "ngModelChange"], ["nz-radio-button", "", 3, "nzValue"], [2, "float", "right", 3, "nzMin", "nzMax", "ngModel", "ngModelChange"], [2, "height", "220px", 3, "nzTabPosition", "nzSelectedIndex", "nzSelectedIndexChange", "nzSelectChange"], [3, "nzTitle", "nzDisabled", "nzSelect", "nzClick", "nzContextmenu", "nzDeselect", 4, "ngFor", "ngForOf"], [3, "nzTitle", "nzDisabled", "nzSelect", "nzClick", "nzContextmenu", "nzDeselect"]], template: function NzDemoTabsSlideComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-radio-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTabsSlideComponent_Template_nz_radio_group_ngModelChange_0_listener($event) { return ctx.nzTabPosition = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
@@ -291,8 +291,8 @@ class NzDemoTabsSizeComponent {
         this.tabs = [1, 2, 3];
     }
 }
-/** @nocollapse */ NzDemoTabsSizeComponent.ɵfac = function NzDemoTabsSizeComponent_Factory(t) { return new (t || NzDemoTabsSizeComponent)(); };
-/** @nocollapse */ NzDemoTabsSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsSizeComponent, selectors: [["nz-demo-tabs-size"]], decls: 12, vars: 3, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "small"], ["nz-radio-button", "", "nzValue", "default"], ["nz-radio-button", "", "nzValue", "large"], [3, "nzSize"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsSizeComponent.ɵfac = function NzDemoTabsSizeComponent_Factory(t) { return new (t || NzDemoTabsSizeComponent)(); };
+NzDemoTabsSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsSizeComponent, selectors: [["nz-demo-tabs-size"]], decls: 12, vars: 3, consts: [[3, "ngModel", "ngModelChange"], ["nz-radio-button", "", "nzValue", "small"], ["nz-radio-button", "", "nzValue", "default"], ["nz-radio-button", "", "nzValue", "large"], [3, "nzSize"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-radio-group", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTabsSizeComponent_Template_nz_radio_group_ngModelChange_0_listener($event) { return ctx.size = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "label", 1);
@@ -373,8 +373,8 @@ class NzDemoTabsCardComponent {
         this.tabs = [1, 2, 3];
     }
 }
-/** @nocollapse */ NzDemoTabsCardComponent.ɵfac = function NzDemoTabsCardComponent_Factory(t) { return new (t || NzDemoTabsCardComponent)(); };
-/** @nocollapse */ NzDemoTabsCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCardComponent, selectors: [["nz-demo-tabs-card"]], decls: 2, vars: 1, consts: [["nzType", "card"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsCardComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsCardComponent.ɵfac = function NzDemoTabsCardComponent_Factory(t) { return new (t || NzDemoTabsCardComponent)(); };
+NzDemoTabsCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCardComponent, selectors: [["nz-demo-tabs-card"]], decls: 2, vars: 1, consts: [["nzType", "card"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsCardComponent_nz_tab_1_Template, 2, 2, "nz-tab", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -444,8 +444,8 @@ class NzDemoTabsCustomAddTriggerComponent {
         this.index = this.tabs.length - 1;
     }
 }
-/** @nocollapse */ NzDemoTabsCustomAddTriggerComponent.ɵfac = function NzDemoTabsCustomAddTriggerComponent_Factory(t) { return new (t || NzDemoTabsCustomAddTriggerComponent)(); };
-/** @nocollapse */ NzDemoTabsCustomAddTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCustomAddTriggerComponent, selectors: [["nz-demo-tabs-custom-add-trigger"]], decls: 5, vars: 2, consts: [[2, "margin-bottom", "16px"], ["nz-button", "", 3, "click"], ["nzType", "editable-card", "nzHideAdd", "", 3, "nzSelectedIndex", "nzSelectedIndexChange", "nzClose"], [3, "nzClosable", "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzClosable", "nzTitle"]], template: function NzDemoTabsCustomAddTriggerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsCustomAddTriggerComponent.ɵfac = function NzDemoTabsCustomAddTriggerComponent_Factory(t) { return new (t || NzDemoTabsCustomAddTriggerComponent)(); };
+NzDemoTabsCustomAddTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCustomAddTriggerComponent, selectors: [["nz-demo-tabs-custom-add-trigger"]], decls: 5, vars: 2, consts: [[2, "margin-bottom", "16px"], ["nz-button", "", 3, "click"], ["nzType", "editable-card", "nzHideAdd", "", 3, "nzSelectedIndex", "nzSelectedIndexChange", "nzClose"], [3, "nzClosable", "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzClosable", "nzTitle"]], template: function NzDemoTabsCustomAddTriggerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "button", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoTabsCustomAddTriggerComponent_Template_button_click_1_listener() { return ctx.newTab(); });
@@ -497,8 +497,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTabsBasicComponent {
 }
-/** @nocollapse */ NzDemoTabsBasicComponent.ɵfac = function NzDemoTabsBasicComponent_Factory(t) { return new (t || NzDemoTabsBasicComponent)(); };
-/** @nocollapse */ NzDemoTabsBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsBasicComponent, selectors: [["nz-demo-tabs-basic"]], decls: 7, vars: 0, consts: [["nzTitle", "Tab 1"], ["nzTitle", "Tab 2"], ["nzTitle", "Tab 3"]], template: function NzDemoTabsBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsBasicComponent.ɵfac = function NzDemoTabsBasicComponent_Factory(t) { return new (t || NzDemoTabsBasicComponent)(); };
+NzDemoTabsBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsBasicComponent, selectors: [["nz-demo-tabs-basic"]], decls: 7, vars: 0, consts: [["nzTitle", "Tab 1"], ["nzTitle", "Tab 2"], ["nzTitle", "Tab 3"]], template: function NzDemoTabsBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tab", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Content of Tab Pane 1 ");
@@ -579,8 +579,8 @@ class NzDemoTabsDisabledComponent {
         ];
     }
 }
-/** @nocollapse */ NzDemoTabsDisabledComponent.ɵfac = function NzDemoTabsDisabledComponent_Factory(t) { return new (t || NzDemoTabsDisabledComponent)(); };
-/** @nocollapse */ NzDemoTabsDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsDisabledComponent, selectors: [["nz-demo-tabs-disabled"]], decls: 2, vars: 1, consts: [[3, "nzTitle", "nzDisabled", 4, "ngFor", "ngForOf"], [3, "nzTitle", "nzDisabled"]], template: function NzDemoTabsDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsDisabledComponent.ɵfac = function NzDemoTabsDisabledComponent_Factory(t) { return new (t || NzDemoTabsDisabledComponent)(); };
+NzDemoTabsDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsDisabledComponent, selectors: [["nz-demo-tabs-disabled"]], decls: 2, vars: 1, consts: [[3, "nzTitle", "nzDisabled", 4, "ngFor", "ngForOf"], [3, "nzTitle", "nzDisabled"]], template: function NzDemoTabsDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsDisabledComponent_nz_tab_1_Template, 2, 3, "nz-tab", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -670,8 +670,8 @@ class NzDemoTabsGuardComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTabsGuardComponent.ɵfac = function NzDemoTabsGuardComponent_Factory(t) { return new (t || NzDemoTabsGuardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__["NzModalService"])); };
-/** @nocollapse */ NzDemoTabsGuardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsGuardComponent, selectors: [["nz-demo-tabs-guard"]], decls: 2, vars: 2, consts: [[3, "nzCanDeactivate"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsGuardComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsGuardComponent.ɵfac = function NzDemoTabsGuardComponent_Factory(t) { return new (t || NzDemoTabsGuardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ng_zorro_antd_modal__WEBPACK_IMPORTED_MODULE_1__["NzModalService"])); };
+NzDemoTabsGuardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsGuardComponent, selectors: [["nz-demo-tabs-guard"]], decls: 2, vars: 2, consts: [[3, "nzCanDeactivate"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsGuardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsGuardComponent_nz_tab_1_Template, 2, 2, "nz-tab", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -745,8 +745,8 @@ class NzDemoTabsPositionComponent {
         ];
     }
 }
-/** @nocollapse */ NzDemoTabsPositionComponent.ɵfac = function NzDemoTabsPositionComponent_Factory(t) { return new (t || NzDemoTabsPositionComponent)(); };
-/** @nocollapse */ NzDemoTabsPositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsPositionComponent, selectors: [["nz-demo-tabs-position"]], decls: 6, vars: 4, consts: [[2, "margin-bottom", "16px"], [2, "width", "80px", 3, "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], [3, "nzTabPosition"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzLabel", "nzValue"], [3, "nzTitle"]], template: function NzDemoTabsPositionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsPositionComponent.ɵfac = function NzDemoTabsPositionComponent_Factory(t) { return new (t || NzDemoTabsPositionComponent)(); };
+NzDemoTabsPositionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsPositionComponent, selectors: [["nz-demo-tabs-position"]], decls: 6, vars: 4, consts: [[2, "margin-bottom", "16px"], [2, "width", "80px", 3, "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], [3, "nzTabPosition"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzLabel", "nzValue"], [3, "nzTitle"]], template: function NzDemoTabsPositionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, " Tab position\uFF1A ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-select", 1);
@@ -832,8 +832,8 @@ class NzDemoTabsCardTopComponent {
         this.tabs = [1, 2, 3];
     }
 }
-/** @nocollapse */ NzDemoTabsCardTopComponent.ɵfac = function NzDemoTabsCardTopComponent_Factory(t) { return new (t || NzDemoTabsCardTopComponent)(); };
-/** @nocollapse */ NzDemoTabsCardTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCardTopComponent, selectors: [["nz-demo-tabs-card-top"]], decls: 3, vars: 1, consts: [[1, "card-container"], ["nzType", "card"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsCardTopComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsCardTopComponent.ɵfac = function NzDemoTabsCardTopComponent_Factory(t) { return new (t || NzDemoTabsCardTopComponent)(); };
+NzDemoTabsCardTopComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsCardTopComponent, selectors: [["nz-demo-tabs-card-top"]], decls: 3, vars: 1, consts: [[1, "card-container"], ["nzType", "card"], [3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"]], template: function NzDemoTabsCardTopComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tabset", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoTabsCardTopComponent_nz_tab_2_Template, 7, 4, "nz-tab", 2);
@@ -953,8 +953,8 @@ class NzDemoTabsIconComponent {
         ];
     }
 }
-/** @nocollapse */ NzDemoTabsIconComponent.ɵfac = function NzDemoTabsIconComponent_Factory(t) { return new (t || NzDemoTabsIconComponent)(); };
-/** @nocollapse */ NzDemoTabsIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsIconComponent, selectors: [["nz-demo-tabs-icon"]], decls: 2, vars: 1, consts: [[3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"], ["titleTemplate", ""], ["nz-icon", "", 3, "nzType"]], template: function NzDemoTabsIconComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsIconComponent.ɵfac = function NzDemoTabsIconComponent_Factory(t) { return new (t || NzDemoTabsIconComponent)(); };
+NzDemoTabsIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsIconComponent, selectors: [["nz-demo-tabs-icon"]], decls: 2, vars: 1, consts: [[3, "nzTitle", 4, "ngFor", "ngForOf"], [3, "nzTitle"], ["titleTemplate", ""], ["nz-icon", "", 3, "nzType"]], template: function NzDemoTabsIconComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsIconComponent_nz_tab_1_Template, 4, 2, "nz-tab", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1052,8 +1052,8 @@ class NzDemoTabsEditableCardComponent {
         this.selectedIndex = this.tabs.length;
     }
 }
-/** @nocollapse */ NzDemoTabsEditableCardComponent.ɵfac = function NzDemoTabsEditableCardComponent_Factory(t) { return new (t || NzDemoTabsEditableCardComponent)(); };
-/** @nocollapse */ NzDemoTabsEditableCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsEditableCardComponent, selectors: [["nz-demo-tabs-editable-card"]], decls: 2, vars: 2, consts: [["nzType", "editable-card", 3, "nzSelectedIndex", "nzSelectedIndexChange", "nzAdd", "nzClose"], ["nzClosable", "", 3, "nzTitle", 4, "ngFor", "ngForOf"], ["nzClosable", "", 3, "nzTitle"]], template: function NzDemoTabsEditableCardComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsEditableCardComponent.ɵfac = function NzDemoTabsEditableCardComponent_Factory(t) { return new (t || NzDemoTabsEditableCardComponent)(); };
+NzDemoTabsEditableCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsEditableCardComponent, selectors: [["nz-demo-tabs-editable-card"]], decls: 2, vars: 2, consts: [["nzType", "editable-card", 3, "nzSelectedIndex", "nzSelectedIndexChange", "nzAdd", "nzClose"], ["nzClosable", "", 3, "nzTitle", 4, "ngFor", "ngForOf"], ["nzClosable", "", 3, "nzTitle"]], template: function NzDemoTabsEditableCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzSelectedIndexChange", function NzDemoTabsEditableCardComponent_Template_nz_tabset_nzSelectedIndexChange_0_listener($event) { return ctx.selectedIndex = $event; })("nzAdd", function NzDemoTabsEditableCardComponent_Template_nz_tabset_nzAdd_0_listener() { return ctx.newTab(); })("nzClose", function NzDemoTabsEditableCardComponent_Template_nz_tabset_nzClose_0_listener($event) { return ctx.closeTab($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsEditableCardComponent_nz_tab_1_Template, 2, 2, "nz-tab", 1);
@@ -1104,8 +1104,8 @@ function NzDemoTabsLazyComponent_ng_template_8_Template(rf, ctx) { if (rf & 1) {
 } }
 class NzDemoTabsLazyComponent {
 }
-/** @nocollapse */ NzDemoTabsLazyComponent.ɵfac = function NzDemoTabsLazyComponent_Factory(t) { return new (t || NzDemoTabsLazyComponent)(); };
-/** @nocollapse */ NzDemoTabsLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsLazyComponent, selectors: [["nz-demo-tabs-lazy"]], decls: 9, vars: 0, consts: [["nzTitle", "Tab Eagerly 1"], ["nzTitle", "Tab Eagerly 2"], ["nzTitle", "Tab Lazy 1"], ["nz-tab", ""], ["nzTitle", "Tab Lazy 2"]], template: function NzDemoTabsLazyComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsLazyComponent.ɵfac = function NzDemoTabsLazyComponent_Factory(t) { return new (t || NzDemoTabsLazyComponent)(); };
+NzDemoTabsLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsLazyComponent, selectors: [["nz-demo-tabs-lazy"]], decls: 9, vars: 0, consts: [["nzTitle", "Tab Eagerly 1"], ["nzTitle", "Tab Eagerly 2"], ["nzTitle", "Tab Lazy 1"], ["nz-tab", ""], ["nzTitle", "Tab Lazy 2"]], template: function NzDemoTabsLazyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tab", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-demo-tab-content-eagerly");
@@ -1152,8 +1152,8 @@ class NzDemoTabContentLazyComponent {
         console.log(`I will init when tab active`);
     }
 }
-/** @nocollapse */ NzDemoTabContentLazyComponent.ɵfac = function NzDemoTabContentLazyComponent_Factory(t) { return new (t || NzDemoTabContentLazyComponent)(); };
-/** @nocollapse */ NzDemoTabContentLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabContentLazyComponent, selectors: [["nz-demo-tab-content-lazy"]], decls: 1, vars: 0, template: function NzDemoTabContentLazyComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabContentLazyComponent.ɵfac = function NzDemoTabContentLazyComponent_Factory(t) { return new (t || NzDemoTabContentLazyComponent)(); };
+NzDemoTabContentLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabContentLazyComponent, selectors: [["nz-demo-tab-content-lazy"]], decls: 1, vars: 0, template: function NzDemoTabContentLazyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, " lazy ");
     } }, encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTabContentLazyComponent, [{
@@ -1170,8 +1170,8 @@ class NzDemoTabContentEagerlyComponent {
         console.log(`I will init eagerly`);
     }
 }
-/** @nocollapse */ NzDemoTabContentEagerlyComponent.ɵfac = function NzDemoTabContentEagerlyComponent_Factory(t) { return new (t || NzDemoTabContentEagerlyComponent)(); };
-/** @nocollapse */ NzDemoTabContentEagerlyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabContentEagerlyComponent, selectors: [["nz-demo-tab-content-eagerly"]], decls: 1, vars: 0, template: function NzDemoTabContentEagerlyComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabContentEagerlyComponent.ɵfac = function NzDemoTabContentEagerlyComponent_Factory(t) { return new (t || NzDemoTabContentEagerlyComponent)(); };
+NzDemoTabContentEagerlyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabContentEagerlyComponent, selectors: [["nz-demo-tab-content-eagerly"]], decls: 1, vars: 0, template: function NzDemoTabContentEagerlyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0, " eagerly ");
     } }, encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTabContentEagerlyComponent, [{
@@ -1261,11 +1261,11 @@ class NzDemoTabsZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTabsZhComponent.ɵfac = function NzDemoTabsZhComponent_Factory(t) { return new (t || NzDemoTabsZhComponent)(); };
-/** @nocollapse */ NzDemoTabsZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsZhComponent, selectors: [["nz-demo-tabs"]], viewQuery: function NzDemoTabsZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTabsZhComponent.ɵfac = function NzDemoTabsZhComponent_Factory(t) { return new (t || NzDemoTabsZhComponent)(); };
+NzDemoTabsZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsZhComponent, selectors: [["nz-demo-tabs"]], viewQuery: function NzDemoTabsZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 871, vars: 60, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tabs-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-tabs-demo-disabled", "nzTitle", "\u7981\u7528"], ["nzHref", "#components-tabs-demo-icon", "nzTitle", "\u56FE\u6807"], ["nzHref", "#components-tabs-demo-slide", "nzTitle", "\u6ED1\u52A8"], ["nzHref", "#components-tabs-demo-extra", "nzTitle", "\u9644\u52A0\u5185\u5BB9"], ["nzHref", "#components-tabs-demo-size", "nzTitle", "\u5927\u5C0F"], ["nzHref", "#components-tabs-demo-position", "nzTitle", "\u4F4D\u7F6E"], ["nzHref", "#components-tabs-demo-card", "nzTitle", "\u5361\u7247\u5F0F\u9875\u7B7E"], ["nzHref", "#components-tabs-demo-editable-card", "nzTitle", "\u65B0\u589E\u548C\u5173\u95ED\u9875\u7B7E"], ["nzHref", "#components-tabs-demo-card-top", "nzTitle", "\u5361\u7247\u5F0F\u9875\u7B7E\u5BB9\u5668"], ["nzHref", "#components-tabs-demo-custom-add-trigger", "nzTitle", "\u81EA\u5B9A\u4E49\u65B0\u589E\u9875\u7B7E\u89E6\u53D1\u5668"], ["nzHref", "#components-tabs-demo-lazy", "nzTitle", "\u61D2\u52A0\u8F7D"], ["nzHref", "#components-tabs-demo-link-router", "nzTitle", "\u8DEF\u7531\u8054\u52A8"], ["nzHref", "#components-tabs-demo-guard", "nzTitle", "\u6807\u7B7E\u5B88\u536B"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tabs/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], ["href", "/components/radio/zh/#components-radio-demo-radiobutton"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-tabs-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-basic <name>", "nzComponentName", "NzDemoTabsBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u7981\u7528", "nzSelector", "nz-demo-tabs-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-disabled <name>", "nzComponentName", "NzDemoTabsDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u56FE\u6807", "nzSelector", "nz-demo-tabs-icon", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-icon <name>", "nzComponentName", "NzDemoTabsIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6ED1\u52A8", "nzSelector", "nz-demo-tabs-slide", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-slide <name>", "nzComponentName", "NzDemoTabsSlideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9644\u52A0\u5185\u5BB9", "nzSelector", "nz-demo-tabs-extra", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-extra <name>", "nzComponentName", "NzDemoTabsExtraComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5927\u5C0F", "nzSelector", "nz-demo-tabs-size", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-size <name>", "nzComponentName", "NzDemoTabsSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4F4D\u7F6E", "nzSelector", "nz-demo-tabs-position", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-position <name>", "nzComponentName", "NzDemoTabsPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5361\u7247\u5F0F\u9875\u7B7E", "nzSelector", "nz-demo-tabs-card", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-card <name>", "nzComponentName", "NzDemoTabsCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u65B0\u589E\u548C\u5173\u95ED\u9875\u7B7E", "nzSelector", "nz-demo-tabs-editable-card", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-editable-card <name>", "nzComponentName", "NzDemoTabsEditableCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5361\u7247\u5F0F\u9875\u7B7E\u5BB9\u5668", "nzSelector", "nz-demo-tabs-card-top", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-card-top <name>", "nzComponentName", "NzDemoTabsCardTopComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u65B0\u589E\u9875\u7B7E\u89E6\u53D1\u5668", "nzSelector", "nz-demo-tabs-custom-add-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-custom-add-trigger <name>", "nzComponentName", "NzDemoTabsCustomAddTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u61D2\u52A0\u8F7D", "nzSelector", "nz-demo-tabs-lazy", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-lazy <name>", "nzComponentName", "NzDemoTabsLazyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8DEF\u7531\u8054\u52A8", "nzSelector", "nz-demo-tabs-link-router", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-link-router <name>", "nzComponentName", "NzDemoTabsLinkRouterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6807\u7B7E\u5B88\u536B", "nzSelector", "nz-demo-tabs-guard", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-guard <name>", "nzComponentName", "NzDemoTabsGuardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-tabset"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-tabset'", 1, "anchor"], ["id", "nz-tabset[nztype=\"editable-card\"]"], ["onclick", "window.location.hash = 'nz-tabset[nztype=\"editable-card\"]'", 1, "anchor"], ["id", "nz-tab"], ["onclick", "window.location.hash = 'nz-tab'", 1, "anchor"], ["id", "nz-tabset[nztype=\"editable-card\"]->-nz-tab"], ["onclick", "window.location.hash = 'nz-tabset[nztype=\"editable-card\"]->-nz-tab'", 1, "anchor"], ["id", "<code>nz-tab[nztitle]</code>-\u7684\u6A21\u7248\u5F15\u7528\u53D8\u91CF"], ["onclick", "window.location.hash = '<code>nz-tab[nztitle]</code>-\u7684\u6A21\u7248\u5F15\u7528\u53D8\u91CF'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "[nz-tab]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-tab]'", 1, "anchor"], ["id", "ng-template[nztablink]->-a[nz-tab-link]"], ["onclick", "window.location.hash = 'ng-template[nztablink]->-a[nz-tab-link]'", 1, "anchor"]], template: function NzDemoTabsZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1321,10 +1321,10 @@ class NzDemoTabsZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "\u5361\u7247\u5F0F\u7684\u9875\u7B7E\uFF0C\u63D0\u4F9B\u53EF\u5173\u95ED\u7684\u6837\u5F0F\uFF0C\u5E38\u7528\u4E8E\u5BB9\u5668\u9876\u90E8\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, " \u5361\u7247\u5F0F\u7684\u9875\u7B7E\uFF0C\u63D0\u4F9B\u53EF\u5173\u95ED\u7684\u6837\u5F0F\uFF0C\u5E38\u7528\u4E8E\u5BB9\u5668\u9876\u90E8\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "\u6807\u51C6\u7EBF\u6761\u5F0F\u9875\u7B7E\uFF0C\u7528\u4E8E\u5BB9\u5668\u5185\u90E8\u7684\u4E3B\u529F\u80FD\u5207\u6362\uFF0C\u8FD9\u662F\u6700\u5E38\u7528\u7684 Tabs\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " \u6807\u51C6\u7EBF\u6761\u5F0F\u9875\u7B7E\uFF0C\u7528\u4E8E\u5BB9\u5668\u5185\u90E8\u7684\u4E3B\u529F\u80FD\u5207\u6362\uFF0C\u8FD9\u662F\u6700\u5E38\u7528\u7684 Tabs\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "a", 24);
@@ -1602,28 +1602,28 @@ class NzDemoTabsZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](199, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "\u662F\u5426\u4F7F\u7528\u52A8\u753B\u5207\u6362 Tabs\uFF0C\u5728 nzTabPosition=top | bottom \u65F6\u6709\u6548");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](200, "\u662F\u5426\u4F7F\u7528\u52A8\u753B\u5207\u6362 Tabs\uFF0C\u5728 nzTabPosition=top");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](201, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](202, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](203, "boolean | {inkBar:boolean, tabPane:boolean}");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](202, "bottom \u65F6\u6709\u6548");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](203, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](205, "boolean | {inkBar:boolean, tabPane:boolean}");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](204, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](206, "true");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](206, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](207, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](208, "true");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](207, ", \u5F53 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](208, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, "type=\"card\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, ", \u5F53 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](210, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](211, "type=\"card\"");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](210, " \u65F6\u4E3A ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](212, "false");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](212, " \u65F6\u4E3A ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, "false");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](213, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](214, "\u2705");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "tr");
@@ -2784,11 +2784,11 @@ class NzDemoTabsEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTabsEnComponent.ɵfac = function NzDemoTabsEnComponent_Factory(t) { return new (t || NzDemoTabsEnComponent)(); };
-/** @nocollapse */ NzDemoTabsEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsEnComponent, selectors: [["nz-demo-tabs"]], viewQuery: function NzDemoTabsEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTabsEnComponent.ɵfac = function NzDemoTabsEnComponent_Factory(t) { return new (t || NzDemoTabsEnComponent)(); };
+NzDemoTabsEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsEnComponent, selectors: [["nz-demo-tabs"]], viewQuery: function NzDemoTabsEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 849, vars: 60, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-tabs-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-tabs-demo-disabled", "nzTitle", "Disabled"], ["nzHref", "#components-tabs-demo-icon", "nzTitle", "Icon"], ["nzHref", "#components-tabs-demo-slide", "nzTitle", "Slide"], ["nzHref", "#components-tabs-demo-extra", "nzTitle", "Extra content"], ["nzHref", "#components-tabs-demo-size", "nzTitle", "Size"], ["nzHref", "#components-tabs-demo-position", "nzTitle", "Position"], ["nzHref", "#components-tabs-demo-card", "nzTitle", "Card type tab"], ["nzHref", "#components-tabs-demo-editable-card", "nzTitle", "Add & close tab"], ["nzHref", "#components-tabs-demo-card-top", "nzTitle", "Container of card type Tab"], ["nzHref", "#components-tabs-demo-custom-add-trigger", "nzTitle", "Customized trigger of new tab"], ["nzHref", "#components-tabs-demo-lazy", "nzTitle", "LazyLoad"], ["nzHref", "#components-tabs-demo-link-router", "nzTitle", "With Router"], ["nzHref", "#components-tabs-demo-guard", "nzTitle", "Tab guard"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/tabs/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], ["href", "/components/radio/en/#components-radio-demo-radiobutton"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-tabs-basic", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-basic <name>", "nzComponentName", "NzDemoTabsBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Disabled", "nzSelector", "nz-demo-tabs-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-disabled <name>", "nzComponentName", "NzDemoTabsDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Icon", "nzSelector", "nz-demo-tabs-icon", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-icon <name>", "nzComponentName", "NzDemoTabsIconComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Slide", "nzSelector", "nz-demo-tabs-slide", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-slide <name>", "nzComponentName", "NzDemoTabsSlideComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Extra content", "nzSelector", "nz-demo-tabs-extra", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-extra <name>", "nzComponentName", "NzDemoTabsExtraComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Size", "nzSelector", "nz-demo-tabs-size", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-size <name>", "nzComponentName", "NzDemoTabsSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Position", "nzSelector", "nz-demo-tabs-position", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-position <name>", "nzComponentName", "NzDemoTabsPositionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Card type tab", "nzSelector", "nz-demo-tabs-card", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-card <name>", "nzComponentName", "NzDemoTabsCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Add & close tab", "nzSelector", "nz-demo-tabs-editable-card", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-editable-card <name>", "nzComponentName", "NzDemoTabsEditableCardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Container of card type Tab", "nzSelector", "nz-demo-tabs-card-top", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-card-top <name>", "nzComponentName", "NzDemoTabsCardTopComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Customized trigger of new tab", "nzSelector", "nz-demo-tabs-custom-add-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-custom-add-trigger <name>", "nzComponentName", "NzDemoTabsCustomAddTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "LazyLoad", "nzSelector", "nz-demo-tabs-lazy", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-lazy <name>", "nzComponentName", "NzDemoTabsLazyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "With Router", "nzSelector", "nz-demo-tabs-link-router", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-link-router <name>", "nzComponentName", "NzDemoTabsLinkRouterComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Tab guard", "nzSelector", "nz-demo-tabs-guard", "nzGenerateCommand", "ng g ng-zorro-antd:tabs-guard <name>", "nzComponentName", "NzDemoTabsGuardComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], ["id", "nz-tabset"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-tabset'", 1, "anchor"], ["id", "nz-tabset[nztype=\"editable-card\"]"], ["onclick", "window.location.hash = 'nz-tabset[nztype=\"editable-card\"]'", 1, "anchor"], ["id", "nz-tab"], ["onclick", "window.location.hash = 'nz-tab'", 1, "anchor"], ["id", "nz-tabset[nztype=\"editable-card\"]->-nz-tab"], ["onclick", "window.location.hash = 'nz-tabset[nztype=\"editable-card\"]->-nz-tab'", 1, "anchor"], ["id", "template-variable-references-of-<code>nz-tab[nztitle]</code>"], ["onclick", "window.location.hash = 'template-variable-references-of-<code>nz-tab[nztitle]</code>'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "[nz-tab]"], [1, "api-type-label", "directive"], ["onclick", "window.location.hash = '[nz-tab]'", 1, "anchor"], ["id", "ng-template[nztablink]->-a[nz-tab-link]"], ["onclick", "window.location.hash = 'ng-template[nztablink]->-a[nz-tab-link]'", 1, "anchor"]], template: function NzDemoTabsEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -2839,10 +2839,10 @@ class NzDemoTabsEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Card Tabs: for managing too many closeable views.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, " Card Tabs: for managing too many closeable views.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Normal Tabs: for functional aspects of a page.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " Normal Tabs: for functional aspects of a page.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "a", 24);
@@ -4256,8 +4256,8 @@ function NzDemoTabsLinkRouterComponent_a_11_Template(rf, ctx) { if (rf & 1) {
 } }
 class NzDemoTabsLinkRouterComponent {
 }
-/** @nocollapse */ NzDemoTabsLinkRouterComponent.ɵfac = function NzDemoTabsLinkRouterComponent_Factory(t) { return new (t || NzDemoTabsLinkRouterComponent)(); };
-/** @nocollapse */ NzDemoTabsLinkRouterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsLinkRouterComponent, selectors: [["nz-demo-tabs-link-router"]], decls: 13, vars: 0, consts: [["nzLinkRouter", ""], ["nz-tab-link", "", "queryParamsHandling", "merge", 3, "routerLink", "queryParams", 4, "nzTabLink"], ["nz-tab-link", "", "queryParamsHandling", "merge", 3, "routerLink", "queryParams"]], template: function NzDemoTabsLinkRouterComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsLinkRouterComponent.ɵfac = function NzDemoTabsLinkRouterComponent_Factory(t) { return new (t || NzDemoTabsLinkRouterComponent)(); };
+NzDemoTabsLinkRouterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsLinkRouterComponent, selectors: [["nz-demo-tabs-link-router"]], decls: 13, vars: 0, consts: [["nzLinkRouter", ""], ["nz-tab-link", "", "queryParamsHandling", "merge", 3, "routerLink", "queryParams", 4, "nzTabLink"], ["nz-tab-link", "", "queryParamsHandling", "merge", 3, "routerLink", "queryParams"]], template: function NzDemoTabsLinkRouterComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-tab");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzDemoTabsLinkRouterComponent_a_2_Template, 2, 4, "a", 1);
@@ -4350,8 +4350,8 @@ class NzDemoTabsExtraComponent {
         this.tabs = [1, 2, 3];
     }
 }
-/** @nocollapse */ NzDemoTabsExtraComponent.ɵfac = function NzDemoTabsExtraComponent_Factory(t) { return new (t || NzDemoTabsExtraComponent)(); };
-/** @nocollapse */ NzDemoTabsExtraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsExtraComponent, selectors: [["nz-demo-tabs-extra"]], decls: 4, vars: 2, consts: [[3, "nzTabBarExtraContent"], [3, "nzTitle", 4, "ngFor", "ngForOf"], ["extraTemplate", ""], [3, "nzTitle"], ["nz-button", ""]], template: function NzDemoTabsExtraComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTabsExtraComponent.ɵfac = function NzDemoTabsExtraComponent_Factory(t) { return new (t || NzDemoTabsExtraComponent)(); };
+NzDemoTabsExtraComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTabsExtraComponent, selectors: [["nz-demo-tabs-extra"]], decls: 4, vars: 2, consts: [[3, "nzTabBarExtraContent"], [3, "nzTitle", 4, "ngFor", "ngForOf"], ["extraTemplate", ""], [3, "nzTitle"], ["nz-button", ""]], template: function NzDemoTabsExtraComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-tabset", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoTabsExtraComponent_nz_tab_1_Template, 2, 2, "nz-tab", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

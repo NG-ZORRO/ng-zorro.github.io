@@ -71,8 +71,8 @@ function NzDemoPaginationItemRenderComponent_ng_template_1_Template(rf, ctx) { i
 } }
 class NzDemoPaginationItemRenderComponent {
 }
-/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵfac = function NzDemoPaginationItemRenderComponent_Factory(t) { return new (t || NzDemoPaginationItemRenderComponent)(); };
-/** @nocollapse */ NzDemoPaginationItemRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationItemRenderComponent, selectors: [["nz-demo-pagination-item-render"]], decls: 3, vars: 3, consts: [[3, "nzPageIndex", "nzTotal", "nzItemRender"], ["renderItemTemplate", ""], [3, "ngSwitch"], [4, "ngSwitchCase"]], template: function NzDemoPaginationItemRenderComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationItemRenderComponent.ɵfac = function NzDemoPaginationItemRenderComponent_Factory(t) { return new (t || NzDemoPaginationItemRenderComponent)(); };
+NzDemoPaginationItemRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationItemRenderComponent, selectors: [["nz-demo-pagination-item-render"]], decls: 3, vars: 3, consts: [[3, "nzPageIndex", "nzTotal", "nzItemRender"], ["renderItemTemplate", ""], [3, "ngSwitch"], [4, "ngSwitchCase"]], template: function NzDemoPaginationItemRenderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, NzDemoPaginationItemRenderComponent_ng_template_1_Template, 6, 6, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplateRefExtractor"]);
     } if (rf & 2) {
@@ -131,8 +131,8 @@ function NzDemoPaginationTotalComponent_ng_template_5_Template(rf, ctx) { if (rf
 } }
 class NzDemoPaginationTotalComponent {
 }
-/** @nocollapse */ NzDemoPaginationTotalComponent.ɵfac = function NzDemoPaginationTotalComponent_Factory(t) { return new (t || NzDemoPaginationTotalComponent)(); };
-/** @nocollapse */ NzDemoPaginationTotalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationTotalComponent, selectors: [["nz-demo-pagination-total"]], decls: 7, vars: 8, consts: [[3, "nzPageIndex", "nzTotal", "nzPageSize", "nzShowTotal"], ["totalTemplate", ""], ["rangeTemplate", ""]], template: function NzDemoPaginationTotalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationTotalComponent.ɵfac = function NzDemoPaginationTotalComponent_Factory(t) { return new (t || NzDemoPaginationTotalComponent)(); };
+NzDemoPaginationTotalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationTotalComponent, selectors: [["nz-demo-pagination-total"]], decls: 7, vars: 8, consts: [[3, "nzPageIndex", "nzTotal", "nzPageSize", "nzShowTotal"], ["totalTemplate", ""], ["rangeTemplate", ""]], template: function NzDemoPaginationTotalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 0);
@@ -179,8 +179,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationJumpComponent {
 }
-/** @nocollapse */ NzDemoPaginationJumpComponent.ɵfac = function NzDemoPaginationJumpComponent_Factory(t) { return new (t || NzDemoPaginationJumpComponent)(); };
-/** @nocollapse */ NzDemoPaginationJumpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationJumpComponent, selectors: [["nz-demo-pagination-jump"]], decls: 3, vars: 4, consts: [["nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal"], ["nzShowQuickJumper", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationJumpComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationJumpComponent.ɵfac = function NzDemoPaginationJumpComponent_Factory(t) { return new (t || NzDemoPaginationJumpComponent)(); };
+NzDemoPaginationJumpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationJumpComponent, selectors: [["nz-demo-pagination-jump"]], decls: 3, vars: 4, consts: [["nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal"], ["nzShowQuickJumper", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationJumpComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 1);
@@ -221,8 +221,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationSimpleComponent {
 }
-/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵfac = function NzDemoPaginationSimpleComponent_Factory(t) { return new (t || NzDemoPaginationSimpleComponent)(); };
-/** @nocollapse */ NzDemoPaginationSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationSimpleComponent, selectors: [["nz-demo-pagination-simple"]], decls: 1, vars: 2, consts: [["nzSimple", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationSimpleComponent.ɵfac = function NzDemoPaginationSimpleComponent_Factory(t) { return new (t || NzDemoPaginationSimpleComponent)(); };
+NzDemoPaginationSimpleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationSimpleComponent, selectors: [["nz-demo-pagination-simple"]], decls: 1, vars: 2, consts: [["nzSimple", "", 3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationSimpleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 2)("nzTotal", 50);
@@ -257,8 +257,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationMoreComponent {
 }
-/** @nocollapse */ NzDemoPaginationMoreComponent.ɵfac = function NzDemoPaginationMoreComponent_Factory(t) { return new (t || NzDemoPaginationMoreComponent)(); };
-/** @nocollapse */ NzDemoPaginationMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMoreComponent, selectors: [["nz-demo-pagination-more"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationMoreComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationMoreComponent.ɵfac = function NzDemoPaginationMoreComponent_Factory(t) { return new (t || NzDemoPaginationMoreComponent)(); };
+NzDemoPaginationMoreComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMoreComponent, selectors: [["nz-demo-pagination-more"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationMoreComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 500);
@@ -322,8 +322,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationModule {
 }
-/** @nocollapse */ NzDemoPaginationModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPaginationModule });
-/** @nocollapse */ NzDemoPaginationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPaginationModule_Factory(t) { return new (t || NzDemoPaginationModule)(); }, imports: [[
+NzDemoPaginationModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoPaginationModule });
+NzDemoPaginationModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoPaginationModule_Factory(t) { return new (t || NzDemoPaginationModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -435,11 +435,11 @@ class NzDemoPaginationEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoPaginationEnComponent.ɵfac = function NzDemoPaginationEnComponent_Factory(t) { return new (t || NzDemoPaginationEnComponent)(); };
-/** @nocollapse */ NzDemoPaginationEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationEnComponent, selectors: [["nz-demo-pagination"]], viewQuery: function NzDemoPaginationEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoPaginationEnComponent.ɵfac = function NzDemoPaginationEnComponent_Factory(t) { return new (t || NzDemoPaginationEnComponent)(); };
+NzDemoPaginationEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationEnComponent, selectors: [["nz-demo-pagination"]], viewQuery: function NzDemoPaginationEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 391, vars: 40, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-pagination-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-pagination-demo-more", "nzTitle", "More"], ["nzHref", "#components-pagination-demo-changer", "nzTitle", "Changer"], ["nzHref", "#components-pagination-demo-jump", "nzTitle", "Jumper"], ["nzHref", "#components-pagination-demo-mini", "nzTitle", "Mini size"], ["nzHref", "#components-pagination-demo-simple", "nzTitle", "Simple mode"], ["nzHref", "#components-pagination-demo-controlled", "nzTitle", "Page Index"], ["nzHref", "#components-pagination-demo-total", "nzTitle", "Total number"], ["nzHref", "#components-pagination-demo-item-render", "nzTitle", "Prev and next"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/pagination/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-pagination-basic", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-basic <name>", "nzComponentName", "NzDemoPaginationBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "More", "nzSelector", "nz-demo-pagination-more", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-more <name>", "nzComponentName", "NzDemoPaginationMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Changer", "nzSelector", "nz-demo-pagination-changer", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-changer <name>", "nzComponentName", "NzDemoPaginationChangerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Jumper", "nzSelector", "nz-demo-pagination-jump", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-jump <name>", "nzComponentName", "NzDemoPaginationJumpComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Mini size", "nzSelector", "nz-demo-pagination-mini", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-mini <name>", "nzComponentName", "NzDemoPaginationMiniComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Simple mode", "nzSelector", "nz-demo-pagination-simple", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-simple <name>", "nzComponentName", "NzDemoPaginationSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Page Index", "nzSelector", "nz-demo-pagination-controlled", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-controlled <name>", "nzComponentName", "NzDemoPaginationControlledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Total number", "nzSelector", "nz-demo-pagination-total", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-total <name>", "nzComponentName", "NzDemoPaginationTotalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Prev and next", "nzSelector", "nz-demo-pagination-item-render", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-item-render <name>", "nzComponentName", "NzDemoPaginationItemRenderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-pagination"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-pagination'", 1, "anchor"]], template: function NzDemoPaginationEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -486,10 +486,10 @@ class NzDemoPaginationEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "When it will take a long time to load/render all items.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, " When it will take a long time to load/render all items.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, "If you want to browse the data by navigating through pages.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " If you want to browse the data by navigating through pages.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "pre", 19);
@@ -1207,11 +1207,11 @@ class NzDemoPaginationZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoPaginationZhComponent.ɵfac = function NzDemoPaginationZhComponent_Factory(t) { return new (t || NzDemoPaginationZhComponent)(); };
-/** @nocollapse */ NzDemoPaginationZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationZhComponent, selectors: [["nz-demo-pagination"]], viewQuery: function NzDemoPaginationZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoPaginationZhComponent.ɵfac = function NzDemoPaginationZhComponent_Factory(t) { return new (t || NzDemoPaginationZhComponent)(); };
+NzDemoPaginationZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationZhComponent, selectors: [["nz-demo-pagination"]], viewQuery: function NzDemoPaginationZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 380, vars: 40, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-pagination-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-pagination-demo-more", "nzTitle", "\u66F4\u591A"], ["nzHref", "#components-pagination-demo-changer", "nzTitle", "\u6539\u53D8"], ["nzHref", "#components-pagination-demo-jump", "nzTitle", "\u8DF3\u8F6C"], ["nzHref", "#components-pagination-demo-mini", "nzTitle", "\u8FF7\u4F60"], ["nzHref", "#components-pagination-demo-simple", "nzTitle", "\u7B80\u6D01"], ["nzHref", "#components-pagination-demo-controlled", "nzTitle", "\u9875\u7801"], ["nzHref", "#components-pagination-demo-total", "nzTitle", "\u603B\u6570"], ["nzHref", "#components-pagination-demo-item-render", "nzTitle", "\u4E0A\u4E00\u6B65\u548C\u4E0B\u4E00\u6B65"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/pagination/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-pagination-basic", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-basic <name>", "nzComponentName", "NzDemoPaginationBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u66F4\u591A", "nzSelector", "nz-demo-pagination-more", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-more <name>", "nzComponentName", "NzDemoPaginationMoreComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6539\u53D8", "nzSelector", "nz-demo-pagination-changer", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-changer <name>", "nzComponentName", "NzDemoPaginationChangerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8DF3\u8F6C", "nzSelector", "nz-demo-pagination-jump", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-jump <name>", "nzComponentName", "NzDemoPaginationJumpComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u8FF7\u4F60", "nzSelector", "nz-demo-pagination-mini", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-mini <name>", "nzComponentName", "NzDemoPaginationMiniComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7B80\u6D01", "nzSelector", "nz-demo-pagination-simple", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-simple <name>", "nzComponentName", "NzDemoPaginationSimpleComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9875\u7801", "nzSelector", "nz-demo-pagination-controlled", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-controlled <name>", "nzComponentName", "NzDemoPaginationControlledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u603B\u6570", "nzSelector", "nz-demo-pagination-total", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-total <name>", "nzComponentName", "NzDemoPaginationTotalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u4E0A\u4E00\u6B65\u548C\u4E0B\u4E00\u6B65", "nzSelector", "nz-demo-pagination-item-render", "nzGenerateCommand", "ng g ng-zorro-antd:pagination-item-render <name>", "nzComponentName", "NzDemoPaginationItemRenderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-pagination"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-pagination'", 1, "anchor"]], template: function NzDemoPaginationZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -1256,10 +1256,10 @@ class NzDemoPaginationZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, "\u5F53\u52A0\u8F7D/\u6E32\u67D3\u6240\u6709\u6570\u636E\u5C06\u82B1\u8D39\u5F88\u591A\u65F6\u95F4\u65F6\uFF1B");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " \u5F53\u52A0\u8F7D/\u6E32\u67D3\u6240\u6709\u6570\u636E\u5C06\u82B1\u8D39\u5F88\u591A\u65F6\u95F4\u65F6\uFF1B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, "\u53EF\u5207\u6362\u9875\u7801\u6D4F\u89C8\u6570\u636E\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](33, " \u53EF\u5207\u6362\u9875\u7801\u6D4F\u89C8\u6570\u636E\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "pre", 19);
@@ -1902,8 +1902,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationBasicComponent {
 }
-/** @nocollapse */ NzDemoPaginationBasicComponent.ɵfac = function NzDemoPaginationBasicComponent_Factory(t) { return new (t || NzDemoPaginationBasicComponent)(); };
-/** @nocollapse */ NzDemoPaginationBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationBasicComponent, selectors: [["nz-demo-pagination-basic"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationBasicComponent.ɵfac = function NzDemoPaginationBasicComponent_Factory(t) { return new (t || NzDemoPaginationBasicComponent)(); };
+NzDemoPaginationBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationBasicComponent, selectors: [["nz-demo-pagination-basic"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 1)("nzTotal", 50);
@@ -1947,8 +1947,8 @@ class NzDemoPaginationMiniComponent {
         this.current = 1;
     }
 }
-/** @nocollapse */ NzDemoPaginationMiniComponent.ɵfac = function NzDemoPaginationMiniComponent_Factory(t) { return new (t || NzDemoPaginationMiniComponent)(); };
-/** @nocollapse */ NzDemoPaginationMiniComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMiniComponent, selectors: [["nz-demo-pagination-mini"]], decls: 7, vars: 10, consts: [[3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], ["nzShowSizeChanger", "", "nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], [3, "nzPageIndex", "nzTotal", "nzSize", "nzShowTotal", "nzPageIndexChange"], ["totalTemplate", ""]], template: function NzDemoPaginationMiniComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationMiniComponent.ɵfac = function NzDemoPaginationMiniComponent_Factory(t) { return new (t || NzDemoPaginationMiniComponent)(); };
+NzDemoPaginationMiniComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationMiniComponent, selectors: [["nz-demo-pagination-mini"]], decls: 7, vars: 10, consts: [[3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], ["nzShowSizeChanger", "", "nzShowQuickJumper", "", 3, "nzPageIndex", "nzTotal", "nzSize", "nzPageIndexChange"], [3, "nzPageIndex", "nzTotal", "nzSize", "nzShowTotal", "nzPageIndexChange"], ["totalTemplate", ""]], template: function NzDemoPaginationMiniComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzPageIndexChange", function NzDemoPaginationMiniComponent_Template_nz_pagination_nzPageIndexChange_0_listener($event) { return ctx.current = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2004,8 +2004,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationChangerComponent {
 }
-/** @nocollapse */ NzDemoPaginationChangerComponent.ɵfac = function NzDemoPaginationChangerComponent_Factory(t) { return new (t || NzDemoPaginationChangerComponent)(); };
-/** @nocollapse */ NzDemoPaginationChangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationChangerComponent, selectors: [["nz-demo-pagination-changer"]], decls: 3, vars: 6, consts: [["nzShowSizeChanger", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"], ["nzShowSizeChanger", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"]], template: function NzDemoPaginationChangerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationChangerComponent.ɵfac = function NzDemoPaginationChangerComponent_Factory(t) { return new (t || NzDemoPaginationChangerComponent)(); };
+NzDemoPaginationChangerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationChangerComponent, selectors: [["nz-demo-pagination-changer"]], decls: 3, vars: 6, consts: [["nzShowSizeChanger", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"], ["nzShowSizeChanger", "", "nzDisabled", "", 3, "nzPageIndex", "nzTotal", "nzPageSize"]], template: function NzDemoPaginationChangerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-pagination", 1);
@@ -2046,8 +2046,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoPaginationControlledComponent {
 }
-/** @nocollapse */ NzDemoPaginationControlledComponent.ɵfac = function NzDemoPaginationControlledComponent_Factory(t) { return new (t || NzDemoPaginationControlledComponent)(); };
-/** @nocollapse */ NzDemoPaginationControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationControlledComponent, selectors: [["nz-demo-pagination-controlled"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationControlledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoPaginationControlledComponent.ɵfac = function NzDemoPaginationControlledComponent_Factory(t) { return new (t || NzDemoPaginationControlledComponent)(); };
+NzDemoPaginationControlledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoPaginationControlledComponent, selectors: [["nz-demo-pagination-controlled"]], decls: 1, vars: 2, consts: [[3, "nzPageIndex", "nzTotal"]], template: function NzDemoPaginationControlledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-pagination", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzPageIndex", 3)("nzTotal", 50);

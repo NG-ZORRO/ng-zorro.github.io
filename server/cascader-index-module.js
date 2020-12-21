@@ -59,8 +59,8 @@ class NzDemoCascaderCustomTemplateComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderCustomTemplateComponent.ɵfac = function NzDemoCascaderCustomTemplateComponent_Factory(t) { return new (t || NzDemoCascaderCustomTemplateComponent)(); };
-/** @nocollapse */ NzDemoCascaderCustomTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomTemplateComponent, selectors: [["nz-demo-cascader-custom-template"]], decls: 3, vars: 3, consts: [[3, "nzOptionRender", "nzOptions", "ngModel", "ngModelChange"], ["renderTpl", ""]], template: function NzDemoCascaderCustomTemplateComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderCustomTemplateComponent.ɵfac = function NzDemoCascaderCustomTemplateComponent_Factory(t) { return new (t || NzDemoCascaderCustomTemplateComponent)(); };
+NzDemoCascaderCustomTemplateComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomTemplateComponent, selectors: [["nz-demo-cascader-custom-template"]], decls: 3, vars: 3, consts: [[3, "nzOptionRender", "nzOptions", "ngModel", "ngModelChange"], ["renderTpl", ""]], template: function NzDemoCascaderCustomTemplateComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderCustomTemplateComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderCustomTemplateComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -152,8 +152,8 @@ class NzDemoCascaderDisabledComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderDisabledComponent.ɵfac = function NzDemoCascaderDisabledComponent_Factory(t) { return new (t || NzDemoCascaderDisabledComponent)(); };
-/** @nocollapse */ NzDemoCascaderDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDisabledComponent, selectors: [["nz-demo-cascader-disabled"]], decls: 1, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderDisabledComponent.ɵfac = function NzDemoCascaderDisabledComponent_Factory(t) { return new (t || NzDemoCascaderDisabledComponent)(); };
+NzDemoCascaderDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDisabledComponent, selectors: [["nz-demo-cascader-disabled"]], decls: 1, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderDisabledComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderDisabledComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -231,9 +231,7 @@ class NzHighlightPipe {
             .replace(new RegExp(this.UNIQUE_WRAPPERS[1], 'g'), '</span>');
     }
 }
-/** @nocollapse */
 NzHighlightPipe.ɵfac = function NzHighlightPipe_Factory(t) { return new (t || NzHighlightPipe)(); };
-/** @nocollapse */
 NzHighlightPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefinePipe"]({ name: "nzHighlight", type: NzHighlightPipe, pure: true });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzHighlightPipe, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Pipe"],
@@ -249,9 +247,7 @@ NzHighlightPipe.ɵpipe = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineP
  */
 class NzHighlightModule {
 }
-/** @nocollapse */
 NzHighlightModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzHighlightModule });
-/** @nocollapse */
 NzHighlightModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](NzHighlightModule, { declarations: function () { return [NzHighlightPipe]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"]]; }, exports: function () { return [NzHighlightPipe]; } }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzHighlightModule, [{
@@ -349,8 +345,8 @@ class NzDemoCascaderTriggerComponent {
         this.text = selectedOptions.map(o => o.label).join(', ');
     }
 }
-/** @nocollapse */ NzDemoCascaderTriggerComponent.ɵfac = function NzDemoCascaderTriggerComponent_Factory(t) { return new (t || NzDemoCascaderTriggerComponent)(); };
-/** @nocollapse */ NzDemoCascaderTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderTriggerComponent, selectors: [["nz-demo-cascader-trigger"]], decls: 4, vars: 4, consts: [[3, "nzShowInput", "nzOptions", "ngModel", "ngModelChange", "nzSelectionChange"], ["href", "javascript: void(0)"]], template: function NzDemoCascaderTriggerComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderTriggerComponent.ɵfac = function NzDemoCascaderTriggerComponent_Factory(t) { return new (t || NzDemoCascaderTriggerComponent)(); };
+NzDemoCascaderTriggerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderTriggerComponent, selectors: [["nz-demo-cascader-trigger"]], decls: 4, vars: 4, consts: [[3, "nzShowInput", "nzOptions", "ngModel", "ngModelChange", "nzSelectionChange"], ["href", "javascript: void(0)"]], template: function NzDemoCascaderTriggerComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderTriggerComponent_Template_nz_cascader_ngModelChange_1_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderTriggerComponent_Template_nz_cascader_ngModelChange_1_listener($event) { return ctx.onChanges($event); })("nzSelectionChange", function NzDemoCascaderTriggerComponent_Template_nz_cascader_nzSelectionChange_1_listener($event) { return ctx.onSelectionChange($event); });
@@ -457,8 +453,8 @@ class NzDemoCascaderDefaultValueAndAsynOptionsComponent {
         }, 500);
     }
 }
-/** @nocollapse */ NzDemoCascaderDefaultValueAndAsynOptionsComponent.ɵfac = function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueAndAsynOptionsComponent)(); };
-/** @nocollapse */ NzDemoCascaderDefaultValueAndAsynOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueAndAsynOptionsComponent, selectors: [["nz-demo-cascader-default-value-and-asyn-options"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzOptions", "ngModelChange"]], template: function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderDefaultValueAndAsynOptionsComponent.ɵfac = function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueAndAsynOptionsComponent)(); };
+NzDemoCascaderDefaultValueAndAsynOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueAndAsynOptionsComponent, selectors: [["nz-demo-cascader-default-value-and-asyn-options"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzOptions", "ngModelChange"]], template: function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderDefaultValueAndAsynOptionsComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -595,8 +591,8 @@ class NzDemoCascaderSearchComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderSearchComponent.ɵfac = function NzDemoCascaderSearchComponent_Factory(t) { return new (t || NzDemoCascaderSearchComponent)(); };
-/** @nocollapse */ NzDemoCascaderSearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderSearchComponent, selectors: [["nz-demo-cascader-search"]], decls: 4, vars: 3, consts: [[3, "nzOptions", "ngModel", "nzShowSearch", "ngModelChange"], ["href", "javascript:;", 1, "change-options", 3, "click"]], template: function NzDemoCascaderSearchComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderSearchComponent.ɵfac = function NzDemoCascaderSearchComponent_Factory(t) { return new (t || NzDemoCascaderSearchComponent)(); };
+NzDemoCascaderSearchComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderSearchComponent, selectors: [["nz-demo-cascader-search"]], decls: 4, vars: 3, consts: [[3, "nzOptions", "ngModel", "nzShowSearch", "ngModelChange"], ["href", "javascript:;", 1, "change-options", 3, "click"]], template: function NzDemoCascaderSearchComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderSearchComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderSearchComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -701,8 +697,8 @@ class NzDemoCascaderChangeOnSelectComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderChangeOnSelectComponent.ɵfac = function NzDemoCascaderChangeOnSelectComponent_Factory(t) { return new (t || NzDemoCascaderChangeOnSelectComponent)(); };
-/** @nocollapse */ NzDemoCascaderChangeOnSelectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderChangeOnSelectComponent, selectors: [["nz-demo-cascader-change-on-select"]], decls: 1, vars: 2, consts: [["nzChangeOnSelect", "", 3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderChangeOnSelectComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderChangeOnSelectComponent.ɵfac = function NzDemoCascaderChangeOnSelectComponent_Factory(t) { return new (t || NzDemoCascaderChangeOnSelectComponent)(); };
+NzDemoCascaderChangeOnSelectComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderChangeOnSelectComponent, selectors: [["nz-demo-cascader-change-on-select"]], decls: 1, vars: 2, consts: [["nzChangeOnSelect", "", 3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderChangeOnSelectComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderChangeOnSelectComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderChangeOnSelectComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -809,8 +805,8 @@ class NzDemoCascaderModalComponent {
         this.isVisible = false;
     }
 }
-/** @nocollapse */ NzDemoCascaderModalComponent.ɵfac = function NzDemoCascaderModalComponent_Factory(t) { return new (t || NzDemoCascaderModalComponent)(); };
-/** @nocollapse */ NzDemoCascaderModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderModalComponent, selectors: [["nz-demo-cascader-modal"]], decls: 4, vars: 3, consts: [["nzTitle", "Please select", 3, "nzVisible", "nzVisibleChange", "nzOnCancel", "nzOnOk"], [3, "nzOptions", "ngModel", "ngModelChange"], ["nz-button", "", 3, "click"]], template: function NzDemoCascaderModalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderModalComponent.ɵfac = function NzDemoCascaderModalComponent_Factory(t) { return new (t || NzDemoCascaderModalComponent)(); };
+NzDemoCascaderModalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderModalComponent, selectors: [["nz-demo-cascader-modal"]], decls: 4, vars: 3, consts: [["nzTitle", "Please select", 3, "nzVisible", "nzVisibleChange", "nzOnCancel", "nzOnOk"], [3, "nzOptions", "ngModel", "ngModelChange"], ["nz-button", "", 3, "click"]], template: function NzDemoCascaderModalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-modal", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("nzVisibleChange", function NzDemoCascaderModalComponent_Template_nz_modal_nzVisibleChange_0_listener($event) { return ctx.isVisible = $event; })("nzOnCancel", function NzDemoCascaderModalComponent_Template_nz_modal_nzOnCancel_0_listener($event) { return ctx.handleCancel($event); })("nzOnOk", function NzDemoCascaderModalComponent_Template_nz_modal_nzOnOk_0_listener($event) { return ctx.handleOk($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-cascader", 1);
@@ -921,8 +917,8 @@ class NzDemoCascaderDefaultValueComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderDefaultValueComponent.ɵfac = function NzDemoCascaderDefaultValueComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueComponent)(); };
-/** @nocollapse */ NzDemoCascaderDefaultValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueComponent, selectors: [["nz-demo-cascader-default-value"]], decls: 1, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderDefaultValueComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderDefaultValueComponent.ɵfac = function NzDemoCascaderDefaultValueComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueComponent)(); };
+NzDemoCascaderDefaultValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueComponent, selectors: [["nz-demo-cascader-default-value"]], decls: 1, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderDefaultValueComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderDefaultValueComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderDefaultValueComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -971,11 +967,11 @@ function NzDemoCascaderCustomRenderComponent_ng_template_1_ng_container_0_span_1
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("", label_r5, " / ");
 } }
 function NzDemoCascaderCustomRenderComponent_ng_template_1_ng_container_0_span_2_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "span");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoCascaderCustomRenderComponent_ng_template_1_ng_container_0_span_2_Template_a_click_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); const label_r5 = ctx_r13.$implicit; const i_r6 = ctx_r13.index; const selectedOptions_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().selectedOptions; const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.handleAreaClick($event, label_r5, selectedOptions_r3[i_r6]); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzDemoCascaderCustomRenderComponent_ng_template_1_ng_container_0_span_2_Template_a_click_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); const label_r5 = ctx_r12.$implicit; const i_r6 = ctx_r12.index; const selectedOptions_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().selectedOptions; const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.handleAreaClick($event, label_r5, selectedOptions_r3[i_r6]); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, ") ");
@@ -1066,8 +1062,8 @@ class NzDemoCascaderCustomRenderComponent {
         console.log('clicked "', label, '"', option);
     }
 }
-/** @nocollapse */ NzDemoCascaderCustomRenderComponent.ɵfac = function NzDemoCascaderCustomRenderComponent_Factory(t) { return new (t || NzDemoCascaderCustomRenderComponent)(); };
-/** @nocollapse */ NzDemoCascaderCustomRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomRenderComponent, selectors: [["nz-demo-cascader-custom-render"]], decls: 3, vars: 3, consts: [[3, "nzLabelRender", "nzOptions", "ngModel", "ngModelChange"], ["renderTpl", ""], [4, "ngFor", "ngForOf"], [4, "ngIf"], ["href", "javascript:;", 3, "click"]], template: function NzDemoCascaderCustomRenderComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderCustomRenderComponent.ɵfac = function NzDemoCascaderCustomRenderComponent_Factory(t) { return new (t || NzDemoCascaderCustomRenderComponent)(); };
+NzDemoCascaderCustomRenderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomRenderComponent, selectors: [["nz-demo-cascader-custom-render"]], decls: 3, vars: 3, consts: [[3, "nzLabelRender", "nzOptions", "ngModel", "ngModelChange"], ["renderTpl", ""], [4, "ngFor", "ngForOf"], [4, "ngIf"], ["href", "javascript:;", 3, "click"]], template: function NzDemoCascaderCustomRenderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderCustomRenderComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderCustomRenderComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1189,8 +1185,8 @@ class NzDemoCascaderLazyComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCascaderLazyComponent.ɵfac = function NzDemoCascaderLazyComponent_Factory(t) { return new (t || NzDemoCascaderLazyComponent)(); };
-/** @nocollapse */ NzDemoCascaderLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderLazyComponent, selectors: [["nz-demo-cascader-lazy"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzLoadData", "ngModelChange"]], template: function NzDemoCascaderLazyComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderLazyComponent.ɵfac = function NzDemoCascaderLazyComponent_Factory(t) { return new (t || NzDemoCascaderLazyComponent)(); };
+NzDemoCascaderLazyComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderLazyComponent, selectors: [["nz-demo-cascader-lazy"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzLoadData", "ngModelChange"]], template: function NzDemoCascaderLazyComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderLazyComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderLazyComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1279,8 +1275,8 @@ class NzDemoCascaderSizeComponent {
         console.log(values);
     }
 }
-/** @nocollapse */ NzDemoCascaderSizeComponent.ɵfac = function NzDemoCascaderSizeComponent_Factory(t) { return new (t || NzDemoCascaderSizeComponent)(); };
-/** @nocollapse */ NzDemoCascaderSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderSizeComponent, selectors: [["nz-demo-cascader-size"]], decls: 3, vars: 8, consts: [[3, "nzSize", "nzOptions", "ngModel", "ngModelChange"], [3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderSizeComponent.ɵfac = function NzDemoCascaderSizeComponent_Factory(t) { return new (t || NzDemoCascaderSizeComponent)(); };
+NzDemoCascaderSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderSizeComponent, selectors: [["nz-demo-cascader-size"]], decls: 3, vars: 8, consts: [[3, "nzSize", "nzOptions", "ngModel", "ngModelChange"], [3, "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderSizeComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.value1 = $event; })("ngModelChange", function NzDemoCascaderSizeComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1437,8 +1433,8 @@ class NzDemoCascaderBasicComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderBasicComponent.ɵfac = function NzDemoCascaderBasicComponent_Factory(t) { return new (t || NzDemoCascaderBasicComponent)(); };
-/** @nocollapse */ NzDemoCascaderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderBasicComponent, selectors: [["nz-demo-cascader-basic"]], decls: 4, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"], ["href", "javascript:;", 1, "change-options", 3, "click"]], template: function NzDemoCascaderBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderBasicComponent.ɵfac = function NzDemoCascaderBasicComponent_Factory(t) { return new (t || NzDemoCascaderBasicComponent)(); };
+NzDemoCascaderBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderBasicComponent, selectors: [["nz-demo-cascader-basic"]], decls: 4, vars: 2, consts: [[3, "nzOptions", "ngModel", "ngModelChange"], ["href", "javascript:;", 1, "change-options", 3, "click"]], template: function NzDemoCascaderBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderBasicComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderBasicComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1556,13 +1552,13 @@ class NzDemoCascaderZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCascaderZhComponent.ɵfac = function NzDemoCascaderZhComponent_Factory(t) { return new (t || NzDemoCascaderZhComponent)(); };
-/** @nocollapse */ NzDemoCascaderZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderZhComponent, selectors: [["nz-demo-cascader"]], viewQuery: function NzDemoCascaderZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCascaderZhComponent.ɵfac = function NzDemoCascaderZhComponent_Factory(t) { return new (t || NzDemoCascaderZhComponent)(); };
+NzDemoCascaderZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderZhComponent, selectors: [["nz-demo-cascader"]], viewQuery: function NzDemoCascaderZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 672, vars: 79, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-cascader-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-cascader-demo-default-value", "nzTitle", "\u9ED8\u8BA4\u503C"], ["nzHref", "#components-cascader-demo-trigger", "nzTitle", "\u53EF\u4EE5\u81EA\u5B9A\u4E49\u663E\u793A"], ["nzHref", "#components-cascader-demo-hover", "nzTitle", "\u79FB\u5165\u5C55\u5F00"], ["nzHref", "#components-cascader-demo-disabled", "nzTitle", "\u7981\u7528\u9009\u9879"], ["nzHref", "#components-cascader-demo-change-on-select", "nzTitle", "\u9009\u62E9\u5373\u6539\u53D8"], ["nzHref", "#components-cascader-demo-size", "nzTitle", "\u5927\u5C0F"], ["nzHref", "#components-cascader-demo-custom-render", "nzTitle", "\u81EA\u5B9A\u4E49\u5DF2\u9009\u9879"], ["nzHref", "#components-cascader-demo-reactive-form", "nzTitle", "\u54CD\u5E94\u8868\u5355"], ["nzHref", "#components-cascader-demo-lazy", "nzTitle", "\u52A8\u6001\u52A0\u8F7D\u9009\u9879"], ["nzHref", "#components-cascader-demo-change-on-function", "nzTitle", "\u6307\u5B9A\u9009\u62E9"], ["nzHref", "#components-cascader-demo-modal", "nzTitle", "\u6A21\u6001\u7A97\u53E3"], ["nzHref", "#components-cascader-demo-search", "nzTitle", "\u641C\u7D22"], ["nzHref", "#components-cascader-demo-trigger-action", "nzTitle", "\u9F20\u6807\u79FB\u5165\u89E6\u53D1"], ["nzHref", "#components-cascader-demo-default-value-and-lazyload", "nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5EF6\u8FDF\u52A0\u8F7D"], ["nzHref", "#components-cascader-demo-default-value-and-asyn-options", "nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5F02\u6B65\u5217\u8868"], ["nzHref", "#components-cascader-demo-custom-field-names", "nzTitle", "\u81EA\u5B9A\u4E49\u5B57\u6BB5\u540D"], ["nzHref", "#components-cascader-demo-custom-template", "nzTitle", "\u81EA\u5B9A\u4E49\u9009\u62E9\u9879"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/cascader/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-cascader-basic", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-basic <name>", "nzComponentName", "NzDemoCascaderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u53EF\u4EE5\u81EA\u5B9A\u4E49\u663E\u793A", "nzSelector", "nz-demo-cascader-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger <name>", "nzComponentName", "NzDemoCascaderTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528\u9009\u9879", "nzSelector", "nz-demo-cascader-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-disabled <name>", "nzComponentName", "NzDemoCascaderDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5927\u5C0F", "nzSelector", "nz-demo-cascader-size", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-size <name>", "nzComponentName", "NzDemoCascaderSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u8868\u5355", "nzSelector", "nz-demo-cascader-reactive-form", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-reactive-form <name>", "nzComponentName", "NzDemoCascaderReactiveFormComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6307\u5B9A\u9009\u62E9", "nzSelector", "nz-demo-cascader-change-on-function", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-function <name>", "nzComponentName", "NzDemoCascaderChangeOnFunctionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u641C\u7D22", "nzSelector", "nz-demo-cascader-search", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-search <name>", "nzComponentName", "NzDemoCascaderSearchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5EF6\u8FDF\u52A0\u8F7D", "nzSelector", "nz-demo-cascader-default-value-and-lazyload", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-lazyload <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndLazyloadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u5B57\u6BB5\u540D", "nzSelector", "nz-demo-cascader-custom-field-names", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-field-names <name>", "nzComponentName", "NzDemoCascaderCustomFieldNamesComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C", "nzSelector", "nz-demo-cascader-default-value", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value <name>", "nzComponentName", "NzDemoCascaderDefaultValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u79FB\u5165\u5C55\u5F00", "nzSelector", "nz-demo-cascader-hover", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-hover <name>", "nzComponentName", "NzDemoCascaderHoverComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9009\u62E9\u5373\u6539\u53D8", "nzSelector", "nz-demo-cascader-change-on-select", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-select <name>", "nzComponentName", "NzDemoCascaderChangeOnSelectComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u5DF2\u9009\u9879", "nzSelector", "nz-demo-cascader-custom-render", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-render <name>", "nzComponentName", "NzDemoCascaderCustomRenderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A8\u6001\u52A0\u8F7D\u9009\u9879", "nzSelector", "nz-demo-cascader-lazy", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-lazy <name>", "nzComponentName", "NzDemoCascaderLazyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6A21\u6001\u7A97\u53E3", "nzSelector", "nz-demo-cascader-modal", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-modal <name>", "nzComponentName", "NzDemoCascaderModalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9F20\u6807\u79FB\u5165\u89E6\u53D1", "nzSelector", "nz-demo-cascader-trigger-action", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger-action <name>", "nzComponentName", "NzDemoCascaderTriggerActionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5F02\u6B65\u5217\u8868", "nzSelector", "nz-demo-cascader-default-value-and-asyn-options", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-asyn-options <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndAsynOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9009\u62E9\u9879", "nzSelector", "nz-demo-cascader-custom-template", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-template <name>", "nzComponentName", "NzDemoCascaderCustomTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-cascader"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-cascader'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"], ["href", "https://gist.github.com/afc163/7582f35654fd03d5be7009444345ea17", "target", "_blank", "rel", "noopener"]], template: function NzDemoCascaderZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 684, vars: 79, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-cascader-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-cascader-demo-default-value", "nzTitle", "\u9ED8\u8BA4\u503C"], ["nzHref", "#components-cascader-demo-trigger", "nzTitle", "\u53EF\u4EE5\u81EA\u5B9A\u4E49\u663E\u793A"], ["nzHref", "#components-cascader-demo-hover", "nzTitle", "\u79FB\u5165\u5C55\u5F00"], ["nzHref", "#components-cascader-demo-disabled", "nzTitle", "\u7981\u7528\u9009\u9879"], ["nzHref", "#components-cascader-demo-change-on-select", "nzTitle", "\u9009\u62E9\u5373\u6539\u53D8"], ["nzHref", "#components-cascader-demo-size", "nzTitle", "\u5927\u5C0F"], ["nzHref", "#components-cascader-demo-custom-render", "nzTitle", "\u81EA\u5B9A\u4E49\u5DF2\u9009\u9879"], ["nzHref", "#components-cascader-demo-reactive-form", "nzTitle", "\u54CD\u5E94\u8868\u5355"], ["nzHref", "#components-cascader-demo-lazy", "nzTitle", "\u52A8\u6001\u52A0\u8F7D\u9009\u9879"], ["nzHref", "#components-cascader-demo-change-on-function", "nzTitle", "\u6307\u5B9A\u9009\u62E9"], ["nzHref", "#components-cascader-demo-modal", "nzTitle", "\u6A21\u6001\u7A97\u53E3"], ["nzHref", "#components-cascader-demo-search", "nzTitle", "\u641C\u7D22"], ["nzHref", "#components-cascader-demo-trigger-action", "nzTitle", "\u9F20\u6807\u79FB\u5165\u89E6\u53D1"], ["nzHref", "#components-cascader-demo-default-value-and-lazyload", "nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5EF6\u8FDF\u52A0\u8F7D"], ["nzHref", "#components-cascader-demo-default-value-and-asyn-options", "nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5F02\u6B65\u5217\u8868"], ["nzHref", "#components-cascader-demo-custom-field-names", "nzTitle", "\u81EA\u5B9A\u4E49\u5B57\u6BB5\u540D"], ["nzHref", "#components-cascader-demo-custom-template", "nzTitle", "\u81EA\u5B9A\u4E49\u9009\u62E9\u9879"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/cascader/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-cascader-basic", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-basic <name>", "nzComponentName", "NzDemoCascaderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u53EF\u4EE5\u81EA\u5B9A\u4E49\u663E\u793A", "nzSelector", "nz-demo-cascader-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger <name>", "nzComponentName", "NzDemoCascaderTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528\u9009\u9879", "nzSelector", "nz-demo-cascader-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-disabled <name>", "nzComponentName", "NzDemoCascaderDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u5927\u5C0F", "nzSelector", "nz-demo-cascader-size", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-size <name>", "nzComponentName", "NzDemoCascaderSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u54CD\u5E94\u8868\u5355", "nzSelector", "nz-demo-cascader-reactive-form", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-reactive-form <name>", "nzComponentName", "NzDemoCascaderReactiveFormComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6307\u5B9A\u9009\u62E9", "nzSelector", "nz-demo-cascader-change-on-function", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-function <name>", "nzComponentName", "NzDemoCascaderChangeOnFunctionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u641C\u7D22", "nzSelector", "nz-demo-cascader-search", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-search <name>", "nzComponentName", "NzDemoCascaderSearchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5EF6\u8FDF\u52A0\u8F7D", "nzSelector", "nz-demo-cascader-default-value-and-lazyload", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-lazyload <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndLazyloadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u5B57\u6BB5\u540D", "nzSelector", "nz-demo-cascader-custom-field-names", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-field-names <name>", "nzComponentName", "NzDemoCascaderCustomFieldNamesComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C", "nzSelector", "nz-demo-cascader-default-value", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value <name>", "nzComponentName", "NzDemoCascaderDefaultValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u79FB\u5165\u5C55\u5F00", "nzSelector", "nz-demo-cascader-hover", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-hover <name>", "nzComponentName", "NzDemoCascaderHoverComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9009\u62E9\u5373\u6539\u53D8", "nzSelector", "nz-demo-cascader-change-on-select", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-select <name>", "nzComponentName", "NzDemoCascaderChangeOnSelectComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u5DF2\u9009\u9879", "nzSelector", "nz-demo-cascader-custom-render", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-render <name>", "nzComponentName", "NzDemoCascaderCustomRenderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u52A8\u6001\u52A0\u8F7D\u9009\u9879", "nzSelector", "nz-demo-cascader-lazy", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-lazy <name>", "nzComponentName", "NzDemoCascaderLazyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6A21\u6001\u7A97\u53E3", "nzSelector", "nz-demo-cascader-modal", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-modal <name>", "nzComponentName", "NzDemoCascaderModalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9F20\u6807\u79FB\u5165\u89E6\u53D1", "nzSelector", "nz-demo-cascader-trigger-action", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger-action <name>", "nzComponentName", "NzDemoCascaderTriggerActionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9ED8\u8BA4\u503C\u4E0E\u5F02\u6B65\u5217\u8868", "nzSelector", "nz-demo-cascader-default-value-and-asyn-options", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-asyn-options <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndAsynOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u81EA\u5B9A\u4E49\u9009\u62E9\u9879", "nzSelector", "nz-demo-cascader-custom-template", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-template <name>", "nzComponentName", "NzDemoCascaderCustomTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-cascader"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-cascader'", 1, "anchor"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"], ["href", "https://gist.github.com/afc163/7582f35654fd03d5be7009444345ea17", "target", "_blank", "rel", "noopener"]], template: function NzDemoCascaderZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1614,13 +1610,13 @@ class NzDemoCascaderZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, "\u9700\u8981\u4ECE\u4E00\u7EC4\u76F8\u5173\u8054\u7684\u6570\u636E\u96C6\u5408\u8FDB\u884C\u9009\u62E9\uFF0C\u4F8B\u5982\u7701\u5E02\u533A\uFF0C\u516C\u53F8\u5C42\u7EA7\uFF0C\u4E8B\u7269\u5206\u7C7B\u7B49\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](40, " \u9700\u8981\u4ECE\u4E00\u7EC4\u76F8\u5173\u8054\u7684\u6570\u636E\u96C6\u5408\u8FDB\u884C\u9009\u62E9\uFF0C\u4F8B\u5982\u7701\u5E02\u533A\uFF0C\u516C\u53F8\u5C42\u7EA7\uFF0C\u4E8B\u7269\u5206\u7C7B\u7B49\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, "\u4ECE\u4E00\u4E2A\u8F83\u5927\u7684\u6570\u636E\u96C6\u5408\u4E2D\u8FDB\u884C\u9009\u62E9\u65F6\uFF0C\u7528\u591A\u7EA7\u5206\u7C7B\u8FDB\u884C\u5206\u9694\uFF0C\u65B9\u4FBF\u9009\u62E9\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](42, " \u4ECE\u4E00\u4E2A\u8F83\u5927\u7684\u6570\u636E\u96C6\u5408\u4E2D\u8FDB\u884C\u9009\u62E9\u65F6\uFF0C\u7528\u591A\u7EA7\u5206\u7C7B\u8FDB\u884C\u5206\u9694\uFF0C\u65B9\u4FBF\u9009\u62E9\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, "\u6BD4\u8D77 Select \u7EC4\u4EF6\uFF0C\u53EF\u4EE5\u5728\u540C\u4E00\u4E2A\u6D6E\u5C42\u4E2D\u5B8C\u6210\u9009\u62E9\uFF0C\u6709\u8F83\u597D\u7684\u4F53\u9A8C\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, " \u6BD4\u8D77 Select \u7EC4\u4EF6\uFF0C\u53EF\u4EE5\u5728\u540C\u4E00\u4E2A\u6D6E\u5C42\u4E2D\u5B8C\u6210\u9009\u62E9\uFF0C\u6709\u8F83\u597D\u7684\u4F53\u9A8C\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "pre", 28);
@@ -2497,15 +2493,15 @@ class NzDemoCascaderZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](573, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](574, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](575, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](576, "(nzVisibleChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](576, "(nzClear)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](577, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](578, "\u83DC\u5355\u6D6E\u5C42\u7684\u663E\u793A/\u9690\u85CF");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](578, "\u6E05\u9664\u503C\u65F6\u89E6\u53D1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](579, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](580, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](581, "EventEmitter<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](581, "EventEmitter<void>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](582, "td");
@@ -2516,15 +2512,15 @@ class NzDemoCascaderZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](585, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](586, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](587, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](588, "(nzSelectionChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](588, "(nzVisibleChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](589, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](590, "\u503C\u53D1\u751F\u53D8\u5316\u65F6\u89E6\u53D1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](590, "\u83DC\u5355\u6D6E\u5C42\u7684\u663E\u793A/\u9690\u85CF");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](591, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](592, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](593, "EventEmitter<NzCascaderOption[]>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](593, "EventEmitter<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](594, "td");
@@ -2532,127 +2528,146 @@ class NzDemoCascaderZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](596, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](597, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](598, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](599, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](600, "(nzSelectionChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](597, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](598, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](599, "nzShowSearch");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](601, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](602, "\u503C\u53D1\u751F\u53D8\u5316\u65F6\u89E6\u53D1");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](600, " \u4E3A\u5BF9\u8C61\u65F6\u9700\u9075\u5B88 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](601, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](602, "NzShowSearchOptions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](603, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](604, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](605, "EventEmitter<NzCascaderOption[]>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](603, " \u63A5\u53E3\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](604, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](605, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](606, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](607, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](608, "\u53C2\u6570");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](606, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](607, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](609, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](610, "\u8BF4\u660E");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](611, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](612, "\u7C7B\u578B");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](613, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](614, "\u9ED8\u8BA4\u503C");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](608, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](615, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](616, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](617, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](618, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](619, "filter");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](609, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](610, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](611, "nzShowSearch");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](612, " \u4E3A\u5BF9\u8C61\u65F6\u9700\u9075\u5B88 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](613, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](614, "NzShowSearchOptions");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](620, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](621, "\u53EF\u9009\uFF0C\u9009\u62E9\u662F\u5426\u4FDD\u7559\u9009\u9879\u7684\u8FC7\u6EE4\u51FD\u6570\uFF0C\u6BCF\u7EA7\u83DC\u5355\u7684\u9009\u9879\u90FD\u4F1A\u88AB\u5339\u914D");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](615, " \u63A5\u53E3\uFF1A");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](622, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](623, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](624, "(inputValue: string, path: NzCascaderOption[]): boolean");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](616, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](617, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](618, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](619, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](620, "\u53C2\u6570");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](621, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](622, "\u8BF4\u660E");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](625, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](626, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](623, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](624, "\u7C7B\u578B");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](627, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](628, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](629, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](630, "sorter");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](631, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](632, "\u53EF\u9009\uFF0C\u6309\u7167\u5230\u6BCF\u4E2A\u6700\u7EC8\u9009\u9879\u7684\u8DEF\u5F84\u8FDB\u884C\u6392\u5E8F\uFF0C\u9ED8\u8BA4\u6309\u7167\u539F\u59CB\u6570\u636E\u7684\u987A\u5E8F");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](633, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](634, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](635, "(a: NzCascaderOption[], b: NzCascaderOption[], inputValue: string): number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](636, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](637, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](625, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](626, "\u9ED8\u8BA4\u503C");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](638, "h4", 65);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](639, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](640, "\u65B9\u6CD5");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](641, "a", 66);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](642, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](627, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](628, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](629, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](630, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](631, "filter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](643, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](644, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](645, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](646, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](647, "\u540D\u79F0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](632, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](633, "\u53EF\u9009\uFF0C\u9009\u62E9\u662F\u5426\u4FDD\u7559\u9009\u9879\u7684\u8FC7\u6EE4\u51FD\u6570\uFF0C\u6BCF\u7EA7\u83DC\u5355\u7684\u9009\u9879\u90FD\u4F1A\u88AB\u5339\u914D");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](648, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](649, "\u63CF\u8FF0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](634, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](635, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](636, "(inputValue: string, path: NzCascaderOption[]): boolean");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](650, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](651, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](652, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](653, "blur()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](654, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](655, "\u79FB\u9664\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](637, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](638, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](656, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](657, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](658, "focus()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](659, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](660, "\u83B7\u53D6\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](639, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](640, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](641, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](642, "sorter");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](661, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](662, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](663, "closeMenu()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](643, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](644, "\u53EF\u9009\uFF0C\u6309\u7167\u5230\u6BCF\u4E2A\u6700\u7EC8\u9009\u9879\u7684\u8DEF\u5F84\u8FDB\u884C\u6392\u5E8F\uFF0C\u9ED8\u8BA4\u6309\u7167\u539F\u59CB\u6570\u636E\u7684\u987A\u5E8F");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](645, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](646, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](647, "(a: NzCascaderOption[], b: NzCascaderOption[], inputValue: string): number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](648, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](649, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](650, "h4", 65);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](651, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](652, "\u65B9\u6CD5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](653, "a", 66);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](654, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](655, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](656, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](657, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](658, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](659, "\u540D\u79F0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](660, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](661, "\u63CF\u8FF0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](662, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](663, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](664, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](665, "\u9690\u85CF\u83DC\u5355");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](665, "blur()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](666, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](667, "\u79FB\u9664\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](668, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](669, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](670, "focus()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](671, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](672, "\u83B7\u53D6\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](673, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](674, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](675, "closeMenu()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](676, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](677, "\u9690\u85CF\u83DC\u5355");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](666, "blockquote");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](667, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](668, "\u6CE8\u610F\uFF0C\u5982\u679C\u9700\u8981\u83B7\u5F97\u4E2D\u56FD\u7701\u5E02\u533A\u6570\u636E\uFF0C\u53EF\u4EE5\u53C2\u8003 ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](669, "a", 67);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](670, "china-division");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](678, "blockquote");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](679, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](680, "\u6CE8\u610F\uFF0C\u5982\u679C\u9700\u8981\u83B7\u5F97\u4E2D\u56FD\u7701\u5E02\u533A\u6570\u636E\uFF0C\u53EF\u4EE5\u53C2\u8003 ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](681, "a", 67);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](682, "china-division");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](671, "\u3002");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](683, "\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
@@ -2809,8 +2824,8 @@ class NzDemoCascaderDefaultValueAndLazyloadComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCascaderDefaultValueAndLazyloadComponent.ɵfac = function NzDemoCascaderDefaultValueAndLazyloadComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueAndLazyloadComponent)(); };
-/** @nocollapse */ NzDemoCascaderDefaultValueAndLazyloadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueAndLazyloadComponent, selectors: [["nz-demo-cascader-default-value-and-lazyload"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzLoadData", "ngModelChange"]], template: function NzDemoCascaderDefaultValueAndLazyloadComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderDefaultValueAndLazyloadComponent.ɵfac = function NzDemoCascaderDefaultValueAndLazyloadComponent_Factory(t) { return new (t || NzDemoCascaderDefaultValueAndLazyloadComponent)(); };
+NzDemoCascaderDefaultValueAndLazyloadComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderDefaultValueAndLazyloadComponent, selectors: [["nz-demo-cascader-default-value-and-lazyload"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzLoadData", "ngModelChange"]], template: function NzDemoCascaderDefaultValueAndLazyloadComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderDefaultValueAndLazyloadComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderDefaultValueAndLazyloadComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2905,8 +2920,8 @@ class NzDemoCascaderCustomFieldNamesComponent {
         return ['hangzhou', 'xihu', 'nanjing', 'zhonghuamen'].indexOf(value) >= 0;
     }
 }
-/** @nocollapse */ NzDemoCascaderCustomFieldNamesComponent.ɵfac = function NzDemoCascaderCustomFieldNamesComponent_Factory(t) { return new (t || NzDemoCascaderCustomFieldNamesComponent)(); };
-/** @nocollapse */ NzDemoCascaderCustomFieldNamesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomFieldNamesComponent, selectors: [["nz-demo-cascader-custom-field-names"]], decls: 1, vars: 6, consts: [[3, "nzChangeOn", "nzOptions", "nzLabelProperty", "nzValueProperty", "nzShowSearch", "ngModel", "ngModelChange"]], template: function NzDemoCascaderCustomFieldNamesComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderCustomFieldNamesComponent.ɵfac = function NzDemoCascaderCustomFieldNamesComponent_Factory(t) { return new (t || NzDemoCascaderCustomFieldNamesComponent)(); };
+NzDemoCascaderCustomFieldNamesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderCustomFieldNamesComponent, selectors: [["nz-demo-cascader-custom-field-names"]], decls: 1, vars: 6, consts: [[3, "nzChangeOn", "nzOptions", "nzLabelProperty", "nzValueProperty", "nzShowSearch", "ngModel", "ngModelChange"]], template: function NzDemoCascaderCustomFieldNamesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderCustomFieldNamesComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderCustomFieldNamesComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -3017,11 +3032,11 @@ class NzDemoCascaderEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoCascaderEnComponent.ɵfac = function NzDemoCascaderEnComponent_Factory(t) { return new (t || NzDemoCascaderEnComponent)(); };
-/** @nocollapse */ NzDemoCascaderEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderEnComponent, selectors: [["nz-demo-cascader"]], viewQuery: function NzDemoCascaderEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoCascaderEnComponent.ɵfac = function NzDemoCascaderEnComponent_Factory(t) { return new (t || NzDemoCascaderEnComponent)(); };
+NzDemoCascaderEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderEnComponent, selectors: [["nz-demo-cascader"]], viewQuery: function NzDemoCascaderEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
     } }, decls: 683, vars: 79, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-cascader-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-cascader-demo-default-value", "nzTitle", "Default value"], ["nzHref", "#components-cascader-demo-trigger", "nzTitle", "Custom trigger"], ["nzHref", "#components-cascader-demo-hover", "nzTitle", "Hover"], ["nzHref", "#components-cascader-demo-disabled", "nzTitle", "Disabled option"], ["nzHref", "#components-cascader-demo-change-on-select", "nzTitle", "Change on select"], ["nzHref", "#components-cascader-demo-size", "nzTitle", "Size"], ["nzHref", "#components-cascader-demo-custom-render", "nzTitle", "Custom render"], ["nzHref", "#components-cascader-demo-reactive-form", "nzTitle", "ReactiveForm"], ["nzHref", "#components-cascader-demo-lazy", "nzTitle", "Load Options Lazily"], ["nzHref", "#components-cascader-demo-change-on-function", "nzTitle", "Select specified"], ["nzHref", "#components-cascader-demo-modal", "nzTitle", "Modal Dialog"], ["nzHref", "#components-cascader-demo-search", "nzTitle", "Search"], ["nzHref", "#components-cascader-demo-trigger-action", "nzTitle", "Trigger Action"], ["nzHref", "#components-cascader-demo-default-value-and-lazyload", "nzTitle", "Default value and Lazy load"], ["nzHref", "#components-cascader-demo-default-value-and-asyn-options", "nzTitle", "Default value and asyc options"], ["nzHref", "#components-cascader-demo-custom-field-names", "nzTitle", "Custom Field Names"], ["nzHref", "#components-cascader-demo-custom-template", "nzTitle", "Custom option template"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/cascader/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-cascader-basic", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-basic <name>", "nzComponentName", "NzDemoCascaderBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Custom trigger", "nzSelector", "nz-demo-cascader-trigger", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger <name>", "nzComponentName", "NzDemoCascaderTriggerComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Disabled option", "nzSelector", "nz-demo-cascader-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-disabled <name>", "nzComponentName", "NzDemoCascaderDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Size", "nzSelector", "nz-demo-cascader-size", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-size <name>", "nzComponentName", "NzDemoCascaderSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "ReactiveForm", "nzSelector", "nz-demo-cascader-reactive-form", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-reactive-form <name>", "nzComponentName", "NzDemoCascaderReactiveFormComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Select specified", "nzSelector", "nz-demo-cascader-change-on-function", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-function <name>", "nzComponentName", "NzDemoCascaderChangeOnFunctionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Search", "nzSelector", "nz-demo-cascader-search", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-search <name>", "nzComponentName", "NzDemoCascaderSearchComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Default value and Lazy load", "nzSelector", "nz-demo-cascader-default-value-and-lazyload", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-lazyload <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndLazyloadComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom Field Names", "nzSelector", "nz-demo-cascader-custom-field-names", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-field-names <name>", "nzComponentName", "NzDemoCascaderCustomFieldNamesComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Default value", "nzSelector", "nz-demo-cascader-default-value", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value <name>", "nzComponentName", "NzDemoCascaderDefaultValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Hover", "nzSelector", "nz-demo-cascader-hover", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-hover <name>", "nzComponentName", "NzDemoCascaderHoverComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Change on select", "nzSelector", "nz-demo-cascader-change-on-select", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-change-on-select <name>", "nzComponentName", "NzDemoCascaderChangeOnSelectComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom render", "nzSelector", "nz-demo-cascader-custom-render", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-render <name>", "nzComponentName", "NzDemoCascaderCustomRenderComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Load Options Lazily", "nzSelector", "nz-demo-cascader-lazy", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-lazy <name>", "nzComponentName", "NzDemoCascaderLazyComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Modal Dialog", "nzSelector", "nz-demo-cascader-modal", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-modal <name>", "nzComponentName", "NzDemoCascaderModalComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Trigger Action", "nzSelector", "nz-demo-cascader-trigger-action", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-trigger-action <name>", "nzComponentName", "NzDemoCascaderTriggerActionComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Default value and asyc options", "nzSelector", "nz-demo-cascader-default-value-and-asyn-options", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-default-value-and-asyn-options <name>", "nzComponentName", "NzDemoCascaderDefaultValueAndAsynOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Custom option template", "nzSelector", "nz-demo-cascader-custom-template", "nzGenerateCommand", "ng g ng-zorro-antd:cascader-custom-template <name>", "nzComponentName", "NzDemoCascaderCustomTemplateComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-cascader"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-cascader'", 1, "anchor"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoCascaderEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
@@ -3073,13 +3088,13 @@ class NzDemoCascaderEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "When you need to select from a set of associated data set. Such as province/city/district, company level, things classification.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " When you need to select from a set of associated data set. Such as province/city/district, company level, things classification.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "When selecting from a large data set, with multi-stage classification separated for easy selection.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " When selecting from a large data set, with multi-stage classification separated for easy selection.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "Chooses cascade items in one float layer for better user experience.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, " Chooses cascade items in one float layer for better user experience.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "pre", 28);
@@ -4275,8 +4290,8 @@ class NzDemoCascaderChangeOnFunctionComponent {
         return ['hangzhou', 'xihu', 'nanjing', 'zhonghuamen'].indexOf(value) >= 0;
     }
 }
-/** @nocollapse */ NzDemoCascaderChangeOnFunctionComponent.ɵfac = function NzDemoCascaderChangeOnFunctionComponent_Factory(t) { return new (t || NzDemoCascaderChangeOnFunctionComponent)(); };
-/** @nocollapse */ NzDemoCascaderChangeOnFunctionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderChangeOnFunctionComponent, selectors: [["nz-demo-cascader-change-on-function"]], decls: 1, vars: 3, consts: [[3, "nzChangeOn", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderChangeOnFunctionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderChangeOnFunctionComponent.ɵfac = function NzDemoCascaderChangeOnFunctionComponent_Factory(t) { return new (t || NzDemoCascaderChangeOnFunctionComponent)(); };
+NzDemoCascaderChangeOnFunctionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderChangeOnFunctionComponent, selectors: [["nz-demo-cascader-change-on-function"]], decls: 1, vars: 3, consts: [[3, "nzChangeOn", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderChangeOnFunctionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderChangeOnFunctionComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderChangeOnFunctionComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4385,8 +4400,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoCascaderModule {
 }
-/** @nocollapse */ NzDemoCascaderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCascaderModule });
-/** @nocollapse */ NzDemoCascaderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCascaderModule_Factory(t) { return new (t || NzDemoCascaderModule)(); }, imports: [[
+NzDemoCascaderModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoCascaderModule });
+NzDemoCascaderModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoCascaderModule_Factory(t) { return new (t || NzDemoCascaderModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -4521,8 +4536,8 @@ class NzDemoCascaderTriggerActionComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderTriggerActionComponent.ɵfac = function NzDemoCascaderTriggerActionComponent_Factory(t) { return new (t || NzDemoCascaderTriggerActionComponent)(); };
-/** @nocollapse */ NzDemoCascaderTriggerActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderTriggerActionComponent, selectors: [["nz-demo-cascader-trigger-action"]], decls: 1, vars: 4, consts: [[3, "nzTriggerAction", "nzExpandTrigger", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderTriggerActionComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderTriggerActionComponent.ɵfac = function NzDemoCascaderTriggerActionComponent_Factory(t) { return new (t || NzDemoCascaderTriggerActionComponent)(); };
+NzDemoCascaderTriggerActionComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderTriggerActionComponent, selectors: [["nz-demo-cascader-trigger-action"]], decls: 1, vars: 4, consts: [[3, "nzTriggerAction", "nzExpandTrigger", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderTriggerActionComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderTriggerActionComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderTriggerActionComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4616,8 +4631,8 @@ class NzDemoCascaderHoverComponent {
         console.log(values, this.values);
     }
 }
-/** @nocollapse */ NzDemoCascaderHoverComponent.ɵfac = function NzDemoCascaderHoverComponent_Factory(t) { return new (t || NzDemoCascaderHoverComponent)(); };
-/** @nocollapse */ NzDemoCascaderHoverComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderHoverComponent, selectors: [["nz-demo-cascader-hover"]], decls: 1, vars: 3, consts: [[3, "nzExpandTrigger", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderHoverComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderHoverComponent.ɵfac = function NzDemoCascaderHoverComponent_Factory(t) { return new (t || NzDemoCascaderHoverComponent)(); };
+NzDemoCascaderHoverComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderHoverComponent, selectors: [["nz-demo-cascader-hover"]], decls: 1, vars: 3, consts: [[3, "nzExpandTrigger", "nzOptions", "ngModel", "ngModelChange"]], template: function NzDemoCascaderHoverComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-cascader", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoCascaderHoverComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.values = $event; })("ngModelChange", function NzDemoCascaderHoverComponent_Template_nz_cascader_ngModelChange_0_listener($event) { return ctx.onChanges($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -4732,8 +4747,8 @@ class NzDemoCascaderReactiveFormComponent {
         this.changeSubscription.unsubscribe();
     }
 }
-/** @nocollapse */ NzDemoCascaderReactiveFormComponent.ɵfac = function NzDemoCascaderReactiveFormComponent_Factory(t) { return new (t || NzDemoCascaderReactiveFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
-/** @nocollapse */ NzDemoCascaderReactiveFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderReactiveFormComponent, selectors: [["nz-demo-cascader-reactive-form"]], decls: 7, vars: 3, consts: [["novalidate", "", 3, "formGroup"], [3, "nzOptions", "formControlName"], ["nz-button", "", 3, "click"]], template: function NzDemoCascaderReactiveFormComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoCascaderReactiveFormComponent.ɵfac = function NzDemoCascaderReactiveFormComponent_Factory(t) { return new (t || NzDemoCascaderReactiveFormComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"])); };
+NzDemoCascaderReactiveFormComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoCascaderReactiveFormComponent, selectors: [["nz-demo-cascader-reactive-form"]], decls: 7, vars: 3, consts: [["novalidate", "", 3, "formGroup"], [3, "nzOptions", "formControlName"], ["nz-button", "", 3, "click"]], template: function NzDemoCascaderReactiveFormComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "form", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-cascader", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

@@ -37,8 +37,8 @@ class NzDemoTimePickerDisabledPartComponent {
         }
     }
 }
-/** @nocollapse */ NzDemoTimePickerDisabledPartComponent.ɵfac = function NzDemoTimePickerDisabledPartComponent_Factory(t) { return new (t || NzDemoTimePickerDisabledPartComponent)(); };
-/** @nocollapse */ NzDemoTimePickerDisabledPartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerDisabledPartComponent, selectors: [["nz-demo-time-picker-disabled-part"]], decls: 1, vars: 3, consts: [[3, "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds"]], template: function NzDemoTimePickerDisabledPartComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerDisabledPartComponent.ɵfac = function NzDemoTimePickerDisabledPartComponent_Factory(t) { return new (t || NzDemoTimePickerDisabledPartComponent)(); };
+NzDemoTimePickerDisabledPartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerDisabledPartComponent, selectors: [["nz-demo-time-picker-disabled-part"]], decls: 1, vars: 3, consts: [[3, "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds"]], template: function NzDemoTimePickerDisabledPartComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-time-picker", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzDisabledHours", ctx.disabledHours)("nzDisabledMinutes", ctx.disabledMinutes)("nzDisabledSeconds", ctx.disabledSeconds);
@@ -108,8 +108,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimePickerModule {
 }
-/** @nocollapse */ NzDemoTimePickerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimePickerModule });
-/** @nocollapse */ NzDemoTimePickerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimePickerModule_Factory(t) { return new (t || NzDemoTimePickerModule)(); }, imports: [[
+NzDemoTimePickerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzDemoTimePickerModule });
+NzDemoTimePickerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzDemoTimePickerModule_Factory(t) { return new (t || NzDemoTimePickerModule)(); }, imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_2__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_3__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild([
@@ -176,8 +176,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimePickerIntervalOptionsComponent {
 }
-/** @nocollapse */ NzDemoTimePickerIntervalOptionsComponent.ɵfac = function NzDemoTimePickerIntervalOptionsComponent_Factory(t) { return new (t || NzDemoTimePickerIntervalOptionsComponent)(); };
-/** @nocollapse */ NzDemoTimePickerIntervalOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerIntervalOptionsComponent, selectors: [["nz-demo-time-picker-interval-options"]], decls: 1, vars: 2, consts: [[3, "nzMinuteStep", "nzSecondStep"]], template: function NzDemoTimePickerIntervalOptionsComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerIntervalOptionsComponent.ɵfac = function NzDemoTimePickerIntervalOptionsComponent_Factory(t) { return new (t || NzDemoTimePickerIntervalOptionsComponent)(); };
+NzDemoTimePickerIntervalOptionsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerIntervalOptionsComponent, selectors: [["nz-demo-time-picker-interval-options"]], decls: 1, vars: 2, consts: [[3, "nzMinuteStep", "nzSecondStep"]], template: function NzDemoTimePickerIntervalOptionsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-time-picker", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMinuteStep", 15)("nzSecondStep", 10);
@@ -220,8 +220,8 @@ class NzDemoTimePickerUse12HoursComponent {
         console.log(value);
     }
 }
-/** @nocollapse */ NzDemoTimePickerUse12HoursComponent.ɵfac = function NzDemoTimePickerUse12HoursComponent_Factory(t) { return new (t || NzDemoTimePickerUse12HoursComponent)(); };
-/** @nocollapse */ NzDemoTimePickerUse12HoursComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerUse12HoursComponent, selectors: [["nz-demo-time-picker-use12-hours"]], decls: 2, vars: 4, consts: [[3, "ngModel", "nzUse12Hours", "ngModelChange"], ["nzFormat", "h:mm a", 3, "ngModel", "nzUse12Hours", "ngModelChange"]], template: function NzDemoTimePickerUse12HoursComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerUse12HoursComponent.ɵfac = function NzDemoTimePickerUse12HoursComponent_Factory(t) { return new (t || NzDemoTimePickerUse12HoursComponent)(); };
+NzDemoTimePickerUse12HoursComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerUse12HoursComponent, selectors: [["nz-demo-time-picker-use12-hours"]], decls: 2, vars: 4, consts: [[3, "ngModel", "nzUse12Hours", "ngModelChange"], ["nzFormat", "h:mm a", 3, "ngModel", "nzUse12Hours", "ngModelChange"]], template: function NzDemoTimePickerUse12HoursComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerUse12HoursComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; })("ngModelChange", function NzDemoTimePickerUse12HoursComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.log($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -318,13 +318,13 @@ class NzDemoTimePickerZhComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTimePickerZhComponent.ɵfac = function NzDemoTimePickerZhComponent_Factory(t) { return new (t || NzDemoTimePickerZhComponent)(); };
-/** @nocollapse */ NzDemoTimePickerZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerZhComponent, selectors: [["nz-demo-time-picker"]], viewQuery: function NzDemoTimePickerZhComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerZhComponent.ɵfac = function NzDemoTimePickerZhComponent_Factory(t) { return new (t || NzDemoTimePickerZhComponent)(); };
+NzDemoTimePickerZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerZhComponent, selectors: [["nz-demo-time-picker"]], viewQuery: function NzDemoTimePickerZhComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 496, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-time-picker-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-time-picker-demo-value", "nzTitle", "\u6570\u636E\u7ED1\u5B9A"], ["nzHref", "#components-time-picker-demo-size", "nzTitle", "\u4E09\u79CD\u5927\u5C0F"], ["nzHref", "#components-time-picker-demo-disabled", "nzTitle", "\u7981\u7528"], ["nzHref", "#components-time-picker-demo-hide-column", "nzTitle", "\u9009\u62E9\u65F6\u5206"], ["nzHref", "#components-time-picker-demo-interval-options", "nzTitle", "\u6B65\u957F\u9009\u9879"], ["nzHref", "#components-time-picker-demo-addon", "nzTitle", "\u9644\u52A0\u5185\u5BB9"], ["nzHref", "#components-time-picker-demo-disabled-part", "nzTitle", "\u7981\u7528\u90E8\u5206"], ["nzHref", "#components-time-picker-demo-use12-hours", "nzTitle", "12\u5C0F\u65F6\u5236"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/time-picker/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-time-picker-basic", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-basic <name>", "nzComponentName", "NzDemoTimePickerBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4E09\u79CD\u5927\u5C0F", "nzSelector", "nz-demo-time-picker-size", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-size <name>", "nzComponentName", "NzDemoTimePickerSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9009\u62E9\u65F6\u5206", "nzSelector", "nz-demo-time-picker-hide-column", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-hide-column <name>", "nzComponentName", "NzDemoTimePickerHideColumnComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9644\u52A0\u5185\u5BB9", "nzSelector", "nz-demo-time-picker-addon", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-addon <name>", "nzComponentName", "NzDemoTimePickerAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "12\u5C0F\u65F6\u5236", "nzSelector", "nz-demo-time-picker-use12-hours", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-use12-hours <name>", "nzComponentName", "NzDemoTimePickerUse12HoursComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6570\u636E\u7ED1\u5B9A", "nzSelector", "nz-demo-time-picker-value", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-value <name>", "nzComponentName", "NzDemoTimePickerValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528", "nzSelector", "nz-demo-time-picker-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled <name>", "nzComponentName", "NzDemoTimePickerDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6B65\u957F\u9009\u9879", "nzSelector", "nz-demo-time-picker-interval-options", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-interval-options <name>", "nzComponentName", "NzDemoTimePickerIntervalOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528\u90E8\u5206", "nzSelector", "nz-demo-time-picker-disabled-part", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled-part <name>", "nzComponentName", "NzDemoTimePickerDisabledPartComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-time-picker"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-time-picker'", 1, "anchor"], ["href", "https://angular.io/api/common/DatePipe", "target", "_blank", "rel", "noopener"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoTimePickerZhComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 494, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-time-picker-demo-basic", "nzTitle", "\u57FA\u672C"], ["nzHref", "#components-time-picker-demo-value", "nzTitle", "\u6570\u636E\u7ED1\u5B9A"], ["nzHref", "#components-time-picker-demo-size", "nzTitle", "\u4E09\u79CD\u5927\u5C0F"], ["nzHref", "#components-time-picker-demo-disabled", "nzTitle", "\u7981\u7528"], ["nzHref", "#components-time-picker-demo-hide-column", "nzTitle", "\u9009\u62E9\u65F6\u5206"], ["nzHref", "#components-time-picker-demo-interval-options", "nzTitle", "\u6B65\u957F\u9009\u9879"], ["nzHref", "#components-time-picker-demo-addon", "nzTitle", "\u9644\u52A0\u5185\u5BB9"], ["nzHref", "#components-time-picker-demo-disabled-part", "nzTitle", "\u7981\u7528\u90E8\u5206"], ["nzHref", "#components-time-picker-demo-use12-hours", "nzTitle", "12\u5C0F\u65F6\u5236"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/time-picker/doc/index.zh-CN.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "\u4F55\u65F6\u4F7F\u7528"], ["onclick", "window.location.hash = '\u4F55\u65F6\u4F7F\u7528'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "\u5C55\u5F00\u5168\u90E8\u4EE3\u7801", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "\u57FA\u672C", "nzSelector", "nz-demo-time-picker-basic", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-basic <name>", "nzComponentName", "NzDemoTimePickerBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "\u4E09\u79CD\u5927\u5C0F", "nzSelector", "nz-demo-time-picker-size", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-size <name>", "nzComponentName", "NzDemoTimePickerSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9009\u62E9\u65F6\u5206", "nzSelector", "nz-demo-time-picker-hide-column", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-hide-column <name>", "nzComponentName", "NzDemoTimePickerHideColumnComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u9644\u52A0\u5185\u5BB9", "nzSelector", "nz-demo-time-picker-addon", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-addon <name>", "nzComponentName", "NzDemoTimePickerAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "12\u5C0F\u65F6\u5236", "nzSelector", "nz-demo-time-picker-use12-hours", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-use12-hours <name>", "nzComponentName", "NzDemoTimePickerUse12HoursComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6570\u636E\u7ED1\u5B9A", "nzSelector", "nz-demo-time-picker-value", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-value <name>", "nzComponentName", "NzDemoTimePickerValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528", "nzSelector", "nz-demo-time-picker-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled <name>", "nzComponentName", "NzDemoTimePickerDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u6B65\u957F\u9009\u9879", "nzSelector", "nz-demo-time-picker-interval-options", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-interval-options <name>", "nzComponentName", "NzDemoTimePickerIntervalOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "\u7981\u7528\u90E8\u5206", "nzSelector", "nz-demo-time-picker-disabled-part", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled-part <name>", "nzComponentName", "NzDemoTimePickerDisabledPartComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-time-picker"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-time-picker'", 1, "anchor"], ["href", "https://angular.io/api/common/DatePipe", "target", "_blank", "rel", "noopener"], ["id", "\u65B9\u6CD5"], ["onclick", "window.location.hash = '\u65B9\u6CD5'", 1, "anchor"]], template: function NzDemoTimePickerZhComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -1042,7 +1042,8 @@ class NzDemoTimePickerZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](440, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](441, "string");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](442, " | ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](442, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](443, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](444, "TemplateRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1050,84 +1051,81 @@ class NzDemoTimePickerZhComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](445, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](446, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](447, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](448, "\u2705");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](447, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](448, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](449, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](450, "(ngModelChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](449, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](450, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](451, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](452, "(ngModelChange)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](451, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](452, "\u65F6\u95F4\u53D1\u751F\u53D8\u5316\u7684\u56DE\u8C03");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](453, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](454, "\u65F6\u95F4\u53D1\u751F\u53D8\u5316\u7684\u56DE\u8C03");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](455, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](456, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](457, "EventEmitter<Date>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](454, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](455, "EventEmitter<Date>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](458, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](459, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](456, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](457, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](460, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](458, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](461, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](462, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](463, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](464, "(nzOpenChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](459, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](461, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](462, "(nzOpenChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](463, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](464, "\u9762\u677F\u6253\u5F00/\u5173\u95ED\u65F6\u7684\u56DE\u8C03");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](465, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](466, "\u9762\u677F\u6253\u5F00/\u5173\u95ED\u65F6\u7684\u56DE\u8C03");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](467, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](468, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](469, "EventEmitter<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](466, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](467, "EventEmitter<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](470, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](471, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](468, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](469, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](472, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](470, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](473, "h4", 48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](475, "\u65B9\u6CD5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "h4", 48);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](472, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, "\u65B9\u6CD5");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "a", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](477, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "a", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](475, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](478, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](479, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](480, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](477, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](478, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](479, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](480, "\u540D\u79F0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](481, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](482, "\u540D\u79F0");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](484, "\u63CF\u8FF0");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](482, "\u63CF\u8FF0");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](485, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](484, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](485, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](486, "blur()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](487, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "blur()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "\u79FB\u9664\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "\u79FB\u9664\u7126\u70B9");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](491, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](490, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](491, "focus()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](492, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](493, "focus()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](494, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](495, "\u83B7\u53D6\u7126\u70B9");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](493, "\u83B7\u53D6\u7126\u70B9");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1202,8 +1200,8 @@ class NzDemoTimePickerSizeComponent {
         this.time = new Date();
     }
 }
-/** @nocollapse */ NzDemoTimePickerSizeComponent.ɵfac = function NzDemoTimePickerSizeComponent_Factory(t) { return new (t || NzDemoTimePickerSizeComponent)(); };
-/** @nocollapse */ NzDemoTimePickerSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerSizeComponent, selectors: [["nz-demo-time-picker-size"]], decls: 3, vars: 3, consts: [["nzSize", "large", 3, "ngModel", "ngModelChange"], [3, "ngModel", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerSizeComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerSizeComponent.ɵfac = function NzDemoTimePickerSizeComponent_Factory(t) { return new (t || NzDemoTimePickerSizeComponent)(); };
+NzDemoTimePickerSizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerSizeComponent, selectors: [["nz-demo-time-picker-size"]], decls: 3, vars: 3, consts: [["nzSize", "large", 3, "ngModel", "ngModelChange"], [3, "ngModel", "ngModelChange"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerSizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerSizeComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1267,8 +1265,8 @@ class NzDemoTimePickerValueComponent {
         console.log(time && time.toTimeString());
     }
 }
-/** @nocollapse */ NzDemoTimePickerValueComponent.ɵfac = function NzDemoTimePickerValueComponent_Factory(t) { return new (t || NzDemoTimePickerValueComponent)(); };
-/** @nocollapse */ NzDemoTimePickerValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerValueComponent, selectors: [["nz-demo-time-picker-value"]], decls: 1, vars: 1, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerValueComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerValueComponent.ɵfac = function NzDemoTimePickerValueComponent_Factory(t) { return new (t || NzDemoTimePickerValueComponent)(); };
+NzDemoTimePickerValueComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerValueComponent, selectors: [["nz-demo-time-picker-value"]], decls: 1, vars: 1, consts: [[3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerValueComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerValueComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; })("ngModelChange", function NzDemoTimePickerValueComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.log($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1352,13 +1350,13 @@ class NzDemoTimePickerEnComponent {
         });
     }
 }
-/** @nocollapse */ NzDemoTimePickerEnComponent.ɵfac = function NzDemoTimePickerEnComponent_Factory(t) { return new (t || NzDemoTimePickerEnComponent)(); };
-/** @nocollapse */ NzDemoTimePickerEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerEnComponent, selectors: [["nz-demo-time-picker"]], viewQuery: function NzDemoTimePickerEnComponent_Query(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerEnComponent.ɵfac = function NzDemoTimePickerEnComponent_Factory(t) { return new (t || NzDemoTimePickerEnComponent)(); };
+NzDemoTimePickerEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerEnComponent, selectors: [["nz-demo-time-picker"]], viewQuery: function NzDemoTimePickerEnComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_share_codebox_codebox_component__WEBPACK_IMPORTED_MODULE_1__["NzCodeBoxComponent"], true);
     } if (rf & 2) {
-        var _t;
+        let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.codeBoxes = _t);
-    } }, decls: 493, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-time-picker-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-time-picker-demo-value", "nzTitle", "Data binding"], ["nzHref", "#components-time-picker-demo-size", "nzTitle", "Three Sizes"], ["nzHref", "#components-time-picker-demo-disabled", "nzTitle", "disabled"], ["nzHref", "#components-time-picker-demo-hide-column", "nzTitle", "Hour and minute"], ["nzHref", "#components-time-picker-demo-interval-options", "nzTitle", "interval option"], ["nzHref", "#components-time-picker-demo-addon", "nzTitle", "Addon"], ["nzHref", "#components-time-picker-demo-disabled-part", "nzTitle", "disabled part"], ["nzHref", "#components-time-picker-demo-use12-hours", "nzTitle", "12 hours"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/time-picker/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-time-picker-basic", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-basic <name>", "nzComponentName", "NzDemoTimePickerBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Three Sizes", "nzSelector", "nz-demo-time-picker-size", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-size <name>", "nzComponentName", "NzDemoTimePickerSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Hour and minute", "nzSelector", "nz-demo-time-picker-hide-column", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-hide-column <name>", "nzComponentName", "NzDemoTimePickerHideColumnComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Addon", "nzSelector", "nz-demo-time-picker-addon", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-addon <name>", "nzComponentName", "NzDemoTimePickerAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "12 hours", "nzSelector", "nz-demo-time-picker-use12-hours", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-use12-hours <name>", "nzComponentName", "NzDemoTimePickerUse12HoursComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Data binding", "nzSelector", "nz-demo-time-picker-value", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-value <name>", "nzComponentName", "NzDemoTimePickerValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "disabled", "nzSelector", "nz-demo-time-picker-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled <name>", "nzComponentName", "NzDemoTimePickerDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "interval option", "nzSelector", "nz-demo-time-picker-interval-options", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-interval-options <name>", "nzComponentName", "NzDemoTimePickerIntervalOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "disabled part", "nzSelector", "nz-demo-time-picker-disabled-part", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled-part <name>", "nzComponentName", "NzDemoTimePickerDisabledPartComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-time-picker"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-time-picker'", 1, "anchor"], ["href", "https://angular.io/api/common/DatePipe", "target", "_blank", "rel", "noopener"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoTimePickerEnComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, decls: 491, vars: 43, consts: [[1, "toc-affix", 3, "nzOffsetTop"], ["nzShowInkInFixed", "", 3, "nzAffix", "nzClick"], ["nzHref", "#components-time-picker-demo-basic", "nzTitle", "Basic"], ["nzHref", "#components-time-picker-demo-value", "nzTitle", "Data binding"], ["nzHref", "#components-time-picker-demo-size", "nzTitle", "Three Sizes"], ["nzHref", "#components-time-picker-demo-disabled", "nzTitle", "disabled"], ["nzHref", "#components-time-picker-demo-hide-column", "nzTitle", "Hour and minute"], ["nzHref", "#components-time-picker-demo-interval-options", "nzTitle", "interval option"], ["nzHref", "#components-time-picker-demo-addon", "nzTitle", "Addon"], ["nzHref", "#components-time-picker-demo-disabled-part", "nzTitle", "disabled part"], ["nzHref", "#components-time-picker-demo-use12-hours", "nzTitle", "12 hours"], ["nzHref", "#api", "nzTitle", "API"], [1, "markdown"], [1, "subtitle"], [1, "widget"], ["aria-label", "Edit this page on Github", "href", "https://github.com/NG-ZORRO/ng-zorro-antd/edit/master/components/time-picker/doc/index.en-US.md", "target", "_blank", "rel", "noopener noreferrer", 1, "edit-button"], ["nz-icon", "", "nzType", "edit"], ["id", "when-to-use"], ["onclick", "window.location.hash = 'when-to-use'", 1, "anchor"], [1, "language-ts"], [1, "token", "keyword"], [1, "token", "punctuation"], [1, "token", "string"], ["nz-icon", "", "nzType", "appstore", "nz-tooltip", "", "nzTooltipTitle", "Expand All Code", 1, "code-box-expand-trigger", 3, "click"], ["nz-row", "", 3, "nzGutter"], ["nz-col", "", 3, "nzXl", "nzSpan"], ["nzTitle", "Basic", "nzSelector", "nz-demo-time-picker-basic", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-basic <name>", "nzComponentName", "NzDemoTimePickerBasicComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["demo", ""], ["intro", ""], ["nzTitle", "Three Sizes", "nzSelector", "nz-demo-time-picker-size", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-size <name>", "nzComponentName", "NzDemoTimePickerSizeComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Hour and minute", "nzSelector", "nz-demo-time-picker-hide-column", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-hide-column <name>", "nzComponentName", "NzDemoTimePickerHideColumnComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Addon", "nzSelector", "nz-demo-time-picker-addon", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-addon <name>", "nzComponentName", "NzDemoTimePickerAddonComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "12 hours", "nzSelector", "nz-demo-time-picker-use12-hours", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-use12-hours <name>", "nzComponentName", "NzDemoTimePickerUse12HoursComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "Data binding", "nzSelector", "nz-demo-time-picker-value", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-value <name>", "nzComponentName", "NzDemoTimePickerValueComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "disabled", "nzSelector", "nz-demo-time-picker-disabled", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled <name>", "nzComponentName", "NzDemoTimePickerDisabledComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "interval option", "nzSelector", "nz-demo-time-picker-interval-options", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-interval-options <name>", "nzComponentName", "NzDemoTimePickerIntervalOptionsComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], ["nzTitle", "disabled part", "nzSelector", "nz-demo-time-picker-disabled-part", "nzGenerateCommand", "ng g ng-zorro-antd:time-picker-disabled-part <name>", "nzComponentName", "NzDemoTimePickerDisabledPartComponent", "nzIframeSource", "null", 3, "nzId", "nzLink", "nzIframeHeight", "nzHref"], [1, "markdown", "api-container"], ["id", "api"], ["onclick", "window.location.hash = 'api'", 1, "anchor"], [1, "language-html"], [1, "token", "tag"], [1, "token", "attr-name"], [1, "token", "attr-value"], ["id", "nz-time-picker"], [1, "api-type-label", "component"], ["onclick", "window.location.hash = 'nz-time-picker'", 1, "anchor"], ["href", "https://angular.io/api/common/DatePipe", "target", "_blank", "rel", "noopener"], ["id", "methods"], ["onclick", "window.location.hash = 'methods'", 1, "anchor"]], template: function NzDemoTimePickerEnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "article");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-affix", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "nz-anchor", 1);
@@ -2071,7 +2069,8 @@ class NzDemoTimePickerEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](437, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](438, "string");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](439, " | ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](439, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](440, "code");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](441, "TemplateRef");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2079,84 +2078,81 @@ class NzDemoTimePickerEnComponent {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](442, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](443, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](445, "\u2705");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](444, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](445, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](447, "(ngModelChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](446, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](447, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](448, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](449, "(ngModelChange)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](448, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](449, "a callback function, can be executed when the selected time is changing");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](450, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](451, "a callback function, can be executed when the selected time is changing");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](452, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](453, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](454, "EventEmitter<Date>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](451, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](452, "EventEmitter<Date>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](455, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](456, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](453, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](454, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](457, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](455, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](458, "tr");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](459, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](461, "(nzOpenChange)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](456, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](457, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](458, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](459, "(nzOpenChange)");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](460, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](461, "a callback function which will be called while panel opening/closing");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](462, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](463, "a callback function which will be called while panel opening/closing");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](464, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](465, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](466, "EventEmitter<boolean>");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](463, "code");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](464, "EventEmitter<boolean>");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](467, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](468, "-");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](465, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](466, "-");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](469, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](467, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](470, "h4", 48);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "span");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](472, "Methods");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](468, "h4", 48);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](469, "span");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](470, "Methods");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](473, "a", 49);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](474, "#");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](471, "a", 49);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](472, "#");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "table");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "thead");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](477, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](473, "table");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](476, "th");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](477, "Name");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](478, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](479, "Name");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](480, "th");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](481, "Description");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](479, "Description");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](482, "tbody");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](483, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](480, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](481, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](482, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](483, "blur()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](484, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](485, "blur()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](487, "remove focus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](485, "remove focus");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](488, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](486, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](487, "td");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](488, "focus()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](489, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "focus()");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](491, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](492, "get focus");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](490, "get focus");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2232,8 +2228,8 @@ class NzDemoTimePickerBasicComponent {
         this.defaultOpenValue = new Date(0, 0, 0, 0, 0, 0);
     }
 }
-/** @nocollapse */ NzDemoTimePickerBasicComponent.ɵfac = function NzDemoTimePickerBasicComponent_Factory(t) { return new (t || NzDemoTimePickerBasicComponent)(); };
-/** @nocollapse */ NzDemoTimePickerBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerBasicComponent, selectors: [["nz-demo-time-picker-basic"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzDefaultOpenValue", "ngModelChange"]], template: function NzDemoTimePickerBasicComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerBasicComponent.ɵfac = function NzDemoTimePickerBasicComponent_Factory(t) { return new (t || NzDemoTimePickerBasicComponent)(); };
+NzDemoTimePickerBasicComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerBasicComponent, selectors: [["nz-demo-time-picker-basic"]], decls: 1, vars: 2, consts: [[3, "ngModel", "nzDefaultOpenValue", "ngModelChange"]], template: function NzDemoTimePickerBasicComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerBasicComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2286,8 +2282,8 @@ class NzDemoTimePickerAddonComponent {
         this.time = null;
     }
 }
-/** @nocollapse */ NzDemoTimePickerAddonComponent.ɵfac = function NzDemoTimePickerAddonComponent_Factory(t) { return new (t || NzDemoTimePickerAddonComponent)(); };
-/** @nocollapse */ NzDemoTimePickerAddonComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerAddonComponent, selectors: [["nz-demo-time-picker-addon"]], decls: 4, vars: 2, consts: [[3, "ngModel", "nzAddOn", "ngModelChange"], ["timePicker", ""], ["addOnTemplate", ""], ["nz-button", "", "nzSize", "small", "nzType", "primary", 3, "click"]], template: function NzDemoTimePickerAddonComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerAddonComponent.ɵfac = function NzDemoTimePickerAddonComponent_Factory(t) { return new (t || NzDemoTimePickerAddonComponent)(); };
+NzDemoTimePickerAddonComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerAddonComponent, selectors: [["nz-demo-time-picker-addon"]], decls: 4, vars: 2, consts: [[3, "ngModel", "nzAddOn", "ngModelChange"], ["timePicker", ""], ["addOnTemplate", ""], ["nz-button", "", "nzSize", "small", "nzType", "primary", 3, "click"]], template: function NzDemoTimePickerAddonComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerAddonComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2353,8 +2349,8 @@ class NzDemoTimePickerHideColumnComponent {
         this.time = new Date();
     }
 }
-/** @nocollapse */ NzDemoTimePickerHideColumnComponent.ɵfac = function NzDemoTimePickerHideColumnComponent_Factory(t) { return new (t || NzDemoTimePickerHideColumnComponent)(); };
-/** @nocollapse */ NzDemoTimePickerHideColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerHideColumnComponent, selectors: [["nz-demo-time-picker-hide-column"]], decls: 1, vars: 1, consts: [["nzFormat", "HH:mm", 3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerHideColumnComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerHideColumnComponent.ɵfac = function NzDemoTimePickerHideColumnComponent_Factory(t) { return new (t || NzDemoTimePickerHideColumnComponent)(); };
+NzDemoTimePickerHideColumnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerHideColumnComponent, selectors: [["nz-demo-time-picker-hide-column"]], decls: 1, vars: 1, consts: [["nzFormat", "HH:mm", 3, "ngModel", "ngModelChange"]], template: function NzDemoTimePickerHideColumnComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-time-picker", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoTimePickerHideColumnComponent_Template_nz_time_picker_ngModelChange_0_listener($event) { return ctx.time = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -2391,8 +2387,8 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTimePickerDisabledComponent {
 }
-/** @nocollapse */ NzDemoTimePickerDisabledComponent.ɵfac = function NzDemoTimePickerDisabledComponent_Factory(t) { return new (t || NzDemoTimePickerDisabledComponent)(); };
-/** @nocollapse */ NzDemoTimePickerDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerDisabledComponent, selectors: [["nz-demo-time-picker-disabled"]], decls: 1, vars: 0, consts: [["nzDisabled", ""]], template: function NzDemoTimePickerDisabledComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTimePickerDisabledComponent.ɵfac = function NzDemoTimePickerDisabledComponent_Factory(t) { return new (t || NzDemoTimePickerDisabledComponent)(); };
+NzDemoTimePickerDisabledComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoTimePickerDisabledComponent, selectors: [["nz-demo-time-picker-disabled"]], decls: 1, vars: 0, consts: [["nzDisabled", ""]], template: function NzDemoTimePickerDisabledComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "nz-time-picker", 0);
     } }, directives: [ng_zorro_antd_time_picker__WEBPACK_IMPORTED_MODULE_1__["NzTimePickerComponent"]], encapsulation: 2 });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](NzDemoTimePickerDisabledComponent, [{
