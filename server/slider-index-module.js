@@ -1030,23 +1030,37 @@ const _c0 = function () { return [20, 50]; };
 class NzDemoSliderReverseComponent {
     constructor() {
         this.reverse = true;
+        this.marks = {
+            0: '0°C',
+            26: '26°C',
+            37: '37°C',
+            100: {
+                style: {
+                    color: '#f50'
+                },
+                label: '<strong>100°C</strong>'
+            }
+        };
     }
 }
 NzDemoSliderReverseComponent.ɵfac = function NzDemoSliderReverseComponent_Factory(t) { return new (t || NzDemoSliderReverseComponent)(); };
-NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 5, vars: 6, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoSliderReverseComponent, selectors: [["nz-demo-slider-reverse"]], decls: 6, vars: 9, consts: [[3, "ngModel", "nzReverse"], ["nzRange", "", 3, "ngModel", "nzReverse"], [3, "nzMarks", "ngModel", "nzReverse"], ["nzSize", "small", 3, "ngModel", "ngModelChange"]], template: function NzDemoSliderReverseComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "nz-slider", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "nz-slider", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " Reversed: ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "nz-switch", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderReverseComponent_Template_nz_switch_ngModelChange_4_listener($event) { return ctx.reverse = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "nz-slider", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Reversed: ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-switch", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function NzDemoSliderReverseComponent_Template_nz_switch_ngModelChange_5_listener($event) { return ctx.reverse = $event; });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", 30)("nzReverse", ctx.reverse);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0))("nzReverse", ctx.reverse);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](8, _c0))("nzReverse", ctx.reverse);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzMarks", ctx.marks)("ngModel", 30)("nzReverse", ctx.reverse);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.reverse);
     } }, directives: [ng_zorro_antd_slider__WEBPACK_IMPORTED_MODULE_1__["NzSliderComponent"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], ng_zorro_antd_switch__WEBPACK_IMPORTED_MODULE_3__["NzSwitchComponent"]], styles: ["h4[_ngcontent-%COMP%] {\n        margin: 0 0 16px;\n      }\n\n      .ant-slider-with-marks[_ngcontent-%COMP%] {\n        margin-bottom: 44px;\n      }"] });
@@ -1058,7 +1072,9 @@ NzDemoSliderReverseComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__[
     <div>
       <nz-slider [ngModel]="30" [nzReverse]="reverse"></nz-slider>
       <nz-slider nzRange [ngModel]="[20, 50]" [nzReverse]="reverse"></nz-slider>
-      Reversed: <nz-switch nzSize="small" [(ngModel)]="reverse"></nz-switch>
+      <nz-slider [nzMarks]="marks" [ngModel]="30" [nzReverse]="reverse"></nz-slider>
+      Reversed:
+      <nz-switch nzSize="small" [(ngModel)]="reverse"></nz-switch>
     </div>
   `,
                 styles: [

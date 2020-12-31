@@ -55,23 +55,23 @@ __webpack_require__.r(__webpack_exports__);
 const _c0 = ["handle"];
 const _c1 = ["slider"];
 function NzSliderComponent_nz_slider_step_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-step", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-step", 6);
 } if (rf & 2) {
     const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r1.nzVertical)("lowerBound", ctx_r1.bounds.lower)("upperBound", ctx_r1.bounds.upper)("marksArray", ctx_r1.marksArray)("included", ctx_r1.nzIncluded);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r1.nzVertical)("min", ctx_r1.nzMin)("max", ctx_r1.nzMax)("lowerBound", ctx_r1.bounds.lower)("upperBound", ctx_r1.bounds.upper)("marksArray", ctx_r1.marksArray)("included", ctx_r1.nzIncluded)("reverse", ctx_r1.nzReverse);
 } }
 function NzSliderComponent_nz_slider_handle_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-handle", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-handle", 7);
 } if (rf & 2) {
     const handle_r4 = ctx.$implicit;
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r2.nzVertical)("reverse", ctx_r2.nzReverse)("offset", handle_r4.offset)("value", handle_r4.value)("active", handle_r4.active)("tooltipFormatter", ctx_r2.nzTipFormatter)("tooltipVisible", ctx_r2.nzTooltipVisible)("tooltipPlacement", ctx_r2.nzTooltipPlacement)("dir", ctx_r2.dir);
 } }
 function NzSliderComponent_nz_slider_marks_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-marks", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-marks", 6);
 } if (rf & 2) {
     const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r3.nzVertical)("min", ctx_r3.nzMin)("max", ctx_r3.nzMax)("lowerBound", ctx_r3.bounds.lower)("upperBound", ctx_r3.bounds.upper)("marksArray", ctx_r3.marksArray)("included", ctx_r3.nzIncluded);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r3.nzVertical)("min", ctx_r3.nzMin)("max", ctx_r3.nzMax)("lowerBound", ctx_r3.bounds.lower)("upperBound", ctx_r3.bounds.upper)("marksArray", ctx_r3.marksArray)("included", ctx_r3.nzIncluded)("reverse", ctx_r3.nzReverse);
 } }
 function NzSliderMarksComponent_span_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "span", 2);
@@ -607,13 +607,13 @@ NzSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefine
                 multi: true
             },
             NzSliderService
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 17, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse", "dir"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", 4, "ngIf"], [3, "vertical", "lowerBound", "upperBound", "marksArray", "included"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 17, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse", "dir"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "nz-slider-track", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, NzSliderComponent_nz_slider_step_4_Template, 1, 5, "nz-slider-step", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](4, NzSliderComponent_nz_slider_step_4_Template, 1, 8, "nz-slider-step", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, NzSliderComponent_nz_slider_handle_5_Template, 1, 9, "nz-slider-handle", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, NzSliderComponent_nz_slider_marks_6_Template, 1, 7, "nz-slider-marks", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](6, NzSliderComponent_nz_slider_marks_6_Template, 1, 8, "nz-slider-marks", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("ant-slider-rtl", ctx.dir === "rtl")("ant-slider-disabled", ctx.nzDisabled)("ant-slider-vertical", ctx.nzVertical)("ant-slider-with-marks", ctx.marksArray);
@@ -742,11 +742,11 @@ class NzSliderMarksComponent {
         this.marks = [];
     }
     ngOnChanges(changes) {
-        const { marksArray, lowerBound, upperBound } = changes;
-        if (marksArray) {
+        const { marksArray, lowerBound, upperBound, reverse } = changes;
+        if (marksArray || reverse) {
             this.buildMarks();
         }
-        if (marksArray || lowerBound || upperBound) {
+        if (marksArray || lowerBound || upperBound || reverse) {
             this.togglePointActive();
         }
     }
@@ -771,16 +771,17 @@ class NzSliderMarksComponent {
     }
     getMarkStyles(value, range, config) {
         let style;
+        const markValue = this.reverse ? this.max + this.min - value : value;
         if (this.vertical) {
             style = {
                 marginBottom: '-50%',
-                bottom: `${((value - this.min) / range) * 100}%`
+                bottom: `${((markValue - this.min) / range) * 100}%`
             };
         }
         else {
             style = {
                 transform: `translate3d(-50%, 0, 0)`,
-                left: `${((value - this.min) / range) * 100}%`
+                left: `${((markValue - this.min) / range) * 100}%`
             };
         }
         if (isConfigObject(config) && config.style) {
@@ -799,7 +800,7 @@ class NzSliderMarksComponent {
     }
 }
 NzSliderMarksComponent.ɵfac = function NzSliderMarksComponent_Factory(t) { return new (t || NzSliderMarksComponent)(); };
-NzSliderMarksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderMarksComponent, selectors: [["nz-slider-marks"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included", min: "min", max: "max" }, exportAs: ["nzSliderMarks"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-mark"], ["class", "ant-slider-mark-text", 3, "ant-slider-mark-active", "ngStyle", "innerHTML", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-mark-text", 3, "ngStyle", "innerHTML"]], template: function NzSliderMarksComponent_Template(rf, ctx) { if (rf & 1) {
+NzSliderMarksComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderMarksComponent, selectors: [["nz-slider-marks"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included", min: "min", max: "max", reverse: "reverse" }, exportAs: ["nzSliderMarks"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-mark"], ["class", "ant-slider-mark-text", 3, "ant-slider-mark-active", "ngStyle", "innerHTML", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-mark-text", 3, "ngStyle", "innerHTML"]], template: function NzSliderMarksComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, NzSliderMarksComponent_span_1_Template, 1, 4, "span", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
@@ -814,7 +815,8 @@ NzSliderMarksComponent.propDecorators = {
     min: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     max: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
-    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
+    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
@@ -842,10 +844,11 @@ class NzSliderStepComponent {
         this.steps = [];
     }
     ngOnChanges(changes) {
-        if (changes.marksArray) {
+        const { marksArray, lowerBound, upperBound, reverse } = changes;
+        if (marksArray || reverse) {
             this.buildSteps();
         }
-        if (changes.marksArray || changes.lowerBound || changes.upperBound) {
+        if (marksArray || lowerBound || upperBound || reverse) {
             this.togglePointActive();
         }
     }
@@ -855,7 +858,12 @@ class NzSliderStepComponent {
     buildSteps() {
         const orient = this.vertical ? 'bottom' : 'left';
         this.steps = this.marksArray.map(mark => {
-            const { value, offset, config } = mark;
+            const { value, config } = mark;
+            let offset = mark.offset;
+            const range = this.max - this.min;
+            if (this.reverse) {
+                offset = ((this.max - value) / range) * 100;
+            }
             return {
                 value,
                 offset,
@@ -878,7 +886,7 @@ class NzSliderStepComponent {
     }
 }
 NzSliderStepComponent.ɵfac = function NzSliderStepComponent_Factory(t) { return new (t || NzSliderStepComponent)(); };
-NzSliderStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderStepComponent, selectors: [["nz-slider-step"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included" }, exportAs: ["nzSliderStep"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-step"], ["class", "ant-slider-dot", 3, "ant-slider-dot-active", "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-dot", 3, "ngStyle"]], template: function NzSliderStepComponent_Template(rf, ctx) { if (rf & 1) {
+NzSliderStepComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzSliderStepComponent, selectors: [["nz-slider-step"]], inputs: { lowerBound: "lowerBound", upperBound: "upperBound", marksArray: "marksArray", vertical: "vertical", included: "included", min: "min", max: "max", reverse: "reverse" }, exportAs: ["nzSliderStep"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 2, consts: [[1, "ant-slider-step"], ["class", "ant-slider-dot", 3, "ant-slider-dot-active", "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-dot", 3, "ngStyle"]], template: function NzSliderStepComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, NzSliderStepComponent_span_1_Template, 1, 3, "span", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
@@ -890,8 +898,11 @@ NzSliderStepComponent.propDecorators = {
     lowerBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     upperBound: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     marksArray: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    min: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    max: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     vertical: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
-    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
+    included: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    reverse: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["InputBoolean"])(),
@@ -1070,10 +1081,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
       <nz-slider-step
         *ngIf="marksArray"
         [vertical]="nzVertical"
+        [min]="nzMin"
+        [max]="nzMax"
         [lowerBound]="$any(bounds.lower)"
         [upperBound]="$any(bounds.upper)"
         [marksArray]="marksArray"
         [included]="nzIncluded"
+        [reverse]="nzReverse"
       ></nz-slider-step>
       <nz-slider-handle
         *ngFor="let handle of handles"
@@ -1096,6 +1110,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [upperBound]="$any(bounds.upper)"
         [marksArray]="marksArray"
         [included]="nzIncluded"
+        [reverse]="nzReverse"
       ></nz-slider-marks>
     </div>
   `
@@ -1155,8 +1170,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [class.ant-slider-mark-active]="attr.active"
         [ngStyle]="attr.style!"
         [innerHTML]="attr.label"
-      >
-      </span>
+      ></span>
     </div>
   `
             }]
@@ -1174,6 +1188,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], max: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], reverse: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderStepComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
@@ -1190,8 +1206,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         *ngFor="let mark of steps; trackBy: trackById"
         [class.ant-slider-dot-active]="mark.active"
         [ngStyle]="mark.style!"
-      >
-      </span>
+      ></span>
     </div>
   `
             }]
@@ -1204,6 +1219,12 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         }], vertical: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], included: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], min: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], max: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], reverse: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzSliderTrackComponent, [{

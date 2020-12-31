@@ -360,7 +360,7 @@ const _c9 = function () { return { visible: true }; };
 function NzTabSetComponent_nz_tabs_nav_0_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzTabSetComponent_nz_tabs_nav_0_div_1_Template_div_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const tab_r3 = ctx.$implicit; const i_r4 = ctx.index; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r12.clickNavItem(tab_r3, i_r4); })("contextmenu", function NzTabSetComponent_nz_tabs_nav_0_div_1_Template_div_contextmenu_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const tab_r3 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r14.contextmenuNavItem(tab_r3, $event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NzTabSetComponent_nz_tabs_nav_0_div_1_Template_div_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const tab_r3 = ctx.$implicit; const i_r4 = ctx.index; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r12.clickNavItem(tab_r3, i_r4, $event); })("contextmenu", function NzTabSetComponent_nz_tabs_nav_0_div_1_Template_div_contextmenu_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const tab_r3 = ctx.$implicit; const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2); return ctx_r14.contextmenuNavItem(tab_r3, $event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, NzTabSetComponent_nz_tabs_nav_0_div_1_ng_container_2_Template, 2, 1, "ng-container", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, NzTabSetComponent_nz_tabs_nav_0_div_1_button_3_Template, 1, 1, "button", 9);
@@ -511,14 +511,16 @@ NzTabLinkTemplateDirective.ctorParameters = () => [
  * This component is for catching `routerLink` directive.
  */
 class NzTabLinkDirective {
-    constructor(routerLink, routerLinkWithHref) {
+    constructor(elementRef, routerLink, routerLinkWithHref) {
+        this.elementRef = elementRef;
         this.routerLink = routerLink;
         this.routerLinkWithHref = routerLinkWithHref;
     }
 }
-NzTabLinkDirective.ɵfac = function NzTabLinkDirective_Factory(t) { return new (t || NzTabLinkDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLink"], 10), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLinkWithHref"], 10)); };
+NzTabLinkDirective.ɵfac = function NzTabLinkDirective_Factory(t) { return new (t || NzTabLinkDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLink"], 10), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLinkWithHref"], 10)); };
 NzTabLinkDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: NzTabLinkDirective, selectors: [["a", "nz-tab-link", ""]], exportAs: ["nzTabLink"] });
 NzTabLinkDirective.ctorParameters = () => [
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLink"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLinkWithHref"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }] }
 ];
@@ -1644,11 +1646,23 @@ class NzTabSetComponent {
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_8__["of"])(true);
         }
     }
-    clickNavItem(tab, index) {
+    clickNavItem(tab, index, e) {
         if (!tab.nzDisabled) {
             // ignore nzCanDeactivate
             tab.nzClick.emit();
-            this.setSelectedIndex(index);
+            if (!this.isRouterLinkClickEvent(index, e)) {
+                this.setSelectedIndex(index);
+            }
+        }
+    }
+    isRouterLinkClickEvent(index, event) {
+        var _a, _b;
+        const target = event.target;
+        if (this.nzLinkRouter) {
+            return !!((_b = (_a = this.tabs.toArray()[index]) === null || _a === void 0 ? void 0 : _a.linkDirective) === null || _b === void 0 ? void 0 : _b.elementRef.nativeElement.contains(target));
+        }
+        else {
+            return false;
         }
     }
     contextmenuNavItem(tab, e) {
@@ -1694,7 +1708,6 @@ class NzTabSetComponent {
             const index = this.findShouldActiveTabIndex();
             if (index !== this.selectedIndex) {
                 this.setSelectedIndex(index);
-                this.nzSelectedIndexChange.emit(index);
             }
             this.nzHideAll = index === -1;
         }
@@ -1881,7 +1894,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_11__["__decorate"])([
                 selector: 'a[nz-tab-link]',
                 exportAs: 'nzTabLink'
             }]
-    }], function () { return [{ type: _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLink"], decorators: [{
+    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"] }, { type: _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterLink"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"]
@@ -2196,7 +2209,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_11__["__decorate"])([
         [style.margin-bottom.px]="position === 'vertical' ? nzTabBarGutter : null"
         [class.ant-tabs-tab-active]="nzSelectedIndex === i"
         [class.ant-tabs-tab-disabled]="tab.nzDisabled"
-        (click)="clickNavItem(tab, i)"
+        (click)="clickNavItem(tab, i, $event)"
         (contextmenu)="contextmenuNavItem(tab, $event)"
         *ngFor="let tab of tabs; let i = index"
       >

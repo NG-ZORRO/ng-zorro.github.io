@@ -467,7 +467,7 @@ class BaseModalContainerComponent extends _angular_cdk_portal__WEBPACK_IMPORTED_
             throwNzModalContentAlreadyAttachedError();
         }
         this.savePreviouslyFocusedElement();
-        this.setModalTransformOrigin();
+        this.setZIndexForBackdrop();
         return this.portalOutlet.attachComponentPortal(portal);
     }
     attachTemplatePortal(portal) {
@@ -475,10 +475,12 @@ class BaseModalContainerComponent extends _angular_cdk_portal__WEBPACK_IMPORTED_
             throwNzModalContentAlreadyAttachedError();
         }
         this.savePreviouslyFocusedElement();
+        this.setZIndexForBackdrop();
         return this.portalOutlet.attachTemplatePortal(portal);
     }
     attachStringContent() {
         this.savePreviouslyFocusedElement();
+        this.setZIndexForBackdrop();
     }
     getNativeElement() {
         return this.elementRef.nativeElement;
@@ -582,6 +584,14 @@ class BaseModalContainerComponent extends _angular_cdk_portal__WEBPACK_IMPORTED_
         modalElement.classList.remove(ZOOM_CLASS_NAME_MAP.leave);
         modalElement.classList.remove(ZOOM_CLASS_NAME_MAP.leaveActive);
     }
+    setZIndexForBackdrop() {
+        const backdropElement = this.overlayRef.backdropElement;
+        if (backdropElement) {
+            if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNotNil"])(this.config.nzZIndex)) {
+                this.render.setStyle(backdropElement, 'z-index', this.config.nzZIndex);
+            }
+        }
+    }
     bindBackdropStyle() {
         const backdropElement = this.overlayRef.backdropElement;
         if (backdropElement) {
@@ -592,6 +602,7 @@ class BaseModalContainerComponent extends _angular_cdk_portal__WEBPACK_IMPORTED_
                 });
                 this.oldMaskStyle = null;
             }
+            this.setZIndexForBackdrop();
             if (typeof this.config.nzMaskStyle === 'object' && Object.keys(this.config.nzMaskStyle).length) {
                 const styles = Object.assign({}, this.config.nzMaskStyle);
                 Object.keys(styles).forEach(key => {
