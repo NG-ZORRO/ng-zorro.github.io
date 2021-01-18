@@ -446,9 +446,6 @@ class DragRef {
         };
         /** Handler that is invoked when the user moves their pointer after they've initiated a drag. */
         this._pointerMove = (event) => {
-            // Prevent the default action as early as possible in order to block
-            // native actions like dragging the selected text or images with the mouse.
-            event.preventDefault();
             const pointerPosition = this._getPointerPositionOnPage(event);
             if (!this._hasStartedDragging) {
                 const distanceX = Math.abs(pointerPosition.x - this._pickupPositionOnPage.x);
@@ -483,6 +480,10 @@ class DragRef {
                     this._previewRect = (this._preview || this._rootElement).getBoundingClientRect();
                 }
             }
+            // We prevent the default action down here so that we know that dragging has started. This is
+            // important for touch devices where doing this too early can unnecessarily block scrolling,
+            // if there's a dragging delay.
+            event.preventDefault();
             const constrainedPointerPosition = this._getConstrainedPointerPosition(pointerPosition);
             this._hasMoved = true;
             this._lastKnownPointerPosition = pointerPosition;
@@ -839,10 +840,11 @@ class DragRef {
      * @param event Browser event object that started the sequence.
      */
     _initializeDragSequence(referenceElement, event) {
-        // Always stop propagation for the event that initializes
-        // the dragging sequence, in order to prevent it from potentially
-        // starting another sequence for a draggable parent somewhere up the DOM tree.
-        event.stopPropagation();
+        // Stop propagation if the item is inside another
+        // draggable so we don't start multiple drag sequences.
+        if (this._config.parentDragRef) {
+            event.stopPropagation();
+        }
         const isDragging = this.isDragging();
         const isTouchSequence = isTouchEvent(event);
         const isAuxiliaryMouseButton = !isTouchSequence && event.button !== 0;
@@ -1515,6 +1517,8 @@ class DropListRef {
          * overlap with the swapped item after the swapping occurred.
          */
         this._previousSwap = { drag: null, delta: 0, overlaps: false };
+        /** Draggable items in the container. */
+        this._draggables = [];
         /** Drop lists that are connected to the current one. */
         this._siblings = [];
         /** Direction in which the list is oriented. */
@@ -1581,18 +1585,8 @@ class DropListRef {
     }
     /** Starts dragging an item. */
     start() {
-        const styles = Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_4__["coerceElement"])(this.element).style;
-        this.beforeStarted.next();
-        this._isDragging = true;
-        // We need to disable scroll snapping while the user is dragging, because it breaks automatic
-        // scrolling. The browser seems to round the value based on the snapping points which means
-        // that we can't increment/decrement the scroll position.
-        this._initialScrollSnap = styles.msScrollSnapType || styles.scrollSnapType || '';
-        styles.scrollSnapType = styles.msScrollSnapType = 'none';
-        this._cacheItems();
-        this._siblings.forEach(sibling => sibling._startReceiving(this));
-        this._viewportScrollSubscription.unsubscribe();
-        this._listenToScrollEvents();
+        this._draggingStarted();
+        this._notifyReceivingSiblings();
     }
     /**
      * Emits an event to indicate that the user moved an item into the container.
@@ -1603,7 +1597,7 @@ class DropListRef {
      *   out automatically.
      */
     enter(item, pointerX, pointerY, index) {
-        this.start();
+        this._draggingStarted();
         // If sorting is disabled, we want the item to return to its starting
         // position if the user is returning it to its initial container.
         let newIndex;
@@ -1655,6 +1649,8 @@ class DropListRef {
         // but we need to refresh them since the amount of items has changed and also parent rects.
         this._cacheItemPositions();
         this._cacheParentPositions();
+        // Notify siblings at the end so that the item has been inserted into the `activeDraggables`.
+        this._notifyReceivingSiblings();
         this.entered.next({ item, container: this, currentIndex: this.getItemIndex(item) });
     }
     /**
@@ -1777,7 +1773,7 @@ class DropListRef {
      */
     _sortItem(item, pointerX, pointerY, pointerDelta) {
         // Don't sort the item if sorting is disabled or it's out of range.
-        if (this.sortingDisabled ||
+        if (this.sortingDisabled || !this._clientRect ||
             !isPointerNearClientRect(this._clientRect, DROP_PROXIMITY_THRESHOLD, pointerX, pointerY)) {
             return;
         }
@@ -1890,6 +1886,20 @@ class DropListRef {
     /** Stops any currently-running auto-scroll sequences. */
     _stopScrolling() {
         this._stopScrollTimers.next();
+    }
+    /** Starts the dragging sequence within the list. */
+    _draggingStarted() {
+        const styles = Object(_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_4__["coerceElement"])(this.element).style;
+        this.beforeStarted.next();
+        this._isDragging = true;
+        // We need to disable scroll snapping while the user is dragging, because it breaks automatic
+        // scrolling. The browser seems to round the value based on the snapping points which means
+        // that we can't increment/decrement the scroll position.
+        this._initialScrollSnap = styles.msScrollSnapType || styles.scrollSnapType || '';
+        styles.scrollSnapType = styles.msScrollSnapType = 'none';
+        this._cacheItems();
+        this._viewportScrollSubscription.unsubscribe();
+        this._listenToScrollEvents();
     }
     /** Caches the positions of the configured scrollable parents. */
     _cacheParentPositions() {
@@ -2044,7 +2054,7 @@ class DropListRef {
      * @param y Pointer position along the Y axis.
      */
     _isOverContainer(x, y) {
-        return isInsideClientRect(this._clientRect, x, y);
+        return this._clientRect != null && isInsideClientRect(this._clientRect, x, y);
     }
     /**
      * Figures out whether an item should be moved into a sibling
@@ -2063,7 +2073,8 @@ class DropListRef {
      * @param y Position of the item along the Y axis.
      */
     _canReceive(item, x, y) {
-        if (!isInsideClientRect(this._clientRect, x, y) || !this.enterPredicate(item, this)) {
+        if (!this._clientRect || !isInsideClientRect(this._clientRect, x, y) ||
+            !this.enterPredicate(item, this)) {
             return false;
         }
         const elementFromPoint = this._getShadowRoot().elementFromPoint(x, y);
@@ -2085,9 +2096,15 @@ class DropListRef {
      * Called by one of the connected drop lists when a dragging sequence has started.
      * @param sibling Sibling in which dragging has started.
      */
-    _startReceiving(sibling) {
+    _startReceiving(sibling, items) {
         const activeSiblings = this._activeSiblings;
-        if (!activeSiblings.has(sibling)) {
+        if (!activeSiblings.has(sibling) && items.every(item => {
+            // Note that we have to add an exception to the `enterPredicate` for items that started off
+            // in this drop list. The drag ref has logic that allows an item to return to its initial
+            // container, if it has left the initial container and none of the connected containers
+            // allow it to enter. See `DragRef._updateActiveDropContainer` for more context.
+            return this.enterPredicate(item, this) || this._draggables.indexOf(item) > -1;
+        })) {
             activeSiblings.add(sibling);
             this._cacheParentPositions();
             this._listenToScrollEvents();
@@ -2145,6 +2162,11 @@ class DropListRef {
             this._cachedShadowRoot = shadowRoot || this._document;
         }
         return this._cachedShadowRoot;
+    }
+    /** Notifies any siblings that may potentially receive the item. */
+    _notifyReceivingSiblings() {
+        const draggedItems = this._activeDraggables.filter(item => item.isDragging());
+        this._siblings.forEach(sibling => sibling._startReceiving(this, draggedItems));
     }
 }
 /**
@@ -2291,9 +2313,14 @@ class DragDropRegistry {
         /** Registered drag item instances. */
         this._dragInstances = new Set();
         /** Drag item instances that are currently being dragged. */
-        this._activeDragInstances = new Set();
+        this._activeDragInstances = [];
         /** Keeps track of the event listeners that we've bound to the `document`. */
         this._globalListeners = new Map();
+        /**
+         * Predicate function to check if an item is being dragged.  Moved out into a property,
+         * because it'll be called a lot and we don't want to create a new function every time.
+         */
+        this._draggingPredicate = (item) => item.isDragging();
         /**
          * Emits the `touchmove` or `mousemove` events that are dispatched
          * while the user is dragging a drag item instance.
@@ -2311,14 +2338,19 @@ class DragDropRegistry {
          * @param event Event whose default action should be prevented.
          */
         this._preventDefaultWhileDragging = (event) => {
-            if (this._activeDragInstances.size) {
+            if (this._activeDragInstances.length > 0) {
                 event.preventDefault();
             }
         };
         /** Event listener for `touchmove` that is bound even if no dragging is happening. */
         this._persistentTouchmoveListener = (event) => {
-            if (this._activeDragInstances.size) {
-                event.preventDefault();
+            if (this._activeDragInstances.length > 0) {
+                // Note that we only want to prevent the default action after dragging has actually started.
+                // Usually this is the same time at which the item is added to the `_activeDragInstances`,
+                // but it could be pushed back if the user has set up a drag delay or threshold.
+                if (this._activeDragInstances.some(this._draggingPredicate)) {
+                    event.preventDefault();
+                }
                 this.pointerMove.next(event);
             }
         };
@@ -2363,11 +2395,11 @@ class DragDropRegistry {
      */
     startDragging(drag, event) {
         // Do not process the same drag twice to avoid memory leaks and redundant listeners
-        if (this._activeDragInstances.has(drag)) {
+        if (this._activeDragInstances.indexOf(drag) > -1) {
             return;
         }
-        this._activeDragInstances.add(drag);
-        if (this._activeDragInstances.size === 1) {
+        this._activeDragInstances.push(drag);
+        if (this._activeDragInstances.length === 1) {
             const isTouchEvent = event.type.startsWith('touch');
             // We explicitly bind __active__ listeners here, because newer browsers will default to
             // passive ones for `mousemove` and `touchmove`. The events need to be active, because we
@@ -2408,14 +2440,17 @@ class DragDropRegistry {
     }
     /** Stops dragging a drag item instance. */
     stopDragging(drag) {
-        this._activeDragInstances.delete(drag);
-        if (this._activeDragInstances.size === 0) {
-            this._clearGlobalListeners();
+        const index = this._activeDragInstances.indexOf(drag);
+        if (index > -1) {
+            this._activeDragInstances.splice(index, 1);
+            if (this._activeDragInstances.length === 0) {
+                this._clearGlobalListeners();
+            }
         }
     }
     /** Gets whether a drag item instance is currently being dragged. */
     isDragging(drag) {
-        return this._activeDragInstances.has(drag);
+        return this._activeDragInstances.indexOf(drag) > -1;
     }
     ngOnDestroy() {
         this._dragInstances.forEach(instance => this.removeDragItem(instance));
@@ -3128,7 +3163,7 @@ class CdkDrag {
      * @deprecated `_document` parameter no longer being used and will be removed.
      * @breaking-change 12.0.0
      */
-    _document, _ngZone, _viewContainerRef, config, _dir, dragDrop, _changeDetectorRef, _selfHandle) {
+    _document, _ngZone, _viewContainerRef, config, _dir, dragDrop, _changeDetectorRef, _selfHandle, parentDrag) {
         this.element = element;
         this.dropContainer = dropContainer;
         this._ngZone = _ngZone;
@@ -3170,7 +3205,8 @@ class CdkDrag {
                 config.dragStartThreshold : 5,
             pointerDirectionChangeThreshold: config && config.pointerDirectionChangeThreshold != null ?
                 config.pointerDirectionChangeThreshold : 5,
-            zIndex: config === null || config === void 0 ? void 0 : config.zIndex
+            zIndex: config === null || config === void 0 ? void 0 : config.zIndex,
+            parentDragRef: parentDrag === null || parentDrag === void 0 ? void 0 : parentDrag._dragRef
         });
         this._dragRef.data = this;
         if (config) {
@@ -3403,7 +3439,7 @@ class CdkDrag {
         }
     }
 }
-CdkDrag.ɵfac = function CdkDrag_Factory(t) { return new (t || CdkDrag)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DROP_LIST, 12), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DRAG_CONFIG, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](DragDrop), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DRAG_HANDLE, 10)); };
+CdkDrag.ɵfac = function CdkDrag_Factory(t) { return new (t || CdkDrag)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DROP_LIST, 12), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DRAG_CONFIG, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](DragDrop), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DRAG_HANDLE, 10), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](CDK_DRAG_PARENT, 12)); };
 CdkDrag.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({ type: CdkDrag, selectors: [["", "cdkDrag", ""]], contentQueries: function CdkDrag_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, CDK_DRAG_PREVIEW, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, CDK_DRAG_PLACEHOLDER, true);
@@ -3426,7 +3462,8 @@ CdkDrag.ctorParameters = () => [
     { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_7__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }] },
     { type: DragDrop },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectorRef"] },
-    { type: CdkDragHandle, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [CDK_DRAG_HANDLE,] }] }
+    { type: CdkDragHandle, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Self"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [CDK_DRAG_HANDLE,] }] },
+    { type: CdkDrag, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["SkipSelf"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"], args: [CDK_DRAG_PARENT,] }] }
 ];
 CdkDrag.propDecorators = {
     _handles: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ContentChildren"], args: [CDK_DRAG_HANDLE, { descendants: true },] }],
@@ -3485,6 +3522,13 @@ CdkDrag.propDecorators = {
             }, {
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
                 args: [CDK_DRAG_HANDLE]
+            }] }, { type: CdkDrag, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Optional"]
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["SkipSelf"]
+            }, {
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"],
+                args: [CDK_DRAG_PARENT]
             }] }]; }, { started: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"],
             args: ['cdkDragStarted']

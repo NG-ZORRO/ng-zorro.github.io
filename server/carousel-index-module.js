@@ -1083,7 +1083,7 @@ const _c2 = function (a0) { return { $implicit: a0 }; };
 function NzCarouselComponent_ul_6_li_1_Template(rf, ctx) { if (rf & 1) {
     const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "li", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r9.goTo(i_r7); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r10); const i_r7 = ctx.index; const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r9.onLiClick(i_r7); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
@@ -1147,10 +1147,11 @@ NzCarouselContentDirective.ctorParameters = () => [
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzCarouselBaseStrategy {
-    constructor(carouselComponent, cdr, renderer, platform) {
+    constructor(carouselComponent, cdr, renderer, platform, options) {
         this.cdr = cdr;
         this.renderer = renderer;
         this.platform = platform;
+        this.options = options;
         this.carouselComponent = carouselComponent;
     }
     get maxIndex() {
@@ -1247,8 +1248,8 @@ class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
-    constructor() {
-        super(...arguments);
+    constructor(carouselComponent, cdr, renderer, platform, options) {
+        super(carouselComponent, cdr, renderer, platform, options);
         this.isDragging = false;
         this.isTransitioning = false;
     }
@@ -1413,6 +1414,10 @@ class NzCarouselComponent {
         this.nzAutoPlay = false;
         this.nzAutoPlaySpeed = 3000;
         this.nzTransitionSpeed = 500;
+        /**
+         * this property is passed directly to an NzCarouselBaseStrategy
+         */
+        this.nzStrategyOptions = undefined;
         this._dotPosition = 'bottom';
         this.nzBeforeChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzAfterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
@@ -1425,6 +1430,14 @@ class NzCarouselComponent {
         this.pointerDelta = null;
         this.isTransiting = false;
         this.isDragging = false;
+        this.onLiClick = (index) => {
+            if (this.dir === 'rtl') {
+                this.goTo(this.carouselContents.length - 1 - index);
+            }
+            else {
+                this.goTo(index);
+            }
+        };
         /**
          * Drag carousel.
          */
@@ -1475,7 +1488,8 @@ class NzCarouselComponent {
         this.dir = this.directionality.value;
         (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["takeUntil"])(this.destroy$)).subscribe((direction) => {
             this.dir = direction;
-            this.switchStrategy();
+            this.markContentActive(this.activeIndex);
+            this.cdr.detectChanges();
         });
     }
     ngAfterContentInit() {
@@ -1596,7 +1610,12 @@ class NzCarouselComponent {
         this.activeIndex = index;
         if (this.carouselContents) {
             this.carouselContents.forEach((slide, i) => {
-                slide.isActive = index === i;
+                if (this.dir === 'rtl') {
+                    slide.isActive = index === this.carouselContents.length - 1 - i;
+                }
+                else {
+                    slide.isActive = index === i;
+                }
             });
         }
         this.cdr.markForCheck();
@@ -1622,7 +1641,7 @@ NzCarouselComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.slickTrack = _t.first);
     } }, hostVars: 4, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-carousel-vertical", ctx.vertical)("ant-carousel-rtl", ctx.dir === "rtl");
-    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed", nzTransitionSpeed: "nzTransitionSpeed", nzStrategyOptions: "nzStrategyOptions", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 1, 2);
@@ -1661,6 +1680,7 @@ NzCarouselComponent.propDecorators = {
     nzAutoPlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzAutoPlaySpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzTransitionSpeed: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    nzStrategyOptions: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzDotPosition: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
     nzBeforeChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
     nzAfterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }]
@@ -1737,7 +1757,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
         [class.slick-dots-left]="nzDotPosition === 'left'"
         [class.slick-dots-right]="nzDotPosition === 'right'"
       >
-        <li *ngFor="let content of carouselContents; let i = index" [class.slick-active]="content.isActive" (click)="goTo(i)">
+        <li *ngFor="let content of carouselContents; let i = index" [class.slick-active]="content.isActive" (click)="onLiClick(i)">
           <ng-template [ngTemplateOutlet]="nzDotRender || renderDotTemplate" [ngTemplateOutletContext]="{ $implicit: i }"></ng-template>
         </li>
       </ul>
@@ -1770,6 +1790,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_4__["__decorate"])([
         }], nzAutoPlaySpeed: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzTransitionSpeed: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
+        }], nzStrategyOptions: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzBeforeChange: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]

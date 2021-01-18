@@ -3218,10 +3218,10 @@ class NzTrDirective {
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
         this.listOfFixedColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
         this.listOfColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfFixedColumnsChanges$ = this.listOfFixedColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfFixedColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["flatMap"])(() => this.listOfFixedColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+        this.listOfFixedColumnsChanges$ = this.listOfFixedColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfFixedColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["mergeMap"])(() => this.listOfFixedColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
         this.listOfFixedLeftColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.filter(item => item.nzLeft !== false)));
         this.listOfFixedRightColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.filter(item => item.nzRight !== false)));
-        this.listOfColumnsChanges$ = this.listOfColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["flatMap"])(() => this.listOfColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+        this.listOfColumnsChanges$ = this.listOfColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["mergeMap"])(() => this.listOfColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
         this.isInsideTable = false;
         this.isInsideTable = !!nzTableStyleService;
     }
@@ -3239,7 +3239,9 @@ class NzTrDirective {
                 listOfFixedRight.forEach(cell => cell.setIsFirstRight(cell === listOfFixedRight[0]));
             });
             /** calculate fixed nzLeft and nzRight **/
-            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedLeftColumnChanges$]).subscribe(([listOfAutoWidth, listOfLeftCell]) => {
+            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedLeftColumnChanges$])
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+                .subscribe(([listOfAutoWidth, listOfLeftCell]) => {
                 listOfLeftCell.forEach((cell, index) => {
                     if (cell.isAutoLeft) {
                         const currentArray = listOfLeftCell.slice(0, index);
@@ -3249,7 +3251,9 @@ class NzTrDirective {
                     }
                 });
             });
-            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedRightColumnChanges$]).subscribe(([listOfAutoWidth, listOfRightCell]) => {
+            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedRightColumnChanges$])
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+                .subscribe(([listOfAutoWidth, listOfRightCell]) => {
                 listOfRightCell.forEach((_, index) => {
                     const cell = listOfRightCell[listOfRightCell.length - index - 1];
                     if (cell.isAutoRight) {

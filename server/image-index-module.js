@@ -1749,10 +1749,11 @@ NzImageModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInje
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzImageModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
-                declarations: [NzImageDirective, NzImagePreviewComponent, NzImageGroupComponent],
-                exports: [NzImageDirective, NzImagePreviewComponent, NzImageGroupComponent],
                 imports: [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["BidiModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__["OverlayModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_11__["DragDropModule"], _angular_common__WEBPACK_IMPORTED_MODULE_12__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_13__["NzIconModule"], ng_zorro_antd_pipes__WEBPACK_IMPORTED_MODULE_14__["NzPipesModule"]],
-                providers: [NzImageService]
+                exports: [NzImageDirective, NzImagePreviewComponent, NzImageGroupComponent],
+                providers: [NzImageService],
+                entryComponents: [NzImagePreviewComponent],
+                declarations: [NzImageDirective, NzImagePreviewComponent, NzImageGroupComponent]
             }]
     }], null, null); })();
 
