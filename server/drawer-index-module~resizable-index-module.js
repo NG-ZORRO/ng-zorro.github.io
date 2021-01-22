@@ -547,13 +547,13 @@ class NzDrawerComponent extends NzDrawerRef {
 }
 NzDrawerComponent.ɵfac = function NzDrawerComponent_Factory(t) { return new (t || NzDrawerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_6__["DOCUMENT"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_10__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["Overlay"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__["Injector"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_1__["FocusTrapFactory"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_7__["ViewContainerRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["OverlayKeyboardDispatcher"]), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["Directionality"], 8)); };
 NzDrawerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({ type: NzDrawerComponent, selectors: [["nz-drawer"]], contentQueries: function NzDrawerComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵstaticContentQuery"](dirIndex, NzDrawerContentDirective, true, _angular_core__WEBPACK_IMPORTED_MODULE_7__["TemplateRef"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵcontentQuery"](dirIndex, NzDrawerContentDirective, 3, _angular_core__WEBPACK_IMPORTED_MODULE_7__["TemplateRef"]);
     } if (rf & 2) {
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵloadQuery"]()) && (ctx.contentFromContentChild = _t.first);
     } }, viewQuery: function NzDrawerComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵstaticViewQuery"](_c0, true);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["CdkPortalOutlet"], true);
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_c0, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵviewQuery"](_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__["CdkPortalOutlet"], 1);
     } if (rf & 2) {
         let _t;
         _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵloadQuery"]()) && (ctx.drawerTemplate = _t.first);
@@ -634,14 +634,14 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_10__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:type", String)
 ], NzDrawerComponent.prototype, "nzDirection", void 0);
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerContentDirective, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerContentDirective, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["Directive"],
         args: [{
                 selector: '[nzDrawerContent]',
                 exportAs: 'nzDrawerContent'
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["TemplateRef"] }]; }, null); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerComponent, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["Component"],
         args: [{
                 selector: 'nz-drawer',
@@ -780,7 +780,7 @@ class NzDrawerServiceModule {
 }
 NzDrawerServiceModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: NzDrawerServiceModule });
 NzDrawerServiceModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function NzDrawerServiceModule_Factory(t) { return new (t || NzDrawerServiceModule)(); } });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerServiceModule, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerServiceModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["NgModule"]
     }], null, null); })();
 
@@ -808,7 +808,7 @@ NzDrawerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInj
         ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_15__["NzIconModule"],
         ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_14__["NzOutletModule"],
         ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_13__["NzNoAnimationModule"], NzDrawerServiceModule]; }, exports: function () { return [NzDrawerComponent, NzDrawerContentDirective]; } }); })();
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerModule, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["NgModule"],
         args: [{
                 imports: [
@@ -881,7 +881,7 @@ NzDrawerService.ɵprov = Object(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵ
 NzDrawerService.ctorParameters = () => [
     { type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["Overlay"] }
 ];
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerService, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["Injectable"],
         args: [{ providedIn: NzDrawerServiceModule }]
     }], function () { return [{ type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["Overlay"] }]; }, null); })();
@@ -902,7 +902,7 @@ NzDrawerService.ctorParameters = () => [
 
 
 
-//# sourceMappingURL=ng-zorro-antd-drawer.js.map
+
 
 /***/ })
 

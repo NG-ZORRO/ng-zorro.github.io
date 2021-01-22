@@ -1923,16 +1923,18 @@ this.tinycolor = tinycolor;
 @input-padding-horizontal-sm: @control-padding-horizontal-sm - 1px;
 @input-padding-horizontal-lg: @input-padding-horizontal;
 @input-padding-vertical-base: max(
-  round((@input-height-base - @font-size-base * @line-height-base) / 2 * 10) / 10 -
+  (round(((@input-height-base - @font-size-base * @line-height-base) / 2) * 10) / 10) -
     @border-width-base,
   3px
 );
 @input-padding-vertical-sm: max(
-  round((@input-height-sm - @font-size-base * @line-height-base) / 2 * 10) / 10 - @border-width-base,
+  (round(((@input-height-sm - @font-size-base * @line-height-base) / 2) * 10) / 10) -
+    @border-width-base,
   0
 );
-@input-padding-vertical-lg: ceil((@input-height-lg - @font-size-lg * @line-height-base) / 2 * 10) /
-  10 - @border-width-base;
+@input-padding-vertical-lg: (
+    ceil(((@input-height-lg - @font-size-lg * @line-height-base) / 2) * 10) / 10
+  ) - @border-width-base;
 @input-placeholder-color: hsv(0, 0, 75%);
 @input-color: @text-color;
 @input-icon-color: @input-color;
@@ -1974,7 +1976,7 @@ this.tinycolor = tinycolor;
 @select-single-item-height-lg: 40px;
 @select-multiple-item-height: @input-height-base - @input-padding-vertical-base * 2; // Normal 24px
 @select-multiple-item-height-lg: 32px;
-@select-multiple-item-spacing-half: ceil(@input-padding-vertical-base / 2);
+@select-multiple-item-spacing-half: ceil((@input-padding-vertical-base / 2));
 @select-multiple-disabled-background: @input-disabled-bg;
 @select-multiple-item-disabled-color: #bfbfbf;
 @select-multiple-item-disabled-border-color: @select-border-color;
@@ -2128,10 +2130,11 @@ this.tinycolor = tinycolor;
 @table-expanded-row-bg: #fbfbfb;
 @table-padding-vertical: 16px;
 @table-padding-horizontal: 16px;
-@table-padding-vertical-md: @table-padding-vertical * 3 / 4;
-@table-padding-horizontal-md: @table-padding-horizontal / 2;
-@table-padding-vertical-sm: @table-padding-vertical / 2;
-@table-padding-horizontal-sm: @table-padding-horizontal / 2;
+@table-padding-vertical-md: (@table-padding-vertical * 3 / 4);
+@table-padding-horizontal-md: (@table-padding-horizontal / 2);
+@table-padding-vertical-sm: (@table-padding-vertical / 2);
+@table-padding-horizontal-sm: (@table-padding-horizontal / 2);
+@table-border-color: @border-color-split;
 @table-border-radius-base: @border-radius-base;
 @table-footer-bg: @background-color-light;
 @table-footer-color: @heading-color;
@@ -2218,12 +2221,12 @@ this.tinycolor = tinycolor;
 @card-head-font-size: @font-size-lg;
 @card-head-font-size-sm: @font-size-base;
 @card-head-padding: 16px;
-@card-head-padding-sm: @card-head-padding / 2;
+@card-head-padding-sm: (@card-head-padding / 2);
 @card-head-height: 48px;
 @card-head-height-sm: 36px;
 @card-inner-head-padding: 12px;
 @card-padding-base: 24px;
-@card-padding-base-sm: @card-padding-base / 2;
+@card-padding-base-sm: (@card-padding-base / 2);
 @card-actions-background: @component-background;
 @card-actions-li-margin: 12px 0;
 @card-skeleton-bg: #cfd8dc;
@@ -2254,8 +2257,9 @@ this.tinycolor = tinycolor;
 @tabs-card-head-background: @background-color-light;
 @tabs-card-height: 40px;
 @tabs-card-active-color: @primary-color;
-@tabs-card-horizontal-padding: (@tabs-card-height - floor(@font-size-base * @line-height-base)) / 2 -
-  @border-width-base @padding-md;
+@tabs-card-horizontal-padding: (
+    (@tabs-card-height - floor(@font-size-base * @line-height-base)) / 2
+  ) - @border-width-base @padding-md;
 @tabs-card-horizontal-padding-sm: 6px @padding-md;
 @tabs-card-horizontal-padding-lg: 7px @padding-md 6px;
 @tabs-title-font-size: @font-size-base;
@@ -2443,7 +2447,7 @@ this.tinycolor = tinycolor;
 @alert-with-description-padding-vertical: @padding-md - 1px;
 @alert-with-description-padding: @alert-with-description-padding-vertical 15px
   @alert-with-description-no-icon-padding-vertical @alert-with-description-icon-size;
-@alert-icon-top: 8px + @font-size-base * @line-height-base / 2 - @font-size-base / 2;
+@alert-icon-top: 8px + @font-size-base * (@line-height-base / 2) - (@font-size-base / 2);
 @alert-with-description-icon-size: 24px;
 
 // List
@@ -2513,7 +2517,7 @@ this.tinycolor = tinycolor;
 @steps-dot-size: 8px;
 @steps-dot-top: 2px;
 @steps-current-dot-size: 10px;
-@steps-desciption-max-width: 140px;
+@steps-description-max-width: 140px;
 @steps-nav-content-max-width: auto;
 @steps-vertical-icon-width: 16px;
 @steps-vertical-tail-width: 16px;
@@ -2538,6 +2542,7 @@ this.tinycolor = tinycolor;
 @image-font-size-base: 24px;
 @image-bg: #f5f5f5;
 @image-color: #fff;
+@image-mask-font-size: 16px;
 @image-preview-operation-size: 18px;
 @image-preview-operation-color: @text-color-dark;
 @image-preview-operation-disabled-color: fade(@image-preview-operation-color, 25%);
@@ -5379,6 +5384,10 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
 .ant-dropdown-menu-submenu-title-disabled:hover {
   color: rgba(0, 0, 0, 0.25);
   background-color: #fff;
+}
+.ant-dropdown-menu-item-disabled > a,
+.ant-dropdown-menu-submenu-title-disabled > a {
+  color: rgba(0, 0, 0, 0.25);
 }
 .ant-dropdown-menu-item-divider,
 .ant-dropdown-menu-submenu-title-divider {
@@ -9209,6 +9218,9 @@ a.ant-typography.ant-typography-disabled:hover,
 .ant-tree .ant-tree-treenode-active .ant-tree-node-content-wrapper {
   background: #f5f5f5;
 }
+.ant-tree .ant-tree-treenode.filter-node .ant-tree-title {
+  color: #d4380d;
+}
 .ant-tree-switcher-loading-icon {
   color: @primary-color;
 }
@@ -9341,6 +9353,9 @@ a.ant-typography.ant-typography-disabled:hover,
 .ant-select-tree .ant-select-tree-treenode-active .ant-select-tree-node-content-wrapper {
   background: #f5f5f5;
 }
+.ant-select-tree .ant-select-tree-treenode.filter-node .ant-select-tree-title {
+  color: #d4380d;
+}
 .ant-select-tree-switcher-loading-icon {
   color: @primary-color;
 }
@@ -9460,6 +9475,10 @@ a.ant-typography.ant-typography-disabled:hover,
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30%;
+}
+.ant-image-mask {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
 }
 .ant-image-preview-mask {
   background-color: rgba(0, 0, 0, 0.45);
@@ -13845,6 +13864,10 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   color: rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
+.ant-dropdown-menu-item-disabled > a,
+.ant-dropdown-menu-submenu-title-disabled > a {
+  color: rgba(0, 0, 0, 0.25);
+}
 .ant-dropdown-menu-item-divider,
 .ant-dropdown-menu-submenu-title-divider {
   background-color: #f0f0f0;
@@ -14169,6 +14192,10 @@ tr > .ant-picker-cell-in-view.ant-picker-cell-range-hover-start:last-child::afte
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 30%;
+}
+.ant-image-mask {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
 }
 .ant-image-preview-mask {
   background-color: rgba(0, 0, 0, 0.45);
@@ -17330,6 +17357,9 @@ tr.ant-table-expanded-row:hover > td {
 .ant-select-tree .ant-select-tree-treenode-active .ant-select-tree-node-content-wrapper {
   background: #f5f5f5;
 }
+.ant-select-tree .ant-select-tree-treenode.filter-node .ant-select-tree-title {
+  color: #d4380d;
+}
 .ant-select-tree-switcher-loading-icon {
   color: @primary-color;
 }
@@ -17475,6 +17505,9 @@ tr.ant-table-expanded-row:hover > td {
 }
 .ant-tree .ant-tree-treenode-active .ant-tree-node-content-wrapper {
   background: #f5f5f5;
+}
+.ant-tree .ant-tree-treenode.filter-node .ant-tree-title {
+  color: #d4380d;
 }
 .ant-tree-switcher-loading-icon {
   color: @primary-color;
