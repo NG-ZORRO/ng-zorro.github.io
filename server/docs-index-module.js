@@ -5758,7 +5758,7 @@ NzDocChangelogZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](135, "strong");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](136, "tree-view:");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, " \u4FEE\u590D API \u5355\u8BCD\u9519\u8BEF (");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](137, " \u4FEE\u590D API \u540D\u9519\u8BEF (");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](138, "a", 31);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](139, "#6386");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
