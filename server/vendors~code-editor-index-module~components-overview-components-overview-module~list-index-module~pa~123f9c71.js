@@ -5,11 +5,12 @@ exports.modules = {
 /*!**********************************************************************!*\
   !*** ./node_modules/@angular/cdk/__ivy_ngcc__/fesm2015/clipboard.js ***!
   \**********************************************************************/
-/*! exports provided: CKD_COPY_TO_CLIPBOARD_CONFIG, CdkCopyToClipboard, Clipboard, ClipboardModule, PendingCopy */
+/*! exports provided: CDK_COPY_TO_CLIPBOARD_CONFIG, CKD_COPY_TO_CLIPBOARD_CONFIG, CdkCopyToClipboard, Clipboard, ClipboardModule, PendingCopy */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CDK_COPY_TO_CLIPBOARD_CONFIG", function() { return CDK_COPY_TO_CLIPBOARD_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CKD_COPY_TO_CLIPBOARD_CONFIG", function() { return CKD_COPY_TO_CLIPBOARD_CONFIG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CdkCopyToClipboard", function() { return CdkCopyToClipboard; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Clipboard", function() { return Clipboard; });
@@ -149,7 +150,12 @@ Clipboard.ctorParameters = () => [
  * found in the LICENSE file at https://angular.io/license
  */
 /** Injection token that can be used to provide the default options to `CdkCopyToClipboard`. */
-const CKD_COPY_TO_CLIPBOARD_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('CKD_COPY_TO_CLIPBOARD_CONFIG');
+const CDK_COPY_TO_CLIPBOARD_CONFIG = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["InjectionToken"]('CDK_COPY_TO_CLIPBOARD_CONFIG');
+/**
+ * @deprecated Use `CDK_COPY_TO_CLIPBOARD_CONFIG` instead.
+ * @breaking-change 13.0.0
+ */
+const CKD_COPY_TO_CLIPBOARD_CONFIG = CDK_COPY_TO_CLIPBOARD_CONFIG;
 /**
  * Provides behavior for a button that when clicked copies content into user's
  * clipboard.

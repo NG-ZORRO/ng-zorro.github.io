@@ -102,13 +102,13 @@ class NzRadioGroupComponent {
     }
     ngOnInit() {
         var _a;
-        this.nzRadioService.selected$.subscribe(value => {
+        this.nzRadioService.selected$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe(value => {
             if (this.value !== value) {
                 this.value = value;
                 this.onChange(this.value);
             }
         });
-        this.nzRadioService.touched$.subscribe(() => {
+        this.nzRadioService.touched$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe(() => {
             Promise.resolve().then(() => this.onTouched());
         });
         (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe((direction) => {

@@ -202,11 +202,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_pagination__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/pagination */ "F192");
 /* harmony import */ var ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/radio */ "WqIj");
 /* harmony import */ var ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/spin */ "6lNT");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! tslib */ "zOht");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng-zorro-antd/core/util */ "d1+9");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! tslib */ "zOht");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_21__);
 /* harmony import */ var ng_zorro_antd_core_services__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ng-zorro-antd/core/services */ "amOf");
 /* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
 /* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
@@ -765,11 +765,11 @@ class NzTableFilterComponent {
         this.filterMultiple = true;
         this.listOfFilter = [];
         this.filterChange = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.isChanged = false;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.isChecked = false;
         this.isVisible = false;
         this.listOfParsedFilter = [];
+        this.listOfChecked = [];
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-table-filter-column');
     }
@@ -777,7 +777,6 @@ class NzTableFilterComponent {
         return item.value;
     }
     check(filter) {
-        this.isChanged = true;
         if (this.filterMultiple) {
             this.listOfParsedFilter = this.listOfParsedFilter.map(item => {
                 if (item === filter) {
@@ -801,7 +800,6 @@ class NzTableFilterComponent {
         this.emitFilterData();
     }
     reset() {
-        this.isChanged = true;
         this.isVisible = false;
         this.listOfParsedFilter = this.parseListOfFilter(this.listOfFilter, true);
         this.isChecked = this.getCheckedStatus(this.listOfParsedFilter);
@@ -812,17 +810,19 @@ class NzTableFilterComponent {
         if (!value) {
             this.emitFilterData();
         }
+        else {
+            this.listOfChecked = this.listOfParsedFilter.filter(item => item.checked).map(item => item.value);
+        }
     }
     emitFilterData() {
-        if (this.isChanged) {
-            const listOfChecked = this.listOfParsedFilter.filter(item => item.checked).map(item => item.value);
+        const listOfChecked = this.listOfParsedFilter.filter(item => item.checked).map(item => item.value);
+        if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["arraysEqual"])(this.listOfChecked, listOfChecked)) {
             if (this.filterMultiple) {
                 this.filterChange.emit(listOfChecked);
             }
             else {
                 this.filterChange.emit(listOfChecked.length > 0 ? listOfChecked[0] : null);
             }
-            this.isChanged = false;
         }
     }
     parseListOfFilter(listOfFilter, reset) {
@@ -835,7 +835,7 @@ class NzTableFilterComponent {
         return listOfParsedFilter.some(item => item.checked);
     }
     ngOnInit() {
-        this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(() => {
+        this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(() => {
             this.locale = this.i18n.getLocaleData('Table');
             this.cdr.markForCheck();
         });
@@ -1046,7 +1046,7 @@ class NzCellFixedDirective {
         this.nzLeft = false;
         this.colspan = null;
         this.colSpan = null;
-        this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.isAutoLeft = false;
         this.isAutoRight = false;
         this.isFixedLeft = false;
@@ -1115,20 +1115,20 @@ NzCellFixedDirective.propDecorators = {
  */
 class NzTableStyleService {
     constructor() {
-        this.theadTemplate$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.hasFixLeft$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.hasFixRight$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.hostWidth$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.columnCount$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.showEmpty$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.noResult$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfThWidthConfigPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"]([]);
-        this.tableWidthConfigPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"]([]);
-        this.manualWidthConfigPx$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.tableWidthConfigPx$, this.listOfThWidthConfigPx$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([widthConfig, listOfWidth]) => (widthConfig.length ? widthConfig : listOfWidth)));
-        this.listOfAutoWidthPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfListOfThWidthPx$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(
+        this.theadTemplate$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.hasFixLeft$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.hasFixRight$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.hostWidth$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.columnCount$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.showEmpty$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.noResult$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.listOfThWidthConfigPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"]([]);
+        this.tableWidthConfigPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"]([]);
+        this.manualWidthConfigPx$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.tableWidthConfigPx$, this.listOfThWidthConfigPx$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([widthConfig, listOfWidth]) => (widthConfig.length ? widthConfig : listOfWidth)));
+        this.listOfAutoWidthPx$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.listOfListOfThWidthPx$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(
         /** init with manual width **/
-        this.manualWidthConfigPx$, Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.listOfAutoWidthPx$, this.manualWidthConfigPx$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([autoWidth, manualWidth]) => {
+        this.manualWidthConfigPx$, Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.listOfAutoWidthPx$, this.manualWidthConfigPx$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([autoWidth, manualWidth]) => {
             /** use autoWidth until column length match **/
             if (autoWidth.length === manualWidth.length) {
                 return autoWidth.map((width, index) => {
@@ -1144,9 +1144,9 @@ class NzTableStyleService {
                 return manualWidth;
             }
         })));
-        this.listOfMeasureColumn$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfListOfThWidth$ = this.listOfAutoWidthPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.map(width => parseInt(width, 10))));
-        this.enableAutoMeasure$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
+        this.listOfMeasureColumn$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.listOfListOfThWidth$ = this.listOfAutoWidthPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list.map(width => parseInt(width, 10))));
+        this.enableAutoMeasure$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
     }
     setTheadTemplate(template) {
         this.theadTemplate$.next(template);
@@ -1285,29 +1285,29 @@ NzTdAddOnComponent.propDecorators = {
     nzCheckedChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }],
     nzExpandChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTdAddOnComponent.prototype, "nzShowExpand", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTdAddOnComponent.prototype, "nzShowCheckbox", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTdAddOnComponent.prototype, "nzExpand", void 0);
 
 class NzThAddOnComponent {
     constructor(cdr) {
         this.cdr = cdr;
-        this.manualClickOrder$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.calcOperatorChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.manualClickOrder$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.calcOperatorChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.nzFilterValue = null;
         this.sortOrder = null;
         this.sortDirections = ['ascend', 'descend', null];
-        this.sortOrderChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.sortOrderChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.isNzShowSortChanged = false;
         this.isNzShowFilterChanged = false;
         this.nzFilterMultiple = true;
@@ -1357,7 +1357,7 @@ class NzThAddOnComponent {
         this.calcOperatorChange$.next();
     }
     ngOnInit() {
-        this.sortOrderChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(order => {
+        this.sortOrderChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(order => {
             if (this.sortOrder !== order) {
                 this.sortOrder = order;
                 this.nzSortOrderChange.emit(order);
@@ -1438,17 +1438,17 @@ NzThAddOnComponent.propDecorators = {
     nzSortOrderChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }],
     nzFilterChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzThAddOnComponent.prototype, "nzShowSort", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzThAddOnComponent.prototype, "nzShowFilter", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzThAddOnComponent.prototype, "nzCustomFilter", void 0);
 
 /**
@@ -1459,7 +1459,7 @@ class NzThMeasureDirective {
     constructor(renderer, elementRef) {
         this.renderer = renderer;
         this.elementRef = elementRef;
-        this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.changes$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.nzWidth = null;
         this.colspan = null;
         this.colSpan = null;
@@ -1470,7 +1470,7 @@ class NzThMeasureDirective {
         const { nzWidth, colspan, rowspan, colSpan, rowSpan } = changes;
         if (colspan || colSpan) {
             const col = this.colspan || this.colSpan;
-            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["isNil"])(col)) {
+            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["isNil"])(col)) {
                 this.renderer.setAttribute(this.elementRef.nativeElement, 'colspan', `${col}`);
             }
             else {
@@ -1479,7 +1479,7 @@ class NzThMeasureDirective {
         }
         if (rowspan || rowSpan) {
             const row = this.rowspan || this.rowSpan;
-            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["isNil"])(row)) {
+            if (!Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["isNil"])(row)) {
                 this.renderer.setAttribute(this.elementRef.nativeElement, 'rowspan', `${row}`);
             }
             else {
@@ -1563,13 +1563,13 @@ NzThSelectionComponent.propDecorators = {
     nzShowRowSelection: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     nzCheckedChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Output"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzThSelectionComponent.prototype, "nzShowCheckbox", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzThSelectionComponent.prototype, "nzShowRowSelection", void 0);
 
 /**
@@ -1605,9 +1605,9 @@ NzCellEllipsisDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵ
 NzCellEllipsisDirective.propDecorators = {
     nzEllipsis: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzCellEllipsisDirective.prototype, "nzEllipsis", void 0);
 
 /**
@@ -1626,9 +1626,9 @@ NzCellBreakWordDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵ�
 NzCellBreakWordDirective.propDecorators = {
     nzBreakWord: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzCellBreakWordDirective.prototype, "nzBreakWord", void 0);
 
 /**
@@ -1677,19 +1677,19 @@ class NzTableFixedRowComponent {
     constructor(nzTableStyleService, renderer) {
         this.nzTableStyleService = nzTableStyleService;
         this.renderer = renderer;
-        this.hostWidth$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](null);
-        this.enableAutoMeasure$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](false);
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.hostWidth$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](null);
+        this.enableAutoMeasure$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](false);
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
     }
     ngOnInit() {
         if (this.nzTableStyleService) {
             const { enableAutoMeasure$, hostWidth$ } = this.nzTableStyleService;
-            enableAutoMeasure$.subscribe(this.enableAutoMeasure$);
+            enableAutoMeasure$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.enableAutoMeasure$);
             hostWidth$.subscribe(this.hostWidth$);
         }
     }
     ngAfterViewInit() {
-        this.nzTableStyleService.columnCount$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(count => {
+        this.nzTableStyleService.columnCount$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(count => {
             this.renderer.setAttribute(this.tdElement.nativeElement, 'colspan', `${count}`);
         });
     }
@@ -1785,9 +1785,9 @@ class NzTableInnerScrollComponent {
         this.bodyStyleMap = {};
         this.verticalScrollBarWidth = 0;
         this.noDateVirtualHeight = '182px';
-        this.data$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.scroll$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.data$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.scroll$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-table-container');
     }
@@ -1834,13 +1834,13 @@ class NzTableInnerScrollComponent {
     ngAfterViewInit() {
         if (this.platform.isBrowser) {
             this.ngZone.runOutsideAngular(() => {
-                const scrollEvent$ = this.scroll$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(null), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["delay"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["fromEvent"])(this.tableBodyElement.nativeElement, 'scroll').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(true))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
-                const resize$ = this.resizeService.subscribe().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
-                const data$ = this.data$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
-                const setClassName$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(scrollEvent$, resize$, data$, this.scroll$).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(true), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["delay"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+                const scrollEvent$ = this.scroll$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(null), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["delay"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["fromEvent"])(this.tableBodyElement.nativeElement, 'scroll').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(true))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
+                const resize$ = this.resizeService.subscribe().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
+                const data$ = this.data$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
+                const setClassName$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(scrollEvent$, resize$, data$, this.scroll$).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(true), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["delay"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
                 setClassName$.subscribe(() => this.setScrollPositionClassName());
                 scrollEvent$
-                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["filter"])(() => !!this.scrollY))
+                    .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["filter"])(() => !!this.scrollY))
                     .subscribe(() => (this.tableHeaderElement.nativeElement.scrollLeft = this.tableBodyElement.nativeElement.scrollLeft));
             });
         }
@@ -1917,19 +1917,19 @@ NzTableVirtualScrollDirective.ctorParameters = () => [
  */
 class NzTableDataService {
     constructor() {
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.pageIndex$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](1);
-        this.frontPagination$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](true);
-        this.pageSize$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](10);
-        this.listOfData$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"]([]);
-        this.pageIndexDistinct$ = this.pageIndex$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["distinctUntilChanged"])());
-        this.pageSizeDistinct$ = this.pageSize$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["distinctUntilChanged"])());
-        this.listOfCalcOperator$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"]([]);
-        this.queryParams$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.pageIndex$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](1);
+        this.frontPagination$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](true);
+        this.pageSize$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](10);
+        this.listOfData$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"]([]);
+        this.pageIndexDistinct$ = this.pageIndex$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["distinctUntilChanged"])());
+        this.pageSizeDistinct$ = this.pageSize$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["distinctUntilChanged"])());
+        this.listOfCalcOperator$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"]([]);
+        this.queryParams$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([
             this.pageIndexDistinct$,
             this.pageSizeDistinct$,
             this.listOfCalcOperator$
-        ]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["debounceTime"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["skip"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([pageIndex, pageSize, listOfCalc]) => {
+        ]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["debounceTime"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["skip"])(1), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([pageIndex, pageSize, listOfCalc]) => {
             return {
                 pageIndex,
                 pageSize,
@@ -1951,7 +1951,7 @@ class NzTableDataService {
                 })
             };
         }));
-        this.listOfDataAfterCalc$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.listOfData$, this.listOfCalcOperator$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([listOfData, listOfCalcOperator]) => {
+        this.listOfDataAfterCalc$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.listOfData$, this.listOfCalcOperator$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([listOfData, listOfCalcOperator]) => {
             let listOfDataAfterCalc = [...listOfData];
             const listOfFilterOperator = listOfCalcOperator.filter(item => {
                 const { filterValue, filterFn } = item;
@@ -1981,15 +1981,15 @@ class NzTableDataService {
             }
             return listOfDataAfterCalc;
         }));
-        this.listOfFrontEndCurrentPageData$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.pageIndexDistinct$, this.pageSizeDistinct$, this.listOfDataAfterCalc$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["filter"])(value => {
+        this.listOfFrontEndCurrentPageData$ = Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.pageIndexDistinct$, this.pageSizeDistinct$, this.listOfDataAfterCalc$]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["filter"])(value => {
             const [pageIndex, pageSize, listOfData] = value;
             const maxPageIndex = Math.ceil(listOfData.length / pageSize) || 1;
             return pageIndex <= maxPageIndex;
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([pageIndex, pageSize, listOfData]) => {
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([pageIndex, pageSize, listOfData]) => {
             return listOfData.slice((pageIndex - 1) * pageSize, pageIndex * pageSize);
         }));
-        this.listOfCurrentPageData$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(pagination => (pagination ? this.listOfFrontEndCurrentPageData$ : this.listOfData$)));
-        this.total$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(pagination => (pagination ? this.listOfDataAfterCalc$ : this.listOfData$)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.length), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["distinctUntilChanged"])());
+        this.listOfCurrentPageData$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(pagination => (pagination ? this.listOfFrontEndCurrentPageData$ : this.listOfData$)));
+        this.total$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(pagination => (pagination ? this.listOfDataAfterCalc$ : this.listOfData$)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list.length), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["distinctUntilChanged"])());
     }
     updatePageSize(size) {
         this.pageSize$.next(size);
@@ -2073,16 +2073,16 @@ class NzTableComponent {
         this.hasFixLeft = false;
         this.hasFixRight = false;
         this.showPagination = true;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.loading$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](false);
-        this.templateMode$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](false);
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.loading$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](false);
+        this.templateMode$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](false);
         this.dir = 'ltr';
         this.verticalScrollBarWidth = 0;
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-table-wrapper');
         this.nzConfigService
             .getConfigChangeEventForComponent(NZ_CONFIG_MODULE_NAME)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
             .subscribe(() => {
             this.cdr.markForCheck();
         });
@@ -2098,59 +2098,59 @@ class NzTableComponent {
         const { pageIndexDistinct$, pageSizeDistinct$, listOfCurrentPageData$, total$, queryParams$ } = this.nzTableDataService;
         const { theadTemplate$, hasFixLeft$, hasFixRight$ } = this.nzTableStyleService;
         this.dir = this.directionality.value;
-        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe((direction) => {
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe((direction) => {
             this.dir = direction;
             this.cdr.detectChanges();
         });
-        queryParams$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(this.nzQueryParams);
-        pageIndexDistinct$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(pageIndex => {
+        queryParams$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.nzQueryParams);
+        pageIndexDistinct$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(pageIndex => {
             if (pageIndex !== this.nzPageIndex) {
                 this.nzPageIndex = pageIndex;
                 this.nzPageIndexChange.next(pageIndex);
             }
         });
-        pageSizeDistinct$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(pageSize => {
+        pageSizeDistinct$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(pageSize => {
             if (pageSize !== this.nzPageSize) {
                 this.nzPageSize = pageSize;
                 this.nzPageSizeChange.next(pageSize);
             }
         });
         total$
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["filter"])(() => this.nzFrontPagination))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["filter"])(() => this.nzFrontPagination))
             .subscribe(total => {
             if (total !== this.nzTotal) {
                 this.nzTotal = total;
                 this.cdr.markForCheck();
             }
         });
-        listOfCurrentPageData$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(data => {
+        listOfCurrentPageData$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(data => {
             this.data = data;
             this.nzCurrentPageDataChange.next(data);
             this.cdr.markForCheck();
         });
-        theadTemplate$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(theadTemplate => {
+        theadTemplate$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(theadTemplate => {
             this.theadTemplate = theadTemplate;
             this.cdr.markForCheck();
         });
-        hasFixLeft$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(hasFixLeft => {
+        hasFixLeft$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(hasFixLeft => {
             this.hasFixLeft = hasFixLeft;
             this.cdr.markForCheck();
         });
-        hasFixRight$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(hasFixRight => {
+        hasFixRight$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(hasFixRight => {
             this.hasFixRight = hasFixRight;
             this.cdr.markForCheck();
         });
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([total$, this.loading$, this.templateMode$])
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([total, loading, templateMode]) => total === 0 && !loading && !templateMode), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([total$, this.loading$, this.templateMode$])
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([total, loading, templateMode]) => total === 0 && !loading && !templateMode), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
             .subscribe(empty => {
             this.nzTableStyleService.setShowEmpty(empty);
         });
-        this.verticalScrollBarWidth = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["measureScrollbar"])('vertical');
-        this.nzTableStyleService.listOfListOfThWidthPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(listOfWidth => {
+        this.verticalScrollBarWidth = Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["measureScrollbar"])('vertical');
+        this.nzTableStyleService.listOfListOfThWidthPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(listOfWidth => {
             this.listOfAutoColWidth = listOfWidth;
             this.cdr.markForCheck();
         });
-        this.nzTableStyleService.manualWidthConfigPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(listOfWidth => {
+        this.nzTableStyleService.manualWidthConfigPx$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(listOfWidth => {
             this.listOfManualColWidth = listOfWidth;
             this.cdr.markForCheck();
         });
@@ -2190,11 +2190,11 @@ class NzTableComponent {
     ngAfterViewInit() {
         this.nzResizeObserver
             .observe(this.elementRef)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([entry]) => {
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([entry]) => {
             const { width } = entry.target.getBoundingClientRect();
             const scrollBarWidth = this.scrollY ? this.verticalScrollBarWidth : 0;
             return Math.floor(width - scrollBarWidth);
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
             .subscribe(this.nzTableStyleService.hostWidth$);
         if (this.nzTableInnerScrollComponent && this.nzTableInnerScrollComponent.cdkVirtualScrollViewport) {
             this.cdkVirtualScrollViewport = this.nzTableInnerScrollComponent.cdkVirtualScrollViewport;
@@ -2308,58 +2308,58 @@ NzTableComponent.propDecorators = {
     nzVirtualScrollDirective: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ContentChild"], args: [NzTableVirtualScrollDirective, { static: false },] }],
     nzTableInnerScrollComponent: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ViewChild"], args: [NzTableInnerScrollComponent,] }]
 };
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzFrontPagination", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzTemplateMode", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzShowPagination", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzLoading", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzOuterBordered", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Object)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Object)
 ], NzTableComponent.prototype, "nzLoadingIndicator", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Boolean)
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzBordered", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", String)
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", String)
 ], NzTableComponent.prototype, "nzSize", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Boolean)
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzShowSizeChanger", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Boolean)
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzHideOnSinglePage", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Boolean)
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzShowQuickJumper", void 0);
-Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__decorate"])([
+Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__decorate"])([
     Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_23__["WithConfig"])(),
-    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_21__["InputBoolean"])(),
-    Object(tslib__WEBPACK_IMPORTED_MODULE_20__["__metadata"])("design:type", Boolean)
+    Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_18__["InputBoolean"])(),
+    Object(tslib__WEBPACK_IMPORTED_MODULE_21__["__metadata"])("design:type", Boolean)
 ], NzTableComponent.prototype, "nzSimple", void 0);
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzFilterTriggerComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Component"],
@@ -3145,19 +3145,24 @@ class NzTbodyComponent {
     constructor(nzTableStyleService) {
         this.nzTableStyleService = nzTableStyleService;
         this.isInsideTable = false;
-        this.showEmpty$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](false);
-        this.noResult$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"](undefined);
-        this.listOfMeasureColumn$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["BehaviorSubject"]([]);
+        this.showEmpty$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](false);
+        this.noResult$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"](undefined);
+        this.listOfMeasureColumn$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["BehaviorSubject"]([]);
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.isInsideTable = !!this.nzTableStyleService;
         if (this.nzTableStyleService) {
             const { showEmpty$, noResult$, listOfMeasureColumn$ } = this.nzTableStyleService;
-            noResult$.subscribe(this.noResult$);
-            listOfMeasureColumn$.subscribe(this.listOfMeasureColumn$);
-            showEmpty$.subscribe(this.showEmpty$);
+            noResult$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.noResult$);
+            listOfMeasureColumn$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.listOfMeasureColumn$);
+            showEmpty$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.showEmpty$);
         }
     }
     onListOfAutoWidthChange(listOfAutoWidth) {
         this.nzTableStyleService.setListOfAutoWidth(listOfAutoWidth);
+    }
+    ngOnDestroy() {
+        this.destroy$.next();
+        this.destroy$.complete();
     }
 }
 NzTbodyComponent.ɵfac = function NzTbodyComponent_Factory(t) { return new (t || NzTbodyComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](NzTableStyleService, 8)); };
@@ -3214,22 +3219,22 @@ NzTbodyComponent.ctorParameters = () => [
 class NzTrDirective {
     constructor(nzTableStyleService) {
         this.nzTableStyleService = nzTableStyleService;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
-        this.listOfFixedColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["ReplaySubject"](1);
-        this.listOfFixedColumnsChanges$ = this.listOfFixedColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfFixedColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["mergeMap"])(() => this.listOfFixedColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
-        this.listOfFixedLeftColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.filter(item => item.nzLeft !== false)));
-        this.listOfFixedRightColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list.filter(item => item.nzRight !== false)));
-        this.listOfColumnsChanges$ = this.listOfColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[this.listOfColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["mergeMap"])(() => this.listOfColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
+        this.listOfFixedColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.listOfColumns$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["ReplaySubject"](1);
+        this.listOfFixedColumnsChanges$ = this.listOfFixedColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(...[this.listOfFixedColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["mergeMap"])(() => this.listOfFixedColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
+        this.listOfFixedLeftColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list.filter(item => item.nzLeft !== false)));
+        this.listOfFixedRightColumnChanges$ = this.listOfFixedColumnsChanges$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list.filter(item => item.nzRight !== false)));
+        this.listOfColumnsChanges$ = this.listOfColumns$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(...[this.listOfColumns$, ...list.map((c) => c.changes$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["mergeMap"])(() => this.listOfColumns$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
         this.isInsideTable = false;
         this.isInsideTable = !!nzTableStyleService;
     }
     ngAfterContentInit() {
         if (this.nzTableStyleService) {
             this.listOfCellFixedDirective.changes
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(this.listOfCellFixedDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(this.listOfCellFixedDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
                 .subscribe(this.listOfFixedColumns$);
-            this.listOfNzThDirective.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(this.listOfNzThDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$)).subscribe(this.listOfColumns$);
+            this.listOfNzThDirective.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(this.listOfNzThDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$)).subscribe(this.listOfColumns$);
             /** set last left and first right **/
             this.listOfFixedLeftColumnChanges$.subscribe(listOfFixedLeft => {
                 listOfFixedLeft.forEach(cell => cell.setIsLastLeft(cell === listOfFixedLeft[listOfFixedLeft.length - 1]));
@@ -3238,8 +3243,8 @@ class NzTrDirective {
                 listOfFixedRight.forEach(cell => cell.setIsFirstRight(cell === listOfFixedRight[0]));
             });
             /** calculate fixed nzLeft and nzRight **/
-            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedLeftColumnChanges$])
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+            Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedLeftColumnChanges$])
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
                 .subscribe(([listOfAutoWidth, listOfLeftCell]) => {
                 listOfLeftCell.forEach((cell, index) => {
                     if (cell.isAutoLeft) {
@@ -3250,8 +3255,8 @@ class NzTrDirective {
                     }
                 });
             });
-            Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedRightColumnChanges$])
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+            Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])([this.nzTableStyleService.listOfListOfThWidth$, this.listOfFixedRightColumnChanges$])
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
                 .subscribe(([listOfAutoWidth, listOfRightCell]) => {
                 listOfRightCell.forEach((_, index) => {
                     const cell = listOfRightCell[listOfRightCell.length - index - 1];
@@ -3318,7 +3323,7 @@ class NzTheadComponent {
         this.renderer = renderer;
         this.nzTableStyleService = nzTableStyleService;
         this.nzTableDataService = nzTableDataService;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         this.isInsideTable = false;
         this.nzSortOrderChange = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
         this.isInsideTable = !!this.nzTableStyleService;
@@ -3330,16 +3335,16 @@ class NzTheadComponent {
     }
     ngAfterContentInit() {
         if (this.nzTableStyleService) {
-            const firstTableRow$ = this.listOfNzTrDirective.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(this.listOfNzTrDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(item => item && item.first));
-            const listOfColumnsChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(firstTableRow => (firstTableRow ? firstTableRow.listOfColumnsChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_18__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+            const firstTableRow$ = this.listOfNzTrDirective.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(this.listOfNzTrDirective), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(item => item && item.first));
+            const listOfColumnsChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(firstTableRow => (firstTableRow ? firstTableRow.listOfColumnsChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_19__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
             listOfColumnsChanges$.subscribe(data => this.nzTableStyleService.setListOfTh(data));
             /** TODO: need reset the measure row when scrollX change **/
             this.nzTableStyleService.enableAutoMeasure$
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(enable => (enable ? listOfColumnsChanges$ : Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["of"])([]))))
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(enable => (enable ? listOfColumnsChanges$ : Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["of"])([]))))
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
                 .subscribe(data => this.nzTableStyleService.setListOfMeasureColumn(data));
-            const listOfFixedLeftColumnChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(firstTr => (firstTr ? firstTr.listOfFixedLeftColumnChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_18__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
-            const listOfFixedRightColumnChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(firstTr => (firstTr ? firstTr.listOfFixedRightColumnChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_18__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+            const listOfFixedLeftColumnChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(firstTr => (firstTr ? firstTr.listOfFixedLeftColumnChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_19__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
+            const listOfFixedRightColumnChanges$ = firstTableRow$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(firstTr => (firstTr ? firstTr.listOfFixedRightColumnChanges$ : rxjs__WEBPACK_IMPORTED_MODULE_19__["EMPTY"])), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
             listOfFixedLeftColumnChanges$.subscribe(listOfFixedLeftColumn => {
                 this.nzTableStyleService.setHasFixLeft(listOfFixedLeftColumn.length !== 0);
             });
@@ -3348,8 +3353,8 @@ class NzTheadComponent {
             });
         }
         if (this.nzTableDataService) {
-            const listOfColumn$ = this.listOfNzThAddOnComponent.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(this.listOfNzThAddOnComponent));
-            const manualSort$ = listOfColumn$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...this.listOfNzThAddOnComponent.map(th => th.manualClickOrder$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$));
+            const listOfColumn$ = this.listOfNzThAddOnComponent.changes.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(this.listOfNzThAddOnComponent));
+            const manualSort$ = listOfColumn$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(() => Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(...this.listOfNzThAddOnComponent.map(th => th.manualClickOrder$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
             manualSort$.subscribe((data) => {
                 const emitValue = { key: data.nzColumnKey, value: data.sortOrder };
                 this.nzSortOrderChange.emit(emitValue);
@@ -3357,7 +3362,7 @@ class NzTheadComponent {
                     this.listOfNzThAddOnComponent.filter(th => th !== data).forEach(th => th.clearSortOrder());
                 }
             });
-            const listOfCalcOperator$ = listOfColumn$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["merge"])(...[listOfColumn$, ...list.map((c) => c.calcOperatorChange$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["mergeMap"])(() => listOfColumn$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(list => list
+            const listOfCalcOperator$ = listOfColumn$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(list => Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["merge"])(...[listOfColumn$, ...list.map((c) => c.calcOperatorChange$)]).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["mergeMap"])(() => listOfColumn$))), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list
                 .filter(item => !!item.nzSortFn || !!item.nzFilterFn)
                 .map(item => {
                 const { nzSortFn, sortOrder, nzFilterFn, nzFilterValue, nzSortPriority, nzColumnKey } = item;
@@ -3371,7 +3376,7 @@ class NzTheadComponent {
                 };
             })), 
             // TODO: after checked error here
-            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["delay"])(0));
+            Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["delay"])(0), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$));
             listOfCalcOperator$.subscribe(list => {
                 this.nzTableDataService.listOfCalcOperator$.next(list);
             });
@@ -3543,7 +3548,7 @@ class NzTrMeasureComponent {
         this.elementRef = elementRef;
         this.listOfMeasureColumn = [];
         this.listOfAutoWidth = new _angular_core__WEBPACK_IMPORTED_MODULE_4__["EventEmitter"]();
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_18__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_19__["Subject"]();
         // TODO: move to host after View Engine deprecation
         this.elementRef.nativeElement.classList.add('ant-table-measure-now');
     }
@@ -3552,15 +3557,15 @@ class NzTrMeasureComponent {
     }
     ngAfterViewInit() {
         this.listOfTdElement.changes
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["startWith"])(this.listOfTdElement))
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["switchMap"])(list => {
-            return Object(rxjs__WEBPACK_IMPORTED_MODULE_18__["combineLatest"])(list.toArray().map((item) => {
-                return this.nzResizeObserver.observe(item).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["map"])(([entry]) => {
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(this.listOfTdElement))
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(list => {
+            return Object(rxjs__WEBPACK_IMPORTED_MODULE_19__["combineLatest"])(list.toArray().map((item) => {
+                return this.nzResizeObserver.observe(item).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([entry]) => {
                     const { width } = entry.target.getBoundingClientRect();
                     return Math.floor(width);
                 }));
             }));
-        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["debounceTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_19__["takeUntil"])(this.destroy$))
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["debounceTime"])(16), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["takeUntil"])(this.destroy$))
             .subscribe(data => {
             this.ngZone.run(() => {
                 this.listOfAutoWidth.next(data);
