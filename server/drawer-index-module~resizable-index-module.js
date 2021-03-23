@@ -778,8 +778,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
  */
 class NzDrawerServiceModule {
 }
+NzDrawerServiceModule.ɵfac = function NzDrawerServiceModule_Factory(t) { return new (t || NzDrawerServiceModule)(); };
 NzDrawerServiceModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: NzDrawerServiceModule });
-NzDrawerServiceModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function NzDrawerServiceModule_Factory(t) { return new (t || NzDrawerServiceModule)(); } });
+NzDrawerServiceModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({});
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵsetClassMetadata"](NzDrawerServiceModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_7__["NgModule"]
     }], null, null); })();
@@ -790,8 +791,9 @@ NzDrawerServiceModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵde
  */
 class NzDrawerModule {
 }
+NzDrawerModule.ɵfac = function NzDrawerModule_Factory(t) { return new (t || NzDrawerModule)(); };
 NzDrawerModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: NzDrawerModule });
-NzDrawerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function NzDrawerModule_Factory(t) { return new (t || NzDrawerModule)(); }, imports: [[
+NzDrawerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ imports: [[
             _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["BidiModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_6__["CommonModule"],
             _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_4__["OverlayModule"],

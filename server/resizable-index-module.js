@@ -2586,8 +2586,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoResizableModule {
 }
+NzDemoResizableModule.ɵfac = function NzDemoResizableModule_Factory(t) { return new (t || NzDemoResizableModule)(); };
 NzDemoResizableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineNgModule"]({ type: NzDemoResizableModule });
-NzDemoResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({ factory: function NzDemoResizableModule_Factory(t) { return new (t || NzDemoResizableModule)(); }, imports: [[
+NzDemoResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([
@@ -3187,8 +3188,9 @@ NzResizeHandlesComponent.propDecorators = {
  */
 class NzResizableModule {
 }
+NzResizableModule.ɵfac = function NzResizableModule_Factory(t) { return new (t || NzResizableModule)(); };
 NzResizableModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzResizableModule });
-NzResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzResizableModule_Factory(t) { return new (t || NzResizableModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
+NzResizableModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzResizableModule, { declarations: function () { return [NzResizableDirective, NzResizeHandleComponent, NzResizeHandlesComponent]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]; }, exports: function () { return [NzResizableDirective, NzResizeHandleComponent, NzResizeHandlesComponent]; } }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzResizableModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],

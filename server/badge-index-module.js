@@ -1990,8 +1990,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoBadgeModule {
 }
+NzDemoBadgeModule.ɵfac = function NzDemoBadgeModule_Factory(t) { return new (t || NzDemoBadgeModule)(); };
 NzDemoBadgeModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineNgModule"]({ type: NzDemoBadgeModule });
-NzDemoBadgeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineInjector"]({ factory: function NzDemoBadgeModule_Factory(t) { return new (t || NzDemoBadgeModule)(); }, imports: [[
+NzDemoBadgeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

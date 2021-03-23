@@ -397,8 +397,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoButtonModule {
 }
+NzDemoButtonModule.ɵfac = function NzDemoButtonModule_Factory(t) { return new (t || NzDemoButtonModule)(); };
 NzDemoButtonModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineNgModule"]({ type: NzDemoButtonModule });
-NzDemoButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({ factory: function NzDemoButtonModule_Factory(t) { return new (t || NzDemoButtonModule)(); }, imports: [[
+NzDemoButtonModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

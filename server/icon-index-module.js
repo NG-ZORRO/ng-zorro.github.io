@@ -48,8 +48,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoIconModule {
 }
+NzDemoIconModule.ɵfac = function NzDemoIconModule_Factory(t) { return new (t || NzDemoIconModule)(); };
 NzDemoIconModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: NzDemoIconModule });
-NzDemoIconModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ factory: function NzDemoIconModule_Factory(t) { return new (t || NzDemoIconModule)(); }, imports: [[
+NzDemoIconModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

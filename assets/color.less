@@ -8148,6 +8148,27 @@ tr.ant-table-expanded-row:hover > td {
 .ant-table.ant-table-small .nz-table-hide-scrollbar::-webkit-scrollbar {
   background-color: transparent;
 }
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr > th,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > td,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > th,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > td {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr:not(:last-child) > th {
+  border-bottom: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr > .ant-table-cell-fix-right-first::after,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > .ant-table-cell-fix-right-first::after,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > .ant-table-cell-fix-right-first::after {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > td > .ant-table-expanded-row-fixed::after {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered.ant-table-scroll-horizontal > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr.ant-table-expanded-row > td,
+.ant-table.ant-table-bordered.ant-table-scroll-horizontal > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr.ant-table-placeholder > td {
+  border-right: 0;
+}
 .ant-tabs-top > .ant-tabs-nav::before,
 .ant-tabs-bottom > .ant-tabs-nav::before,
 .ant-tabs-top > div > .ant-tabs-nav::before,
@@ -17831,6 +17852,27 @@ a.ant-typography.ant-typography-disabled:hover,
 }
 .ant-table.ant-table-small .nz-table-hide-scrollbar::-webkit-scrollbar {
   background-color: transparent;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr > th,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > td,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > th,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > td {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr:not(:last-child) > th {
+  border-bottom: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > thead > tr > .ant-table-cell-fix-right-first::after,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > .ant-table-cell-fix-right-first::after,
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tfoot > tr > .ant-table-cell-fix-right-first::after {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr > td > .ant-table-expanded-row-fixed::after {
+  border-right: 1px solid #f0f0f0;
+}
+.ant-table.ant-table-bordered.ant-table-scroll-horizontal > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr.ant-table-expanded-row > td,
+.ant-table.ant-table-bordered.ant-table-scroll-horizontal > .ant-table-container > .cdk-virtual-scroll-viewport > .cdk-virtual-scroll-content-wrapper > table > tbody > tr.ant-table-placeholder > td {
+  border-right: 0;
 }
 a[nz-tab-link]::before {
   background-color: transparent;

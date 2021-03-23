@@ -42,8 +42,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAlertModule {
 }
+NzDemoAlertModule.ɵfac = function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); };
 NzDemoAlertModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: NzDemoAlertModule });
-NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ factory: function NzDemoAlertModule_Factory(t) { return new (t || NzDemoAlertModule)(); }, imports: [[
+NzDemoAlertModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

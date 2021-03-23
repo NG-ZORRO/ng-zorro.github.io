@@ -38,8 +38,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAffixModule {
 }
+NzDemoAffixModule.ɵfac = function NzDemoAffixModule_Factory(t) { return new (t || NzDemoAffixModule)(); };
 NzDemoAffixModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: NzDemoAffixModule });
-NzDemoAffixModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function NzDemoAffixModule_Factory(t) { return new (t || NzDemoAffixModule)(); }, imports: [[
+NzDemoAffixModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

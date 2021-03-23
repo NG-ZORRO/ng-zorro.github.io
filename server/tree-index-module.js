@@ -54,8 +54,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoTreeModule {
 }
+NzDemoTreeModule.ɵfac = function NzDemoTreeModule_Factory(t) { return new (t || NzDemoTreeModule)(); };
 NzDemoTreeModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineNgModule"]({ type: NzDemoTreeModule });
-NzDemoTreeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({ factory: function NzDemoTreeModule_Factory(t) { return new (t || NzDemoTreeModule)(); }, imports: [[
+NzDemoTreeModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_15__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

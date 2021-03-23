@@ -1437,8 +1437,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoCalendarModule {
 }
+NzDemoCalendarModule.ɵfac = function NzDemoCalendarModule_Factory(t) { return new (t || NzDemoCalendarModule)(); };
 NzDemoCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: NzDemoCalendarModule });
-NzDemoCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function NzDemoCalendarModule_Factory(t) { return new (t || NzDemoCalendarModule)(); }, imports: [[
+NzDemoCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([
@@ -2276,8 +2277,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
  */
 class NzCalendarModule {
 }
+NzCalendarModule.ɵfac = function NzCalendarModule_Factory(t) { return new (t || NzCalendarModule)(); };
 NzCalendarModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzCalendarModule });
-NzCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzCalendarModule_Factory(t) { return new (t || NzCalendarModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_5__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_6__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_7__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_4__["LibPackerModule"]]] });
+NzCalendarModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_5__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_6__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_7__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_4__["LibPackerModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzCalendarModule, { declarations: function () { return [NzCalendarHeaderComponent, NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_5__["NzI18nModule"], ng_zorro_antd_radio__WEBPACK_IMPORTED_MODULE_6__["NzRadioModule"], ng_zorro_antd_select__WEBPACK_IMPORTED_MODULE_7__["NzSelectModule"], ng_zorro_antd_date_picker__WEBPACK_IMPORTED_MODULE_4__["LibPackerModule"]]; }, exports: function () { return [NzCalendarComponent, NzDateCellDirective, NzDateFullCellDirective, NzMonthCellDirective, NzMonthFullCellDirective]; } }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵsetClassMetadata"](NzCalendarModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],

@@ -3794,8 +3794,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoGraphModule {
 }
+NzDemoGraphModule.ɵfac = function NzDemoGraphModule_Factory(t) { return new (t || NzDemoGraphModule)(); };
 NzDemoGraphModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: NzDemoGraphModule });
-NzDemoGraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ factory: function NzDemoGraphModule_Factory(t) { return new (t || NzDemoGraphModule)(); }, imports: [[
+NzDemoGraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([
@@ -5427,8 +5428,9 @@ const COMPONENTS = [
 ];
 class NzGraphModule {
 }
+NzGraphModule.ɵfac = function NzGraphModule_Factory(t) { return new (t || NzGraphModule)(); };
 NzGraphModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({ type: NzGraphModule });
-NzGraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ factory: function NzGraphModule_Factory(t) { return new (t || NzGraphModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_7__["NzSpinModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"]]] });
+NzGraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_7__["NzSpinModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](NzGraphModule, { declarations: function () { return [NzGraphComponent, NzGraphMinimapComponent, NzGraphDefsComponent, NzGraphNodeDirective, NzGraphGroupNodeDirective, NzGraphZoomDirective, NzGraphNodeComponent, NzGraphEdgeComponent, NzGraphEdgeDirective]; }, imports: function () { return [_angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconModule"], ng_zorro_antd_spin__WEBPACK_IMPORTED_MODULE_7__["NzSpinModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"]]; }, exports: function () { return [NzGraphComponent, NzGraphMinimapComponent, NzGraphDefsComponent, NzGraphNodeDirective, NzGraphGroupNodeDirective, NzGraphZoomDirective, NzGraphNodeComponent, NzGraphEdgeComponent, NzGraphEdgeDirective]; } }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵsetClassMetadata"](NzGraphModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"],

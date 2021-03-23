@@ -190,7 +190,7 @@ NzDemoDescriptionsZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "div", 25);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](75, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "Vertical usage.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](76, "\u5782\u76F4\u7684\u5217\u8868\u3002");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -685,8 +685,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDescriptionsModule {
 }
+NzDemoDescriptionsModule.ɵfac = function NzDemoDescriptionsModule_Factory(t) { return new (t || NzDemoDescriptionsModule)(); };
 NzDemoDescriptionsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({ type: NzDemoDescriptionsModule });
-NzDemoDescriptionsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ factory: function NzDemoDescriptionsModule_Factory(t) { return new (t || NzDemoDescriptionsModule)(); }, imports: [[
+NzDemoDescriptionsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([
@@ -1095,7 +1096,7 @@ NzDemoDescriptionsEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](73, "div", 25);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdisableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](74, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "Responsive configuration enables perfect presentation on small screen devices.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, "Simplest Usage.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵenableBindings"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -1458,24 +1459,27 @@ __webpack_require__.r(__webpack_exports__);
 class NzDemoDescriptionsVerticalComponent {
 }
 NzDemoDescriptionsVerticalComponent.ɵfac = function NzDemoDescriptionsVerticalComponent_Factory(t) { return new (t || NzDemoDescriptionsVerticalComponent)(); };
-NzDemoDescriptionsVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDescriptionsVerticalComponent, selectors: [["nz-demo-descriptions-vertical"]], decls: 11, vars: 0, consts: [["nzTitle", "User Info", "nzLayout", "vertical"], ["nzTitle", "UserName"], ["nzTitle", "Telephone"], ["nzTitle", "Live"], ["nzTitle", "Remark"], ["nzTitle", "Address"]], template: function NzDemoDescriptionsVerticalComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoDescriptionsVerticalComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NzDemoDescriptionsVerticalComponent, selectors: [["nz-demo-descriptions-vertical"]], decls: 11, vars: 1, consts: [["nzTitle", "User Info", "nzLayout", "vertical"], ["nzTitle", "UserName"], ["nzTitle", "Telephone"], ["nzTitle", "Live"], ["nzTitle", "Address", 3, "nzSpan"], ["nzTitle", "Remark"]], template: function NzDemoDescriptionsVerticalComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nz-descriptions", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "nz-descriptions-item", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Zhou Maomao");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "nz-descriptions-item", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "18100000000");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "1810000000");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "nz-descriptions-item", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Hangzhou, Zhejiang");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "nz-descriptions-item", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Empty");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "nz-descriptions-item", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "empty");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("nzSpan", 2);
     } }, directives: [ng_zorro_antd_descriptions__WEBPACK_IMPORTED_MODULE_1__["NzDescriptionsComponent"], ng_zorro_antd_descriptions__WEBPACK_IMPORTED_MODULE_1__["NzDescriptionsItemComponent"]], encapsulation: 2 });
 
 

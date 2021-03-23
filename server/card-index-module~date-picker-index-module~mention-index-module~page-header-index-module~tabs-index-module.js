@@ -2203,8 +2203,9 @@ const DIRECTIVES = [
 ];
 class NzTabsModule {
 }
+NzTabsModule.ɵfac = function NzTabsModule_Factory(t) { return new (t || NzTabsModule)(); };
 NzTabsModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzTabsModule });
-NzTabsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTabsModule_Factory(t) { return new (t || NzTabsModule)(); }, imports: [[
+NzTabsModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[
             _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_4__["BidiModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_17__["CommonModule"],
             _angular_cdk_observers__WEBPACK_IMPORTED_MODULE_14__["ObserversModule"],

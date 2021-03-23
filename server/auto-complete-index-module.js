@@ -288,7 +288,9 @@ function NzAutocompleteComponent_ng_template_0_ng_template_7_Template(rf, ctx) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngForOf", ctx_r6.nzDataSource);
 } }
 function NzAutocompleteComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0, 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("@slideMotion.done", function NzAutocompleteComponent_ng_template_0_Template_div_animation_slideMotion_done_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r11); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r10.onAnimationEvent($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "div", 2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](4, NzAutocompleteComponent_ng_template_0_4_Template, 1, 0, undefined, 4);
@@ -302,7 +304,7 @@ function NzAutocompleteComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](8);
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-select-dropdown-hidden", !ctx_r0.showPanel)("ant-select-dropdown-rtl", ctx_r0.dir === "rtl");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", "enter")("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", undefined)("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", ctx_r0.nzDataSource ? _r5 : _r3);
 } }
@@ -448,6 +450,7 @@ class NzAutocompleteComponent {
         this.isOpen = false;
         this.dir = 'ltr';
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_12__["Subject"]();
+        this.animationStateChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.activeItemIndex = -1;
         this.selectionChangeSubscription = rxjs__WEBPACK_IMPORTED_MODULE_12__["Subscription"].EMPTY;
         this.optionMouseEnterSubscription = rxjs__WEBPACK_IMPORTED_MODULE_12__["Subscription"].EMPTY;
@@ -485,6 +488,9 @@ class NzAutocompleteComponent {
             this.changeDetectorRef.detectChanges();
         });
         this.dir = this.directionality.value;
+    }
+    onAnimationEvent(event) {
+        this.animationStateChange.emit(event);
     }
     ngAfterContentInit() {
         if (!this.nzDataSource) {
@@ -705,7 +711,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_8__["__decorate"])([
         [ngClass]="nzOverlayClassName"
         [ngStyle]="nzOverlayStyle"
         [nzNoAnimation]="noAnimation?.nzNoAnimation"
-        [@slideMotion]="'enter'"
+        @slideMotion
+        (@slideMotion.done)="onAnimationEvent($event)"
         [@.disabled]="noAnimation?.nzNoAnimation"
       >
         <div style="max-height: 256px; overflow-y: auto; overflow-anchor: none;">
@@ -804,6 +811,18 @@ class NzAutocompleteTriggerDirective {
             return this.nzAutocomplete.activeItem;
         }
     }
+    ngAfterViewInit() {
+        if (this.nzAutocomplete) {
+            this.nzAutocomplete.animationStateChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_13__["takeUntil"])(this.destroy$)).subscribe(event => {
+                if (event.toState === 'void') {
+                    if (this.overlayRef) {
+                        this.overlayRef.dispose();
+                        this.overlayRef = null;
+                    }
+                }
+            });
+        }
+    }
     ngOnDestroy() {
         this.destroyPanel();
     }
@@ -830,11 +849,10 @@ class NzAutocompleteTriggerDirective {
         if (this.panelOpen) {
             this.nzAutocomplete.isOpen = this.panelOpen = false;
             if (this.overlayRef && this.overlayRef.hasAttached()) {
+                this.overlayRef.detach();
                 this.selectionChangeSubscription.unsubscribe();
                 this.overlayOutsideClickSubscription.unsubscribe();
                 this.optionsChangeSubscription.unsubscribe();
-                this.overlayRef.dispose();
-                this.overlayRef = null;
                 this.portal = null;
             }
         }
@@ -1073,8 +1091,9 @@ NzAutocompleteTriggerDirective.propDecorators = {
  */
 class NzAutocompleteModule {
 }
+NzAutocompleteModule.ɵfac = function NzAutocompleteModule_Factory(t) { return new (t || NzAutocompleteModule)(); };
 NzAutocompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzAutocompleteModule });
-NzAutocompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzAutocompleteModule_Factory(t) { return new (t || NzAutocompleteModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]] });
+NzAutocompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzAutocompleteModule, { declarations: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_6__["NzOutletModule"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_5__["NzNoAnimationModule"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputModule"]]; }, exports: function () { return [NzAutocompleteComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzAutocompleteOptgroupComponent]; } }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzAutocompleteModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"],
@@ -2335,8 +2354,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoAutoCompleteModule {
 }
+NzDemoAutoCompleteModule.ɵfac = function NzDemoAutoCompleteModule_Factory(t) { return new (t || NzDemoAutoCompleteModule)(); };
 NzDemoAutoCompleteModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineNgModule"]({ type: NzDemoAutoCompleteModule });
-NzDemoAutoCompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ factory: function NzDemoAutoCompleteModule_Factory(t) { return new (t || NzDemoAutoCompleteModule)(); }, imports: [[
+NzDemoAutoCompleteModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

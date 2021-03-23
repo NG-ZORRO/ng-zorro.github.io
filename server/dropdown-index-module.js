@@ -50,8 +50,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoDropdownModule {
 }
+NzDemoDropdownModule.ɵfac = function NzDemoDropdownModule_Factory(t) { return new (t || NzDemoDropdownModule)(); };
 NzDemoDropdownModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineNgModule"]({ type: NzDemoDropdownModule });
-NzDemoDropdownModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineInjector"]({ factory: function NzDemoDropdownModule_Factory(t) { return new (t || NzDemoDropdownModule)(); }, imports: [[
+NzDemoDropdownModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

@@ -1042,8 +1042,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzDemoProgressModule {
 }
+NzDemoProgressModule.ɵfac = function NzDemoProgressModule_Factory(t) { return new (t || NzDemoProgressModule)(); };
 NzDemoProgressModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵdefineNgModule"]({ type: NzDemoProgressModule });
-NzDemoProgressModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵdefineInjector"]({ factory: function NzDemoProgressModule_Factory(t) { return new (t || NzDemoProgressModule)(); }, imports: [[
+NzDemoProgressModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵdefineInjector"]({ imports: [[
             _share_share_module__WEBPACK_IMPORTED_MODULE_1__["ShareModule"],
             ..._module__WEBPACK_IMPORTED_MODULE_2__["moduleList"],
             _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild([

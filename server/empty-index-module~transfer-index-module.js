@@ -1005,8 +1005,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_1__["__decorate"])([
  */
 class NzTransferModule {
 }
+NzTransferModule.ɵfac = function NzTransferModule_Factory(t) { return new (t || NzTransferModule)(); };
 NzTransferModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: NzTransferModule });
-NzTransferModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function NzTransferModule_Factory(t) { return new (t || NzTransferModule)(); }, imports: [[
+NzTransferModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ imports: [[
             _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_2__["BidiModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_7__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_8__["FormsModule"],

@@ -64,8 +64,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzCodeBoxModule {
 }
+NzCodeBoxModule.ɵfac = function NzCodeBoxModule_Factory(t) { return new (t || NzCodeBoxModule)(); };
 NzCodeBoxModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({ type: NzCodeBoxModule });
-NzCodeBoxModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ factory: function NzCodeBoxModule_Factory(t) { return new (t || NzCodeBoxModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_3__["NzHighlightModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_2__["NzToolTipModule"]]] });
+NzCodeBoxModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_3__["NzHighlightModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_2__["NzToolTipModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](NzCodeBoxModule, { declarations: [_codebox_component__WEBPACK_IMPORTED_MODULE_4__["NzCodeBoxComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _highlight_highlight_module__WEBPACK_IMPORTED_MODULE_3__["NzHighlightModule"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_1__["NzIconModule"], ng_zorro_antd_tooltip__WEBPACK_IMPORTED_MODULE_2__["NzToolTipModule"]], exports: [_codebox_component__WEBPACK_IMPORTED_MODULE_4__["NzCodeBoxComponent"]] }); })();
 
 
@@ -111,8 +112,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class ShareModule {
 }
+ShareModule.ɵfac = function ShareModule_Factory(t) { return new (t || ShareModule)(); };
 ShareModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineNgModule"]({ type: ShareModule });
-ShareModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({ factory: function ShareModule_Factory(t) { return new (t || ShareModule)(); }, imports: [[
+ShareModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({ imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"],
@@ -911,8 +913,9 @@ NzAnchorLinkComponent.propDecorators = {
  */
 class NzAnchorModule {
 }
+NzAnchorModule.ɵfac = function NzAnchorModule_Factory(t) { return new (t || NzAnchorModule)(); };
 NzAnchorModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: NzAnchorModule });
-NzAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function NzAnchorModule_Factory(t) { return new (t || NzAnchorModule)(); }, imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
+NzAnchorModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ imports: [[_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](NzAnchorModule, { declarations: function () { return [NzAnchorComponent, NzAnchorLinkComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_9__["BidiModule"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["CommonModule"], ng_zorro_antd_affix__WEBPACK_IMPORTED_MODULE_10__["NzAffixModule"], _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_0__["PlatformModule"]]; }, exports: function () { return [NzAnchorComponent, NzAnchorLinkComponent]; } }); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](NzAnchorModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -1042,8 +1045,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzGithubBtnModule {
 }
+NzGithubBtnModule.ɵfac = function NzGithubBtnModule_Factory(t) { return new (t || NzGithubBtnModule)(); };
 NzGithubBtnModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({ type: NzGithubBtnModule });
-NzGithubBtnModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ factory: function NzGithubBtnModule_Factory(t) { return new (t || NzGithubBtnModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"]]] });
+NzGithubBtnModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzGithubBtnModule, { declarations: [_github_btn_component__WEBPACK_IMPORTED_MODULE_2__["NzGithubBtnComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClientModule"]], exports: [_github_btn_component__WEBPACK_IMPORTED_MODULE_2__["NzGithubBtnComponent"]] }); })();
 
 
@@ -1575,8 +1579,9 @@ __webpack_require__.r(__webpack_exports__);
 
 class NzHighlightModule {
 }
+NzHighlightModule.ɵfac = function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); };
 NzHighlightModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzHighlightModule });
-NzHighlightModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
+NzHighlightModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ imports: [[_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](NzHighlightModule, { declarations: [_highlight_component__WEBPACK_IMPORTED_MODULE_1__["NzHighlightComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"]], exports: [_highlight_component__WEBPACK_IMPORTED_MODULE_1__["NzHighlightComponent"]] }); })();
 
 

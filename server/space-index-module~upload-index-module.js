@@ -1534,8 +1534,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_9__["__decorate"])([
  */
 class NzUploadModule {
 }
+NzUploadModule.ɵfac = function NzUploadModule_Factory(t) { return new (t || NzUploadModule)(); };
 NzUploadModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({ type: NzUploadModule });
-NzUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ factory: function NzUploadModule_Factory(t) { return new (t || NzUploadModule)(); }, imports: [[
+NzUploadModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({ imports: [[
             _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_10__["BidiModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_8__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
