@@ -1989,7 +1989,7 @@ class NzTableDataService {
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(([pageIndex, pageSize, listOfData]) => {
             return listOfData.slice((pageIndex - 1) * pageSize, pageIndex * pageSize);
         }));
-        this.listOfCurrentPageData$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(pagination => (pagination ? this.listOfFrontEndCurrentPageData$ : this.listOfData$)));
+        this.listOfCurrentPageData$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(pagination => (pagination ? this.listOfFrontEndCurrentPageData$ : this.listOfDataAfterCalc$)));
         this.total$ = this.frontPagination$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(pagination => (pagination ? this.listOfDataAfterCalc$ : this.listOfData$)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["map"])(list => list.length), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["distinctUntilChanged"])());
     }
     updatePageSize(size) {

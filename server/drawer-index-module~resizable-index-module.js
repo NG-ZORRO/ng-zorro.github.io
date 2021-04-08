@@ -164,7 +164,7 @@ function NzDrawerComponent_ng_template_0_ng_template_9_Template(rf, ctx) { if (r
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtemplate"](0, NzDrawerComponent_ng_template_0_ng_template_9_ng_container_0_Template, 2, 1, "ng-container", 10);
 } if (rf & 2) {
     const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx_r7.contentFromContentChild);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", ctx_r7.contentFromContentChild && (ctx_r7.isOpen || ctx_r7.inAnimation));
 } }
 function NzDrawerComponent_ng_template_0_ng_content_11_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵprojection"](0, 0, ["*ngIf", "!(nzContent || contentFromContentChild)"]);
@@ -294,6 +294,7 @@ class NzDrawerComponent extends NzDrawerRef {
         this.placementChanging = false;
         this.placementChangeTimeoutId = -1;
         this.isOpen = false;
+        this.inAnimation = false;
         this.templateContext = {
             $implicit: undefined,
             drawerRef: this
@@ -420,6 +421,7 @@ class NzDrawerComponent extends NzDrawerRef {
     }
     close(result) {
         this.isOpen = false;
+        this.inAnimation = true;
         this.nzVisibleChange.emit(false);
         this.updateOverlayStyle();
         this.overlayKeyboardDispatcher.remove(this.overlayRef);
@@ -427,6 +429,7 @@ class NzDrawerComponent extends NzDrawerRef {
         setTimeout(() => {
             this.updateBodyOverflow();
             this.restoreFocus();
+            this.inAnimation = false;
             this.nzAfterClose.next(result);
             this.nzAfterClose.complete();
             this.componentInstance = null;
@@ -435,6 +438,7 @@ class NzDrawerComponent extends NzDrawerRef {
     open() {
         this.attachOverlay();
         this.isOpen = true;
+        this.inAnimation = true;
         this.nzVisibleChange.emit(true);
         this.overlayKeyboardDispatcher.add(this.overlayRef);
         this.updateOverlayStyle();
@@ -443,6 +447,8 @@ class NzDrawerComponent extends NzDrawerRef {
         this.trapFocus();
         this.changeDetectorRef.detectChanges();
         setTimeout(() => {
+            this.inAnimation = false;
+            this.changeDetectorRef.detectChanges();
             this.nzAfterOpen.next();
         }, this.getAnimationDuration());
     }
@@ -690,7 +696,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                   </ng-container>
                 </ng-container>
                 <ng-template #contentElseTemp>
-                  <ng-container *ngIf="contentFromContentChild">
+                  <ng-container *ngIf="contentFromContentChild && (isOpen || inAnimation)">
                     <ng-template [ngTemplateOutlet]="contentFromContentChild"></ng-template>
                   </ng-container>
                 </ng-template>

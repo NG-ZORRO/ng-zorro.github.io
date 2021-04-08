@@ -138,9 +138,10 @@ class NzSpaceComponent {
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
     }
     updateSpaceItems() {
+        var _a;
         const numberSize = typeof this.nzSize === 'string' ? SPACE_SIZE[this.nzSize] : this.nzSize;
         this.spaceSize = numberSize / (!!this.nzSplit ? 2 : 1);
-        if (this.nzSpaceItemComponents) {
+        if ((_a = this.nzSpaceItemComponents) === null || _a === void 0 ? void 0 : _a.length) {
             Object(ng_zorro_antd_core_logger__WEBPACK_IMPORTED_MODULE_5__["warnDeprecation"])('`nz-space-item` in `nz-space` will be removed in 12.0.0, please use `*nzSpaceItem` instead.');
             this.nzSpaceItemComponents.forEach(item => {
                 item.setDirectionAndSize(this.nzDirection, this.spaceSize);

@@ -2224,14 +2224,14 @@ class NzPickerComponent {
     }
     onFocus(event, partType) {
         event.preventDefault();
-        this.focusChange.emit(true);
+        this.focusChange.emit(event);
         if (partType) {
             this.datePickerService.inputPartChange$.next(partType);
         }
     }
     onBlur(event) {
         event.preventDefault();
-        this.focusChange.emit(false);
+        this.focusChange.emit(event);
     }
     // Show overlay content
     showOverlay() {
@@ -2652,13 +2652,16 @@ class NzDatePickerComponent {
         this.datePickerService.initialValue = newValue;
     }
     onFocusChange(value) {
-        this.focused = value;
+        // When the relatedTarget is part of the elementRef, it means that it's a range-picker and you are navigating to
+        // the other input in that range picker. In that case we don't want to close the picker.
+        this.focused = (value.type === 'blur' && this.elementRef.nativeElement.contains(value.relatedTarget)) || value.type === 'focus';
         // TODO: avoid autoFocus cause change after checked error
         if (this.focused) {
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-picker-focused');
         }
         else {
             this.renderer.removeClass(this.elementRef.nativeElement, 'ant-picker-focused');
+            this.close();
         }
     }
     onPanelModeChange(panelMode) {

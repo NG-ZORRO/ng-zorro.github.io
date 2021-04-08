@@ -283,7 +283,7 @@ class NzDemoTabsSlideComponent {
     constructor() {
         this.tabs = [];
         this.nzTabPosition = 'top';
-        this.selectedIndex = 0;
+        this.selectedIndex = 27;
     }
     /* tslint:disable-next-line:no-any */
     log(args) {
