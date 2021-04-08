@@ -6156,7 +6156,7 @@ NzDocChangelogZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "kbd");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](65, "Tab");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, " \u5931\u53BB\u7126\u70B9\u6709\u6CA1\u6709\u5173\u95ED\u7684\u95EE\u9898 (");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, " \u5931\u53BB\u7126\u70B9\u6CA1\u6709\u5173\u95ED\u7684\u95EE\u9898 (");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "a", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "#6571");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
