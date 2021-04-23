@@ -316,16 +316,16 @@ class ModalOptions {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 const ZOOM_CLASS_NAME_MAP = {
-    enter: 'zoom-enter',
-    enterActive: 'zoom-enter-active',
-    leave: 'zoom-leave',
-    leaveActive: 'zoom-leave-active'
+    enter: 'ant-zoom-enter',
+    enterActive: 'ant-zoom-enter-active',
+    leave: 'ant-zoom-leave',
+    leaveActive: 'ant-zoom-leave-active'
 };
 const FADE_CLASS_NAME_MAP = {
-    enter: 'fade-enter',
-    enterActive: 'fade-enter-active',
-    leave: 'fade-leave',
-    leaveActive: 'fade-leave-active'
+    enter: 'ant-fade-enter',
+    enterActive: 'ant-fade-enter-active',
+    leave: 'ant-fade-leave',
+    leaveActive: 'ant-fade-leave-active'
 };
 const MODAL_MASK_CLASS_NAME = 'ant-modal-mask';
 const NZ_CONFIG_MODULE_NAME = 'modal';

@@ -249,13 +249,16 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
     ngOnInit() {
         var _a;
         this.isDestroy = false;
-        this.selectionChangeSubscription = this.subscribeSelectionChange();
+        this.subscribeSelectionChange();
         (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$)).subscribe((direction) => {
             this.dir = direction;
             this.cdr.detectChanges();
         });
         this.dir = this.directionality.value;
-        this.focusChangeSubscription = this.focusMonitor.monitor(this.elementRef, true).subscribe(focusOrigin => {
+        this.focusMonitor
+            .monitor(this.elementRef, true)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
+            .subscribe(focusOrigin => {
             if (!focusOrigin) {
                 this.focused = false;
                 this.cdr.markForCheck();
@@ -272,10 +275,8 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
     ngOnDestroy() {
         this.isDestroy = true;
         this.closeDropDown();
-        this.selectionChangeSubscription.unsubscribe();
         this.destroy$.next();
         this.destroy$.complete();
-        this.focusChangeSubscription.unsubscribe();
     }
     isComposingChange(isComposing) {
         this.isComposing = isComposing;
@@ -402,7 +403,7 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
         }
     }
     subscribeSelectionChange() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["merge"])(this.nzTreeClick.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["tap"])((event) => {
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["merge"])(this.nzTreeClick.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["tap"])((event) => {
             const node = event.node;
             if (this.nzCheckable && !node.isDisabled && !node.isDisableCheckbox) {
                 node.isChecked = !node.isChecked;
@@ -417,7 +418,9 @@ class NzTreeSelectComponent extends ng_zorro_antd_core_tree__WEBPACK_IMPORTED_MO
         }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["filter"])((event) => {
             const node = event.node;
             return this.nzCheckable ? !node.isDisabled && !node.isDisableCheckbox : !node.isDisabled && node.isSelectable;
-        })), this.nzCheckable ? this.nzTreeCheckBoxChange : Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["of"])(), this.nzCleared, this.nzRemoved).subscribe(() => {
+        })), this.nzCheckable ? this.nzTreeCheckBoxChange : Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["of"])(), this.nzCleared, this.nzRemoved)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
+            .subscribe(() => {
             this.updateSelectedNodes();
             const value = this.selectedNodes.map(node => node.key);
             this.value = [...value];

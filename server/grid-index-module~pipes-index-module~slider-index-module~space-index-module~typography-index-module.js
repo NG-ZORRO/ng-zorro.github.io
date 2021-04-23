@@ -61,7 +61,10 @@ function NzSliderComponent_nz_slider_step_4_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("vertical", ctx_r1.nzVertical)("min", ctx_r1.nzMin)("max", ctx_r1.nzMax)("lowerBound", ctx_r1.bounds.lower)("upperBound", ctx_r1.bounds.upper)("marksArray", ctx_r1.marksArray)("included", ctx_r1.nzIncluded)("reverse", ctx_r1.nzReverse);
 } }
 function NzSliderComponent_nz_slider_handle_5_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](0, "nz-slider-handle", 7);
+    const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "nz-slider-handle", 7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵlistener"]("focusin", function NzSliderComponent_nz_slider_handle_5_Template_nz_slider_handle_focusin_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵrestoreView"](_r7); const handleIndex_r5 = ctx.index; const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](); return ctx_r6.onHandleFocusIn(handleIndex_r5); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const handle_r4 = ctx.$implicit;
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"]();
@@ -288,6 +291,7 @@ class NzSliderComponent {
             this.marksArray = this.nzMarks ? this.generateMarkItems(this.nzMarks) : null;
         }
         else if (nzRange && !nzRange.firstChange) {
+            this.handles = generateHandlers(nzRange.currentValue ? 2 : 1);
             this.setValue(this.formatValue(null));
         }
     }
@@ -315,6 +319,9 @@ class NzSliderComponent {
      * Event handler is only triggered when a slider handler is focused.
      */
     onKeyDown(e) {
+        if (this.nzDisabled) {
+            return;
+        }
         const code = e.keyCode;
         const isIncrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["RIGHT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["UP_ARROW"];
         const isDecrease = code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["LEFT_ARROW"] || code === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_2__["DOWN_ARROW"];
@@ -326,6 +333,9 @@ class NzSliderComponent {
         step = this.dir === 'rtl' ? step * -1 : step;
         const newVal = this.nzRange ? this.value[this.activeValueIndex] + step : this.value + step;
         this.setActiveValue(Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["ensureNumberInRange"])(newVal, this.nzMin, this.nzMax));
+    }
+    onHandleFocusIn(index) {
+        this.activeValueIndex = index;
     }
     setValue(value, isWriteValue = false) {
         if (isWriteValue) {
@@ -581,10 +591,12 @@ class NzSliderComponent {
     generateMarkItems(marks) {
         const marksArray = [];
         for (const key in marks) {
-            const mark = marks[key];
-            const val = typeof key === 'number' ? key : parseFloat(key);
-            if (val >= this.nzMin && val <= this.nzMax) {
-                marksArray.push({ value: val, offset: this.valueToOffset(val), config: mark });
+            if (marks.hasOwnProperty(key)) {
+                const mark = marks[key];
+                const val = typeof key === 'number' ? key : parseFloat(key);
+                if (val >= this.nzMin && val <= this.nzMax) {
+                    marksArray.push({ value: val, offset: this.valueToOffset(val), config: mark });
+                }
             }
         }
         return marksArray.length ? marksArray : null;
@@ -607,7 +619,7 @@ NzSliderComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefine
                 multi: true
             },
             NzSliderService
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 17, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse", "dir"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 17, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "vertical", "included", "offset", "length", "reverse", "dir"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse", 4, "ngIf"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", "focusin", 4, "ngFor", "ngForOf"], [3, "vertical", "min", "max", "lowerBound", "upperBound", "marksArray", "included", "reverse"], [3, "vertical", "reverse", "offset", "value", "active", "tooltipFormatter", "tooltipVisible", "tooltipPlacement", "dir", "focusin"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "div", 0, 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](2, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelement"](3, "nz-slider-track", 3);
@@ -1090,7 +1102,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [reverse]="nzReverse"
       ></nz-slider-step>
       <nz-slider-handle
-        *ngFor="let handle of handles"
+        *ngFor="let handle of handles; index as handleIndex"
         [vertical]="nzVertical"
         [reverse]="nzReverse"
         [offset]="handle.offset!"
@@ -1100,6 +1112,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         [tooltipVisible]="nzTooltipVisible"
         [tooltipPlacement]="nzTooltipPlacement"
         [dir]="dir"
+        (focusin)="onHandleFocusIn(handleIndex)"
       ></nz-slider-handle>
       <nz-slider-marks
         *ngIf="marksArray"

@@ -909,7 +909,7 @@ class NzUploadListComponent {
     }
     previewImage(file) {
         return new Promise(resolve => {
-            if (!isImageFileType(file.type)) {
+            if (!isImageFileType(file.type) || !this.platform.isBrowser) {
                 resolve('');
                 return;
             }

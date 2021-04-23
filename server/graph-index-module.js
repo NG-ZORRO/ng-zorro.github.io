@@ -958,7 +958,7 @@ NzDemoGraphZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](551, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](552, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](553, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](554, "x");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](554, "xOffset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](555, "td");
@@ -973,7 +973,7 @@ NzDemoGraphZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](560, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](561, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](562, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](563, "y");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](563, "yOffset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](564, "td");
@@ -2979,7 +2979,7 @@ NzDemoGraphEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](550, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](551, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](552, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](553, "x");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](553, "xOffset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](554, "td");
@@ -2994,7 +2994,7 @@ NzDemoGraphEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵd
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](559, "tr");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](560, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](561, "code");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "y");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](562, "yOffset");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](563, "td");
@@ -3815,7 +3815,7 @@ NzDemoGraphModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefine
 /*!**************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-graph.js ***!
   \**************************************************************/
-/*! exports provided: NZ_GRAPH_LAYOUT_SETTING, NzGraphComponent, NzGraphData, NzGraphEdgeComponent, NzGraphEdgeDirective, NzGraphGroupNodeDirective, NzGraphMinimapComponent, NzGraphModule, NzGraphNodeComponent, NzGraphNodeDirective, NzGraphZoomDirective, isDataSource, nzTypeDefinition, ɵa */
+/*! exports provided: NZ_GRAPH_LAYOUT_SETTING, NzGraphComponent, NzGraphData, NzGraphEdgeComponent, NzGraphEdgeDirective, NzGraphEdgeType, NzGraphGroupNodeDirective, NzGraphMinimapComponent, NzGraphModule, NzGraphNodeComponent, NzGraphNodeDirective, NzGraphZoomDirective, isDataSource, nzTypeDefinition, ɵa */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3825,6 +3825,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphData", function() { return NzGraphData; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphEdgeComponent", function() { return NzGraphEdgeComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphEdgeDirective", function() { return NzGraphEdgeDirective; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphEdgeType", function() { return NzGraphEdgeType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphGroupNodeDirective", function() { return NzGraphGroupNodeDirective; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphMinimapComponent", function() { return NzGraphMinimapComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NzGraphModule", function() { return NzGraphModule; });
@@ -3955,7 +3956,7 @@ function NzGraphComponent_ng_template_5__svg_ng_container_3_Template(rf, ctx) { 
     const edge_r6 = ctx.$implicit;
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("edge", edge_r6)("customTemplate", ctx_r4.customGraphEdgeTemplate);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵproperty"]("edge", edge_r6)("edgeType", ctx_r4.nzGraphLayoutConfig == null ? null : ctx_r4.nzGraphLayoutConfig.defaultEdge == null ? null : ctx_r4.nzGraphLayoutConfig.defaultEdge.type)("customTemplate", ctx_r4.customGraphEdgeTemplate);
 } }
 function NzGraphComponent_ng_template_5__svg_ng_container_5__svg_g_1_Template(rf, ctx) { if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵgetCurrentView"]();
@@ -4010,7 +4011,7 @@ function NzGraphComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](0, "g");
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](1, "g", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](2, "g", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, NzGraphComponent_ng_template_5__svg_ng_container_3_Template, 2, 2, "ng-container", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](3, NzGraphComponent_ng_template_5__svg_ng_container_3_Template, 2, 3, "ng-container", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵelementStart"](4, "g", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](5, NzGraphComponent_ng_template_5__svg_ng_container_5_Template, 4, 3, "ng-container", 6);
@@ -4031,6 +4032,11 @@ function NzGraphComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c5 = function (a0) { return { renderNode: a0, type: "root" }; };
 const _c6 = ["*"];
+var NzGraphEdgeType;
+(function (NzGraphEdgeType) {
+    NzGraphEdgeType["LINE"] = "line";
+    NzGraphEdgeType["CURVE"] = "curve";
+})(NzGraphEdgeType || (NzGraphEdgeType = {}));
 function nzTypeDefinition() {
     return item => item;
 }
@@ -4099,11 +4105,15 @@ class NzGraphData {
     }
     /** Expands one single data node. */
     expand(nodeName) {
-        this.expansionModel.select(nodeName);
+        const compound = this.dataSource.compound || {};
+        const toBeSelected = this.findParents(compound, nodeName, [nodeName]);
+        this.expansionModel.select(...toBeSelected);
     }
     /** Collapses one single data node. */
     collapse(nodeName) {
-        this.expansionModel.deselect(nodeName);
+        const compound = this.dataSource.compound || {};
+        const toBeDeselected = this.findChildren(compound, nodeName, [nodeName]);
+        this.expansionModel.deselect(...toBeDeselected);
     }
     /** Whether a given data node is expanded or not. Returns true if the data node is expanded. */
     isExpanded(nodeName) {
@@ -4128,6 +4138,27 @@ class NzGraphData {
     }
     disconnect() {
         // do nothing for now
+    }
+    findParents(data, key, parents = []) {
+        const parent = Object.keys(data)
+            .filter(d => d !== key)
+            .find(d => data[d].includes(key));
+        if (!parent) {
+            return parents;
+        }
+        else {
+            return this.findParents(data, parent, [parent, ...parents]);
+        }
+    }
+    findChildren(data, key, children = []) {
+        const groupIds = Object.keys(data);
+        const child = (data[key] || []).filter((c) => groupIds.includes(c));
+        if (child && child.length > 0) {
+            return child.reduce((pre, cur) => {
+                return Array.from(new Set([...pre, ...this.findChildren(data, cur, [...children, cur])]));
+            }, children);
+        }
+        return children;
     }
 }
 
@@ -4159,7 +4190,7 @@ class NzGraphEdgeComponent {
         this.line = Object(d3_shape__WEBPACK_IMPORTED_MODULE_8__["line"])()
             .x(d => d.x)
             .y(d => d.y)
-            .curve(d3_shape__WEBPACK_IMPORTED_MODULE_8__["curveBasis"]);
+            .curve(d3_shape__WEBPACK_IMPORTED_MODULE_8__["curveLinear"]);
         this.el = this.elementRef.nativeElement;
     }
     get id() {
@@ -4170,7 +4201,7 @@ class NzGraphEdgeComponent {
         this.initElementStyle();
     }
     ngOnChanges(changes) {
-        const { edge, customTemplate } = changes;
+        const { edge, customTemplate, edgeType } = changes;
         if (edge) {
             this.ngZone.onStable.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["take"])(1)).subscribe(() => {
                 // Update path element if customTemplate set
@@ -4180,6 +4211,13 @@ class NzGraphEdgeComponent {
                 this.setLine();
                 this.cdr.markForCheck();
             });
+        }
+        if (edgeType) {
+            const type = this.edgeType === NzGraphEdgeType.LINE ? d3_shape__WEBPACK_IMPORTED_MODULE_8__["curveLinear"] : d3_shape__WEBPACK_IMPORTED_MODULE_8__["curveBasis"];
+            this.line = Object(d3_shape__WEBPACK_IMPORTED_MODULE_8__["line"])()
+                .x(d => d.x)
+                .y(d => d.y)
+                .curve(type);
         }
     }
     initElementStyle() {
@@ -4203,7 +4241,7 @@ class NzGraphEdgeComponent {
     }
 }
 NzGraphEdgeComponent.ɵfac = function NzGraphEdgeComponent_Factory(t) { return new (t || NzGraphEdgeComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["NgZone"]), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"])); };
-NzGraphEdgeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzGraphEdgeComponent, selectors: [["", "nz-graph-edge", ""]], inputs: { edge: "edge", customTemplate: "customTemplate" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], attrs: _c1, decls: 2, vars: 2, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "nz-graph-edge-line"], ["class", "nz-graph-edge-text", "text-anchor", "middle", "dy", "10", 4, "ngIf"], ["text-anchor", "middle", "dy", "10", 1, "nz-graph-edge-text"], ["startOffset", "50%"]], template: function NzGraphEdgeComponent_Template(rf, ctx) { if (rf & 1) {
+NzGraphEdgeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({ type: NzGraphEdgeComponent, selectors: [["", "nz-graph-edge", ""]], inputs: { edge: "edge", edgeType: "edgeType", customTemplate: "customTemplate" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], attrs: _c1, decls: 2, vars: 2, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "nz-graph-edge-line"], ["class", "nz-graph-edge-text", "text-anchor", "middle", "dy", "10", 4, "ngIf"], ["text-anchor", "middle", "dy", "10", 1, "nz-graph-edge-text"], ["startOffset", "50%"]], template: function NzGraphEdgeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](0, NzGraphEdgeComponent_ng_container_0_Template, 1, 4, "ng-container", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵtemplate"](1, NzGraphEdgeComponent__svg_g_1_Template, 3, 2, "g", 1);
     } if (rf & 2) {
@@ -4218,6 +4256,7 @@ NzGraphEdgeComponent.ctorParameters = () => [
 ];
 NzGraphEdgeComponent.propDecorators = {
     edge: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
+    edgeType: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }],
     customTemplate: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"] }]
 };
 
@@ -4377,7 +4416,7 @@ class Minimap {
         svgStyle.remove();
         svgSelection.attr('width', '100%').attr('height', '100%');
         zoomGSelection.attr('transform', zoomTransform);
-        const image = new Image();
+        const image = document.createElement('img');
         image.onload = () => {
             // Draw the svg content onto the buffer canvas.
             const context = this.canvasBuffer.getContext('2d');
@@ -4849,7 +4888,6 @@ class NzGraphComponent {
         const { nzAutoFit, nzRankDirection, nzGraphData, nzGraphLayoutConfig } = changes;
         if (nzGraphLayoutConfig) {
             this.layoutSetting = this.mergeConfig(nzGraphLayoutConfig.currentValue);
-            // Object.assign(this.layoutSetting, this.nzGraphLayoutSetting || {});
         }
         if (nzGraphData) {
             if (this.dataSource !== this.nzGraphData) {
@@ -5045,6 +5083,9 @@ class NzGraphComponent {
         const renderInfo = Object(dagre_compound__WEBPACK_IMPORTED_MODULE_16__["buildGraph"])(data, options, this.layoutSetting);
         const dig = (nodes) => {
             nodes.forEach(node => {
+                const { x, y } = node;
+                node.xOffset = x;
+                node.yOffset = y;
                 if (node.type === 1 && this.mapOfNodeAttr.hasOwnProperty(node.name)) {
                     Object.assign(node, this.mapOfNodeAttr[node.name]);
                 }
@@ -5126,7 +5167,7 @@ NzGraphComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵloadQuery"]()) && (ctx.listOfNodeComponent = _t);
     } }, hostVars: 4, hostBindings: function NzGraphComponent_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵclassProp"]("nz-graph", true)("nz-graph-auto-size", ctx.nzAutoSize);
-    } }, inputs: { nzRankDirection: "nzRankDirection", nzAutoSize: "nzAutoSize", nzGraphData: "nzGraphData", nzGraphLayoutConfig: "nzGraphLayoutConfig" }, outputs: { nzGraphInitialized: "nzGraphInitialized", nzGraphRendered: "nzGraphRendered", nzNodeClick: "nzNodeClick" }, exportAs: ["nzGraph"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 7, vars: 5, consts: [["width", "100%", "height", "100%"], ["nz-graph-defs", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["groupTemplate", ""], [1, "core"], [1, "nz-graph-edges"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "nz-graph-nodes"], ["nz-graph-edge", "", 1, "nz-graph-edge", 3, "edge", "customTemplate"], ["class", "nz-graph-node", "nz-graph-node", "", 3, "node", "customTemplate", "nodeClick", 4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], ["nz-graph-node", "", 1, "nz-graph-node", 3, "node", "customTemplate", "nodeClick"]], template: function NzGraphComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzRankDirection: "nzRankDirection", nzAutoSize: "nzAutoSize", nzGraphData: "nzGraphData", nzGraphLayoutConfig: "nzGraphLayoutConfig" }, outputs: { nzGraphInitialized: "nzGraphInitialized", nzGraphRendered: "nzGraphRendered", nzNodeClick: "nzNodeClick" }, exportAs: ["nzGraph"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c6, decls: 7, vars: 5, consts: [["width", "100%", "height", "100%"], ["nz-graph-defs", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["groupTemplate", ""], [1, "core"], [1, "nz-graph-edges"], [4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "nz-graph-nodes"], ["nz-graph-edge", "", 1, "nz-graph-edge", 3, "edge", "edgeType", "customTemplate"], ["class", "nz-graph-node", "nz-graph-node", "", 3, "node", "customTemplate", "nodeClick", 4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], ["nz-graph-node", "", 1, "nz-graph-node", 3, "node", "customTemplate", "nodeClick"]], template: function NzGraphComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵprojectionDef"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵprojection"](0);
         _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵnamespaceSVG"]();
@@ -5204,6 +5245,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_12__["__decorate"])([
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectionStrategy"].OnPush
             }]
     }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ElementRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["NgZone"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["ChangeDetectorRef"] }]; }, { edge: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
+        }], edgeType: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
         }], customTemplate: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_4__["Input"]
@@ -5336,7 +5379,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_12__["__decorate"])([
         <svg:g class="core" [attr.transform]="coreTransform(renderNode)">
           <svg:g class="nz-graph-edges">
             <ng-container *ngFor="let edge of renderNode.edges; trackBy: edgeTrackByFun">
-              <g class="nz-graph-edge" nz-graph-edge [edge]="edge" [customTemplate]="customGraphEdgeTemplate"></g>
+              <g
+                class="nz-graph-edge"
+                nz-graph-edge
+                [edge]="edge"
+                [edgeType]="nzGraphLayoutConfig?.defaultEdge?.type"
+                [customTemplate]="customGraphEdgeTemplate"
+              ></g>
             </ng-container>
           </svg:g>
 
