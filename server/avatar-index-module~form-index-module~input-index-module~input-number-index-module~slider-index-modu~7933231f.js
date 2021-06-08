@@ -306,7 +306,9 @@ class NzInputNumberComponent {
     }
     ngOnInit() {
         var _a;
-        this.focusMonitor.monitor(this.elementRef, true).subscribe(focusOrigin => {
+        this.focusMonitor.monitor(this.elementRef, true)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$))
+            .subscribe(focusOrigin => {
             if (!focusOrigin) {
                 this.isFocused = false;
                 this.updateDisplayValue(this.value);

@@ -448,6 +448,7 @@ class NzAutocompleteComponent {
         this.selectionChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.showPanel = true;
         this.isOpen = false;
+        this.activeItem = null;
         this.dir = 'ltr';
         this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_12__["Subject"]();
         this.animationStateChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
@@ -514,14 +515,19 @@ class NzAutocompleteComponent {
         this.changeDetectorRef.markForCheck();
     }
     setActiveItem(index) {
-        const activeItem = this.options.toArray()[index];
+        const activeItem = this.options.get(index);
         if (activeItem && !activeItem.active) {
             this.activeItem = activeItem;
             this.activeItemIndex = index;
             this.clearSelectedOptions(this.activeItem);
             this.activeItem.setActiveStyles();
-            this.changeDetectorRef.markForCheck();
         }
+        else {
+            this.activeItem = null;
+            this.activeItemIndex = -1;
+            this.clearSelectedOptions();
+        }
+        this.changeDetectorRef.markForCheck();
     }
     setNextItemActive() {
         const nextIndex = this.activeItemIndex + 1 <= this.options.length - 1 ? this.activeItemIndex + 1 : 0;
@@ -810,6 +816,9 @@ class NzAutocompleteTriggerDirective {
         if (this.nzAutocomplete && this.nzAutocomplete.options.length) {
             return this.nzAutocomplete.activeItem;
         }
+        else {
+            return null;
+        }
     }
     ngAfterViewInit() {
         if (this.nzAutocomplete) {
@@ -871,9 +880,14 @@ class NzAutocompleteTriggerDirective {
             this.closePanel();
         }
         else if (this.panelOpen && keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_10__["ENTER"]) {
-            if (this.nzAutocomplete.showPanel && this.activeOption) {
+            if (this.nzAutocomplete.showPanel) {
                 event.preventDefault();
-                this.activeOption.selectViaInteraction();
+                if (this.activeOption) {
+                    this.activeOption.selectViaInteraction();
+                }
+                else {
+                    this.closePanel();
+                }
             }
         }
         else if (this.panelOpen && isArrowKey && this.nzAutocomplete.showPanel) {

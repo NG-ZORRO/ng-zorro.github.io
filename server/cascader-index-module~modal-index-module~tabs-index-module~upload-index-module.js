@@ -912,6 +912,9 @@ class NzModalRef {
         return this.trigger("cancel" /* CANCEL */);
     }
     close(result) {
+        if (this.state !== 0 /* OPEN */) {
+            return;
+        }
         this.result = result;
         this.containerInstance.animationStateChanged
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["filter"])(event => event.phaseName === 'start'), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["take"])(1))
@@ -1240,6 +1243,7 @@ class NzModalComponent {
         this.nzAfterClose = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzVisibleChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.modalRef = null;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_7__["Subject"]();
     }
     set modalTitle(value) {
         if (value) {
@@ -1267,6 +1271,13 @@ class NzModalComponent {
         if (!this.modalRef) {
             const config = this.getConfig();
             this.modalRef = this.modal.create(config);
+            // When the modal is implicitly closed (e.g. closeAll) the nzVisible needs to be set to the correct value and emit.
+            this.modalRef.afterClose
+                .asObservable()
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_8__["takeUntil"])(this.destroy$))
+                .subscribe(() => {
+                this.close();
+            });
         }
     }
     close(result) {
@@ -1353,6 +1364,8 @@ class NzModalComponent {
     ngOnDestroy() {
         var _a;
         (_a = this.modalRef) === null || _a === void 0 ? void 0 : _a._finishDialogClose();
+        this.destroy$.next();
+        this.destroy$.complete();
     }
 }
 NzModalComponent.ɵfac = function NzModalComponent_Factory(t) { return new (t || NzModalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzModalService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewContainerRef"])); };
@@ -1682,7 +1695,9 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
                 selector: 'nz-modal',
                 exportAs: 'nzModal',
                 template: `
-    <ng-template><ng-content></ng-content></ng-template>
+    <ng-template>
+      <ng-content></ng-content>
+    </ng-template>
   `,
                 changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush
             }]

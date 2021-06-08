@@ -253,7 +253,9 @@ class NzRadioComponent {
                 this.cdr.markForCheck();
             });
         }
-        this.focusMonitor.monitor(this.elementRef, true).subscribe(focusOrigin => {
+        this.focusMonitor.monitor(this.elementRef, true)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$))
+            .subscribe(focusOrigin => {
             if (!focusOrigin) {
                 Promise.resolve().then(() => this.onTouched());
                 if (this.nzRadioService) {

@@ -157,7 +157,9 @@ class NzSwitchComponent {
         this.dir = this.directionality.value;
     }
     ngAfterViewInit() {
-        this.focusMonitor.monitor(this.switchElement.nativeElement, true).subscribe(focusOrigin => {
+        this.focusMonitor.monitor(this.switchElement.nativeElement, true)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["takeUntil"])(this.destroy$))
+            .subscribe(focusOrigin => {
             if (!focusOrigin) {
                 /** https://github.com/angular/angular/issues/17793 **/
                 Promise.resolve().then(() => this.onTouched());

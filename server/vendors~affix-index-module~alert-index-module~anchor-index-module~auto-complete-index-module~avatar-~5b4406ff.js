@@ -4224,6 +4224,7 @@ if (true) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getParameters = void 0;
 var LZString = __webpack_require__(/*! lz-string */ "6xEa");
 function compress(input) {
     return LZString.compressToBase64(input)
@@ -4249,6 +4250,7 @@ exports.getParameters = getParameters;
 "use strict";
 
 exports.__esModule = true;
+exports.getParameters = void 0;
 var define_1 = __webpack_require__(/*! codesandbox-import-utils/lib/api/define */ "e9O8");
 exports.getParameters = define_1.getParameters;
 //# sourceMappingURL=define.js.map

@@ -565,7 +565,7 @@ class NzSliderComponent {
         this.cacheSliderLength = remove ? null : this.getSliderLength();
     }
     formatValue(value) {
-        if (!value) {
+        if (Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_6__["isNil"])(value)) {
             return this.nzRange ? [this.nzMin, this.nzMax] : this.nzMin;
         }
         else if (assertValueValid(value, this.nzRange)) {

@@ -499,6 +499,46 @@ class NzTagComponent {
             this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), this.elementRef.nativeElement);
         }
     }
+    /**
+     * @deprecated
+     * move to host after View Engine deprecation
+     * host: {
+     *   '[class]': `isPresetColor ? ('ant-tag-' + nzColor) : ''`
+     * }
+     */
+    clearPresetColor() {
+        const hostElement = this.elementRef.nativeElement;
+        // /(ant-tag-(?:pink|red|...))/g
+        const regexp = new RegExp(`(ant-tag-(?:${[...ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["presetColors"], ...ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["statusColors"]].join('|')}))`, 'g');
+        const classname = hostElement.classList.toString();
+        const matches = [];
+        let match = regexp.exec(classname);
+        while (match !== null) {
+            matches.push(match[1]);
+            match = regexp.exec(classname);
+        }
+        hostElement.classList.remove(...matches);
+    }
+    /**
+     * @deprecated
+     * move to host after View Engine deprecation
+     * host: {
+     *   '[class]': `isPresetColor ? ('ant-tag-' + nzColor) : ''`
+     * }
+     */
+    setPresetColor() {
+        const hostElement = this.elementRef.nativeElement;
+        this.clearPresetColor();
+        if (!this.nzColor) {
+            this.isPresetColor = false;
+        }
+        else {
+            this.isPresetColor = Object(ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["isPresetColor"])(this.nzColor) || Object(ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["isStatusColor"])(this.nzColor);
+        }
+        if (this.isPresetColor) {
+            hostElement.classList.add(`ant-tag-${this.nzColor}`);
+        }
+    }
     ngOnInit() {
         var _a;
         (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_6__["takeUntil"])(this.destroy$)).subscribe((direction) => {
@@ -510,12 +550,7 @@ class NzTagComponent {
     ngOnChanges(changes) {
         const { nzColor } = changes;
         if (nzColor) {
-            if (!this.nzColor) {
-                this.isPresetColor = false;
-            }
-            else {
-                this.isPresetColor = Object(ng_zorro_antd_core_color__WEBPACK_IMPORTED_MODULE_3__["isPresetColor"])(this.nzColor) || /^(success|processing|error|default|warning)$/.test(this.nzColor);
-            }
+            this.setPresetColor();
         }
     }
     ngOnDestroy() {
@@ -524,10 +559,9 @@ class NzTagComponent {
     }
 }
 NzTagComponent.ɵfac = function NzTagComponent_Factory(t) { return new (t || NzTagComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_1__["Directionality"], 8)); };
-NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 12, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
+NzTagComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 10, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function NzTagComponent_click_HostBindingHandler() { return ctx.updateCheckedStatus(); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassMap"](ctx.isPresetColor ? "ant-tag-" + ctx.nzColor : "");
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵstyleProp"]("background-color", ctx.isPresetColor ? "" : ctx.nzColor);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵclassProp"]("ant-tag-has-color", ctx.nzColor && !ctx.isPresetColor)("ant-tag-checkable", ctx.nzMode === "checkable")("ant-tag-checkable-checked", ctx.nzChecked)("ant-tag-rtl", ctx.dir === "rtl");
     } }, inputs: { nzMode: "nzMode", nzChecked: "nzChecked", nzColor: "nzColor" }, outputs: { nzOnClose: "nzOnClose", nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzTag"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵNgOnChangesFeature"]], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [["nz-icon", "", "nzType", "close", "class", "ant-tag-close-icon", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 1, "ant-tag-close-icon", 3, "click"]], template: function NzTagComponent_Template(rf, ctx) { if (rf & 1) {
@@ -569,7 +603,6 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_2__["ViewEncapsulation"].None,
                 host: {
                     '[style.background-color]': `isPresetColor ? '' : nzColor`,
-                    '[class]': `isPresetColor ? ('ant-tag-' + nzColor) : ''`,
                     '[class.ant-tag-has-color]': `nzColor && !isPresetColor`,
                     '[class.ant-tag-checkable]': `nzMode === 'checkable'`,
                     '[class.ant-tag-checkable-checked]': `nzChecked`,

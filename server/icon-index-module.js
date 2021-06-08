@@ -1998,7 +1998,7 @@ NzDemoIconEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](841, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](842, "span", 46);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](843, "[iconfont]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](843, "[nzIconfont]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](844, "span", 47);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](845, "span", 18);
@@ -3604,7 +3604,7 @@ NzDemoIconZhComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵde
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](838, " ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](839, "span", 46);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](840, "[iconfont]");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](840, "[nzIconfont]");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](841, "span", 47);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](842, "span", 18);

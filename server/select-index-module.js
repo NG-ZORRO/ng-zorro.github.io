@@ -4127,7 +4127,7 @@ NzDemoSelectEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](472, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, "Whether dropdown's with is same with select.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](473, "Whether dropdown's width is same width than select.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](474, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](475, "code");
@@ -4832,7 +4832,7 @@ NzDemoSelectEnComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](914, "td");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](915, "Whether custom nz-option content in drodown menu, the ng-content in nz-option will relace nzLabel when it was set to true");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](915, "Whether custom nz-option content in drodown menu, the ng-content in nz-option will replace nzLabel when it was set to true");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](916, "td");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](917, "code");

@@ -150,7 +150,7 @@ NzResizeObserversModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
 /*!********************************************************************!*\
   !*** ./publish/__ivy_ngcc__/fesm2015/ng-zorro-antd-date-picker.js ***!
   \********************************************************************/
-/*! exports provided: LibPackerModule, NzDatePickerComponent, NzDatePickerModule, NzMonthPickerComponent, NzRangePickerComponent, NzWeekPickerComponent, NzYearPickerComponent, PREFIX_CLASS, getTimeConfig, isAllowedDate, isTimeValid, isTimeValidByConfig, transCompatFormat, ɵAbstractPanelHeader, ɵAbstractTable, ɵCalendarFooterComponent, ɵDateHeaderComponent, ɵDatePickerService, ɵDateRangePopupComponent, ɵDateTableComponent, ɵDecadeHeaderComponent, ɵDecadeTableComponent, ɵInnerPopupComponent, ɵMonthHeaderComponent, ɵMonthTableComponent, ɵNzPickerComponent, ɵYearHeaderComponent, ɵYearTableComponent */
+/*! exports provided: LibPackerModule, NzDatePickerComponent, NzDatePickerModule, NzMonthPickerComponent, NzRangePickerComponent, NzWeekPickerComponent, NzYearPickerComponent, PREFIX_CLASS, getTimeConfig, isAllowedDate, isTimeValid, isTimeValidByConfig, transCompatFormat, ɵAbstractPanelHeader, ɵAbstractTable, ɵCalendarFooterComponent, ɵDateHeaderComponent, ɵDatePickerService, ɵDateRangePopupComponent, ɵDateTableComponent, ɵDecadeHeaderComponent, ɵDecadeTableComponent, ɵInnerPopupComponent, ɵMonthHeaderComponent, ɵMonthTableComponent, ɵYearHeaderComponent, ɵYearTableComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -180,7 +180,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵInnerPopupComponent", function() { return InnerPopupComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵMonthHeaderComponent", function() { return MonthHeaderComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵMonthTableComponent", function() { return MonthTableComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵNzPickerComponent", function() { return NzPickerComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵYearHeaderComponent", function() { return YearHeaderComponent; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵYearTableComponent", function() { return YearTableComponent; });
 /* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/cdk/bidi */ "cH1L");
@@ -199,13 +198,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ng-zorro-antd/i18n */ "d4FC");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! tslib */ "zOht");
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(tslib__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! rxjs */ "qCKp");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
-/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
-/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
-/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
-/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "eczo");
-/* harmony import */ var ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/core/resize-observers */ "/YeP");
+/* harmony import */ var ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ng-zorro-antd/core/animation */ "eczo");
+/* harmony import */ var ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ng-zorro-antd/core/resize-observers */ "/YeP");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! rxjs */ "qCKp");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs/operators */ "kU1M");
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/cdk/keycodes */ "FtGj");
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/cdk/platform */ "nLfN");
+/* harmony import */ var ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-zorro-antd/core/config */ "8IHs");
 /* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
 /* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
 
@@ -507,66 +506,65 @@ function DateRangePopupComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
 const _c3 = ["separatorElement"];
 const _c4 = ["pickerInput"];
 const _c5 = ["rangePickerInput"];
-const _c6 = ["nz-picker", ""];
-function NzPickerComponent_ng_container_0_div_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_div_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-function NzPickerComponent_ng_container_0_div_1_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_div_1_Template(rf, ctx) { if (rf & 1) {
     const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "input", 7, 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngModelChange", function NzPickerComponent_ng_container_0_div_1_Template_input_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r12.inputValue = $event; })("focus", function NzPickerComponent_ng_container_0_div_1_Template_input_focus_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r14.onFocus($event); })("focusout", function NzPickerComponent_ng_container_0_div_1_Template_input_focusout_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r15.onFocusout($event); })("ngModelChange", function NzPickerComponent_ng_container_0_div_1_Template_input_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r16.onInputChange($event); })("keyup.enter", function NzPickerComponent_ng_container_0_div_1_Template_input_keyup_enter_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r17.onKeyupEnter($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("ngModelChange", function NzDatePickerComponent_ng_container_0_div_1_Template_input_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r12.inputValue = $event; })("focus", function NzDatePickerComponent_ng_container_0_div_1_Template_input_focus_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r14.onFocus($event); })("focusout", function NzDatePickerComponent_ng_container_0_div_1_Template_input_focusout_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r15.onFocusout($event); })("ngModelChange", function NzDatePickerComponent_ng_container_0_div_1_Template_input_ngModelChange_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r16.onInputChange($event); })("keyup.enter", function NzDatePickerComponent_ng_container_0_div_1_Template_input_keyup_enter_1_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r17.onKeyupEnter($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzPickerComponent_ng_container_0_div_1_ng_container_3_Template, 1, 0, "ng-container", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzDatePickerComponent_ng_container_0_div_1_ng_container_3_Template, 1, 0, "ng-container", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
     const _r3 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r8.prefixCls, "-input");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-input-disabled", ctx_r8.disabled);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-input-disabled", ctx_r8.nzDisabled);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpropertyInterpolate"]("placeholder", ctx_r8.getPlaceholder());
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r8.disabled)("readOnly", ctx_r8.inputReadOnly)("ngModel", ctx_r8.inputValue)("size", ctx_r8.inputSize);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r8.nzDisabled)("readOnly", ctx_r8.nzInputReadOnly)("ngModel", ctx_r8.inputValue)("size", ctx_r8.inputSize);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("id", ctx_r8.nzId);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", _r3);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_ng_container_6_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r20.separator);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate"](ctx_r20.nzSeparator);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_ng_template_7_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "i", 13);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_ng_container_10_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_ng_container_11_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_11_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-function NzPickerComponent_ng_container_0_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, NzPickerComponent_ng_container_0_ng_container_2_ng_container_2_Template, 1, 0, "ng-container", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_2_Template, 1, 0, "ng-container", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "div", null, 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](5, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, NzPickerComponent_ng_container_0_ng_container_2_ng_container_6_Template, 2, 1, "ng-container", 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](6, NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_6_Template, 2, 1, "ng-container", 0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzPickerComponent_ng_container_0_ng_container_2_ng_template_7_Template, 1, 0, "ng-template", null, 12, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzDatePickerComponent_ng_container_0_ng_container_2_ng_template_7_Template, 1, 0, "ng-template", null, 12, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](9, "div");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](10, NzPickerComponent_ng_container_0_ng_container_2_ng_container_10_Template, 1, 0, "ng-container", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](10, NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_10_Template, 1, 0, "ng-container", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](11, NzPickerComponent_ng_container_0_ng_container_2_ng_container_11_Template, 1, 0, "ng-container", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](11, NzDatePickerComponent_ng_container_0_ng_container_2_ng_container_11_Template, 1, 0, "ng-container", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const _r21 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](8);
@@ -582,7 +580,7 @@ function NzPickerComponent_ng_container_0_ng_container_2_Template(rf, ctx) { if 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r9.prefixCls, "-separator");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r9.separator)("ngIfElse", _r21);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r9.nzSeparator)("ngIfElse", _r21);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r9.prefixCls, "-input");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
@@ -590,10 +588,10 @@ function NzPickerComponent_ng_container_0_ng_container_2_Template(rf, ctx) { if 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", _r3);
 } }
-function NzPickerComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzPickerComponent_ng_container_0_div_1_Template, 4, 12, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, NzPickerComponent_ng_container_0_ng_container_2_Template, 12, 21, "ng-container", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzDatePickerComponent_ng_container_0_div_1_Template, 4, 12, "div", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, NzDatePickerComponent_ng_container_0_ng_container_2_Template, 12, 21, "ng-container", 6);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
@@ -602,28 +600,28 @@ function NzPickerComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", ctx_r0.isRange);
 } }
-function NzPickerComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
     const _r28 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "input", 14, 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzPickerComponent_ng_template_1_Template_input_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r27.onClickInputBox($event); })("focusout", function NzPickerComponent_ng_template_1_Template_input_focusout_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r29.onFocusout($event); })("focus", function NzPickerComponent_ng_template_1_Template_input_focus_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const partType_r25 = ctx.partType; const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r30.onFocus($event, partType_r25); })("keyup.enter", function NzPickerComponent_ng_template_1_Template_input_keyup_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r31.onKeyupEnter($event); })("ngModelChange", function NzPickerComponent_ng_template_1_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const partType_r25 = ctx.partType; const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return (ctx_r32.inputValue[ctx_r32.datePickerService.getActiveIndex(partType_r25)] = $event); })("ngModelChange", function NzPickerComponent_ng_template_1_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r33.onInputChange($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDatePickerComponent_ng_template_1_Template_input_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r27 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r27.onClickInputBox($event); })("focusout", function NzDatePickerComponent_ng_template_1_Template_input_focusout_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r29 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r29.onFocusout($event); })("focus", function NzDatePickerComponent_ng_template_1_Template_input_focus_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const partType_r25 = ctx.partType; const ctx_r30 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r30.onFocus($event, partType_r25); })("keyup.enter", function NzDatePickerComponent_ng_template_1_Template_input_keyup_enter_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r31 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r31.onKeyupEnter($event); })("ngModelChange", function NzDatePickerComponent_ng_template_1_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const partType_r25 = ctx.partType; const ctx_r32 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return (ctx_r32.inputValue[ctx_r32.datePickerService.getActiveIndex(partType_r25)] = $event); })("ngModelChange", function NzDatePickerComponent_ng_template_1_Template_input_ngModelChange_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r28); const ctx_r33 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r33.onInputChange($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const partType_r25 = ctx.partType;
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpropertyInterpolate"]("placeholder", ctx_r2.getPlaceholder(partType_r25));
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r2.disabled)("readOnly", ctx_r2.inputReadOnly)("size", ctx_r2.inputSize)("ngModel", ctx_r2.inputValue[ctx_r2.datePickerService.getActiveIndex(partType_r25)]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("disabled", ctx_r2.nzDisabled)("readOnly", ctx_r2.nzInputReadOnly)("size", ctx_r2.inputSize)("ngModel", ctx_r2.inputValue[ctx_r2.datePickerService.getActiveIndex(partType_r25)]);
 } }
-function NzPickerComponent_ng_template_3_span_1_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_3_span_1_Template(rf, ctx) { if (rf & 1) {
     const _r37 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "span", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzPickerComponent_ng_template_3_span_1_Template_span_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r37); const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r36.onClickClear($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDatePickerComponent_ng_template_3_span_1_Template_span_click_0_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r37); const ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2); return ctx_r36.onClickClear($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "i", 20);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r34 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r34.prefixCls, "-clear");
 } }
-function NzPickerComponent_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "i", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerEnd"]();
@@ -632,11 +630,11 @@ function NzPickerComponent_ng_template_3_ng_container_3_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzType", suffixIcon_r38);
 } }
-function NzPickerComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](0, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzPickerComponent_ng_template_3_span_1_Template, 2, 3, "span", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzDatePickerComponent_ng_template_3_span_1_Template, 2, 3, "span", 17);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzPickerComponent_ng_template_3_ng_container_3_Template, 2, 1, "ng-container", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzDatePickerComponent_ng_template_3_ng_container_3_Template, 2, 1, "ng-container", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
@@ -647,33 +645,37 @@ function NzPickerComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r4.prefixCls, "-suffix");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r4.suffixIcon);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzStringTemplateOutlet", ctx_r4.nzSuffixIcon);
 } }
-function NzPickerComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    const _r40 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 22);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "div", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojection"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](2, "date-range-popup", 23);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("panelModeChange", function NzDatePickerComponent_ng_template_5_Template_date_range_popup_panelModeChange_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r40); const ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r39.onPanelModeChange($event); })("calendarChange", function NzDatePickerComponent_ng_template_5_Template_date_range_popup_calendarChange_2_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r40); const ctx_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r41.onCalendarChange($event); })("resultOk", function NzDatePickerComponent_ng_template_5_Template_date_range_popup_resultOk_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r40); const ctx_r42 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r42.onResultOk(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzNoAnimation", ctx_r6.noAnimation)("@slideMotion", "enter");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzNoAnimation", !!(ctx_r6.noAnimation == null ? null : ctx_r6.noAnimation.nzNoAnimation))("@slideMotion", "enter");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate2"]("", ctx_r6.prefixCls, "-dropdown ", ctx_r6.dropdownClassName, "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate2"]("", ctx_r6.prefixCls, "-dropdown ", ctx_r6.nzDropdownClassName, "");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-picker-dropdown-rtl", ctx_r6.dir === "rtl")("ant-picker-dropdown-placement-bottomLeft", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-topLeft", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "start")("ant-picker-dropdown-placement-bottomRight", ctx_r6.currentPositionY === "bottom" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-placement-topRight", ctx_r6.currentPositionY === "top" && ctx_r6.currentPositionX === "end")("ant-picker-dropdown-range", ctx_r6.isRange)("ant-picker-active-left", ctx_r6.datePickerService.activeInput === "left")("ant-picker-active-right", ctx_r6.datePickerService.activeInput === "right");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", ctx_r6.popupStyle);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngStyle", ctx_r6.nzPopupStyle);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("isRange", ctx_r6.isRange)("inline", ctx_r6.nzInline)("defaultPickerValue", ctx_r6.nzDefaultPickerValue)("showWeek", ctx_r6.nzMode === "week")("panelMode", ctx_r6.panelMode)("locale", ctx_r6.nzLocale == null ? null : ctx_r6.nzLocale.lang)("showToday", ctx_r6.nzMode === "date" && ctx_r6.nzShowToday && !ctx_r6.isRange && !ctx_r6.nzShowTime)("showNow", ctx_r6.nzMode === "date" && ctx_r6.nzShowNow && !ctx_r6.isRange && !!ctx_r6.nzShowTime)("showTime", ctx_r6.nzShowTime)("dateRender", ctx_r6.nzDateRender)("disabledDate", ctx_r6.nzDisabledDate)("disabledTime", ctx_r6.nzDisabledTime)("extraFooter", ctx_r6.extraFooter)("ranges", ctx_r6.nzRanges)("dir", ctx_r6.dir);
 } }
-function NzPickerComponent_ng_template_7_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+function NzDatePickerComponent_ng_template_7_ng_container_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-function NzPickerComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzPickerComponent_ng_template_7_ng_container_0_Template, 1, 0, "ng-container", 9);
+function NzDatePickerComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzDatePickerComponent_ng_template_7_ng_container_0_Template, 1, 0, "ng-container", 9);
 } if (rf & 2) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"]();
     const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", _r5);
 } }
-const _c7 = ["*"];
 function InnerPopupComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     const _r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -826,7 +828,7 @@ function DateTableComponent_tr_3_td_1_Template(rf, ctx) { if (rf & 1) {
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
 } }
-const _c8 = function (a0) { return { $implicit: a0 }; };
+const _c6 = function (a0) { return { $implicit: a0 }; };
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 16);
@@ -834,7 +836,7 @@ function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -888,7 +890,7 @@ function DateTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
@@ -909,7 +911,7 @@ function DateTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf, 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r22.prefixCls, "-date-content");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c6, cell_r9.value));
 } }
 function DateTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1025,7 +1027,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(r
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1079,7 +1081,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(r
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
@@ -1100,7 +1102,7 @@ function DecadeTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r22.prefixCls, "-date-content");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c6, cell_r9.value));
 } }
 function DecadeTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1216,7 +1218,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1270,7 +1272,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
@@ -1291,7 +1293,7 @@ function MonthTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf,
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r22.prefixCls, "-date-content");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c6, cell_r9.value));
 } }
 function MonthTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1407,7 +1409,7 @@ function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1461,7 +1463,7 @@ function YearTableComponent_tr_3_td_2_ng_container_3_ng_container_2_Template(rf,
 } if (rf & 2) {
     const cell_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](2).$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.fullCellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](2, _c6, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_3_ng_template_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainer"](0);
@@ -1482,7 +1484,7 @@ function YearTableComponent_tr_3_td_2_ng_container_3_ng_template_3_Template(rf, 
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassMapInterpolate1"]("", ctx_r22.prefixCls, "-date-content");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c8, cell_r9.value));
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngTemplateOutlet", cell_r9.cellRender)("ngTemplateOutletContext", _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵpureFunction1"](9, _c6, cell_r9.value));
 } }
 function YearTableComponent_tr_3_td_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementContainerStart"](0);
@@ -1696,9 +1698,9 @@ class DatePickerService {
         this.activeInput = 'left';
         this.arrowLeft = 0;
         this.isRange = false;
-        this.valueChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["ReplaySubject"](1);
-        this.emitValue$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
-        this.inputPartChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
+        this.valueChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["ReplaySubject"](1);
+        this.emitValue$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
+        this.inputPartChange$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
     }
     initValue(reset = false) {
         if (reset) {
@@ -1769,7 +1771,7 @@ class DateRangePopupComponent {
         this.timeOptions = null;
         this.hoverValue = []; // Range ONLY
         this.checkedPartArr = [false, false];
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
         this.disabledStartTime = (value) => {
             return this.disabledTime && this.disabledTime(value, 'start');
         };
@@ -1784,8 +1786,8 @@ class DateRangePopupComponent {
         return this.showToday || this.hasTimePicker || !!this.extraFooter || !!this.ranges;
     }
     ngOnInit() {
-        Object(rxjs__WEBPACK_IMPORTED_MODULE_15__["merge"])(this.datePickerService.valueChange$, this.datePickerService.inputPartChange$)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
+        Object(rxjs__WEBPACK_IMPORTED_MODULE_17__["merge"])(this.datePickerService.valueChange$, this.datePickerService.inputPartChange$)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroy$))
             .subscribe(() => {
             this.updateActiveDate();
             this.cdr.markForCheck();
@@ -1814,12 +1816,6 @@ class DateRangePopupComponent {
             ? this.datePickerService.value
             : this.datePickerService.makeValue(this.defaultPickerValue);
         this.datePickerService.setActiveDate(activeDate, this.hasTimePicker, this.getPanelMode(this.endPanelMode));
-    }
-    init() {
-        this.checkedPartArr = [false, false];
-        this.updateActiveDate();
-        // trigger timepicker to reset
-        this.datePickerService.setValue(Object(ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["cloneDate"])(this.datePickerService.value));
     }
     /**
      * Prevent input losing focus when click panel
@@ -2105,371 +2101,16 @@ DateRangePopupComponent.propDecorators = {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-class NzPickerComponent {
-    constructor(elementRef, dateHelper, cdr, platform, nzResizeObserver, datePickerService, doc) {
-        this.elementRef = elementRef;
-        this.dateHelper = dateHelper;
-        this.cdr = cdr;
-        this.platform = platform;
-        this.nzResizeObserver = nzResizeObserver;
-        this.datePickerService = datePickerService;
-        this.noAnimation = false;
-        this.isRange = false;
-        this.open = undefined;
-        this.disabled = false;
-        this.inputReadOnly = false;
-        this.inline = false;
-        this.popupStyle = null;
-        this.dir = 'ltr';
-        this.nzId = null;
-        this.hasBackdrop = false;
-        this.focusChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
-        this.valueChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
-        this.openChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"](); // Emitted when overlay's open state change
-        this.inputSize = 12;
-        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
-        this.prefixCls = PREFIX_CLASS;
-        this.activeBarStyle = {};
-        this.overlayOpen = false; // Available when "open"=undefined
-        this.overlayPositions = [
-            {
-                offsetX: -12,
-                offsetY: 8,
-                originX: 'start',
-                originY: 'bottom',
-                overlayX: 'start',
-                overlayY: 'top'
-            },
-            {
-                offsetX: -12,
-                offsetY: -8,
-                originX: 'start',
-                originY: 'top',
-                overlayX: 'start',
-                overlayY: 'bottom'
-            },
-            {
-                offsetX: 12,
-                offsetY: 8,
-                originX: 'end',
-                originY: 'bottom',
-                overlayX: 'end',
-                overlayY: 'top'
-            },
-            {
-                offsetX: 12,
-                offsetY: -8,
-                originX: 'end',
-                originY: 'top',
-                overlayX: 'end',
-                overlayY: 'bottom'
-            }
-        ];
-        this.currentPositionX = 'start';
-        this.currentPositionY = 'bottom';
-        this.document = doc;
-        this.origin = new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkOverlayOrigin"](this.elementRef);
-    }
-    get realOpenState() {
-        // The value that really decide the open state of overlay
-        return this.isOpenHandledByUser() ? !!this.open : this.overlayOpen;
-    }
-    ngOnInit() {
-        this.inputValue = this.isRange ? ['', ''] : '';
-        this.datePickerService.valueChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$)).subscribe(() => {
-            this.updateInputValue();
-        });
-    }
-    ngAfterViewInit() {
-        if (this.autoFocus) {
-            this.focus();
-        }
-        if (this.isRange && this.platform.isBrowser) {
-            this.nzResizeObserver
-                .observe(this.elementRef)
-                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$))
-                .subscribe(() => {
-                this.updateInputWidthAndArrowLeft();
-            });
-        }
-        this.datePickerService.inputPartChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroy$)).subscribe(partType => {
-            if (partType) {
-                this.datePickerService.activeInput = partType;
-            }
-            this.focus();
-            this.updateInputWidthAndArrowLeft();
-        });
-    }
-    ngOnDestroy() {
-        this.destroy$.next();
-        this.destroy$.complete();
-    }
-    ngOnChanges(changes) {
-        var _a, _b;
-        if (((_a = changes.format) === null || _a === void 0 ? void 0 : _a.currentValue) !== ((_b = changes.format) === null || _b === void 0 ? void 0 : _b.previousValue)) {
-            this.inputSize = Math.max(10, this.format.length) + 2;
-            this.updateInputValue();
-        }
-    }
-    updateInputWidthAndArrowLeft() {
-        var _a, _b, _c;
-        this.inputWidth = ((_b = (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
-        const baseStyle = { position: 'absolute', width: `${this.inputWidth}px` };
-        this.datePickerService.arrowLeft =
-            this.datePickerService.activeInput === 'left' ? 0 : this.inputWidth + ((_c = this.separatorElement) === null || _c === void 0 ? void 0 : _c.nativeElement.offsetWidth) || 0;
-        if (this.dir === 'rtl') {
-            this.activeBarStyle = Object.assign(Object.assign({}, baseStyle), { right: `${this.datePickerService.arrowLeft}px` });
-        }
-        else {
-            this.activeBarStyle = Object.assign(Object.assign({}, baseStyle), { left: `${this.datePickerService.arrowLeft}px` });
-        }
-        this.cdr.markForCheck();
-    }
-    getInput(partType) {
-        var _a, _b;
-        if (this.inline) {
-            return undefined;
-        }
-        return this.isRange
-            ? partType === 'left'
-                ? (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first.nativeElement : (_b = this.rangePickerInputs) === null || _b === void 0 ? void 0 : _b.last.nativeElement
-            : this.pickerInput.nativeElement;
-    }
-    focus() {
-        const activeInputElement = this.getInput(this.datePickerService.activeInput);
-        if (this.document.activeElement !== activeInputElement) {
-            activeInputElement === null || activeInputElement === void 0 ? void 0 : activeInputElement.focus();
-        }
-    }
-    onFocus(event, partType) {
-        event.preventDefault();
-        this.focusChange.emit(true);
-        if (partType) {
-            this.datePickerService.inputPartChange$.next(partType);
-        }
-    }
-    // blur event has not the relatedTarget in IE11, use focusout instead.
-    onFocusout(event) {
-        event.preventDefault();
-        this.focusChange.emit(false);
-        const isFocus = this.elementRef.nativeElement.contains(event.relatedTarget);
-        if (!isFocus) {
-            this.checkAndClose();
-        }
-    }
-    // Show overlay content
-    showOverlay() {
-        if (this.inline) {
-            return;
-        }
-        if (!this.realOpenState && !this.disabled) {
-            this.updateInputWidthAndArrowLeft();
-            this.overlayOpen = true;
-            this.panel.init();
-            this.focus();
-            this.openChange.emit(true);
-            this.cdr.markForCheck();
-        }
-    }
-    hideOverlay() {
-        if (this.inline) {
-            return;
-        }
-        if (this.realOpenState) {
-            this.overlayOpen = false;
-            this.openChange.emit(false);
-        }
-    }
-    showClear() {
-        return !this.disabled && !this.isEmptyValue(this.datePickerService.value) && !!this.allowClear;
-    }
-    checkAndClose() {
-        if (!this.realOpenState) {
-            return;
-        }
-        if (this.panel.isAllowed(this.datePickerService.value, true)) {
-            if (Array.isArray(this.datePickerService.value) && Object(ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["wrongSortOrder"])(this.datePickerService.value)) {
-                const index = this.datePickerService.getActiveIndex(this.datePickerService.activeInput);
-                const value = this.datePickerService.value[index];
-                this.panel.changeValueFromSelect(value, true);
-                return;
-            }
-            this.updateInputValue();
-            this.datePickerService.emitValue$.next();
-        }
-        else {
-            this.datePickerService.setValue(this.datePickerService.initialValue);
-            this.hideOverlay();
-        }
-    }
-    onClickInputBox(event) {
-        event.stopPropagation();
-        this.focus();
-        if (!this.isOpenHandledByUser()) {
-            this.showOverlay();
-        }
-    }
-    onOverlayDetach() {
-        this.hideOverlay();
-    }
-    onOverlayKeydown(event) {
-        if (event.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_18__["ESCAPE"]) {
-            this.datePickerService.initValue();
-        }
-    }
-    // NOTE: A issue here, the first time position change, the animation will not be triggered.
-    // Because the overlay's "positionChange" event is emitted after the content's full shown up.
-    // All other components like "nz-dropdown" which depends on overlay also has the same issue.
-    // See: https://github.com/NG-ZORRO/ng-zorro-antd/issues/1429
-    onPositionChange(position) {
-        this.currentPositionX = position.connectionPair.originX;
-        this.currentPositionY = position.connectionPair.originY;
-        this.cdr.detectChanges(); // Take side-effects to position styles
-    }
-    onClickClear(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        this.datePickerService.setValue(this.isRange ? [] : null);
-        this.datePickerService.emitValue$.next();
-    }
-    updateInputValue() {
-        const newValue = this.datePickerService.value;
-        if (this.isRange) {
-            this.inputValue = newValue ? newValue.map(v => this.formatValue(v)) : ['', ''];
-        }
-        else {
-            this.inputValue = this.formatValue(newValue);
-        }
-        this.cdr.markForCheck();
-    }
-    formatValue(value) {
-        return this.dateHelper.format(value && value.nativeDate, this.format);
-    }
-    onInputChange(value, isEnter = false) {
-        /**
-         * in IE11 focus/blur will trigger ngModelChange if placeholder changes,
-         * so we forbidden IE11 to open panel through input change
-         */
-        if (!this.platform.TRIDENT &&
-            this.document.activeElement === this.getInput(this.datePickerService.activeInput) &&
-            !this.realOpenState) {
-            this.showOverlay();
-            return;
-        }
-        const date = this.checkValidDate(value);
-        // Can only change date when it's open
-        if (date && this.realOpenState) {
-            this.panel.changeValueFromSelect(date, isEnter);
-        }
-    }
-    onKeyupEnter(event) {
-        this.onInputChange(event.target.value, true);
-    }
-    checkValidDate(value) {
-        const date = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["CandyDate"](this.dateHelper.parseDate(value, this.format));
-        if (!date.isValid() || value !== this.dateHelper.format(date.nativeDate, this.format)) {
-            return null;
-        }
-        return date;
-    }
-    getPlaceholder(partType) {
-        return this.isRange ? this.placeholder[this.datePickerService.getActiveIndex(partType)] : this.placeholder;
-    }
-    isEmptyValue(value) {
-        if (value === null) {
-            return true;
-        }
-        else if (this.isRange) {
-            return !value || !Array.isArray(value) || value.every(val => !val);
-        }
-        else {
-            return !value;
-        }
-    }
-    // Whether open state is permanently controlled by user himself
-    isOpenHandledByUser() {
-        return this.open !== undefined;
-    }
-}
-NzPickerComponent.ɵfac = function NzPickerComponent_Factory(t) { return new (t || NzPickerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_19__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_21__["NzResizeObserver"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](DatePickerService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"])); };
-NzPickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzPickerComponent, selectors: [["", "nz-picker", ""]], contentQueries: function NzPickerComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵcontentQuery"](dirIndex, DateRangePopupComponent, 1);
-    } if (rf & 2) {
-        let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.panel = _t.first);
-    } }, viewQuery: function NzPickerComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c3, 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c4, 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c5, 1);
-    } if (rf & 2) {
-        let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.cdkConnectedOverlay = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.separatorElement = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.pickerInput = _t.first);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.rangePickerInputs = _t);
-    } }, inputs: { noAnimation: "noAnimation", isRange: "isRange", open: "open", disabled: "disabled", inputReadOnly: "inputReadOnly", inline: "inline", popupStyle: "popupStyle", dir: "dir", nzId: "nzId", hasBackdrop: "hasBackdrop", placeholder: "placeholder", allowClear: "allowClear", autoFocus: "autoFocus", format: "format", separator: "separator", dropdownClassName: "dropdownClassName", suffixIcon: "suffixIcon" }, outputs: { focusChange: "focusChange", valueChange: "valueChange", openChange: "openChange" }, exportAs: ["nzPicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], attrs: _c6, ngContentSelectors: _c7, decls: 8, vars: 7, consts: [[4, "ngIf", "ngIfElse"], ["tplRangeInput", ""], ["tplRightRest", ""], ["inlineMode", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayTransformOriginOn", "positionChange", "detach", "overlayKeydown"], [3, "class", 4, "ngIf"], [4, "ngIf"], [3, "disabled", "readOnly", "ngModel", "placeholder", "size", "ngModelChange", "focus", "focusout", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "readOnly", "size", "ngModel", "placeholder", "click", "focusout", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-wrapper", 2, "position", "relative", 3, "nzNoAnimation"]], template: function NzPickerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵprojectionDef"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzPickerComponent_ng_container_0_Template, 3, 2, "ng-container", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzPickerComponent_ng_template_1_Template, 2, 5, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzPickerComponent_ng_template_3_Template, 4, 9, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](5, NzPickerComponent_ng_template_5_Template, 3, 23, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzPickerComponent_ng_template_7_Template, 1, 1, "ng-template", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("positionChange", function NzPickerComponent_Template_ng_template_positionChange_7_listener($event) { return ctx.onPositionChange($event); })("detach", function NzPickerComponent_Template_ng_template_detach_7_listener() { return ctx.onOverlayDetach(); })("overlayKeydown", function NzPickerComponent_Template_ng_template_overlayKeydown_7_listener($event) { return ctx.onOverlayKeydown($event); });
-    } if (rf & 2) {
-        const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", !ctx.inline)("ngIfElse", _r5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("cdkConnectedOverlayHasBackdrop", ctx.hasBackdrop)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__["NzConnectedOverlayDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_23__["ɵNzTransitionPatchDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"]], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_20__["slideMotion"]] }, changeDetection: 0 });
-NzPickerComponent.ctorParameters = () => [
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
-    { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"] },
-    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
-    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_19__["Platform"] },
-    { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_21__["NzResizeObserver"] },
-    { type: DatePickerService },
-    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"],] }] }
-];
-NzPickerComponent.propDecorators = {
-    noAnimation: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    isRange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    open: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    disabled: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    inputReadOnly: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    inline: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    placeholder: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    allowClear: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    autoFocus: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    format: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    separator: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    popupStyle: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    dropdownClassName: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    suffixIcon: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    dir: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    nzId: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    hasBackdrop: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
-    focusChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    valueChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    openChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    cdkConnectedOverlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], { static: false },] }],
-    separatorElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['separatorElement', { static: false },] }],
-    pickerInput: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['pickerInput', { static: false },] }],
-    rangePickerInputs: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"], args: ['rangePickerInput',] }],
-    panel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChild"], args: [DateRangePopupComponent,] }]
-};
-
-/**
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
- */
-const POPUP_STYLE_PATCH = { position: 'relative' }; // Aim to override antd's style to support overlay's position strategy (position:absolute will cause it not working beacuse the overlay can't get the height/width of it's content)
+const POPUP_STYLE_PATCH = { position: 'relative' }; // Aim to override antd's style to support overlay's position strategy (position:absolute will cause it not working because the overlay can't get the height/width of it's content)
 const NZ_CONFIG_MODULE_NAME = 'datePicker';
 /**
  * The base picker for all common APIs
  */
 class NzDatePickerComponent {
-    constructor(nzConfigService, datePickerService, i18n, cdr, renderer, elementRef, dateHelper, directionality, noAnimation) {
+    // ------------------------------------------------------------------------
+    // Input API End
+    // ------------------------------------------------------------------------
+    constructor(nzConfigService, datePickerService, i18n, cdr, renderer, elementRef, dateHelper, nzResizeObserver, platform, doc, directionality, noAnimation) {
         this.nzConfigService = nzConfigService;
         this.datePickerService = datePickerService;
         this.i18n = i18n;
@@ -2477,13 +2118,15 @@ class NzDatePickerComponent {
         this.renderer = renderer;
         this.elementRef = elementRef;
         this.dateHelper = dateHelper;
+        this.nzResizeObserver = nzResizeObserver;
+        this.platform = platform;
         this.directionality = directionality;
         this.noAnimation = noAnimation;
         this._nzModuleName = NZ_CONFIG_MODULE_NAME;
         this.isRange = false; // Indicate whether the value is a range value
         this.dir = 'ltr';
         this.panelMode = 'date';
-        this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_15__["Subject"]();
+        this.destroyed$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
         this.isCustomPlaceHolder = false;
         this.isCustomFormat = false;
         this.showTime = false;
@@ -2510,14 +2153,51 @@ class NzDatePickerComponent {
         this.nzOnCalendarChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzOnOk = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
         this.nzOnOpenChange = new _angular_core__WEBPACK_IMPORTED_MODULE_3__["EventEmitter"]();
+        this.inputSize = 12;
+        this.destroy$ = new rxjs__WEBPACK_IMPORTED_MODULE_17__["Subject"]();
+        this.prefixCls = PREFIX_CLASS;
+        this.activeBarStyle = {};
+        this.overlayOpen = false; // Available when "nzOpen" = undefined
+        this.overlayPositions = [
+            {
+                offsetY: 2,
+                originX: 'start',
+                originY: 'bottom',
+                overlayX: 'start',
+                overlayY: 'top'
+            },
+            {
+                offsetY: -2,
+                originX: 'start',
+                originY: 'top',
+                overlayX: 'start',
+                overlayY: 'bottom'
+            },
+            {
+                offsetY: 2,
+                originX: 'end',
+                originY: 'bottom',
+                overlayX: 'end',
+                overlayY: 'top'
+            },
+            {
+                offsetY: -2,
+                originX: 'end',
+                originY: 'top',
+                overlayX: 'end',
+                overlayY: 'bottom'
+            }
+        ];
+        this.currentPositionX = 'start';
+        this.currentPositionY = 'bottom';
         // ------------------------------------------------------------------------
         // | Control value accessor implements
         // ------------------------------------------------------------------------
         // NOTE: onChangeFn/onTouchedFn will not be assigned if user not use as ngModel
         this.onChangeFn = () => void 0;
         this.onTouchedFn = () => void 0;
-        // TODO: move to host after View Engine deprecation
-        this.elementRef.nativeElement.classList.add('ant-picker');
+        this.document = doc;
+        this.origin = new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkOverlayOrigin"](this.elementRef);
     }
     get nzShowTime() {
         return this.showTime;
@@ -2525,16 +2205,213 @@ class NzDatePickerComponent {
     set nzShowTime(value) {
         this.showTime = typeof value === 'object' ? value : Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_12__["toBoolean"])(value);
     }
+    get realOpenState() {
+        // The value that really decide the open state of overlay
+        return this.isOpenHandledByUser() ? !!this.nzOpen : this.overlayOpen;
+    }
+    ngAfterViewInit() {
+        if (this.nzAutoFocus) {
+            this.focus();
+        }
+        if (this.isRange && this.platform.isBrowser) {
+            this.nzResizeObserver
+                .observe(this.elementRef)
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroy$))
+                .subscribe(() => {
+                this.updateInputWidthAndArrowLeft();
+            });
+        }
+        this.datePickerService.inputPartChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroy$)).subscribe(partType => {
+            if (partType) {
+                this.datePickerService.activeInput = partType;
+            }
+            this.focus();
+            this.updateInputWidthAndArrowLeft();
+        });
+    }
+    updateInputWidthAndArrowLeft() {
+        var _a, _b, _c;
+        this.inputWidth = ((_b = (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first) === null || _b === void 0 ? void 0 : _b.nativeElement.offsetWidth) || 0;
+        const baseStyle = { position: 'absolute', width: `${this.inputWidth}px` };
+        this.datePickerService.arrowLeft =
+            this.datePickerService.activeInput === 'left' ? 0 : this.inputWidth + ((_c = this.separatorElement) === null || _c === void 0 ? void 0 : _c.nativeElement.offsetWidth) || 0;
+        if (this.dir === 'rtl') {
+            this.activeBarStyle = Object.assign(Object.assign({}, baseStyle), { right: `${this.datePickerService.arrowLeft}px` });
+        }
+        else {
+            this.activeBarStyle = Object.assign(Object.assign({}, baseStyle), { left: `${this.datePickerService.arrowLeft}px` });
+        }
+        this.cdr.markForCheck();
+    }
+    getInput(partType) {
+        var _a, _b;
+        if (this.nzInline) {
+            return undefined;
+        }
+        return this.isRange
+            ? partType === 'left'
+                ? (_a = this.rangePickerInputs) === null || _a === void 0 ? void 0 : _a.first.nativeElement : (_b = this.rangePickerInputs) === null || _b === void 0 ? void 0 : _b.last.nativeElement
+            : this.pickerInput.nativeElement;
+    }
+    focus() {
+        const activeInputElement = this.getInput(this.datePickerService.activeInput);
+        if (this.document.activeElement !== activeInputElement) {
+            activeInputElement === null || activeInputElement === void 0 ? void 0 : activeInputElement.focus();
+        }
+    }
+    onFocus(event, partType) {
+        event.preventDefault();
+        if (partType) {
+            this.datePickerService.inputPartChange$.next(partType);
+        }
+        this.renderClass(true);
+    }
+    // blur event has not the relatedTarget in IE11, use focusout instead.
+    onFocusout(event) {
+        event.preventDefault();
+        if (!this.elementRef.nativeElement.contains(event.relatedTarget)) {
+            this.checkAndClose();
+        }
+        this.renderClass(false);
+    }
+    // Show overlay content
+    open() {
+        if (this.nzInline) {
+            return;
+        }
+        if (!this.realOpenState && !this.nzDisabled) {
+            this.updateInputWidthAndArrowLeft();
+            this.overlayOpen = true;
+            this.nzOnOpenChange.emit(true);
+            this.cdr.markForCheck();
+        }
+    }
+    close() {
+        if (this.nzInline) {
+            return;
+        }
+        if (this.realOpenState) {
+            this.overlayOpen = false;
+            this.nzOnOpenChange.emit(false);
+        }
+    }
+    showClear() {
+        return !this.nzDisabled && !this.isEmptyValue(this.datePickerService.value) && this.nzAllowClear;
+    }
+    checkAndClose() {
+        if (!this.realOpenState) {
+            return;
+        }
+        if (this.panel.isAllowed(this.datePickerService.value, true)) {
+            if (Array.isArray(this.datePickerService.value) && Object(ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["wrongSortOrder"])(this.datePickerService.value)) {
+                const index = this.datePickerService.getActiveIndex();
+                const value = this.datePickerService.value[index];
+                this.panel.changeValueFromSelect(value, true);
+                return;
+            }
+            this.updateInputValue();
+            this.datePickerService.emitValue$.next();
+        }
+        else {
+            this.datePickerService.setValue(this.datePickerService.initialValue);
+            this.close();
+        }
+    }
+    onClickInputBox(event) {
+        event.stopPropagation();
+        this.focus();
+        if (!this.isOpenHandledByUser()) {
+            this.open();
+        }
+    }
+    onOverlayKeydown(event) {
+        if (event.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_19__["ESCAPE"]) {
+            this.datePickerService.initValue();
+        }
+    }
+    // NOTE: A issue here, the first time position change, the animation will not be triggered.
+    // Because the overlay's "positionChange" event is emitted after the content's full shown up.
+    // All other components like "nz-dropdown" which depends on overlay also has the same issue.
+    // See: https://github.com/NG-ZORRO/ng-zorro-antd/issues/1429
+    onPositionChange(position) {
+        this.currentPositionX = position.connectionPair.originX;
+        this.currentPositionY = position.connectionPair.originY;
+        this.cdr.detectChanges(); // Take side-effects to position styles
+    }
+    onClickClear(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.datePickerService.initValue(true);
+        this.datePickerService.emitValue$.next();
+    }
+    updateInputValue() {
+        const newValue = this.datePickerService.value;
+        if (this.isRange) {
+            this.inputValue = newValue ? newValue.map(v => this.formatValue(v)) : ['', ''];
+        }
+        else {
+            this.inputValue = this.formatValue(newValue);
+        }
+        this.cdr.markForCheck();
+    }
+    formatValue(value) {
+        return this.dateHelper.format(value && value.nativeDate, this.nzFormat);
+    }
+    onInputChange(value, isEnter = false) {
+        /**
+         * in IE11 focus/blur will trigger ngModelChange if placeholder changes,
+         * so we forbidden IE11 to open panel through input change
+         */
+        if (!this.platform.TRIDENT &&
+            this.document.activeElement === this.getInput(this.datePickerService.activeInput) &&
+            !this.realOpenState) {
+            this.open();
+            return;
+        }
+        const date = this.checkValidDate(value);
+        // Can only change date when it's open
+        if (date && this.realOpenState) {
+            this.panel.changeValueFromSelect(date, isEnter);
+        }
+    }
+    onKeyupEnter(event) {
+        this.onInputChange(event.target.value, true);
+    }
+    checkValidDate(value) {
+        const date = new ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["CandyDate"](this.dateHelper.parseDate(value, this.nzFormat));
+        if (!date.isValid() || value !== this.dateHelper.format(date.nativeDate, this.nzFormat)) {
+            return null;
+        }
+        return date;
+    }
+    getPlaceholder(partType) {
+        return this.isRange ? this.nzPlaceHolder[this.datePickerService.getActiveIndex(partType)] : this.nzPlaceHolder;
+    }
+    isEmptyValue(value) {
+        if (value === null) {
+            return true;
+        }
+        else if (this.isRange) {
+            return !value || !Array.isArray(value) || value.every(val => !val);
+        }
+        else {
+            return !value;
+        }
+    }
+    // Whether open state is permanently controlled by user himself
+    isOpenHandledByUser() {
+        return this.nzOpen !== undefined;
+    }
     ngOnInit() {
         var _a;
         // Subscribe the every locale change if the nzLocale is not handled by user
         if (!this.nzLocale) {
-            this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroyed$)).subscribe(() => this.setLocale());
+            this.i18n.localeChange.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroyed$)).subscribe(() => this.setLocale());
         }
         // Default value
         this.datePickerService.isRange = this.isRange;
         this.datePickerService.initValue(true);
-        this.datePickerService.emitValue$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroyed$)).subscribe(_ => {
+        this.datePickerService.emitValue$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroyed$)).subscribe(_ => {
             var _a, _b, _c, _d;
             const value = this.datePickerService.value;
             this.datePickerService.initialValue = Object(ng_zorro_antd_core_time__WEBPACK_IMPORTED_MODULE_11__["cloneDate"])(value);
@@ -2559,12 +2436,16 @@ class NzDatePickerComponent {
             // When value emitted, overlay will be closed
             this.close();
         });
-        this.setModeAndFormat();
-        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_16__["takeUntil"])(this.destroyed$)).subscribe((direction) => {
+        (_a = this.directionality.change) === null || _a === void 0 ? void 0 : _a.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroyed$)).subscribe((direction) => {
             this.dir = direction;
             this.cdr.detectChanges();
         });
         this.dir = this.directionality.value;
+        this.inputValue = this.isRange ? ['', ''] : '';
+        this.setModeAndFormat();
+        this.datePickerService.valueChange$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_18__["takeUntil"])(this.destroy$)).subscribe(() => {
+            this.updateInputValue();
+        });
     }
     ngOnChanges(changes) {
         var _a, _b;
@@ -2610,6 +2491,8 @@ class NzDatePickerComponent {
         if (!this.isCustomFormat) {
             this.nzFormat = inputFormats[this.nzMode];
         }
+        this.inputSize = Math.max(10, this.nzFormat.length) + 2;
+        this.updateInputValue();
     }
     /**
      * Triggered when overlayOpen changes (different with realOpenState)
@@ -2617,12 +2500,6 @@ class NzDatePickerComponent {
      */
     onOpenChange(open) {
         this.nzOnOpenChange.emit(open);
-    }
-    open() {
-        this.picker.showOverlay();
-    }
-    close() {
-        this.picker.hideOverlay();
     }
     writeValue(value) {
         this.setValue(value);
@@ -2675,7 +2552,7 @@ class NzDatePickerComponent {
         this.datePickerService.setValue(newValue);
         this.datePickerService.initialValue = newValue;
     }
-    onFocusChange(value) {
+    renderClass(value) {
         // TODO: avoid autoFocus cause change after checked error
         if (value) {
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-picker-focused');
@@ -2715,16 +2592,24 @@ class NzDatePickerComponent {
         }
     }
 }
-NzDatePickerComponent.ɵfac = function NzDatePickerComponent_Factory(t) { return new (t || NzDatePickerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](DatePickerService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"], 9)); };
+NzDatePickerComponent.ɵfac = function NzDatePickerComponent_Factory(t) { return new (t || NzDatePickerComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["NzConfigService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](DatePickerService), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["NzI18nService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_16__["NzResizeObserver"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_20__["Platform"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"], 9)); };
 NzDatePickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzDatePickerComponent, selectors: [["nz-date-picker"], ["nz-week-picker"], ["nz-month-picker"], ["nz-year-picker"], ["nz-range-picker"]], viewQuery: function NzDatePickerComponent_Query(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](NzPickerComponent, 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](DateRangePopupComponent, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c3, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c4, 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵviewQuery"](_c5, 1);
     } if (rf & 2) {
         let _t;
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.picker = _t.first);
-    } }, hostVars: 14, hostBindings: function NzDatePickerComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDatePickerComponent_click_HostBindingHandler($event) { return ctx.picker.onClickInputBox($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.cdkConnectedOverlay = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.panel = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.separatorElement = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.pickerInput = _t.first);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵloadQuery"]()) && (ctx.rangePickerInputs = _t);
+    } }, hostVars: 16, hostBindings: function NzDatePickerComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDatePickerComponent_click_HostBindingHandler($event) { return ctx.onClickInputBox($event); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.nzSize === "large")("ant-picker-small", ctx.nzSize === "small")("ant-picker-disabled", ctx.nzDisabled)("ant-picker-rtl", ctx.dir === "rtl")("ant-picker-borderless", ctx.nzBorderless)("ant-picker-inline", ctx.nzInline);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-picker", true)("ant-picker-range", ctx.isRange)("ant-picker-large", ctx.nzSize === "large")("ant-picker-small", ctx.nzSize === "small")("ant-picker-disabled", ctx.nzDisabled)("ant-picker-rtl", ctx.dir === "rtl")("ant-picker-borderless", ctx.nzBorderless)("ant-picker-inline", ctx.nzInline);
     } }, inputs: { nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzBorderless: "nzBorderless", nzInputReadOnly: "nzInputReadOnly", nzInline: "nzInline", nzPlaceHolder: "nzPlaceHolder", nzPopupStyle: "nzPopupStyle", nzSize: "nzSize", nzShowToday: "nzShowToday", nzMode: "nzMode", nzShowNow: "nzShowNow", nzDefaultPickerValue: "nzDefaultPickerValue", nzSeparator: "nzSeparator", nzSuffixIcon: "nzSuffixIcon", nzBackdrop: "nzBackdrop", nzId: "nzId", nzShowTime: "nzShowTime", nzFormat: "nzFormat", nzLocale: "nzLocale", nzOpen: "nzOpen", nzDisabledDate: "nzDisabledDate", nzDropdownClassName: "nzDropdownClassName", nzDateRender: "nzDateRender", nzDisabledTime: "nzDisabledTime", nzRenderExtraFooter: "nzRenderExtraFooter", nzRanges: "nzRanges" }, outputs: { nzOnPanelChange: "nzOnPanelChange", nzOnCalendarChange: "nzOnCalendarChange", nzOnOk: "nzOnOk", nzOnOpenChange: "nzOnOpenChange" }, exportAs: ["nzDatePicker"], features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵProvidersFeature"]([
             DatePickerService,
             {
@@ -2732,27 +2617,30 @@ NzDatePickerComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵde
                 multi: true,
                 useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(() => NzDatePickerComponent)
             }
-        ]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 2, vars: 35, consts: [["nz-picker", "", 2, "display", "inherit", "align-items", "center", "width", "100%", 3, "id", "isRange", "open", "dir", "separator", "disabled", "inputReadOnly", "inline", "format", "allowClear", "autoFocus", "placeholder", "dropdownClassName", "popupStyle", "noAnimation", "suffixIcon", "hasBackdrop", "nzId", "openChange", "focusChange"], [3, "isRange", "inline", "defaultPickerValue", "showWeek", "panelMode", "locale", "showToday", "showNow", "showTime", "dateRender", "disabledDate", "disabledTime", "extraFooter", "ranges", "dir", "panelModeChange", "calendarChange", "resultOk"]], template: function NzDatePickerComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "div", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("openChange", function NzDatePickerComponent_Template_div_openChange_0_listener($event) { return ctx.onOpenChange($event); })("focusChange", function NzDatePickerComponent_Template_div_focusChange_0_listener($event) { return ctx.onFocusChange($event); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "date-range-popup", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("panelModeChange", function NzDatePickerComponent_Template_date_range_popup_panelModeChange_1_listener($event) { return ctx.onPanelModeChange($event); })("calendarChange", function NzDatePickerComponent_Template_date_range_popup_calendarChange_1_listener($event) { return ctx.onCalendarChange($event); })("resultOk", function NzDatePickerComponent_Template_date_range_popup_resultOk_1_listener() { return ctx.onResultOk(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+        ]), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵNgOnChangesFeature"]], decls: 8, vars: 7, consts: [[4, "ngIf", "ngIfElse"], ["tplRangeInput", ""], ["tplRightRest", ""], ["inlineMode", ""], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayPositions", "cdkConnectedOverlayTransformOriginOn", "positionChange", "detach", "overlayKeydown"], [3, "class", 4, "ngIf"], [4, "ngIf"], [3, "disabled", "readOnly", "ngModel", "placeholder", "size", "ngModelChange", "focus", "focusout", "keyup.enter"], ["pickerInput", ""], [4, "ngTemplateOutlet"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], ["separatorElement", ""], ["defaultSeparator", ""], ["nz-icon", "", "nzType", "swap-right", "nzTheme", "outline"], [3, "disabled", "readOnly", "size", "ngModel", "placeholder", "click", "focusout", "focus", "keyup.enter", "ngModelChange"], ["rangePickerInput", ""], [3, "ngStyle"], [3, "class", "click", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "click"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill"], ["nz-icon", "", 3, "nzType"], [1, "ant-picker-wrapper", 2, "position", "relative", 3, "nzNoAnimation"], [3, "isRange", "inline", "defaultPickerValue", "showWeek", "panelMode", "locale", "showToday", "showNow", "showTime", "dateRender", "disabledDate", "disabledTime", "extraFooter", "ranges", "dir", "panelModeChange", "calendarChange", "resultOk"]], template: function NzDatePickerComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, NzDatePickerComponent_ng_container_0_Template, 3, 2, "ng-container", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzDatePickerComponent_ng_template_1_Template, 2, 5, "ng-template", null, 1, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzDatePickerComponent_ng_template_3_Template, 4, 9, "ng-template", null, 2, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](5, NzDatePickerComponent_ng_template_5_Template, 3, 38, "ng-template", null, 3, _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplateRefExtractor"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](7, NzDatePickerComponent_ng_template_7_Template, 1, 1, "ng-template", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("positionChange", function NzDatePickerComponent_Template_ng_template_positionChange_7_listener($event) { return ctx.onPositionChange($event); })("detach", function NzDatePickerComponent_Template_ng_template_detach_7_listener() { return ctx.close(); })("overlayKeydown", function NzDatePickerComponent_Template_ng_template_overlayKeydown_7_listener($event) { return ctx.onOverlayKeydown($event); });
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-picker-dropdown-rtl", ctx.dir === "rtl");
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("id", ctx.nzId)("isRange", ctx.isRange)("open", ctx.nzOpen)("dir", ctx.dir)("separator", ctx.nzSeparator)("disabled", ctx.nzDisabled)("inputReadOnly", ctx.nzInputReadOnly)("inline", ctx.nzInline)("format", ctx.nzFormat)("allowClear", ctx.nzAllowClear)("autoFocus", ctx.nzAutoFocus)("placeholder", ctx.nzPlaceHolder)("dropdownClassName", ctx.nzDropdownClassName)("popupStyle", ctx.nzPopupStyle)("noAnimation", !!(ctx.noAnimation == null ? null : ctx.noAnimation.nzNoAnimation))("suffixIcon", ctx.nzSuffixIcon)("hasBackdrop", ctx.nzBackdrop)("nzId", ctx.nzId);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("isRange", ctx.isRange)("inline", ctx.nzInline)("defaultPickerValue", ctx.nzDefaultPickerValue)("showWeek", ctx.nzMode === "week")("panelMode", ctx.panelMode)("locale", ctx.nzLocale == null ? null : ctx.nzLocale.lang)("showToday", ctx.nzMode === "date" && ctx.nzShowToday && !ctx.isRange && !ctx.nzShowTime)("showNow", ctx.nzMode === "date" && ctx.nzShowNow && !ctx.isRange && !!ctx.nzShowTime)("showTime", ctx.nzShowTime)("dateRender", ctx.nzDateRender)("disabledDate", ctx.nzDisabledDate)("disabledTime", ctx.nzDisabledTime)("extraFooter", ctx.extraFooter)("ranges", ctx.nzRanges)("dir", ctx.dir);
-    } }, directives: [NzPickerComponent, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Dir"], DateRangePopupComponent], encapsulation: 2, changeDetection: 0 });
+        const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("ngIf", !ctx.nzInline)("ngIfElse", _r5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("cdkConnectedOverlayHasBackdrop", ctx.nzBackdrop)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.realOpenState)("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayTransformOriginOn", ".ant-picker-wrapper");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgIf"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], ng_zorro_antd_core_overlay__WEBPACK_IMPORTED_MODULE_8__["NzConnectedOverlayDirective"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgTemplateOutlet"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_23__["ɵNzTransitionPatchDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_2__["NgStyle"], ng_zorro_antd_core_outlet__WEBPACK_IMPORTED_MODULE_7__["NzStringTemplateOutletDirective"], ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"], DateRangePopupComponent, _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Dir"]], encapsulation: 2, data: { animation: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_15__["slideMotion"]] }, changeDetection: 0 });
 NzDatePickerComponent.ctorParameters = () => [
-    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["NzConfigService"] },
+    { type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["NzConfigService"] },
     { type: DatePickerService },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["NzI18nService"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] },
     { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] },
     { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"] },
+    { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_16__["NzResizeObserver"] },
+    { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_20__["Platform"] },
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"], args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"],] }] },
     { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] },
     { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"], decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Host"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"] }] }
 ];
@@ -2787,8 +2675,12 @@ NzDatePickerComponent.propDecorators = {
     nzOnCalendarChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
     nzOnOk: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
     nzOnOpenChange: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"] }],
-    picker: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [NzPickerComponent, { static: true },] }],
-    nzShowTime: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
+    nzShowTime: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }],
+    cdkConnectedOverlay: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], { static: false },] }],
+    panel: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: [DateRangePopupComponent, { static: false },] }],
+    separatorElement: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['separatorElement', { static: false },] }],
+    pickerInput: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"], args: ['pickerInput', { static: false },] }],
+    rangePickerInputs: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"], args: ['rangePickerInput',] }]
 };
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     Object(ng_zorro_antd_core_util__WEBPACK_IMPORTED_MODULE_12__["InputBoolean"])(),
@@ -2827,15 +2719,15 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Boolean)
 ], NzDatePickerComponent.prototype, "nzShowNow", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["WithConfig"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", String)
 ], NzDatePickerComponent.prototype, "nzSeparator", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["WithConfig"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Object)
 ], NzDatePickerComponent.prototype, "nzSuffixIcon", void 0);
 Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
-    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["WithConfig"])(),
+    Object(ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["WithConfig"])(),
     Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__metadata"])("design:type", Object)
 ], NzDatePickerComponent.prototype, "nzBackdrop", void 0);
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](CalendarFooterComponent, [{
@@ -3052,22 +2944,23 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
         }], defaultPickerValue: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }] }); })();
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzPickerComponent, [{
+(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzDatePickerComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
                 encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
-                selector: '[nz-picker]',
-                exportAs: 'nzPicker',
+                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
+                selector: 'nz-date-picker,nz-week-picker,nz-month-picker,nz-year-picker,nz-range-picker',
+                exportAs: 'nzDatePicker',
                 template: `
-    <ng-container *ngIf="!inline; else inlineMode">
+    <ng-container *ngIf="!nzInline; else inlineMode">
       <!-- Content of single picker -->
       <div *ngIf="!isRange" class="{{ prefixCls }}-input">
         <input
           #pickerInput
           [attr.id]="nzId"
-          [class.ant-input-disabled]="disabled"
-          [disabled]="disabled"
-          [readOnly]="inputReadOnly"
+          [class.ant-input-disabled]="nzDisabled"
+          [disabled]="nzDisabled"
+          [readOnly]="nzInputReadOnly"
           [(ngModel)]="inputValue"
           placeholder="{{ getPlaceholder() }}"
           [size]="inputSize"
@@ -3086,7 +2979,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
         </div>
         <div #separatorElement class="{{ prefixCls }}-range-separator">
           <span class="{{ prefixCls }}-separator">
-            <ng-container *ngIf="separator; else defaultSeparator">{{ separator }}</ng-container>
+            <ng-container *ngIf="nzSeparator; else defaultSeparator">{{ nzSeparator }}</ng-container>
           </span>
           <ng-template #defaultSeparator>
             <i nz-icon nzType="swap-right" nzTheme="outline"></i>
@@ -3102,8 +2995,8 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     <ng-template #tplRangeInput let-partType="partType">
       <input
         #rangePickerInput
-        [disabled]="disabled"
-        [readOnly]="inputReadOnly"
+        [disabled]="nzDisabled"
+        [readOnly]="nzInputReadOnly"
         [size]="inputSize"
         (click)="onClickInputBox($event)"
         (focusout)="onFocusout($event)"
@@ -3122,16 +3015,16 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
         <i nz-icon nzType="close-circle" nzTheme="fill"></i>
       </span>
       <span class="{{ prefixCls }}-suffix">
-        <ng-container *nzStringTemplateOutlet="suffixIcon; let suffixIcon">
+        <ng-container *nzStringTemplateOutlet="nzSuffixIcon; let suffixIcon">
           <i nz-icon [nzType]="suffixIcon"></i>
         </ng-container>
       </span>
     </ng-template>
 
     <ng-template #inlineMode>
-      <div class="ant-picker-wrapper" [nzNoAnimation]="noAnimation" [@slideMotion]="'enter'" style="position: relative;">
+      <div class="ant-picker-wrapper" [nzNoAnimation]="!!noAnimation?.nzNoAnimation" [@slideMotion]="'enter'" style="position: relative;">
         <div
-          class="{{ prefixCls }}-dropdown {{ dropdownClassName }}"
+          class="{{ prefixCls }}-dropdown {{ nzDropdownClassName }}"
           [class.ant-picker-dropdown-rtl]="dir === 'rtl'"
           [class.ant-picker-dropdown-placement-bottomLeft]="currentPositionY === 'bottom' && currentPositionX === 'start'"
           [class.ant-picker-dropdown-placement-topLeft]="currentPositionY === 'top' && currentPositionX === 'start'"
@@ -3140,10 +3033,28 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
           [class.ant-picker-dropdown-range]="isRange"
           [class.ant-picker-active-left]="datePickerService.activeInput === 'left'"
           [class.ant-picker-active-right]="datePickerService.activeInput === 'right'"
-          [ngStyle]="popupStyle"
+          [ngStyle]="nzPopupStyle"
         >
-          <!-- Compatible for overlay that not support offset dynamically and immediately -->
-          <ng-content></ng-content>
+          <date-range-popup
+            [isRange]="isRange"
+            [inline]="nzInline"
+            [defaultPickerValue]="nzDefaultPickerValue"
+            [showWeek]="nzMode === 'week'"
+            [panelMode]="panelMode"
+            (panelModeChange)="onPanelModeChange($event)"
+            (calendarChange)="onCalendarChange($event)"
+            [locale]="nzLocale?.lang!"
+            [showToday]="nzMode === 'date' && nzShowToday && !isRange && !nzShowTime"
+            [showNow]="nzMode === 'date' && nzShowNow && !isRange && !!nzShowTime"
+            [showTime]="nzShowTime"
+            [dateRender]="nzDateRender"
+            [disabledDate]="nzDisabledDate"
+            [disabledTime]="nzDisabledTime"
+            [extraFooter]="extraFooter"
+            [ranges]="nzRanges"
+            [dir]="dir"
+            (resultOk)="onResultOk()"
+          ></date-range-popup>
         </div>
       </div>
     </ng-template>
@@ -3152,136 +3063,20 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
     <ng-template
       cdkConnectedOverlay
       nzConnectedOverlay
-      [cdkConnectedOverlayHasBackdrop]="hasBackdrop"
+      [cdkConnectedOverlayHasBackdrop]="nzBackdrop"
       [cdkConnectedOverlayOrigin]="origin"
       [cdkConnectedOverlayOpen]="realOpenState"
       [cdkConnectedOverlayPositions]="overlayPositions"
       [cdkConnectedOverlayTransformOriginOn]="'.ant-picker-wrapper'"
       (positionChange)="onPositionChange($event)"
-      (detach)="onOverlayDetach()"
+      (detach)="close()"
       (overlayKeydown)="onOverlayKeydown($event)"
     >
       <ng-container *ngTemplateOutlet="inlineMode"></ng-container>
     </ng-template>
   `,
-                animations: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_20__["slideMotion"]],
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush
-            }]
-    }], function () { return [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_19__["Platform"] }, { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_21__["NzResizeObserver"] }, { type: DatePickerService }, { type: undefined, decorators: [{
-                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"],
-                args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"]]
-            }] }]; }, { noAnimation: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], isRange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], open: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], disabled: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], inputReadOnly: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], inline: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], popupStyle: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], dir: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], nzId: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], hasBackdrop: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], focusChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], valueChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], openChange: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Output"]
-        }], placeholder: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], allowClear: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], autoFocus: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], format: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], separator: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], dropdownClassName: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], suffixIcon: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], cdkConnectedOverlay: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
-            args: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], { static: false }]
-        }], separatorElement: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
-            args: ['separatorElement', { static: false }]
-        }], pickerInput: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
-            args: ['pickerInput', { static: false }]
-        }], rangePickerInputs: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"],
-            args: ['rangePickerInput']
-        }], panel: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ContentChild"],
-            args: [DateRangePopupComponent]
-        }] }); })();
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzDatePickerComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
-        args: [{
-                encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewEncapsulation"].None,
-                changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectionStrategy"].OnPush,
-                selector: 'nz-date-picker,nz-week-picker,nz-month-picker,nz-year-picker,nz-range-picker',
-                exportAs: 'nzDatePicker',
-                template: `
-    <div
-      nz-picker
-      style="display: inherit; align-items: center; width: 100%;"
-      [id]="nzId"
-      [isRange]="isRange"
-      [open]="nzOpen"
-      [dir]="dir"
-      [separator]="nzSeparator"
-      [disabled]="nzDisabled"
-      [inputReadOnly]="nzInputReadOnly"
-      [inline]="nzInline"
-      [format]="nzFormat"
-      [allowClear]="nzAllowClear"
-      [autoFocus]="nzAutoFocus"
-      [placeholder]="nzPlaceHolder"
-      [dropdownClassName]="nzDropdownClassName"
-      [class.ant-picker-dropdown-rtl]="dir === 'rtl'"
-      [popupStyle]="nzPopupStyle"
-      [noAnimation]="!!noAnimation?.nzNoAnimation"
-      [suffixIcon]="nzSuffixIcon"
-      [hasBackdrop]="nzBackdrop"
-      (openChange)="onOpenChange($event)"
-      (focusChange)="onFocusChange($event)"
-      [nzId]="nzId"
-    >
-      <date-range-popup
-        [isRange]="isRange"
-        [inline]="nzInline"
-        [defaultPickerValue]="nzDefaultPickerValue"
-        [showWeek]="nzMode === 'week'"
-        [panelMode]="panelMode"
-        (panelModeChange)="onPanelModeChange($event)"
-        (calendarChange)="onCalendarChange($event)"
-        [locale]="nzLocale?.lang!"
-        [showToday]="nzMode === 'date' && nzShowToday && !isRange && !nzShowTime"
-        [showNow]="nzMode === 'date' && nzShowNow && !isRange && !!nzShowTime"
-        [showTime]="nzShowTime"
-        [dateRender]="nzDateRender"
-        [disabledDate]="nzDisabledDate"
-        [disabledTime]="nzDisabledTime"
-        [extraFooter]="extraFooter"
-        [ranges]="nzRanges"
-        [dir]="dir"
-        (resultOk)="onResultOk()"
-      ></date-range-popup>
-    </div>
-  `,
                 host: {
+                    '[class.ant-picker]': `true`,
                     '[class.ant-picker-range]': `isRange`,
                     '[class.ant-picker-large]': `nzSize === 'large'`,
                     '[class.ant-picker-small]': `nzSize === 'small'`,
@@ -3289,7 +3084,7 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
                     '[class.ant-picker-rtl]': `dir === 'rtl'`,
                     '[class.ant-picker-borderless]': `nzBorderless`,
                     '[class.ant-picker-inline]': `nzInline`,
-                    '(click)': 'picker.onClickInputBox($event)'
+                    '(click)': 'onClickInputBox($event)'
                 },
                 providers: [
                     DatePickerService,
@@ -3298,9 +3093,13 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
                         multi: true,
                         useExisting: Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["forwardRef"])(() => NzDatePickerComponent)
                     }
-                ]
+                ],
+                animations: [ng_zorro_antd_core_animation__WEBPACK_IMPORTED_MODULE_15__["slideMotion"]]
             }]
-    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_17__["NzConfigService"] }, { type: DatePickerService }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["NzI18nService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{
+    }], function () { return [{ type: ng_zorro_antd_core_config__WEBPACK_IMPORTED_MODULE_21__["NzConfigService"] }, { type: DatePickerService }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["NzI18nService"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Renderer2"] }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ElementRef"] }, { type: ng_zorro_antd_i18n__WEBPACK_IMPORTED_MODULE_13__["DateHelperService"] }, { type: ng_zorro_antd_core_resize_observers__WEBPACK_IMPORTED_MODULE_16__["NzResizeObserver"] }, { type: _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_20__["Platform"] }, { type: undefined, decorators: [{
+                type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Inject"],
+                args: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["DOCUMENT"]]
+            }] }, { type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["Directionality"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Optional"]
             }] }, { type: ng_zorro_antd_core_no_animation__WEBPACK_IMPORTED_MODULE_6__["NzNoAnimationDirective"], decorators: [{
                 type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Host"]
@@ -3368,9 +3167,21 @@ Object(tslib__WEBPACK_IMPORTED_MODULE_14__["__decorate"])([
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
         }], nzRanges: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"]
-        }], picker: [{
+        }], cdkConnectedOverlay: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
-            args: [NzPickerComponent, { static: true }]
+            args: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["CdkConnectedOverlay"], { static: false }]
+        }], panel: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            args: [DateRangePopupComponent, { static: false }]
+        }], separatorElement: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            args: ['separatorElement', { static: false }]
+        }], pickerInput: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChild"],
+            args: ['pickerInput', { static: false }]
+        }], rangePickerInputs: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ViewChildren"],
+            args: ['rangePickerInput']
         }] }); })();
 
 /**
@@ -4937,7 +4748,7 @@ NzDatePickerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefin
             ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonModule"],
             LibPackerModule
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzDatePickerModule, { declarations: function () { return [NzPickerComponent, NzDatePickerComponent, NzMonthPickerComponent, NzYearPickerComponent, NzWeekPickerComponent, NzRangePickerComponent, CalendarFooterComponent, InnerPopupComponent, DateRangePopupComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsetNgModuleScope"](NzDatePickerModule, { declarations: function () { return [NzDatePickerComponent, NzMonthPickerComponent, NzYearPickerComponent, NzWeekPickerComponent, NzRangePickerComponent, CalendarFooterComponent, InnerPopupComponent, DateRangePopupComponent]; }, imports: function () { return [_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_0__["BidiModule"],
         _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
         _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_1__["OverlayModule"], LibPackerModule, ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_9__["NzIconModule"],
@@ -4965,7 +4776,6 @@ NzDatePickerModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefin
                 ],
                 exports: [NzDatePickerComponent, NzRangePickerComponent, NzMonthPickerComponent, NzYearPickerComponent, NzWeekPickerComponent],
                 declarations: [
-                    NzPickerComponent,
                     NzDatePickerComponent,
                     NzMonthPickerComponent,
                     NzYearPickerComponent,

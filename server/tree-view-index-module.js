@@ -3638,11 +3638,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/cdk/tree */ "FvrZ");
 /* harmony import */ var ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ng-zorro-antd/tree-view */ "x2qV");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
-/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
-/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
-/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
-/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ng-zorro-antd/button */ "TZWX");
+/* harmony import */ var ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ng-zorro-antd/core/transition-patch */ "uLhK");
+/* harmony import */ var ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng-zorro-antd/icon */ "MOHP");
+/* harmony import */ var ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-zorro-antd/input */ "klHs");
+/* harmony import */ var ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ng-zorro-antd/core/wave */ "vdzw");
 
 
 
@@ -3660,6 +3660,10 @@ function NzDemoTreeViewEditableComponent_nz_tree_node_1_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("nzClick", function NzDemoTreeViewEditableComponent_nz_tree_node_1_Template_nz_tree_node_option_nzClick_1_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r5); const node_r3 = ctx.$implicit; const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r4.selectListSelection.toggle(node_r3); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](3, "button", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDemoTreeViewEditableComponent_nz_tree_node_1_Template_button_click_3_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r5); const node_r3 = ctx.$implicit; const ctx_r6 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r6.delete(node_r3); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](4, "i", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const node_r3 = ctx.$implicit;
@@ -3670,32 +3674,32 @@ function NzDemoTreeViewEditableComponent_nz_tree_node_1_Template(rf, ctx) { if (
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", node_r3.name, " ");
 } }
 function NzDemoTreeViewEditableComponent_nz_tree_node_2_Template(rf, ctx) { if (rf & 1) {
-    const _r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    const _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "nz-tree-node", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "input", 5, 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](1, "input", 7, 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3, " \u00A0 ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDemoTreeViewEditableComponent_nz_tree_node_2_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r9); const node_r6 = ctx.$implicit; const _r7 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](2); const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r8.saveNode(node_r6, _r7.value); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDemoTreeViewEditableComponent_nz_tree_node_2_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r10); const node_r7 = ctx.$implicit; const _r8 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵreference"](2); const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r9.saveNode(node_r7, _r8.value); });
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](5, "Add");
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } }
 function NzDemoTreeViewEditableComponent_nz_tree_node_3_Template(rf, ctx) { if (rf & 1) {
-    const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "nz-tree-node", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](1, "nz-tree-node-toggle");
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](2, "i", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtext"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDemoTreeViewEditableComponent_nz_tree_node_3_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r12); const node_r10 = ctx.$implicit; const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r11.addNewNode(node_r10); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](5, "i", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](4, "button", 5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵlistener"]("click", function NzDemoTreeViewEditableComponent_nz_tree_node_3_Template_button_click_4_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵrestoreView"](_r13); const node_r11 = ctx.$implicit; const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵnextContext"](); return ctx_r12.addNewNode(node_r11); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelement"](5, "i", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const node_r10 = ctx.$implicit;
+    const node_r11 = ctx.$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", node_r10.name, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtextInterpolate1"](" ", node_r11.name, " ");
 } }
 const TREE_DATA = [
     {
@@ -3753,6 +3757,29 @@ class NzDemoTreeViewEditableComponent {
         this.dataSource.setData(this.treeData);
         this.treeControl.expandAll();
     }
+    delete(node) {
+        const originNode = this.flatNodeMap.get(node);
+        const dfsParentNode = () => {
+            const stack = [...this.treeData];
+            while (stack.length > 0) {
+                const n = stack.pop();
+                if (n.children) {
+                    if (n.children.find(e => e === originNode)) {
+                        return n;
+                    }
+                    for (let i = n.children.length - 1; i >= 0; i--) {
+                        stack.push(n.children[i]);
+                    }
+                }
+            }
+            return null;
+        };
+        const parentNode = dfsParentNode();
+        if (parentNode && parentNode.children) {
+            parentNode.children = parentNode.children.filter(e => e !== originNode);
+        }
+        this.dataSource.setData(this.treeData);
+    }
     addNewNode(node) {
         const parentNode = this.flatNodeMap.get(node);
         if (parentNode) {
@@ -3774,9 +3801,9 @@ class NzDemoTreeViewEditableComponent {
     }
 }
 NzDemoTreeViewEditableComponent.ɵfac = function NzDemoTreeViewEditableComponent_Factory(t) { return new (t || NzDemoTreeViewEditableComponent)(); };
-NzDemoTreeViewEditableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzDemoTreeViewEditableComponent, selectors: [["nz-demo-tree-view-editable"]], decls: 4, vars: 5, consts: [[3, "nzTreeControl", "nzDataSource", "trackBy"], ["nzTreeNodeIndentLine", "", 4, "nzTreeNodeDef"], ["nzTreeNodeIndentLine", "", 4, "nzTreeNodeDef", "nzTreeNodeDefWhen"], ["nzTreeNodeIndentLine", ""], [3, "nzDisabled", "nzSelected", "nzClick"], ["nz-input", "", "placeholder", "Input node name", "nzSize", "small"], ["inputElement", ""], ["nz-button", "", "nzSize", "small", 3, "click"], ["nz-icon", "", "nzType", "caret-down", "nzTreeNodeToggleRotateIcon", ""], ["nz-button", "", "nzType", "text", "nzSize", "small", 3, "click"], ["nz-icon", "", "nzType", "plus", "nzTheme", "outline"]], template: function NzDemoTreeViewEditableComponent_Template(rf, ctx) { if (rf & 1) {
+NzDemoTreeViewEditableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({ type: NzDemoTreeViewEditableComponent, selectors: [["nz-demo-tree-view-editable"]], decls: 4, vars: 5, consts: [[3, "nzTreeControl", "nzDataSource", "trackBy"], ["nzTreeNodeIndentLine", "", 4, "nzTreeNodeDef"], ["nzTreeNodeIndentLine", "", 4, "nzTreeNodeDef", "nzTreeNodeDefWhen"], ["nzTreeNodeIndentLine", ""], [3, "nzDisabled", "nzSelected", "nzClick"], ["nz-button", "", "nzType", "text", "nzSize", "small", 3, "click"], ["nz-icon", "", "nzType", "minus", "nzTheme", "outline"], ["nz-input", "", "placeholder", "Input node name", "nzSize", "small"], ["inputElement", ""], ["nz-button", "", "nzSize", "small", 3, "click"], ["nz-icon", "", "nzType", "caret-down", "nzTreeNodeToggleRotateIcon", ""], ["nz-icon", "", "nzType", "plus", "nzTheme", "outline"]], template: function NzDemoTreeViewEditableComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementStart"](0, "nz-tree-view", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzDemoTreeViewEditableComponent_nz_tree_node_1_Template, 3, 3, "nz-tree-node", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](1, NzDemoTreeViewEditableComponent_nz_tree_node_1_Template, 5, 3, "nz-tree-node", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](2, NzDemoTreeViewEditableComponent_nz_tree_node_2_Template, 6, 0, "nz-tree-node", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](3, NzDemoTreeViewEditableComponent_nz_tree_node_3_Template, 6, 1, "nz-tree-node", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵelementEnd"]();
@@ -3786,7 +3813,7 @@ NzDemoTreeViewEditableComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_3
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzTreeNodeDefWhen", ctx.hasNoContent);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵproperty"]("nzTreeNodeDefWhen", ctx.hasChild);
-    } }, directives: [ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeViewComponent"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeDefDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeComponent"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeIndentLineDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeOptionComponent"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_4__["NzInputDirective"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_5__["NzButtonComponent"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_6__["NzWaveDirective"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_7__["ɵNzTransitionPatchDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeToggleDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_8__["NzIconDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeToggleRotateIconDirective"]], styles: [""] });
+    } }, directives: [ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeViewComponent"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeDefDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeComponent"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeIndentLineDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeOptionComponent"], ng_zorro_antd_button__WEBPACK_IMPORTED_MODULE_4__["NzButtonComponent"], ng_zorro_antd_core_transition_patch__WEBPACK_IMPORTED_MODULE_5__["ɵNzTransitionPatchDirective"], ng_zorro_antd_icon__WEBPACK_IMPORTED_MODULE_6__["NzIconDirective"], ng_zorro_antd_input__WEBPACK_IMPORTED_MODULE_7__["NzInputDirective"], ng_zorro_antd_core_wave__WEBPACK_IMPORTED_MODULE_8__["NzWaveDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeToggleDirective"], ng_zorro_antd_tree_view__WEBPACK_IMPORTED_MODULE_2__["NzTreeNodeToggleRotateIconDirective"]], styles: [""] });
 
 
 /***/ }),
@@ -4315,9 +4342,10 @@ NzTreeNodeIndentsComponent.propDecorators = {
     indents: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Input"] }]
 };
 class NzTreeNodeIndentLineDirective {
-    constructor(treeNode, tree) {
+    constructor(treeNode, tree, cdr) {
         this.treeNode = treeNode;
         this.tree = tree;
+        this.cdr = cdr;
         this.isLast = 'unset';
         this.isLeaf = false;
         this.preNodeRef = null;
@@ -4334,6 +4362,7 @@ class NzTreeNodeIndentLineDirective {
             .subscribe(() => {
             this.buildIndents();
             this.checkAdjacent();
+            this.cdr.markForCheck();
         });
     }
     getIndents() {
@@ -4389,13 +4418,14 @@ class NzTreeNodeIndentLineDirective {
         this.changeSubscription.unsubscribe();
     }
 }
-NzTreeNodeIndentLineDirective.ɵfac = function NzTreeNodeIndentLineDirective_Factory(t) { return new (t || NzTreeNodeIndentLineDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTreeNodeComponent), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTreeView)); };
+NzTreeNodeIndentLineDirective.ɵfac = function NzTreeNodeIndentLineDirective_Factory(t) { return new (t || NzTreeNodeIndentLineDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTreeNodeComponent), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](NzTreeView), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"])); };
 NzTreeNodeIndentLineDirective.ɵdir = _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineDirective"]({ type: NzTreeNodeIndentLineDirective, selectors: [["nz-tree-node", "nzTreeNodeIndentLine", ""]], hostAttrs: [1, "ant-tree-show-line"], hostVars: 2, hostBindings: function NzTreeNodeIndentLineDirective_HostBindings(rf, ctx) { if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵclassProp"]("ant-tree-treenode-leaf-last", ctx.isLast && ctx.isLeaf);
     } } });
 NzTreeNodeIndentLineDirective.ctorParameters = () => [
     { type: NzTreeNodeComponent },
-    { type: NzTreeView }
+    { type: NzTreeView },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }
 ];
 
 /**
@@ -4576,7 +4606,7 @@ const ɵNzTreeNodeDefDirective_BaseFactory = /*@__PURE__*/ _angular_core__WEBPAC
                     '[class.ant-tree-treenode-leaf-last]': 'isLast && isLeaf'
                 }
             }]
-    }], function () { return [{ type: NzTreeNodeComponent }, { type: NzTreeView }]; }, null); })();
+    }], function () { return [{ type: NzTreeNodeComponent }, { type: NzTreeView }, { type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["ChangeDetectorRef"] }]; }, null); })();
 (function () { (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](NzTreeNodeOptionComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"],
         args: [{
