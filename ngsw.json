@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1626090738619,
+  "timestamp": 1626166293540,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -107,10 +107,13 @@
         "/common-es2015.eea469673c47833a432c.js",
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.83cd90a3e8ce663db1d7.js",
+        "/main-es2015.a9141b378acc44ff1dcd.js",
+        "/ngsw-worker.js",
         "/polyfills-es2015.f9f032969289e6eb9c81.js",
         "/runtime-es2015.0db04c788648a47a3b25.js",
-        "/styles.476b1bbe3847d6ad4a16.css"
+        "/safety-worker.js",
+        "/styles.476b1bbe3847d6ad4a16.css",
+        "/worker-basic.min.js"
       ],
       "patterns": [
         "https:\\/\\/gw\\.alipayobjects\\.com\\/.*",
@@ -3694,11 +3697,14 @@
     "/assets/vs/loader.js": "e728333c225072a01bf89d6e9547c78a0e3a5f4f",
     "/common-es2015.eea469673c47833a432c.js": "d023d57fbce3b1f1d351784f789b8ec74254675c",
     "/favicon.ico": "9ff0a4dd7df4c5aea3cbc994f6163c6e6de292f4",
-    "/index.html": "7668d80f78cc93152610fe200cc9c2ead1ee523a",
-    "/main-es2015.83cd90a3e8ce663db1d7.js": "7a0d366cb62d21ae1f1d6158fea79f2f915daeca",
+    "/index.html": "c275e592808b12b4300171f8a8667807862642d2",
+    "/main-es2015.a9141b378acc44ff1dcd.js": "0ad3346c7ee63f77afa6f6d11a3f4a28ff656897",
+    "/ngsw-worker.js": "b8eae710dd5f1cb439034e1a0db836692eee095a",
     "/polyfills-es2015.f9f032969289e6eb9c81.js": "9e1ad03259b537102996c08331cbb6f33a29ff9d",
     "/runtime-es2015.0db04c788648a47a3b25.js": "d6f1bc2266e690108d266b6d0a4e500b1e90336a",
-    "/styles.476b1bbe3847d6ad4a16.css": "57a62057a790c43ce60391ec9badab02328e625b"
+    "/safety-worker.js": "e6fef8c4f33f9b0c7b5f70888d98ee0378deb6fa",
+    "/styles.476b1bbe3847d6ad4a16.css": "57a62057a790c43ce60391ec9badab02328e625b",
+    "/worker-basic.min.js": "e6fef8c4f33f9b0c7b5f70888d98ee0378deb6fa"
   },
   "navigationUrls": [
     {
