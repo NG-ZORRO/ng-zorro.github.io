@@ -521,7 +521,7 @@
         /**
          * Process a request for a given resource and return it, or return null if it's not available.
          */
-        handleFetch(req, ctx) {
+        handleFetch(req, _event) {
             return __awaiter(this, void 0, void 0, function* () {
                 const url = this.adapter.normalizeUrl(req.url);
                 // Either the request matches one of the known resource URLs, one of the patterns for
@@ -840,7 +840,6 @@
         maybeUpdate(updateFrom, req, cache) {
             return __awaiter(this, void 0, void 0, function* () {
                 const url = this.adapter.normalizeUrl(req.url);
-                const meta = yield this.metadata;
                 // Check if this resource is hashed and already exists in the cache of a prior version.
                 if (this.hashes.has(url)) {
                     const hash = this.hashes.get(url);
@@ -851,7 +850,6 @@
                     if (res !== null) {
                         // Copy to this cache.
                         yield cache.put(req, res);
-                        yield meta.write(req.url, { ts: this.adapter.time, used: false });
                         // No need to do anything further with this resource, it's now cached properly.
                         return true;
                     }
@@ -1180,7 +1178,7 @@
          * Process a fetch event and return a `Response` if the resource is covered by this group,
          * or `null` otherwise.
          */
-        handleFetch(req, ctx) {
+        handleFetch(req, event) {
             return __awaiter(this, void 0, void 0, function* () {
                 // Do nothing
                 if (!this.patterns.some(pattern => pattern.test(req.url))) {
@@ -1199,9 +1197,9 @@
                         // Handle the request with whatever strategy was selected.
                         switch (this.config.strategy) {
                             case 'freshness':
-                                return this.handleFetchWithFreshness(req, ctx, lru);
+                                return this.handleFetchWithFreshness(req, event, lru);
                             case 'performance':
-                                return this.handleFetchWithPerformance(req, ctx, lru);
+                                return this.handleFetchWithPerformance(req, event, lru);
                             default:
                                 throw new Error(`Unknown strategy: ${this.config.strategy}`);
                         }
@@ -1219,7 +1217,7 @@
                 }
             });
         }
-        handleFetchWithPerformance(req, ctx, lru) {
+        handleFetchWithPerformance(req, event, lru) {
             return __awaiter(this, void 0, void 0, function* () {
                 let res = null;
                 // Check the cache first. If the resource exists there (and is not expired), the cached
@@ -1229,7 +1227,7 @@
                     res = fromCache.res;
                     // Check the age of the resource.
                     if (this.config.refreshAheadMs !== undefined && fromCache.age >= this.config.refreshAheadMs) {
-                        ctx.waitUntil(this.safeCacheResponse(req, this.safeFetch(req), lru));
+                        event.waitUntil(this.safeCacheResponse(req, this.safeFetch(req), lru));
                     }
                 }
                 if (res !== null) {
@@ -1244,7 +1242,7 @@
                     // The request timed out. Return a Gateway Timeout error.
                     res = this.adapter.newResponse(null, { status: 504, statusText: 'Gateway Timeout' });
                     // Cache the network response eventually.
-                    ctx.waitUntil(this.safeCacheResponse(req, networkFetch, lru));
+                    event.waitUntil(this.safeCacheResponse(req, networkFetch, lru));
                 }
                 else {
                     // The request completed in time, so cache it inline with the response flow.
@@ -1253,7 +1251,7 @@
                 return res;
             });
         }
-        handleFetchWithFreshness(req, ctx, lru) {
+        handleFetchWithFreshness(req, event, lru) {
             return __awaiter(this, void 0, void 0, function* () {
                 // Start with a network fetch.
                 const [timeoutFetch, networkFetch] = this.networkFetchWithTimeout(req);
@@ -1267,7 +1265,7 @@
                 }
                 // If the network fetch times out or errors, fall back on the cache.
                 if (res === undefined) {
-                    ctx.waitUntil(this.safeCacheResponse(req, networkFetch, lru, true));
+                    event.waitUntil(this.safeCacheResponse(req, networkFetch, lru, true));
                     // Ignore the age, the network response will be cached anyway due to the
                     // behavior of freshness.
                     const fromCache = yield this.loadFromCache(req, lru);
@@ -1566,7 +1564,7 @@
                 }
             });
         }
-        handleFetch(req, context) {
+        handleFetch(req, event) {
             return __awaiter(this, void 0, void 0, function* () {
                 // Check the request against each `AssetGroup` in sequence. If an `AssetGroup` can't handle the
                 // request,
@@ -1583,7 +1581,7 @@
                         return resp;
                     }
                     // No response has been found yet. Maybe this group will have one.
-                    return group.handleFetch(req, context);
+                    return group.handleFetch(req, event);
                 }), Promise.resolve(null));
                 // The result of the above is the asset response, if there is any, or null otherwise. Return the
                 // asset
@@ -1598,7 +1596,7 @@
                     if (resp !== null) {
                         return resp;
                     }
-                    return group.handleFetch(req, context);
+                    return group.handleFetch(req, event);
                 }), Promise.resolve(null));
                 // If the data caching group returned a response, go with it.
                 if (data !== null) {
@@ -1621,7 +1619,7 @@
                     }
                     // This was a navigation request. Re-enter `handleFetch` with a request for
                     // the URL.
-                    return this.handleFetch(this.adapter.newRequest(this.indexUrl), context);
+                    return this.handleFetch(this.adapter.newRequest(this.indexUrl), event);
                 }
                 return null;
             });
@@ -1737,7 +1735,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://angular.io/license
      */
-    const SW_VERSION = '12.1.1';
+    const SW_VERSION = '12.2.13';
     const DEBUG_LOG_BUFFER_SIZE = 100;
     class DebugHandler {
         constructor(driver, adapter) {
@@ -2220,7 +2218,7 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
             });
         }
         handleClick(notification, action) {
-            var _a, _b;
+            var _a, _b, _c;
             return __awaiter(this, void 0, void 0, function* () {
                 notification.close();
                 const options = {};
@@ -2229,8 +2227,8 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
                 NOTIFICATION_OPTION_NAMES.filter(name => name in notification)
                     .forEach(name => options[name] = notification[name]);
                 const notificationAction = action === '' || action === undefined ? 'default' : action;
-                const onActionClick = (_a = notification === null || notification === void 0 ? void 0 : notification.data) === null || _a === void 0 ? void 0 : _a.onActionClick[notificationAction];
-                const urlToOpen = new URL((_b = onActionClick === null || onActionClick === void 0 ? void 0 : onActionClick.url) !== null && _b !== void 0 ? _b : '', this.scope.registration.scope).href;
+                const onActionClick = (_b = (_a = notification === null || notification === void 0 ? void 0 : notification.data) === null || _a === void 0 ? void 0 : _a.onActionClick) === null || _b === void 0 ? void 0 : _b[notificationAction];
+                const urlToOpen = new URL((_c = onActionClick === null || onActionClick === void 0 ? void 0 : onActionClick.url) !== null && _c !== void 0 ? _c : '', this.scope.registration.scope).href;
                 switch (onActionClick === null || onActionClick === void 0 ? void 0 : onActionClick.operation) {
                     case 'openWindow':
                         yield this.scope.clients.openWindow(urlToOpen);
@@ -2347,7 +2345,8 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
                                 yield this.notifyClientsAboutUnrecoverableState(appVersion, err.message);
                             }
                             if (err.isCritical) {
-                                // Something went wrong with the activation of this version.
+                                // Something went wrong with handling the request from this version.
+                                this.debugger.log(err, `Driver.handleFetch(version: ${appVersion.manifestHash})`);
                                 yield this.versionFailed(appVersion, err);
                                 return this.safeFetch(event.request);
                             }
@@ -2514,7 +2513,9 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
                                 throw new Error(`Invariant violated (assignVersion): latestHash was null`);
                             }
                             const client = yield this.scope.clients.get(clientId);
-                            yield this.updateClient(client);
+                            if (client) {
+                                yield this.updateClient(client);
+                            }
                             appVersion = this.lookupVersionByHash(this.latestHash, 'assignVersion');
                         }
                         // TODO: make sure the version is valid.
@@ -2628,34 +2629,21 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
                     return;
                 }
                 const brokenHash = broken[0];
-                const affectedClients = Array.from(this.clientVersionMap.entries())
-                    .filter(([clientId, hash]) => hash === brokenHash)
-                    .map(([clientId]) => clientId);
+                // The specified version is broken and new clients should not be served from it. However, it is
+                // deemed even riskier to switch the existing clients to a different version or to the network.
+                // Therefore, we keep clients on their current version (even if broken) and ensure that no new
+                // clients will be assigned to it.
                 // TODO: notify affected apps.
                 // The action taken depends on whether the broken manifest is the active (latest) or not.
-                // If so, the SW cannot accept new clients, but can continue to service old ones.
+                // - If the broken version is not the latest, no further action is necessary, since new clients
+                //   will be assigned to the latest version anyway.
+                // - If the broken version is the latest, the SW cannot accept new clients (but can continue to
+                //   service old ones).
                 if (this.latestHash === brokenHash) {
-                    // The latest manifest is broken. This means that new clients are at the mercy of the
-                    // network, but caches continue to be valid for previous versions. This is
-                    // unfortunate but unavoidable.
+                    // The latest manifest is broken. This means that new clients are at the mercy of the network,
+                    // but caches continue to be valid for previous versions. This is unfortunate but unavoidable.
                     this.state = DriverReadyState.EXISTING_CLIENTS_ONLY;
                     this.stateMessage = `Degraded due to: ${errorToString(err)}`;
-                    // Cancel the binding for the affected clients.
-                    affectedClients.forEach(clientId => this.clientVersionMap.delete(clientId));
-                }
-                else {
-                    // The latest version is viable, but this older version isn't. The only
-                    // possible remedy is to stop serving the older version and go to the network.
-                    // Put the affected clients on the latest version.
-                    affectedClients.forEach(clientId => this.clientVersionMap.set(clientId, this.latestHash));
-                }
-                try {
-                    yield this.sync();
-                }
-                catch (err2) {
-                    // We are already in a bad state. No need to make things worse.
-                    // Just log the error and move on.
-                    this.debugger.log(err2, `Driver.versionFailed(${err.message || err})`);
                 }
             });
         }
@@ -2855,7 +2843,9 @@ ${msgIdle}`, { headers: this.adapter.newHeaders({ 'Content-Type': 'text/plain' }
                     .map(([clientId]) => clientId);
                 yield Promise.all(affectedClients.map((clientId) => __awaiter(this, void 0, void 0, function* () {
                     const client = yield this.scope.clients.get(clientId);
-                    client.postMessage({ type: 'UNRECOVERABLE_STATE', reason });
+                    if (client) {
+                        client.postMessage({ type: 'UNRECOVERABLE_STATE', reason });
+                    }
                 })));
             });
         }
