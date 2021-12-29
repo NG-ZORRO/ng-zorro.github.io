@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1639968238646,
+  "timestamp": 1640769336551,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -12,10 +12,10 @@
       },
       "urls": [
         "./index.html",
-        "./main-es2015.8c3cfbf44a4072216a52.js",
-        "./polyfills-es2015.efdc1c5d7f82c2e884dd.js",
-        "./runtime-es2015.2df13d57cea9485d20a4.js",
-        "./styles.59ec3f1e5567ccd0e2c6.css"
+        "./main.a17029714b86695f.js",
+        "./polyfills.c2de06a3c494df17.js",
+        "./runtime.374fc65eb27eeef3.js",
+        "./styles.46b0e9d36b587e5b.css"
       ],
       "patterns": [
         "https:\\/\\/gw\\.alipayobjects\\.com\\/.*",
@@ -882,6 +882,8 @@
         "./assets/outline/highlight.svg",
         "./assets/outline/history.js",
         "./assets/outline/history.svg",
+        "./assets/outline/holder.js",
+        "./assets/outline/holder.svg",
         "./assets/outline/home.js",
         "./assets/outline/home.svg",
         "./assets/outline/hourglass.js",
@@ -2469,6 +2471,8 @@
     "./assets/outline/highlight.svg": "10c38de2ab624a0553f16c4a1b243844406f8e67",
     "./assets/outline/history.js": "90d398576fce8a67c0b9d62469373b1e58de3eba",
     "./assets/outline/history.svg": "7c95f0dcb033b0b8fc07a78f3dba9bc3b2dfba47",
+    "./assets/outline/holder.js": "8d91cdf7d106e626dc8ede61e2f5edcc4a87baa9",
+    "./assets/outline/holder.svg": "08173dd8f6fcdf84b0d0322db6ed19ab4ecbc570",
     "./assets/outline/home.js": "9305d1873e04b856ae96d9a71e1c6c4f76b5a7c4",
     "./assets/outline/home.svg": "3bf3a951726be554ee5bd28215b3aace7bbcd269",
     "./assets/outline/hourglass.js": "1a06d6e7f637bebadb642e3189ef0a0c0f538c8d",
@@ -3198,11 +3202,11 @@
     "./assets/twotone/wallet.svg": "11e915efff832b47aa4bd5885af72e55014f59e6",
     "./assets/twotone/warning.js": "fb2d7ea232f3a99bf8f080dbc94c65699232ac01",
     "./assets/twotone/warning.svg": "8c7a2d3e765a2e7dd58ac674870c6655cecb0068",
-    "./index.html": "f67b81715ce1d4a30eb08e860eca90f144db7737",
-    "./main-es2015.8c3cfbf44a4072216a52.js": "fb900a6c3a2aa4732454acafb23285a4f671735d",
-    "./polyfills-es2015.efdc1c5d7f82c2e884dd.js": "b977f9fedaf2038298707708d61b845ff5104498",
-    "./runtime-es2015.2df13d57cea9485d20a4.js": "a1c3969d99da9bf478d41857a38de83f65ce2f36",
-    "./styles.59ec3f1e5567ccd0e2c6.css": "cc48a4efd899f97ff238e825a3275ef69d32efdd"
+    "./index.html": "2a1283d9b3209889c70f38d479c28e04d7393448",
+    "./main.a17029714b86695f.js": "340c9064fd690a27ecae24a53e17b096414ca5e5",
+    "./polyfills.c2de06a3c494df17.js": "5c40217ab2f73817eccd58eec3effe2a2027d7d2",
+    "./runtime.374fc65eb27eeef3.js": "7a4c9e3c5f89ba6ed6770257b23a2370d08cba0f",
+    "./styles.46b0e9d36b587e5b.css": "cea99d543bd7efa94ca686faea411e42817db24f"
   },
   "navigationUrls": [
     {
