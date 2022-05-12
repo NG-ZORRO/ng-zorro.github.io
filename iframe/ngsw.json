@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1651047131087,
+  "timestamp": 1652350063487,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "./index.html",
-        "./main.57335383947ba92c.js",
+        "./main.1aadcd8105f6e1eb.js",
         "./polyfills.20957df7d9cce10e.js",
         "./runtime.ff8416826da4fcb0.js",
         "./styles.39b9a44ef62adc6b.css"
@@ -3202,8 +3202,8 @@
     "./assets/twotone/wallet.svg": "11e915efff832b47aa4bd5885af72e55014f59e6",
     "./assets/twotone/warning.js": "fb2d7ea232f3a99bf8f080dbc94c65699232ac01",
     "./assets/twotone/warning.svg": "8c7a2d3e765a2e7dd58ac674870c6655cecb0068",
-    "./index.html": "29f39918ef788276f2d26685b973539feb66b932",
-    "./main.57335383947ba92c.js": "0293269acd60a6d7e7acce0fa448cb450cf2a383",
+    "./index.html": "e59cb15f6c3bb02151a5ec33e5f58b88a1c76b88",
+    "./main.1aadcd8105f6e1eb.js": "9d3109cfb64028d98c22ae88e06d951af41b834e",
     "./polyfills.20957df7d9cce10e.js": "ce1e91458da090d9d227fb9dab70f412f1c39bfa",
     "./runtime.ff8416826da4fcb0.js": "8345d881d2cb3d56f764e18347313e5c87f522fa",
     "./styles.39b9a44ef62adc6b.css": "35aba712a5ea8c691c07acce132f1de207078337"
