@@ -686,7 +686,7 @@ SOFTWARE.
 
 
 intersection-observer
-W3C-20150513
+Apache-2.0
 
 lz-string
 WTFPL
