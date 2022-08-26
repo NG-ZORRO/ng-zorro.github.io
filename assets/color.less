@@ -10198,7 +10198,8 @@ a.ant-typography.ant-typography-disabled:hover,
 .ant-code-editor .ant-code-editor-toolkit {
   background: transparent;
 }
-.ant-code-editor .ant-code-editor-toolkit i.active {
+.ant-code-editor .ant-code-editor-toolkit i.active,
+.ant-code-editor .ant-code-editor-toolkit span[nz-icon].active {
   color: var(--ant-primary-color);
 }
 .ant-spin {
@@ -10572,11 +10573,11 @@ body {
 .markdown .waiting {
   color: #ccc;
 }
-.markdown a.edit-button i {
+.markdown a.edit-button .anticon {
   color: rgba(0, 0, 0, 0.45);
 }
-.markdown a.edit-button i:hover {
-  color: var(--ant-primary-color);
+.markdown a.edit-button .anticon:hover {
+  color: rgba(0, 0, 0, 0.85);
 }
 .markdown.api-container table {
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -10825,12 +10826,6 @@ pre[class*='language-'] {
 .code-box .code-box-description p {
   color: rgba(0, 0, 0, 0.85);
 }
-.code-box a.edit-button .anticon {
-  color: inherit;
-}
-.code-box a.edit-button .anticon:hover {
-  color: rgba(0, 0, 0, 0.75);
-}
 .code-box,
 .code-box .code-box-demo {
   background-color: #fff;
@@ -10858,6 +10853,12 @@ pre[class*='language-'] {
 }
 .code-box a.edit-button {
   background: inherit;
+}
+.code-box a.edit-button .anticon {
+  color: rgba(0, 0, 0, 0.45);
+}
+.code-box a.edit-button .anticon:hover {
+  color: rgba(0, 0, 0, 0.85);
 }
 .code-box-demo {
   color: rgba(0, 0, 0, 0.85);
@@ -13780,7 +13781,8 @@ html {
 .ant-code-editor .ant-code-editor-toolkit {
   background: transparent;
 }
-.ant-code-editor .ant-code-editor-toolkit i.active {
+.ant-code-editor .ant-code-editor-toolkit i.active,
+.ant-code-editor .ant-code-editor-toolkit span[nz-icon].active {
   color: @primary-color;
 }
 .ant-collapse {
@@ -19485,11 +19487,11 @@ body {
 .markdown .waiting {
   color: #ccc;
 }
-.markdown a.edit-button i {
+.markdown a.edit-button .anticon {
   color: rgba(0, 0, 0, 0.45);
 }
-.markdown a.edit-button i:hover {
-  color: @primary-color;
+.markdown a.edit-button .anticon:hover {
+  color: rgba(0, 0, 0, 0.85);
 }
 .markdown.api-container table {
   border: 1px solid #f0f0f0;
@@ -19738,12 +19740,6 @@ pre[class*='language-'] {
 .code-box .code-box-description p {
   color: rgba(0, 0, 0, 0.85);
 }
-.code-box a.edit-button .anticon {
-  color: inherit;
-}
-.code-box a.edit-button .anticon:hover {
-  color: rgba(0, 0, 0, 0.75);
-}
 .code-box,
 .code-box .code-box-demo {
   background-color: #fff;
@@ -19771,6 +19767,12 @@ pre[class*='language-'] {
 }
 .code-box a.edit-button {
   background: inherit;
+}
+.code-box a.edit-button .anticon {
+  color: rgba(0, 0, 0, 0.45);
+}
+.code-box a.edit-button .anticon:hover {
+  color: rgba(0, 0, 0, 0.85);
 }
 .code-box-demo {
   color: rgba(0, 0, 0, 0.85);
