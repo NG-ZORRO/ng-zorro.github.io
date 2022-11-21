@@ -1,1 +1,0 @@
-self.addEventListener("install",(e=>{self.skipWaiting()})),self.addEventListener("activate",(e=>{e.waitUntil(self.clients.claim()),self.registration.unregister().then((()=>{console.log("NGSW Safety Worker - unregistered old service worker")}))}));
