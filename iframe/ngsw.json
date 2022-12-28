@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1670923791316,
+  "timestamp": 1672191095926,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -12,10 +12,10 @@
       },
       "urls": [
         "./index.html",
-        "./main.72b8df43455146a7.js",
+        "./main.1124267485e2d53e.js",
         "./polyfills.81c0ddf6eade4551.js",
         "./runtime.ff8416826da4fcb0.js",
-        "./styles.d58209e86bfee2f9.css"
+        "./styles.dd6aaa02b51a5ee8.css"
       ],
       "patterns": [
         "https:\\/\\/gw\\.alipayobjects\\.com\\/.*",
@@ -3202,11 +3202,11 @@
     "./assets/twotone/wallet.svg": "11e915efff832b47aa4bd5885af72e55014f59e6",
     "./assets/twotone/warning.js": "fb2d7ea232f3a99bf8f080dbc94c65699232ac01",
     "./assets/twotone/warning.svg": "8c7a2d3e765a2e7dd58ac674870c6655cecb0068",
-    "./index.html": "6865187ddc5dbda2ea3050dc8c4ba73ae5177d3f",
-    "./main.72b8df43455146a7.js": "09e04bcc7f16e9a8625d0991d7a2edfa034d5524",
+    "./index.html": "c9fefa9613923f535b5a1c319068ded10925dbb7",
+    "./main.1124267485e2d53e.js": "dc3da839cd131c8927168b3fbbacdd0ee0e75e87",
     "./polyfills.81c0ddf6eade4551.js": "ee928b8a09fd93a4b34ec7f2b91057c26c9dbe9d",
     "./runtime.ff8416826da4fcb0.js": "8345d881d2cb3d56f764e18347313e5c87f522fa",
-    "./styles.d58209e86bfee2f9.css": "cfd068b68cbd7d756d1474f08bd90d578ab7530b"
+    "./styles.dd6aaa02b51a5ee8.css": "38e5e20344aa1f4dc6237523cbbca725bfcfaa67"
   },
   "navigationUrls": [
     {
