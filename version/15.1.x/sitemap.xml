@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://ng.ant.design/</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/overview/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/overview/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/overview/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/overview/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/affix/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/affix/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/affix/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/affix/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/alert/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/alert/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/alert/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/alert/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/anchor/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/anchor/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/anchor/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/anchor/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/auto-complete/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/auto-complete/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/auto-complete/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/auto-complete/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/avatar/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/avatar/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/avatar/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/avatar/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/back-top/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/back-top/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/back-top/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/back-top/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/badge/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/badge/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/badge/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/badge/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/breadcrumb/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/breadcrumb/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/breadcrumb/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/breadcrumb/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/button/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/button/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/button/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/button/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/calendar/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/calendar/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/calendar/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/calendar/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/card/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/card/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/card/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/card/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/carousel/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/carousel/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/carousel/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/carousel/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/cascader/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/cascader/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/cascader/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/cascader/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/checkbox/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/checkbox/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/checkbox/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/checkbox/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/collapse/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/collapse/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/collapse/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/collapse/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/comment/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/comment/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/comment/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/comment/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/date-picker/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/date-picker/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/date-picker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/date-picker/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/descriptions/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/descriptions/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/descriptions/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/descriptions/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/divider/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/divider/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/divider/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/divider/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/drawer/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/drawer/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/drawer/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/drawer/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/dropdown/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/dropdown/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/dropdown/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/dropdown/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/empty/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/empty/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/empty/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/empty/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/form/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/form/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/form/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/form/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/grid/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/grid/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/grid/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/grid/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/icon/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/icon/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/icon/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/icon/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/image/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/image/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/image/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/image/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/input/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/input/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/input/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/input/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/input-number/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/input-number/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/input-number/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/input-number/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/layout/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/layout/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/layout/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/layout/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/list/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/list/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/list/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/list/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/mention/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/mention/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/mention/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/mention/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/menu/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/menu/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/menu/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/menu/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/message/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/message/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/message/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/message/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/modal/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/modal/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/modal/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/modal/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/notification/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/notification/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/notification/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/notification/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/page-header/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/page-header/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/page-header/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/page-header/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/pagination/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/pagination/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/pagination/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/pagination/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/popconfirm/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/popconfirm/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/popconfirm/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/popconfirm/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/popover/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/popover/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/popover/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/popover/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/progress/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/progress/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/progress/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/progress/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/radio/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/radio/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/radio/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/radio/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/rate/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/rate/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/rate/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/rate/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/result/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/result/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/result/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/result/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/segmented/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/segmented/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/segmented/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/segmented/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/select/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/select/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/select/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/select/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/skeleton/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/skeleton/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/skeleton/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/skeleton/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/slider/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/slider/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/slider/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/slider/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/space/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/space/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/space/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/space/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/spin/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/spin/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/spin/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/spin/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/statistic/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/statistic/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/statistic/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/statistic/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/steps/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/steps/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/steps/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/steps/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/switch/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/switch/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/switch/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/switch/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/table/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/table/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/table/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/table/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tabs/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tabs/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tabs/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tabs/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tag/en</loc>
+    <lastmod>2023-05-30T13:54:39.415Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tag/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tag/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tag/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/time-picker/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/time-picker/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/time-picker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/time-picker/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/timeline/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/timeline/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/timeline/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/timeline/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tooltip/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tooltip/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tooltip/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tooltip/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/transfer/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/transfer/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/transfer/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/transfer/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree-select/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree-select/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree-select/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree-select/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree-view/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree-view/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree-view/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree-view/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/typography/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/typography/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/typography/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/typography/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/upload/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/upload/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/upload/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/upload/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/qr-code/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/qr-code/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/qr-code/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/qr-code/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/water-mark/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/water-mark/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/water-mark/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/water-mark/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/animations/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/animations/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/animations/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/animations/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/changelog/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/changelog/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/changelog/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/changelog/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/contributing/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/contributing/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/contributing/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/contributing/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/customize-theme/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/customize-theme/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/customize-theme/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/customize-theme/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/customize-theme-variable/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/customize-theme-variable/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/customize-theme-variable/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/customize-theme-variable/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/direction/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/direction/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/direction/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/direction/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/faq/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/faq/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/faq/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/faq/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/getting-started/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/getting-started/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/getting-started/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/getting-started/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/global-config/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/global-config/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/global-config/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/global-config/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/i18n/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/i18n/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/i18n/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/i18n/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/introduce/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/introduce/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/introduce/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/introduce/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/join/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/join/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/join/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/join/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/migration-v15/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/migration-v15/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/migration-v15/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/migration-v15/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/recommendation/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/recommendation/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/recommendation/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/recommendation/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/schematics/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/schematics/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/schematics/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/schematics/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/universal/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/universal/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/universal/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/universal/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/code-editor/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/code-editor/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/code-editor/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/code-editor/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/experimental-image/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/experimental-image/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/experimental-image/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/experimental-image/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/graph/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/graph/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/graph/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/graph/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/pipes/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/pipes/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/pipes/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/pipes/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/resizable/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/resizable/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/resizable/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/resizable/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/cron-expression/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/cron-expression/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/cron-expression/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/cron-expression/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/en</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/overview/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/overview/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/overview/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/overview/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/affix/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/affix/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/affix/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/affix/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/alert/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/alert/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/alert/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/alert/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/anchor/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/anchor/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/anchor/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/anchor/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/auto-complete/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/auto-complete/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/auto-complete/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/auto-complete/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/avatar/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/avatar/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/avatar/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/avatar/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/back-top/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/back-top/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/back-top/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/back-top/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/badge/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/badge/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/badge/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/badge/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/breadcrumb/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/breadcrumb/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/breadcrumb/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/breadcrumb/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/button/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/button/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/button/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/button/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/calendar/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/calendar/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/calendar/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/calendar/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/card/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/card/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/card/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/card/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/carousel/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/carousel/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/carousel/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/carousel/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/cascader/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/cascader/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/cascader/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/cascader/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/checkbox/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/checkbox/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/checkbox/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/checkbox/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/collapse/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/collapse/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/collapse/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/collapse/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/comment/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/comment/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/comment/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/comment/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/date-picker/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/date-picker/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/date-picker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/date-picker/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/descriptions/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/descriptions/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/descriptions/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/descriptions/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/divider/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/divider/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/divider/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/divider/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/drawer/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/drawer/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/drawer/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/drawer/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/dropdown/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/dropdown/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/dropdown/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/dropdown/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/empty/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/empty/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/empty/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/empty/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/form/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/form/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/form/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/form/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/grid/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/grid/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/grid/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/grid/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/icon/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/icon/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/icon/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/icon/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/image/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/image/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/image/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/image/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/input/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/input/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/input/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/input/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/input-number/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/input-number/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/input-number/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/input-number/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/layout/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/layout/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/layout/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/layout/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/list/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/list/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/list/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/list/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/mention/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/mention/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/mention/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/mention/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/menu/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/menu/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/menu/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/menu/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/message/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/message/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/message/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/message/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/modal/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/modal/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/modal/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/modal/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/notification/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/notification/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/notification/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/notification/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/page-header/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/page-header/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/page-header/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/page-header/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/pagination/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/pagination/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/pagination/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/pagination/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/popconfirm/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/popconfirm/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/popconfirm/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/popconfirm/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/popover/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/popover/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/popover/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/popover/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/progress/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/progress/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/progress/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/progress/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/radio/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/radio/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/radio/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/radio/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/rate/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/rate/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/rate/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/rate/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/result/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/result/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/result/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/result/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/segmented/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/segmented/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/segmented/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/segmented/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/select/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/select/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/select/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/select/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/skeleton/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/skeleton/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/skeleton/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/skeleton/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/slider/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/slider/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/slider/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/slider/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/space/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/space/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/space/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/space/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/spin/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/spin/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/spin/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/spin/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/statistic/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/statistic/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/statistic/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/statistic/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/steps/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/steps/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/steps/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/steps/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/switch/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/switch/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/switch/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/switch/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/table/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/table/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/table/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/table/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tabs/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tabs/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tabs/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tabs/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tag/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tag/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tag/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tag/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/time-picker/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/time-picker/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/time-picker/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/time-picker/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/timeline/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/timeline/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/timeline/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/timeline/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tooltip/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tooltip/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tooltip/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tooltip/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/transfer/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/transfer/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/transfer/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/transfer/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree-select/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree-select/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree-select/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree-select/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/tree-view/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/tree-view/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/tree-view/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/tree-view/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/typography/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/typography/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/typography/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/typography/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/upload/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/upload/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/upload/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/upload/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/qr-code/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/qr-code/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/qr-code/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/qr-code/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/components/water-mark/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/components/water-mark/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/components/water-mark/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/components/water-mark/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/animations/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/animations/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/animations/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/animations/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/changelog/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/changelog/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/changelog/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/changelog/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/contributing/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/contributing/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/contributing/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/contributing/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/customize-theme/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/customize-theme/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/customize-theme/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/customize-theme/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/customize-theme-variable/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/customize-theme-variable/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/customize-theme-variable/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/customize-theme-variable/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/direction/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/direction/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/direction/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/direction/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/faq/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/faq/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/faq/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/faq/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/getting-started/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/getting-started/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/getting-started/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/getting-started/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/global-config/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/global-config/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/global-config/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/global-config/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/i18n/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/i18n/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/i18n/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/i18n/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/introduce/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/introduce/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/introduce/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/introduce/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/join/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/join/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/join/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/join/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/migration-v15/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/migration-v15/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/migration-v15/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/migration-v15/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/recommendation/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/recommendation/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/recommendation/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/recommendation/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/schematics/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/schematics/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/schematics/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/schematics/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/docs/universal/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/docs/universal/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/docs/universal/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/docs/universal/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/code-editor/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/code-editor/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/code-editor/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/code-editor/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/experimental-image/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/experimental-image/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/experimental-image/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/experimental-image/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/graph/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/graph/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/graph/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/graph/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/pipes/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/pipes/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/pipes/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/pipes/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/resizable/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/resizable/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/resizable/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/resizable/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/experimental/cron-expression/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/experimental/cron-expression/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/experimental/cron-expression/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/experimental/cron-expression/en"/>
+  </url>
+  <url>
+    <loc>https://ng.ant.design/zh</loc>
+    <lastmod>2023-05-30T13:54:39.416Z</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ng.ant.design/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://ng.ant.design/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ng.ant.design/en"/>
+  </url>
+</urlset>
