@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;c28e9881216d20086c6b40abbaa066b6c2034cce1dcdf4c052453feb1dd2b260;/Users/laffery/workspace/ng-zorro-fork/site/iframe/app/layout-side.ts"],
+  "sourcesContent": ["\n      .logo {\n        height: 32px;\n        margin: 16px;\n        background: rgba(255, 255, 255, 0.3);\n      }\n\n      nz-header {\n        background: #fff;\n        padding: 0;\n      }\n\n      nz-content {\n        margin: 0 16px;\n      }\n\n      nz-breadcrumb {\n        margin: 16px 0;\n      }\n\n      .inner-content {\n        padding: 24px;\n        background: #fff;\n        min-height: 360px;\n      }\n\n      nz-footer {\n        text-align: center;\n      }\n    "],
+  "mappings": ";AACM,CAAC;AACC,UAAQ;AACR,UAAQ;AACR,cAAY,KAAK,GAAG,EAAE,GAAG,EAAE,GAAG,EAAE;AAClC;AAEA;AACE,cAAY;AACZ,WAAS;AACX;AAEA;AACE,UAAQ,EAAE;AACZ;AAEA;AACE,UAAQ,KAAK;AACf;AAEA,CAAC;AACC,WAAS;AACT,cAAY;AACZ,cAAY;AACd;AAEA;AACE,cAAY;AACd;",
+  "names": []
+}
