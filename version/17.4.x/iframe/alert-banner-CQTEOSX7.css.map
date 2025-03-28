@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;97067d1989f3f1fa7bc9e8045940701fe07b91d2b6efe048ee44ed94d238e0e7;/Users/simplejason/Documents/github/ng-zorro-antd/site/iframe/app/alert-banner.ts"],
+  "sourcesContent": ["\n      nz-alert {\n        margin-bottom: 12px;\n      }\n    "],
+  "mappings": ";AACM;AACE,iBAAe;AACjB;",
+  "names": []
+}
