@@ -2824,6 +2824,28 @@ URL: https://ng.ant.design/components/statistic/en
 | `S`   | Millisecond |
 
 ---
+Title: Spin
+URL: https://ng.ant.design/components/spin/en
+---
+
+## When To Use
+
+When part of the page is waiting for asynchronous data or during a rendering process, an appropriate loading animation can effectively alleviate users' inquietude.
+
+## API
+
+### nz-spin
+
+| Property        | Description                                                                             | Type                              | Default Value | Global Config |
+| --------------- | --------------------------------------------------------------------------------------- | --------------------------------- | ------------- | ------------- |
+| `[nzDelay]`     | specifies a delay in milliseconds for loading state (prevent flush), unit: milliseconds | `number`                          | -             |
+| `[nzIndicator]` | the spinning indicator                                                                  | `TemplateRef<void>`               | -             | ✅            |
+| `[nzSize]`      | size of Spin                                                                            | `'large' \| 'small' \| 'default'` | `'default'`   |
+| `[nzSpinning]`  | whether Spin is spinning                                                                | `boolean`                         | `true`        |
+| `[nzSimple]`    | whether Spin has no children                                                            | `boolean`                         | `false`       |
+| `[nzTip]`       | customize description content when Spin has children                                    | `string`                          | -             |
+
+---
 Title: Splitter
 URL: https://ng.ant.design/components/splitter/en
 ---
@@ -2856,28 +2878,6 @@ maximum width and height.
 | `[nzSize]`        | Controlled panel size support number for px or 'percent%' usage | `number \| string`                               | -       |
 | `[nzCollapsible]` | Quick folding                                                   | `boolean  \| { start?: boolean; end?: boolean }` | `false` |
 | `[nzResizable]`   | Whether to enable drag and drop                                 | `boolean`                                        | `true`  |
-
----
-Title: Spin
-URL: https://ng.ant.design/components/spin/en
----
-
-## When To Use
-
-When part of the page is waiting for asynchronous data or during a rendering process, an appropriate loading animation can effectively alleviate users' inquietude.
-
-## API
-
-### nz-spin
-
-| Property        | Description                                                                             | Type                              | Default Value | Global Config |
-| --------------- | --------------------------------------------------------------------------------------- | --------------------------------- | ------------- | ------------- |
-| `[nzDelay]`     | specifies a delay in milliseconds for loading state (prevent flush), unit: milliseconds | `number`                          | -             |
-| `[nzIndicator]` | the spinning indicator                                                                  | `TemplateRef<void>`               | -             | ✅            |
-| `[nzSize]`      | size of Spin                                                                            | `'large' \| 'small' \| 'default'` | `'default'`   |
-| `[nzSpinning]`  | whether Spin is spinning                                                                | `boolean`                         | `true`        |
-| `[nzSimple]`    | whether Spin has no children                                                            | `boolean`                         | `false`       |
-| `[nzTip]`       | customize description content when Spin has children                                    | `string`                          | -             |
 
 ---
 Title: Space
@@ -3694,84 +3694,6 @@ PageHeader can be used to highlight the page topic, display important informatio
 | `nz-avatar[nz-page-header-avatar]`         | Avatar section                                           |
 
 ---
-Title: Notification
-URL: https://ng.ant.design/components/notification/en
----
-
-## When To Use
-
-To display a notification message at any of the four corners of the viewport. Typically it can be
-used in the following cases:
-
-- A notification with complex content.
-- A notification providing a feedback based on the user interaction. Or it may show some details
-  about upcoming steps the user may have to follow.
-- A notification that is pushed by the application.
-
-## API
-
-### NzNotificationService
-
-The component provides a number of service methods using the following methods and parameters:
-
-- `NzNotificationService.blank(title, content, [options])` // Notification without icon
-- `NzNotificationService.success(title, content, [options])`
-- `NzNotificationService.error(title, content, [options])`
-- `NzNotificationService.info(title, content, [options])`
-- `NzNotificationService.warning(title, content, [options])`
-
-| Argument  | Description                                                                          | Type                          | Default |
-| --------- | ------------------------------------------------------------------------------------ | ----------------------------- | ------- |
-| `title`   | Title                                                                                | `string \| TemplateRef<void>` | -       |
-| `content` | Notification content                                                                 | `NzNotificationContentType`   | -       |
-| `options` | Support setting the parameters for the current notification box, see the table below | `object`                      | -       |
-
-The parameters that are set by the `options` support are as follows:
-
-| Argument         | Description                                                            | Type                                                            |
-| ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `nzKey`          | The unique identifier of the Notification                              | `string`                                                        |
-| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0              | `number`                                                        |
-| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true` | `boolean`                                                       |
-| `nzAnimate`      | Whether to turn on animation                                           | `boolean`                                                       |
-| `nzStyle`        | Custom inline style                                                    | `object`                                                        |
-| `nzClass`        | Custom CSS class                                                       | `object`                                                        |
-| `nzData`         | Anything that would be used as template context                        | `any`                                                           |
-| `nzCloseIcon`    | Custom close icon                                                      | `TemplateRef<void> \| string`                                   |
-| `nzButton`       | Custom button                                                          | `TemplateRef<{ $implicit: NzNotificationComponent }> \| string` |
-
-Methods for destruction are also provided:
-
-- `NzNotificationService.remove(id)` // Remove the notification with the specified id. When the id is empty, remove all notifications (the notification id is returned by the above method)
-
-### Global Configuration
-
-You can use `NzConfigService` to configure this component globally. Please check the [Global Configuration](/docs/global-config/en) chapter for more information.
-
-| Parameter        | Description                                                                             | Type                                                                            | Default      |
-| ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ |
-| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0                               | `number`                                                                        | `4500`       |
-| `nzMaxStack`     | The maximum number of notifications that can be displayed at the same time              | `number`                                                                        | `8`          |
-| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true`                  | `boolean`                                                                       | `true`       |
-| `nzAnimate`      | Whether to turn on animation                                                            | `boolean`                                                                       | `true`       |
-| `nzTop`          | The top of the notification when it pops up from the top.                               | `string`                                                                        | `'24px'`     |
-| `nzBottom`       | The bottom of the notification when it pops up from the bottom.                         | `string`                                                                        | `'24px'`     |
-| `nzPlacement`    | Popup position, optional `topLeft` `topRight` `bottomLeft` `bottomRight` `top` `bottom` | `'topLeft' \| 'topRight' \| 'bottomLeft' \| 'bottomRight' \| 'top' \| 'bottom'` | `'topRight'` |
-| `nzDirection`    | Direction of the text in the notification                                               | `'ltr' \| 'rtl'`                                                                | -            |
-
-### NzNotificationRef
-
-It's the object that returned when you call `NzNotificationService.success` and others.
-
-```ts
-export interface NzNotificationRef {
-  messageId: string;
-  onClose: Subject<boolean>; // It would emit an event when the notification is closed, and emit a `true` if it's closed by user
-  onClick: Subject<MouseEvent>;
-}
-```
-
----
 Title: Modal
 URL: https://ng.ant.design/components/modal/en
 ---
@@ -4532,6 +4454,66 @@ You can get instance by `ViewChild`
 In controlled mode, developers may store related data by themselves. If the component constrains the data back to the range, it will cause the displayed data to be inconsistent with the actual stored data. This leads to potential data problems in some scenarios such as form fields.
 
 ---
+Title: Input
+URL: https://ng.ant.design/components/input/en
+---
+
+## When To Use
+
+- A user input in a form field is needed.
+- A search input is required.
+
+## API
+
+### [nz-input]
+
+All props of input supported by [w3c standards](https://www.w3schools.com/tags/tag_input.asp) and Angular can used in `nz-input`.
+
+| Property             | Description                                                                                                          | Type                                                     | Default      |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------ |
+| `[nzSize]`           | The size of the input box. Note: in the context of a form, the `large` size is used.                                 | `'large' \| 'small' \| 'default'`                        | `'default'`  |
+| `[nzAutosize]`       | Only used for `textarea`, height autosize feature, can be set to `boolean` or an object `{ minRows: 2, maxRows: 6 }` | `boolean \| { minRows: number, maxRows: number }`        | `false`      |
+| ~~`[nzBorderless]`~~ | ~~Whether hide border~~                                                                                              | ~~`boolean`~~                                            | ~~`false`~~  |
+| `[nzVariant]`        | Variants of Input                                                                                                    | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'` | `'outlined'` |
+| `[nzStatus]`         | Set validation status                                                                                                | `'error' \| 'warning'`                                   | -            |
+| `[nzStepperless]`    | Whether hide stepper when input type is number                                                                       | `boolean`                                                | `true`       |
+
+### nz-input-group
+
+| Property          | Description                                                                                          | Type                              | Default     |
+| ----------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------- | ----------- |
+| `[nzAddOnAfter]`  | The label text displayed after (on the right side of) the input field, can work with `nzAddOnBefore` | `string \| TemplateRef<void>`     | -           |
+| `[nzAddOnBefore]` | The label text displayed before (on the left side of) the input field, can work with `nzAddOnAfter`  | `string \| TemplateRef<void>`     | -           |
+| `[nzPrefix]`      | The prefix icon for the Input, can work with `nzSuffix`                                              | `string \| TemplateRef<void>`     | -           |
+| `[nzSuffix]`      | The suffix icon for the Input, can work with `nzPrefix`                                              | `string \| TemplateRef<void>`     | -           |
+| `[nzSize]`        | The size of `nz-input-group` specifies the size of the included `nz-input` fields                    | `'large' \| 'small' \| 'default'` | `'default'` |
+| `[nzStatus]`      | Set validation status                                                                                | `'error' \| 'warning'`            | -           |
+
+### nz-textarea-count
+
+| Property                    | Description                                      | Type                    | Default         |
+| --------------------------- | ------------------------------------------------ | ----------------------- | --------------- |
+| `[nzMaxCharacterCount]`     | `textarea` maximum character count displayed     | `number`                | -               |
+| `[nzComputeCharacterCount]` | customized `characterCount` computation function | `(v: string) => number` | `v => v.length` |
+
+### nz-input-otp
+
+| Property        | Description                                             | Type                              | Default     |
+| --------------- | ------------------------------------------------------- | --------------------------------- | ----------- |
+| `[disabled]`    | Whether the input is disabled                           | `boolean`                         | `false`     |
+| `[nzFormatter]` | Format display, blank fields will be filled with ` `    | `(value: string) => string`       | -           |
+| `[nzMask]`      | Custom display, the original value will not be modified | `boolean  \| null`                | `null`      |
+| `[nzLength]`    | The number of input elements                            | `number`                          | `6`         |
+| `[nzStatus]`    | Set validation status                                   | `'error' \| 'warning'`            | -           |
+| `[nzSize]`      | The size of the input box                               | `'large' \| 'small' \| 'default'` | `'default'` |
+
+## Q&A
+
+### How to use compact input group?
+
+`nz-input-group` is no longer support compact mode directly in v20, you can use [nz-space-compact](/components/space/en#components-space-demo-compact) instead.
+
+---
 Title: Image
 URL: https://ng.ant.design/components/image/en
 ---
@@ -4603,66 +4585,6 @@ Other attributes [<img\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Elem
 | Property      | Description                                                                                                                     | Type     | Default |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
 | `nzScaleStep` | The value of `nzScaleStep` will be applied to all the images inside, unless an image has its own `nzScaleStep` value specified. | `number` | -       |
-
----
-Title: Input
-URL: https://ng.ant.design/components/input/en
----
-
-## When To Use
-
-- A user input in a form field is needed.
-- A search input is required.
-
-## API
-
-### [nz-input]
-
-All props of input supported by [w3c standards](https://www.w3schools.com/tags/tag_input.asp) and Angular can used in `nz-input`.
-
-| Property             | Description                                                                                                          | Type                                                     | Default      |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ------------ |
-| `[nzSize]`           | The size of the input box. Note: in the context of a form, the `large` size is used.                                 | `'large' \| 'small' \| 'default'`                        | `'default'`  |
-| `[nzAutosize]`       | Only used for `textarea`, height autosize feature, can be set to `boolean` or an object `{ minRows: 2, maxRows: 6 }` | `boolean \| { minRows: number, maxRows: number }`        | `false`      |
-| ~~`[nzBorderless]`~~ | ~~Whether hide border~~                                                                                              | ~~`boolean`~~                                            | ~~`false`~~  |
-| `[nzVariant]`        | Variants of Input                                                                                                    | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'` | `'outlined'` |
-| `[nzStatus]`         | Set validation status                                                                                                | `'error' \| 'warning'`                                   | -            |
-| `[nzStepperless]`    | Whether hide stepper when input type is number                                                                       | `boolean`                                                | `true`       |
-
-### nz-input-group
-
-| Property          | Description                                                                                          | Type                              | Default     |
-| ----------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------- | ----------- |
-| `[nzAddOnAfter]`  | The label text displayed after (on the right side of) the input field, can work with `nzAddOnBefore` | `string \| TemplateRef<void>`     | -           |
-| `[nzAddOnBefore]` | The label text displayed before (on the left side of) the input field, can work with `nzAddOnAfter`  | `string \| TemplateRef<void>`     | -           |
-| `[nzPrefix]`      | The prefix icon for the Input, can work with `nzSuffix`                                              | `string \| TemplateRef<void>`     | -           |
-| `[nzSuffix]`      | The suffix icon for the Input, can work with `nzPrefix`                                              | `string \| TemplateRef<void>`     | -           |
-| `[nzSize]`        | The size of `nz-input-group` specifies the size of the included `nz-input` fields                    | `'large' \| 'small' \| 'default'` | `'default'` |
-| `[nzStatus]`      | Set validation status                                                                                | `'error' \| 'warning'`            | -           |
-
-### nz-textarea-count
-
-| Property                    | Description                                      | Type                    | Default         |
-| --------------------------- | ------------------------------------------------ | ----------------------- | --------------- |
-| `[nzMaxCharacterCount]`     | `textarea` maximum character count displayed     | `number`                | -               |
-| `[nzComputeCharacterCount]` | customized `characterCount` computation function | `(v: string) => number` | `v => v.length` |
-
-### nz-input-otp
-
-| Property        | Description                                             | Type                              | Default     |
-| --------------- | ------------------------------------------------------- | --------------------------------- | ----------- |
-| `[disabled]`    | Whether the input is disabled                           | `boolean`                         | `false`     |
-| `[nzFormatter]` | Format display, blank fields will be filled with ` `    | `(value: string) => string`       | -           |
-| `[nzMask]`      | Custom display, the original value will not be modified | `boolean  \| null`                | `null`      |
-| `[nzLength]`    | The number of input elements                            | `number`                          | `6`         |
-| `[nzStatus]`    | Set validation status                                   | `'error' \| 'warning'`            | -           |
-| `[nzSize]`      | The size of the input box                               | `'large' \| 'small' \| 'default'` | `'default'` |
-
-## Q&A
-
-### How to use compact input group?
-
-`nz-input-group` is no longer support compact mode directly in v20, you can use [nz-space-compact](/components/space/en#components-space-demo-compact) instead.
 
 ---
 Title: Icon
@@ -6837,4 +6759,82 @@ Please note that Affix should not cover other content on the page, especially wh
 
 ```html
 <nz-affix style="position: absolute; top: 10px, left: 10px"> ... </nz-affix>
+```
+
+---
+Title: Notification
+URL: https://ng.ant.design/components/notification/en
+---
+
+## When To Use
+
+To display a notification message at any of the four corners of the viewport. Typically it can be
+used in the following cases:
+
+- A notification with complex content.
+- A notification providing a feedback based on the user interaction. Or it may show some details
+  about upcoming steps the user may have to follow.
+- A notification that is pushed by the application.
+
+## API
+
+### NzNotificationService
+
+The component provides a number of service methods using the following methods and parameters:
+
+- `NzNotificationService.blank(title, content, [options])` // Notification without icon
+- `NzNotificationService.success(title, content, [options])`
+- `NzNotificationService.error(title, content, [options])`
+- `NzNotificationService.info(title, content, [options])`
+- `NzNotificationService.warning(title, content, [options])`
+
+| Argument  | Description                                                                          | Type                          | Default |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------------- | ------- |
+| `title`   | Title                                                                                | `string \| TemplateRef<void>` | -       |
+| `content` | Notification content                                                                 | `NzNotificationContentType`   | -       |
+| `options` | Support setting the parameters for the current notification box, see the table below | `object`                      | -       |
+
+The parameters that are set by the `options` support are as follows:
+
+| Argument         | Description                                                            | Type                                                            |
+| ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
+| `nzKey`          | The unique identifier of the Notification                              | `string`                                                        |
+| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0              | `number`                                                        |
+| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true` | `boolean`                                                       |
+| `nzAnimate`      | Whether to turn on animation                                           | `boolean`                                                       |
+| `nzStyle`        | Custom inline style                                                    | `object`                                                        |
+| `nzClass`        | Custom CSS class                                                       | `object`                                                        |
+| `nzData`         | Anything that would be used as template context                        | `any`                                                           |
+| `nzCloseIcon`    | Custom close icon                                                      | `TemplateRef<void> \| string`                                   |
+| `nzButton`       | Custom button                                                          | `TemplateRef<{ $implicit: NzNotificationComponent }> \| string` |
+
+Methods for destruction are also provided:
+
+- `NzNotificationService.remove(id)` // Remove the notification with the specified id. When the id is empty, remove all notifications (the notification id is returned by the above method)
+
+### Global Configuration
+
+You can use `NzConfigService` to configure this component globally. Please check the [Global Configuration](/docs/global-config/en) chapter for more information.
+
+| Parameter        | Description                                                                             | Type                                                                            | Default      |
+| ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ |
+| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0                               | `number`                                                                        | `4500`       |
+| `nzMaxStack`     | The maximum number of notifications that can be displayed at the same time              | `number`                                                                        | `8`          |
+| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true`                  | `boolean`                                                                       | `true`       |
+| `nzAnimate`      | Whether to turn on animation                                                            | `boolean`                                                                       | `true`       |
+| `nzTop`          | The top of the notification when it pops up from the top.                               | `string`                                                                        | `'24px'`     |
+| `nzBottom`       | The bottom of the notification when it pops up from the bottom.                         | `string`                                                                        | `'24px'`     |
+| `nzPlacement`    | Popup position, optional `topLeft` `topRight` `bottomLeft` `bottomRight` `top` `bottom` | `'topLeft' \| 'topRight' \| 'bottomLeft' \| 'bottomRight' \| 'top' \| 'bottom'` | `'topRight'` |
+| `nzDirection`    | Direction of the text in the notification                                               | `'ltr' \| 'rtl'`                                                                | -            |
+
+### NzNotificationRef
+
+It's the object that returned when you call `NzNotificationService.success` and others.
+
+```ts
+export interface NzNotificationRef {
+  messageId: string;
+  onClose: Subject<boolean>; // It would emit an event when the notification is closed, and emit a `true` if it's closed by user
+  onClick: Subject<MouseEvent>;
+}
 ```
