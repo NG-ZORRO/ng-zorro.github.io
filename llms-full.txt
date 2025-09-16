@@ -1631,7 +1631,7 @@ Uploading is publishing information (web pages, text, pictures, video, etc.) to 
 | `[nzRemove]`                | A callback function will be executed when the removing file button is clicked, remove event will be prevented when the return value is `false` or an Observable. NOTICE: Must use `=>` to define the method.      | `(file: NzUploadFile) => boolean \| Observable<boolean>`                                         | -               |
 | `(nzChange)`                | A callback function, can be executed when uploading state is changing                                                                                                                                             | `EventEmitter<NzUploadChangeParam>`                                                              | -               |
 | `[nzDownload]`              | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB.                                                                                  | `(file: NzUploadFile) => void`                                                                   | Jump to new TAB |
-| `[nzTransformFile]`         | Customize transform file before request                                                                                                                                                                           | `(file: NzUploadFile) => NzUploadTransformFileType`                                              | -               |
+| ~~`[nzTransformFile]`~~     | ~~Customize transform file before request~~                                                                                                                                                                       | ~~`(file: NzUploadFile) => NzUploadTransformFileType`~~                                          | -               |
 | `[nzIconRender]`            | Custom show icon                                                                                                                                                                                                  | `TemplateRef<{ $implicit: NzUploadFile }>`                                                       | -               |
 | `[nzFileListRender]`        | Custom file list                                                                                                                                                                                                  | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                                     | -               |
 
@@ -2307,30 +2307,6 @@ By clicking the input box, you can select a time from a popup panel.
 | `focus()` | get focus    |
 
 ---
-Title: Tag
-URL: https://ng.ant.design/components/tag/en
----
-
-## When To Use
-
-- It can be used to tag by dimension or property.
-
-- When categorizing.
-
-## API
-
-### nz-tag
-
-| Property            | Description                                                                 | Type                                      | Default     |
-| ------------------- | --------------------------------------------------------------------------- | ----------------------------------------- | ----------- |
-| `[nzMode]`          | Mode of tag                                                                 | `'closeable' \| 'default' \| 'checkable'` | `'default'` |
-| `[nzChecked]`       | Checked status of Tag, double binding, only works when `nzMode="checkable"` | `boolean`                                 | `false`     |
-| `[nzColor]`         | Color of the Tag                                                            | `string`                                  | -           |
-| `[nzBordered]`      | Whether has border style                                                    | `boolean`                                 | `true`      |
-| `(nzOnClose)`       | Callback executed when tag is closed, only works when `nzMode="closable"`   | `EventEmitter<MouseEvent>`                | -           |
-| `(nzCheckedChange)` | Checked status change call back, only works when `nzMode="checkable"`       | `EventEmitter<boolean>`                   | -           |
-
----
 Title: Tabs
 URL: https://ng.ant.design/components/tabs/en
 ---
@@ -2694,6 +2670,30 @@ this.dataSet = this.dataSet.filter(d => d.key !== i);
 Recommend using [immer](https://immerjs.github.io/immer/docs/introduction) for a better development experience.
 
 ---
+Title: Tag
+URL: https://ng.ant.design/components/tag/en
+---
+
+## When To Use
+
+- It can be used to tag by dimension or property.
+
+- When categorizing.
+
+## API
+
+### nz-tag
+
+| Property            | Description                                                                 | Type                                      | Default     |
+| ------------------- | --------------------------------------------------------------------------- | ----------------------------------------- | ----------- |
+| `[nzMode]`          | Mode of tag                                                                 | `'closeable' \| 'default' \| 'checkable'` | `'default'` |
+| `[nzChecked]`       | Checked status of Tag, double binding, only works when `nzMode="checkable"` | `boolean`                                 | `false`     |
+| `[nzColor]`         | Color of the Tag                                                            | `string`                                  | -           |
+| `[nzBordered]`      | Whether has border style                                                    | `boolean`                                 | `true`      |
+| `(nzOnClose)`       | Callback executed when tag is closed, only works when `nzMode="closable"`   | `EventEmitter<MouseEvent>`                | -           |
+| `(nzCheckedChange)` | Checked status change call back, only works when `nzMode="checkable"`       | `EventEmitter<boolean>`                   | -           |
+
+---
 Title: Switch
 URL: https://ng.ant.design/components/switch/en
 ---
@@ -2846,40 +2846,6 @@ When part of the page is waiting for asynchronous data or during a rendering pro
 | `[nzTip]`       | customize description content when Spin has children                                    | `string`                          | -             |
 
 ---
-Title: Splitter
-URL: https://ng.ant.design/components/splitter/en
----
-
-## When To Use
-
-The Splitter component can be used to separate areas horizontally or vertically.
-You can freely drag the splitter to adjust the size of each side, while also being able to specify its minimum and
-maximum width and height.
-
-## API
-
-### nz-splitter
-
-| Property          | Description                     | Type                         | Default        |
-| ----------------- | ------------------------------- | ---------------------------- | -------------- |
-| `[nzLayout]`      | Layout direction                | `'horizontal' \| 'vertical'` | `'horizontal'` |
-| `[nzLazy]`        | Lazy Mode                       | `boolean`                    | `false`        |
-| `(nzResizeStart)` | Callback before dragging starts | `EventEmitter<number[]>`     | -              |
-| `(nzResize)`      | Panel size change callback      | `EventEmitter<number[]>`     | -              |
-| `(nzResizeEnd)`   | Drag end callback               | `EventEmitter<number[]>`     | -              |
-
-### nz-splitter-panel
-
-| Property          | Description                                                     | Type                                             | Default |
-| ----------------- | --------------------------------------------------------------- | ------------------------------------------------ | ------- |
-| `[nzDefaultSize]` | Initial panel size support number for px or 'percent%' usage    | `number \| string`                               | -       |
-| `[nzMin]`         | Minimum threshold support number for px or 'percent%' usage     | `number \| string`                               | -       |
-| `[nzMax]`         | Maximum threshold support number for px or 'percent%' usage     | `number \| string`                               | -       |
-| `[nzSize]`        | Controlled panel size support number for px or 'percent%' usage | `number \| string`                               | -       |
-| `[nzCollapsible]` | Quick folding                                                   | `boolean  \| { start?: boolean; end?: boolean }` | `false` |
-| `[nzResizable]`   | Whether to enable drag and drop                                 | `boolean`                                        | `true`  |
-
----
 Title: Space
 URL: https://ng.ant.design/components/space/en
 ---
@@ -2929,6 +2895,40 @@ Use `<nz-space-compact>` when child form components are compactly connected and 
 | `[nzBlock]`     | Option to fit width to its parent\'s width | `boolean`                         | `false`        |              |
 | `[nzDirection]` | Set direction of layout                    | `'vertical' \| 'horizontal'`      | `'horizontal'` |              |
 | `[nzSize]`      | Set child component size                   | `'large' \| 'small' \| 'default'` | `'default'`    |              |
+
+---
+Title: Splitter
+URL: https://ng.ant.design/components/splitter/en
+---
+
+## When To Use
+
+The Splitter component can be used to separate areas horizontally or vertically.
+You can freely drag the splitter to adjust the size of each side, while also being able to specify its minimum and
+maximum width and height.
+
+## API
+
+### nz-splitter
+
+| Property          | Description                     | Type                         | Default        |
+| ----------------- | ------------------------------- | ---------------------------- | -------------- |
+| `[nzLayout]`      | Layout direction                | `'horizontal' \| 'vertical'` | `'horizontal'` |
+| `[nzLazy]`        | Lazy Mode                       | `boolean`                    | `false`        |
+| `(nzResizeStart)` | Callback before dragging starts | `EventEmitter<number[]>`     | -              |
+| `(nzResize)`      | Panel size change callback      | `EventEmitter<number[]>`     | -              |
+| `(nzResizeEnd)`   | Drag end callback               | `EventEmitter<number[]>`     | -              |
+
+### nz-splitter-panel
+
+| Property          | Description                                                     | Type                                             | Default |
+| ----------------- | --------------------------------------------------------------- | ------------------------------------------------ | ------- |
+| `[nzDefaultSize]` | Initial panel size support number for px or 'percent%' usage    | `number \| string`                               | -       |
+| `[nzMin]`         | Minimum threshold support number for px or 'percent%' usage     | `number \| string`                               | -       |
+| `[nzMax]`         | Maximum threshold support number for px or 'percent%' usage     | `number \| string`                               | -       |
+| `[nzSize]`        | Controlled panel size support number for px or 'percent%' usage | `number \| string`                               | -       |
+| `[nzCollapsible]` | Quick folding                                                   | `boolean  \| { start?: boolean; end?: boolean }` | `false` |
+| `[nzResizable]`   | Whether to enable drag and drop                                 | `boolean`                                        | `true`  |
 
 ---
 Title: Slider
@@ -3146,16 +3146,18 @@ URL: https://ng.ant.design/components/segmented/en
 
 ### nz-segmented
 
-| Property          | Description                                               | Type                                                                                                          | Default | Global Config |
-| ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------- | ------------- |
-| `[nzBlock]`       | Option to fit width to its parent\'s width                | `boolean`                                                                                                     | `false` |               |
-| `[nzDisabled]`    | Disable all segments                                      | `boolean`                                                                                                     | `false` |               |
-| `[nzOptions]`     | Set children optional                                     | `string[] \| number[] \| Array<{ label: string; value: string \| number; icon: string; disabled?: boolean }>` | -       |               |
-| `[nzSize]`        | The size of the Segmented                                 | `large \| default \| small`                                                                                   | -       | ✅            |
-| `[nzVertical]`    | Orientation                                               | `boolean`                                                                                                     | `false` | -             |
-| `[ngModel]`       | Value of the currently selected option                    | `string \| number`                                                                                            | -       |               |
-| `(nzValueChange)` | Emits when value of the currently selected option changes | `EventEmitter<string \| number>`                                                                              | -       |               |
-| `(ngModelChange)` | Emits when value of the currently selected option changes | `EventEmitter<string \| number>`                                                                              | -       |               |
+| Property          | Description                                               | Type                                                                                                          | Default   | Global Config |
+| ----------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------- | ------------- |
+| `[nzBlock]`       | Option to fit width to its parent\'s width                | `boolean`                                                                                                     | `false`   |               |
+| `[nzDisabled]`    | Disable all segments                                      | `boolean`                                                                                                     | `false`   |               |
+| `[nzOptions]`     | Set children optional                                     | `string[] \| number[] \| Array<{ label: string; value: string \| number; icon: string; disabled?: boolean }>` | -         |               |
+| `[nzSize]`        | The size of the Segmented                                 | `large \| default \| small`                                                                                   | -         | ✅            |
+| `[nzShape]`       | Shape of Segmented                                        | `default \| round`                                                                                            | `default` | -             |
+| `[nzVertical]`    | Orientation                                               | `boolean`                                                                                                     | `false`   | -             |
+| `[nzName]`        | The name property of all `input[type="radio"]` children   | `string`                                                                                                      | -         |               |
+| `[ngModel]`       | Value of the currently selected option                    | `string \| number`                                                                                            | -         |               |
+| `(nzValueChange)` | Emits when value of the currently selected option changes | `EventEmitter<string \| number>`                                                                              | -         |               |
+| `(ngModelChange)` | Emits when value of the currently selected option changes | `EventEmitter<string \| number>`                                                                              | -         |               |
 
 ### label[nz-segmented-item]
 
@@ -3694,6 +3696,84 @@ PageHeader can be used to highlight the page topic, display important informatio
 | `nz-avatar[nz-page-header-avatar]`         | Avatar section                                           |
 
 ---
+Title: Notification
+URL: https://ng.ant.design/components/notification/en
+---
+
+## When To Use
+
+To display a notification message at any of the four corners of the viewport. Typically it can be
+used in the following cases:
+
+- A notification with complex content.
+- A notification providing a feedback based on the user interaction. Or it may show some details
+  about upcoming steps the user may have to follow.
+- A notification that is pushed by the application.
+
+## API
+
+### NzNotificationService
+
+The component provides a number of service methods using the following methods and parameters:
+
+- `NzNotificationService.blank(title, content, [options])` // Notification without icon
+- `NzNotificationService.success(title, content, [options])`
+- `NzNotificationService.error(title, content, [options])`
+- `NzNotificationService.info(title, content, [options])`
+- `NzNotificationService.warning(title, content, [options])`
+
+| Argument  | Description                                                                          | Type                          | Default |
+| --------- | ------------------------------------------------------------------------------------ | ----------------------------- | ------- |
+| `title`   | Title                                                                                | `string \| TemplateRef<void>` | -       |
+| `content` | Notification content                                                                 | `NzNotificationContentType`   | -       |
+| `options` | Support setting the parameters for the current notification box, see the table below | `object`                      | -       |
+
+The parameters that are set by the `options` support are as follows:
+
+| Argument         | Description                                                            | Type                                                            |
+| ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
+| `nzKey`          | The unique identifier of the Notification                              | `string`                                                        |
+| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0              | `number`                                                        |
+| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true` | `boolean`                                                       |
+| `nzAnimate`      | Whether to turn on animation                                           | `boolean`                                                       |
+| `nzStyle`        | Custom inline style                                                    | `object`                                                        |
+| `nzClass`        | Custom CSS class                                                       | `object`                                                        |
+| `nzData`         | Anything that would be used as template context                        | `any`                                                           |
+| `nzCloseIcon`    | Custom close icon                                                      | `TemplateRef<void> \| string`                                   |
+| `nzButton`       | Custom button                                                          | `TemplateRef<{ $implicit: NzNotificationComponent }> \| string` |
+
+Methods for destruction are also provided:
+
+- `NzNotificationService.remove(id)` // Remove the notification with the specified id. When the id is empty, remove all notifications (the notification id is returned by the above method)
+
+### Global Configuration
+
+You can use `NzConfigService` to configure this component globally. Please check the [Global Configuration](/docs/global-config/en) chapter for more information.
+
+| Parameter        | Description                                                                             | Type                                                                            | Default      |
+| ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ |
+| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0                               | `number`                                                                        | `4500`       |
+| `nzMaxStack`     | The maximum number of notifications that can be displayed at the same time              | `number`                                                                        | `8`          |
+| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true`                  | `boolean`                                                                       | `true`       |
+| `nzAnimate`      | Whether to turn on animation                                                            | `boolean`                                                                       | `true`       |
+| `nzTop`          | The top of the notification when it pops up from the top.                               | `string`                                                                        | `'24px'`     |
+| `nzBottom`       | The bottom of the notification when it pops up from the bottom.                         | `string`                                                                        | `'24px'`     |
+| `nzPlacement`    | Popup position, optional `topLeft` `topRight` `bottomLeft` `bottomRight` `top` `bottom` | `'topLeft' \| 'topRight' \| 'bottomLeft' \| 'bottomRight' \| 'top' \| 'bottom'` | `'topRight'` |
+| `nzDirection`    | Direction of the text in the notification                                               | `'ltr' \| 'rtl'`                                                                | -            |
+
+### NzNotificationRef
+
+It's the object that returned when you call `NzNotificationService.success` and others.
+
+```ts
+export interface NzNotificationRef {
+  messageId: string;
+  onClose: Subject<boolean>; // It would emit an event when the notification is closed, and emit a `true` if it's closed by user
+  onClick: Subject<MouseEvent>;
+}
+```
+
+---
 Title: Modal
 URL: https://ng.ant.design/components/modal/en
 ---
@@ -4091,19 +4171,23 @@ When need to mention someone or something.
 
 ### nz-mention
 
-| Property                | Description                                                                               | Type                                           | Default                          |
-| ----------------------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------- |
-| `[nzMentionTrigger]`    | Trigger element **(required)**                                                            | `HTMLTextAreaElement \| HTMLInputElement`      | -                                |
-| `[nzMentionSuggestion]` | Customize the suggestion template                                                         | `TemplateRef<any>`                             | -                                |
-| `[nzLoading]`           | Loading mode                                                                              | `boolean`                                      | `false`                          |
-| `[nzNotFoundContent]`   | Suggestion when suggestions empty                                                         | `string`                                       | `'无匹配结果，轻敲空格完成输入'` |
-| `[nzPlacement]`         | The position of the suggestion relative to the target, which can be one of top and bottom | `'button' \| 'top'`                            | `'bottom'`                       |
-| `[nzPrefix]`            | Character which will trigger Mention to show mention list                                 | `string \| string[]`                           | `'@'`                            |
-| `[nzSuggestions]`       | Suggestion content                                                                        | `any[]`                                        | `[]`                             |
-| `[nzStatus]`            | Set validation status                                                                     | `'error' \| 'warning'`                         | -                                |
-| `[nzValueWith]`         | Function that maps an suggestion's value                                                  | `(any) => string \| (value: string) => string` |
-| `(nzOnSelect)`          | Callback function called when select from suggestions                                     | `EventEmitter<any>`                            | -                                |
-| `(nzOnSearchChange)`    | Callback function called when search content changes                                      | `EventEmitter<MentionOnSearchTypes>`           | -                                |
+| Property                | Description                                                                               | Type                                                     | Default                          |
+| ----------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- | -------------------------------- |
+| `[nzMentionTrigger]`    | Trigger element **(required)**                                                            | `HTMLTextAreaElement \| HTMLInputElement`                | -                                |
+| `[nzMentionSuggestion]` | Customize the suggestion template                                                         | `TemplateRef<any>`                                       | -                                |
+| `[nzLoading]`           | Loading mode                                                                              | `boolean`                                                | `false`                          |
+| `[nzNotFoundContent]`   | Suggestion when suggestions empty                                                         | `string`                                                 | `'无匹配结果，轻敲空格完成输入'` |
+| `[nzPlacement]`         | The position of the suggestion relative to the target, which can be one of top and bottom | `'button' \| 'top'`                                      | `'bottom'`                       |
+| `[nzPrefix]`            | Character which will trigger Mention to show mention list                                 | `string \| string[]`                                     | `'@'`                            |
+| `[nzSuggestions]`       | Suggestion content                                                                        | `any[]`                                                  | `[]`                             |
+| `[nzStatus]`            | Set validation status                                                                     | `'error' \| 'warning'`                                   | -                                |
+| `[nzAllowClear]`        | If allow to remove mentions content with clear icon                                       | `boolean`                                                | `false`                          |
+| `[nzClearIcon]`         | The custom clear icon                                                                     | `TemplateRef<void>`                                      | -                                |
+| `[nzVariant]`           | Variants of Input                                                                         | `'outlined' \| 'filled' \| 'borderless' \| 'underlined'` | `'outlined'`                     |
+| `[nzValueWith]`         | Function that maps an suggestion's value                                                  | `(any) => string \| (value: string) => string`           |
+| `(nzOnSelect)`          | Callback function called when select from suggestions                                     | `EventEmitter<any>`                                      | -                                |
+| `(nzOnSearchChange)`    | Callback function called when search content changes                                      | `EventEmitter<MentionOnSearchTypes>`                     | -                                |
+| `(nzOnClear)`           | Callback function called when click on clear button                                       | `EventEmitter<void>`                                     | -                                |
 
 #### Methods
 
@@ -5207,7 +5291,7 @@ URL: https://ng.ant.design/components/float-button/en
 
 | Property          | Description                               | Type                                  | Default     |
 | ----------------- | ----------------------------------------- | ------------------------------------- | ----------- |
-| `[nzIcon]`        | Set the icon component of button          | `string \| TemplateRef<void>`         | -           |
+| `[nzIcon]`        | Set the icon component of button          | `string \| TemplateRef<void> \| null` | -           |
 | `[nzDescription]` | Text and other content                    | `string \| TemplateRef<void> \| null` | -           |
 | `[nzType]`        | Button type                               | `'default' \| 'primary'`              | `'default'` |
 | `[nzShape]`       | Button shape                              | `'circle' \| 'square'`                | `'circle'`  |
@@ -6071,11 +6155,12 @@ If the current page business logic is too complex, and with a more mandatory seq
 
 #### NzItemProps
 
-| Property      | Description                           | Type         | Default |
-| ------------- | ------------------------------------- | ------------ | ------- |
-| `key`         | unique identifier                     | `string`     | -       |
-| `description` | description content                   | `string`     | -       |
-| `onClick`     | method triggered by clicking the step | `() => void` | -       |
+| Property      | Description                           | Type                          | Default |
+| ------------- | ------------------------------------- | ----------------------------- | ------- |
+| `key`         | unique identifier                     | `string`                      | -       |
+| `description` | description content                   | `string`                      | -       |
+| `checked`     | Current inventory status              | `boolean`                     | -       |
+| `onClick`     | method triggered by clicking the step | `(item: NzItemProps) => void` | -       |
 
 > `key` is the unique identifier of the current item. If not set, `description` will be used as the key.
 
@@ -6230,6 +6315,7 @@ URL: https://ng.ant.design/components/carousel/en
 | `[nzEffect]`        | Transition effect                                                           | `'scrollx' \| 'fade'`                       | `'scrollx'` | ✅            |
 | `[nzEnableSwipe]`   | Whether to support swipe gesture                                            | `boolean`                                   | `true`      | ✅            |
 | `[nzLoop]`          | Whether to enable the carousel to go in a loop                              | `boolean`                                   | `true`      | ✅            |
+| `[nzArrows]`        | Whether to show the arrow buttons                                           | `boolean`                                   | `false`     | -             |
 | `(nzAfterChange)`   | Callback function called after the current index changes                    | `EventEmitter<number>`                      | -           |
 | `(nzBeforeChange)`  | Callback function called before the current index changes                   | `EventEmitter{ from: number; to: number }>` | -           |
 
@@ -6759,82 +6845,4 @@ Please note that Affix should not cover other content on the page, especially wh
 
 ```html
 <nz-affix style="position: absolute; top: 10px, left: 10px"> ... </nz-affix>
-```
-
----
-Title: Notification
-URL: https://ng.ant.design/components/notification/en
----
-
-## When To Use
-
-To display a notification message at any of the four corners of the viewport. Typically it can be
-used in the following cases:
-
-- A notification with complex content.
-- A notification providing a feedback based on the user interaction. Or it may show some details
-  about upcoming steps the user may have to follow.
-- A notification that is pushed by the application.
-
-## API
-
-### NzNotificationService
-
-The component provides a number of service methods using the following methods and parameters:
-
-- `NzNotificationService.blank(title, content, [options])` // Notification without icon
-- `NzNotificationService.success(title, content, [options])`
-- `NzNotificationService.error(title, content, [options])`
-- `NzNotificationService.info(title, content, [options])`
-- `NzNotificationService.warning(title, content, [options])`
-
-| Argument  | Description                                                                          | Type                          | Default |
-| --------- | ------------------------------------------------------------------------------------ | ----------------------------- | ------- |
-| `title`   | Title                                                                                | `string \| TemplateRef<void>` | -       |
-| `content` | Notification content                                                                 | `NzNotificationContentType`   | -       |
-| `options` | Support setting the parameters for the current notification box, see the table below | `object`                      | -       |
-
-The parameters that are set by the `options` support are as follows:
-
-| Argument         | Description                                                            | Type                                                            |
-| ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `nzKey`          | The unique identifier of the Notification                              | `string`                                                        |
-| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0              | `number`                                                        |
-| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true` | `boolean`                                                       |
-| `nzAnimate`      | Whether to turn on animation                                           | `boolean`                                                       |
-| `nzStyle`        | Custom inline style                                                    | `object`                                                        |
-| `nzClass`        | Custom CSS class                                                       | `object`                                                        |
-| `nzData`         | Anything that would be used as template context                        | `any`                                                           |
-| `nzCloseIcon`    | Custom close icon                                                      | `TemplateRef<void> \| string`                                   |
-| `nzButton`       | Custom button                                                          | `TemplateRef<{ $implicit: NzNotificationComponent }> \| string` |
-
-Methods for destruction are also provided:
-
-- `NzNotificationService.remove(id)` // Remove the notification with the specified id. When the id is empty, remove all notifications (the notification id is returned by the above method)
-
-### Global Configuration
-
-You can use `NzConfigService` to configure this component globally. Please check the [Global Configuration](/docs/global-config/en) chapter for more information.
-
-| Parameter        | Description                                                                             | Type                                                                            | Default      |
-| ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------ |
-| `nzDuration`     | Duration (milliseconds), does not disappear when set to 0                               | `number`                                                                        | `4500`       |
-| `nzMaxStack`     | The maximum number of notifications that can be displayed at the same time              | `number`                                                                        | `8`          |
-| `nzPauseOnHover` | Do not remove automatically when mouse is over while setting to `true`                  | `boolean`                                                                       | `true`       |
-| `nzAnimate`      | Whether to turn on animation                                                            | `boolean`                                                                       | `true`       |
-| `nzTop`          | The top of the notification when it pops up from the top.                               | `string`                                                                        | `'24px'`     |
-| `nzBottom`       | The bottom of the notification when it pops up from the bottom.                         | `string`                                                                        | `'24px'`     |
-| `nzPlacement`    | Popup position, optional `topLeft` `topRight` `bottomLeft` `bottomRight` `top` `bottom` | `'topLeft' \| 'topRight' \| 'bottomLeft' \| 'bottomRight' \| 'top' \| 'bottom'` | `'topRight'` |
-| `nzDirection`    | Direction of the text in the notification                                               | `'ltr' \| 'rtl'`                                                                | -            |
-
-### NzNotificationRef
-
-It's the object that returned when you call `NzNotificationService.success` and others.
-
-```ts
-export interface NzNotificationRef {
-  messageId: string;
-  onClose: Subject<boolean>; // It would emit an event when the notification is closed, and emit a `true` if it's closed by user
-  onClick: Subject<MouseEvent>;
-}
 ```
