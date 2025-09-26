@@ -4044,6 +4044,22 @@
     {
       "positive": false,
       "regex": "^\\/experimental\\/[^/][^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/x\\/(?:.+\\/)?[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/x\\/[^/][^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/x.github.io\\/(?:.+\\/)?[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/x.github.io\\/[^/][^/]*$"
     }
   ],
   "navigationRequestStrategy": "performance"
