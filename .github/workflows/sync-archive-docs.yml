@@ -1,0 +1,49 @@
+name: Sync Archive Docs
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: main
+      
+      - name: Checkout archive-docs repository
+        uses: actions/checkout@v4
+        with:
+          repository: NG-ZORRO/archive-docs
+          path: archive-docs
+      
+      - name: Copy directories
+        run: |
+          # Remove existing directories in main repo
+          rm -rf main/version
+          rm -rf main/issue-helper
+          
+          # Copy from archive-docs to main
+          cp -r archive-docs/version main/version
+          cp -r archive-docs/issue-helper main/issue-helper
+      
+      - name: Commit and push changes
+        run: |
+          cd main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add version issue-helper
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync archive docs from NG-ZORRO/archive-docs"
+            git push
+          fi
