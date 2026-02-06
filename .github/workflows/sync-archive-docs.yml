@@ -9,6 +9,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout current repository
@@ -25,6 +27,16 @@ jobs:
       
       - name: Copy directories
         run: |
+          # Validate source directories exist
+          if [ ! -d "archive-docs/version" ]; then
+            echo "Error: archive-docs/version directory not found"
+            exit 1
+          fi
+          if [ ! -d "archive-docs/issue-helper" ]; then
+            echo "Error: archive-docs/issue-helper directory not found"
+            exit 1
+          fi
+          
           # Remove existing directories in main repo
           rm -rf main/version
           rm -rf main/issue-helper
@@ -32,6 +44,8 @@ jobs:
           # Copy from archive-docs to main
           cp -r archive-docs/version main/version
           cp -r archive-docs/issue-helper main/issue-helper
+          
+          echo "Successfully copied directories"
       
       - name: Commit and push changes
         run: |
