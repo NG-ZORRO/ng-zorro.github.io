@@ -2,9 +2,6 @@ name: Sync Archive Docs
 
 on:
   workflow_dispatch:
-  schedule:
-    # Run daily at 00:00 UTC
-    - cron: '0 0 * * *'
 
 jobs:
   sync:
@@ -16,27 +13,18 @@ jobs:
       - name: Checkout current repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           path: main
+          fetch-depth: 0
       
       - name: Checkout archive-docs repository
         uses: actions/checkout@v4
         with:
           repository: NG-ZORRO/archive-docs
           path: archive-docs
+          fetch-depth: 0
       
       - name: Copy directories
         run: |
-          # Validate source directories exist
-          if [ ! -d "archive-docs/version" ]; then
-            echo "Error: archive-docs/version directory not found"
-            exit 1
-          fi
-          if [ ! -d "archive-docs/issue-helper" ]; then
-            echo "Error: archive-docs/issue-helper directory not found"
-            exit 1
-          fi
-          
           # Remove existing directories in main repo
           rm -rf main/version
           rm -rf main/issue-helper
@@ -58,6 +46,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: sync archive docs from NG-ZORRO/archive-docs"
+            git commit -m "chore: sync archive docs"
             git push
           fi
