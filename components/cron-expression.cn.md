@@ -17,7 +17,7 @@ description: 显示和编辑 cron 表达式。
 别忘记先安装 cron-parser：
 
 ```sh
-npm install cron-parser
+npm install cron-parser@^5.5.0
 ```
 
 ### nz-cron-expression
@@ -179,7 +179,7 @@ import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { parseExpression } from 'cron-parser';
+import { CronExpressionParser } from 'cron-parser';
 
 import { NzCronExpressionModule } from 'ng-zorro-antd/cron-expression';
 
@@ -197,7 +197,7 @@ export class NzDemoCronExpressionSemanticComponent {
 
   getValue(value: string): void {
     try {
-      const interval = parseExpression(value);
+      const interval = CronExpressionParser.parse(value);
       this.semantic = interval.next().toDate();
     } catch {
       return;

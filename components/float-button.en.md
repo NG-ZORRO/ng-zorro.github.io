@@ -29,12 +29,13 @@ description: A button that floats at the top of the page.
 
 ### nz-float-button-group
 
-| Property           | Description                                   | Type                                     | Default |
-| ------------------ | --------------------------------------------- | ---------------------------------------- | ------- |
-| `[nzTrigger]`      | Which action can trigger menu open/close      | `'click' \| 'hover'`                     | -       |
-| `[nzPlacement]`    | Customize menu animation placement            | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
-| `[nzOpen]`         | Whether the menu is visible or not            | `boolean`                                | -       |
-| `(nzOnOpenChange)` | Callback executed when active menu is changed | `EventEmitter<boolean>`                  | -       |
+| Property               | Description                                                                                    | Type                                     | Default |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------- | ------- |
+| `[nzTrigger]`          | Which action can trigger menu open/close                                                       | `'click' \| 'hover'`                     | -       |
+| `[nzPlacement]`        | Customize menu animation placement                                                             | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
+| `[nzOpen]`             | Whether the menu is visible or not                                                             | `boolean`                                | -       |
+| `(nzOpenChange)`       | Callback executed when active menu is changed                                                  | `EventEmitter<boolean>`                  | -       |
+| ~~`(nzOnOpenChange)`~~ | Callback executed when active menu is changed, deprecated, please use `(nzOpenChange)` instead | `EventEmitter<boolean>`                  | -       |
 
 ### nz-float-button-top
 
@@ -389,8 +390,9 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
         nzIcon="customer-service"
         [nzOpen]="isOpen"
         nzType="primary"
-        nzTrigger="hover"
+        nzTrigger="click"
         style="right: 24px"
+        (nzOpenChange)="onOpenChange($event)"
       >
         <nz-float-button />
         <nz-float-button nzIcon="comment" />
@@ -411,6 +413,12 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 })
 export class NzDemoFloatButtonOpenComponent {
   isOpen: boolean = true;
+
+  onOpenChange(open: boolean): void {
+    console.log(open);
+    // You can set the `isOpen` variable in `(nzOpenChange)` to control the open state.
+    // this.isOpen = open;
+  }
 }
 ```
 

@@ -2199,46 +2199,48 @@ description: Cascade selection box.
 
 ### nz-cascader
 
-| Property              | Description                                                                                                                            | Type                                                                  | Default           | Global Config | Version |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ----------------- | ------------- | ------- |
-| `[ngModel]`           | selected value                                                                                                                         | `any[]`                                                               | -                 |
-| `[nzAllowClear]`      | whether allow clear                                                                                                                    | `boolean`                                                             | `true`            |
-| `[nzAutoFocus]`       | whether auto focus the input box                                                                                                       | `boolean`                                                             | `false`           |
-| `[nzBackdrop]`        | whether or not the overlay should attach a backdrop                                                                                    | `boolean`                                                             | `false`           |
-| `[nzChangeOn]`        | change value on each selection if this function returns `true`                                                                         | `(option: any, index: number) => boolean`                             | -                 |
-| `[nzChangeOnSelect]`  | change value on each selection if set to true, see above demo for details                                                              | `boolean`                                                             | `false`           |
-| `[nzColumnClassName]` | additional className of column in the popup overlay                                                                                    | `string`                                                              | -                 |
-| `[nzDisabled]`        | whether select should be disabled                                                                                                      | `boolean`                                                             | `false`           |
-| `[nzExpandIcon]`      | customize the current item expand icon                                                                                                 | `string \| TemplateRef<void>`                                         | -                 |
-| `[nzExpandTrigger]`   | expand current item when clicked or hovered, one of 'click' 'hover'                                                                    | `'click' \| 'hover'`                                                  | `'click'`         |
-| `[nzLabelProperty]`   | the label property name of options                                                                                                     | `string`                                                              | `'label'`         |
-| `[nzLabelRender]`     | render template of displaying selected options                                                                                         | `TemplateRef<any>`                                                    | -                 |
-| `[nzLoadData]`        | to load option lazily. Lazy load will be called immediately if the setting is `ngModel` with an array value and `nzOptions` is not set | `(option: any, index?: index) => PromiseLike<any> \| Observable<any>` | -                 |
-| `[nzMenuClassName]`   | additional className of popup overlay                                                                                                  | `string`                                                              | -                 |
-| `[nzMouseEnterDelay]` | duration in milliseconds before opening the popup overlay when the mouse enters the trigger                                            | `number`                                                              | `150`             |
-| `[nzMouseLeaveDelay]` | duration in milliseconds before closing the popup overlay when the mouse leaves the trigger                                            | `number`                                                              | `150`             |
-| `[nzMenuStyle]`       | additional css style of popup overlay                                                                                                  | `object`                                                              | -                 |
-| `[nzMultiple]`        | support multiple or not                                                                                                                | `boolean`                                                             | `false`           |
-| `[nzNotFoundContent]` | specify content to show when no result matches                                                                                         | `string \| TemplateRef<void>`                                         | -                 |
-| `[nzOptionRender]`    | render template of cascader options                                                                                                    | `TemplateRef<{ $implicit: NzCascaderOption, index: number }>`         |                   |
-| `[nzOptions]`         | data options of cascade                                                                                                                | `object[]`                                                            | -                 |
-| `[nzOpen]`            | Set visible of cascader popup                                                                                                          | `boolean`                                                             | `false`           | -             | 20.2.0  |
-| `[nzPlaceHolder]`     | input placeholder                                                                                                                      | `string`                                                              | `'Please select'` |
-| `[nzPlacement]`       | popup placement                                                                                                                        | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'`            | `'bottomLeft'`    |
-| `[nzShowArrow]`       | whether show arrow                                                                                                                     | `boolean`                                                             | `true`            |
-| `[nzShowInput]`       | whether show input                                                                                                                     | `boolean`                                                             | `true`            |
-| `[nzShowSearch]`      | whether support search. Cannot be used with `[nzLoadData]` at the same time                                                            | `boolean \| NzShowSearchOptions`                                      | `false`           |
-| `[nzSize]`            | input size, one of `large` `default` `small`                                                                                           | `'large' \| 'small' \| 'default'`                                     | `'default'`       | ✅            |
-| `[nzStatus]`          | set validation status                                                                                                                  | `'error' \| 'warning'`                                                | -                 |
-| `[nzPrefix]`          | custom prefix                                                                                                                          | `string\|TemplateRef<void>`                                           | -                 | -             | 20.2.0  |
-| `[nzSuffixIcon]`      | custom suffix icon                                                                                                                     | `string\|TemplateRef<void>`                                           | -                 |
-| `[nzValueProperty]`   | value property name of options                                                                                                         | `string`                                                              | `'value'`         |
-| `[nzVariant]`         | Variants of Cascader                                                                                                                   | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'`              | `'outlined'`      | ✅            | 20.0.0  |
-| `(ngModelChange)`     | emit on values change                                                                                                                  | `EventEmitter<any[]>`                                                 | -                 |
-| `(nzClear)`           | emit on clear values                                                                                                                   | `EventEmitter<void>`                                                  | -                 |
-| `(nzVisibleChange)`   | emit on popup menu visible or hide                                                                                                     | `EventEmitter<boolean>`                                               | -                 |
-| `(nzRemoved)`         | emit on selected item removed when `nzMultiple` is `true`                                                                              | `EventEmitter<NzCascaderOption>`                                      | -                 |
-| `(nzSelectionChange)` | emit on values change                                                                                                                  | `EventEmitter<NzCascaderOption[]>`                                    | -                 |
+| Property                | Description                                                                                                                            | Type                                                                     | Default           | Global Config | Version |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------- | ------------- | ------- |
+| `[ngModel]`             | selected value                                                                                                                         | `any[]`                                                                  | -                 |
+| `[nzAllowClear]`        | whether allow clear                                                                                                                    | `boolean`                                                                | `true`            |
+| `[nzAutoFocus]`         | whether auto focus the input box                                                                                                       | `boolean`                                                                | `false`           |
+| `[nzBackdrop]`          | whether or not the overlay should attach a backdrop                                                                                    | `boolean`                                                                | `false`           |
+| `[nzChangeOn]`          | change value on each selection if this function returns `true`                                                                         | `(option: any, index: number) => boolean`                                | -                 |
+| `[nzChangeOnSelect]`    | change value on each selection if set to true, see above demo for details                                                              | `boolean`                                                                | `false`           |
+| `[nzColumnClassName]`   | additional className of column in the popup overlay                                                                                    | `string`                                                                 | -                 |
+| `[nzDisabled]`          | whether select should be disabled                                                                                                      | `boolean`                                                                | `false`           |
+| `[nzExpandIcon]`        | customize the current item expand icon                                                                                                 | `string \| TemplateRef<void>`                                            | -                 |
+| `[nzExpandTrigger]`     | expand current item when clicked or hovered, one of 'click' 'hover'                                                                    | `'click' \| 'hover'`                                                     | `'click'`         |
+| `[nzLabelProperty]`     | the label property name of options                                                                                                     | `string`                                                                 | `'label'`         |
+| `[nzLabelRender]`       | render template of displaying selected options                                                                                         | `TemplateRef<{ labels: string[], selectedOptions: NzCascaderOption[] }>` | -                 |
+| `[nzLoadData]`          | to load option lazily. Lazy load will be called immediately if the setting is `ngModel` with an array value and `nzOptions` is not set | `(option: any, index?: index) => PromiseLike<any> \| Observable<any>`    | -                 |
+| `[nzMenuClassName]`     | additional className of popup overlay                                                                                                  | `string`                                                                 | -                 |
+| `[nzMouseEnterDelay]`   | duration in milliseconds before opening the popup overlay when the mouse enters the trigger                                            | `number`                                                                 | `150`             |
+| `[nzMouseLeaveDelay]`   | duration in milliseconds before closing the popup overlay when the mouse leaves the trigger                                            | `number`                                                                 | `150`             |
+| `[nzMenuStyle]`         | additional css style of popup overlay                                                                                                  | `object`                                                                 | -                 |
+| `[nzMultiple]`          | support multiple or not                                                                                                                | `boolean`                                                                | `false`           |
+| `[nzNotFoundContent]`   | specify content to show when no result matches                                                                                         | `string \| TemplateRef<void>`                                            | -                 |
+| `[nzOptionRender]`      | render template of cascader options                                                                                                    | `TemplateRef<{ $implicit: NzCascaderOption, index: number }>`            |                   |
+| `[nzOptions]`           | data options of cascade                                                                                                                | `object[]`                                                               | -                 |
+| `[nzOpen]`              | Set visible of cascader popup                                                                                                          | `boolean`                                                                | -                 | -             | 20.2.0  |
+| `[nzPlaceHolder]`       | input placeholder                                                                                                                      | `string`                                                                 | `'Please select'` |
+| `[nzPlacement]`         | popup placement                                                                                                                        | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'`               | `'bottomLeft'`    |
+| `[nzPopupRender]`       | customize dropdown content                                                                                                             | `TemplateRef<{ $implicit: TemplateRef<void> }>`                          | -                 |
+| `[nzShowArrow]`         | whether show arrow                                                                                                                     | `boolean`                                                                | `true`            |
+| `[nzShowInput]`         | whether show input                                                                                                                     | `boolean`                                                                | `true`            |
+| `[nzShowSearch]`        | whether support search. Cannot be used with `[nzLoadData]` at the same time                                                            | `boolean \| NzShowSearchOptions`                                         | `false`           |
+| `[nzSize]`              | input size, one of `large` `default` `small`                                                                                           | `'large' \| 'small' \| 'default'`                                        | `'default'`       | ✅            |
+| `[nzStatus]`            | set validation status                                                                                                                  | `'error' \| 'warning'`                                                   | -                 |
+| `[nzPrefix]`            | custom prefix                                                                                                                          | `string\|TemplateRef<void>`                                              | -                 | -             | 20.2.0  |
+| `[nzSuffixIcon]`        | custom suffix icon                                                                                                                     | `string\|TemplateRef<void>`                                              | -                 |
+| `[nzValueProperty]`     | value property name of options                                                                                                         | `string`                                                                 | `'value'`         |
+| `[nzVariant]`           | Variants of Cascader                                                                                                                   | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'`                 | `'outlined'`      | ✅            | 20.0.0  |
+| `(ngModelChange)`       | emit on values change                                                                                                                  | `EventEmitter<any[]>`                                                    | -                 |
+| `(nzClear)`             | emit on clear values                                                                                                                   | `EventEmitter<void>`                                                     | -                 |
+| `(nzRemoved)`           | emit on selected item removed when `nzMultiple` is `true`                                                                              | `EventEmitter<NzCascaderOption>`                                         | -                 |
+| `(nzSelectionChange)`   | emit on values change                                                                                                                  | `EventEmitter<NzCascaderOption[]>`                                       | -                 |
+| `(nzOpenChange)`        | emit on popup menu open or close                                                                                                       | `EventEmitter<boolean>`                                                  | -                 |
+| ~~`(nzVisibleChange)`~~ | emit on popup menu visible or hide, deprecated, use `(nzOpenChange)` instead                                                           | `EventEmitter<boolean>`                                                  | -                 |
 
 ### Interfaces
 
@@ -2675,7 +2677,7 @@ When you want to use cron expression in Angular.
 Install `cron-parser` in your project first:
 
 ```sh
-npm install cron-parser
+npm install cron-parser@^5.5.0
 ```
 
 ### nz-cron-expression
@@ -2860,10 +2862,10 @@ Commonly displayed on the details page.
 
 ### nz-descriptions-item
 
-| Property    | Description                    | Type      | Default                       |
-| ----------- | ------------------------------ | --------- | ----------------------------- |
-| `[nzTitle]` | Description of the content     | `boolean` | `string \| TemplateRef<void>` |
-| `[nzSpan]`  | The number of columns included | `number`  | `1`                           |
+| Property    | Description                    | Type                          | Default |
+| ----------- | ------------------------------ | ----------------------------- | ------- |
+| `[nzTitle]` | Description of the content     | `string \| TemplateRef<void>` | -       |
+| `[nzSpan]`  | The number of columns included | `number`                      | `1`     |
 
 ---
 
@@ -3212,12 +3214,13 @@ description: A button that floats at the top of the page.
 
 ### nz-float-button-group
 
-| Property           | Description                                   | Type                                     | Default |
-| ------------------ | --------------------------------------------- | ---------------------------------------- | ------- |
-| `[nzTrigger]`      | Which action can trigger menu open/close      | `'click' \| 'hover'`                     | -       |
-| `[nzPlacement]`    | Customize menu animation placement            | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
-| `[nzOpen]`         | Whether the menu is visible or not            | `boolean`                                | -       |
-| `(nzOnOpenChange)` | Callback executed when active menu is changed | `EventEmitter<boolean>`                  | -       |
+| Property               | Description                                                                                    | Type                                     | Default |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------- | ------- |
+| `[nzTrigger]`          | Which action can trigger menu open/close                                                       | `'click' \| 'hover'`                     | -       |
+| `[nzPlacement]`        | Customize menu animation placement                                                             | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
+| `[nzOpen]`             | Whether the menu is visible or not                                                             | `boolean`                                | -       |
+| `(nzOpenChange)`       | Callback executed when active menu is changed                                                  | `EventEmitter<boolean>`                  | -       |
+| ~~`(nzOnOpenChange)`~~ | Callback executed when active menu is changed, deprecated, please use `(nzOpenChange)` instead | `EventEmitter<boolean>`                  | -       |
 
 ### nz-float-button-top
 
@@ -3316,6 +3319,10 @@ A form consists of one or more form fields whose type includes input, textarea, 
 ### nz-form-item
 
 Used to separate the item in forms, contains label(optional) and control field.
+
+| Property     | Description      | Type                         | Default Value | Version |
+| ------------ | ---------------- | ---------------------------- | ------------- | ------- |
+| `[nzLayout]` | Form item layout | `'horizontal' \| 'vertical'` | -             | 21.3.0  |
 
 > All api in [nz-row](/components/grid/en) can be used in `nz-form-item`.
 
@@ -3550,59 +3557,60 @@ category: Components
 type: Layout
 cols: 1
 title: Grid
-cover: 'https://gw.alipayobjects.com/zos/alicdn/5rWLU27so/Grid.svg'
+tag: updated
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*mfJeS6cqZrEAAAAAAAAAAAAADrJ8AQ/original
 description: 24 Grids System。
 ---
 
 ## Design concept
 
 <div class="grid-demo">
-<div class="ant-row demo-row">
-  <div class="ant-col-24 demo-col demo-col-1">
-    100%
+  <div class="ant-row demo-row">
+    <div class="ant-col-24 demo-col demo-col-1">
+      100%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-12 demo-col demo-col-1">
+      50%
+    </div>
+    <div class="ant-col-12 demo-col demo-col-3">
+      50%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-16 demo-col demo-col-4">
+      66.66%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-12 demo-col demo-col-1">
-    50%
-  </div>
-  <div class="ant-col-12 demo-col demo-col-3">
-    50%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-16 demo-col demo-col-4">
-    66.66%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-</div>
 </div>
 
 In most business situations, Ant Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.
@@ -3628,28 +3636,30 @@ Layout uses a 24 grid layout to define the width of each "box", but does not rig
 
 ### [nz-row]
 
-| Property      | Description                                                                                                                                                                                       | Type                                                                 | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------- |
-| `[nzAlign]`   | the vertical alignment                                                                                                                                                                            | `'top' \| 'middle' \| 'bottom'`                                      | -       |
-| `[nzGutter]`  | spacing between grids, could be a number or a object like `{ xs: 8, sm: 16, md: 24}`. or you can use array to make horizontal and vertical spacing work at the same time `[horizontal, vertical]` | `string \| number \| object \| [number, number] \| [object, object]` | `0`     |
-| `[nzJustify]` | horizontal arrangement                                                                                                                                                                            | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between'`  | -       |
+| Property      | Description                                                                                                                                                                                                                                                                          | Type                                                                                            | Default | Version                   |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------- | ------------------------- |
+| `[nzAlign]`   | The vertical alignment                                                                                                                                                                                                                                                               | `'top' \| 'middle' \| 'bottom' \| 'stretch' \| object`                                          | -       | responsive object: 21.3.0 |
+| `[nzGutter]`  | Spacing between grids, could be a [string CSS units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) or a object like `{ xs: 8, sm: 16, md: 24}`. Or you can use array to make horizontal and vertical spacing work at the same time `[horizontal, vertical]` | `string \| number \| object \| array`                                                           | `0`     | string CSS units: 21.3.0  |
+| `[nzJustify]` | Horizontal arrangement                                                                                                                                                                                                                                                               | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly' \| object` | -       | responsive object: 21.3.0 |
+| `[nzWrap]`    | Auto wrap line                                                                                                                                                                                                                                                                       | `boolean`                                                                                       | `true`  | 21.3.0                    |
 
 ### [nz-col]
 
-| Property     | Description                                                                                    | Type               | Default |
-| ------------ | ---------------------------------------------------------------------------------------------- | ------------------ | ------- |
-| `[nzFlex]`   | flex layout style                                                                              | `string \| number` | -       |
-| `[nzOffset]` | the number of cells to offset Col from the left                                                | `number`           | `0`     |
-| `[nzOrder]`  | raster order                                                                                   | `number`           | `0`     |
-| `[nzPull]`   | the number of cells that raster is moved to the left                                           | `number`           | `0`     |
-| `[nzPush]`   | the number of cells that raster is moved to the right                                          | `number`           | `0`     |
-| `[nzSpan]`   | raster number of cells to occupy, 0 corresponds to `display: none`                             | `number`           | -       |
-| `[nzXs]`     | `<576px` and also default setting, could be a `span` value or an object containing above props | `number \| object` | -       |
-| `[nzSm]`     | `≥576px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzMd]`     | `≥768px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzLg]`     | `≥992px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzXl]`     | `≥1200px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |
-| `[nzXXl]`    | `≥1600px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |
+| Property     | Description                                                                                            | Type               | Default | Version |
+| ------------ | ------------------------------------------------------------------------------------------------------ | ------------------ | ------- | ------- |
+| `[nzFlex]`   | Flex layout style                                                                                      | `string \| number` | -       |         |
+| `[nzOffset]` | The number of cells to offset Col from the left                                                        | `number`           | `0`     |         |
+| `[nzOrder]`  | Raster order                                                                                           | `number`           | `0`     |         |
+| `[nzPull]`   | The number of cells that raster is moved to the left                                                   | `number`           | `0`     |         |
+| `[nzPush]`   | The number of cells that raster is moved to the right                                                  | `number`           | `0`     |         |
+| `[nzSpan]`   | Raster number of cells to occupy, 0 corresponds to `display: none`                                     | `number`           | -       |         |
+| `[nzXs]`     | `screen < 576px` and also default setting, could be a `span` value or an object containing above props | `number \| object` | -       |         |
+| `[nzSm]`     | `screen ≥ 576px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzMd]`     | `screen ≥ 768px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzLg]`     | `screen ≥ 992px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzXl]`     | `screen ≥ 1200px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |         |
+| `[nzXXl]`    | `screen ≥ 1600px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |         |
+| `[nzXXXl]`   | `screen ≥ 1920px`, could be a `span` value or an object containing above props                         | `number \| object` | -       | 21.3.0  |
 
 The breakpoints of responsive grid follow [BootStrap 4 media queries rules](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)(not including `occasionally part`).
 
@@ -4338,29 +4348,30 @@ Style of a navigation should conform to its level.
 
 The sidebar.
 
-| Property              | Description                                                                       | Type                                            | Default  |
-| --------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------- | -------- |
-| `[nzBreakpoint]`      | breakpoints of the responsive layout                                              | `'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl' \| 'xxl'` | -        |
-| `[nzCollapsedWidth]`  | width of the collapsed sidebar, by setting to `0` a special `trigger` will appear | `number`                                        | `64`     |
-| `[nzCollapsible]`     | whether can be collapsed                                                          | `boolean`                                       | `false`  |
-| `[nzCollapsed]`       | the collapsed status can be double binding                                        | `boolean`                                       | `false`  |
-| `[nzReverseArrow]`    | reverse direction of arrow, for a sider that expands from the right               | `boolean`                                       | `false`  |
-| `[nzTrigger]`         | specify the customized `trigger`, set to `null` to hide the `trigger`             | `string \| TemplateRef<void>`                   | -        |
-| `[nzZeroTrigger]`     | specify the customized trigger when `nzCollapsedWidth` setting to `0`             | `TemplateRef<void>`                             | -        |
-| `[nzWidth]`           | width of the sidebar                                                              | `number \| string`                              | `200`    |
-| `[nzTheme]`           | color theme of the sidebar                                                        | `'light' \| 'dark'`                             | `'dark'` |
-| `(nzCollapsedChange)` | the callback function                                                             | `EventEmitter<boolean>`                         | -        |
+| Property              | Description                                                                       | Type                                                      | Default  | Version      |
+| --------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------- | -------- | ------------ |
+| `[nzBreakpoint]`      | breakpoints of the responsive layout                                              | `'xs' \| 'sm' \| 'md' \| 'lg' \| 'xl' \| 'xxl' \| 'xxxl'` | -        | xxxl: 21.3.0 |
+| `[nzCollapsedWidth]`  | width of the collapsed sidebar, by setting to `0` a special `trigger` will appear | `number`                                                  | `64`     | -            |
+| `[nzCollapsible]`     | whether can be collapsed                                                          | `boolean`                                                 | `false`  | -            |
+| `[nzCollapsed]`       | the collapsed status can be double binding                                        | `boolean`                                                 | `false`  | -            |
+| `[nzReverseArrow]`    | reverse direction of arrow, for a sider that expands from the right               | `boolean`                                                 | `false`  | -            |
+| `[nzTrigger]`         | specify the customized `trigger`, set to `null` to hide the `trigger`             | `string \| TemplateRef<void>`                             | -        | -            |
+| `[nzZeroTrigger]`     | specify the customized trigger when `nzCollapsedWidth` setting to `0`             | `TemplateRef<void>`                                       | -        | -            |
+| `[nzWidth]`           | width of the sidebar                                                              | `number \| string`                                        | `200`    | -            |
+| `[nzTheme]`           | color theme of the sidebar                                                        | `'light' \| 'dark'`                                       | `'dark'` | -            |
+| `(nzCollapsedChange)` | the callback function                                                             | `EventEmitter<boolean>`                                   | -        | -            |
 
 #### breakpoint width
 
 ```js
 {
-  xs: '575px',
+  xs: '480px',
   sm: '576px',
   md: '768px',
   lg: '992px',
   xl: '1200px',
-  xxl: '1600px'
+  xxl: '1600px',
+  xxxl: '1920px',
 }
 ```
 
@@ -4654,7 +4665,7 @@ You can set the title of `[nz-menu-group]` in the following ways.
 <li nz-menu-group nzTitle="SubTitle" nzIcon="appstore"></li>
 
 <li nz-menu-group>
-  < title>
+  <span title>
     <nz-icon nzType="appstore" />
     <span>SubTitle</span>
   </span>
@@ -7358,6 +7369,7 @@ Uploading is publishing information (web pages, text, pictures, video, etc.) to 
 
 | Property                    | Description                                                                                                                                                                                                      | Type                                                                                             | Default         |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------- |
+| `[nzId]`                    | input id attribute inside the component                                                                                                                                                                          | `string`                                                                                         | -               |
 | `[nzAccept]`                | File types that can be accepted. See [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                                                       | `string`                                                                                         | -               |
 | `[nzAction]`                | Required. Uploading URL                                                                                                                                                                                          | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                               | -               |
 | `[nzDirectory]`             | support uploading the whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory))                                                                                                                | `boolean`                                                                                        | `false`         |

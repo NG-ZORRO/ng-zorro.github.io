@@ -4,59 +4,60 @@ subtitle: 栅格
 type: 布局
 cols: 1
 title: Grid
-cover: 'https://gw.alipayobjects.com/zos/alicdn/5rWLU27so/Grid.svg'
+tag: updated
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*mfJeS6cqZrEAAAAAAAAAAAAADrJ8AQ/original
 description: 24 栅格系统。
 ---
 
 ## 设计理念
 
 <div class="grid-demo">
-<div class="ant-row demo-row">
-  <div class="ant-col-24 demo-col demo-col-1">
-    100%
+  <div class="ant-row demo-row">
+    <div class="ant-col-24 demo-col demo-col-1">
+      100%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-12 demo-col demo-col-1">
+      50%
+    </div>
+    <div class="ant-col-12 demo-col demo-col-3">
+      50%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-16 demo-col demo-col-4">
+      66.66%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-12 demo-col demo-col-1">
-    50%
-  </div>
-  <div class="ant-col-12 demo-col demo-col-3">
-    50%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-16 demo-col demo-col-4">
-    66.66%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-</div>
 </div>
 
 在多数业务情况下，Ant Design 需要在设计区域内解决大量信息收纳的问题，因此在 12 栅格系统的基础上，我们将整个设计建议区域按照 24 等分的原则进行划分。
@@ -80,28 +81,30 @@ description: 24 栅格系统。
 
 ### [nz-row]
 
-| 成员          | 说明                                                                                                                                       | 类型                                                                 | 默认值 |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | ------ |
-| `[nzAlign]`   | 垂直对齐方式                                                                                                                               | `'top' \| 'middle' \| 'bottom'`                                      | -      |
-| `[nzGutter]`  | 栅格间隔，可以写成像素值或支持响应式的对象写法来设置水平间隔 `{ xs: 8, sm: 16, md: 24}`。或者使用数组形式同时设置 `[水平间距, 垂直间距]`。 | `string \| number \| object \| [number, number] \| [object, object]` | -      |
-| `[nzJustify]` | 水平排列方式                                                                                                                               | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between'`  | -      |
+| 成员          | 说明                                                                                                                                                                                                         | 类型                                                                                            | 默认值 | 版本                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------ | --------------------- |
+| `[nzAlign]`   | 垂直对齐方式                                                                                                                                                                                                 | `'top' \| 'middle' \| 'bottom' \| 'stretch' \| object`                                          | -      | 响应式对象: 21.3.0    |
+| `[nzGutter]`  | 可以写成[字符串CSS单位](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Values_and_Units)或支持响应式的对象写法来设置水平间隔 { xs: 8, sm: 16, md: 24}。或者使用数组形式同时设置 `[水平间距, 垂直间距]` | `string \| number \| object \| array`                                                           | `0`    | 字符串CSS单位: 21.3.0 |
+| `[nzJustify]` | 水平排列方式                                                                                                                                                                                                 | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly' \| object` | -      | 响应式对象: 21.3.0    |
+| `[nzWrap]`    | 是否自动换行                                                                                                                                                                                                 | `boolean`                                                                                       | `true` | 21.3.0                |
 
 ### [nz-col]
 
-| 成员         | 说明                                                     | 类型               | 默认值 |
-| ------------ | -------------------------------------------------------- | ------------------ | ------ |
-| `[nzFlex]`   | flex 布局属性                                            | `string \| number` | -      |
-| `[nzOffset]` | 栅格左侧的间隔格数，间隔内不可以有栅格                   | `number`           | -      |
-| `[nzOrder]`  | 栅格顺序                                                 | `number`           | -      |
-| `[nzPull]`   | 栅格向左移动格数                                         | `number`           | -      |
-| `[nzPush]`   | 栅格向右移动格数                                         | `number`           | -      |
-| `[nzSpan]`   | 栅格占位格数，为 0 时相当于 `display: none`              | `number`           | -      |
-| `[nzXs]`     | `<576px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |
-| `[nzSm]`     | `≥576px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |
-| `[nzMd]`     | `≥768px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |
-| `[nzLg]`     | `≥992px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |
-| `[nzXl]`     | `≥1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | `number \| object` | -      |
-| `[nzXXl]`    | `≥1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | `number \| object` | -      |
+| 成员         | 说明                                                             | 类型               | 默认值 | 版本   |
+| ------------ | ---------------------------------------------------------------- | ------------------ | ------ | ------ |
+| `[nzFlex]`   | flex 布局属性                                                    | `string \| number` | -      |        |
+| `[nzOffset]` | 栅格左侧的间隔格数，间隔内不可以有栅格                           | `number`           | `0`    |        |
+| `[nzOrder]`  | 栅格顺序                                                         | `number`           | `0`    |        |
+| `[nzPull]`   | 栅格向左移动格数                                                 | `number`           | `0`    |        |
+| `[nzPush]`   | 栅格向右移动格数                                                 | `number`           | `0`    |        |
+| `[nzSpan]`   | 栅格占位格数，为 0 时相当于 `display: none`                      | `number`           | -      |        |
+| `[nzXs]`     | `screen < 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |        |
+| `[nzSm]`     | `screen ≥ 576px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |        |
+| `[nzMd]`     | `screen ≥ 768px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |        |
+| `[nzLg]`     | `screen ≥ 992px` 响应式栅格，可为栅格数或一个包含其他属性的对象  | `number \| object` | -      |        |
+| `[nzXl]`     | `screen ≥ 1200px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | `number \| object` | -      |        |
+| `[nzXXl]`    | `screen ≥ 1600px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | `number \| object` | -      |        |
+| `[nzXXXl]`   | `screen ≥ 1920px` 响应式栅格，可为栅格数或一个包含其他属性的对象 | `number \| object` | -      | 21.3.0 |
 
 响应式栅格的断点扩展自 [BootStrap 4 的规则](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)（不包含链接里 `occasionally` 的部分)。
 
@@ -228,28 +231,34 @@ export class NzDemoGridFlexOrderComponent {}
 ```typescript
 import { Component } from '@angular/core';
 
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 
 @Component({
   selector: 'nz-demo-grid-flex-stretch',
-  imports: [NzGridModule],
+  imports: [NzDividerModule, NzGridModule],
   template: `
-    <div>
-      <p>Percentage columns</p>
-      <div nz-row>
-        <div nz-col nzFlex="2">2 / 5</div>
-        <div nz-col nzFlex="3">3 / 5</div>
+    <nz-divider nzText="Percentage columns" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="2">2 / 5</div>
+      <div nz-col nzFlex="3">3 / 5</div>
+    </div>
+    <nz-divider nzText="Fill rest" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="100px">100px</div>
+      <div nz-col nzFlex="auto">Fill Rest</div>
+    </div>
+    <nz-divider nzText="Raw flex style" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="1 1 200px">1 1 200px</div>
+      <div nz-col nzFlex="0 1 300px">0 1 300px</div>
+    </div>
+
+    <div nz-row [nzWrap]="false">
+      <div nz-col nzFlex="none">
+        <div [style.padding-inline.px]="16">none</div>
       </div>
-      <p>Fill rest</p>
-      <div nz-row>
-        <div nz-col nzFlex="100px">100px</div>
-        <div nz-col nzFlex="auto">Fill Rest</div>
-      </div>
-      <p>Raw flex style</p>
-      <div nz-row>
-        <div nz-col nzFlex="1 1 200px">1 1 200px</div>
-        <div nz-col nzFlex="0 1 300px">0 1 300px</div>
-      </div>
+      <div nz-col nzFlex="auto">auto with no-wrap</div>
     </div>
   `,
   styles: `
@@ -454,6 +463,8 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
       </div>
     </div>
 
+    <br />
+
     <div class="gutter-example">
       <div nz-row [nzGutter]="[hGutter, vGutter]">
         @for (i of array; track $index) {
@@ -462,6 +473,15 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
           </div>
         }
 
+        @for (i of array; track $index) {
+          <div nz-col class="gutter-row" [nzSpan]="24 / count">
+            <div class="grid-config">Column</div>
+          </div>
+        }
+      </div>
+
+      Another Row:
+      <div nz-row [nzGutter]="[hGutter, vGutter]">
         @for (i of array; track $index) {
           <div nz-col class="gutter-row" [nzSpan]="24 / count">
             <div class="grid-config">Column</div>
@@ -548,7 +568,7 @@ export class NzDemoGridResponsiveMoreComponent {}
 
 ### 响应式布局
 
-参照 Bootstrap 的 [响应式设计](http://getbootstrap.com/css/#grid-media-queries)，预设五个响应尺寸：`xs` `sm` `md` `lg` `xl` `xxl`。
+参照 Bootstrap 的 [响应式设计](http://getbootstrap.com/css/#grid-media-queries)，预设七个响应尺寸：`xs` `sm` `md` `lg` `xl` `xxl` `xxxl`。
 
 ```typescript
 import { Component } from '@angular/core';

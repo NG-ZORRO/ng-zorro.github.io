@@ -30,12 +30,13 @@ description: 悬浮于页面上方的按钮。
 
 ### nz-float-button-group
 
-| 参数               | 说明                             | 类型                                     | 默认值  |
-| ------------------ | -------------------------------- | ---------------------------------------- | ------- |
-| `[nzTrigger]`      | 触发方式（有触发方式为菜单模式） | `'click' \| 'hover'`                     | -       |
-| `[nzPlacement]`    | 自定义菜单弹出位置               | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
-| `[nzOpen]`         | 受控展开                         | `boolean`                                | -       |
-| `(nzOnOpenChange)` | 展开收起时的回调                 | `EventEmitter<boolean>`                  | -       |
+| 参数                   | 说明                                                   | 类型                                     | 默认值  |
+| ---------------------- | ------------------------------------------------------ | ---------------------------------------- | ------- |
+| `[nzTrigger]`          | 触发方式（有触发方式为菜单模式）                       | `'click' \| 'hover'`                     | -       |
+| `[nzPlacement]`        | 自定义菜单弹出位置                                     | `'top' \| 'right' \| 'bottom' \| 'left'` | `'top'` |
+| `[nzOpen]`             | 受控展开                                               | `boolean`                                | -       |
+| `(nzOpenChange)`       | 展开收起时的回调                                       | `EventEmitter<boolean>`                  | -       |
+| ~~`(nzOnOpenChange)`~~ | 展开收起时的回调，已废弃，请使用 `(nzOpenChange)` 代替 | `EventEmitter<boolean>`                  | -       |
 
 ### nz-float-button-top
 
@@ -390,8 +391,9 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
         nzIcon="customer-service"
         [nzOpen]="isOpen"
         nzType="primary"
-        nzTrigger="hover"
+        nzTrigger="click"
         style="right: 24px"
+        (nzOpenChange)="onOpenChange($event)"
       >
         <nz-float-button />
         <nz-float-button nzIcon="comment" />
@@ -412,6 +414,12 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 })
 export class NzDemoFloatButtonOpenComponent {
   isOpen: boolean = true;
+
+  onOpenChange(open: boolean): void {
+    console.log(open);
+    // You can set the `isOpen` variable in `(nzOpenChange)` to control the open state.
+    // this.isOpen = open;
+  }
 }
 ```
 

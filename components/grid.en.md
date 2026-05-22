@@ -3,59 +3,60 @@ category: Components
 type: Layout
 cols: 1
 title: Grid
-cover: 'https://gw.alipayobjects.com/zos/alicdn/5rWLU27so/Grid.svg'
+tag: updated
+cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*mfJeS6cqZrEAAAAAAAAAAAAADrJ8AQ/original
 description: 24 Grids System。
 ---
 
 ## Design concept
 
 <div class="grid-demo">
-<div class="ant-row demo-row">
-  <div class="ant-col-24 demo-col demo-col-1">
-    100%
+  <div class="ant-row demo-row">
+    <div class="ant-col-24 demo-col demo-col-1">
+      100%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-2">
+      25%
+    </div>
+    <div class="ant-col-6 demo-col demo-col-3">
+      25%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-4">
+      33.33%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-2">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-12 demo-col demo-col-1">
+      50%
+    </div>
+    <div class="ant-col-12 demo-col demo-col-3">
+      50%
+    </div>
   </div>
-  <div class="ant-col-6 demo-col demo-col-3">
-    25%
+  <div class="ant-row demo-row">
+    <div class="ant-col-16 demo-col demo-col-4">
+      66.66%
+    </div>
+    <div class="ant-col-8 demo-col demo-col-5">
+      33.33%
+    </div>
   </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-4">
-    33.33%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-12 demo-col demo-col-1">
-    50%
-  </div>
-  <div class="ant-col-12 demo-col demo-col-3">
-    50%
-  </div>
-</div>
-<div class="ant-row demo-row">
-  <div class="ant-col-16 demo-col demo-col-4">
-    66.66%
-  </div>
-  <div class="ant-col-8 demo-col demo-col-5">
-    33.33%
-  </div>
-</div>
 </div>
 
 In most business situations, Ant Design needs to solve a lot of information storage problems within the design area, so based on 12 Grids System, we divided the design area into 24 sections.
@@ -81,28 +82,30 @@ Layout uses a 24 grid layout to define the width of each "box", but does not rig
 
 ### [nz-row]
 
-| Property      | Description                                                                                                                                                                                       | Type                                                                 | Default |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------- |
-| `[nzAlign]`   | the vertical alignment                                                                                                                                                                            | `'top' \| 'middle' \| 'bottom'`                                      | -       |
-| `[nzGutter]`  | spacing between grids, could be a number or a object like `{ xs: 8, sm: 16, md: 24}`. or you can use array to make horizontal and vertical spacing work at the same time `[horizontal, vertical]` | `string \| number \| object \| [number, number] \| [object, object]` | `0`     |
-| `[nzJustify]` | horizontal arrangement                                                                                                                                                                            | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between'`  | -       |
+| Property      | Description                                                                                                                                                                                                                                                                          | Type                                                                                            | Default | Version                   |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------- | ------------------------- |
+| `[nzAlign]`   | The vertical alignment                                                                                                                                                                                                                                                               | `'top' \| 'middle' \| 'bottom' \| 'stretch' \| object`                                          | -       | responsive object: 21.3.0 |
+| `[nzGutter]`  | Spacing between grids, could be a [string CSS units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units) or a object like `{ xs: 8, sm: 16, md: 24}`. Or you can use array to make horizontal and vertical spacing work at the same time `[horizontal, vertical]` | `string \| number \| object \| array`                                                           | `0`     | string CSS units: 21.3.0  |
+| `[nzJustify]` | Horizontal arrangement                                                                                                                                                                                                                                                               | `'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly' \| object` | -       | responsive object: 21.3.0 |
+| `[nzWrap]`    | Auto wrap line                                                                                                                                                                                                                                                                       | `boolean`                                                                                       | `true`  | 21.3.0                    |
 
 ### [nz-col]
 
-| Property     | Description                                                                                    | Type               | Default |
-| ------------ | ---------------------------------------------------------------------------------------------- | ------------------ | ------- |
-| `[nzFlex]`   | flex layout style                                                                              | `string \| number` | -       |
-| `[nzOffset]` | the number of cells to offset Col from the left                                                | `number`           | `0`     |
-| `[nzOrder]`  | raster order                                                                                   | `number`           | `0`     |
-| `[nzPull]`   | the number of cells that raster is moved to the left                                           | `number`           | `0`     |
-| `[nzPush]`   | the number of cells that raster is moved to the right                                          | `number`           | `0`     |
-| `[nzSpan]`   | raster number of cells to occupy, 0 corresponds to `display: none`                             | `number`           | -       |
-| `[nzXs]`     | `<576px` and also default setting, could be a `span` value or an object containing above props | `number \| object` | -       |
-| `[nzSm]`     | `≥576px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzMd]`     | `≥768px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzLg]`     | `≥992px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |
-| `[nzXl]`     | `≥1200px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |
-| `[nzXXl]`    | `≥1600px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |
+| Property     | Description                                                                                            | Type               | Default | Version |
+| ------------ | ------------------------------------------------------------------------------------------------------ | ------------------ | ------- | ------- |
+| `[nzFlex]`   | Flex layout style                                                                                      | `string \| number` | -       |         |
+| `[nzOffset]` | The number of cells to offset Col from the left                                                        | `number`           | `0`     |         |
+| `[nzOrder]`  | Raster order                                                                                           | `number`           | `0`     |         |
+| `[nzPull]`   | The number of cells that raster is moved to the left                                                   | `number`           | `0`     |         |
+| `[nzPush]`   | The number of cells that raster is moved to the right                                                  | `number`           | `0`     |         |
+| `[nzSpan]`   | Raster number of cells to occupy, 0 corresponds to `display: none`                                     | `number`           | -       |         |
+| `[nzXs]`     | `screen < 576px` and also default setting, could be a `span` value or an object containing above props | `number \| object` | -       |         |
+| `[nzSm]`     | `screen ≥ 576px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzMd]`     | `screen ≥ 768px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzLg]`     | `screen ≥ 992px`, could be a `span` value or an object containing above props                          | `number \| object` | -       |         |
+| `[nzXl]`     | `screen ≥ 1200px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |         |
+| `[nzXXl]`    | `screen ≥ 1600px`, could be a `span` value or an object containing above props                         | `number \| object` | -       |         |
+| `[nzXXXl]`   | `screen ≥ 1920px`, could be a `span` value or an object containing above props                         | `number \| object` | -       | 21.3.0  |
 
 The breakpoints of responsive grid follow [BootStrap 4 media queries rules](https://getbootstrap.com/docs/4.0/layout/overview/#responsive-breakpoints)(not including `occasionally part`).
 
@@ -229,28 +232,34 @@ export class NzDemoGridFlexOrderComponent {}
 ```typescript
 import { Component } from '@angular/core';
 
+import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 
 @Component({
   selector: 'nz-demo-grid-flex-stretch',
-  imports: [NzGridModule],
+  imports: [NzDividerModule, NzGridModule],
   template: `
-    <div>
-      <p>Percentage columns</p>
-      <div nz-row>
-        <div nz-col nzFlex="2">2 / 5</div>
-        <div nz-col nzFlex="3">3 / 5</div>
+    <nz-divider nzText="Percentage columns" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="2">2 / 5</div>
+      <div nz-col nzFlex="3">3 / 5</div>
+    </div>
+    <nz-divider nzText="Fill rest" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="100px">100px</div>
+      <div nz-col nzFlex="auto">Fill Rest</div>
+    </div>
+    <nz-divider nzText="Raw flex style" nzOrientation="left" />
+    <div nz-row>
+      <div nz-col nzFlex="1 1 200px">1 1 200px</div>
+      <div nz-col nzFlex="0 1 300px">0 1 300px</div>
+    </div>
+
+    <div nz-row [nzWrap]="false">
+      <div nz-col nzFlex="none">
+        <div [style.padding-inline.px]="16">none</div>
       </div>
-      <p>Fill rest</p>
-      <div nz-row>
-        <div nz-col nzFlex="100px">100px</div>
-        <div nz-col nzFlex="auto">Fill Rest</div>
-      </div>
-      <p>Raw flex style</p>
-      <div nz-row>
-        <div nz-col nzFlex="1 1 200px">1 1 200px</div>
-        <div nz-col nzFlex="0 1 300px">0 1 300px</div>
-      </div>
+      <div nz-col nzFlex="auto">auto with no-wrap</div>
     </div>
   `,
   styles: `
@@ -262,7 +271,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
 export class NzDemoGridFlexStretchComponent {}
 ```
 
-### Layout
+### Typesetting
 
 Child elements depending on the value of the `start`,` center`, `end`,` space-between`, `space-around`, `space-evenly`, which are defined in its parent node layout mode.
 
@@ -451,6 +460,8 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
       </div>
     </div>
 
+    <br />
+
     <div class="gutter-example">
       <div nz-row [nzGutter]="[hGutter, vGutter]">
         @for (i of array; track $index) {
@@ -459,6 +470,15 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
           </div>
         }
 
+        @for (i of array; track $index) {
+          <div nz-col class="gutter-row" [nzSpan]="24 / count">
+            <div class="grid-config">Column</div>
+          </div>
+        }
+      </div>
+
+      Another Row:
+      <div nz-row [nzGutter]="[hGutter, vGutter]">
         @for (i of array; track $index) {
           <div nz-col class="gutter-row" [nzSpan]="24 / count">
             <div class="grid-config">Column</div>
@@ -544,7 +564,7 @@ export class NzDemoGridResponsiveMoreComponent {}
 
 ### Responsive
 
-Referring to the Bootstrap [responsive design](http://getbootstrap.com/css/#grid-media-queries), here preset five dimensions: `xs` `sm` `md` `lg` `xl`.
+Referring to the Bootstrap [responsive design](http://getbootstrap.com/css/#grid-media-queries), here preset seven dimensions: `xs` `sm` `md` `lg` `xl` `xxl` `xxxl`.
 
 ```typescript
 import { Component } from '@angular/core';
