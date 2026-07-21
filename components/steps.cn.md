@@ -61,7 +61,7 @@ description: 引导用户按照流程完成任务的导航条。
 订阅 `(nzIndexChange)` 后，Steps 变为可点击状态。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
@@ -70,13 +70,13 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   selector: 'nz-demo-steps-clickable',
   imports: [NzDividerModule, NzStepsModule],
   template: `
-    <nz-steps [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+    <nz-steps [nzCurrent]="index()" (nzIndexChange)="onIndexChange($event)">
       <nz-step nzTitle="Finished" [nzDisabled]="disable" nzDescription="This is a description." />
       <nz-step nzTitle="In Progress" nzDescription="This is a description." />
       <nz-step nzTitle="Waiting" nzDescription="This is a description." />
     </nz-steps>
     <nz-divider />
-    <nz-steps nzDirection="vertical" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+    <nz-steps nzDirection="vertical" [nzCurrent]="index()" (nzIndexChange)="onIndexChange($event)">
       <nz-step nzTitle="Finished" nzDescription="This is a description." />
       <nz-step nzTitle="In Progress" nzDescription="This is a description." />
       <nz-step nzTitle="Waiting" nzDescription="This is a description." />
@@ -84,10 +84,11 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   `
 })
 export class NzDemoStepsClickableComponent {
-  index = 0;
+  readonly index = signal(0);
   disable = false;
+
   onIndexChange(index: number): void {
-    this.index = index;
+    this.index.set(index);
   }
 }
 ```
@@ -177,7 +178,7 @@ export class NzDemoStepsIconComponent {}
 导航类型的步骤条。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzStepsModule } from 'ng-zorro-antd/steps';
 
@@ -185,7 +186,7 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   selector: 'nz-demo-steps-nav',
   imports: [NzStepsModule],
   template: `
-    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index()" (nzIndexChange)="onIndexChange($event)">
       <nz-step nzTitle="Step 1" nzSubtitle="00:00:05" nzStatus="finish" nzDescription="This is a description." />
       <nz-step nzTitle="Step 2" nzSubtitle="00:01:02" nzStatus="process" nzDescription="This is a description." />
       <nz-step
@@ -195,13 +196,13 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
         nzDescription="This is a description."
       />
     </nz-steps>
-    <nz-steps nzType="navigation" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+    <nz-steps nzType="navigation" [nzCurrent]="index()" (nzIndexChange)="onIndexChange($event)">
       <nz-step nzTitle="Step 1" nzStatus="finish" />
       <nz-step nzTitle="Step 2" nzStatus="process" />
       <nz-step nzTitle="Step 3" nzStatus="wait" />
       <nz-step nzTitle="Step 4" nzStatus="wait" />
     </nz-steps>
-    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index" (nzIndexChange)="onIndexChange($event)">
+    <nz-steps nzType="navigation" nzSize="small" [nzCurrent]="index()" (nzIndexChange)="onIndexChange($event)">
       <nz-step nzTitle="finish 1" nzStatus="finish" />
       <nz-step nzTitle="finish 2" nzStatus="finish" />
       <nz-step nzTitle="current process" nzStatus="process" />
@@ -216,10 +217,10 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   `
 })
 export class NzDemoStepsNavComponent {
-  index = 0;
+  readonly index = signal(0);
 
   onIndexChange(event: number): void {
-    this.index = event;
+    this.index.set(event);
   }
 }
 ```
@@ -261,7 +262,7 @@ export class NzDemoStepsProgressDotComponent {}
 异步执行的步骤带有圆形进度条。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { merge, Observable, timer } from 'rxjs';
 import { delay, finalize, map, scan } from 'rxjs/operators';
 
@@ -298,8 +299,8 @@ function mockAsyncStep(): Observable<number> {
   selector: 'nz-demo-steps-progress',
   imports: [NzButtonModule, NzStepsModule],
   template: `
-    <nz-steps [nzCurrent]="current">
-      @for (step of this.steps; track step.id) {
+    <nz-steps [nzCurrent]="current()">
+      @for (step of steps(); track step.id) {
         <nz-step
           [nzTitle]="step.title"
           [nzDescription]="step.description"
@@ -308,18 +309,18 @@ function mockAsyncStep(): Observable<number> {
       }
     </nz-steps>
     <div class="steps-action">
-      @if (current > 0) {
+      @if (current() > 0) {
         <button nz-button nzType="default" (click)="pre()">
           <span>Previous</span>
         </button>
       }
-      @if (current < 2) {
-        <button nz-button nzType="default" (click)="next()" [nzLoading]="processing">
+      @if (current() < 2) {
+        <button nz-button nzType="default" (click)="next()" [nzLoading]="processing()">
           <span>Next</span>
         </button>
       }
-      @if (current === 2) {
-        <button nz-button nzType="primary" (click)="done()" [nzLoading]="processing">
+      @if (current() === 2) {
+        <button nz-button nzType="primary" (click)="done()" [nzLoading]="processing()">
           <span>Done</span>
         </button>
       }
@@ -336,7 +337,7 @@ function mockAsyncStep(): Observable<number> {
   `
 })
 export class NzDemoStepsProgressComponent {
-  steps: Step[] = [
+  readonly steps = signal<Step[]>([
     {
       id: 1,
       title: `Step 1`,
@@ -358,12 +359,12 @@ export class NzDemoStepsProgressComponent {
       async: true,
       percentage: 0
     }
-  ];
-  current = 0;
-  processing = false;
+  ]);
+  readonly current = signal(0);
+  readonly processing = signal(false);
 
   pre(): void {
-    this.current -= 1;
+    this.current.update(current => current - 1);
   }
 
   next(): void {
@@ -376,25 +377,29 @@ export class NzDemoStepsProgressComponent {
   }
 
   loadingAndStep(): void {
-    if (this.current < this.steps.length) {
-      const step = this.steps[this.current];
+    if (this.current() < this.steps().length) {
+      const step = this.steps()[this.current()];
       if (step.async) {
-        this.processing = true;
+        this.processing.set(true);
         mockAsyncStep()
           .pipe(
             finalize(() => {
-              step.percentage = 0;
-              this.processing = false;
-              this.current += 1;
+              this.updatePercentage(step.id, 0);
+              this.processing.set(false);
+              this.current.update(current => current + 1);
             })
           )
           .subscribe(p => {
-            step.percentage = p;
+            this.updatePercentage(step.id, p);
           });
       } else {
-        this.current += 1;
+        this.current.update(current => current + 1);
       }
     }
+  }
+
+  private updatePercentage(id: number, percentage: number): void {
+    this.steps.update(steps => steps.map(step => (step.id === id && step.async ? { ...step, percentage } : step)));
   }
 }
 ```
@@ -477,7 +482,7 @@ export class NzDemoStepsStartIndexComponent {
 通常配合内容及按钮使用，表示一个流程的处理进度。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzStepsModule } from 'ng-zorro-antd/steps';
@@ -486,25 +491,25 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   selector: 'nz-demo-steps-step-next',
   imports: [NzButtonModule, NzStepsModule],
   template: `
-    <nz-steps [nzCurrent]="current">
+    <nz-steps [nzCurrent]="current()">
       <nz-step nzTitle="Finished" />
       <nz-step nzTitle="In Progress" />
       <nz-step nzTitle="Waiting" />
     </nz-steps>
 
-    <div class="steps-content">{{ index }}</div>
+    <div class="steps-content">{{ content() }}</div>
     <div class="steps-action">
-      @if (current > 0) {
+      @if (current() > 0) {
         <button nz-button nzType="default" (click)="pre()">
           <span>Previous</span>
         </button>
       }
-      @if (current < 2) {
+      @if (current() < 2) {
         <button nz-button nzType="default" (click)="next()">
           <span>Next</span>
         </button>
       }
-      @if (current === 2) {
+      @if (current() === 2) {
         <button nz-button nzType="primary" (click)="done()">
           <span>Done</span>
         </button>
@@ -532,42 +537,30 @@ import { NzStepsModule } from 'ng-zorro-antd/steps';
   `
 })
 export class NzDemoStepsStepNextComponent {
-  current = 0;
-
-  index = 'First-content';
+  readonly current = signal(0);
+  readonly content = computed(() => {
+    switch (this.current()) {
+      case 0:
+        return 'First-content';
+      case 1:
+        return 'Second-content';
+      case 2:
+        return 'third-content';
+      default:
+        return 'error';
+    }
+  });
 
   pre(): void {
-    this.current -= 1;
-    this.changeContent();
+    this.current.update(current => current - 1);
   }
 
   next(): void {
-    this.current += 1;
-    this.changeContent();
+    this.current.update(current => current + 1);
   }
 
   done(): void {
     console.log('done');
-  }
-
-  changeContent(): void {
-    switch (this.current) {
-      case 0: {
-        this.index = 'First-content';
-        break;
-      }
-      case 1: {
-        this.index = 'Second-content';
-        break;
-      }
-      case 2: {
-        this.index = 'third-content';
-        break;
-      }
-      default: {
-        this.index = 'error';
-      }
-    }
   }
 }
 ```

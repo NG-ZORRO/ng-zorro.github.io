@@ -81,7 +81,7 @@ export interface NzInputNumberStepEvent {
 用于配置一些固定组合。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule } from 'ng-zorro-antd/cascader';
@@ -129,7 +129,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoInputNumberAddonComponent {
-  value = 100;
+  readonly value = signal(100);
 }
 ```
 
@@ -138,7 +138,7 @@ export class NzDemoInputNumberAddonComponent {
 数字输入框。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -149,7 +149,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" />`
 })
 export class NzDemoInputNumberBasicComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 
@@ -158,7 +158,7 @@ export class NzDemoInputNumberBasicComponent {
 使用 `nzChangeOnWheel` 启用鼠标滚轮控制。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -177,7 +177,7 @@ import { NzInputNumberModule, NzInputNumberStepEvent } from 'ng-zorro-antd/input
   `
 })
 export class NzDemoInputNumberChangeOnWheelComponent {
-  value = 3;
+  readonly value = signal(3);
 
   onChange(value: number): void {
     console.log(value);
@@ -194,7 +194,7 @@ export class NzDemoInputNumberChangeOnWheelComponent {
 和原生的数字输入框一样，value 的精度由 `nzStep` 的小数位数决定。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -205,7 +205,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="0" nzMax="10" nzStep="0.1" nzPlaceHolder="Digital" />`
 })
 export class NzDemoInputNumberDigitComponent {
-  value = 0.1;
+  readonly value = signal(0.1);
 }
 ```
 
@@ -214,7 +214,7 @@ export class NzDemoInputNumberDigitComponent {
 点击按钮切换可用状态。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -224,15 +224,15 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   selector: 'nz-demo-input-number-disabled',
   imports: [FormsModule, NzButtonModule, NzInputNumberModule],
   template: `
-    <nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" [nzDisabled]="isDisabled" />
+    <nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" [nzDisabled]="isDisabled()" />
     <br />
     <br />
-    <button nz-button nzType="primary" (click)="isDisabled = !isDisabled">Toggle Disabled</button>
+    <button nz-button nzType="primary" (click)="isDisabled.update(disabled => !disabled)">Toggle Disabled</button>
   `
 })
 export class NzDemoInputNumberDisabledComponent {
-  value = 3;
-  isDisabled = false;
+  readonly value = signal(3);
+  readonly isDisabled = signal(false);
 }
 ```
 
@@ -241,7 +241,7 @@ export class NzDemoInputNumberDisabledComponent {
 Focus 提供额外配置属性
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -263,7 +263,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberFocusComponent {
-  value = 9999;
+  readonly value = signal(9999);
 }
 ```
 
@@ -272,7 +272,7 @@ export class NzDemoInputNumberFocusComponent {
 通过 `nzFormatter` 格式化数字，以展示具有具体含义的数据，往往需要配合 `nzParser` 一起使用。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -297,12 +297,12 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberFormatterComponent {
-  dollarValue = 1000;
-  percentValue = 100;
-  formatterDollar = (value: number): string => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  parserDollar = (value: string): number => +value?.replace(/\$\s?|(,*)/g, '');
-  formatterPercent = (value: number): string => `${value}%`;
-  parserPercent = (value: string): number => +value?.replace('%', '');
+  readonly dollarValue = signal(1000);
+  readonly percentValue = signal(100);
+  readonly formatterDollar = (value: number): string => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  readonly parserDollar = (value: string): number => +value?.replace(/\$\s?|(,*)/g, '');
+  readonly formatterPercent = (value: number): string => `${value}%`;
+  readonly parserPercent = (value: string): number => +value?.replace('%', '');
 }
 ```
 
@@ -311,7 +311,7 @@ export class NzDemoInputNumberFormatterComponent {
 自定义箭头图标。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -328,7 +328,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberHandlerIconComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 
@@ -337,7 +337,7 @@ export class NzDemoInputNumberHandlerIconComponent {
 使用 `nzKeyboard` 属性可以控制键盘行为。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
@@ -347,7 +347,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   selector: 'nz-demo-input-number-keyboard',
   imports: [FormsModule, NzInputNumberModule, NzCheckboxModule],
   template: `
-    <nz-input-number [(ngModel)]="value" [nzKeyboard]="keyboard" nzMin="1" nzMax="10" />
+    <nz-input-number [(ngModel)]="value" [nzKeyboard]="keyboard()" nzMin="1" nzMax="10" />
     <label nz-checkbox [(ngModel)]="keyboard">Toggle Keyboard</label>
   `,
   styles: `
@@ -357,8 +357,8 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberKeyboardComponent {
-  keyboard = true;
-  value = 3;
+  readonly keyboard = signal(true);
+  readonly value = signal(3);
 }
 ```
 
@@ -367,7 +367,7 @@ export class NzDemoInputNumberKeyboardComponent {
 当通过受控将 `value` 超出边界时，提供警告样式。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -378,7 +378,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" />`
 })
 export class NzDemoInputNumberOutOfRangeComponent {
-  value = 99;
+  readonly value = signal(99);
 }
 ```
 
@@ -424,7 +424,7 @@ export class NzDemoInputNumberPrefixComponent {}
 三种大小的数字输入框，当 `nzSize` 分别为 `large` 和 `small` 时，输入框高度为 `40px` 和 `24px` ，默认高度为 `32px`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -444,7 +444,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberSizeComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 

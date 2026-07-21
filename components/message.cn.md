@@ -77,7 +77,7 @@ export interface NzMessageRef {
 可通过订阅 `onClose` 事件在 message 关闭时做出某些操作。以上用例将依次打开三个 message。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { concatMap } from 'rxjs/operators';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -89,7 +89,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="startShowMessages()">Display a sequence of messages</button>`
 })
 export class NzDemoMessageCloseComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   startShowMessages(): void {
     this.message
@@ -139,7 +139,7 @@ export class NzDemoMessageCustomStyleComponent {
 自定义时长 `10s`，默认时长为 `3s`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -150,13 +150,13 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="createBasicMessage()">Customized display duration</button>`
 })
 export class NzDemoMessageDurationComponent {
+  private readonly message = inject(NzMessageService);
+
   createBasicMessage(): void {
     this.message.success('This is a prompt message for success, and it will disappear in 10 seconds', {
       nzDuration: 10000
     });
   }
-
-  constructor(private message: NzMessageService) {}
 }
 ```
 
@@ -165,7 +165,7 @@ export class NzDemoMessageDurationComponent {
 信息提醒反馈。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -176,7 +176,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="primary" (click)="createBasicMessage()">Display normal message</button>`
 })
 export class NzDemoMessageInfoComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   createBasicMessage(): void {
     this.message.info('This is a normal message');
@@ -189,7 +189,7 @@ export class NzDemoMessageInfoComponent {
 进行全局 loading，异步自行移除。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -200,7 +200,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="createBasicMessage()">Display a loading indicator</button>`
 })
 export class NzDemoMessageLoadingComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   createBasicMessage(): void {
     const id = this.message.loading('Action in progress..', { nzDuration: 0 }).messageId;
@@ -216,7 +216,7 @@ export class NzDemoMessageLoadingComponent {
 包括成功、失败、警告。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -236,11 +236,11 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   `
 })
 export class NzDemoMessageOtherComponent {
+  private readonly message = inject(NzMessageService);
+
   createMessage(type: string): void {
     this.message.create(type, `This is a message of ${type}`);
   }
-
-  constructor(private message: NzMessageService) {}
 }
 ```
 
@@ -250,7 +250,7 @@ export class NzDemoMessageOtherComponent {
 通过 `nzData` 选项，您可以传递一些可选的数据给此自定义模板。
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageComponent, NzMessageService } from 'ng-zorro-antd/message';
@@ -264,13 +264,12 @@ import { NzMessageComponent, NzMessageService } from 'ng-zorro-antd/message';
   `
 })
 export class NzDemoMessageTemplateComponent {
+  private readonly message = inject(NzMessageService);
+
   @ViewChild('customTemplate', { static: true }) customTemplate!: TemplateRef<{
     $implicit: NzMessageComponent;
     data: string;
   }>;
-
-  constructor(private message: NzMessageService) {}
-
   showMessage(): void {
     this.message.success(this.customTemplate, { nzData: 'Angular' });
   }

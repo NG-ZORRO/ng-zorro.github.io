@@ -114,7 +114,6 @@ description: 下拉选择器。
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
@@ -128,18 +127,9 @@ function alphabet(): string[] {
 
 @Component({
   selector: 'nz-demo-select-automatic-tokenization',
-  imports: [FormsModule, NzSelectModule],
+  imports: [NzSelectModule],
   template: `
-    <nz-select
-      [(ngModel)]="listOfTagOptions"
-      nzMode="tags"
-      [nzTokenSeparators]="[',']"
-      nzPlaceHolder="automatic tokenization"
-    >
-      @for (option of listOfOption; track option.value) {
-        <nz-option [nzLabel]="option.label" [nzValue]="option.value" />
-      }
-    </nz-select>
+    <nz-select nzMode="tags" nzPlaceHolder="automatic tokenization" [nzOptions]="options" [nzTokenSeparators]="[',']" />
   `,
   styles: `
     nz-select {
@@ -148,11 +138,10 @@ function alphabet(): string[] {
   `
 })
 export class NzDemoSelectAutomaticTokenizationComponent {
-  readonly listOfOption: Array<{ label: string; value: string }> = alphabet().map(item => ({
+  readonly options = alphabet().map(item => ({
     label: item,
     value: item
   }));
-  listOfTagOptions: string[] = [];
 }
 ```
 
@@ -200,7 +189,7 @@ export class NzDemoSelectBasicComponent {}
 组件使用了虚拟滚动技术，可以同时处理大量数据。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -216,14 +205,7 @@ function alphabet(size: number): string[] {
 @Component({
   selector: 'nz-demo-select-big-data',
   imports: [FormsModule, NzSelectModule],
-  template: `
-    <nz-select
-      nzMode="multiple"
-      nzPlaceHolder="Please select"
-      [nzOptions]="listOfOption"
-      [(ngModel)]="listOfSelectedValue"
-    />
-  `,
+  template: `<nz-select nzMode="multiple" nzPlaceHolder="Please select" [nzOptions]="options" [(ngModel)]="value" />`,
   styles: `
     nz-select {
       width: 100%;
@@ -231,11 +213,11 @@ function alphabet(size: number): string[] {
   `
 })
 export class NzDemoSelectBigDataComponent {
-  readonly listOfOption: Array<{ value: string; label: string }> = alphabet(10000).map(item => ({
+  readonly options = alphabet(10000).map(item => ({
     label: item,
     value: item
   }));
-  listOfSelectedValue = ['a10', 'c12'];
+  readonly value = signal(['a10', 'c12']);
 }
 ```
 
@@ -246,7 +228,7 @@ export class NzDemoSelectBigDataComponent {
 推荐使用 [Cascader](/components/cascader/zh) 组件。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -261,7 +243,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
       }
     </nz-select>
     <nz-select [(ngModel)]="selectedCity">
-      @for (c of cityData[selectedProvince]; track c) {
+      @for (c of cityData[selectedProvince()]; track c) {
         <nz-option [nzValue]="c" [nzLabel]="c" />
       }
     </nz-select>
@@ -274,16 +256,16 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectCoordinateComponent {
-  selectedProvince = 'Zhejiang';
-  selectedCity = 'Hangzhou';
-  provinceData = ['Zhejiang', 'Jiangsu'];
-  cityData: { [place: string]: string[] } = {
+  readonly selectedProvince = signal('Zhejiang');
+  readonly selectedCity = signal('Hangzhou');
+  readonly provinceData = ['Zhejiang', 'Jiangsu'];
+  readonly cityData: { [place: string]: string[] } = {
     Zhejiang: ['Hangzhou', 'Ningbo', 'Wenzhou'],
     Jiangsu: ['Nanjing', 'Suzhou', 'Zhenjiang']
   };
 
   provinceChange(value: string): void {
-    this.selectedCity = this.cityData[value][0];
+    this.selectedCity.set(this.cityData[value][0]);
   }
 }
 ```
@@ -294,16 +276,15 @@ export class NzDemoSelectCoordinateComponent {
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @Component({
   selector: 'nz-demo-select-custom-content',
-  imports: [FormsModule, NzIconModule, NzSelectModule],
+  imports: [NzIconModule, NzSelectModule],
   template: `
-    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select OS" [(ngModel)]="selectedValue">
+    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select OS">
       <nz-option nzCustomContent nzLabel="Windows" nzValue="windows">
         <nz-icon nzType="windows" />
         Windows
@@ -324,9 +305,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
     }
   `
 })
-export class NzDemoSelectCustomContentComponent {
-  selectedValue = null;
-}
+export class NzDemoSelectCustomContentComponent {}
 ```
 
 ### 扩展菜单
@@ -334,7 +313,7 @@ export class NzDemoSelectCustomContentComponent {
 使用 `nzDropdownRender` 对下拉菜单进行自由扩展。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -346,7 +325,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   imports: [NzDividerModule, NzIconModule, NzInputModule, NzSelectModule],
   template: `
     <nz-select nzShowSearch nzAllowClear [nzDropdownRender]="renderTemplate" nzPlaceHolder="custom dropdown render">
-      @for (item of listOfItem; track item) {
+      @for (item of listOfItem(); track item) {
         <nz-option [nzLabel]="item" [nzValue]="item" />
       }
     </nz-select>
@@ -381,13 +360,13 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectCustomDropdownMenuComponent {
-  listOfItem = ['jack', 'lucy'];
+  readonly listOfItem = signal(['jack', 'lucy']);
   index = 0;
 
   addItem(input: HTMLInputElement): void {
     const value = input.value;
-    if (this.listOfItem.indexOf(value) === -1) {
-      this.listOfItem = [...this.listOfItem, input.value || `New item ${this.index++}`];
+    if (this.listOfItem().indexOf(value) === -1) {
+      this.listOfItem.update(listOfItem => [...listOfItem, value || `New item ${this.index++}`]);
     }
   }
 }
@@ -444,7 +423,7 @@ export class NzDemoSelectCustomTemplateComponent {}
 当需要显示默认值，同时默认值又不在选项列表中时，可以使用 `nzHide` 在 `nz-option` 中将默认选项隐藏
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -463,7 +442,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
     </nz-select>
     <br />
     <br />
-    <nz-select [(ngModel)]="selectedValue">
+    <nz-select [(ngModel)]="value">
       @for (option of listOfOption; track option) {
         <nz-option [nzLabel]="option" [nzValue]="option" />
       }
@@ -477,10 +456,13 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectDefaultValueComponent {
-  listOfOption = ['Option 01', 'Option 02'];
-  listOfSelectedValue = ['Default 01', 'Default 02'];
-  defaultOption = [...this.listOfSelectedValue];
-  selectedValue = 'Default';
+  readonly listOfOption = ['Option 01', 'Option 02'];
+  readonly listOfSelectedValue = signal(['Default 01', 'Default 02']);
+  readonly value = signal('Default');
+
+  get defaultOption(): string[] {
+    return this.listOfSelectedValue();
+  }
 }
 ```
 
@@ -489,7 +471,7 @@ export class NzDemoSelectDefaultValueComponent {
 通过 `nzHide` 隐藏下拉列表中已选择的选项。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -500,7 +482,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   template: `
     <nz-select nzMode="multiple" nzPlaceHolder="Inserted are removed" [(ngModel)]="listOfSelected">
       @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" [nzHide]="!isSelected(option)" />
+        <nz-option [nzLabel]="option" [nzValue]="option" [nzHide]="isSelected(option)" />
       }
     </nz-select>
   `,
@@ -511,11 +493,11 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectHideSelectedComponent {
-  listOfOption = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
-  listOfSelected: string[] = [];
+  readonly listOfOption = ['Apples', 'Nails', 'Bananas', 'Helicopters'];
+  readonly listOfSelected = signal<string[]>([]);
 
   isSelected(value: string): boolean {
-    return this.listOfSelected.indexOf(value) !== -1;
+    return this.listOfSelected().indexOf(value) !== -1;
   }
 }
 ```
@@ -525,7 +507,7 @@ export class NzDemoSelectHideSelectedComponent {
 `ngModel` 取到的值为选中 `nz-option` 的 `nzValue` 值，当 `nzValue` 传入为一个对象时，`ngModel` 获取的值也是一个对象，`compareWith` 的用法参见 [SelectControlValueAccessor](https://angular.cn/api/forms/SelectControlValueAccessor)。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -533,25 +515,17 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 interface Option {
   label: string;
   value: string;
-  age: number;
 }
 
 @Component({
   selector: 'nz-demo-select-label-in-value',
   imports: [FormsModule, NzSelectModule],
   template: `
-    <p>The selected option's age is {{ selectedValue?.age }}</p>
-    <br />
-    <nz-select
-      [(ngModel)]="selectedValue"
-      [compareWith]="compareFn"
-      (ngModelChange)="log($event)"
-      nzAllowClear
-      nzPlaceHolder="Choose"
-    >
-      @for (option of optionList; track option) {
+    <nz-select [(ngModel)]="value" [compareWith]="compareFn" nzAllowClear nzPlaceHolder="Choose">
+      @for (option of options; track option) {
         <nz-option [nzValue]="option" [nzLabel]="option.label" />
       }
+      <nz-select />
     </nz-select>
   `,
   styles: `
@@ -561,16 +535,12 @@ interface Option {
   `
 })
 export class NzDemoSelectLabelInValueComponent {
-  optionList: Option[] = [
-    { label: 'Lucy', value: 'lucy', age: 20 },
-    { label: 'Jack', value: 'jack', age: 22 }
+  readonly options: Option[] = [
+    { label: 'Lucy (101)', value: 'lucy' },
+    { label: 'Jack (100)', value: 'jack' }
   ];
-  selectedValue: Option = { label: 'Jack', value: 'jack', age: 22 };
   readonly compareFn = (o1: Option, o2: Option): boolean => (o1 && o2 ? o1.value === o2.value : o1 === o2);
-
-  log(value: Option): void {
-    console.log(value);
-  }
+  readonly value = signal({ label: 'Jack (100)', value: 'jack' });
 }
 ```
 
@@ -579,7 +549,7 @@ export class NzDemoSelectLabelInValueComponent {
 你可以通过设置 `nzMaxMultipleCount` 约束最多可选中的数量，当超出限制时会变成禁止选中状态。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -597,17 +567,13 @@ function alphabet(): string[] {
   imports: [FormsModule, NzSelectModule],
   template: `
     <nz-select
+      [nzOptions]="options"
       [nzMaxMultipleCount]="3"
       nzMode="multiple"
       nzPlaceHolder="Please select"
       nzAllowClear
-      [nzShowArrow]="true"
-      [(ngModel)]="listOfSelectedValue"
-    >
-      @for (item of listOfOption; track item) {
-        <nz-option [nzLabel]="item" [nzValue]="item" />
-      }
-    </nz-select>
+      [(ngModel)]="value"
+    />
   `,
   styles: `
     nz-select {
@@ -616,8 +582,8 @@ function alphabet(): string[] {
   `
 })
 export class NzDemoSelectMaxCountComponent {
-  readonly listOfOption: string[] = alphabet();
-  listOfSelectedValue = ['a10', 'c12'];
+  readonly options = alphabet().map(item => ({ label: item, value: item }));
+  readonly value = signal(['a10', 'c12']);
 }
 ```
 
@@ -626,7 +592,7 @@ export class NzDemoSelectMaxCountComponent {
 多选，从已有条目中选择，例子中通过 `nzMaxTagCount` 限制最多显示3个选项。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -644,17 +610,14 @@ function alphabet(): string[] {
   imports: [FormsModule, NzSelectModule],
   template: `
     <nz-select
+      [nzOptions]="options"
       [nzMaxTagCount]="3"
       [nzMaxTagPlaceholder]="tagPlaceHolder"
       nzMode="multiple"
       nzAllowClear
       nzPlaceHolder="Please select"
-      [(ngModel)]="listOfSelectedValue"
-    >
-      @for (item of listOfOption; track item) {
-        <nz-option [nzLabel]="item" [nzValue]="item" />
-      }
-    </nz-select>
+      [(ngModel)]="value"
+    />
     <ng-template #tagPlaceHolder let-selectedList>and {{ selectedList.length }} more selected</ng-template>
   `,
   styles: `
@@ -664,8 +627,8 @@ function alphabet(): string[] {
   `
 })
 export class NzDemoSelectMultipleComponent {
-  readonly listOfOption: string[] = alphabet();
-  listOfSelectedValue = ['a10', 'c12'];
+  readonly options = alphabet().map(item => ({ label: item, value: item }));
+  readonly value = signal(['a10', 'c12']);
 }
 ```
 
@@ -683,7 +646,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   selector: 'nz-demo-select-optgroup',
   imports: [FormsModule, NzSelectModule],
   template: `
-    <nz-select [(ngModel)]="selectedValue" nzAllowClear nzPlaceHolder="Choose" nzShowSearch>
+    <nz-select ngModel="lucy" nzAllowClear nzPlaceHolder="Choose" nzShowSearch>
       <nz-option-group nzLabel="Manager">
         <nz-option nzValue="jack" nzLabel="Jack" />
         <nz-option nzValue="lucy" nzLabel="Lucy" />
@@ -699,9 +662,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
     }
   `
 })
-export class NzDemoSelectOptgroupComponent {
-  selectedValue = 'lucy';
-}
+export class NzDemoSelectOptgroupComponent {}
 ```
 
 ### 传入 Options
@@ -719,7 +680,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   imports: [FormsModule, NzSelectModule],
   template: `
     <nz-select ngModel="lucy" [nzOptions]="listOfOption" />
-    <nz-select [(ngModel)]="selectedValue" nzAllowClear nzPlaceHolder="Choose" [nzOptions]="listOfGroupOption" />
+    <nz-select ngModel="lucy" nzAllowClear nzPlaceHolder="Choose" [nzOptions]="listOfGroupOption" />
   `,
   styles: `
     nz-select {
@@ -729,7 +690,6 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectOptionsComponent {
-  selectedValue = 'lucy';
   readonly listOfOption = [
     { label: 'Jack', value: 'jack' },
     { label: 'Lucy', value: 'lucy' },
@@ -748,7 +708,7 @@ export class NzDemoSelectOptionsComponent {
 可以通过 `placement` 手动指定弹出的位置。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -766,7 +726,7 @@ import { NzSelectModule, NzSelectPlacementType } from 'ng-zorro-antd/select';
     </nz-radio-group>
     <br />
     <br />
-    <nz-select [(ngModel)]="selectedValue" [nzDropdownMatchSelectWidth]="false" [nzPlacement]="placement">
+    <nz-select [(ngModel)]="value" [nzDropdownMatchSelectWidth]="false" [nzPlacement]="placement()">
       <nz-option nzValue="HangZhou" nzLabel="HangZhou #310000" />
       <nz-option nzValue="NingBo" nzLabel="NingBo #315000" />
       <nz-option nzValue="WenZhou" nzLabel="WenZhou #325000" />
@@ -779,8 +739,8 @@ import { NzSelectModule, NzSelectPlacementType } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectPlacementComponent {
-  placement: NzSelectPlacementType = 'topLeft';
-  selectedValue = 'HangZhou';
+  readonly placement = signal<NzSelectPlacementType>('topLeft');
+  readonly value = signal('HangZhou');
 }
 ```
 
@@ -789,11 +749,11 @@ export class NzDemoSelectPlacementComponent {
 自定义前缀 `nzPrefix` 和后缀图标 `nzSuffixIcon`。
 
 ```typescript
-import { Component, model } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzFlexModule } from 'ng-zorro-antd/flex';
-import { NzSelectModule, NzSelectOptionInterface } from 'ng-zorro-antd/select';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @Component({
   selector: 'nz-demo-select-prefix-and-suffix',
@@ -840,15 +800,15 @@ import { NzSelectModule, NzSelectOptionInterface } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectPrefixAndSuffixComponent {
-  readonly options: NzSelectOptionInterface[] = [
+  readonly options = [
     { value: 'jack', label: 'Jack' },
     { value: 'lucy', label: 'Lucy' },
     { value: 'Yiminghe', label: 'yiminghe' },
     { value: 'disabled', label: 'Disabled', disabled: true }
   ];
 
-  value = model('lucy');
-  multipleValue = model(['lucy']);
+  readonly value = signal('lucy');
+  readonly multipleValue = signal(['lucy']);
 }
 ```
 
@@ -858,8 +818,7 @@ export class NzDemoSelectPrefixAndSuffixComponent {
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -874,21 +833,17 @@ interface MockUser {
 
 @Component({
   selector: 'nz-demo-select-scroll-load',
-  imports: [FormsModule, NzSelectModule, NzSpinModule],
+  imports: [NzSelectModule, NzSpinModule],
   template: `
     <nz-select
-      [(ngModel)]="selectedUser"
+      [nzOptions]="options()"
       (nzScrollToBottom)="loadMore()"
       nzPlaceHolder="Select users"
       nzAllowClear
       [nzDropdownRender]="renderTemplate"
-    >
-      @for (item of optionList; track item) {
-        <nz-option [nzValue]="item" [nzLabel]="item" />
-      }
-    </nz-select>
+    />
     <ng-template #renderTemplate>
-      @if (isLoading) {
+      @if (loading()) {
         <nz-spin />
       }
     </ng-template>
@@ -900,32 +855,27 @@ interface MockUser {
   `
 })
 export class NzDemoSelectScrollLoadComponent implements OnInit {
-  readonly randomUserUrl: string = 'https://api.randomuser.me/?results=10';
-  optionList: string[] = [];
-  selectedUser: string | null = null;
-  isLoading = false;
+  private readonly http = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  readonly options = signal<Array<{ label: string; value: string }>>([]);
+  readonly loading = signal(false);
 
   ngOnInit(): void {
     this.loadMore();
   }
 
   getRandomNameList(): Observable<string[]> {
-    return this.http
-      .get<{ results: MockUser[] }>(`${this.randomUserUrl}`)
-      .pipe(
-        map(res => res.results),
-        catchError(() => of<MockUser[]>([]))
-      )
-      .pipe(map(list => list.map(item => `${item.name.first}`)));
+    return this.http.get<{ results: MockUser[] }>('https://api.randomuser.me/?results=10').pipe(
+      map(res => res.results.map(item => item.name.first)),
+      catchError(() => of<string[]>([]))
+    );
   }
 
   loadMore(): void {
-    this.isLoading = true;
+    this.loading.set(true);
     this.getRandomNameList().subscribe(data => {
-      this.isLoading = false;
-      this.optionList = [...this.optionList, ...data];
+      this.loading.set(false);
+      this.options.update(options => [...options, ...data.map(item => ({ label: item, value: item }))]);
     });
   }
 }
@@ -937,28 +887,23 @@ export class NzDemoSelectScrollLoadComponent implements OnInit {
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, inject, signal } from '@angular/core';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @Component({
   selector: 'nz-demo-select-search-box',
-  imports: [FormsModule, NzSelectModule],
+  imports: [NzSelectModule],
   template: `
     <nz-select
+      [nzOptions]="options()"
       nzShowSearch
       nzServerSearch
       nzPlaceHolder="input search text"
-      [(ngModel)]="selectedValue"
       [nzShowArrow]="false"
-      [nzFilterOption]="nzFilterOption"
+      [nzFilterOption]="filterFn"
       (nzOnSearch)="search($event)"
-    >
-      @for (item of listOfOption; track item) {
-        <nz-option [nzLabel]="item" [nzValue]="item" />
-      }
-    </nz-select>
+    />
   `,
   styles: `
     nz-select {
@@ -967,17 +912,17 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoSelectSearchBoxComponent {
-  selectedValue: string | null = null;
-  listOfOption: string[] = [];
-  readonly nzFilterOption = (): boolean => true;
+  private readonly http = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
+  readonly options = signal<Array<{ label: string; value: string }>>([]);
+  readonly filterFn = (): boolean => true;
 
   search(value: string): void {
     this.http
       .jsonp<{ result: Array<[string, string]> }>(`https://suggest.taobao.com/sug?code=utf-8&q=${value}`, 'callback')
       .subscribe(data => {
-        this.listOfOption = data.result.map(([item]) => item);
+        const options = data.result.map(([item]) => ({ label: item, value: item }));
+        this.options.set(options);
       });
   }
 }
@@ -989,28 +934,25 @@ export class NzDemoSelectSearchBoxComponent {
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
 @Component({
   selector: 'nz-demo-select-search',
-  imports: [FormsModule, NzSelectModule],
-  template: `
-    <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person" [(ngModel)]="selectedValue">
-      <nz-option nzLabel="Jack" nzValue="jack" />
-      <nz-option nzLabel="Lucy" nzValue="lucy" />
-      <nz-option nzLabel="Tom" nzValue="tom" />
-    </nz-select>
-  `,
+  imports: [NzSelectModule],
+  template: `<nz-select [nzOptions]="options" nzShowSearch nzAllowClear nzPlaceHolder="Select a person" /> `,
   styles: `
     nz-select {
-      width: 200px;
+      width: 120px;
     }
   `
 })
 export class NzDemoSelectSearchComponent {
-  selectedValue = null;
+  readonly options = [
+    { label: 'Jack', value: 'jack' },
+    { label: 'Lucy', value: 'lucy' },
+    { label: 'Tom', value: 'tom' }
+  ];
 }
 ```
 
@@ -1020,10 +962,9 @@ export class NzDemoSelectSearchComponent {
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { catchError, debounceTime, map, switchMap } from 'rxjs/operators';
+import { catchError, debounceTime, map, switchMap, tap } from 'rxjs/operators';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -1036,7 +977,7 @@ interface MockUser {
 
 @Component({
   selector: 'nz-demo-select-select-users',
-  imports: [FormsModule, NzIconModule, NzSelectModule],
+  imports: [NzIconModule, NzSelectModule],
   template: `
     <nz-select
       nzMode="multiple"
@@ -1044,12 +985,11 @@ interface MockUser {
       nzAllowClear
       nzShowSearch
       nzServerSearch
-      [(ngModel)]="selectedUser"
-      (nzOnSearch)="onSearch($event)"
+      (nzOnSearch)="search($event)"
     >
-      @if (!loading) {
-        @for (o of optionList; track o) {
-          <nz-option [nzValue]="o" [nzLabel]="o" />
+      @if (!loading()) {
+        @for (user of options(); track user) {
+          <nz-option [nzValue]="user" [nzLabel]="user" />
         }
       } @else {
         <nz-option nzDisabled nzCustomContent>
@@ -1070,36 +1010,33 @@ interface MockUser {
   `
 })
 export class NzDemoSelectSelectUsersComponent implements OnInit {
-  randomUserUrl = 'https://api.randomuser.me/?results=5';
-  searchChange$ = new BehaviorSubject('');
-  optionList: string[] = [];
-  selectedUser?: string;
-  loading = false;
+  private readonly http = inject(HttpClient);
 
-  onSearch(value: string): void {
-    this.loading = true;
-    this.searchChange$.next(value);
+  readonly search$ = new BehaviorSubject('');
+  readonly options = signal<string[]>([]);
+  readonly loading = signal(false);
+
+  search(value: string): void {
+    this.search$.next(value);
   }
 
-  constructor(private http: HttpClient) {}
-
   ngOnInit(): void {
-    this.searchChange$
+    this.search$
       .pipe(
         debounceTime(500),
+        tap(() => this.loading.set(true)),
         switchMap(name => this.getRandomNameList(name))
       )
       .subscribe(data => {
-        this.optionList = data;
-        this.loading = false;
+        this.options.set(data);
+        this.loading.set(false);
       });
   }
 
   getRandomNameList(name: string): Observable<string[]> {
-    return this.http.get<{ results: MockUser[] }>(`${this.randomUserUrl}`).pipe(
-      map(res => res.results),
-      catchError(() => of<MockUser[]>([])),
-      map(list => list.map(item => `${item.name.first} ${name}`))
+    return this.http.get<{ results: MockUser[] }>('https://api.randomuser.me/?results=5').pipe(
+      map(res => res.results.map(item => `${item.name.first} ${name}`)),
+      catchError(() => of<string[]>([]))
     );
   }
 }
@@ -1110,7 +1047,7 @@ export class NzDemoSelectSelectUsersComponent implements OnInit {
 三种大小的选择框，当 `nzSize` 分别为 `large` 和 `small` 时，输入框高度为 `40px` 和 `24px` ，默认高度为 `32px`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -1135,32 +1072,28 @@ function alphabet(): string[] {
     </nz-radio-group>
     <br />
     <br />
-    <nz-select [(ngModel)]="singleValue" [nzSize]="size">
-      @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" />
-      }
-    </nz-select>
+    <nz-select [nzOptions]="options" [(ngModel)]="singleValue" [nzSize]="size()" />
     <br />
     <br />
-    <nz-select [(ngModel)]="singleValue" [nzSize]="size" nzShowSearch>
-      @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" />
-      }
-    </nz-select>
+    <nz-select [nzOptions]="options" [(ngModel)]="singleValue" [nzSize]="size()" nzShowSearch />
     <br />
     <br />
-    <nz-select [(ngModel)]="multipleValue" [nzSize]="size" nzMode="multiple" nzPlaceHolder="Please select">
-      @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" />
-      }
-    </nz-select>
+    <nz-select
+      [nzOptions]="options"
+      [(ngModel)]="multipleValue"
+      [nzSize]="size()"
+      nzMode="multiple"
+      nzPlaceHolder="Please select"
+    />
     <br />
     <br />
-    <nz-select [(ngModel)]="tagValue" [nzSize]="size" nzMode="tags" nzPlaceHolder="Please select">
-      @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" />
-      }
-    </nz-select>
+    <nz-select
+      [nzOptions]="options"
+      [(ngModel)]="tagValue"
+      [nzSize]="size()"
+      nzMode="tags"
+      nzPlaceHolder="Please select"
+    />
   `,
   styles: `
     nz-select {
@@ -1169,11 +1102,12 @@ function alphabet(): string[] {
   `
 })
 export class NzDemoSelectSizeComponent {
-  readonly listOfOption: string[] = alphabet();
-  size: NzSelectSizeType = 'default';
-  singleValue = 'a10';
-  multipleValue = ['a10', 'c12'];
-  tagValue = ['a10', 'c12', 'tag'];
+  readonly options = alphabet().map(item => ({ label: item, value: item }));
+
+  readonly size = signal<NzSelectSizeType>('default');
+  readonly singleValue = signal('a10');
+  readonly multipleValue = signal(['a10', 'c12']);
+  readonly tagValue = signal(['a10', 'c12', 'tag']);
 }
 ```
 
@@ -1211,7 +1145,6 @@ tags select，随意输入的内容（scroll the menu）
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
@@ -1225,14 +1158,8 @@ function alphabet(): string[] {
 
 @Component({
   selector: 'nz-demo-select-tags',
-  imports: [FormsModule, NzSelectModule],
-  template: `
-    <nz-select nzMode="tags" nzPlaceHolder="Tag Mode" [(ngModel)]="listOfTagOptions">
-      @for (option of listOfOption; track option) {
-        <nz-option [nzLabel]="option" [nzValue]="option" />
-      }
-    </nz-select>
-  `,
+  imports: [NzSelectModule],
+  template: `<nz-select [nzOptions]="options" nzMode="tags" nzPlaceHolder="Tag Mode" />`,
   styles: `
     nz-select {
       width: 100%;
@@ -1240,8 +1167,7 @@ function alphabet(): string[] {
   `
 })
 export class NzDemoSelectTagsComponent {
-  readonly listOfOption: string[] = alphabet();
-  listOfTagOptions: string[] = [];
+  readonly options = alphabet().map(item => ({ label: item, value: item }));
 }
 ```
 

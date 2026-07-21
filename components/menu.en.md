@@ -378,7 +378,7 @@ Inline menu could be collapsed.
 Here is [a complete demo](/components/layout/en/#components-layout-demo-side) with sider layout.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -391,14 +391,14 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
   template: `
     <div class="wrapper">
       <button nz-button nzType="primary" (click)="toggleCollapsed()">
-        <nz-icon [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
+        <nz-icon [nzType]="isCollapsed() ? 'menu-unfold' : 'menu-fold'" />
       </button>
-      <ul nz-menu nzMode="inline" nzTheme="dark" [nzInlineCollapsed]="isCollapsed">
+      <ul nz-menu nzMode="inline" nzTheme="dark" [nzInlineCollapsed]="isCollapsed()">
         <li
           nz-menu-item
           nz-tooltip
           nzTooltipPlacement="right"
-          [nzTooltipTitle]="isCollapsed ? 'Navigation One' : ''"
+          [nzTooltipTitle]="isCollapsed() ? 'Navigation One' : ''"
           nzSelected
         >
           <nz-icon nzType="mail" />
@@ -438,10 +438,10 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
   `
 })
 export class NzDemoMenuInlineCollapsedComponent {
-  isCollapsed = false;
+  readonly isCollapsed = signal(false);
 
   toggleCollapsed(): void {
-    this.isCollapsed = !this.isCollapsed;
+    this.isCollapsed.update(isCollapsed => !isCollapsed);
   }
 }
 ```
@@ -761,7 +761,7 @@ export class NzDemoMenuSiderCurrentComponent {
 Show the dynamic switching mode (between 'inline' and 'vertical').
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -779,7 +779,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     Change Theme
     <br />
     <br />
-    <ul nz-menu [nzMode]="mode ? 'vertical' : 'inline'" [nzTheme]="dark ? 'dark' : 'light'">
+    <ul nz-menu [nzMode]="mode() ? 'vertical' : 'inline'" [nzTheme]="dark() ? 'dark' : 'light'">
       <li nz-submenu nzTitle="Navigation One" nzIcon="mail">
         <ul>
           <li nz-menu-group nzTitle="Item 1">
@@ -824,8 +824,8 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoMenuSwitchModeComponent {
-  mode = false;
-  dark = false;
+  readonly mode = signal(false);
+  readonly dark = signal(false);
 }
 ```
 

@@ -129,7 +129,7 @@ parameters that have used to the 'nzContent component'
 Basic drawer.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
@@ -141,7 +141,7 @@ import { NzDrawerModule } from 'ng-zorro-antd/drawer';
     <button nz-button nzType="primary" (click)="open()">Open</button>
     <nz-drawer
       [nzClosable]="false"
-      [nzVisible]="visible"
+      [nzVisible]="visible()"
       nzPlacement="right"
       nzTitle="Basic Drawer"
       (nzOnClose)="close()"
@@ -155,14 +155,14 @@ import { NzDrawerModule } from 'ng-zorro-antd/drawer';
   `
 })
 export class NzDemoDrawerBasicRightComponent {
-  visible = false;
+  readonly visible = signal(false);
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```
@@ -225,7 +225,7 @@ A drawer containing an editable form which needs to be collapsed by clicking the
 
 ```typescript
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
@@ -251,7 +251,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
       [nzBodyStyle]="{ overflow: 'auto' }"
       [nzMaskClosable]="false"
       [nzWidth]="720"
-      [nzVisible]="visible"
+      [nzVisible]="visible()"
       nzTitle="Create"
       [nzFooter]="footerTpl"
       (nzOnClose)="close()"
@@ -341,14 +341,14 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoDrawerFromDrawerComponent {
-  visible = false;
+  readonly visible = signal(false);
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```
@@ -358,7 +358,7 @@ export class NzDemoDrawerFromDrawerComponent {
 Open a new drawer on top of an existing drawer to handle multi branch tasks
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
@@ -374,9 +374,9 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
     <button nz-button nzType="primary" (click)="open()">New Cookbook</button>
     <nz-drawer
       [nzClosable]="false"
-      [nzOffsetX]="childrenVisible ? 180 : 0"
+      [nzOffsetX]="childrenVisible() ? 180 : 0"
       [nzWidth]="320"
-      [nzVisible]="visible"
+      [nzVisible]="visible()"
       nzTitle="Cookbook"
       (nzOnClose)="close()"
     >
@@ -404,7 +404,7 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
           </div>
         </div>
       </form>
-      <nz-drawer [nzClosable]="false" [nzVisible]="childrenVisible" nzTitle="Food" (nzOnClose)="closeChildren()">
+      <nz-drawer [nzClosable]="false" [nzVisible]="childrenVisible()" nzTitle="Food" (nzOnClose)="closeChildren()">
         <nz-list *nzDrawerContent [nzDataSource]="vegetables" [nzRenderItem]="item">
           <ng-template #item let-item>
             <nz-list-item [nzContent]="item" />
@@ -415,25 +415,24 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
   `
 })
 export class NzDemoDrawerMultiLevelDrawerComponent {
-  visible = false;
-  childrenVisible = false;
-
-  vegetables = ['asparagus', 'bamboo', 'potato', 'carrot', 'cilantro', 'potato', 'eggplant'];
+  readonly visible = signal(false);
+  readonly childrenVisible = signal(false);
+  readonly vegetables = ['asparagus', 'bamboo', 'potato', 'carrot', 'cilantro', 'potato', 'eggplant'];
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 
   openChildren(): void {
-    this.childrenVisible = true;
+    this.childrenVisible.set(true);
   }
 
   closeChildren(): void {
-    this.childrenVisible = false;
+    this.childrenVisible.set(false);
   }
 }
 ```
@@ -443,7 +442,7 @@ export class NzDemoDrawerMultiLevelDrawerComponent {
 Basic drawer.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -463,8 +462,8 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     <button nz-button nzType="primary" (click)="open()">Open</button>
     <nz-drawer
       [nzClosable]="false"
-      [nzVisible]="visible"
-      [nzPlacement]="placement"
+      [nzVisible]="visible()"
+      [nzPlacement]="placement()"
       nzTitle="Basic Drawer"
       (nzOnClose)="close()"
     >
@@ -477,14 +476,15 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDrawerPlacementComponent {
-  visible = false;
-  placement: NzDrawerPlacement = 'left';
+  readonly visible = signal(false);
+  readonly placement = signal<NzDrawerPlacement>('left');
+
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```
@@ -494,7 +494,7 @@ export class NzDemoDrawerPlacementComponent {
 Usage of Drawer's service, examples demonstrate user-defined templates, custom components.
 
 ```typescript
-import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -502,6 +502,10 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NZ_DRAWER_DATA, NzDrawerModule, NzDrawerRef, NzDrawerService } from 'ng-zorro-antd/drawer';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
+
+interface IDrawerData {
+  value: string;
+}
 
 @Component({
   selector: 'nz-demo-drawer-service',
@@ -524,13 +528,13 @@ import { NzInputModule } from 'ng-zorro-antd/input';
   `
 })
 export class NzDemoDrawerServiceComponent {
+  private readonly drawerService = inject(NzDrawerService);
+
   @ViewChild('drawerTemplate', { static: false }) drawerTemplate?: TemplateRef<{
-    $implicit: { value: string };
+    $implicit: IDrawerData;
     drawerRef: NzDrawerRef<string>;
   }>;
-  value = 'ng';
-
-  constructor(private drawerService: NzDrawerService) {}
+  readonly value = signal('ng');
 
   openTemplate(): void {
     const drawerRef = this.drawerService.create({
@@ -539,7 +543,7 @@ export class NzDemoDrawerServiceComponent {
       nzExtra: 'Extra',
       nzContent: this.drawerTemplate,
       nzContentParams: {
-        value: this.value
+        value: this.value()
       }
     });
 
@@ -553,13 +557,13 @@ export class NzDemoDrawerServiceComponent {
   }
 
   openComponent(): void {
-    const drawerRef = this.drawerService.create<NzDrawerCustomComponent, { value: string }, string>({
+    const drawerRef = this.drawerService.create<NzDrawerCustomComponent, IDrawerData, string>({
       nzTitle: 'Component',
       nzFooter: 'Footer',
       nzExtra: 'Extra',
       nzContent: NzDrawerCustomComponent,
       nzContentParams: {
-        value: this.value
+        value: this.value()
       },
       nzData: {
         value: 'Ng Zorro'
@@ -573,8 +577,9 @@ export class NzDemoDrawerServiceComponent {
     drawerRef.afterClose.subscribe(data => {
       console.log(data);
       if (typeof data === 'string') {
-        this.value = data;
+        this.value.set(data);
       }
+      console.log('Drawer(Component) close');
     });
   }
 }
@@ -584,20 +589,18 @@ export class NzDemoDrawerServiceComponent {
   imports: [FormsModule, NzButtonModule, NzDividerModule, NzInputModule],
   template: `
     <div>
-      <input nz-input [(ngModel)]="nzData.value" />
+      <input nz-input [(ngModel)]="data" />
       <nz-divider />
       <button nzType="primary" (click)="close()" nz-button>Confirm</button>
     </div>
   `
 })
 export class NzDrawerCustomComponent {
-  // @Input() value = '';
-  nzData: { value: string } = inject(NZ_DRAWER_DATA);
-
-  constructor(private drawerRef: NzDrawerRef<string>) {}
+  readonly data = inject<IDrawerData>(NZ_DRAWER_DATA).value;
+  readonly drawerRef: NzDrawerRef<this, string> = inject(NzDrawerRef);
 
   close(): void {
-    this.drawerRef.close(this.nzData);
+    this.drawerRef.close(this.data);
   }
 }
 ```
@@ -607,7 +610,7 @@ export class NzDrawerCustomComponent {
 The default width (or height) of Drawer is `378px`, and there is a presetted large size `736px`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
@@ -622,10 +625,10 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
       <button *nzSpaceItem nz-button nzType="primary" (click)="showLarge()">Open Large Size (736px)</button>
     </nz-space>
     <nz-drawer
-      [nzSize]="size"
-      [nzVisible]="visible"
+      [nzSize]="size()"
+      [nzVisible]="visible()"
       nzPlacement="right"
-      [nzTitle]="title"
+      nzTitle="Drawer {{ size() }}"
       [nzExtra]="extra"
       (nzOnClose)="close()"
     >
@@ -643,29 +646,25 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   `
 })
 export class NzDemoDrawerSizeComponent {
-  visible = false;
-  size: 'large' | 'default' = 'default';
-
-  get title(): string {
-    return `${this.size} Drawer`;
-  }
+  readonly visible = signal(false);
+  readonly size = signal<'large' | 'default'>('default');
 
   showDefault(): void {
-    this.size = 'default';
+    this.size.set('default');
     this.open();
   }
 
   showLarge(): void {
-    this.size = 'large';
+    this.size.set('large');
     this.open();
   }
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```
@@ -675,7 +674,7 @@ export class NzDemoDrawerSizeComponent {
 Use when you need to quickly preview the outline of the object. Such as list item preview.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDescriptionsModule } from 'ng-zorro-antd/descriptions';
@@ -705,7 +704,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
         </nz-list-item>
       </ng-template>
     </nz-list>
-    <nz-drawer [nzVisible]="visible" [nzWidth]="640" [nzClosable]="false" (nzOnClose)="close()">
+    <nz-drawer [nzVisible]="visible()" [nzWidth]="640" [nzClosable]="false" (nzOnClose)="close()">
       <ng-container *nzDrawerContent>
         <p class="title">User Profile</p>
         <nz-descriptions [nzColumn]="2" nzTitle="Personal">
@@ -753,7 +752,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
   `
 })
 export class NzDemoDrawerUserProfileComponent {
-  data = [
+  readonly data = [
     {
       name: 'Lily'
     },
@@ -762,14 +761,14 @@ export class NzDemoDrawerUserProfileComponent {
     }
   ];
 
-  visible = false;
+  readonly visible = signal(false);
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```

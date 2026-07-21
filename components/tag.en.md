@@ -157,7 +157,7 @@ export class NzDemoTagColorfulComponent {
 Generating a set of Tags by array, you can add and remove dynamically.
 
 ```typescript
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzNoAnimationDirective } from 'ng-zorro-antd/core/animation';
@@ -169,13 +169,13 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
   selector: 'nz-demo-tag-control',
   imports: [FormsModule, NzIconModule, NzInputModule, NzTagModule, NzNoAnimationDirective],
   template: `
-    @for (tag of tags; track tag) {
+    @for (tag of tags(); track tag) {
       <nz-tag [nzMode]="$first ? 'default' : 'closeable'" (nzOnClose)="handleClose(tag)">
         {{ sliceTagName(tag) }}
       </nz-tag>
     }
 
-    @if (!inputVisible) {
+    @if (!inputVisible()) {
       <nz-tag class="editable-tag" nzNoAnimation (click)="showInput()">
         <nz-icon nzType="plus" />
         New Tag
@@ -186,7 +186,8 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
         nz-input
         nzSize="small"
         type="text"
-        [(ngModel)]="inputValue"
+        [ngModel]="inputValue()"
+        (ngModelChange)="inputValue.set($event)"
         style="width: 78px;"
         (blur)="handleInputConfirm()"
         (keydown.enter)="handleInputConfirm()"
@@ -201,13 +202,13 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
   `
 })
 export class NzDemoTagControlComponent {
-  tags = ['Unremovable', 'Tag 2', 'Tag 3'];
-  inputVisible = false;
-  inputValue = '';
+  readonly tags = signal(['Unremovable', 'Tag 2', 'Tag 3']);
+  readonly inputVisible = signal(false);
+  readonly inputValue = signal('');
   @ViewChild('inputElement', { static: false }) inputElement?: ElementRef;
 
-  handleClose(removedTag: {}): void {
-    this.tags = this.tags.filter(tag => tag !== removedTag);
+  handleClose(removedTag: string): void {
+    this.tags.update(tags => tags.filter(tag => tag !== removedTag));
   }
 
   sliceTagName(tag: string): string {
@@ -216,18 +217,19 @@ export class NzDemoTagControlComponent {
   }
 
   showInput(): void {
-    this.inputVisible = true;
+    this.inputVisible.set(true);
     setTimeout(() => {
       this.inputElement?.nativeElement.focus();
     }, 10);
   }
 
   handleInputConfirm(): void {
-    if (this.inputValue && this.tags.indexOf(this.inputValue) === -1) {
-      this.tags = [...this.tags, this.inputValue];
+    const inputValue = this.inputValue();
+    if (inputValue && this.tags().indexOf(inputValue) === -1) {
+      this.tags.update(tags => [...tags, inputValue]);
     }
-    this.inputValue = '';
-    this.inputVisible = false;
+    this.inputValue.set('');
+    this.inputVisible.set(false);
   }
 }
 ```
@@ -283,7 +285,7 @@ export class NzDemoTagDraggableComponent {
 Select your favourite topics.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzTagModule } from 'ng-zorro-antd/tag';
 
@@ -297,7 +299,7 @@ const tagsFromServer = ['Movie', 'Books', 'Music', 'Sports'];
     @for (tag of hotTags; track $index) {
       <nz-tag
         nzMode="checkable"
-        [nzChecked]="selectedTags.indexOf(tag) > -1"
+        [nzChecked]="selectedTags().indexOf(tag) > -1"
         (nzCheckedChange)="handleChange($event, tag)"
       >
         {{ tag }}
@@ -306,16 +308,16 @@ const tagsFromServer = ['Movie', 'Books', 'Music', 'Sports'];
   `
 })
 export class NzDemoTagHotTagsComponent {
-  hotTags = tagsFromServer;
-  selectedTags: string[] = [];
+  readonly hotTags = tagsFromServer;
+  readonly selectedTags = signal<string[]>([]);
 
   handleChange(checked: boolean, tag: string): void {
     if (checked) {
-      this.selectedTags.push(tag);
+      this.selectedTags.update(tags => [...tags, tag]);
     } else {
-      this.selectedTags = this.selectedTags.filter(t => t !== tag);
+      this.selectedTags.update(tags => tags.filter(t => t !== tag));
     }
-    console.log('You are interested in: ', this.selectedTags);
+    console.log('You are interested in: ', this.selectedTags());
   }
 }
 ```

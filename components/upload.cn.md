@@ -21,39 +21,38 @@ description: 文件选择上传和拖拽上传控件。
 
 ### nz-upload
 
-| 参数                        | 说明                                                                                                                            | 类型                                                                                             | 默认值       |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------ |
-| `[nzId]`                    | 组件内部 input 的 id 值                                                                                                         | `string`                                                                                         | -            |
-| `[nzAccept]`                | 接受上传的文件类型, 详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)  | `string`                                                                                         | -            |
-| `[nzAction]`                | 必选参数, 上传的地址                                                                                                            | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                               | -            |
-| `[nzDirectory]`             | 支持上传文件夹（[caniuse](https://caniuse.com/#feat=input-file-directory)）                                                     | `boolean`                                                                                        | `false`      |
-| `[nzBeforeUpload]`          | 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。注意：**IE9** 不支持该方法；注意：务必使用 `=>` 定义处理方法。 | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>`               | -            |
-| `[nzCustomRequest]`         | 通过覆盖默认的上传行为，可以自定义自己的上传实现；注意：务必使用 `=>` 定义处理方法。                                            | `(item) => Subscription`                                                                         | -            |
-| `[nzData]`                  | 上传所需参数或返回上传参数的方法；注意：务必使用 `=>` 定义处理方法。                                                            | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -            |
-| `[nzDisabled]`              | 是否禁用                                                                                                                        | `boolean`                                                                                        | `false`      |
-| `[nzFileList]`              | 文件列表，双向绑定                                                                                                              | `NzUploadFile[]`                                                                                 | -            |
-| `[nzLimit]`                 | 限制单次最多上传数量，`nzMultiple` 打开时有效；`0` 表示不限                                                                     | `number`                                                                                         | `0`          |
-| `[nzMaxCount]`              | 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件                                                                       | `number\|undefined`                                                                              | `undefined`  |
-| `[nzSize]`                  | 限制文件大小，单位：KB；`0` 表示不限                                                                                            | `number`                                                                                         | `0`          |
-| `[nzFileType]`              | 限制文件类型，例如：`image/png,image/jpeg,image/gif,image/bmp`                                                                  | `string`                                                                                         | -            |
-| `[nzFilter]`                | 自定义过滤器                                                                                                                    | `UploadFilter[]`                                                                                 | -            |
-| `[nzHeaders]`               | 设置上传的请求头部，IE10 以上有效；注意：务必使用 `=>` 定义处理方法。                                                           | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -            |
-| `[nzListType]`              | 上传列表的内建样式，支持三种基本样式 `text`, `picture` 和 `picture-card`                                                        | `'text' \| 'picture' \| 'picture-card'`                                                          | `'text'`     |
-| `[nzMultiple]`              | 是否支持多选文件，`ie10+` 支持。开启后按住 ctrl 可选择多个文件。                                                                | `boolean`                                                                                        | `false`      |
-| `[nzName]`                  | 发到后台的文件参数名                                                                                                            | `string`                                                                                         | `'file'`     |
-| `[nzShowUploadList]`        | 是否展示 uploadList, 可设为一个对象，用于单独设定 `showPreviewIcon`，`showRemoveIcon` 和 `showDownloadIcon`                     | `boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean }` | `true`       |
-| `[nzShowButton]`            | 是否展示上传按钮                                                                                                                | `boolean`                                                                                        | `true`       |
-| `[nzWithCredentials]`       | 上传请求时是否携带 cookie                                                                                                       | `boolean`                                                                                        | `false`      |
-| `[nzOpenFileDialogOnClick]` | 点击打开文件对话框                                                                                                              | `boolean`                                                                                        | `true`       |
-| `[nzPreview]`               | 点击文件链接或预览图标时的回调；注意：务必使用 `=>` 定义处理方法。                                                              | `(file: NzUploadFile) => void`                                                                   | -            |
-| `[nzPreviewFile]`           | 自定义文件预览逻辑；注意：务必使用 `=>` 定义处理方法。                                                                          | `(file: NzUploadFile) => Observable<dataURL: string>`                                            | -            |
-| `[nzPreviewIsImage]`        | 自定义预览文件是否有效图像，一般用于图像 URL 为非标准格式；注意：务必使用 `=>` 定义处理方法。                                   | `(file: NzUploadFile) => boolean`                                                                | -            |
-| `[nzRemove]`                | 点击移除文件时的回调，返回值为 false 时不移除。支持返回 `Observable` 对象；注意：务必使用 `=>` 定义处理方法。                   | `(file: NzUploadFile) => boolean \| Observable<boolean>`                                         | -            |
-| `(nzChange)`                | 上传文件改变时的状态                                                                                                            | `EventEmitter<NzUploadChangeParam>`                                                              | -            |
-| `[nzDownload]`              | 点击下载文件时的回调，如果没有指定，则默认跳转到文件 url 对应的标签页                                                           | `(file: NzUploadFile) => void`                                                                   | 跳转新标签页 |
-| ~~`[nzTransformFile]`~~     | ~~在上传之前转换文件。支持返回一个 Observable 对象~~                                                                            | ~~`(file: NzUploadFile) => NzUploadTransformFileType`~~                                          | -            |
-| `[nzIconRender]`            | 自定义显示 icon                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile }>`                                                       | -            |
-| `[nzFileListRender]`        | 自定义显示整个列表                                                                                                              | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                                     | -            |
+| 参数                        | 说明                                                                                                                                                              | 类型                                                                               | 默认值       |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------ |
+| `[nzId]`                    | 组件内部 input 的 id 值                                                                                                                                           | `string`                                                                           | -            |
+| `[nzAccept]`                | 接受上传的文件类型, 详见 [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                    | `string`                                                                           | -            |
+| `[nzAction]`                | 必选参数, 上传的地址                                                                                                                                              | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                 | -            |
+| `[nzDirectory]`             | 支持上传文件夹（[caniuse](https://caniuse.com/#feat=input-file-directory)）                                                                                       | `boolean`                                                                          | `false`      |
+| `[nzBeforeUpload]`          | 上传文件之前的钩子，参数为上传的文件，若返回 `false` 则停止上传。注意：**IE9** 不支持该方法；注意：务必使用 `=>` 定义处理方法。                                   | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>` | -            |
+| `[nzCustomRequest]`         | 通过覆盖默认的上传行为，可以自定义自己的上传实现；注意：务必使用 `=>` 定义处理方法。                                                                              | `(item) => Subscription`                                                           | -            |
+| `[nzData]`                  | 上传所需参数或返回上传参数的方法；注意：务必使用 `=>` 定义处理方法。                                                                                              | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -            |
+| `[nzDisabled]`              | 是否禁用                                                                                                                                                          | `boolean`                                                                          | `false`      |
+| `[nzFileList]`              | 文件列表，双向绑定                                                                                                                                                | `NzUploadFile[]`                                                                   | -            |
+| `[nzLimit]`                 | 限制单次最多上传数量，`nzMultiple` 打开时有效；`0` 表示不限                                                                                                       | `number`                                                                           | `0`          |
+| `[nzMaxCount]`              | 限制上传数量。当为 1 时，始终用最新上传的文件代替当前文件                                                                                                         | `number\|undefined`                                                                | `undefined`  |
+| `[nzSize]`                  | 限制文件大小，单位：KB；`0` 表示不限                                                                                                                              | `number`                                                                           | `0`          |
+| `[nzFileType]`              | 限制文件类型，例如：`image/png,image/jpeg,image/gif,image/bmp`                                                                                                    | `string`                                                                           | -            |
+| `[nzFilter]`                | 自定义过滤器                                                                                                                                                      | `UploadFilter[]`                                                                   | -            |
+| `[nzHeaders]`               | 设置上传的请求头部，IE10 以上有效；注意：务必使用 `=>` 定义处理方法。                                                                                             | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -            |
+| `[nzListType]`              | 上传列表的内建样式，支持三种基本样式 `text`, `picture` 和 `picture-card`                                                                                          | `'text' \| 'picture' \| 'picture-card'`                                            | `'text'`     |
+| `[nzMultiple]`              | 是否支持多选文件，`ie10+` 支持。开启后按住 ctrl 可选择多个文件。                                                                                                  | `boolean`                                                                          | `false`      |
+| `[nzName]`                  | 发到后台的文件参数名                                                                                                                                              | `string`                                                                           | `'file'`     |
+| `[nzShowUploadList]`        | 是否展示 uploadList，可设为一个对象，用于单独设定 `extra`、`showPreviewIcon`、`showRemoveIcon`、`showDownloadIcon`、`previewIcon`、`removeIcon` 和 `downloadIcon` | `boolean \| NzShowUploadList`                                                      | `true`       |
+| `[nzShowButton]`            | 是否展示上传按钮                                                                                                                                                  | `boolean`                                                                          | `true`       |
+| `[nzWithCredentials]`       | 上传请求时是否携带 cookie                                                                                                                                         | `boolean`                                                                          | `false`      |
+| `[nzOpenFileDialogOnClick]` | 点击打开文件对话框                                                                                                                                                | `boolean`                                                                          | `true`       |
+| `[nzPreview]`               | 点击文件链接或预览图标时的回调；注意：务必使用 `=>` 定义处理方法。                                                                                                | `(file: NzUploadFile) => void`                                                     | -            |
+| `[nzPreviewFile]`           | 自定义文件预览逻辑；注意：务必使用 `=>` 定义处理方法。                                                                                                            | `(file: NzUploadFile) => Observable<dataURL: string>`                              | -            |
+| `[nzPreviewIsImage]`        | 自定义预览文件是否有效图像，一般用于图像 URL 为非标准格式；注意：务必使用 `=>` 定义处理方法。                                                                     | `(file: NzUploadFile) => boolean`                                                  | -            |
+| `[nzRemove]`                | 点击移除文件时的回调，返回值为 false 时不移除。支持返回 `Observable` 对象；注意：务必使用 `=>` 定义处理方法。                                                     | `(file: NzUploadFile) => boolean \| Observable<boolean>`                           | -            |
+| `(nzChange)`                | 上传文件改变时的状态                                                                                                                                              | `EventEmitter<NzUploadChangeParam>`                                                | -            |
+| `[nzDownload]`              | 点击下载文件时的回调，如果没有指定，则默认跳转到文件 url 对应的标签页                                                                                             | `(file: NzUploadFile) => void`                                                     | 跳转新标签页 |
+| `[nzIconRender]`            | 自定义显示 icon                                                                                                                                                   | `TemplateRef<{ $implicit: NzUploadFile }>`                                         | -            |
+| `[nzFileListRender]`        | 自定义显示整个列表                                                                                                                                                | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                       | -            |
 
 #### nzChange
 
@@ -111,7 +110,7 @@ description: 文件选择上传和拖拽上传控件。
 > `nzBeforeUpload` 的返回值可以是一个 Observable 以支持也支持异步检查。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Observable, Observer } from 'rxjs';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -131,11 +130,11 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
       [nzBeforeUpload]="beforeUpload"
       (nzChange)="handleChange($event)"
     >
-      @if (!avatarUrl) {
-        <nz-icon class="upload-icon" [nzType]="loading ? 'loading' : 'plus'" />
+      @if (!avatarUrl()) {
+        <nz-icon class="upload-icon" [nzType]="loading() ? 'loading' : 'plus'" />
         <div class="ant-upload-text">Upload</div>
       } @else {
-        <img [src]="avatarUrl" style="width: 100%" />
+        <img [src]="avatarUrl()" style="width: 100%" />
       }
     </nz-upload>
   `,
@@ -147,11 +146,10 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadAvatarComponent {
-  loading = false;
-  avatarUrl?: string;
+  private readonly messageService = inject(NzMessageService);
 
-  constructor(private messageService: NzMessageService) {}
-
+  readonly loading = signal(false);
+  readonly avatarUrl = signal<string | undefined>(undefined);
   beforeUpload = (file: NzUploadFile, _fileList: NzUploadFile[]): Observable<boolean> =>
     new Observable((observer: Observer<boolean>) => {
       const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
@@ -179,18 +177,18 @@ export class NzDemoUploadAvatarComponent {
   handleChange(info: { file: NzUploadFile }): void {
     switch (info.file.status) {
       case 'uploading':
-        this.loading = true;
+        this.loading.set(true);
         break;
       case 'done':
         // Get this url from response in real world.
         this.getBase64(info.file!.originFileObj!, (img: string) => {
-          this.loading = false;
-          this.avatarUrl = img;
+          this.loading.set(false);
+          this.avatarUrl.set(img);
         });
         break;
       case 'error':
         this.messageService.error('Network error');
-        this.loading = false;
+        this.loading.set(false);
         break;
     }
   }
@@ -202,7 +200,7 @@ export class NzDemoUploadAvatarComponent {
 经典款式，用户点击按钮弹出文件选择框。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -226,7 +224,7 @@ import { NzUploadChangeParam, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadBasicComponent {
-  constructor(private messageService: NzMessageService) {}
+  private readonly messageService = inject(NzMessageService);
 
   handleChange(info: NzUploadChangeParam): void {
     if (info.file.status !== 'uploading') {
@@ -238,6 +236,77 @@ export class NzDemoUploadBasicComponent {
       this.messageService.error(`${info.file.name} file upload failed.`);
     }
   }
+}
+```
+
+### 自定义操作图标
+
+通过 `nzShowUploadList` 自定义操作图标和文件的额外信息。
+
+```typescript
+import { Component, computed, signal, TemplateRef, viewChild } from '@angular/core';
+
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
+
+@Component({
+  selector: 'nz-demo-upload-custom-action-icon',
+  imports: [NzUploadModule, NzIconModule, NzButtonModule],
+  template: `
+    <nz-upload [nzShowUploadList]="showUploadList()" [nzFileList]="fileList()">
+      <button nz-button>Upload</button>
+    </nz-upload>
+
+    <ng-template #extra let-file>
+      <span>({{ file.size }} KB)</span>
+    </ng-template>
+    <ng-template #downloadIcon><nz-icon nzType="snippets" /></ng-template>
+    <ng-template #removeIcon><nz-icon nzType="github" /></ng-template>
+    <ng-template #previewIcon><nz-icon nzType="apple" /></ng-template>
+  `
+})
+export class NzDemoUploadCustomActionIconComponent {
+  protected readonly downloadIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('downloadIcon');
+  protected readonly removeIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('removeIcon');
+  protected readonly previewIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('previewIcon');
+  protected readonly extra = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('extra');
+
+  protected readonly fileList = signal<NzUploadFile[]>([
+    {
+      uid: '1',
+      name: 'xxx.png',
+      status: 'done',
+      size: 100,
+      response: 'Server Error 500', // custom error message to show
+      url: 'http://www.baidu.com/xxx.png'
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      size: 200,
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png'
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      size: 300,
+      status: 'error',
+      response: 'Server Error 500', // custom error message to show
+      url: 'http://www.baidu.com/zzz.png'
+    }
+  ]);
+
+  protected readonly showUploadList = computed(() => ({
+    extra: this.extra(),
+    downloadIcon: this.downloadIcon(),
+    removeIcon: this.removeIcon(),
+    previewIcon: this.previewIcon(),
+    showRemoveIcon: true,
+    showPreviewIcon: true,
+    showDownloadIcon: true
+  }));
 }
 ```
 
@@ -323,7 +392,7 @@ export class NzDemoUploadDirectoryComponent {}
 设置 `nzMultiple` 后，在 `IE10+` 可以一次上传多个文件。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -351,7 +420,7 @@ import { NzUploadChangeParam, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadDragComponent {
-  constructor(private messageService: NzMessageService) {}
+  private readonly messageService = inject(NzMessageService);
 
   handleChange({ file, fileList }: NzUploadChangeParam): void {
     const status = file.status;
@@ -376,7 +445,7 @@ export class NzDemoUploadDragComponent {
 2. 读取远程路径并显示链接。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -388,7 +457,7 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   template: `
     <nz-upload
       nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-      [nzFileList]="fileList"
+      [nzFileList]="fileList()"
       (nzChange)="handleChange($event)"
     >
       <button nz-button>
@@ -399,14 +468,14 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   `
 })
 export class NzDemoUploadFileListComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '-1',
       name: 'xxx.png',
       status: 'done',
       url: 'http://www.baidu.com/xxx.png'
     }
-  ];
+  ]);
 
   handleChange(info: NzUploadChangeParam): void {
     let fileList = [...info.fileList];
@@ -424,7 +493,7 @@ export class NzDemoUploadFileListComponent {
       return file;
     });
 
-    this.fileList = fileList;
+    this.fileList.set(fileList);
   }
 }
 ```
@@ -485,7 +554,7 @@ export class NzDemoUploadMaxCountComponent {
 用户可以上传图片并在列表中显示缩略图。当上传照片数到达限制后，上传按钮消失。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -507,7 +576,7 @@ const getBase64 = (file: File): Promise<string | ArrayBuffer | null> =>
       nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       nzListType="picture-card"
       [(nzFileList)]="fileList"
-      [nzShowButton]="fileList.length < 8"
+      [nzShowButton]="fileList().length < 8"
       [nzPreview]="handlePreview"
     >
       <div>
@@ -516,19 +585,19 @@ const getBase64 = (file: File): Promise<string | ArrayBuffer | null> =>
       </div>
     </nz-upload>
     <nz-modal
-      [nzVisible]="previewVisible"
+      [nzVisible]="previewVisible()"
       [nzContent]="modalContent"
       [nzFooter]="null"
-      (nzOnCancel)="previewVisible = false"
+      (nzOnCancel)="previewVisible.set(false)"
     >
       <ng-template #modalContent>
-        <img [src]="previewImage" style="width: 100%" />
+        <img [src]="previewImage()" style="width: 100%" />
       </ng-template>
     </nz-modal>
   `
 })
 export class NzDemoUploadPictureCardComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '-1',
       name: 'image.png',
@@ -565,16 +634,16 @@ export class NzDemoUploadPictureCardComponent {
       name: 'image.png',
       status: 'error'
     }
-  ];
-  previewImage: string | undefined = '';
-  previewVisible = false;
+  ]);
+  readonly previewImage = signal<string | undefined>('');
+  readonly previewVisible = signal(false);
 
   handlePreview = async (file: NzUploadFile): Promise<void> => {
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj!);
     }
-    this.previewImage = file.url || file.preview;
-    this.previewVisible = true;
+    this.previewImage.set(file.url || file.preview);
+    this.previewVisible.set(true);
   };
 }
 ```
@@ -584,7 +653,7 @@ export class NzDemoUploadPictureCardComponent {
 上传文件为图片，可展示本地缩略图。`IE8/9` 不支持浏览器本地缩略图展示（[Ref](https://developer.mozilla.org/en-US/docs/Web/API/FileReader/readAsDataURL)），可以写 `thumbUrl` 属性来代替。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -607,7 +676,7 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadPictureStyleComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '0',
       name: 'xxx.png',
@@ -626,7 +695,7 @@ export class NzDemoUploadPictureStyleComponent {
       name: 'zzz.png',
       status: 'error'
     }
-  ];
+  ]);
 }
 ```
 
@@ -672,7 +741,7 @@ export class NzDemoUploadPngOnlyComponent {
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -697,7 +766,7 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadPreviewFileComponent {
-  constructor(private http: HttpClient) {}
+  private readonly http = inject(HttpClient);
 
   previewFile = (file: NzUploadFile): Observable<string> => {
     console.log('Your upload file:', file);
@@ -712,15 +781,14 @@ export class NzDemoUploadPreviewFileComponent {
 
 ### 上传前转换文件
 
-> 旧的 `nzTransformFile` 属性已被弃用.
-
 使用 `nzBeforeUpload` 在请求之前转换文件，例如添加水印。
 
 ```typescript
 import { Component } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzSafeAny } from 'ng-zorro-antd/core/types';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
 
@@ -738,10 +806,9 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
 })
 export class NzDemoUploadTransformFileComponent {
   transformFile = (file: NzUploadFile): Observable<Blob> =>
-    new Observable((observer: Observer<Blob>) => {
+    new Observable(observer => {
       const reader = new FileReader();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      reader.readAsDataURL(file as any);
+      reader.readAsDataURL(file as NzSafeAny);
       reader.onload = () => {
         const canvas = document.createElement('canvas');
         const img = document.createElement('img');
@@ -768,7 +835,7 @@ export class NzDemoUploadTransformFileComponent {
 
 ```typescript
 import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { filter } from 'rxjs/operators';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -791,35 +858,33 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
     <button
       nz-button
       nzType="primary"
-      [nzLoading]="uploading"
+      [nzLoading]="uploading()"
       (click)="handleUpload()"
-      [disabled]="fileList.length === 0"
+      [disabled]="fileList().length === 0"
     >
-      {{ uploading ? 'Uploading' : 'Start Upload' }}
+      {{ uploading() ? 'Uploading' : 'Start Upload' }}
     </button>
   `
 })
 export class NzDemoUploadUploadManuallyComponent {
-  uploading = false;
-  fileList: NzUploadFile[] = [];
+  private readonly http = inject(HttpClient);
+  private readonly messageService = inject(NzMessageService);
 
-  constructor(
-    private http: HttpClient,
-    private messageService: NzMessageService
-  ) {}
+  readonly uploading = signal(false);
+  readonly fileList = signal<NzUploadFile[]>([]);
 
   beforeUpload = (file: NzUploadFile): boolean => {
-    this.fileList = this.fileList.concat(file);
+    this.fileList.update(fileList => fileList.concat(file));
     return false;
   };
 
   handleUpload(): void {
     const formData = new FormData();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    this.fileList.forEach((file: any) => {
+    this.fileList().forEach((file: any) => {
       formData.append('files[]', file);
     });
-    this.uploading = true;
+    this.uploading.set(true);
     // You can use any AJAX library you like
     const req = new HttpRequest('POST', 'https://www.mocky.io/v2/5cc8019d300000980a055e76', formData, {
       // reportProgress: true
@@ -829,12 +894,12 @@ export class NzDemoUploadUploadManuallyComponent {
       .pipe(filter(e => e instanceof HttpResponse))
       .subscribe({
         next: () => {
-          this.uploading = false;
-          this.fileList = [];
+          this.uploading.set(false);
+          this.fileList.set([]);
           this.messageService.success('upload successfully.');
         },
         error: () => {
-          this.uploading = false;
+          this.uploading.set(false);
           this.messageService.error('upload failed.');
         }
       });
@@ -847,7 +912,7 @@ export class NzDemoUploadUploadManuallyComponent {
 使用阿里云 OSS 上传示例.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -860,7 +925,7 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
     <nz-upload
       nzName="file"
       [(nzFileList)]="files"
-      [nzTransformFile]="transformFile"
+      [nzBeforeUpload]="beforeUpload"
       [nzData]="getExtraData"
       [nzAction]="mockOSSData.host"
       (nzChange)="onChange($event)"
@@ -874,8 +939,8 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   `
 })
 export class NzDemoUploadUploadWithAliyunOssComponent {
-  files: NzUploadFile[] = [];
-  mockOSSData = {
+  readonly files = signal<NzUploadFile[]>([]);
+  readonly mockOSSData = {
     dir: 'user-dir/',
     expire: '1577811661',
     host: '//www.mocky.io/v2/5cc8019d300000980a055e76',
@@ -884,11 +949,11 @@ export class NzDemoUploadUploadWithAliyunOssComponent {
     signature: 'ZGFob25nc2hhbw=='
   };
 
-  transformFile = (file: NzUploadFile): NzUploadFile => {
+  beforeUpload = (file: NzUploadFile): boolean => {
     const suffix = file.name.slice(file.name.lastIndexOf('.'));
     const filename = Date.now() + suffix;
     file.url = this.mockOSSData.dir + filename;
-    return file;
+    return true;
   };
 
   getExtraData = (file: NzUploadFile): {} => {

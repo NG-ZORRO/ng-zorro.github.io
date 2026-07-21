@@ -73,7 +73,7 @@ description: 向下弹出的列表。
 
 ### 箭头
 
-可以展示一个箭头
+可以展示一个箭头。
 
 ```typescript
 import { Component } from '@angular/core';
@@ -101,7 +101,14 @@ import { NzFlexModule } from 'ng-zorro-antd/flex';
   `
 })
 export class NzDemoDropdownArrowComponent {
-  listOfPosition: NzPlacementType[] = ['bottomLeft', 'bottomCenter', 'bottomRight', 'topLeft', 'topCenter', 'topRight'];
+  readonly listOfPosition: NzPlacementType[] = [
+    'bottomLeft',
+    'bottomCenter',
+    'bottomRight',
+    'topLeft',
+    'topCenter',
+    'topRight'
+  ];
 }
 ```
 
@@ -141,7 +148,7 @@ export class NzDemoDropdownBasicComponent {}
 在区域内任意右击触发。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzContextMenuService, NzDropdownMenuComponent, NzDropdownModule } from 'ng-zorro-antd/dropdown';
 
@@ -181,11 +188,11 @@ import { NzContextMenuService, NzDropdownMenuComponent, NzDropdownModule } from 
   `
 })
 export class NzDemoDropdownContextMenuComponent {
+  private readonly nzContextMenuService = inject(NzContextMenuService);
+
   contextMenu($event: MouseEvent, menu: NzDropdownMenuComponent): void {
     this.nzContextMenuService.create($event, menu);
   }
-
-  constructor(private nzContextMenuService: NzContextMenuService) {}
 }
 ```
 
@@ -316,7 +323,7 @@ export class NzDemoDropdownItemComponent {}
 默认是点击关闭菜单，可以关闭此功能。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzDropdownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -333,13 +340,17 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
       <ul nz-menu>
         <li nz-menu-item>Clicking me will not close the menu.</li>
         <li nz-menu-item>Clicking me will not close the menu also.</li>
-        <li nz-menu-item (click)="visible = false">Clicking me will close the menu</li>
+        <li nz-menu-item (click)="close()">Clicking me will close the menu</li>
       </ul>
     </nz-dropdown-menu>
   `
 })
 export class NzDemoDropdownOverlayVisibleComponent {
-  visible = false;
+  readonly visible = signal(false);
+
+  close(): void {
+    this.visible.set(false);
+  }
 }
 ```
 
@@ -378,7 +389,14 @@ import { NzDropdownModule, NzPlacementType } from 'ng-zorro-antd/dropdown';
   `
 })
 export class NzDemoDropdownPlacementComponent {
-  listOfPosition: NzPlacementType[] = ['bottomLeft', 'bottomCenter', 'bottomRight', 'topLeft', 'topCenter', 'topRight'];
+  readonly listOfPosition: NzPlacementType[] = [
+    'bottomLeft',
+    'bottomCenter',
+    'bottomRight',
+    'topLeft',
+    'topCenter',
+    'topRight'
+  ];
 }
 ```
 

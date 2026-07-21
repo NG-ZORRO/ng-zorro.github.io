@@ -75,7 +75,7 @@ export class NzDemoSpinCustomIndicatorComponent {}
 Specifies a delay for loading state. If `spinning` ends during delay, loading status won't appear.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -86,7 +86,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-spin-delay-and-debounce',
   imports: [FormsModule, NzAlertModule, NzSpinModule, NzSwitchModule],
   template: `
-    <nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
+    <nz-spin [nzSpinning]="isSpinning()" [nzDelay]="500">
       <nz-alert
         nzType="info"
         nzMessage="Alert message title"
@@ -101,7 +101,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSpinDelayAndDebounceComponent {
-  isSpinning = false;
+  readonly isSpinning = signal(false);
 }
 ```
 
@@ -140,7 +140,7 @@ export class NzDemoSpinInsideComponent {}
 Embedding content into `nz-spin` will alter it into loading state.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -151,7 +151,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-spin-nested',
   imports: [FormsModule, NzAlertModule, NzSpinModule, NzSwitchModule],
   template: `
-    <nz-spin [nzSpinning]="isSpinning">
+    <nz-spin [nzSpinning]="isSpinning()">
       <nz-alert
         nzType="info"
         nzMessage="Alert message title"
@@ -166,7 +166,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSpinNestedComponent {
-  isSpinning = false;
+  readonly isSpinning = signal(false);
 }
 ```
 

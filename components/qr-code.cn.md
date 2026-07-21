@@ -204,17 +204,19 @@ export class NzDemoQrCodeDownloadComponent {
 通过设置 `nzLevel` 调整二维码容错。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzQRCodeModule } from 'ng-zorro-antd/qr-code';
 import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
 
+type Level = 'L' | 'M' | 'Q' | 'H';
+
 @Component({
   selector: 'nz-demo-qr-code-error-level',
   imports: [NzQRCodeModule, NzSegmentedModule, FormsModule],
   template: `
-    <nz-qrcode nzValue="https://github.com/NG-ZORRO/ng-zorro-antd/issues" [nzLevel]="errorLevel" />
+    <nz-qrcode nzValue="https://github.com/NG-ZORRO/ng-zorro-antd/issues" [nzLevel]="errorLevel()" />
     <nz-segmented [nzOptions]="options" [(ngModel)]="errorLevel" />
   `,
   styles: `
@@ -230,8 +232,8 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   `
 })
 export class NzDemoQrCodeErrorLevelComponent {
-  options: Array<'L' | 'M' | 'Q' | 'H'> = ['L', 'M', 'Q', 'H'];
-  errorLevel: 'L' | 'M' | 'Q' | 'H' = 'L';
+  readonly options: Level[] = ['L', 'M', 'Q', 'H'];
+  readonly errorLevel = signal<Level>('L');
 }
 ```
 

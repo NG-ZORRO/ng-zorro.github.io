@@ -42,7 +42,7 @@ To input a value in a range.
 Basic slider. When `nzRange` is `true`, display as dual thumb mode. When `nzDisabled` is `true`, the slider will not be interactive.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSliderModule } from 'ng-zorro-antd/slider';
@@ -59,9 +59,9 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSliderBasicComponent {
-  disabled = false;
-  value1 = 30;
-  value2 = [20, 50];
+  readonly disabled = signal(false);
+  readonly value1 = signal(30);
+  readonly value2 = signal([20, 50]);
 }
 ```
 
@@ -70,7 +70,7 @@ export class NzDemoSliderBasicComponent {
 The `nzOnChange` callback function will fire when the user changes the slider's value. The `nzOnAfterChange` callback function will fire when `onmouseup` fired.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSliderModule } from 'ng-zorro-antd/slider';
@@ -90,8 +90,8 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   `
 })
 export class NzDemoSliderEventComponent {
-  singleValue = 30;
-  rangeValue = [20, 50];
+  readonly singleValue = signal(30);
+  readonly rangeValue = signal([20, 50]);
 
   onChange(value: number): void {
     console.log(`onChange: ${value}`);
@@ -108,7 +108,7 @@ export class NzDemoSliderEventComponent {
 You can add an icon beside the slider to make it meaningful.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -118,10 +118,10 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   selector: 'nz-demo-slider-icon-slider',
   imports: [FormsModule, NzIconModule, NzSliderModule],
   template: `
-    <div class="icon-wrapper test-class">
-      <nz-icon nzType="frown" [class.icon-highlight]="preHighLight" />
+    <div class="icon-wrapper">
+      <nz-icon nzType="frown" [class.icon-highlight]="preHighLight()" />
       <nz-slider [nzMin]="0" [nzMax]="20" [(ngModel)]="sliderValue" />
-      <nz-icon nzType="smile" [class.icon-highlight]="nextHighLight" />
+      <nz-icon nzType="smile" [class.icon-highlight]="nextHighLight()" />
     </div>
   `,
   styles: `
@@ -141,11 +141,11 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
     }
 
     nz-icon:first-child {
-      left: 0;
+      inset-inline-start: 0;
     }
 
     nz-icon:last-child {
-      right: 0;
+      inset-inline-end: 0;
     }
 
     .icon-highlight {
@@ -153,32 +153,13 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
     }
   `
 })
-export class NzDemoSliderIconSliderComponent implements OnInit {
-  min = 0;
-  max = 20;
-  mid = parseFloat(((this.max - this.min) / 2).toFixed(5));
-  preHighLight = false;
-  nextHighLight = false;
-  _sliderValue = 0;
-
-  set sliderValue(value: number) {
-    this._sliderValue = value;
-    this.highlightIcon();
-  }
-
-  get sliderValue(): number {
-    return this._sliderValue;
-  }
-
-  ngOnInit(): void {
-    this.sliderValue = 0;
-  }
-
-  highlightIcon(): void {
-    const lower = this._sliderValue >= this.mid;
-    this.preHighLight = !lower;
-    this.nextHighLight = lower;
-  }
+export class NzDemoSliderIconSliderComponent {
+  readonly min = 0;
+  readonly max = 20;
+  readonly mid = parseFloat(((this.max - this.min) / 2).toFixed(5));
+  readonly sliderValue = signal(0);
+  readonly preHighLight = computed(() => this.sliderValue() < this.mid);
+  readonly nextHighLight = computed(() => this.sliderValue() >= this.mid);
 }
 ```
 
@@ -187,7 +168,7 @@ export class NzDemoSliderIconSliderComponent implements OnInit {
 Synchronize with [InptNumber](/components/input-number/) component.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzGridModule } from 'ng-zorro-antd/grid';
@@ -218,8 +199,8 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   `
 })
 export class NzDemoSliderInputNumberComponent {
-  value1 = 1;
-  value2 = 0;
+  readonly value1 = signal(1);
+  readonly value2 = signal(0);
 }
 ```
 
@@ -228,7 +209,7 @@ export class NzDemoSliderInputNumberComponent {
 Using `nzMarks` property to mark a graduated slider, use `ngModel` to specify the position of thumb. When `nzIncluded` is false, means that different thumbs are coordinated. When `nzStep` is null, users can only slide the thumbs onto marks.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -239,15 +220,15 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
   imports: [FormsModule, NzButtonModule, NzSliderModule],
   template: `
     <h4>included=true</h4>
-    <nz-slider [nzMarks]="marks" [ngModel]="37" />
-    <nz-slider [nzMarks]="marks" nzIncluded nzRange [ngModel]="[26, 37]" />
+    <nz-slider [nzMarks]="marks()" [ngModel]="37" />
+    <nz-slider [nzMarks]="marks()" nzIncluded nzRange [ngModel]="[26, 37]" />
     <h4>included=false</h4>
-    <nz-slider [nzMarks]="marks" [nzIncluded]="false" [ngModel]="37" />
+    <nz-slider [nzMarks]="marks()" [nzIncluded]="false" [ngModel]="37" />
     <h4>marks & step</h4>
-    <nz-slider [nzMarks]="marks" [nzStep]="10" [ngModel]="37" />
+    <nz-slider [nzMarks]="marks()" [nzStep]="10" [ngModel]="37" />
     <h4>step=null || dots=true</h4>
-    <nz-slider [nzMarks]="marks" [nzStep]="null" [ngModel]="37" />
-    <nz-slider [nzMarks]="marks" nzDots [ngModel]="37" />
+    <nz-slider [nzMarks]="marks()" [nzStep]="null" [ngModel]="37" />
+    <nz-slider [nzMarks]="marks()" nzDots [ngModel]="37" />
     Change nzMarks dynamically:
     <button nz-button (click)="changeMarks()">Change nzMarks</button>
   `,
@@ -262,7 +243,7 @@ import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
   `
 })
 export class NzDemoSliderMarkComponent {
-  marks: NzMarks = {
+  readonly marks = signal<NzMarks>({
     0: '0°C',
     26: '26°C',
     37: '37°C',
@@ -272,13 +253,13 @@ export class NzDemoSliderMarkComponent {
       },
       label: '<strong>100°C</strong>'
     }
-  };
+  });
 
   changeMarks(): void {
-    this.marks = {
+    this.marks.set({
       20: '20%',
       99: '99%'
-    };
+    });
   }
 }
 ```
@@ -288,7 +269,7 @@ export class NzDemoSliderMarkComponent {
 Using `nzReverse` to render slider reversely.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzMarks, NzSliderModule } from 'ng-zorro-antd/slider';
@@ -311,9 +292,9 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSliderReverseComponent {
-  reverse = true;
+  readonly reverse = signal(true);
 
-  marks: NzMarks = {
+  readonly marks: NzMarks = {
     0: '0°C',
     26: '26°C',
     37: '37°C',

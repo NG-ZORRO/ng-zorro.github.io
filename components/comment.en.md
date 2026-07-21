@@ -41,7 +41,7 @@ The element items rendered below the comment content.
 A basic comment with author, avatar, time and actions.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { formatDistance } from 'date-fns';
 
@@ -67,20 +67,20 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
           nz-tooltip
           nzTooltipTitle="Like"
           nzType="like"
-          [nzTheme]="likes > 0 ? 'twotone' : 'outline'"
+          [nzTheme]="likes() > 0 ? 'twotone' : 'outline'"
           (click)="like()"
         />
-        <span class="count like">{{ likes }}</span>
+        <span class="count like">{{ likes() }}</span>
       </nz-comment-action>
       <nz-comment-action>
         <nz-icon
           nz-tooltip
           nzTooltipTitle="Dislike"
           nzType="dislike"
-          [nzTheme]="dislikes > 0 ? 'twotone' : 'outline'"
+          [nzTheme]="dislikes() > 0 ? 'twotone' : 'outline'"
           (click)="dislike()"
         />
-        <span class="count dislike">{{ dislikes }}</span>
+        <span class="count dislike">{{ dislikes() }}</span>
       </nz-comment-action>
       <nz-comment-action>Reply to</nz-comment-action>
     </nz-comment>
@@ -97,18 +97,18 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
   `
 })
 export class NzDemoCommentBasicComponent {
-  likes = 0;
-  dislikes = 0;
-  time = formatDistance(new Date(), new Date());
+  readonly likes = signal(0);
+  readonly dislikes = signal(0);
+  readonly time = formatDistance(new Date(), new Date());
 
   like(): void {
-    this.likes = 1;
-    this.dislikes = 0;
+    this.likes.set(1);
+    this.dislikes.set(0);
   }
 
   dislike(): void {
-    this.likes = 0;
-    this.dislikes = 1;
+    this.likes.set(0);
+    this.dislikes.set(1);
   }
 }
 ```
@@ -118,7 +118,7 @@ export class NzDemoCommentBasicComponent {
 Comment can be used as editor, user can customize the editor component.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { formatDistance } from 'date-fns';
@@ -145,8 +145,8 @@ interface Data extends User {
   selector: 'nz-demo-comment-editor',
   imports: [FormsModule, NzAvatarModule, NzButtonModule, NzCommentModule, NzFormModule, NzInputModule, NzListModule],
   template: `
-    @if (data.length) {
-      <nz-list [nzDataSource]="data" [nzRenderItem]="item" nzItemLayout="horizontal">
+    @if (data().length) {
+      <nz-list [nzDataSource]="data()" [nzRenderItem]="item" nzItemLayout="horizontal">
         <ng-template #item let-item>
           <nz-comment [nzAuthor]="item.author" [nzDatetime]="item.displayTime">
             <nz-avatar nz-comment-avatar nzIcon="user" [nzSrc]="item.avatar" />
@@ -162,10 +162,10 @@ interface Data extends User {
       <nz-avatar nz-comment-avatar nzIcon="user" [nzSrc]="user.avatar" />
       <nz-comment-content>
         <nz-form-item>
-          <textarea [(ngModel)]="inputValue" nz-input rows="4"></textarea>
+          <textarea [(ngModel)]="value" nz-input rows="4"></textarea>
         </nz-form-item>
         <nz-form-item>
-          <button nz-button nzType="primary" [nzLoading]="submitting" [disabled]="!inputValue" (click)="handleSubmit()">
+          <button nz-button nzType="primary" [nzLoading]="submitting()" [disabled]="!value()" (click)="handleSubmit()">
             Add Comment
           </button>
         </nz-form-item>
@@ -174,32 +174,34 @@ interface Data extends User {
   `
 })
 export class NzDemoCommentEditorComponent {
-  data: Data[] = [];
-  submitting = false;
-  user: User = {
+  readonly data = signal<Data[]>([]);
+  readonly submitting = signal(false);
+  readonly user: User = {
     author: 'Han Solo',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'
   };
-  inputValue = '';
+  readonly value = signal('');
 
   handleSubmit(): void {
-    this.submitting = true;
-    const content = this.inputValue;
-    this.inputValue = '';
+    this.submitting.set(true);
+    const content = this.value();
+    this.value.set('');
     setTimeout(() => {
-      this.submitting = false;
-      this.data = [
-        ...this.data,
-        {
-          ...this.user,
-          content,
-          datetime: new Date(),
-          displayTime: formatDistance(new Date(), new Date())
-        }
-      ].map(e => ({
-        ...e,
-        displayTime: formatDistance(new Date(), e.datetime)
-      }));
+      this.submitting.set(false);
+      this.data.update(data =>
+        [
+          ...data,
+          {
+            ...this.user,
+            content,
+            datetime: new Date(),
+            displayTime: formatDistance(new Date(), new Date())
+          }
+        ].map(e => ({
+          ...e,
+          displayTime: formatDistance(new Date(), e.datetime)
+        }))
+      );
     }, 800);
   }
 }
@@ -210,7 +212,7 @@ export class NzDemoCommentEditorComponent {
 Displaying a series of comments using the `nz-list` Component.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { addDays, formatDistance } from 'date-fns';
 
@@ -222,7 +224,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
   selector: 'nz-demo-comment-list',
   imports: [NzAvatarModule, NzCommentModule, NzListModule],
   template: `
-    <nz-list [nzDataSource]="data" [nzRenderItem]="item" nzItemLayout="horizontal">
+    <nz-list [nzDataSource]="data()" [nzRenderItem]="item" nzItemLayout="horizontal">
       <ng-template #item let-item>
         <nz-comment [nzAuthor]="item.author" [nzDatetime]="item.datetime">
           <nz-avatar nz-comment-avatar nzIcon="user" [nzSrc]="item.avatar" />
@@ -236,7 +238,7 @@ import { NzListModule } from 'ng-zorro-antd/list';
   `
 })
 export class NzDemoCommentListComponent {
-  data = [
+  readonly data = signal([
     {
       author: 'Han Solo',
       avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
@@ -253,7 +255,7 @@ export class NzDemoCommentListComponent {
         '(Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
       datetime: formatDistance(new Date(), addDays(new Date(), 2))
     }
-  ];
+  ]);
 }
 ```
 
@@ -291,7 +293,7 @@ import { NzCommentModule } from 'ng-zorro-antd/comment';
   `
 })
 export class NzDemoCommentNestedComponent {
-  data = {
+  readonly data = {
     author: 'Han Solo',
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     content:

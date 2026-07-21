@@ -85,20 +85,18 @@ To load data asynchronously when click to expand a treeNode, loading state keeps
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzFormatEmitEvent, NzTreeNodeOptions } from 'ng-zorro-antd/tree';
 import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 
 @Component({
   selector: 'nz-demo-tree-select-async',
-  imports: [FormsModule, NzTreeSelectModule],
+  imports: [NzTreeSelectModule],
   template: `
     <nz-tree-select
       style="width: 250px"
       nzPlaceHolder="Please select"
       [nzExpandedKeys]="expandKeys"
-      [(ngModel)]="value"
       [nzDropdownMatchSelectWidth]="true"
       [nzDropdownStyle]="{ 'max-height': '300px' }"
       [nzNodes]="nodes"
@@ -108,8 +106,7 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
   `
 })
 export class NzDemoTreeSelectAsyncComponent {
-  expandKeys = ['0-0'];
-  value?: string;
+  readonly expandKeys = ['0-0'];
   readonly nodes = [
     {
       title: 'Node1',
@@ -164,7 +161,7 @@ export class NzDemoTreeSelectAsyncComponent {
 The most basic usage.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
@@ -180,13 +177,12 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
       nzShowSearch
       nzPlaceHolder="Please select"
       [(ngModel)]="value"
-      (ngModelChange)="onChange($event)"
     />
   `
 })
-export class NzDemoTreeSelectBasicComponent implements OnInit {
-  expandKeys = ['100', '1001'];
-  value?: string;
+export class NzDemoTreeSelectBasicComponent {
+  readonly expandKeys = ['100', '1001'];
+  readonly value = signal('1001');
   readonly nodes = [
     {
       title: 'parent 1',
@@ -208,17 +204,6 @@ export class NzDemoTreeSelectBasicComponent implements OnInit {
       ]
     }
   ];
-
-  onChange($event: string): void {
-    console.log($event);
-  }
-
-  ngOnInit(): void {
-    // mock async
-    setTimeout(() => {
-      this.value = '1001';
-    }, 1000);
-  }
 }
 ```
 
@@ -507,19 +492,18 @@ export class NzDemoTreeSelectPlacementComponent {
 Custom `nzPrefix` and `nzSuffixIcon`.
 
 ```typescript
-import { Component, model } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component } from '@angular/core';
 
 import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 
 @Component({
   selector: 'nz-demo-tree-select-prefix-and-suffix',
-  imports: [FormsModule, NzTreeSelectModule],
+  imports: [NzTreeSelectModule],
   template: `
-    <nz-tree-select [nzNodes]="nodes" nzSuffixIcon="smile" [(ngModel)]="value" nzDefaultExpandAll />
+    <nz-tree-select [nzNodes]="nodes" nzSuffixIcon="smile" nzDefaultExpandAll />
     <br />
     <br />
-    <nz-tree-select [nzNodes]="nodes" nzPrefix="Prefix" [(ngModel)]="value" nzDefaultExpandAll />
+    <nz-tree-select [nzNodes]="nodes" nzPrefix="Prefix" nzDefaultExpandAll />
   `,
   styles: `
     nz-tree-select {
@@ -528,7 +512,6 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
   `
 })
 export class NzDemoTreeSelectPrefixAndSuffixComponent {
-  readonly value = model();
   readonly nodes = [
     {
       title: 'parent 1',

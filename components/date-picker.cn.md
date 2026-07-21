@@ -106,13 +106,11 @@ registerLocaleData(zh);
 
 ## FAQ
 
-### 为何在设置 `nzFormat="dd/MM/yyyy"` 后手动输入不生效
+### 如何在 Date-Picker 中使用自定义日期库
 
-需要引入 `date-fns` 。日期格式化目前同时支持两种方式：`DatePipe`（默认，[语法参考](https://angular.cn/api/common/DatePipe)）
-和 `date-fns`（见[如何使用 `date-fns` 进行日期格式化](/docs/i18n/zh#如何使用Date-fns进行日期格式化)）。当你引入 `date-fns`
-后，NG-ZORRO 会使用它提供的 API 来进行反序列化。
+参考 [日期适配器](/docs/date-adapter/zh)。
 
-### Q：滚动时浮层元素没有跟随滚动位置
+### 滚动时浮层元素没有跟随滚动位置
 
 默认情况下，浮层元素使用 `body` 作为滚动容器，如果使用了其他滚动容器，在自定义滚动容器元素上添加 [CdkScrollable](https://material.angular.dev/cdk/scrolling/api#CdkScrollable) 指令。
 注意：您需要从 `@angular/cdk/scrolling` 导入 `CdkScrollable` 指令或 `ScrollingModule` 模块。
@@ -126,30 +124,24 @@ registerLocaleData(zh);
 最简单的用法，在浮层中可以选择或者输入日期。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { getISOWeek } from 'date-fns';
-
-import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
 
 @Component({
   selector: 'nz-demo-date-picker-basic',
-  imports: [FormsModule, NzButtonModule, NzDatePickerModule],
+  imports: [FormsModule, NzDatePickerModule],
   template: `
     <nz-date-picker [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
-    <nz-date-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+    <nz-date-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="quarter" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="year" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
-    <br />
-    <button nz-button nzType="default" (click)="changeLanguage()">Switch language for all pickers</button>
   `,
   styles: `
     nz-date-picker {
@@ -158,22 +150,10 @@ import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
   `
 })
 export class NzDemoDatePickerBasicComponent {
-  date = null;
-  isEnglish = false;
-
-  constructor(private i18n: NzI18nService) {}
+  readonly date = signal<Date | null>(null);
 
   onChange(result: Date): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date): void {
-    console.log('week: ', getISOWeek(result));
-  }
-
-  changeLanguage(): void {
-    this.i18n.setLocale(this.isEnglish ? zh_CN : en_US);
-    this.isEnglish = !this.isEnglish;
   }
 }
 ```
@@ -407,10 +387,8 @@ export class NzDemoDatePickerFormatComponent {
 使用 `nzInline` 属性，可以渲染为内联模式。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { getISOWeek } from 'date-fns';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
@@ -424,7 +402,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
         <nz-date-picker nzInline [(ngModel)]="date" (ngModelChange)="onChange($event)" />
       </nz-tab>
       <nz-tab nzTitle="Week">
-        <nz-date-picker nzInline nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+        <nz-date-picker nzInline nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
       </nz-tab>
       <nz-tab nzTitle="Month">
         <nz-date-picker nzInline nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
@@ -463,15 +441,11 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoDatePickerInlineComponent {
-  date = null;
-  rangeDate = null;
+  readonly date = signal<Date | null>(null);
+  readonly rangeDate = signal<Date[] | null>(null);
 
   onChange(result: Date): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date): void {
-    console.log('week: ', getISOWeek(result));
   }
 }
 ```
@@ -481,7 +455,7 @@ export class NzDemoDatePickerInlineComponent {
 可以通过 `nzPlacement` 手动指定弹出的位置。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import type { NzPlacement } from 'ng-zorro-antd/core/types';
@@ -500,9 +474,9 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzPlacement]="placement" />
+    <nz-date-picker [nzPlacement]="placement()" />
     <br />
-    <nz-range-picker [nzPlacement]="placement" />
+    <nz-range-picker [nzPlacement]="placement()" />
   `,
   styles: `
     nz-date-picker,
@@ -512,7 +486,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerPlacementComponent {
-  placement: NzPlacement = 'bottomLeft';
+  readonly placement = signal<NzPlacement>('bottomLeft');
 }
 ```
 
@@ -563,10 +537,8 @@ export class NzDemoDatePickerPresettedRangesComponent {
 通过设置 `nzMode` 属性，指定范围选择器类型。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { getISOWeek } from 'date-fns';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 
@@ -578,7 +550,7 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
     <br />
     <nz-range-picker [nzShowTime]="true" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
-    <nz-range-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+    <nz-range-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-range-picker nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
@@ -593,14 +565,10 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
   `
 })
 export class NzDemoDatePickerRangePickerComponent {
-  date = null;
+  readonly date = signal<Date[] | null>(null);
 
   onChange(result: Date[]): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date[]): void {
-    console.log('week: ', result.map(getISOWeek));
   }
 }
 ```
@@ -610,7 +578,7 @@ export class NzDemoDatePickerRangePickerComponent {
 三种大小的输入框，若不设置，则为 `default`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerModule, NzDatePickerSizeType } from 'ng-zorro-antd/date-picker';
@@ -627,15 +595,15 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzSize]="size" />
+    <nz-date-picker [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="week" [nzSize]="size" />
+    <nz-date-picker nzMode="week" [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="month" [nzSize]="size" />
+    <nz-date-picker nzMode="month" [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="quarter" [nzSize]="size" />
+    <nz-date-picker nzMode="quarter" [nzSize]="size()" />
     <br />
-    <nz-range-picker [nzSize]="size" />
+    <nz-range-picker [nzSize]="size()" />
   `,
   styles: `
     nz-date-picker,
@@ -645,7 +613,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerSizeComponent {
-  size: NzDatePickerSizeType = 'default';
+  readonly size = signal<NzDatePickerSizeType>('default');
 }
 ```
 
@@ -657,7 +625,7 @@ export class NzDemoDatePickerSizeComponent {
 > - 通过 `open()` 来优化交互。
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
+import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerComponent, NzDatePickerModule } from 'ng-zorro-antd/date-picker';
@@ -691,22 +659,25 @@ import { NzDatePickerComponent, NzDatePickerModule } from 'ng-zorro-antd/date-pi
   `
 })
 export class NzDemoDatePickerStartEndComponent {
-  startValue: Date | null = null;
-  endValue: Date | null = null;
+  readonly startValue = signal<Date | null>(null);
+  readonly endValue = signal<Date | null>(null);
+
   @ViewChild('endDatePicker') endDatePicker!: NzDatePickerComponent;
 
-  disabledStartDate = (startValue: Date): boolean => {
-    if (!startValue || !this.endValue) {
+  readonly disabledStartDate = (startValue: Date): boolean => {
+    const endValue = this.endValue();
+    if (!startValue || !endValue) {
       return false;
     }
-    return startValue.getTime() > this.endValue.getTime();
+    return startValue.getTime() > endValue.getTime();
   };
 
-  disabledEndDate = (endValue: Date): boolean => {
-    if (!endValue || !this.startValue) {
+  readonly disabledEndDate = (endValue: Date): boolean => {
+    const startValue = this.startValue();
+    if (!endValue || !startValue) {
       return false;
     }
-    return endValue.getTime() <= this.startValue.getTime();
+    return endValue.getTime() <= startValue.getTime();
   };
 
   handleStartOpenChange(open: boolean): void {
@@ -752,10 +723,10 @@ export class NzDemoDatePickerStatusComponent {}
 提供选择器，自由切换不同类型的日期选择器，常用于日期筛选场合。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzDateMode, NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 
@@ -771,12 +742,12 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
         <nz-option nzValue="quarter" nzLabel="Quarter" />
         <nz-option nzValue="year" nzLabel="Year" />
       </nz-select>
-      <nz-date-picker *nzSpaceItem [nzMode]="mode" />
+      <nz-date-picker *nzSpaceItem [nzMode]="mode()" />
     </nz-space>
   `
 })
 export class NzDemoDatePickerSwitchComponent {
-  mode = 'date';
+  readonly mode = signal<NzDateMode>('date');
 }
 ```
 
@@ -868,7 +839,7 @@ export class NzDemoDatePickerVariantComponent {}
 使用 `nzShowWeekNumber` 显示周数
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
@@ -884,9 +855,9 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzShowWeekNumber]="showWeekNumber" />
+    <nz-date-picker [nzShowWeekNumber]="showWeekNumber()" />
     <br />
-    <nz-range-picker [nzShowWeekNumber]="showWeekNumber" />
+    <nz-range-picker [nzShowWeekNumber]="showWeekNumber()" />
   `,
   styles: `
     nz-date-picker,
@@ -896,6 +867,6 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerWeekNumberComponent {
-  showWeekNumber: boolean = false;
+  readonly showWeekNumber = signal(false);
 }
 ```

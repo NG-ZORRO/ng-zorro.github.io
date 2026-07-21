@@ -54,6 +54,12 @@ registerLocaleData(en);
 | `(nzPanelChange)`   | Callback for when panel changes                                                                          | `EventEmitter<{ date: Date, mode: 'month' \| 'year' }>` | -            |
 | `(nzSelectChange)`  | A callback function of selected item                                                                     | `EventEmitter<Date>`                                    | -            |
 
+## FAQ
+
+### How to use custom date library in Calendar
+
+Refer to [Date Adapter](/docs/date-adapter/en).
+
 ---
 
 ## Examples
@@ -63,7 +69,7 @@ registerLocaleData(en);
 A basic calendar component with Year/Month switch.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCalendarMode, NzCalendarModule } from 'ng-zorro-antd/calendar';
@@ -74,8 +80,8 @@ import { NzCalendarMode, NzCalendarModule } from 'ng-zorro-antd/calendar';
   template: `<nz-calendar [(ngModel)]="date" [(nzMode)]="mode" (nzPanelChange)="panelChange($event)" />`
 })
 export class NzDemoCalendarBasicComponent {
-  date = new Date(2012, 11, 21);
-  mode: NzCalendarMode = 'month';
+  readonly date = signal(new Date(2012, 11, 21));
+  readonly mode = signal<NzCalendarMode>('month');
 
   panelChange(change: { date: Date; mode: string }): void {
     console.log(change.date, change.mode);
@@ -260,7 +266,7 @@ A basic calendar component with Year/Month switch.
 
 ```typescript
 import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -270,12 +276,12 @@ import { NzCalendarModule } from 'ng-zorro-antd/calendar';
   selector: 'nz-demo-calendar-select',
   imports: [DatePipe, FormsModule, NzAlertModule, NzCalendarModule],
   template: `
-    <nz-alert nzMessage="Your selected date: {{ selectedValue | date: 'yyyy-MM-dd' }}" />
+    <nz-alert nzMessage="Your selected date: {{ selectedValue() | date: 'yyyy-MM-dd' }}" />
     <nz-calendar [(ngModel)]="selectedValue" (nzSelectChange)="selectChange($event)" />
   `
 })
 export class NzDemoCalendarSelectComponent {
-  selectedValue = new Date('2017-01-25');
+  readonly selectedValue = signal(new Date('2017-01-25'));
 
   selectChange(select: Date): void {
     console.log(`Select value: ${select}`);

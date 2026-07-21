@@ -118,7 +118,7 @@ export class NzDemoPopoverBasicComponent {}
 使用 `nzPopoverVisible` 属性控制浮层显示。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
@@ -145,10 +145,10 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
   `
 })
 export class NzDemoPopoverControlComponent {
-  visible: boolean = false;
+  readonly visible = signal(false);
 
   clickMe(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 
   change(value: boolean): void {
@@ -162,7 +162,7 @@ export class NzDemoPopoverControlComponent {
 在 `nzPopoverTrigger` 为 `'click'` 时，通过设置 `nzPopoverOverlayClickable` 为 `false` 禁止通过点击蒙层关闭面板。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzPopoverModule } from 'ng-zorro-antd/popover';
@@ -179,9 +179,11 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
       nzPopoverTrigger="click"
       [nzPopoverContent]="contentTemplate"
       [nzPopoverOverlayClickable]="false"
-      [nzPopoverVisible]="visible"
+      [nzPopoverVisible]="visible()"
       (nzPopoverVisibleChange)="visibleChange($event)"
-      >Click me</button
+    >
+      Click me
+    </button>
     >
     <ng-template #contentTemplate>
       <button nz-button nzSize="small" nzType="primary" (click)="visibleChange(false)"> Close me </button>
@@ -189,10 +191,10 @@ import { NzPopoverModule } from 'ng-zorro-antd/popover';
   `
 })
 export class NzDemoPopoverOverlayComponent {
-  visible = false;
+  readonly visible = signal(false);
 
   visibleChange(value: boolean): void {
-    this.visible = value;
+    this.visible.set(value);
   }
 }
 ```

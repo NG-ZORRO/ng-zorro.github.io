@@ -114,7 +114,7 @@ interface NzResizeHandleOption {
 基本使用。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzResizableModule, NzResizeDirection, NzResizeEvent } from 'ng-zorro-antd/resizable';
 
@@ -129,9 +129,9 @@ import { NzResizableModule, NzResizeDirection, NzResizeEvent } from 'ng-zorro-an
       [nzMinWidth]="80"
       [nzMaxHeight]="200"
       [nzMinHeight]="80"
-      [nzDisabled]="disabled"
-      [style.height.px]="height"
-      [style.width.px]="width"
+      [nzDisabled]="disabled()"
+      [style.height.px]="height()"
+      [style.width.px]="width()"
       (nzResize)="onResize($event)"
     >
       <nz-resize-handles />
@@ -153,18 +153,18 @@ import { NzResizableModule, NzResizeDirection, NzResizeEvent } from 'ng-zorro-an
   `
 })
 export class NzDemoResizableBasicComponent {
-  width = 400;
-  height = 200;
   id = -1;
-  disabled = false;
-  resizeDirection: NzResizeDirection | null = null;
+  readonly width = signal(400);
+  readonly height = signal(200);
+  readonly disabled = signal(false);
+  readonly resizeDirection = signal<NzResizeDirection | null>(null);
 
   onResize({ width, height, direction }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.width = width!;
-      this.height = height!;
-      this.resizeDirection = direction!;
+      this.width.set(width!);
+      this.height.set(height!);
+      this.resizeDirection.set(direction!);
     });
   }
 }
@@ -175,7 +175,7 @@ export class NzDemoResizableBasicComponent {
 自定义拖拽柄样式。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
@@ -184,7 +184,7 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   selector: 'nz-demo-resizable-customize',
   imports: [NzIconModule, NzResizableModule],
   template: `
-    <div class="box" nz-resizable (nzResize)="onResize($event)" [style.height.px]="height" [style.width.px]="width">
+    <div class="box" nz-resizable (nzResize)="onResize($event)" [style.height.px]="height()" [style.width.px]="width()">
       content
       <nz-resize-handle nzDirection="bottomRight">
         <nz-icon class="bottom-right" nzType="caret-up" nzTheme="outline" [nzRotate]="135" />
@@ -234,15 +234,15 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   `
 })
 export class NzDemoResizableCustomizeComponent {
-  width = 400;
-  height = 200;
+  readonly width = signal(400);
+  readonly height = signal(200);
   id = -1;
 
   onResize({ width, height }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.width = width!;
-      this.height = height!;
+      this.width.set(width!);
+      this.height.set(height!);
     });
   }
 }
@@ -253,7 +253,7 @@ export class NzDemoResizableCustomizeComponent {
 调整抽屉宽度。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDrawerModule } from 'ng-zorro-antd/drawer';
@@ -266,18 +266,18 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
     <button nz-button nzType="primary" (click)="open()">Open</button>
     <nz-drawer
       [nzClosable]="false"
-      [nzVisible]="visible"
+      [nzVisible]="visible()"
       [nzBodyStyle]="{
         padding: 0,
         height: 'calc(100vh - 55px)'
       }"
-      [nzWidth]="width"
+      [nzWidth]="width()"
       nzPlacement="left"
       nzTitle="Resizable Drawer"
       (nzOnClose)="close()"
     >
       <ng-container *nzDrawerContent>
-        @if (visible) {
+        @if (visible()) {
           <div class="drawer-body" nz-resizable nzBounds="window" [nzMinWidth]="256" (nzResize)="onResize($event)">
             <nz-resize-handles [nzDirections]="['right']" />
             <p>Some contents...</p>
@@ -297,23 +297,23 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   `
 })
 export class NzDemoResizableDrawerComponent {
-  width = 256;
-  visible = false;
+  readonly width = signal(256);
+  readonly visible = signal(false);
   id = -1;
 
   onResize({ width }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.width = width!;
+      this.width.set(width!);
     });
   }
 
   open(): void {
-    this.visible = true;
+    this.visible.set(true);
   }
 
   close(): void {
-    this.visible = false;
+    this.visible.set(false);
   }
 }
 ```
@@ -323,7 +323,7 @@ export class NzDemoResizableDrawerComponent {
 配合栅格使用
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzResizableModule, NzResizeEvent, NzResizeHandleOption } from 'ng-zorro-antd/resizable';
@@ -341,12 +341,12 @@ import { NzResizableModule, NzResizeEvent, NzResizeHandleOption } from 'ng-zorro
         [nzMinColumn]="3"
         [nzMaxColumn]="20"
         [nzGridColumnCount]="24"
-        [nzSpan]="col"
+        [nzSpan]="col()"
       >
-        <nz-resize-handles [nzDirections]="directions" />
-        col-{{ col }}
+        <nz-resize-handles [nzDirections]="directions()" />
+        col-{{ col() }}
       </div>
-      <div class="col right" nz-col [nzSpan]="24 - col">col-{{ 24 - col }}</div>
+      <div class="col right" nz-col [nzSpan]="24 - col()">col-{{ 24 - col() }}</div>
     </div>
   `,
   styles: `
@@ -367,19 +367,19 @@ import { NzResizableModule, NzResizeEvent, NzResizeHandleOption } from 'ng-zorro
   `
 })
 export class NzDemoResizableGridComponent {
-  col = 8;
+  readonly col = signal(8);
   id = -1;
-  directions: NzResizeHandleOption[] = [
+  readonly directions = signal<NzResizeHandleOption[]>([
     {
       direction: 'right',
       cursorType: 'grid'
     }
-  ];
+  ]);
 
   onResize({ col }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.col = col!;
+      this.col.set(col!);
     });
   }
 }
@@ -390,7 +390,7 @@ export class NzDemoResizableGridComponent {
 调整布局尺寸。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
@@ -403,7 +403,7 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
       <nz-header>Header</nz-header>
       <nz-layout>
         <nz-sider
-          [nzWidth]="siderWidth"
+          [nzWidth]="siderWidth()"
           nz-resizable
           [nzMinWidth]="50"
           [nzMaxWidth]="300"
@@ -418,7 +418,7 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
           <div
             nz-resizable
             class="resizable-box"
-            [style.height.px]="contentHeight"
+            [style.height.px]="contentHeight()"
             [nzMaxHeight]="300"
             [nzMinHeight]="50"
             (nzResize)="onContentResize($event)"
@@ -489,21 +489,21 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   `
 })
 export class NzDemoResizableLayoutComponent {
-  siderWidth = 120;
-  contentHeight = 200;
+  readonly siderWidth = signal(120);
+  readonly contentHeight = signal(200);
   id = -1;
 
   onSideResize({ width }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.siderWidth = width!;
+      this.siderWidth.set(width!);
     });
   }
 
   onContentResize({ height }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.contentHeight = height!;
+      this.contentHeight.set(height!);
     });
   }
 }
@@ -514,7 +514,7 @@ export class NzDemoResizableLayoutComponent {
 锁定宽高比。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
 
@@ -527,8 +527,8 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
       nz-resizable
       nzLockAspectRatio
       (nzResize)="onResize($event)"
-      [style.height.px]="height"
-      [style.width.px]="width"
+      [style.height.px]="height()"
+      [style.width.px]="width()"
     >
       <nz-resize-handles />
       content
@@ -549,15 +549,15 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   `
 })
 export class NzDemoResizableLockAspectRatioComponent {
-  width = 400;
-  height = 200;
+  readonly width = signal(400);
+  readonly height = signal(200);
   id = -1;
 
   onResize({ width, height }: NzResizeEvent): void {
     cancelAnimationFrame(this.id);
     this.id = requestAnimationFrame(() => {
-      this.width = width!;
-      this.height = height!;
+      this.width.set(width!);
+      this.height.set(height!);
     });
   }
 }
@@ -568,7 +568,7 @@ export class NzDemoResizableLockAspectRatioComponent {
 在应用尺寸前预览。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
 
@@ -581,8 +581,8 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
       nz-resizable
       nzPreview
       (nzResizeEnd)="onResize($event)"
-      [style.height.px]="height"
-      [style.width.px]="width"
+      [style.height.px]="height()"
+      [style.width.px]="width()"
     >
       <nz-resize-handles />
       content
@@ -603,12 +603,12 @@ import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
   `
 })
 export class NzDemoResizablePreviewComponent {
-  width = 400;
-  height = 200;
+  readonly width = signal(400);
+  readonly height = signal(200);
 
   onResize({ width, height }: NzResizeEvent): void {
-    this.width = width!;
-    this.height = height!;
+    this.width.set(width!);
+    this.height.set(height!);
   }
 }
 ```
@@ -618,7 +618,7 @@ export class NzDemoResizablePreviewComponent {
 调整表头宽度。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzResizableModule, NzResizeEvent } from 'ng-zorro-antd/resizable';
 import { NzTableModule } from 'ng-zorro-antd/table';
@@ -630,7 +630,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
     <nz-table #basicTable [nzData]="listOfData">
       <thead>
         <tr>
-          @for (col of cols; track col) {
+          @for (col of cols(); track col) {
             @if (col.width) {
               <th
                 nz-resizable
@@ -674,7 +674,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
   `
 })
 export class NzDemoResizableTableComponent {
-  cols: Array<{ title: string; width?: string }> = [
+  readonly cols = signal<Array<{ title: string; width?: string }>>([
     {
       title: 'Name',
       width: '180px'
@@ -690,9 +690,9 @@ export class NzDemoResizableTableComponent {
     {
       title: 'Actions'
     }
-  ];
+  ]);
 
-  listOfData = [
+  readonly listOfData = [
     {
       key: '1',
       name: 'John Brown',
@@ -714,7 +714,7 @@ export class NzDemoResizableTableComponent {
   ];
 
   onResize({ width }: NzResizeEvent, col: string): void {
-    this.cols = this.cols.map(e => (e.title === col ? { ...e, width: `${width}px` } : e));
+    this.cols.update(cols => cols.map(e => (e.title === col ? { ...e, width: `${width}px` } : e)));
   }
 }
 ```

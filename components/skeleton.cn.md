@@ -120,7 +120,7 @@ export class NzDemoSkeletonBasicComponent {}
 加载占位图包含子组件。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
@@ -130,14 +130,14 @@ import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
   imports: [NzButtonModule, NzSkeletonModule],
   template: `
     <div class="article">
-      <nz-skeleton [nzLoading]="loading">
+      <nz-skeleton [nzLoading]="loading()">
         <h4>Ant Design, a design language</h4>
         <p>
           We supply a series of design principles, practical patterns and high quality design resources (Sketch and
           Axure), to help people create their product prototypes beautifully and efficiently.
         </p>
       </nz-skeleton>
-      <button nz-button (click)="showSkeleton()" [disabled]="loading">Show Skeleton</button>
+      <button nz-button (click)="showSkeleton()" [disabled]="loading()">Show Skeleton</button>
     </div>
   `,
   styles: `
@@ -150,13 +150,11 @@ import { NzSkeletonModule } from 'ng-zorro-antd/skeleton';
   `
 })
 export class NzDemoSkeletonChildrenComponent {
-  loading = false;
+  readonly loading = signal(false);
 
   showSkeleton(): void {
-    this.loading = true;
-    setTimeout(() => {
-      this.loading = false;
-    }, 3000);
+    this.loading.set(true);
+    setTimeout(() => this.loading.set(false), 3000);
   }
 }
 ```
@@ -183,7 +181,7 @@ export class NzDemoSkeletonComplexComponent {}
 骨架按钮、头像、输入框和图像。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -206,28 +204,28 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
       <nz-skeleton-element
         *nzSpaceItem
         nzType="button"
-        [nzActive]="elementActive"
-        [nzSize]="elementSize"
-        [nzShape]="buttonShape"
+        [nzActive]="elementActive()"
+        [nzSize]="elementSize()"
+        [nzShape]="buttonShape()"
       />
       <nz-skeleton-element
         *nzSpaceItem
         nzType="avatar"
-        [nzActive]="elementActive"
-        [nzSize]="elementSize"
-        [nzShape]="avatarShape"
+        [nzActive]="elementActive()"
+        [nzSize]="elementSize()"
+        [nzShape]="avatarShape()"
       />
       <nz-skeleton-element
         *nzSpaceItem
         nzType="input"
-        [nzActive]="elementActive"
-        [nzSize]="elementSize"
+        [nzActive]="elementActive()"
+        [nzSize]="elementSize()"
         style="width:200px"
       />
     </nz-space>
     <br />
     <br />
-    <nz-skeleton-element nzType="image" [nzActive]="elementActive" />
+    <nz-skeleton-element nzType="image" [nzActive]="elementActive()" />
     <nz-divider />
     <div nz-row nzAlign="middle" [nzGutter]="8">
       <div nz-col nzSpan="10">
@@ -266,10 +264,10 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSkeletonElementComponent {
-  elementActive = false;
-  buttonShape: NzSkeletonButtonShape = 'default';
-  avatarShape: NzSkeletonAvatarShape = 'circle';
-  elementSize: NzSkeletonInputSize = 'default';
+  readonly elementActive = signal(false);
+  readonly buttonShape = signal<NzSkeletonButtonShape>('default');
+  readonly avatarShape = signal<NzSkeletonAvatarShape>('circle');
+  readonly elementSize = signal<NzSkeletonInputSize>('default');
 }
 ```
 
@@ -278,7 +276,7 @@ export class NzDemoSkeletonElementComponent {
 在列表组件中使用加载占位符。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -294,11 +292,11 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     <nz-list [nzDataSource]="listData" [nzRenderItem]="item" nzItemLayout="vertical">
       <ng-template #item let-item>
         <nz-list-item
-          [nzContent]="loading ? ' ' : item.content"
-          [nzActions]="loading ? [] : [starAction, likeAction, msgAction]"
-          [nzExtra]="loading ? null : extra"
+          [nzContent]="loading() ? ' ' : item.content"
+          [nzActions]="loading() ? [] : [starAction, likeAction, msgAction]"
+          [nzExtra]="loading() ? null : extra"
         >
-          <nz-skeleton [nzLoading]="loading" [nzActive]="true" [nzAvatar]="true">
+          <nz-skeleton [nzLoading]="loading()" [nzActive]="true" [nzAvatar]="true">
             <ng-template #starAction>
               <nz-icon nzType="star-o" style="margin-right: 8px;" />
               156
@@ -326,8 +324,8 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSkeletonListComponent {
-  loading = true;
-  listData = new Array(3).fill({}).map((_i, index) => ({
+  readonly loading = signal(true);
+  readonly listData = new Array(3).fill({}).map((_i, index) => ({
     href: 'https://ng.ant.design',
     title: `ant design part ${index}`,
     avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',

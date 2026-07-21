@@ -87,7 +87,7 @@ export interface NzNotificationDataRef {
 最简单的用法，4.5 秒后自动关闭。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -98,7 +98,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationBasicComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification
@@ -118,7 +118,7 @@ export class NzDemoNotificationBasicComponent {
 图标可以被自定义。
 
 ```typescript
-import { Component, TemplateRef } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -146,7 +146,7 @@ import { type NzNotificationComponent, NzNotificationService } from 'ng-zorro-an
   `
 })
 export class NzDemoNotificationCustomIconComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(template: TemplateRef<{ $implicit: NzNotificationComponent; data: undefined }>): void {
     this.notification.template(template);
@@ -159,7 +159,7 @@ export class NzDemoNotificationCustomIconComponent {
 使用 nzStyle 和 nzClass 来定义样式。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -170,7 +170,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationCustomStyleComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank(
@@ -193,7 +193,7 @@ export class NzDemoNotificationCustomStyleComponent {
 自定义通知框自动关闭的延时，默认`4.5s`，取消自动关闭只要将该值设为 `0` 即可。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -204,7 +204,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationDurationComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank(
@@ -221,7 +221,7 @@ export class NzDemoNotificationDurationComponent {
 通知从右上角、右下角、左下角、左上角、上方、下方弹出。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -266,9 +266,9 @@ import { NzNotificationPlacement, NzNotificationService } from 'ng-zorro-antd/no
   `
 })
 export class NzDemoNotificationPlacementComponent {
-  placement = 'topRight';
+  private readonly notification = inject(NzNotificationService);
 
-  constructor(private notification: NzNotificationService) {}
+  placement = 'topRight';
 
   createNotification(position: NzNotificationPlacement): void {
     this.notification.blank(
@@ -285,7 +285,7 @@ export class NzDemoNotificationPlacementComponent {
 通过模板来实现更加复杂的效果和交互。
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { type NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/notification';
@@ -309,13 +309,12 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
   `
 })
 export class NzDemoNotificationTemplateComponent {
+  private readonly notificationService = inject(NzNotificationService);
+
   @ViewChild(TemplateRef, { static: false }) template?: TemplateRef<{
     $implicit: NzNotificationComponent;
     data: Array<{ name: string; color: string }>;
   }>;
-
-  constructor(private notificationService: NzNotificationService) {}
-
   createNotification(): void {
     const fruits = [
       { name: 'Apple', color: 'red' },
@@ -335,7 +334,7 @@ export class NzDemoNotificationTemplateComponent {
 可以通过唯一的 `nzKey` 来更新内容。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -346,7 +345,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()"> Open the notification box </button>`
 })
 export class NzDemoNotificationUpdateComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank('Notification Title', 'Description.', {
@@ -367,7 +366,7 @@ export class NzDemoNotificationUpdateComponent {
 自定义关闭按钮的样式和文字。
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/notification';
@@ -384,8 +383,10 @@ import { NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/no
   `
 })
 export class NzDemoNotificationWithBtnComponent {
-  @ViewChild('notificationBtnTpl', { static: true }) btnTemplate!: TemplateRef<{ $implicit: NzNotificationComponent }>;
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
+
+  @ViewChild('notificationBtnTpl', { static: true })
+  btnTemplate!: TemplateRef<{ $implicit: NzNotificationComponent }>;
 
   createNotification(): void {
     this.notification.blank(
@@ -404,7 +405,7 @@ export class NzDemoNotificationWithBtnComponent {
 通知提醒框左侧有图标。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -425,7 +426,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   `
 })
 export class NzDemoNotificationWithIconComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(type: string): void {
     this.notification.create(

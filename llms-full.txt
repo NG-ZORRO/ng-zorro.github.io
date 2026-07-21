@@ -124,7 +124,7 @@ An enterprise-class Angular UI component library based on Ant Design, all compon
 
 ## Angular Support
 
-`ng-zorro-antd` keeps the same major version with `@angular/core`, now supports Angular `^21.0.0`.
+`ng-zorro-antd` keeps the same major version with `@angular/core`, now supports Angular `^22.0.0`.
 
 ## Design Specification
 
@@ -184,6 +184,285 @@ If you'd like to help us improve ng-zorro-antd, just create a [Pull Request](htt
 For questions on how to use ng-zorro-antd, please post questions to [<img alt="Stack Overflow" src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-logo.svg?v=2bb144720a66" width="140" />](https://stackoverflow.com/questions/tagged/ng-zorro-antd) using the `ng-zorro-antd` tag. If you're not finding what you need on stackoverflow, you can find us on [Discussions · NG-ZORRO/ng-zorro-antd](https://github.com/NG-ZORRO/ng-zorro-antd/discussions) as well.
 
 As always, we encourage experienced users to help those who are not familiar with `ng-zorro-antd`!
+
+---
+
+---
+order: 4
+title: Date Adapter
+tag: new
+---
+
+NG-ZORRO date components access date operations through `NzDateAdapter`. Starting from v22, NG-ZORRO no longer provides a date engine adapter by default. Applications need to explicitly provide an adapter at the application root. If you want to keep the same behavior as previous versions, use the built-in `date-fns` adapter.
+
+## Built-in Adapters
+
+If you want to use the built-in adapter based on `date-fns`, use `provideNzDateFnsAdapter`:
+
+```ts
+import { ApplicationConfig } from '@angular/core';
+import { enUS } from 'date-fns/locale';
+
+import { provideNzDateFnsAdapter } from 'ng-zorro-antd/core/time';
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideNzDateFnsAdapter({ locale: enUS, firstDayOfWeek: 1 })]
+};
+```
+
+If you prefer native `Date` and `Intl.DateTimeFormat` semantics for date operations, use the built-in native adapter:
+
+```ts
+import { ApplicationConfig } from '@angular/core';
+
+import { provideNzNativeDateAdapter } from 'ng-zorro-antd/core/time';
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideNzNativeDateAdapter({ locale: 'en-US', firstDayOfWeek: 0 })]
+};
+```
+
+The adapter `locale` controls date-library formatting and week rules, such as month names, weekday names and the first day of week.
+If the language changes at runtime, also call `dateAdapter.setLocale(...)` with the locale value expected by the current adapter.
+
+## Custom Adapter
+
+A custom adapter extends `NzDateAdapter<TDate, TLocale>`, where `TDate` is the date value type used by components and `TLocale` is the locale type. To stay compatible with existing component APIs and form values, prefer keeping `TDate` as `Date` and delegating formatting, parsing, and date math to your chosen date library.
+
+Install the date library in your application first:
+
+```bash
+npm install dayjs
+```
+
+The following example implements `NzDateAdapter<Date, string>` with Day.js:
+
+```ts
+import { Injectable } from '@angular/core';
+
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+import isoWeek from 'dayjs/plugin/isoWeek';
+import localeData from 'dayjs/plugin/localeData';
+import quarterOfYear from 'dayjs/plugin/quarterOfYear';
+
+import { NzDateAdapter } from 'ng-zorro-antd/core/time';
+
+dayjs.extend(customParseFormat);
+dayjs.extend(isoWeek);
+dayjs.extend(localeData);
+dayjs.extend(quarterOfYear);
+
+@Injectable()
+export class DayjsDateAdapter extends NzDateAdapter<Date, string> {
+  constructor() {
+    super();
+    this.setLocale('en');
+  }
+
+  override setLocale(locale: string): void {
+    dayjs.locale(locale);
+    super.setLocale(locale);
+  }
+
+  today(): Date {
+    return new Date();
+  }
+
+  createDate(year: number, month: number, date: number): Date {
+    const result = dayjs().year(year).month(month).date(date).startOf('day');
+    return result.isValid() && result.month() === month ? result.toDate() : this.invalid();
+  }
+
+  clone(date: Date): Date {
+    return new Date(date.getTime());
+  }
+
+  getYear(date: Date): number {
+    return dayjs(date).year();
+  }
+
+  getMonth(date: Date): number {
+    return dayjs(date).month();
+  }
+
+  getDate(date: Date): number {
+    return dayjs(date).date();
+  }
+
+  getDayOfWeek(date: Date): number {
+    return dayjs(date).day();
+  }
+
+  getNumDaysInMonth(date: Date): number {
+    return dayjs(date).daysInMonth();
+  }
+
+  getYearName(date: Date): string {
+    return dayjs(date).format('YYYY');
+  }
+
+  getMonthNames(style: 'long' | 'short' | 'narrow'): string[] {
+    const format = style === 'long' ? 'MMMM' : style === 'short' ? 'MMM' : 'M';
+    return Array.from({ length: 12 }, (_, i) => dayjs().month(i).format(format));
+  }
+
+  getDateNames(): string[] {
+    return Array.from({ length: 31 }, (_, i) => String(i + 1));
+  }
+
+  getDayOfWeekNames(style: 'long' | 'short' | 'narrow'): string[] {
+    const format = style === 'long' ? 'dddd' : style === 'short' ? 'ddd' : 'dd';
+    return Array.from({ length: 7 }, (_, i) => dayjs().day(i).format(format));
+  }
+
+  getFirstDayOfWeek(): number {
+    return dayjs.localeData().firstDayOfWeek();
+  }
+
+  addCalendarYears(date: Date, years: number): Date {
+    return dayjs(date).add(years, 'year').toDate();
+  }
+
+  addCalendarMonths(date: Date, months: number): Date {
+    return dayjs(date).add(months, 'month').toDate();
+  }
+
+  addCalendarDays(date: Date, days: number): Date {
+    return dayjs(date).add(days, 'day').toDate();
+  }
+
+  format(date: Date, displayFormat: unknown): string {
+    return this.isValid(date) ? dayjs(date).format(String(displayFormat)) : '';
+  }
+
+  parse(value: unknown, parseFormat: unknown): Date | null {
+    if (value == null || value === '') {
+      return null;
+    }
+    if (value instanceof Date) {
+      return this.clone(value);
+    }
+    const parsed =
+      typeof parseFormat === 'string'
+        ? dayjs(String(value), parseFormat, this.locale, true)
+        : dayjs(value as string | number);
+    return parsed.isValid() ? parsed.toDate() : this.invalid();
+  }
+
+  isDateInstance(obj: unknown): boolean {
+    return obj instanceof Date;
+  }
+
+  isValid(date: Date): boolean {
+    return date instanceof Date && !isNaN(date.getTime());
+  }
+
+  invalid(): Date {
+    return new Date(NaN);
+  }
+
+  getQuarter(date: Date): number {
+    return dayjs(date).quarter();
+  }
+
+  setQuarter(date: Date, quarter: number): Date {
+    return dayjs(date).quarter(quarter).toDate();
+  }
+
+  startOfQuarter(date: Date): Date {
+    return dayjs(date).startOf('quarter').toDate();
+  }
+
+  getISOWeek(date: Date): number {
+    return dayjs(date).isoWeek();
+  }
+
+  setYear(date: Date, year: number): Date {
+    return dayjs(date).year(year).toDate();
+  }
+
+  setMonth(date: Date, month: number): Date {
+    return dayjs(date).month(month).toDate();
+  }
+
+  setDate(date: Date, dateOfMonth: number): Date {
+    return dayjs(date).date(dateOfMonth).toDate();
+  }
+
+  override setTime(date: Date, hours: number, minutes: number, seconds: number): Date {
+    return dayjs(date).hour(hours).minute(minutes).second(seconds).millisecond(0).toDate();
+  }
+
+  override getHours(date: Date): number {
+    return dayjs(date).hour();
+  }
+
+  override getMinutes(date: Date): number {
+    return dayjs(date).minute();
+  }
+
+  override getSeconds(date: Date): number {
+    return dayjs(date).second();
+  }
+
+  override parseTime(value: unknown, parseFormat: unknown = 'HH:mm:ss'): Date | null {
+    return this.parse(value, parseFormat);
+  }
+
+  override addSeconds(date: Date, amount: number): Date {
+    return dayjs(date).add(amount, 'second').toDate();
+  }
+
+  override getMilliseconds(date: Date): number {
+    return dayjs(date).millisecond();
+  }
+
+  override getTime(date: Date): number {
+    return date.getTime();
+  }
+}
+```
+
+Register it in the application root:
+
+```ts
+import { ApplicationConfig } from '@angular/core';
+import { provideNzDateAdapter } from 'ng-zorro-antd/core/time';
+import { DayjsDateAdapter } from './dayjs-date-adapter';
+
+export const appConfig: ApplicationConfig = {
+  providers: [provideNzDateAdapter(DayjsDateAdapter, { locale: 'en', firstDayOfWeek: 1 })]
+};
+```
+
+## Use the Adapter in Application Code
+
+If application code needs the same date rules as NG-ZORRO components, inject `NzDateAdapter` directly:
+
+```ts
+import { Component, inject } from '@angular/core';
+
+import { NzDateAdapter } from 'ng-zorro-antd/core/time';
+
+@Component({
+  selector: 'app-demo',
+  template: `{{ label }}`
+})
+export class DemoComponent {
+  private readonly dateAdapter = inject(NzDateAdapter);
+
+  readonly value = this.dateAdapter.today();
+  readonly label = this.dateAdapter.format(this.value, 'YYYY-MM-DD');
+}
+```
+
+## Notes
+
+- DatePicker, Calendar, and TimePicker use the adapter provided at the application root. Starting from v22, if no adapter is configured explicitly, related components will not work because the `NzDateAdapter` provider is missing.
+- `format` and `parse` formats are interpreted by the current adapter. After switching date libraries, make sure `nzFormat`, default formats, and manually parsed formats use the token syntax of that library.
+- If you use TimePicker or DatePicker time selection, implement time-related methods such as `setTime`, `getHours`, `getMinutes`, `getSeconds`, `parseTime`, and `addSeconds`.
+- Different date libraries use different locale value types, so custom adapters should interpret this value themselves.
 
 ---
 
@@ -864,13 +1143,6 @@ You can also set the language with `ng add ng-zorro-antd` when creating project.
 ## Default i18n Language
 
 `ng-zorro-antd` provides several configuration tokens for global configuration of international copy and date,
-`NZ_I18N` for the international copy, and `NZ_DATE_CONFIG` for date-related features. In addition, we use Angular's
-language pack for date formatting by default (need to introduce the corresponding Angular language pack).
-
-<!-- todo: provideNzDateConfig, provideNzDateLocale  APIs  -->
-
-In addition, we also provide an optional `NZ_DATE_LOCALE` for date-fns mode to format local dates (depending on the [`date-fns`](https://date-fns.org/docs/I18n) library,
-see `How to use date-fns for date formatting`) below.
 
 ```ts
 /** config angular i18n **/
@@ -1003,59 +1275,6 @@ Supported languages:
 | zh_CN        | Chinese (Simplified)  |
 | zh_HK        | Chinese (Traditional) |
 | zh_TW        | Chinese (Traditional) |
-
-## How to format a date using date-fns
-
-For date formatting, we use Angular's DatePipe ([syntax reference](https://angular.dev/api/common/DatePipe) to implement (depending on Angular's locale language pack),
-but due to Angular's own DatePipe is not implemented according to the ISO standard algorithm ([issue #25380](https://github.com/angular/angular/issues/25380)),
-the week number may not match expectations (related issues: [#2406](https://github.com/NG-ZORRO/ng-zorro-antd/issues/2406), [#2819](https://github.com/NG-ZORRO/ng-zorro-antd/issues/2819) ).
-
-So we have a new `date-fns` method ([syntax reference](https://date-fns.org/docs/format#description)) for standard date formatting, you can switch to it by the following way
-(after switching, it will affect the date formatting of all date related components such as Calendar/DatePicker):
-
-```ts
-// Set the value of NZ_DATE_LOCALE in the `app.config.ts` to activate date-fns mode
-import { enUS, ja } from 'date-fns/locale';
-
-export const appConfig: ApplicationConfig = {
-  providers: [{ provide: NZ_DATE_LOCALE, useValue: enUS }]
-};
-
-// Switch language to Japanese at runtime
-import { NzI18nService } from 'ng-zorro-antd/i18n';
-
-export class AppComponent {
-  private i18n = inject(NzI18nService);
-
-  switchLanguage() {
-    this.i18n.setDateLocale(ja);
-  }
-}
-```
-
-After the switch is successful, you can also choose to remove the dependency on the Angular Locales package (remove the code below) to reduce the package size:
-
-```ts
-// The following code can be removed as needed
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
-registerLocaleData(en);
-```
-
-### NZ_DATE_CONFIG (Date global configuration)
-
-The default configuration is as follows:
-
-```ts
-{
-  /** Specify which day is the beginning of the week (null for default, 0 for Sunday, 1 for Monday, and so on) */
-  firstDayOfWeek: null;
-}
-```
-
-## Language supported by date-fns
-
-[https://date-fns.org/docs/I18n#supported-languages](https://date-fns.org/docs/I18n#supported-languages)
 
 ## How to override internationalization configuration
 
@@ -2071,6 +2290,12 @@ registerLocaleData(en);
 | `(nzPanelChange)`   | Callback for when panel changes                                                                          | `EventEmitter<{ date: Date, mode: 'month' \| 'year' }>` | -            |
 | `(nzSelectChange)`  | A callback function of selected item                                                                     | `EventEmitter<Date>`                                    | -            |
 
+## FAQ
+
+### How to use custom date library in Calendar
+
+Refer to [Date Adapter](/docs/date-adapter/en).
+
 ---
 
 ---
@@ -2724,8 +2949,7 @@ By clicking the input box, you can select a date from a popup calendar.
 
 ## API
 
-**Note:** Some of nz-date-picker's locale are coming from [Angular i18n](https://angular.dev/guide/i18n), that should be
-provided in the file `app.config.ts`.
+**Note:** Some of date-picker's locale are coming from [Angular i18n](https://angular.dev/guide/i18n), that should be provided in the file `app.config.ts`.
 
 For example:
 
@@ -2736,9 +2960,7 @@ import en from '@angular/common/locales/en';
 registerLocaleData(en);
 ```
 
-**Note:** All input and output date objects
-are [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), you can manipulate it
-with [date-fns](https://date-fns.org/).
+**Note:** All input and output date objects are [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), you can manipulate it with [date-fns](https://date-fns.org/).
 
 ### Common API
 
@@ -2819,14 +3041,11 @@ The following APIs are shared by nz-date-picker, nz-range-picker.
 
 ## FAQ
 
-### Why does manual input not take effect after setting `nzFormat="dd/MM/yyyy"`
+### How to use custom date library in Date-Picker
 
-You need to use `date-fns`. Date formatting currently supports two methods: `DatePipe` (
-default, [syntax reference](https://angular.dev/api/common/DatePipe)) and `date-fns` (
-see [`How to format a date using date-fns`](/docs/i18n/en#How%20to%20format%20a%20date%20using%20Date-fns)).NG-ZORRO
-takes the function provided by `date-fns` to implement date deserialization after using it.
+Refer to [Date Adapter](/docs/date-adapter/en).
 
-### Q: The overlay layer element does not follow the scroll position when scrolling
+### The overlay layer element does not follow the scroll position when scrolling
 
 By default, the overlay layer element uses body as the scroll container. If using another scroll container, add the [CdkScrollable](https://material.angular.dev/cdk/scrolling/api#CdkScrollable) directive to the custom scroll container element.
 Note: You need to import the `CdkScrollable` directive or `ScrollingModule` module from `@angular/cdk/scrolling`.
@@ -6708,7 +6927,11 @@ By clicking the input box, you can select a time from a popup panel.
 
 ## FAQ
 
-### Q: The overlay layer element does not follow the scroll position when scrolling
+### How to use custom date library in Date-Picker
+
+Refer to [Date Adapter](/docs/date-adapter/en).
+
+### The overlay layer element does not follow the scroll position when scrolling
 
 By default, the overlay layer element uses body as the scroll container. If using another scroll container, add the [CdkScrollable](https://material.angular.dev/cdk/scrolling/api#CdkScrollable) directive to the custom scroll container element.
 Note: You need to import the `CdkScrollable` directive or `ScrollingModule` module from `@angular/cdk/scrolling`.
@@ -7369,39 +7592,38 @@ Uploading is publishing information (web pages, text, pictures, video, etc.) to 
 
 ### nz-upload
 
-| Property                    | Description                                                                                                                                                                                                      | Type                                                                                             | Default         |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------- |
-| `[nzId]`                    | input id attribute inside the component                                                                                                                                                                          | `string`                                                                                         | -               |
-| `[nzAccept]`                | File types that can be accepted. See [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                                                       | `string`                                                                                         | -               |
-| `[nzAction]`                | Required. Uploading URL                                                                                                                                                                                          | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                               | -               |
-| `[nzDirectory]`             | support uploading the whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory))                                                                                                                | `boolean`                                                                                        | `false`         |
-| `[nzBeforeUpload]`          | Hook function, which will be executed before uploading. Uploading will be stopped with `false` or an Observable. **Warning: this function is not supported in IE9**. NOTICE: Must use `=>` to define the method. | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>`               | -               |
-| `[nzCustomRequest]`         | Override for the default XHR behavior allowing for additional customization and the ability to implement your own XMLHttpRequest. NOTICE: Must use `=>` to define the method.                                    | `(item) => Subscription`                                                                         | -               |
-| `[nzData]`                  | Uploading params or function which can return uploading params. NOTICE: Must use `=>` to define the method.                                                                                                      | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -               |
-| `[nzDisabled]`              | disable upload button                                                                                                                                                                                            | `boolean`                                                                                        | `false`         |
-| `[nzFileList]`              | List of files, two-way data-binding                                                                                                                                                                              | `NzUploadFile[]`                                                                                 | -               |
-| `[nzLimit]`                 | limit single upload count when `nzMultiple` has opened. `0` unlimited                                                                                                                                            | `number`                                                                                         | `0`             |
-| `[nzMaxCount]`              | Limit the file displayed in uploaded files list. Will replace current one when maxCount is 1 unlimited                                                                                                           | `number\|undefined`                                                                              | `undefined`     |
-| `[nzSize]`                  | limit file size (KB). `0` unlimited                                                                                                                                                                              | `number`                                                                                         | `0`             |
-| `[nzFileType]`              | limit file type, e.g: `image/png,image/jpeg,image/gif,image/bmp`                                                                                                                                                 | `string`                                                                                         | -               |
-| `[nzFilter]`                | Custom filter when choose file                                                                                                                                                                                   | `UploadFilter[]`                                                                                 | -               |
-| `[nzHeaders]`               | Set request headers, valid above IE10. NOTICE: Must use `=>` to define the method.                                                                                                                               | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -               |
-| `[nzListType]`              | Built-in stylesheets, support for three types: `text`, `picture` or `picture-card`                                                                                                                               | `'text' \| 'picture' \| 'picture-card'`                                                          | `'text'`        |
-| `[nzMultiple]`              | Whether to support selected multiple files. `IE10+` supported. You can select multiple files with CTRL holding down while multiple is set to be true                                                             | `boolean`                                                                                        | `false`         |
-| `[nzName]`                  | The name of the uploading file                                                                                                                                                                                   | `string`                                                                                         | `'file'`        |
-| `[nzShowUploadList]`        | Whether to show the default upload list, could be an object to specify `showPreviewIcon`, `showRemoveIcon` and `showDownloadIcon` individually                                                                   | `boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean }` | `true`          |
-| `[nzShowButton]`            | Show upload button                                                                                                                                                                                               | `boolean`                                                                                        | `true`          |
-| `[nzWithCredentials]`       | ajax upload with cookie sent                                                                                                                                                                                     | `boolean`                                                                                        | `false`         |
-| `[nzOpenFileDialogOnClick]` | click open file dialog                                                                                                                                                                                           | `boolean`                                                                                        | `true`          |
-| `[nzPreview]`               | A callback function will be executed when the file link or preview icon is clicked. NOTICE: Must use `=>` to define the method.                                                                                  | `(file: NzUploadFile) => void`                                                                   | -               |
-| `[nzPreviewFile]`           | Customize preview file logic. NOTICE: Must use `=>` to define the method.                                                                                                                                        | `(file: NzUploadFile) => Observable<dataURL: string>`                                            | -               |
-| `[nzPreviewIsImage]`        | Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Must use `=>` to define the method.                                                               | `(file: NzUploadFile) => boolean`                                                                | -               |
-| `[nzRemove]`                | A callback function will be executed when the removing file button is clicked, remove event will be prevented when the return value is `false` or an Observable. NOTICE: Must use `=>` to define the method.     | `(file: NzUploadFile) => boolean \| Observable<boolean>`                                         | -               |
-| `(nzChange)`                | A callback function, can be executed when uploading state is changing                                                                                                                                            | `EventEmitter<NzUploadChangeParam>`                                                              | -               |
-| `[nzDownload]`              | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB.                                                                                 | `(file: NzUploadFile) => void`                                                                   | Jump to new TAB |
-| ~~`[nzTransformFile]`~~     | ~~Customize transform file before request~~                                                                                                                                                                      | ~~`(file: NzUploadFile) => NzUploadTransformFileType`~~                                          | -               |
-| `[nzIconRender]`            | Custom show icon                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile }>`                                                       | -               |
-| `[nzFileListRender]`        | Custom file list                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                                     | -               |
+| Property                    | Description                                                                                                                                                                                                      | Type                                                                               | Default         |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------- |
+| `[nzId]`                    | input id attribute inside the component                                                                                                                                                                          | `string`                                                                           | -               |
+| `[nzAccept]`                | File types that can be accepted. See [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                                                       | `string`                                                                           | -               |
+| `[nzAction]`                | Required. Uploading URL                                                                                                                                                                                          | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                 | -               |
+| `[nzDirectory]`             | support uploading the whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory))                                                                                                                | `boolean`                                                                          | `false`         |
+| `[nzBeforeUpload]`          | Hook function, which will be executed before uploading. Uploading will be stopped with `false` or an Observable. **Warning: this function is not supported in IE9**. NOTICE: Must use `=>` to define the method. | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>` | -               |
+| `[nzCustomRequest]`         | Override for the default XHR behavior allowing for additional customization and the ability to implement your own XMLHttpRequest. NOTICE: Must use `=>` to define the method.                                    | `(item) => Subscription`                                                           | -               |
+| `[nzData]`                  | Uploading params or function which can return uploading params. NOTICE: Must use `=>` to define the method.                                                                                                      | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -               |
+| `[nzDisabled]`              | disable upload button                                                                                                                                                                                            | `boolean`                                                                          | `false`         |
+| `[nzFileList]`              | List of files, two-way data-binding                                                                                                                                                                              | `NzUploadFile[]`                                                                   | -               |
+| `[nzLimit]`                 | limit single upload count when `nzMultiple` has opened. `0` unlimited                                                                                                                                            | `number`                                                                           | `0`             |
+| `[nzMaxCount]`              | Limit the file displayed in uploaded files list. Will replace current one when maxCount is 1 unlimited                                                                                                           | `number\|undefined`                                                                | `undefined`     |
+| `[nzSize]`                  | limit file size (KB). `0` unlimited                                                                                                                                                                              | `number`                                                                           | `0`             |
+| `[nzFileType]`              | limit file type, e.g: `image/png,image/jpeg,image/gif,image/bmp`                                                                                                                                                 | `string`                                                                           | -               |
+| `[nzFilter]`                | Custom filter when choose file                                                                                                                                                                                   | `UploadFilter[]`                                                                   | -               |
+| `[nzHeaders]`               | Set request headers, valid above IE10. NOTICE: Must use `=>` to define the method.                                                                                                                               | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -               |
+| `[nzListType]`              | Built-in stylesheets, support for three types: `text`, `picture` or `picture-card`                                                                                                                               | `'text' \| 'picture' \| 'picture-card'`                                            | `'text'`        |
+| `[nzMultiple]`              | Whether to support selected multiple files. `IE10+` supported. You can select multiple files with CTRL holding down while multiple is set to be true                                                             | `boolean`                                                                          | `false`         |
+| `[nzName]`                  | The name of the uploading file                                                                                                                                                                                   | `string`                                                                           | `'file'`        |
+| `[nzShowUploadList]`        | Whether to show the default upload list, could be an object to specify `extra`, `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `previewIcon`, `removeIcon` and `downloadIcon` individually             | `boolean \| NzShowUploadList`                                                      | `true`          |
+| `[nzShowButton]`            | Show upload button                                                                                                                                                                                               | `boolean`                                                                          | `true`          |
+| `[nzWithCredentials]`       | ajax upload with cookie sent                                                                                                                                                                                     | `boolean`                                                                          | `false`         |
+| `[nzOpenFileDialogOnClick]` | click open file dialog                                                                                                                                                                                           | `boolean`                                                                          | `true`          |
+| `[nzPreview]`               | A callback function will be executed when the file link or preview icon is clicked. NOTICE: Must use `=>` to define the method.                                                                                  | `(file: NzUploadFile) => void`                                                     | -               |
+| `[nzPreviewFile]`           | Customize preview file logic. NOTICE: Must use `=>` to define the method.                                                                                                                                        | `(file: NzUploadFile) => Observable<dataURL: string>`                              | -               |
+| `[nzPreviewIsImage]`        | Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Must use `=>` to define the method.                                                               | `(file: NzUploadFile) => boolean`                                                  | -               |
+| `[nzRemove]`                | A callback function will be executed when the removing file button is clicked, remove event will be prevented when the return value is `false` or an Observable. NOTICE: Must use `=>` to define the method.     | `(file: NzUploadFile) => boolean \| Observable<boolean>`                           | -               |
+| `(nzChange)`                | A callback function, can be executed when uploading state is changing                                                                                                                                            | `EventEmitter<NzUploadChangeParam>`                                                | -               |
+| `[nzDownload]`              | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB.                                                                                 | `(file: NzUploadFile) => void`                                                     | Jump to new TAB |
+| `[nzIconRender]`            | Custom show icon                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile }>`                                         | -               |
+| `[nzFileListRender]`        | Custom file list                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                       | -               |
 
 #### nzChange
 

@@ -302,7 +302,7 @@ function runes(str: string): string[] {
 Input with clear icon.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -329,8 +329,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
   `
 })
 export class NzDemoInputAllowClearComponent {
-  inputValue: string | null = null;
-  textValue: string | null = null;
+  readonly inputValue = signal('');
+  readonly textValue = signal('');
 }
 ```
 
@@ -377,7 +377,7 @@ export class NzDemoInputAutosizeTextareaComponent {}
 Basic usage example.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -385,10 +385,10 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 @Component({
   selector: 'nz-demo-input-basic',
   imports: [FormsModule, NzInputModule],
-  template: ` <input nz-input placeholder="Basic usage" [(ngModel)]="value" /> `
+  template: `<input nz-input placeholder="Basic usage" [(ngModel)]="value" />`
 })
 export class NzDemoInputBasicComponent {
-  value?: string;
+  readonly value = signal('');
 }
 ```
 
@@ -470,7 +470,7 @@ Focus with additional option.
 `
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
+import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -491,7 +491,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     <br />
     <br />
 
-    @if (inputElem) {
+    @if (inputElem()) {
       <input #input="nzInput" nz-input [(ngModel)]="value" />
     } @else {
       <textarea #input="nzInput" nz-input rows="2" [(ngModel)]="value"> </textarea>
@@ -499,8 +499,8 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoInputFocusComponent {
-  value = 'NG-ZORRO love you!';
-  inputElem = true;
+  readonly value = signal('NG-ZORRO love you!');
+  readonly inputElem = signal(true);
 
   @ViewChild(NzInputDirective) input!: NzInputDirective;
 }
@@ -587,7 +587,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
       <nz-input-password [(nzVisible)]="passwordVisible" [style.flex]="1">
         <input nz-input placeholder="input password" [(ngModel)]="password" />
       </nz-input-password>
-      <button nz-button (click)="passwordVisible.set(!passwordVisible())">
+      <button nz-button (click)="togglePasswordVisibility()">
         {{ passwordVisible() ? 'Hide' : 'Show' }}
       </button>
     </nz-flex>
@@ -600,6 +600,10 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 export class NzDemoInputPasswordInputComponent {
   readonly passwordVisible = signal(false);
   readonly password = signal('');
+
+  togglePasswordVisibility(): void {
+    this.passwordVisible.update(visible => !visible);
+  }
 }
 ```
 
@@ -778,7 +782,6 @@ Add status to Input with `nzStatus`, which could be `error` or `warning`.
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -786,25 +789,23 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 
 @Component({
   selector: 'nz-demo-input-status',
-  imports: [FormsModule, NzIconModule, NzInputModule, NzSpaceModule],
+  imports: [NzIconModule, NzInputModule, NzSpaceModule],
   template: `
     <nz-space nzDirection="vertical" style="width: 100%">
-      <input *nzSpaceItem nz-input placeholder="Error" [(ngModel)]="value" nzStatus="error" />
-      <input *nzSpaceItem nz-input placeholder="Warning" [(ngModel)]="value" nzStatus="warning" />
+      <input *nzSpaceItem nz-input placeholder="Error" nzStatus="error" />
+      <input *nzSpaceItem nz-input placeholder="Warning" nzStatus="warning" />
       <nz-input-wrapper *nzSpaceItem>
-        <nz-icon nzInputPrefix nzType="clock-circle" nzTheme="outline" />
+        <nz-icon nzInputPrefix nzType="clock-circle" />
         <input type="text" nz-input placeholder="Error with prefix" nzStatus="error" />
       </nz-input-wrapper>
       <nz-input-wrapper *nzSpaceItem>
-        <nz-icon nzInputPrefix nzType="clock-circle" nzTheme="outline" />
+        <nz-icon nzInputPrefix nzType="clock-circle" />
         <input type="text" nz-input placeholder="Warning with prefix" nzStatus="warning" />
       </nz-input-wrapper>
     </nz-space>
   `
 })
-export class NzDemoInputStatusComponent {
-  value?: string;
-}
+export class NzDemoInputStatusComponent {}
 ```
 
 ### Textarea with character count
@@ -844,7 +845,7 @@ export class NzDemoInputTextareaWithCharacterCountComponent {
 For multi-line input.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -852,10 +853,10 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 @Component({
   selector: 'nz-demo-input-textarea',
   imports: [FormsModule, NzInputModule],
-  template: `<textarea rows="4" nz-input [(ngModel)]="inputValue"></textarea>`
+  template: `<textarea rows="4" nz-input [(ngModel)]="value"></textarea>`
 })
 export class NzDemoInputTextareaComponent {
-  inputValue?: string;
+  readonly value = signal('');
 }
 ```
 
@@ -864,7 +865,7 @@ export class NzDemoInputTextareaComponent {
 You can use the Input in conjunction with [Tooltip](/components/tooltip/en) component to create a Numeric Input, which can provide a good experience for extra-long content display.
 
 ```typescript
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -882,8 +883,8 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
       nzTooltipTrigger="focus"
       nzTooltipPlacement="topLeft"
       nzTooltipOverlayClassName="numeric-input"
-      [ngModel]="value"
-      [nzTooltipTitle]="title"
+      [ngModel]="value()"
+      [nzTooltipTitle]="title()"
       placeholder="Input a number"
       (ngModelChange)="onChange($event)"
       (blur)="onBlur()"
@@ -901,8 +902,8 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
   `
 })
 export class NzDemoInputTooltipComponent {
-  value = '';
-  title = 'Input a number';
+  readonly value = signal('');
+  readonly title = signal('Input a number');
 
   @ViewChild('inputElement', { static: false }) inputElement?: ElementRef;
 
@@ -912,22 +913,24 @@ export class NzDemoInputTooltipComponent {
 
   // '.' at the end or only '-' in the input box.
   onBlur(): void {
-    if (this.value.charAt(this.value.length - 1) === '.' || this.value === '-') {
-      this.updateValue(this.value.slice(0, -1));
+    const value = this.value();
+    if (value.charAt(value.length - 1) === '.' || value === '-') {
+      this.updateValue(value.slice(0, -1));
     }
   }
 
   updateValue(value: string): void {
     const reg = /^-?(0|[1-9][0-9]*)(\.[0-9]*)?$/;
     if ((!isNaN(+value) && reg.test(value)) || value === '' || value === '-') {
-      this.value = value;
+      this.value.set(value);
     }
-    this.inputElement!.nativeElement.value = this.value;
+    this.inputElement!.nativeElement.value = this.value();
     this.updateTitle();
   }
 
   updateTitle(): void {
-    this.title = (this.value !== '-' ? this.formatNumber(this.value) : '-') || 'Input a number';
+    const value = this.value();
+    this.title.set((value !== '-' ? this.formatNumber(value) : '-') || 'Input a number');
   }
 
   formatNumber(value: string): string {

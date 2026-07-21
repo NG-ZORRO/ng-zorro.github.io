@@ -116,7 +116,7 @@ export class NzDemoDescriptionsBorderComponent {}
 自定义尺寸，适应在各种容器中展示。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -134,7 +134,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-descriptions nzTitle="Custom Size" [nzExtra]="extraTpl" nzBordered [nzSize]="size">
+    <nz-descriptions nzTitle="Custom Size" [nzExtra]="extraTpl" nzBordered [nzSize]="size()">
       <nz-descriptions-item nzTitle="Product">Cloud Database</nz-descriptions-item>
       <nz-descriptions-item nzTitle="Billing">Prepaid</nz-descriptions-item>
       <nz-descriptions-item nzTitle="time">18:00:00</nz-descriptions-item>
@@ -158,7 +158,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-descriptions>
     <br />
     <br />
-    <nz-descriptions nzTitle="Custom Size" [nzSize]="size" [nzExtra]="extraTpl">
+    <nz-descriptions nzTitle="Custom Size" [nzSize]="size()" [nzExtra]="extraTpl">
       <nz-descriptions-item nzTitle="Product">Cloud Database</nz-descriptions-item>
       <nz-descriptions-item nzTitle="Billing">Prepaid</nz-descriptions-item>
       <nz-descriptions-item nzTitle="Time">18:00:00</nz-descriptions-item>
@@ -172,7 +172,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDescriptionsCustomSizeComponent {
-  size: NzDescriptionsSize = 'default';
+  readonly size = signal<NzDescriptionsSize>('default');
 }
 ```
 

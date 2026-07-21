@@ -75,7 +75,7 @@ description: 点击元素，弹出气泡式的确认框。
 点击确定后异步关闭 Popconfirm，例如提交表单。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -100,7 +100,7 @@ import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
   `
 })
 export class NzDemoPopconfirmAsyncComponent {
-  constructor(private nzMessageService: NzMessageService) {}
+  private readonly nzMessageService = inject(NzMessageService);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');
@@ -126,7 +126,7 @@ export class NzDemoPopconfirmAsyncComponent {
 最简单的用法。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
@@ -146,7 +146,7 @@ import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
   `
 })
 export class NzDemoPopconfirmBasicComponent {
-  constructor(private nzMessageService: NzMessageService) {}
+  private readonly nzMessageService = inject(NzMessageService);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');
@@ -186,7 +186,7 @@ export class NzDemoPopconfirmCustomIconComponent {}
 可以判断是否需要弹出。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -200,7 +200,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     <a
       nz-popconfirm
       nzPopconfirmTitle="Are you sure delete this task?"
-      [nzCondition]="switchValue"
+      [nzCondition]="switchValue()"
       (nzOnConfirm)="confirm()"
       (nzOnCancel)="cancel()"
     >
@@ -213,9 +213,9 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoPopconfirmDynamicTriggerComponent {
-  switchValue = false;
+  private readonly nzMessageService = inject(NzMessageService);
 
-  constructor(private nzMessageService: NzMessageService) {}
+  readonly switchValue = signal(false);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');
@@ -249,7 +249,7 @@ export class NzDemoPopconfirmHideArrowComponent {}
 使用 `okText` 和 `cancelText` 自定义按钮文字。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
@@ -271,7 +271,7 @@ import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
   `
 })
 export class NzDemoPopconfirmLocaleComponent {
-  constructor(private nzMessageService: NzMessageService) {}
+  private readonly nzMessageService = inject(NzMessageService);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');
@@ -288,7 +288,7 @@ export class NzDemoPopconfirmLocaleComponent {
 位置有十二个方向。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -438,7 +438,7 @@ import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
   `
 })
 export class NzDemoPopconfirmPlacementComponent {
-  constructor(private nzMessageService: NzMessageService) {}
+  private readonly nzMessageService = inject(NzMessageService);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');
@@ -455,7 +455,7 @@ export class NzDemoPopconfirmPlacementComponent {
 点击确定后异步关闭 Popconfirm，例如提交表单。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -479,7 +479,7 @@ import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
   `
 })
 export class NzDemoPopconfirmPromiseComponent {
-  constructor(private nzMessageService: NzMessageService) {}
+  private readonly nzMessageService = inject(NzMessageService);
 
   cancel(): void {
     this.nzMessageService.info('click cancel');

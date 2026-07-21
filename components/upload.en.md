@@ -20,39 +20,38 @@ Uploading is publishing information (web pages, text, pictures, video, etc.) to 
 
 ### nz-upload
 
-| Property                    | Description                                                                                                                                                                                                      | Type                                                                                             | Default         |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------- |
-| `[nzId]`                    | input id attribute inside the component                                                                                                                                                                          | `string`                                                                                         | -               |
-| `[nzAccept]`                | File types that can be accepted. See [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                                                       | `string`                                                                                         | -               |
-| `[nzAction]`                | Required. Uploading URL                                                                                                                                                                                          | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                               | -               |
-| `[nzDirectory]`             | support uploading the whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory))                                                                                                                | `boolean`                                                                                        | `false`         |
-| `[nzBeforeUpload]`          | Hook function, which will be executed before uploading. Uploading will be stopped with `false` or an Observable. **Warning: this function is not supported in IE9**. NOTICE: Must use `=>` to define the method. | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>`               | -               |
-| `[nzCustomRequest]`         | Override for the default XHR behavior allowing for additional customization and the ability to implement your own XMLHttpRequest. NOTICE: Must use `=>` to define the method.                                    | `(item) => Subscription`                                                                         | -               |
-| `[nzData]`                  | Uploading params or function which can return uploading params. NOTICE: Must use `=>` to define the method.                                                                                                      | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -               |
-| `[nzDisabled]`              | disable upload button                                                                                                                                                                                            | `boolean`                                                                                        | `false`         |
-| `[nzFileList]`              | List of files, two-way data-binding                                                                                                                                                                              | `NzUploadFile[]`                                                                                 | -               |
-| `[nzLimit]`                 | limit single upload count when `nzMultiple` has opened. `0` unlimited                                                                                                                                            | `number`                                                                                         | `0`             |
-| `[nzMaxCount]`              | Limit the file displayed in uploaded files list. Will replace current one when maxCount is 1 unlimited                                                                                                           | `number\|undefined`                                                                              | `undefined`     |
-| `[nzSize]`                  | limit file size (KB). `0` unlimited                                                                                                                                                                              | `number`                                                                                         | `0`             |
-| `[nzFileType]`              | limit file type, e.g: `image/png,image/jpeg,image/gif,image/bmp`                                                                                                                                                 | `string`                                                                                         | -               |
-| `[nzFilter]`                | Custom filter when choose file                                                                                                                                                                                   | `UploadFilter[]`                                                                                 | -               |
-| `[nzHeaders]`               | Set request headers, valid above IE10. NOTICE: Must use `=>` to define the method.                                                                                                                               | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                                   | -               |
-| `[nzListType]`              | Built-in stylesheets, support for three types: `text`, `picture` or `picture-card`                                                                                                                               | `'text' \| 'picture' \| 'picture-card'`                                                          | `'text'`        |
-| `[nzMultiple]`              | Whether to support selected multiple files. `IE10+` supported. You can select multiple files with CTRL holding down while multiple is set to be true                                                             | `boolean`                                                                                        | `false`         |
-| `[nzName]`                  | The name of the uploading file                                                                                                                                                                                   | `string`                                                                                         | `'file'`        |
-| `[nzShowUploadList]`        | Whether to show the default upload list, could be an object to specify `showPreviewIcon`, `showRemoveIcon` and `showDownloadIcon` individually                                                                   | `boolean \| { showPreviewIcon?: boolean, showRemoveIcon?: boolean, showDownloadIcon?: boolean }` | `true`          |
-| `[nzShowButton]`            | Show upload button                                                                                                                                                                                               | `boolean`                                                                                        | `true`          |
-| `[nzWithCredentials]`       | ajax upload with cookie sent                                                                                                                                                                                     | `boolean`                                                                                        | `false`         |
-| `[nzOpenFileDialogOnClick]` | click open file dialog                                                                                                                                                                                           | `boolean`                                                                                        | `true`          |
-| `[nzPreview]`               | A callback function will be executed when the file link or preview icon is clicked. NOTICE: Must use `=>` to define the method.                                                                                  | `(file: NzUploadFile) => void`                                                                   | -               |
-| `[nzPreviewFile]`           | Customize preview file logic. NOTICE: Must use `=>` to define the method.                                                                                                                                        | `(file: NzUploadFile) => Observable<dataURL: string>`                                            | -               |
-| `[nzPreviewIsImage]`        | Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Must use `=>` to define the method.                                                               | `(file: NzUploadFile) => boolean`                                                                | -               |
-| `[nzRemove]`                | A callback function will be executed when the removing file button is clicked, remove event will be prevented when the return value is `false` or an Observable. NOTICE: Must use `=>` to define the method.     | `(file: NzUploadFile) => boolean \| Observable<boolean>`                                         | -               |
-| `(nzChange)`                | A callback function, can be executed when uploading state is changing                                                                                                                                            | `EventEmitter<NzUploadChangeParam>`                                                              | -               |
-| `[nzDownload]`              | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB.                                                                                 | `(file: NzUploadFile) => void`                                                                   | Jump to new TAB |
-| ~~`[nzTransformFile]`~~     | ~~Customize transform file before request~~                                                                                                                                                                      | ~~`(file: NzUploadFile) => NzUploadTransformFileType`~~                                          | -               |
-| `[nzIconRender]`            | Custom show icon                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile }>`                                                       | -               |
-| `[nzFileListRender]`        | Custom file list                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                                     | -               |
+| Property                    | Description                                                                                                                                                                                                      | Type                                                                               | Default         |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------- |
+| `[nzId]`                    | input id attribute inside the component                                                                                                                                                                          | `string`                                                                           | -               |
+| `[nzAccept]`                | File types that can be accepted. See [input accept Attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-accept)                                                                       | `string`                                                                           | -               |
+| `[nzAction]`                | Required. Uploading URL                                                                                                                                                                                          | `string \| ((file: NzUploadFile) => string \| Observable<string>)`                 | -               |
+| `[nzDirectory]`             | support uploading the whole directory ([caniuse](https://caniuse.com/#feat=input-file-directory))                                                                                                                | `boolean`                                                                          | `false`         |
+| `[nzBeforeUpload]`          | Hook function, which will be executed before uploading. Uploading will be stopped with `false` or an Observable. **Warning: this function is not supported in IE9**. NOTICE: Must use `=>` to define the method. | `(file: NzUploadFile, fileList: NzUploadFile[]) => boolean \| Observable<boolean>` | -               |
+| `[nzCustomRequest]`         | Override for the default XHR behavior allowing for additional customization and the ability to implement your own XMLHttpRequest. NOTICE: Must use `=>` to define the method.                                    | `(item) => Subscription`                                                           | -               |
+| `[nzData]`                  | Uploading params or function which can return uploading params. NOTICE: Must use `=>` to define the method.                                                                                                      | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -               |
+| `[nzDisabled]`              | disable upload button                                                                                                                                                                                            | `boolean`                                                                          | `false`         |
+| `[nzFileList]`              | List of files, two-way data-binding                                                                                                                                                                              | `NzUploadFile[]`                                                                   | -               |
+| `[nzLimit]`                 | limit single upload count when `nzMultiple` has opened. `0` unlimited                                                                                                                                            | `number`                                                                           | `0`             |
+| `[nzMaxCount]`              | Limit the file displayed in uploaded files list. Will replace current one when maxCount is 1 unlimited                                                                                                           | `number\|undefined`                                                                | `undefined`     |
+| `[nzSize]`                  | limit file size (KB). `0` unlimited                                                                                                                                                                              | `number`                                                                           | `0`             |
+| `[nzFileType]`              | limit file type, e.g: `image/png,image/jpeg,image/gif,image/bmp`                                                                                                                                                 | `string`                                                                           | -               |
+| `[nzFilter]`                | Custom filter when choose file                                                                                                                                                                                   | `UploadFilter[]`                                                                   | -               |
+| `[nzHeaders]`               | Set request headers, valid above IE10. NOTICE: Must use `=>` to define the method.                                                                                                                               | `Object \| ((file: NzUploadFile) => Object \| Observable<{}>)`                     | -               |
+| `[nzListType]`              | Built-in stylesheets, support for three types: `text`, `picture` or `picture-card`                                                                                                                               | `'text' \| 'picture' \| 'picture-card'`                                            | `'text'`        |
+| `[nzMultiple]`              | Whether to support selected multiple files. `IE10+` supported. You can select multiple files with CTRL holding down while multiple is set to be true                                                             | `boolean`                                                                          | `false`         |
+| `[nzName]`                  | The name of the uploading file                                                                                                                                                                                   | `string`                                                                           | `'file'`        |
+| `[nzShowUploadList]`        | Whether to show the default upload list, could be an object to specify `extra`, `showPreviewIcon`, `showRemoveIcon`, `showDownloadIcon`, `previewIcon`, `removeIcon` and `downloadIcon` individually             | `boolean \| NzShowUploadList`                                                      | `true`          |
+| `[nzShowButton]`            | Show upload button                                                                                                                                                                                               | `boolean`                                                                          | `true`          |
+| `[nzWithCredentials]`       | ajax upload with cookie sent                                                                                                                                                                                     | `boolean`                                                                          | `false`         |
+| `[nzOpenFileDialogOnClick]` | click open file dialog                                                                                                                                                                                           | `boolean`                                                                          | `true`          |
+| `[nzPreview]`               | A callback function will be executed when the file link or preview icon is clicked. NOTICE: Must use `=>` to define the method.                                                                                  | `(file: NzUploadFile) => void`                                                     | -               |
+| `[nzPreviewFile]`           | Customize preview file logic. NOTICE: Must use `=>` to define the method.                                                                                                                                        | `(file: NzUploadFile) => Observable<dataURL: string>`                              | -               |
+| `[nzPreviewIsImage]`        | Customize the preview file is an image, generally used when the image URL is in a non-standard format. NOTICE: Must use `=>` to define the method.                                                               | `(file: NzUploadFile) => boolean`                                                  | -               |
+| `[nzRemove]`                | A callback function will be executed when the removing file button is clicked, remove event will be prevented when the return value is `false` or an Observable. NOTICE: Must use `=>` to define the method.     | `(file: NzUploadFile) => boolean \| Observable<boolean>`                           | -               |
+| `(nzChange)`                | A callback function, can be executed when uploading state is changing                                                                                                                                            | `EventEmitter<NzUploadChangeParam>`                                                | -               |
+| `[nzDownload]`              | Click the method to download the file, pass the method to perform the method logic, do not pass the default jump to the new TAB.                                                                                 | `(file: NzUploadFile) => void`                                                     | Jump to new TAB |
+| `[nzIconRender]`            | Custom show icon                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile }>`                                         | -               |
+| `[nzFileListRender]`        | Custom file list                                                                                                                                                                                                 | `TemplateRef<{ $implicit: NzUploadFile[] }>`                                       | -               |
 
 #### nzChange
 
@@ -110,7 +109,7 @@ Click to upload user's avatar, and validate size and format of picture with `nzB
 > The return value of function `nzBeforeUpload` can be a Observable to check asynchronously.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Observable, Observer } from 'rxjs';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -130,11 +129,11 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
       [nzBeforeUpload]="beforeUpload"
       (nzChange)="handleChange($event)"
     >
-      @if (!avatarUrl) {
-        <nz-icon class="upload-icon" [nzType]="loading ? 'loading' : 'plus'" />
+      @if (!avatarUrl()) {
+        <nz-icon class="upload-icon" [nzType]="loading() ? 'loading' : 'plus'" />
         <div class="ant-upload-text">Upload</div>
       } @else {
-        <img [src]="avatarUrl" style="width: 100%" />
+        <img [src]="avatarUrl()" style="width: 100%" />
       }
     </nz-upload>
   `,
@@ -146,11 +145,10 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadAvatarComponent {
-  loading = false;
-  avatarUrl?: string;
+  private readonly messageService = inject(NzMessageService);
 
-  constructor(private messageService: NzMessageService) {}
-
+  readonly loading = signal(false);
+  readonly avatarUrl = signal<string | undefined>(undefined);
   beforeUpload = (file: NzUploadFile, _fileList: NzUploadFile[]): Observable<boolean> =>
     new Observable((observer: Observer<boolean>) => {
       const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
@@ -178,18 +176,18 @@ export class NzDemoUploadAvatarComponent {
   handleChange(info: { file: NzUploadFile }): void {
     switch (info.file.status) {
       case 'uploading':
-        this.loading = true;
+        this.loading.set(true);
         break;
       case 'done':
         // Get this url from response in real world.
         this.getBase64(info.file!.originFileObj!, (img: string) => {
-          this.loading = false;
-          this.avatarUrl = img;
+          this.loading.set(false);
+          this.avatarUrl.set(img);
         });
         break;
       case 'error':
         this.messageService.error('Network error');
-        this.loading = false;
+        this.loading.set(false);
         break;
     }
   }
@@ -201,7 +199,7 @@ export class NzDemoUploadAvatarComponent {
 Classic mode. File selection dialog pops up when upload button is clicked.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -225,7 +223,7 @@ import { NzUploadChangeParam, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadBasicComponent {
-  constructor(private messageService: NzMessageService) {}
+  private readonly messageService = inject(NzMessageService);
 
   handleChange(info: NzUploadChangeParam): void {
     if (info.file.status !== 'uploading') {
@@ -237,6 +235,77 @@ export class NzDemoUploadBasicComponent {
       this.messageService.error(`${info.file.name} file upload failed.`);
     }
   }
+}
+```
+
+### Custom action icon
+
+Use `nzShowUploadList` for custom action icons and extra information of files.
+
+```typescript
+import { Component, computed, signal, TemplateRef, viewChild } from '@angular/core';
+
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
+
+@Component({
+  selector: 'nz-demo-upload-custom-action-icon',
+  imports: [NzUploadModule, NzIconModule, NzButtonModule],
+  template: `
+    <nz-upload [nzShowUploadList]="showUploadList()" [nzFileList]="fileList()">
+      <button nz-button>Upload</button>
+    </nz-upload>
+
+    <ng-template #extra let-file>
+      <span>({{ file.size }} KB)</span>
+    </ng-template>
+    <ng-template #downloadIcon><nz-icon nzType="snippets" /></ng-template>
+    <ng-template #removeIcon><nz-icon nzType="github" /></ng-template>
+    <ng-template #previewIcon><nz-icon nzType="apple" /></ng-template>
+  `
+})
+export class NzDemoUploadCustomActionIconComponent {
+  protected readonly downloadIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('downloadIcon');
+  protected readonly removeIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('removeIcon');
+  protected readonly previewIcon = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('previewIcon');
+  protected readonly extra = viewChild<TemplateRef<{ $implicit: NzUploadFile }>>('extra');
+
+  protected readonly fileList = signal<NzUploadFile[]>([
+    {
+      uid: '1',
+      name: 'xxx.png',
+      status: 'done',
+      size: 100,
+      response: 'Server Error 500', // custom error message to show
+      url: 'http://www.baidu.com/xxx.png'
+    },
+    {
+      uid: '2',
+      name: 'yyy.png',
+      size: 200,
+      status: 'done',
+      url: 'http://www.baidu.com/yyy.png'
+    },
+    {
+      uid: '3',
+      name: 'zzz.png',
+      size: 300,
+      status: 'error',
+      response: 'Server Error 500', // custom error message to show
+      url: 'http://www.baidu.com/zzz.png'
+    }
+  ]);
+
+  protected readonly showUploadList = computed(() => ({
+    extra: this.extra(),
+    downloadIcon: this.downloadIcon(),
+    removeIcon: this.removeIcon(),
+    previewIcon: this.previewIcon(),
+    showRemoveIcon: true,
+    showPreviewIcon: true,
+    showDownloadIcon: true
+  }));
 }
 ```
 
@@ -322,7 +391,7 @@ You can drag files to a specific area, to upload. Alternatively, you can also up
 We can upload serveral files at once in modern browsers by giving the input the `nzMultiple` attribute.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -350,7 +419,7 @@ import { NzUploadChangeParam, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadDragComponent {
-  constructor(private messageService: NzMessageService) {}
+  private readonly messageService = inject(NzMessageService);
 
   handleChange({ file, fileList }: NzUploadChangeParam): void {
     const status = file.status;
@@ -375,7 +444,7 @@ You can gain full control over filelist by configuring `nzFileList`. You can acc
 2. read from response and show file link.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -387,7 +456,7 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   template: `
     <nz-upload
       nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-      [nzFileList]="fileList"
+      [nzFileList]="fileList()"
       (nzChange)="handleChange($event)"
     >
       <button nz-button>
@@ -398,14 +467,14 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   `
 })
 export class NzDemoUploadFileListComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '-1',
       name: 'xxx.png',
       status: 'done',
       url: 'http://www.baidu.com/xxx.png'
     }
-  ];
+  ]);
 
   handleChange(info: NzUploadChangeParam): void {
     let fileList = [...info.fileList];
@@ -423,7 +492,7 @@ export class NzDemoUploadFileListComponent {
       return file;
     });
 
-    this.fileList = fileList;
+    this.fileList.set(fileList);
   }
 }
 ```
@@ -484,7 +553,7 @@ export class NzDemoUploadMaxCountComponent {
 After users upload picture, the thumbnail will be shown in list. The upload button will disappear when count meets limitation.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -506,7 +575,7 @@ const getBase64 = (file: File): Promise<string | ArrayBuffer | null> =>
       nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
       nzListType="picture-card"
       [(nzFileList)]="fileList"
-      [nzShowButton]="fileList.length < 8"
+      [nzShowButton]="fileList().length < 8"
       [nzPreview]="handlePreview"
     >
       <div>
@@ -515,19 +584,19 @@ const getBase64 = (file: File): Promise<string | ArrayBuffer | null> =>
       </div>
     </nz-upload>
     <nz-modal
-      [nzVisible]="previewVisible"
+      [nzVisible]="previewVisible()"
       [nzContent]="modalContent"
       [nzFooter]="null"
-      (nzOnCancel)="previewVisible = false"
+      (nzOnCancel)="previewVisible.set(false)"
     >
       <ng-template #modalContent>
-        <img [src]="previewImage" style="width: 100%" />
+        <img [src]="previewImage()" style="width: 100%" />
       </ng-template>
     </nz-modal>
   `
 })
 export class NzDemoUploadPictureCardComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '-1',
       name: 'image.png',
@@ -564,16 +633,16 @@ export class NzDemoUploadPictureCardComponent {
       name: 'image.png',
       status: 'error'
     }
-  ];
-  previewImage: string | undefined = '';
-  previewVisible = false;
+  ]);
+  readonly previewImage = signal<string | undefined>('');
+  readonly previewVisible = signal(false);
 
   handlePreview = async (file: NzUploadFile): Promise<void> => {
     if (!file.url && !file.preview) {
       file.preview = await getBase64(file.originFileObj!);
     }
-    this.previewImage = file.url || file.preview;
-    this.previewVisible = true;
+    this.previewImage.set(file.url || file.preview);
+    this.previewVisible.set(true);
   };
 }
 ```
@@ -583,7 +652,7 @@ export class NzDemoUploadPictureCardComponent {
 If uploaded file is a picture, the thumbnail can be shown. `IE8/9` do not support local thumbnail show. Please use `thumbUrl` instead.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -606,7 +675,7 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadPictureStyleComponent {
-  fileList: NzUploadFile[] = [
+  readonly fileList = signal<NzUploadFile[]>([
     {
       uid: '0',
       name: 'xxx.png',
@@ -625,7 +694,7 @@ export class NzDemoUploadPictureStyleComponent {
       name: 'zzz.png',
       status: 'error'
     }
-  ];
+  ]);
 }
 ```
 
@@ -671,7 +740,7 @@ Customize local preview. Can handle with non-image format files such as video.
 
 ```typescript
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -696,7 +765,7 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
   `
 })
 export class NzDemoUploadPreviewFileComponent {
-  constructor(private http: HttpClient) {}
+  private readonly http = inject(HttpClient);
 
   previewFile = (file: NzUploadFile): Observable<string> => {
     console.log('Your upload file:', file);
@@ -711,15 +780,14 @@ export class NzDemoUploadPreviewFileComponent {
 
 ### Transform file before request
 
-> The old `nzTransformFile` input has been deprecated.
-
 Use `nzBeforeUpload` to transform file before requesting it, for example to add a watermark.
 
 ```typescript
 import { Component } from '@angular/core';
-import { Observable, Observer } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzSafeAny } from 'ng-zorro-antd/core/types';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
 
@@ -737,10 +805,9 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
 })
 export class NzDemoUploadTransformFileComponent {
   transformFile = (file: NzUploadFile): Observable<Blob> =>
-    new Observable((observer: Observer<Blob>) => {
+    new Observable(observer => {
       const reader = new FileReader();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      reader.readAsDataURL(file as any);
+      reader.readAsDataURL(file as NzSafeAny);
       reader.onload = () => {
         const canvas = document.createElement('canvas');
         const img = document.createElement('img');
@@ -767,7 +834,7 @@ Upload files manually after `nzBeforeUpload` returns `false`.
 
 ```typescript
 import { HttpClient, HttpRequest, HttpResponse } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { filter } from 'rxjs/operators';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -790,35 +857,33 @@ import { NzUploadFile, NzUploadModule } from 'ng-zorro-antd/upload';
     <button
       nz-button
       nzType="primary"
-      [nzLoading]="uploading"
+      [nzLoading]="uploading()"
       (click)="handleUpload()"
-      [disabled]="fileList.length === 0"
+      [disabled]="fileList().length === 0"
     >
-      {{ uploading ? 'Uploading' : 'Start Upload' }}
+      {{ uploading() ? 'Uploading' : 'Start Upload' }}
     </button>
   `
 })
 export class NzDemoUploadUploadManuallyComponent {
-  uploading = false;
-  fileList: NzUploadFile[] = [];
+  private readonly http = inject(HttpClient);
+  private readonly messageService = inject(NzMessageService);
 
-  constructor(
-    private http: HttpClient,
-    private messageService: NzMessageService
-  ) {}
+  readonly uploading = signal(false);
+  readonly fileList = signal<NzUploadFile[]>([]);
 
   beforeUpload = (file: NzUploadFile): boolean => {
-    this.fileList = this.fileList.concat(file);
+    this.fileList.update(fileList => fileList.concat(file));
     return false;
   };
 
   handleUpload(): void {
     const formData = new FormData();
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    this.fileList.forEach((file: any) => {
+    this.fileList().forEach((file: any) => {
       formData.append('files[]', file);
     });
-    this.uploading = true;
+    this.uploading.set(true);
     // You can use any AJAX library you like
     const req = new HttpRequest('POST', 'https://www.mocky.io/v2/5cc8019d300000980a055e76', formData, {
       // reportProgress: true
@@ -828,12 +893,12 @@ export class NzDemoUploadUploadManuallyComponent {
       .pipe(filter(e => e instanceof HttpResponse))
       .subscribe({
         next: () => {
-          this.uploading = false;
-          this.fileList = [];
+          this.uploading.set(false);
+          this.fileList.set([]);
           this.messageService.success('upload successfully.');
         },
         error: () => {
-          this.uploading = false;
+          this.uploading.set(false);
           this.messageService.error('upload failed.');
         }
       });
@@ -846,7 +911,7 @@ export class NzDemoUploadUploadManuallyComponent {
 Use Aliyun OSS upload example.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -859,7 +924,7 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
     <nz-upload
       nzName="file"
       [(nzFileList)]="files"
-      [nzTransformFile]="transformFile"
+      [nzBeforeUpload]="beforeUpload"
       [nzData]="getExtraData"
       [nzAction]="mockOSSData.host"
       (nzChange)="onChange($event)"
@@ -873,8 +938,8 @@ import { NzUploadChangeParam, NzUploadFile, NzUploadModule } from 'ng-zorro-antd
   `
 })
 export class NzDemoUploadUploadWithAliyunOssComponent {
-  files: NzUploadFile[] = [];
-  mockOSSData = {
+  readonly files = signal<NzUploadFile[]>([]);
+  readonly mockOSSData = {
     dir: 'user-dir/',
     expire: '1577811661',
     host: '//www.mocky.io/v2/5cc8019d300000980a055e76',
@@ -883,11 +948,11 @@ export class NzDemoUploadUploadWithAliyunOssComponent {
     signature: 'ZGFob25nc2hhbw=='
   };
 
-  transformFile = (file: NzUploadFile): NzUploadFile => {
+  beforeUpload = (file: NzUploadFile): boolean => {
     const suffix = file.name.slice(file.name.lastIndexOf('.'));
     const filename = Date.now() + suffix;
     file.url = this.mockOSSData.dir + filename;
-    return file;
+    return true;
   };
 
   getExtraData = (file: NzUploadFile): {} => {

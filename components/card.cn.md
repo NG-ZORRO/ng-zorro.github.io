@@ -256,7 +256,7 @@ export class NzDemoCardInnerComponent {}
 数据读入前会有文本块样式。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
@@ -270,11 +270,11 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   imports: [FormsModule, NzAvatarModule, NzCardModule, NzIconModule, NzSwitchModule, NzSkeletonModule],
   template: `
     <nz-switch [(ngModel)]="loading" />
-    <nz-card style="width: 300px;margin-top: 16px" [nzLoading]="loading">
+    <nz-card style="width: 300px;margin-top: 16px" [nzLoading]="loading()">
       <nz-card-meta [nzAvatar]="avatarTemplate" nzTitle="Card title" nzDescription="This is the description" />
     </nz-card>
     <nz-card style="width: 300px;margin-top: 16px" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
-      <nz-skeleton [nzActive]="true" [nzLoading]="loading" [nzAvatar]="{ size: 'large' }">
+      <nz-skeleton [nzActive]="true" [nzLoading]="loading()" [nzAvatar]="{ size: 'large' }">
         <nz-card-meta [nzAvatar]="avatarTemplate" nzTitle="Card title" nzDescription="This is the description" />
       </nz-skeleton>
     </nz-card>
@@ -293,7 +293,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoCardLoadingComponent {
-  loading = true;
+  readonly loading = signal(true);
 }
 ```
 

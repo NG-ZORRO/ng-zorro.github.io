@@ -12,8 +12,7 @@ By clicking the input box, you can select a date from a popup calendar.
 
 ## API
 
-**Note:** Some of nz-date-picker's locale are coming from [Angular i18n](https://angular.dev/guide/i18n), that should be
-provided in the file `app.config.ts`.
+**Note:** Some of date-picker's locale are coming from [Angular i18n](https://angular.dev/guide/i18n), that should be provided in the file `app.config.ts`.
 
 For example:
 
@@ -24,9 +23,7 @@ import en from '@angular/common/locales/en';
 registerLocaleData(en);
 ```
 
-**Note:** All input and output date objects
-are [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), you can manipulate it
-with [date-fns](https://date-fns.org/).
+**Note:** All input and output date objects are [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date), you can manipulate it with [date-fns](https://date-fns.org/).
 
 ### Common API
 
@@ -107,14 +104,11 @@ The following APIs are shared by nz-date-picker, nz-range-picker.
 
 ## FAQ
 
-### Why does manual input not take effect after setting `nzFormat="dd/MM/yyyy"`
+### How to use custom date library in Date-Picker
 
-You need to use `date-fns`. Date formatting currently supports two methods: `DatePipe` (
-default, [syntax reference](https://angular.dev/api/common/DatePipe)) and `date-fns` (
-see [`How to format a date using date-fns`](/docs/i18n/en#How%20to%20format%20a%20date%20using%20Date-fns)).NG-ZORRO
-takes the function provided by `date-fns` to implement date deserialization after using it.
+Refer to [Date Adapter](/docs/date-adapter/en).
 
-### Q: The overlay layer element does not follow the scroll position when scrolling
+### The overlay layer element does not follow the scroll position when scrolling
 
 By default, the overlay layer element uses body as the scroll container. If using another scroll container, add the [CdkScrollable](https://material.angular.dev/cdk/scrolling/api#CdkScrollable) directive to the custom scroll container element.
 Note: You need to import the `CdkScrollable` directive or `ScrollingModule` module from `@angular/cdk/scrolling`.
@@ -128,30 +122,24 @@ Note: You need to import the `CdkScrollable` directive or `ScrollingModule` modu
 Basic use case. Users can select or input a date in panel.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { getISOWeek } from 'date-fns';
-
-import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
 
 @Component({
   selector: 'nz-demo-date-picker-basic',
-  imports: [FormsModule, NzButtonModule, NzDatePickerModule],
+  imports: [FormsModule, NzDatePickerModule],
   template: `
     <nz-date-picker [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
-    <nz-date-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+    <nz-date-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="quarter" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-date-picker nzMode="year" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
-    <br />
-    <button nz-button nzType="default" (click)="changeLanguage()">Switch language for all pickers</button>
   `,
   styles: `
     nz-date-picker {
@@ -160,22 +148,10 @@ import { en_US, NzI18nService, zh_CN } from 'ng-zorro-antd/i18n';
   `
 })
 export class NzDemoDatePickerBasicComponent {
-  date = null;
-  isEnglish = false;
-
-  constructor(private i18n: NzI18nService) {}
+  readonly date = signal<Date | null>(null);
 
   onChange(result: Date): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date): void {
-    console.log('week: ', getISOWeek(result));
-  }
-
-  changeLanguage(): void {
-    this.i18n.setLocale(this.isEnglish ? zh_CN : en_US);
-    this.isEnglish = !this.isEnglish;
   }
 }
 ```
@@ -409,10 +385,8 @@ export class NzDemoDatePickerFormatComponent {
 We can set the inline mode by `nzInline`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { getISOWeek } from 'date-fns';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
@@ -426,7 +400,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
         <nz-date-picker nzInline [(ngModel)]="date" (ngModelChange)="onChange($event)" />
       </nz-tab>
       <nz-tab nzTitle="Week">
-        <nz-date-picker nzInline nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+        <nz-date-picker nzInline nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
       </nz-tab>
       <nz-tab nzTitle="Month">
         <nz-date-picker nzInline nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
@@ -465,15 +439,11 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoDatePickerInlineComponent {
-  date = null;
-  rangeDate = null;
+  readonly date = signal<Date | null>(null);
+  readonly rangeDate = signal<Date[] | null>(null);
 
   onChange(result: Date): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date): void {
-    console.log('week: ', getISOWeek(result));
   }
 }
 ```
@@ -483,7 +453,7 @@ export class NzDemoDatePickerInlineComponent {
 You can manually specify the position of the popup via `nzPlacement`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import type { NzPlacement } from 'ng-zorro-antd/core/types';
@@ -502,9 +472,9 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzPlacement]="placement" />
+    <nz-date-picker [nzPlacement]="placement()" />
     <br />
-    <nz-range-picker [nzPlacement]="placement" />
+    <nz-range-picker [nzPlacement]="placement()" />
   `,
   styles: `
     nz-date-picker,
@@ -514,7 +484,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerPlacementComponent {
-  placement: NzPlacement = 'bottomLeft';
+  readonly placement = signal<NzPlacement>('bottomLeft');
 }
 ```
 
@@ -565,10 +535,8 @@ export class NzDemoDatePickerPresettedRangesComponent {
 Set range picker type by `nzMode` prop.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-import { getISOWeek } from 'date-fns';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 
@@ -580,7 +548,7 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
     <br />
     <nz-range-picker [nzShowTime]="true" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
-    <nz-range-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="getWeek($event)" />
+    <nz-range-picker nzMode="week" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
     <nz-range-picker nzMode="month" [(ngModel)]="date" (ngModelChange)="onChange($event)" />
     <br />
@@ -595,14 +563,10 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
   `
 })
 export class NzDemoDatePickerRangePickerComponent {
-  date = null;
+  readonly date = signal<Date[] | null>(null);
 
   onChange(result: Date[]): void {
     console.log('onChange: ', result);
-  }
-
-  getWeek(result: Date[]): void {
-    console.log('week: ', result.map(getISOWeek));
   }
 }
 ```
@@ -612,7 +576,7 @@ export class NzDemoDatePickerRangePickerComponent {
 The input box comes in three sizes. `default` will be used if `nzSize` is omitted.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerModule, NzDatePickerSizeType } from 'ng-zorro-antd/date-picker';
@@ -629,15 +593,15 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzSize]="size" />
+    <nz-date-picker [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="week" [nzSize]="size" />
+    <nz-date-picker nzMode="week" [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="month" [nzSize]="size" />
+    <nz-date-picker nzMode="month" [nzSize]="size()" />
     <br />
-    <nz-date-picker nzMode="quarter" [nzSize]="size" />
+    <nz-date-picker nzMode="quarter" [nzSize]="size()" />
     <br />
-    <nz-range-picker [nzSize]="size" />
+    <nz-range-picker [nzSize]="size()" />
   `,
   styles: `
     nz-date-picker,
@@ -647,7 +611,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerSizeComponent {
-  size: NzDatePickerSizeType = 'default';
+  readonly size = signal<NzDatePickerSizeType>('default');
 }
 ```
 
@@ -659,7 +623,7 @@ When `RangePicker` does not satisfied your requirements, try to implement simila
 > - Improve user experience with `open()`.
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
+import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerComponent, NzDatePickerModule } from 'ng-zorro-antd/date-picker';
@@ -693,22 +657,25 @@ import { NzDatePickerComponent, NzDatePickerModule } from 'ng-zorro-antd/date-pi
   `
 })
 export class NzDemoDatePickerStartEndComponent {
-  startValue: Date | null = null;
-  endValue: Date | null = null;
+  readonly startValue = signal<Date | null>(null);
+  readonly endValue = signal<Date | null>(null);
+
   @ViewChild('endDatePicker') endDatePicker!: NzDatePickerComponent;
 
-  disabledStartDate = (startValue: Date): boolean => {
-    if (!startValue || !this.endValue) {
+  readonly disabledStartDate = (startValue: Date): boolean => {
+    const endValue = this.endValue();
+    if (!startValue || !endValue) {
       return false;
     }
-    return startValue.getTime() > this.endValue.getTime();
+    return startValue.getTime() > endValue.getTime();
   };
 
-  disabledEndDate = (endValue: Date): boolean => {
-    if (!endValue || !this.startValue) {
+  readonly disabledEndDate = (endValue: Date): boolean => {
+    const startValue = this.startValue();
+    if (!endValue || !startValue) {
       return false;
     }
-    return endValue.getTime() <= this.startValue.getTime();
+    return endValue.getTime() <= startValue.getTime();
   };
 
   handleStartOpenChange(open: boolean): void {
@@ -754,10 +721,10 @@ export class NzDemoDatePickerStatusComponent {}
 Switch in different types of pickers by Select.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzDateMode, NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 
@@ -773,12 +740,12 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
         <nz-option nzValue="quarter" nzLabel="Quarter" />
         <nz-option nzValue="year" nzLabel="Year" />
       </nz-select>
-      <nz-date-picker *nzSpaceItem [nzMode]="mode" />
+      <nz-date-picker *nzSpaceItem [nzMode]="mode()" />
     </nz-space>
   `
 })
 export class NzDemoDatePickerSwitchComponent {
-  mode = 'date';
+  readonly mode = signal<NzDateMode>('date');
 }
 ```
 
@@ -870,7 +837,7 @@ export class NzDemoDatePickerVariantComponent {}
 Display week numbers with `nzShowWeekNumber`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
@@ -886,9 +853,9 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-date-picker [nzShowWeekNumber]="showWeekNumber" />
+    <nz-date-picker [nzShowWeekNumber]="showWeekNumber()" />
     <br />
-    <nz-range-picker [nzShowWeekNumber]="showWeekNumber" />
+    <nz-range-picker [nzShowWeekNumber]="showWeekNumber()" />
   `,
   styles: `
     nz-date-picker,
@@ -898,6 +865,6 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoDatePickerWeekNumberComponent {
-  showWeekNumber: boolean = false;
+  readonly showWeekNumber = signal(false);
 }
 ```

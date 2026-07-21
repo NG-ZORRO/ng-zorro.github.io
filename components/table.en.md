@@ -279,7 +279,7 @@ This example shows how to fetch and present data from remote server, and how to 
 
 ```typescript
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -301,10 +301,10 @@ interface RandomUser {
   template: `
     <nz-table
       nzShowSizeChanger
-      [nzData]="listOfRandomUser"
+      [nzData]="listOfRandomUser()"
       [nzFrontPagination]="false"
-      [nzLoading]="loading"
-      [nzTotal]="total"
+      [nzLoading]="loading()"
+      [nzTotal]="total()"
       [nzPageSize]="pageSize"
       [nzPageIndex]="pageIndex"
       (nzQueryParams)="onQueryParamsChange($event)"
@@ -317,7 +317,7 @@ interface RandomUser {
         </tr>
       </thead>
       <tbody>
-        @for (data of listOfRandomUser; track data) {
+        @for (data of listOfRandomUser(); track data) {
           <tr>
             <td>{{ data.name.first }} {{ data.name.last }}</td>
             <td>{{ data.gender }}</td>
@@ -329,12 +329,14 @@ interface RandomUser {
   `
 })
 export class NzDemoTableAjaxComponent implements OnInit {
-  total = 1;
-  listOfRandomUser: RandomUser[] = [];
-  loading = true;
-  pageSize = 10;
-  pageIndex = 1;
-  filterGender = [
+  private readonly http = inject(HttpClient);
+
+  readonly total = signal(1);
+  readonly listOfRandomUser = signal<RandomUser[]>([]);
+  readonly loading = signal(true);
+  readonly pageSize = 10;
+  readonly pageIndex = 1;
+  readonly filterGender = [
     { text: 'male', value: 'male' },
     { text: 'female', value: 'female' }
   ];
@@ -346,11 +348,11 @@ export class NzDemoTableAjaxComponent implements OnInit {
     sortOrder: string | null,
     filter: Array<{ key: string; value: string[] }>
   ): void {
-    this.loading = true;
+    this.loading.set(true);
     this.getUsers(pageIndex, pageSize, sortField, sortOrder, filter).subscribe(data => {
-      this.loading = false;
-      this.total = 200; // mock the total data here
-      this.listOfRandomUser = data.results;
+      this.loading.set(false);
+      this.total.set(200); // mock the total data here
+      this.listOfRandomUser.set(data.results);
     });
   }
 
@@ -362,9 +364,6 @@ export class NzDemoTableAjaxComponent implements OnInit {
     const sortOrder = (currentSort && currentSort.value) || null;
     this.loadDataFromServer(pageIndex, pageSize, sortField, sortOrder, filter);
   }
-
-  constructor(private http: HttpClient) {}
-
   ngOnInit(): void {
     this.loadDataFromServer(this.pageIndex, this.pageSize, null, null, []);
   }
@@ -542,7 +541,7 @@ export class NzDemoTableBorderedComponent {
 Insert line breaks within words with `nzBreakWord` to prevent text from overflowing its content box
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -588,18 +587,12 @@ import { NzTableModule } from 'ng-zorro-antd/table';
     </nz-table>
   `
 })
-export class NzDemoTableBreakWordComponent implements OnInit {
-  listOfData: Array<{ name: string; age: number; address: string }> = [];
-
-  ngOnInit(): void {
-    for (let i = 0; i < 100; i++) {
-      this.listOfData.push({
-        name: `Edward King`,
-        age: 32,
-        address: `LondonLondonLondonLondonLondon`
-      });
-    }
-  }
+export class NzDemoTableBreakWordComponent {
+  readonly listOfData: Array<{ name: string; age: number; address: string }> = Array.from({ length: 100 }).map(() => ({
+    name: `Edward King`,
+    age: 32,
+    address: `LondonLondonLondonLondonLondon`
+  }));
 }
 ```
 
@@ -709,7 +702,7 @@ Control the display and ordering of columns in a table.
 
 ```typescript
 import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -748,7 +741,7 @@ interface CustomColumn extends NzCustomColumn {
     <button nz-button nzType="primary" nzSize="small" (click)="showModal()" style="margin-bottom: 8px;">
       <nz-icon nzType="setting" nzTheme="outline" />
     </button>
-    <nz-table #basicTable [nzData]="listOfData" [nzCustomColumn]="customColumn">
+    <nz-table #basicTable [nzData]="listOfData" [nzCustomColumn]="customColumn()">
       <thead>
         <tr>
           <th nzCellControl="name">Name</th>
@@ -775,13 +768,13 @@ interface CustomColumn extends NzCustomColumn {
       </tbody>
     </nz-table>
 
-    <nz-modal [(nzVisible)]="isVisible" nzTitle="Custom Column" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <nz-modal [nzVisible]="isVisible()" nzTitle="Custom Column" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
       <ng-container *nzModalContent>
         <div nz-row [nzGutter]="24">
           <div nz-col class="gutter-row" [nzSpan]="12">
             <div class="example-container">
               <p>Displayed (drag and drop to sort)</p>
-              @for (item of title; track item) {
+              @for (item of title(); track item) {
                 <div class="example-box">
                   {{ item.name }}
                 </div>
@@ -789,19 +782,19 @@ interface CustomColumn extends NzCustomColumn {
               <div
                 cdkDropList
                 #todoList="cdkDropList"
-                [cdkDropListData]="fix"
+                [cdkDropListData]="fix()"
                 [cdkDropListConnectedTo]="[doneList]"
                 class="example-list"
                 (cdkDropListDropped)="drop($event)"
               >
-                @for (item of fix; track item) {
+                @for (item of fix(); track item) {
                   <div class="example-box" cdkDrag>
                     {{ item.name }}
                     <nz-icon nzType="minus-circle" nzTheme="outline" (click)="deleteCustom(item, $index)" />
                   </div>
                 }
               </div>
-              @for (item of footer; track item) {
+              @for (item of footer(); track item) {
                 <div class="example-box">
                   {{ item.name }}
                 </div>
@@ -814,12 +807,12 @@ interface CustomColumn extends NzCustomColumn {
               <div
                 cdkDropList
                 #doneList="cdkDropList"
-                [cdkDropListData]="notFix"
+                [cdkDropListData]="notFix()"
                 [cdkDropListConnectedTo]="[todoList]"
                 class="example-list"
                 (cdkDropListDropped)="drop($event)"
               >
-                @for (item of notFix; track item) {
+                @for (item of notFix(); track item) {
                   <div class="example-box" cdkDrag>
                     {{ item.name }}
                     <nz-icon nzType="plus-circle" nzTheme="outline" (click)="addCustom(item, $index)" />
@@ -891,7 +884,7 @@ interface CustomColumn extends NzCustomColumn {
   `
 })
 export class NzDemoTableCustomColumnComponent implements OnInit {
-  listOfData: Person[] = [
+  readonly listOfData: Person[] = [
     {
       key: '1',
       name: 'John Brown',
@@ -915,7 +908,7 @@ export class NzDemoTableCustomColumnComponent implements OnInit {
     }
   ];
 
-  customColumn: CustomColumn[] = [
+  readonly customColumn = signal<CustomColumn[]>([
     {
       name: 'Name',
       value: 'name',
@@ -951,21 +944,19 @@ export class NzDemoTableCustomColumnComponent implements OnInit {
       position: 'right',
       width: 200
     }
-  ];
+  ]);
 
-  isVisible: boolean = false;
-  title: CustomColumn[] = [];
-  footer: CustomColumn[] = [];
-  fix: CustomColumn[] = [];
-  notFix: CustomColumn[] = [];
-
-  constructor(private cdr: ChangeDetectorRef) {}
+  readonly isVisible = signal(false);
+  readonly title = signal<CustomColumn[]>([]);
+  readonly footer = signal<CustomColumn[]>([]);
+  readonly fix = signal<CustomColumn[]>([]);
+  readonly notFix = signal<CustomColumn[]>([]);
 
   ngOnInit(): void {
-    this.title = this.customColumn.filter(item => item.position === 'left' && item.required);
-    this.footer = this.customColumn.filter(item => item.position === 'right' && item.required);
-    this.fix = this.customColumn.filter(item => item.default && !item.required);
-    this.notFix = this.customColumn.filter(item => !item.default && !item.required);
+    this.title.set(this.customColumn().filter(item => item.position === 'left' && item.required));
+    this.footer.set(this.customColumn().filter(item => item.position === 'right' && item.required));
+    this.fix.set(this.customColumn().filter(item => item.default && !item.required));
+    this.notFix.set(this.customColumn().filter(item => !item.default && !item.required));
   }
 
   drop(event: CdkDragDrop<CustomColumn[]>): void {
@@ -974,43 +965,31 @@ export class NzDemoTableCustomColumnComponent implements OnInit {
     } else {
       transferArrayItem(event.previousContainer.data, event.container.data, event.previousIndex, event.currentIndex);
     }
-    this.fix = this.fix.map(item => {
-      item.default = true;
-      return item;
-    });
-    this.notFix = this.notFix.map(item => {
-      item.default = false;
-      return item;
-    });
-    this.cdr.markForCheck();
+    this.fix.set(this.fix().map(item => ({ ...item, default: true })));
+    this.notFix.set(this.notFix().map(item => ({ ...item, default: false })));
   }
 
   deleteCustom(value: CustomColumn, index: number): void {
-    value.default = false;
-    this.notFix = [...this.notFix, value];
-    this.fix.splice(index, 1);
-    this.cdr.markForCheck();
+    this.notFix.update(notFix => [...notFix, { ...value, default: false }]);
+    this.fix.update(fix => fix.filter((_, i) => i !== index));
   }
 
   addCustom(value: CustomColumn, index: number): void {
-    value.default = true;
-    this.fix = [...this.fix, value];
-    this.notFix.splice(index, 1);
-    this.cdr.markForCheck();
+    this.fix.update(fix => [...fix, { ...value, default: true }]);
+    this.notFix.update(notFix => notFix.filter((_, i) => i !== index));
   }
 
   showModal(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk(): void {
-    this.customColumn = [...this.title, ...this.fix, ...this.notFix, ...this.footer];
-    this.isVisible = false;
-    this.cdr.markForCheck();
+    this.customColumn.set([...this.title(), ...this.fix(), ...this.notFix(), ...this.footer()]);
+    this.isVisible.set(false);
   }
 
   handleCancel(): void {
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 ```
@@ -1020,7 +999,7 @@ export class NzDemoTableCustomColumnComponent implements OnInit {
 Implement a customized column search example via `<nz-filter-trigger>`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -1038,12 +1017,12 @@ interface DataItem {
   selector: 'nz-demo-table-custom-filter-panel',
   imports: [FormsModule, NzButtonModule, NzDropdownModule, NzIconModule, NzInputModule, NzTableModule],
   template: `
-    <nz-table #nzTable [nzData]="listOfDisplayData" nzTableLayout="fixed">
+    <nz-table #nzTable [nzData]="listOfDisplayData()" nzTableLayout="fixed">
       <thead>
         <tr>
           <th nzCustomFilter>
             Name
-            <nz-filter-trigger [(nzVisible)]="visible" [nzActive]="searchValue.length > 0" [nzDropdownMenu]="menu">
+            <nz-filter-trigger [(nzVisible)]="visible" [nzActive]="searchValue().length > 0" [nzDropdownMenu]="menu">
               <nz-icon nzType="search" />
             </nz-filter-trigger>
           </th>
@@ -1092,9 +1071,9 @@ interface DataItem {
   `
 })
 export class NzDemoTableCustomFilterPanelComponent {
-  searchValue = '';
-  visible = false;
-  listOfData: DataItem[] = [
+  readonly searchValue = signal('');
+  readonly visible = signal(false);
+  readonly listOfData: DataItem[] = [
     {
       name: 'John Brown',
       age: 32,
@@ -1116,16 +1095,18 @@ export class NzDemoTableCustomFilterPanelComponent {
       address: 'London No. 2 Lake Park'
     }
   ];
-  listOfDisplayData = [...this.listOfData];
+  readonly listOfDisplayData = signal([...this.listOfData]);
 
   reset(): void {
-    this.searchValue = '';
+    this.searchValue.set('');
     this.search();
   }
 
   search(): void {
-    this.visible = false;
-    this.listOfDisplayData = this.listOfData.filter((item: DataItem) => item.name.indexOf(this.searchValue) !== -1);
+    this.visible.set(false);
+    this.listOfDisplayData.set(
+      this.listOfData.filter((item: DataItem) => item.name.indexOf(this.searchValue()) !== -1)
+    );
   }
 }
 ```
@@ -1208,7 +1189,7 @@ export class NzDemoTableDragSortingComponent {
 Select different settings to see the result.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -1286,63 +1267,63 @@ interface Setting {
     </div>
     <nz-table
       #dynamicTable
-      [nzScroll]="{ x: scrollX, y: scrollY }"
-      [nzData]="listOfData"
-      [nzTableLayout]="settingValue.tableLayout"
-      [nzBordered]="settingValue.bordered"
-      [nzSimple]="settingValue.simple"
-      [nzLoading]="settingValue.loading"
-      [nzPaginationType]="settingValue.paginationType"
-      [nzPaginationPosition]="settingValue.position"
-      [nzShowSizeChanger]="settingValue.sizeChanger"
-      [nzFrontPagination]="settingValue.pagination"
-      [nzShowPagination]="settingValue.pagination"
-      [nzFooter]="settingValue.footer ? 'Here is Footer' : null"
-      [nzTitle]="settingValue.title ? 'Here is Title' : null"
-      [nzSize]="settingValue.size"
+      [nzScroll]="{ x: scrollX(), y: scrollY() }"
+      [nzData]="listOfData()"
+      [nzTableLayout]="settingValue().tableLayout"
+      [nzBordered]="settingValue().bordered"
+      [nzSimple]="settingValue().simple"
+      [nzLoading]="settingValue().loading"
+      [nzPaginationType]="settingValue().paginationType"
+      [nzPaginationPosition]="settingValue().position"
+      [nzShowSizeChanger]="settingValue().sizeChanger"
+      [nzFrontPagination]="settingValue().pagination"
+      [nzShowPagination]="settingValue().pagination"
+      [nzFooter]="settingValue().footer ? 'Here is Footer' : null"
+      [nzTitle]="settingValue().title ? 'Here is Title' : null"
+      [nzSize]="settingValue().size"
       (nzCurrentPageDataChange)="currentPageDataChange($event)"
     >
       <thead>
-        @if (settingValue.header) {
+        @if (settingValue().header) {
           <tr>
-            @if (settingValue.expandable) {
-              <th nzWidth="40px" [nzLeft]="fixedColumn"></th>
+            @if (settingValue().expandable) {
+              <th nzWidth="40px" [nzLeft]="fixedColumn()"></th>
             }
-            @if (settingValue.checkbox) {
+            @if (settingValue().checkbox) {
               <th
                 nzWidth="60px"
-                [(nzChecked)]="allChecked"
-                [nzLeft]="fixedColumn"
-                [nzIndeterminate]="indeterminate"
+                [nzChecked]="allChecked()"
+                [nzLeft]="fixedColumn()"
+                [nzIndeterminate]="indeterminate()"
                 (nzCheckedChange)="checkAll($event)"
               ></th>
             }
-            <th [nzLeft]="fixedColumn">Name</th>
+            <th [nzLeft]="fixedColumn()">Name</th>
             <th>Age</th>
             <th>Address</th>
-            <th [nzRight]="fixedColumn">Action</th>
+            <th [nzRight]="fixedColumn()">Action</th>
           </tr>
         }
       </thead>
       <tbody>
         @for (data of dynamicTable.data; track data) {
           <tr>
-            @if (settingValue.expandable) {
-              <td [nzLeft]="fixedColumn" [(nzExpand)]="data.expand"></td>
+            @if (settingValue().expandable) {
+              <td [nzLeft]="fixedColumn()" [(nzExpand)]="data.expand"></td>
             }
-            @if (settingValue.checkbox) {
-              <td [nzLeft]="fixedColumn" [(nzChecked)]="data.checked" (nzCheckedChange)="refreshStatus()"></td>
+            @if (settingValue().checkbox) {
+              <td [nzLeft]="fixedColumn()" [(nzChecked)]="data.checked" (nzCheckedChange)="refreshStatus()"></td>
             }
-            <td [nzLeft]="fixedColumn">{{ data.name }}</td>
+            <td [nzLeft]="fixedColumn()">{{ data.name }}</td>
             <td>{{ data.age }}</td>
-            <td [nzEllipsis]="settingValue.ellipsis">{{ data.address }}</td>
-            <td [nzRight]="fixedColumn" [nzEllipsis]="settingValue.ellipsis">
+            <td [nzEllipsis]="settingValue().ellipsis">{{ data.address }}</td>
+            <td [nzRight]="fixedColumn()" [nzEllipsis]="settingValue().ellipsis">
               <a href="#">Delete</a>
               <nz-divider nzType="vertical" />
               <a href="#">More action</a>
             </td>
           </tr>
-          @if (settingValue.expandable) {
+          @if (settingValue().expandable) {
             <tr [nzExpand]="data.expand">
               <span>{{ data.description }}</span>
             </tr>
@@ -1359,16 +1340,37 @@ interface Setting {
   `
 })
 export class NzDemoTableDynamicSettingsComponent implements OnInit {
-  settingForm: FormGroup<{ [K in keyof Setting]: FormControl<Setting[K]> }>;
-  listOfData: readonly ItemData[] = [];
-  displayData: readonly ItemData[] = [];
-  allChecked = false;
-  indeterminate = false;
-  fixedColumn = false;
-  scrollX: string | null = null;
-  scrollY: string | null = null;
-  settingValue: Setting;
-  listOfSwitch = [
+  private readonly formBuilder = inject(NonNullableFormBuilder);
+
+  readonly settingForm: FormGroup<{ [K in keyof Setting]: FormControl<Setting[K]> }> = this.formBuilder.group({
+    bordered: [false],
+    loading: [false],
+    pagination: [true],
+    sizeChanger: [false],
+    title: [true],
+    header: [true],
+    footer: [true],
+    expandable: [true],
+    checkbox: [true],
+    fixHeader: [false],
+    noResult: [false],
+    ellipsis: [false],
+    simple: [false],
+    size: 'small' as NzTableSize,
+    paginationType: 'default' as NzTablePaginationType,
+    tableScroll: 'unset' as TableScroll,
+    tableLayout: 'auto' as NzTableLayout,
+    position: 'bottom' as NzTablePaginationPosition
+  });
+  readonly listOfData = signal<readonly ItemData[]>([]);
+  readonly displayData = signal<readonly ItemData[]>([]);
+  readonly allChecked = signal(false);
+  readonly indeterminate = signal(false);
+  readonly fixedColumn = signal(false);
+  readonly scrollX = signal<string | null>(null);
+  readonly scrollY = signal<string | null>(null);
+  readonly settingValue = signal(this.settingForm.value as Setting);
+  readonly listOfSwitch = [
     { name: 'Bordered', formControlName: 'bordered' },
     { name: 'Loading', formControlName: 'loading' },
     { name: 'Pagination', formControlName: 'pagination' },
@@ -1383,7 +1385,7 @@ export class NzDemoTableDynamicSettingsComponent implements OnInit {
     { name: 'Ellipsis', formControlName: 'ellipsis' },
     { name: 'Simple Pagination', formControlName: 'simple' }
   ];
-  listOfRadio = [
+  readonly listOfRadio = [
     {
       name: 'Size',
       formControlName: 'size',
@@ -1430,20 +1432,20 @@ export class NzDemoTableDynamicSettingsComponent implements OnInit {
   ];
 
   currentPageDataChange($event: readonly ItemData[]): void {
-    this.displayData = $event;
+    this.displayData.set($event);
     this.refreshStatus();
   }
 
   refreshStatus(): void {
-    const validData = this.displayData.filter(value => !value.disabled);
+    const validData = this.displayData().filter(value => !value.disabled);
     const allChecked = validData.length > 0 && validData.every(value => value.checked);
     const allUnChecked = validData.every(value => !value.checked);
-    this.allChecked = allChecked;
-    this.indeterminate = !allChecked && !allUnChecked;
+    this.allChecked.set(allChecked);
+    this.indeterminate.set(!allChecked && !allUnChecked);
   }
 
   checkAll(value: boolean): void {
-    this.displayData.forEach(data => {
+    this.displayData().forEach(data => {
       if (!data.disabled) {
         data.checked = value;
       }
@@ -1466,50 +1468,25 @@ export class NzDemoTableDynamicSettingsComponent implements OnInit {
     return data;
   }
 
-  constructor(private formBuilder: NonNullableFormBuilder) {
-    this.settingForm = this.formBuilder.group({
-      bordered: [false],
-      loading: [false],
-      pagination: [true],
-      sizeChanger: [false],
-      title: [true],
-      header: [true],
-      footer: [true],
-      expandable: [true],
-      checkbox: [true],
-      fixHeader: [false],
-      noResult: [false],
-      ellipsis: [false],
-      simple: [false],
-      size: 'small' as NzTableSize,
-      paginationType: 'default' as NzTablePaginationType,
-      tableScroll: 'unset' as TableScroll,
-      tableLayout: 'auto' as NzTableLayout,
-      position: 'bottom' as NzTablePaginationPosition
-    });
-
-    this.settingValue = this.settingForm.value as Setting;
-  }
-
   ngOnInit(): void {
     this.settingForm.valueChanges.subscribe(value => {
-      this.settingValue = value as Setting;
+      this.settingValue.set(value as Setting);
     });
     this.settingForm.controls.tableScroll.valueChanges.subscribe(scroll => {
-      this.fixedColumn = scroll === 'fixed';
-      this.scrollX = scroll === 'scroll' || scroll === 'fixed' ? '100vw' : null;
+      this.fixedColumn.set(scroll === 'fixed');
+      this.scrollX.set(scroll === 'scroll' || scroll === 'fixed' ? '100vw' : null);
     });
     this.settingForm.controls.fixHeader.valueChanges.subscribe(fixed => {
-      this.scrollY = fixed ? '240px' : null;
+      this.scrollY.set(fixed ? '240px' : null);
     });
     this.settingForm.controls.noResult.valueChanges.subscribe(empty => {
       if (empty) {
-        this.listOfData = [];
+        this.listOfData.set([]);
       } else {
-        this.listOfData = this.generateData();
+        this.listOfData.set(this.generateData());
       }
     });
-    this.listOfData = this.generateData();
+    this.listOfData.set(this.generateData());
   }
 }
 ```
@@ -1523,7 +1500,7 @@ Table with editable cells.
 > User can refer to this example to customize the way of editing forms.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -1545,7 +1522,7 @@ interface ItemData {
     <button nz-button (click)="addRow()" nzType="primary">Add</button>
     <br />
     <br />
-    <nz-table #editRowTable nzBordered [nzData]="listOfData">
+    <nz-table #editRowTable nzBordered [nzData]="listOfData()">
       <thead>
         <tr>
           <th nzWidth="30%">Name</th>
@@ -1558,10 +1535,10 @@ interface ItemData {
         @for (data of editRowTable.data; track data) {
           <tr class="editable-row">
             <td>
-              <div class="editable-cell" [hidden]="editId === data.id" (click)="startEdit(data.id)">
+              <div class="editable-cell" [hidden]="editId() === data.id" (click)="startEdit(data.id)">
                 {{ data.name }}
               </div>
-              <input [hidden]="editId !== data.id" type="text" nz-input [(ngModel)]="data.name" (blur)="stopEdit()" />
+              <input [hidden]="editId() !== data.id" type="text" nz-input [(ngModel)]="data.name" (blur)="stopEdit()" />
             </td>
             <td>{{ data.age }}</td>
             <td>{{ data.address }}</td>
@@ -1589,32 +1566,32 @@ interface ItemData {
 })
 export class NzDemoTableEditCellComponent implements OnInit {
   i = 0;
-  editId: string | null = null;
-  listOfData: ItemData[] = [];
+  readonly editId = signal<string | null>(null);
+  readonly listOfData = signal<ItemData[]>([]);
 
   startEdit(id: string): void {
-    this.editId = id;
+    this.editId.set(id);
   }
 
   stopEdit(): void {
-    this.editId = null;
+    this.editId.set(null);
   }
 
   addRow(): void {
-    this.listOfData = [
-      ...this.listOfData,
+    this.listOfData.update(listOfData => [
+      ...listOfData,
       {
         id: `${this.i}`,
         name: `Edward King ${this.i}`,
         age: '32',
         address: `London, Park Lane no. ${this.i}`
       }
-    ];
+    ]);
     this.i++;
   }
 
   deleteRow(id: string): void {
-    this.listOfData = this.listOfData.filter(d => d.id !== id);
+    this.listOfData.update(listOfData => listOfData.filter(d => d.id !== id));
   }
 
   ngOnInit(): void {
@@ -1633,7 +1610,7 @@ Table with editable rows.
 > User can refer to this example to customize the way of editing forms.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -1651,7 +1628,7 @@ interface ItemData {
   selector: 'nz-demo-table-edit-row',
   imports: [FormsModule, NzInputModule, NzPopconfirmModule, NzTableModule],
   template: `
-    <nz-table #editRowTable nzBordered [nzData]="listOfData" nzTableLayout="fixed">
+    <nz-table #editRowTable nzBordered [nzData]="listOfData()" nzTableLayout="fixed">
       <thead>
         <tr>
           <th nzWidth="25%">Name</th>
@@ -1663,15 +1640,15 @@ interface ItemData {
       <tbody>
         @for (data of editRowTable.data; track data) {
           <tr>
-            @if (!editCache[data.id].edit) {
+            @if (!editCache()[data.id].edit) {
               <td>{{ data.name }}</td>
               <td>{{ data.age }}</td>
               <td>{{ data.address }}</td>
               <td><a (click)="startEdit(data.id)">Edit</a></td>
             } @else {
-              <td><input type="text" nz-input [(ngModel)]="editCache[data.id].data.name" /></td>
-              <td><input type="text" nz-input [(ngModel)]="editCache[data.id].data.age" /></td>
-              <td><input type="text" nz-input [(ngModel)]="editCache[data.id].data.address" /></td>
+              <td><input type="text" nz-input [(ngModel)]="editCache()[data.id].data.name" /></td>
+              <td><input type="text" nz-input [(ngModel)]="editCache()[data.id].data.age" /></td>
+              <td><input type="text" nz-input [(ngModel)]="editCache()[data.id].data.address" /></td>
               <td>
                 <a (click)="saveEdit(data.id)" class="save">Save</a>
                 <a nz-popconfirm nzPopconfirmTitle="Sure to cancel?" (nzOnConfirm)="cancelEdit(data.id)">Cancel</a>
@@ -1689,34 +1666,45 @@ interface ItemData {
   `
 })
 export class NzDemoTableEditRowComponent implements OnInit {
-  editCache: { [key: string]: { edit: boolean; data: ItemData } } = {};
-  listOfData: ItemData[] = [];
+  readonly editCache = signal<{ [key: string]: { edit: boolean; data: ItemData } }>({});
+  readonly listOfData = signal<ItemData[]>([]);
 
   startEdit(id: string): void {
-    this.editCache[id].edit = true;
+    this.editCache.update(editCache => ({ ...editCache, [id]: { ...editCache[id], edit: true } }));
   }
 
   cancelEdit(id: string): void {
-    const index = this.listOfData.findIndex(item => item.id === id);
-    this.editCache[id] = {
-      data: { ...this.listOfData[index] },
-      edit: false
-    };
+    const index = this.listOfData().findIndex(item => item.id === id);
+    this.editCache.update(editCache => ({
+      ...editCache,
+      [id]: {
+        data: { ...this.listOfData()[index] },
+        edit: false
+      }
+    }));
   }
 
   saveEdit(id: string): void {
-    const index = this.listOfData.findIndex(item => item.id === id);
-    Object.assign(this.listOfData[index], this.editCache[id].data);
-    this.editCache[id].edit = false;
+    const edited = this.editCache()[id].data;
+    this.listOfData.update(listOfData => listOfData.map(item => (item.id === id ? { ...item, ...edited } : item)));
+    this.editCache.update(editCache => ({
+      ...editCache,
+      [id]: {
+        ...editCache[id],
+        edit: false
+      }
+    }));
   }
 
   updateEditCache(): void {
-    this.listOfData.forEach(item => {
-      this.editCache[item.id] = {
+    const editCache: { [key: string]: { edit: boolean; data: ItemData } } = {};
+    this.listOfData().forEach(item => {
+      editCache[item.id] = {
         edit: false,
         data: { ...item }
       };
     });
+    this.editCache.set(editCache);
   }
 
   ngOnInit(): void {
@@ -1729,7 +1717,7 @@ export class NzDemoTableEditRowComponent implements OnInit {
         address: `London Park no. ${i}`
       });
     }
-    this.listOfData = data;
+    this.listOfData.set(data);
     this.updateEditCache();
   }
 }
@@ -1742,7 +1730,7 @@ Ellipsis cell content via setting `nzEllipsis` and `nzTableLayout="fixed"`.
 > can not working with sorter and filters for now
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -1776,18 +1764,12 @@ import { NzTableModule } from 'ng-zorro-antd/table';
     </nz-table>
   `
 })
-export class NzDemoTableEllipsisComponent implements OnInit {
-  listOfData: Array<{ name: string; age: number; address: string }> = [];
-
-  ngOnInit(): void {
-    for (let i = 0; i < 3; i++) {
-      this.listOfData.push({
-        name: `Edward King`,
-        age: 32,
-        address: `LondonLondonLondonLondonLondon`
-      });
-    }
-  }
+export class NzDemoTableEllipsisComponent {
+  readonly listOfData: Array<{ name: string; age: number; address: string }> = Array.from({ length: 3 }).map(() => ({
+    name: `Edward King`,
+    age: 32,
+    address: `LondonLondonLondonLondonLondon`
+  }));
 }
 ```
 
@@ -2130,7 +2112,7 @@ Fixed header and column at the same time, a solution for displaying large amount
 > Note: We using sticky to implement fixed effect. IE 11 will downgrade to horizontal scroll.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -2182,18 +2164,12 @@ interface ItemData {
     </nz-table>
   `
 })
-export class NzDemoTableFixedColumnsHeaderComponent implements OnInit {
-  listOfData: ItemData[] = [];
-
-  ngOnInit(): void {
-    for (let i = 0; i < 100; i++) {
-      this.listOfData.push({
-        name: `Edward King ${i}`,
-        age: 32,
-        address: `London`
-      });
-    }
-  }
+export class NzDemoTableFixedColumnsHeaderComponent {
+  readonly listOfData: ItemData[] = Array.from({ length: 100 }).map((_, i) => ({
+    name: `Edward King ${i}`,
+    age: 32,
+    address: `London`
+  }));
 }
 ```
 
@@ -2275,7 +2251,7 @@ export class NzDemoTableFixedColumnsComponent {
 Display large amounts of data in scrollable view via set `y` of `[nzScroll]`, you can specify column width via `[nzWidth]`.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -2309,20 +2285,12 @@ interface ItemData {
     </nz-table>
   `
 })
-export class NzDemoTableFixedHeaderComponent implements OnInit {
-  listOfData: ItemData[] = [];
-
-  ngOnInit(): void {
-    const data: ItemData[] = [];
-    for (let i = 0; i < 100; i++) {
-      data.push({
-        name: `Edward King ${i}`,
-        age: 32,
-        address: `London, Park Lane no. ${i}`
-      });
-    }
-    this.listOfData = data;
-  }
+export class NzDemoTableFixedHeaderComponent {
+  readonly listOfData: ItemData[] = Array.from({ length: 100 }).map((_, i) => ({
+    name: `Edward King ${i}`,
+    age: 32,
+    address: `London, Park Lane no. ${i}`
+  }));
 }
 ```
 
@@ -2331,7 +2299,7 @@ export class NzDemoTableFixedHeaderComponent implements OnInit {
 Group table head with fixed columns.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -2390,31 +2358,24 @@ interface ItemData {
     </nz-table>
   `
 })
-export class NzDemoTableGroupingColumnsComponent implements OnInit {
-  listOfData: ItemData[] = [];
-  sortAgeFn = (a: ItemData, b: ItemData): number => a.age - b.age;
-  nameFilterFn = (list: string[], item: ItemData): boolean => list.some(name => item.name.indexOf(name) !== -1);
-  filterName = [
+export class NzDemoTableGroupingColumnsComponent {
+  readonly listOfData: ItemData[] = Array.from({ length: 100 }).map((_, i) => ({
+    name: 'John Brown',
+    age: i + 1,
+    street: 'Lake Park',
+    building: 'C',
+    number: 2035,
+    companyAddress: 'Lake Street 42',
+    companyName: 'SoftLake Co',
+    gender: 'M'
+  }));
+  readonly sortAgeFn = (a: ItemData, b: ItemData): number => a.age - b.age;
+  readonly nameFilterFn = (list: string[], item: ItemData): boolean =>
+    list.some(name => item.name.indexOf(name) !== -1);
+  readonly filterName = [
     { text: 'Joe', value: 'Joe' },
     { text: 'John', value: 'John' }
   ];
-
-  ngOnInit(): void {
-    const data: ItemData[] = [];
-    for (let i = 0; i < 100; i++) {
-      data.push({
-        name: 'John Brown',
-        age: i + 1,
-        street: 'Lake Park',
-        building: 'C',
-        number: 2035,
-        companyAddress: 'Lake Street 42',
-        companyName: 'SoftLake Co',
-        gender: 'M'
-      });
-    }
-    this.listOfData = data;
-  }
 }
 ```
 
@@ -2518,7 +2479,7 @@ export class NzDemoTableMultipleSorterComponent {
 Showing more detailed info of every row.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -2627,32 +2588,23 @@ interface ChildrenItemData {
     </nz-table>
   `
 })
-export class NzDemoTableNestedTableComponent implements OnInit {
-  listOfParentData: ParentItemData[] = [];
-  listOfChildrenData: ChildrenItemData[] = [];
-
-  ngOnInit(): void {
-    for (let i = 0; i < 3; ++i) {
-      this.listOfParentData.push({
-        key: i,
-        name: 'Screen',
-        platform: 'iOS',
-        version: '10.3.4.5654',
-        upgradeNum: 500,
-        creator: 'Jack',
-        createdAt: '2014-12-24 23:12:00',
-        expand: false
-      });
-    }
-    for (let i = 0; i < 3; ++i) {
-      this.listOfChildrenData.push({
-        key: i,
-        date: '2014-12-24 23:12:00',
-        name: 'This is production name',
-        upgradeNum: 'Upgraded: 56'
-      });
-    }
-  }
+export class NzDemoTableNestedTableComponent {
+  readonly listOfParentData: ParentItemData[] = Array.from({ length: 3 }).map((_, i) => ({
+    key: i,
+    name: 'Screen',
+    platform: 'iOS',
+    version: '10.3.4.5654',
+    upgradeNum: 500,
+    creator: 'Jack',
+    createdAt: '2014-12-24 23:12:00',
+    expand: false
+  }));
+  readonly listOfChildrenData: ChildrenItemData[] = Array.from({ length: 3 }).map((_, i) => ({
+    key: i,
+    date: '2014-12-24 23:12:00',
+    name: 'This is production name',
+    upgradeNum: 'Upgraded: 56'
+  }));
 }
 ```
 
@@ -2824,7 +2776,7 @@ export class NzDemoTableResetFilterComponent {
 Rows can be selectable by making first column as a selectable column, to perform operations and clear selections after selecting some rows, all data strategy should be controlled by the developers.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTableModule } from 'ng-zorro-antd/table';
@@ -2845,26 +2797,26 @@ export interface Data {
       <button
         nz-button
         nzType="primary"
-        [disabled]="setOfCheckedId.size === 0"
-        [nzLoading]="loading"
+        [disabled]="setOfCheckedId().size === 0"
+        [nzLoading]="loading()"
         (click)="sendRequest()"
       >
         Send Request
       </button>
-      <span>Selected {{ setOfCheckedId.size }} items</span>
+      <span>Selected {{ setOfCheckedId().size }} items</span>
     </div>
     <nz-table
       #rowSelectionTable
       nzShowPagination
       nzShowSizeChanger
-      [nzData]="listOfData"
+      [nzData]="listOfData()"
       (nzCurrentPageDataChange)="onCurrentPageDataChange($event)"
     >
       <thead>
         <tr>
           <th
-            [nzChecked]="checked"
-            [nzIndeterminate]="indeterminate"
+            [nzChecked]="checked()"
+            [nzIndeterminate]="indeterminate()"
             nzLabel="Select all"
             (nzCheckedChange)="onAllChecked($event)"
           ></th>
@@ -2877,7 +2829,7 @@ export interface Data {
         @for (data of rowSelectionTable.data; track data) {
           <tr>
             <td
-              [nzChecked]="setOfCheckedId.has(data.id)"
+              [nzChecked]="setOfCheckedId().has(data.id)"
               [nzDisabled]="data.disabled"
               [nzLabel]="data.name"
               (nzCheckedChange)="onItemChecked(data.id, $event)"
@@ -2901,30 +2853,35 @@ export interface Data {
   `
 })
 export class NzDemoTableRowSelectionAndOperationComponent implements OnInit {
-  checked = false;
-  loading = false;
-  indeterminate = false;
-  listOfData: readonly Data[] = [];
-  listOfCurrentPageData: readonly Data[] = [];
-  setOfCheckedId = new Set<number>();
+  readonly checked = signal(false);
+  readonly loading = signal(false);
+  readonly indeterminate = signal(false);
+  readonly listOfData = signal<readonly Data[]>([]);
+  readonly listOfCurrentPageData = signal<readonly Data[]>([]);
+  readonly setOfCheckedId = signal(new Set<number>());
 
   updateCheckedSet(id: number, checked: boolean): void {
-    if (checked) {
-      this.setOfCheckedId.add(id);
-    } else {
-      this.setOfCheckedId.delete(id);
-    }
+    this.setOfCheckedId.update(setOfCheckedId => {
+      const next = new Set(setOfCheckedId);
+      if (checked) {
+        next.add(id);
+      } else {
+        next.delete(id);
+      }
+      return next;
+    });
   }
 
   onCurrentPageDataChange(listOfCurrentPageData: readonly Data[]): void {
-    this.listOfCurrentPageData = listOfCurrentPageData;
+    this.listOfCurrentPageData.set(listOfCurrentPageData);
     this.refreshCheckedStatus();
   }
 
   refreshCheckedStatus(): void {
-    const listOfEnabledData = this.listOfCurrentPageData.filter(({ disabled }) => !disabled);
-    this.checked = listOfEnabledData.every(({ id }) => this.setOfCheckedId.has(id));
-    this.indeterminate = listOfEnabledData.some(({ id }) => this.setOfCheckedId.has(id)) && !this.checked;
+    const listOfEnabledData = this.listOfCurrentPageData().filter(({ disabled }) => !disabled);
+    const checked = listOfEnabledData.every(({ id }) => this.setOfCheckedId().has(id));
+    this.checked.set(checked);
+    this.indeterminate.set(listOfEnabledData.some(({ id }) => this.setOfCheckedId().has(id)) && !checked);
   }
 
   onItemChecked(id: number, checked: boolean): void {
@@ -2933,31 +2890,33 @@ export class NzDemoTableRowSelectionAndOperationComponent implements OnInit {
   }
 
   onAllChecked(checked: boolean): void {
-    this.listOfCurrentPageData
+    this.listOfCurrentPageData()
       .filter(({ disabled }) => !disabled)
       .forEach(({ id }) => this.updateCheckedSet(id, checked));
     this.refreshCheckedStatus();
   }
 
   sendRequest(): void {
-    this.loading = true;
-    const requestData = this.listOfData.filter(data => this.setOfCheckedId.has(data.id));
+    this.loading.set(true);
+    const requestData = this.listOfData().filter(data => this.setOfCheckedId().has(data.id));
     console.log(requestData);
     setTimeout(() => {
-      this.setOfCheckedId.clear();
+      this.setOfCheckedId.set(new Set<number>());
       this.refreshCheckedStatus();
-      this.loading = false;
+      this.loading.set(false);
     }, 1000);
   }
 
   ngOnInit(): void {
-    this.listOfData = new Array(100).fill(0).map((_, index) => ({
-      id: index,
-      name: `Edward King ${index}`,
-      age: 32,
-      address: `London, Park Lane no. ${index}`,
-      disabled: index % 2 === 0
-    }));
+    this.listOfData.set(
+      new Array(100).fill(0).map((_, index) => ({
+        id: index,
+        name: `Edward King ${index}`,
+        age: 32,
+        address: `London, Park Lane no. ${index}`,
+        disabled: index % 2 === 0
+      }))
+    );
   }
 }
 ```
@@ -2967,7 +2926,7 @@ export class NzDemoTableRowSelectionAndOperationComponent implements OnInit {
 Use `nzSelections` to custom selections.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 
@@ -2985,15 +2944,15 @@ interface ItemData {
     <nz-table
       #rowSelectionTable
       nzShowSizeChanger
-      [nzData]="listOfData"
+      [nzData]="listOfData()"
       (nzCurrentPageDataChange)="onCurrentPageDataChange($event)"
     >
       <thead>
         <tr>
           <th
             [nzSelections]="listOfSelection"
-            [(nzChecked)]="checked"
-            [nzIndeterminate]="indeterminate"
+            [nzChecked]="checked()"
+            [nzIndeterminate]="indeterminate()"
             (nzCheckedChange)="onAllChecked($event)"
           ></th>
           <th>Name</th>
@@ -3004,7 +2963,7 @@ interface ItemData {
       <tbody>
         @for (data of rowSelectionTable.data; track data) {
           <tr>
-            <td [nzChecked]="setOfCheckedId.has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)"></td>
+            <td [nzChecked]="setOfCheckedId().has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)"></td>
             <td>{{ data.name }}</td>
             <td>{{ data.age }}</td>
             <td>{{ data.address }}</td>
@@ -3015,7 +2974,7 @@ interface ItemData {
   `
 })
 export class NzDemoTableRowSelectionCustomComponent implements OnInit {
-  listOfSelection = [
+  readonly listOfSelection = [
     {
       text: 'Select All Row',
       onSelect: () => {
@@ -3025,30 +2984,34 @@ export class NzDemoTableRowSelectionCustomComponent implements OnInit {
     {
       text: 'Select Odd Row',
       onSelect: () => {
-        this.listOfCurrentPageData.forEach((data, index) => this.updateCheckedSet(data.id, index % 2 !== 0));
+        this.listOfCurrentPageData().forEach((data, index) => this.updateCheckedSet(data.id, index % 2 !== 0));
         this.refreshCheckedStatus();
       }
     },
     {
       text: 'Select Even Row',
       onSelect: () => {
-        this.listOfCurrentPageData.forEach((data, index) => this.updateCheckedSet(data.id, index % 2 === 0));
+        this.listOfCurrentPageData().forEach((data, index) => this.updateCheckedSet(data.id, index % 2 === 0));
         this.refreshCheckedStatus();
       }
     }
   ];
-  checked = false;
-  indeterminate = false;
-  listOfCurrentPageData: readonly ItemData[] = [];
-  listOfData: readonly ItemData[] = [];
-  setOfCheckedId = new Set<number>();
+  readonly checked = signal(false);
+  readonly indeterminate = signal(false);
+  readonly listOfCurrentPageData = signal<readonly ItemData[]>([]);
+  readonly listOfData = signal<readonly ItemData[]>([]);
+  readonly setOfCheckedId = signal(new Set<number>());
 
   updateCheckedSet(id: number, checked: boolean): void {
-    if (checked) {
-      this.setOfCheckedId.add(id);
-    } else {
-      this.setOfCheckedId.delete(id);
-    }
+    this.setOfCheckedId.update(setOfCheckedId => {
+      const next = new Set(setOfCheckedId);
+      if (checked) {
+        next.add(id);
+      } else {
+        next.delete(id);
+      }
+      return next;
+    });
   }
 
   onItemChecked(id: number, checked: boolean): void {
@@ -3057,27 +3020,30 @@ export class NzDemoTableRowSelectionCustomComponent implements OnInit {
   }
 
   onAllChecked(value: boolean): void {
-    this.listOfCurrentPageData.forEach(item => this.updateCheckedSet(item.id, value));
+    this.listOfCurrentPageData().forEach(item => this.updateCheckedSet(item.id, value));
     this.refreshCheckedStatus();
   }
 
   onCurrentPageDataChange($event: readonly ItemData[]): void {
-    this.listOfCurrentPageData = $event;
+    this.listOfCurrentPageData.set($event);
     this.refreshCheckedStatus();
   }
 
   refreshCheckedStatus(): void {
-    this.checked = this.listOfCurrentPageData.every(item => this.setOfCheckedId.has(item.id));
-    this.indeterminate = this.listOfCurrentPageData.some(item => this.setOfCheckedId.has(item.id)) && !this.checked;
+    const checked = this.listOfCurrentPageData().every(item => this.setOfCheckedId().has(item.id));
+    this.checked.set(checked);
+    this.indeterminate.set(this.listOfCurrentPageData().some(item => this.setOfCheckedId().has(item.id)) && !checked);
   }
 
   ngOnInit(): void {
-    this.listOfData = new Array(200).fill(0).map((_, index) => ({
-      id: index,
-      name: `Edward King ${index}`,
-      age: 32,
-      address: `London, Park Lane no. ${index}`
-    }));
+    this.listOfData.set(
+      new Array(200).fill(0).map((_, index) => ({
+        id: index,
+        name: `Edward King ${index}`,
+        age: 32,
+        address: `London, Park Lane no. ${index}`
+      }))
+    );
   }
 }
 ```
@@ -3293,7 +3259,7 @@ export class NzDemoTableSortFilterComponent {
 Set summary content by `nzSummary` prop. You can fixed it by set `nzFixed` prop.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
@@ -3375,8 +3341,8 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
     }
   `
 })
-export class NzDemoTableSummaryComponent implements OnInit {
-  data = [
+export class NzDemoTableSummaryComponent {
+  readonly data = [
     {
       name: 'John Brown',
       borrow: 10,
@@ -3399,24 +3365,15 @@ export class NzDemoTableSummaryComponent implements OnInit {
     }
   ];
 
-  fixedData: Array<{ key: number; name: string; description: string }> = [];
-  totalBorrow = 0;
-  totalRepayment = 0;
-
-  ngOnInit(): void {
-    this.data.forEach(({ borrow, repayment }) => {
-      this.totalBorrow += borrow;
-      this.totalRepayment += repayment;
-    });
-
-    for (let i = 0; i < 20; i += 1) {
-      this.fixedData.push({
-        key: i,
-        name: ['Light', 'Bamboo', 'Little'][i % 3],
-        description: 'Everything that has a beginning, has an end.'
-      });
-    }
-  }
+  readonly fixedData: Array<{ key: number; name: string; description: string }> = Array.from({ length: 20 }).map(
+    (_, i) => ({
+      key: i,
+      name: ['Light', 'Bamboo', 'Little'][i % 3],
+      description: 'Everything that has a beginning, has an end.'
+    })
+  );
+  readonly totalBorrow = this.data.reduce((total, item) => total + item.borrow, 0);
+  readonly totalRepayment = this.data.reduce((total, item) => total + item.repayment, 0);
 }
 ```
 
@@ -3484,7 +3441,7 @@ export class NzDemoTableTemplateComponent {}
 Virtual scrolling combine with [cdk scrolling](https://material.angular.io/cdk/scrolling/overview) used to display large data, you can get `cdkVirtualScrollViewport` in `NzTableComponent` and find more API [here](https://material.angular.io/cdk/scrolling/api#CdkVirtualScrollViewport).
 
 ```typescript
-import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, ViewChild } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
@@ -3554,10 +3511,15 @@ export interface VirtualDataInterface {
     </nz-table>
   `
 })
-export class NzDemoTableVirtualComponent implements OnInit, AfterViewInit, OnDestroy {
+export class NzDemoTableVirtualComponent implements AfterViewInit, OnDestroy {
   @ViewChild('virtualTable', { static: false }) nzTableComponent?: NzTableComponent<VirtualDataInterface>;
-  private destroy$ = new Subject<boolean>();
-  listOfData: VirtualDataInterface[] = [];
+  private readonly destroy$ = new Subject<boolean>();
+  readonly listOfData: VirtualDataInterface[] = Array.from({ length: 20000 }).map((_, i) => ({
+    index: i,
+    name: `Edward`,
+    age: i,
+    address: `London`
+  }));
 
   scrollToIndex(index: number): void {
     this.nzTableComponent?.cdkVirtualScrollViewport?.scrollToIndex(index);
@@ -3565,19 +3527,6 @@ export class NzDemoTableVirtualComponent implements OnInit, AfterViewInit, OnDes
 
   trackByIndex(_: number, data: VirtualDataInterface): number {
     return data.index;
-  }
-
-  ngOnInit(): void {
-    const data = [];
-    for (let i = 0; i < 20000; i++) {
-      data.push({
-        index: i,
-        name: `Edward`,
-        age: i,
-        address: `London`
-      });
-    }
-    this.listOfData = data;
   }
 
   ngAfterViewInit(): void {

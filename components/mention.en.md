@@ -96,7 +96,7 @@ Note: You need to import the `CdkScrollable` directive or `ScrollingModule` modu
 async
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -106,23 +106,23 @@ import { MentionOnSearchTypes, NzMentionModule } from 'ng-zorro-antd/mention';
   selector: 'nz-demo-mention-async',
   imports: [FormsModule, NzInputModule, NzMentionModule],
   template: `
-    <nz-mention [nzSuggestions]="suggestions" [nzLoading]="loading" (nzOnSearchChange)="onSearchChange($event)">
+    <nz-mention [nzSuggestions]="suggestions()" [nzLoading]="loading()" (nzOnSearchChange)="onSearchChange($event)">
       <textarea rows="1" nzMentionTrigger nz-input [(ngModel)]="inputValue"></textarea>
     </nz-mention>
   `
 })
 export class NzDemoMentionAsyncComponent {
-  inputValue?: string;
-  loading = false;
-  suggestions: string[] = [];
+  readonly inputValue = signal('');
+  readonly loading = signal(false);
+  readonly suggestions = signal<string[]>([]);
 
   onSearchChange({ value }: MentionOnSearchTypes): void {
     console.log(`search: ${value}`);
-    this.loading = true;
+    this.loading.set(true);
     this.fetchSuggestions(value, suggestions => {
       console.log(suggestions);
-      this.suggestions = suggestions;
-      this.loading = false;
+      this.suggestions.set(suggestions);
+      this.loading.set(false);
     });
   }
 
@@ -139,7 +139,7 @@ Height autoSize.
 
 ```typescript
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
-import { Component, model } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -161,8 +161,8 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   `
 })
 export class NzDemoMentionAutoSizeComponent {
-  readonly inputValue = model('@afc163');
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly inputValue = signal('@afc163');
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 
   onSelect(suggestion: string): void {
     console.log(`onSelect ${suggestion}`);
@@ -175,7 +175,7 @@ export class NzDemoMentionAutoSizeComponent {
 Customize suggestions.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
@@ -204,15 +204,15 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   `
 })
 export class NzDemoMentionAvatarComponent {
-  inputValue?: string;
-  webFrameworks = [
+  readonly inputValue = signal('');
+  readonly webFrameworks = [
     { name: 'React', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/LFIeMPzdLcLnEUe.svg' },
     { name: 'Angular', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/PJTbxSvzYWjDZnJ.png' },
     { name: 'Dva', type: 'JavaScript', icon: 'https://zos.alipayobjects.com/rmsportal/EYPwSeEJKxDtVxI.png' },
     { name: 'Flask', type: 'Python', icon: 'https://zos.alipayobjects.com/rmsportal/xaypBUijfnpAlXE.png' }
   ];
 
-  valueWith = (data: { name: string; type: string; icon: string }): string => data.name;
+  readonly valueWith = (data: { name: string; type: string; icon: string }): string => data.name;
 
   onSelect(value: string): void {
     console.log(value);
@@ -225,7 +225,7 @@ export class NzDemoMentionAvatarComponent {
 Basic usage.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -248,8 +248,8 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   `
 })
 export class NzDemoMentionBasicComponent {
-  inputValue: string = '@afc163';
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly inputValue = signal('@afc163');
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 
   onChange(value: string): void {
     console.log(value);
@@ -266,7 +266,7 @@ export class NzDemoMentionBasicComponent {
 Customize clear button.
 
 ```typescript
-import { Component, model } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -287,8 +287,8 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   `
 })
 export class NzDemoMentionClearComponent {
-  inputValue = model('@afc163');
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly inputValue = signal('@afc163');
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 
   onSelect(e: string): void {
     console.log(e);
@@ -305,7 +305,7 @@ export class NzDemoMentionClearComponent {
 Customize suggestions.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -324,8 +324,8 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   `
 })
 export class NzDemoMentionCustomTagComponent {
-  inputValue?: string;
-  webFrameworks = [
+  readonly inputValue = signal<string | undefined>(undefined);
+  readonly webFrameworks = [
     { name: 'React', type: 'JavaScript' },
     { name: 'Angular', type: 'JavaScript' },
     { name: 'Laravel', type: 'PHP' },
@@ -333,7 +333,7 @@ export class NzDemoMentionCustomTagComponent {
     { name: 'Django', type: 'Python' }
   ];
 
-  valueWith = (data: { name: string; type: string }): string => data.name;
+  readonly valueWith = (data: { name: string; type: string }): string => data.name;
 
   onSelect(value: string): void {
     console.log(value);
@@ -403,7 +403,7 @@ export class NzDemoMentionFormComponent {
   readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご', 'ParsaArvaneh'];
   @ViewChild('mentions', { static: true }) mentionChild!: NzMentionComponent;
 
-  mentionValidator: ValidatorFn = (control: AbstractControl): ValidationErrors => {
+  readonly mentionValidator: ValidatorFn = (control: AbstractControl): ValidationErrors => {
     if (!control.value) {
       return { required: true };
     } else if (this.mentionChild?.getMentions().length < 2) {
@@ -412,8 +412,8 @@ export class NzDemoMentionFormComponent {
     return {};
   };
 
-  private fb = inject(FormBuilder);
-  validateForm = this.fb.group(
+  private readonly fb = inject(FormBuilder);
+  readonly validateForm = this.fb.group(
     {
       mention: ['Hello @afc163 ', [Validators.required, this.mentionValidator]]
     },
@@ -451,33 +451,21 @@ Change the suggestions placement.
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzMentionModule } from 'ng-zorro-antd/mention';
 
 @Component({
   selector: 'nz-demo-mention-placement',
-  imports: [FormsModule, NzInputModule, NzMentionModule],
+  imports: [NzInputModule, NzMentionModule],
   template: `
     <nz-mention nzPlacement="top" [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)">
-      <textarea
-        rows="1"
-        nzMentionTrigger
-        nz-input
-        [(ngModel)]="inputValue"
-        (ngModelChange)="onChange($event)"
-      ></textarea>
+      <textarea rows="1" nzMentionTrigger nz-input></textarea>
     </nz-mention>
   `
 })
 export class NzDemoMentionPlacementComponent {
-  inputValue?: string;
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-
-  onChange(value: string): void {
-    console.log(value);
-  }
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 
   onSelect(suggestion: string): void {
     console.log(`onSelect ${suggestion}`);
@@ -490,36 +478,28 @@ export class NzDemoMentionPlacementComponent {
 Customize Trigger Token by `nzPrefix` props. Default to `@`, `Array<string>` also supported.
 
 ```typescript
-import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, signal } from '@angular/core';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { MentionOnSearchTypes, NzMentionModule } from 'ng-zorro-antd/mention';
 
 @Component({
   selector: 'nz-demo-mention-prefix',
-  imports: [FormsModule, NzInputModule, NzMentionModule],
+  imports: [NzInputModule, NzMentionModule],
   template: `
-    <nz-mention [nzSuggestions]="suggestions" (nzOnSearchChange)="onSearchChange($event)" [nzPrefix]="['#', '@']">
-      <textarea
-        rows="1"
-        placeholder="input @ to mention people, # to mention tag"
-        nzMentionTrigger
-        nz-input
-        [(ngModel)]="inputValue"
-      ></textarea>
+    <nz-mention [nzSuggestions]="suggestions()" (nzOnSearchChange)="onSearchChange($event)" [nzPrefix]="['#', '@']">
+      <textarea rows="1" placeholder="input @ to mention people, # to mention tag" nzMentionTrigger nz-input></textarea>
     </nz-mention>
   `
 })
 export class NzDemoMentionPrefixComponent {
-  inputValue?: string;
-  suggestions: string[] = [];
-  users = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-  tags = ['1.0', '2.0', '3.0'];
+  readonly suggestions = signal<string[]>([]);
+  readonly users = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly tags = ['1.0', '2.0', '3.0'];
 
   onSearchChange({ value, prefix }: MentionOnSearchTypes): void {
     console.log('nzOnSearchChange', value, prefix);
-    this.suggestions = prefix === '@' ? this.users : this.tags;
+    this.suggestions.set(prefix === '@' ? this.users : this.tags);
   }
 }
 ```
@@ -530,7 +510,7 @@ Rendering the mentions.
 
 ```typescript
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -557,17 +537,19 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
         </nz-mention>
       </nz-tab>
       <nz-tab nzTitle="Preview">
-        <pre [innerHTML]="preview"></pre>
+        <pre [innerHTML]="preview()"></pre>
       </nz-tab>
     </nz-tabs>
   `
 })
 export class NzDemoMentionPreviewComponent {
-  inputValue: string = 'Switch tab view preview @NG-ZORRO ';
-  preview?: SafeHtml;
-  suggestions = ['NG-ZORRO', 'angular', 'Reactive-Extensions'];
+  private readonly sanitizer = inject(DomSanitizer);
 
-  constructor(private sanitizer: DomSanitizer) {
+  readonly inputValue = signal('Switch tab view preview @NG-ZORRO ');
+  readonly preview = signal<SafeHtml | undefined>(undefined);
+  readonly suggestions = ['NG-ZORRO', 'angular', 'Reactive-Extensions'];
+
+  constructor() {
     this.renderPreView();
   }
 
@@ -583,13 +565,14 @@ export class NzDemoMentionPreviewComponent {
   }
 
   renderPreView(): void {
-    if (this.inputValue) {
+    const inputValue = this.inputValue();
+    if (inputValue) {
       const regex = this.getRegExp('@');
-      const previewValue = this.inputValue.replace(
+      const previewValue = inputValue.replace(
         regex,
         match => `<a target="_blank" href="https://github.com/${match.trim().substring(1)}">${match}</a>`
       );
-      this.preview = this.sanitizer.bypassSecurityTrustHtml(previewValue);
+      this.preview.set(this.sanitizer.bypassSecurityTrustHtml(previewValue));
     }
   }
 }
@@ -601,40 +584,24 @@ Configurate `disabled` and `readOnly`.
 
 ```typescript
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzMentionModule } from 'ng-zorro-antd/mention';
 
 @Component({
   selector: 'nz-demo-mention-readonly',
-  imports: [FormsModule, NzInputModule, NzMentionModule],
+  imports: [NzInputModule, NzMentionModule],
   template: `
     <nz-mention [nzSuggestions]="suggestions" style="margin-bottom: 8px">
-      <textarea
-        rows="1"
-        placeholder="this is disabled Mention"
-        nzMentionTrigger
-        nz-input
-        disabled
-        [(ngModel)]="inputValue"
-      ></textarea>
+      <textarea rows="1" placeholder="this is disabled Mention" nzMentionTrigger nz-input disabled></textarea>
     </nz-mention>
     <nz-mention [nzSuggestions]="suggestions">
-      <textarea
-        rows="1"
-        placeholder="this is readOnly Mention"
-        nzMentionTrigger
-        nz-input
-        readOnly
-        [(ngModel)]="inputValue"
-      ></textarea>
+      <textarea rows="1" placeholder="this is readOnly Mention" nzMentionTrigger nz-input readOnly></textarea>
     </nz-mention>
   `
 })
 export class NzDemoMentionReadonlyComponent {
-  inputValue?: string;
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 }
 ```
 
@@ -643,7 +610,7 @@ export class NzDemoMentionReadonlyComponent {
 Add status to Mentions with `nzStatus`, which could be `error` or `warning`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -654,16 +621,16 @@ import { NzMentionModule } from 'ng-zorro-antd/mention';
   imports: [FormsModule, NzInputModule, NzMentionModule],
   template: `
     <nz-mention [nzSuggestions]="suggestions" nzStatus="error" style="margin-bottom: 8px;">
-      <textarea rows="1" nz-input placeholder="input here" [(ngModel)]="inputValue" nzMentionTrigger></textarea>
+      <textarea rows="1" nz-input placeholder="input here" [(ngModel)]="value" nzMentionTrigger></textarea>
     </nz-mention>
     <nz-mention [nzSuggestions]="suggestions" nzStatus="warning">
-      <textarea rows="1" nz-input placeholder="input here" [(ngModel)]="inputValue" nzMentionTrigger></textarea>
+      <textarea rows="1" nz-input placeholder="input here" [(ngModel)]="value" nzMentionTrigger></textarea>
     </nz-mention>
   `
 })
 export class NzDemoMentionStatusComponent {
-  inputValue: string = '@afc163';
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly value = signal('@afc163');
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
 }
 ```
 
@@ -672,7 +639,7 @@ export class NzDemoMentionStatusComponent {
 Variants of Mentions, there are four variants: `outlined` `filled` `borderless` and `underlined`.
 
 ```typescript
-import { Component, model } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzVariant } from 'ng-zorro-antd/core/types';
@@ -685,21 +652,18 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   imports: [FormsModule, NzInputModule, NzMentionModule, NzSegmentedModule],
   template: `
     <nz-segmented [nzOptions]="variants" [(ngModel)]="variant" />
+    <br />
+    <br />
     <nz-mention [nzSuggestions]="suggestions" (nzOnSelect)="onSelect($event)" [nzVariant]="variant()">
       <textarea rows="1" placeholder="input here" nzMentionTrigger nz-input [(ngModel)]="inputValue"></textarea>
     </nz-mention>
-  `,
-  styles: `
-    nz-segmented {
-      margin-bottom: 1rem;
-    }
   `
 })
 export class NzDemoMentionVariantComponent {
-  inputValue = model('@afc163');
-  suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
-  variant = model<NzVariant>('outlined');
-  variants = [
+  readonly inputValue = signal('@afc163');
+  readonly suggestions = ['afc163', 'benjycui', 'yiminghe', 'RaoHai', '中文', 'にほんご'];
+  readonly variant = signal<NzVariant>('outlined');
+  readonly variants = [
     { label: 'Outlined', value: 'outlined' },
     { label: 'Filled', value: 'filled' },
     { label: 'Borderless', value: 'borderless' },

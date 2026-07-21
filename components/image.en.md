@@ -108,7 +108,7 @@ export class NzDemoImageBasicComponent {}
 You can make preview controlled.
 
 ```typescript
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -144,8 +144,8 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoImageControlledPreviewComponent {
-  private nzImageService = inject(NzImageService);
-  scaleStep = 0.5;
+  private readonly nzImageService = inject(NzImageService);
+  readonly scaleStep = signal(0.5);
   readonly images = [
     {
       src: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png',
@@ -154,7 +154,7 @@ export class NzDemoImageControlledPreviewComponent {
   ];
 
   onClick(): void {
-    this.nzImageService.preview(this.images, { nzZoom: 1, nzRotate: 0, nzScaleStep: this.scaleStep });
+    this.nzImageService.preview(this.images, { nzZoom: 1, nzRotate: 0, nzScaleStep: this.scaleStep() });
   }
 }
 ```
@@ -184,7 +184,7 @@ export class NzDemoImageFallbackComponent {
 Progressive when large image loading.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzImageModule } from 'ng-zorro-antd/image';
@@ -195,18 +195,18 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   imports: [NzButtonModule, NzImageModule, NzSpaceModule],
   template: `
     <nz-space [nzSize]="12">
-      <img *nzSpaceItem nz-image width="200px" height="200px" [nzSrc]="src" [nzPlaceholder]="placeholder" />
+      <img *nzSpaceItem nz-image width="200px" height="200px" [nzSrc]="src()" [nzPlaceholder]="placeholder" />
       <button *nzSpaceItem nz-button nzType="primary" (click)="onReload()">Reload</button>
     </nz-space>
   `
 })
 export class NzDemoImagePlaceholderComponent {
-  src = `https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png`;
-  placeholder =
+  readonly src = signal('https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png');
+  readonly placeholder =
     'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png?x-oss-process=image/blur,r_50,s_50/quality,q_1/resize,m_mfit,h_200,w_200';
 
   onReload(): void {
-    this.src = `https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png?${new Date()}`;
+    this.src.set(`https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png?${new Date()}`);
   }
 }
 ```

@@ -260,7 +260,7 @@ export class NzDemoTabsCenteredComponent {}
 给自定义触发器绑定事件。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
@@ -273,23 +273,23 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
       <button nz-button (click)="newTab()">ADD</button>
     </div>
     <nz-tabs [(nzSelectedIndex)]="index" nzType="editable-card" nzHideAdd (nzClose)="closeTab($event)">
-      @for (tab of tabs; track tab) {
+      @for (tab of tabs(); track tab) {
         <nz-tab [nzClosable]="$index > 1" [nzTitle]="tab">Content of {{ tab }}</nz-tab>
       }
     </nz-tabs>
   `
 })
 export class NzDemoTabsCustomAddTriggerComponent {
-  index = 0;
-  tabs = ['Tab 1', 'Tab 2'];
+  readonly index = signal(0);
+  readonly tabs = signal(['Tab 1', 'Tab 2']);
 
   closeTab({ index }: { index: number }): void {
-    this.tabs.splice(index, 1);
+    this.tabs.update(tabs => tabs.filter((_, i) => i !== index));
   }
 
   newTab(): void {
-    this.tabs.push('New Tab');
-    this.index = this.tabs.length - 1;
+    this.tabs.update(tabs => [...tabs, 'New Tab']);
+    this.index.set(this.tabs().length - 1);
   }
 }
 ```
@@ -340,7 +340,7 @@ export class NzDemoTabsDisabledComponent {
 
 ```typescript
 import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
-import { ChangeDetectorRef, Component, inject } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 
@@ -356,7 +356,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
       cdkDropListOrientation="horizontal"
       cdkDropListElementContainer=".ant-tabs-nav-list"
     >
-      @for (tab of tabs; track tab) {
+      @for (tab of tabs(); track tab) {
         <nz-tab [nzTitle]="title">
           {{ tab.content }}
         </nz-tab>
@@ -384,8 +384,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoTabsDraggableComponent {
-  private cdr = inject(ChangeDetectorRef);
-  tabs = [
+  readonly tabs = signal([
     {
       name: 'Tab 1',
       content: 'Content of Tab Pane 1'
@@ -398,14 +397,15 @@ export class NzDemoTabsDraggableComponent {
       name: 'Tab 3',
       content: 'Content of Tab Pane 3'
     }
-  ];
-  selectedTabIndex = 0;
+  ]);
+  readonly selectedTabIndex = signal(0);
 
   drop(event: CdkDragDrop<string[]>): void {
-    const prevActive = this.tabs[this.selectedTabIndex];
-    moveItemInArray(this.tabs, event.previousIndex, event.currentIndex);
-    this.selectedTabIndex = this.tabs.indexOf(prevActive);
-    this.cdr.markForCheck();
+    const tabs = [...this.tabs()];
+    const prevActive = tabs[this.selectedTabIndex()];
+    moveItemInArray(tabs, event.previousIndex, event.currentIndex);
+    this.tabs.set(tabs);
+    this.selectedTabIndex.set(tabs.indexOf(prevActive));
   }
 }
 ```
@@ -415,7 +415,7 @@ export class NzDemoTabsDraggableComponent {
 只有卡片样式的页签支持新增和关闭选项。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzTabsModule } from 'ng-zorro-antd/tabs';
 
@@ -424,23 +424,23 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   imports: [NzTabsModule],
   template: `
     <nz-tabs [(nzSelectedIndex)]="selectedIndex" nzType="editable-card" (nzAdd)="newTab()" (nzClose)="closeTab($event)">
-      @for (tab of tabs; track tab) {
+      @for (tab of tabs(); track tab) {
         <nz-tab nzClosable [nzTitle]="tab">Content of {{ tab }}</nz-tab>
       }
     </nz-tabs>
   `
 })
 export class NzDemoTabsEditableCardComponent {
-  tabs = ['Tab 1', 'Tab 2'];
-  selectedIndex = 0;
+  readonly tabs = signal(['Tab 1', 'Tab 2']);
+  readonly selectedIndex = signal(0);
 
   closeTab({ index }: { index: number }): void {
-    this.tabs.splice(index, 1);
+    this.tabs.update(tabs => tabs.filter((_, i) => i !== index));
   }
 
   newTab(): void {
-    this.tabs.push('New Tab');
-    this.selectedIndex = this.tabs.length;
+    this.tabs.update(tabs => [...tabs, 'New Tab']);
+    this.selectedIndex.set(this.tabs().length);
   }
 }
 ```
@@ -450,7 +450,7 @@ export class NzDemoTabsEditableCardComponent {
 可以在页签两边添加附加操作。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -479,10 +479,10 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
     <br />
 
     <nz-tabs>
-      @if (positions.includes('start')) {
+      @if (positions().includes('start')) {
         <button *nzTabBarExtraContent="'start'" nz-button [style.margin-right.px]="16">Start Extra Action</button>
       }
-      @if (positions.includes('end')) {
+      @if (positions().includes('end')) {
         <button *nzTabBarExtraContent="'end'" nz-button [style.margin-left.px]="16">End Extra Action</button>
       }
 
@@ -493,12 +493,12 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoTabsExtraComponent {
-  tabs = [1, 2, 3];
-  positionOptions = [
+  readonly tabs = [1, 2, 3];
+  readonly positionOptions = [
     { label: 'start', value: 'start' },
     { label: 'end', value: 'end' }
   ];
-  positions = ['start', 'end'];
+  readonly positions = signal(['start', 'end']);
 }
 ```
 
@@ -507,7 +507,7 @@ export class NzDemoTabsExtraComponent {
 通过 `nzCanDeactivate` 决定一个 tab 是否可以被切换。
 
 ```typescript
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
@@ -522,8 +522,7 @@ import { NzTabsCanDeactivateFn, NzTabsModule } from 'ng-zorro-antd/tabs';
         <nz-tab [nzTitle]="'Tab' + tab">Content of tab {{ tab }}</nz-tab>
       }
     </nz-tabs>
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  `
 })
 export class NzDemoTabsGuardComponent {
   tabs = [1, 2, 3, 4];
@@ -701,7 +700,7 @@ export class NzDemoTabsLazyComponent {}
 与路由联动，点击 tab 更改路由，并且在路由改变时自动切换 tab。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Params, RouterLink } from '@angular/router';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -739,7 +738,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
         </a>
         Four.
       </nz-tab>
-      @for (tab of dynamicTabs; track tab.title) {
+      @for (tab of dynamicTabs(); track tab.title) {
         <nz-tab>
           <a
             *nzTabLink
@@ -757,14 +756,16 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoTabsLinkRouterComponent {
-  dynamicTabs: Array<{ title: string; content: string; queryParams?: Params; routerLink: string[] }> = [];
+  readonly dynamicTabs = signal<Array<{ title: string; content: string; queryParams?: Params; routerLink: string[] }>>(
+    []
+  );
 
   newTab(): void {
-    const { length } = this.dynamicTabs;
+    const { length } = this.dynamicTabs();
     const newTabId = length + 1;
     const title = `NewTab${newTabId}`;
-    this.dynamicTabs = [
-      ...this.dynamicTabs,
+    this.dynamicTabs.update(dynamicTabs => [
+      ...dynamicTabs,
       {
         title,
         content: title,
@@ -773,7 +774,7 @@ export class NzDemoTabsLinkRouterComponent {
           tab: newTabId
         }
       }
-    ];
+    ]);
   }
 }
 ```
@@ -783,7 +784,7 @@ export class NzDemoTabsLinkRouterComponent {
 有四个位置，`nzTabPosition="left|right|top|bottom"`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSelectModule } from 'ng-zorro-antd/select';
@@ -793,25 +794,23 @@ import { NzTabPosition, NzTabsModule } from 'ng-zorro-antd/tabs';
   selector: 'nz-demo-tabs-position',
   imports: [FormsModule, NzSelectModule, NzTabsModule],
   template: `
-    <div style="margin-bottom: 16px;">
+    <div>
       Tab position:
-      <nz-select [(ngModel)]="position" style="width: 80px;">
-        @for (option of options; track option.value) {
-          <nz-option [nzLabel]="option.label" [nzValue]="option.value" />
-        }
-      </nz-select>
+      <nz-select [nzOptions]="options" [(ngModel)]="position" style="width: 80px;" />
     </div>
-    <nz-tabs [nzTabPosition]="position">
+    <br />
+    <br />
+    <nz-tabs [nzTabPosition]="position()">
       @for (tab of tabs; track tab) {
-        <nz-tab [nzTitle]="'Tab ' + tab">Content of tab {{ tab }}</nz-tab>
+        <nz-tab nzTitle="Tab {{ tab }}">Content of tab {{ tab }}</nz-tab>
       }
     </nz-tabs>
   `
 })
 export class NzDemoTabsPositionComponent {
-  position: NzTabPosition = 'top';
-  tabs = [1, 2, 3];
-  options = [
+  readonly position = signal<NzTabPosition>('top');
+  readonly tabs = [1, 2, 3];
+  readonly options = [
     { value: 'top', label: 'top' },
     { value: 'left', label: 'left' },
     { value: 'right', label: 'right' },
@@ -825,7 +824,7 @@ export class NzDemoTabsPositionComponent {
 大号页签用在页头区域，小号用在弹出框等较狭窄的容器内。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -840,7 +839,7 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
       <label nz-radio-button nzValue="default"><span>Default</span></label>
       <label nz-radio-button nzValue="large"><span>Large</span></label>
     </nz-radio-group>
-    <nz-tabs [nzSize]="size">
+    <nz-tabs [nzSize]="size()">
       @for (tab of tabs; track tab) {
         <nz-tab [nzTitle]="'Tab ' + tab">Content of tab {{ tab }}</nz-tab>
       }
@@ -848,8 +847,8 @@ import { NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoTabsSizeComponent {
-  size: 'large' | 'default' | 'small' = 'small';
-  tabs = [1, 2, 3];
+  readonly size = signal<'large' | 'default' | 'small'>('small');
+  readonly tabs = [1, 2, 3];
 }
 ```
 
@@ -858,18 +857,24 @@ export class NzDemoTabsSizeComponent {
 可以左右、上下滑动，容纳更多标签。
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 import { NzRadioModule } from 'ng-zorro-antd/radio';
 import { NzTabPosition, NzTabsModule } from 'ng-zorro-antd/tabs';
 
+interface Tab {
+  name: string;
+  content: string;
+  disabled: boolean;
+}
+
 @Component({
   selector: 'nz-demo-tabs-slide',
   imports: [FormsModule, NzInputNumberModule, NzRadioModule, NzTabsModule],
   template: `
-    <nz-radio-group [(ngModel)]="nzTabPosition" style="margin-bottom: 8px;">
+    <nz-radio-group [(ngModel)]="position" style="margin-bottom: 8px;">
       <label nz-radio-button nzValue="top">Horizontal</label>
       <label nz-radio-button nzValue="left">Vertical</label>
     </nz-radio-group>
@@ -877,11 +882,11 @@ import { NzTabPosition, NzTabsModule } from 'ng-zorro-antd/tabs';
 
     <nz-tabs
       style="height:220px;"
-      [nzTabPosition]="nzTabPosition"
+      [nzTabPosition]="position()"
       [(nzSelectedIndex)]="selectedIndex"
       (nzSelectChange)="log([$event])"
     >
-      @for (tab of tabs; track tab) {
+      @for (tab of tabs(); track tab) {
         <nz-tab
           [nzTitle]="tab.name"
           [nzDisabled]="tab.disabled"
@@ -897,23 +902,24 @@ import { NzTabPosition, NzTabsModule } from 'ng-zorro-antd/tabs';
   `
 })
 export class NzDemoTabsSlideComponent implements OnInit {
-  tabs: Array<{ name: string; content: string; disabled: boolean }> = [];
-  nzTabPosition: NzTabPosition = 'top';
-  selectedIndex = 27;
+  readonly tabs = signal<Tab[]>([]);
+  readonly position = signal<NzTabPosition>('top');
+  readonly selectedIndex = signal(27);
 
-  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
-  log(args: any[]): void {
+  log(args: unknown[]): void {
     console.log(args);
   }
 
   ngOnInit(): void {
+    const tabs: Tab[] = [];
     for (let i = 0; i < 30; i++) {
-      this.tabs.push({
+      tabs.push({
         name: `Tab ${i}`,
         disabled: i === 28,
         content: `Content of tab ${i}`
       });
     }
+    this.tabs.set(tabs);
   }
 }
 ```

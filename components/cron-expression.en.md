@@ -153,8 +153,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
   `
 })
 export class NzDemoCronExpressionFormComponent {
-  private fb = inject(FormBuilder);
-  form: FormGroup<{
+  private readonly fb = inject(FormBuilder);
+  readonly form: FormGroup<{
     username: FormControl<string | null>;
     cronLinux: FormControl<string | null>;
     cronSpring: FormControl<string | null>;
@@ -176,7 +176,7 @@ Custom rendering next execution time.
 
 ```typescript
 import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { CronExpressionParser } from 'cron-parser';
@@ -187,18 +187,19 @@ import { NzCronExpressionModule } from 'ng-zorro-antd/cron-expression';
   selector: 'nz-demo-cron-expression-semantic',
   imports: [FormsModule, NzCronExpressionModule, DatePipe],
   template: `
-    <nz-cron-expression [nzSemantic]="semanticTemplate" [ngModel]="value" (ngModelChange)="getValue($event)" />
-    <ng-template #semanticTemplate>Next Time: {{ semantic | date: 'yyyy-MM-dd HH:mm:ss' }}</ng-template>
+    <nz-cron-expression [nzSemantic]="semanticTemplate" [ngModel]="value()" (ngModelChange)="getValue($event)" />
+    <ng-template #semanticTemplate>Next Time: {{ semantic() | date: 'yyyy-MM-dd HH:mm:ss' }}</ng-template>
   `
 })
 export class NzDemoCronExpressionSemanticComponent {
-  value: string = '10 * * * *';
-  semantic?: Date;
+  readonly value = signal('10 * * * *');
+  readonly semantic = signal<Date | undefined>(undefined);
 
   getValue(value: string): void {
+    this.value.set(value);
     try {
       const interval = CronExpressionParser.parse(value);
-      this.semantic = interval.next().toDate();
+      this.semantic.set(interval.next().toDate());
     } catch {
       return;
     }
@@ -211,7 +212,7 @@ export class NzDemoCronExpressionSemanticComponent {
 Use nzExtra to specify the content on the right.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -237,13 +238,13 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
         </ul>
       </nz-dropdown-menu>
     </ng-template>
-    <p>cron: {{ cron }} </p>
+    <p>cron: {{ cron() }} </p>
   `
 })
 export class NzDemoCronExpressionShortcutsComponent {
-  value: string = '1 1 * * *';
-  cron: string = '';
-  options = [
+  readonly value = signal('1 1 * * *');
+  readonly cron = signal('');
+  readonly options = [
     {
       label: 'Every hour',
       value: '0 0-23/1 * * *'
@@ -259,11 +260,11 @@ export class NzDemoCronExpressionShortcutsComponent {
   ];
 
   setValue(value: string): void {
-    this.value = value;
+    this.value.set(value);
   }
 
   getValue(value: string): void {
-    this.cron = value;
+    this.cron.set(value);
   }
 }
 ```

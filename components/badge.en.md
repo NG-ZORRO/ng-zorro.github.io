@@ -176,7 +176,7 @@ export class NzDemoBadgeDotComponent {}
 The count will be animated as it changes.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
@@ -192,7 +192,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   template: `
     <div nz-flex nzVertical nzGap="middle">
       <div nz-flex nzGap="large" nzAlign="center">
-        <nz-badge [nzCount]="count">
+        <nz-badge [nzCount]="count()">
           <a class="head-example"></a>
         </nz-badge>
         <nz-space-compact>
@@ -202,7 +202,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
         </nz-space-compact>
       </div>
       <div nz-flex nzGap="large" nzAlign="center">
-        <nz-badge [nzDot]="dot">
+        <nz-badge [nzDot]="dot()">
           <a class="head-example"></a>
         </nz-badge>
         <nz-switch [(ngModel)]="dot" />
@@ -221,19 +221,19 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoBadgeDynamicComponent {
-  count = 5;
-  dot = true;
+  readonly count = signal(5);
+  readonly dot = signal(true);
 
   addCount(): void {
-    this.count++;
+    this.count.update(count => count + 1);
   }
 
   minusCount(): void {
-    this.count = Math.max(0, this.count - 1);
+    this.count.update(count => Math.max(0, count - 1));
   }
 
   random(): void {
-    this.count = Math.floor(Math.random() * 100);
+    this.count.set(Math.floor(Math.random() * 100));
   }
 }
 ```
@@ -276,7 +276,7 @@ export class NzDemoBadgeLinkComponent {}
 Add `nzStandalone` when there are no children.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
@@ -290,10 +290,10 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   template: `
     <nz-flex nzGap="small" nzAlign="center">
       <nz-switch [(ngModel)]="show" />
-      <nz-badge nzStandalone nzShowZero [nzCount]="show ? 11 : 0" [nzStyle]="{ backgroundColor: '#faad14' }" />
-      <nz-badge nzStandalone [nzCount]="show ? 25 : 0" />
-      <nz-badge nzStandalone [nzCount]="show ? iconTemplate : 0" />
-      <nz-badge nzStandalone [nzCount]="show ? 109 : 0" [nzStyle]="{ backgroundColor: '#52c41a' }" />
+      <nz-badge nzStandalone nzShowZero [nzCount]="show() ? 11 : 0" [nzStyle]="{ backgroundColor: '#faad14' }" />
+      <nz-badge nzStandalone [nzCount]="show() ? 25 : 0" />
+      <nz-badge nzStandalone [nzCount]="show() ? iconTemplate : 0" />
+      <nz-badge nzStandalone [nzCount]="show() ? 109 : 0" [nzStyle]="{ backgroundColor: '#52c41a' }" />
     </nz-flex>
 
     <ng-template #iconTemplate>
@@ -302,7 +302,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoBadgeNoWrapperComponent {
-  show = true;
+  readonly show = signal(true);
 }
 ```
 

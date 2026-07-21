@@ -575,7 +575,7 @@ export class NzDemoSpaceCompactComponent {
 自定义间距大小。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -587,7 +587,7 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   imports: [FormsModule, NzButtonModule, NzSpaceModule, NzSliderModule],
   template: `
     <nz-slider [(ngModel)]="size" />
-    <nz-space [nzSize]="size">
+    <nz-space [nzSize]="size()">
       <button *nzSpaceItem nz-button nzType="primary">Button</button>
       <button *nzSpaceItem nz-button nzType="default">Default</button>
       <button *nzSpaceItem nz-button nzType="dashed">Dashed</button>
@@ -596,7 +596,7 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   `
 })
 export class NzDemoSpaceCustomizeComponent {
-  size = 8;
+  readonly size = signal(8);
 }
 ```
 
@@ -607,7 +607,7 @@ export class NzDemoSpaceCustomizeComponent {
 通过设置 `nzSize` 为 `large` `middle` 分别把间距设为大、中间距。若不设置 `nzSize`，则间距为小。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -623,7 +623,7 @@ import { NzSpaceModule, NzSpaceSize } from 'ng-zorro-antd/space';
       <label nz-radio nzValue="middle">Middle</label>
       <label nz-radio nzValue="large">Large</label>
     </nz-radio-group>
-    <nz-space [nzSize]="size">
+    <nz-space [nzSize]="size()">
       <button *nzSpaceItem nz-button nzType="primary">Button</button>
       <button *nzSpaceItem nz-button nzType="default">Default</button>
       <button *nzSpaceItem nz-button nzType="dashed">Dashed</button>
@@ -632,7 +632,7 @@ import { NzSpaceModule, NzSpaceSize } from 'ng-zorro-antd/space';
   `
 })
 export class NzDemoSpaceSizeComponent {
-  size: NzSpaceSize = 'small';
+  readonly size = signal<NzSpaceSize>('small');
 }
 ```
 

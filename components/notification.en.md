@@ -88,7 +88,7 @@ export interface NzNotificationRef {
 The simplest usage that close the notification box after 4.5s.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -99,7 +99,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationBasicComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification
@@ -119,7 +119,7 @@ export class NzDemoNotificationBasicComponent {
 The icon can be customized to any `TemplateRef<void>`.
 
 ```typescript
-import { Component, TemplateRef } from '@angular/core';
+import { Component, TemplateRef, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -147,7 +147,7 @@ import { type NzNotificationComponent, NzNotificationService } from 'ng-zorro-an
   `
 })
 export class NzDemoNotificationCustomIconComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(template: TemplateRef<{ $implicit: NzNotificationComponent; data: undefined }>): void {
     this.notification.template(template);
@@ -160,7 +160,7 @@ export class NzDemoNotificationCustomIconComponent {
 The nzStyle and nzClass are available to customize Notification.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -171,7 +171,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationCustomStyleComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank(
@@ -196,7 +196,7 @@ the notification closes automatically. If not specified, default value is 4.5 se
 the notification box will never close automatically.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -207,7 +207,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()">Open the notification box</button>`
 })
 export class NzDemoNotificationDurationComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank(
@@ -224,7 +224,7 @@ export class NzDemoNotificationDurationComponent {
 A notification box can pop up from `topRight` or `bottomRight` or `bottomLeft` or `topLeft` or `top` or `bottom`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
@@ -269,9 +269,9 @@ import { NzNotificationPlacement, NzNotificationService } from 'ng-zorro-antd/no
   `
 })
 export class NzDemoNotificationPlacementComponent {
-  placement = 'topRight';
+  private readonly notification = inject(NzNotificationService);
 
-  constructor(private notification: NzNotificationService) {}
+  placement = 'topRight';
 
   createNotification(position: NzNotificationPlacement): void {
     this.notification.blank(
@@ -288,7 +288,7 @@ export class NzDemoNotificationPlacementComponent {
 Use template to implement more complex interactions.
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { type NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/notification';
@@ -312,13 +312,12 @@ import { NzTagModule } from 'ng-zorro-antd/tag';
   `
 })
 export class NzDemoNotificationTemplateComponent {
+  private readonly notificationService = inject(NzNotificationService);
+
   @ViewChild(TemplateRef, { static: false }) template?: TemplateRef<{
     $implicit: NzNotificationComponent;
     data: Array<{ name: string; color: string }>;
   }>;
-
-  constructor(private notificationService: NzNotificationService) {}
-
   createNotification(): void {
     const fruits = [
       { name: 'Apple', color: 'red' },
@@ -338,7 +337,7 @@ export class NzDemoNotificationTemplateComponent {
 Update content with unique `nzKey`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -349,7 +348,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   template: `<button nz-button nzType="primary" (click)="createNotification()"> Open the notification box </button>`
 })
 export class NzDemoNotificationUpdateComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(): void {
     this.notification.blank('Notification Title', 'Description.', {
@@ -370,7 +369,7 @@ export class NzDemoNotificationUpdateComponent {
 To customize the style or font of the close button.
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/notification';
@@ -387,8 +386,10 @@ import { NzNotificationComponent, NzNotificationService } from 'ng-zorro-antd/no
   `
 })
 export class NzDemoNotificationWithBtnComponent {
-  @ViewChild('notificationBtnTpl', { static: true }) btnTemplate!: TemplateRef<{ $implicit: NzNotificationComponent }>;
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
+
+  @ViewChild('notificationBtnTpl', { static: true })
+  btnTemplate!: TemplateRef<{ $implicit: NzNotificationComponent }>;
 
   createNotification(): void {
     this.notification.blank(
@@ -407,7 +408,7 @@ export class NzDemoNotificationWithBtnComponent {
 A notification box with a icon at the left side.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
@@ -428,7 +429,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   `
 })
 export class NzDemoNotificationWithIconComponent {
-  constructor(private notification: NzNotificationService) {}
+  private readonly notification = inject(NzNotificationService);
 
   createNotification(type: string): void {
     this.notification.create(

@@ -285,7 +285,7 @@ export class NzDemoButtonIconComponent {}
 A loading indicator can be added to a button by setting the `nzLoading` property on the `nz-button`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -300,8 +300,8 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
     </button>
     <button nz-button nzType="primary" nzSize="small" nzLoading>Loading</button>
     <br />
-    <button nz-button nzType="primary" (click)="loadOne()" [nzLoading]="isLoadingOne">Click me!</button>
-    <button nz-button nzType="primary" (click)="loadTwo()" [nzLoading]="isLoadingTwo">
+    <button nz-button nzType="primary" [nzLoading]="loadings()[0]" (click)="enterLoading(0)">Click me!</button>
+    <button nz-button nzType="primary" [nzLoading]="loadings()[1]" (click)="enterLoading(1)">
       <nz-icon nzType="poweroff" />
       Click me!
     </button>
@@ -317,21 +317,15 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `
 })
 export class NzDemoButtonLoadingComponent {
-  isLoadingOne = false;
-  isLoadingTwo = false;
+  readonly loadings = signal<boolean[]>([false, false]);
 
-  loadOne(): void {
-    this.isLoadingOne = true;
-    setTimeout(() => {
-      this.isLoadingOne = false;
-    }, 5000);
-  }
+  enterLoading(index: number): void {
+    const update = (index: number, loading: boolean): void => {
+      this.loadings.update(loadings => loadings.map((item, i) => (i === index ? loading : item)));
+    };
 
-  loadTwo(): void {
-    this.isLoadingTwo = true;
-    setTimeout(() => {
-      this.isLoadingTwo = false;
-    }, 5000);
+    update(index, true);
+    setTimeout(() => update(index, false), 3000);
   }
 }
 ```
@@ -388,7 +382,7 @@ Ant Design supports a default button size as well as a large and small size.
 If a large or small button is desired, set the `nzSize` property to either `large` or `small` respectively. Omit the `nzSize` property for a button with the default size.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule, NzButtonSize } from 'ng-zorro-antd/button';
@@ -407,30 +401,30 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
     </nz-radio-group>
     <br />
     <br />
-    <button nz-button [nzSize]="size" nzType="primary">Primary</button>
-    <button nz-button [nzSize]="size" nzType="default">Default</button>
-    <button nz-button [nzSize]="size" nzType="dashed">Dashed</button>
-    <a nz-button [nzSize]="size" nzType="link">Link</a>
+    <button nz-button [nzSize]="size()" nzType="primary">Primary</button>
+    <button nz-button [nzSize]="size()" nzType="default">Default</button>
+    <button nz-button [nzSize]="size()" nzType="dashed">Dashed</button>
+    <a nz-button [nzSize]="size()" nzType="link">Link</a>
     <br />
-    <button nz-button nzType="primary" [nzSize]="size">
+    <button nz-button nzType="primary" [nzSize]="size()">
       <nz-icon nzType="download" />
     </button>
-    <button nz-button nzType="primary" [nzSize]="size" nzShape="circle">
+    <button nz-button nzType="primary" [nzSize]="size()" nzShape="circle">
       <nz-icon nzType="download" />
     </button>
-    <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+    <button nz-button nzType="primary" [nzSize]="size()" nzShape="round">
       <nz-icon nzType="download" />
     </button>
-    <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+    <button nz-button nzType="primary" [nzSize]="size()" nzShape="round">
       <nz-icon nzType="download" />
       Download
     </button>
-    <button nz-button nzType="primary" [nzSize]="size">
+    <button nz-button nzType="primary" [nzSize]="size()">
       <nz-icon nzType="download" />
       Download
     </button>
     <br />
-    <nz-space-compact [nzSize]="size">
+    <nz-space-compact [nzSize]="size()">
       <button nz-button nzType="primary">
         <nz-icon nzType="left" />
         Backward
@@ -449,6 +443,6 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   `
 })
 export class NzDemoButtonSizeComponent {
-  size: NzButtonSize = 'large';
+  readonly size = signal<NzButtonSize>('large');
 }
 ```

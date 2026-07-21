@@ -180,7 +180,7 @@ export class NzDemoTimelineCustomComponent {}
 Use `nzLabel` show time alone.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -197,7 +197,7 @@ import { NzTimelineMode, NzTimelineModule } from 'ng-zorro-antd/timeline';
     </nz-radio-group>
     <br />
     <br />
-    <nz-timeline [nzMode]="mode">
+    <nz-timeline [nzMode]="mode()">
       <nz-timeline-item nzLabel="2015-09-01">Create a services</nz-timeline-item>
       <nz-timeline-item nzLabel="2015-09-01 09:12:11">Solve initial network problems</nz-timeline-item>
       <nz-timeline-item>Technical testing</nz-timeline-item>
@@ -206,7 +206,7 @@ import { NzTimelineMode, NzTimelineModule } from 'ng-zorro-antd/timeline';
   `
 })
 export class NzDemoTimelineLabelComponent {
-  mode: NzTimelineMode = 'left';
+  readonly mode = signal<NzTimelineMode>('left');
 }
 ```
 
@@ -215,7 +215,7 @@ export class NzDemoTimelineLabelComponent {
 When the timeline is incomplete and ongoing, put a ghost node at last. set `[nzPending]="true"` or `[nzPending]="a TemplateRef"`. Used in ascend chronological order.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTimelineModule } from 'ng-zorro-antd/timeline';
@@ -224,7 +224,7 @@ import { NzTimelineModule } from 'ng-zorro-antd/timeline';
   selector: 'nz-demo-timeline-pending',
   imports: [NzButtonModule, NzTimelineModule],
   template: `
-    <nz-timeline nzPending="Recording..." [nzReverse]="reverse">
+    <nz-timeline nzPending="Recording..." [nzReverse]="reverse()">
       <nz-timeline-item>Create a services site 2015-09-01</nz-timeline-item>
       <nz-timeline-item>Solve initial network problems 2015-09-01</nz-timeline-item>
       <nz-timeline-item>Technical testing 2015-09-01</nz-timeline-item>
@@ -235,10 +235,10 @@ import { NzTimelineModule } from 'ng-zorro-antd/timeline';
   `
 })
 export class NzDemoTimelinePendingComponent {
-  reverse = false;
+  readonly reverse = signal(false);
 
   toggleReverse(): void {
-    this.reverse = !this.reverse;
+    this.reverse.update(reverse => !reverse);
   }
 }
 ```

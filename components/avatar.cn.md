@@ -104,7 +104,7 @@ export class NzDemoAvatarBasicComponent {}
 对于字符型的头像，当字符串较长时，字体大小可以根据头像宽度自动调整。
 
 ```typescript
-import { Component, computed, model, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
@@ -136,10 +136,11 @@ const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
   `
 })
 export class NzDemoAvatarDynamicComponent {
-  index = signal(3);
-  text = computed(() => userList[this.index()]);
-  color = computed(() => colorList[this.index()]);
-  gap = model(4);
+  readonly index = signal(3);
+  readonly text = computed(() => userList[this.index()]);
+  readonly color = computed(() => colorList[this.index()]);
+  readonly gap = signal(4);
+
   change(): void {
     this.index.update(idx => (idx + 1) % userList.length);
   }

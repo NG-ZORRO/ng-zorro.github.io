@@ -43,7 +43,7 @@ description: Used to toggle between two states.
 The most basic usage.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
@@ -54,7 +54,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   template: `<nz-switch [(ngModel)]="switchValue" />`
 })
 export class NzDemoSwitchBasicComponent {
-  switchValue = false;
+  readonly switchValue = signal(false);
 }
 ```
 
@@ -63,7 +63,7 @@ export class NzDemoSwitchBasicComponent {
 The status of `Switch` is completely up to the user and no longer automatically changes the data based on the click event.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
@@ -71,20 +71,22 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
 @Component({
   selector: 'nz-demo-switch-control',
   imports: [FormsModule, NzSwitchModule],
-  template: ` <nz-switch [(ngModel)]="switchValue" [nzControl]="true" (click)="clickSwitch()" [nzLoading]="loading" /> `
+  template: `<nz-switch [(ngModel)]="value" nzControl (click)="clickSwitch()" [nzLoading]="loading()" />`
 })
 export class NzDemoSwitchControlComponent {
-  switchValue = false;
-  loading = false;
+  readonly value = signal(false);
+  readonly loading = signal(false);
 
   clickSwitch(): void {
-    if (!this.loading) {
-      this.loading = true;
-      setTimeout(() => {
-        this.switchValue = !this.switchValue;
-        this.loading = false;
-      }, 3000);
+    if (this.loading()) {
+      return;
     }
+
+    this.loading.set(true);
+    setTimeout(() => {
+      this.value.update(value => !value);
+      this.loading.set(false);
+    }, 3000);
   }
 }
 ```
@@ -94,7 +96,7 @@ export class NzDemoSwitchControlComponent {
 Disabled state of `Switch`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -104,15 +106,19 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-switch-disabled',
   imports: [FormsModule, NzButtonModule, NzSwitchModule],
   template: `
-    <nz-switch [(ngModel)]="switchValue" [nzDisabled]="isDisabled" />
+    <nz-switch [(ngModel)]="value" [nzDisabled]="disabled()" />
     <br />
     <br />
-    <button nz-button nzType="primary" (click)="isDisabled = !isDisabled">Toggle disabled</button>
+    <button nz-button nzType="primary" (click)="toggleDisabled()">Toggle disabled</button>
   `
 })
 export class NzDemoSwitchDisabledComponent {
-  switchValue = false;
-  isDisabled = true;
+  readonly value = signal(false);
+  readonly disabled = signal(true);
+
+  toggleDisabled(): void {
+    this.disabled.update(value => !value);
+  }
 }
 ```
 

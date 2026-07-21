@@ -108,7 +108,7 @@ Avatar component for the list items meta part.
 Basic list.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzListModule } from 'ng-zorro-antd/list';
@@ -120,8 +120,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
     <div style="margin-bottom: 8px;">
       <button nz-button (click)="change()">Switch Data</button>
     </div>
-    <nz-list nzItemLayout="horizontal" [nzLoading]="loading">
-      @for (item of data; track item) {
+    <nz-list nzItemLayout="horizontal" [nzLoading]="loading()">
+      @for (item of data(); track item) {
         <nz-list-item>
           <nz-list-item-meta
             nzAvatar="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
@@ -139,8 +139,8 @@ import { NzListModule } from 'ng-zorro-antd/list';
   `
 })
 export class NzDemoListBasicComponent {
-  loading = false;
-  data = [
+  readonly loading = signal(false);
+  readonly data = signal([
     {
       title: 'Ant Design Title 1'
     },
@@ -153,18 +153,18 @@ export class NzDemoListBasicComponent {
     {
       title: 'Ant Design Title 4'
     }
-  ];
+  ]);
 
   change(): void {
-    this.loading = true;
-    if (this.data.length > 0) {
+    this.loading.set(true);
+    if (this.data().length > 0) {
       setTimeout(() => {
-        this.data = [];
-        this.loading = false;
+        this.data.set([]);
+        this.loading.set(false);
       }, 1000);
     } else {
       setTimeout(() => {
-        this.data = [
+        this.data.set([
           {
             title: 'Ant Design Title 1'
           },
@@ -177,8 +177,8 @@ export class NzDemoListBasicComponent {
           {
             title: 'Ant Design Title 4'
           }
-        ];
-        this.loading = false;
+        ]);
+        this.loading.set(false);
       }, 1000);
     }
   }
@@ -241,7 +241,7 @@ An example of infinite list & virtualized loading using [cdk-virtual-scroll](htt
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
 import { CdkFixedSizeVirtualScroll, CdkVirtualForOf, CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
 import { catchError, takeUntil } from 'rxjs/operators';
@@ -297,8 +297,7 @@ interface Name {
     nz-list {
       padding: 24px;
     }
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush
+  `
 })
 export class NzDemoListInfiniteLoadComponent implements OnInit {
   private http = inject(HttpClient);
@@ -386,7 +385,7 @@ Load more list with `loadMore` property.
 ```typescript
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
@@ -402,8 +401,8 @@ const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,
   selector: 'nz-demo-list-loadmore',
   imports: [NzButtonModule, NzListModule, NzSkeletonModule],
   template: `
-    <nz-list class="demo-loadmore-list" [nzLoading]="initLoading">
-      @for (item of list; track item) {
+    <nz-list class="demo-loadmore-list" [nzLoading]="initLoading()">
+      @for (item of list(); track item) {
         <nz-list-item>
           @if (item.loading) {
             <nz-skeleton [nzAvatar]="true" [nzActive]="true" [nzTitle]="false" [nzLoading]="true" />
@@ -427,7 +426,7 @@ const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,
         </nz-list-item>
       }
       <div class="loadmore" nz-list-load-more>
-        @if (!loadingMore) {
+        @if (!loadingMore()) {
           <button nz-button (click)="onLoadMore()">loading more</button>
         }
       </div>
@@ -446,21 +445,19 @@ const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,
   `
 })
 export class NzDemoListLoadmoreComponent implements OnInit {
-  initLoading = true; // bug
-  loadingMore = false;
-  data: any[] = [];
-  list: Array<{ loading: boolean; name: any }> = [];
+  private readonly http = inject(HttpClient);
+  private readonly msg = inject(NzMessageService);
 
-  constructor(
-    private http: HttpClient,
-    private msg: NzMessageService
-  ) {}
+  readonly initLoading = signal(true);
+  readonly loadingMore = signal(false);
+  readonly data = signal<any[]>([]);
+  readonly list = signal<Array<{ loading: boolean; name: any }>>([]);
 
   ngOnInit(): void {
     this.getData((res: any) => {
-      this.data = res.results;
-      this.list = res.results;
-      this.initLoading = false;
+      this.data.set(res.results);
+      this.list.set(res.results);
+      this.initLoading.set(false);
     });
   }
 
@@ -472,15 +469,15 @@ export class NzDemoListLoadmoreComponent implements OnInit {
   }
 
   onLoadMore(): void {
-    this.loadingMore = true;
-    this.list = this.data.concat([...Array(count)].fill({}).map(() => ({ loading: true, name: {} })));
+    this.loadingMore.set(true);
+    this.list.set(this.data().concat([...Array(count)].fill({}).map(() => ({ loading: true, name: {} }))));
     this.http
       .get(fakeDataUrl)
       .pipe(catchError(() => of({ results: [] })))
       .subscribe((res: any) => {
-        this.data = this.data.concat(res.results);
-        this.list = [...this.data];
-        this.loadingMore = false;
+        this.data.update(data => data.concat(res.results));
+        this.list.set([...this.data()]);
+        this.loadingMore.set(false);
       });
   }
 
@@ -551,7 +548,7 @@ If a large or small list is desired, set the size property to either large or sm
 Customizing the nzHeader and nzFooter of list by setting `nzHeader` and `nzFooter` property.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -610,6 +607,8 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
   `
 })
 export class NzDemoListSimpleComponent {
+  public readonly msg = inject(NzMessageService);
+
   data = [
     'Racing car sprays burning fuel into crowd.',
     'Japanese princess to wed commoner.',
@@ -617,8 +616,6 @@ export class NzDemoListSimpleComponent {
     'Man charged over missing wedding girl.',
     'Los Angeles battles huge wildfires.'
   ];
-
-  constructor(public msg: NzMessageService) {}
 }
 ```
 
@@ -627,7 +624,7 @@ export class NzDemoListSimpleComponent {
 Setting `nzItemLayout` property with `vertical` to create a vertical list.
 
 ```typescript
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzListModule } from 'ng-zorro-antd/list';
@@ -645,7 +642,7 @@ interface ItemData {
   imports: [NzIconModule, NzListModule],
   template: `
     <nz-list nzItemLayout="vertical">
-      @for (item of data; track item) {
+      @for (item of data(); track item) {
         <nz-list-item>
           <nz-list-item-meta>
             <nz-list-item-meta-avatar [nzSrc]="item.avatar" />
@@ -680,22 +677,24 @@ interface ItemData {
   `
 })
 export class NzDemoListVerticalComponent implements OnInit {
-  data: ItemData[] = [];
+  readonly data = signal<ItemData[]>([]);
 
   ngOnInit(): void {
     this.loadData(1);
   }
 
   loadData(pi: number): void {
-    this.data = new Array(5).fill({}).map((_, index) => ({
-      href: 'https://ant.design',
-      title: `ant design part ${index} (page: ${pi})`,
-      avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
-      description: 'Ant Design, a design language for background applications, is refined by Ant UED Team.',
-      content:
-        'We supply a series of design principles, practical patterns and high quality design resources ' +
-        '(Sketch and Axure), to help people create their product prototypes beautifully and efficiently.'
-    }));
+    this.data.set(
+      new Array(5).fill({}).map((_, index) => ({
+        href: 'https://ant.design',
+        title: `ant design part ${index} (page: ${pi})`,
+        avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+        description: 'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+        content:
+          'We supply a series of design principles, practical patterns and high quality design resources ' +
+          '(Sketch and Axure), to help people create their product prototypes beautifully and efficiently.'
+      }))
+    );
   }
 }
 ```

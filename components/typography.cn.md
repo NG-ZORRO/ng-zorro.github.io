@@ -152,7 +152,7 @@ export class NzDemoTypographyBasicComponent {}
 多行文本省略。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 
@@ -190,20 +190,21 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
       nzEllipsis
       nzEditable
       [nzEllipsisRows]="2"
-      [nzContent]="dynamicContent"
+      [nzContent]="dynamicContent()"
       (nzContentChange)="onChange($event)"
     ></p>
   `
 })
 export class NzDemoTypographyEllipsisComponent {
-  dynamicContent =
+  readonly dynamicContent = signal(
     'Ant Design, a design language for background applications, is refined by Ant UED Team. ' +
-    'Ant Design, a design language for background applications, is refined by Ant UED Team. ' +
-    'Ant Design, a design language for background applications, is refined by Ant UED Team. ' +
-    'Ant Design, a design language for background applications, is refined by Ant UED Team.';
+      'Ant Design, a design language for background applications, is refined by Ant UED Team. ' +
+      'Ant Design, a design language for background applications, is refined by Ant UED Team. ' +
+      'Ant Design, a design language for background applications, is refined by Ant UED Team.'
+  );
 
-  onChange(event: string): void {
-    this.dynamicContent = event;
+  onChange(content: string): void {
+    this.dynamicContent.set(content);
   }
 }
 ```
@@ -265,7 +266,7 @@ export class NzDemoTypographyInteractiveComponent {
 添加后缀的省略。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSliderModule } from 'ng-zorro-antd/slider';
@@ -281,7 +282,7 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
       nzEllipsis
       nzExpandable
       [attr.title]="content + suffix"
-      [nzEllipsisRows]="rows"
+      [nzEllipsisRows]="rows()"
       [nzSuffix]="suffix"
       (nzOnEllipsis)="onEllipsisChange($event)"
     >
@@ -290,7 +291,7 @@ import { NzTypographyModule } from 'ng-zorro-antd/typography';
   `
 })
 export class NzDemoTypographySuffixComponent {
-  content =
+  readonly content =
     'To be, or not to be, that is a question: Whether it is nobler in the mind to suffer. The slings and arrows of ' +
     'outrageous fortune Or to take arms against a sea of troubles, And by opposing end them? To die: to sleep; ' +
     'No more; and by a sleep to say we end The heart-ache and the thousand natural shocks That flesh is heir to, ' +
@@ -298,8 +299,8 @@ export class NzDemoTypographySuffixComponent {
     'For in that sleep of death what dreams may come When we have shuffled off this mortal coil, Must give us pause. ' +
     'There s the respect That makes calamity of so long life';
 
-  suffix = '--William Shakespeare';
-  rows = 1;
+  readonly suffix = '--William Shakespeare';
+  readonly rows = signal(1);
 
   onEllipsisChange(ellipsis: boolean): void {
     console.log(ellipsis);

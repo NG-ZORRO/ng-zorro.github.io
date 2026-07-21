@@ -181,7 +181,7 @@ export class NzDemoSegmentedDisabledComponent {
 Load `options` dynamically.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
@@ -192,9 +192,9 @@ const defaultOptions = ['Daily', 'Weekly', 'Monthly'];
   selector: 'nz-demo-segmented-dynamic',
   imports: [NzButtonModule, NzSegmentedModule],
   template: `
-    <nz-segmented [nzOptions]="options" />
+    <nz-segmented [nzOptions]="options()" />
     <br />
-    <button nz-button nzType="primary" [disabled]="moreLoaded" (click)="handleLoadMore()"> Load more options </button>
+    <button nz-button nzType="primary" [disabled]="moreLoaded()" (click)="handleLoadMore()"> Load more options </button>
   `,
   styles: `
     .ant-segmented {
@@ -203,13 +203,13 @@ const defaultOptions = ['Daily', 'Weekly', 'Monthly'];
   `
 })
 export class NzDemoSegmentedDynamicComponent {
-  options = [...defaultOptions];
+  readonly options = signal([...defaultOptions]);
 
-  moreLoaded = false;
+  readonly moreLoaded = signal(false);
 
   handleLoadMore(): void {
-    this.moreLoaded = true;
-    this.options = [...defaultOptions, 'Quarterly', 'Yearly'];
+    this.moreLoaded.set(true);
+    this.options.set([...defaultOptions, 'Quarterly', 'Yearly']);
   }
 }
 ```
@@ -312,7 +312,7 @@ export class NzDemoSegmentedSizeComponent {
 Set selected option via ngModel.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
@@ -323,7 +323,7 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   template: `
     <nz-segmented [nzOptions]="options" [(ngModel)]="selectedValue" (ngModelChange)="handleModelChange($event)" />
     <br />
-    Selected value: {{ selectedValue }}
+    Selected value: {{ selectedValue() }}
   `,
   styles: `
     .ant-segmented {
@@ -332,8 +332,8 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   `
 })
 export class NzDemoSegmentedValueComponent {
-  selectedValue = 'Weekly';
-  options = ['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly'];
+  readonly selectedValue = signal('Weekly');
+  readonly options = ['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly'];
 
   handleModelChange(value: string): void {
     console.log(value);

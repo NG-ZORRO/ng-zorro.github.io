@@ -375,7 +375,7 @@ export class NzDemoFloatButtonGroupComponent {}
 Set the `nzOpen` property to control whether `nz-float-button-group` is expanded.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
@@ -388,7 +388,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     <div class="open">
       <nz-float-button-group
         nzIcon="customer-service"
-        [nzOpen]="isOpen"
+        [nzOpen]="isOpen()"
         nzType="primary"
         nzTrigger="click"
         style="right: 24px"
@@ -412,12 +412,10 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoFloatButtonOpenComponent {
-  isOpen: boolean = true;
+  readonly isOpen = signal(true);
 
   onOpenChange(open: boolean): void {
     console.log(open);
-    // You can set the `isOpen` variable in `(nzOpenChange)` to control the open state.
-    // this.isOpen = open;
   }
 }
 ```

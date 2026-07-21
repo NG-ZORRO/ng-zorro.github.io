@@ -42,7 +42,7 @@ description: A flex layout container for alignment.
 Set align.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -63,7 +63,7 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
       <nz-segmented [nzOptions]="alignSegment" [(ngModel)]="selectedLAlignment" />
     </div>
 
-    <div class="btn-wrappers" nz-flex [nzJustify]="selectedJustification" [nzAlign]="selectedLAlignment">
+    <div class="btn-wrappers" nz-flex [nzJustify]="selectedJustification()" [nzAlign]="selectedLAlignment()">
       <button nz-button nzType="primary">Primary</button>
       <button nz-button nzType="primary">Primary</button>
       <button nz-button nzType="primary">Primary</button>
@@ -86,7 +86,7 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   `
 })
 export class NzDemoFlexAlignComponent {
-  public justifySegment: NzJustify[] = [
+  readonly justifySegment: NzJustify[] = [
     'flex-start',
     'center',
     'flex-end',
@@ -94,9 +94,9 @@ export class NzDemoFlexAlignComponent {
     'space-around',
     'space-evenly'
   ];
-  public alignSegment: NzAlign[] = ['flex-start', 'center', 'flex-end'];
-  public selectedJustification: NzJustify = 'flex-start';
-  public selectedLAlignment: NzAlign = 'flex-start';
+  readonly alignSegment: NzAlign[] = ['flex-start', 'center', 'flex-end'];
+  readonly selectedJustification = signal<NzJustify>('flex-start');
+  readonly selectedLAlignment = signal<NzAlign>('flex-start');
 }
 ```
 
@@ -105,7 +105,7 @@ export class NzDemoFlexAlignComponent {
 The basic usage.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzFlexModule } from 'ng-zorro-antd/flex';
@@ -115,12 +115,12 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-flex-basic',
   imports: [FormsModule, NzFlexModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="isVertical">
+    <nz-radio-group [(ngModel)]="vertical">
       <label nz-radio [nzValue]="false">horizontal</label>
       <label nz-radio [nzValue]="true">vertical</label>
     </nz-radio-group>
 
-    <div nz-flex [nzVertical]="isVertical">
+    <div nz-flex [nzVertical]="vertical()">
       <div class="flex-item"></div>
       <div class="flex-item even"></div>
       <div class="flex-item"></div>
@@ -144,7 +144,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoFlexBasicComponent {
-  isVertical = false;
+  readonly vertical = signal(false);
 }
 ```
 
@@ -196,7 +196,7 @@ export class NzDemoFlexCombinationComponent {}
 Set the `gap` between elements, which has three preset sizes: `small`, `middle`, `large`, You can also customize the gap size.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -212,10 +212,10 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
       <span>Select gap:</span>
       <nz-segmented [nzOptions]="gapSegment" [(ngModel)]="selectedGap" />
     </div>
-    @if (selectedGap === 'custom') {
+    @if (selectedGap() === 'custom') {
       <nz-slider [nzMin]="0" [nzMax]="100" [(ngModel)]="customGapValue" />
     }
-    <div nz-flex [nzGap]="selectedGap === 'custom' ? customGapValue : selectedGap">
+    <div nz-flex [nzGap]="gap()">
       <button nz-button nzType="primary">Primary</button>
       <button nz-button nzType="dashed">Dashed</button>
       <button nz-button nzType="default">Default</button>
@@ -233,9 +233,10 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   `
 })
 export class NzDemoFlexGapComponent {
-  public gapSegment: string[] = ['small', 'middle', 'large', 'custom'];
-  public selectedGap = 'small';
-  public customGapValue = 0;
+  readonly gapSegment = ['small', 'middle', 'large', 'custom'];
+  readonly selectedGap = signal('small');
+  readonly customGapValue = signal(0);
+  readonly gap = computed(() => (this.selectedGap() === 'custom' ? this.customGapValue() : this.selectedGap()));
 }
 ```
 
@@ -244,7 +245,7 @@ export class NzDemoFlexGapComponent {
 Wrap line.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -259,7 +260,7 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
       <span>Select wrap:</span>
       <nz-segmented [nzOptions]="wrapSegment" [(ngModel)]="selectedWrap" />
     </div>
-    <div class="btn-wrapper" nz-flex nzGap="middle" [nzWrap]="selectedWrap">
+    <div class="btn-wrapper" nz-flex nzGap="middle" [nzWrap]="selectedWrap()">
       @for (_ of array; track _) {
         <button style="width: 100px" nz-button nzType="primary">Button {{ _ }}</button>
       }
@@ -281,8 +282,8 @@ import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
   `
 })
 export class NzDemoFlexWrapComponent {
-  wrapSegment: NzWrap[] = ['wrap', 'wrap-reverse', 'nowrap'];
-  selectedWrap: NzWrap = 'wrap';
-  array = Array.from({ length: 20 }, (_, index) => index + 1);
+  readonly wrapSegment: NzWrap[] = ['wrap', 'wrap-reverse', 'nowrap'];
+  readonly selectedWrap = signal<NzWrap>('wrap');
+  readonly array = Array.from({ length: 20 }, (_, index) => index + 1);
 }
 ```

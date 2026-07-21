@@ -364,7 +364,7 @@ export class NzDemoTreeCustomizedIconComponent {
 
 ```typescript
 import { LowerCasePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzContextMenuService, NzDropdownMenuComponent, NzDropdownModule } from 'ng-zorro-antd/dropdown';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -436,6 +436,8 @@ import { NzFormatEmitEvent, NzTreeModule, NzTreeNode } from 'ng-zorro-antd/tree'
   `
 })
 export class NzDemoTreeDirectoryComponent {
+  private readonly nzContextMenuService = inject(NzContextMenuService);
+
   activatedNode?: NzTreeNode;
   readonly nodes = [
     {
@@ -458,9 +460,6 @@ export class NzDemoTreeDirectoryComponent {
       ]
     }
   ];
-
-  constructor(private nzContextMenuService: NzContextMenuService) {}
-
   openFolder(data: NzTreeNode | NzFormatEmitEvent): void {
     // do something if u want
     if (data instanceof NzTreeNode) {
@@ -728,33 +727,31 @@ export class NzDemoTreeLineComponent {
 可搜索的树。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzFormatEmitEvent, NzTreeModule } from 'ng-zorro-antd/tree';
 
 @Component({
   selector: 'nz-demo-tree-search',
-  imports: [FormsModule, NzIconModule, NzInputModule, NzTreeModule],
+  imports: [FormsModule, NzInputModule, NzTreeModule],
   template: `
-    <nz-input-wrapper>
+    <nz-input-search>
       <input type="text" nz-input placeholder="Search" [(ngModel)]="searchValue" />
-      <nz-icon nzInputSuffix nzType="search" />
-    </nz-input-wrapper>
+    </nz-input-search>
     <br />
     <nz-tree
       [nzData]="nodes"
-      [nzSearchValue]="searchValue"
-      (nzClick)="nzEvent($event)"
-      (nzExpandChange)="nzEvent($event)"
-      (nzSearchValueChange)="nzEvent($event)"
+      [nzSearchValue]="searchValue()"
+      (nzClick)="log($event)"
+      (nzExpandChange)="log($event)"
+      (nzSearchValueChange)="log($event)"
     />
   `
 })
 export class NzDemoTreeSearchComponent {
-  searchValue = '';
+  readonly searchValue = signal('');
 
   readonly nodes = [
     {
@@ -802,7 +799,7 @@ export class NzDemoTreeSearchComponent {
     }
   ];
 
-  nzEvent(event: NzFormatEmitEvent): void {
+  log(event: NzFormatEmitEvent): void {
     console.log(event);
   }
 }

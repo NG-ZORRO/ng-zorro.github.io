@@ -124,7 +124,7 @@ Tip: If possible, we prefer to use Angular's built-in syntax, for example:
 ```
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzToCssUnitPipe } from 'ng-zorro-antd/pipes';
@@ -134,12 +134,12 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   selector: 'nz-demo-pipes-css-unit',
   imports: [FormsModule, NzSliderModule, NzToCssUnitPipe],
   template: `
-    <nz-slider [(ngModel)]="radiusValue" [nzMax]="100" [nzMin]="0" />
+    <nz-slider [(ngModel)]="radius" [nzMax]="100" [nzMin]="0" />
 
     <div class="wrap">
-      <div class="box" [style.border-radius]="radiusValue | nzToCssUnit">Default</div>
-      <div class="box" [style.border-radius]="radiusValue | nzToCssUnit: '%'">%</div>
-      <div class="box" [style.border-radius]="radiusValue | nzToCssUnit: 'rem'">rem</div>
+      <div class="box" [style.border-radius]="radius() | nzToCssUnit">Default</div>
+      <div class="box" [style.border-radius]="radius() | nzToCssUnit: '%'">%</div>
+      <div class="box" [style.border-radius]="radius() | nzToCssUnit: 'rem'">rem</div>
     </div>
   `,
   styles: `
@@ -159,7 +159,7 @@ import { NzSliderModule } from 'ng-zorro-antd/slider';
   `
 })
 export class NzDemoPipesCssUnitComponent {
-  radiusValue = 0;
+  readonly radius = signal(0);
 }
 ```
 
@@ -168,7 +168,7 @@ export class NzDemoPipesCssUnitComponent {
 Truncate the string, ending with the specified string
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -180,7 +180,7 @@ import { NzEllipsisPipe } from 'ng-zorro-antd/pipes';
   template: `
     <input type="text" nz-input [(ngModel)]="str" />
     <br />
-    <p>{{ str | nzEllipsis: 36 : '...' }}</p>
+    <p>{{ str() | nzEllipsis: 36 : '...' }}</p>
   `,
   styles: `
     p {
@@ -189,7 +189,7 @@ import { NzEllipsisPipe } from 'ng-zorro-antd/pipes';
   `
 })
 export class NzDemoPipesEllipsisComponent {
-  str = 'Ant Design, a design language for background applications';
+  readonly str = signal('Ant Design, a design language for background applications');
 }
 ```
 
@@ -224,7 +224,7 @@ export class NzDemoPipesSanitizerComponent {
 Strip left and right empty string
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -237,10 +237,10 @@ import { NzTrimPipe } from 'ng-zorro-antd/pipes';
     <input type="text" nz-input [(ngModel)]="str" />
     <br />
     <div>
-      <pre>{{ str }}</pre>
+      <pre>{{ str() }}</pre>
     </div>
     <div>
-      <pre>{{ str | nzTrim }}</pre>
+      <pre>{{ str() | nzTrim }}</pre>
     </div>
   `,
   styles: `
@@ -254,6 +254,6 @@ import { NzTrimPipe } from 'ng-zorro-antd/pipes';
   `
 })
 export class NzDemoPipesTrimComponent {
-  str = ' Ant Design ';
+  readonly str = signal(' Ant Design ');
 }
 ```

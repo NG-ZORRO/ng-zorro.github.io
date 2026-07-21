@@ -65,16 +65,10 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseAccordionComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
-      name: 'This is panel header 1',
-      childPanel: [
-        {
-          active: false,
-          name: 'This is panel header 1-1'
-        }
-      ]
+      name: 'This is panel header 1'
     },
     {
       active: false,
@@ -103,7 +97,7 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   template: `
     <nz-collapse>
       @for (panel of panels; track panel) {
-        <nz-collapse-panel [nzHeader]="panel.name" [nzActive]="panel.active" [nzDisabled]="panel.disabled">
+        <nz-collapse-panel [nzHeader]="panel.name" [nzActive]="panel.active" [nzCollapsible]="panel.collapsible">
           <p style="margin:0;">
             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome
             guest in many households across the world.
@@ -114,21 +108,19 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseBasicComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
-      name: 'This is panel header 1',
-      disabled: false
+      name: 'This is panel header 1'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 2'
     },
     {
       active: false,
-      disabled: true,
-      name: 'This is panel header 3'
+      name: 'This is panel header 3',
+      collapsible: 'disabled' as const
     }
   ];
 }
@@ -157,27 +149,17 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseBorderlessComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
-      disabled: false,
-      name: 'This is panel header 1',
-      childPannel: [
-        {
-          active: false,
-          disabled: true,
-          name: 'This is panel header 1-1'
-        }
-      ]
+      name: 'This is panel header 1'
     },
     {
       active: false,
-      disabled: true,
       name: 'This is panel header 2'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 3'
     }
   ];
@@ -277,18 +259,15 @@ export class NzDemoCollapseCustomComponent {
   readonly panels = [
     {
       active: true,
-      disabled: false,
       name: 'This is panel header 1'
     },
     {
       active: false,
-      disabled: true,
       name: 'This is panel header 2',
       icon: 'double-right'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 3'
     }
   ];
@@ -300,7 +279,7 @@ export class NzDemoCollapseCustomComponent {
 你可以通过 `nzExtra` 来指定面板右上角的额外内容。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCollapseModule } from 'ng-zorro-antd/collapse';
@@ -311,14 +290,9 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   selector: 'nz-demo-collapse-extra',
   imports: [FormsModule, NzCollapseModule, NzIconModule, NzSelectModule],
   template: `
-    <nz-collapse [nzExpandIconPosition]="expandIconPosition">
+    <nz-collapse [nzExpandIconPosition]="expandIconPosition()">
       @for (panel of panels; track panel) {
-        <nz-collapse-panel
-          [nzHeader]="panel.name"
-          [nzActive]="panel.active"
-          [nzExtra]="extraTpl"
-          [nzDisabled]="panel.disabled"
-        >
+        <nz-collapse-panel [nzHeader]="panel.name" [nzActive]="panel.active" [nzExtra]="extraTpl">
           <p style="margin:0;">
             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome
             guest in many households across the world.
@@ -339,22 +313,19 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoCollapseExtraComponent {
-  expandIconPosition: 'start' | 'end' = 'start';
+  readonly expandIconPosition = signal<'start' | 'end'>('start');
 
-  panels = [
+  readonly panels = [
     {
       active: true,
-      name: 'This is panel header 1',
-      disabled: false
+      name: 'This is panel header 1'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 2'
     },
     {
       active: false,
-      disabled: true,
       name: 'This is panel header 3'
     }
   ];
@@ -376,7 +347,7 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   template: `
     <nz-collapse nzGhost>
       @for (panel of panels; track panel) {
-        <nz-collapse-panel [nzHeader]="panel.name" [nzActive]="panel.active" [nzDisabled]="panel.disabled">
+        <nz-collapse-panel [nzHeader]="panel.name" [nzActive]="panel.active">
           <p style="margin:0;">
             A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome
             guest in many households across the world.
@@ -387,20 +358,17 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseGhostComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
-      name: 'This is panel header 1',
-      disabled: false
+      name: 'This is panel header 1'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 2'
     },
     {
       active: false,
-      disabled: true,
       name: 'This is panel header 3'
     }
   ];
@@ -444,10 +412,9 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseMixComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
-      disabled: false,
       name: 'This is panel header 1',
       childPanel: [
         {
@@ -462,12 +429,10 @@ export class NzDemoCollapseMixComponent {
     },
     {
       active: false,
-      disabled: true,
       name: 'This is panel header 2'
     },
     {
       active: false,
-      disabled: false,
       name: 'This is panel header 3'
     }
   ];
@@ -500,7 +465,7 @@ import { NzCollapseModule } from 'ng-zorro-antd/collapse';
   `
 })
 export class NzDemoCollapseNoarrowComponent {
-  panels = [
+  readonly panels = [
     {
       active: true,
       name: 'This is panel header 1',

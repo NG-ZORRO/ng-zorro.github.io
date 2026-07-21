@@ -80,7 +80,7 @@ In controlled mode, developers may store related data by themselves. If the comp
 Using pre & post tabs example.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule } from 'ng-zorro-antd/cascader';
@@ -128,7 +128,7 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
   `
 })
 export class NzDemoInputNumberAddonComponent {
-  value = 100;
+  readonly value = signal(100);
 }
 ```
 
@@ -137,7 +137,7 @@ export class NzDemoInputNumberAddonComponent {
 Numeric-only input box.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -148,7 +148,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" />`
 })
 export class NzDemoInputNumberBasicComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 
@@ -158,7 +158,7 @@ Use the `nzChangeOnWheel` property to control with the mouse wheel.
 `
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -177,7 +177,7 @@ import { NzInputNumberModule, NzInputNumberStepEvent } from 'ng-zorro-antd/input
   `
 })
 export class NzDemoInputNumberChangeOnWheelComponent {
-  value = 3;
+  readonly value = signal(3);
 
   onChange(value: number): void {
     console.log(value);
@@ -194,7 +194,7 @@ export class NzDemoInputNumberChangeOnWheelComponent {
 A numeric-only input box whose values can be increased or decreased using a decimal step. The number of decimals (also known as precision) is determined by the `nzStep` prop.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -205,7 +205,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="0" nzMax="10" nzStep="0.1" nzPlaceHolder="Digital" />`
 })
 export class NzDemoInputNumberDigitComponent {
-  value = 0.1;
+  readonly value = signal(0.1);
 }
 ```
 
@@ -214,7 +214,7 @@ export class NzDemoInputNumberDigitComponent {
 Click the button to toggle between available and disabled states.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -224,15 +224,15 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   selector: 'nz-demo-input-number-disabled',
   imports: [FormsModule, NzButtonModule, NzInputNumberModule],
   template: `
-    <nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" [nzDisabled]="isDisabled" />
+    <nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" [nzDisabled]="isDisabled()" />
     <br />
     <br />
-    <button nz-button nzType="primary" (click)="isDisabled = !isDisabled">Toggle Disabled</button>
+    <button nz-button nzType="primary" (click)="isDisabled.update(disabled => !disabled)">Toggle Disabled</button>
   `
 })
 export class NzDemoInputNumberDisabledComponent {
-  value = 3;
-  isDisabled = false;
+  readonly value = signal(3);
+  readonly isDisabled = signal(false);
 }
 ```
 
@@ -242,7 +242,7 @@ Focus with additional option.
 `
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -264,7 +264,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberFocusComponent {
-  value = 9999;
+  readonly value = signal(9999);
 }
 ```
 
@@ -273,7 +273,7 @@ export class NzDemoInputNumberFocusComponent {
 Display value within it's situation with `nzFormatter`, and we usually use `nzParser` at the same time.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -298,12 +298,12 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberFormatterComponent {
-  dollarValue = 1000;
-  percentValue = 100;
-  formatterDollar = (value: number): string => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  parserDollar = (value: string): number => +value?.replace(/\$\s?|(,*)/g, '');
-  formatterPercent = (value: number): string => `${value}%`;
-  parserPercent = (value: string): number => +value?.replace('%', '');
+  readonly dollarValue = signal(1000);
+  readonly percentValue = signal(100);
+  readonly formatterDollar = (value: number): string => `$ ${value}`.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  readonly parserDollar = (value: string): number => +value?.replace(/\$\s?|(,*)/g, '');
+  readonly formatterPercent = (value: number): string => `${value}%`;
+  readonly parserPercent = (value: string): number => +value?.replace('%', '');
 }
 ```
 
@@ -312,7 +312,7 @@ export class NzDemoInputNumberFormatterComponent {
 Custom arrow icon.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -329,7 +329,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberHandlerIconComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 
@@ -339,7 +339,7 @@ Use the `nzKeyboard` property to control keyboard behavior.
 `
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
@@ -349,7 +349,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   selector: 'nz-demo-input-number-keyboard',
   imports: [FormsModule, NzInputNumberModule, NzCheckboxModule],
   template: `
-    <nz-input-number [(ngModel)]="value" [nzKeyboard]="keyboard" nzMin="1" nzMax="10" />
+    <nz-input-number [(ngModel)]="value" [nzKeyboard]="keyboard()" nzMin="1" nzMax="10" />
     <label nz-checkbox [(ngModel)]="keyboard">Toggle Keyboard</label>
   `,
   styles: `
@@ -359,8 +359,8 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberKeyboardComponent {
-  keyboard = true;
-  value = 3;
+  readonly keyboard = signal(true);
+  readonly value = signal(3);
 }
 ```
 
@@ -369,7 +369,7 @@ export class NzDemoInputNumberKeyboardComponent {
 When the `value` is out of range in controlled mode, a warning style is provided.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -380,7 +380,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   template: `<nz-input-number [(ngModel)]="value" nzMin="1" nzMax="10" />`
 })
 export class NzDemoInputNumberOutOfRangeComponent {
-  value = 99;
+  readonly value = signal(99);
 }
 ```
 
@@ -426,7 +426,7 @@ export class NzDemoInputNumberPrefixComponent {}
 There are three sizes available to a numeric input box. By default, the `nzSize` is `32px`. The two additional sizes are `large` and `small` which means `40px` and `24px`, respectively.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
@@ -446,7 +446,7 @@ import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
   `
 })
 export class NzDemoInputNumberSizeComponent {
-  value = 3;
+  readonly value = signal(3);
 }
 ```
 

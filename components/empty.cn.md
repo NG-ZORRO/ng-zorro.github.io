@@ -77,7 +77,7 @@ export class NzDemoEmptyBasicComponent {}
 自定义全局组件的 Empty 样式。
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, effect, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule } from 'ng-zorro-antd/cascader';
@@ -108,12 +108,7 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
     NzTreeSelectModule
   ],
   template: `
-    <nz-switch
-      nzUnCheckedChildren="default"
-      nzCheckedChildren="customize"
-      [(ngModel)]="customize"
-      (ngModelChange)="onConfigChange()"
-    />
+    <nz-switch nzUnCheckedChildren="default" nzCheckedChildren="customize" [(ngModel)]="customize" />
 
     <nz-divider />
 
@@ -158,18 +153,17 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
   `
 })
 export class NzDemoEmptyConfigComponent {
-  @ViewChild('customTpl', { static: false }) customTpl?: TemplateRef<any>; // eslint-disable-line @typescript-eslint/no-explicit-any
+  private readonly nzConfigService = inject(NzConfigService);
 
-  customize = false;
+  @ViewChild('customTpl', { static: false }) customTpl?: TemplateRef<string>;
 
-  constructor(private nzConfigService: NzConfigService) {}
+  readonly customize = signal(false);
 
-  onConfigChange(): void {
-    if (this.customize) {
-      this.nzConfigService.set('empty', { nzDefaultEmptyContent: this.customTpl });
-    } else {
-      this.nzConfigService.set('empty', { nzDefaultEmptyContent: undefined });
-    }
+  constructor() {
+    effect(() => {
+      const template = this.customize() ? this.customTpl : undefined;
+      this.nzConfigService.set('empty', { nzDefaultEmptyContent: template });
+    });
   }
 }
 ```

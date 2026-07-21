@@ -66,7 +66,7 @@ export interface NzCheckboxOption {
 Basic usage of checkbox.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
@@ -77,7 +77,7 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
   template: `<label nz-checkbox [(ngModel)]="checked">Checkbox</label>`
 })
 export class NzDemoCheckboxBasicComponent {
-  checked = true;
+  readonly checked = signal(true);
 }
 ```
 
@@ -86,7 +86,7 @@ export class NzDemoCheckboxBasicComponent {
 The `nzIndeterminate` property can help you to achieve a 'check all' effect.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCheckboxModule, NzCheckboxOption } from 'ng-zorro-antd/checkbox';
@@ -98,37 +98,30 @@ import { NzDividerModule } from 'ng-zorro-antd/divider';
   template: `
     <label
       nz-checkbox
-      [(ngModel)]="allChecked"
-      (ngModelChange)="updateAllChecked()"
-      [nzIndeterminate]="value.length > 0 && value.length !== options.length"
+      [ngModel]="allChecked()"
+      (ngModelChange)="onAllCheckedChange($event)"
+      [nzIndeterminate]="indeterminate()"
     >
       Check all
     </label>
 
     <nz-divider />
 
-    <nz-checkbox-group [nzOptions]="options" [(ngModel)]="value" (ngModelChange)="updateSingleChecked()" />
+    <nz-checkbox-group [nzOptions]="options" [(ngModel)]="value" />
   `
 })
 export class NzDemoCheckboxCheckAllComponent {
-  isAllCheckedFirstChange = true;
-  allChecked = false;
-  value: Array<string | number> = ['Apple', 'Orange'];
-  options: NzCheckboxOption[] = [
+  readonly value = signal<Array<NzCheckboxOption['value']>>(['Apple', 'Orange']);
+  readonly options: NzCheckboxOption[] = [
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear' },
     { label: 'Orange', value: 'Orange' }
   ];
+  readonly allChecked = computed(() => this.value().length === this.options.length);
+  readonly indeterminate = computed(() => this.value().length > 0 && !this.allChecked());
 
-  updateAllChecked(): void {
-    if (!this.isAllCheckedFirstChange) {
-      this.value = this.allChecked ? this.options.map(item => item.value) : [];
-    }
-    this.isAllCheckedFirstChange = false;
-  }
-
-  updateSingleChecked(): void {
-    this.allChecked = this.value.length === this.options.length;
+  onAllCheckedChange(checked: boolean): void {
+    this.value.set(checked ? this.options.map(item => item.value) : []);
   }
 }
 ```
@@ -138,7 +131,7 @@ export class NzDemoCheckboxCheckAllComponent {
 Communicated with other components.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -148,16 +141,16 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
   selector: 'nz-demo-checkbox-controller',
   imports: [FormsModule, NzButtonModule, NzCheckboxModule],
   template: `
-    <label nz-checkbox [(ngModel)]="isCheckedButton" [nzDisabled]="isDisabledButton">
-      {{ isCheckedButton ? 'Checked' : 'Unchecked' }} - {{ isDisabledButton ? 'Disabled' : 'Enabled' }}
+    <label nz-checkbox [(ngModel)]="checked" [nzDisabled]="disabled()">
+      {{ checked() ? 'Checked' : 'Unchecked' }} - {{ disabled() ? 'Disabled' : 'Enabled' }}
     </label>
     <br />
     <br />
-    <button nz-button nzType="primary" (click)="checkButton()" nzSize="small">
-      {{ !isCheckedButton ? 'Checked' : 'Unchecked' }}
+    <button nz-button nzType="primary" (click)="toggleChecked()" nzSize="small">
+      {{ checked() ? 'Uncheck' : 'Check' }}
     </button>
-    <button nz-button nzType="primary" (click)="disableButton()" nzSize="small">
-      {{ isDisabledButton ? 'Enabled' : 'Disabled' }}
+    <button nz-button nzType="primary" (click)="toggleDisabled()" nzSize="small">
+      {{ disabled() ? 'Enable' : 'Disable' }}
     </button>
   `,
   styles: `
@@ -167,15 +160,15 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
   `
 })
 export class NzDemoCheckboxControllerComponent {
-  isCheckedButton = true;
-  isDisabledButton = false;
+  readonly checked = signal(true);
+  readonly disabled = signal(false);
 
-  checkButton(): void {
-    this.isCheckedButton = !this.isCheckedButton;
+  toggleChecked(): void {
+    this.checked.update(checked => !checked);
   }
 
-  disableButton(): void {
-    this.isDisabledButton = !this.isDisabledButton;
+  toggleDisabled(): void {
+    this.disabled.update(disabled => !disabled);
   }
 }
 ```
@@ -207,7 +200,7 @@ export class NzDemoCheckboxDisabledComponent {}
 Generate a group of checkboxes from an array.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCheckboxModule, NzCheckboxOption } from 'ng-zorro-antd/checkbox';
@@ -226,23 +219,23 @@ import { NzCheckboxModule, NzCheckboxOption } from 'ng-zorro-antd/checkbox';
   `
 })
 export class NzDemoCheckboxGroupComponent {
-  options1: NzCheckboxOption[] = [
+  readonly options1: NzCheckboxOption[] = [
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear' },
     { label: 'Orange', value: 'Orange' }
   ];
-  options2: NzCheckboxOption[] = [
+  readonly options2: NzCheckboxOption[] = [
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear' },
     { label: 'Orange', value: 'Orange', disabled: true }
   ];
-  options3: NzCheckboxOption[] = [
+  readonly options3: NzCheckboxOption[] = [
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear' },
     { label: 'Orange', value: 'Orange' }
   ];
 
-  value = ['Apple'];
+  readonly value = signal(['Apple']);
 
   log(value: string[]): void {
     console.log(value);
@@ -265,7 +258,7 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
   selector: 'nz-demo-checkbox-layout',
   imports: [FormsModule, NzCheckboxModule, NzGridModule],
   template: `
-    <nz-checkbox-group [(ngModel)]="value" [style.width.%]="100" (ngModelChange)="log($event)">
+    <nz-checkbox-group ngModel="A" [style.width.%]="100">
       <nz-row>
         <nz-col nzSpan="8">
           <label nz-checkbox nzValue="A">A</label>
@@ -286,11 +279,5 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
     </nz-checkbox-group>
   `
 })
-export class NzDemoCheckboxLayoutComponent {
-  value = ['A'];
-
-  log(value: string[]): void {
-    console.log(value);
-  }
-}
+export class NzDemoCheckboxLayoutComponent {}
 ```

@@ -86,7 +86,7 @@ export class NzDemoWatermarkBasicComponent {}
 Preview the watermark effect by configuring custom parameters.
 
 ```typescript
-import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 import { NzColor, NzColorPickerModule } from 'ng-zorro-antd/color-picker';
@@ -114,12 +114,12 @@ import { FontType, NzWatermarkModule } from 'ng-zorro-antd/watermark';
   template: `
     <div style="display: flex;">
       <nz-watermark
-        [nzContent]="form.value.content!"
-        [nzRotate]="form.value.rotate!"
-        [nzZIndex]="form.value.zIndex!"
-        [nzGap]="gap"
-        [nzOffset]="offset"
-        [nzFont]="font"
+        [nzContent]="formValue().content"
+        [nzRotate]="formValue().rotate"
+        [nzZIndex]="formValue().zIndex"
+        [nzGap]="gap()"
+        [nzOffset]="offset()"
+        [nzFont]="font()"
       >
         <p nz-typography style="z-index: 10; position:relative;">
           The light-speed iteration of the digital world makes products more complex. However, human consciousness and
@@ -157,7 +157,7 @@ import { FontType, NzWatermarkModule } from 'ng-zorro-antd/watermark';
         <nz-form-item>
           <nz-form-label>Color</nz-form-label>
           <nz-form-control>
-            <nz-color-picker [nzValue]="color" (nzOnChange)="changeColor($event)" />
+            <nz-color-picker [nzValue]="color()" (nzOnChange)="changeColor($event)" />
           </nz-form-control>
         </nz-form-item>
         <nz-form-item>
@@ -216,9 +216,9 @@ import { FontType, NzWatermarkModule } from 'ng-zorro-antd/watermark';
   `
 })
 export class NzDemoWatermarkCustomComponent implements OnInit {
-  private fb = inject(NonNullableFormBuilder);
+  private readonly fb = inject(NonNullableFormBuilder);
 
-  form = this.fb.group({
+  readonly form = this.fb.group({
     content: 'NG Ant Design',
     fontSize: 16,
     zIndex: 11,
@@ -228,35 +228,35 @@ export class NzDemoWatermarkCustomComponent implements OnInit {
     offsetX: 50,
     offsetY: 50
   });
-  color: string = 'rgba(0,0,0,.15)';
-  font: FontType = {
+  readonly formValue = signal(this.form.getRawValue());
+  readonly color = signal('rgba(0,0,0,.15)');
+  readonly font = signal<FontType>({
     color: 'rgba(0,0,0,.15)',
     fontSize: 16
-  };
-  gap: [number, number] = [100, 100];
-  offset: [number, number] = [50, 50];
-
-  constructor(private cdr: ChangeDetectorRef) {}
+  });
+  readonly gap = signal<[number, number]>([100, 100]);
+  readonly offset = signal<[number, number]>([50, 50]);
 
   ngOnInit(): void {
-    this.form.valueChanges.subscribe(item => {
-      this.font = {
+    this.form.valueChanges.subscribe(() => {
+      const item = this.form.getRawValue();
+      this.formValue.set(item);
+      this.font.set({
         fontSize: item.fontSize,
-        color: this.color
-      };
-      this.gap = [item.gapX!, item.gapY!];
-      this.offset = [item.offsetX!, item.offsetY!];
-      this.cdr.markForCheck();
+        color: this.color()
+      });
+      this.gap.set([item.gapX, item.gapY]);
+      this.offset.set([item.offsetX, item.offsetY]);
     });
   }
 
   changeColor(value: { color: NzColor; format: string }): void {
-    this.color = value.color.toRgbString();
-    this.font = {
-      fontSize: this.form.value.fontSize,
-      color: value.color.toRgbString()
-    };
-    this.cdr.markForCheck();
+    const color = value.color.toRgbString();
+    this.color.set(color);
+    this.font.set({
+      fontSize: this.form.getRawValue().fontSize,
+      color
+    });
   }
 }
 ```

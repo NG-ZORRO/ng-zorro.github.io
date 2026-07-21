@@ -74,7 +74,7 @@ export class NzDemoRadioBasicComponent {}
 `nz-radio` unavailable.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -85,17 +85,17 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   imports: [FormsModule, NzButtonModule, NzRadioModule],
   template: `
     <div>
-      <label nz-radio [nzDisabled]="disabled">Disabled</label>
+      <label nz-radio [nzDisabled]="disabled()">Disabled</label>
       <br />
-      <label nz-radio [nzDisabled]="disabled" [ngModel]="true">Disabled</label>
+      <label nz-radio [nzDisabled]="disabled()" [ngModel]="true">Disabled</label>
       <br />
       <br />
-      <button nz-button nzType="primary" (click)="disabled = !disabled">Toggle disabled</button>
+      <button nz-button nzType="primary" (click)="disabled.update(value => !value)">Toggle disabled</button>
     </div>
   `
 })
 export class NzDemoRadioDisableComponent {
-  disabled = true;
+  readonly disabled = signal(true);
 }
 ```
 
@@ -104,7 +104,7 @@ export class NzDemoRadioDisableComponent {
 The combination of radio button style.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -113,7 +113,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-radiobutton',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B">Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -121,7 +121,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B" nzDisabled>Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -129,7 +129,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio-button nzValue="A" nzDisabled>Hangzhou</label>
       <label nz-radio-button nzValue="B" nzDisabled>Shanghai</label>
       <label nz-radio-button nzValue="C" nzDisabled>Beijing</label>
@@ -138,7 +138,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioRadiobuttonComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```
 
@@ -147,7 +147,7 @@ export class NzDemoRadioRadiobuttonComponent {
 Vertical `nz-radio-group`, with more radios.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -157,13 +157,13 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-radiogroup-more',
   imports: [FormsModule, NzInputModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio nzValue="A">Option A</label>
       <label nz-radio nzValue="B">Option B</label>
       <label nz-radio nzValue="C">Option C</label>
       <label nz-radio nzValue="M">
         More...
-        @if (radioValue === 'M') {
+        @if (value() === 'M') {
           <input type="text" nz-input />
         }
       </label>
@@ -183,7 +183,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioRadiogroupMoreComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```
 
@@ -192,7 +192,7 @@ export class NzDemoRadioRadiogroupMoreComponent {
 Render radios by configuring `options`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -201,17 +201,17 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-radiogroup-options',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       @for (o of options; track o.value) {
         <label nz-radio [nzValue]="o.value">{{ o.label }}</label>
       }
     </nz-radio-group>
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       @for (o of options; track o.value) {
         <label nz-radio [nzValue]="o.value">{{ o.label }}</label>
       }
     </nz-radio-group>
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       @for (o of options; track o.value) {
         <label nz-radio [nzValue]="o.value">{{ o.label }}</label>
       }
@@ -219,8 +219,8 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioRadiogroupOptionsComponent {
-  radioValue = 'Apple';
-  options = [
+  readonly value = signal('Apple');
+  readonly options = [
     { label: 'Apple', value: 'Apple' },
     { label: 'Pear', value: 'Pear' },
     { label: 'Orange', value: 'Orange' }
@@ -233,7 +233,7 @@ export class NzDemoRadioRadiogroupOptionsComponent {
 Passing the `nzName` property to all `input[type="radio"]` that are in the same RadioGroup. It is usually used to let the browser see your `nz-radio-group` as a real "group" and keep the default behavior. For example, using left/right keyboard arrow to change your selection that in the same `nz-radio-group`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -242,7 +242,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-radiogroup-with-name',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue" nzName="radiogroup">
+    <nz-radio-group [(ngModel)]="value" nzName="radiogroup">
       <label nz-radio nzValue="A">A</label>
       <label nz-radio nzValue="B">B</label>
       <label nz-radio nzValue="C">C</label>
@@ -251,7 +251,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioRadiogroupWithNameComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```
 
@@ -260,7 +260,7 @@ export class NzDemoRadioRadiogroupWithNameComponent {
 A group of `nz-radio` components.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -269,7 +269,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-radiogroup',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio nzValue="A">A</label>
       <label nz-radio nzValue="B">B</label>
       <label nz-radio nzValue="C">C</label>
@@ -278,7 +278,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioRadiogroupComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```
 
@@ -287,7 +287,7 @@ export class NzDemoRadioRadiogroupComponent {
 There are three sizes available: large, medium, and small. It can coordinate with input box.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -296,7 +296,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-size',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue" nzSize="large">
+    <nz-radio-group [(ngModel)]="value" nzSize="large">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B">Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -304,7 +304,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-radio-group [(ngModel)]="radioValue">
+    <nz-radio-group [(ngModel)]="value">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B">Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -312,7 +312,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
     </nz-radio-group>
     <br />
     <br />
-    <nz-radio-group [(ngModel)]="radioValue" nzSize="small">
+    <nz-radio-group [(ngModel)]="value" nzSize="small">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B">Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -321,7 +321,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioSizeComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```
 
@@ -330,7 +330,7 @@ export class NzDemoRadioSizeComponent {
 Solid radio button style.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzRadioModule } from 'ng-zorro-antd/radio';
@@ -339,7 +339,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   selector: 'nz-demo-radio-solid',
   imports: [FormsModule, NzRadioModule],
   template: `
-    <nz-radio-group [(ngModel)]="radioValue" nzButtonStyle="solid">
+    <nz-radio-group [(ngModel)]="value" nzButtonStyle="solid">
       <label nz-radio-button nzValue="A">Hangzhou</label>
       <label nz-radio-button nzValue="B">Shanghai</label>
       <label nz-radio-button nzValue="C">Beijing</label>
@@ -348,6 +348,6 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
   `
 })
 export class NzDemoRadioSolidComponent {
-  radioValue = 'A';
+  readonly value = signal('A');
 }
 ```

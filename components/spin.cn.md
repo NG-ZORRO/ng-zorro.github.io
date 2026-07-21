@@ -76,7 +76,7 @@ export class NzDemoSpinCustomIndicatorComponent {}
 延迟显示 loading 效果。当 spinning 状态在 `nzDelay` 时间内结束，则不显示 loading 状态。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -87,7 +87,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-spin-delay-and-debounce',
   imports: [FormsModule, NzAlertModule, NzSpinModule, NzSwitchModule],
   template: `
-    <nz-spin [nzSpinning]="isSpinning" [nzDelay]="500">
+    <nz-spin [nzSpinning]="isSpinning()" [nzDelay]="500">
       <nz-alert
         nzType="info"
         nzMessage="Alert message title"
@@ -102,7 +102,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSpinDelayAndDebounceComponent {
-  isSpinning = false;
+  readonly isSpinning = signal(false);
 }
 ```
 
@@ -141,7 +141,7 @@ export class NzDemoSpinInsideComponent {}
 可以直接把内容内嵌到 `nz-spin` 中，将现有容器变为加载状态。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzAlertModule } from 'ng-zorro-antd/alert';
@@ -152,7 +152,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-spin-nested',
   imports: [FormsModule, NzAlertModule, NzSpinModule, NzSwitchModule],
   template: `
-    <nz-spin [nzSpinning]="isSpinning">
+    <nz-spin [nzSpinning]="isSpinning()">
       <nz-alert
         nzType="info"
         nzMessage="Alert message title"
@@ -167,7 +167,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   `
 })
 export class NzDemoSpinNestedComponent {
-  isSpinning = false;
+  readonly isSpinning = signal(false);
 }
 ```
 

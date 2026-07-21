@@ -1064,7 +1064,7 @@ export class NzDemoCascaderLazyComponent {
 Show Cascade selection box in a modal dialog.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -1118,38 +1118,43 @@ const options: NzCascaderOption[] = [
   imports: [FormsModule, NzButtonModule, NzModalModule, NzCascaderModule],
   template: `
     <nz-modal
-      [(nzVisible)]="isVisible"
+      [nzVisible]="isVisible()"
       nzTitle="Please select"
       (nzOnCancel)="handleCancel($event)"
       (nzOnOk)="handleOk($event)"
     >
-      <nz-cascader *nzModalContent [nzOptions]="nzOptions" [(ngModel)]="values" (ngModelChange)="onChanges($event)" />
+      <nz-cascader
+        *nzModalContent
+        [nzOptions]="nzOptions"
+        [ngModel]="values()"
+        (ngModelChange)="values.set($event); onChanges($event)"
+      />
     </nz-modal>
 
     <button nz-button (click)="open()">Open Dialog</button>
   `
 })
 export class NzDemoCascaderModalComponent {
-  nzOptions: NzCascaderOption[] = options;
-  values: string[] | null = null;
-  isVisible = false;
+  readonly nzOptions: NzCascaderOption[] = options;
+  readonly values = signal<string[] | null>(null);
+  readonly isVisible = signal(false);
 
   onChanges(values: string[]): void {
-    console.log(values, this.values);
+    console.log(values, this.values());
   }
 
   open(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk($event: MouseEvent): void {
-    console.log('Button ok clicked!', this.values, $event);
-    this.isVisible = false;
+    console.log('Button ok clicked!', this.values(), $event);
+    this.isVisible.set(false);
   }
 
   handleCancel($event: MouseEvent): void {
     console.log('Button cancel clicked!', $event);
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 ```
@@ -1159,7 +1164,7 @@ export class NzDemoCascaderModalComponent {
 Select multiple options. Disable the `checkbox` by adding the `disableCheckbox` property and selecting a specific item.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule, NzCascaderOption } from 'ng-zorro-antd/cascader';
@@ -1217,11 +1222,9 @@ const getOptions = (): NzCascaderOption[] => [
 })
 export class NzDemoCascaderMultipleComponent {
   readonly nzOptions: NzCascaderOption[] = getOptions();
-  values: NzSafeAny[][] | null = null;
+  readonly values = signal<NzSafeAny[][]>([]);
 
-  onChanges(values: NzSafeAny[][]): void {
-    console.log(values, this.values);
-  }
+  onChanges(_values: NzSafeAny[][]): void {}
 }
 ```
 
@@ -1230,7 +1233,7 @@ export class NzDemoCascaderMultipleComponent {
 Use `nzOpen` to control whether the menu overlay is displayed.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule, NzCascaderOption } from 'ng-zorro-antd/cascader';
@@ -1288,7 +1291,7 @@ const options: NzCascaderOption[] = [
       <nz-cascader
         [nzOptions]="nzOptions"
         [ngModel]="values"
-        [nzOpen]="open"
+        [nzOpen]="open()"
         (nzSelectionChange)="onSelectionChange($event)"
         (nzOpenChange)="onOpenChange($event)"
       />
@@ -1297,8 +1300,8 @@ const options: NzCascaderOption[] = [
 })
 export class NzDemoCascaderOpenComponent {
   readonly nzOptions = options;
-  values = ['zhejiang', 'hangzhou', 'xihu'];
-  open = false;
+  readonly values = ['zhejiang', 'hangzhou', 'xihu'];
+  readonly open = signal(false);
 
   onSelectionChange(selectedOptions: NzCascaderOption[]): void {
     console.log(selectedOptions);
@@ -1306,8 +1309,6 @@ export class NzDemoCascaderOpenComponent {
 
   onOpenChange(open: boolean): void {
     console.log(open);
-    // You can set the `open` variable in `(nzOpenChange)` to control the open state.
-    // this.open = open;
   }
 }
 ```
@@ -1317,7 +1318,7 @@ export class NzDemoCascaderOpenComponent {
 You can manually specify the position of the popup via `nzPlacement`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzCascaderModule, NzCascaderOption, NzCascaderPlacement } from 'ng-zorro-antd/cascader';
 import { NzSegmentedModule } from 'ng-zorro-antd/segmented';
@@ -1371,16 +1372,16 @@ const options: NzCascaderOption[] = [
     <nz-segmented [nzOptions]="placements" (nzValueChange)="setPlacement($event)" />
     <br />
     <br />
-    <nz-cascader [nzOptions]="nzOptions" [nzPlacement]="placement" />
+    <nz-cascader [nzOptions]="nzOptions" [nzPlacement]="placement()" />
   `
 })
 export class NzDemoCascaderPlacementComponent {
   readonly nzOptions: NzCascaderOption[] = options;
-  placement: NzCascaderPlacement = 'topLeft';
+  readonly placement = signal<NzCascaderPlacement>('topLeft');
   readonly placements: NzCascaderPlacement[] = ['topLeft', 'topRight', 'bottomLeft', 'bottomRight'];
 
   setPlacement(placement: string | number): void {
-    this.placement = placement as NzCascaderPlacement;
+    this.placement.set(placement as NzCascaderPlacement);
   }
 }
 ```
@@ -1881,7 +1882,7 @@ export class NzDemoCascaderTriggerActionComponent {
 Separate trigger button and result.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzCascaderModule, NzCascaderOption } from 'ng-zorro-antd/cascader';
@@ -1932,12 +1933,12 @@ const options: NzCascaderOption[] = [
   selector: 'nz-demo-cascader-trigger',
   imports: [FormsModule, NzCascaderModule],
   template: `
-    {{ text }}
+    {{ text() }}
     <nz-cascader
       [nzShowInput]="false"
       [nzOptions]="nzOptions"
-      [(ngModel)]="values"
-      (ngModelChange)="onChanges($event)"
+      [ngModel]="values()"
+      (ngModelChange)="values.set($event); onChanges($event)"
       (nzSelectionChange)="onSelectionChange($event)"
     >
       <a href="javascript: void(0)">Change city</a>
@@ -1946,15 +1947,15 @@ const options: NzCascaderOption[] = [
 })
 export class NzDemoCascaderTriggerComponent {
   readonly nzOptions: NzCascaderOption[] = options;
-  values: string[] | null = null;
-  text = 'Unselect';
+  readonly values = signal<string[] | null>(null);
+  readonly text = signal('Unselect');
 
   onChanges(values: string[]): void {
-    console.log(values, this.values);
+    console.log(values, this.values());
   }
 
   onSelectionChange(selectedOptions: NzCascaderOption[]): void {
-    this.text = selectedOptions.map(o => o.label).join(', ');
+    this.text.set(selectedOptions.map(o => o.label).join(', '));
   }
 }
 ```

@@ -183,7 +183,7 @@ The Component styles only contain the necessary positional properties and simple
 Custom node style of graph.
 
 ```typescript
-import { Component, ViewChild } from '@angular/core';
+import { Component, signal, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -214,7 +214,7 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
       nz-graph-zoom
       [nzGraphData]="graphData"
       [nzAutoSize]="true"
-      [nzRankDirection]="rankDirection"
+      [nzRankDirection]="rankDirection()"
       (nzGraphInitialized)="graphInitialized($event)"
     >
       <ng-container *nzGraphNode="let node">
@@ -283,8 +283,8 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 export class NzDemoGraphCustomizedComponent {
   @ViewChild(NzGraphComponent, { static: true }) nzGraphComponent!: NzGraphComponent;
   @ViewChild(NzGraphZoomDirective, { static: true }) zoomController!: NzGraphZoomDirective;
-  zoom = 0.5;
-  testDef: NzGraphDataDef = {
+  readonly zoom = 0.5;
+  readonly testDef: NzGraphDataDef = {
     nodes: [
       {
         id: '0',
@@ -453,8 +453,8 @@ export class NzDemoGraphCustomizedComponent {
       G0: ['4', '5', '15']
     }
   };
-  rankDirection: NzRankDirection = 'TB';
-  graphData = new NzGraphData(this.testDef);
+  readonly rankDirection = signal<NzRankDirection>('TB');
+  readonly graphData = new NzGraphData(this.testDef);
 
   expand(name: string): void {
     this.graphData.expand(name);

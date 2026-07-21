@@ -11,6 +11,7 @@
 
 - [Animations Switch](https://ng.ant.design/docs/animations/en) | [.md](https://ng.ant.design/docs/animations.en.md)
 - [Ant Design of Angular](https://ng.ant.design/docs/introduce/en) | [.md](https://ng.ant.design/docs/introduce.en.md)
+- [Date Adapter](https://ng.ant.design/docs/date-adapter/en) | [.md](https://ng.ant.design/docs/date-adapter.en.md)
 - [Direction](https://ng.ant.design/docs/direction/en) | [.md](https://ng.ant.design/docs/direction.en.md)
 - [Dynamic Theme (Experimental)](https://ng.ant.design/docs/customize-theme-variable/en) | [.md](https://ng.ant.design/docs/customize-theme-variable.en.md)
 - [FAQ](https://ng.ant.design/docs/faq/en) | [.md](https://ng.ant.design/docs/faq.en.md)
@@ -34,6 +35,7 @@
 - [常见问题](https://ng.ant.design/docs/faq/cn) | [.md](https://ng.ant.design/docs/faq.cn.md)
 - [快速上手](https://ng.ant.design/docs/getting-started/cn) | [.md](https://ng.ant.design/docs/getting-started.cn.md)
 - [文字方向](https://ng.ant.design/docs/direction/cn) | [.md](https://ng.ant.design/docs/direction.cn.md)
+- [日期适配器](https://ng.ant.design/docs/date-adapter/cn) | [.md](https://ng.ant.design/docs/date-adapter.cn.md)
 - [脚手架](https://ng.ant.design/docs/schematics/cn) | [.md](https://ng.ant.design/docs/schematics.cn.md)
 - [贡献指南](https://ng.ant.design/docs/contributing/cn) | [.md](https://ng.ant.design/docs/contributing.cn.md)
 

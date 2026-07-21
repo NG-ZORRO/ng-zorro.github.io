@@ -155,7 +155,7 @@ export class NzDemoProgressDashboardComponent {}
 A dynamic progress bar is better.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzFlexModule } from 'ng-zorro-antd/flex';
@@ -168,8 +168,8 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   imports: [NzButtonModule, NzIconModule, NzFlexModule, NzProgressModule, NzSpaceModule],
   template: `
     <div nz-flex nzVertical nzGap="small">
-      <nz-progress [nzPercent]="percent" />
-      <nz-progress [nzPercent]="percent" nzType="circle" />
+      <nz-progress [nzPercent]="percent()" />
+      <nz-progress [nzPercent]="percent()" nzType="circle" />
       <nz-space-compact>
         <button nz-button (click)="decline()"><nz-icon nzType="minus" /></button>
         <button nz-button (click)="increase()"><nz-icon nzType="plus" /></button>
@@ -178,14 +178,14 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
   `
 })
 export class NzDemoProgressDynamicComponent {
-  percent = 0;
+  readonly percent = signal(0);
 
   increase(): void {
-    this.percent = Math.min(this.percent + 10, 100);
+    this.percent.update(percent => Math.min(percent + 10, 100));
   }
 
   decline(): void {
-    this.percent = Math.max(this.percent - 10, 0);
+    this.percent.update(percent => Math.max(percent - 10, 0));
   }
 }
 ```
@@ -225,7 +225,7 @@ export class NzDemoProgressFormatComponent {
 A package of `linear-gradient`. It is recommended to only pass two colors.
 
 ```typescript
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { NzProgressModule } from 'ng-zorro-antd/progress';
 
@@ -248,8 +248,7 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
       margin-bottom: 8px;
       display: inline-block;
     }
-  `,
-  encapsulation: ViewEncapsulation.None
+  `
 })
 export class NzDemoProgressGradientComponent {}
 ```

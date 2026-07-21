@@ -201,7 +201,7 @@ nzFooter: [{
 点击确定后异步关闭对话框，例如提交表单。
 
 ```typescript
-import { Component, model, signal } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -225,8 +225,8 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalAsyncComponent {
-  visible = model(false);
-  loading = signal(false);
+  readonly visible = signal(false);
+  readonly loading = signal(false);
 
   showModal(): void {
     this.visible.set(true);
@@ -251,7 +251,7 @@ export class NzDemoModalAsyncComponent {
 第一个对话框。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -271,20 +271,20 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalBasicComponent {
-  isVisible = false;
+  readonly isVisible = signal(false);
 
   showModal(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk(): void {
     console.log('Button ok clicked!');
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 
   handleCancel(): void {
     console.log('Button cancel clicked!');
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 ```
@@ -294,10 +294,10 @@ export class NzDemoModalBasicComponent {
 使用 `NzModalService.confirm()` 可以快捷地弹出确认框。NzOnCancel/NzOnOk 返回 promise 可以延迟关闭
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzModalModule, NzModalRef, NzModalService } from 'ng-zorro-antd/modal';
+import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
 
 @Component({
   selector: 'nz-demo-modal-confirm-promise',
@@ -305,12 +305,10 @@ import { NzModalModule, NzModalRef, NzModalService } from 'ng-zorro-antd/modal';
   template: `<button nz-button nzType="primary" (click)="showConfirm()">Confirm</button>`
 })
 export class NzDemoModalConfirmPromiseComponent {
-  confirmModal?: NzModalRef; // For testing by now
-
-  constructor(private modal: NzModalService) {}
+  private readonly modalService = inject(NzModalService);
 
   showConfirm(): void {
-    this.confirmModal = this.modal.confirm({
+    this.modalService.confirm({
       nzTitle: 'Do you Want to delete these items?',
       nzContent: 'When clicked the OK button, this dialog will be closed after 1 second',
       nzOnOk: () =>
@@ -327,7 +325,7 @@ export class NzDemoModalConfirmPromiseComponent {
 使用 `NzModalService.confirm()` 可以快捷地弹出确认框。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
@@ -346,10 +344,10 @@ import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalConfirmComponent {
-  constructor(private modal: NzModalService) {}
+  private readonly modalService = inject(NzModalService);
 
   showConfirm(): void {
-    this.modal.confirm({
+    this.modalService.confirm({
       nzTitle: '<i>Do you Want to delete these items?</i>',
       nzContent: '<b>Some descriptions</b>',
       nzOnOk: () => console.log('OK')
@@ -357,7 +355,7 @@ export class NzDemoModalConfirmComponent {
   }
 
   showDeleteConfirm(): void {
-    this.modal.confirm({
+    this.modalService.confirm({
       nzTitle: 'Are you sure delete this task?',
       nzContent: '<b style="color: red;">Some descriptions</b>',
       nzOkText: 'Yes',
@@ -376,7 +374,7 @@ export class NzDemoModalConfirmComponent {
 可拖拽的对话框。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -405,20 +403,20 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalDraggableComponent {
-  isVisible = false;
+  readonly isVisible = signal(false);
 
   showModal(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk(): void {
     console.log('Button ok clicked!');
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 
   handleCancel(): void {
     console.log('Button cancel clicked!');
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 ```
@@ -430,7 +428,7 @@ export class NzDemoModalDraggableComponent {
 不需要默认确定取消按钮时，你可以把 `nzFooter` 设为 `null`。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -462,29 +460,29 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
       <ng-template #modalFooter>
         <span>Modal Footer:</span>
         <button nz-button nzType="default" (click)="handleCancel()">Custom Callback</button>
-        <button nz-button nzType="primary" (click)="handleOk()" [nzLoading]="isConfirmLoading">Custom Submit</button>
+        <button nz-button nzType="primary" (click)="handleOk()" [nzLoading]="isConfirmLoading()">Custom Submit</button>
       </ng-template>
     </nz-modal>
   `
 })
 export class NzDemoModalFooterComponent {
-  isVisible = false;
-  isConfirmLoading = false;
+  readonly isVisible = signal(false);
+  readonly isConfirmLoading = signal(false);
 
   showModal(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk(): void {
-    this.isConfirmLoading = true;
+    this.isConfirmLoading.set(true);
     setTimeout(() => {
-      this.isVisible = false;
-      this.isConfirmLoading = false;
+      this.isVisible.set(false);
+      this.isConfirmLoading.set(false);
     }, 1000);
   }
 
   handleCancel(): void {
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 ```
@@ -494,7 +492,7 @@ export class NzDemoModalFooterComponent {
 使用 `nzModalFooter` 指令自定义了页脚的按钮。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule, NzModalRef, NzModalService } from 'ng-zorro-antd/modal';
@@ -522,20 +520,19 @@ import { NzModalModule, NzModalRef, NzModalService } from 'ng-zorro-antd/modal';
       <div *nzModalFooter>
         <span>Modal Footer:</span>
         <button nz-button nzType="default" (click)="handleCancel()">Custom Callback</button>
-        <button nz-button nzType="primary" (click)="handleOk()" [nzLoading]="isConfirmLoading">Custom Submit</button>
+        <button nz-button nzType="primary" (click)="handleOk()" [nzLoading]="isConfirmLoading()">Custom Submit</button>
       </div>
     </nz-modal>
-  `,
-  styles: []
+  `
 })
 export class NzDemoModalFooter2Component {
-  isVisible = false;
-  isConfirmLoading = false;
+  private readonly modalService = inject(NzModalService);
 
-  constructor(private modalService: NzModalService) {}
+  readonly isVisible = signal(false);
+  readonly isConfirmLoading = signal(false);
 
   showModal1(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   showModal2(): void {
@@ -546,15 +543,15 @@ export class NzDemoModalFooter2Component {
   }
 
   handleOk(): void {
-    this.isConfirmLoading = true;
+    this.isConfirmLoading.set(true);
     setTimeout(() => {
-      this.isVisible = false;
-      this.isConfirmLoading = false;
+      this.isVisible.set(false);
+      this.isConfirmLoading.set(false);
     }, 3000);
   }
 
   handleCancel(): void {
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 }
 
@@ -576,10 +573,10 @@ export class NzDemoModalFooter2Component {
   `
 })
 export class NzModalCustomFooterComponent {
-  constructor(private modal: NzModalRef) {}
+  private readonly modalRef = inject(NzModalRef);
 
   destroyModal(): void {
-    this.modal.destroy();
+    this.modalRef.destroy();
   }
 }
 ```
@@ -589,7 +586,7 @@ export class NzModalCustomFooterComponent {
 各种类型的信息提示，只提供一个按钮用于关闭。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
@@ -610,10 +607,10 @@ import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalInfoComponent {
-  constructor(private modal: NzModalService) {}
+  private readonly modalService = inject(NzModalService);
 
   info(): void {
-    this.modal.info({
+    this.modalService.info({
       nzTitle: 'This is a notification message',
       nzContent: '<p>some messages...some messages...</p><p>some messages...some messages...</p>',
       nzOnOk: () => console.log('Info OK')
@@ -621,21 +618,21 @@ export class NzDemoModalInfoComponent {
   }
 
   success(): void {
-    this.modal.success({
+    this.modalService.success({
       nzTitle: 'This is a success message',
       nzContent: 'some messages...some messages...'
     });
   }
 
   error(): void {
-    this.modal.error({
+    this.modalService.error({
       nzTitle: 'This is an error message',
       nzContent: 'some messages...some messages...'
     });
   }
 
   warning(): void {
-    this.modal.warning({
+    this.modalService.warning({
       nzTitle: 'This is an warning message',
       nzContent: 'some messages...some messages...'
     });
@@ -648,7 +645,7 @@ export class NzDemoModalInfoComponent {
 设置 `nzOkText` 与 `nzCancelText` 以自定义按钮文字。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
@@ -679,20 +676,20 @@ import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalLocaleComponent {
-  isVisible = false;
+  private readonly modalService = inject(NzModalService);
 
-  constructor(private modalService: NzModalService) {}
+  readonly isVisible = signal(false);
 
   showModal(): void {
-    this.isVisible = true;
+    this.isVisible.set(true);
   }
 
   handleOk(): void {
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 
   handleCancel(): void {
-    this.isVisible = false;
+    this.isVisible.set(false);
   }
 
   showConfirm(): void {
@@ -711,7 +708,7 @@ export class NzDemoModalLocaleComponent {
 手动关闭modal。
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
@@ -722,7 +719,7 @@ import { NzModalModule, NzModalService } from 'ng-zorro-antd/modal';
   template: `<button nz-button (click)="success()">Success</button>`
 })
 export class NzDemoModalManualComponent {
-  constructor(private modalService: NzModalService) {}
+  private readonly modalService = inject(NzModalService);
 
   success(): void {
     const modal = this.modalService.success({
@@ -739,10 +736,10 @@ export class NzDemoModalManualComponent {
 
 使用 `nzCentered` 或类似 `style.top` 的样式来设置对话框位置。
 
-> **注意** 由于Angular的样式隔离，若在Component中没有加入`encapsulation: ViewEncapsulation.None`，则您可能需要在自定义样式内采用`::ng-deep`来覆盖NgZorro的样式
+> **注意** 由于 Angular 的样式隔离，若在 Component 中没有加入 `encapsulation: ViewEncapsulation.None`，则您可能需要在自定义样式内采用 `::ng-deep` 来覆盖 NgZorro 的样式
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalModule } from 'ng-zorro-antd/modal';
@@ -786,33 +783,33 @@ import { NzModalModule } from 'ng-zorro-antd/modal';
   `
 })
 export class NzDemoModalPositionComponent {
-  isVisibleTop = false;
-  isVisibleMiddle = false;
+  readonly isVisibleTop = signal(false);
+  readonly isVisibleMiddle = signal(false);
 
   showModalTop(): void {
-    this.isVisibleTop = true;
+    this.isVisibleTop.set(true);
   }
 
   showModalMiddle(): void {
-    this.isVisibleMiddle = true;
+    this.isVisibleMiddle.set(true);
   }
 
   handleOkTop(): void {
     console.log('点击了确定');
-    this.isVisibleTop = false;
+    this.isVisibleTop.set(false);
   }
 
   handleCancelTop(): void {
-    this.isVisibleTop = false;
+    this.isVisibleTop.set(false);
   }
 
   handleOkMiddle(): void {
     console.log('click ok');
-    this.isVisibleMiddle = false;
+    this.isVisibleMiddle.set(false);
   }
 
   handleCancelMiddle(): void {
-    this.isVisibleMiddle = false;
+    this.isVisibleMiddle.set(false);
   }
 }
 ```
@@ -824,7 +821,7 @@ Modal的service用法，示例中演示了用户自定义模板、自定义compo
 使用模版作为内容或页脚时的上下文为 ` { $implicit: nzData, modalRef: NzModalRef }`
 
 ```typescript
-import { Component, inject, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+import { Component, inject, signal, TemplateRef, ViewContainerRef } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzModalRef, NzModalService, NZ_MODAL_DATA, NzModalModule } from 'ng-zorro-antd/modal';
@@ -855,7 +852,7 @@ interface IModalData {
     </ng-template>
     <ng-template #tplFooter let-ref="modalRef">
       <button nz-button (click)="ref.destroy()">Destroy</button>
-      <button nz-button nzType="primary" (click)="destroyTplModal(ref)" [nzLoading]="tplModalButtonLoading">
+      <button nz-button nzType="primary" (click)="destroyTplModal(ref)" [nzLoading]="tplModalButtonLoading()">
         Close after submit
       </button>
     </ng-template>
@@ -881,16 +878,13 @@ interface IModalData {
   `
 })
 export class NzDemoModalServiceComponent {
-  tplModalButtonLoading = false;
-  disabled = false;
+  private readonly modalService = inject(NzModalService);
+  private readonly viewContainerRef = inject(ViewContainerRef);
 
-  constructor(
-    private modal: NzModalService,
-    private viewContainerRef: ViewContainerRef
-  ) {}
+  readonly tplModalButtonLoading = signal(false);
 
   createModal(): void {
-    this.modal.create({
+    this.modalService.create({
       nzTitle: 'Modal Title',
       nzContent: 'string, will close after 1 sec',
       nzClosable: false,
@@ -899,7 +893,7 @@ export class NzDemoModalServiceComponent {
   }
 
   createTplModal(tplTitle: TemplateRef<{}>, tplContent: TemplateRef<{}>, tplFooter: TemplateRef<{}>): void {
-    this.modal.create({
+    this.modalService.create({
       nzTitle: tplTitle,
       nzContent: tplContent,
       nzFooter: tplFooter,
@@ -910,15 +904,15 @@ export class NzDemoModalServiceComponent {
   }
 
   destroyTplModal(modelRef: NzModalRef): void {
-    this.tplModalButtonLoading = true;
+    this.tplModalButtonLoading.set(true);
     setTimeout(() => {
-      this.tplModalButtonLoading = false;
+      this.tplModalButtonLoading.set(false);
       modelRef.destroy();
     }, 1000);
   }
 
   createComponentModal(): void {
-    const modal = this.modal.create<NzModalCustomComponent, IModalData>({
+    const modal = this.modalService.create<NzModalCustomComponent, IModalData>({
       nzTitle: 'Modal Title',
       nzContent: NzModalCustomComponent,
       nzViewContainerRef: this.viewContainerRef,
@@ -931,7 +925,7 @@ export class NzDemoModalServiceComponent {
         {
           label: 'change component title from outside',
           onClick: componentInstance => {
-            componentInstance!.title = 'title in inner component is changed';
+            componentInstance!.title.set('title in inner component is changed');
           }
         }
       ]
@@ -943,12 +937,12 @@ export class NzDemoModalServiceComponent {
 
     // delay until modal instance created
     setTimeout(() => {
-      instance.subtitle = 'sub title is changed';
+      instance.subtitle.set('sub title is changed');
     }, 2000);
   }
 
   createCustomButtonModal(): void {
-    const modal: NzModalRef = this.modal.create({
+    const modal = this.modalService.create({
       nzTitle: 'custom button demo',
       nzContent: 'pass array of button config to nzFooter to create multiple buttons',
       nzFooter: [
@@ -960,7 +954,8 @@ export class NzDemoModalServiceComponent {
         {
           label: 'Confirm',
           type: 'primary',
-          onClick: () => this.modal.confirm({ nzTitle: 'Confirm Modal Title', nzContent: 'Confirm Modal Content' })
+          onClick: () =>
+            this.modalService.confirm({ nzTitle: 'Confirm Modal Title', nzContent: 'Confirm Modal Content' })
         },
         {
           label: 'Change Button Status',
@@ -991,7 +986,7 @@ export class NzDemoModalServiceComponent {
 
     ['create', 'info', 'success', 'error'].forEach(method =>
       // @ts-ignore
-      this.modal[method]({
+      this.modalService[method]({
         nzMask: false,
         nzTitle: `Test ${method} title`,
         nzContent: `Test content: <b>${method}</b>`,
@@ -999,9 +994,9 @@ export class NzDemoModalServiceComponent {
       })
     );
 
-    this.modal.afterAllClose.subscribe(() => console.log('afterAllClose emitted!'));
+    this.modalService.afterAllClose.subscribe(() => console.log('afterAllClose emitted!'));
 
-    setTimeout(() => this.modal.closeAll(), 2000);
+    setTimeout(() => this.modalService.closeAll(), 2000);
   }
 }
 
@@ -1009,22 +1004,22 @@ export class NzDemoModalServiceComponent {
   selector: 'nz-modal-custom-component',
   imports: [NzButtonModule],
   template: `
-    <h2>{{ title }}</h2>
-    <h4>{{ subtitle }}</h4>
+    <h2>{{ title() }}</h2>
+    <h4>{{ subtitle() }}</h4>
     <p>
-      My favorite framework is {{ nzModalData.favoriteFramework }} and my favorite library is
-      {{ nzModalData.favoriteLibrary }}
+      My favorite framework is {{ modalData.favoriteFramework }} and my favorite library is
+      {{ modalData.favoriteLibrary }}
     </p>
     <br />
     <button nz-button (click)="destroyModal()">destroy modal in the component</button>
   `
 })
 export class NzModalCustomComponent {
-  @Input() title?: string;
-  @Input() subtitle?: string;
-
   readonly modalRef = inject(NzModalRef);
-  readonly nzModalData = inject<IModalData>(NZ_MODAL_DATA);
+  readonly modalData = inject<IModalData>(NZ_MODAL_DATA);
+
+  readonly title = signal<string | undefined>(undefined);
+  readonly subtitle = signal<string | undefined>(undefined);
 
   destroyModal(): void {
     this.modalRef.destroy({ data: 'this the result data' });

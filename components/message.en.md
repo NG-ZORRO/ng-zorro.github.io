@@ -79,7 +79,7 @@ export interface NzMessageRef {
 You can subscribe to `onClose` event to make some operations. This case would open three messages in sequence.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { concatMap } from 'rxjs/operators';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -91,7 +91,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="startShowMessages()">Display a sequence of messages</button>`
 })
 export class NzDemoMessageCloseComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   startShowMessages(): void {
     this.message
@@ -141,7 +141,7 @@ export class NzDemoMessageCustomStyleComponent {
 Customize message display duration from default `3s` to `10s`.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -152,13 +152,13 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="createBasicMessage()">Customized display duration</button>`
 })
 export class NzDemoMessageDurationComponent {
+  private readonly message = inject(NzMessageService);
+
   createBasicMessage(): void {
     this.message.success('This is a prompt message for success, and it will disappear in 10 seconds', {
       nzDuration: 10000
     });
   }
-
-  constructor(private message: NzMessageService) {}
 }
 ```
 
@@ -167,7 +167,7 @@ export class NzDemoMessageDurationComponent {
 Normal messages as feedbacks.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -178,7 +178,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="primary" (click)="createBasicMessage()">Display normal message</button>`
 })
 export class NzDemoMessageInfoComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   createBasicMessage(): void {
     this.message.info('This is a normal message');
@@ -191,7 +191,7 @@ export class NzDemoMessageInfoComponent {
 Display a global loading indicator, which is dismissed by itself asynchronously.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -202,7 +202,7 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   template: `<button nz-button nzType="default" (click)="createBasicMessage()">Display a loading indicator</button>`
 })
 export class NzDemoMessageLoadingComponent {
-  constructor(private message: NzMessageService) {}
+  private readonly message = inject(NzMessageService);
 
   createBasicMessage(): void {
     const id = this.message.loading('Action in progress..', { nzDuration: 0 }).messageId;
@@ -218,7 +218,7 @@ export class NzDemoMessageLoadingComponent {
 Messages of success, error and warning types.
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageService } from 'ng-zorro-antd/message';
@@ -238,11 +238,11 @@ import { NzMessageService } from 'ng-zorro-antd/message';
   `
 })
 export class NzDemoMessageOtherComponent {
+  private readonly message = inject(NzMessageService);
+
   createMessage(type: string): void {
     this.message.create(type, `This is a message of ${type}`);
   }
-
-  constructor(private message: NzMessageService) {}
 }
 ```
 
@@ -252,7 +252,7 @@ You can have a custom template for the message content.
 You would have the possibility to pass some optional data to this custom template thanks to the `nzData` option
 
 ```typescript
-import { Component, TemplateRef, ViewChild } from '@angular/core';
+import { Component, TemplateRef, ViewChild, inject } from '@angular/core';
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzMessageComponent, NzMessageService } from 'ng-zorro-antd/message';
@@ -266,13 +266,12 @@ import { NzMessageComponent, NzMessageService } from 'ng-zorro-antd/message';
   `
 })
 export class NzDemoMessageTemplateComponent {
+  private readonly message = inject(NzMessageService);
+
   @ViewChild('customTemplate', { static: true }) customTemplate!: TemplateRef<{
     $implicit: NzMessageComponent;
     data: string;
   }>;
-
-  constructor(private message: NzMessageService) {}
-
   showMessage(): void {
     this.message.success(this.customTemplate, { nzData: 'Angular' });
   }
