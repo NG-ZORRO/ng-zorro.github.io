@@ -156,7 +156,7 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
   `,
   styles: `
     button {
-      margin-right: 8px;
+      margin-inline-end: 8px;
     }
   `
 })

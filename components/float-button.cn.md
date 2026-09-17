@@ -155,8 +155,8 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   imports: [NzFloatButtonModule],
   template: `
     <div class="description">
-      <nz-float-button nzIcon="file-text" nzDescription="HELP" nzShape="square" style="right: 24px" />
-      <nz-float-button nzDescription="HELP" nzShape="square" style="right: 94px" />
+      <nz-float-button nzIcon="file-text" nzDescription="HELP" nzShape="square" style="inset-inline-end: 24px" />
+      <nz-float-button nzDescription="HELP" nzShape="square" style="inset-inline-end: 94px" />
     </div>
   `,
   styles: `
@@ -191,7 +191,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
         nzIcon="customer-service"
         nzType="primary"
         nzTrigger="click"
-        style="right: 24px"
+        style="inset-inline-end: 24px"
         (nzOnOpenChange)="openChange($event)"
       >
         <nz-float-button />
@@ -201,7 +201,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
         nzIcon="customer-service"
         nzType="primary"
         nzTrigger="hover"
-        style="right: 94px"
+        style="inset-inline-end: 94px"
         (nzOnOpenChange)="openChange($event)"
       >
         <nz-float-button />
@@ -240,51 +240,19 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   imports: [NzFloatButtonModule],
   template: `
     <div class="container">
-      <div class="anchor">
-        <nz-float-button-group
-          class="up"
-          nzIcon="up"
-          nzType="primary"
-          nzTrigger="click"
-          (nzOnOpenChange)="openChange($event)"
-          nzPlacement="top"
-        >
-          <nz-float-button />
-          <nz-float-button nzIcon="comment" />
-        </nz-float-button-group>
-        <nz-float-button-group
-          class="down"
-          nzIcon="down"
-          nzType="primary"
-          nzTrigger="click"
-          (nzOnOpenChange)="openChange($event)"
-          nzPlacement="bottom"
-        >
-          <nz-float-button />
-          <nz-float-button nzIcon="comment" />
-        </nz-float-button-group>
-        <nz-float-button-group
-          class="left"
-          nzIcon="left"
-          nzType="primary"
-          nzTrigger="click"
-          (nzOnOpenChange)="openChange($event)"
-          nzPlacement="left"
-        >
-          <nz-float-button />
-          <nz-float-button nzIcon="comment" />
-        </nz-float-button-group>
-        <nz-float-button-group
-          class="right"
-          nzIcon="right"
-          nzType="primary"
-          nzTrigger="click"
-          (nzOnOpenChange)="openChange($event)"
-          nzPlacement="right"
-        >
-          <nz-float-button />
-          <nz-float-button nzIcon="comment" />
-        </nz-float-button-group>
+      <div class="box">
+        @for (placement of placements; track placement) {
+          <nz-float-button-group
+            [class]="placement"
+            [nzIcon]="icons[$index]"
+            nzType="primary"
+            nzTrigger="click"
+            [nzPlacement]="placement"
+          >
+            <nz-float-button />
+            <nz-float-button nzIcon="comment" />
+          </nz-float-button-group>
+        }
       </div>
     </div>
   `,
@@ -292,28 +260,28 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
     .container {
       display: flex;
       height: 300px;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
 
-      .anchor {
+      .box {
         height: 100px;
         width: 100px;
         position: relative;
 
-        .up {
+        .top {
           inset-inline-end: 30px;
           bottom: 80px;
         }
-        .down {
+        .bottom {
           inset-inline-end: 30px;
           bottom: -20px;
         }
         .left {
-          inset-inline-end: 80px;
+          right: 80px;
           bottom: 30px;
         }
         .right {
-          inset-inline-end: -20px;
+          left: 80px;
           bottom: 30px;
         }
       }
@@ -324,9 +292,8 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   `
 })
 export class NzDemoFloatButtonGroupPlacementComponent {
-  openChange(status: boolean): void {
-    console.log(status);
-  }
+  readonly placements = ['top', 'bottom', 'left', 'right'] as const;
+  readonly icons = ['up', 'down', 'left', 'right'];
 }
 ```
 
@@ -344,13 +311,13 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   imports: [NzFloatButtonModule],
   template: `
     <div class="group">
-      <nz-float-button-group nzShape="circle" style="right: 24px">
+      <nz-float-button-group nzShape="circle" style="inset-inline-end: 24px">
         <nz-float-button nzIcon="question-circle" />
         <nz-float-button />
         <nz-float-button-top [nzVisibilityHeight]="600" />
         <nz-float-button nzIcon="customer-service" />
       </nz-float-button-group>
-      <nz-float-button-group nzShape="square" style="right: 94px">
+      <nz-float-button-group nzShape="square" style="inset-inline-end: 94px">
         <nz-float-button nzIcon="question-circle" />
         <nz-float-button />
         <nz-float-button-top [nzVisibilityHeight]="600" />
@@ -386,13 +353,13 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
   selector: 'nz-demo-float-button-open',
   imports: [FormsModule, NzFloatButtonModule, NzSwitchModule],
   template: `
-    <div class="open">
+    <div class="container">
       <nz-float-button-group
         nzIcon="customer-service"
         [nzOpen]="isOpen()"
         nzType="primary"
         nzTrigger="click"
-        style="right: 24px"
+        style="inset-inline-end: 24px"
         (nzOpenChange)="onOpenChange($event)"
       >
         <nz-float-button />
@@ -402,7 +369,7 @@ import { NzSwitchModule } from 'ng-zorro-antd/switch';
     </div>
   `,
   styles: `
-    .open {
+    .container {
       height: 300px;
       position: relative;
     }
@@ -435,8 +402,8 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   imports: [NzFloatButtonModule],
   template: `
     <div class="shape">
-      <nz-float-button nzShape="circle" style="right: 94px" nzType="primary" nzIcon="customer-service" />
-      <nz-float-button nzShape="square" style="right: 24px" nzType="primary" nzIcon="customer-service" />
+      <nz-float-button nzShape="circle" style="inset-inline-end: 94px" nzType="primary" nzIcon="customer-service" />
+      <nz-float-button nzShape="square" style="inset-inline-end: 24px" nzType="primary" nzIcon="customer-service" />
     </div>
   `,
   styles: `
@@ -527,8 +494,8 @@ import { NzFloatButtonModule } from 'ng-zorro-antd/float-button';
   imports: [NzFloatButtonModule],
   template: `
     <div class="type">
-      <nz-float-button nzType="primary" style="right: 24px" nzIcon="question-circle" />
-      <nz-float-button nzType="default" style="right: 94px" nzIcon="question-circle" />
+      <nz-float-button nzType="primary" style="inset-inline-end: 24px" nzIcon="question-circle" />
+      <nz-float-button nzType="default" style="inset-inline-end: 94px" nzIcon="question-circle" />
     </div>
   `,
   styles: `

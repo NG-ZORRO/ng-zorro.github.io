@@ -71,7 +71,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `,
   styles: `
     nz-badge {
-      margin-right: 20px;
+      margin-inline-end: 20px;
     }
 
     .head-example {
@@ -160,7 +160,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `,
   styles: `
     nz-badge {
-      margin-right: 20px;
+      margin-inline-end: 20px;
     }
 
     nz-icon {
@@ -367,7 +367,7 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
   `,
   styles: `
     nz-badge {
-      margin-right: 20px;
+      margin-inline-end: 20px;
     }
 
     .head-example {
@@ -455,7 +455,7 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
   `,
   styles: `
     nz-badge {
-      margin-right: 20px;
+      margin-inline-end: 20px;
     }
 
     .head-example {

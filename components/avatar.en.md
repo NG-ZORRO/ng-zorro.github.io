@@ -10,25 +10,25 @@ description: Used to represent users or things, supporting the display of images
 
 ### nz-avatar
 
-| Property            | Description                                                                                                                                                     | Type                                        | Default     | Global Config |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------- | ------------- |
-| `[nzIcon]`          | The `Icon` type for an icon avatar, see `Icon`                                                                                                                  | `string`                                    | -           |
-| `[nzShape]`         | The shape of avatar                                                                                                                                             | `'circle' \| 'square'`                      | `'circle'`  | ✅            |
-| `[nzSize]`          | The size of the avatar                                                                                                                                          | `'large' \| 'small' \| 'default' \| number` | `'default'` | ✅            |
-| `[nzGap]`           | Letter type unit distance between left and right sides                                                                                                          | `number`                                    | `4`         | ✅            |
-| `[nzSrc]`           | Avatar image URL                                                                                                                                                | `string`                                    | -           |
-| `[nzSrcSet]`        | a list of sources to use for different screen resolutions                                                                                                       | `string`                                    | -           |
-| `[nzAlt]`           | This attribute defines the alternative text describing the image                                                                                                | `string`                                    | -           |
-| `[nzText]`          | Letter type avatar                                                                                                                                              | `string`                                    | -           |
-| `[nzLoading]`       | Sets the native [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) attribute on the avatar image element             | `'eager' \| 'lazy'`                         | `'eager'`   |               |
-| `[nzFetchPriority]` | Sets the native [`fetchpriority`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) attribute on the avatar image element | `'high' \| 'low' \| 'auto'`                 | `'auto'`    |               |
-| `(nzError)`         | Handler when img load error, call the `preventDefault` method to prevent default fallback behavior                                                              | `EventEmitter<Event>`                       | -           |
+| Property            | Description                                                                                                                                                     | Type                                                                           | Default     | Global Config | Version                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------- | ------------- | ------------------------- |
+| `[nzIcon]`          | The `Icon` type for an icon avatar, see `Icon`                                                                                                                  | `string`                                                                       | -           |               |                           |
+| `[nzShape]`         | The shape of avatar                                                                                                                                             | `'circle' \| 'square'`                                                         | `'circle'`  | ✅            |                           |
+| `[nzSize]`          | The size of the avatar                                                                                                                                          | `'large' \| 'small' \| 'default' \| number \| { xs: number, sm: number, ... }` | `'default'` | ✅            | responsive object: 22.1.0 |
+| `[nzGap]`           | Letter type unit distance between left and right sides                                                                                                          | `number`                                                                       | `4`         | ✅            |                           |
+| `[nzSrc]`           | Avatar image URL                                                                                                                                                | `string`                                                                       | -           |               |                           |
+| `[nzSrcSet]`        | a list of sources to use for different screen resolutions                                                                                                       | `string`                                                                       | -           |               |                           |
+| `[nzAlt]`           | This attribute defines the alternative text describing the image                                                                                                | `string`                                                                       | -           |               |                           |
+| `[nzText]`          | Letter type avatar                                                                                                                                              | `string`                                                                       | -           |               |                           |
+| `[nzLoading]`       | Sets the native [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) attribute on the avatar image element             | `'eager' \| 'lazy'`                                                            | `'eager'`   |               |                           |
+| `[nzFetchPriority]` | Sets the native [`fetchpriority`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) attribute on the avatar image element | `'high' \| 'low' \| 'auto'`                                                    | `'auto'`    |               |                           |
+| `(nzError)`         | Handler when img load error, call the `preventDefault` method to prevent default fallback behavior                                                              | `EventEmitter<Event>`                                                          | -           |               |                           |
 
 ### nz-avatar-group
 
 ```html
 <nz-avatar-group>
-  <nz-avatar nzIcon="user"></nz-avatar>
+  <nz-avatar nzIcon="user" />
   <!--  ...  -->
 </nz-avatar-group>
 ```
@@ -49,14 +49,20 @@ import { NzBadgeModule } from 'ng-zorro-antd/badge';
 
 @Component({
   selector: 'nz-demo-avatar-badge',
-  imports: [NzBadgeModule, NzAvatarModule],
+  imports: [NzAvatarModule, NzBadgeModule],
   template: `
-    <nz-badge [nzCount]="5" style="margin-right: 24px">
+    <nz-badge [nzCount]="5">
       <nz-avatar nzIcon="user" nzShape="square" />
     </nz-badge>
     <nz-badge nzDot>
       <nz-avatar nzIcon="user" nzShape="square" />
     </nz-badge>
+  `,
+  styles: `
+    :host {
+      display: inline-flex;
+      gap: 24px;
+    }
   `
 })
 export class NzDemoAvatarBadgeComponent {}
@@ -91,7 +97,7 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
   styles: `
     nz-avatar {
       margin-top: 16px;
-      margin-right: 16px;
+      margin-inline-end: 16px;
     }
   `
 })
@@ -104,34 +110,20 @@ For letter type Avatar, when the letters are too long to display, the font size 
 
 ```typescript
 import { Component, computed, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzInputNumberModule } from 'ng-zorro-antd/input-number';
 
 const userList = ['Lucy', 'U', 'Tom', 'Edward'];
 const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae'];
 
 @Component({
   selector: 'nz-demo-avatar-dynamic',
-  imports: [FormsModule, NzAvatarModule, NzButtonModule, NzInputNumberModule],
+  imports: [NzAvatarModule, NzButtonModule],
   template: `
-    <div>
-      <label>Gap: </label>
-      <nz-input-number [nzMin]="0" [nzMax]="16" [nzStep]="1" [(ngModel)]="gap" />
-      <button nz-button (click)="change()">Change Text</button>
-    </div>
-
     <nz-avatar [nzGap]="gap()" [nzText]="text()" nzSize="large" [style.background-color]="color()" />
-  `,
-  styles: `
-    div {
-      margin-bottom: 16px;
-    }
-    button {
-      margin-left: 8px;
-    }
+    <button nz-button (click)="change()" [style.margin-inline.px]="16">Change Text</button>
+    <button nz-button (click)="changeGap()">Change Gap</button>
   `
 })
 export class NzDemoAvatarDynamicComponent {
@@ -142,6 +134,10 @@ export class NzDemoAvatarDynamicComponent {
 
   change(): void {
     this.index.update(idx => (idx + 1) % userList.length);
+  }
+
+  changeGap(): void {
+    this.gap.update(g => (g + 1) % 5);
   }
 }
 ```
@@ -182,6 +178,23 @@ import { NzTooltipModule } from 'ng-zorro-antd/tooltip';
 export class NzDemoAvatarGroupComponent {}
 ```
 
+### Responsive Size
+
+Avatar size can be automatically adjusted based on the screen size.
+
+```typescript
+import { Component } from '@angular/core';
+
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+
+@Component({
+  selector: 'nz-demo-avatar-responsive',
+  imports: [NzAvatarModule],
+  template: `<nz-avatar [nzSize]="{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100, xxxl: 120 }" nzIcon="user" />`
+})
+export class NzDemoAvatarResponsiveComponent {}
+```
+
 ### Type
 
 Image, Icon and letter are supported, and the latter two kinds avatar can have custom colors and background colors.
@@ -205,7 +218,7 @@ import { NzAvatarModule } from 'ng-zorro-antd/avatar';
   styles: `
     nz-avatar {
       margin-top: 16px;
-      margin-right: 16px;
+      margin-inline-end: 16px;
     }
   `
 })

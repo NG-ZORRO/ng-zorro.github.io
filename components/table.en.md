@@ -26,7 +26,7 @@ The component in `nz-table` such as `th`, `td`, `thead` etc. are enhanced. Devel
 
 ### Data Processing
 
-The data passed to `[nzData]` is exported with [Template Context](https://angular.dev/guide/templates/template-statements#statement-context) after processing (including paging, sorting and filtering). `*ngFor` can be used to render current page data in table.
+The data passed to `[nzData]` is exported with [Template Context](https://angular.dev/guide/templates/template-statements#statement-context) after processing (including paging, sorting and filtering). `@for` can be used to render current page data in table.
 
 ```html
 <nz-table #basicTable [nzData]="dataSet">
@@ -39,7 +39,8 @@ The data passed to `[nzData]` is exported with [Template Context](https://angula
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of basicTable.data">
+    @for (data of basicTable.data; track data.name) {
+    <tr>
       <td>{{data.name}}</td>
       <td>{{data.age}}</td>
       <td>{{data.address}}</td>
@@ -49,6 +50,7 @@ The data passed to `[nzData]` is exported with [Template Context](https://angula
         <a>Delete</a>
       </td>
     </tr>
+    }
   </tbody>
 </nz-table>
 ```
@@ -317,7 +319,7 @@ interface RandomUser {
         </tr>
       </thead>
       <tbody>
-        @for (data of listOfRandomUser(); track data) {
+        @for (data of listOfRandomUser(); track data.email) {
           <tr>
             <td>{{ data.name.first }} {{ data.name.last }}</td>
             <td>{{ data.gender }}</td>
@@ -423,7 +425,7 @@ interface Person {
         </tr>
       </thead>
       <tbody>
-        @for (data of basicTable.data; track data) {
+        @for (data of basicTable.data; track data.key) {
           <tr>
             <td>{{ data.name }}</td>
             <td>{{ data.age }}</td>
@@ -619,7 +621,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
         </tr>
       </thead>
       <tbody>
-        @for (data of colSpanTable.data; track data) {
+        @for (data of colSpanTable.data; track data.key) {
           <tr>
             <td>{{ data.name }}</td>
             @switch ($index) {
@@ -752,7 +754,7 @@ interface CustomColumn extends NzCustomColumn {
         </tr>
       </thead>
       <tbody>
-        @for (data of basicTable.data; track data) {
+        @for (data of basicTable.data; track data.key) {
           <tr>
             <td nzCellControl="name">{{ data.name }}</td>
             <td nzCellControl="gender">{{ data.gender }}</td>
@@ -774,7 +776,7 @@ interface CustomColumn extends NzCustomColumn {
           <div nz-col class="gutter-row" [nzSpan]="12">
             <div class="example-container">
               <p>Displayed (drag and drop to sort)</p>
-              @for (item of title(); track item) {
+              @for (item of title(); track item.value) {
                 <div class="example-box">
                   {{ item.name }}
                 </div>
@@ -787,14 +789,14 @@ interface CustomColumn extends NzCustomColumn {
                 class="example-list"
                 (cdkDropListDropped)="drop($event)"
               >
-                @for (item of fix(); track item) {
+                @for (item of fix(); track item.value) {
                   <div class="example-box" cdkDrag>
                     {{ item.name }}
                     <nz-icon nzType="minus-circle" nzTheme="outline" (click)="deleteCustom(item, $index)" />
                   </div>
                 }
               </div>
-              @for (item of footer(); track item) {
+              @for (item of footer(); track item.value) {
                 <div class="example-box">
                   {{ item.name }}
                 </div>
@@ -812,7 +814,7 @@ interface CustomColumn extends NzCustomColumn {
                 class="example-list"
                 (cdkDropListDropped)="drop($event)"
               >
-                @for (item of notFix(); track item) {
+                @for (item of notFix(); track item.value) {
                   <div class="example-box" cdkDrag>
                     {{ item.name }}
                     <nz-icon nzType="plus-circle" nzTheme="outline" (click)="addCustom(item, $index)" />
@@ -1066,7 +1068,7 @@ interface DataItem {
     }
 
     .search-button {
-      margin-right: 8px;
+      margin-inline-end: 8px;
     }
   `
 })
@@ -1136,7 +1138,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
         </tr>
       </thead>
       <tbody cdkDropList (cdkDropListDropped)="drop($event)">
-        @for (data of listOfData; track data) {
+        @for (data of listOfData; track data.key) {
           <tr cdkDrag>
             <td>{{ data.name }}</td>
             <td>{{ data.age }}</td>
@@ -1205,6 +1207,7 @@ import {
 } from 'ng-zorro-antd/table';
 
 interface ItemData {
+  id: number;
   name: string;
   age: number | string;
   address: string;
@@ -1306,7 +1309,7 @@ interface Setting {
         }
       </thead>
       <tbody>
-        @for (data of dynamicTable.data; track data) {
+        @for (data of dynamicTable.data; track data.id) {
           <tr>
             @if (settingValue().expandable) {
               <td [nzLeft]="fixedColumn()" [(nzExpand)]="data.expand"></td>
@@ -1334,7 +1337,7 @@ interface Setting {
   `,
   styles: `
     form nz-form-item {
-      margin-right: 16px;
+      margin-inline-end: 16px;
       margin-bottom: 8px;
     }
   `
@@ -1457,6 +1460,7 @@ export class NzDemoTableDynamicSettingsComponent implements OnInit {
     const data: ItemData[] = [];
     for (let i = 1; i <= 100; i++) {
       data.push({
+        id: i,
         name: 'John Brown',
         age: `${i}2`,
         address: `New York No. ${i} Lake Park`,
@@ -1532,7 +1536,7 @@ interface ItemData {
         </tr>
       </thead>
       <tbody>
-        @for (data of editRowTable.data; track data) {
+        @for (data of editRowTable.data; track data.id) {
           <tr class="editable-row">
             <td>
               <div class="editable-cell" [hidden]="editId() === data.id" (click)="startEdit(data.id)">
@@ -1638,7 +1642,7 @@ interface ItemData {
         </tr>
       </thead>
       <tbody>
-        @for (data of editRowTable.data; track data) {
+        @for (data of editRowTable.data; track data.id) {
           <tr>
             @if (!editCache()[data.id].edit) {
               <td>{{ data.name }}</td>
@@ -1661,7 +1665,7 @@ interface ItemData {
   `,
   styles: `
     .save {
-      margin-right: 8px;
+      margin-inline-end: 8px;
     }
   `
 })
@@ -1806,8 +1810,8 @@ export interface TreeNodeInterface {
         </tr>
       </thead>
       <tbody>
-        @for (data of expandTable.data; track data) {
-          @for (item of mapOfExpandedData[data.key]; track item) {
+        @for (data of expandTable.data; track data.key) {
+          @for (item of mapOfExpandedData[data.key]; track item.key) {
             @if ((item.parent && item.parent.expand) || !item.parent) {
               <tr>
                 <td
@@ -1967,7 +1971,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
         </tr>
       </thead>
       <tbody>
-        @for (data of nzTable.data; track data) {
+        @for (data of nzTable.data; track data.id) {
           <tr>
             <td [nzExpand]="expandSet.has(data.id)" [nzExpandIcon]="expandIcon"></td>
             <td>{{ data.name }}</td>
@@ -2050,7 +2054,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
         </tr>
       </thead>
       <tbody>
-        @for (data of nzTable.data; track data) {
+        @for (data of nzTable.data; track data.id) {
           <tr>
             <td [nzExpand]="expandSet.has(data.id)" (nzExpandChange)="onExpandChange(data.id, $event)"></td>
             <td>{{ data.name }}</td>
@@ -2207,7 +2211,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
         </tr>
       </thead>
       <tbody>
-        @for (data of columnTable.data; track data) {
+        @for (data of columnTable.data; track data.key) {
           <tr>
             <td nzLeft>{{ data.name }}</td>
             <td nzLeft>{{ data.age }}</td>
@@ -2523,7 +2527,7 @@ interface ChildrenItemData {
         </tr>
       </thead>
       <tbody>
-        @for (data of nestedTable.data; track data) {
+        @for (data of nestedTable.data; track data.key) {
           <tr>
             <td [(nzExpand)]="data.expand"></td>
             <td>{{ data.name }}</td>
@@ -2548,7 +2552,7 @@ interface ChildrenItemData {
                 </tr>
               </thead>
               <tbody>
-                @for (data of innerTable.data; track data) {
+                @for (data of innerTable.data; track data.key) {
                   <tr>
                     <td>{{ data.date }}</td>
                     <td>{{ data.name }}</td>
@@ -2679,7 +2683,7 @@ interface ColumnItem {
     }
 
     .table-operations > button {
-      margin-right: 8px;
+      margin-inline-end: 8px;
     }
   `
 })
@@ -2826,7 +2830,7 @@ export interface Data {
         </tr>
       </thead>
       <tbody>
-        @for (data of rowSelectionTable.data; track data) {
+        @for (data of rowSelectionTable.data; track data.id) {
           <tr>
             <td
               [nzChecked]="setOfCheckedId().has(data.id)"
@@ -2848,7 +2852,7 @@ export interface Data {
     }
 
     .send-request span {
-      margin-left: 8px;
+      margin-inline-start: 8px;
     }
   `
 })
@@ -2961,7 +2965,7 @@ interface ItemData {
         </tr>
       </thead>
       <tbody>
-        @for (data of rowSelectionTable.data; track data) {
+        @for (data of rowSelectionTable.data; track data.id) {
           <tr>
             <td [nzChecked]="setOfCheckedId().has(data.id)" (nzCheckedChange)="onItemChecked(data.id, $event)"></td>
             <td>{{ data.name }}</td>

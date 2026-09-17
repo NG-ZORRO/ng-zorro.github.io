@@ -1454,6 +1454,26 @@ export const appConfig: ApplicationConfig = {
 
 `NZ_I18N` 控制 NG-ZORRO 组件文案；adapter 的 `locale` 控制日期库的格式化和周规则，例如月份名称、星期名称和周起始日。如果运行时切换语言，也需要用当前 adapter 期望的 locale 值调用 `dateAdapter.setLocale(...)`。
 
+Provider helper 也支持传入在 Angular 注入上下文中执行的 factory，适用于多语言构建共用同一份应用配置的场景：
+
+```ts
+import { ApplicationConfig, inject, LOCALE_ID } from '@angular/core';
+import { enUS, zhCN } from 'date-fns/locale';
+
+import { provideNzDateFnsAdapter } from 'ng-zorro-antd/core/time';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideNzDateFnsAdapter(() => {
+      const localeId = inject(LOCALE_ID);
+      return { locale: localeId.startsWith('zh') ? zhCN : enUS };
+    })
+  ]
+};
+```
+
+`provideNzNativeDateAdapter` 与 `provideNzDateAdapter` 同样支持 factory 形式。
+
 ## 使用自定义 Adapter
 
 自定义 adapter 需要继承 `NzDateAdapter<TDate, TLocale>`，其中 `TDate` 是组件使用的日期值类型，`TLocale` 是 locale 类型。为了保持现有组件 API 与表单值兼容，推荐让 `TDate` 继续使用 `Date`，只把格式化、解析和日期计算委托给第三方日期库。
@@ -1836,15 +1856,16 @@ npm install cron-parser@^5.5.0
 
 ### nz-cron-expression
 
-| 参数                  | 说明                   | 类型                          | 默认值    |
-| --------------------- | ---------------------- | ----------------------------- | --------- |
-| `[nzType]`            | cron 规则类型          | `'linux'｜'spring'`           | `linux`   |
-| `[nzSize]`            | 设置输入框大小         | `'large'｜'small'｜'default'` | `default` |
-| `[nzDisabled]`        | 禁用                   | `boolean`                     | `false`   |
-| `[nzBorderless]`      | 是否隐藏边框           | `boolean`                     | `false`   |
-| `[nzCollapseDisable]` | 隐藏折叠面板           | `boolean`                     | `false`   |
-| `[nzExtra]`           | 自定义渲染右侧的内容   | `TemplateRef<void>`           | -         |
-| `[nzSemantic]`        | 自定义渲染下次执行时间 | `TemplateRef<void>`           | -         |
+| 参数                  | 说明                   | 类型                          | 默认值    | 版本   |
+| --------------------- | ---------------------- | ----------------------------- | --------- | ------ |
+| `[nzType]`            | cron 规则类型          | `'linux'｜'spring'`           | `linux`   |        |
+| `[nzSize]`            | 设置输入框大小         | `'large'｜'small'｜'default'` | `default` |        |
+| `[nzDisabled]`        | 禁用                   | `boolean`                     | `false`   |        |
+| `[nzBorderless]`      | 是否隐藏边框           | `boolean`                     | `false`   |        |
+| `[nzStatus]`          | 设置校验状态           | `'error'｜'warning'`          | -         | 22.1.0 |
+| `[nzCollapseDisable]` | 隐藏折叠面板           | `boolean`                     | `false`   |        |
+| `[nzExtra]`           | 自定义渲染右侧的内容   | `TemplateRef<void>`           | -         |        |
+| `[nzSemantic]`        | 自定义渲染下次执行时间 | `TemplateRef<void>`           | -         |        |
 
 ## 注意
 
@@ -3248,25 +3269,25 @@ description: 用来代表用户或事物，支持图片、图标或字符展示�
 
 ### nz-avatar
 
-| 参数                | 说明                                                                                                                                           | 类型                                        | 默认值      | 全局配置 |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------- | -------- |
-| `[nzIcon]`          | 设置头像的图标类型，参考 `Icon`                                                                                                                | `string`                                    | -           |
-| `[nzShape]`         | 指定头像的形状                                                                                                                                 | `'circle' \| 'square'`                      | `'circle'`  | ✅       |
-| `[nzSize]`          | 设置头像的大小                                                                                                                                 | `'large' \| 'small' \| 'default' \| number` | `'default'` | ✅       |
-| `[nzGap]`           | 字符类型距离左右两侧边界单位像素                                                                                                               | `number`                                    | `4`         | ✅       |
-| `[nzSrc]`           | 图片类头像的资源地址                                                                                                                           | `string`                                    | -           |
-| `[nzSrcSet]`        | 设置图片类头像响应式资源地址                                                                                                                   | `string`                                    | -           |
-| `[nzAlt]`           | 图像无法显示时的替代文本                                                                                                                       | `string`                                    | -           |
-| `[nzText]`          | 文本类头像                                                                                                                                     | `string`                                    | -           |
-| `[nzLoading]`       | 设置图片类头像 `<img>` 元素原生 [`loading`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/img#loading) 属性             | `'eager' \| 'lazy'`                         | `'eager'`   |          |
-| `[nzFetchPriority]` | 设置图片类头像 `<img>` 元素原生 [`fetchpriority`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/img#fetchpriority) 属性 | `'high' \| 'low' \| 'auto'`                 | `'auto'`    |          |
-| `(nzError)`         | 图片加载失败的事件，调用 `preventDefault` 方法会阻止组件默认的 fallback 行为                                                                   | `EventEmitter<Event>`                       | -           |
+| 参数                | 说明                                                                                                                                           | 类型                                                                           | 默认值      | 全局配置 | 版本               |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------- | -------- | ------------------ |
+| `[nzIcon]`          | 设置头像的图标类型，参考 `Icon`                                                                                                                | `string`                                                                       | -           |          |                    |
+| `[nzShape]`         | 指定头像的形状                                                                                                                                 | `'circle' \| 'square'`                                                         | `'circle'`  | ✅       |                    |
+| `[nzSize]`          | 设置头像的大小                                                                                                                                 | `'large' \| 'small' \| 'default' \| number \| { xs: number, sm: number, ... }` | `'default'` | ✅       | 响应式对象：22.1.0 |
+| `[nzGap]`           | 字符类型距离左右两侧边界单位像素                                                                                                               | `number`                                                                       | `4`         | ✅       |                    |
+| `[nzSrc]`           | 图片类头像的资源地址                                                                                                                           | `string`                                                                       | -           |          |                    |
+| `[nzSrcSet]`        | 设置图片类头像响应式资源地址                                                                                                                   | `string`                                                                       | -           |          |                    |
+| `[nzAlt]`           | 图像无法显示时的替代文本                                                                                                                       | `string`                                                                       | -           |          |                    |
+| `[nzText]`          | 文本类头像                                                                                                                                     | `string`                                                                       | -           |          |                    |
+| `[nzLoading]`       | 设置图片类头像 `<img>` 元素原生 [`loading`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/img#loading) 属性             | `'eager' \| 'lazy'`                                                            | `'eager'`   |          |                    |
+| `[nzFetchPriority]` | 设置图片类头像 `<img>` 元素原生 [`fetchpriority`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Reference/Elements/img#fetchpriority) 属性 | `'high' \| 'low' \| 'auto'`                                                    | `'auto'`    |          |                    |
+| `(nzError)`         | 图片加载失败的事件，调用 `preventDefault` 方法会阻止组件默认的 fallback 行为                                                                   | `EventEmitter<Event>`                                                          | -           |          |                    |
 
 ### nz-avatar-group
 
 ```html
 <nz-avatar-group>
-  <nz-avatar nzIcon="user"></nz-avatar>
+  <nz-avatar nzIcon="user" />
   <!--  ...  -->
 </nz-avatar-group>
 ```
@@ -5410,9 +5431,9 @@ description: 引导用户按照流程完成任务的导航条。
 
 ```html
 <nz-steps>
-  <nz-step nzTitle="第一步"></nz-step>
-  <nz-step nzTitle="第二步"></nz-step>
-  <nz-step nzTitle="第三步"></nz-step>
+  <nz-step nzTitle="第一步" />
+  <nz-step nzTitle="第二步" />
+  <nz-step nzTitle="第三步" />
 </nz-steps>
 ```
 
@@ -6268,21 +6289,27 @@ description: 输入框自动完成功能。
 
 ### [nzAutocomplete]
 
-| 属性               | 说明                         | 类型                      | 默认值 |
-| ------------------ | ---------------------------- | ------------------------- | ------ |
-| `[nzAutocomplete]` | 用于绑定 nzAutocomplete 组件 | `NzAutocompleteComponent` | -      |
+| 属性                          | 说明                             | 类型                            | 默认值         | 版本   |
+| ----------------------------- | -------------------------------- | ------------------------------- | -------------- | ------ |
+| `[nzAutocomplete]`            | 用于绑定 nzAutocomplete 组件     | `NzAutocompleteComponent`       | -              |        |
+| `[nzAutocompleteConnectedTo]` | 自动完成浮层相对于该元素进行定位 | `NzAutocompleteOriginDirective` | 自动完成触发器 | 22.1.0 |
+
+### [nzAutocompleteOrigin]
+
+应用在元素上，使该元素可作为自动完成浮层的定位锚点。
 
 ### nz-autocomplete
 
-| 属性                           | 说明                                                                                          | 类型                            | 默认值                          |
-| ------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- |
-| `[nzBackfill]`                 | 使用键盘选择选项的时候，会把当前高亮项的值即时回填到输入框中                                  | `boolean`                       | `false`                         |
-| `[nzDataSource]`               | 自动完成的数据源                                                                              | `AutocompleteDataSource`        | -                               |
-| `[nzDefaultActiveFirstOption]` | 是否默认高亮第一个选项。                                                                      | `boolean`                       | `true`                          |
-| `[nzWidth]`                    | 自定义宽度单位 px                                                                             | `number`                        | 触发元素宽度                    |
-| `[nzOverlayClassName]`         | 下拉根元素的类名称                                                                            | `string`                        | -                               |
-| `[nzOverlayStyle]`             | 下拉根元素的样式                                                                              | `object`                        | -                               |
-| `[compareWith]`                | 与 [SelectControlValueAccessor](https://angular.cn/api/forms/SelectControlValueAccessor) 相同 | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |
+| 属性                           | 说明                                                                                          | 类型                            | 默认值                          | 版本   |
+| ------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- | ------ |
+| `[nzBackfill]`                 | 使用键盘选择选项的时候，会把当前高亮项的值即时回填到输入框中                                  | `boolean`                       | `false`                         |        |
+| `[nzDropdownMatchSelectWidth]` | 下拉菜单和选择器同宽                                                                          | `boolean`                       | `true`                          | 22.1.0 |
+| `[nzDataSource]`               | 自动完成的数据源                                                                              | `AutocompleteDataSource`        | -                               |        |
+| `[nzDefaultActiveFirstOption]` | 是否默认高亮第一个选项。                                                                      | `boolean`                       | `true`                          |        |
+| `[nzWidth]`                    | 自定义宽度单位 px                                                                             | `number`                        | 触发元素宽度                    |        |
+| `[nzOverlayClassName]`         | 下拉根元素的类名称                                                                            | `string`                        | -                               |        |
+| `[nzOverlayStyle]`             | 下拉根元素的样式                                                                              | `object`                        | -                               |        |
+| `[compareWith]`                | 与 [SelectControlValueAccessor](https://angular.cn/api/forms/SelectControlValueAccessor) 相同 | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |        |
 
 ### nz-auto-option
 
@@ -6455,7 +6482,7 @@ Table 组件同时具备了易用性和高度可定制性
 
 ### 数据处理
 
-将数据传入`[nzData]`，经过组件处理之后（包括分页、排序、筛选等），通过 [模板变量](https://angular.cn/guide/templates/template-statements#statement-context) 获取当前展示表格部分的数据，使用 `*ngFor` 依据需求将数据渲染。
+将数据传入`[nzData]`，经过组件处理之后（包括分页、排序、筛选等），通过 [模板变量](https://angular.cn/guide/templates/template-statements#statement-context) 获取当前展示表格部分的数据，使用 `@for` 依据需求将数据渲染。
 
 ```html
 <nz-table #basicTable [nzData]="dataSet">
@@ -6468,7 +6495,8 @@ Table 组件同时具备了易用性和高度可定制性
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of basicTable.data">
+    @for (data of basicTable.data; track data.name) {
+    <tr>
       <td>{{data.name}}</td>
       <td>{{data.age}}</td>
       <td>{{data.address}}</td>
@@ -6478,6 +6506,7 @@ Table 组件同时具备了易用性和高度可定制性
         <a>Delete</a>
       </td>
     </tr>
+    }
   </tbody>
 </nz-table>
 ```
@@ -7190,7 +7219,7 @@ description: 下拉选择器。
 
 ```html
 <nz-select>
-  <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+  <nz-option nzValue="lucy" nzLabel="Lucy" />
 </nz-select>
 ```
 

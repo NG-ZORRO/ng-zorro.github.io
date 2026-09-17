@@ -74,9 +74,9 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
   `,
   styles: `
     nz-progress {
-      margin-right: 8px;
-      margin-bottom: 8px;
       display: inline-block;
+      margin-inline-end: 8px;
+      margin-bottom: 8px;
     }
   `
 })
@@ -102,9 +102,9 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
   `,
   styles: `
     nz-progress {
-      margin-right: 8px;
-      margin-bottom: 8px;
       display: inline-block;
+      margin-inline-end: 8px;
+      margin-bottom: 8px;
     }
   `
 })
@@ -208,9 +208,9 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
   `,
   styles: `
     nz-progress {
-      margin-right: 8px;
-      margin-bottom: 8px;
       display: inline-block;
+      margin-inline-end: 8px;
+      margin-bottom: 8px;
     }
   `
 })
@@ -244,9 +244,9 @@ import { NzProgressModule } from 'ng-zorro-antd/progress';
   `,
   styles: `
     .ant-progress {
-      margin-right: 8px;
-      margin-bottom: 8px;
       display: inline-block;
+      margin-inline-end: 8px;
+      margin-bottom: 8px;
     }
   `
 })

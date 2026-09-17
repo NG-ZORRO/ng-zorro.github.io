@@ -478,11 +478,11 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
       overflow: auto;
       height: 100%;
       position: fixed;
-      left: 0;
+      inset-inline-start: 0;
     }
 
     .right-layout {
-      margin-left: 200px;
+      margin-inline-start: 200px;
     }
 
     nz-header {
@@ -555,8 +555,9 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
       width: 120px;
       height: 31px;
       background: rgba(255, 255, 255, 0.2);
-      margin: 16px 24px 16px 0;
-      float: left;
+      margin-block: 16px;
+      margin-inline-end: 24px;
+      float: inline-start;
     }
 
     nz-header {
@@ -846,8 +847,9 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
       width: 120px;
       height: 31px;
       background: rgba(255, 255, 255, 0.2);
-      margin: 16px 30px 16px 0;
-      float: left;
+      margin-block: 16px;
+      margin-inline-end: 24px;
+      float: inline-start;
     }
 
     .header-menu {
@@ -948,8 +950,9 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
       width: 120px;
       height: 31px;
       background: rgba(255, 255, 255, 0.2);
-      margin: 16px 28px 16px 0;
-      float: left;
+      margin-block: 16px;
+      margin-inline-end: 24px;
+      float: inline-start;
     }
 
     .header-menu {
@@ -1031,8 +1034,9 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
       width: 120px;
       height: 31px;
       background: rgba(255, 255, 255, 0.2);
-      margin: 16px 24px 16px 0;
-      float: left;
+      margin-block: 16px;
+      margin-inline-end: 24px;
+      float: inline-start;
     }
 
     [nz-menu] {

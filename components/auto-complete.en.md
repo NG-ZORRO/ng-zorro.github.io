@@ -28,21 +28,27 @@ When there is a need for autocomplete functionality.
 
 ### [nzAutocomplete]
 
-| Property           | Description                              | Type                      | Default |
-| ------------------ | ---------------------------------------- | ------------------------- | ------- |
-| `[nzAutocomplete]` | used to bind `nzAutocomplete` components | `NzAutocompleteComponent` | -       |
+| Property                      | Description                                                    | Type                            | Default              | Version |
+| ----------------------------- | -------------------------------------------------------------- | ------------------------------- | -------------------- | ------- |
+| `[nzAutocomplete]`            | used to bind `nzAutocomplete` components                       | `NzAutocompleteComponent`       | -                    |         |
+| `[nzAutocompleteConnectedTo]` | element relative to which the autocomplete panel is positioned | `NzAutocompleteOriginDirective` | autocomplete trigger | 22.1.0  |
+
+### [nzAutocompleteOrigin]
+
+Directive applied to an element to make it usable as the origin of an autocomplete panel.
 
 ### nz-autocomplete
 
-| Property                       | Description                                                                                    | Type                            | Default                         |
-| ------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- |
-| `[nzBackfill]`                 | backfill selected item the input when using keyboard                                           | `boolean`                       | `false`                         |
-| `[nzDataSource]`               | Data source for autocomplete                                                                   | `AutocompleteDataSource`        | -                               |
-| `[nzDefaultActiveFirstOption]` | Whether active first option by default                                                         | `boolean`                       | `true`                          |
-| `[nzWidth]`                    | Custom width, unit px                                                                          | `number`                        | trigger element width           |
-| `[nzOverlayClassName]`         | Class name of the dropdown root element                                                        | `string`                        | -                               |
-| `[nzOverlayStyle]`             | Style of the dropdown root element                                                             | `object`                        | -                               |
-| `[compareWith]`                | Same as [SelectControlValueAccessor](https://angular.dev/api/forms/SelectControlValueAccessor) | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |
+| Property                       | Description                                                                                    | Type                            | Default                         | Version |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- | ------- |
+| `[nzBackfill]`                 | backfill selected item the input when using keyboard                                           | `boolean`                       | `false`                         |         |
+| `[nzDropdownMatchSelectWidth]` | Whether dropdown's width is same width than select.                                            | `boolean`                       | `true`                          | 22.1.0  |
+| `[nzDataSource]`               | Data source for autocomplete                                                                   | `AutocompleteDataSource`        | -                               |         |
+| `[nzDefaultActiveFirstOption]` | Whether active first option by default                                                         | `boolean`                       | `true`                          |         |
+| `[nzWidth]`                    | Custom width, unit px                                                                          | `number`                        | trigger element width           |         |
+| `[nzOverlayClassName]`         | Class name of the dropdown root element                                                        | `string`                        | -                               |         |
+| `[nzOverlayStyle]`             | Style of the dropdown root element                                                             | `object`                        | -                               |         |
+| `[compareWith]`                | Same as [SelectControlValueAccessor](https://angular.dev/api/forms/SelectControlValueAccessor) | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |         |
 
 ### nz-auto-option
 
@@ -183,6 +189,49 @@ export class NzDemoAutoCompleteCertainCategoryComponent {
       ]
     }
   ];
+}
+```
+
+### Custom Overlay Origin
+
+Use `nzAutocompleteOrigin` and `nzAutocompleteConnectedTo` to specify the origin of the autocomplete overlay. The overlay position and default width are based on the origin element.
+
+```typescript
+import { Component, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+import { NzAutocompleteModule } from 'ng-zorro-antd/auto-complete';
+import { NzInputModule } from 'ng-zorro-antd/input';
+
+@Component({
+  selector: 'nz-demo-auto-complete-custom-origin',
+  imports: [FormsModule, NzAutocompleteModule, NzInputModule],
+  template: `
+    <nz-input-wrapper nzAutocompleteOrigin #origin="nzAutocompleteOrigin" nzSuffix="RMB" style="width: 300px">
+      <input
+        nz-input
+        placeholder="input here"
+        [(ngModel)]="inputValue"
+        [nzAutocomplete]="auto"
+        [nzAutocompleteConnectedTo]="origin"
+        (input)="onInput($event)"
+      />
+    </nz-input-wrapper>
+    <nz-autocomplete #auto>
+      @for (option of options(); track option) {
+        <nz-auto-option [nzValue]="option">{{ option }}</nz-auto-option>
+      }
+    </nz-autocomplete>
+  `
+})
+export class NzDemoAutoCompleteCustomOriginComponent {
+  inputValue = '';
+  readonly options = signal<string[]>([]);
+
+  onInput(event: Event): void {
+    const value = (event.target as HTMLInputElement).value;
+    this.options.set(value ? [value, value + value, value + value + value] : []);
+  }
 }
 ```
 

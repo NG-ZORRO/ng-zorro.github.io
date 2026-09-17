@@ -225,6 +225,26 @@ export const appConfig: ApplicationConfig = {
 The adapter `locale` controls date-library formatting and week rules, such as month names, weekday names and the first day of week.
 If the language changes at runtime, also call `dateAdapter.setLocale(...)` with the locale value expected by the current adapter.
 
+The provider helpers also accept a factory that runs in an Angular injection context. This is useful when multiple localized builds share one application configuration:
+
+```ts
+import { ApplicationConfig, inject, LOCALE_ID } from '@angular/core';
+import { enUS, zhCN } from 'date-fns/locale';
+
+import { provideNzDateFnsAdapter } from 'ng-zorro-antd/core/time';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideNzDateFnsAdapter(() => {
+      const localeId = inject(LOCALE_ID);
+      return { locale: localeId.startsWith('zh') ? zhCN : enUS };
+    })
+  ]
+};
+```
+
+The factory form is also supported by `provideNzNativeDateAdapter` and `provideNzDateAdapter`.
+
 ## Custom Adapter
 
 A custom adapter extends `NzDateAdapter<TDate, TLocale>`, where `TDate` is the date value type used by components and `TLocale` is the locale type. To stay compatible with existing component APIs and form values, prefer keeping `TDate` as `Date` and delegating formatting, parsing, and date math to your chosen date library.
@@ -1953,21 +1973,27 @@ When there is a need for autocomplete functionality.
 
 ### [nzAutocomplete]
 
-| Property           | Description                              | Type                      | Default |
-| ------------------ | ---------------------------------------- | ------------------------- | ------- |
-| `[nzAutocomplete]` | used to bind `nzAutocomplete` components | `NzAutocompleteComponent` | -       |
+| Property                      | Description                                                    | Type                            | Default              | Version |
+| ----------------------------- | -------------------------------------------------------------- | ------------------------------- | -------------------- | ------- |
+| `[nzAutocomplete]`            | used to bind `nzAutocomplete` components                       | `NzAutocompleteComponent`       | -                    |         |
+| `[nzAutocompleteConnectedTo]` | element relative to which the autocomplete panel is positioned | `NzAutocompleteOriginDirective` | autocomplete trigger | 22.1.0  |
+
+### [nzAutocompleteOrigin]
+
+Directive applied to an element to make it usable as the origin of an autocomplete panel.
 
 ### nz-autocomplete
 
-| Property                       | Description                                                                                    | Type                            | Default                         |
-| ------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- |
-| `[nzBackfill]`                 | backfill selected item the input when using keyboard                                           | `boolean`                       | `false`                         |
-| `[nzDataSource]`               | Data source for autocomplete                                                                   | `AutocompleteDataSource`        | -                               |
-| `[nzDefaultActiveFirstOption]` | Whether active first option by default                                                         | `boolean`                       | `true`                          |
-| `[nzWidth]`                    | Custom width, unit px                                                                          | `number`                        | trigger element width           |
-| `[nzOverlayClassName]`         | Class name of the dropdown root element                                                        | `string`                        | -                               |
-| `[nzOverlayStyle]`             | Style of the dropdown root element                                                             | `object`                        | -                               |
-| `[compareWith]`                | Same as [SelectControlValueAccessor](https://angular.dev/api/forms/SelectControlValueAccessor) | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |
+| Property                       | Description                                                                                    | Type                            | Default                         | Version |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------- | ------- |
+| `[nzBackfill]`                 | backfill selected item the input when using keyboard                                           | `boolean`                       | `false`                         |         |
+| `[nzDropdownMatchSelectWidth]` | Whether dropdown's width is same width than select.                                            | `boolean`                       | `true`                          | 22.1.0  |
+| `[nzDataSource]`               | Data source for autocomplete                                                                   | `AutocompleteDataSource`        | -                               |         |
+| `[nzDefaultActiveFirstOption]` | Whether active first option by default                                                         | `boolean`                       | `true`                          |         |
+| `[nzWidth]`                    | Custom width, unit px                                                                          | `number`                        | trigger element width           |         |
+| `[nzOverlayClassName]`         | Class name of the dropdown root element                                                        | `string`                        | -                               |         |
+| `[nzOverlayStyle]`             | Style of the dropdown root element                                                             | `object`                        | -                               |         |
+| `[compareWith]`                | Same as [SelectControlValueAccessor](https://angular.dev/api/forms/SelectControlValueAccessor) | `(o1: any, o2: any) => boolean` | `(o1: any, o2: any) => o1===o2` |         |
 
 ### nz-auto-option
 
@@ -1998,25 +2024,25 @@ description: Used to represent users or things, supporting the display of images
 
 ### nz-avatar
 
-| Property            | Description                                                                                                                                                     | Type                                        | Default     | Global Config |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------- | ------------- |
-| `[nzIcon]`          | The `Icon` type for an icon avatar, see `Icon`                                                                                                                  | `string`                                    | -           |
-| `[nzShape]`         | The shape of avatar                                                                                                                                             | `'circle' \| 'square'`                      | `'circle'`  | ✅            |
-| `[nzSize]`          | The size of the avatar                                                                                                                                          | `'large' \| 'small' \| 'default' \| number` | `'default'` | ✅            |
-| `[nzGap]`           | Letter type unit distance between left and right sides                                                                                                          | `number`                                    | `4`         | ✅            |
-| `[nzSrc]`           | Avatar image URL                                                                                                                                                | `string`                                    | -           |
-| `[nzSrcSet]`        | a list of sources to use for different screen resolutions                                                                                                       | `string`                                    | -           |
-| `[nzAlt]`           | This attribute defines the alternative text describing the image                                                                                                | `string`                                    | -           |
-| `[nzText]`          | Letter type avatar                                                                                                                                              | `string`                                    | -           |
-| `[nzLoading]`       | Sets the native [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) attribute on the avatar image element             | `'eager' \| 'lazy'`                         | `'eager'`   |               |
-| `[nzFetchPriority]` | Sets the native [`fetchpriority`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) attribute on the avatar image element | `'high' \| 'low' \| 'auto'`                 | `'auto'`    |               |
-| `(nzError)`         | Handler when img load error, call the `preventDefault` method to prevent default fallback behavior                                                              | `EventEmitter<Event>`                       | -           |
+| Property            | Description                                                                                                                                                     | Type                                                                           | Default     | Global Config | Version                   |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ----------- | ------------- | ------------------------- |
+| `[nzIcon]`          | The `Icon` type for an icon avatar, see `Icon`                                                                                                                  | `string`                                                                       | -           |               |                           |
+| `[nzShape]`         | The shape of avatar                                                                                                                                             | `'circle' \| 'square'`                                                         | `'circle'`  | ✅            |                           |
+| `[nzSize]`          | The size of the avatar                                                                                                                                          | `'large' \| 'small' \| 'default' \| number \| { xs: number, sm: number, ... }` | `'default'` | ✅            | responsive object: 22.1.0 |
+| `[nzGap]`           | Letter type unit distance between left and right sides                                                                                                          | `number`                                                                       | `4`         | ✅            |                           |
+| `[nzSrc]`           | Avatar image URL                                                                                                                                                | `string`                                                                       | -           |               |                           |
+| `[nzSrcSet]`        | a list of sources to use for different screen resolutions                                                                                                       | `string`                                                                       | -           |               |                           |
+| `[nzAlt]`           | This attribute defines the alternative text describing the image                                                                                                | `string`                                                                       | -           |               |                           |
+| `[nzText]`          | Letter type avatar                                                                                                                                              | `string`                                                                       | -           |               |                           |
+| `[nzLoading]`       | Sets the native [`loading`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#loading) attribute on the avatar image element             | `'eager' \| 'lazy'`                                                            | `'eager'`   |               |                           |
+| `[nzFetchPriority]` | Sets the native [`fetchpriority`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img#fetchpriority) attribute on the avatar image element | `'high' \| 'low' \| 'auto'`                                                    | `'auto'`    |               |                           |
+| `(nzError)`         | Handler when img load error, call the `preventDefault` method to prevent default fallback behavior                                                              | `EventEmitter<Event>`                                                          | -           |               |                           |
 
 ### nz-avatar-group
 
 ```html
 <nz-avatar-group>
-  <nz-avatar nzIcon="user"></nz-avatar>
+  <nz-avatar nzIcon="user" />
   <!--  ...  -->
 </nz-avatar-group>
 ```
@@ -2907,15 +2933,16 @@ npm install cron-parser@^5.5.0
 
 ### nz-cron-expression
 
-| Parameter             | Description                          | Type                          | Default   |
-| --------------------- | ------------------------------------ | ----------------------------- | --------- |
-| `[nzType]`            | Cron rule type                       | `'linux'｜'spring'`           | `linux`   |
-| `[nzDisabled]`        | Disable                              | `boolean`                     | `false`   |
-| `[nzBorderless]`      | Whether to hide the border           | `boolean`                     | `false`   |
-| `[nzSize]`            | The size of the input box.           | `'large'｜'small'｜'default'` | `default` |
-| `[nzCollapseDisable]` | Hide collapse                        | `boolean`                     | `false`   |
-| `[nzExtra]`           | Render the content on the right      | `TemplateRef<void>`           | -         |
-| `[nzSemantic]`        | Custom rendering next execution time | `TemplateRef<void>`           | -         |
+| Parameter             | Description                          | Type                          | Default   | Version |
+| --------------------- | ------------------------------------ | ----------------------------- | --------- | ------- |
+| `[nzType]`            | Cron rule type                       | `'linux'｜'spring'`           | `linux`   |         |
+| `[nzDisabled]`        | Disable                              | `boolean`                     | `false`   |         |
+| `[nzBorderless]`      | Whether to hide the border           | `boolean`                     | `false`   |         |
+| `[nzSize]`            | The size of the input box.           | `'large'｜'small'｜'default'` | `default` |         |
+| `[nzStatus]`          | Set validation status                | `'error'｜'warning'`          | -         | 22.1.0  |
+| `[nzCollapseDisable]` | Hide collapse                        | `boolean`                     | `false`   |         |
+| `[nzExtra]`           | Render the content on the right      | `TemplateRef<void>`           | -         |         |
+| `[nzSemantic]`        | Custom rendering next execution time | `TemplateRef<void>`           | -         |         |
 
 ## Note
 
@@ -5937,7 +5964,7 @@ description: A dropdown menu for displaying choices.
 
 ```html
 <nz-select>
-  <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+  <nz-option nzValue="lucy" nzLabel="Lucy" />
 </nz-select>
 ```
 
@@ -6337,9 +6364,9 @@ When a given task is complicated or has a certain sequence in the series of subt
 
 ```html
 <nz-steps>
-  <nz-step nzTitle="first step"></nz-step>
-  <nz-step nzTitle="second step"></nz-step>
-  <nz-step nzTitle="third step"></nz-step>
+  <nz-step nzTitle="first step" />
+  <nz-step nzTitle="second step" />
+  <nz-step nzTitle="third step" />
 </nz-steps>
 ```
 
@@ -6441,7 +6468,7 @@ The component in `nz-table` such as `th`, `td`, `thead` etc. are enhanced. Devel
 
 ### Data Processing
 
-The data passed to `[nzData]` is exported with [Template Context](https://angular.dev/guide/templates/template-statements#statement-context) after processing (including paging, sorting and filtering). `*ngFor` can be used to render current page data in table.
+The data passed to `[nzData]` is exported with [Template Context](https://angular.dev/guide/templates/template-statements#statement-context) after processing (including paging, sorting and filtering). `@for` can be used to render current page data in table.
 
 ```html
 <nz-table #basicTable [nzData]="dataSet">
@@ -6454,7 +6481,8 @@ The data passed to `[nzData]` is exported with [Template Context](https://angula
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of basicTable.data">
+    @for (data of basicTable.data; track data.name) {
+    <tr>
       <td>{{data.name}}</td>
       <td>{{data.age}}</td>
       <td>{{data.address}}</td>
@@ -6464,6 +6492,7 @@ The data passed to `[nzData]` is exported with [Template Context](https://angula
         <a>Delete</a>
       </td>
     </tr>
+    }
   </tbody>
 </nz-table>
 ```

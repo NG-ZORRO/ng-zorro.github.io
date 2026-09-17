@@ -111,7 +111,7 @@ export class NzDemoExperimentalImageAutoSrcsetComponent {
 
 ```html
 @for (product of products; track product)
-<nz-image [nzPriority]="$index <= 8"></nz-image>
+<nz-image [nzPriority]="$index <= 8" />
 }
 ```
 

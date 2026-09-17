@@ -72,7 +72,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `
@@ -129,7 +129,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `
@@ -180,7 +180,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
 
@@ -190,7 +190,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     }
 
     .ghost-background [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 0;
     }
   `
@@ -225,7 +225,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     }
 
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
     }
   `
 })
@@ -275,7 +275,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `
@@ -314,7 +314,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `
@@ -370,7 +370,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
   `,
   styles: `
     [nz-button] {
-      margin-right: 8px;
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `
@@ -439,8 +439,8 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
     </nz-space-compact>
   `,
   styles: `
-    [nz-button] {
-      margin-right: 8px;
+    :host > [nz-button] {
+      margin-inline-end: 8px;
       margin-bottom: 12px;
     }
   `

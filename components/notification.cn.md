@@ -261,7 +261,7 @@ import { NzNotificationPlacement, NzNotificationService } from 'ng-zorro-antd/no
   `,
   styles: `
     button {
-      margin-right: 1em;
+      margin-inline-end: 1em;
     }
   `
 })
@@ -421,7 +421,7 @@ import { NzNotificationService } from 'ng-zorro-antd/notification';
   `,
   styles: `
     button {
-      margin-right: 1em;
+      margin-inline-end: 1em;
     }
   `
 })
