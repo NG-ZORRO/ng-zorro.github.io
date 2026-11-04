@@ -34,29 +34,46 @@ registerLocaleData(zh);
 
 | 参数                     | 说明                                                          | 类型                                                       | 默认值                                                                                                      | 全局配置 | 版本   |
 | ------------------------ | ------------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | -------- | ------ |
-| `[nzId]`                 | 组件内部 input 的 id 值                                       | `string`                                                   | -                                                                                                           |
-| `[nzAllowClear]`         | 是否显示清除按钮                                              | `boolean`                                                  | `true`                                                                                                      | -        |
-| `[nzAutoFocus]`          | 自动获取焦点                                                  | `boolean`                                                  | `false`                                                                                                     | -        |
-| `[nzBackdrop]`           | 浮层是否应带有背景板                                          | `boolean`                                                  | `false`                                                                                                     |
-| `[nzDefaultPickerValue]` | 默认面板日期                                                  | `Date \| Date[]`                                           | -                                                                                                           | -        |
-| `[nzDisabled]`           | 禁用                                                          | `boolean`                                                  | `false`                                                                                                     | -        |
-| `[nzDisabledDate]`       | 不可选择的日期                                                | `(current: Date) => boolean`                               | -                                                                                                           | -        |
-| `[nzDropdownClassName]`  | 额外的弹出日历 className                                      | `string`                                                   | -                                                                                                           | -        |
-| `[nzFormat]`             | 展示的日期格式，见`nzFormat特别说明`                          | `string`                                                   | -                                                                                                           |
-| `[nzInputReadOnly]`      | 为 input 标签设置只读属性（避免在移动设备上触发小键盘）       | `boolean`                                                  | `false`                                                                                                     | -        |
-| `[nzLocale]`             | 国际化配置                                                    | `object`                                                   | [默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | -        |
-| `[nzMode]`               | 选择模式                                                      | `'date' \| 'week' \| 'month' \| 'quarter'  \| 'year'`      | `'date'`                                                                                                    |
-| `[nzPlaceHolder]`        | 输入框提示文字                                                | `string \| string[]`                                       | -                                                                                                           | -        |
-| `[nzPopupStyle]`         | 额外的弹出日历样式                                            | `object`                                                   | `{}`                                                                                                        | -        |
-| `[nzRenderExtraFooter]`  | 在面板中添加额外的页脚                                        | `TemplateRef \| string \| (() => TemplateRef \| string)`   | -                                                                                                           |
-| `[nzSize]`               | 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px | `'large' \| 'small'`                                       | -                                                                                                           | -        |
-| `[nzStatus]`             | 设置校验状态                                                  | `'error' \| 'warning'`                                     | -                                                                                                           |
-| `[nzPlacement]`          | 选择框弹出的位置                                              | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'` | `'bottomLeft'`                                                                                              |          |
-| `[nzSuffixIcon]`         | 自定义的后缀图标                                              | `string \| TemplateRef`                                    | -                                                                                                           | ✅       |
+| `[nzId]`                 | 组件内部 input 的 id 值                                       | `string`                                                   | -                                                                                                           |          |        |
+| `[nzAllowClear]`         | 是否显示清除按钮                                              | `boolean`                                                  | `true`                                                                                                      | -        |        |
+| `[nzAutoFocus]`          | 自动获取焦点                                                  | `boolean`                                                  | `false`                                                                                                     | -        |        |
+| `[nzBackdrop]`           | 浮层是否应带有背景板                                          | `boolean`                                                  | `false`                                                                                                     |          |        |
+| `[nzDefaultPickerValue]` | 默认面板日期                                                  | `Date \| Date[]`                                           | -                                                                                                           | -        |        |
+| `[nzDisabled]`           | 禁用                                                          | `boolean`                                                  | `false`                                                                                                     | -        |        |
+| `[nzDisabledDate]`       | 不可选择的日期                                                | `(current: Date) => boolean`                               | -                                                                                                           | -        |        |
+| `[nzDropdownClassName]`  | 额外的弹出日历 className                                      | `string`                                                   | -                                                                                                           | -        |        |
+| `[nzFormat]`             | 展示的日期格式，见`nzFormat特别说明`                          | `string`                                                   | -                                                                                                           |          |        |
+| `[nzInputReadOnly]`      | 为 input 标签设置只读属性（避免在移动设备上触发小键盘）       | `boolean`                                                  | `false`                                                                                                     | -        |        |
+| `[nzLocale]`             | 国际化配置                                                    | `object`                                                   | [默认配置](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | -        |        |
+| `[nzMode]`               | 选择模式                                                      | `'date' \| 'week' \| 'month' \| 'quarter'  \| 'year'`      | `'date'`                                                                                                    |          |        |
+| `[nzPlaceHolder]`        | 输入框提示文字                                                | `string \| string[]`                                       | -                                                                                                           | -        |        |
+| `[nzPopupStyle]`         | 额外的弹出日历样式                                            | `object`                                                   | `{}`                                                                                                        | -        |        |
+| `[nzPrefix]`             | 自定义前缀                                                    | `string \| TemplateRef`                                    | -                                                                                                           |          | 22.2.0 |
+| `[nzRenderExtraFooter]`  | 在面板中添加额外的页脚                                        | `TemplateRef \| string \| (() => TemplateRef \| string)`   | -                                                                                                           |          |        |
+| `[nzSize]`               | 输入框大小，`large` 高度为 40px，`small` 为 24px，默认是 32px | `'large' \| 'small'`                                       | -                                                                                                           | -        |        |
+| `[nzStatus]`             | 设置校验状态                                                  | `'error' \| 'warning'`                                     | -                                                                                                           |          |        |
+| `[nzPlacement]`          | 选择框弹出的位置                                              | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'` | `'bottomLeft'`                                                                                              |          |        |
+| `[nzSuffixIcon]`         | 自定义的后缀图标                                              | `string \| TemplateRef`                                    | -                                                                                                           | ✅       |        |
 | `[nzVariant]`            | 形态变体                                                      | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'`   | `'outlined'`                                                                                                | ✅       | 20.0.0 |
-| `[nzInline]`             | 内联模式                                                      | `boolean`                                                  | `false`                                                                                                     | -        |
-| `(nzOnOpenChange)`       | 弹出日历和关闭日历的回调                                      | `EventEmitter<boolean>`                                    | -                                                                                                           | -        |
-| `(nzOnPanelChange)`      | 改变模式或日期的回调                                          | `EventEmitter<NzPanelChangeType>`                          | -                                                                                                           | -        |
+| `[nzInline]`             | 内联模式                                                      | `boolean`                                                  | `false`                                                                                                     | -        |        |
+| `(nzOnOpenChange)`       | 弹出日历和关闭日历的回调                                      | `EventEmitter<boolean>`                                    | -                                                                                                           | -        |        |
+| `(nzOnPanelChange)`      | 改变模式或日期的回调                                          | `EventEmitter<NzPanelChangeType>`                          | -                                                                                                           | -        |        |
+
+### 自定义清除图标 (22.2.0)
+
+在子元素上添加静态属性 `nzDatePickerClearIcon` 即可替换清除图标，使用方式与 Input 的 `nzInputClearIcon` 内容投影一致。适用于 `nz-date-picker` 和 `nz-range-picker` 的所有选择模式，无需额外导入指令。
+
+未提供自定义内容时，使用默认的实心 `close-circle` 图标。`nzAllowClear` 仍控制是否允许清除；禁用或值为空时隐藏清除图标。点击和清除操作由日期选择框处理，自定义内容无需绑定点击事件，请使用 `nz-icon`、`span` 或 `svg` 等非交互元素。
+
+```html
+<nz-date-picker [(ngModel)]="date">
+  <nz-icon nzDatePickerClearIcon nzType="close" />
+</nz-date-picker>
+
+<nz-range-picker [(ngModel)]="range">
+  <nz-icon nzDatePickerClearIcon nzType="close" />
+</nz-range-picker>
+```
 
 ### 共同的方法
 
@@ -155,6 +172,41 @@ export class NzDemoDatePickerBasicComponent {
   onChange(result: Date): void {
     console.log('onChange: ', result);
   }
+}
+```
+
+### 自定义清除图标
+
+使用带有 `nzDatePickerClearIcon` 属性的子元素自定义清除图标，日期选择框和范围选择框均支持。
+
+```typescript
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
+@Component({
+  selector: 'nz-demo-date-picker-clear-icon',
+  imports: [ReactiveFormsModule, NzDatePickerModule, NzIconModule],
+  template: `
+    <nz-date-picker [formControl]="date">
+      <nz-icon nzDatePickerClearIcon nzType="close" />
+    </nz-date-picker>
+    <nz-range-picker [formControl]="range">
+      <nz-icon nzDatePickerClearIcon nzType="close" />
+    </nz-range-picker>
+  `,
+  styles: `
+    nz-date-picker,
+    nz-range-picker {
+      margin: 0 8px 12px 0;
+    }
+  `
+})
+export class NzDemoDatePickerClearIconComponent {
+  readonly date = new FormControl(new Date(2026, 0, 1));
+  readonly range = new FormControl([new Date(2026, 0, 1), new Date(2026, 0, 7)]);
 }
 ```
 
@@ -488,6 +540,45 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 export class NzDemoDatePickerPlacementComponent {
   readonly placement = signal<NzPlacement>('bottomLeft');
 }
+```
+
+### 前缀和后缀
+
+分别使用 `nzPrefix` 和 `nzSuffixIcon` 自定义前缀和后缀，支持日期选择框和范围选择框。使用模板显示自定义图标或文本。
+
+```typescript
+import { Component } from '@angular/core';
+
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzFlexModule } from 'ng-zorro-antd/flex';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+
+@Component({
+  selector: 'nz-demo-date-picker-prefix-suffix',
+  imports: [NzDatePickerModule, NzFlexModule, NzIconModule, NzTypographyModule],
+  template: `
+    <div nz-flex nzVertical nzAlign="flex-start" nzGap="12px">
+      <nz-date-picker [nzSuffixIcon]="smileIcon" />
+      <nz-date-picker [nzSuffixIcon]="smileIcon" nzMode="month" />
+      <nz-range-picker [nzSuffixIcon]="smileIcon" />
+      <nz-date-picker [nzSuffixIcon]="smileIcon" nzMode="week" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" nzMode="month" />
+      <nz-range-picker [nzSuffixIcon]="suffixText" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" nzMode="week" />
+      <nz-date-picker [nzPrefix]="smileIcon" nzMode="week" />
+      <nz-date-picker [nzPrefix]="prefixText" nzMode="week" />
+      <nz-range-picker [nzPrefix]="smileIcon" nzMode="week" />
+      <nz-range-picker [nzPrefix]="prefixText" nzMode="week" />
+    </div>
+
+    <ng-template #smileIcon><nz-icon nzType="smile" /></ng-template>
+    <ng-template #suffixText><span nz-typography>ab</span></ng-template>
+    <ng-template #prefixText>Event Period</ng-template>
+  `
+})
+export class NzDemoDatePickerPrefixSuffixComponent {}
 ```
 
 ### 预设范围

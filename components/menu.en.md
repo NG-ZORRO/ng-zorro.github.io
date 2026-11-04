@@ -73,16 +73,17 @@ You can set the title of `[nz-submenu]` in the following ways.
 </ng-template>
 ```
 
-| Param                      | Description                                     | Type                                                                                        | Default value  |
-| -------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------- |
-| `[nzPlacement]`            | placement of pop menu                           | `'bottomLeft' \| 'bottomCenter' \| 'bottomRight' \| 'topLeft' \| 'topCenter' \| 'topRight'` | `'bottomLeft'` |
-| `[nzOpen]`                 | whether sub menu is open or not, double binding | `boolean`                                                                                   | `false`        |
-| `[nzDisabled]`             | whether sub menu is disabled or not             | `boolean`                                                                                   | `false`        |
-| `[nzTitle]`                | set submenu title                               | `string \| TemplateRef<void>`                                                               | -              |
-| `[nzIcon]`                 | `icon` type in title                            | `string`                                                                                    | -              |
-| `[nzMenuClassName]`        | Custom the submenu container's class name       | `string`                                                                                    | -              |
-| `[nzTriggerSubMenuAction]` | Which action can trigger submenu open/close     | `'hover' \| 'click'`                                                                        | `'hover'`      |
-| `(nzOpenChange)`           | nzOpen callback                                 | `EventEmitter<boolean>`                                                                     | -              |
+| Param                      | Description                                     | Type                                                                                        | Default value  | Version |
+| -------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------- | -------------- | ------- |
+| `[nzPlacement]`            | placement of pop menu                           | `'bottomLeft' \| 'bottomCenter' \| 'bottomRight' \| 'topLeft' \| 'topCenter' \| 'topRight'` | `'bottomLeft'` |         |
+| `[nzOpen]`                 | whether sub menu is open or not, double binding | `boolean`                                                                                   | `false`        |         |
+| `[nzDisabled]`             | whether sub menu is disabled or not             | `boolean`                                                                                   | `false`        |         |
+| `[nzTitle]`                | set submenu title                               | `string \| TemplateRef<void>`                                                               | -              |         |
+| `[nzIcon]`                 | `icon` type in title                            | `string`                                                                                    | -              |         |
+| `[nzTheme]`                | color theme of the submenu popup                | `'light' \| 'dark'`                                                                         | parent menu    | 22.2.0  |
+| `[nzMenuClassName]`        | Custom the submenu container's class name       | `string`                                                                                    | -              |         |
+| `[nzTriggerSubMenuAction]` | Which action can trigger submenu open/close     | `'hover' \| 'click'`                                                                        | `'hover'`      |         |
+| `(nzOpenChange)`           | nzOpen callback                                 | `EventEmitter<boolean>`                                                                     | -              |         |
 
 ### [nz-menu-group]
 
@@ -753,6 +754,77 @@ export class NzDemoMenuSiderCurrentComponent {
       }
     }
   }
+}
+```
+
+### Submenu theme
+
+Use `nzTheme` to set a theme for a submenu popup independently. The root menu is dark and the submenu is initially light. Use the switch to change the submenu theme. When omitted, the submenu inherits its parent menu's theme.
+
+```typescript
+import { Component, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
+
+@Component({
+  selector: 'nz-demo-menu-submenu-theme',
+  imports: [ReactiveFormsModule, NzMenuModule, NzSwitchModule],
+  template: `
+    <label for="submenu-theme-switch">Submenu theme</label>
+    <nz-switch
+      nzId="submenu-theme-switch"
+      [formControl]="darkControl"
+      [nzCheckedChildren]="themeLabel"
+      [nzUnCheckedChildren]="themeLabel"
+    />
+    <ng-template #themeLabel
+      ><span class="theme-label">{{ theme() === 'dark' ? 'Dark' : 'Light' }}</span></ng-template
+    >
+    <br />
+    <br />
+    <ul nz-menu nzMode="vertical" nzTheme="dark">
+      <li nz-submenu nzOpen [nzTheme]="theme()" nzTitle="Navigation One" nzIcon="mail">
+        <ul [class.light-submenu]="theme() === 'light'">
+          <li nz-menu-item nzSelected>Option 1</li>
+          <li nz-menu-item>Option 2</li>
+          <li nz-menu-item>Option 3</li>
+        </ul>
+      </li>
+      <li nz-menu-item>Option 5</li>
+      <li nz-menu-item>Option 6</li>
+    </ul>
+  `,
+  styles: `
+    [nz-menu] {
+      width: 256px;
+    }
+
+    ul > li.ant-menu-item.ant-menu-item-selected {
+      color: #fff;
+      background-color: #0958d9;
+    }
+
+    ul.light-submenu > li.ant-menu-item.ant-menu-item-selected {
+      color: #0958d9;
+      background-color: #e6f4ff;
+    }
+
+    .theme-label {
+      color: #001529;
+    }
+
+    label {
+      margin-inline-end: 8px;
+    }
+  `
+})
+export class NzDemoMenuSubmenuThemeComponent {
+  readonly darkControl = new FormControl(false, { nonNullable: true });
+  private readonly dark = toSignal(this.darkControl.valueChanges, { initialValue: false });
+  readonly theme = computed(() => (this.dark() ? 'dark' : 'light'));
 }
 ```
 

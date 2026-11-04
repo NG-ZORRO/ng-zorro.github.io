@@ -31,29 +31,47 @@ The following APIs are shared by nz-date-picker, nz-range-picker.
 
 | Property                 | Description                                                                                                                        | Type                                                       | Default                                                                                                    | Global Config | Version |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------- | ------- |
-| `[nzId]`                 | input id attribute inside the component                                                                                            | `string`                                                   | -                                                                                                          |
-| `[nzAllowClear]`         | Whether to show clear button                                                                                                       | `boolean`                                                  | `true`                                                                                                     | -             |
-| `[nzAutoFocus]`          | get focus when component mounted                                                                                                   | `boolean`                                                  | `false`                                                                                                    | -             |
-| `[nzBackdrop]`           | whether or not the overlay should attach a backdrop                                                                                | `boolean`                                                  | `false`                                                                                                    |
-| `[nzDefaultPickerValue]` | default picker date                                                                                                                | `Date \| Date[]`                                           | -                                                                                                          | -             |
-| `[nzDisabled]`           | determine whether the nz-date-picker is disabled                                                                                   | `boolean`                                                  | `false`                                                                                                    | -             |
-| `[nzDisabledDate]`       | specify the date that cannot be selected                                                                                           | `(current: Date) => boolean`                               | -                                                                                                          | -             |
-| `[nzDropdownClassName]`  | to customize the className of the popup calendar                                                                                   | `string`                                                   | -                                                                                                          | -             |
-| `[nzFormat]`             | to set the date format, see `nzFormat special instructions`                                                                        | `string`                                                   | -                                                                                                          |
-| `[nzInputReadOnly]`      | set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)                                             | `boolean`                                                  | `false`                                                                                                    | -             |
-| `[nzLocale]`             | localization configuration                                                                                                         | `object`                                                   | [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | -             |
-| `[nzMode]`               | Set picker mode                                                                                                                    | `'date' \| 'week' \| 'month' \| 'quarter'  \| 'year'`      | `'date'`                                                                                                   |
-| `[nzPlaceHolder]`        | placeholder of date input                                                                                                          | `string \| string[]`                                       | -                                                                                                          |
-| `[nzPopupStyle]`         | to customize the style of the popup calendar                                                                                       | `object`                                                   | `{}`                                                                                                       | -             |
-| `[nzRenderExtraFooter]`  | render extra footer in panel                                                                                                       | `TemplateRef \| string \| (() => TemplateRef \| string)`   | -                                                                                                          |
-| `[nzSize]`               | determine the size of the input box, the height of `large` and `small`, are 40px and 24px respectively, while default size is 32px | `'large' \| 'small'`                                       | -                                                                                                          | -             |
-| `[nzStatus]`             | Set validation status                                                                                                              | `'error' \| 'warning'`                                     | -                                                                                                          |
-| `[nzPlacement]`          | The position where the selection box pops up                                                                                       | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'` | `'bottomLeft'`                                                                                             |               |
-| `[nzSuffixIcon]`         | the custom suffix icon                                                                                                             | `string \| TemplateRef`                                    | -                                                                                                          | ✅            |
+| `[nzId]`                 | input id attribute inside the component                                                                                            | `string`                                                   | -                                                                                                          |               |         |
+| `[nzAllowClear]`         | Whether to show clear button                                                                                                       | `boolean`                                                  | `true`                                                                                                     | -             |         |
+| `[nzAutoFocus]`          | get focus when component mounted                                                                                                   | `boolean`                                                  | `false`                                                                                                    | -             |         |
+| `[nzBackdrop]`           | whether or not the overlay should attach a backdrop                                                                                | `boolean`                                                  | `false`                                                                                                    |               |         |
+| `[nzDefaultPickerValue]` | default picker date                                                                                                                | `Date \| Date[]`                                           | -                                                                                                          | -             |         |
+| `[nzDisabled]`           | determine whether the nz-date-picker is disabled                                                                                   | `boolean`                                                  | `false`                                                                                                    | -             |         |
+| `[nzDisabledDate]`       | specify the date that cannot be selected                                                                                           | `(current: Date) => boolean`                               | -                                                                                                          | -             |         |
+| `[nzDropdownClassName]`  | to customize the className of the popup calendar                                                                                   | `string`                                                   | -                                                                                                          | -             |         |
+| `[nzFormat]`             | to set the date format, see `nzFormat special instructions`                                                                        | `string`                                                   | -                                                                                                          |               |         |
+| `[nzInputReadOnly]`      | set the readonly attribute of the input tag (avoids virtual keyboard on touch devices)                                             | `boolean`                                                  | `false`                                                                                                    | -             |         |
+| `[nzLocale]`             | localization configuration                                                                                                         | `object`                                                   | [default](https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json) | -             |         |
+| `[nzMode]`               | Set picker mode                                                                                                                    | `'date' \| 'week' \| 'month' \| 'quarter'  \| 'year'`      | `'date'`                                                                                                   |               |         |
+| `[nzPlaceHolder]`        | placeholder of date input                                                                                                          | `string \| string[]`                                       | -                                                                                                          |               |         |
+| `[nzPopupStyle]`         | to customize the style of the popup calendar                                                                                       | `object`                                                   | `{}`                                                                                                       | -             |         |
+| `[nzPrefix]`             | to customize the prefix                                                                                                            | `string \| TemplateRef`                                    |                                                                                                            |               | 22.2.0  |
+|                          | -                                                                                                                                  |                                                            |                                                                                                            |               |         |
+| `[nzRenderExtraFooter]`  | render extra footer in panel                                                                                                       | `TemplateRef \| string \| (() => TemplateRef \| string)`   | -                                                                                                          |               |         |
+| `[nzSize]`               | determine the size of the input box, the height of `large` and `small`, are 40px and 24px respectively, while default size is 32px | `'large' \| 'small'`                                       | -                                                                                                          | -             |         |
+| `[nzStatus]`             | Set validation status                                                                                                              | `'error' \| 'warning'`                                     | -                                                                                                          |               |         |
+| `[nzPlacement]`          | The position where the selection box pops up                                                                                       | `'bottomLeft' \| 'bottomRight' \| 'topLeft' \| 'topRight'` | `'bottomLeft'`                                                                                             |               |         |
+| `[nzSuffixIcon]`         | the custom suffix icon                                                                                                             | `string \| TemplateRef`                                    | -                                                                                                          | ✅            |         |
 | `[nzVariant]`            | Variants of DatePicker                                                                                                             | `'outlined' \| 'borderless' \| 'filled' \| 'underlined'`   | `'outlined'`                                                                                               | ✅            | 20.0.0  |
-| `[nzInline]`             | inline mode                                                                                                                        | `boolean`                                                  | `false`                                                                                                    | -             |
-| `(nzOnOpenChange)`       | a callback emitter, can be executed whether the popup calendar is popped up or closed                                              | `EventEmitter<boolean>`                                    | -                                                                                                          | -             |
-| `(nzOnPanelChange)`      | a callback emitter, can be executed when the panel changes                                                                         | `EventEmitter<NzPanelChangeType>`                          | -                                                                                                          | -             |
+| `[nzInline]`             | inline mode                                                                                                                        | `boolean`                                                  | `false`                                                                                                    | -             |         |
+| `(nzOnOpenChange)`       | a callback emitter, can be executed whether the popup calendar is popped up or closed                                              | `EventEmitter<boolean>`                                    | -                                                                                                          | -             |         |
+| `(nzOnPanelChange)`      | a callback emitter, can be executed when the panel changes                                                                         | `EventEmitter<NzPanelChangeType>`                          | -                                                                                                          | -             |         |
+
+### Custom clear icon (22.2.0)
+
+Mark a child element with the static `nzDatePickerClearIcon` attribute to replace the clear icon, following the same content projection pattern as Input’s `nzInputClearIcon`. This works with both `nz-date-picker` and `nz-range-picker`, including all picker modes. No additional directive import is needed.
+
+If no custom content is provided, the filled `close-circle` icon is used. `nzAllowClear` still controls whether clearing is allowed; the clear icon is hidden when the picker is disabled or empty. The picker handles the click and clears the value, so the custom content does not need its own click handler. Use a non-interactive element such as `nz-icon`, `span` or `svg`.
+
+```html
+<nz-date-picker [(ngModel)]="date">
+  <nz-icon nzDatePickerClearIcon nzType="close" />
+</nz-date-picker>
+
+<nz-range-picker [(ngModel)]="range">
+  <nz-icon nzDatePickerClearIcon nzType="close" />
+</nz-range-picker>
+```
 
 ### Common Methods
 
@@ -153,6 +171,41 @@ export class NzDemoDatePickerBasicComponent {
   onChange(result: Date): void {
     console.log('onChange: ', result);
   }
+}
+```
+
+### Custom clear icon
+
+Customize the clear icon with a child element marked with `nzDatePickerClearIcon`. Both DatePicker and RangePicker support this content slot.
+
+```typescript
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
+@Component({
+  selector: 'nz-demo-date-picker-clear-icon',
+  imports: [ReactiveFormsModule, NzDatePickerModule, NzIconModule],
+  template: `
+    <nz-date-picker [formControl]="date">
+      <nz-icon nzDatePickerClearIcon nzType="close" />
+    </nz-date-picker>
+    <nz-range-picker [formControl]="range">
+      <nz-icon nzDatePickerClearIcon nzType="close" />
+    </nz-range-picker>
+  `,
+  styles: `
+    nz-date-picker,
+    nz-range-picker {
+      margin: 0 8px 12px 0;
+    }
+  `
+})
+export class NzDemoDatePickerClearIconComponent {
+  readonly date = new FormControl(new Date(2026, 0, 1));
+  readonly range = new FormControl([new Date(2026, 0, 1), new Date(2026, 0, 7)]);
 }
 ```
 
@@ -486,6 +539,45 @@ import { NzRadioModule } from 'ng-zorro-antd/radio';
 export class NzDemoDatePickerPlacementComponent {
   readonly placement = signal<NzPlacement>('bottomLeft');
 }
+```
+
+### Prefix and Suffix
+
+Customize the prefix and suffix of DatePicker and RangePicker with `nzPrefix` and `nzSuffixIcon`. Use templates to display custom icons or text.
+
+```typescript
+import { Component } from '@angular/core';
+
+import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
+import { NzFlexModule } from 'ng-zorro-antd/flex';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+
+@Component({
+  selector: 'nz-demo-date-picker-prefix-suffix',
+  imports: [NzDatePickerModule, NzFlexModule, NzIconModule, NzTypographyModule],
+  template: `
+    <div nz-flex nzVertical nzAlign="flex-start" nzGap="12px">
+      <nz-date-picker [nzSuffixIcon]="smileIcon" />
+      <nz-date-picker [nzSuffixIcon]="smileIcon" nzMode="month" />
+      <nz-range-picker [nzSuffixIcon]="smileIcon" />
+      <nz-date-picker [nzSuffixIcon]="smileIcon" nzMode="week" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" nzMode="month" />
+      <nz-range-picker [nzSuffixIcon]="suffixText" />
+      <nz-date-picker [nzSuffixIcon]="suffixText" nzMode="week" />
+      <nz-date-picker [nzPrefix]="smileIcon" nzMode="week" />
+      <nz-date-picker [nzPrefix]="prefixText" nzMode="week" />
+      <nz-range-picker [nzPrefix]="smileIcon" nzMode="week" />
+      <nz-range-picker [nzPrefix]="prefixText" nzMode="week" />
+    </div>
+
+    <ng-template #smileIcon><nz-icon nzType="smile" /></ng-template>
+    <ng-template #suffixText><span nz-typography>ab</span></ng-template>
+    <ng-template #prefixText>Event Period</ng-template>
+  `
+})
+export class NzDemoDatePickerPrefixSuffixComponent {}
 ```
 
 ### Presetted Ranges

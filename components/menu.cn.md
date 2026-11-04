@@ -72,16 +72,17 @@ description: 为页面和功能提供导航的菜单列表。
 </ng-template>
 ```
 
-| 参数                       | 说明                        | 类型                                                                                        | 默认值         |
-| -------------------------- | --------------------------- | ------------------------------------------------------------------------------------------- | -------------- |
-| `[nzPlacement]`            | 菜单弹出位置                | `'bottomLeft' \| 'bottomCenter' \| 'bottomRight' \| 'topLeft' \| 'topCenter' \| 'topRight'` | `'bottomLeft'` |
-| `[nzOpen]`                 | 是否展开，可双向绑定        | `boolean`                                                                                   | `false`        |
-| `[nzDisabled]`             | 是否禁用                    | `boolean`                                                                                   | `false`        |
-| `[nzTitle]`                | 标题内容                    | `string \| TemplateRef<void>`                                                               | -              |
-| `[nzIcon]`                 | 标题中 `icon` 类型          | `string`                                                                                    | -              |
-| `[nzMenuClassName]`        | 自定义子菜单容器类名        | `string`                                                                                    | -              |
-| `[nzTriggerSubMenuAction]` | SubMenu 展开/关闭的触发行为 | `'hover' \| 'click'`                                                                        | `'hover'`      |
-| `(nzOpenChange)`           | 展开回调                    | `EventEmitter<boolean>`                                                                     | -              |
+| 参数                       | 说明                        | 类型                                                                                        | 默认值         | 版本   |
+| -------------------------- | --------------------------- | ------------------------------------------------------------------------------------------- | -------------- | ------ |
+| `[nzPlacement]`            | 菜单弹出位置                | `'bottomLeft' \| 'bottomCenter' \| 'bottomRight' \| 'topLeft' \| 'topCenter' \| 'topRight'` | `'bottomLeft'` |        |
+| `[nzOpen]`                 | 是否展开，可双向绑定        | `boolean`                                                                                   | `false`        |        |
+| `[nzDisabled]`             | 是否禁用                    | `boolean`                                                                                   | `false`        |        |
+| `[nzTitle]`                | 标题内容                    | `string \| TemplateRef<void>`                                                               | -              |        |
+| `[nzIcon]`                 | 标题中 `icon` 类型          | `string`                                                                                    | -              |        |
+| `[nzTheme]`                | 子菜单弹出层的主题颜色      | `'light' \| 'dark'`                                                                         | 父菜单主题     | 22.2.0 |
+| `[nzMenuClassName]`        | 自定义子菜单容器类名        | `string`                                                                                    | -              |        |
+| `[nzTriggerSubMenuAction]` | SubMenu 展开/关闭的触发行为 | `'hover' \| 'click'`                                                                        | `'hover'`      |        |
+| `(nzOpenChange)`           | 展开回调                    | `EventEmitter<boolean>`                                                                     | -              |        |
 
 ### [nz-menu-group]
 
@@ -752,6 +753,77 @@ export class NzDemoMenuSiderCurrentComponent {
       }
     }
   }
+}
+```
+
+### 子菜单主题
+
+通过 `nzTheme` 为子菜单弹出层单独设置主题。本例的根菜单为深色，子菜单默认为浅色，可通过开关切换子菜单主题。未设置时，子菜单会继承父菜单的主题。
+
+```typescript
+import { Component, computed } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzSwitchModule } from 'ng-zorro-antd/switch';
+
+@Component({
+  selector: 'nz-demo-menu-submenu-theme',
+  imports: [ReactiveFormsModule, NzMenuModule, NzSwitchModule],
+  template: `
+    <label for="submenu-theme-switch">Submenu theme</label>
+    <nz-switch
+      nzId="submenu-theme-switch"
+      [formControl]="darkControl"
+      [nzCheckedChildren]="themeLabel"
+      [nzUnCheckedChildren]="themeLabel"
+    />
+    <ng-template #themeLabel
+      ><span class="theme-label">{{ theme() === 'dark' ? 'Dark' : 'Light' }}</span></ng-template
+    >
+    <br />
+    <br />
+    <ul nz-menu nzMode="vertical" nzTheme="dark">
+      <li nz-submenu nzOpen [nzTheme]="theme()" nzTitle="Navigation One" nzIcon="mail">
+        <ul [class.light-submenu]="theme() === 'light'">
+          <li nz-menu-item nzSelected>Option 1</li>
+          <li nz-menu-item>Option 2</li>
+          <li nz-menu-item>Option 3</li>
+        </ul>
+      </li>
+      <li nz-menu-item>Option 5</li>
+      <li nz-menu-item>Option 6</li>
+    </ul>
+  `,
+  styles: `
+    [nz-menu] {
+      width: 256px;
+    }
+
+    ul > li.ant-menu-item.ant-menu-item-selected {
+      color: #fff;
+      background-color: #0958d9;
+    }
+
+    ul.light-submenu > li.ant-menu-item.ant-menu-item-selected {
+      color: #0958d9;
+      background-color: #e6f4ff;
+    }
+
+    .theme-label {
+      color: #001529;
+    }
+
+    label {
+      margin-inline-end: 8px;
+    }
+  `
+})
+export class NzDemoMenuSubmenuThemeComponent {
+  readonly darkControl = new FormControl(false, { nonNullable: true });
+  private readonly dark = toSignal(this.darkControl.valueChanges, { initialValue: false });
+  readonly theme = computed(() => (this.dark() ? 'dark' : 'light'));
 }
 ```
 
